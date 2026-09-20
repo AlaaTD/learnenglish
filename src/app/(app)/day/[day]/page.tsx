@@ -94,9 +94,67 @@ export default async function DayPage({
         </div>
       </header>
 
-      <DayTabs day={dayNumber} active={tab} />
+      {progress.status === "COMPLETED" && (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-emerald-200 bg-emerald-50/90 p-4 text-emerald-900 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-200">
+          <div className="flex items-center gap-3">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-base font-bold text-white shadow-sm">
+              ✓
+            </span>
+            <div>
+              <p className="text-sm font-semibold sm:text-base">
+                Day {dayNumber} is Saved as Completed!
+              </p>
+              <p className="text-xs text-emerald-700 dark:text-emerald-300">
+                You can freely revisit all 50 words, grammar notes, conversations, and paragraphs anytime.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/journey"
+              className="rounded-lg border border-emerald-300 bg-white px-3 py-1.5 text-xs font-medium text-emerald-800 hover:bg-emerald-50 dark:border-emerald-700 dark:bg-zinc-900 dark:text-emerald-200"
+            >
+              90-Day Journey
+            </Link>
+            <Link
+              href="/vocabulary"
+              className="rounded-lg bg-emerald-700 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-800 dark:bg-emerald-600"
+            >
+              Review Words
+            </Link>
+          </div>
+        </div>
+      )}
 
-      {tab === "vocabulary" && (
+      {vocabulary.length === 0 ? (
+        <div className="rounded-xl border border-amber-200 bg-amber-50/80 p-6 text-amber-900 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-200">
+          <h2 className="text-lg font-semibold">Day {dayNumber}: {day.title}</h2>
+          <p className="mt-1 text-sm text-amber-800 dark:text-amber-300">
+            {day.description}
+          </p>
+          <p className="mt-2 text-xs text-amber-700 dark:text-amber-400">
+            Topic: {day.topic} · Stage: {day.stage}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link
+              href="/day/1"
+              className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-700"
+            >
+              ← Revisit Day 1 (Full 50 Words & Lessons)
+            </Link>
+            <Link
+              href="/journey"
+              className="rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200"
+            >
+              View 90-Day Journey Map
+            </Link>
+          </div>
+        </div>
+      ) : (
+        <>
+          <DayTabs day={dayNumber} active={tab} />
+
+          {tab === "vocabulary" && (
         <section aria-label="Today's vocabulary" className="space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -341,14 +399,16 @@ export default async function DayPage({
         </section>
       )}
 
-      <footer className="border-t border-zinc-200 pt-5 dark:border-zinc-800">
-        <CompleteDayButton
-          dayNumber={dayNumber}
-          ready={ready}
-          completed={progress.status === "COMPLETED"}
-          nextDay={dayNumber < 90 ? dayNumber + 1 : null}
-        />
-      </footer>
+          <footer className="border-t border-zinc-200 pt-5 dark:border-zinc-800">
+            <CompleteDayButton
+              dayNumber={dayNumber}
+              ready={ready}
+              completed={progress.status === "COMPLETED"}
+              nextDay={dayNumber < 90 ? dayNumber + 1 : null}
+            />
+          </footer>
+        </>
+      )}
     </div>
   );
 }

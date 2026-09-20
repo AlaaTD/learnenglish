@@ -9,6 +9,7 @@ import {
   markGrammarViewed,
   markParagraphViewed,
   markVocabularyViewed,
+  reopenDay,
 } from "@/services/day-progress";
 
 export async function markVocabularyViewedAction(dayNumber: number, vocabularyId: string) {
@@ -43,5 +44,11 @@ export async function markParagraphViewedAction(dayNumber: number, paragraphId: 
 export async function completeDayAction(dayNumber: number) {
   const user = await requireUser();
   await completeDay(user.id, dayNumber);
+  revalidatePath("/", "layout");
+}
+
+export async function reopenDayAction(dayNumber: number) {
+  const user = await requireUser();
+  await reopenDay(user.id, dayNumber);
   revalidatePath("/", "layout");
 }

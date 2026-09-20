@@ -120,15 +120,37 @@ export async function markParagraphViewed(
 }
 
 export async function completeDay(userId: string, dayNumber: number) {
-  const view = await getDayProgressView(userId, dayNumber);
-  const sectionsReady =
-    view.grammarViewed && view.allConversationsViewed && view.allParagraphsViewed;
-  if (!sectionsReady) {
-    throw new Error("Finish the grammar, conversation and paragraph sections before completing the day.");
-  }
+  const [conversationIds, paragraphIds, vocabularyIds] = await Promise.all([
+    db.conversation.findMany({ where: { dayNumber }, select: { id: true } }),
+    db.paragraph.findMany({ where: { dayNumber }, select: { id: true } }),
+    db.vocabularyItem.findMany({ where: { dayNumber }, select: { id: true } }),
+  ]);
+
+  const progress = await getOrCreateDayProgress(userId, dayNumber);
+  const viewedVocab = new Set(parseStringArray(progress.viewedVocabulary));
+  vocabularyIds.forEach((v) => viewedVocab.add(v.id));
+
   await db.dayProgress.update({
     where: { userId_dayNumber: { userId, dayNumber } },
-    data: { status: DayStatus.COMPLETED, completedAt: new Date() },
+    data: {
+      status: DayStatus.COMPLETED,
+      completedAt: new Date(),
+      grammarViewed: true,
+      conversationsViewed: JSON.stringify(conversationIds.map((c) => c.id)),
+      paragraphsViewed: JSON.stringify(paragraphIds.map((p) => p.id)),
+      viewedVocabulary: JSON.stringify([...viewedVocab]),
+    },
+  });
+}
+
+export async function reopenDay(userId: string, dayNumber: number) {
+  const progress = await getOrCreateDayProgress(userId, dayNumber);
+  await db.dayProgress.update({
+    where: { id: progress.id },
+    data: {
+      status: DayStatus.IN_PROGRESS,
+      completedAt: null,
+    },
   });
 }
 

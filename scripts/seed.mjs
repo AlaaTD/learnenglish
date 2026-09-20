@@ -16,10 +16,7 @@ const plan = JSON.parse(readFileSync(join(contentDir, "curriculum-plan.json"), "
 const planByDay = new Map(plan.days.map((d) => [d.day, d]));
 
 const files = readdirSync(contentDir).filter((f) => /^day-\d{2}\.json$/.test(f)).sort();
-if (files.length !== 90) {
-  console.error(`FATAL: expected 90 day files, found ${files.length}. Run npm run content:validate first.`);
-  process.exit(1);
-}
+console.log(`Found ${files.length} detailed day file(s) to seed.`);
 
 function vocabId(headword) {
   return "w_" + String(headword).trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -50,7 +47,29 @@ if (hard) {
 const globalVocab = new Map(); // headword(lower) -> { id, day }
 let vocabCount = 0, convCount = 0, paraCount = 0, linkCount = 0, reinforceCount = 0;
 
-console.log("Ingesting 90 days...");
+console.log("Upserting all 90 curriculum days...");
+for (const p of plan.days) {
+  await prisma.day.upsert({
+    where: { dayNumber: p.day },
+    update: {
+      title: p.title,
+      topic: p.topic,
+      description: p.description,
+      stage: p.stage,
+      focus: `Master vocabulary, grammar, and expressions for "${p.topic}".`,
+    },
+    create: {
+      dayNumber: p.day,
+      title: p.title,
+      topic: p.topic,
+      description: p.description,
+      stage: p.stage,
+      focus: `Master vocabulary, grammar, and expressions for "${p.topic}".`,
+    },
+  });
+}
+
+console.log(`Ingesting ${days.length} detailed day(s)...`);
 for (const data of days) {
   const day = data.day;
   const p = planByDay.get(day);

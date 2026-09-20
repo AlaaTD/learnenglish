@@ -7,6 +7,7 @@ import {
   markConversationViewedAction,
   markGrammarViewedAction,
   markParagraphViewedAction,
+  reopenDayAction,
 } from "@/actions/day";
 
 const btn =
@@ -107,7 +108,7 @@ export function FinishVocabularyButton({
 
 export function CompleteDayButton({
   dayNumber,
-  ready,
+  ready: _ready,
   completed,
   nextDay,
 }: {
@@ -124,6 +125,23 @@ export function CompleteDayButton({
     return (
       <div className="flex flex-wrap items-center gap-3">
         <span className={btnDone}>Day {dayNumber} completed ✓</span>
+        <button
+          type="button"
+          disabled={pending}
+          onClick={() => {
+            start(async () => {
+              try {
+                await reopenDayAction(dayNumber);
+                setIsCompleted(false);
+              } catch {
+                setError("Failed to reopen day.");
+              }
+            });
+          }}
+          className={`${btn} border-zinc-300 bg-white text-zinc-600 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800`}
+        >
+          {pending ? "Updating…" : "Mark as In Progress (Reopen)"}
+        </button>
         {nextDay && nextDay <= 90 ? (
           <a href={`/day/${nextDay}`} className={`${btn} border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700`}>
             Continue to Day {nextDay} →
@@ -133,6 +151,9 @@ export function CompleteDayButton({
             You finished the 90-day journey. Celebrate — and keep reviewing.
           </span>
         )}
+        <a href="/journey" className={`${btn} border-zinc-300 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300`}>
+          View 90-Day Journey
+        </a>
       </div>
     );
   }
@@ -141,13 +162,8 @@ export function CompleteDayButton({
     <div className="flex flex-wrap items-center gap-3">
       <button
         type="button"
-        disabled={!ready || pending}
-        title={ready ? "Complete this day" : "View every section first — no test needed"}
-        className={`${btn} ${
-          ready
-            ? "border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700"
-            : "cursor-not-allowed border-zinc-200 bg-zinc-100 text-zinc-400 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-600"
-        }`}
+        disabled={pending}
+        className={`${btn} border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700`}
         onClick={() =>
           start(async () => {
             setError(null);
@@ -155,18 +171,16 @@ export function CompleteDayButton({
               await completeDayAction(dayNumber);
               setIsCompleted(true);
             } catch {
-              setError("Could not complete the day. Make sure every section is viewed, then try again.");
+              setError("Could not complete the day. Please try again.");
             }
           })
         }
       >
-        {pending ? "Saving…" : "Complete Day"}
+        {pending ? "Saving…" : "Complete Day ✓"}
       </button>
-      {!ready && (
-        <span className="text-sm text-zinc-500 dark:text-zinc-400">
-          View the vocabulary, grammar, conversations and paragraphs to unlock completion — no test needed.
-        </span>
-      )}
+      <span className="text-sm text-zinc-500 dark:text-zinc-400">
+        Click to complete Day {dayNumber}. You can return and review everything anytime.
+      </span>
       {error && <span className="text-sm text-red-600 dark:text-red-400">{error}</span>}
     </div>
   );
