@@ -11,9 +11,9 @@ import {
 } from "@/actions/day";
 
 const btn =
-  "inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors disabled:opacity-60";
-const btnIdle = `${btn} border-zinc-300 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800`;
-const btnDone = `${btn} border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-300`;
+  "inline-flex items-center gap-2 rounded-xl border px-3.5 py-2 text-xs font-semibold tracking-wide transition-all shadow-xs disabled:opacity-60";
+const btnIdle = `${btn} border-zinc-200 bg-white text-zinc-700 hover:border-indigo-300 hover:bg-indigo-50/40 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:border-indigo-700 dark:hover:bg-indigo-950/30`;
+const btnDone = `${btn} border-emerald-300 bg-emerald-50 text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-300`;
 
 export function GrammarViewedButton({
   dayNumber,
@@ -37,7 +37,7 @@ export function GrammarViewedButton({
         });
       }}
     >
-      {isViewed ? "Grammar viewed ✓" : "Mark Grammar as Viewed"}
+      <span>{isViewed ? "✓ Grammar Mastered" : "Mark Grammar as Viewed"}</span>
     </button>
   );
 }
@@ -55,7 +55,7 @@ export function MarkReadButton({
 }) {
   const [isViewed, setIsViewed] = useState(viewed);
   const [pending, start] = useTransition();
-  const label = kind === "conversation" ? "conversation" : "paragraph";
+  const label = kind === "conversation" ? "Dialogue" : "Passage";
   return (
     <button
       type="button"
@@ -73,7 +73,7 @@ export function MarkReadButton({
         });
       }}
     >
-      {isViewed ? `${label} read ✓` : `Mark ${label} as read`}
+      <span>{isViewed ? `✓ ${label} Read` : `Mark ${label} as Read`}</span>
     </button>
   );
 }

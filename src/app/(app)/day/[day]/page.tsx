@@ -50,26 +50,30 @@ export default async function DayPage({
 
   return (
     <div className="space-y-6">
-      <header className="space-y-3">
-        <div className="flex items-center gap-3 text-sm">
-          {dayNumber > 1 && (
-            <Link
-              href={`/day/${dayNumber - 1}`}
-              className="rounded-lg border border-zinc-200 px-2.5 py-1 text-zinc-500 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-900"
-              aria-label={`Go to Day ${dayNumber - 1}`}
-            >
-              ← Day {dayNumber - 1}
-            </Link>
-          )}
-          <span className="font-medium text-indigo-600 dark:text-indigo-400">
-            DAY {String(dayNumber).padStart(2, "0")} / 90
-          </span>
-          <span className="text-zinc-400">·</span>
-          <span className="text-zinc-500 dark:text-zinc-400">{day.stage}</span>
+      <header className="space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+          <div className="flex items-center gap-2.5">
+            {dayNumber > 1 && (
+              <Link
+                href={`/day/${dayNumber - 1}`}
+                className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-600 hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:border-indigo-700 dark:hover:text-indigo-300 transition-all"
+                aria-label={`Go to Day ${dayNumber - 1}`}
+              >
+                ← Day {dayNumber - 1}
+              </Link>
+            )}
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-bold text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300">
+              <span className="h-1.5 w-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400" />
+              DAY {String(dayNumber).padStart(2, "0")} / 90
+            </span>
+            <span className="text-zinc-400 font-medium">·</span>
+            <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">{day.stage}</span>
+          </div>
+
           {dayNumber < 90 && (
             <Link
               href={`/day/${dayNumber + 1}`}
-              className="ml-auto rounded-lg border border-zinc-200 px-2.5 py-1 text-zinc-500 hover:bg-zinc-50 dark:border-zinc-800 dark:text-zinc-400 dark:hover:bg-zinc-900"
+              className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-600 hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:border-indigo-700 dark:hover:text-indigo-300 transition-all"
               aria-label={`Go to Day ${dayNumber + 1}`}
             >
               Day {dayNumber + 1} →
@@ -78,16 +82,31 @@ export default async function DayPage({
         </div>
 
         <div>
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">{day.title}</h1>
-          <p className="mt-1 text-zinc-600 dark:text-zinc-300">{day.topic}</p>
-          <p className="mt-2 max-w-3xl text-sm text-zinc-500 dark:text-zinc-400">{day.focus}</p>
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">
+            {day.title}
+          </h1>
+          <p className="mt-1 text-base font-medium text-zinc-600 dark:text-zinc-400">{day.topic}</p>
+        </div>
+
+        <div className="rounded-2xl border border-zinc-200/80 bg-white/70 p-4 backdrop-blur-sm dark:border-zinc-800 dark:bg-zinc-900/70 flex items-start gap-3.5 shadow-xs">
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-base font-bold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+            🎯
+          </span>
+          <div className="flex-1 min-w-0">
+            <span className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+              Today&apos;s Focus
+            </span>
+            <p className="mt-0.5 text-sm font-medium leading-relaxed text-zinc-800 dark:text-zinc-200">
+              {day.focus}
+            </p>
+          </div>
         </div>
 
         <div className="max-w-xl">
-          <div className="mb-1.5 flex items-center justify-between text-sm">
-            <span className="text-zinc-600 dark:text-zinc-300">Day progress</span>
-            <span className="font-medium tabular-nums text-zinc-900 dark:text-zinc-100">
-              {learnedCount} / 50 vocabulary items learned
+          <div className="mb-1.5 flex items-center justify-between text-xs">
+            <span className="font-semibold text-zinc-600 dark:text-zinc-400">Day 1 Learning Progress</span>
+            <span className="font-bold tabular-nums text-zinc-900 dark:text-zinc-100">
+              {learnedCount} / 50 words learned ({Math.round((learnedCount / 50) * 100)}%)
             </span>
           </div>
           <ProgressBar value={learnedCount} max={50} label="Day vocabulary learned" />
@@ -155,18 +174,22 @@ export default async function DayPage({
           <DayTabs day={dayNumber} active={tab} />
 
           {tab === "vocabulary" && (
-        <section aria-label="Today's vocabulary" className="space-y-3">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              Open a word to count it as viewed. {50 - progress.vocabularyViewedCount} of today&apos;s
-              words are still unopened.
-            </p>
+        <section aria-label="Today's vocabulary" className="space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-zinc-200/80 bg-zinc-50/60 p-4 dark:border-zinc-800 dark:bg-zinc-900/60">
+            <div>
+              <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                Today&apos;s 50 Core Words
+              </p>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                Click on any card to view detailed collocations, synonyms, and related forms.
+              </p>
+            </div>
             <FinishVocabularyButton
               dayNumber={dayNumber}
               remaining={50 - progress.vocabularyViewedCount}
             />
           </div>
-          <div className="grid gap-3 lg:grid-cols-2">
+          <div className="grid gap-3.5 lg:grid-cols-2">
             {vocabulary.map((word) => (
               <VocabularyCard key={word.id} word={word} trackDay={dayNumber} />
             ))}
@@ -175,88 +198,152 @@ export default async function DayPage({
       )}
 
       {tab === "grammar" && (
-        <section aria-label="Today's grammar" className="space-y-6">
-          <GrammarViewedButton dayNumber={dayNumber} viewed={progress.grammarViewed} />
+        <section aria-label="Today's grammar" className="space-y-8">
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-zinc-500 dark:text-zinc-400">
+              Clear patterns, structural formulas, and real examples using today&apos;s 50 vocabulary words.
+            </p>
+            <GrammarViewedButton dayNumber={dayNumber} viewed={progress.grammarViewed} />
+          </div>
+
           {day.grammarLessons.map((lesson) => (
             <article
               key={lesson.id}
-              className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+              className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95 space-y-6"
             >
-              <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">{lesson.title}</h2>
-              <p className="mt-2 max-w-3xl text-zinc-700 dark:text-zinc-200">{lesson.explanation}</p>
+              <div>
+                <span className="inline-block rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+                  Grammar Focus
+                </span>
+                <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+                  {lesson.title}
+                </h2>
+                <p className="mt-2 text-base leading-relaxed text-zinc-600 dark:text-zinc-300 max-w-3xl">
+                  {lesson.explanation}
+                </p>
+              </div>
 
               {lesson.structures.length > 0 && (
-                <div className="mt-5">
-                  <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-                    Structure
+                <div className="space-y-3">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                    Structural Formulas & Patterns
                   </h3>
-                  <ul className="mt-2 grid gap-1.5 sm:grid-cols-2">
+                  <div className="grid gap-3 sm:grid-cols-2">
                     {lesson.structures.map((s, i) => (
-                      <li
+                      <div
                         key={i}
-                        className="rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm dark:border-zinc-800 dark:bg-zinc-900"
+                        className="rounded-2xl border border-indigo-100/90 bg-gradient-to-br from-indigo-50/60 via-white to-violet-50/40 p-4 shadow-xs dark:border-indigo-900/50 dark:from-indigo-950/30 dark:via-zinc-900 dark:to-violet-950/20"
                       >
-                        <span className="mr-2 rounded bg-zinc-200 px-1.5 py-0.5 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                        <span className="inline-block rounded-md bg-indigo-600 px-2.5 py-0.5 text-xs font-bold text-white shadow-xs">
                           {s.label}
                         </span>
-                        <code className="text-zinc-800 dark:text-zinc-200">{s.pattern}</code>
-                      </li>
+                        <div className="mt-2.5 font-mono text-sm font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
+                          {s.pattern}
+                        </div>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               )}
 
-              <div className="mt-5">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-                  Examples — using today&apos;s vocabulary
+              <div className="space-y-3">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                  Practical Examples — Using Today&apos;s Vocabulary
                 </h3>
-                <ul className="mt-2 space-y-1.5">
+                <div className="space-y-2.5">
                   {lesson.examples.map((ex, i) => (
-                    <li key={i} className="flex items-start justify-between gap-3 text-sm">
-                      <span className="text-zinc-800 dark:text-zinc-200">
-                        {ex.sentence}
-                        {ex.usesVocabulary?.length > 0 && (
-                          <span className="ml-2 text-xs text-indigo-500 dark:text-indigo-400">
-                            ({ex.usesVocabulary.join(", ")})
-                          </span>
-                        )}
-                      </span>
-                      <AudioButton text={ex.sentence} small label="Listen to example" />
-                    </li>
+                    <div
+                      key={i}
+                      className="hover-lift flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-2xl border border-zinc-200/80 bg-white p-4 shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
+                    >
+                      <div className="flex items-start gap-3">
+                        <AudioButton text={ex.sentence} small label="Listen to example" />
+                        <div>
+                          <p className="text-base font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed">
+                            &ldquo;{ex.sentence}&rdquo;
+                          </p>
+                          {ex.usesVocabulary?.length > 0 && (
+                            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+                              <span className="text-xs text-zinc-400 font-medium">Words:</span>
+                              {ex.usesVocabulary.map((v, vi) => (
+                                <span
+                                  key={vi}
+                                  className="rounded-md bg-indigo-50 px-2 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-950/70 dark:text-indigo-300"
+                                >
+                                  {v}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
               {lesson.commonUsage.length > 0 && (
-                <div className="mt-5">
-                  <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-                    Common Usage
+                <div className="rounded-2xl border border-zinc-200/80 bg-zinc-50/60 p-5 dark:border-zinc-800 dark:bg-zinc-950/40">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                    Everyday Usage Notes
                   </h3>
-                  <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-zinc-700 dark:text-zinc-300">
+                  <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
                     {lesson.commonUsage.map((u, i) => (
-                      <li key={i}>{u}</li>
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-indigo-600 dark:text-indigo-400 font-bold">•</span>
+                        <span>{u}</span>
+                      </li>
                     ))}
                   </ul>
                 </div>
               )}
 
               {lesson.commonMistakes.length > 0 && (
-                <div className="mt-5">
-                  <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-                    Common Mistakes
+                <div className="space-y-3">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-rose-500 dark:text-rose-400">
+                    Common Mistakes & Corrections
                   </h3>
-                  <ul className="mt-2 space-y-2">
+                  <div className="space-y-3">
                     {lesson.commonMistakes.map((m, i) => (
-                      <li key={i} className="text-sm">
-                        <span className="text-red-600 line-through decoration-red-300 dark:text-red-400">
-                          {m.wrong}
-                        </span>
-                        <span className="mx-2 text-zinc-400">→</span>
-                        <span className="font-medium text-emerald-700 dark:text-emerald-400">{m.right}</span>
-                        <span className="ml-2 text-zinc-500 dark:text-zinc-400">— {m.note}</span>
-                      </li>
+                      <div
+                        key={i}
+                        className="overflow-hidden rounded-2xl border border-zinc-200/90 bg-white shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
+                      >
+                        <div className="grid gap-3 p-4 sm:grid-cols-2 bg-zinc-50/50 dark:bg-zinc-950/30">
+                          <div className="flex items-start gap-2.5">
+                            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-rose-100 text-xs font-bold text-rose-700 dark:bg-rose-950 dark:text-rose-300">
+                              ✕
+                            </span>
+                            <div>
+                              <span className="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
+                                Incorrect
+                              </span>
+                              <p className="mt-0.5 text-sm line-through text-rose-700 dark:text-rose-300 font-mono">
+                                {m.wrong}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2.5">
+                            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                              ✓
+                            </span>
+                            <div>
+                              <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                                Correct
+                              </span>
+                              <p className="mt-0.5 text-sm font-semibold text-emerald-800 dark:text-emerald-300 font-mono">
+                                {m.right}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="border-t border-zinc-100 bg-white px-4 py-2.5 text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 flex items-center gap-2">
+                          <span className="font-bold text-indigo-600 dark:text-indigo-400">Why:</span>
+                          <span>{m.note}</span>
+                        </div>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               )}
             </article>
@@ -265,43 +352,75 @@ export default async function DayPage({
       )}
 
       {tab === "conversations" && (
-        <section aria-label="Today's conversations" className="space-y-6">
+        <section aria-label="Today's conversations" className="space-y-8">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            These conversations use today&apos;s vocabulary naturally. Words you already know from
-            earlier days appear here again — that&apos;s how they stick.
+            Real everyday dialogues featuring today&apos;s 50 words. Listen to each line or the full conversation.
           </p>
+
           {day.conversations.map((conversation) => {
             const viewed = progress.conversationsViewedIds.has(conversation.id);
+            const firstSpeaker = conversation.lines[0]?.speaker;
+
             return (
               <article
                 key={conversation.id}
-                className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+                className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95"
               >
-                <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-zinc-100 pb-5 dark:border-zinc-800">
                   <div>
-                    <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                    <div className="flex items-center gap-2">
+                      <span className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+                        Dialogue
+                      </span>
+                      <span className="text-xs text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
+                        📍 {conversation.setting}
+                      </span>
+                    </div>
+                    <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                       {conversation.title}
                     </h2>
-                    <p className="mt-0.5 text-sm text-zinc-500 dark:text-zinc-400">{conversation.setting}</p>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <AudioButton text={conversation.lines.map((l) => `${l.speaker}. ${l.text}`).join(" ")} label="Listen to the whole conversation" />
+                  <div className="flex items-center gap-2.5">
+                    <AudioButton
+                      text={conversation.lines.map((l) => `${l.speaker}. ${l.text}`).join(" ")}
+                      label="Listen to Full Dialogue"
+                    />
                     <MarkReadButton kind="conversation" dayNumber={dayNumber} id={conversation.id} viewed={viewed} />
                   </div>
                 </div>
-                <ol className="mt-4 space-y-2.5">
-                  {conversation.lines.map((line, i) => (
-                    <li key={i} className="flex items-start justify-between gap-3">
-                      <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
-                        <span className="font-semibold text-indigo-600 dark:text-indigo-400">
-                          {line.speaker}:
-                        </span>{" "}
-                        {line.text}
-                      </p>
-                      <AudioButton text={line.text} small label={`Listen to ${line.speaker}`} />
-                    </li>
-                  ))}
-                </ol>
+
+                <div className="mt-6 space-y-4">
+                  {conversation.lines.map((line, i) => {
+                    const isSpeaker1 = line.speaker === firstSpeaker;
+                    const speakerBadge = isSpeaker1
+                      ? "bg-indigo-600 text-white shadow-indigo-600/20"
+                      : "bg-emerald-600 text-white shadow-emerald-600/20";
+                    const bubbleStyle = isSpeaker1
+                      ? "border-indigo-100 bg-white dark:border-zinc-800 dark:bg-zinc-900 bubble-speaker-a"
+                      : "border-emerald-100 bg-emerald-50/40 dark:border-emerald-950 dark:bg-emerald-950/20 bubble-speaker-b sm:ml-6";
+
+                    return (
+                      <div key={i} className={`flex items-start gap-3.5 ${isSpeaker1 ? "" : "justify-start"}`}>
+                        <div
+                          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl text-xs font-bold shadow-sm ${speakerBadge}`}
+                        >
+                          {line.speaker.slice(0, 2).toUpperCase()}
+                        </div>
+                        <div className={`flex-1 rounded-2xl border p-4 shadow-xs transition-all ${bubbleStyle}`}>
+                          <div className="flex items-center justify-between gap-2 mb-1">
+                            <span className="text-xs font-bold uppercase tracking-wider text-zinc-900 dark:text-zinc-100">
+                              {line.speaker}
+                            </span>
+                            <AudioButton text={line.text} small label={`Listen to ${line.speaker}`} />
+                          </div>
+                          <p className="text-base font-normal leading-relaxed text-zinc-800 dark:text-zinc-200">
+                            {line.text}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </article>
             );
           })}
@@ -309,32 +428,48 @@ export default async function DayPage({
       )}
 
       {tab === "paragraphs" && (
-        <section aria-label="Today's paragraphs" className="space-y-6">
+        <section aria-label="Today's paragraphs" className="space-y-8">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Read each paragraph carefully. Listen along if it helps.
+            Read carefully to see how vocabulary connects into natural stories. Listen along with the native audio.
           </p>
+
           {day.paragraphs.map((paragraph) => {
             const viewed = progress.paragraphsViewedIds.has(paragraph.id);
             return (
               <article
                 key={paragraph.id}
-                className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900"
+                className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95"
               >
-                <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-zinc-100 pb-5 dark:border-zinc-800">
                   <div>
-                    <h2 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                    <div className="flex items-center gap-2">
+                      <span className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+                        {paragraph.kind}
+                      </span>
+                      <span className="text-xs text-zinc-400 font-medium">· ~1 min read · Full narration</span>
+                    </div>
+                    <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                       {paragraph.title}
                     </h2>
-                    <p className="mt-0.5 text-sm capitalize text-zinc-500 dark:text-zinc-400">{paragraph.kind}</p>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <AudioButton text={paragraph.text} label="Listen to the paragraph" />
+                  <div className="flex items-center gap-2.5">
+                    <AudioButton text={paragraph.text} label="Listen to Story" />
                     <MarkReadButton kind="paragraph" dayNumber={dayNumber} id={paragraph.id} viewed={viewed} />
                   </div>
                 </div>
-                <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-800 dark:text-zinc-200">
-                  {paragraph.text}
-                </p>
+
+                <div className="mt-6">
+                  <p className="drop-cap text-lg leading-8 text-zinc-800 dark:text-zinc-200 font-normal">
+                    {paragraph.text}
+                  </p>
+                </div>
+
+                <div className="mt-8 rounded-2xl border border-indigo-100/80 bg-indigo-50/40 p-4 text-xs text-indigo-900 dark:border-indigo-950 dark:bg-indigo-950/30 dark:text-indigo-200 flex items-center gap-2.5">
+                  <span className="text-base">💡</span>
+                  <p className="font-medium">
+                    Tip: Read along once with audio playing, then read it once aloud on your own.
+                  </p>
+                </div>
               </article>
             );
           })}
