@@ -65,6 +65,7 @@ model VocabularyItem {
   partOfSpeech  String?
   definition    String
   example       String
+  verbForms     String? // JSON string: { v1: string, v2: string, v3: string } (for verbs only)
   relatedForms  String  @default("[]") // JSON string[]
   collocations  String  @default("[]") // JSON string[]
   synonyms      String  @default("[]") // JSON string[]

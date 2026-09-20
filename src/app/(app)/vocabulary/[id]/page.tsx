@@ -89,6 +89,54 @@ export default async function WordDetailPage({
           </div>
         </div>
 
+        {/* Verb Conjugation Table */}
+        {item.verbForms && (
+          <div className="mt-6 rounded-2xl border border-indigo-100/90 bg-gradient-to-br from-indigo-50/60 via-white to-violet-50/40 p-5 dark:border-indigo-900/50 dark:from-indigo-950/30 dark:via-zinc-900 dark:to-violet-950/20 shadow-xs">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-2">
+                <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-indigo-600 text-xs font-bold text-white">
+                  V
+                </span>
+                <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-950 dark:text-indigo-200">
+                  Verb Conjugations · تصريفات الفعل الثلاثة
+                </h3>
+              </div>
+              <span className="text-xs font-medium text-indigo-600 dark:text-indigo-400">
+                المصدر · الماضي البسيط · الماضي التام
+              </span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+              <div className="rounded-xl border border-zinc-200/80 bg-white p-3 dark:border-zinc-800 dark:bg-zinc-900">
+                <span className="block text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                  V1 (Base / Present)
+                </span>
+                <span className="mt-1 block text-base font-bold text-zinc-900 dark:text-zinc-100 font-mono">
+                  {item.verbForms.v1}
+                </span>
+                <span className="block text-xs text-zinc-400 mt-0.5">المصدر / المضارع</span>
+              </div>
+              <div className="rounded-xl border border-indigo-200/80 bg-indigo-50/50 p-3 dark:border-indigo-900/60 dark:bg-indigo-950/40">
+                <span className="block text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+                  V2 (Past Simple)
+                </span>
+                <span className="mt-1 block text-base font-bold text-indigo-700 dark:text-indigo-300 font-mono">
+                  {item.verbForms.v2}
+                </span>
+                <span className="block text-xs text-indigo-500/80 mt-0.5">الماضي البسيط</span>
+              </div>
+              <div className="rounded-xl border border-violet-200/80 bg-violet-50/50 p-3 dark:border-violet-900/60 dark:bg-violet-950/40">
+                <span className="block text-xs font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+                  V3 (Past Participle)
+                </span>
+                <span className="mt-1 block text-base font-bold text-violet-700 dark:text-violet-300 font-mono">
+                  {item.verbForms.v3}
+                </span>
+                <span className="block text-xs text-violet-500/80 mt-0.5">التصريف الثالث (التام)</span>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Word Details: Collocations, Related Forms, Synonyms, Tags */}
         <div className="mt-6 grid grid-cols-1 gap-4 border-t border-zinc-100 pt-6 sm:grid-cols-2 dark:border-zinc-800">
           {item.collocations.length > 0 && (

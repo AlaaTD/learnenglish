@@ -477,14 +477,6 @@ export default async function DayPage({
         </section>
       )}
 
-          <footer className="border-t border-zinc-200 pt-5 dark:border-zinc-800">
-            <CompleteDayButton
-              dayNumber={dayNumber}
-              ready={true}
-              completed={progress.status === "COMPLETED"}
-              nextDay={dayNumber < 90 ? dayNumber + 1 : null}
-            />
-          </footer>
         </>
       )}
     </div>

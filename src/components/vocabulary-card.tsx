@@ -15,6 +15,7 @@ export type VocabularyCardWord = {
   partOfSpeech: string | null;
   definition: string;
   example: string;
+  verbForms?: { v1: string; v2: string; v3: string } | null;
   relatedForms: string[];
   collocations: string[];
   synonyms: string[];
@@ -85,6 +86,11 @@ export function VocabularyCard({
                 {word.partOfSpeech}
               </span>
             ) : null}
+            {word.verbForms ? (
+              <span className="rounded-md bg-amber-50 px-2 py-0.5 font-mono text-xs font-semibold text-amber-800 dark:bg-amber-950/60 dark:text-amber-300">
+                V1: {word.verbForms.v1} · V2: {word.verbForms.v2} · V3: {word.verbForms.v3}
+              </span>
+            ) : null}
           </div>
           <p className="mt-1.5 text-sm font-medium leading-relaxed text-zinc-600 dark:text-zinc-300">
             {word.definition}
@@ -99,6 +105,54 @@ export function VocabularyCard({
 
       {open ? (
         <div className="mt-3.5 space-y-3 border-t border-zinc-100 pt-3 dark:border-zinc-800/80" onClick={(e) => e.stopPropagation()}>
+          {/* Verb Conjugation Table (Only for Verbs) */}
+          {word.verbForms && (
+            <div className="rounded-2xl border border-indigo-100/90 bg-gradient-to-br from-indigo-50/60 via-white to-violet-50/40 p-4 shadow-xs dark:border-indigo-900/50 dark:from-indigo-950/30 dark:via-zinc-900 dark:to-violet-950/20">
+              <div className="flex items-center justify-between mb-2.5">
+                <div className="flex items-center gap-1.5">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-md bg-indigo-600 text-[10px] font-bold text-white">
+                    V
+                  </span>
+                  <span className="text-xs font-bold uppercase tracking-wider text-indigo-950 dark:text-indigo-200">
+                    Verb Forms · تصريفات الفعل
+                  </span>
+                </div>
+                <span className="text-[11px] font-semibold text-indigo-600/70 dark:text-indigo-400/70">
+                  المصدر · الماضي · الماضي التام
+                </span>
+              </div>
+              <div className="grid grid-cols-3 gap-2 text-center">
+                <div className="rounded-xl border border-zinc-200/80 bg-white p-2.5 dark:border-zinc-800 dark:bg-zinc-900">
+                  <span className="block text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+                    V1 (Base / Present)
+                  </span>
+                  <span className="mt-1 block text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 font-mono">
+                    {word.verbForms.v1}
+                  </span>
+                  <span className="block text-[10px] text-zinc-400 mt-0.5">المصدر / المضارع</span>
+                </div>
+                <div className="rounded-xl border border-indigo-200/80 bg-indigo-50/50 p-2.5 dark:border-indigo-900/60 dark:bg-indigo-950/40">
+                  <span className="block text-[10px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+                    V2 (Past Simple)
+                  </span>
+                  <span className="mt-1 block text-xs sm:text-sm font-bold text-indigo-700 dark:text-indigo-300 font-mono">
+                    {word.verbForms.v2}
+                  </span>
+                  <span className="block text-[10px] text-indigo-500/80 mt-0.5">الماضي البسيط</span>
+                </div>
+                <div className="rounded-xl border border-violet-200/80 bg-violet-50/50 p-2.5 dark:border-violet-900/60 dark:bg-violet-950/40">
+                  <span className="block text-[10px] font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400">
+                    V3 (Past Participle)
+                  </span>
+                  <span className="mt-1 block text-xs sm:text-sm font-bold text-violet-700 dark:text-violet-300 font-mono">
+                    {word.verbForms.v3}
+                  </span>
+                  <span className="block text-[10px] text-violet-500/80 mt-0.5">التصريف الثالث (التام)</span>
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className="rounded-xl border-l-3 border-indigo-500 bg-indigo-50/40 p-3 dark:bg-indigo-950/20 dark:border-indigo-400">
             <span className="block text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
               Example

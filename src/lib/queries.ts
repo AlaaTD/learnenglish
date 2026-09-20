@@ -47,6 +47,12 @@ export async function getDayFull(dayNumber: number) {
   };
 }
 
+export type VerbForms = {
+  v1: string; // Base / Present
+  v2: string; // Past Simple
+  v3: string; // Past Participle
+};
+
 export type VocabularyCardData = {
   id: string;
   headword: string;
@@ -54,6 +60,7 @@ export type VocabularyCardData = {
   partOfSpeech: string | null;
   definition: string;
   example: string;
+  verbForms: VerbForms | null;
   relatedForms: string[];
   collocations: string[];
   synonyms: string[];
@@ -74,6 +81,7 @@ function toCard(
     partOfSpeech: string | null;
     definition: string;
     example: string;
+    verbForms?: string | null;
     relatedForms: string;
     collocations: string;
     synonyms: string;
@@ -88,6 +96,7 @@ function toCard(
 ): VocabularyCardData {
   return {
     ...v,
+    verbForms: v.verbForms ? parseJson<VerbForms | null>(v.verbForms, null) : null,
     relatedForms: parseStringArray(v.relatedForms),
     collocations: parseStringArray(v.collocations),
     synonyms: parseStringArray(v.synonyms),

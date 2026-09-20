@@ -92,6 +92,7 @@ for (const data of days) {
       partOfSpeech: v.partOfSpeech ?? null,
       definition: v.definition,
       example: v.example,
+      verbForms: v.verbForms ? JSON.stringify(v.verbForms) : null,
       relatedForms: j(v.relatedForms),
       collocations: j(v.collocations),
       synonyms: j(v.synonyms),
