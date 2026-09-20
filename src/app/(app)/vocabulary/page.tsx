@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { requireUser } from "@/lib/auth";
+import { db } from "@/lib/db";
 import { getLibrary, type LibraryParams } from "@/lib/queries";
 import { SearchInput } from "@/components/search-input";
 import { Pagination } from "@/components/pagination";
@@ -39,6 +40,10 @@ export default async function VocabularyPage({
 
   const { items, total, pageCount } = await getLibrary(user.id, queryParams);
 
+  const settings = await db.userSettings.findUnique({ where: { userId: user.id } });
+  const audioRate = settings?.audioSpeed === "slow" ? 0.8 : 1;
+  const autoplayAudio = settings?.autoplayAudio ?? false;
+
   const activeTabKey = state ?? "ALL";
 
   function tabHref(tabState?: string) {
@@ -59,7 +64,7 @@ export default async function VocabularyPage({
   return (
     <div className="space-y-6">
       <header className="space-y-1">
-        <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
           Master Vocabulary Library
         </h1>
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -68,10 +73,10 @@ export default async function VocabularyPage({
       </header>
 
       {/* Search & Filters */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
         <SearchInput placeholder="Search word, phrase, definition, or tag..." />
         <div className="flex items-center gap-3">
-          <form method="GET" className="flex items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+          <form method="GET" className="flex flex-wrap items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
             {q && <input type="hidden" name="q" value={q} />}
             {state && <input type="hidden" name="state" value={state} />}
             <label htmlFor="day-select" className="sr-only">Filter by Day</label>
@@ -110,17 +115,20 @@ export default async function VocabularyPage({
         </div>
       </div>
 
-      {/* Tabs */}
-      <nav aria-label="Vocabulary States" className="border-b border-zinc-200 dark:border-zinc-800">
-        <ul className="-mb-px flex flex-wrap gap-2 text-sm">
+      {/* Tabs — horizontally scrollable on small screens */}
+      <nav
+        aria-label="Vocabulary States"
+        className="-mx-3 border-b border-zinc-200 px-3 dark:border-zinc-800 sm:mx-0 sm:px-0"
+      >
+        <ul className="-mb-px flex gap-1 overflow-x-auto scrollbar-none text-sm">
           {TABS.map((t) => {
             const active = activeTabKey === t.key;
             return (
-              <li key={t.key}>
+              <li key={t.key} className="shrink-0">
                 <Link
                   href={tabHref(t.state)}
                   aria-current={active ? "page" : undefined}
-                  className={`inline-block border-b-2 px-3 py-2 font-medium transition-colors ${
+                  className={`inline-block whitespace-nowrap border-b-2 px-3 py-2.5 font-medium transition-colors ${
                     active
                       ? "border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-400"
                       : "border-transparent text-zinc-500 hover:border-zinc-300 hover:text-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-700 dark:hover:text-zinc-200"
@@ -155,7 +163,7 @@ export default async function VocabularyPage({
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((word) => (
-            <VocabularyCard key={word.id} word={word} />
+            <VocabularyCard key={word.id} word={word} audioRate={audioRate} autoplayAudio={autoplayAudio} />
           ))}
         </div>
       )}

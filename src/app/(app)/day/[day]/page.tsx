@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
+import { db } from "@/lib/db";
 import { getDayFull, getDayVocabularyWithState } from "@/lib/queries";
 import { getDayProgressView } from "@/services/day-progress";
 import { DayTabs, type DayTab } from "@/components/day-tabs";
@@ -31,10 +32,13 @@ export default async function DayPage({
   if (!day) notFound();
 
   const tab = (VALID_TABS.includes(tabParam as DayTab) ? tabParam : "vocabulary") as DayTab;
-  const [vocabulary, progress] = await Promise.all([
+  const [vocabulary, progress, settings] = await Promise.all([
     getDayVocabularyWithState(user.id, dayNumber),
     getDayProgressView(user.id, dayNumber),
+    db.userSettings.findUnique({ where: { userId: user.id } }),
   ]);
+  const audioRate = settings?.audioSpeed === "slow" ? 0.8 : 1;
+  const autoplayAudio = settings?.autoplayAudio ?? false;
 
   const learnedCount = vocabulary.filter(
     (v) => v.state !== VocabularyState.UNLEARNED,
@@ -44,29 +48,27 @@ export default async function DayPage({
   return (
     <div className="space-y-6">
       <header className="space-y-4">
-        <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
-          <div className="flex items-center gap-2.5">
-            {dayNumber > 1 && (
-              <Link
-                href={`/day/${dayNumber - 1}`}
-                className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-600 hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:border-indigo-700 dark:hover:text-indigo-300 transition-all"
-                aria-label={`Go to Day ${dayNumber - 1}`}
-              >
-                ← Day {dayNumber - 1}
-              </Link>
-            )}
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-bold text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300">
-              <span className="h-1.5 w-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400" />
-              DAY {String(dayNumber).padStart(2, "0")} / 90
-            </span>
-            <span className="text-zinc-400 font-medium">·</span>
-            <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">{day.stage}</span>
-          </div>
-
+        <div className="flex flex-wrap items-center gap-2.5 text-sm">
+          {dayNumber > 1 && (
+            <Link
+              href={`/day/${dayNumber - 1}`}
+              className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-600 hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:border-indigo-700 dark:hover:text-indigo-300 transition-all"
+              aria-label={`Go to Day ${dayNumber - 1}`}
+            >
+              ← Day {dayNumber - 1}
+            </Link>
+          )}
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-bold text-indigo-700 dark:bg-indigo-950/80 dark:text-indigo-300">
+            <span className="h-1.5 w-1.5 rounded-full bg-indigo-600 dark:bg-indigo-400" />
+            DAY {String(dayNumber).padStart(2, "0")} / 90
+          </span>
+          <span className="hidden min-w-0 truncate text-xs font-semibold text-zinc-500 sm:inline dark:text-zinc-400">
+            {day.stage}
+          </span>
           {dayNumber < 90 && (
             <Link
               href={`/day/${dayNumber + 1}`}
-              className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-600 hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:border-indigo-700 dark:hover:text-indigo-300 transition-all"
+              className="ml-auto inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-600 hover:border-indigo-300 hover:text-indigo-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 dark:hover:border-indigo-700 dark:hover:text-indigo-300 transition-all"
               aria-label={`Go to Day ${dayNumber + 1}`}
             >
               Day {dayNumber + 1} →
@@ -145,7 +147,13 @@ export default async function DayPage({
             <section aria-label="Today's vocabulary" className="space-y-4">
               <div className="grid gap-3.5 lg:grid-cols-2">
                 {vocabulary.map((word) => (
-                  <VocabularyCard key={word.id} word={word} trackDay={dayNumber} />
+                  <VocabularyCard
+                    key={word.id}
+                    word={word}
+                    trackDay={dayNumber}
+                    audioRate={audioRate}
+                    autoplayAudio={autoplayAudio}
+                  />
                 ))}
               </div>
             </section>
@@ -254,6 +262,7 @@ export default async function DayPage({
                         <AudioButton
                           text={ex.sentence}
                           id={`grammar-${lesson.id}-${i}`}
+                          rate={audioRate}
                           small
                           label="Listen to example"
                         />
@@ -373,6 +382,7 @@ export default async function DayPage({
                   <AudioButton
                     text={conversation.lines.map((l) => `${l.speaker}. ${l.text}`).join(" ")}
                     id={`conv-${conversation.id}`}
+                    rate={audioRate}
                     label="Listen to Full Dialogue"
                   />
                 </div>
@@ -402,6 +412,7 @@ export default async function DayPage({
                             <AudioButton
                               text={line.text}
                               id={`conv-line-${conversation.id}-${i}`}
+                              rate={audioRate}
                               small
                               label={`Listen to ${line.speaker}`}
                             />
@@ -457,6 +468,7 @@ export default async function DayPage({
                   <AudioButton
                     text={paragraph.text}
                     id={`para-${paragraph.id}`}
+                    rate={audioRate}
                     label="Listen to Story"
                   />
                 </div>

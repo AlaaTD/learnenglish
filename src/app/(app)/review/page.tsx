@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { requireUser } from "@/lib/auth";
+import { db } from "@/lib/db";
 import { getReviewWords } from "@/lib/queries";
 import { AudioButton } from "@/components/audio-button";
 import { WordActions } from "@/components/word-actions";
@@ -10,12 +11,16 @@ export const metadata = { title: "Review" };
 
 export default async function ReviewPage() {
   const user = await requireUser();
-  const words = await getReviewWords(user.id);
+  const [words, settings] = await Promise.all([
+    getReviewWords(user.id),
+    db.userSettings.findUnique({ where: { userId: user.id } }),
+  ]);
+  const audioRate = settings?.audioSpeed === "slow" ? 0.8 : 1;
 
   return (
     <div className="space-y-6">
       <header>
-        <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
           Personal Review
         </h1>
         <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
@@ -55,7 +60,7 @@ export default async function ReviewPage() {
                         <p className="font-mono text-xs text-zinc-400">{word.pronunciation}</p>
                       )}
                     </div>
-                    <AudioButton text={word.headword} small />
+                    <AudioButton text={word.headword} rate={audioRate} small />
                   </div>
 
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{word.definition}</p>

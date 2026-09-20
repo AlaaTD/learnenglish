@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+// Next.js 16 "proxy" convention (replaces the deprecated middleware file).
+
+export function proxy(request: NextRequest) {
   let userId = request.cookies.get("e90_user_id")?.value;
   let response: NextResponse;
 

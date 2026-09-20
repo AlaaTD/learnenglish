@@ -14,30 +14,39 @@ const links = [
   { href: "/settings", label: "Settings", icon: "⚙️" },
 ];
 
+// Quick-access destinations pinned to the bottom of the screen on phones.
+const bottomLinks = [
+  { href: "/", label: "Home", icon: "🏠" },
+  { href: "/journey", label: "Journey", icon: "🗺️" },
+  { href: "/vocabulary", label: "Words", icon: "📚" },
+  { href: "/review", label: "Review", icon: "🔄" },
+  { href: "/settings", label: "Settings", icon: "⚙️" },
+];
+
+function isActivePath(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean }) {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Close mobile drawer on route change
+  // Lock scroll while the mobile drawer is open
   useEffect(() => {
-    setMobileOpen(false);
-  }, [pathname]);
-
-  // Lock scroll when mobile menu is open
-  useEffect(() => {
-    if (mobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    if (!mobileOpen) return;
+    document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
 
+  function closeMenu() {
+    setMobileOpen(false);
+  }
+
   function isActive(href: string) {
-    if (href === "/") return pathname === "/";
-    return pathname === href || pathname.startsWith(`${href}/`);
+    return isActivePath(pathname, href);
   }
 
   return (
@@ -60,7 +69,7 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
           </div>
 
           {/* Desktop Navigation Links */}
-          <nav aria-label="Main" className="hidden md:flex items-center gap-1 text-sm font-medium">
+          <nav aria-label="Main" className="hidden lg:flex items-center gap-1 text-sm font-medium">
             {links.map((link) => {
               const active = isActive(link.href);
               return (
@@ -109,7 +118,7 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
               onClick={() => setMobileOpen((prev) => !prev)}
               aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={mobileOpen}
-              className="md:hidden flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-200 bg-zinc-50 text-zinc-700 hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800 transition-colors"
+              className="lg:hidden flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-200 bg-zinc-50 text-zinc-700 hover:bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800 transition-colors"
             >
               {mobileOpen ? (
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -127,11 +136,11 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
 
       {/* Mobile Drawer Overlay */}
       {mobileOpen && (
-        <div className="md:hidden fixed inset-0 z-50 flex flex-col">
+        <div className="lg:hidden fixed inset-0 z-50 flex flex-col">
           {/* Backdrop */}
           <div
             className="fixed inset-0 bg-black/40 backdrop-blur-xs transition-opacity"
-            onClick={() => setMobileOpen(false)}
+            onClick={closeMenu}
           />
 
           {/* Drawer Menu Panel */}
@@ -147,7 +156,7 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
               </div>
               <button
                 type="button"
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMenu}
                 className="rounded-lg p-1.5 text-zinc-500 hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800"
                 aria-label="Close menu"
               >
@@ -165,7 +174,7 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
               </div>
               <Link
                 href="/settings"
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMenu}
                 className="text-[11px] font-bold text-indigo-600 hover:underline dark:text-indigo-400"
               >
                 Settings ⚙️
@@ -180,7 +189,7 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
                   <Link
                     key={link.href}
                     href={link.href}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={closeMenu}
                     className={`flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-semibold transition-all ${
                       active
                         ? "bg-indigo-600 text-white shadow-sm shadow-indigo-600/20"
@@ -195,7 +204,7 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
               {isAdmin && (
                 <Link
                   href="/admin"
-                  onClick={() => setMobileOpen(false)}
+                  onClick={closeMenu}
                   className={`flex items-center gap-3 rounded-xl px-3.5 py-2.5 text-sm font-semibold transition-all ${
                     pathname.startsWith("/admin")
                       ? "bg-indigo-600 text-white shadow-sm"
@@ -210,6 +219,41 @@ export function Nav({ userName, isAdmin }: { userName: string; isAdmin: boolean 
           </div>
         </div>
       )}
+
+      {/* Mobile bottom tab bar (phones only) */}
+      <nav
+        aria-label="Quick navigation"
+        className="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-zinc-200/80 bg-white/95 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_12px_rgba(0,0,0,0.04)] dark:shadow-[0_-4px_12px_rgba(0,0,0,0.3)]"
+      >
+        <ul className="mx-auto grid max-w-md grid-cols-5">
+          {bottomLinks.map((link) => {
+            const active = isActive(link.href);
+            return (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  aria-current={active ? "page" : undefined}
+                  className={`flex flex-col items-center gap-0.5 py-2 text-[10px] font-semibold transition-colors ${
+                    active
+                      ? "text-indigo-600 dark:text-indigo-400"
+                      : "text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200"
+                  }`}
+                >
+                  <span className={`text-lg leading-none transition-transform ${active ? "scale-110" : ""}`}>
+                    {link.icon}
+                  </span>
+                  <span>{link.label}</span>
+                  <span
+                    className={`h-0.5 w-6 rounded-full transition-all ${
+                      active ? "bg-indigo-600 dark:bg-indigo-400" : "bg-transparent"
+                    }`}
+                  />
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
     </>
   );
 }

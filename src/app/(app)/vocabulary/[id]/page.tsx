@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
+import { db } from "@/lib/db";
 import { getWordDetail } from "@/lib/queries";
 import { AudioButton } from "@/components/audio-button";
 import { WordActions } from "@/components/word-actions";
@@ -20,39 +21,42 @@ export default async function WordDetailPage({
   const data = await getWordDetail(user.id, id);
   if (!data) notFound();
 
+  const settings = await db.userSettings.findUnique({ where: { userId: user.id } });
+  const audioRate = settings?.audioSpeed === "slow" ? 0.8 : 1;
+
   const { item, day, history, conversations, paragraphs, grammarExamples } = data;
 
   return (
     <div className="mx-auto max-w-4xl space-y-8">
       {/* Navigation breadcrumb */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
-        <Link href="/vocabulary" className="hover:text-indigo-600 dark:hover:text-indigo-400">
+      <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 min-w-0">
+        <Link href="/vocabulary" className="shrink-0 hover:text-indigo-600 dark:hover:text-indigo-400">
           Vocabulary Library
         </Link>
         <span>/</span>
-        <Link href={`/day/${item.dayNumber}`} className="hover:text-indigo-600 dark:hover:text-indigo-400">
+        <Link href={`/day/${item.dayNumber}`} className="truncate hover:text-indigo-600 dark:hover:text-indigo-400">
           Day {item.dayNumber} ({day?.title})
         </Link>
         <span>/</span>
-        <span className="font-medium text-zinc-900 dark:text-zinc-100">{item.headword}</span>
+        <span className="font-medium text-zinc-900 dark:text-zinc-100 truncate">{item.headword}</span>
       </nav>
 
       {/* Word Header Card */}
       <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900 sm:p-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <div className="flex items-center gap-3">
-              <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-4xl">
+            <div className="flex flex-wrap items-center gap-3">
+              <h1 className="text-3xl font-bold tracking-tight break-words text-zinc-900 dark:text-zinc-100 sm:text-4xl">
                 {item.headword}
               </h1>
-              <AudioButton text={item.headword} />
+              <AudioButton text={item.headword} rate={audioRate} />
             </div>
             <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
               {item.pronunciation && (
                 <span className="font-mono text-zinc-500 dark:text-zinc-400">{item.pronunciation}</span>
               )}
               {item.partOfSpeech && (
-                <span className="rounded-md bg-zinc-100 px-2 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+                <span className="rounded-md bg-zinc-100 px-2 py-0.5 text-xs italic text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
                   {item.partOfSpeech}
                 </span>
               )}
@@ -84,7 +88,7 @@ export default async function WordDetailPage({
             <h2 className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Example Sentence</h2>
             <div className="mt-1 flex items-start gap-2">
               <p className="text-base italic text-zinc-700 dark:text-zinc-300">&ldquo;{item.example}&rdquo;</p>
-              <AudioButton text={item.example} small />
+              <AudioButton text={item.example} rate={audioRate} small />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export function DayTabs({ day, active }: { day: number; active: DayTab }) {
   return (
     <nav
       aria-label="Day sections"
-      className="sticky top-15 z-30 rounded-2xl bg-white/90 p-1.5 backdrop-blur-md dark:bg-zinc-900/90 ring-1 ring-zinc-950/5 dark:ring-white/10 shadow-xs"
+      className="sticky top-14 z-30 rounded-2xl bg-white/90 p-1.5 backdrop-blur-md dark:bg-zinc-900/90 ring-1 ring-zinc-950/5 dark:ring-white/10 shadow-xs"
     >
       <ul className="flex items-center gap-1 overflow-x-auto scrollbar-none py-0.5 px-0.5 scroll-smooth">
         {tabs.map((tab) => {

@@ -2,9 +2,8 @@ import Link from "next/link";
 import { requireUser } from "@/lib/auth";
 import { getUserStats } from "@/services/stats";
 import { getDaySummaries } from "@/lib/queries";
-import { getCurrentDayNumber } from "@/services/day-progress";
 import { db } from "@/lib/db";
-import { EmptyState, ProgressBar, StatTile } from "@/components/ui";
+import { ProgressBar, StatTile } from "@/components/ui";
 import { VocabularyState } from "@/lib/states";
 
 export const metadata = { title: "Home" };
@@ -52,7 +51,7 @@ export default async function HomePage() {
             </span>
           </div>
 
-          <h1 className="mt-3 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+          <h1 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
             Day 1: My Daily Routine
           </h1>
           <p className="mt-2 max-w-2xl text-zinc-600 dark:text-zinc-300">
@@ -101,7 +100,7 @@ export default async function HomePage() {
           <p className="text-sm font-medium text-indigo-600 dark:text-indigo-400">
             Day 1 of 90 · Foundation — Daily Life
           </p>
-          <h1 className="mt-1 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+          <h1 className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
             {day1?.title ?? "My Daily Routine"}
           </h1>
           <p className="mt-2 max-w-2xl text-zinc-600 dark:text-zinc-300">

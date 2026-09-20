@@ -61,7 +61,7 @@ export function SettingsForm({
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+          className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
         />
         <p className="text-xs text-zinc-500">Your display name across the platform.</p>
       </div>
@@ -85,7 +85,7 @@ export function SettingsForm({
               document.documentElement.classList.toggle("dark", isDark);
             }
           }}
-          className="rounded-lg border border-zinc-300 bg-white px-3.5 py-2 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+          className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
         >
           <option value="system">System Default</option>
           <option value="light">Light Mode</option>
@@ -105,7 +105,7 @@ export function SettingsForm({
             id="audio-speed-select"
             value={audioSpeed}
             onChange={(e) => setAudioSpeed(e.target.value)}
-            className="rounded-lg border border-zinc-300 bg-white px-3.5 py-2 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+            className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
           >
             <option value="normal">Normal Speed (1.0x)</option>
             <option value="slow">Slow &amp; Clear (0.8x)</option>

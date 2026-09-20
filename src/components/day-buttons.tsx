@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition, useEffect } from "react";
+import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { completeDayAction, resetDayAction } from "@/actions/day";
@@ -16,20 +16,19 @@ export function CompleteDayButton({
   nextDay: number | null;
 }) {
   const router = useRouter();
-  const [isCompleted, setIsCompleted] = useState(completed);
+  const [optimisticCompleted, setOptimisticCompleted] = useState<boolean | null>(null);
   const [pending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    setIsCompleted(completed);
-  }, [completed]);
+  // Server truth wins unless the user just acted optimistically in this mount.
+  const isCompleted = optimisticCompleted ?? completed;
 
   const handleComplete = () => {
     setError(null);
     startTransition(async () => {
       try {
         await completeDayAction(dayNumber);
-        setIsCompleted(true);
+        setOptimisticCompleted(true);
         router.refresh();
       } catch {
         setError("حدث خطأ أثناء حفظ الإنجاز، يرجى المحاولة مرة أخرى.");
@@ -42,7 +41,7 @@ export function CompleteDayButton({
     startTransition(async () => {
       try {
         await resetDayAction(dayNumber);
-        setIsCompleted(false);
+        setOptimisticCompleted(false);
         router.refresh();
       } catch {
         setError("حدث خطأ أثناء إعادة التعيين، يرجى المحاولة مرة أخرى.");
