@@ -8,130 +8,124 @@ export const metadata = { title: "Curriculum Progress" };
 export default async function ProgressPage() {
   const user = await requireUser();
   const stats = await getUserStats(user.id);
+  const daysPercent = Math.min(100, Math.round((stats.daysCompleted / 90) * 100));
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 max-w-4xl mx-auto">
+      {/* Header */}
       <header className="space-y-1">
-        <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-          Curriculum Progress
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+          Learning Progress
         </h1>
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          Track your journey across all 90 days and 4,500 vocabulary items. No scoring or exams.
+          Track your personal milestones across the 90-day English curriculum.
         </p>
       </header>
 
-      {/* Main Stats Cards */}
+      {/* Primary Stats Grid */}
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <div className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Current Day</p>
-          <p className="mt-1 text-2xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
-            Day {stats.currentDay} <span className="text-xs font-normal text-zinc-400">/ 90</span>
+        <div className="rounded-2xl border border-zinc-200/80 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+            Current Day
+          </p>
+          <p className="mt-2 text-2xl font-bold tracking-tight text-indigo-600 dark:text-indigo-400">
+            Day {stats.currentDay}
+          </p>
+          <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-500">of 90 days</p>
+        </div>
+
+        <div className="rounded-2xl border border-zinc-200/80 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+            Days Completed
+          </p>
+          <p className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            {stats.daysCompleted}
+          </p>
+          <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-500">
+            {90 - stats.daysCompleted} remaining
           </p>
         </div>
 
-        <div className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Days Completed</p>
-          <p className="mt-1 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-            {stats.daysCompleted} <span className="text-xs font-normal text-zinc-400">/ 90</span>
+        <div className="rounded-2xl border border-zinc-200/80 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+            Words Learned
           </p>
+          <p className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
+            {stats.learned}
+          </p>
+          <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-500">of 4,500 total words</p>
         </div>
 
-        <div className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Words Learned</p>
-          <p className="mt-1 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-            {stats.learned} <span className="text-xs font-normal text-zinc-400">/ 4,500</span>
+        <div className="rounded-2xl border border-zinc-200/80 bg-white p-5 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
+            Current Streak
           </p>
-        </div>
-
-        <div className="rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Consecutive Days</p>
-          <p className="mt-1 text-2xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">
+          <p className="mt-2 text-2xl font-bold tracking-tight text-emerald-600 dark:text-emerald-400">
             {stats.streak} {stats.streak === 1 ? "day" : "days"}
+          </p>
+          <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-500">
+            {stats.streak > 0 ? "Great consistency!" : "Start today"}
           </p>
         </div>
       </div>
 
-      {/* 90-Day Journey Progress Bar */}
-      <div className="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-        <div className="flex items-center justify-between">
+      {/* Main Progress Overview Card */}
+      <div className="rounded-2xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900 space-y-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-              Overall 90-Day Journey
+            <h2 className="text-lg font-bold text-zinc-900 dark:text-zinc-100">
+              Curriculum Progress
             </h2>
-            <p className="text-xs text-zinc-500">
-              {stats.learned} of 4,500 words learned ({stats.overallPercent}%)
+            <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+              Continuous learning without stress or exams.
             </p>
           </div>
           <Link
             href={`/day/${stats.currentDay}`}
-            className="rounded-lg bg-indigo-600 px-4 py-2 text-xs font-medium text-white hover:bg-indigo-700"
+            className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-indigo-600/20 hover:bg-indigo-700 transition-all self-start sm:self-auto"
           >
             Continue Day {stats.currentDay} →
           </Link>
         </div>
-        <div className="mt-4">
-          <ProgressBar value={stats.learned} max={4500} label="Curriculum progress" />
-        </div>
-      </div>
 
-      {/* Vocabulary Breakdown Grid */}
-      <div className="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-          Vocabulary State Distribution
-        </h2>
-        <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-5">
-          <div className="rounded-lg bg-zinc-50 p-3.5 dark:bg-zinc-800/50">
-            <span className="text-xs text-zinc-500">Unlearned</span>
-            <p className="mt-1 text-xl font-bold text-zinc-800 dark:text-zinc-200">{stats.unlearned}</p>
+        <div className="space-y-4 pt-2">
+          {/* Days bar */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between text-xs font-medium">
+              <span className="text-zinc-700 dark:text-zinc-300">Days Finished</span>
+              <span className="tabular-nums text-zinc-500">
+                {stats.daysCompleted} / 90 days ({daysPercent}%)
+              </span>
+            </div>
+            <ProgressBar value={stats.daysCompleted} max={90} label="Days completed" />
           </div>
-          <div className="rounded-lg bg-sky-50 p-3.5 dark:bg-sky-950/40">
-            <span className="text-xs text-sky-700 dark:text-sky-300">Learning</span>
-            <p className="mt-1 text-xl font-bold text-sky-700 dark:text-sky-300">{stats.learning}</p>
-          </div>
-          <div className="rounded-lg bg-amber-50 p-3.5 dark:bg-amber-950/40">
-            <span className="text-xs text-amber-700 dark:text-amber-300">In Review</span>
-            <p className="mt-1 text-xl font-bold text-amber-700 dark:text-amber-300">{stats.inReview}</p>
-          </div>
-          <div className="rounded-lg bg-emerald-50 p-3.5 dark:bg-emerald-950/40">
-            <span className="text-xs text-emerald-700 dark:text-emerald-300">Mastered</span>
-            <p className="mt-1 text-xl font-bold text-emerald-700 dark:text-emerald-300">{stats.mastered}</p>
-          </div>
-          <div className="rounded-lg bg-purple-50 p-3.5 dark:bg-purple-950/40">
-            <span className="text-xs text-purple-700 dark:text-purple-300">Used in Conversation</span>
-            <p className="mt-1 text-xl font-bold text-purple-700 dark:text-purple-300">{stats.usedInConversation}</p>
+
+          {/* Words bar */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between text-xs font-medium">
+              <span className="text-zinc-700 dark:text-zinc-300">Vocabulary Mastered</span>
+              <span className="tabular-nums text-zinc-500">
+                {stats.learned} / 4,500 words ({stats.overallPercent}%)
+              </span>
+            </div>
+            <ProgressBar value={stats.learned} max={4500} label="Vocabulary mastered" />
           </div>
         </div>
-      </div>
 
-      {/* Stage Breakdown */}
-      <div className="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900">
-        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
-          Progression by Stage
-        </h2>
-        <p className="mt-1 text-xs text-zinc-500">
-          The 9 progressive stages of your 90-day learning curriculum.
-        </p>
-
-        <div className="mt-6 space-y-5">
-          {stats.stageProgress.map((stage) => {
-            const percent = Math.round((stage.learned / stage.total) * 100);
-            return (
-              <div key={stage.label} className="space-y-1.5">
-                <div className="flex items-center justify-between text-xs">
-                  <div>
-                    <span className="font-medium text-zinc-900 dark:text-zinc-100">{stage.label}</span>
-                    <span className="ml-2 text-zinc-400">
-                      (Days {stage.from}–{stage.to})
-                    </span>
-                  </div>
-                  <span className="tabular-nums text-zinc-500">
-                    {stage.learned} / {stage.total} words ({percent}%)
-                  </span>
-                </div>
-                <ProgressBar value={stage.learned} max={stage.total} label={stage.label} />
-              </div>
-            );
-          })}
+        {/* Quick Navigation Links */}
+        <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap items-center gap-3">
+          <Link
+            href="/journey"
+            className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700 transition-colors"
+          >
+            Explore 90-Day Journey →
+          </Link>
+          <Link
+            href="/vocabulary"
+            className="rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700 transition-colors"
+          >
+            Browse Vocabulary (50 words) →
+          </Link>
         </div>
       </div>
     </div>
