@@ -30,8 +30,8 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files (allow .env for default sqlite DATABASE_URL)
+.env*.local
 
 # vercel
 .vercel
