@@ -1,0 +1,171 @@
+{
+  "day": 1,
+  "title": "My Daily Routine",
+  "topic": "Daily routine and time",
+  "description": "Talk about what you do every day from morning to night using the present simple.",
+  "stage": "Foundation — Daily Life",
+  "focus": "By the end of today, you can describe your complete daily routine — morning, afternoon, evening and night — in clear present simple sentences.",
+  "grammar": [
+    {
+      "title": "Present Simple",
+      "explanation": "We use the present simple for habits and routines — things we do again and again. With I, you, we and they, the verb stays the same. With he, she and it, we add -s to the verb. We use do and does for questions and negatives.",
+      "structures": [
+        { "pattern": "I / You / We / They + verb", "label": "Positive" },
+        { "pattern": "He / She / It + verb + s", "label": "Positive" },
+        { "pattern": "I / You / We / They do not (don't) + verb", "label": "Negative" },
+        { "pattern": "He / She / It does not (doesn't) + verb", "label": "Negative" },
+        { "pattern": "Do + I / you / we / they + verb ...?", "label": "Question" },
+        { "pattern": "Does + he / she / it + verb ...?", "label": "Question" }
+      ],
+      "examples": [
+        { "sentence": "I wake up at seven every day.", "usesVocabulary": ["wake up", "every day"] },
+        { "sentence": "She usually eats cereal for breakfast.", "usesVocabulary": ["usually", "cereal", "breakfast"] },
+        { "sentence": "He works in a big office and starts at nine.", "usesVocabulary": ["work", "start"] },
+        { "sentence": "We do not (don't) watch television at night.", "usesVocabulary": ["watch", "television", "night"] },
+        { "sentence": "My sister never goes to bed late.", "usesVocabulary": ["never", "go to bed", "late"] },
+        { "sentence": "Do you walk to work every day?", "usesVocabulary": ["walk", "work", "every day"] },
+        { "sentence": "They arrive at eight o'clock and start immediately.", "usesVocabulary": ["arrive", "o'clock", "start"] }
+      ],
+      "commonUsage": [
+        "Habits and routines: I eat breakfast at eight.",
+        "How often: always, usually, sometimes, never — I always sleep eight hours.",
+        "Schedules and fixed times: The train leaves at half past six.",
+        "Facts: Water boils at 100 degrees."
+      ],
+      "commonMistakes": [
+        { "wrong": "I wakes up at seven.", "right": "I wake up at seven.", "note": "With I, you, we and they, the verb has no -s." },
+        { "wrong": "He don't work on Fridays.", "right": "He doesn't work on Fridays.", "note": "With he, she and it, use doesn't, not don't." },
+        { "wrong": "Does she works in a bank?", "right": "Does she work in a bank?", "note": "After does, use the base verb without -s." },
+        { "wrong": "I am wake up early every day.", "right": "I wake up early every day.", "note": "Routines use the present simple, not am/is/are + verb." }
+      ]
+    }
+  ],
+  "vocabulary": [
+    { "headword": "wake up", "pronunciation": "/weɪk ʌp/", "partOfSpeech": "phrasal verb", "definition": "to stop sleeping and open your eyes", "example": "I wake up at seven every morning.", "relatedForms": ["wake (verb)"], "collocations": ["wake up early", "wake up late"], "synonyms": [], "antonyms": ["fall asleep"], "tags": ["morning", "sleep"] },
+    { "headword": "get up", "pronunciation": "/ɡet ʌp/", "partOfSpeech": "phrasal verb", "definition": "to leave your bed after sleeping", "example": "After I wake up, I get up and open the window.", "relatedForms": [], "collocations": ["get up at six", "get up quickly"], "synonyms": [], "antonyms": [], "tags": ["morning", "sleep"] },
+    { "headword": "alarm", "pronunciation": "/əˈlɑːrm/", "partOfSpeech": "noun", "definition": "a clock or phone that makes a sound to wake you", "example": "My alarm rings at six thirty.", "relatedForms": ["alarm clock (noun)"], "collocations": ["set an alarm", "the alarm rings"], "synonyms": ["alarm clock"], "antonyms": [], "tags": ["morning", "time"] },
+    { "headword": "brush", "pronunciation": "/brʌʃ/", "partOfSpeech": "verb", "definition": "to clean your teeth with a toothbrush", "example": "I brush my teeth after breakfast.", "relatedForms": ["toothbrush (noun)"], "collocations": ["brush your teeth"], "synonyms": ["clean"], "antonyms": [], "tags": ["morning", "routine"] },
+    { "headword": "shower", "pronunciation": "/ˈʃaʊər/", "partOfSpeech": "noun / verb", "definition": "water that falls on you to wash your body, or the act of washing this way", "example": "I take a shower before I get dressed.", "relatedForms": [], "collocations": ["take a shower", "have a shower"], "synonyms": [], "antonyms": [], "tags": ["morning", "routine"] },
+    { "headword": "get dressed", "pronunciation": "/ɡet drest/", "partOfSpeech": "phrase", "definition": "to put on your clothes", "example": "I get dressed quickly in the morning.", "relatedForms": ["dress (verb)"], "collocations": ["get dressed quickly", "get dressed for work"], "synonyms": [], "antonyms": ["get undressed"], "tags": ["morning", "routine"] },
+    { "headword": "breakfast", "pronunciation": "/ˈbrekfəst/", "partOfSpeech": "noun", "definition": "the first meal of the day, in the morning", "example": "I eat breakfast with my family at eight.", "relatedForms": ["lunch (noun)", "dinner (noun)"], "collocations": ["eat breakfast", "have breakfast", "make breakfast"], "synonyms": [], "antonyms": [], "tags": ["morning", "food"] },
+    { "headword": "coffee", "pronunciation": "/ˈkɒfi/", "partOfSpeech": "noun", "definition": "a hot dark drink that helps you feel awake", "example": "I drink one cup of coffee every morning.", "relatedForms": [], "collocations": ["a cup of coffee", "drink coffee", "make coffee"], "synonyms": [], "antonyms": [], "tags": ["morning", "food"] },
+    { "headword": "cereal", "pronunciation": "/ˈsɪəriəl/", "partOfSpeech": "noun", "definition": "a breakfast food eaten with cold milk", "example": "She usually eats cereal with milk for breakfast.", "relatedForms": [], "collocations": ["eat cereal", "a bowl of cereal"], "synonyms": [], "antonyms": [], "tags": ["morning", "food"] },
+    { "headword": "pack", "pronunciation": "/pæk/", "partOfSpeech": "verb", "definition": "to put things into a bag or suitcase", "example": "I pack my bag and leave the house at seven.", "relatedForms": ["packed (adjective)"], "collocations": ["pack your bag", "pack a suitcase"], "synonyms": [], "antonyms": ["unpack"], "tags": ["morning", "routine"] },
+    { "headword": "leave", "pronunciation": "/liːv/", "partOfSpeech": "verb", "definition": "to go away from a place", "example": "I leave the house at half past seven.", "relatedForms": [], "collocations": ["leave home", "leave the house", "leave work"], "synonyms": ["go out of"], "antonyms": ["arrive", "stay"], "tags": ["routine", "movement"] },
+    { "headword": "walk", "pronunciation": "/wɔːk/", "partOfSpeech": "verb", "definition": "to move on your feet", "example": "I walk to work every day.", "relatedForms": ["walk (noun)"], "collocations": ["walk to work", "walk home", "go for a walk"], "synonyms": ["go on foot"], "antonyms": [], "tags": ["movement", "routine"] },
+    { "headword": "work", "pronunciation": "/wɜːrk/", "partOfSpeech": "verb / noun", "definition": "to do your job, or the place where you do it", "example": "I work in a small office near my home.", "relatedForms": ["worker (noun)", "workplace (noun)"], "collocations": ["go to work", "start work", "finish work", "at work"], "synonyms": [], "antonyms": ["rest"], "tags": ["day", "job"] },
+    { "headword": "arrive", "pronunciation": "/əˈraɪv/", "partOfSpeech": "verb", "definition": "to get to a place", "example": "I arrive at work at eight o'clock.", "relatedForms": ["arrival (noun)"], "collocations": ["arrive at work", "arrive home", "arrive late"], "synonyms": ["get to", "reach"], "antonyms": ["leave", "depart"], "tags": ["day", "movement"] },
+    { "headword": "start", "pronunciation": "/stɑːrt/", "partOfSpeech": "verb", "definition": "to begin something", "example": "I start work at half past eight.", "relatedForms": [], "collocations": ["start work", "start school", "start a meeting"], "synonyms": ["begin"], "antonyms": ["finish", "stop"], "tags": ["day", "time"] },
+    { "headword": "busy", "pronunciation": "/ˈbɪzi/", "partOfSpeech": "adjective", "definition": "having a lot of things to do", "example": "I am busy all morning, so I eat lunch late.", "relatedForms": ["busier (comparative)", "busiest (superlative)"], "collocations": ["very busy", "busy day", "busy all morning"], "synonyms": [], "antonyms": ["free"], "tags": ["day", "time"] },
+    { "headword": "check", "pronunciation": "/tʃek/", "partOfSpeech": "verb", "definition": "to look at something to see if it is okay", "example": "First, I check my emails and messages.", "relatedForms": [], "collocations": ["check your email", "check the time", "check your phone"], "synonyms": ["look at"], "antonyms": [], "tags": ["day", "routine"] },
+    { "headword": "email", "pronunciation": "/ˈiːmeɪl/", "partOfSpeech": "noun", "definition": "a message you send using the internet", "example": "I check my email before I start work.", "relatedForms": [], "collocations": ["check your email", "send an email", "read an email"], "synonyms": [], "antonyms": [], "tags": ["day", "technology"] },
+    { "headword": "lunch", "pronunciation": "/lʌntʃ/", "partOfSpeech": "noun", "definition": "the meal you eat in the middle of the day", "example": "I eat lunch at one o'clock with my friends.", "relatedForms": ["breakfast (noun)", "dinner (noun)"], "collocations": ["eat lunch", "have lunch", "lunch break"], "synonyms": [], "antonyms": [], "tags": ["day", "food"] },
+    { "headword": "afternoon", "pronunciation": "/ˌæftərˈnuːn/", "partOfSpeech": "noun", "definition": "the time between midday and the evening", "example": "I am very busy in the afternoon.", "relatedForms": ["morning (noun)", "evening (noun)"], "collocations": ["in the afternoon", "this afternoon", "all afternoon"], "synonyms": [], "antonyms": [], "tags": ["day", "time"] },
+    { "headword": "finish", "pronunciation": "/ˈfɪnɪʃ/", "partOfSpeech": "verb", "definition": "to complete something; to come to the end", "example": "I finish work at five and walk home.", "relatedForms": [], "collocations": ["finish work", "finish school", "finish eating"], "synonyms": ["complete", "end"], "antonyms": ["start", "begin"], "tags": ["day", "time"] },
+    { "headword": "tired", "pronunciation": "/ˈtaɪərd/", "partOfSpeech": "adjective", "definition": "feeling that you need rest or sleep", "example": "After work, I am too tired to cook.", "relatedForms": ["tiring (adjective)"], "collocations": ["feel tired", "too tired to", "very tired"], "synonyms": ["sleepy", "worn out"], "antonyms": ["awake", "energetic"], "tags": ["feeling", "health"] },
+    { "headword": "hungry", "pronunciation": "/ˈhʌŋɡri/", "partOfSpeech": "adjective", "definition": "feeling that you want to eat", "example": "I am always hungry at lunchtime.", "relatedForms": ["hunger (noun)"], "collocations": ["feel hungry", "very hungry"], "synonyms": [], "antonyms": ["full"], "tags": ["feeling", "food"] },
+    { "headword": "evening", "pronunciation": "/ˈiːvnɪŋ/", "partOfSpeech": "noun", "definition": "the time between the end of the afternoon and bedtime", "example": "In the evening, I cook dinner and relax.", "relatedForms": ["morning (noun)", "afternoon (noun)"], "collocations": ["in the evening", "every evening", "evening meal"], "synonyms": [], "antonyms": ["morning"], "tags": ["evening", "time"] },
+    { "headword": "dinner", "pronunciation": "/ˈdɪnər/", "partOfSpeech": "noun", "definition": "the main meal of the day, eaten in the evening", "example": "We eat dinner together at eight.", "relatedForms": [], "collocations": ["cook dinner", "eat dinner", "have dinner"], "synonyms": ["evening meal"], "antonyms": [], "tags": ["evening", "food"] },
+    { "headword": "cook", "pronunciation": "/kʊk/", "partOfSpeech": "verb", "definition": "to make food hot and ready to eat", "example": "I usually cook rice and vegetables for dinner.", "relatedForms": ["cooker (noun)", "cooking (noun)"], "collocations": ["cook dinner", "cook a meal"], "synonyms": ["prepare food"], "antonyms": [], "tags": ["evening", "food"] },
+    { "headword": "wash", "pronunciation": "/wɒʃ/", "partOfSpeech": "verb", "definition": "to clean something with water", "example": "I wash the dishes after dinner.", "relatedForms": ["washing (noun)"], "collocations": ["wash the dishes", "wash your hands", "wash your face"], "synonyms": ["clean"], "antonyms": [], "tags": ["evening", "home"] },
+    { "headword": "dishes", "pronunciation": "/ˈdɪʃɪz/", "partOfSpeech": "noun", "definition": "plates, bowls, cups and other things used for food", "example": "There are many dishes in the sink after dinner.", "relatedForms": ["dish (noun)"], "collocations": ["wash the dishes", "do the dishes"], "synonyms": [], "antonyms": [], "tags": ["evening", "home"] },
+    { "headword": "laundry", "pronunciation": "/ˈlɔːndri/", "partOfSpeech": "noun", "definition": "clothes that need washing, or the act of washing them", "example": "I do the laundry twice a week.", "relatedForms": [], "collocations": ["do the laundry", "a laundry basket"], "synonyms": ["washing"], "antonyms": [], "tags": ["evening", "home"] },
+    { "headword": "watch", "pronunciation": "/wɒtʃ/", "partOfSpeech": "verb", "definition": "to look at something for a time, like a program or game", "example": "We watch television after dinner.", "relatedForms": [], "collocations": ["watch television", "watch a movie", "watch a game"], "synonyms": ["look at", "view"], "antonyms": [], "tags": ["evening", "free time"] },
+    { "headword": "television", "pronunciation": "/ˈtelɪvɪʒn/", "partOfSpeech": "noun", "definition": "a device with a screen that shows programs; also the programs themselves", "example": "My favorite program is on television tonight.", "relatedForms": ["TV (short form)"], "collocations": ["watch television", "on television", "turn on the television"], "synonyms": ["TV"], "antonyms": [], "tags": ["evening", "free time"] },
+    { "headword": "relax", "pronunciation": "/rɪˈlæks/", "partOfSpeech": "verb", "definition": "to rest and stop feeling worried", "example": "In the evening, I relax with a book.", "relatedForms": ["relaxing (adjective)", "relaxed (adjective)"], "collocations": ["relax at home", "relax after work"], "synonyms": ["rest", "unwind"], "antonyms": ["work", "worry"], "tags": ["evening", "free time"] },
+    { "headword": "go shopping", "pronunciation": "/ɡəʊ ˈʃɒpɪŋ/", "partOfSpeech": "phrase", "definition": "to go to shops to buy things", "example": "On Fridays, we go shopping for food.", "relatedForms": ["shopping (noun)"], "collocations": ["go shopping for food", "go shopping together"], "synonyms": [], "antonyms": [], "tags": ["free time", "food"] },
+    { "headword": "night", "pronunciation": "/naɪt/", "partOfSpeech": "noun", "definition": "the dark time between evening and morning", "example": "I am always tired on Tuesday nights.", "relatedForms": ["nightly (adjective)"], "collocations": ["at night", "every night", "last night"], "synonyms": [], "antonyms": ["day"], "tags": ["night", "time"] },
+    { "headword": "bedtime", "pronunciation": "/ˈbedtaɪm/", "partOfSpeech": "noun", "definition": "the usual time when you go to bed", "example": "My bedtime is eleven o'clock.", "relatedForms": ["bedtime story (noun)"], "collocations": ["my bedtime", "an early bedtime"], "synonyms": [], "antonyms": [], "tags": ["night", "time"] },
+    { "headword": "go to bed", "pronunciation": "/ɡəʊ tə bed/", "partOfSpeech": "phrase", "definition": "to get into bed to sleep", "example": "I go to bed at eleven and sleep eight hours.", "relatedForms": [], "collocations": ["go to bed early", "go to bed late"], "synonyms": [], "antonyms": ["get up"], "tags": ["night", "sleep"] },
+    { "headword": "sleep", "pronunciation": "/sliːp/", "partOfSpeech": "verb / noun", "definition": "to rest with your eyes closed and your mind not awake", "example": "I usually sleep eight hours every night.", "relatedForms": ["asleep (adjective)", "sleepy (adjective)"], "collocations": ["sleep eight hours", "sleep well", "go to sleep"], "synonyms": ["rest"], "antonyms": ["wake up"], "tags": ["night", "sleep"] },
+    { "headword": "usually", "pronunciation": "/ˈjuːʒuəli/", "partOfSpeech": "adverb", "definition": "most of the time, but not always", "example": "I usually eat cereal for breakfast.", "relatedForms": ["usual (adjective)"], "collocations": ["usually do something"], "synonyms": ["most of the time"], "antonyms": ["rarely"], "tags": ["frequency"] },
+    { "headword": "always", "pronunciation": "/ˈɔːlweɪz/", "partOfSpeech": "adverb", "definition": "every time; all the time", "example": "I always sleep eight hours.", "relatedForms": [], "collocations": ["always do something"], "synonyms": ["every time"], "antonyms": ["never"], "tags": ["frequency"] },
+    { "headword": "sometimes", "pronunciation": "/ˈsʌmtaɪmz/", "partOfSpeech": "adverb", "definition": "on some days or occasions, but not often and not never", "example": "Sometimes I eat lunch with my friends.", "relatedForms": [], "collocations": ["sometimes do something"], "synonyms": ["now and then"], "antonyms": [], "tags": ["frequency"] },
+    { "headword": "never", "pronunciation": "/ˈnevər/", "partOfSpeech": "adverb", "definition": "at no time; not even once", "example": "I never go to bed before midnight.", "relatedForms": [], "collocations": ["never do something"], "synonyms": ["not ever"], "antonyms": ["always"], "tags": ["frequency"] },
+    { "headword": "early", "pronunciation": "/ˈɜːrli/", "partOfSpeech": "adjective / adverb", "definition": "near the beginning of the day or before the usual time", "example": "On Tuesdays, I wake up very early.", "relatedForms": ["earlier (comparative)"], "collocations": ["wake up early", "early morning", "go to bed early"], "synonyms": [], "antonyms": ["late"], "tags": ["time"] },
+    { "headword": "late", "pronunciation": "/leɪt/", "partOfSpeech": "adjective / adverb", "definition": "after the usual time or expected time", "example": "I am never late for work.", "relatedForms": ["later (comparative)"], "collocations": ["be late for", "stay up late", "arrive late"], "synonyms": [], "antonyms": ["early"], "tags": ["time"] },
+    { "headword": "every day", "pronunciation": "/ˈevri deɪ/", "partOfSpeech": "phrase", "definition": "each day, without missing one", "example": "I walk to work every day.", "relatedForms": ["everyday (adjective)"], "collocations": ["every day after work"], "synonyms": ["daily"], "antonyms": [], "tags": ["frequency", "time"] },
+    { "headword": "o'clock", "pronunciation": "/əˈklɒk/", "partOfSpeech": "adverb", "definition": "used after a number to say the exact hour", "example": "I arrive at work at eight o'clock.", "relatedForms": [], "collocations": ["at eight o'clock", "at nine o'clock"], "synonyms": [], "antonyms": [], "tags": ["time"] },
+    { "headword": "half past", "pronunciation": "/hæf pæst/", "partOfSpeech": "phrase", "definition": "thirty minutes after an hour", "example": "I start work at half past eight.", "relatedForms": [], "collocations": ["at half past six", "at half past eight"], "synonyms": ["eight thirty"], "antonyms": [], "tags": ["time"] },
+    { "headword": "daily", "pronunciation": "/ˈdeɪli/", "partOfSpeech": "adjective / adverb", "definition": "happening every day", "example": "My daily routine starts at six thirty.", "relatedForms": [], "collocations": ["daily routine", "daily habit"], "synonyms": ["every day"], "antonyms": [], "tags": ["frequency", "time"] },
+    { "headword": "routine", "pronunciation": "/ruːˈtiːn/", "partOfSpeech": "noun", "definition": "the things you always do in the same order", "example": "My morning routine is always the same.", "relatedForms": ["routinely (adverb)"], "collocations": ["morning routine", "daily routine", "the same routine"], "synonyms": ["habit"], "antonyms": [], "tags": ["frequency", "core"] },
+    { "headword": "habit", "pronunciation": "/ˈhæbɪt/", "partOfSpeech": "noun", "definition": "something you do often, usually without thinking", "example": "I have a good habit: I always sleep eight hours.", "relatedForms": ["habitual (adjective)"], "collocations": ["a good habit", "a bad habit", "daily habits"], "synonyms": ["routine"], "antonyms": [], "tags": ["frequency", "core"] },
+    { "headword": "free", "pronunciation": "/friː/", "partOfSpeech": "adjective", "definition": "not busy; having time to do what you want", "example": "We are free after nine o'clock.", "relatedForms": ["freely (adverb)"], "collocations": ["free time", "free tonight", "free on Saturday"], "synonyms": [], "antonyms": ["busy"], "tags": ["free time", "core"] }
+  ],
+  "conversations": [
+    {
+      "title": "Morning Routine",
+      "setting": "Two friends, Maya and Sam, talk on the phone in the morning.",
+      "lines": [
+        { "speaker": "Maya", "text": "Hi Sam! It's eight o'clock. Are you awake?" },
+        { "speaker": "Sam", "text": "Almost. My alarm rings at seven, but I usually wake up at seven fifteen." },
+        { "speaker": "Maya", "text": "That's late! I always wake up at six. Then I get up, I brush my teeth, and I take a shower." },
+        { "speaker": "Sam", "text": "I know, I know. I'm never early. After my shower, I get dressed and make breakfast." },
+        { "speaker": "Maya", "text": "What do you eat in the morning?" },
+        { "speaker": "Sam", "text": "Usually cereal with milk and a big cup of coffee." },
+        { "speaker": "Maya", "text": "Nice. I only drink coffee. Then I pack my bag and leave the house at seven." },
+        { "speaker": "Sam", "text": "Do you walk to work every day?" },
+        { "speaker": "Maya", "text": "Yes, I walk every day. It's twenty minutes, and I arrive at eight." },
+        { "speaker": "Sam", "text": "You start work at eight? Wow. OK, I need to hurry. Talk later!" },
+        { "speaker": "Maya", "text": "OK! Don't be late again." }
+      ],
+      "vocabularyUsed": ["alarm", "wake up", "get up", "brush", "shower", "get dressed", "breakfast", "cereal", "coffee", "pack", "leave", "walk", "work", "arrive", "start", "usually", "always", "never", "early", "o'clock", "every day", "late"]
+    },
+    {
+      "title": "A Busy Day at Work",
+      "setting": "Two colleagues, Lina and Omar, eat lunch together at work.",
+      "lines": [
+        { "speaker": "Lina", "text": "I'm so tired. I checked forty emails before ten o'clock." },
+        { "speaker": "Omar", "text": "Me too. My day starts at half past eight, and this morning I arrived late." },
+        { "speaker": "Lina", "text": "What time do you usually arrive at work?" },
+        { "speaker": "Omar", "text": "At half past eight. But I never finish before six." },
+        { "speaker": "Lina", "text": "That's a long day. Are you busy this afternoon?" },
+        { "speaker": "Omar", "text": "Very busy. I have a lot of work, and I check my email every hour." },
+        { "speaker": "Lina", "text": "Let's eat lunch quickly then. I'm really hungry." },
+        { "speaker": "Omar", "text": "Good idea. I always eat lunch at one o'clock." },
+        { "speaker": "Lina", "text": "And after lunch? More work?" },
+        { "speaker": "Omar", "text": "Work, work, work until six. Then I walk home, cook dinner and relax." },
+        { "speaker": "Lina", "text": "You cook every night? I'm too tired to cook in the evening." }
+      ],
+      "vocabularyUsed": ["tired", "check", "email", "o'clock", "start", "arrive", "late", "usually", "half past", "never", "finish", "busy", "afternoon", "lunch", "hungry", "work", "cook", "evening", "walk", "dinner", "relax"]
+    },
+    {
+      "title": "Evening Plans",
+      "setting": "Two roommates, Nora and Adam, talk in the kitchen in the evening.",
+      "lines": [
+        { "speaker": "Nora", "text": "What do you usually do in the evening?" },
+        { "speaker": "Adam", "text": "Nothing special. I watch television and relax on the sofa." },
+        { "speaker": "Nora", "text": "I cook dinner at seven. Do you want to eat with me?" },
+        { "speaker": "Adam", "text": "Sure. I can wash the dishes after dinner." },
+        { "speaker": "Nora", "text": "Great. And do we need food? I go shopping on Fridays, but the fridge is empty." },
+        { "speaker": "Adam", "text": "It's full. I did the laundry and cleaned today too." },
+        { "speaker": "Nora", "text": "Nice. What time is your bedtime? You look tired." },
+        { "speaker": "Adam", "text": "I never go to bed before midnight. But I have a good habit: I sleep eight hours." },
+        { "speaker": "Nora", "text": "I have a different habit. I always sleep late, but I am free in the morning!" },
+        { "speaker": "Adam", "text": "Every day is different in this house. OK, dinner first, television after." },
+        { "speaker": "Nora", "text": "Deal. Dinner at half past seven, and a movie at nine." }
+      ],
+      "vocabularyUsed": ["usually", "evening", "watch", "television", "relax", "cook", "dinner", "wash", "dishes", "go shopping", "laundry", "bedtime", "tired", "never", "go to bed", "habit", "sleep", "late", "free", "half past"]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "My Typical Day",
+      "kind": "daily-life description",
+      "text": "I wake up at six thirty every day. First, I brush my teeth and take a quick shower. Then I get dressed and make breakfast. I usually eat cereal with milk and drink one cup of coffee. At seven thirty, I pack my bag and leave the house. I walk to work and arrive at eight. I start work at half past eight and check my emails. I am busy all morning. I eat lunch at one o'clock, sometimes with my friends. I finish work at five and walk home. In the evening, I cook dinner and relax. My bedtime is eleven o'clock, so I always sleep eight hours.",
+      "vocabularyUsed": ["wake up", "brush", "shower", "get dressed", "breakfast", "cereal", "coffee", "pack", "leave", "walk", "work", "arrive", "start", "check", "busy", "lunch", "finish", "evening", "cook", "dinner", "relax", "bedtime", "o'clock", "always", "sleep", "every day", "usually", "sometimes", "half past"]
+    },
+    {
+      "title": "A Busy Tuesday",
+      "kind": "daily-life description",
+      "text": "On Tuesdays, my daily routine is different. My alarm rings at five thirty, so I wake up very early. I get up, drink coffee, and leave home at six fifteen. I arrive at work before seven and start immediately. The office is busy all day, and I check a hundred emails. I eat lunch at my desk and finish at four. After work, I go shopping because there is no food at home. In the evening, I cook a big dinner, wash the dishes, and watch television for one hour. I am always tired on Tuesday nights, so I go to bed early and sleep well.",
+      "vocabularyUsed": ["daily", "routine", "alarm", "wake up", "early", "get up", "coffee", "leave", "arrive", "work", "start", "busy", "check", "lunch", "finish", "go shopping", "evening", "cook", "dinner", "wash", "dishes", "watch", "television", "tired", "night", "go to bed", "sleep", "always"]
+    },
+    {
+      "title": "Evenings at Home",
+      "kind": "personal story",
+      "text": "In the evening, our home is calm. My sister and I cook dinner together. She usually cooks rice and chicken, and I wash the dishes after dinner. Then we relax. She watches her favorite program on television, and I read or listen to music. Twice a week, I do the laundry in the evening, and on Fridays we go shopping for food. We are free after nine o'clock, and we sometimes talk about our day. At half past ten, my sister goes to bed, but I often sleep late. I am never tired at bedtime — I am a night person.",
+      "vocabularyUsed": ["evening", "cook", "dinner", "wash", "dishes", "relax", "watch", "television", "laundry", "go shopping", "free", "o'clock", "sometimes", "half past", "go to bed", "sleep", "late", "tired", "bedtime", "night", "never", "usually"]
+    }
+  ]
+}

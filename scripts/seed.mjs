@@ -2,7 +2,7 @@
 // Ingests content/day-XX.json into SQLite via Prisma (idempotent, deterministic IDs).
 // Run validation first: npm run content:validate
 // Usage: node scripts/seed.mjs [--hard]   (--hard wipes content + user data, dev only)
-import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { PrismaClient } from "@prisma/client";

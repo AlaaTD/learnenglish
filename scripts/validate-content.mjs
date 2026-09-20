@@ -47,15 +47,24 @@ const planByDay = new Map(plan.days.map((d) => [d.day, d]));
 // ---------- discover day files ----------
 const files = readdirSync(contentDir).filter((f) => /^day-\d{2}\.json$/.test(f)).sort();
 const dayData = new Map();
-const allHeadwords = new Map(); // lowercase headword -> day number (first occurrence)
+// allHeadwords is loaded from EVERY day file present (even outside the --days filter),
+// so an authoring agent working on days N..M still catches duplicates against other days.
+const allHeadwords = new Map(); // lowercase headword -> day number (first/lowest occurrence)
 
 for (const f of files) {
   const day = parseInt(f.match(/^day-(\d{2})\.json$/)[1], 10);
-  if (dayFilter && (day < dayFilter[0] || day > dayFilter[1])) continue;
   try {
-    dayData.set(day, JSON.parse(readFileSync(join(contentDir, f), "utf8")));
+    const data = JSON.parse(readFileSync(join(contentDir, f), "utf8"));
+    for (const v of Array.isArray(data.vocabulary) ? data.vocabulary : []) {
+      if (v && typeof v.headword === "string") {
+        const key = normalizeHeadword(v.headword);
+        if (!allHeadwords.has(key)) allHeadwords.set(key, day);
+      }
+    }
+    if (dayFilter && (day < dayFilter[0] || day > dayFilter[1])) continue;
+    dayData.set(day, data);
   } catch (e) {
-    err(day, "json", `Cannot parse JSON: ${e.message}`);
+    if (!dayFilter || (day >= dayFilter[0] && day <= dayFilter[1])) err(day, "json", `Cannot parse JSON: ${e.message}`);
   }
 }
 
@@ -89,8 +98,8 @@ for (const [day, data] of dayData) {
     const key = normalizeHeadword(v.headword);
     if (seen.has(key)) err(day, "vocab-duplicate", `Duplicate headword within day: "${v.headword}"`);
     seen.set(key, true);
-    if (allHeadwords.has(key)) err(day, "vocab-duplicate", `Headword "${v.headword}" already introduced on Day ${allHeadwords.get(key)} (duplicates are not allowed across days)`);
-    else allHeadwords.set(key, day);
+    const owner = allHeadwords.get(key);
+    if (owner !== undefined && owner !== day) err(day, "vocab-duplicate", `Headword "${v.headword}" is already introduced on Day ${owner}. The earliest day owns the word — replace it with a different topic-appropriate word.`);
     for (const field of ["pronunciation", "partOfSpeech", "definition", "example"]) {
       if (!isStr(v[field])) err(day, "vocab-fields", `"${v.headword}" missing field "${field}"`);
     }
@@ -103,6 +112,14 @@ for (const [day, data] of dayData) {
 
   // ----- grammar -----
   const grammar = Array.isArray(data.grammar) ? data.grammar : [];
+  if (grammar.length < 1) err(day, "grammar-count", "Day needs at least 1 grammar lesson");
+  if (p && Array.isArray(p.grammar)) {
+    if (grammar.length !== p.grammar.length) err(day, "plan", `Day has ${grammar.length} grammar lesson(s), plan specifies ${p.grammar.length}`);
+    grammar.forEach((g, gi) => {
+      const t = g?.title?.trim();
+      if (p.grammar[gi] && t !== p.grammar[gi]) err(day, "plan", `Grammar lesson #${gi + 1} title "${t}" does not match plan "${p.grammar[gi]}"`);
+    });
+  }
   if (grammar.length < 1) err(day, "grammar-count", "Day needs at least 1 grammar lesson");
   grammar.forEach((g, gi) => {
     if (!g || typeof g !== "object") { err(day, "grammar-shape", `Grammar lesson #${gi + 1} is not an object`); return; }
