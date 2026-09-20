@@ -59,8 +59,8 @@ export default async function JourneyPage() {
         </div>
       </header>
 
-      <div className="overflow-hidden rounded-2xl border border-zinc-200/80 bg-white shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
-        <table className="w-full text-left text-sm">
+      <div className="overflow-x-auto rounded-2xl border border-zinc-200/80 bg-white shadow-xs dark:border-zinc-800 dark:bg-zinc-900 scrollbar-thin">
+        <table className="w-full min-w-[560px] text-left text-sm">
           <thead className="border-b border-zinc-100 bg-zinc-50/70 text-xs font-bold uppercase tracking-wider text-zinc-500 dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-400">
             <tr>
               <th scope="col" className="px-5 py-3.5">Day</th>

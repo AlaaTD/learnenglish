@@ -85,8 +85,6 @@ for (const [day, data] of dayData) {
     if (data.title && data.title.trim() !== p.title) err(day, "plan", `Title "${data.title}" does not match plan title "${p.title}"`);
     if (data.topic && data.topic.trim() !== p.topic) err(day, "plan", `Topic "${data.topic}" does not match plan topic "${p.topic}"`);
   }
-  const raw = JSON.stringify(data);
-  if (ARABIC.test(raw)) err(day, "english-only", "Arabic characters found in day content");
 
   // ----- vocabulary -----
   const vocab = Array.isArray(data.vocabulary) ? data.vocabulary : [];

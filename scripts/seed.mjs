@@ -92,6 +92,8 @@ for (const data of days) {
       partOfSpeech: v.partOfSpeech ?? null,
       definition: v.definition,
       example: v.example,
+      translation: v.translation ?? null,
+      exampleArabic: v.exampleArabic ?? null,
       verbForms: v.verbForms ? JSON.stringify(v.verbForms) : null,
       relatedForms: j(v.relatedForms),
       collocations: j(v.collocations),
@@ -112,7 +114,8 @@ for (const data of days) {
     gOrder += 1;
     const id = `g_d${day}_${gOrder}`;
     const payload = {
-      dayNumber: day, order: gOrder, title: g.title, explanation: g.explanation,
+      dayNumber: day, order: gOrder, title: g.title, titleArabic: g.titleArabic ?? null,
+      explanation: g.explanation, explanationArabic: g.explanationArabic ?? null,
       structures: j(g.structures), examples: j(g.examples),
       commonUsage: j(g.commonUsage), commonMistakes: j(g.commonMistakes),
     };
@@ -138,7 +141,15 @@ for (const data of days) {
     cOrder += 1;
     const id = `c_d${day}_${cOrder}`;
     const text = c.lines.map((l) => l.text).join(" ");
-    const payload = { dayNumber: day, order: cOrder, title: c.title, setting: c.setting, lines: j(c.lines) };
+    const payload = {
+      dayNumber: day,
+      order: cOrder,
+      title: c.title,
+      titleArabic: c.titleArabic ?? null,
+      setting: c.setting,
+      settingArabic: c.settingArabic ?? null,
+      lines: j(c.lines),
+    };
     const conv = await prisma.conversation.upsert({ where: { id }, update: payload, create: { id, ...payload } });
     convCount++;
 
@@ -161,7 +172,15 @@ for (const data of days) {
   for (const pa of data.paragraphs) {
     pOrder += 1;
     const id = `p_d${day}_${pOrder}`;
-    const payload = { dayNumber: day, order: pOrder, title: pa.title, kind: pa.kind ?? "reading", text: pa.text };
+    const payload = {
+      dayNumber: day,
+      order: pOrder,
+      title: pa.title,
+      titleArabic: pa.titleArabic ?? null,
+      kind: pa.kind ?? "reading",
+      text: pa.text,
+      translation: pa.translation ?? null,
+    };
     const para = await prisma.paragraph.upsert({ where: { id }, update: payload, create: { id, ...payload } });
     paraCount++;
 

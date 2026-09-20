@@ -8,7 +8,9 @@
   "grammar": [
     {
       "title": "Present Simple",
+      "titleArabic": "المضارع البسيط",
       "explanation": "We use the present simple for habits and routines — things we do again and again. With I, you, we and they, the verb stays the same. With he, she and it, we add -s to the verb. We use do and does for questions and negatives.",
+      "explanationArabic": "نستخدم زمن المضارع البسيط للتعبير عن العادات والروتين اليومي — أي الأشياء التي تتكرر بانتظام. مع الضمائر (I, you, we, they)، يظل الفعل في صيغته الأساسية (المصدر). ومع (he, she, it)، نضيف حرف -s للفعل. ونستخدم do و does في تكوين الأسئلة والنفي.",
       "structures": [
         {
           "pattern": "I / You / We / They + verb",
@@ -38,6 +40,7 @@
       "examples": [
         {
           "sentence": "I wake up at seven every day.",
+          "translation": "أستيقظ في الساعة السابعة كل يوم.",
           "usesVocabulary": [
             "wake up",
             "every day"
@@ -45,6 +48,7 @@
         },
         {
           "sentence": "She usually eats cereal for breakfast.",
+          "translation": "هي تتناول عادةً رقائق الحبوب في وجبة الإفطار.",
           "usesVocabulary": [
             "usually",
             "cereal",
@@ -53,6 +57,7 @@
         },
         {
           "sentence": "He works in a big office and starts at nine.",
+          "translation": "هو يعمل في مكتب كبير ويبدأ في الساعة التاسعة.",
           "usesVocabulary": [
             "work",
             "start"
@@ -60,6 +65,7 @@
         },
         {
           "sentence": "We do not (don't) watch television at night.",
+          "translation": "نحن لا نشاهد التلفاز في الليل.",
           "usesVocabulary": [
             "watch",
             "television",
@@ -68,6 +74,7 @@
         },
         {
           "sentence": "My sister never goes to bed late.",
+          "translation": "أختي لا تذهب إلى النوم متأخرة أبداً.",
           "usesVocabulary": [
             "never",
             "go to bed",
@@ -76,6 +83,7 @@
         },
         {
           "sentence": "Do you walk to work every day?",
+          "translation": "هل تمشي إلى العمل كل يوم؟",
           "usesVocabulary": [
             "walk",
             "work",
@@ -84,6 +92,7 @@
         },
         {
           "sentence": "They arrive at eight o'clock and start immediately.",
+          "translation": "هم يصلون في تمام الساعة الثامنة ويبدأون فوراً.",
           "usesVocabulary": [
             "arrive",
             "o'clock",
@@ -147,7 +156,9 @@
         "v1": "wake up",
         "v2": "woke up",
         "v3": "woken up"
-      }
+      },
+      "translation": "يستيقظ",
+      "exampleArabic": "أستيقظ في الساعة السابعة كل صباح."
     },
     {
       "headword": "get up",
@@ -170,7 +181,9 @@
         "v1": "get up",
         "v2": "got up",
         "v3": "got / gotten up"
-      }
+      },
+      "translation": "ينهض من السرير",
+      "exampleArabic": "بعد أن أستيقظ، أنهض من السرير وأفتح النافذة."
     },
     {
       "headword": "alarm",
@@ -192,7 +205,9 @@
       "tags": [
         "morning",
         "time"
-      ]
+      ],
+      "translation": "منبّه",
+      "exampleArabic": "يرنّ منبّهي في الساعة السادسة والنصف."
     },
     {
       "headword": "brush",
@@ -218,7 +233,9 @@
         "v1": "brush",
         "v2": "brushed",
         "v3": "brushed"
-      }
+      },
+      "translation": "يفرّش (يغسل بالفرشاة)",
+      "exampleArabic": "أفرّش أسناني بعد الإفطار."
     },
     {
       "headword": "shower",
@@ -241,7 +258,9 @@
         "v1": "shower",
         "v2": "showered",
         "v3": "showered"
-      }
+      },
+      "translation": "يستحمّ / دُش",
+      "exampleArabic": "آخذ دُشاً قبل أن أرتدي ملابسي."
     },
     {
       "headword": "get dressed",
@@ -268,7 +287,9 @@
         "v1": "get dressed",
         "v2": "got dressed",
         "v3": "got dressed"
-      }
+      },
+      "translation": "يرتدي ملابسه",
+      "exampleArabic": "أرتدي ملابسي بسرعة في الصباح."
     },
     {
       "headword": "breakfast",
@@ -290,7 +311,9 @@
       "tags": [
         "morning",
         "food"
-      ]
+      ],
+      "translation": "وجبة الإفطار",
+      "exampleArabic": "أتناول الإفطار مع عائلتي في الساعة الثامنة."
     },
     {
       "headword": "coffee",
@@ -309,7 +332,9 @@
       "tags": [
         "morning",
         "food"
-      ]
+      ],
+      "translation": "قهوة",
+      "exampleArabic": "أشرب فنجاناً واحداً من القهوة كل صباح."
     },
     {
       "headword": "cereal",
@@ -327,7 +352,9 @@
       "tags": [
         "morning",
         "food"
-      ]
+      ],
+      "translation": "رقائق الحبوب (الإفطار)",
+      "exampleArabic": "هي عادةً تتناول الحبوب مع الحليب في الإفطار."
     },
     {
       "headword": "pack",
@@ -354,7 +381,9 @@
         "v1": "pack",
         "v2": "packed",
         "v3": "packed"
-      }
+      },
+      "translation": "يحزم / يجهّز (الحقيبة)",
+      "exampleArabic": "أحزم حقيبتي وأغادر المنزل في السابعة."
     },
     {
       "headword": "leave",
@@ -383,7 +412,9 @@
         "v1": "leave",
         "v2": "left",
         "v3": "left"
-      }
+      },
+      "translation": "يغادر / يرحل",
+      "exampleArabic": "أغادر المنزل في السابعة والنصف."
     },
     {
       "headword": "walk",
@@ -411,7 +442,9 @@
         "v1": "walk",
         "v2": "walked",
         "v3": "walked"
-      }
+      },
+      "translation": "يمشي / يسير",
+      "exampleArabic": "أمشي إلى العمل كل يوم."
     },
     {
       "headword": "work",
@@ -441,7 +474,9 @@
         "v1": "work",
         "v2": "worked",
         "v3": "worked"
-      }
+      },
+      "translation": "يعمل / العمل",
+      "exampleArabic": "أعمل في مكتب صغير بالقرب من بيتي."
     },
     {
       "headword": "arrive",
@@ -473,7 +508,9 @@
         "v1": "arrive",
         "v2": "arrived",
         "v3": "arrived"
-      }
+      },
+      "translation": "يصل",
+      "exampleArabic": "أصل إلى العمل في الساعة الثامنة تماماً."
     },
     {
       "headword": "start",
@@ -502,7 +539,9 @@
         "v1": "start",
         "v2": "started",
         "v3": "started"
-      }
+      },
+      "translation": "يبدأ",
+      "exampleArabic": "أبدأ العمل في الثامنة والنصف."
     },
     {
       "headword": "busy",
@@ -526,7 +565,9 @@
       "tags": [
         "day",
         "time"
-      ]
+      ],
+      "translation": "مشغول",
+      "exampleArabic": "أنا مشغول طوال الصباح، لذا أتناول الغداء متأخراً."
     },
     {
       "headword": "check",
@@ -552,7 +593,9 @@
         "v1": "check",
         "v2": "checked",
         "v3": "checked"
-      }
+      },
+      "translation": "يفحص / يتفقّد",
+      "exampleArabic": "أولاً، أتفقّد رسائل البريد الإلكتروني والرسائل."
     },
     {
       "headword": "email",
@@ -571,7 +614,9 @@
       "tags": [
         "day",
         "technology"
-      ]
+      ],
+      "translation": "بريد إلكتروني",
+      "exampleArabic": "أتفقد بريدي الإلكتروني قبل أن أبدأ العمل."
     },
     {
       "headword": "lunch",
@@ -593,7 +638,9 @@
       "tags": [
         "day",
         "food"
-      ]
+      ],
+      "translation": "وجبة الغداء",
+      "exampleArabic": "أتناول الغداء في الواحدة ظهراً مع أصدقائي."
     },
     {
       "headword": "afternoon",
@@ -615,7 +662,9 @@
       "tags": [
         "day",
         "time"
-      ]
+      ],
+      "translation": "فترة بعد الظهر",
+      "exampleArabic": "أكون مشغولاً جداً في فترة بعد الظهر."
     },
     {
       "headword": "finish",
@@ -645,7 +694,9 @@
         "v1": "finish",
         "v2": "finished",
         "v3": "finished"
-      }
+      },
+      "translation": "ينهي / ينتهي",
+      "exampleArabic": "أنهي عملي في الخامسة وأمشي إلى المنزل."
     },
     {
       "headword": "tired",
@@ -672,7 +723,9 @@
       "tags": [
         "feeling",
         "health"
-      ]
+      ],
+      "translation": "متعب / مرهق",
+      "exampleArabic": "بعد العمل، أكون متعباً جداً لدرجة لا تسمح لي بالطبخ."
     },
     {
       "headword": "hungry",
@@ -694,7 +747,9 @@
       "tags": [
         "feeling",
         "food"
-      ]
+      ],
+      "translation": "جائع",
+      "exampleArabic": "أكون جائعاً دائماً في وقت الغداء."
     },
     {
       "headword": "evening",
@@ -718,7 +773,9 @@
       "tags": [
         "evening",
         "time"
-      ]
+      ],
+      "translation": "المساء",
+      "exampleArabic": "في المساء، أطبخ العشاء وأسترخي."
     },
     {
       "headword": "dinner",
@@ -739,7 +796,9 @@
       "tags": [
         "evening",
         "food"
-      ]
+      ],
+      "translation": "وجبة العشاء",
+      "exampleArabic": "نتناول العشاء معاً في الساعة الثامنة."
     },
     {
       "headword": "cook",
@@ -767,7 +826,9 @@
         "v1": "cook",
         "v2": "cooked",
         "v3": "cooked"
-      }
+      },
+      "translation": "يطبخ / يطهو",
+      "exampleArabic": "أطبخ عادةً الأرز والخضروات للعشاء."
     },
     {
       "headword": "wash",
@@ -795,7 +856,9 @@
         "v1": "wash",
         "v2": "washed",
         "v3": "washed"
-      }
+      },
+      "translation": "يغسل",
+      "exampleArabic": "أغسل الأطباق بعد العشاء."
     },
     {
       "headword": "dishes",
@@ -815,7 +878,9 @@
       "tags": [
         "evening",
         "home"
-      ]
+      ],
+      "translation": "أطباق / صحون",
+      "exampleArabic": "توجد أطباق كثيرة في الحوض بعد العشاء."
     },
     {
       "headword": "laundry",
@@ -835,7 +900,9 @@
       "tags": [
         "evening",
         "home"
-      ]
+      ],
+      "translation": "غسيل الملابس",
+      "exampleArabic": "أقوم بغسيل الملابس مرتين في الأسبوع."
     },
     {
       "headword": "watch",
@@ -862,7 +929,9 @@
         "v1": "watch",
         "v2": "watched",
         "v3": "watched"
-      }
+      },
+      "translation": "يشاهد",
+      "exampleArabic": "نشاهد التلفاز بعد العشاء."
     },
     {
       "headword": "television",
@@ -885,7 +954,9 @@
       "tags": [
         "evening",
         "free time"
-      ]
+      ],
+      "translation": "تلفاز",
+      "exampleArabic": "برنامجي المفضل يُعرض على التلفاز الليلة."
     },
     {
       "headword": "relax",
@@ -917,7 +988,9 @@
         "v1": "relax",
         "v2": "relaxed",
         "v3": "relaxed"
-      }
+      },
+      "translation": "يسترخي / يستريح",
+      "exampleArabic": "في المساء، أسترخي مع قراءة كتاب."
     },
     {
       "headword": "go shopping",
@@ -942,7 +1015,9 @@
         "v1": "go shopping",
         "v2": "went shopping",
         "v3": "gone shopping"
-      }
+      },
+      "translation": "يذهب للتسوق",
+      "exampleArabic": "في أيام الجمعة، نذهب للتسوق لشراء الطعام."
     },
     {
       "headword": "night",
@@ -965,7 +1040,9 @@
       "tags": [
         "night",
         "time"
-      ]
+      ],
+      "translation": "الليل",
+      "exampleArabic": "أشعر دائماً بالتعب في ليالي الثلاثاء."
     },
     {
       "headword": "bedtime",
@@ -985,7 +1062,9 @@
       "tags": [
         "night",
         "time"
-      ]
+      ],
+      "translation": "وقت النوم",
+      "exampleArabic": "موعد نومي هو الساعة الحادية عشرة."
     },
     {
       "headword": "go to bed",
@@ -1010,7 +1089,9 @@
         "v1": "go to bed",
         "v2": "went to bed",
         "v3": "gone to bed"
-      }
+      },
+      "translation": "يذهب إلى الفراش (للنوم)",
+      "exampleArabic": "أذهب إلى الفراش في الحادية عشرة وأنام ثماني ساعات."
     },
     {
       "headword": "sleep",
@@ -1041,7 +1122,9 @@
         "v1": "sleep",
         "v2": "slept",
         "v3": "slept"
-      }
+      },
+      "translation": "ينام / نوم",
+      "exampleArabic": "أنام عادةً ثماني ساعات كل ليلة."
     },
     {
       "headword": "usually",
@@ -1063,7 +1146,9 @@
       ],
       "tags": [
         "frequency"
-      ]
+      ],
+      "translation": "عادةً",
+      "exampleArabic": "أتناول عادةً الحبوب في الإفطار."
     },
     {
       "headword": "always",
@@ -1083,7 +1168,9 @@
       ],
       "tags": [
         "frequency"
-      ]
+      ],
+      "translation": "دائماً",
+      "exampleArabic": "أنام دائماً ثماني ساعات."
     },
     {
       "headword": "sometimes",
@@ -1101,7 +1188,9 @@
       "antonyms": [],
       "tags": [
         "frequency"
-      ]
+      ],
+      "translation": "أحياناً",
+      "exampleArabic": "أحياناً أتناول الغداء مع أصدقائي."
     },
     {
       "headword": "never",
@@ -1121,7 +1210,9 @@
       ],
       "tags": [
         "frequency"
-      ]
+      ],
+      "translation": "أبداً / إطلاقاً",
+      "exampleArabic": "لا أذهب إلى الفراش أبداً قبل منتصف الليل."
     },
     {
       "headword": "early",
@@ -1143,7 +1234,9 @@
       ],
       "tags": [
         "time"
-      ]
+      ],
+      "translation": "مبكراً",
+      "exampleArabic": "في أيام الثلاثاء، أستيقظ مبكراً جداً."
     },
     {
       "headword": "late",
@@ -1165,7 +1258,9 @@
       ],
       "tags": [
         "time"
-      ]
+      ],
+      "translation": "متأخراً",
+      "exampleArabic": "أنا لا أتأخر أبداً عن العمل."
     },
     {
       "headword": "every day",
@@ -1186,7 +1281,9 @@
       "tags": [
         "frequency",
         "time"
-      ]
+      ],
+      "translation": "كل يوم",
+      "exampleArabic": "أمشي إلى العمل كل يوم."
     },
     {
       "headword": "o'clock",
@@ -1203,7 +1300,9 @@
       "antonyms": [],
       "tags": [
         "time"
-      ]
+      ],
+      "translation": "تمام الساعة",
+      "exampleArabic": "أصل إلى العمل في الساعة الثامنة تماماً."
     },
     {
       "headword": "half past",
@@ -1222,7 +1321,9 @@
       "antonyms": [],
       "tags": [
         "time"
-      ]
+      ],
+      "translation": "والنصف",
+      "exampleArabic": "أبدأ العمل في الساعة الثامنة والنصف."
     },
     {
       "headword": "daily",
@@ -1242,7 +1343,9 @@
       "tags": [
         "frequency",
         "time"
-      ]
+      ],
+      "translation": "يومي / يومياً",
+      "exampleArabic": "يبدأ روتيني اليومي في الساعة السادسة والنصف."
     },
     {
       "headword": "routine",
@@ -1265,7 +1368,9 @@
       "tags": [
         "frequency",
         "core"
-      ]
+      ],
+      "translation": "روتين / نظام يومي",
+      "exampleArabic": "روتيني الصباحي هو نفسه دائماً."
     },
     {
       "headword": "habit",
@@ -1288,7 +1393,9 @@
       "tags": [
         "frequency",
         "core"
-      ]
+      ],
+      "translation": "عادة",
+      "exampleArabic": "لدي عادة جيدة: أنا دائماً أنام ثماني ساعات."
     },
     {
       "headword": "free",
@@ -1311,57 +1418,72 @@
       "tags": [
         "free time",
         "core"
-      ]
+      ],
+      "translation": "متفرغ / حر",
+      "exampleArabic": "نحن متفرغون بعد الساعة التاسعة."
     }
   ],
   "conversations": [
     {
       "title": "Morning Routine",
+      "titleArabic": "روتين الصباح",
       "setting": "Two friends, Maya and Sam, talk on the phone in the morning.",
+      "settingArabic": "صديقان، مايا وسام، يتحدثان عبر الهاتف في الصباح.",
       "lines": [
         {
           "speaker": "Maya",
-          "text": "Hi Sam! It's eight o'clock. Are you awake?"
+          "text": "Hi Sam! It's eight o'clock. Are you awake?",
+          "translation": "مرحباً سام! الساعة الآن الثامنة تماماً. هل أنت مستيقظ؟"
         },
         {
           "speaker": "Sam",
-          "text": "Almost. My alarm rings at seven, but I usually wake up at seven fifteen."
+          "text": "Almost. My alarm rings at seven, but I usually wake up at seven fifteen.",
+          "translation": "تقريباً. يرنّ منبهي في السابعة، لكني أستيقظ عادةً في السابعة والربع."
         },
         {
           "speaker": "Maya",
-          "text": "That's late! I always wake up at six. Then I get up, I brush my teeth, and I take a shower."
+          "text": "That's late! I always wake up at six. Then I get up, I brush my teeth, and I take a shower.",
+          "translation": "هذا متأخر! أنا أستيقظ دائماً في السادسة. ثم أنهض من السرير، وأفرّش أسناني، وآخذ حماماً."
         },
         {
           "speaker": "Sam",
-          "text": "I know, I know. I'm never early. After my shower, I get dressed and make breakfast."
+          "text": "I know, I know. I'm never early. After my shower, I get dressed and make breakfast.",
+          "translation": "أعلم ذلك، أعلم. لستُ مبكراً أبداً. بعد الاستحمام، أرتدي ملابسي وأعدّ الإفطار."
         },
         {
           "speaker": "Maya",
-          "text": "What do you eat in the morning?"
+          "text": "What do you eat in the morning?",
+          "translation": "ماذا تأكل في الصباح؟"
         },
         {
           "speaker": "Sam",
-          "text": "Usually cereal with milk and a big cup of coffee."
+          "text": "Usually cereal with milk and a big cup of coffee.",
+          "translation": "عادةً رقائق الحبوب مع الحليب وفنجاناً كبيراً من القهوة."
         },
         {
           "speaker": "Maya",
-          "text": "Nice. I only drink coffee. Then I pack my bag and leave the house at seven."
+          "text": "Nice. I only drink coffee. Then I pack my bag and leave the house at seven.",
+          "translation": "رائع. أنا أشرب القهوة فقط. ثم أجهّز حقيبتي وأغادر المنزل في السابعة."
         },
         {
           "speaker": "Sam",
-          "text": "Do you walk to work every day?"
+          "text": "Do you walk to work every day?",
+          "translation": "هل تمشين إلى العمل كل يوم؟"
         },
         {
           "speaker": "Maya",
-          "text": "Yes, I walk every day. It's twenty minutes, and I arrive at eight."
+          "text": "Yes, I walk every day. It's twenty minutes, and I arrive at eight.",
+          "translation": "نعم، أمشي كل يوم. تستغرق المسافة عشرين دقيقة، وأصل في الثامنة تماماً."
         },
         {
           "speaker": "Sam",
-          "text": "You start work at eight? Wow. OK, I need to hurry. Talk later!"
+          "text": "You start work at eight? Wow. OK, I need to hurry. Talk later!",
+          "translation": "تبدأين العمل في الثامنة؟ يا إلهي! حسناً، عليّ أن أسرع. نتحدث لاحقاً!"
         },
         {
           "speaker": "Maya",
-          "text": "OK! Don't be late again."
+          "text": "OK! Don't be late again.",
+          "translation": "حسناً! لا تتأخر مجدداً."
         }
       ],
       "vocabularyUsed": [
@@ -1391,51 +1513,64 @@
     },
     {
       "title": "A Busy Day at Work",
+      "titleArabic": "يوم حافل في العمل",
       "setting": "Two colleagues, Lina and Omar, eat lunch together at work.",
+      "settingArabic": "زميلان، لينا وعمر، يتناولان طعام الغداء معاً في العمل.",
       "lines": [
         {
           "speaker": "Lina",
-          "text": "I'm so tired. I checked forty emails before ten o'clock."
+          "text": "I'm so tired. I checked forty emails before ten o'clock.",
+          "translation": "أنا متعبة للغاية. لقد تفقدتُ أربعين بريداً إلكترونياً قبل الساعة العاشرة."
         },
         {
           "speaker": "Omar",
-          "text": "Me too. My day starts at half past eight, and this morning I arrived late."
+          "text": "Me too. My day starts at half past eight, and this morning I arrived late.",
+          "translation": "وأنا أيضاً. يبدأ يومي في الثامنة والنصف، ووصلتُ متأخراً هذا الصباح."
         },
         {
           "speaker": "Lina",
-          "text": "What time do you usually arrive at work?"
+          "text": "What time do you usually arrive at work?",
+          "translation": "في أي وقت تصل إلى العمل عادةً؟"
         },
         {
           "speaker": "Omar",
-          "text": "At half past eight. But I never finish before six."
+          "text": "At half past eight. But I never finish before six.",
+          "translation": "في الثامنة والنصف. لكني لا أنتهي من عملي قبل السادسة أبداً."
         },
         {
           "speaker": "Lina",
-          "text": "That's a long day. Are you busy this afternoon?"
+          "text": "That's a long day. Are you busy this afternoon?",
+          "translation": "إنه يوم طويل حقاً. هل أنت مشغول بعد ظهر اليوم؟"
         },
         {
           "speaker": "Omar",
-          "text": "Very busy. I have a lot of work, and I check my email every hour."
+          "text": "Very busy. I have a lot of work, and I check my email every hour.",
+          "translation": "مشغول جداً. لدي الكثير من العمل، وأتفقد بريدي الإلكتروني كل ساعة."
         },
         {
           "speaker": "Lina",
-          "text": "Let's eat lunch quickly then. I'm really hungry."
+          "text": "Let's eat lunch quickly then. I'm really hungry.",
+          "translation": "فلنتناول الغداء سريعاً إذاً. أنا جائعة جداً."
         },
         {
           "speaker": "Omar",
-          "text": "Good idea. I always eat lunch at one o'clock."
+          "text": "Good idea. I always eat lunch at one o'clock.",
+          "translation": "فكرة سديدة. أنا دائماً أتناول الغداء في الواحدة تماماً."
         },
         {
           "speaker": "Lina",
-          "text": "And after lunch? More work?"
+          "text": "And after lunch? More work?",
+          "translation": "وماذا بعد الغداء؟ المزيد من العمل؟"
         },
         {
           "speaker": "Omar",
-          "text": "Work, work, work until six. Then I walk home, cook dinner and relax."
+          "text": "Work, work, work until six. Then I walk home, cook dinner and relax.",
+          "translation": "عمل وعمل وعمل حتى السادسة. ثم أمشي إلى البيت، وأطهو العشاء وأسترخي."
         },
         {
           "speaker": "Lina",
-          "text": "You cook every night? I'm too tired to cook in the evening."
+          "text": "You cook every night? I'm too tired to cook in the evening.",
+          "translation": "تطبخ كل ليلة؟ أنا أكون متعبة جداً في المساء لدرجة تمنعني من الطبخ."
         }
       ],
       "vocabularyUsed": [
@@ -1464,51 +1599,64 @@
     },
     {
       "title": "Evening Plans",
+      "titleArabic": "خطط المساء",
       "setting": "Two roommates, Nora and Adam, talk in the kitchen in the evening.",
+      "settingArabic": "شريكان في السكن، نورا وآدم، يتحدثان في المطبخ خلال المساء.",
       "lines": [
         {
           "speaker": "Nora",
-          "text": "What do you usually do in the evening?"
+          "text": "What do you usually do in the evening?",
+          "translation": "ماذا تفعل عادةً في المساء؟"
         },
         {
           "speaker": "Adam",
-          "text": "Nothing special. I watch television and relax on the sofa."
+          "text": "Nothing special. I watch television and relax on the sofa.",
+          "translation": "لا شيء مميز. أشاهد التلفاز وأسترخي على الأريكة."
         },
         {
           "speaker": "Nora",
-          "text": "I cook dinner at seven. Do you want to eat with me?"
+          "text": "I cook dinner at seven. Do you want to eat with me?",
+          "translation": "سأطهو العشاء في السابعة. هل تود أن تأكل معي؟"
         },
         {
           "speaker": "Adam",
-          "text": "Sure. I can wash the dishes after dinner."
+          "text": "Sure. I can wash the dishes after dinner.",
+          "translation": "بالتأكيد. يمكنني أن أغسل الأطباق بعد العشاء."
         },
         {
           "speaker": "Nora",
-          "text": "Great. And do we need food? I go shopping on Fridays, but the fridge is empty."
+          "text": "Great. And do we need food? I go shopping on Fridays, but the fridge is empty.",
+          "translation": "رائع. وهل نحتاج إلى طعام؟ أذهب للتسوق أيام الجمعة، لكن الثلاجة فارغة."
         },
         {
           "speaker": "Adam",
-          "text": "It's full. I did the laundry and cleaned today too."
+          "text": "It's full. I did the laundry and cleaned today too.",
+          "translation": "إنها ممتلئة! لقد قمتُ بغسيل الملابس ونظفتُ البيت اليوم أيضاً."
         },
         {
           "speaker": "Nora",
-          "text": "Nice. What time is your bedtime? You look tired."
+          "text": "Nice. What time is your bedtime? You look tired.",
+          "translation": "جميل. متى موعد نومك عادةً؟ تبدو متعباً."
         },
         {
           "speaker": "Adam",
-          "text": "I never go to bed before midnight. But I have a good habit: I sleep eight hours."
+          "text": "I never go to bed before midnight. But I have a good habit: I sleep eight hours.",
+          "translation": "لا أذهب للنوم قبل منتصف الليل أبداً. لكني أملك عادة جيدة: أنام ثماني ساعات."
         },
         {
           "speaker": "Nora",
-          "text": "I have a different habit. I always sleep late, but I am free in the morning!"
+          "text": "I have a different habit. I always sleep late, but I am free in the morning!",
+          "translation": "لديّ عادة مختلفة. أنام متأخرة دائماً، لكني متفرغة تماماً في الصباح!"
         },
         {
           "speaker": "Adam",
-          "text": "Every day is different in this house. OK, dinner first, television after."
+          "text": "Every day is different in this house. OK, dinner first, television after.",
+          "translation": "كل يوم مختلف في هذا البيت. حسناً، العشاء أولاً، ثم التلفاز بعده."
         },
         {
           "speaker": "Nora",
-          "text": "Deal. Dinner at half past seven, and a movie at nine."
+          "text": "Deal. Dinner at half past seven, and a movie at nine.",
+          "translation": "اتفقنا! العشاء في السابعة والنصف، وفيلم في التاسعة."
         }
       ],
       "vocabularyUsed": [
@@ -1538,8 +1686,10 @@
   "paragraphs": [
     {
       "title": "My Typical Day",
+      "titleArabic": "يومي المعتاد",
       "kind": "daily-life description",
       "text": "I wake up at six thirty every day. First, I brush my teeth and take a quick shower. Then I get dressed and make breakfast. I usually eat cereal with milk and drink one cup of coffee. At seven thirty, I pack my bag and leave the house. I walk to work and arrive at eight. I start work at half past eight and check my emails. I am busy all morning. I eat lunch at one o'clock, sometimes with my friends. I finish work at five and walk home. In the evening, I cook dinner and relax. My bedtime is eleven o'clock, so I always sleep eight hours.",
+      "translation": "أستيقظ في الساعة السادسة والنصف كل يوم. أولاً، أفرّش أسناني وآخذ حماماً سريعاً (دُش). ثم أرتدي ملابسي وأعدّ وجبة الإفطار. عادةً ما أتناول رقائق الحبوب مع الحليب وأشرب فنجاناً واحداً من القهوة. في السابعة والنصف، أجهّز حقيبتي وأغادر المنزل. أمشي إلى العمل وأصل في الساعة الثامنة. أبدأ العمل في الثامنة والنصف وأتفقّد رسائل بريدي الإلكتروني. أكون مشغولاً طوال الصباح. أتناول الغداء في الواحدة تماماً، أحياناً مع أصدقائي. أنهي العمل في الخامسة وأمشي عائدًا إلى المنزل. في المساء، أطبخ وجبة العشاء وأسترخي. موعد نومي هو الحادية عشرة تماماً، لذا أنام دائماً ثماني ساعات.",
       "vocabularyUsed": [
         "wake up",
         "brush",
@@ -1574,8 +1724,10 @@
     },
     {
       "title": "A Busy Tuesday",
+      "titleArabic": "يوم ثلاثاء حافل",
       "kind": "daily-life description",
       "text": "On Tuesdays, my daily routine is different. My alarm rings at five thirty, so I wake up very early. I get up, drink coffee, and leave home at six fifteen. I arrive at work before seven and start immediately. The office is busy all day, and I check a hundred emails. I eat lunch at my desk and finish at four. After work, I go shopping because there is no food at home. In the evening, I cook a big dinner, wash the dishes, and watch television for one hour. I am always tired on Tuesday nights, so I go to bed early and sleep well.",
+      "translation": "في أيام الثلاثاء، يختلف روتيني اليومي. يرنّ منبّهي في الخامسة والنصف، لذا أستيقظ مبكراً جداً. أنهض من السرير، وأشرب القهوة، وأغادر المنزل في السادسة والربع. أصل إلى العمل قبل السابعة وأبدأ فوراً. يكون المكتب مشغولاً طوال اليوم، وأتفقّد مئة رسالة بريد إلكتروني. أتناول الغداء على مكتبي وأنتهي من العمل في الرابعة. بعد العمل، أذهب للتسوق لعدم وجود طعام في المنزل. في المساء، أطهو عشاءً كبيراً، وأغسل الأطباق، وأشاهد التلفاز لمدة ساعة واحدة. أكون دائماً متعباً في ليالي الثلاثاء، لذا أذهب إلى الفراش مبكراً وأنام جيداً.",
       "vocabularyUsed": [
         "daily",
         "routine",
@@ -1609,8 +1761,10 @@
     },
     {
       "title": "Evenings at Home",
+      "titleArabic": "الأمسيات في المنزل",
       "kind": "personal story",
       "text": "In the evening, our home is calm. My sister and I cook dinner together. She usually cooks rice and chicken, and I wash the dishes after dinner. Then we relax. She watches her favorite program on television, and I read or listen to music. Twice a week, I do the laundry in the evening, and on Fridays we go shopping for food. We are free after nine o'clock, and we sometimes talk about our day. At half past ten, my sister goes to bed, but I often sleep late. I am never tired at bedtime — I am a night person.",
+      "translation": "في المساء، يعمّ الهدوء في منزلنا. نطبخ أنا وأختي العشاء معاً. هي تطهو الأرز والدجاج عادةً، وأنا أغسل الأطباق بعد العشاء. بعد ذلك نسترخي. هي تشاهد برنامجها المفضل على التلفاز، وأنا أقرأ أو أستمع إلى الموسيقى. مرتين أسبوعياً، أقوم بغسيل الملابس في المساء، وفي أيام الجمعة نذهب للتسوق لشراء الطعام. نكون متفرغين بعد التاسعة تماماً، وأحياناً نتحدث عن مجريات يومنا. في العاشرة والنصف، تذهب أختي إلى الفراش للنوم، لكني غالباً ما أنام متأخراً. لست متعباً أبداً في وقت النوم — أنا شخص مسائي (أحب السهر).",
       "vocabularyUsed": [
         "evening",
         "cook",

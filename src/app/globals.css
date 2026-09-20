@@ -29,18 +29,35 @@ body {
 /* Custom typography and aesthetic enhancements */
 .drop-cap::first-letter {
   float: left;
-  font-size: 3.5rem;
+  font-size: 2.75rem;
   line-height: 0.85;
-  padding-top: 4px;
-  padding-right: 12px;
+  padding-top: 2px;
+  padding-right: 8px;
   padding-bottom: 2px;
   font-weight: 800;
   color: #4f46e5;
   font-family: var(--font-sans);
 }
 
+@media (min-width: 640px) {
+  .drop-cap::first-letter {
+    font-size: 3.5rem;
+    padding-top: 4px;
+    padding-right: 12px;
+  }
+}
+
 .dark .drop-cap::first-letter {
   color: #818cf8;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
 /* Glassmorphism card surfaces */

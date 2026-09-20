@@ -65,6 +65,8 @@ model VocabularyItem {
   partOfSpeech  String?
   definition    String
   example       String
+  translation   String? // Arabic translation of the headword
+  exampleArabic String? // Arabic translation of the example sentence
   verbForms     String? // JSON string: { v1: string, v2: string, v3: string } (for verbs only)
   relatedForms  String  @default("[]") // JSON string[]
   collocations  String  @default("[]") // JSON string[]
@@ -89,8 +91,10 @@ model GrammarLesson {
   id             String @id @default(cuid())
   dayNumber      Int
   order          Int
-  title          String
-  explanation    String // simple English explanation
+  title             String
+  titleArabic       String?
+  explanation       String // simple English explanation
+  explanationArabic String?
   structures     String @default("[]") // JSON [{ pattern, label }]
   examples       String @default("[]") // JSON [{ sentence, usesVocabulary: string[] }]
   commonUsage    String @default("[]") // JSON string[]
@@ -105,9 +109,11 @@ model Conversation {
   id        String @id @default(cuid())
   dayNumber Int
   order     Int
-  title     String
-  setting   String
-  lines     String // JSON [{ speaker, text }]
+  title         String
+  titleArabic   String?
+  setting       String
+  settingArabic String?
+  lines         String // JSON [{ speaker, text, translation?: string }]
 
   day Day @relation(fields: [dayNumber], references: [dayNumber])
 
@@ -135,7 +141,9 @@ model Paragraph {
   order     Int
   title     String
   kind      String // personal story | description | opinion | practical situation ...
-  text      String
+  text        String
+  translation String? // Arabic translation of the paragraph text
+  titleArabic String? // Arabic translation of the paragraph title
 
   day Day @relation(fields: [dayNumber], references: [dayNumber])
 

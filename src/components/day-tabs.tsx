@@ -12,29 +12,32 @@ export type DayTab = (typeof tabs)[number]["key"];
 
 export function DayTabs({ day, active }: { day: number; active: DayTab }) {
   return (
-    <nav aria-label="Day sections" className="rounded-2xl bg-zinc-100/80 p-1.5 backdrop-blur-sm dark:bg-zinc-900/80 ring-1 ring-zinc-950/5 dark:ring-white/10">
-      <ul className="flex gap-1 overflow-x-auto">
+    <nav
+      aria-label="Day sections"
+      className="sticky top-15 z-30 rounded-2xl bg-white/90 p-1.5 backdrop-blur-md dark:bg-zinc-900/90 ring-1 ring-zinc-950/5 dark:ring-white/10 shadow-xs"
+    >
+      <ul className="flex items-center gap-1 overflow-x-auto scrollbar-none py-0.5 px-0.5 scroll-smooth">
         {tabs.map((tab) => {
           const isActive = tab.key === active;
           return (
-            <li key={tab.key} className="flex-1">
+            <li key={tab.key} className="shrink-0 sm:flex-1">
               <Link
                 href={`/day/${day}?tab=${tab.key}`}
                 aria-current={isActive ? "page" : undefined}
-                className={`flex items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-sm font-semibold transition-all ${
+                className={`flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap rounded-xl px-3 py-2 sm:px-4 sm:py-2.5 text-xs sm:text-sm font-bold transition-all ${
                   isActive
-                    ? "bg-white text-indigo-700 shadow-sm shadow-zinc-950/5 ring-1 ring-zinc-950/5 dark:bg-zinc-800 dark:text-indigo-300 dark:ring-white/10"
-                    : "text-zinc-600 hover:bg-white/50 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/50 dark:hover:text-zinc-200"
+                    ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/25 ring-1 ring-indigo-500"
+                    : "text-zinc-600 hover:bg-zinc-100/80 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800/60 dark:hover:text-zinc-200"
                 }`}
               >
-                <span className="text-base leading-none">{tab.icon}</span>
+                <span className="text-sm sm:text-base leading-none">{tab.icon}</span>
                 <span>{tab.label}</span>
                 {"count" in tab && tab.count ? (
                   <span
-                    className={`rounded-full px-1.5 py-0.5 text-xs font-bold leading-none ${
+                    className={`rounded-full px-1.5 py-0.5 text-[10px] sm:text-xs font-bold leading-none ${
                       isActive
-                        ? "bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
-                        : "bg-zinc-200/70 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+                        ? "bg-white/20 text-white"
+                        : "bg-zinc-200/80 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
                     }`}
                   >
                     {tab.count}

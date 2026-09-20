@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
@@ -16,6 +16,16 @@ export const metadata: Metadata = {
   },
   description:
     "A structured 90-day English learning system: 50 new words a day, daily grammar, conversations and paragraphs — one complete learning unit at a time.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
 };
 
 const themeScript = `(function(){try{var p=document.documentElement.getAttribute('data-theme-pref')||'system';var d=p==='dark'||(p==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();`;

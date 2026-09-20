@@ -36,13 +36,13 @@ export async function getDayFull(dayNumber: number) {
     grammarLessons: day.grammarLessons.map((g) => ({
       ...g,
       structures: parseJson<{ pattern: string; label: string }[]>(g.structures, []),
-      examples: parseJson<{ sentence: string; usesVocabulary: string[] }[]>(g.examples, []),
+      examples: parseJson<{ sentence: string; usesVocabulary: string[]; translation?: string }[]>(g.examples, []),
       commonUsage: parseStringArray(g.commonUsage),
       commonMistakes: parseJson<{ wrong: string; right: string; note: string }[]>(g.commonMistakes, []),
     })),
     conversations: day.conversations.map((c) => ({
       ...c,
-      lines: parseJson<{ speaker: string; text: string }[]>(c.lines, []),
+      lines: parseJson<{ speaker: string; text: string; translation?: string }[]>(c.lines, []),
     })),
   };
 }
@@ -60,6 +60,8 @@ export type VocabularyCardData = {
   partOfSpeech: string | null;
   definition: string;
   example: string;
+  translation: string | null;
+  exampleArabic: string | null;
   verbForms: VerbForms | null;
   relatedForms: string[];
   collocations: string[];
@@ -81,6 +83,8 @@ function toCard(
     partOfSpeech: string | null;
     definition: string;
     example: string;
+    translation?: string | null;
+    exampleArabic?: string | null;
     verbForms?: string | null;
     relatedForms: string;
     collocations: string;
@@ -96,6 +100,8 @@ function toCard(
 ): VocabularyCardData {
   return {
     ...v,
+    translation: v.translation ?? null,
+    exampleArabic: v.exampleArabic ?? null,
     verbForms: v.verbForms ? parseJson<VerbForms | null>(v.verbForms, null) : null,
     relatedForms: parseStringArray(v.relatedForms),
     collocations: parseStringArray(v.collocations),

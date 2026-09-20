@@ -154,30 +154,50 @@ export default async function DayPage({
       {tab === "grammar" && (
         <section aria-label="Today's grammar" className="space-y-8">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Clear patterns, structural formulas, and real examples using today&apos;s 50 vocabulary words.
+            Clear patterns, structural formulas, and real examples using today&apos;s 50 vocabulary words with Arabic explanations.
           </p>
 
           {day.grammarLessons.map((lesson) => (
             <article
               key={lesson.id}
-              className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95 space-y-6"
+              className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-5 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95 space-y-6"
             >
               <div>
-                <span className="inline-block rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
-                  Grammar Focus
-                </span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="inline-block rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+                    Grammar Focus
+                  </span>
+                  {lesson.titleArabic && (
+                    <span className="rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300" dir="rtl">
+                      {lesson.titleArabic}
+                    </span>
+                  )}
+                </div>
                 <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                   {lesson.title}
                 </h2>
                 <p className="mt-2 text-base leading-relaxed text-zinc-600 dark:text-zinc-300 max-w-3xl">
                   {lesson.explanation}
                 </p>
+                {lesson.explanationArabic && (
+                  <div className="mt-3 rounded-2xl border border-indigo-100/80 bg-gradient-to-r from-indigo-50/70 to-violet-50/40 p-4 text-sm font-medium text-indigo-950 dark:border-indigo-900/50 dark:from-indigo-950/40 dark:to-violet-950/20 dark:text-indigo-200" dir="rtl">
+                    <div className="flex items-center gap-1.5 mb-1.5">
+                      <span className="flex h-5 w-5 items-center justify-center rounded-md bg-indigo-600 text-[10px] font-bold text-white">
+                        ع
+                      </span>
+                      <span className="text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
+                        الشرح باللغة العربية:
+                      </span>
+                    </div>
+                    <p className="leading-relaxed">{lesson.explanationArabic}</p>
+                  </div>
+                )}
               </div>
 
               {lesson.structures.length > 0 && (
                 <div className="space-y-3">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-                    Structural Formulas & Patterns
+                    Structural Formulas & Patterns · الصيغ والأنماط
                   </h3>
                   <div className="grid gap-3 sm:grid-cols-2">
                     {lesson.structures.map((s, i) => (
@@ -199,20 +219,24 @@ export default async function DayPage({
 
               <div className="space-y-3">
                 <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-                  Practical Examples — Using Today&apos;s Vocabulary
+                  Practical Examples — Using Today&apos;s Vocabulary · أمثلة تطبيقية
                 </h3>
                 <div className="space-y-2.5">
                   {lesson.examples.map((ex, i) => (
                     <div
                       key={i}
-                      className="hover-lift flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-2xl border border-zinc-200/80 bg-white p-4 shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
+                      className="hover-lift flex flex-col gap-3 rounded-2xl border border-zinc-200/80 bg-white p-4 shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
                     >
-                      <div className="flex items-start gap-3">
-                        <AudioButton text={ex.sentence} small label="Listen to example" />
-                        <div>
-                          <p className="text-base font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed">
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1 min-w-0">
+                          <p className="text-base font-semibold text-zinc-900 dark:text-zinc-100 leading-relaxed">
                             &ldquo;{ex.sentence}&rdquo;
                           </p>
+                          {ex.translation && (
+                            <p className="mt-1 text-sm font-semibold text-emerald-700 dark:text-emerald-400 leading-relaxed" dir="rtl">
+                              ↩ {ex.translation}
+                            </p>
+                          )}
                           {ex.usesVocabulary?.length > 0 && (
                             <div className="mt-2 flex flex-wrap items-center gap-1.5">
                               <span className="text-xs text-zinc-400 font-medium">Words:</span>
@@ -227,6 +251,12 @@ export default async function DayPage({
                             </div>
                           )}
                         </div>
+                        <AudioButton
+                          text={ex.sentence}
+                          id={`grammar-${lesson.id}-${i}`}
+                          small
+                          label="Listen to example"
+                        />
                       </div>
                     </div>
                   ))}
@@ -236,7 +266,7 @@ export default async function DayPage({
               {lesson.commonUsage.length > 0 && (
                 <div className="rounded-2xl border border-zinc-200/80 bg-zinc-50/60 p-5 dark:border-zinc-800 dark:bg-zinc-950/40">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-                    Everyday Usage Notes
+                    Everyday Usage Notes · ملاحظات الاستخدام اليومي
                   </h3>
                   <ul className="mt-3 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
                     {lesson.commonUsage.map((u, i) => (
@@ -252,7 +282,7 @@ export default async function DayPage({
               {lesson.commonMistakes.length > 0 && (
                 <div className="space-y-3">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-rose-500 dark:text-rose-400">
-                    Common Mistakes & Corrections
+                    Common Mistakes & Corrections · أخطاء شائعة وتصحيحها
                   </h3>
                   <div className="space-y-3">
                     {lesson.commonMistakes.map((m, i) => (
@@ -267,7 +297,7 @@ export default async function DayPage({
                             </span>
                             <div>
                               <span className="text-xs font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400">
-                                Incorrect
+                                Incorrect · خطأ
                               </span>
                               <p className="mt-0.5 text-sm line-through text-rose-700 dark:text-rose-300 font-mono">
                                 {m.wrong}
@@ -280,7 +310,7 @@ export default async function DayPage({
                             </span>
                             <div>
                               <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                                Correct
+                                Correct · صواب
                               </span>
                               <p className="mt-0.5 text-sm font-semibold text-emerald-800 dark:text-emerald-300 font-mono">
                                 {m.right}
@@ -289,7 +319,7 @@ export default async function DayPage({
                           </div>
                         </div>
                         <div className="border-t border-zinc-100 bg-white px-4 py-2.5 text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400 flex items-center gap-2">
-                          <span className="font-bold text-indigo-600 dark:text-indigo-400">Why:</span>
+                          <span className="font-bold text-indigo-600 dark:text-indigo-400">Why · التفسير:</span>
                           <span>{m.note}</span>
                         </div>
                       </div>
@@ -305,7 +335,7 @@ export default async function DayPage({
       {tab === "conversations" && (
         <section aria-label="Today's conversations" className="space-y-8">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Real everyday dialogues featuring today&apos;s 50 words. Listen to each line or the full conversation.
+            Real everyday dialogues featuring today&apos;s 50 words with full Arabic line-by-line translations.
           </p>
 
           {day.conversations.map((conversation) => {
@@ -314,14 +344,19 @@ export default async function DayPage({
             return (
               <article
                 key={conversation.id}
-                className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95"
+                className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-5 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95"
               >
-                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-zinc-100 pb-5 dark:border-zinc-800">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-100 pb-5 dark:border-zinc-800">
                   <div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <span className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
                         Dialogue
                       </span>
+                      {conversation.titleArabic && (
+                        <span className="rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300" dir="rtl">
+                          {conversation.titleArabic}
+                        </span>
+                      )}
                       <span className="text-xs text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
                         📍 {conversation.setting}
                       </span>
@@ -329,9 +364,15 @@ export default async function DayPage({
                     <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                       {conversation.title}
                     </h2>
+                    {conversation.settingArabic && (
+                      <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400" dir="rtl">
+                        الموقف: {conversation.settingArabic}
+                      </p>
+                    )}
                   </div>
                   <AudioButton
                     text={conversation.lines.map((l) => `${l.speaker}. ${l.text}`).join(" ")}
+                    id={`conv-${conversation.id}`}
                     label="Listen to Full Dialogue"
                   />
                 </div>
@@ -347,22 +388,32 @@ export default async function DayPage({
                       : "border-emerald-100 bg-emerald-50/40 dark:border-emerald-950 dark:bg-emerald-950/20 bubble-speaker-b sm:ml-6";
 
                     return (
-                      <div key={i} className={`flex items-start gap-3.5 ${isSpeaker1 ? "" : "justify-start"}`}>
+                      <div key={i} className={`flex items-start gap-2.5 sm:gap-3.5 ${isSpeaker1 ? "" : "justify-start"}`}>
                         <div
-                          className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl text-xs font-bold shadow-sm ${speakerBadge}`}
+                          className={`flex h-8 w-8 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl sm:rounded-2xl text-[11px] sm:text-xs font-bold shadow-sm ${speakerBadge}`}
                         >
                           {line.speaker.slice(0, 2).toUpperCase()}
                         </div>
-                        <div className={`flex-1 rounded-2xl border p-4 shadow-xs transition-all ${bubbleStyle}`}>
+                        <div className={`flex-1 rounded-2xl border p-3.5 sm:p-4 shadow-xs transition-all ${bubbleStyle}`}>
                           <div className="flex items-center justify-between gap-2 mb-1">
                             <span className="text-xs font-bold uppercase tracking-wider text-zinc-900 dark:text-zinc-100">
                               {line.speaker}
                             </span>
-                            <AudioButton text={line.text} small label={`Listen to ${line.speaker}`} />
+                            <AudioButton
+                              text={line.text}
+                              id={`conv-line-${conversation.id}-${i}`}
+                              small
+                              label={`Listen to ${line.speaker}`}
+                            />
                           </div>
-                          <p className="text-base font-normal leading-relaxed text-zinc-800 dark:text-zinc-200">
+                          <p className="text-sm sm:text-base font-medium leading-relaxed text-zinc-800 dark:text-zinc-200">
                             {line.text}
                           </p>
+                          {line.translation && (
+                            <p className="mt-2 text-xs sm:text-sm font-semibold text-emerald-700 dark:text-emerald-400 leading-relaxed border-t border-zinc-100 pt-2 dark:border-zinc-800/80" dir="rtl">
+                              💬 {line.translation}
+                            </p>
+                          )}
                         </div>
                       </div>
                     );
@@ -377,40 +428,70 @@ export default async function DayPage({
       {tab === "paragraphs" && (
         <section aria-label="Today's paragraphs" className="space-y-8">
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Read carefully to see how vocabulary connects into natural stories. Listen along with the native audio.
+            Read carefully to see how vocabulary connects into natural stories, with complete Arabic translations for full comprehension.
           </p>
 
           {day.paragraphs.map((paragraph) => {
             return (
               <article
                 key={paragraph.id}
-                className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-6 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95"
+                className="glass-card overflow-hidden rounded-3xl border border-zinc-200/80 bg-white p-5 sm:p-8 shadow-xs dark:border-zinc-800 dark:bg-zinc-900/95"
               >
-                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-zinc-100 pb-5 dark:border-zinc-800">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-zinc-100 pb-5 dark:border-zinc-800">
                   <div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       <span className="rounded-md bg-indigo-50 px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
                         {paragraph.kind}
                       </span>
+                      {paragraph.titleArabic && (
+                        <span className="rounded-md bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300" dir="rtl">
+                          {paragraph.titleArabic}
+                        </span>
+                      )}
                       <span className="text-xs text-zinc-400 font-medium">· ~1 min read · Full narration</span>
                     </div>
                     <h2 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                       {paragraph.title}
                     </h2>
                   </div>
-                  <AudioButton text={paragraph.text} label="Listen to Story" />
+                  <AudioButton
+                    text={paragraph.text}
+                    id={`para-${paragraph.id}`}
+                    label="Listen to Story"
+                  />
                 </div>
 
                 <div className="mt-6">
-                  <p className="drop-cap text-lg leading-8 text-zinc-800 dark:text-zinc-200 font-normal">
+                  <p className="drop-cap text-base sm:text-lg leading-8 text-zinc-800 dark:text-zinc-200 font-normal">
                     {paragraph.text}
                   </p>
                 </div>
 
-                <div className="mt-8 rounded-2xl border border-indigo-100/80 bg-indigo-50/40 p-4 text-xs text-indigo-900 dark:border-indigo-950 dark:bg-indigo-950/30 dark:text-indigo-200 flex items-center gap-2.5">
+                {paragraph.translation && (
+                  <div className="mt-6 rounded-2xl border border-emerald-200/80 bg-gradient-to-br from-emerald-50/50 via-white to-teal-50/30 p-5 sm:p-6 dark:border-emerald-900/50 dark:from-emerald-950/20 dark:via-zinc-900 dark:to-teal-950/10 shadow-xs">
+                    <div className="flex items-center justify-between gap-2 border-b border-emerald-100/80 pb-3 dark:border-emerald-900/40">
+                      <div className="flex items-center gap-2">
+                        <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-emerald-600 text-xs font-bold text-white shadow-xs">
+                          ع
+                        </span>
+                        <h3 className="text-sm font-bold text-emerald-950 dark:text-emerald-200">
+                          الترجمة العربية للنص {paragraph.titleArabic ? `· ${paragraph.titleArabic}` : ""}
+                        </h3>
+                      </div>
+                      <span className="text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
+                        قراءة ثنائية اللغة
+                      </span>
+                    </div>
+                    <p className="mt-3.5 text-base sm:text-lg leading-relaxed text-zinc-800 dark:text-zinc-200 font-medium" dir="rtl">
+                      {paragraph.translation}
+                    </p>
+                  </div>
+                )}
+
+                <div className="mt-6 rounded-2xl border border-indigo-100/80 bg-indigo-50/40 p-4 text-xs text-indigo-900 dark:border-indigo-950 dark:bg-indigo-950/30 dark:text-indigo-200 flex items-center gap-2.5">
                   <span className="text-base">💡</span>
                   <p className="font-medium">
-                    Tip: Read along once with audio playing, then read it once aloud on your own.
+                    نصيحة: استمع إلى النص الإنجليزي أولاً مع الصوت، ثم راجع الترجمة العربية لتثبيت المفردات، ثم اقرأه بصوت مرتفع.
                   </p>
                 </div>
               </article>
