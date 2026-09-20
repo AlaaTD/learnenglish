@@ -1,10 +1,9 @@
+import { cookies } from "next/headers";
 import { db } from "@/lib/db";
 
-// No accounts, no sign-in: the site opens straight into the journey.
-// Progress persists for a single implicit local learner stored in the database.
-
-const DEFAULT_USER_ID = "local-learner";
-const DEFAULT_EMAIL = "learner@english90.local";
+// No accounts, no password, no barrier:
+// Each visitor has their own persistent anonymous profile isolated via cookies.
+// Every user's progress, saved words, and completed days are strictly separated!
 
 export type SessionUser = {
   id: string;
@@ -13,31 +12,44 @@ export type SessionUser = {
   role: string;
 };
 
-export async function getOrCreateDefaultUser(): Promise<SessionUser> {
+export async function getCurrentUser(): Promise<SessionUser> {
+  let userId = "local-learner";
+  try {
+    const cookieStore = await cookies();
+    const cookieVal = cookieStore.get("e90_user_id")?.value;
+    if (cookieVal) userId = cookieVal;
+  } catch {
+    // If running in a context where cookies are not available
+  }
+
   const existing = await db.user.findUnique({
-    where: { id: DEFAULT_USER_ID },
+    where: { id: userId },
     select: { id: true, email: true, name: true, role: true },
   });
   if (existing) return existing;
+
+  const email = `${userId}@english90.local`;
   const created = await db.user.upsert({
-    where: { email: DEFAULT_EMAIL },
-    update: { id: DEFAULT_USER_ID },
+    where: { id: userId },
+    update: {},
     create: {
-      id: DEFAULT_USER_ID,
-      email: DEFAULT_EMAIL,
+      id: userId,
+      email,
       name: "Learner",
-      role: "ADMIN",
-      passwordHash: "local-no-auth",
+      role: "USER",
+      passwordHash: "anon-no-auth",
     },
     select: { id: true, email: true, name: true, role: true },
   });
+
   await db.userSettings.upsert({
     where: { userId: created.id },
     update: {},
     create: { userId: created.id },
-  });
+  }).catch(() => {});
+
   return created;
 }
 
-export const requireUser = getOrCreateDefaultUser;
-export const getCurrentUser = getOrCreateDefaultUser;
+export const requireUser = getCurrentUser;
+export const getOrCreateDefaultUser = getCurrentUser;

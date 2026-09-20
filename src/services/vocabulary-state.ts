@@ -215,3 +215,72 @@ export async function recordViewed(
   await recordHistory(userId, vocabularyId, "VIEWED", dayNumber, detail, updated.id);
   return toView(updated);
 }
+
+export async function markAllDayVocabularyLearned(userId: string, dayNumber: number) {
+  const items = await db.vocabularyItem.findMany({
+    where: { dayNumber },
+    select: { id: true },
+  });
+
+  const now = new Date();
+  for (const item of items) {
+    await db.userVocabulary.upsert({
+      where: { userId_vocabularyId: { userId, vocabularyId: item.id } },
+      update: {
+        state: VocabularyState.LEARNING,
+        learnedAt: now,
+      },
+      create: {
+        userId,
+        vocabularyId: item.id,
+        state: VocabularyState.LEARNING,
+        learnedAt: now,
+      },
+    });
+  }
+
+  // Also update day progress viewedVocabulary
+  const progress = await db.dayProgress.findUnique({
+    where: { userId_dayNumber: { userId, dayNumber } },
+  });
+  if (progress) {
+    await db.dayProgress.update({
+      where: { id: progress.id },
+      data: {
+        viewedVocabulary: JSON.stringify(items.map((i) => i.id)),
+      },
+    });
+  }
+}
+
+export async function resetAllDayVocabulary(userId: string, dayNumber: number) {
+  const items = await db.vocabularyItem.findMany({
+    where: { dayNumber },
+    select: { id: true },
+  });
+  const ids = items.map((i) => i.id);
+
+  await db.userVocabulary.updateMany({
+    where: {
+      userId,
+      vocabularyId: { in: ids },
+    },
+    data: {
+      state: VocabularyState.UNLEARNED,
+      learnedAt: null,
+      masteredAt: null,
+    },
+  });
+
+  const progress = await db.dayProgress.findUnique({
+    where: { userId_dayNumber: { userId, dayNumber } },
+  });
+  if (progress) {
+    await db.dayProgress.update({
+      where: { id: progress.id },
+      data: {
+        viewedVocabulary: "[]",
+      },
+    });
+  }
+}

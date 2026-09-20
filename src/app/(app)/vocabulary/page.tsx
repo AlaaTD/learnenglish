@@ -155,23 +155,7 @@ export default async function VocabularyPage({
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((word) => (
-            <div key={word.id} className="relative group">
-              <VocabularyCard word={word} />
-              <div className="mt-1 flex items-center justify-between px-1 text-xs">
-                <Link
-                  href={`/vocabulary/${word.id}`}
-                  className="text-indigo-600 hover:underline dark:text-indigo-400"
-                >
-                  View full history &amp; usage →
-                </Link>
-                <Link
-                  href={`/day/${word.dayNumber}`}
-                  className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300"
-                >
-                  Day {word.dayNumber}
-                </Link>
-              </div>
-            </div>
+            <VocabularyCard key={word.id} word={word} />
           ))}
         </div>
       )}

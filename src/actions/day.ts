@@ -52,3 +52,17 @@ export async function reopenDayAction(dayNumber: number) {
   await reopenDay(user.id, dayNumber);
   revalidatePath("/", "layout");
 }
+
+export async function markAllDayVocabularyLearnedAction(dayNumber: number) {
+  const user = await requireUser();
+  const { markAllDayVocabularyLearned } = await import("@/services/vocabulary-state");
+  await markAllDayVocabularyLearned(user.id, dayNumber);
+  revalidatePath("/", "layout");
+}
+
+export async function resetAllDayVocabularyAction(dayNumber: number) {
+  const user = await requireUser();
+  const { resetAllDayVocabulary } = await import("@/services/vocabulary-state");
+  await resetAllDayVocabulary(user.id, dayNumber);
+  revalidatePath("/", "layout");
+}

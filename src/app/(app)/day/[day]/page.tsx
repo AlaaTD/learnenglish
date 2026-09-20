@@ -6,12 +6,8 @@ import { getDayProgressView } from "@/services/day-progress";
 import { DayTabs, type DayTab } from "@/components/day-tabs";
 import { VocabularyCard } from "@/components/vocabulary-card";
 import { AudioButton } from "@/components/audio-button";
-import {
-  CompleteDayButton,
-  FinishVocabularyButton,
-  GrammarViewedButton,
-  MarkReadButton,
-} from "@/components/day-buttons";
+import { CompleteDayButton } from "@/components/day-buttons";
+import { MasterVocabularyButton } from "@/components/master-vocabulary-button";
 import { Badge, EmptyState, ProgressBar } from "@/components/ui";
 import { VocabularyState, VocabularyStateLabel, VocabularyStateStyle } from "@/lib/states";
 
@@ -45,8 +41,6 @@ export default async function DayPage({
     (v) => v.state !== VocabularyState.UNLEARNED,
   ).length;
   const usedCount = vocabulary.filter((v) => v.usedInConversation).length;
-  const ready =
-    progress.grammarViewed && progress.allConversationsViewed && progress.allParagraphsViewed;
 
   return (
     <div className="space-y-6">
@@ -104,7 +98,7 @@ export default async function DayPage({
 
         <div className="max-w-xl">
           <div className="mb-1.5 flex items-center justify-between text-xs">
-            <span className="font-semibold text-zinc-600 dark:text-zinc-400">Day 1 Learning Progress</span>
+            <span className="font-semibold text-zinc-600 dark:text-zinc-400">Day {dayNumber} Learning Progress</span>
             <span className="font-bold tabular-nums text-zinc-900 dark:text-zinc-100">
               {learnedCount} / 50 words learned ({Math.round((learnedCount / 50) * 100)}%)
             </span>
@@ -114,33 +108,17 @@ export default async function DayPage({
       </header>
 
       {progress.status === "COMPLETED" && (
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-emerald-200 bg-emerald-50/90 p-4 text-emerald-900 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-200">
-          <div className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-base font-bold text-white shadow-sm">
-              ✓
-            </span>
-            <div>
-              <p className="text-sm font-semibold sm:text-base">
-                Day {dayNumber} is Saved as Completed!
-              </p>
-              <p className="text-xs text-emerald-700 dark:text-emerald-300">
-                You can freely revisit all 50 words, grammar notes, conversations, and paragraphs anytime.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/journey"
-              className="rounded-lg border border-emerald-300 bg-white px-3 py-1.5 text-xs font-medium text-emerald-800 hover:bg-emerald-50 dark:border-emerald-700 dark:bg-zinc-900 dark:text-emerald-200"
-            >
-              90-Day Journey
-            </Link>
-            <Link
-              href="/vocabulary"
-              className="rounded-lg bg-emerald-700 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-800 dark:bg-emerald-600"
-            >
-              Review Words
-            </Link>
+        <div className="flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50/90 p-4 text-emerald-900 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-200">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-base font-bold text-white shadow-sm">
+            ✓
+          </span>
+          <div>
+            <p className="text-sm font-semibold sm:text-base">
+              Day {dayNumber} Completed!
+            </p>
+            <p className="text-xs text-emerald-700 dark:text-emerald-300">
+              All content is permanently saved. Revisit anytime.
+            </p>
           </div>
         </div>
       )}
@@ -175,20 +153,13 @@ export default async function DayPage({
 
           {tab === "vocabulary" && (
         <section aria-label="Today's vocabulary" className="space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-zinc-200/80 bg-zinc-50/60 p-4 dark:border-zinc-800 dark:bg-zinc-900/60">
-            <div>
-              <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                Today&apos;s 50 Core Words
-              </p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Click on any card to view detailed collocations, synonyms, and related forms.
-              </p>
-            </div>
-            <FinishVocabularyButton
-              dayNumber={dayNumber}
-              remaining={50 - progress.vocabularyViewedCount}
-            />
-          </div>
+          {/* Master button — single action for all 50 words */}
+          <MasterVocabularyButton
+            dayNumber={dayNumber}
+            totalWords={vocabulary.length}
+            learnedCount={learnedCount}
+          />
+
           <div className="grid gap-3.5 lg:grid-cols-2">
             {vocabulary.map((word) => (
               <VocabularyCard key={word.id} word={word} trackDay={dayNumber} />
@@ -199,12 +170,9 @@ export default async function DayPage({
 
       {tab === "grammar" && (
         <section aria-label="Today's grammar" className="space-y-8">
-          <div className="flex items-center justify-between">
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              Clear patterns, structural formulas, and real examples using today&apos;s 50 vocabulary words.
-            </p>
-            <GrammarViewedButton dayNumber={dayNumber} viewed={progress.grammarViewed} />
-          </div>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            Clear patterns, structural formulas, and real examples using today&apos;s 50 vocabulary words.
+          </p>
 
           {day.grammarLessons.map((lesson) => (
             <article
@@ -358,7 +326,6 @@ export default async function DayPage({
           </p>
 
           {day.conversations.map((conversation) => {
-            const viewed = progress.conversationsViewedIds.has(conversation.id);
             const firstSpeaker = conversation.lines[0]?.speaker;
 
             return (
@@ -380,13 +347,10 @@ export default async function DayPage({
                       {conversation.title}
                     </h2>
                   </div>
-                  <div className="flex items-center gap-2.5">
-                    <AudioButton
-                      text={conversation.lines.map((l) => `${l.speaker}. ${l.text}`).join(" ")}
-                      label="Listen to Full Dialogue"
-                    />
-                    <MarkReadButton kind="conversation" dayNumber={dayNumber} id={conversation.id} viewed={viewed} />
-                  </div>
+                  <AudioButton
+                    text={conversation.lines.map((l) => `${l.speaker}. ${l.text}`).join(" ")}
+                    label="Listen to Full Dialogue"
+                  />
                 </div>
 
                 <div className="mt-6 space-y-4">
@@ -434,7 +398,6 @@ export default async function DayPage({
           </p>
 
           {day.paragraphs.map((paragraph) => {
-            const viewed = progress.paragraphsViewedIds.has(paragraph.id);
             return (
               <article
                 key={paragraph.id}
@@ -452,10 +415,7 @@ export default async function DayPage({
                       {paragraph.title}
                     </h2>
                   </div>
-                  <div className="flex items-center gap-2.5">
-                    <AudioButton text={paragraph.text} label="Listen to Story" />
-                    <MarkReadButton kind="paragraph" dayNumber={dayNumber} id={paragraph.id} viewed={viewed} />
-                  </div>
+                  <AudioButton text={paragraph.text} label="Listen to Story" />
                 </div>
 
                 <div className="mt-6">
@@ -537,7 +497,7 @@ export default async function DayPage({
           <footer className="border-t border-zinc-200 pt-5 dark:border-zinc-800">
             <CompleteDayButton
               dayNumber={dayNumber}
-              ready={ready}
+              ready={true}
               completed={progress.status === "COMPLETED"}
               nextDay={dayNumber < 90 ? dayNumber + 1 : null}
             />
