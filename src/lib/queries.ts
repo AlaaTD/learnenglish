@@ -20,6 +20,42 @@ export async function getDaySummaries(): Promise<DaySummary[]> {
   return days;
 }
 
+export type GrammarLessonData = {
+  id: string;
+  dayNumber: number;
+  order: number;
+  title: string;
+  titleArabic: string | null;
+  explanation: string;
+  explanationArabic: string | null;
+  structures: { pattern: string; label: string }[];
+  examples: { sentence: string; usesVocabulary: string[]; translation?: string }[];
+  commonUsage: string[];
+  commonMistakes: { wrong: string; right: string; note: string }[];
+};
+
+export type ConversationData = {
+  id: string;
+  dayNumber: number;
+  order: number;
+  title: string;
+  titleArabic: string | null;
+  setting: string;
+  settingArabic: string | null;
+  lines: { speaker: string; text: string; translation?: string }[];
+};
+
+export type ParagraphData = {
+  id: string;
+  dayNumber: number;
+  order: number;
+  title: string;
+  titleArabic: string | null;
+  kind: string;
+  text: string;
+  translation: string | null;
+};
+
 export async function getDayFull(dayNumber: number) {
   const day = await db.day.findUnique({
     where: { dayNumber },
@@ -33,17 +69,35 @@ export async function getDayFull(dayNumber: number) {
   if (!day) return null;
   return {
     ...day,
-    grammarLessons: day.grammarLessons.map((g) => ({
-      ...g,
-      structures: parseJson<{ pattern: string; label: string }[]>(g.structures, []),
-      examples: parseJson<{ sentence: string; usesVocabulary: string[]; translation?: string }[]>(g.examples, []),
-      commonUsage: parseStringArray(g.commonUsage),
-      commonMistakes: parseJson<{ wrong: string; right: string; note: string }[]>(g.commonMistakes, []),
-    })),
-    conversations: day.conversations.map((c) => ({
-      ...c,
-      lines: parseJson<{ speaker: string; text: string; translation?: string }[]>(c.lines, []),
-    })),
+    grammarLessons: day.grammarLessons.map((g) => {
+      const raw = g as Record<string, unknown>;
+      return {
+        ...g,
+        titleArabic: (raw.titleArabic as string | null) ?? null,
+        explanationArabic: (raw.explanationArabic as string | null) ?? null,
+        structures: parseJson<{ pattern: string; label: string }[]>(g.structures, []),
+        examples: parseJson<{ sentence: string; usesVocabulary: string[]; translation?: string }[]>(g.examples, []),
+        commonUsage: parseStringArray(g.commonUsage),
+        commonMistakes: parseJson<{ wrong: string; right: string; note: string }[]>(g.commonMistakes, []),
+      };
+    }) as GrammarLessonData[],
+    conversations: day.conversations.map((c) => {
+      const raw = c as Record<string, unknown>;
+      return {
+        ...c,
+        titleArabic: (raw.titleArabic as string | null) ?? null,
+        settingArabic: (raw.settingArabic as string | null) ?? null,
+        lines: parseJson<{ speaker: string; text: string; translation?: string }[]>(c.lines, []),
+      };
+    }) as ConversationData[],
+    paragraphs: day.paragraphs.map((p) => {
+      const raw = p as Record<string, unknown>;
+      return {
+        ...p,
+        titleArabic: (raw.titleArabic as string | null) ?? null,
+        translation: (raw.translation as string | null) ?? null,
+      };
+    }) as ParagraphData[],
   };
 }
 
