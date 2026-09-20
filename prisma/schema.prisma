@@ -1,0 +1,221 @@
+// English90 — 90-Day Structured English Learning System
+// Data model: curriculum content (fixed, seeded) + per-user learning state.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------------------
+// Users & settings
+// ---------------------------------------------------------------------------
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String
+  role         String   @default("USER") // USER | ADMIN — first registered user becomes ADMIN
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  vocabularyStates UserVocabulary[]
+  dayProgress      DayProgress[]
+  historyEntries   VocabularyHistory[]
+  settings         UserSettings?
+}
+
+model UserSettings {
+  userId        String   @id
+  theme         String   @default("system") // light | dark | system
+  dailyTarget   Int      @default(50)
+  autoplayAudio Boolean  @default(false)
+  audioSpeed    String   @default("normal") // slow | normal
+  updatedAt     DateTime @updatedAt
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ---------------------------------------------------------------------------
+// Curriculum (fixed content, seeded from content/day-XX.json)
+// ---------------------------------------------------------------------------
+
+model Day {
+  dayNumber   Int    @id
+  title       String
+  topic       String
+  description String
+  stage       String // e.g. "Foundation — Daily Life"
+  focus       String // "Today's Focus" summary shown at the top of the day page
+
+  grammarLessons GrammarLesson[]
+  vocabulary     VocabularyItem[]
+  conversations  Conversation[]
+  paragraphs     Paragraph[]
+  progress       DayProgress[]
+}
+
+model VocabularyItem {
+  id            String  @id @default(cuid())
+  headword      String  @unique
+  pronunciation String?
+  partOfSpeech  String?
+  definition    String
+  example       String
+  relatedForms  String  @default("[]") // JSON string[]
+  collocations  String  @default("[]") // JSON string[]
+  synonyms      String  @default("[]") // JSON string[]
+  antonyms      String  @default("[]") // JSON string[]
+  tags          String  @default("[]") // JSON string[]
+  dayNumber     Int
+  order         Int // position within its day (1..50)
+
+  day Day @relation(fields: [dayNumber], references: [dayNumber])
+
+  userStates        UserVocabulary[]
+  history           VocabularyHistory[]
+  conversationLinks ConversationVocabulary[]
+  paragraphLinks    ParagraphVocabulary[]
+
+  @@index([dayNumber])
+  @@index([headword])
+}
+
+model GrammarLesson {
+  id             String @id @default(cuid())
+  dayNumber      Int
+  order          Int
+  title          String
+  explanation    String // simple English explanation
+  structures     String @default("[]") // JSON [{ pattern, label }]
+  examples       String @default("[]") // JSON [{ sentence, usesVocabulary: string[] }]
+  commonUsage    String @default("[]") // JSON string[]
+  commonMistakes String @default("[]") // JSON [{ wrong, right, note }]
+
+  day Day @relation(fields: [dayNumber], references: [dayNumber])
+
+  @@unique([dayNumber, order])
+}
+
+model Conversation {
+  id        String @id @default(cuid())
+  dayNumber Int
+  order     Int
+  title     String
+  setting   String
+  lines     String // JSON [{ speaker, text }]
+
+  day Day @relation(fields: [dayNumber], references: [dayNumber])
+
+  vocabularyLinks ConversationVocabulary[]
+
+  @@unique([dayNumber, order])
+}
+
+model ConversationVocabulary {
+  id              String  @id @default(cuid())
+  conversationId  String
+  vocabularyId    String
+  isReinforcement Boolean @default(false) // true = word introduced on an earlier day
+
+  conversation Conversation   @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  vocabulary   VocabularyItem @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  @@unique([conversationId, vocabularyId])
+  @@index([vocabularyId])
+}
+
+model Paragraph {
+  id        String @id @default(cuid())
+  dayNumber Int
+  order     Int
+  title     String
+  kind      String // personal story | description | opinion | practical situation ...
+  text      String
+
+  day Day @relation(fields: [dayNumber], references: [dayNumber])
+
+  vocabularyLinks ParagraphVocabulary[]
+
+  @@unique([dayNumber, order])
+}
+
+model ParagraphVocabulary {
+  id              String  @id @default(cuid())
+  paragraphId     String
+  vocabularyId    String
+  isReinforcement Boolean @default(false)
+
+  paragraph  Paragraph      @relation(fields: [paragraphId], references: [id], onDelete: Cascade)
+  vocabulary VocabularyItem @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  @@unique([paragraphId, vocabularyId])
+  @@index([vocabularyId])
+}
+
+// ---------------------------------------------------------------------------
+// Per-user learning state
+// ---------------------------------------------------------------------------
+
+model UserVocabulary {
+  id                 String   @id @default(cuid())
+  userId             String
+  vocabularyId       String
+  state              String   @default("UNLEARNED") // UNLEARNED | LEARNING | REVIEW | MASTERED
+  usedInConversation Boolean  @default(false)
+  firstViewedAt      DateTime?
+  learnedAt          DateTime?
+  reviewAddedAt      DateTime?
+  reviewDueAt        DateTime?
+  masteredAt         DateTime?
+  usedAt             DateTime?
+  updatedAt          DateTime @updatedAt
+
+  user       User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  vocabulary VocabularyItem      @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+  history    VocabularyHistory[]
+
+  @@unique([userId, vocabularyId])
+  @@index([userId, state])
+  @@index([userId, usedInConversation])
+}
+
+model VocabularyHistory {
+  id               String   @id @default(cuid())
+  userId           String
+  vocabularyId     String
+  userVocabularyId String?
+  event            String // VIEWED | LEARNED | REVIEW_ADDED | REVIEW_REMOVED | MASTERED | UNMASTERED | USED_IN_CONVERSATION | CONVERSATION_USE_CLEARED
+  detail           String?
+  dayNumber        Int?
+  createdAt        DateTime @default(now())
+
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userVocabulary UserVocabulary? @relation(fields: [userVocabularyId], references: [id], onDelete: SetNull)
+  vocabulary     VocabularyItem  @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  @@index([userId, vocabularyId, createdAt])
+}
+
+model DayProgress {
+  id                  String    @id @default(cuid())
+  userId              String
+  dayNumber           Int
+  status              String    @default("NOT_STARTED") // NOT_STARTED | IN_PROGRESS | COMPLETED
+  viewedVocabulary    String    @default("[]") // JSON string[] of vocabulary ids
+  grammarViewed       Boolean   @default(false)
+  conversationsViewed String    @default("[]") // JSON string[] of conversation ids
+  paragraphsViewed    String    @default("[]") // JSON string[] of paragraph ids
+  startedAt           DateTime?
+  completedAt         DateTime?
+  updatedAt           DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  day  Day  @relation(fields: [dayNumber], references: [dayNumber])
+
+  @@unique([userId, dayNumber])
+  @@index([userId, status])
+}
