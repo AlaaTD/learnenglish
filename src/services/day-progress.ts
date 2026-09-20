@@ -1,6 +1,6 @@
 import { Prisma } from "@prisma/client";
 import { db } from "@/lib/db";
-import { DayStatus, WORDS_PER_DAY } from "@/lib/states";
+import { DayStatus, WORDS_PER_DAY, VocabularyState } from "@/lib/states";
 import { parseStringArray } from "@/lib/json";
 import { recordViewed } from "./vocabulary-state";
 
@@ -120,38 +120,98 @@ export async function markParagraphViewed(
 }
 
 export async function completeDay(userId: string, dayNumber: number) {
-  const [conversationIds, paragraphIds, vocabularyIds] = await Promise.all([
+  const [conversationIds, paragraphIds, vocabulary] = await Promise.all([
     db.conversation.findMany({ where: { dayNumber }, select: { id: true } }),
     db.paragraph.findMany({ where: { dayNumber }, select: { id: true } }),
     db.vocabularyItem.findMany({ where: { dayNumber }, select: { id: true } }),
   ]);
 
   const progress = await getOrCreateDayProgress(userId, dayNumber);
-  const viewedVocab = new Set(parseStringArray(progress.viewedVocabulary));
-  vocabularyIds.forEach((v) => viewedVocab.add(v.id));
+  const vocabularyIds = vocabulary.map((v) => v.id);
+  const now = new Date();
+
+  // Mark all vocabulary items for this day as MASTERED for this user
+  for (const item of vocabulary) {
+    await db.userVocabulary.upsert({
+      where: { userId_vocabularyId: { userId, vocabularyId: item.id } },
+      create: {
+        userId,
+        vocabularyId: item.id,
+        state: VocabularyState.MASTERED,
+        learnedAt: now,
+        masteredAt: now,
+      },
+      update: {
+        state: VocabularyState.MASTERED,
+        masteredAt: now,
+      },
+    });
+  }
 
   await db.dayProgress.update({
-    where: { userId_dayNumber: { userId, dayNumber } },
+    where: { id: progress.id },
     data: {
       status: DayStatus.COMPLETED,
-      completedAt: new Date(),
+      completedAt: now,
       grammarViewed: true,
       conversationsViewed: JSON.stringify(conversationIds.map((c) => c.id)),
       paragraphsViewed: JSON.stringify(paragraphIds.map((p) => p.id)),
-      viewedVocabulary: JSON.stringify([...viewedVocab]),
+      viewedVocabulary: JSON.stringify(vocabularyIds),
+    },
+  });
+}
+
+export async function resetDay(userId: string, dayNumber: number) {
+  const items = await db.vocabularyItem.findMany({
+    where: { dayNumber },
+    select: { id: true },
+  });
+  const ids = items.map((i) => i.id);
+
+  // 1. Reset all vocabulary states for this day back to UNLEARNED
+  await db.userVocabulary.updateMany({
+    where: {
+      userId,
+      vocabularyId: { in: ids },
+    },
+    data: {
+      state: VocabularyState.UNLEARNED,
+      learnedAt: null,
+      masteredAt: null,
+      usedInConversation: false,
+    },
+  });
+
+  // 2. Reset the day progress record
+  const progress = await db.dayProgress.findUnique({
+    where: { userId_dayNumber: { userId, dayNumber } },
+  });
+  if (progress) {
+    await db.dayProgress.update({
+      where: { id: progress.id },
+      data: {
+        status: DayStatus.NOT_STARTED,
+        completedAt: null,
+        startedAt: null,
+        grammarViewed: false,
+        conversationsViewed: "[]",
+        paragraphsViewed: "[]",
+        viewedVocabulary: "[]",
+      },
+    });
+  }
+
+  // 3. Remove any future day progress rows (e.g. Day 2) created during navigation
+  await db.dayProgress.deleteMany({
+    where: {
+      userId,
+      dayNumber: { gt: dayNumber },
     },
   });
 }
 
 export async function reopenDay(userId: string, dayNumber: number) {
-  const progress = await getOrCreateDayProgress(userId, dayNumber);
-  await db.dayProgress.update({
-    where: { id: progress.id },
-    data: {
-      status: DayStatus.IN_PROGRESS,
-      completedAt: null,
-    },
-  });
+  return resetDay(userId, dayNumber);
 }
 
 export async function getCurrentDayNumber(userId: string): Promise<number> {

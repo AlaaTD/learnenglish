@@ -53,6 +53,13 @@ export async function reopenDayAction(dayNumber: number) {
   revalidatePath("/", "layout");
 }
 
+export async function resetDayAction(dayNumber: number) {
+  const user = await requireUser();
+  const { resetDay } = await import("@/services/day-progress");
+  await resetDay(user.id, dayNumber);
+  revalidatePath("/", "layout");
+}
+
 export async function markAllDayVocabularyLearnedAction(dayNumber: number) {
   const user = await requireUser();
   const { markAllDayVocabularyLearned } = await import("@/services/vocabulary-state");

@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { VocabularyState } from "@/lib/states";
+import { VocabularyState, DayStatus } from "@/lib/states";
 
 // All state changes are explicit user decisions — the system never promotes or
 // demotes a word on its own. Every transition is recorded in VocabularyHistory.
@@ -279,8 +279,21 @@ export async function resetAllDayVocabulary(userId: string, dayNumber: number) {
     await db.dayProgress.update({
       where: { id: progress.id },
       data: {
+        status: DayStatus.NOT_STARTED,
+        completedAt: null,
+        startedAt: null,
+        grammarViewed: false,
+        conversationsViewed: "[]",
+        paragraphsViewed: "[]",
         viewedVocabulary: "[]",
       },
     });
   }
+
+  await db.dayProgress.deleteMany({
+    where: {
+      userId,
+      dayNumber: { gt: dayNumber },
+    },
+  });
 }

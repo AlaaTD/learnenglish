@@ -7,7 +7,6 @@ import { DayTabs, type DayTab } from "@/components/day-tabs";
 import { VocabularyCard } from "@/components/vocabulary-card";
 import { AudioButton } from "@/components/audio-button";
 import { CompleteDayButton } from "@/components/day-buttons";
-import { MasterVocabularyButton } from "@/components/master-vocabulary-button";
 import { Badge, EmptyState, ProgressBar } from "@/components/ui";
 import { VocabularyState, VocabularyStateLabel, VocabularyStateStyle } from "@/lib/states";
 
@@ -107,21 +106,12 @@ export default async function DayPage({
         </div>
       </header>
 
-      {progress.status === "COMPLETED" && (
-        <div className="flex items-center gap-3 rounded-xl border border-emerald-200 bg-emerald-50/90 p-4 text-emerald-900 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-200">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 text-base font-bold text-white shadow-sm">
-            ✓
-          </span>
-          <div>
-            <p className="text-sm font-semibold sm:text-base">
-              Day {dayNumber} Completed!
-            </p>
-            <p className="text-xs text-emerald-700 dark:text-emerald-300">
-              All content is permanently saved. Revisit anytime.
-            </p>
-          </div>
-        </div>
-      )}
+      {/* Unified Day Action (Complete / Reset) */}
+      <CompleteDayButton
+        dayNumber={dayNumber}
+        completed={progress.status === "COMPLETED"}
+        nextDay={dayNumber < 90 ? dayNumber + 1 : null}
+      />
 
       {vocabulary.length === 0 ? (
         <div className="rounded-xl border border-amber-200 bg-amber-50/80 p-6 text-amber-900 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-200">
@@ -152,21 +142,14 @@ export default async function DayPage({
           <DayTabs day={dayNumber} active={tab} />
 
           {tab === "vocabulary" && (
-        <section aria-label="Today's vocabulary" className="space-y-4">
-          {/* Master button — single action for all 50 words */}
-          <MasterVocabularyButton
-            dayNumber={dayNumber}
-            totalWords={vocabulary.length}
-            learnedCount={learnedCount}
-          />
-
-          <div className="grid gap-3.5 lg:grid-cols-2">
-            {vocabulary.map((word) => (
-              <VocabularyCard key={word.id} word={word} trackDay={dayNumber} />
-            ))}
-          </div>
-        </section>
-      )}
+            <section aria-label="Today's vocabulary" className="space-y-4">
+              <div className="grid gap-3.5 lg:grid-cols-2">
+                {vocabulary.map((word) => (
+                  <VocabularyCard key={word.id} word={word} trackDay={dayNumber} />
+                ))}
+              </div>
+            </section>
+          )}
 
       {tab === "grammar" && (
         <section aria-label="Today's grammar" className="space-y-8">
