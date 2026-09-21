@@ -24,6 +24,21 @@
 //     on iOS < 16.4 and would break the whole module).
 // ─────────────────────────────────────────────────────────────────────────────
 
+// Two voices share this engine (the learner picks one in Settings, see audio-provider.ts):
+//
+//  - "microsoft" (default): audio-edge.ts streams neural speech from /api/tts into ONE <audio>
+//    element. Reliable on phones (no mute-switch problem, no voice-list problem) but needs internet.
+//  - "google": the rules above. The voice built into the device: Google's on Android, Apple's on
+//    iPhone. Works offline.
+//
+// If Microsoft cannot be reached, the same tap carries on with the device voice from the sentence
+// that failed, and for a minute after that the device voice is used directly. (A fresh tap can then
+// speak synchronously, which iOS requires; speech started later from a network callback may be
+// refused there.) The device voice is also used at once when the phone reports it is offline.
+
+import { DEFAULT_AUDIO_PROVIDER, normalizeAudioProvider, type AudioProvider } from "./audio-provider.ts";
+import { edgePlayer, type EdgeFailureReason } from "./audio-edge.ts";
+
 export interface SpeakOptions {
   rate?: number;
   id?: string;
@@ -57,12 +72,15 @@ const MAX_ATTEMPTS_PER_CHUNK = 3;
 const ERROR_VISIBLE_MS = 7000;
 const MIN_RATE = 0.5;
 const MAX_RATE = 2;
+/** After Microsoft fails, the device voice is used directly (inside the tap) for this long. */
+const MICROSOFT_COOLDOWN_MS = 60_000;
 
 const MESSAGES = {
   unsupported: "هذا المتصفح لا يدعم تشغيل الصوت. جرّب Chrome أو Safari.",
   blocked: "منع المتصفح تشغيل الصوت. اضغط زر الاستماع مرة أخرى.",
   noVoice: "لا يوجد صوت إنجليزي على هذا الجهاز. فعّل صوتًا إنجليزيًا من إعدادات تحويل النص إلى كلام.",
   failed: "تعذّر تشغيل الصوت. تأكد أن الهاتف ليس على الوضع الصامت وأن الصوت مرتفع، ثم حاول مرة أخرى.",
+  offline: "تعذر الاتصال بالصوت. تأكد من اتصال الإنترنت أو اختر صوت الجهاز من صفحة الإعدادات.",
 } as const;
 
 // ─── Text preparation ────────────────────────────────────────────────────────
@@ -403,6 +421,19 @@ interface LiveUtterance {
 /** Bumped on every stop/finish: any callback holding an older token is ignored. */
 let runToken = 0;
 let run: Run | null = null;
+
+/** A Microsoft run (audio-edge.ts plays it). The device engine's `run` stays null meanwhile. */
+interface EdgeRun {
+  id: string;
+  chunks: string[];
+  rate: number;
+  options: SpeakOptions;
+}
+let edgeRun: EdgeRun | null = null;
+
+let provider: AudioProvider = DEFAULT_AUDIO_PROVIDER;
+/** Until this time Microsoft is skipped because it just failed. */
+let microsoftPausedUntil = 0;
 /** Module-level reference also keeps the utterance from being garbage-collected mid-speech. */
 let live: LiveUtterance | null = null;
 
@@ -462,7 +493,7 @@ function cancelEngine() {
 }
 
 function stopInternal(clearError = true) {
-  const hadActivity = run !== null || live !== null;
+  const hadActivity = run !== null || live !== null || edgeRun !== null;
 
   // Invalidate first: the late events cancel() triggers must find nothing to act on.
   runToken += 1;
@@ -470,6 +501,8 @@ function stopInternal(clearError = true) {
   live = null;
   stopPoll();
   clearPending();
+  edgeRun = null;
+  edgePlayer.stop();
   if (clearError) clearErrorTimer();
 
   const synth = getSynth();
@@ -507,7 +540,7 @@ function failureMessage(): string {
 function fail(token: number, message: string) {
   if (token !== runToken) return;
   const failedId = currentState.activeId;
-  const onError = run?.options.onError;
+  const onError = (run ?? edgeRun)?.options.onError;
   stopInternal();
   showError(message, failedId);
   onError?.(message);
@@ -747,10 +780,23 @@ let initialised = false;
 
 /** Idempotent. Warms up the voice list and installs the lifecycle guards. */
 function init() {
-  if (initialised) return;
+  // The lifecycle guards protect both voices, so they do not depend on speechSynthesis existing.
+  if (!initialised && typeof window !== "undefined" && typeof document !== "undefined") {
+    initialised = true;
+    window.addEventListener("pagehide", handlePageHide);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+  }
+  warmVoices();
+}
+
+let voicesWarmed = false;
+
+/** The device voice list: loaded now, and again whenever the browser says it changed. */
+function warmVoices() {
+  if (voicesWarmed) return;
   const synth = getSynth();
   if (!synth) return;
-  initialised = true;
+  voicesWarmed = true;
 
   refreshVoices();
 
@@ -771,38 +817,117 @@ function init() {
       if (allVoices.length === 0) refreshVoices();
     }, delay);
   });
-
-  window.addEventListener("pagehide", handlePageHide);
-  document.addEventListener("visibilitychange", handleVisibilityChange);
 }
 
 // ─── Public API ──────────────────────────────────────────────────────────────
 
 function isSupported(): boolean {
+  return chooseEngine() !== "none";
+}
+
+type Engine = "microsoft" | "device" | "none";
+
+function deviceVoiceAvailable(): boolean {
   return getSynth() !== null && supportsUtterance();
 }
 
-function speakWord(text: string, options: SpeakOptions = {}) {
-  const trimmed = text.trim();
-  if (!trimmed) return;
-  const targetId = options.id ?? trimmed;
+/** Microsoft is worth trying unless it failed a moment ago or the phone says it is offline. */
+function microsoftHealthy(): boolean {
+  if (Date.now() < microsoftPausedUntil) return false;
+  return typeof navigator === "undefined" || navigator.onLine !== false;
+}
+
+/**
+ * Which voice speaks this tap. The device voice is the safe answer whenever Microsoft cannot work,
+ * and Microsoft is used even against the setting when the device has no voice at all.
+ */
+function chooseEngine(): Engine {
+  const microsoft = edgePlayer.isSupported();
+  const device = deviceVoiceAvailable();
+  if (!microsoft) return device ? "device" : "none";
+  if (!device) return "microsoft";
+  return provider === "microsoft" && microsoftHealthy() ? "microsoft" : "device";
+}
+
+/** Called with the learner's saved choice. Switching while something plays stops it. */
+function setProvider(value: unknown) {
+  const next = normalizeAudioProvider(value);
+  if (next === provider) return;
+  provider = next;
+  microsoftPausedUntil = 0;
+  stopInternal();
+}
+
+function finishEdgeRun(token: number) {
+  if (token !== runToken || !edgeRun) return;
+  const onEnd = edgeRun.options.onEnd;
+
+  runToken += 1;
+  edgeRun = null;
+  updateState({ isPlaying: false, activeText: null, activeId: null });
+  onEnd?.();
+}
+
+/** Microsoft could not play (offline, refused, timed out, server error): carry on with the device voice. */
+function edgeFailed(token: number, reason: EdgeFailureReason, index: number) {
+  if (token !== runToken || !edgeRun) return;
+  const current = edgeRun;
+
+  if (reason === "blocked") {
+    fail(token, MESSAGES.blocked);
+    return;
+  }
+
+  microsoftPausedUntil = Date.now() + MICROSOFT_COOLDOWN_MS;
 
   const synth = getSynth();
   if (!synth || !supportsUtterance()) {
-    showError(MESSAGES.unsupported, targetId);
-    options.onError?.(MESSAGES.unsupported);
+    fail(token, MESSAGES.offline);
     return;
   }
 
-  // Tapping the button of what is playing stops it.
-  if (currentState.isPlaying && currentState.activeId === targetId) {
-    stopInternal();
-    return;
-  }
-
+  // Same tap, same button: it stays on "playing" and continues from the sentence that failed.
+  edgeRun = null;
   init();
-  const chunks = splitIntoChunks(trimmed);
-  if (chunks.length === 0) return;
+  refreshVoices();
+  run = {
+    id: current.id,
+    chunks: current.chunks.slice(index),
+    index: 0,
+    attempt: 0,
+    rate: current.rate,
+    voices: buildVoiceLadder(),
+    voiceIndex: 0,
+    options: current.options,
+  };
+
+  if (isEngineBusy(synth)) scheduleAfter(ENGINE_SETTLE_MS, token, () => settleEngineThenPlay(token, 3));
+  else playChunk(token);
+}
+
+function speakWithMicrosoft(text: string, targetId: string, chunks: string[], options: SpeakOptions) {
+  stopInternal();
+  const token = runToken;
+  const rate = clampRate(options.rate);
+  edgeRun = { id: targetId, chunks, rate, options };
+  updateState({ isPlaying: true, activeText: text, activeId: targetId, error: null, errorId: null });
+
+  // play() starts the first sentence right here, inside the user's tap.
+  edgePlayer.play(chunks, rate, {
+    onStart: () => {
+      if (token === runToken) microsoftPausedUntil = 0;
+    },
+    onEnd: () => finishEdgeRun(token),
+    onInterrupted: () => {
+      if (token === runToken) stopInternal();
+    },
+    onFail: (reason, index) => edgeFailed(token, reason, index),
+  });
+}
+
+function speakOnDevice(text: string, targetId: string, chunks: string[], options: SpeakOptions) {
+  const synth = getSynth();
+  if (!synth) return;
 
   const engineWasBusy = run !== null || live !== null || isEngineBusy(synth);
   stopInternal();
@@ -819,7 +944,7 @@ function speakWord(text: string, options: SpeakOptions = {}) {
     voiceIndex: 0,
     options,
   };
-  updateState({ isPlaying: true, activeText: trimmed, activeId: targetId, error: null, errorId: null });
+  updateState({ isPlaying: true, activeText: text, activeId: targetId, error: null, errorId: null });
 
   if (engineWasBusy) {
     scheduleAfter(ENGINE_SETTLE_MS, token, () => settleEngineThenPlay(token, 3));
@@ -827,6 +952,32 @@ function speakWord(text: string, options: SpeakOptions = {}) {
     // Idle engine: speak right now, inside the user's tap (required by iOS).
     playChunk(token);
   }
+}
+
+function speakWord(text: string, options: SpeakOptions = {}) {
+  const trimmed = text.trim();
+  if (!trimmed) return;
+  const targetId = options.id ?? trimmed;
+
+  const engine = chooseEngine();
+  if (engine === "none") {
+    showError(MESSAGES.unsupported, targetId);
+    options.onError?.(MESSAGES.unsupported);
+    return;
+  }
+
+  // Tapping the button of what is playing stops it.
+  if (currentState.isPlaying && currentState.activeId === targetId) {
+    stopInternal();
+    return;
+  }
+
+  init();
+  const chunks = splitIntoChunks(trimmed);
+  if (chunks.length === 0) return;
+
+  if (engine === "microsoft") speakWithMicrosoft(trimmed, targetId, chunks, options);
+  else speakOnDevice(trimmed, targetId, chunks, options);
 }
 
 export const audio = {
@@ -849,6 +1000,13 @@ export const audio = {
   },
 
   speakWord,
+
+  /** Applies the learner's saved voice choice ("microsoft" | "google"). Unknown values mean the default. */
+  setProvider,
+
+  getProvider(): AudioProvider {
+    return provider;
+  },
 
   cancel() {
     stopInternal();

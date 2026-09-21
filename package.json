@@ -10,6 +10,10 @@
     "lint": "eslint",
     "db:backup": "node scripts/backup-db.mjs",
     "test:audio": "node --no-warnings scripts/test-audio.mjs",
+    "test:audio-edge": "node --no-warnings scripts/test-audio-edge.mjs",
+    "test:audio-http": "node --no-warnings scripts/test-audio-http.mjs",
+    "test:tts-server": "node --no-warnings scripts/test-tts-server.mjs",
+    "test:audio-all": "npm run test:audio && npm run test:audio-edge && npm run test:audio-http && npm run test:tts-server",
     "content:validate": "node scripts/validate-content.mjs",
     "content:seed": "node scripts/seed.mjs",
     "db:reset": "node scripts/seed.mjs --hard"

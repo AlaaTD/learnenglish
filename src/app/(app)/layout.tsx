@@ -3,6 +3,9 @@ import Image from "next/image";
 import { requireUser } from "@/lib/auth";
 import { getCurrentDay } from "@/services/stats";
 import { Nav } from "@/components/nav";
+import { AudioConfig } from "@/components/audio-config";
+import { db } from "@/lib/db";
+import { normalizeAudioProvider } from "@/lib/audio-provider";
 
 export const dynamic = "force-dynamic";
 
@@ -11,9 +14,13 @@ export const dynamic = "force-dynamic";
  * affects surfaces inside page content. */
 export default async function AppLayout({ children }: { children: ReactNode }) {
   const user = await requireUser();
-  const currentDay = await getCurrentDay(user.id);
+  const [currentDay, settings] = await Promise.all([
+    getCurrentDay(user.id),
+    db.userSettings.findUnique({ where: { userId: user.id }, select: { audioProvider: true } }),
+  ]);
   return (
     <div className="e90-shell dark flex min-h-full flex-1 flex-col bg-night-950">
+      <AudioConfig provider={normalizeAudioProvider(settings?.audioProvider)} />
       <Nav userName={user.name} isAdmin={user.role === "ADMIN"} currentDay={currentDay} />
       <main className="mx-auto w-full max-w-[1548px] flex-1 px-4 pb-28 pt-5 sm:px-6 sm:pb-12 sm:pt-7">{children}</main>
       {/* Bottom padding clears the fixed phone tab bar (incl. iOS safe area) */}

@@ -2,6 +2,7 @@
 
 import { useActionState, useState, type ReactNode } from "react";
 import { updateSettingsAction } from "@/actions/settings";
+import { normalizeAudioProvider, type AudioProvider } from "@/lib/audio-provider";
 import { Card, ErrorState, SectionHeading, buttonClass, fieldClass } from "./ui";
 
 /** Label + control + optional hint, laid out the same way for every setting. */
@@ -36,6 +37,7 @@ export function SettingsForm({
     dailyTarget: number;
     autoplayAudio: boolean;
     audioSpeed: string;
+    audioProvider: string;
   };
   userName: string;
 }) {
@@ -43,6 +45,9 @@ export function SettingsForm({
   const [dailyTarget, setDailyTarget] = useState(initialSettings.dailyTarget);
   const [autoplayAudio, setAutoplayAudio] = useState(initialSettings.autoplayAudio);
   const [audioSpeed, setAudioSpeed] = useState(initialSettings.audioSpeed);
+  const [audioProvider, setAudioProvider] = useState<AudioProvider>(
+    normalizeAudioProvider(initialSettings.audioProvider),
+  );
   const [name, setName] = useState(userName);
   const [saved, setSaved] = useState(false);
 
@@ -54,6 +59,7 @@ export function SettingsForm({
         dailyTarget: Number(dailyTarget),
         autoplayAudio,
         audioSpeed,
+        audioProvider,
         name,
       });
       if (!res.error) setSaved(true);
@@ -114,6 +120,22 @@ export function SettingsForm({
 
       <Card className="space-y-4 sm:p-6">
         <SectionHeading title="Audio" />
+        <Field
+          htmlFor="audio-provider-select"
+          label="Voice"
+          hint="Microsoft sounds more natural but needs an internet connection. The device voice is built into your phone (Google on Android, Apple on iPhone) and works offline. If Microsoft is unreachable, the device voice is used automatically."
+        >
+          <select
+            id="audio-provider-select"
+            value={audioProvider}
+            onChange={(e) => setAudioProvider(normalizeAudioProvider(e.target.value))}
+            className={`${fieldClass} w-full max-w-md`}
+          >
+            <option value="microsoft">Microsoft (natural voice)</option>
+            <option value="google">Google / device voice (works offline)</option>
+          </select>
+        </Field>
+
         <Field htmlFor="audio-speed-select" label="Pronunciation speed">
           <select
             id="audio-speed-select"

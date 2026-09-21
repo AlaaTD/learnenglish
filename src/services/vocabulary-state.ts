@@ -40,12 +40,18 @@ function toView(row: {
   };
 }
 
+/**
+ * Returns the user's row for a word, creating it when it does not exist yet.
+ * One upsert instead of "find, then create": two requests for the same new word (for example the
+ * card being opened and the star being tapped at the same moment) can no longer collide on the
+ * (userId, vocabularyId) unique index, which used to make one of the two actions throw.
+ */
 async function ensureRow(userId: string, vocabularyId: string) {
-  const existing = await db.userVocabulary.findUnique({
+  return db.userVocabulary.upsert({
     where: { userId_vocabularyId: { userId, vocabularyId } },
+    update: {},
+    create: { userId, vocabularyId },
   });
-  if (existing) return existing;
-  return db.userVocabulary.create({ data: { userId, vocabularyId } });
 }
 
 async function recordHistory(
@@ -220,29 +226,78 @@ export async function recordViewed(
   return toView(updated);
 }
 
+/**
+ * Sets (does not flip) the "difficult word" flag of one word for one user.
+ *
+ * - Idempotent: the caller says which state it wants, so a double tap, a retry or a screen showing
+ *   old data can never invert the result.
+ * - Works for a word that has no row yet, and cannot collide with another request creating that row.
+ * - The history entry is bookkeeping. It is written exactly once per real change (the flip below is
+ *   atomic, so identical requests racing each other cannot log it twice), and a failure to write it
+ *   is logged but never turns an already-saved word into an error for the learner.
+ */
+export async function setDifficultWord(
+  userId: string,
+  vocabularyId: string,
+  isDifficult: boolean,
+  dayNumber?: number | null,
+): Promise<UserVocabularyView> {
+  const key = { userId_vocabularyId: { userId, vocabularyId } };
+  const flag = { isDifficult, difficultAddedAt: isDifficult ? new Date() : null };
+
+  // Flip an existing row. `count` is 1 only for the request that really changed the flag: a row that
+  // already has the wanted value (or no row at all) matches nothing and is left untouched, so
+  // re-saving a saved word does not move it to the top of the list again.
+  const flipped = await db.userVocabulary.updateMany({
+    where: { userId, vocabularyId, isDifficult: !isDifficult },
+    data: flag,
+  });
+  let changed = flipped.count > 0;
+
+  let row = await db.userVocabulary.findUnique({ where: key });
+  if (!row) {
+    // Nothing stored yet. Removing a word that was never saved is a no-op; saving it creates the row.
+    if (!isDifficult) return getUserVocabularyView(userId, vocabularyId);
+    try {
+      row = await db.userVocabulary.create({ data: { userId, vocabularyId, ...flag } });
+      changed = true;
+    } catch (error) {
+      if ((error as { code?: string } | null)?.code !== "P2002") throw error;
+      // Another request created the row a moment ago: make sure the flag is set on it.
+      const late = await db.userVocabulary.updateMany({
+        where: { userId, vocabularyId, isDifficult: false },
+        data: flag,
+      });
+      changed = late.count > 0;
+      row = await db.userVocabulary.findUniqueOrThrow({ where: key });
+    }
+  }
+
+  if (changed) {
+    try {
+      await recordHistory(
+        userId,
+        vocabularyId,
+        isDifficult ? "DIFFICULT_ADDED" : "DIFFICULT_REMOVED",
+        dayNumber ?? null,
+        undefined,
+        row.id,
+      );
+    } catch (error) {
+      console.error("[difficult-words] the word was saved, but its history entry could not be written", error);
+    }
+  }
+  return toView(row);
+}
+
+/** Flips the flag. Prefer `setDifficultWord`, which cannot be inverted by a stale screen. */
 export async function toggleDifficultWord(
   userId: string,
   vocabularyId: string,
   dayNumber?: number | null,
 ): Promise<UserVocabularyView> {
-  const row = await ensureRow(userId, vocabularyId);
-  const nextDifficult = !row.isDifficult;
-  const updated = await db.userVocabulary.update({
-    where: { id: row.id },
-    data: {
-      isDifficult: nextDifficult,
-      difficultAddedAt: nextDifficult ? new Date() : null,
-    },
-  });
-  await recordHistory(
-    userId,
-    vocabularyId,
-    nextDifficult ? "DIFFICULT_ADDED" : "DIFFICULT_REMOVED",
-    dayNumber ?? null,
-    undefined,
-    updated.id,
-  );
-  return toView(updated);
+  const current = await getUserVocabularyView(userId, vocabularyId);
+  return setDifficultWord(userId, vocabularyId, !current.isDifficult, dayNumber);
 }
 
 export async function markAllDayVocabularyLearned(userId: string, dayNumber: number) {

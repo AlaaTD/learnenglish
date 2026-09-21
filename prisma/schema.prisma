@@ -35,6 +35,7 @@ model UserSettings {
   dailyTarget   Int      @default(50)
   autoplayAudio Boolean  @default(false)
   audioSpeed    String   @default("normal") // slow | normal
+  audioProvider String   @default("microsoft") // microsoft | google (device voice)
   updatedAt     DateTime @updatedAt
   user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
