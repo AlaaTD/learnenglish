@@ -1,0 +1,1656 @@
+{
+  "day": 2,
+  "stage": "Foundation — Daily Life",
+  "title": "People and Family",
+  "topic": "Family members and relationships",
+  "description": "Introduce yourself and describe the people in your family.",
+  "focus": "Master 50 core words for family members, personal relationships, descriptions, the verb 'be', subject pronouns, 3 natural dialogues, and 3 reading paragraphs.",
+  "vocabulary": [
+    {
+      "headword": "family",
+      "pronunciation": "/ˈfæməli/",
+      "partOfSpeech": "noun",
+      "definition": "a group of people who are related to each other, especially parents and children",
+      "example": "I have a large and warm family.",
+      "relatedForms": [],
+      "collocations": [
+        "a large family",
+        "family members",
+        "family dinner"
+      ],
+      "synonyms": [
+        "relatives",
+        "household"
+      ],
+      "antonyms": [],
+      "tags": [
+        "family",
+        "people"
+      ],
+      "translation": "عائلة / أسرة",
+      "exampleArabic": "لدي عائلة كبيرة ودافئة."
+    },
+    {
+      "headword": "mother",
+      "pronunciation": "/ˈmʌðər/",
+      "partOfSpeech": "noun",
+      "definition": "a female parent",
+      "example": "My mother is a teacher and she is very kind.",
+      "relatedForms": [],
+      "collocations": [
+        "my mother",
+        "a working mother"
+      ],
+      "synonyms": [
+        "mom",
+        "mum"
+      ],
+      "antonyms": [
+        "father"
+      ],
+      "tags": [
+        "family",
+        "parents"
+      ],
+      "translation": "أم / والدة",
+      "exampleArabic": "أمي معلمة وهي طيبة للغاية."
+    },
+    {
+      "headword": "father",
+      "pronunciation": "/ˈfɑːðər/",
+      "partOfSpeech": "noun",
+      "definition": "a male parent",
+      "example": "My father is tall and very friendly.",
+      "relatedForms": [],
+      "collocations": [
+        "my father",
+        "proud father"
+      ],
+      "synonyms": [
+        "dad"
+      ],
+      "antonyms": [
+        "mother"
+      ],
+      "tags": [
+        "family",
+        "parents"
+      ],
+      "translation": "أب / والد",
+      "exampleArabic": "والدي طويل وودود للغاية."
+    },
+    {
+      "headword": "parent",
+      "pronunciation": "/ˈpeərənt/",
+      "partOfSpeech": "noun",
+      "definition": "a mother or a father of a person or animal",
+      "example": "Both of my parents are at home today.",
+      "relatedForms": [],
+      "collocations": [
+        "single parent",
+        "proud parent",
+        "parents"
+      ],
+      "synonyms": [
+        "guardian"
+      ],
+      "antonyms": [
+        "child"
+      ],
+      "tags": [
+        "family",
+        "parents"
+      ],
+      "translation": "أحد الوالدين (أب أو أم)",
+      "exampleArabic": "كلا والديّ في المنزل اليوم."
+    },
+    {
+      "headword": "brother",
+      "pronunciation": "/ˈbrʌðər/",
+      "partOfSpeech": "noun",
+      "definition": "a boy or man who has the same parents as another person",
+      "example": "My younger brother is funny and smart.",
+      "relatedForms": [],
+      "collocations": [
+        "older brother",
+        "younger brother"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "sister"
+      ],
+      "tags": [
+        "family",
+        "siblings"
+      ],
+      "translation": "أخ",
+      "exampleArabic": "أخي الأصغر مرح وذكي."
+    },
+    {
+      "headword": "sister",
+      "pronunciation": "/ˈsɪstər/",
+      "partOfSpeech": "noun",
+      "definition": "a girl or woman who has the same parents as another person",
+      "example": "My sister is a college student in our city.",
+      "relatedForms": [],
+      "collocations": [
+        "older sister",
+        "younger sister"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "brother"
+      ],
+      "tags": [
+        "family",
+        "siblings"
+      ],
+      "translation": "أخت",
+      "exampleArabic": "أختي طالبة جامعية في مدينتنا."
+    },
+    {
+      "headword": "son",
+      "pronunciation": "/sʌn/",
+      "partOfSpeech": "noun",
+      "definition": "a person's male child",
+      "example": "Their son is seven years old.",
+      "relatedForms": [],
+      "collocations": [
+        "only son",
+        "eldest son"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "daughter"
+      ],
+      "tags": [
+        "family",
+        "children"
+      ],
+      "translation": "ابن",
+      "exampleArabic": "ابنهما يبلغ من العمر سبع سنوات."
+    },
+    {
+      "headword": "daughter",
+      "pronunciation": "/ˈdɔːtər/",
+      "partOfSpeech": "noun",
+      "definition": "a person's female child",
+      "example": "Their daughter is very quiet and polite.",
+      "relatedForms": [],
+      "collocations": [
+        "only daughter",
+        "youngest daughter"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "son"
+      ],
+      "tags": [
+        "family",
+        "children"
+      ],
+      "translation": "ابنة",
+      "exampleArabic": "ابنتهما هادئة ومهذبة للغاية."
+    },
+    {
+      "headword": "child",
+      "pronunciation": "/tʃaɪld/",
+      "partOfSpeech": "noun",
+      "definition": "a young human who is not yet an adult",
+      "example": "She is an only child, but she has many cousins.",
+      "relatedForms": [
+        "children (plural)"
+      ],
+      "collocations": [
+        "only child",
+        "young child"
+      ],
+      "synonyms": [
+        "kid"
+      ],
+      "antonyms": [
+        "adult"
+      ],
+      "tags": [
+        "family",
+        "children"
+      ],
+      "translation": "طفل / ولد",
+      "exampleArabic": "هي طفلة وحيدة، لكن لديها الكثير من أبناء العم."
+    },
+    {
+      "headword": "baby",
+      "pronunciation": "/ˈbeɪbi/",
+      "partOfSpeech": "noun",
+      "definition": "a very young child who cannot yet walk or talk",
+      "example": "The baby is asleep in the quiet bedroom.",
+      "relatedForms": [],
+      "collocations": [
+        "newborn baby",
+        "baby boy",
+        "baby girl"
+      ],
+      "synonyms": [
+        "infant"
+      ],
+      "antonyms": [
+        "adult"
+      ],
+      "tags": [
+        "family",
+        "children"
+      ],
+      "translation": "رضيع / طفل صغير",
+      "exampleArabic": "الطفل الرضيع نائم في غرفة النوم الهادئة."
+    },
+    {
+      "headword": "husband",
+      "pronunciation": "/ˈhʌzbənd/",
+      "partOfSpeech": "noun",
+      "definition": "the man that a woman is married to",
+      "example": "Her husband is a doctor at the local hospital.",
+      "relatedForms": [],
+      "collocations": [
+        "loving husband",
+        "future husband"
+      ],
+      "synonyms": [
+        "spouse"
+      ],
+      "antonyms": [
+        "wife"
+      ],
+      "tags": [
+        "family",
+        "marriage"
+      ],
+      "translation": "زوج",
+      "exampleArabic": "زوجها طبيب في المستشفى المحلي."
+    },
+    {
+      "headword": "wife",
+      "pronunciation": "/waɪf/",
+      "partOfSpeech": "noun",
+      "definition": "the woman that a man is married to",
+      "example": "His wife is an artist and she is very talented.",
+      "relatedForms": [],
+      "collocations": [
+        "loving wife",
+        "his wife"
+      ],
+      "synonyms": [
+        "spouse"
+      ],
+      "antonyms": [
+        "husband"
+      ],
+      "tags": [
+        "family",
+        "marriage"
+      ],
+      "translation": "زوجة",
+      "exampleArabic": "زوجته فنانة وهي موهوبة للغاية."
+    },
+    {
+      "headword": "grandfather",
+      "pronunciation": "/ˈɡrændfɑːðər/",
+      "partOfSpeech": "noun",
+      "definition": "the father of your father or mother",
+      "example": "My grandfather is seventy years old, but he is active.",
+      "relatedForms": [],
+      "collocations": [
+        "grandpa",
+        "maternal grandfather"
+      ],
+      "synonyms": [
+        "grandpa",
+        "granddad"
+      ],
+      "antonyms": [
+        "grandmother"
+      ],
+      "tags": [
+        "family",
+        "grandparents"
+      ],
+      "translation": "جد (والد الأب أو الأم)",
+      "exampleArabic": "جدي يبلغ سبعين عاماً، لكنه نشيط."
+    },
+    {
+      "headword": "grandmother",
+      "pronunciation": "/ˈɡrændmʌðər/",
+      "partOfSpeech": "noun",
+      "definition": "the mother of your father or mother",
+      "example": "My grandmother makes the best soup in the world.",
+      "relatedForms": [],
+      "collocations": [
+        "grandma",
+        "paternal grandmother"
+      ],
+      "synonyms": [
+        "grandma",
+        "granny"
+      ],
+      "antonyms": [
+        "grandfather"
+      ],
+      "tags": [
+        "family",
+        "grandparents"
+      ],
+      "translation": "جدة (والدة الأب أو الأم)",
+      "exampleArabic": "جدتي تصنع أفضل حساء في العالم."
+    },
+    {
+      "headword": "grandparent",
+      "pronunciation": "/ˈɡrændpeərənt/",
+      "partOfSpeech": "noun",
+      "definition": "a parent of your father or mother",
+      "example": "Every child loves to visit their grandparents.",
+      "relatedForms": [],
+      "collocations": [
+        "elderly grandparent",
+        "grandparents"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "grandchild"
+      ],
+      "tags": [
+        "family",
+        "grandparents"
+      ],
+      "translation": "الجد أو الجدة",
+      "exampleArabic": "كل طفل يحب زيارة أجداده."
+    },
+    {
+      "headword": "grandchild",
+      "pronunciation": "/ˈɡrændtʃaɪld/",
+      "partOfSpeech": "noun",
+      "definition": "a child of your son or daughter",
+      "example": "They are proud of their little grandchild.",
+      "relatedForms": [
+        "grandchildren (plural)"
+      ],
+      "collocations": [
+        "first grandchild",
+        "grandchildren"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "grandparent"
+      ],
+      "tags": [
+        "family",
+        "children"
+      ],
+      "translation": "حفيد أو حفيدة",
+      "exampleArabic": "إنهما فخوران بحفيدهما الصغير."
+    },
+    {
+      "headword": "uncle",
+      "pronunciation": "/ˈʌŋkl/",
+      "partOfSpeech": "noun",
+      "definition": "the brother of your father or mother, or the husband of your aunt",
+      "example": "My uncle lives in London and visits us every summer.",
+      "relatedForms": [],
+      "collocations": [
+        "favorite uncle",
+        "uncle and aunt"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "aunt"
+      ],
+      "tags": [
+        "family",
+        "relatives"
+      ],
+      "translation": "عم / خال",
+      "exampleArabic": "عمي يعيش في لندن ويزورنا كل صيف."
+    },
+    {
+      "headword": "aunt",
+      "pronunciation": "/ɑːnt/",
+      "partOfSpeech": "noun",
+      "definition": "the sister of your father or mother, or the wife of your uncle",
+      "example": "My aunt is a very friendly and funny woman.",
+      "relatedForms": [],
+      "collocations": [
+        "aunt and uncle",
+        "favorite aunt"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "uncle"
+      ],
+      "tags": [
+        "family",
+        "relatives"
+      ],
+      "translation": "عمة / خالة",
+      "exampleArabic": "عمتي امرأة ودودة ومرحة للغاية."
+    },
+    {
+      "headword": "cousin",
+      "pronunciation": "/ˈkʌzn/",
+      "partOfSpeech": "noun",
+      "definition": "a child of your uncle or aunt",
+      "example": "I play tennis with my cousin every Saturday.",
+      "relatedForms": [],
+      "collocations": [
+        "first cousin",
+        "close cousin"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "family",
+        "relatives"
+      ],
+      "translation": "ابن / ابنة العم أو الخال",
+      "exampleArabic": "ألعب التنس مع ابن عمي كل يوم سبت."
+    },
+    {
+      "headword": "relative",
+      "pronunciation": "/ˈrelətɪv/",
+      "partOfSpeech": "noun",
+      "definition": "a member of your family by blood or marriage",
+      "example": "All our relatives meet for dinner on holidays.",
+      "relatedForms": [],
+      "collocations": [
+        "close relative",
+        "distant relative"
+      ],
+      "synonyms": [
+        "family member",
+        "relation"
+      ],
+      "antonyms": [
+        "stranger"
+      ],
+      "tags": [
+        "family",
+        "relatives"
+      ],
+      "translation": "قريب (من الأقارب)",
+      "exampleArabic": "يجتمع جميع أقاربنا لتناول العشاء في العطلات."
+    },
+    {
+      "headword": "person",
+      "pronunciation": "/ˈpɜːsn/",
+      "partOfSpeech": "noun",
+      "definition": "a human being regarded as an individual",
+      "example": "She is a very kind and warm person.",
+      "relatedForms": [
+        "people (plural)"
+      ],
+      "collocations": [
+        "kind person",
+        "young person"
+      ],
+      "synonyms": [
+        "individual",
+        "human"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "identity"
+      ],
+      "translation": "شخص / إنسان",
+      "exampleArabic": "إنها شخص طيب ودافئ للغاية."
+    },
+    {
+      "headword": "friend",
+      "pronunciation": "/frend/",
+      "partOfSpeech": "noun",
+      "definition": "a person you know well and like, but who is not a relative",
+      "example": "Omar is my best friend from school.",
+      "relatedForms": [],
+      "collocations": [
+        "best friend",
+        "close friend",
+        "make friends"
+      ],
+      "synonyms": [
+        "companion",
+        "pal"
+      ],
+      "antonyms": [
+        "enemy",
+        "stranger"
+      ],
+      "tags": [
+        "relationships",
+        "people"
+      ],
+      "translation": "صديق / صديقة",
+      "exampleArabic": "عمر هو أعز أصدقائي من المدرسة."
+    },
+    {
+      "headword": "neighbor",
+      "pronunciation": "/ˈneɪbər/",
+      "partOfSpeech": "noun",
+      "definition": "someone who lives near you, especially in the next house or apartment",
+      "example": "Our neighbor is quiet and always helps us.",
+      "relatedForms": [],
+      "collocations": [
+        "next-door neighbor",
+        "friendly neighbor"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "relationships",
+        "community"
+      ],
+      "translation": "جار / جارة",
+      "exampleArabic": "جارنا هادئ ويساعدنا دائماً."
+    },
+    {
+      "headword": "colleague",
+      "pronunciation": "/ˈkɒliːɡ/",
+      "partOfSpeech": "noun",
+      "definition": "a person that you work with in a profession or business",
+      "example": "My colleague Sarah is smart and hardworking.",
+      "relatedForms": [],
+      "collocations": [
+        "work colleague",
+        "close colleague"
+      ],
+      "synonyms": [
+        "coworker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "relationships",
+        "people"
+      ],
+      "translation": "زميل عمل",
+      "exampleArabic": "زميلتي في العمل سارة ذكية ومجتهدة."
+    },
+    {
+      "headword": "partner",
+      "pronunciation": "/ˈpɑːtnər/",
+      "partOfSpeech": "noun",
+      "definition": "a person you are married to or having a romantic relationship with, or work together with",
+      "example": "Mark and his partner live in a bright apartment.",
+      "relatedForms": [],
+      "collocations": [
+        "life partner",
+        "business partner"
+      ],
+      "synonyms": [
+        "companion",
+        "spouse"
+      ],
+      "antonyms": [],
+      "tags": [
+        "relationships",
+        "people"
+      ],
+      "translation": "شريك (حياة أو عمل)",
+      "exampleArabic": "مارك وشريكته يعيشان في شقة مشرقة."
+    },
+    {
+      "headword": "guest",
+      "pronunciation": "/ɡest/",
+      "partOfSpeech": "noun",
+      "definition": "a person who is invited to visit or stay at someone's home",
+      "example": "We have a special dinner guest this evening.",
+      "relatedForms": [],
+      "collocations": [
+        "dinner guest",
+        "welcome guest"
+      ],
+      "synonyms": [
+        "visitor"
+      ],
+      "antonyms": [
+        "host"
+      ],
+      "tags": [
+        "people",
+        "home"
+      ],
+      "translation": "ضيف / زائر",
+      "exampleArabic": "لدينا ضيف مميز لتناول العشاء هذا المساء."
+    },
+    {
+      "headword": "name",
+      "pronunciation": "/neɪm/",
+      "partOfSpeech": "noun",
+      "definition": "a word or words that a person, thing, or place is known by",
+      "example": "What is your full name?",
+      "relatedForms": [],
+      "collocations": [
+        "first name",
+        "last name",
+        "full name"
+      ],
+      "synonyms": [
+        "title"
+      ],
+      "antonyms": [],
+      "tags": [
+        "identity",
+        "people"
+      ],
+      "translation": "اسم",
+      "exampleArabic": "ما هو اسمك الكامل؟"
+    },
+    {
+      "headword": "age",
+      "pronunciation": "/eɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "the number of years that someone has lived",
+      "example": "My brother and I are close in age.",
+      "relatedForms": [],
+      "collocations": [
+        "at the age of",
+        "same age",
+        "young age"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "identity",
+        "people"
+      ],
+      "translation": "عمر / سن",
+      "exampleArabic": "أنا وأخي متقاربان في العمر."
+    },
+    {
+      "headword": "man",
+      "pronunciation": "/mæn/",
+      "partOfSpeech": "noun",
+      "definition": "an adult male human being",
+      "example": "That tall man is my uncle Robert.",
+      "relatedForms": [
+        "men (plural)"
+      ],
+      "collocations": [
+        "young man",
+        "tall man"
+      ],
+      "synonyms": [
+        "gentleman"
+      ],
+      "antonyms": [
+        "woman"
+      ],
+      "tags": [
+        "people",
+        "identity"
+      ],
+      "translation": "رجل",
+      "exampleArabic": "ذلك الرجل الطويل هو عمي روبرت."
+    },
+    {
+      "headword": "woman",
+      "pronunciation": "/ˈwʊmən/",
+      "partOfSpeech": "noun",
+      "definition": "an adult female human being",
+      "example": "The woman with dark hair is our aunt.",
+      "relatedForms": [
+        "women (plural)"
+      ],
+      "collocations": [
+        "young woman",
+        "kind woman"
+      ],
+      "synonyms": [
+        "lady"
+      ],
+      "antonyms": [
+        "man"
+      ],
+      "tags": [
+        "people",
+        "identity"
+      ],
+      "translation": "امرأة / سيدة",
+      "exampleArabic": "المرأة ذات الشعر الداكن هي عمتنا."
+    },
+    {
+      "headword": "boy",
+      "pronunciation": "/bɔɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a male child or young male person",
+      "example": "The little boy plays happily in the garden.",
+      "relatedForms": [],
+      "collocations": [
+        "little boy",
+        "schoolboy"
+      ],
+      "synonyms": [
+        "lad"
+      ],
+      "antonyms": [
+        "girl"
+      ],
+      "tags": [
+        "people",
+        "children"
+      ],
+      "translation": "صبي / ولد",
+      "exampleArabic": "الصبي الصغير يلعب بسعادة في الحديقة."
+    },
+    {
+      "headword": "girl",
+      "pronunciation": "/ɡɜːl/",
+      "partOfSpeech": "noun",
+      "definition": "a female child or young female person",
+      "example": "The smart girl answers all the questions.",
+      "relatedForms": [],
+      "collocations": [
+        "little girl",
+        "schoolgirl"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "boy"
+      ],
+      "tags": [
+        "people",
+        "children"
+      ],
+      "translation": "فتاة / بنت",
+      "exampleArabic": "الفتاة الذكية تجيب عن جميع الأسئلة."
+    },
+    {
+      "headword": "married",
+      "pronunciation": "/ˈmærid/",
+      "partOfSpeech": "adjective",
+      "definition": "having a husband or wife",
+      "example": "My parents are married and very happy.",
+      "relatedForms": [],
+      "collocations": [
+        "get married",
+        "happily married",
+        "married couple"
+      ],
+      "synonyms": [
+        "wed"
+      ],
+      "antonyms": [
+        "single",
+        "divorced"
+      ],
+      "tags": [
+        "relationships",
+        "descriptions"
+      ],
+      "translation": "متزوج / متزوجة",
+      "exampleArabic": "والداي متزوجان وسعيدان للغاية."
+    },
+    {
+      "headword": "single",
+      "pronunciation": "/ˈsɪŋɡl/",
+      "partOfSpeech": "adjective",
+      "definition": "not married or not having a romantic relationship",
+      "example": "My brother is single and lives downtown.",
+      "relatedForms": [],
+      "collocations": [
+        "single person",
+        "remain single"
+      ],
+      "synonyms": [
+        "unmarried"
+      ],
+      "antonyms": [
+        "married"
+      ],
+      "tags": [
+        "relationships",
+        "descriptions"
+      ],
+      "translation": "أعزب / غير متزوج",
+      "exampleArabic": "أخي أعزب ويعيش في وسط المدينة."
+    },
+    {
+      "headword": "tall",
+      "pronunciation": "/tɔːl/",
+      "partOfSpeech": "adjective",
+      "definition": "greater in height than average",
+      "example": "My father and brother are both tall.",
+      "relatedForms": [],
+      "collocations": [
+        "tall man",
+        "tall person"
+      ],
+      "synonyms": [
+        "high"
+      ],
+      "antonyms": [
+        "short"
+      ],
+      "tags": [
+        "descriptions",
+        "appearance"
+      ],
+      "translation": "طويل (القامة)",
+      "exampleArabic": "والدي وأخي كلاهما طويلان."
+    },
+    {
+      "headword": "short",
+      "pronunciation": "/ʃɔːt/",
+      "partOfSpeech": "adjective",
+      "definition": "small in height from the bottom to the top",
+      "example": "My grandmother is short, but she has a big smile.",
+      "relatedForms": [],
+      "collocations": [
+        "short person",
+        "quite short"
+      ],
+      "synonyms": [
+        "petite"
+      ],
+      "antonyms": [
+        "tall"
+      ],
+      "tags": [
+        "descriptions",
+        "appearance"
+      ],
+      "translation": "قصير (القامة)",
+      "exampleArabic": "جدتي قصيرة القامة، لكن لديها ابتسامة عريضة."
+    },
+    {
+      "headword": "young",
+      "pronunciation": "/jʌŋ/",
+      "partOfSpeech": "adjective",
+      "definition": "having lived or existed for only a short time",
+      "example": "The young girl loves to read books.",
+      "relatedForms": [],
+      "collocations": [
+        "young person",
+        "young children"
+      ],
+      "synonyms": [
+        "youthful"
+      ],
+      "antonyms": [
+        "old"
+      ],
+      "tags": [
+        "descriptions",
+        "age"
+      ],
+      "translation": "صغير السن / شاب",
+      "exampleArabic": "الفتاة الصغيرة تحب قراءة الكتب."
+    },
+    {
+      "headword": "old",
+      "pronunciation": "/əʊld/",
+      "partOfSpeech": "adjective",
+      "definition": "having lived for a long time; not young",
+      "example": "Our grandfather is old, but he walks every day.",
+      "relatedForms": [],
+      "collocations": [
+        "old person",
+        "old age"
+      ],
+      "synonyms": [
+        "elderly"
+      ],
+      "antonyms": [
+        "young"
+      ],
+      "tags": [
+        "descriptions",
+        "age"
+      ],
+      "translation": "كبير في السن / مسن",
+      "exampleArabic": "جدنا كبير في السن، لكنه يمشي كل يوم."
+    },
+    {
+      "headword": "kind",
+      "pronunciation": "/kaɪnd/",
+      "partOfSpeech": "adjective",
+      "definition": "friendly, generous, and considerate of others",
+      "example": "Our mother is always kind to everyone she meets.",
+      "relatedForms": [],
+      "collocations": [
+        "kind person",
+        "very kind",
+        "kind heart"
+      ],
+      "synonyms": [
+        "caring",
+        "gentle"
+      ],
+      "antonyms": [
+        "cruel",
+        "mean"
+      ],
+      "tags": [
+        "descriptions",
+        "personality"
+      ],
+      "translation": "لطيف / طيب القلب",
+      "exampleArabic": "أمنا دائماً طيبة ولطيفة مع كل من تقابله."
+    },
+    {
+      "headword": "friendly",
+      "pronunciation": "/ˈfrendli/",
+      "partOfSpeech": "adjective",
+      "definition": "behaving in a pleasant, welcoming, and helpful way toward someone",
+      "example": "We have friendly neighbors who always say hello.",
+      "relatedForms": [],
+      "collocations": [
+        "friendly face",
+        "friendly smile",
+        "warm and friendly"
+      ],
+      "synonyms": [
+        "welcoming",
+        "warm"
+      ],
+      "antonyms": [
+        "unfriendly",
+        "hostile"
+      ],
+      "tags": [
+        "descriptions",
+        "personality"
+      ],
+      "translation": "ودود / بشوش",
+      "exampleArabic": "لدينا جيران ودودون يلقون التحية دائماً."
+    },
+    {
+      "headword": "funny",
+      "pronunciation": "/ˈfʌni/",
+      "partOfSpeech": "adjective",
+      "definition": "causing laughter or amusement; humorous",
+      "example": "My uncle tells funny jokes at every family dinner.",
+      "relatedForms": [],
+      "collocations": [
+        "funny joke",
+        "funny person",
+        "really funny"
+      ],
+      "synonyms": [
+        "humorous",
+        "amusing"
+      ],
+      "antonyms": [
+        "serious"
+      ],
+      "tags": [
+        "descriptions",
+        "personality"
+      ],
+      "translation": "مرح / مضحك",
+      "exampleArabic": "عمي يروي نكاتاً مضحكة في كل عشاء عائلي."
+    },
+    {
+      "headword": "smart",
+      "pronunciation": "/smɑːt/",
+      "partOfSpeech": "adjective",
+      "definition": "having or showing a quick-witted intelligence",
+      "example": "My sister is very smart and solves puzzles quickly.",
+      "relatedForms": [],
+      "collocations": [
+        "smart student",
+        "smart choice"
+      ],
+      "synonyms": [
+        "intelligent",
+        "clever"
+      ],
+      "antonyms": [
+        "stupid",
+        "foolish"
+      ],
+      "tags": [
+        "descriptions",
+        "personality"
+      ],
+      "translation": "ذكي",
+      "exampleArabic": "أختي ذكية للغاية وتحل الألغاز بسرعة."
+    },
+    {
+      "headword": "quiet",
+      "pronunciation": "/ˈkwaɪət/",
+      "partOfSpeech": "adjective",
+      "definition": "making very little noise; calm and not talking a lot",
+      "example": "My cousin is a quiet boy who loves to read.",
+      "relatedForms": [],
+      "collocations": [
+        "quiet person",
+        "quiet child"
+      ],
+      "synonyms": [
+        "calm",
+        "silent"
+      ],
+      "antonyms": [
+        "loud",
+        "noisy"
+      ],
+      "tags": [
+        "descriptions",
+        "personality"
+      ],
+      "translation": "هادئ",
+      "exampleArabic": "ابن عمي صبي هادئ يحب القراءة."
+    },
+    {
+      "headword": "close",
+      "pronunciation": "/kləʊs/",
+      "partOfSpeech": "adjective",
+      "definition": "knowing someone very well and liking them a lot",
+      "example": "My brother and I are very close friends.",
+      "relatedForms": [],
+      "collocations": [
+        "close friend",
+        "close family",
+        "very close"
+      ],
+      "synonyms": [
+        "intimate",
+        "connected"
+      ],
+      "antonyms": [
+        "distant"
+      ],
+      "tags": [
+        "relationships",
+        "descriptions"
+      ],
+      "translation": "مقرّب / وطيد العلاقة",
+      "exampleArabic": "أنا وأخي صديقان مقربان جداً."
+    },
+    {
+      "headword": "live",
+      "pronunciation": "/lɪv/",
+      "partOfSpeech": "verb",
+      "definition": "to have your home in a particular place",
+      "example": "We live in a quiet apartment with our parents.",
+      "verbForms": {
+        "v1": "live",
+        "v2": "lived",
+        "v3": "lived"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "live together",
+        "live with family"
+      ],
+      "synonyms": [
+        "reside",
+        "dwell"
+      ],
+      "antonyms": [
+        "leave"
+      ],
+      "tags": [
+        "actions",
+        "home"
+      ],
+      "translation": "يعيش / يسكن",
+      "exampleArabic": "نحن نعيش في شقة هادئة مع والدينا."
+    },
+    {
+      "headword": "meet",
+      "pronunciation": "/miːt/",
+      "partOfSpeech": "verb",
+      "definition": "to see and speak to someone for the first time, or by arrangement",
+      "example": "I want you to meet my sister today.",
+      "verbForms": {
+        "v1": "meet",
+        "v2": "met",
+        "v3": "met"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "meet new people",
+        "pleased to meet you"
+      ],
+      "synonyms": [
+        "encounter",
+        "get to know"
+      ],
+      "antonyms": [
+        "avoid"
+      ],
+      "tags": [
+        "actions",
+        "relationships"
+      ],
+      "translation": "يلتقي / يقابل / يتعرف على",
+      "exampleArabic": "أريدك أن تلتقي بأختي اليوم."
+    },
+    {
+      "headword": "introduce",
+      "pronunciation": "/ˌɪntrəˈdjuːs/",
+      "partOfSpeech": "verb",
+      "definition": "to tell someone another person's name when they meet for the first time",
+      "example": "Let me introduce my friend Omar to you.",
+      "verbForms": {
+        "v1": "introduce",
+        "v2": "introduced",
+        "v3": "introduced"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "introduce someone",
+        "introduce yourself"
+      ],
+      "synonyms": [
+        "present"
+      ],
+      "antonyms": [],
+      "tags": [
+        "actions",
+        "social"
+      ],
+      "translation": "يقدّم / يعرّف شخصاً بآخر",
+      "exampleArabic": "دعني أقدّم صديقي عمر إليك."
+    },
+    {
+      "headword": "call",
+      "pronunciation": "/kɔːl/",
+      "partOfSpeech": "verb",
+      "definition": "to telephone someone, or to give someone a name",
+      "example": "I call my grandmother on the phone every Sunday.",
+      "verbForms": {
+        "v1": "call",
+        "v2": "called",
+        "v3": "called"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "call home",
+        "give a call"
+      ],
+      "synonyms": [
+        "phone",
+        "ring"
+      ],
+      "antonyms": [],
+      "tags": [
+        "actions",
+        "communication"
+      ],
+      "translation": "يتصل هاتفياً / ينادي",
+      "exampleArabic": "أتصل بجدتي هاتفياً كل يوم أحد."
+    },
+    {
+      "headword": "visit",
+      "pronunciation": "/ˈvɪzɪt/",
+      "partOfSpeech": "verb",
+      "definition": "to go to see someone and spend time with them",
+      "example": "We visit our grandparents every weekend.",
+      "verbForms": {
+        "v1": "visit",
+        "v2": "visited",
+        "v3": "visited"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "visit family",
+        "visit friends",
+        "pay a visit"
+      ],
+      "synonyms": [
+        "drop by",
+        "call on"
+      ],
+      "antonyms": [],
+      "tags": [
+        "actions",
+        "social"
+      ],
+      "translation": "يزور",
+      "exampleArabic": "نزور أجدادنا كل عطلة نهاية أسبوع."
+    },
+    {
+      "headword": "help",
+      "pronunciation": "/help/",
+      "partOfSpeech": "verb",
+      "definition": "to make it easier for someone to do something by doing part of the work",
+      "example": "My brother and I help our mother with the chores.",
+      "verbForms": {
+        "v1": "help",
+        "v2": "helped",
+        "v3": "helped"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "help someone",
+        "ask for help",
+        "offer help"
+      ],
+      "synonyms": [
+        "assist",
+        "support"
+      ],
+      "antonyms": [
+        "hinder"
+      ],
+      "tags": [
+        "actions",
+        "support"
+      ],
+      "translation": "يساعد / يعين",
+      "exampleArabic": "أنا وأخي نساعد أمنا في الأعمال المنزلية."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Verb be and Subject Pronouns",
+      "titleArabic": "فعل يكون (Verb to be) وضمائر الفاعل",
+      "explanation": "The verb 'be' connects a subject pronoun (I, you, he, she, it, we, they) to an identity, relationship, or description. In the present simple, it has three forms: 'am' with I, 'is' with he/she/it and singular nouns, and 'are' with you/we/they and plural nouns. In natural speech, contractions like I'm, he's, she's, we're, and they're are customary.",
+      "explanationArabic": "يُستخدم فعل الكينونة (Verb to be) لربط ضمائر الفاعل (أنا، أنت، هو، هي، إلخ) بوصف الشخص أو هويته أو صلته العائلية. ينقسم الفعل في المضارع البسيط إلى ثلاثة أشكال رئيسية: am مع ضمير المتكلم (I)، وis مع المفرد الغائب (he, she, it) والأسماء المفردة، وare مع الجمع والمخاطب (you, we, they). في المحادثة الطبيعية، تُستخدم الاختصارات دائماً مثل I'm وhe's وwe're.",
+      "structures": [
+        {
+          "pattern": "I am / He is / She is / It is",
+          "label": "Singular affirmative · الإثبات للمفرد"
+        },
+        {
+          "pattern": "We are / You are / They are",
+          "label": "Plural affirmative · الإثبات للجمع والمخاطب"
+        },
+        {
+          "pattern": "Subject + be + not (am not / isn't / aren't)",
+          "label": "Negative statements · النفي"
+        },
+        {
+          "pattern": "Am I...? / Is he / she...? / Are you / we / they...?",
+          "label": "Yes/No questions · الأسئلة الاستفهامية"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I am tall and my sister is short.",
+          "usesVocabulary": [
+            "sister",
+            "tall",
+            "short"
+          ],
+          "translation": "أنا طويل وأختي قصيرة القامة."
+        },
+        {
+          "sentence": "He is my father and she is my mother.",
+          "usesVocabulary": [
+            "father",
+            "mother"
+          ],
+          "translation": "هو والدي وهي والدتي."
+        },
+        {
+          "sentence": "They are friendly neighbors and we are close friends.",
+          "usesVocabulary": [
+            "friendly",
+            "neighbor",
+            "close",
+            "friend"
+          ],
+          "translation": "هم جيران ودودون ونحن أصدقاء مقربون."
+        },
+        {
+          "sentence": "My brother is not married; he is single.",
+          "usesVocabulary": [
+            "brother",
+            "married",
+            "single"
+          ],
+          "translation": "أخي ليس متزوجاً؛ إنه أعزب."
+        },
+        {
+          "sentence": "Are you an only child?",
+          "usesVocabulary": [
+            "child"
+          ],
+          "translation": "هل أنت طفل وحيد؟"
+        },
+        {
+          "sentence": "Our grandmother is old, but she is very smart and kind.",
+          "usesVocabulary": [
+            "grandmother",
+            "old",
+            "smart",
+            "kind"
+          ],
+          "translation": "جدتنا كبيرة في السن، لكنها ذكية وطيبة للغاية."
+        }
+      ],
+      "commonUsage": [
+        "Always use 'am' exclusively with the pronoun 'I' (I am / I'm).",
+        "Use contractions in speaking and casual messages: he's, she's, we're, they're.",
+        "In questions, invert the subject and verb: 'You are married' becomes 'Are you married?'."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "He are my brother.",
+          "right": "He is my brother.",
+          "note": "Use 'is' with third-person singular pronouns (he, she, it) and singular nouns."
+        },
+        {
+          "wrong": "They is married.",
+          "right": "They are married.",
+          "note": "Use 'are' with plural subjects and the pronouns they, we, and you."
+        },
+        {
+          "wrong": "I is a student.",
+          "right": "I am a student.",
+          "note": "The pronoun 'I' always pairs with 'am' in the present tense."
+        }
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Meeting the Family",
+      "titleArabic": "التعرف على العائلة",
+      "setting": "At a neighborhood coffee shop, Tariq introduces his sister Layla to his colleague David.",
+      "settingArabic": "في مقهى بالحي، يقدّم طارق أخته ليلى لزميله في العمل ديفيد.",
+      "lines": [
+        {
+          "speaker": "Tariq",
+          "text": "Hello David! It is great to see you here today.",
+          "translation": "مرحباً ديفيد! من الرائع أن أراك هنا اليوم."
+        },
+        {
+          "speaker": "David",
+          "text": "Hi Tariq! Good to see you. Who is with you?",
+          "translation": "أهلاً طارق! سعيد برؤيتك. من هذا الذي معك؟"
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Let me introduce my sister, Layla. Layla, this is my colleague David.",
+          "translation": "دعني أقدّم أختي، ليلى. ليلى، هذا زميلي في العمل ديفيد."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Pleased to meet you, David! Tariq speaks very kindly of you.",
+          "translation": "يسعدني لقاؤك يا ديفيد! طارق يتحدث عنك دائماً بكل لطف."
+        },
+        {
+          "speaker": "David",
+          "text": "Pleased to meet you too, Layla. Do you live here in the city?",
+          "translation": "يسعدني لقاؤك أيضاً يا ليلى. هل تعيشين هنا في المدينة؟"
+        },
+        {
+          "speaker": "Layla",
+          "text": "Yes, I live in an apartment close to our parents.",
+          "translation": "نعم، أعيش في شقة قريبة من والدينا."
+        },
+        {
+          "speaker": "David",
+          "text": "That is wonderful. Are you a college student or do you work?",
+          "translation": "هذا رائع. هل أنتِ طالبة جامعية أم تعملين؟"
+        },
+        {
+          "speaker": "Layla",
+          "text": "I am a college student, and my brother Tariq is my best friend.",
+          "translation": "أنا طالبة جامعية، وأخي طارق هو أعز أصدقائي."
+        },
+        {
+          "speaker": "David",
+          "text": "You have a very friendly family. Tariq is always helpful at work.",
+          "translation": "لديك عائلة ودودة للغاية. طارق متعاون دائماً في العمل."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Thank you David! Layla is also smart and funny. Join us for a cup!",
+          "translation": "شكراً لك يا ديفيد! ليلى أيضاً ذكية ومرحة. انضم إلينا لتناول فنجان!"
+        }
+      ],
+      "vocabularyUsed": [
+        "introduce",
+        "sister",
+        "colleague",
+        "meet",
+        "live",
+        "close",
+        "parent",
+        "brother",
+        "friend",
+        "friendly",
+        "family",
+        "help",
+        "smart",
+        "funny"
+      ]
+    },
+    {
+      "title": "Talking About Relatives",
+      "titleArabic": "الحديث عن الأقارب",
+      "setting": "Two friends, Mona and Sarah, are sitting in a quiet park looking at family photos on a phone.",
+      "settingArabic": "صديقتان، منى وسارة، تجلسان في حديقة هادئة وتتصفحان صور العائلة على الهاتف.",
+      "lines": [
+        {
+          "speaker": "Sarah",
+          "text": "Mona, is this large group in the picture your family?",
+          "translation": "منى، هل هذه المجموعة الكبيرة في الصورة هي عائلتك؟"
+        },
+        {
+          "speaker": "Mona",
+          "text": "Yes! That tall man is my father, and the kind woman next to him is my mother.",
+          "translation": "نعم! ذلك الرجل الطويل هو والدي، والمرأة الطيبة بجواره هي والدتي."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "They look so warm. Who is that cute baby in her arms?",
+          "translation": "يبدوان دافئين للغاية. من هذا الرضيع اللطيف بين ذراعيها؟"
+        },
+        {
+          "speaker": "Mona",
+          "text": "That is my little cousin Leo. His mother is my aunt Nora.",
+          "translation": "ذلك ابن عمتي الصغير ليو. والدته هي عمتي نورا."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "And who is the boy standing next to your uncle?",
+          "translation": "ومن الصبي الواقف بجوار عمك؟"
+        },
+        {
+          "speaker": "Mona",
+          "text": "That is their son, my cousin Sam. He is a very quiet person.",
+          "translation": "ذلك ابنهما، ابن عمي سام. إنه شخص هادئ للغاية."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "I see two elderly people smiling in the center. Are they your grandparents?",
+          "translation": "أرى شخصين مسنين يبتسمان في المنتصف. هل هما أجدادك؟"
+        },
+        {
+          "speaker": "Mona",
+          "text": "Yes, my grandfather and grandmother. They are seventy years old, but very active.",
+          "translation": "نعم، جدي وجدتي. يبلغان من العمر سبعين عاماً، لكنهما نشيطان جداً."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "They must be proud of every grandchild in this lovely home.",
+          "translation": "لابد أنهما فخوران بكل حفيد في هذا المنزل الجميل."
+        },
+        {
+          "speaker": "Mona",
+          "text": "They are! We always visit them and call them every weekend.",
+          "translation": "بالفعل! نحن دائماً نزورهم ونتصل بهم هاتفياً كل عطلة نهاية أسبوع."
+        }
+      ],
+      "vocabularyUsed": [
+        "family",
+        "tall",
+        "man",
+        "father",
+        "kind",
+        "woman",
+        "mother",
+        "baby",
+        "cousin",
+        "aunt",
+        "boy",
+        "uncle",
+        "son",
+        "quiet",
+        "person",
+        "grandparent",
+        "grandfather",
+        "grandmother",
+        "old",
+        "grandchild",
+        "visit",
+        "call"
+      ]
+    },
+    {
+      "title": "The New Neighbor",
+      "titleArabic": "الجار الجديد",
+      "setting": "Outside an apartment building, Kareem welcomes a new resident, Alex.",
+      "settingArabic": "خارج مبنى سكني، يرحب كريم بساكن جديد يُدعى أليكس.",
+      "lines": [
+        {
+          "speaker": "Kareem",
+          "text": "Hello! Welcome to our building. My name is Kareem.",
+          "translation": "مرحباً! أهلاً بك في بنايتنا. اسمي كريم."
+        },
+        {
+          "speaker": "Alex",
+          "text": "Hi Kareem, nice to meet you. My name is Alex.",
+          "translation": "أهلاً كريم، سررت بلقائك. اسمي أليكس."
+        },
+        {
+          "speaker": "Kareem",
+          "text": "Nice to meet you Alex. Are you our new neighbor on the third floor?",
+          "translation": "سررت بلقائك يا أليكس. هل أنت جارنا الجديد في الطابق الثالث؟"
+        },
+        {
+          "speaker": "Alex",
+          "text": "Yes, I am. My wife and our young daughter live here with me.",
+          "translation": "نعم، أنا هو. زوجتي وابنتنا الصغيرة تعيشان هنا معي."
+        },
+        {
+          "speaker": "Kareem",
+          "text": "Welcome to both of you! How old is your daughter?",
+          "translation": "أهلاً بكما! كم عمر ابنتكما؟"
+        },
+        {
+          "speaker": "Alex",
+          "text": "She is at the age of five. She is a cheerful little girl.",
+          "translation": "إنها في سن الخامسة. إنها فتاة صغيرة مرحة."
+        },
+        {
+          "speaker": "Kareem",
+          "text": "That is sweet. Are you married a long time?",
+          "translation": "هذا رائع ولطيف. هل أنتما متزوجان منذ فترة طويلة؟"
+        },
+        {
+          "speaker": "Alex",
+          "text": "Yes, my partner and I are married for seven years now.",
+          "translation": "نعم، شريكتي وأنا متزوجان منذ سبع سنوات حتى الآن."
+        },
+        {
+          "speaker": "Kareem",
+          "text": "My brother and I live on the second floor. Please let us help you move your boxes.",
+          "translation": "أنا وأخي نعيش في الطابق الثاني. رجاءً دعنا نساعدك في نقل الصناديق."
+        },
+        {
+          "speaker": "Alex",
+          "text": "Thank you so much! You are very friendly. We would love to have you as a dinner guest soon.",
+          "translation": "شكراً جزيلاً لك! أنت ودود للغاية. يسعدنا استضافتك كضيف عشاء قريباً."
+        }
+      ],
+      "vocabularyUsed": [
+        "name",
+        "meet",
+        "neighbor",
+        "wife",
+        "young",
+        "daughter",
+        "live",
+        "age",
+        "girl",
+        "married",
+        "partner",
+        "brother",
+        "help",
+        "friendly",
+        "guest"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "My Big Family",
+      "titleArabic": "عائلتي الكبيرة",
+      "kind": "personal story",
+      "text": "I have a wonderful family that I love deeply. My father is a tall man with a friendly smile, and my mother is a kind woman who cares for everyone. I have one older brother and one younger sister. My brother is single and works downtown, while my sister is a smart college student. We are a very close family. Every Friday evening, all our relatives gather at our house for dinner. My cousins and I play games, while the adults sit and talk. Even when we are busy, I call my parents every day. Having a supportive family makes life truly happy.",
+      "translation": "لدي عائلة رائعة أحبها من كل قلبي. والدي رجل طويل ذو ابتسامة ودودة، وأمي امرأة طيبة ترعى الجميع. لدي أخ أكبر وأخت أصغر. أخي أعزب ويعمل في وسط المدينة، بينما أختي طالبة جامعية ذكية. نحن عائلة متقاربة ومترابطة جداً. في كل مساء جمعة، يجتمع جميع أقاربنا في منزلنا لتناول العشاء. ألعب أنا وأبناء عمي الألعاب، بينما يجلس الكبار ويتحدثون. وحتى عندما نكون مشغولين، أتصل بوالديّ كل يوم. إن وجود عائلة داعمة يجعل الحياة سعيدة حقاً.",
+      "vocabularyUsed": [
+        "family",
+        "father",
+        "tall",
+        "man",
+        "friendly",
+        "mother",
+        "kind",
+        "woman",
+        "brother",
+        "sister",
+        "single",
+        "smart",
+        "close",
+        "relative",
+        "cousin",
+        "call",
+        "parent"
+      ]
+    },
+    {
+      "title": "Visiting My Grandparents",
+      "titleArabic": "زيارة جدي وجدتي",
+      "kind": "description",
+      "text": "Every weekend, I visit my grandparents in their quiet village home. My grandfather is eighty years old, but he is strong and tells funny stories from the past. My grandmother is a short woman with a warm heart. Whenever a grandchild enters the door, her face lights up with joy. She prepares delicious tea and fresh bread for every guest. My cousin and I help our grandparents in their colorful garden. We water the plants and carry the heavy bags. In the afternoon, we sit under a large tree and talk. Being with my grandparents always brings peace to my heart.",
+      "translation": "في نهاية كل أسبوع، أزور جدي وجدتي في منزلهما الهادئ بالقرية. يبلغ جدي ثمانين عاماً، لكنه قوي ويروي قصصاً مرحة ومضحكة من الماضي. جدتي امرأة قصيرة القامة ذات قلب دافئ. كلما دخل أحد الأحفاد من الباب، يضيء وجهها بالبهجة. إنها تعد الشاي اللذيذ والخبز الطازج لكل ضيف. أساعد أنا وابن عمي أجدادنا في حديقتهم الملونة المليئة بالأزهار؛ نسقي النباتات ونحمل الأكياس الثقيلة. في فترة بعد الظهر، نجلس تحت شجرة كبيرة ونتجاذب أطراف الحديث. إن قضاء الوقت مع أجدادي يبعث دائماً الطمأنينة في قلبي.",
+      "vocabularyUsed": [
+        "visit",
+        "grandparent",
+        "quiet",
+        "grandfather",
+        "old",
+        "funny",
+        "grandmother",
+        "short",
+        "woman",
+        "grandchild",
+        "guest",
+        "cousin",
+        "help"
+      ]
+    },
+    {
+      "title": "A Special Family Celebration",
+      "titleArabic": "احتفال عائلي خاص",
+      "kind": "personal story",
+      "text": "Yesterday was a special celebration for our family. My uncle and aunt invited all of us to their garden to meet their newborn baby. The little girl has the sweet name of Maya. My uncle is proud of his daughter, and his wife is glowing with happiness beside her loving husband. They are happily married for ten years and now have three children: two boys and one baby girl. At the age of seven, their eldest son helps carry small toys. Even their next-door neighbor joined as a welcoming guest. Every person in the room shared smiles and gifts. It was truly an unforgettable day with the people I cherish most.",
+      "translation": "كان يوم أمس احتفالاً عائلياً خاصاً لأسرتنا. دعا عمي وعمتي جميع أفراد العائلة إلى حديقتهما لرؤية طفلتهما الرضيعة حديثة الولادة. تحمل الفتاة الصغيرة اسم 'مايا' اللطيف. عمي فخور جداً بابنته، وزوجته تشع سعادة بجانب زوجها المحب. إنهما متزوجان بسعادة منذ عشر سنوات ولديهما الآن ثلاثة أطفال: ولدان وطفلة رضيعة. في سن السابعة، يساعد ابنهما الأكبر في حمل الألعاب الصغيرة. حتى جارهم المجاور انضم كضيف مرحب به. تشارك كل شخص في الغرفة الابتسامات والهدايا. لقد كان حقاً يوماً لا يُنسى مع أكثر الناس الذين أعتز بهم.",
+      "vocabularyUsed": [
+        "family",
+        "uncle",
+        "aunt",
+        "meet",
+        "baby",
+        "girl",
+        "name",
+        "daughter",
+        "wife",
+        "husband",
+        "married",
+        "child",
+        "boy",
+        "age",
+        "son",
+        "help",
+        "neighbor",
+        "guest",
+        "person"
+      ]
+    }
+  ]
+}

@@ -5,11 +5,18 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 import { PrismaClient } from "@prisma/client";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const contentDir = join(root, "content");
 const prisma = new PrismaClient();
+
+try {
+  execSync(`node "${join(root, "scripts", "backup-db.mjs")}"`, { stdio: "inherit" });
+} catch (e) {
+  // auto-backup attempt
+}
 
 const hard = process.argv.includes("--hard");
 const plan = JSON.parse(readFileSync(join(contentDir, "curriculum-plan.json"), "utf8"));
