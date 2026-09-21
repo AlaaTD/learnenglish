@@ -97,7 +97,7 @@ export default async function ProgressPage() {
 
       <section className="space-y-3" aria-label="Progress by stage">
         <SectionHeading title="By stage" description="Nine stages of ten days each — 500 words per stage.">
-          <Link href="/journey" className="text-sm font-medium text-indigo-700 hover:underline dark:text-indigo-300">
+          <Link href="/journey" className="text-sm font-medium text-brand-700 hover:underline dark:text-brand-300">
             Open the journey →
           </Link>
         </SectionHeading>
@@ -108,9 +108,9 @@ export default async function ProgressPage() {
               <Link
                 key={stage.label}
                 href={`/journey#day-${stage.from}`}
-                className={`block rounded-2xl border bg-white p-4 transition-colors hover:border-indigo-300 dark:bg-zinc-900 dark:hover:border-indigo-700 ${
+                className={`block rounded-2xl border bg-white p-4 transition-colors hover:border-brand-300 dark:bg-zinc-900 dark:hover:border-brand-700 ${
                   isCurrent
-                    ? "border-indigo-300 dark:border-indigo-800"
+                    ? "border-brand-300 dark:border-brand-800"
                     : "border-zinc-200 dark:border-zinc-800"
                 }`}
               >

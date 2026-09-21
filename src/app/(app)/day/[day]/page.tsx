@@ -272,7 +272,7 @@ export default async function DayPage({
                           <li key={i} className="flex items-start gap-2.5">
                             <span
                               aria-hidden="true"
-                              className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-600 dark:bg-indigo-400"
+                              className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600 dark:bg-brand-400"
                             />
                             <span>{u}</span>
                           </li>
@@ -325,7 +325,7 @@ export default async function DayPage({
                               </div>
                             </div>
                             <p className="border-t border-zinc-100 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-400">
-                              <span className="font-semibold text-indigo-700 dark:text-indigo-300">Why · التفسير: </span>
+                              <span className="font-semibold text-brand-700 dark:text-brand-300">Why · التفسير: </span>
                               {m.note}
                             </p>
                           </div>
@@ -388,7 +388,7 @@ export default async function DayPage({
                             className={`max-w-full rounded-2xl border p-3.5 sm:max-w-[85%] sm:p-4 ${
                               isFirst
                                 ? "self-start border-zinc-200 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-800/60"
-                                : "self-end border-indigo-100 bg-indigo-50 dark:border-indigo-900 dark:bg-indigo-950/60"
+                                : "self-end border-brand-100 bg-brand-50 dark:border-brand-900 dark:bg-brand-950/60"
                             }`}
                           >
                             <div className="mb-1 flex items-center justify-between gap-3">
@@ -499,7 +499,7 @@ export default async function DayPage({
                         <div className="min-w-0 flex-1">
                           <Link
                             href={`/vocabulary/${word.id}`}
-                            className="font-medium text-zinc-900 hover:text-indigo-700 hover:underline dark:text-zinc-100 dark:hover:text-indigo-300"
+                            className="font-medium text-zinc-900 hover:text-brand-700 hover:underline dark:text-zinc-100 dark:hover:text-brand-300"
                           >
                             {word.headword}
                           </Link>

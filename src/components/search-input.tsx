@@ -60,7 +60,7 @@ export function SearchInput({ placeholder }: { placeholder: string }) {
       {pending ? (
         <span
           aria-hidden="true"
-          className="absolute end-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 animate-spin rounded-full border-2 border-zinc-300 border-t-indigo-600 dark:border-zinc-600 dark:border-t-indigo-400"
+          className="absolute end-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 animate-spin rounded-full border-2 border-zinc-300 border-t-brand-600 dark:border-zinc-600 dark:border-t-brand-400"
         />
       ) : null}
     </div>

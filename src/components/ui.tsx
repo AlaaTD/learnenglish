@@ -6,29 +6,40 @@ import type { ReactNode } from "react";
  *
  * Every screen is composed from these so spacing, radius, type scale and colour
  * usage stay consistent on phones and desktops:
- *   radius  : cards rounded-2xl · controls rounded-xl · chips rounded-md/full
- *   type    : page title 2xl/3xl · section title lg · body sm/base · meta xs (>=12px)
- *   colour  : neutrals for structure, indigo for the single accent, and
+ *   radius  : cards rounded-2xl (hero rounded-3xl) · controls rounded-xl · chips rounded-md/full
+ *   type    : page title 3xl/4xl · section title lg · body sm/base · meta xs (>=12px)
+ *   colour  : neutrals for structure and ink, `brand` (clay) for the single accent, and
  *             emerald / amber / sky / rose ONLY to express meaning.
+ *   roles   : solid brand = the one action to take · brand tint = "you are here" in the
+ *             navigation · ink pill = the selected tab · hairlines and a soft shadow for depth.
  * ------------------------------------------------------------------------- */
 
-type ButtonVariant = "primary" | "secondary" | "ghost" | "success" | "danger";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "success" | "danger" | "inverse" | "inverseGhost";
 type ButtonSize = "md" | "sm";
 
 const buttonBase =
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl font-semibold transition-colors disabled:pointer-events-none disabled:opacity-50";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl font-semibold transition duration-150 ease-out active:translate-y-px disabled:pointer-events-none disabled:opacity-50";
 
 const buttonVariants: Record<ButtonVariant, string> = {
-  primary: "bg-indigo-600 text-white hover:bg-indigo-700",
+  // Light: deep clay with white text. Dark: a lighter clay with ink text (keeps AA contrast
+  // and reads as the brightest thing on a dark surface). The soft inset highlight makes it feel pressable.
+  primary:
+    "bg-brand-600 text-white shadow-press hover:bg-brand-700 dark:bg-brand-400 dark:text-zinc-950 dark:shadow-none dark:hover:bg-brand-300",
   secondary:
-    "border border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800",
-  ghost: "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
+    "border border-zinc-300 bg-white text-zinc-800 shadow-card hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-100 dark:shadow-none dark:hover:border-zinc-500 dark:hover:bg-zinc-800",
+  ghost:
+    "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50",
   /** A toggle that is currently "on" (e.g. Used ✓). */
   success:
     "border border-emerald-300 bg-emerald-50 text-emerald-800 hover:bg-emerald-100 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-200 dark:hover:bg-emerald-900",
   /** Neutral until hovered, then signals a destructive action (reset). */
   danger:
-    "border border-zinc-200 bg-white text-zinc-700 hover:border-rose-300 hover:bg-rose-50 hover:text-rose-800 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:border-rose-800 dark:hover:bg-rose-950 dark:hover:text-rose-200",
+    "border border-zinc-300 bg-white text-zinc-700 shadow-card hover:border-rose-300 hover:bg-rose-50 hover:text-rose-800 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-200 dark:shadow-none dark:hover:border-rose-800 dark:hover:bg-rose-950 dark:hover:text-rose-200",
+  // The two variants below are for buttons that sit ON the dark featured card. That card is dark
+  // in both themes, so they do not change with the theme: a light clay reads as the brightest,
+  // most actionable thing on it (ink text on clay-400 is 6.3:1).
+  inverse: "bg-brand-400 text-zinc-950 hover:bg-brand-300",
+  inverseGhost: "text-zinc-200 hover:bg-white/10 hover:text-white",
 };
 
 const buttonSizes: Record<ButtonSize, string> = {
@@ -41,27 +52,63 @@ export function buttonClass(variant: ButtonVariant = "secondary", size: ButtonSi
   return `${buttonBase} ${buttonVariants[variant]} ${buttonSizes[size]} ${extra}`.trim();
 }
 
-/** Shared look for text inputs, selects and number fields (add `w-full` where needed). */
+/**
+ * Standalone text link ("Details →", "View all"). The padding is the hit area: 32px tall,
+ * and the negative margin keeps the text itself aligned with its neighbours.
+ */
+export const textLinkClass =
+  "-mx-2 inline-flex h-8 items-center gap-1 rounded-lg px-2 text-sm font-medium text-brand-700 transition-colors hover:bg-brand-50 hover:text-brand-800 dark:text-brand-300 dark:hover:bg-brand-950 dark:hover:text-brand-200";
+
+/**
+ * Shared look for text inputs, selects and number fields (add `w-full` where needed).
+ * The border is deliberately a step darker than card hairlines so a field is always
+ * findable (WCAG 1.4.11 asks for about 3:1 on control boundaries).
+ */
 export const fieldClass =
-  "h-10 rounded-xl border border-zinc-300 bg-white px-3 text-sm text-zinc-900 placeholder:text-zinc-500 focus-visible:border-indigo-500 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-400";
+  "h-10 rounded-xl border border-zinc-400 bg-white px-3 text-sm text-zinc-900 shadow-card placeholder:text-zinc-500 focus-visible:border-brand-600 dark:border-zinc-500 dark:bg-zinc-900 dark:text-zinc-100 dark:shadow-none dark:placeholder:text-zinc-400 dark:focus-visible:border-brand-400";
+
+const cardTones = {
+  default:
+    "rounded-2xl border border-zinc-200 bg-white shadow-card dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-none",
+  // The one hero surface per screen: deep ink in light mode, deep clay in dark mode, with a
+  // large quiet ring (the 90-day cycle) tucked behind the content. Children inherit cream text.
+  featured:
+    "relative isolate overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900 text-zinc-50 shadow-lift before:pointer-events-none before:absolute before:-end-20 before:-top-20 before:-z-10 before:h-64 before:w-64 before:rounded-full before:border-[36px] before:border-brand-500/[0.14] [&_:focus-visible]:outline-brand-300 dark:border-brand-900 dark:bg-brand-950 dark:shadow-none",
+} as const;
 
 export function Card({
   children,
   className = "",
   padded = true,
+  tone = "default",
 }: {
   children: ReactNode;
   className?: string;
   padded?: boolean;
+  tone?: keyof typeof cardTones;
 }) {
+  const padding = padded ? (tone === "featured" ? "p-5 sm:p-7" : "p-4 sm:p-5") : "";
+  return <div className={`${cardTones[tone]} ${padding} ${className}`}>{children}</div>;
+}
+
+/**
+ * Small uppercase kicker with a clay rule in front. The rule is pinned to the FIRST line so it
+ * stays put when the text wraps. `tone="onDark"` is for the featured card.
+ */
+export function Eyebrow({ children, tone = "default" }: { children: ReactNode; tone?: "default" | "onDark" }) {
+  const dark = tone === "onDark";
   return (
-    <div
-      className={`rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900 ${
-        padded ? "p-4 sm:p-5" : ""
-      } ${className}`}
+    <p
+      className={`flex items-start gap-2.5 text-xs font-semibold uppercase tracking-wider ${
+        dark ? "text-brand-300" : "text-brand-700 dark:text-brand-300"
+      }`}
     >
-      {children}
-    </div>
+      <span
+        aria-hidden="true"
+        className={`mt-[7px] h-0.5 w-5 shrink-0 rounded-full ${dark ? "bg-brand-400" : "bg-brand-500"}`}
+      />
+      <span>{children}</span>
+    </p>
   );
 }
 
@@ -79,16 +126,12 @@ export function PageHeader({
   return (
     <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
       <div className="min-w-0">
-        {eyebrow ? (
-          <p className="text-xs font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300">
-            {eyebrow}
-          </p>
-        ) : null}
-        <h1 className="mt-1 text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50">
+        {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
+        <h1 className="mt-2 text-[1.75rem] font-semibold leading-tight tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
           {title}
         </h1>
         {description ? (
-          <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
             {description}
           </p>
         ) : null}
@@ -123,16 +166,39 @@ export function SectionHeading({
 /** Small caption used above groups of tags / fields inside a card. */
 export function SmallLabel({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
-    <p className={`text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400 ${className}`}>
+    <p className={`text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 ${className}`}>
       {children}
     </p>
   );
 }
 
+/**
+ * Inline Arabic fragment inside an English line or label. Letter-spacing breaks the
+ * joins between Arabic letters, so this resets it (labels around it are letter-spaced).
+ * The global rtl rule sets a tall line height that would stretch a small label, so the
+ * fragment inherits the surrounding line height instead; the inline style is needed
+ * because that global rule is intentionally un-layered and beats utility classes.
+ */
+export function Ar({ children, className = "" }: { children: ReactNode; className?: string }) {
+  return (
+    <span
+      dir="rtl"
+      lang="ar"
+      style={{ lineHeight: "inherit" }}
+      className={`normal-case tracking-normal ${className}`}
+    >
+      {children}
+    </span>
+  );
+}
+
+// A faint neutral hairline gives every tinted pill a crisp edge on any background.
+const chipEdge = "ring-1 ring-inset ring-black/[0.06] dark:ring-white/10";
+
 export function Badge({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium ${chipEdge} ${className}`}
     >
       {children}
     </span>
@@ -141,7 +207,7 @@ export function Badge({ children, className = "" }: { children: ReactNode; class
 
 const tagTones = {
   neutral: "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300",
-  accent: "bg-indigo-50 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-200",
+  accent: "bg-brand-50 text-brand-800 dark:bg-brand-950 dark:text-brand-200",
   success: "bg-emerald-50 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200",
   danger: "bg-rose-50 text-rose-800 dark:bg-rose-950 dark:text-rose-200",
 } as const;
@@ -156,7 +222,9 @@ export function Tag({
   className?: string;
 }) {
   return (
-    <span className={`inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ${tagTones[tone]} ${className}`}>
+    <span
+      className={`inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium ${chipEdge} ${tagTones[tone]} ${className}`}
+    >
       {children}
     </span>
   );
@@ -180,7 +248,7 @@ export function ArabicText({
       dir="rtl"
       lang="ar"
       className={`text-base text-zinc-700 dark:text-zinc-300 ${
-        bordered ? "border-s-2 border-indigo-200 ps-3 dark:border-indigo-800" : ""
+        bordered ? "border-s-2 border-brand-300 ps-3 dark:border-brand-800" : ""
       } ${className}`}
     >
       {children}
@@ -188,18 +256,35 @@ export function ArabicText({
   );
 }
 
+// The `inverse*` tones are for bars that sit on the dark featured card (dark in both themes).
+const progressTrack = {
+  accent: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(34_30_25/0.08)] dark:bg-zinc-800 dark:shadow-none",
+  success: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(34_30_25/0.08)] dark:bg-zinc-800 dark:shadow-none",
+  inverse: "bg-white/15",
+  inverseSuccess: "bg-white/15",
+} as const;
+
+const progressFill = {
+  accent: "bg-brand-600 dark:bg-brand-400",
+  success: "bg-emerald-600 dark:bg-emerald-400",
+  inverse: "bg-brand-400",
+  inverseSuccess: "bg-emerald-400",
+} as const;
+
 export function ProgressBar({
   value,
   max,
   className = "",
   label,
   tone = "accent",
+  size = "md",
 }: {
   value: number;
   max: number;
   className?: string;
   label?: string;
-  tone?: "accent" | "success";
+  tone?: keyof typeof progressFill;
+  size?: "md" | "sm";
 }) {
   const percent = max > 0 ? Math.min(100, Math.round((value / max) * 100)) : 0;
   return (
@@ -209,12 +294,10 @@ export function ProgressBar({
       aria-valuemin={0}
       aria-valuemax={max}
       aria-label={label ?? "Progress"}
-      className={`h-2 w-full overflow-hidden rounded-full bg-zinc-200/80 dark:bg-zinc-800 ${className}`}
+      className={`${size === "sm" ? "h-1.5" : "h-2.5"} w-full overflow-hidden rounded-full ${progressTrack[tone]} ${className}`}
     >
       <div
-        className={`h-full rounded-full transition-[width] duration-500 ${
-          tone === "success" ? "bg-emerald-600 dark:bg-emerald-500" : "bg-indigo-600 dark:bg-indigo-500"
-        }`}
+        className={`h-full rounded-full transition-[width] duration-700 ease-out ${progressFill[tone]}`}
         style={{ width: `${percent}%` }}
       />
     </div>
@@ -232,7 +315,7 @@ export function EmptyState({
 }) {
   return (
     <div className="rounded-2xl border border-dashed border-zinc-300 bg-white/60 px-6 py-12 text-center dark:border-zinc-700 dark:bg-zinc-900/40">
-      <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+      <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-brand-700 ring-1 ring-inset ring-brand-100 dark:bg-brand-950 dark:text-brand-300 dark:ring-brand-900">
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
           <path
             strokeLinecap="round"
@@ -270,21 +353,28 @@ export function StatTile({
 }) {
   const body = (
     <>
-      <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">{label}</p>
-      <p className="mt-1 text-2xl font-semibold tracking-tight tabular-nums text-zinc-900 dark:text-zinc-50">
+      <p className={`text-xs font-medium text-zinc-500 dark:text-zinc-400 ${href ? "pe-5" : ""}`}>{label}</p>
+      <p className="mt-2 text-3xl font-semibold leading-none tracking-tight tabular-nums text-zinc-900 dark:text-zinc-50">
         {value}
       </p>
-      {hint ? <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">{hint}</p> : null}
+      {hint ? <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">{hint}</p> : null}
     </>
   );
-  const base = "block rounded-2xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900";
+  const base =
+    "block rounded-2xl border border-zinc-200 bg-white p-4 shadow-card dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-none";
   if (href) {
     return (
       <Link
         href={href}
-        className={`${base} transition-colors hover:border-indigo-300 dark:hover:border-indigo-700`}
+        className={`${base} group relative transition duration-150 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-lift dark:hover:border-brand-700`}
       >
         {body}
+        <span
+          aria-hidden="true"
+          className="absolute end-3.5 top-3.5 text-sm text-zinc-400 transition duration-150 group-hover:translate-x-0.5 group-hover:text-brand-600 dark:group-hover:text-brand-300"
+        >
+          →
+        </span>
       </Link>
     );
   }
@@ -301,6 +391,7 @@ export type TabBarItem = {
 
 /**
  * One tab style for the whole app (day sections, vocabulary states).
+ * A segmented control: the selected tab is a solid ink pill (clay is kept for actions).
  * Scrolls horizontally on narrow screens; `sticky` pins it under the header.
  */
 export function TabBar({
@@ -315,7 +406,7 @@ export function TabBar({
   const nav = (
     <nav
       aria-label={label}
-      className="rounded-2xl border border-zinc-200 bg-white p-1 dark:border-zinc-800 dark:bg-zinc-900"
+      className="rounded-2xl border border-zinc-200 bg-zinc-100/70 p-1 dark:border-zinc-800 dark:bg-zinc-900"
     >
       <ul className="flex items-center gap-1 overflow-x-auto scrollbar-none">
         {items.map((item) => (
@@ -323,10 +414,10 @@ export function TabBar({
             <Link
               href={item.href}
               aria-current={item.active ? "page" : undefined}
-              className={`flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-3.5 text-sm transition-colors ${
+              className={`flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-3.5 text-sm transition duration-150 ${
                 item.active
-                  ? "bg-indigo-50 font-semibold text-indigo-800 dark:bg-indigo-950 dark:text-indigo-200"
-                  : "font-medium text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                  ? "bg-zinc-900 font-semibold text-zinc-50 shadow-card dark:bg-zinc-100 dark:text-zinc-900"
+                  : "font-medium text-zinc-600 hover:bg-white hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
               }`}
             >
               <span>{item.label}</span>
@@ -334,8 +425,8 @@ export function TabBar({
                 <span
                   className={`rounded-full px-1.5 py-0.5 text-xs font-medium leading-none tabular-nums ${
                     item.active
-                      ? "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200"
-                      : "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400"
+                      ? "bg-white/15 text-zinc-50 dark:bg-zinc-900/10 dark:text-zinc-900"
+                      : "bg-white text-zinc-600 ring-1 ring-inset ring-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:ring-zinc-700"
                   }`}
                 >
                   {item.count}

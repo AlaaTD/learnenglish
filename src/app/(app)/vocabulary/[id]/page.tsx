@@ -40,13 +40,13 @@ export default async function WordDetailPage({
         aria-label="Breadcrumb"
         className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 text-sm text-zinc-600 dark:text-zinc-400"
       >
-        <Link href="/vocabulary" className="shrink-0 hover:text-indigo-700 hover:underline dark:hover:text-indigo-300">
+        <Link href="/vocabulary" className="shrink-0 hover:text-brand-700 hover:underline dark:hover:text-brand-300">
           Vocabulary Library
         </Link>
         <span aria-hidden="true">/</span>
         <Link
           href={`/day/${item.dayNumber}`}
-          className="truncate hover:text-indigo-700 hover:underline dark:hover:text-indigo-300"
+          className="truncate hover:text-brand-700 hover:underline dark:hover:text-brand-300"
         >
           Day {item.dayNumber} ({day?.title})
         </Link>
@@ -75,7 +75,7 @@ export default async function WordDetailPage({
                   {item.partOfSpeech && <Tag className="italic">{item.partOfSpeech}</Tag>}
                   <Link
                     href={`/day/${item.dayNumber}`}
-                    className="inline-flex items-center rounded-md bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-800 hover:bg-indigo-100 dark:bg-indigo-950 dark:text-indigo-200 dark:hover:bg-indigo-900"
+                    className="inline-flex items-center rounded-md bg-brand-50 px-2 py-0.5 text-xs font-medium text-brand-800 hover:bg-brand-100 dark:bg-brand-950 dark:text-brand-200 dark:hover:bg-brand-900"
                   >
                     Day {item.dayNumber} · {day?.title}
                   </Link>
@@ -96,7 +96,7 @@ export default async function WordDetailPage({
                 <p className="mt-1 text-lg leading-relaxed text-zinc-900 dark:text-zinc-100">{item.definition}</p>
               </div>
 
-              <div className="border-s-2 border-indigo-200 ps-3 dark:border-indigo-800">
+              <div className="border-s-2 border-brand-200 ps-3 dark:border-brand-800">
                 <SmallLabel>Example sentence</SmallLabel>
                 <div className="mt-1 flex items-start gap-2">
                   <p className="text-base leading-relaxed text-zinc-800 dark:text-zinc-200">
@@ -244,7 +244,7 @@ export default async function WordDetailPage({
                       <span className="font-medium text-zinc-800 dark:text-zinc-200">{c.title}</span>
                       <Link
                         href={`/day/${c.dayNumber}?tab=conversations`}
-                        className="shrink-0 text-xs font-medium text-indigo-700 hover:underline dark:text-indigo-300"
+                        className="shrink-0 text-xs font-medium text-brand-700 hover:underline dark:text-brand-300"
                       >
                         Go to Day {c.dayNumber} Conversation →
                       </Link>
@@ -270,7 +270,7 @@ export default async function WordDetailPage({
                       <span className="font-medium text-zinc-800 dark:text-zinc-200">{p.title}</span>
                       <Link
                         href={`/day/${p.dayNumber}?tab=paragraphs`}
-                        className="shrink-0 text-xs font-medium text-indigo-700 hover:underline dark:text-indigo-300"
+                        className="shrink-0 text-xs font-medium text-brand-700 hover:underline dark:text-brand-300"
                       >
                         Go to Day {p.dayNumber} Paragraph →
                       </Link>
@@ -302,7 +302,7 @@ export default async function WordDetailPage({
                   <li key={h.id} className="relative">
                     <span
                       aria-hidden="true"
-                      className="absolute -start-[21px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-indigo-600 dark:border-zinc-900 dark:bg-indigo-400"
+                      className="absolute -start-[21px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white bg-brand-600 dark:border-zinc-900 dark:bg-brand-400"
                     />
                     <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">{h.event}</p>
                     <time className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -314,7 +314,7 @@ export default async function WordDetailPage({
                     </time>
                     {h.detail && <p className="mt-0.5 text-xs text-zinc-600 dark:text-zinc-400">{h.detail}</p>}
                     {h.dayNumber && (
-                      <p className="mt-0.5 text-xs text-indigo-700 dark:text-indigo-300">During Day {h.dayNumber}</p>
+                      <p className="mt-0.5 text-xs text-brand-700 dark:text-brand-300">During Day {h.dayNumber}</p>
                     )}
                   </li>
                 ))}

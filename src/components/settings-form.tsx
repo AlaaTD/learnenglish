@@ -132,7 +132,7 @@ export function SettingsForm({
             id="autoplay"
             checked={autoplayAudio}
             onChange={(e) => setAutoplayAudio(e.target.checked)}
-            className="h-4 w-4 shrink-0 accent-indigo-600"
+            className="h-4 w-4 shrink-0 accent-brand-600"
           />
           <span className="text-sm text-zinc-800 dark:text-zinc-200">
             Autoplay audio when opening new vocabulary words

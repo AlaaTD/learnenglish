@@ -60,8 +60,8 @@ export function AudioButton({
   const className = small
     ? `inline-flex h-9 w-9 touch-manipulation items-center justify-center rounded-xl transition-colors ${
         isPlaying
-          ? "bg-indigo-600 text-white hover:bg-indigo-700"
-          : "text-zinc-600 hover:bg-zinc-100 hover:text-indigo-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-indigo-300"
+          ? "bg-brand-600 text-white hover:bg-brand-700"
+          : "text-zinc-600 hover:bg-zinc-100 hover:text-brand-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-brand-300"
       }`
     : buttonClass(isPlaying ? "primary" : "secondary", "md", "px-3.5 touch-manipulation");
 

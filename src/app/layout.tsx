@@ -1,18 +1,23 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Noto_Sans_Arabic } from "next/font/google";
+import { Lexend, Readex_Pro } from "next/font/google";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+// Lexend is engineered for reading fluency (open, evenly spaced letterforms), which
+// suits a learning product far better than a generic UI face.
+const lexend = Lexend({
+  variable: "--font-lexend",
   subsets: ["latin"],
+  display: "swap",
 });
 
-// Arabic translations are core content of this app; a dedicated Arabic face
-// is far easier to read than whatever the OS falls back to.
-const notoArabic = Noto_Sans_Arabic({
-  variable: "--font-noto-arabic",
+// Arabic translations are core content of this app. Readex Pro is Lexend's official
+// Arabic companion, so both scripts share proportions and rhythm. Only the Arabic
+// subset is loaded: its Latin glyphs are the same design as Lexend, which already
+// covers any English word that appears inside an Arabic block.
+const readex = Readex_Pro({
+  variable: "--font-readex",
   subsets: ["arabic"],
   display: "swap",
 });
@@ -38,9 +43,10 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
+  // Match the page background (zinc-50 / zinc-950 in globals.css)
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
-    { media: "(prefers-color-scheme: dark)", color: "#171716" },
+    { media: "(prefers-color-scheme: light)", color: "#f8f5ef" },
+    { media: "(prefers-color-scheme: dark)", color: "#161310" },
   ],
 };
 
@@ -62,7 +68,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-theme-pref={theme}
-      className={`${inter.variable} ${notoArabic.variable} h-full`}
+      className={`${lexend.variable} ${readex.variable} h-full`}
       suppressHydrationWarning
     >
       <head>

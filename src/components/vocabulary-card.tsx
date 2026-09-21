@@ -34,7 +34,7 @@ export type VocabularyCardWord = {
 // The border carries the learning state quietly; the badge names it.
 const stateBorder: Record<string, string> = {
   UNLEARNED:
-    "border-zinc-200 hover:border-indigo-300 dark:border-zinc-800 dark:hover:border-indigo-700",
+    "border-zinc-200 hover:border-brand-300 dark:border-zinc-800 dark:hover:border-brand-700",
   LEARNING: "border-sky-200 dark:border-sky-900",
   REVIEW: "border-amber-200 dark:border-amber-900",
   MASTERED: "border-emerald-200 dark:border-emerald-900",
@@ -146,7 +146,7 @@ export function VocabularyCard({
           onClick={(e) => e.stopPropagation()}
         >
           {/* Example sentence */}
-          <div className="border-s-2 border-indigo-200 ps-3 dark:border-indigo-800">
+          <div className="border-s-2 border-brand-200 ps-3 dark:border-brand-800">
             <SmallLabel>Example</SmallLabel>
             <p className="mt-1 text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
               &ldquo;{word.example}&rdquo;
@@ -231,7 +231,7 @@ export function VocabularyCard({
           <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
             <Link
               href={`/vocabulary/${word.id}`}
-              className="font-semibold text-indigo-700 hover:underline dark:text-indigo-300"
+              className="font-semibold text-brand-700 hover:underline dark:text-brand-300"
             >
               View full details →
             </Link>

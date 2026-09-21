@@ -48,6 +48,9 @@ type NavItem = {
 const startsWith = (prefix: string) => (pathname: string) =>
   pathname === prefix || pathname.startsWith(`${prefix}/`);
 
+// "You are here": a clear clay tint in both themes (text pairs verified >= 8:1)
+const activeTint = "bg-brand-100 text-brand-800 dark:bg-brand-900/70 dark:text-brand-200";
+
 export function Nav({
   userName,
   isAdmin,
@@ -103,15 +106,15 @@ export function Nav({
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
+      <header className="sticky top-0 z-40 border-b border-zinc-200/80 bg-zinc-50/85 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/85">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
-          {/* Brand */}
+          {/* Brand: the navy emblem in a clay ring (its complement), then the wordmark */}
           <Link
             href="/"
             className="group flex shrink-0 items-center gap-3 transition-transform active:scale-95"
             onClick={closeMenu}
           >
-            <div className="relative flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full p-0.5 shadow-sm ring-2 ring-indigo-500/40 transition-all duration-300 group-hover:ring-indigo-500 group-hover:shadow-[0_0_16px_rgba(99,102,241,0.5)] dark:ring-indigo-400/50 dark:group-hover:ring-indigo-400">
+            <div className="relative flex h-9 w-9 items-center justify-center rounded-full p-0.5 shadow-card ring-2 ring-brand-500/50 transition-all duration-300 group-hover:ring-brand-500 group-hover:shadow-[0_0_16px_rgba(196,104,58,0.45)] sm:h-10 sm:w-10 dark:ring-brand-400/60 dark:group-hover:ring-brand-400">
               <Image
                 src="/logo.png"
                 alt="English90 Circular Logo"
@@ -122,10 +125,10 @@ export function Nav({
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-base sm:text-lg font-black tracking-tight text-zinc-900 transition-colors group-hover:text-indigo-600 dark:text-zinc-50 dark:group-hover:text-indigo-400">
-                English<span className="text-indigo-600 dark:text-indigo-400">90</span>
+              <span className="text-base font-bold leading-tight tracking-tight text-zinc-900 transition-colors group-hover:text-brand-600 sm:text-lg dark:text-zinc-50 dark:group-hover:text-brand-300">
+                English<span className="text-brand-600 dark:text-brand-400">90</span>
               </span>
-              <span className="hidden text-[10px] font-bold uppercase tracking-wider text-zinc-400 sm:inline dark:text-zinc-500">
+              <span className="hidden text-xs font-semibold uppercase leading-none tracking-wider text-zinc-500 sm:inline dark:text-zinc-400">
                 Mastery Academy
               </span>
             </div>
@@ -142,7 +145,7 @@ export function Nav({
                   aria-current={active ? "page" : undefined}
                   className={`rounded-lg px-3 py-1.5 text-sm transition-colors ${
                     active
-                      ? "bg-indigo-50 font-semibold text-indigo-800 dark:bg-indigo-950 dark:text-indigo-200"
+                      ? `${activeTint} font-semibold`
                       : "font-medium text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
                   }`}
                 >
@@ -157,9 +160,9 @@ export function Nav({
             <Link
               href="/settings"
               title="Learner settings"
-              className="hidden items-center gap-2 rounded-full border border-zinc-200 bg-white py-1 pe-3 ps-1 text-sm font-medium text-zinc-700 transition-colors hover:border-indigo-300 sm:flex dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:border-indigo-700"
+              className="hidden items-center gap-2 rounded-full border border-zinc-200 bg-white py-1 pe-3 ps-1 text-sm font-medium text-zinc-700 shadow-card transition-colors hover:border-brand-300 sm:flex dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:shadow-none dark:hover:border-brand-700"
             >
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-indigo-100 text-xs font-semibold text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-800 dark:bg-brand-900 dark:text-brand-200">
                 {initial}
               </span>
               <span className="max-w-[110px] truncate">{userName}</span>
@@ -170,7 +173,7 @@ export function Nav({
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-zinc-200 bg-white text-zinc-700 transition-colors hover:bg-zinc-100 lg:hidden dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+              className="flex h-10 w-10 items-center justify-center rounded-xl border border-zinc-300 bg-white text-zinc-700 shadow-card transition-colors hover:bg-zinc-50 lg:hidden dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-200 dark:shadow-none dark:hover:bg-zinc-800"
             >
               <svg
                 className="h-5 w-5"
@@ -191,10 +194,10 @@ export function Nav({
       {/* Phone menu: secondary destinations only (primary ones live in the bottom bar) */}
       {menuOpen && (
         <div className="lg:hidden">
-          <div className="fixed inset-0 z-30 bg-black/40" onClick={closeMenu} aria-hidden="true" />
-          <div className="fixed inset-x-0 top-14 z-30 border-b border-zinc-200 bg-white p-3 shadow-lg dark:border-zinc-800 dark:bg-zinc-900">
-            <div className="mb-2 flex items-center gap-3 rounded-xl bg-zinc-50 px-3 py-2.5 dark:bg-zinc-800/60">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-100 text-sm font-semibold text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200">
+          <div className="fixed inset-0 z-30 bg-zinc-950/50 backdrop-blur-[2px]" onClick={closeMenu} aria-hidden="true" />
+          <div className="fixed inset-x-0 top-14 z-30 border-b border-zinc-200 bg-white p-3 shadow-lift dark:border-zinc-800 dark:bg-zinc-900">
+            <div className="mb-2 flex items-center gap-3 rounded-xl bg-zinc-50 px-3 py-2.5 ring-1 ring-inset ring-zinc-200 dark:bg-zinc-800/60 dark:ring-zinc-700">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-sm font-semibold text-brand-800 dark:bg-brand-900 dark:text-brand-200">
                 {initial}
               </span>
               <div className="min-w-0">
@@ -213,7 +216,7 @@ export function Nav({
                     aria-current={active ? "page" : undefined}
                     className={`flex h-12 items-center gap-3 rounded-xl px-3 text-sm font-medium transition-colors ${
                       active
-                        ? "bg-indigo-50 text-indigo-800 dark:bg-indigo-950 dark:text-indigo-200"
+                        ? activeTint
                         : "text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
                     }`}
                   >
@@ -230,7 +233,7 @@ export function Nav({
       {/* Phone bottom bar: the five learning destinations */}
       <nav
         aria-label="Quick navigation"
-        className="fixed inset-x-0 bottom-0 z-40 border-t border-zinc-200 bg-white/95 pb-[env(safe-area-inset-bottom)] backdrop-blur lg:hidden dark:border-zinc-800 dark:bg-zinc-950/95"
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-zinc-200 bg-white/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden dark:border-zinc-800 dark:bg-zinc-950/90"
       >
         <ul className="mx-auto grid max-w-lg grid-cols-5">
           {primary.map((item) => {
@@ -241,15 +244,15 @@ export function Nav({
                   href={item.href}
                   onClick={closeMenu}
                   aria-current={active ? "page" : undefined}
-                  className={`flex flex-col items-center gap-1 pb-2 pt-2.5 text-xs transition-colors ${
+                  className={`flex flex-col items-center gap-1 pb-2 pt-2.5 text-xs transition duration-150 active:scale-95 ${
                     active
-                      ? "font-semibold text-indigo-800 dark:text-indigo-200"
+                      ? "font-semibold text-brand-800 dark:text-brand-200"
                       : "font-medium text-zinc-600 dark:text-zinc-400"
                   }`}
                 >
                   <span
                     className={`flex h-7 w-12 items-center justify-center rounded-full transition-colors ${
-                      active ? "bg-indigo-100 dark:bg-indigo-950" : ""
+                      active ? "bg-brand-100 dark:bg-brand-900/70" : ""
                     }`}
                   >
                     <Icon name={item.icon} />

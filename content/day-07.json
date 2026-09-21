@@ -1,0 +1,1627 @@
+{
+  "day": 7,
+  "stage": "Foundation — Daily Life",
+  "title": "Telling the Time",
+  "topic": "Clock times, schedules and appointments",
+  "description": "Ask and tell the time and talk about schedules.",
+  "focus": "Master 50 core words for clock times, scheduling, temporal prepositions, and appointments; master 'Prepositions of Time (at, on, in)'; engage with 3 realistic dialogues and 3 reading texts.",
+  "vocabulary": [
+    {
+      "headword": "time",
+      "pronunciation": "/taɪm/",
+      "partOfSpeech": "noun",
+      "definition": "the indefinite continued progress of existence and events in the past, present, and future regarded as a whole",
+      "example": "What time is our morning English meeting?",
+      "relatedForms": [],
+      "collocations": [
+        "what time",
+        "on time",
+        "spend time"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "essentials"
+      ],
+      "translation": "وقت / زمن",
+      "exampleArabic": "في أي وقت يعقد اجتماعنا الإنجليزي الصباحي؟"
+    },
+    {
+      "headword": "clock",
+      "pronunciation": "/klɒk/",
+      "partOfSpeech": "noun",
+      "definition": "a mechanical or electrical device for measuring and showing time",
+      "example": "The wall clock in the kitchen shows exactly ten past eight.",
+      "relatedForms": [],
+      "collocations": [
+        "wall clock",
+        "alarm clock",
+        "look at the clock"
+      ],
+      "synonyms": [
+        "timepiece"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "devices"
+      ],
+      "translation": "ساعة حائط أو منضدة",
+      "exampleArabic": "ساعة الحائط في المطبخ تشير إلى الثامنة وعشر دقائق تماماً."
+    },
+    {
+      "headword": "hour",
+      "pronunciation": "/ˈaʊə/",
+      "partOfSpeech": "noun",
+      "definition": "a period of time equal to sixty minutes",
+      "example": "Our grammar study session lasts for one hour every morning.",
+      "relatedForms": [
+        "hourly (adverb)"
+      ],
+      "collocations": [
+        "half an hour",
+        "rush hour",
+        "per hour"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "units"
+      ],
+      "translation": "ساعة (وحدة زمنية - 60 دقيقة)",
+      "exampleArabic": "تستمر جلسة دراسة القواعد لدينا لمدة ساعة واحدة كل صباح."
+    },
+    {
+      "headword": "minute",
+      "pronunciation": "/ˈmɪnɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a period of time equal to sixty seconds or a sixtieth of an hour",
+      "example": "Wait five minutes while I finish writing this email.",
+      "relatedForms": [],
+      "collocations": [
+        "in a minute",
+        "just a minute",
+        "every minute"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "units"
+      ],
+      "translation": "دقيقة",
+      "exampleArabic": "انتظر خمس دقائق بينما أنهي كتابة هذا البريد الإلكتروني."
+    },
+    {
+      "headword": "second",
+      "pronunciation": "/ˈsekənd/",
+      "partOfSpeech": "noun",
+      "definition": "each of the sixty divisions of a minute of time",
+      "example": "Count to ten seconds before checking the stopwatch.",
+      "relatedForms": [],
+      "collocations": [
+        "wait a second",
+        "every second",
+        "split second"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "units"
+      ],
+      "translation": "ثانية",
+      "exampleArabic": "عد حتى عشر ثوانٍ قبل التحقق من ساعة الإيقاف."
+    },
+    {
+      "headword": "quarter past",
+      "pronunciation": "/ˈkwɔːtə pɑːst/",
+      "partOfSpeech": "phrase",
+      "definition": "fifteen minutes after a specified hour",
+      "example": "The train departs at quarter past seven in the morning.",
+      "relatedForms": [],
+      "collocations": [
+        "at quarter past",
+        "leave at quarter past"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "quarter to"
+      ],
+      "tags": [
+        "time",
+        "clock"
+      ],
+      "translation": "والربع (الساعة ... وربع)",
+      "exampleArabic": "يغادر القطار في السابعة والربع صباحاً."
+    },
+    {
+      "headword": "quarter to",
+      "pronunciation": "/ˈkwɔːtə tuː/",
+      "partOfSpeech": "phrase",
+      "definition": "fifteen minutes before a specified hour",
+      "example": "We must arrive at the clinic by quarter to three.",
+      "relatedForms": [],
+      "collocations": [
+        "at quarter to",
+        "arrive at quarter to"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "quarter past"
+      ],
+      "tags": [
+        "time",
+        "clock"
+      ],
+      "translation": "إلا ربعاً (الساعة ... إلا ربع)",
+      "exampleArabic": "يجب أن نصل إلى العيادة بحلول الثالثة إلا ربعاً."
+    },
+    {
+      "headword": "noon",
+      "pronunciation": "/nuːn/",
+      "partOfSpeech": "noun",
+      "definition": "twelve o'clock in the middle of the day; midday",
+      "example": "We take our lunch break at noon every weekday.",
+      "relatedForms": [],
+      "collocations": [
+        "at noon",
+        "before noon",
+        "high noon"
+      ],
+      "synonyms": [
+        "midday",
+        "twelve o'clock"
+      ],
+      "antonyms": [
+        "midnight"
+      ],
+      "tags": [
+        "time",
+        "periods"
+      ],
+      "translation": "الظهر / منتصف النهار",
+      "exampleArabic": "نأخذ استراحة الغداء عند الظهر في كل يوم عمل."
+    },
+    {
+      "headword": "midnight",
+      "pronunciation": "/ˈmɪdnaɪt/",
+      "partOfSpeech": "noun",
+      "definition": "twelve o'clock at night",
+      "example": "He rarely sleeps before midnight on Saturday night.",
+      "relatedForms": [],
+      "collocations": [
+        "at midnight",
+        "past midnight",
+        "before midnight"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "noon"
+      ],
+      "tags": [
+        "time",
+        "periods"
+      ],
+      "translation": "منتصف الليل",
+      "exampleArabic": "نادراً ما ينام قبل منتصف الليل ليلة السبت."
+    },
+    {
+      "headword": "dawn",
+      "pronunciation": "/dɔːn/",
+      "partOfSpeech": "noun",
+      "definition": "the first appearance of light in the sky before sunrise",
+      "example": "The farmers wake up at dawn to tend their fields.",
+      "relatedForms": [],
+      "collocations": [
+        "at dawn",
+        "crack of dawn",
+        "before dawn"
+      ],
+      "synonyms": [
+        "daybreak"
+      ],
+      "antonyms": [
+        "dusk"
+      ],
+      "tags": [
+        "time",
+        "nature"
+      ],
+      "translation": "الفجر / بزوغ الضوء",
+      "exampleArabic": "يستيقظ المزارعون عند الفجر للاعتناء بحقولهم."
+    },
+    {
+      "headword": "dusk",
+      "pronunciation": "/dʌsk/",
+      "partOfSpeech": "noun",
+      "definition": "the darker stage of twilight before night begins",
+      "example": "Streetlights illuminate the boulevard automatically at dusk.",
+      "relatedForms": [],
+      "collocations": [
+        "at dusk",
+        "from dawn to dusk",
+        "gather at dusk"
+      ],
+      "synonyms": [
+        "twilight",
+        "nightfall"
+      ],
+      "antonyms": [
+        "dawn"
+      ],
+      "tags": [
+        "time",
+        "nature"
+      ],
+      "translation": "الغسق / الشفق المسائي",
+      "exampleArabic": "تضيء مصابيح الشارع الجادة تلقائياً عند الغسق."
+    },
+    {
+      "headword": "sunrise",
+      "pronunciation": "/ˈsʌnraɪz/",
+      "partOfSpeech": "noun",
+      "definition": "the time in the morning when the sun appears or full daylight arrives",
+      "example": "We climbed the hilltop to watch the magnificent sunrise.",
+      "relatedForms": [],
+      "collocations": [
+        "at sunrise",
+        "watch the sunrise",
+        "before sunrise"
+      ],
+      "synonyms": [
+        "dawn",
+        "sunup"
+      ],
+      "antonyms": [
+        "sunset"
+      ],
+      "tags": [
+        "time",
+        "nature"
+      ],
+      "translation": "شروق الشمس",
+      "exampleArabic": "صعدنا قمة التل لمشاهدة شروق الشمس الرائع."
+    },
+    {
+      "headword": "sunset",
+      "pronunciation": "/ˈsʌnset/",
+      "partOfSpeech": "noun",
+      "definition": "the time in the evening when the sun disappears below the western horizon",
+      "example": "The evening prayer takes place directly after sunset.",
+      "relatedForms": [],
+      "collocations": [
+        "at sunset",
+        "beautiful sunset",
+        "after sunset"
+      ],
+      "synonyms": [
+        "sundown"
+      ],
+      "antonyms": [
+        "sunrise"
+      ],
+      "tags": [
+        "time",
+        "nature"
+      ],
+      "translation": "غروب الشمس",
+      "exampleArabic": "تقام صلاة المغرب مباشرة بعد غروب الشمس."
+    },
+    {
+      "headword": "moment",
+      "pronunciation": "/ˈməʊmənt/",
+      "partOfSpeech": "noun",
+      "definition": "a very brief period of time; an exact point in time",
+      "example": "Please wait a moment while I answer this phone call.",
+      "relatedForms": [
+        "momentary (adjective)"
+      ],
+      "collocations": [
+        "in a moment",
+        "at the moment",
+        "wait a moment"
+      ],
+      "synonyms": [
+        "instant",
+        "flash"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "periods"
+      ],
+      "translation": "لحظة / برهة",
+      "exampleArabic": "يرجى الانتظار لحظة بينما أرد على هذه المكالمة الهاتفية."
+    },
+    {
+      "headword": "period",
+      "pronunciation": "/ˈpɪəriəd/",
+      "partOfSpeech": "noun",
+      "definition": "a length or portion of time characterized by particular features",
+      "example": "She studied abroad for a period of six months.",
+      "relatedForms": [
+        "periodic (adjective)"
+      ],
+      "collocations": [
+        "short period",
+        "long period",
+        "period of time"
+      ],
+      "synonyms": [
+        "era",
+        "interval"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "duration"
+      ],
+      "translation": "فترة / مرحلة زمنية",
+      "exampleArabic": "درست في الخارج لفترة ستة أشهر."
+    },
+    {
+      "headword": "duration",
+      "pronunciation": "/djuˈreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "the time during which something continues or exists",
+      "example": "The total duration of the English exam is ninety minutes.",
+      "relatedForms": [],
+      "collocations": [
+        "total duration",
+        "for the duration of",
+        "short duration"
+      ],
+      "synonyms": [
+        "length",
+        "span"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "duration"
+      ],
+      "translation": "مدة / فترة الاستمرار",
+      "exampleArabic": "المدة الإجمالية لامتحان اللغة الإنجليزية هي تسعون دقيقة."
+    },
+    {
+      "headword": "deadline",
+      "pronunciation": "/ˈdedlaɪn/",
+      "partOfSpeech": "noun",
+      "definition": "the latest time or date by which something should be completed",
+      "example": "The final deadline for submitting your essay is Friday noon.",
+      "relatedForms": [],
+      "collocations": [
+        "meet a deadline",
+        "miss a deadline",
+        "strict deadline"
+      ],
+      "synonyms": [
+        "due date",
+        "time limit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "work"
+      ],
+      "translation": "الموعد النهائي / آخر أجل",
+      "exampleArabic": "الموعد النهائي لتسليم مقالك هو ظهر يوم الجمعة."
+    },
+    {
+      "headword": "appointment",
+      "pronunciation": "/əˈpɔɪntmənt/",
+      "partOfSpeech": "noun",
+      "definition": "an arrangement to meet someone at a particular time and place",
+      "example": "I have a medical appointment with Dr. Robert at ten o'clock.",
+      "relatedForms": [
+        "appoint (verb)"
+      ],
+      "collocations": [
+        "make an appointment",
+        "have an appointment",
+        "doctor appointment"
+      ],
+      "synonyms": [
+        "consultation",
+        "booking"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "appointments"
+      ],
+      "translation": "موعد رسمي (طبيب، مقابلة)",
+      "exampleArabic": "لدي موعد طبي مع الدكتور روبرت في الساعة العاشرة تماماً."
+    },
+    {
+      "headword": "meeting",
+      "pronunciation": "/ˈmiːtɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "an assembly of people for a discussion or all sorts of business",
+      "example": "The business team has a weekly progress meeting every Tuesday.",
+      "relatedForms": [
+        "meet (verb)"
+      ],
+      "collocations": [
+        "attend a meeting",
+        "hold a meeting",
+        "schedule a meeting"
+      ],
+      "synonyms": [
+        "conference",
+        "session"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "work"
+      ],
+      "translation": "اجتماع / لقاء عمل",
+      "exampleArabic": "يعقد فريق العمل اجتماع تقدم أسبوعي كل ثلاثاء."
+    },
+    {
+      "headword": "date",
+      "pronunciation": "/deɪt/",
+      "partOfSpeech": "noun",
+      "definition": "the day of the month or year as specified by a number",
+      "example": "What is today's date? It is the fifteenth of May.",
+      "relatedForms": [],
+      "collocations": [
+        "save the date",
+        "set a date",
+        "due date"
+      ],
+      "synonyms": [
+        "day"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "calendar"
+      ],
+      "translation": "تاريخ / موعد",
+      "exampleArabic": "ما هو تاريخ اليوم؟ إنه الخامس عشر من مايو."
+    },
+    {
+      "headword": "event",
+      "pronunciation": "/ɪˈvent/",
+      "partOfSpeech": "noun",
+      "definition": "a thing that happens, especially one of importance or a planned social occasion",
+      "example": "The cultural event attracted hundreds of visitors to the auditorium.",
+      "relatedForms": [],
+      "collocations": [
+        "special event",
+        "annual event",
+        "attend an event"
+      ],
+      "synonyms": [
+        "occurrence",
+        "function"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "social"
+      ],
+      "translation": "فعالية / حدث",
+      "exampleArabic": "جذبت الفعالية الثقافية مئات الزوار إلى قاعة الاحتفالات."
+    },
+    {
+      "headword": "session",
+      "pronunciation": "/ˈseʃn/",
+      "partOfSpeech": "noun",
+      "definition": "a period devoted to a particular activity or gathering",
+      "example": "Our language practice session begins immediately after lunch.",
+      "relatedForms": [],
+      "collocations": [
+        "training session",
+        "study session",
+        "practice session"
+      ],
+      "synonyms": [
+        "period",
+        "class"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "learning"
+      ],
+      "translation": "جلسة (تدريبية أو دراسية)",
+      "exampleArabic": "تبدأ جلستنا التدريبية اللغوية مباشرة بعد الغداء."
+    },
+    {
+      "headword": "timetable",
+      "pronunciation": "/ˈtaɪmteɪbl/",
+      "partOfSpeech": "noun",
+      "definition": "a chart showing the departure and arrival times of trains, buses, or classes",
+      "example": "Check the train timetable before leaving the house.",
+      "relatedForms": [],
+      "collocations": [
+        "bus timetable",
+        "train timetable",
+        "class timetable"
+      ],
+      "synonyms": [
+        "schedule"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "transport"
+      ],
+      "translation": "جدول مواعيد (قطارات، رحلات، دروس)",
+      "exampleArabic": "تفقد جدول مواعيد القطارات قبل مغادرة المنزل."
+    },
+    {
+      "headword": "at",
+      "pronunciation": "/æt/",
+      "partOfSpeech": "preposition",
+      "definition": "expressing location in time, especially a precise clock time, night, or festival",
+      "example": "Our lecture begins at eight o'clock sharp.",
+      "relatedForms": [],
+      "collocations": [
+        "at night",
+        "at noon",
+        "at 9 o'clock"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "في تمام (للساعات والمواقيت المحددة)",
+      "exampleArabic": "تبدأ محاضرتنا في تمام الساعة الثامنة تماماً."
+    },
+    {
+      "headword": "before",
+      "pronunciation": "/bɪˈfɔː/",
+      "partOfSpeech": "preposition",
+      "definition": "during the period of time preceding a particular event or time",
+      "example": "Please arrive at the station ten minutes before departure.",
+      "relatedForms": [],
+      "collocations": [
+        "before noon",
+        "before time",
+        "day before"
+      ],
+      "synonyms": [
+        "prior to",
+        "ahead of"
+      ],
+      "antonyms": [
+        "after"
+      ],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "قبل",
+      "exampleArabic": "يرجى الوصول إلى المحطة قبل عشر دقائق من موعد المغادرة."
+    },
+    {
+      "headword": "after",
+      "pronunciation": "/ˈɑːftə/",
+      "partOfSpeech": "preposition",
+      "definition": "in the time following an event or another period of time",
+      "example": "We can drink coffee together after the meeting finishes.",
+      "relatedForms": [],
+      "collocations": [
+        "after work",
+        "after dinner",
+        "soon after"
+      ],
+      "synonyms": [
+        "subsequent to",
+        "following"
+      ],
+      "antonyms": [
+        "before"
+      ],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "بعد",
+      "exampleArabic": "يمكننا شرب القهوة معاً بعد انتهاء الاجتماع."
+    },
+    {
+      "headword": "during",
+      "pronunciation": "/ˈdjʊərɪŋ/",
+      "partOfSpeech": "preposition",
+      "definition": "throughout the course or duration of a period of time",
+      "example": "Please turn off your phones during the exam session.",
+      "relatedForms": [],
+      "collocations": [
+        "during the day",
+        "during the week",
+        "during class"
+      ],
+      "synonyms": [
+        "throughout",
+        "in the course of"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "خلال / أثناء",
+      "exampleArabic": "يرجى إغلاق هواتفكم أثناء جلسة الامتحان."
+    },
+    {
+      "headword": "until",
+      "pronunciation": "/ənˈtɪl/",
+      "partOfSpeech": "preposition",
+      "definition": "up to the point in time or the event mentioned",
+      "example": "The library remains open until nine o'clock every night.",
+      "relatedForms": [],
+      "collocations": [
+        "until tomorrow",
+        "until now",
+        "wait until"
+      ],
+      "synonyms": [
+        "till",
+        "up to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "حتى / إلى غاية",
+      "exampleArabic": "تظل المكتبة مفتوحة حتى الساعة التاسعة كل ليلة."
+    },
+    {
+      "headword": "since",
+      "pronunciation": "/sɪns/",
+      "partOfSpeech": "preposition",
+      "definition": "in the intervening period between the time mentioned and the present",
+      "example": "I have lived in this cozy apartment since last year.",
+      "relatedForms": [],
+      "collocations": [
+        "since morning",
+        "since yesterday",
+        "ever since"
+      ],
+      "synonyms": [
+        "from the time of"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "منذ",
+      "exampleArabic": "أعيش في هذه الشقة المريحة منذ العام الماضي."
+    },
+    {
+      "headword": "for",
+      "pronunciation": "/fɔː/",
+      "partOfSpeech": "preposition",
+      "definition": "indicating the length of a period of time",
+      "example": "He studied English vocabulary for two hours yesterday.",
+      "relatedForms": [],
+      "collocations": [
+        "for an hour",
+        "for a while",
+        "for two days"
+      ],
+      "synonyms": [
+        "during the span of"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "لمدة / طوال",
+      "exampleArabic": "درس مفردات اللغة الإنجليزية لمدة ساعتين بالأمس."
+    },
+    {
+      "headword": "by",
+      "pronunciation": "/baɪ/",
+      "partOfSpeech": "preposition",
+      "definition": "indicating a deadline or not later than the time mentioned",
+      "example": "Submit your completed project by five o'clock today.",
+      "relatedForms": [],
+      "collocations": [
+        "by tomorrow",
+        "by noon",
+        "by Friday"
+      ],
+      "synonyms": [
+        "not later than",
+        "before"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "بحلول / في موعد لا يتجاوز",
+      "exampleArabic": "سلم مشروعك المكتمل بحلول الساعة الخامسة اليوم."
+    },
+    {
+      "headword": "from",
+      "pronunciation": "/frɒm/",
+      "partOfSpeech": "preposition",
+      "definition": "indicating the starting point in a period of time",
+      "example": "The office operates from nine in the morning to five in the evening.",
+      "relatedForms": [],
+      "collocations": [
+        "from morning",
+        "from Monday to Friday",
+        "from now"
+      ],
+      "synonyms": [
+        "starting at"
+      ],
+      "antonyms": [
+        "to"
+      ],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "من (ابتداءً من زمن معين)",
+      "exampleArabic": "يعمل المكتب من التاسعة صباحاً إلى الخامسة مساءً."
+    },
+    {
+      "headword": "to",
+      "pronunciation": "/tuː/",
+      "partOfSpeech": "preposition",
+      "definition": "indicating the end point of a period of time or direction towards a time",
+      "example": "We study from ten to twelve every Saturday.",
+      "relatedForms": [],
+      "collocations": [
+        "from ... to ...",
+        "ten to five"
+      ],
+      "synonyms": [
+        "until"
+      ],
+      "antonyms": [
+        "from"
+      ],
+      "tags": [
+        "prepositions",
+        "time"
+      ],
+      "translation": "إلى (حتى وقت معين)",
+      "exampleArabic": "ندرس من العاشرة إلى الثانية عشرة كل سبت."
+    },
+    {
+      "headword": "now",
+      "pronunciation": "/naʊ/",
+      "partOfSpeech": "adverb",
+      "definition": "at the present time or moment",
+      "example": "We must start our practice session right now.",
+      "relatedForms": [],
+      "collocations": [
+        "right now",
+        "just now",
+        "from now on"
+      ],
+      "synonyms": [
+        "currently",
+        "at present"
+      ],
+      "antonyms": [
+        "then"
+      ],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "الآن",
+      "exampleArabic": "يجب أن نبدأ جلستنا التدريبية الآن تماماً."
+    },
+    {
+      "headword": "then",
+      "pronunciation": "/ðen/",
+      "partOfSpeech": "adverb",
+      "definition": "at that time in the past or future; next in order of time",
+      "example": "Finish your grammar homework first, and then we can watch television.",
+      "relatedForms": [],
+      "collocations": [
+        "and then",
+        "back then",
+        "until then"
+      ],
+      "synonyms": [
+        "next",
+        "subsequently"
+      ],
+      "antonyms": [
+        "now"
+      ],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "آنذاك / ثم / بعد ذلك",
+      "exampleArabic": "أنهِ واجب القواعد أولاً، ثم يمكننا مشاهدة التلفزيون بعد ذلك."
+    },
+    {
+      "headword": "soon",
+      "pronunciation": "/suːn/",
+      "partOfSpeech": "adverb",
+      "definition": "in or after a short time; without much delay",
+      "example": "Our English teacher will arrive soon.",
+      "relatedForms": [],
+      "collocations": [
+        "as soon as",
+        "see you soon",
+        "very soon"
+      ],
+      "synonyms": [
+        "shortly",
+        "presently"
+      ],
+      "antonyms": [
+        "late"
+      ],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "قريباً / بعد قليل",
+      "exampleArabic": "سيصل معلم اللغة الإنجليزية قريباً."
+    },
+    {
+      "headword": "already",
+      "pronunciation": "/ɔːlˈredi/",
+      "partOfSpeech": "adverb",
+      "definition": "before or by now or the time in question; earlier than expected",
+      "example": "I have already finished studying today's vocabulary items.",
+      "relatedForms": [],
+      "collocations": [
+        "already done",
+        "already know",
+        "have already"
+      ],
+      "synonyms": [
+        "beforehand",
+        "previously"
+      ],
+      "antonyms": [
+        "yet"
+      ],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "بالفعل / مسبقاً",
+      "exampleArabic": "لقد أنهيت بالفعل دراسة مفردات اليوم."
+    },
+    {
+      "headword": "yet",
+      "pronunciation": "/jet/",
+      "partOfSpeech": "adverb",
+      "definition": "up until the present or a specified or implied time (used in questions and negatives)",
+      "example": "Has the meeting started yet, or are we early?",
+      "relatedForms": [],
+      "collocations": [
+        "not yet",
+        "have yet to",
+        "as yet"
+      ],
+      "synonyms": [
+        "so far",
+        "hitherto"
+      ],
+      "antonyms": [
+        "already"
+      ],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "حتى الآن / بعد (في النفي والاستفهام)",
+      "exampleArabic": "هل بدأ الاجتماع بعد، أم أننا مبكرون؟"
+    },
+    {
+      "headword": "still",
+      "pronunciation": "/stɪl/",
+      "partOfSpeech": "adverb",
+      "definition": "even now or up to the time mentioned; without change",
+      "example": "He is still waiting at the bus stop for his friend.",
+      "relatedForms": [],
+      "collocations": [
+        "still working",
+        "still there",
+        "still wait"
+      ],
+      "synonyms": [
+        "even now",
+        "yet"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "ما زال / لا يزال",
+      "exampleArabic": "إنه لا يزال ينتظر عند موقف الحافلة صديقه."
+    },
+    {
+      "headword": "ago",
+      "pronunciation": "/əˈɡəʊ/",
+      "partOfSpeech": "adverb",
+      "definition": "before the present; earlier in time",
+      "example": "They left the train station ten minutes ago.",
+      "relatedForms": [],
+      "collocations": [
+        "long ago",
+        "two days ago",
+        "an hour ago"
+      ],
+      "synonyms": [
+        "previously",
+        "back"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "adverbs"
+      ],
+      "translation": "مضى / منذ (تأتي بعد المقدار الزمني)",
+      "exampleArabic": "غادروا محطة القطار منذ عشر دقائق مضت."
+    },
+    {
+      "headword": "today",
+      "pronunciation": "/təˈdeɪ/",
+      "partOfSpeech": "noun",
+      "definition": "on or in the course of this present day",
+      "example": "Today is a great opportunity to review our English grammar.",
+      "relatedForms": [],
+      "collocations": [
+        "today morning",
+        "today afternoon",
+        "earlier today"
+      ],
+      "synonyms": [
+        "this day"
+      ],
+      "antonyms": [
+        "yesterday",
+        "tomorrow"
+      ],
+      "tags": [
+        "time",
+        "days"
+      ],
+      "translation": "اليوم / هذا اليوم",
+      "exampleArabic": "اليوم فرصة رائعة لمراجعة قواعد اللغة الإنجليزية لدينا."
+    },
+    {
+      "headword": "tomorrow",
+      "pronunciation": "/təˈmɒrəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "on the day after today",
+      "example": "Tomorrow morning we have our final listening test.",
+      "relatedForms": [],
+      "collocations": [
+        "tomorrow morning",
+        "tomorrow night",
+        "see you tomorrow"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "yesterday",
+        "today"
+      ],
+      "tags": [
+        "time",
+        "days"
+      ],
+      "translation": "غداً / يوم الغد",
+      "exampleArabic": "صباح الغد لدينا اختبار الاستماع النهائي."
+    },
+    {
+      "headword": "yesterday",
+      "pronunciation": "/ˈjestədeɪ/",
+      "partOfSpeech": "noun",
+      "definition": "on the day before today",
+      "example": "Yesterday was a very productive workday for our group.",
+      "relatedForms": [],
+      "collocations": [
+        "yesterday morning",
+        "yesterday evening",
+        "day before yesterday"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "today",
+        "tomorrow"
+      ],
+      "tags": [
+        "time",
+        "days"
+      ],
+      "translation": "أمس / البارحة",
+      "exampleArabic": "كان الأمس يوم عمل مثمراً للغاية لمجموعتنا."
+    },
+    {
+      "headword": "tonight",
+      "pronunciation": "/təˈnaɪt/",
+      "partOfSpeech": "noun",
+      "definition": "during the present night or the night of the present day",
+      "example": "Let's review the grammar lesson together tonight.",
+      "relatedForms": [],
+      "collocations": [
+        "tonight show",
+        "later tonight",
+        "dinner tonight"
+      ],
+      "synonyms": [
+        "this night"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "days"
+      ],
+      "translation": "الليلة",
+      "exampleArabic": "دعنا نراجع درس القواعد معاً الليلة."
+    },
+    {
+      "headword": "punctual",
+      "pronunciation": "/ˈpʌŋktʃuəl/",
+      "partOfSpeech": "adjective",
+      "definition": "happening or doing something at the agreed or proper time; on time",
+      "example": "Our English teacher is always punctual and arrives before eight.",
+      "relatedForms": [
+        "punctuality (noun)"
+      ],
+      "collocations": [
+        "always punctual",
+        "punctual person",
+        "be punctual"
+      ],
+      "synonyms": [
+        "on time",
+        "prompt"
+      ],
+      "antonyms": [
+        "late",
+        "unpunctual"
+      ],
+      "tags": [
+        "descriptions",
+        "character"
+      ],
+      "translation": "دقيق في المواعيد / منضبط",
+      "exampleArabic": "معلم اللغة الإنجليزية لدينا منضبط دائماً في مواعيده ويصل قبل الثامنة."
+    },
+    {
+      "headword": "urgent",
+      "pronunciation": "/ˈɜːdʒənt/",
+      "partOfSpeech": "adjective",
+      "definition": "requiring immediate action or attention",
+      "example": "He had to leave because of an urgent family appointment.",
+      "relatedForms": [
+        "urgency (noun)"
+      ],
+      "collocations": [
+        "urgent message",
+        "urgent call",
+        "urgent matter"
+      ],
+      "synonyms": [
+        "pressing",
+        "critical"
+      ],
+      "antonyms": [
+        "nonurgent"
+      ],
+      "tags": [
+        "descriptions",
+        "priority"
+      ],
+      "translation": "عاجل / طارئ",
+      "exampleArabic": "اضطر إلى المغادرة بسبب موعد عائلي عاجل."
+    },
+    {
+      "headword": "wait",
+      "pronunciation": "/weɪt/",
+      "partOfSpeech": "verb",
+      "definition": "to stay where one is or delay action until a particular time or event",
+      "example": "Please wait in the reception lobby until the doctor calls you.",
+      "relatedForms": [
+        "waiter (noun)"
+      ],
+      "collocations": [
+        "wait for",
+        "wait patiently",
+        "wait a moment"
+      ],
+      "synonyms": [
+        "remain",
+        "pause"
+      ],
+      "antonyms": [
+        "rush",
+        "leave"
+      ],
+      "tags": [
+        "actions",
+        "time"
+      ],
+      "verbForms": {
+        "v1": "wait",
+        "v2": "waited",
+        "v3": "waited"
+      },
+      "translation": "ينتظر / يترقب",
+      "exampleArabic": "يرجى الانتظار في بهو الاستقبال حتى يناديك الطبيب."
+    },
+    {
+      "headword": "delay",
+      "pronunciation": "/dɪˈleɪ/",
+      "partOfSpeech": "verb",
+      "definition": "to make someone or something late or slow, or put off to a later time",
+      "example": "Heavy morning traffic delayed the company shuttle bus.",
+      "relatedForms": [
+        "delayed (adjective)"
+      ],
+      "collocations": [
+        "delay action",
+        "delay a flight",
+        "delay a meeting"
+      ],
+      "synonyms": [
+        "postpone",
+        "slow down"
+      ],
+      "antonyms": [
+        "hasten",
+        "speed up"
+      ],
+      "tags": [
+        "actions",
+        "time"
+      ],
+      "verbForms": {
+        "v1": "delay",
+        "v2": "delayed",
+        "v3": "delayed"
+      },
+      "translation": "يُعطّل / يؤخر",
+      "exampleArabic": "حركة المرور الصباحية الكثيفة أخرت حافلة الشركة."
+    },
+    {
+      "headword": "cancel",
+      "pronunciation": "/ˈkænsl/",
+      "partOfSpeech": "verb",
+      "definition": "to decide that a planned event will not happen; revoke or annul",
+      "example": "We had to cancel the outdoor training session due to heavy rain.",
+      "relatedForms": [
+        "cancellation (noun)"
+      ],
+      "collocations": [
+        "cancel an appointment",
+        "cancel a flight",
+        "cancel a meeting"
+      ],
+      "synonyms": [
+        "call off",
+        "abort"
+      ],
+      "antonyms": [
+        "confirm",
+        "schedule"
+      ],
+      "tags": [
+        "actions",
+        "decisions"
+      ],
+      "verbForms": {
+        "v1": "cancel",
+        "v2": "canceled",
+        "v3": "canceled"
+      },
+      "translation": "يلغي / يشطب",
+      "exampleArabic": "اضطررنا إلى إلغاء الجلسة التدريبية في الهواء الطلق بسبب المطر الغزير."
+    },
+    {
+      "headword": "postpone",
+      "pronunciation": "/pəˈspəʊn/",
+      "partOfSpeech": "verb",
+      "definition": "to cause or arrange for something to take place at a time later than that first scheduled",
+      "example": "They decided to postpone the exam until next Monday.",
+      "relatedForms": [
+        "postponement (noun)"
+      ],
+      "collocations": [
+        "postpone a meeting",
+        "postpone until",
+        "postpone indefinitely"
+      ],
+      "synonyms": [
+        "delay",
+        "defer",
+        "put off"
+      ],
+      "antonyms": [
+        "advance",
+        "expedite"
+      ],
+      "tags": [
+        "actions",
+        "decisions"
+      ],
+      "verbForms": {
+        "v1": "postpone",
+        "v2": "postponed",
+        "v3": "postponed"
+      },
+      "translation": "يؤجل / يرجئ",
+      "exampleArabic": "قرروا تأجيل الامتحان حتى يوم الإثنين القادم."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Prepositions of Time (at, on, in)",
+      "titleArabic": "حروف الجر الزمنية (at, on, in)",
+      "explanation": "Prepositions of time show when an event takes place: 1. Use 'at' for precise clock times, points of time, and holiday periods (at 7:00, at noon, at midnight, at dawn). 2. Use 'on' for days of the week and specific calendar dates (on Monday, on May 15th). 3. Use 'in' for longer periods such as months, seasons, years, and parts of the day (in July, in 2026, in the morning, in the summer).",
+      "explanationArabic": "تبين حروف الجر الزمنية توقيت حدوث الأفعال: 1. نستخدم 'at' مع الساعات الدقيقة، ونقاط الوقت المحددة مثل الظهيرة والفجر ومنتصف الليل (at 7:00, at noon, at midnight, at dawn). 2. نستخدم 'on' مع أيام الأسبوع والتواريخ المحددة (on Monday, on May 15th). 3. نستخدم 'in' مع الفترات الزمنية الأطول كالأشهر، وفصول السنة، والسنوات، وأجزاء النهار (in the morning, in July, in 2026).",
+      "structures": [
+        {
+          "pattern": "at + specific clock time / point of time",
+          "explanation": "Used with clock times, noon, midnight, dawn, dusk",
+          "explanationArabic": "تستخدم مع الساعات، الظهر، منتصف الليل، الفجر، الغسق"
+        },
+        {
+          "pattern": "on + day of the week / specific calendar date",
+          "explanation": "Used with days and dates",
+          "explanationArabic": "تستخدم مع أيام الأسبوع والتواريخ"
+        },
+        {
+          "pattern": "in + part of the day / month / season / year",
+          "explanation": "Used with mornings, afternoons, months, years, and long periods",
+          "explanationArabic": "تستخدم مع أوقات اليوم الواسعة والأشهر والسنوات والفصول"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The meeting starts at quarter past nine sharp.",
+          "translation": "يبدأ الاجتماع في تمام التاسعة والربع بالضبط.",
+          "usesVocabulary": [
+            "meeting",
+            "at",
+            "quarter past"
+          ]
+        },
+        {
+          "sentence": "We have an important doctor appointment on Friday at noon.",
+          "translation": "لدينا موعد طبي مهم يوم الجمعة عند الظهيرة.",
+          "usesVocabulary": [
+            "appointment",
+            "at",
+            "noon"
+          ]
+        },
+        {
+          "sentence": "He studied in the library for an hour before sunset.",
+          "translation": "درس في المكتبة لمدة ساعة قبل غروب الشمس.",
+          "usesVocabulary": [
+            "hour",
+            "for",
+            "before",
+            "sunset"
+          ]
+        },
+        {
+          "sentence": "Please arrive by tomorrow morning without delay.",
+          "translation": "يرجى الوصول بحلول صباح الغد دون تأخير.",
+          "usesVocabulary": [
+            "by",
+            "tomorrow",
+            "delay"
+          ]
+        }
+      ],
+      "commonUsage": [
+        "I wake up at seven. (أستيقظ في تمام السابعة.)",
+        "We meet on Monday. (نلتقي يوم الإثنين.)",
+        "It is cold in winter. (الجو بارد في فصل الشتاء.)"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I will see you in Monday.",
+          "right": "I will see you on Monday.",
+          "explanation": "Use 'on' with days of the week, not 'in'."
+        },
+        {
+          "wrong": "The session begins on 8:00.",
+          "right": "The session begins at 8:00.",
+          "explanation": "Use 'at' with specific clock times."
+        }
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Arranging a Doctor Appointment",
+      "titleArabic": "ترتيب موعد لدى الطبيب",
+      "setting": "On the telephone with the medical clinic receptionist on Wednesday morning",
+      "settingArabic": "على الهاتف مع موظف استقبال العيادة الطبية صباح الأربعاء",
+      "lines": [
+        {
+          "speaker": "Receptionist",
+          "text": "City Health Clinic, good morning. How may I help you today?",
+          "translation": "عيادة صحة المدينة، صباح الخير. كيف يمكنني مساعدتك اليوم؟"
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Hello, I need to make an urgent medical appointment for tomorrow.",
+          "translation": "مرحباً، أحتاج إلى حجز موعد طبي عاجل ليوم غد."
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Let me check our timetable. Dr. Emily is available at quarter past ten or at noon.",
+          "translation": "دعني أتحقق من جدول المواعيد. الدكتورة إميلي متاحة في العاشرة والربع أو عند الظهر."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Quarter past ten is perfect. What is the expected duration of the session?",
+          "translation": "العاشرة والربع ممتازة. ما هي المدة المتوقعة للجلسة؟"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "The consultation takes about half an hour. Please be punctual and arrive ten minutes before your time.",
+          "translation": "تستغرق الاستشارة نحو نصف ساعة. يرجى أن تكون دقيقاً في الموعد وتصل قبل موعدك بعشر دقائق."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "I will certainly be there on time. Do I need to wait long in the reception?",
+          "translation": "سأكون هناك في الموعد بالتأكيد. هل سأضطر للانتظار طويلاً في الاستقبال؟"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Not at all. If you ever need to cancel or postpone your date, please call us two hours prior.",
+          "translation": "على الإطلاق. وإذا احتجت في أي وقت إلى إلغاء موعدك أو تأجيله، فيرجى الاتصال بنا قبل ساعتين."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Understood. Thank you very much, see you tomorrow morning!",
+          "translation": "مفهوم. شكراً جزيلاً لكِ، أراكِ صباح الغد!"
+        }
+      ],
+      "vocabularyUsed": [
+        "today",
+        "urgent",
+        "appointment",
+        "tomorrow",
+        "timetable",
+        "at",
+        "quarter past",
+        "noon",
+        "duration",
+        "session",
+        "hour",
+        "punctual",
+        "before",
+        "time",
+        "wait",
+        "cancel",
+        "postpone",
+        "date"
+      ]
+    },
+    {
+      "title": "Checking the Train Schedule",
+      "titleArabic": "التحقق من جدول مواعيد القطارات",
+      "setting": "At the central railway station ticket hall",
+      "settingArabic": "في بهو التذاكر بمحطة السكة الحديد المركزية",
+      "lines": [
+        {
+          "speaker": "Huda",
+          "text": "Look at the big station clock! What time does our train to the capital leave?",
+          "translation": "انظري إلى ساعة المحطة الكبيرة! في أي وقت يغادر قطارنا إلى العاصمة؟"
+        },
+        {
+          "speaker": "Maha",
+          "text": "According to the official timetable, it departs at quarter to four this afternoon.",
+          "translation": "وفقاً لجدول المواعيد الرسمي، يغادر في الرابعة إلا ربعاً بعد ظهر اليوم."
+        },
+        {
+          "speaker": "Huda",
+          "text": "Is there any delay due to the heavy rain that started yesterday?",
+          "translation": "هل هناك أي تأخير بسبب المطر الغزير الذي بدأ بالأمس؟"
+        },
+        {
+          "speaker": "Maha",
+          "text": "No delay has been announced yet. Passengers are already boarding at platform two.",
+          "translation": "لم يُعلن عن أي تأخير حتى الآن. الركاب يصعدون بالفعل عند الرصيف رقم اثنين."
+        },
+        {
+          "speaker": "Huda",
+          "text": "Great! We have twenty minutes from now until departure.",
+          "translation": "رائع! لدينا عشرون دقيقة من الآن وحتى موعد المغادرة."
+        },
+        {
+          "speaker": "Maha",
+          "text": "Let's grab a hot coffee now, and then find our designated seats.",
+          "translation": "دعنا نتناول قهوة ساخنة الآن، ثم نبحث عن مقاعدنا المخصصة."
+        },
+        {
+          "speaker": "Huda",
+          "text": "Wait a second, let me check my phone to confirm the arrival deadline in the city.",
+          "translation": "انتظري ثانية، دعيني أتفقد هاتفي لتأكيد الموعد النهائي للوصول في المدينة."
+        },
+        {
+          "speaker": "Maha",
+          "text": "We will arrive shortly before sunset, exactly at six o'clock.",
+          "translation": "سنصل قبل قليل من غروب الشمس، في تمام السادسة بالضبط."
+        }
+      ],
+      "vocabularyUsed": [
+        "clock",
+        "time",
+        "timetable",
+        "at",
+        "quarter to",
+        "delay",
+        "yesterday",
+        "yet",
+        "already",
+        "minute",
+        "from",
+        "now",
+        "until",
+        "then",
+        "wait",
+        "second",
+        "deadline",
+        "before",
+        "sunset"
+      ]
+    },
+    {
+      "title": "Scheduling an Office Project Meeting",
+      "titleArabic": "جدولة اجتماع لمشروع العمل",
+      "setting": "In the conference room after a productive morning work session",
+      "settingArabic": "في قاعة المؤتمرات بعد جلسة عمل صباحية مثمرة",
+      "lines": [
+        {
+          "speaker": "Farooq",
+          "text": "Our team has a strict project deadline approaching next week.",
+          "translation": "لدى فريقنا موعد نهائي صارم للمشروع يقترب الأسبوع القادم."
+        },
+        {
+          "speaker": "Basma",
+          "text": "Yes, we must organize a comprehensive team meeting to review progress.",
+          "translation": "نعم، يجب أن ننظم اجتماعاً شاملاً للفريق لمراجعة التقدم."
+        },
+        {
+          "speaker": "Farooq",
+          "text": "Can we schedule it for tomorrow at dawn, or would noon be better?",
+          "translation": "هل يمكننا جدولته لصباح الغد عند الفجر، أم أن الظهيرة ستكون أفضل؟"
+        },
+        {
+          "speaker": "Basma",
+          "text": "Dawn is too early for most people! Let's hold it from eleven to noon.",
+          "translation": "الفجر مبكر جداً بالنسبة لمعظم الناس! فلنعقده من الحادية عشرة إلى الظهر."
+        },
+        {
+          "speaker": "Farooq",
+          "text": "That gives us a duration of sixty minutes. Is everyone still available?",
+          "translation": "هذا يمنحنا مدة قدرها ستون دقيقة. هل لا يزال الجميع متاحاً؟"
+        },
+        {
+          "speaker": "Basma",
+          "text": "Yes, I spoke with the manager a moment ago, and she confirmed the event date.",
+          "translation": "نعم، تحدثت مع المديرة منذ لحظة، وقد أكدت موعد الفعالية."
+        },
+        {
+          "speaker": "Farooq",
+          "text": "Excellent. I will send an urgent calendar invitation to all participants right now.",
+          "translation": "ممتاز. سأرسل دعوة تقويم عاجلة إلى جميع المشاركين الآن تماماً."
+        },
+        {
+          "speaker": "Basma",
+          "text": "Please remind them to arrive punctually so we do not waste precious time.",
+          "translation": "يرجى تذكيرهم بالحضور بدقة في الموعد حتى لا نضيع وقتاً ثميناً."
+        }
+      ],
+      "vocabularyUsed": [
+        "deadline",
+        "meeting",
+        "tomorrow",
+        "at",
+        "dawn",
+        "noon",
+        "from",
+        "to",
+        "duration",
+        "minute",
+        "still",
+        "moment",
+        "ago",
+        "event",
+        "date",
+        "urgent",
+        "now",
+        "time"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Importance of Being Punctual",
+      "titleArabic": "أهمية الالتزام بالمواعيد",
+      "kind": "lifestyle",
+      "text": "Being punctual is one of the most respected personal habits in both education and professional life. When you arrive at a business meeting or medical appointment exactly on time, you demonstrate respect for other people's valuable time. Arriving ten minutes before the scheduled hour allows you to prepare your mind, review notes, and avoid stressful morning rush. Whether you have a university lecture at dawn or a project deadline by Friday noon, organizing your day with a clear timetable prevents unnecessary delay. Managing every single minute wisely leads to lasting trust and genuine success.",
+      "translation": "يعد الالتزام بالمواعيد أحد أكثر العادات الشخصية احتراماً في التعليم والحياة المهنية على حد سواء. عندما تصل إلى اجتماع عمل أو موعد طبي في الوقت المحدد تماماً، فإنك تظهر احتراماً لوقت الآخرين الثمين. والوصول قبل عشر دقائق من الساعة المحددة يتيح لك تهيئة ذهنك ومراجعة الملاحظات وتجنب التدافع الصباحي المجهد. وسواء كان لديك محاضرة جامعية عند الفجر أو موعد نهائي للمشروع بحلول ظهر الجمعة، فإن تنظيم يومك بجدول مواعيد واضح يمنع التأخير غير الضروري. إن إدارة كل دقيقة بحكمة تؤدي إلى ثقة دائمة ونجاح حقيقي.",
+      "vocabularyUsed": [
+        "punctual",
+        "at",
+        "meeting",
+        "appointment",
+        "time",
+        "minute",
+        "before",
+        "hour",
+        "dawn",
+        "deadline",
+        "by",
+        "noon",
+        "timetable",
+        "delay"
+      ]
+    },
+    {
+      "title": "A Day Measured from Sunrise to Sunset",
+      "titleArabic": "يوم يُقاس من شروق الشمس إلى غروبها",
+      "kind": "nature",
+      "text": "Nature follows its own timeless rhythms, transitioning gracefully from dawn to dusk every day. Early in the morning at sunrise, birds begin their lively songs as morning daylight slowly fills the open horizon. People start their daily activities, working continuously during the bright morning hours until the clock reaches noon. After a short lunch period, daily life continues smoothly until the quiet arrival of sunset. At dusk, street lamps illuminate the neighborhood, signaling that another productive day has drawn to a peaceful close. Treasuring each moment helps us appreciate the beauty of our world.",
+      "translation": "تتبع الطبيعة إيقاعاتها الخالدة، وتنتقل برشاقة من الفجر إلى الغسق كل يوم. في الصباح الباكر عند شروق الشمس، تبدأ الطيور تغريداتها الحماسية بينما يملأ ضوء النهار الصباحي الأفق المفتوح ببطء. يبدأ الناس أنشطتهم اليومية، ويعملون باستمرار خلال ساعات الصباح المشرقة حتى تصل الساعة إلى الظهيرة. وبعد فترة غداء قصيرة، تستمر الحياة اليومية بسلاسة حتى حلول غروب الشمس الهادئ. وعند الغسق، تضيء مصابيح الشوارع الحي، معلنة أن يوماً مثمراً آخر قد اقترب من نهايته الهادئة. إن تقدير كل لحظة يساعدنا على الاستمتاع بجمال عالمنا.",
+      "vocabularyUsed": [
+        "dawn",
+        "dusk",
+        "at",
+        "sunrise",
+        "during",
+        "hour",
+        "until",
+        "clock",
+        "noon",
+        "after",
+        "period",
+        "sunset",
+        "moment"
+      ]
+    },
+    {
+      "title": "How We Organize Busy Schedules",
+      "titleArabic": "كيف ننظم جداولنا المزدحمة",
+      "kind": "productivity",
+      "text": "Modern living requires structured methods to coordinate complex responsibilities without becoming overwhelmed. Many professionals rely on a digital timetable or calendar to record every appointment, meeting, and important social event. When an urgent task suddenly appears, you may need to postpone a less critical discussion or cancel an optional session. Always allocate a realistic duration for each study task, allowing at least fifteen minutes of rest between commitments. Students who study English regularly for one hour every single evening build steady fluency without feeling stressed. Structuring your schedule today prepares you for a rewarding tomorrow.",
+      "translation": "تتطلب الحياة المعاصرة أساليب منظمة لتنسيق المسؤوليات المعقدة دون الشعور بالإرهاق. يعتمد العديد من المهنيين على جدول مواعيد رقمي أو تقويم لتسجيل كل موعد، واجتماع، وحدث اجتماعي مهم. وعندما تظهر مهمة عاجلة فجأة، قد تحتاج إلى تأجيل نقاش أقل أهمية أو إلغاء جلسة اختيارية. خصص دائماً مدة زمنية واقعية لكل مهمة دراسية، مع السماح بخمس عشرة دقيقة راحة على الأقل بين الالتزامات. والطلاب الذين يدرسون الإنجليزية بانتظام لمدة ساعة كل مساء يبنون طلاقة مطردة دون توتر. إن تنظيم جدولك اليوم يهيئك لغدٍ مجزٍ ومثمر.",
+      "vocabularyUsed": [
+        "timetable",
+        "appointment",
+        "meeting",
+        "event",
+        "urgent",
+        "postpone",
+        "cancel",
+        "session",
+        "duration",
+        "minute",
+        "for",
+        "hour",
+        "today",
+        "tomorrow"
+      ]
+    }
+  ]
+}

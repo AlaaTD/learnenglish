@@ -1,0 +1,1681 @@
+{
+  "day": 9,
+  "stage": "Foundation — Daily Life",
+  "title": "In My City",
+  "topic": "Places in town and neighborhoods",
+  "description": "Describe places in your city and your neighborhood.",
+  "focus": "Master 50 core words for urban places, navigation, neighborhood facilities, and city life; master 'Articles a / an / the'; engage with 3 realistic dialogues and 3 reading texts.",
+  "vocabulary": [
+    {
+      "headword": "city",
+      "pronunciation": "/ˈsɪti/",
+      "partOfSpeech": "noun",
+      "definition": "a large town, in particular an important human settlement and commercial center",
+      "example": "London is a vibrant and historic city with world-famous landmarks.",
+      "relatedForms": [],
+      "collocations": [
+        "big city",
+        "city center",
+        "capital city"
+      ],
+      "synonyms": [
+        "metropolis"
+      ],
+      "antonyms": [
+        "countryside",
+        "village"
+      ],
+      "tags": [
+        "places",
+        "urban"
+      ],
+      "translation": "مدينة كبيرة",
+      "exampleArabic": "لندن مدينة نابضة بالحياة وتاريخية بها معالم مشهورة عالمياً."
+    },
+    {
+      "headword": "town",
+      "pronunciation": "/taʊn/",
+      "partOfSpeech": "noun",
+      "definition": "a built-up area with a name, defined boundaries, and local government, larger than a village and generally smaller than a city",
+      "example": "He grew up in a quiet coastal town where everybody knows each other.",
+      "relatedForms": [],
+      "collocations": [
+        "small town",
+        "town center",
+        "hometown"
+      ],
+      "synonyms": [
+        "municipality"
+      ],
+      "antonyms": [
+        "village"
+      ],
+      "tags": [
+        "places",
+        "urban"
+      ],
+      "translation": "بلدة / مدينة صغيرة",
+      "exampleArabic": "نشأ في بلدة ساحلية هادئة حيث يعرف الجميع بعضهم بعضاً."
+    },
+    {
+      "headword": "village",
+      "pronunciation": "/ˈvɪlɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "a group of houses and associated buildings, situated in a rural area, smaller than a town",
+      "example": "My grandparents live in a peaceful mountain village surrounded by olive trees.",
+      "relatedForms": [
+        "villager (noun)"
+      ],
+      "collocations": [
+        "small village",
+        "rural village",
+        "fishing village"
+      ],
+      "synonyms": [
+        "hamlet"
+      ],
+      "antonyms": [
+        "city"
+      ],
+      "tags": [
+        "places",
+        "rural"
+      ],
+      "translation": "قرية",
+      "exampleArabic": "يعيش أجدادي في قرية جبلية هادئة محاطة بأشجار الزيتون."
+    },
+    {
+      "headword": "street",
+      "pronunciation": "/striːt/",
+      "partOfSpeech": "noun",
+      "definition": "a public road in a city or town, typically with houses and buildings on one or both sides",
+      "example": "Walk straight down this lively commercial street until you see the bakery.",
+      "relatedForms": [],
+      "collocations": [
+        "main street",
+        "cross the street",
+        "narrow street"
+      ],
+      "synonyms": [
+        "road",
+        "thoroughfare"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "roads"
+      ],
+      "translation": "شارع",
+      "exampleArabic": "امشِ مباشرة في هذا الشارع التجاري المفعم بالحياة حتى ترى المخبز."
+    },
+    {
+      "headword": "road",
+      "pronunciation": "/rəʊd/",
+      "partOfSpeech": "noun",
+      "definition": "a wide way leading from one place to another, especially one with a specially prepared surface which vehicles can use",
+      "example": "This ring road connects the eastern suburbs directly to the airport.",
+      "relatedForms": [],
+      "collocations": [
+        "main road",
+        "on the road",
+        "busy road"
+      ],
+      "synonyms": [
+        "highway",
+        "route"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "roads"
+      ],
+      "translation": "طريق / درب معبد",
+      "exampleArabic": "يربط هذا الطريق الدائري الضواحي الشرقية مباشرة بالمطار."
+    },
+    {
+      "headword": "avenue",
+      "pronunciation": "/ˈævənjuː/",
+      "partOfSpeech": "noun",
+      "definition": "a broad road in a town or city, typically having trees or large modern buildings on both sides",
+      "example": "The main university campus is located on Fifth Avenue.",
+      "relatedForms": [],
+      "collocations": [
+        "broad avenue",
+        "tree-lined avenue"
+      ],
+      "synonyms": [
+        "boulevard"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "roads"
+      ],
+      "translation": "جادة / شارع عريض مشجر",
+      "exampleArabic": "يقع الحرم الجامعي الرئيسي في الجادة الخامسة."
+    },
+    {
+      "headword": "corner",
+      "pronunciation": "/ˈkɔːnə/",
+      "partOfSpeech": "noun",
+      "definition": "a place or angle where two or more sides or edges meet, especially of streets",
+      "example": "There is a 24-hour pharmacy on the street corner.",
+      "relatedForms": [],
+      "collocations": [
+        "street corner",
+        "around the corner",
+        "on the corner"
+      ],
+      "synonyms": [
+        "intersection",
+        "bend"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "navigation"
+      ],
+      "translation": "ناصية / زاوية الشارع",
+      "exampleArabic": "توجد صيدلية تعمل على مدار 24 ساعة على ناصية الشارع."
+    },
+    {
+      "headword": "square",
+      "pronunciation": "/skweə/",
+      "partOfSpeech": "noun",
+      "definition": "an open, typically four-sided area surrounded by buildings in a town, often a public gathering place",
+      "example": "Thousands of tourists meet in the historic town square to watch the clock tower.",
+      "relatedForms": [],
+      "collocations": [
+        "town square",
+        "public square",
+        "central square"
+      ],
+      "synonyms": [
+        "plaza",
+        "piazza"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "urban"
+      ],
+      "translation": "ميدان / ساحة عامة",
+      "exampleArabic": "يلتقي آلاف السياح في ساحة البلدة التاريخية لمشاهدة برج الساعة."
+    },
+    {
+      "headword": "building",
+      "pronunciation": "/ˈbɪldɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "a structure with a roof and walls, such as a house, factory, or office",
+      "example": "That tall glass building across the street is the national bank headquarters.",
+      "relatedForms": [
+        "build (verb)"
+      ],
+      "collocations": [
+        "office building",
+        "tall building",
+        "historic building"
+      ],
+      "synonyms": [
+        "edifice",
+        "structure"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "architecture"
+      ],
+      "translation": "مبنى / عمارة",
+      "exampleArabic": "ذلك المبنى الزجاجي الشاهق عبر الشارع هو المقر الرئيسي للبنك الوطني."
+    },
+    {
+      "headword": "supermarket",
+      "pronunciation": "/ˈsuːpəmɑːkɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a large self-service store selling foods and household goods",
+      "example": "We buy fresh groceries at the local supermarket every Saturday.",
+      "relatedForms": [],
+      "collocations": [
+        "local supermarket",
+        "go to the supermarket",
+        "supermarket aisle"
+      ],
+      "synonyms": [
+        "grocery store"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "shopping"
+      ],
+      "translation": "سوبرماركت / متجر مركزي",
+      "exampleArabic": "نشتري البقالة الطازجة من السوبرماركت المحلي كل يوم سبت."
+    },
+    {
+      "headword": "market",
+      "pronunciation": "/ˈmɑːkɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a regular gathering of people for the purchase and sale of provisions, livestock, and other commodities",
+      "example": "The traditional farmers' market sells organic fruit and fresh vegetables.",
+      "relatedForms": [],
+      "collocations": [
+        "farmers' market",
+        "outdoor market",
+        "street market"
+      ],
+      "synonyms": [
+        "bazaar",
+        "mart"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "shopping"
+      ],
+      "translation": "سوق",
+      "exampleArabic": "يبيع سوق المزارعين التقليدي الفاكهة العضوية والخضار الطازجة."
+    },
+    {
+      "headword": "store",
+      "pronunciation": "/stɔː/",
+      "partOfSpeech": "noun",
+      "definition": "a retail shop where goods are kept for sale",
+      "example": "He purchased a new warm winter coat from the department store.",
+      "relatedForms": [],
+      "collocations": [
+        "department store",
+        "grocery store",
+        "convenience store"
+      ],
+      "synonyms": [
+        "shop",
+        "outlet"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "shopping"
+      ],
+      "translation": "متجر / دكان",
+      "exampleArabic": "اشترى معطفاً شتوياً دافئاً جديداً من المتجر متعدد الأقسام."
+    },
+    {
+      "headword": "shop",
+      "pronunciation": "/ʃɒp/",
+      "partOfSpeech": "noun",
+      "definition": "a building or part of a building where goods or services are sold",
+      "example": "There is a charming flower shop right next to the metro station.",
+      "relatedForms": [
+        "shop (verb)",
+        "shopper (noun)"
+      ],
+      "collocations": [
+        "flower shop",
+        "book shop",
+        "open a shop"
+      ],
+      "synonyms": [
+        "store",
+        "boutique"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "shopping"
+      ],
+      "translation": "محل / دكان",
+      "exampleArabic": "يوجد محل زهور لطيف بجوار محطة المترو تماماً."
+    },
+    {
+      "headword": "pharmacy",
+      "pronunciation": "/ˈfɑːməsi/",
+      "partOfSpeech": "noun",
+      "definition": "a shop where medicinal drugs are dispensed and sold",
+      "example": "I need to buy medicine from the pharmacy for my sore throat.",
+      "relatedForms": [
+        "pharmacist (noun)"
+      ],
+      "collocations": [
+        "local pharmacy",
+        "24-hour pharmacy",
+        "go to the pharmacy"
+      ],
+      "synonyms": [
+        "chemist",
+        "drugstore"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "health"
+      ],
+      "translation": "صيدلية",
+      "exampleArabic": "أحتاج إلى شراء دواء من الصيدلية لعلاج التهاب حلقي."
+    },
+    {
+      "headword": "hospital",
+      "pronunciation": "/ˈhɒspɪtl/",
+      "partOfSpeech": "noun",
+      "definition": "an institution providing medical and surgical treatment and nursing care for sick or injured people",
+      "example": "The general hospital has an emergency room open day and night.",
+      "relatedForms": [],
+      "collocations": [
+        "general hospital",
+        "go to the hospital",
+        "hospital bed"
+      ],
+      "synonyms": [
+        "infirmary",
+        "medical center"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "health"
+      ],
+      "translation": "مستشفى",
+      "exampleArabic": "المستشفى العام به قسم طوارئ مفتوح ليلاً ونهاراً."
+    },
+    {
+      "headword": "clinic",
+      "pronunciation": "/ˈklɪnɪk/",
+      "partOfSpeech": "noun",
+      "definition": "an establishment or hospital department where outpatients are given medical treatment or advice",
+      "example": "The dental clinic offers check-ups and cleanings every weekday.",
+      "relatedForms": [
+        "clinical (adjective)"
+      ],
+      "collocations": [
+        "dental clinic",
+        "health clinic",
+        "private clinic"
+      ],
+      "synonyms": [
+        "medical center"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "health"
+      ],
+      "translation": "عيادة طبية",
+      "exampleArabic": "تقدم عيادة الأسنان فحوصات وتنظيفاً في كل يوم عمل."
+    },
+    {
+      "headword": "bank",
+      "pronunciation": "/bæŋk/",
+      "partOfSpeech": "noun",
+      "definition": "a financial establishment that uses money deposited by customers for investment, pays it out when required, and makes loans",
+      "example": "I need to visit the bank to open a student savings account.",
+      "relatedForms": [
+        "banker (noun)"
+      ],
+      "collocations": [
+        "commercial bank",
+        "bank account",
+        "visit the bank"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "finance"
+      ],
+      "translation": "مصرف / بنك",
+      "exampleArabic": "أحتاج إلى زيارة البنك لفتح حساب توفير للطلاب."
+    },
+    {
+      "headword": "post office",
+      "pronunciation": "/ˈpəʊst ˈɒfɪs/",
+      "partOfSpeech": "noun",
+      "definition": "a public department or corporation responsible for postal services and where mail is sent",
+      "example": "Mail your overseas parcel at the central post office before noon.",
+      "relatedForms": [],
+      "collocations": [
+        "central post office",
+        "at the post office"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "services"
+      ],
+      "translation": "مكتب البريد",
+      "exampleArabic": "أرسل طردك إلى الخارج من مكتب البريد المركزي قبل الظهر."
+    },
+    {
+      "headword": "police station",
+      "pronunciation": "/pəˈliːs ˈsteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "the office or headquarters of a local police force",
+      "example": "He reported his lost wallet at the neighborhood police station.",
+      "relatedForms": [],
+      "collocations": [
+        "local police station",
+        "report at the police station"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "services"
+      ],
+      "translation": "قسم الشرطة / مخفر",
+      "exampleArabic": "أبلغ عن محفظته المفقودة في قسم شرطة الحي."
+    },
+    {
+      "headword": "school",
+      "pronunciation": "/skuːl/",
+      "partOfSpeech": "noun",
+      "definition": "an institution for educating children or offering specialized instruction",
+      "example": "The primary school has a large playground with swings and trees.",
+      "relatedForms": [],
+      "collocations": [
+        "primary school",
+        "high school",
+        "go to school"
+      ],
+      "synonyms": [
+        "academy"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "education"
+      ],
+      "translation": "مدرسة",
+      "exampleArabic": "المدرسة الابتدائية بها ساحة لعب كبيرة بها أراجيح وأشجار."
+    },
+    {
+      "headword": "university",
+      "pronunciation": "/ˌjuːnɪˈvɜːsəti/",
+      "partOfSpeech": "noun",
+      "definition": "a high-level educational institution in which students study for degrees and academic research is done",
+      "example": "She studies modern English literature at the prestigious state university.",
+      "relatedForms": [],
+      "collocations": [
+        "attend university",
+        "university campus",
+        "university student"
+      ],
+      "synonyms": [
+        "college"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "education"
+      ],
+      "translation": "جامعة",
+      "exampleArabic": "تدرس الأدب الإنجليزي الحديث في جامعة الولاية المرموقة."
+    },
+    {
+      "headword": "library",
+      "pronunciation": "/ˈlaɪbrəri/",
+      "partOfSpeech": "noun",
+      "definition": "a building or room containing collections of books and periodicals for reading or borrowing",
+      "example": "The city library is a silent and peaceful haven for passionate readers.",
+      "relatedForms": [
+        "librarian (noun)"
+      ],
+      "collocations": [
+        "public library",
+        "university library",
+        "borrow from the library"
+      ],
+      "synonyms": [
+        "archive"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "education"
+      ],
+      "translation": "مكتبة عامة (للقراءة والاستعارة)",
+      "exampleArabic": "مكتبة المدينة ملاذ صامت وهادئ للقراء الشغوفين."
+    },
+    {
+      "headword": "hotel",
+      "pronunciation": "/həʊˈtel/",
+      "partOfSpeech": "noun",
+      "definition": "an establishment providing accommodation, meals, and other services for travelers and tourists",
+      "example": "We booked a comfortable room in a modern hotel near the waterfront.",
+      "relatedForms": [],
+      "collocations": [
+        "luxury hotel",
+        "book a hotel",
+        "stay in a hotel"
+      ],
+      "synonyms": [
+        "inn",
+        "lodge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "travel"
+      ],
+      "translation": "فندق",
+      "exampleArabic": "حجزنا غرفة مريحة في فندق حديث بالقرب من الواجهة البحرية."
+    },
+    {
+      "headword": "restaurant",
+      "pronunciation": "/ˈrestrɒnt/",
+      "partOfSpeech": "noun",
+      "definition": "a place where people pay to sit and eat meals that are cooked and served on the premises",
+      "example": "We had a delicious family dinner at an Italian restaurant downtown.",
+      "relatedForms": [],
+      "collocations": [
+        "Italian restaurant",
+        "eat at a restaurant",
+        "famous restaurant"
+      ],
+      "synonyms": [
+        "eatery",
+        "bistro"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "dining"
+      ],
+      "translation": "مطعم",
+      "exampleArabic": "تناولنا عشاءً عائلياً لذيذاً في مطعم إيطالي وسط المدينة."
+    },
+    {
+      "headword": "cafe",
+      "pronunciation": "/ˈkæfeɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a small restaurant selling light meals and drinks, especially coffee and tea",
+      "example": "Let's meet at the corner cafe to study our grammar notes.",
+      "relatedForms": [],
+      "collocations": [
+        "street cafe",
+        "cozy cafe",
+        "sit at a cafe"
+      ],
+      "synonyms": [
+        "coffee shop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "dining"
+      ],
+      "translation": "مقهى / كافيه",
+      "exampleArabic": "دعنا نلتقِ في مقهى الزاوية لدراسة ملاحظات القواعد لدينا."
+    },
+    {
+      "headword": "bakery",
+      "pronunciation": "/ˈbeɪkəri/",
+      "partOfSpeech": "noun",
+      "definition": "a workplace where baked goods such as bread, cakes, and pastries are made or sold",
+      "example": "The pleasant aroma of fresh warm bread drifts from the neighborhood bakery.",
+      "relatedForms": [
+        "bake (verb)",
+        "baker (noun)"
+      ],
+      "collocations": [
+        "local bakery",
+        "buy from a bakery",
+        "fresh bakery"
+      ],
+      "synonyms": [
+        "bakeshop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "food"
+      ],
+      "translation": "مخبز / فرن",
+      "exampleArabic": "تفوح رائحة الخبز الدافئ الطازج الزكية من مخبز الحي."
+    },
+    {
+      "headword": "station",
+      "pronunciation": "/ˈsteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "a regular stopping place on a public transport route, especially of trains or buses",
+      "example": "The central railway station is bustling with travelers throughout the day.",
+      "relatedForms": [],
+      "collocations": [
+        "train station",
+        "metro station",
+        "at the station"
+      ],
+      "synonyms": [
+        "terminal",
+        "depot"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "transport"
+      ],
+      "translation": "محطة (قطار أو مواصلات)",
+      "exampleArabic": "محطة السكة الحديد المركزية تعج بالمسافرين طوال اليوم."
+    },
+    {
+      "headword": "bus stop",
+      "pronunciation": "/ˈbʌs stɒp/",
+      "partOfSpeech": "noun",
+      "definition": "a designated place where public buses stop for passengers to board or alight",
+      "example": "Wait at the bus stop opposite the library for bus number forty-two.",
+      "relatedForms": [],
+      "collocations": [
+        "wait at the bus stop",
+        "next bus stop"
+      ],
+      "synonyms": [
+        "bus station"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "transport"
+      ],
+      "translation": "موقف حافلات",
+      "exampleArabic": "انتظر عند موقف الحافلات المقابل للمكتبة لاستقلال الحافلة رقم اثنين وأربعين."
+    },
+    {
+      "headword": "airport",
+      "pronunciation": "/ˈeəpɔːt/",
+      "partOfSpeech": "noun",
+      "definition": "a complex of runways and buildings for the takeoff, landing, and maintenance of civil aircraft",
+      "example": "We arrived at the international airport two hours before departure.",
+      "relatedForms": [],
+      "collocations": [
+        "international airport",
+        "airport terminal",
+        "drive to the airport"
+      ],
+      "synonyms": [
+        "aerodrome",
+        "airfield"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "transport"
+      ],
+      "translation": "مطار",
+      "exampleArabic": "وصلنا إلى المطار الدولي قبل ساعتين من موعد المغادرة."
+    },
+    {
+      "headword": "bridge",
+      "pronunciation": "/brɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "a structure carrying a road, path, railway, or canal across a river, ravine, or other obstacle",
+      "example": "The historic suspension bridge spans the wide blue river.",
+      "relatedForms": [],
+      "collocations": [
+        "cross the bridge",
+        "stone bridge",
+        "suspension bridge"
+      ],
+      "synonyms": [
+        "viaduct",
+        "overpass"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "infrastructure"
+      ],
+      "translation": "جسر / كوبري",
+      "exampleArabic": "يمتد الجسر المعلق التاريخي فوق النهر الأزرق الواسع."
+    },
+    {
+      "headword": "river",
+      "pronunciation": "/ˈrɪvə/",
+      "partOfSpeech": "noun",
+      "definition": "a large natural stream of water flowing in a channel to the sea, a lake, or another river",
+      "example": "Many families enjoy walking along the scenic river path at sunset.",
+      "relatedForms": [],
+      "collocations": [
+        "river bank",
+        "along the river",
+        "cross the river"
+      ],
+      "synonyms": [
+        "waterway",
+        "stream"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "nature"
+      ],
+      "translation": "نهر",
+      "exampleArabic": "تستمتع العديد من العائلات بالمشي على طول مسار النهر الخلاب عند الغروب."
+    },
+    {
+      "headword": "center",
+      "pronunciation": "/ˈsentə/",
+      "partOfSpeech": "noun",
+      "definition": "the middle point of a circle or sphere, or the main downtown hub of a city",
+      "example": "We took the metro directly to the bustling commercial center.",
+      "relatedForms": [
+        "central (adjective)"
+      ],
+      "collocations": [
+        "city center",
+        "town center",
+        "shopping center"
+      ],
+      "synonyms": [
+        "middle",
+        "heart",
+        "hub"
+      ],
+      "antonyms": [
+        "edge",
+        "suburb"
+      ],
+      "tags": [
+        "places",
+        "urban"
+      ],
+      "translation": "مركز / وسط (المدينة)",
+      "exampleArabic": "استقللنا المترو مباشرة إلى المركز التجاري الصاخب."
+    },
+    {
+      "headword": "suburb",
+      "pronunciation": "/ˈsʌbɜːb/",
+      "partOfSpeech": "noun",
+      "definition": "an outlying district of a city, especially a residential one",
+      "example": "They bought a comfortable family house in a peaceful green suburb.",
+      "relatedForms": [
+        "suburban (adjective)"
+      ],
+      "collocations": [
+        "quiet suburb",
+        "outer suburb",
+        "live in the suburbs"
+      ],
+      "synonyms": [
+        "residential area"
+      ],
+      "antonyms": [
+        "city center"
+      ],
+      "tags": [
+        "places",
+        "urban"
+      ],
+      "translation": "ضاحية (من ضواحي المدينة)",
+      "exampleArabic": "اشتروا منزلاً عائلياً مريحاً في ضاحية خضراء هادئة."
+    },
+    {
+      "headword": "area",
+      "pronunciation": "/ˈeəriə/",
+      "partOfSpeech": "noun",
+      "definition": "a region or part of a town, a country, or the world",
+      "example": "This residential area is famous for its parks and safe streets.",
+      "relatedForms": [],
+      "collocations": [
+        "residential area",
+        "local area",
+        "surrounding area"
+      ],
+      "synonyms": [
+        "region",
+        "zone",
+        "district"
+      ],
+      "antonyms": [],
+      "tags": [
+        "places",
+        "geography"
+      ],
+      "translation": "منطقة / ناحية",
+      "exampleArabic": "تشتهر هذه المنطقة السكنية بمنتزهاتها وشوارعها الآمنة."
+    },
+    {
+      "headword": "map",
+      "pronunciation": "/mæp/",
+      "partOfSpeech": "noun",
+      "definition": "a diagrammatic representation of an area of land or sea showing physical features, cities, and roads",
+      "example": "Check the digital map on your phone to find the shortest walking route.",
+      "relatedForms": [],
+      "collocations": [
+        "city map",
+        "look at the map",
+        "road map"
+      ],
+      "synonyms": [
+        "chart",
+        "plan"
+      ],
+      "antonyms": [],
+      "tags": [
+        "navigation",
+        "tools"
+      ],
+      "translation": "خريطة",
+      "exampleArabic": "تفقد الخريطة الرقمية على هاتفك للعثور على أقصر طريق للمشي."
+    },
+    {
+      "headword": "direction",
+      "pronunciation": "/dəˈrekʃn/",
+      "partOfSpeech": "noun",
+      "definition": "a course along which someone or something moves; instructions on how to reach a destination",
+      "example": "Excuse me, can you give me directions to the central museum?",
+      "relatedForms": [
+        "direct (verb)",
+        "director (noun)"
+      ],
+      "collocations": [
+        "ask for directions",
+        "give directions",
+        "wrong direction"
+      ],
+      "synonyms": [
+        "guidance",
+        "way",
+        "bearing"
+      ],
+      "antonyms": [],
+      "tags": [
+        "navigation",
+        "communication"
+      ],
+      "translation": "اتجاه / إرشادات الطريق",
+      "exampleArabic": "عفواً، هل يمكنك إعطائي إرشادات الاتجاه إلى المتحف المركزي؟"
+    },
+    {
+      "headword": "traffic",
+      "pronunciation": "/ˈtræfɪk/",
+      "partOfSpeech": "noun",
+      "definition": "vehicles moving on a public road or commercial movement in general",
+      "example": "Heavy morning traffic delayed our city bus by twenty minutes.",
+      "relatedForms": [],
+      "collocations": [
+        "heavy traffic",
+        "traffic jam",
+        "traffic lights"
+      ],
+      "synonyms": [
+        "congestion"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "urban"
+      ],
+      "translation": "حركة المرور / سير السيارات",
+      "exampleArabic": "حركة المرور الصباحية الكثيفة أخرت حافلة مدينتنا بمقدار عشرين دقيقة."
+    },
+    {
+      "headword": "pavement",
+      "pronunciation": "/ˈpeɪvmənt/",
+      "partOfSpeech": "noun",
+      "definition": "a raised paved path for pedestrians at the side of a road",
+      "example": "Always walk safely on the concrete pavement rather than on the road.",
+      "relatedForms": [
+        "pave (verb)"
+      ],
+      "collocations": [
+        "walk on the pavement",
+        "wide pavement",
+        "pavement cafe"
+      ],
+      "synonyms": [
+        "sidewalk",
+        "footpath"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "pedestrian"
+      ],
+      "translation": "رصيف المشاة",
+      "exampleArabic": "امشِ دائماً بأمان على الرصيف الخرساني بدلاً من المشي على الطريق."
+    },
+    {
+      "headword": "turn",
+      "pronunciation": "/tɜːn/",
+      "partOfSpeech": "verb",
+      "definition": "change the direction of one's course or bodily movement",
+      "example": "Walk two blocks forward and then turn left at the traffic light.",
+      "relatedForms": [
+        "turn (noun)"
+      ],
+      "collocations": [
+        "turn left",
+        "turn right",
+        "turn corner"
+      ],
+      "synonyms": [
+        "swerve",
+        "pivot"
+      ],
+      "antonyms": [
+        "go straight"
+      ],
+      "tags": [
+        "actions",
+        "navigation"
+      ],
+      "verbForms": {
+        "v1": "turn",
+        "v2": "turned",
+        "v3": "turned"
+      },
+      "translation": "ينعطف / يستدير",
+      "exampleArabic": "امشِ مربعين سكنيين للأمام ثم انعطف يساراً عند إشارة المرور."
+    },
+    {
+      "headword": "cross",
+      "pronunciation": "/krɒs/",
+      "partOfSpeech": "verb",
+      "definition": "pass in an opposite or different direction; go from one side to another of a road",
+      "example": "Look carefully in both directions before you cross the busy street.",
+      "relatedForms": [
+        "crossing (noun)"
+      ],
+      "collocations": [
+        "cross the street",
+        "cross the road",
+        "cross the bridge"
+      ],
+      "synonyms": [
+        "traverse",
+        "pass over"
+      ],
+      "antonyms": [],
+      "tags": [
+        "actions",
+        "navigation"
+      ],
+      "verbForms": {
+        "v1": "cross",
+        "v2": "crossed",
+        "v3": "crossed"
+      },
+      "translation": "يعبر / يقطع (شارعاً أو جسراً)",
+      "exampleArabic": "انظر بعناية في كلا الاتجاهين قبل أن تعبر الشارع المزدحم."
+    },
+    {
+      "headword": "follow",
+      "pronunciation": "/ˈfɒləʊ/",
+      "partOfSpeech": "verb",
+      "definition": "go or come after a person or path; adhere to navigation instructions",
+      "example": "Follow this stone pavement until you reach the town square.",
+      "relatedForms": [
+        "follower (noun)"
+      ],
+      "collocations": [
+        "follow directions",
+        "follow the path",
+        "follow the road"
+      ],
+      "synonyms": [
+        "pursue",
+        "trail",
+        "obey"
+      ],
+      "antonyms": [
+        "lead"
+      ],
+      "tags": [
+        "actions",
+        "navigation"
+      ],
+      "verbForms": {
+        "v1": "follow",
+        "v2": "followed",
+        "v3": "followed"
+      },
+      "translation": "يتبع / يسير على مسار",
+      "exampleArabic": "اتبع هذا الرصيف الحجري حتى تصل إلى ساحة البلدة."
+    },
+    {
+      "headword": "pass",
+      "pronunciation": "/pɑːs/",
+      "partOfSpeech": "verb",
+      "definition": "move in a specified direction so as to go beyond someone or something",
+      "example": "You will pass a modern hospital on your right before you reach the station.",
+      "relatedForms": [
+        "passage (noun)"
+      ],
+      "collocations": [
+        "pass by",
+        "pass a building",
+        "pass the corner"
+      ],
+      "synonyms": [
+        "go past",
+        "by-pass"
+      ],
+      "antonyms": [],
+      "tags": [
+        "actions",
+        "navigation"
+      ],
+      "verbForms": {
+        "v1": "pass",
+        "v2": "passed",
+        "v3": "passed"
+      },
+      "translation": "يمر بجانب / يتجاوز",
+      "exampleArabic": "ستمر بجانب مستشفى حديث على يمينك قبل أن تصل إلى المحطة."
+    },
+    {
+      "headword": "stop",
+      "pronunciation": "/stɒp/",
+      "partOfSpeech": "verb",
+      "definition": "come to an end, or cease moving, operating, or speaking",
+      "example": "The bus stops right outside the main library entrance.",
+      "relatedForms": [
+        "stoppage (noun)"
+      ],
+      "collocations": [
+        "stop the car",
+        "bus stops",
+        "stop moving"
+      ],
+      "synonyms": [
+        "halt",
+        "cease",
+        "pause"
+      ],
+      "antonyms": [
+        "start",
+        "continue"
+      ],
+      "tags": [
+        "actions",
+        "movement"
+      ],
+      "verbForms": {
+        "v1": "stop",
+        "v2": "stopped",
+        "v3": "stopped"
+      },
+      "translation": "يتوقف / يقف",
+      "exampleArabic": "تتوقف الحافلة خارج مدخل المكتبة الرئيسي مباشرة."
+    },
+    {
+      "headword": "reach",
+      "pronunciation": "/riːtʃ/",
+      "partOfSpeech": "verb",
+      "definition": "arrive at; get as far as a specific point or destination",
+      "example": "Keep walking straight and you will reach the bank in five minutes.",
+      "relatedForms": [],
+      "collocations": [
+        "reach destination",
+        "reach home",
+        "reach the center"
+      ],
+      "synonyms": [
+        "arrive at",
+        "get to"
+      ],
+      "antonyms": [
+        "depart"
+      ],
+      "tags": [
+        "actions",
+        "movement"
+      ],
+      "verbForms": {
+        "v1": "reach",
+        "v2": "reached",
+        "v3": "reached"
+      },
+      "translation": "يصل إلى / يبلغ",
+      "exampleArabic": "واصل المشي للأمام وستصل إلى البنك في غضون خمس دقائق."
+    },
+    {
+      "headword": "locate",
+      "pronunciation": "/ləʊˈkeɪt/",
+      "partOfSpeech": "verb",
+      "definition": "discover the exact place or position of; establish in a particular place",
+      "example": "Can you help me locate the nearest police station on this map?",
+      "relatedForms": [
+        "location (noun)"
+      ],
+      "collocations": [
+        "locate an address",
+        "locate on a map",
+        "be located in"
+      ],
+      "synonyms": [
+        "find",
+        "pinpoint",
+        "situate"
+      ],
+      "antonyms": [
+        "lose"
+      ],
+      "tags": [
+        "actions",
+        "navigation"
+      ],
+      "verbForms": {
+        "v1": "locate",
+        "v2": "located",
+        "v3": "located"
+      },
+      "translation": "يحدد موقع / يجد مكاناً",
+      "exampleArabic": "هل يمكنك مساعدتي في تحديد موقع أقرب قسم شرطة على هذه الخريطة؟"
+    },
+    {
+      "headword": "crowded",
+      "pronunciation": "/ˈkraʊdɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "full of people, leaving little or no room for movement",
+      "example": "The metro station is extremely crowded during morning rush hour.",
+      "relatedForms": [
+        "crowd (noun)"
+      ],
+      "collocations": [
+        "crowded street",
+        "crowded bus",
+        "heavily crowded"
+      ],
+      "synonyms": [
+        "packed",
+        "bustling",
+        "jammed"
+      ],
+      "antonyms": [
+        "empty",
+        "deserted"
+      ],
+      "tags": [
+        "descriptions",
+        "urban"
+      ],
+      "translation": "مزدحم / حافل بالناس",
+      "exampleArabic": "محطة المترو مزدحمة للغاية خلال ساعة الذروة الصباحية."
+    },
+    {
+      "headword": "peaceful",
+      "pronunciation": "/ˈpiːsfl/",
+      "partOfSpeech": "adjective",
+      "definition": "free from disturbance; tranquil, quiet, and calm",
+      "example": "This leafy residential suburb is very peaceful and safe for families.",
+      "relatedForms": [
+        "peace (noun)",
+        "peacefully (adverb)"
+      ],
+      "collocations": [
+        "peaceful town",
+        "peaceful atmosphere",
+        "peaceful area"
+      ],
+      "synonyms": [
+        "tranquil",
+        "quiet",
+        "serene"
+      ],
+      "antonyms": [
+        "noisy",
+        "hectic"
+      ],
+      "tags": [
+        "descriptions",
+        "atmosphere"
+      ],
+      "translation": "هادئ / مسالم",
+      "exampleArabic": "هذه الضاحية السكنية المورقة هادئة جداً وآمنة للعائلات."
+    },
+    {
+      "headword": "modern",
+      "pronunciation": "/ˈmɒdn/",
+      "partOfSpeech": "adjective",
+      "definition": "relating to the present or recent times as opposed to the remote past",
+      "example": "The city features modern skyscrapers alongside historic architectural monuments.",
+      "relatedForms": [
+        "modernize (verb)"
+      ],
+      "collocations": [
+        "modern building",
+        "modern city",
+        "modern facilities"
+      ],
+      "synonyms": [
+        "contemporary",
+        "cutting-edge"
+      ],
+      "antonyms": [
+        "ancient",
+        "traditional"
+      ],
+      "tags": [
+        "descriptions",
+        "architecture"
+      ],
+      "translation": "حديث / عصري",
+      "exampleArabic": "تتميز المدينة بناطحات سحاب حديثة إلى جانب المعالم المعمارية التاريخية."
+    },
+    {
+      "headword": "famous",
+      "pronunciation": "/ˈfeɪməs/",
+      "partOfSpeech": "adjective",
+      "definition": "known about by many people; renowned",
+      "example": "The capital is famous for its museums, historic bridge, and diverse restaurants.",
+      "relatedForms": [
+        "fame (noun)"
+      ],
+      "collocations": [
+        "world famous",
+        "famous landmark",
+        "famous for"
+      ],
+      "synonyms": [
+        "renowned",
+        "celebrated",
+        "well-known"
+      ],
+      "antonyms": [
+        "unknown",
+        "obscure"
+      ],
+      "tags": [
+        "descriptions",
+        "reputation"
+      ],
+      "translation": "مشهور / معروف",
+      "exampleArabic": "العاصمة مشهورة بمتاحفها وجسرها التاريخي ومطاعمها المتنوعة."
+    },
+    {
+      "headword": "local",
+      "pronunciation": "/ˈləʊkl/",
+      "partOfSpeech": "adjective",
+      "definition": "relating or restricted to a particular area or one's neighborhood",
+      "example": "We support local businesses by buying bread at the neighborhood bakery.",
+      "relatedForms": [
+        "locally (adverb)"
+      ],
+      "collocations": [
+        "local market",
+        "local community",
+        "local resident"
+      ],
+      "synonyms": [
+        "neighborhood",
+        "community"
+      ],
+      "antonyms": [
+        "national",
+        "international"
+      ],
+      "tags": [
+        "descriptions",
+        "community"
+      ],
+      "translation": "محلي (تابع للحي أو المنطقة)",
+      "exampleArabic": "ندعم المتاجر المحلية بشراء الخبز من مخبز الحي."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "Articles a / an / the",
+      "titleArabic": "أدوات التعريف والتنكير (a, an, the)",
+      "explanation": "Articles clarify whether a noun is general or specific: 1. Use 'a' before singular countable nouns starting with a consonant sound (a city, a hotel, a modern building). 2. Use 'an' before singular countable nouns starting with a vowel sound (an airport, an avenue, an area). 3. Use 'the' when referring to a specific item known to both speaker and listener, or unique things (the bank on the corner, the sun, the station).",
+      "explanationArabic": "توضح أدوات التعريف والتنكير ما إذا كان الاسم عاماً أو محدداً: 1. نستخدم 'a' قبل الأسماء المفردة المعدودة التي تبدأ بصوت ساكن (a city, a hotel, a bank). 2. نستخدم 'an' قبل الأسماء المفردة المعدودة التي تبدأ بصوت متحرك (an airport, an avenue, an area). 3. نستخدم 'the' للإشارة إلى شيء محدد ومعروف لدى المتكلم والمستمع، أو للأشياء الفريدة من نوعها (the bank on the corner, the station).",
+      "structures": [
+        {
+          "pattern": "a + consonant sound + singular countable noun",
+          "explanation": "Indefinite article for consonant sound beginnings",
+          "explanationArabic": "أداة تنكير قبل الكلمات المفردة البادئة بصوت ساكن"
+        },
+        {
+          "pattern": "an + vowel sound (a, e, i, o, u) + singular countable noun",
+          "explanation": "Indefinite article for vowel sound beginnings",
+          "explanationArabic": "أداة تنكير قبل الكلمات المفردة البادئة بصوت متحرك"
+        },
+        {
+          "pattern": "the + specific noun (singular or plural)",
+          "explanation": "Definite article for specific or previously mentioned things",
+          "explanationArabic": "أداة تعريف للشيء المحدد أو المذكور سابقاً"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "There is a modern supermarket and a bakery on the corner.",
+          "translation": "يوجد سوبرماركت حديث ومخبز على الناصية.",
+          "usesVocabulary": [
+            "modern",
+            "supermarket",
+            "bakery",
+            "corner"
+          ]
+        },
+        {
+          "sentence": "She arrived at an international airport near the city center.",
+          "translation": "وصلت إلى مطار دولي بالقرب من وسط المدينة.",
+          "usesVocabulary": [
+            "airport",
+            "city",
+            "center"
+          ]
+        },
+        {
+          "sentence": "Walk down the avenue and turn right at the pharmacy.",
+          "translation": "امشِ في الجادة وانعطف يميناً عند الصيدلية.",
+          "usesVocabulary": [
+            "avenue",
+            "turn",
+            "pharmacy"
+          ]
+        },
+        {
+          "sentence": "We crossed the bridge over the river to reach the hospital.",
+          "translation": "عبرنا الجسر فوق النهر للوصول إلى المستشفى.",
+          "usesVocabulary": [
+            "cross",
+            "bridge",
+            "river",
+            "reach",
+            "hospital"
+          ]
+        }
+      ],
+      "commonUsage": [
+        "I live in a peaceful town. (أعيش في بلدة هادئة.)",
+        "The library is near the school. (المكتبة قريبة من المدرسة.)",
+        "He is an honest driver. (إنه سائق أمين.)"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "He works in an bank.",
+          "right": "He works in a bank.",
+          "explanation": "'Bank' begins with a consonant sound /b/, so use 'a', not 'an'."
+        },
+        {
+          "wrong": "She goes to an university.",
+          "right": "She goes to a university.",
+          "explanation": "'University' begins with the consonant sound /j/ (you), so use 'a', not 'an'."
+        }
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Asking for Directions Downtown",
+      "titleArabic": "السؤال عن الاتجاهات وسط المدينة",
+      "setting": "On a busy sidewalk near the central square on a sunny morning",
+      "settingArabic": "على رصيف مشاة مزدحم بالقرب من الميدان المركزي في صباح مشمس",
+      "lines": [
+        {
+          "speaker": "Tourist",
+          "text": "Excuse me, sir! Can you give me directions to the city library?",
+          "translation": "عفواً يا سيدي! هل يمكنك إعطائي إرشادات الاتجاه إلى مكتبة المدينة؟"
+        },
+        {
+          "speaker": "Local Resident",
+          "text": "Certainly! Follow this wide pavement straight along the avenue for two blocks.",
+          "translation": "بالتأكيد! اتبع هذا الرصيف العريض للأمام على طول الجادة لمسافة مربعين سكنيين."
+        },
+        {
+          "speaker": "Tourist",
+          "text": "Do I need to turn at the street corner near that modern bank building?",
+          "translation": "هل أحتاج إلى الانعطاف عند ناصية الشارع بالقرب من مبنى البنك الحديث ذلك؟"
+        },
+        {
+          "speaker": "Local Resident",
+          "text": "Yes, turn right there. You will pass a famous restaurant and a local bakery.",
+          "translation": "نعم، انعطف يميناً هناك. ستمر بجانب مطعم مشهور ومخبز محلي."
+        },
+        {
+          "speaker": "Tourist",
+          "text": "Is it safe to cross the road there, or is the traffic very heavy?",
+          "translation": "هل من الآمن عبور الطريق هناك، أم أن حركة المرور كثيفة جداً؟"
+        },
+        {
+          "speaker": "Local Resident",
+          "text": "There are clear pedestrian lights. Cross safely, pass the bus stop, and you will reach it.",
+          "translation": "توجد إشارات مشاة واضحة. اعبر بأمان، وتجاوز موقف الحافلات، وستصل إليها."
+        },
+        {
+          "speaker": "Tourist",
+          "text": "Thank you so much! I was trying to locate it on my phone map.",
+          "translation": "شكراً جزيلاً لك! كنت أحاول تحديد موقعها على خريطة هاتفي."
+        },
+        {
+          "speaker": "Local Resident",
+          "text": "You are very welcome. Enjoy your visit to our beautiful town!",
+          "translation": "على الرحب والسعة. استمتع بزيارتك لبلدتنا الجميلة!"
+        }
+      ],
+      "vocabularyUsed": [
+        "direction",
+        "city",
+        "library",
+        "follow",
+        "pavement",
+        "avenue",
+        "turn",
+        "corner",
+        "modern",
+        "bank",
+        "building",
+        "pass",
+        "famous",
+        "restaurant",
+        "local",
+        "bakery",
+        "cross",
+        "road",
+        "traffic",
+        "bus stop",
+        "reach",
+        "locate",
+        "map",
+        "town"
+      ]
+    },
+    {
+      "title": "Exploring the Neighborhood",
+      "titleArabic": "استكشاف الحي السكني",
+      "setting": "Walking outside a quiet residential apartment building on Saturday afternoon",
+      "settingArabic": "المشي خارج مبنى سكني هادئ بعد ظهر السبت",
+      "lines": [
+        {
+          "speaker": "Husam",
+          "text": "I really love living in this peaceful residential area of the suburb.",
+          "translation": "أنا حقاً أحب العيش في هذه المنطقة السكنية الهادئة في الضاحية."
+        },
+        {
+          "speaker": "Nabil",
+          "text": "Yes, everything you need is close: a supermarket, a clinic, and a primary school.",
+          "translation": "نعم، كل ما تحتاجه قريب: سوبرماركت، وعيادة، ومدرسة ابتدائية."
+        },
+        {
+          "speaker": "Husam",
+          "text": "Where is the nearest post office if I want to send an overseas package?",
+          "translation": "أين أقرب مكتب بريد إذا أردت إرسال طرد إلى الخارج؟"
+        },
+        {
+          "speaker": "Nabil",
+          "text": "It is located opposite the police station, right next to the neighborhood pharmacy.",
+          "translation": "إنه يقع مقابل قسم الشرطة، بجوار صيدلية الحي تماماً."
+        },
+        {
+          "speaker": "Husam",
+          "text": "And how do we get to the central train station from here?",
+          "translation": "وكيف نصل إلى محطة القطار المركزية من هنا؟"
+        },
+        {
+          "speaker": "Nabil",
+          "text": "The bus stops right at our street corner and takes you directly to the center.",
+          "translation": "تتوقف الحافلة عند ناصية شارعنا تماماً وتأخذك مباشرة إلى وسط المدينة."
+        },
+        {
+          "speaker": "Husam",
+          "text": "That is so convenient! We don't have to drive through crowded city traffic.",
+          "translation": "هذا مريح للغاية! لا نضطر للقيادة وسط حركة مرور المدينة المزدحمة."
+        },
+        {
+          "speaker": "Nabil",
+          "text": "Exactly. It gives us a peaceful life while keeping city amenities within reach.",
+          "translation": "بالتأكيد. إنها تمنحنا حياة هادئة مع إبقاء مرافق المدينة في متناول اليد."
+        }
+      ],
+      "vocabularyUsed": [
+        "peaceful",
+        "area",
+        "suburb",
+        "supermarket",
+        "clinic",
+        "school",
+        "post office",
+        "locate",
+        "police station",
+        "pharmacy",
+        "station",
+        "bus stop",
+        "street",
+        "corner",
+        "center",
+        "crowded",
+        "city",
+        "traffic"
+      ]
+    },
+    {
+      "title": "Visiting the Waterfront and Old Town",
+      "titleArabic": "زيارة الواجهة البحرية والبلدة القديمة",
+      "setting": "Sitting at an open-air cafe overlooking the river bridge",
+      "settingArabic": "الجلوس في مقهى مفتوح يطل على جسر النهر",
+      "lines": [
+        {
+          "speaker": "Tamer",
+          "text": "Look at the historic stone bridge crossing the river. What a magnificent view!",
+          "translation": "انظر إلى الجسر الحجري التاريخي الذي يعبر النهر. يا له من منظر رائع!"
+        },
+        {
+          "speaker": "Salim",
+          "text": "This whole district is famous for its cultural heritage and traditional market.",
+          "translation": "هذا الحي بأكمله مشهور بتراثه الثقافي وسوقه التقليدي."
+        },
+        {
+          "speaker": "Tamer",
+          "text": "Are there good places to eat, or just souvenir shops and cafes?",
+          "translation": "هل توجد أماكن جيدة لتناول الطعام، أم مجرد محلات تذكارات ومقاهٍ؟"
+        },
+        {
+          "speaker": "Salim",
+          "text": "There is an outstanding seafood restaurant behind that luxury waterfront hotel.",
+          "translation": "يوجد مطعم مأكولات بحرية متميز خلف ذلك الفندق الفاخر على الواجهة البحرية."
+        },
+        {
+          "speaker": "Tamer",
+          "text": "Is the international airport far from this central district?",
+          "translation": "هل المطار الدولي بعيد عن هذا الحي المركزي؟"
+        },
+        {
+          "speaker": "Salim",
+          "text": "No, a high-speed express train connects this central station to the airport in twenty minutes.",
+          "translation": "لا، يربط قطار سريع هذه المحطة المركزية بالمطار في عشرين دقيقة."
+        },
+        {
+          "speaker": "Tamer",
+          "text": "This city balances ancient charm and modern public transport so impressively.",
+          "translation": "هذه المدينة توازن بين السحر القديم والمواصلات العامة الحديثة بشكل مبهر."
+        },
+        {
+          "speaker": "Salim",
+          "text": "That is why thousands of international university students choose to study and live here.",
+          "translation": "ولهذا السبب يختار آلاف الطلاب الجامعيين الدوليين الدراسة والعيش هنا."
+        }
+      ],
+      "vocabularyUsed": [
+        "bridge",
+        "cross",
+        "river",
+        "famous",
+        "market",
+        "shop",
+        "cafe",
+        "restaurant",
+        "hotel",
+        "airport",
+        "station",
+        "city",
+        "modern",
+        "university"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Life in a Modern City",
+      "titleArabic": "الحياة في مدينة حديثة",
+      "kind": "urban",
+      "text": "Living in a modern city offers remarkable convenience and endless daily opportunities. In the vibrant commercial center, towering skyscrapers stand beside busy shopping avenues, banks, and renowned restaurants. Efficient public transport systems allow residents to navigate easily; buses stop at designated corners, while express trains connect every suburb directly to the airport. Residents can visit a quiet library, consult medical specialists in a general hospital, or enjoy coffee at a lively street cafe. Although city traffic can become crowded during rush hours, the rich access to culture, education, and commerce makes urban living an exciting experience.",
+      "translation": "توفر الحياة في مدينة حديثة راحة ملحوظة وفرصاً يومية لا حصر لها. وفي المركز التجاري النابض بالحياة، تقف ناطحات السحاب الشاهقة بجانب جادات التسوق المزدحمة والبنوك والمطاعم الشهيرة. وتتيح أنظمة النقل العام الفعالة للسكان التنقل بسهولة؛ حيث تتوقف الحافلات عند زوايا مخصصة، بينما تربط القطارات السريعة كل ضاحية مباشرة بالمطار. ويمكن للمقيمين زيارة مكتبة هادئة، أو استشارة أطباء اختصاصيين في مستشفى عام، أو الاستمتاع بالقهوة في مقهى شارع حيوي. ورغم أن حركة المرور في المدينة قد تصبح مزدحمة خلال ساعات الذروة، فإن الوصول الغني إلى الثقافة والتعليم والتجارة يجعل الحياة الحضرية تجربة مثيرة.",
+      "vocabularyUsed": [
+        "modern",
+        "city",
+        "center",
+        "avenue",
+        "bank",
+        "restaurant",
+        "stop",
+        "corner",
+        "suburb",
+        "airport",
+        "library",
+        "hospital",
+        "cafe",
+        "traffic",
+        "crowded"
+      ]
+    },
+    {
+      "title": "My Peaceful Village and Neighborhood",
+      "titleArabic": "قريتي الهادئة وحيي السكني",
+      "kind": "rural-life",
+      "text": "In contrast to hectic urban centers, life in a traditional village offers soothing calm and natural beauty. In my grandparents' village, quiet stone roads lead through green olive groves down to a scenic river bridge. Neighbors gather every morning at the local bakery to buy warm bread and share friendly greetings in the public square. There is a small clinic, a post office, and a community primary school where local children learn happily together. People walk along clean pavements without worrying about dangerous traffic or noisy crowds. This peaceful way of living preserves close human connections and fosters deep gratitude for simple daily blessings.",
+      "translation": "على النقيض من المراكز الحضرية الصاخبة، توفر الحياة في قرية تقليدية هدوءاً مريحاً وجمالاً طبيعياً. في قرية أجدادي، تؤدي طرق حجرية هادئة عبر بساتين الزيتون الخضراء إلى جسر نهر خلاب. يتجمع الجيران كل صباح في المخبز المحلي لشراء الخبز الدافئ وتبادل التحيات الودية في الساحة العامة. وتوجد عيادة صغيرة، ومكتب بريد، ومدرسة ابتدائية مجتمعية يتعلم فيها أطفال الحي بسعادة معاً. ويمشي الناس على طول أرصفة نظيفة دون قلق من حركة مرور خطيرة أو حشود صاخبة. يحافظ هذا النمط الهادئ من العيش على الروابط الإنسانية الوثيقة ويعزز الامتنان العميق للنعم اليومية البسيطة.",
+      "vocabularyUsed": [
+        "village",
+        "road",
+        "river",
+        "bridge",
+        "local",
+        "bakery",
+        "square",
+        "clinic",
+        "post office",
+        "school",
+        "pavement",
+        "traffic",
+        "peaceful"
+      ]
+    },
+    {
+      "title": "Navigating an Unfamiliar Town",
+      "titleArabic": "التنقل في بلدة غير مألوفة",
+      "kind": "navigation",
+      "text": "When you explore an unfamiliar town for the first time, knowing how to ask for directions is an indispensable travel skill. Carrying a clear city map or using a digital navigation app helps you locate your hotel, the central train station, and major attractions easily. If you feel unsure about your route, ask a polite resident on the street corner. They will typically tell you to walk along the main avenue, cross the bridge, and turn left after passing the historic town hall. Following clear instructions step by step ensures you reach your destination safely while discovering hidden cafes and charming local markets along the way.",
+      "translation": "عندما تستكشف بلدة غير مألوفة لأول مرة، فإن معرفة كيفية السؤال عن الاتجاهات مهارة سفر لا غنى عنها. إن حمل خريطة واضحة للمدينة أو استخدام تطبيق ملاحة رقمي يساعدك على تحديد موقع فندقك ومحطة القطار المركزية والمعالم الرئيسية بسهولة. وإذا شعرت بعدم التأكد بشأن مسارك، فاسأل أحد السكان المهذبين عند ناصية الشارع. وعادة ما يخبرونك بالسير على طول الجادة الرئيسية وعبور الجسر والانعطاف يساراً بعد المرور بمبنى البلدية التاريخي. إن اتباع التعليمات الواضحة خطوة بخطوة يضمن وصولك إلى وجهتك بأمان مع اكتشاف مقاهٍ خفية وأسواق محلية ساحرة على طول الطريق.",
+      "vocabularyUsed": [
+        "town",
+        "direction",
+        "map",
+        "locate",
+        "hotel",
+        "station",
+        "street",
+        "corner",
+        "avenue",
+        "cross",
+        "bridge",
+        "turn",
+        "pass",
+        "follow",
+        "reach",
+        "cafe",
+        "local",
+        "market"
+      ]
+    }
+  ]
+}

@@ -44,7 +44,7 @@ export default async function ReviewPage() {
                   <div className="min-w-0">
                     <Link
                       href={`/vocabulary/${word.id}`}
-                      className="break-words text-lg font-semibold tracking-tight text-zinc-900 hover:text-indigo-700 hover:underline dark:text-zinc-50 dark:hover:text-indigo-300"
+                      className="break-words text-lg font-semibold tracking-tight text-zinc-900 hover:text-brand-700 hover:underline dark:text-zinc-50 dark:hover:text-brand-300"
                     >
                       {word.headword}
                     </Link>
@@ -57,7 +57,7 @@ export default async function ReviewPage() {
 
                 <p className="mt-2 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{word.definition}</p>
 
-                <p className="mt-2 border-s-2 border-indigo-200 ps-3 text-sm leading-relaxed text-zinc-600 dark:border-indigo-800 dark:text-zinc-400">
+                <p className="mt-2 border-s-2 border-brand-200 ps-3 text-sm leading-relaxed text-zinc-600 dark:border-brand-800 dark:text-zinc-400">
                   &ldquo;{word.example}&rdquo;
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default async function ReviewPage() {
                   </Link>
                   <Link
                     href={`/vocabulary/${word.id}`}
-                    className="font-medium text-indigo-700 hover:underline dark:text-indigo-300"
+                    className="font-medium text-brand-700 hover:underline dark:text-brand-300"
                   >
                     History →
                   </Link>

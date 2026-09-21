@@ -1,0 +1,1054 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
+const contentDir = path.join(root, "content");
+
+// ==========================================
+// DAY 4: The Things I Have
+// ==========================================
+const day04 = {
+  day: 4,
+  stage: "Foundation — Daily Life",
+  title: "The Things I Have",
+  topic: "Possessions and everyday objects",
+  description: "Talk about the things you and other people own.",
+  focus: "Master 50 core words for everyday possessions, 'Have / Has', possessive adjectives, natural dialogues about personal items, and reading texts.",
+  vocabulary: [
+    {
+      headword: "bag",
+      pronunciation: "/bæɡ/",
+      partOfSpeech: "noun",
+      definition: "a flexible container with an opening at the top, used for carrying things",
+      example: "She carries her English books in a brown leather bag.",
+      relatedForms: [],
+      collocations: ["leather bag", "carry a bag", "heavy bag"],
+      synonyms: ["sack", "tote"],
+      antonyms: [],
+      tags: ["possessions", "accessories"],
+      translation: "حقيبة / شنطة",
+      exampleArabic: "هي تحمل كتبها الإنجليزية في حقيبة جلدية بنية."
+    },
+    {
+      headword: "backpack",
+      pronunciation: "/ˈbækpæk/",
+      partOfSpeech: "noun",
+      definition: "a bag that you carry on your back, made of strong material",
+      example: "He puts his laptop and charger inside his school backpack.",
+      relatedForms: [],
+      collocations: ["school backpack", "heavy backpack", "wear a backpack"],
+      synonyms: ["knapsack", "rucksack"],
+      antonyms: [],
+      tags: ["possessions", "travel"],
+      translation: "حقيبة ظهر",
+      exampleArabic: "يضع حاسوبه المحمول وشاحنه داخل حقيبة ظهر المدرسة."
+    },
+    {
+      headword: "wallet",
+      pronunciation: "/ˈwɒlɪt/",
+      partOfSpeech: "noun",
+      definition: "a small, flat, folding pocketbook for paper money and credit cards",
+      example: "I have some money and my bank card in my wallet.",
+      relatedForms: [],
+      collocations: ["leather wallet", "lost wallet", "open a wallet"],
+      synonyms: ["billfold"],
+      antonyms: [],
+      tags: ["possessions", "money"],
+      translation: "محفظة نقود جيبية",
+      exampleArabic: "لدي بعض المال وبطاقتي المصرفية في محفظتي."
+    },
+    {
+      headword: "purse",
+      pronunciation: "/pɜːs/",
+      partOfSpeech: "noun",
+      definition: "a small bag used especially by women for carrying coins, paper money, and keys",
+      example: "My sister keeps her apartment key inside her red purse.",
+      relatedForms: [],
+      collocations: ["coin purse", "handbag", "open a purse"],
+      synonyms: ["handbag"],
+      antonyms: [],
+      tags: ["possessions", "accessories"],
+      translation: "كيس نقود / حقيبة يد صغيرة",
+      exampleArabic: "تحتفظ أختي بمفتاح شقتها داخل حقيبة يدها الحمراء."
+    },
+    {
+      headword: "key",
+      pronunciation: "/kiː/",
+      partOfSpeech: "noun",
+      definition: "a piece of shaped metal used for locking or unlocking a door",
+      example: "Do you have the key to our front door?",
+      relatedForms: [],
+      collocations: ["car key", "door key", "bunch of keys"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "home"],
+      translation: "مفتاح",
+      exampleArabic: "هل لديك مفتاح بابنا الأمامي؟"
+    },
+    {
+      headword: "phone",
+      pronunciation: "/fəʊn/",
+      partOfSpeech: "noun",
+      definition: "a handheld mobile electronic device used to make calls and send messages",
+      example: "She checks her phone every morning for new messages.",
+      relatedForms: [],
+      collocations: ["mobile phone", "answer the phone", "phone screen"],
+      synonyms: ["telephone", "cellphone"],
+      antonyms: [],
+      tags: ["possessions", "technology"],
+      translation: "هاتف / جوال",
+      exampleArabic: "تتفقد هاتفها كل صباح بحثاً عن رسائل جديدة."
+    },
+    {
+      headword: "laptop",
+      pronunciation: "/ˈlæptɒp/",
+      partOfSpeech: "noun",
+      definition: "a portable computer small enough to use on your lap",
+      example: "I use my new laptop to study English and write reports.",
+      relatedForms: [],
+      collocations: ["open a laptop", "fast laptop", "laptop bag"],
+      synonyms: ["notebook computer"],
+      antonyms: [],
+      tags: ["possessions", "technology"],
+      translation: "حاسوب محمول / لابتوب",
+      exampleArabic: "أستخدم حاسوبي المحمول الجديد لدراسة اللغة الإنجليزية وكتابة التقارير."
+    },
+    {
+      headword: "tablet",
+      pronunciation: "/ˈtæblət/",
+      partOfSpeech: "noun",
+      definition: "a small, flat portable computer operated by touching the screen",
+      example: "My son reads digital story books on his tablet.",
+      relatedForms: [],
+      collocations: ["touchscreen tablet", "draw on a tablet"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "technology"],
+      translation: "جهاز لوحي / تابلت",
+      exampleArabic: "يقرأ ابني قصصاً رقمية على جهازه اللوحي."
+    },
+    {
+      headword: "charger",
+      pronunciation: "/ˈtʃɑːdʒə/",
+      partOfSpeech: "noun",
+      definition: "a device used for connecting to a power supply to charge batteries",
+      example: "Can I borrow your phone charger for an hour?",
+      relatedForms: ["charge (verb)"],
+      collocations: ["fast charger", "plug in a charger", "laptop charger"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "technology"],
+      translation: "شاحن",
+      exampleArabic: "هل يمكنني استعارة شاحن هاتفك لمدة ساعة؟"
+    },
+    {
+      headword: "camera",
+      pronunciation: "/ˈkæmərə/",
+      partOfSpeech: "noun",
+      definition: "a piece of equipment used for taking photographs or making videos",
+      example: "He takes his camera on holiday to photograph old buildings.",
+      relatedForms: [],
+      collocations: ["digital camera", "take a camera", "camera lens"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "photography"],
+      translation: "كاميرا / آلة تصوير",
+      exampleArabic: "يأخذ كاميرته في العطلة لتصوير المباني القديمة."
+    },
+    {
+      headword: "headphones",
+      pronunciation: "/ˈhedfəʊnz/",
+      partOfSpeech: "noun",
+      definition: "a pair of small speakers worn over or inside the ears",
+      example: "I wear headphones to listen to English podcasts on the train.",
+      relatedForms: [],
+      collocations: ["wireless headphones", "put on headphones", "pair of headphones"],
+      synonyms: ["earphones", "headset"],
+      antonyms: [],
+      tags: ["possessions", "audio"],
+      translation: "سماعات رأس",
+      exampleArabic: "أرتدي سماعات الرأس للاستماع إلى تدوينات صوتية بالإنجليزية في القطار."
+    },
+    {
+      headword: "notebook",
+      pronunciation: "/ˈnəʊtbʊk/",
+      partOfSpeech: "noun",
+      definition: "a book with blank or ruled pages for writing notes",
+      example: "She writes new English vocabulary words in her notebook.",
+      relatedForms: [],
+      collocations: ["spiral notebook", "open a notebook", "write in a notebook"],
+      synonyms: ["notepad", "journal"],
+      antonyms: [],
+      tags: ["possessions", "study"],
+      translation: "دفتر ملاحظات / كشكول",
+      exampleArabic: "تكتب كلمات المفردات الإنجليزية الجديدة في دفتر ملاحظاتها."
+    },
+    {
+      headword: "pen",
+      pronunciation: "/pen/",
+      partOfSpeech: "noun",
+      definition: "a tool for writing or drawing with ink",
+      example: "Do you have a blue pen to sign this contract?",
+      relatedForms: [],
+      collocations: ["ballpoint pen", "ink pen", "click a pen"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "stationery"],
+      translation: "قلم حبر",
+      exampleArabic: "هل لديك قلم حبر أزرق لتوقيع هذا العقد؟"
+    },
+    {
+      headword: "pencil",
+      pronunciation: "/ˈpensl/",
+      partOfSpeech: "noun",
+      definition: "an instrument for writing or drawing consisting of a thin stick of graphite in wood",
+      example: "Draw your house plan with a sharp pencil first.",
+      relatedForms: [],
+      collocations: ["sharp pencil", "pencil case", "lead pencil"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "stationery"],
+      translation: "قلم رصاص",
+      exampleArabic: "ارسم مخطط منزلك بقلم رصاص حاد أولاً."
+    },
+    {
+      headword: "book",
+      pronunciation: "/bʊk/",
+      partOfSpeech: "noun",
+      definition: "a set of written or printed pages bound together inside a cover",
+      example: "This grammar book has many clear examples and answers.",
+      relatedForms: [],
+      collocations: ["grammar book", "read a book", "open a book"],
+      synonyms: ["volume", "tome"],
+      antonyms: [],
+      tags: ["possessions", "learning"],
+      translation: "كتاب",
+      exampleArabic: "يحتوي كتاب القواعد هذا على العديد من الأمثلة الواضحة والإجابات."
+    },
+    {
+      headword: "glasses",
+      pronunciation: "/ˈɡlɑːsɪz/",
+      partOfSpeech: "noun",
+      definition: "a pair of optical lenses set in a frame and worn to correct eyesight",
+      example: "My grandfather wears reading glasses when he reads the newspaper.",
+      relatedForms: [],
+      collocations: ["pair of glasses", "reading glasses", "wear glasses"],
+      synonyms: ["spectacles", "eyeglasses"],
+      antonyms: [],
+      tags: ["possessions", "accessories"],
+      translation: "نظارات طبية",
+      exampleArabic: "يرتدي جدي نظارات القراءة عندما يقرأ الصحيفة."
+    },
+    {
+      headword: "sunglasses",
+      pronunciation: "/ˈsʌnɡlɑːsɪz/",
+      partOfSpeech: "noun",
+      definition: "glasses with dark lenses that protect your eyes from bright sunlight",
+      example: "Put on your sunglasses when you walk in the afternoon sun.",
+      relatedForms: [],
+      collocations: ["dark sunglasses", "wear sunglasses", "pair of sunglasses"],
+      synonyms: ["shades"],
+      antonyms: [],
+      tags: ["possessions", "accessories"],
+      translation: "نظارات شمسية",
+      exampleArabic: "ارتدِ نظارتك الشمسية عندما تمشي في شمس الظهيرة."
+    },
+    {
+      headword: "umbrella",
+      pronunciation: "/ʌmˈbrelə/",
+      partOfSpeech: "noun",
+      definition: "a folding device of water-resistant fabric on a central rod used for rain protection",
+      example: "Take an umbrella because it looks like rain today.",
+      relatedForms: [],
+      collocations: ["open an umbrella", "rain umbrella", "fold an umbrella"],
+      synonyms: ["parasol"],
+      antonyms: [],
+      tags: ["possessions", "weather"],
+      translation: "مظلة / شمسية",
+      exampleArabic: "خذ مظلة لأن الجو يبدو ماطراً اليوم."
+    },
+    {
+      headword: "bottle",
+      pronunciation: "/ˈbɒtl/",
+      partOfSpeech: "noun",
+      definition: "a glass or plastic container with a narrow neck, used for storing drinks",
+      example: "I always carry a reusable water bottle in my gym bag.",
+      relatedForms: [],
+      collocations: ["water bottle", "glass bottle", "reusable bottle"],
+      synonyms: ["flask"],
+      antonyms: [],
+      tags: ["possessions", "containers"],
+      translation: "زجاجة / قارورة",
+      exampleArabic: "أحمل دائماً زجاجة ماء قابلة لإعادة الاستخدام في حقيبة الرياضة."
+    },
+    {
+      headword: "cup",
+      pronunciation: "/kʌp/",
+      partOfSpeech: "noun",
+      definition: "a small, bowl-shaped container for drinking, typically having a handle",
+      example: "Would you like a warm cup of coffee before work?",
+      relatedForms: [],
+      collocations: ["cup of tea", "cup of coffee", "ceramic cup"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "dining"],
+      translation: "فنجان / كوب صغير",
+      exampleArabic: "هل ترغب في فنجان قهوة دافئ قبل العمل؟"
+    },
+    {
+      headword: "mug",
+      pronunciation: "/mʌɡ/",
+      partOfSpeech: "noun",
+      definition: "a large cup, typically cylindrical with a handle and used without a saucer",
+      example: "She drinks green tea from her favorite ceramic mug.",
+      relatedForms: [],
+      collocations: ["coffee mug", "ceramic mug", "favorite mug"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "dining"],
+      translation: "كوب كبير / مج",
+      exampleArabic: "تشرب الشاي الأخضر من كوبها الخزفي المفضل."
+    },
+    {
+      headword: "money",
+      pronunciation: "/ˈmʌni/",
+      partOfSpeech: "noun",
+      definition: "coins and bank notes used to buy things or services",
+      example: "He does not have enough money to buy an expensive watch.",
+      relatedForms: [],
+      collocations: ["save money", "spend money", "pocket money"],
+      synonyms: ["cash", "funds"],
+      antonyms: [],
+      tags: ["possessions", "finance"],
+      translation: "نقود / مال",
+      exampleArabic: "ليس لديه ما يكفي من المال لشراء ساعة يد باهظة الثمن."
+    },
+    {
+      headword: "card",
+      pronunciation: "/kɑːd/",
+      partOfSpeech: "noun",
+      definition: "a small rectangular piece of plastic used for payments or identity",
+      example: "Can I pay with a debit card or only with cash?",
+      relatedForms: [],
+      collocations: ["credit card", "bank card", "id card"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "finance"],
+      translation: "بطاقة (مصرفية أو هوية)",
+      exampleArabic: "هل يمكنني الدفع ببطاقة بنكية أم نقداً فقط؟"
+    },
+    {
+      headword: "passport",
+      pronunciation: "/ˈpɑːspɔːt/",
+      partOfSpeech: "noun",
+      definition: "an official government document certifying your identity and nationality for travel",
+      example: "Keep your passport in a safe pocket when you travel abroad.",
+      relatedForms: [],
+      collocations: ["valid passport", "show a passport", "passport photo"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "travel"],
+      translation: "جواز سفر",
+      exampleArabic: "احتفظ بجواز سفرك في جيب آمن عندما تسافر إلى الخارج."
+    },
+    {
+      headword: "ticket",
+      pronunciation: "/ˈtɪkɪt/",
+      partOfSpeech: "noun",
+      definition: "a piece of paper or electronic token giving you the right to travel or enter",
+      example: "Here is your train ticket for tomorrow morning.",
+      relatedForms: [],
+      collocations: ["train ticket", "bus ticket", "book a ticket"],
+      synonyms: ["pass"],
+      antonyms: [],
+      tags: ["possessions", "travel"],
+      translation: "تذكرة",
+      exampleArabic: "إليك تذكرة قطارك لصباح الغد."
+    },
+    {
+      headword: "jacket",
+      pronunciation: "/ˈdʒækɪt/",
+      partOfSpeech: "noun",
+      definition: "a short coat that extends to the waist or hips",
+      example: "He wears a warm black jacket on windy mornings.",
+      relatedForms: [],
+      collocations: ["leather jacket", "warm jacket", "zip up a jacket"],
+      synonyms: ["coat"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "سترة / جاكيت",
+      exampleArabic: "يرتدي سترة سوداء دافئة في الصباحيات المليئة بالرياح."
+    },
+    {
+      headword: "coat",
+      pronunciation: "/kəʊt/",
+      partOfSpeech: "noun",
+      definition: "an outer piece of clothing with sleeves, typically long, worn outdoors",
+      example: "She puts on her winter coat before going outside in the snow.",
+      relatedForms: [],
+      collocations: ["winter coat", "heavy coat", "hang up a coat"],
+      synonyms: ["overcoat"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "معطف",
+      exampleArabic: "ترتدي معطفها الشتوي قبل الخروج في الثلج."
+    },
+    {
+      headword: "shoes",
+      pronunciation: "/ʃuːz/",
+      partOfSpeech: "noun",
+      definition: "outer coverings for feet with a sturdy sole and heel",
+      example: "Please take off your shoes before entering the clean apartment.",
+      relatedForms: ["shoe (noun)"],
+      collocations: ["leather shoes", "running shoes", "pair of shoes"],
+      synonyms: ["footwear"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "حذاء / أحذية",
+      exampleArabic: "يرجى خلع حذائك قبل دخول الشقة النظيفة."
+    },
+    {
+      headword: "hat",
+      pronunciation: "/hæt/",
+      partOfSpeech: "noun",
+      definition: "a shaped covering for the head worn for warmth or sun protection",
+      example: "He wears a straw hat to protect his head from the sun.",
+      relatedForms: [],
+      collocations: ["sun hat", "wool hat", "wear a hat"],
+      synonyms: ["cap"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "قبعة",
+      exampleArabic: "يرتدي قبعة من القش لحماية رأسه من أشعة الشمس."
+    },
+    {
+      headword: "shirt",
+      pronunciation: "/ʃɜːt/",
+      partOfSpeech: "noun",
+      definition: "a garment for the upper body, typically with a collar, sleeves, and buttons",
+      example: "He irons his white shirt for his job interview.",
+      relatedForms: [],
+      collocations: ["white shirt", "button-down shirt", "clean shirt"],
+      synonyms: [],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "قميص",
+      exampleArabic: "يكوي قميصه الأبيض من أجل مقابلة عمله."
+    },
+    {
+      headword: "pants",
+      pronunciation: "/pænts/",
+      partOfSpeech: "noun",
+      definition: "an outer garment covering the body from the waist down with separate legs",
+      example: "These blue pants fit him perfectly.",
+      relatedForms: [],
+      collocations: ["pair of pants", "black pants", "wear pants"],
+      synonyms: ["trousers"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "بنطال / سروال",
+      exampleArabic: "هذا البنطال الأزرق يناسب مقاسه تماماً."
+    },
+    {
+      headword: "dress",
+      pronunciation: "/dres/",
+      partOfSpeech: "noun",
+      definition: "a one-piece garment for women or girls that covers the body and extends down over legs",
+      example: "She wears an elegant green dress to the family dinner.",
+      relatedForms: [],
+      collocations: ["summer dress", "formal dress", "wear a dress"],
+      synonyms: ["gown", "frock"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "فستان",
+      exampleArabic: "ترتدي فستاناً أخضر أنيقاً إلى العشاء العائلي."
+    },
+    {
+      headword: "sweater",
+      pronunciation: "/ˈswetə/",
+      partOfSpeech: "noun",
+      definition: "a knitted garment worn on the upper part of the body for warmth",
+      example: "This wool sweater keeps me warm during chilly evenings.",
+      relatedForms: [],
+      collocations: ["wool sweater", "warm sweater", "pull on a sweater"],
+      synonyms: ["jumper", "pullover"],
+      antonyms: [],
+      tags: ["possessions", "clothing"],
+      translation: "كنزة صوفية / سويتر",
+      exampleArabic: "هذه الكنزة الصوفية تبقيني دافئاً خلال الأمسيات الباردة."
+    },
+    {
+      headword: "ring",
+      pronunciation: "/rɪŋ/",
+      partOfSpeech: "noun",
+      definition: "a small circular band of precious metal worn on a finger as an ornament",
+      example: "She wears a gold ring on her left hand.",
+      relatedForms: [],
+      collocations: ["gold ring", "wedding ring", "wear a ring"],
+      synonyms: ["band"],
+      antonyms: [],
+      tags: ["possessions", "jewelry"],
+      translation: "خاتم",
+      exampleArabic: "ترتدي خاتماً ذهبياً في يدها اليسرى."
+    },
+    {
+      headword: "necklace",
+      pronunciation: "/ˈnekləs/",
+      partOfSpeech: "noun",
+      definition: "an ornament worn around the neck, typically on a chain or string",
+      example: "Her silver necklace sparkles under the dining room lights.",
+      relatedForms: [],
+      collocations: ["silver necklace", "pearl necklace", "wear a necklace"],
+      synonyms: ["chain", "pendant"],
+      antonyms: [],
+      tags: ["possessions", "jewelry"],
+      translation: "قلادة / عقد",
+      exampleArabic: "تتألق قلادتها الفضية تحت أضواء غرفة الطعام."
+    },
+    {
+      headword: "box",
+      pronunciation: "/bɒks/",
+      partOfSpeech: "noun",
+      definition: "a rigid container with flat sides and usually a lid",
+      example: "He stores old family photos in a cardboard box.",
+      relatedForms: [],
+      collocations: ["wooden box", "cardboard box", "open a box"],
+      synonyms: ["crate", "carton"],
+      antonyms: [],
+      tags: ["possessions", "storage"],
+      translation: "صندوق / علبة",
+      exampleArabic: "يخزن صور العائلة القديمة في صندوق كرتوني."
+    },
+    {
+      headword: "suitcase",
+      pronunciation: "/ˈsuːtkeɪs/",
+      partOfSpeech: "noun",
+      definition: "a large case with a handle used for carrying clothes and belongings while traveling",
+      example: "Pack your suitcase tonight so we can leave early tomorrow.",
+      relatedForms: [],
+      collocations: ["pack a suitcase", "heavy suitcase", "travel suitcase"],
+      synonyms: ["luggage", "baggage"],
+      antonyms: [],
+      tags: ["possessions", "travel"],
+      translation: "حقيبة سفر",
+      exampleArabic: "احزم حقيبة سفرك الليلة حتى نتمكن من المغادرة مبكراً غداً."
+    },
+    {
+      headword: "have",
+      pronunciation: "/hæv/",
+      partOfSpeech: "verb",
+      definition: "to possess, own, hold, or contain something",
+      example: "I have two brothers and a sister.",
+      relatedForms: ["has (third person)"],
+      collocations: ["have time", "have a car", "have lunch"],
+      synonyms: ["possess", "hold"],
+      antonyms: ["lack"],
+      tags: ["actions", "ownership"],
+      verbForms: { v1: "have", v2: "had", v3: "had" },
+      translation: "يمتلك / لديه / عنده",
+      exampleArabic: "لدي أخوان وأخت واحدة."
+    },
+    {
+      headword: "own",
+      pronunciation: "/əʊn/",
+      partOfSpeech: "verb",
+      definition: "to have something that belongs to you legally",
+      example: "They own a modern apartment in the center of town.",
+      relatedForms: ["owner (noun)"],
+      collocations: ["own a home", "own property", "legally own"],
+      synonyms: ["possess", "hold"],
+      antonyms: ["rent"],
+      tags: ["actions", "ownership"],
+      verbForms: { v1: "own", v2: "owned", v3: "owned" },
+      translation: "يمتلك قانونياً / يحوز",
+      exampleArabic: "يمتلكون شقة حديثة في وسط المدينة."
+    },
+    {
+      headword: "carry",
+      pronunciation: "/ˈkæri/",
+      partOfSpeech: "verb",
+      definition: "to hold something in your hands or on your back while moving",
+      example: "He carries a heavy backpack on his way to university.",
+      relatedForms: ["carrier (noun)"],
+      collocations: ["carry a bag", "carry an umbrella", "carry items"],
+      synonyms: ["transport", "bear"],
+      antonyms: ["drop"],
+      tags: ["actions", "movement"],
+      verbForms: { v1: "carry", v2: "carried", v3: "carried" },
+      translation: "يحمل / ينقل",
+      exampleArabic: "يحمل حقيبة ظهر ثقيلة في طريقه إلى الجامعة."
+    },
+    {
+      headword: "bring",
+      pronunciation: "/brɪŋ/",
+      partOfSpeech: "verb",
+      definition: "to take or carry someone or something to a place or person",
+      example: "Please bring your grammar notebook to class today.",
+      relatedForms: [],
+      collocations: ["bring with you", "bring food", "bring water"],
+      synonyms: ["fetch", "deliver"],
+      antonyms: ["take away"],
+      tags: ["actions", "movement"],
+      verbForms: { v1: "bring", v2: "brought", v3: "brought" },
+      translation: "يُحضر / يجلب",
+      exampleArabic: "يرجى إحضار دفتر القواعد الخاص بك إلى الدرس اليوم."
+    },
+    {
+      headword: "take",
+      pronunciation: "/teɪk/",
+      partOfSpeech: "verb",
+      definition: "to grasp or seize something with hands, or to carry something with you",
+      example: "Take your umbrella because it might rain this afternoon.",
+      relatedForms: [],
+      collocations: ["take a picture", "take your keys", "take an umbrella"],
+      synonyms: ["grab", "seize"],
+      antonyms: ["give", "leave"],
+      tags: ["actions", "movement"],
+      verbForms: { v1: "take", v2: "took", v3: "taken" },
+      translation: "يأخذ",
+      exampleArabic: "خذ مظلتك لأن السماء قد تمطر بعد ظهر اليوم."
+    },
+    {
+      headword: "lose",
+      pronunciation: "/luːz/",
+      partOfSpeech: "verb",
+      definition: "to be unable to find something that you once had",
+      example: "I often lose my house keys inside my coat pocket.",
+      relatedForms: ["lost (adjective)"],
+      collocations: ["lose keys", "lose your wallet", "lose money"],
+      synonyms: ["misplace"],
+      antonyms: ["find"],
+      tags: ["actions", "loss"],
+      verbForms: { v1: "lose", v2: "lost", v3: "lost" },
+      translation: "يفقد / يضيع",
+      exampleArabic: "غالباً ما أضيع مفاتيح منزلي داخل جيب معطفي."
+    },
+    {
+      headword: "find",
+      pronunciation: "/faɪnd/",
+      partOfSpeech: "verb",
+      definition: "to discover something by searching or by chance",
+      example: "Did you find your missing credit card under the sofa?",
+      relatedForms: ["finder (noun)"],
+      collocations: ["find keys", "find a solution", "find your way"],
+      synonyms: ["discover", "locate"],
+      antonyms: ["lose"],
+      tags: ["actions", "discovery"],
+      verbForms: { v1: "find", v2: "found", v3: "found" },
+      translation: "يجد / يعثر على",
+      exampleArabic: "هل وجدت بطاقتك الائتمانية المفقودة تحت الأريكة؟"
+    },
+    {
+      headword: "buy",
+      pronunciation: "/baɪ/",
+      partOfSpeech: "verb",
+      definition: "to get something by paying money for it",
+      example: "We want to buy a new study desk for our bedroom.",
+      relatedForms: ["buyer (noun)"],
+      collocations: ["buy online", "buy groceries", "buy clothes"],
+      synonyms: ["purchase"],
+      antonyms: ["sell"],
+      tags: ["actions", "shopping"],
+      verbForms: { v1: "buy", v2: "bought", v3: "bought" },
+      translation: "يشتري",
+      exampleArabic: "نريد شراء مكتب دراسة جديد لغرفة نومنا."
+    },
+    {
+      headword: "sell",
+      pronunciation: "/sel/",
+      partOfSpeech: "verb",
+      definition: "to give or hand over something in exchange for money",
+      example: "They sell beautiful leather shoes at the corner store.",
+      relatedForms: ["seller (noun)"],
+      collocations: ["sell online", "sell goods", "sell a car"],
+      synonyms: ["vend", "trade"],
+      antonyms: ["buy"],
+      tags: ["actions", "shopping"],
+      verbForms: { v1: "sell", v2: "sold", v3: "sold" },
+      translation: "يبيع",
+      exampleArabic: "يبيعون أحذية جلدية جميلة في متجر الزاوية."
+    },
+    {
+      headword: "borrow",
+      pronunciation: "/ˈbɒrəʊ/",
+      partOfSpeech: "verb",
+      definition: "to take and use something that belongs to someone else and return it later",
+      example: "Can I borrow your English book until tomorrow morning?",
+      relatedForms: ["borrower (noun)"],
+      collocations: ["borrow money", "borrow a book", "borrow a pen"],
+      synonyms: ["take on loan"],
+      antonyms: ["lend"],
+      tags: ["actions", "exchange"],
+      verbForms: { v1: "borrow", v2: "borrowed", v3: "borrowed" },
+      translation: "يستعير / يستلف",
+      exampleArabic: "هل يمكنني استعارة كتابك الإنجليزي حتى صباح الغد؟"
+    },
+    {
+      headword: "lend",
+      pronunciation: "/lend/",
+      partOfSpeech: "verb",
+      definition: "to grant someone the use of something on the understanding that it will be returned",
+      example: "I can lend you my charger if your phone battery is dead.",
+      relatedForms: ["lender (noun)"],
+      collocations: ["lend a hand", "lend money", "lend an item"],
+      synonyms: ["loan"],
+      antonyms: ["borrow"],
+      tags: ["actions", "exchange"],
+      verbForms: { v1: "lend", v2: "lent", v3: "lent" },
+      translation: "يقرض / يعير",
+      exampleArabic: "أستطيع إعارتك شاحني إذا كانت بطارية هاتفك فارغة."
+    },
+    {
+      headword: "keep",
+      pronunciation: "/kiːp/",
+      partOfSpeech: "verb",
+      definition: "to continue to have or hold something; to store in a particular place",
+      example: "Always keep your passport and money in a safe pocket.",
+      relatedForms: ["keeper (noun)"],
+      collocations: ["keep safe", "keep calm", "keep a secret"],
+      synonyms: ["retain", "hold"],
+      antonyms: ["discard", "lose"],
+      tags: ["actions", "storage"],
+      verbForms: { v1: "keep", v2: "kept", v3: "kept" },
+      translation: "يحتفظ بـ / يحفظ",
+      exampleArabic: "احتفظ دائماً بجواز سفرك وأموالك في جيب آمن."
+    },
+    {
+      headword: "expensive",
+      pronunciation: "/ɪkˈspensɪv/",
+      partOfSpeech: "adjective",
+      definition: "costing a lot of money; having a high price",
+      example: "That gold ring is too expensive for my student budget.",
+      relatedForms: ["expense (noun)"],
+      collocations: ["very expensive", "expensive watch", "expensive clothes"],
+      synonyms: ["costly", "pricey"],
+      antonyms: ["cheap", "inexpensive"],
+      tags: ["descriptions", "finance"],
+      translation: "غالٍ / باهظ الثمن",
+      exampleArabic: "ذلك الخاتم الذهبي باهظ الثمن للغاية بالنسبة لميزانيتي كطالب."
+    }
+  ],
+  grammar: [
+    {
+      title: "Have / Has",
+      titleArabic: "استخدام Have و Has للتعبير عن الامتلاك",
+      explanation: "We use 'have' and 'has' to express ownership, relationships, and possession in the present simple. Use 'have' with I, you, we, and they. Use 'has' with he, she, and it. For negative sentences, use 'do not have' (don't have) or 'does not have' (doesn't have). For questions, start with 'Do' or 'Does'.",
+      explanationArabic: "نستخدم الفعلين have و has للتعبير عن الملكية والصلات الشخصية في الحاضر البسيط. نستخدم have مع الضمائر (I, you, we, they)، ونستخدم has مع الضمائر المفردة الغائبة (he, she, it). في النفي، نستخدم do not have (don't have) أو does not have (doesn't have). وفي صيغة السؤال، نبدأ بـ Do أو Does مع بقاء الفعل في المصدر have.",
+      structures: [
+        {
+          pattern: "Subject (I/You/We/They) + have + object",
+          explanation: "Positive sentence with plural subjects or I/You",
+          explanationArabic: "الجملة الإيجابية مع الجمع والضميرين I و You"
+        },
+        {
+          pattern: "Subject (He/She/It) + has + object",
+          explanation: "Positive sentence with third-person singular",
+          explanationArabic: "الجملة الإيجابية مع المفرد الغائب (هو، هي، هو/هي لغير العاقل)"
+        },
+        {
+          pattern: "Subject + do/does not have + object",
+          explanation: "Negative sentence expressing lack of possession",
+          explanationArabic: "جملة النفي التي تعبر عن عدم الامتلاك"
+        },
+        {
+          pattern: "Do/Does + subject + have + object?",
+          explanation: "Yes/No question asking about possession",
+          explanationArabic: "سؤال بنعم/لا للسؤال عن امتلاك شيء"
+        }
+      ],
+      examples: [
+        {
+          sentence: "I have a new laptop and a leather bag.",
+          translation: "لدي حاسوب محمول جديد وحقيبة جلدية.",
+          usesVocabulary: ["have", "laptop", "bag"]
+        },
+        {
+          sentence: "She has an expensive camera in her backpack.",
+          translation: "لديها كاميرا باهظة الثمن في حقيبة ظهرها.",
+          usesVocabulary: ["camera", "expensive", "backpack"]
+        },
+        {
+          sentence: "He does not have his house key today.",
+          translation: "ليس معه مفتاح منزله اليوم.",
+          usesVocabulary: ["key", "have"]
+        },
+        {
+          sentence: "Do you have an umbrella in your suitcase?",
+          translation: "هل لديك مظلة في حقيبة سفرك؟",
+          usesVocabulary: ["have", "umbrella", "suitcase"]
+        }
+      ],
+      commonUsage: [
+        "I have a phone. (لدي هاتف.)",
+        "She has a red dress. (لديها فستان أحمر.)",
+        "We don't have enough money. (ليس لدينا مال كافٍ.)"
+      ],
+      commonMistakes: [
+        {
+          wrong: "He have a new laptop.",
+          right: "He has a new laptop.",
+          explanation: "He takes 'has', not 'have'."
+        },
+        {
+          wrong: "She doesn't has a car.",
+          right: "She doesn't have a car.",
+          explanation: "After 'does not / doesn't', always return the verb to base form 'have'."
+        }
+      ]
+    },
+    {
+      title: "Possessive Adjectives",
+      titleArabic: "صفات الملكية (my, your, his, her, its, our, their)",
+      explanation: "Possessive adjectives show who owns or possesses something. They always come before a noun: my (لي), your (لك / لكم), his (له), her (لها), its (له/لها لغير العاقل), our (لنا), their (لهم). They do not change for singular or plural nouns.",
+      explanationArabic: "صفات الملكية تبين من يمتلك الشيء أو يرتبط به، وتأتي دائماً قبل الاسم مباشرة: my (لي)، your (لكَ/لكِ/لكم)، his (له)، her (لها)، its (لغير العاقل)، our (لنا)، their (لهم). وتبقى ثابتة لا تتغير سواء كان الاسم الموصوف مفرداً أو جمعاً.",
+      structures: [
+        {
+          pattern: "Possessive Adjective + Noun",
+          explanation: "Attributive possession placed directly before the noun",
+          explanationArabic: "صفة الملكية متبوعة بالاسم مباشرة"
+        },
+        {
+          pattern: "This/That is + my/your/his/her + noun",
+          explanation: "Identifying personal belonging using demonstratives",
+          explanationArabic: "تحديد ملكية الشيء باستخدام أسماء الإشارة"
+        }
+      ],
+      examples: [
+        {
+          sentence: "This is my wallet and these are my shoes.",
+          translation: "هذه محفظتي وهذا حذائي.",
+          usesVocabulary: ["wallet", "shoes"]
+        },
+        {
+          sentence: "Her sweater and her necklace are very pretty.",
+          translation: "كنزتها الصوفية وقلادتها جميلتان جداً.",
+          usesVocabulary: ["sweater", "necklace"]
+        },
+        {
+          sentence: "Their box contains old books and a pen.",
+          translation: "صندوقهم يحتوي على كتب قديمة وقلم حبر.",
+          usesVocabulary: ["box", "book", "pen"]
+        },
+        {
+          sentence: "Can I borrow his phone charger?",
+          translation: "هل يمكنني استعارة شاحن هاتفه؟",
+          usesVocabulary: ["borrow", "phone", "charger"]
+        }
+      ],
+      commonUsage: [
+        "My notebook is on the table. (دفتر ملاحظاتي على الطاولة.)",
+        "Is this your passport? (هل هذا جواز سفرك؟)"
+      ],
+      commonMistakes: [
+        {
+          wrong: "This is he jacket.",
+          right: "This is his jacket.",
+          explanation: "Use the possessive adjective 'his', not the subject pronoun 'he'."
+        },
+        {
+          wrong: "I lost my's wallet.",
+          right: "I lost my wallet.",
+          explanation: "Possessive adjectives (my, your, his) do not take an apostrophe 's."
+        }
+      ]
+    }
+  ],
+  conversations: [
+    {
+      title: "Packing for the Weekend Trip",
+      titleArabic: "حزم الأمتعة لرحلة نهاية الأسبوع",
+      setting: "In the bedroom on a Friday evening, preparing luggage for a short travel trip",
+      settingArabic: "في غرفة النوم مساء يوم الجمعة، أثناء تحضير الأمتعة لرحلة سفر قصيرة",
+      lines: [
+        {
+          speaker: "Zaid",
+          text: "Do you have your passport and train ticket in your backpack?",
+          translation: "هل لديك جواز سفرك وتذكرة القطار في حقيبة ظهرك؟"
+        },
+        {
+          speaker: "Leila",
+          text: "Yes, I have them inside my small purse, right next to my wallet.",
+          translation: "نعم، أحتفظ بهما داخل حقيبة يدي الصغيرة، بجوار محفظتي تماماً."
+        },
+        {
+          speaker: "Zaid",
+          text: "Good. Please bring an extra phone charger and your headphones for the journey.",
+          translation: "جيد. يرجى إحضار شاحن هاتف إضافي وسماعات الرأس للرحلة."
+        },
+        {
+          speaker: "Leila",
+          text: "I have my wireless headphones, but did you pack your laptop in the suitcase?",
+          translation: "لدي سماعاتي اللاسلكية، ولكن هل حزمت حاسوبك المحمول في حقيبة السفر؟"
+        },
+        {
+          speaker: "Zaid",
+          text: "No, I prefer to carry my laptop and tablet in my shoulder bag.",
+          translation: "لا، أفضل حمل حاسوبي المحمول وجهازي اللوحي في حقيبة كتفي."
+        },
+        {
+          speaker: "Leila",
+          text: "Don't forget to take an umbrella and a warm jacket because it might rain.",
+          translation: "لا تنسَ أن تأخذ مظلة وسترة دافئة لأن السماء قد تمطر."
+        },
+        {
+          speaker: "Zaid",
+          text: "My warm jacket is already in the suitcase beside my winter shoes.",
+          translation: "سترتي الدافئة موجودة بالفعل في حقيبة السفر بجانب حذائي الشتوي."
+        },
+        {
+          speaker: "Leila",
+          text: "Great! Let's keep our apartment key in a safe pocket before we lock the door.",
+          translation: "رائع! دعنا نحتفظ بمفتاح شقتنا في جيب آمن قبل أن نقفل الباب."
+        }
+      ],
+      vocabularyUsed: [
+        "have", "passport", "ticket", "backpack", "purse", "wallet", "bring", "charger",
+        "phone", "headphones", "laptop", "suitcase", "carry", "tablet", "bag", "take",
+        "umbrella", "jacket", "shoes", "keep", "key"
+      ]
+    },
+    {
+      title: "Where Are My Keys?",
+      titleArabic: "أين مفاتيحي؟",
+      setting: "In the hallway, hurriedly searching for misplaced belongings before leaving for work",
+      settingArabic: "في الممر، بحثاً عاجلاً عن متعلقات مفقودة قبل المغادرة إلى العمل",
+      lines: [
+        {
+          speaker: "Tariq",
+          text: "I cannot find my car key! Did I lose it in the living room?",
+          translation: "لا أستطيع العثور على مفتاح سيارتي! هل أضعته في غرفة المعيشة؟"
+        },
+        {
+          speaker: "Mona",
+          text: "Check your coat pocket. You always carry your keys there.",
+          translation: "تفقد جيب معطفك. أنت دائماً تحمل مفاتيحك هناك."
+        },
+        {
+          speaker: "Tariq",
+          text: "I checked both pockets. There is only some money and a debit card.",
+          translation: "تفقدت كلا الجيبين؛ لا يوجد سوى بعض المال وبطاقة بنكية."
+        },
+        {
+          speaker: "Mona",
+          text: "Look on the dining table next to your ceramic mug and reading glasses.",
+          translation: "انظر إلى طاولة الطعام بجانب مج القهوة الخزفي ونظارات القراءة الخاصة بك."
+        },
+        {
+          speaker: "Tariq",
+          text: "Here they are! They were behind my English notebook and blue pen.",
+          translation: "ها هما هنا! كانا خلف دفتر ملاحظاتي الإنجليزي وقلمي الحبر الأزرق."
+        },
+        {
+          speaker: "Mona",
+          text: "You see? You should always keep your everyday items inside that wooden box.",
+          translation: "أرأيت؟ يجب عليك دائماً الاحتفاظ بأشيائك اليومية داخل ذلك الصندوق الخشبي."
+        },
+        {
+          speaker: "Tariq",
+          text: "You are right. Can I borrow your sunglasses for my drive into the morning sun?",
+          translation: "أنتِ على حق. هل يمكنني استعارة نظارتك الشمسية لأجل القيادة في شمس الصباح؟"
+        },
+        {
+          speaker: "Mona",
+          text: "Sure, take them from my bag, but please don't lose them!",
+          translation: "بالتأكيد، خذها من حقيبتي، ولكن أرجوك ألا تضيعها!"
+        }
+      ],
+      vocabularyUsed: [
+        "find", "key", "lose", "coat", "carry", "money", "card", "mug", "glasses",
+        "notebook", "pen", "keep", "box", "borrow", "sunglasses", "take", "bag"
+      ]
+    },
+    {
+      title: "Shopping for New Clothes",
+      titleArabic: "التسوق لشراء ملابس جديدة",
+      setting: "Inside a clothing boutique at the shopping center",
+      settingArabic: "داخل متجر للملابس في المركز التجاري",
+      lines: [
+        {
+          speaker: "Hassan",
+          text: "I need to buy a clean white shirt and dark pants for my new job.",
+          translation: "أحتاج إلى شراء قميص أبيض نظيف وبنطال داكن من أجل وظيفتي الجديدة."
+        },
+        {
+          speaker: "Salma",
+          text: "Look at this cotton shirt. Do they sell it in your size?",
+          translation: "انظر إلى هذا القميص القطني. هل يبيعونه بمقاسك؟"
+        },
+        {
+          speaker: "Hassan",
+          text: "Yes, and the price is good. That wool sweater next to it is too expensive.",
+          translation: "نعم، وسعره جيد. أما الكنزة الصوفية المجاورة له فهي باهظة الثمن للغاية."
+        },
+        {
+          speaker: "Salma",
+          text: "I love that green dress on display. I also want to own a silver necklace.",
+          translation: "يعجبني ذلك الفستان الأخضر المعروض؛ وأريد أيضاً أن أمتلك قلادة فضية."
+        },
+        {
+          speaker: "Hassan",
+          text: "The jewelry counter has a beautiful ring and necklace collection over there.",
+          translation: "قسم المجوهرات لديه تشكيلة خواتم وقلائد جميلة هناك."
+        },
+        {
+          speaker: "Salma",
+          text: "I can lend you some cash if you do not have enough on your bank card.",
+          translation: "أستطيع إقراضك بعض النقود إذا لم يكن لديك ما يكفي في بطاقتك البنكية."
+        },
+        {
+          speaker: "Hassan",
+          text: "Thank you, but my card works fine. Let's take a water bottle before we pay.",
+          translation: "شكراً لكِ، لكن بطاقتي تعمل جيداً. دعنا نأخذ زجاجة ماء قبل أن ندفع."
+        },
+        {
+          speaker: "Salma",
+          text: "Perfect, and don't forget to grab your warm hat from the counter.",
+          translation: "ممتاز، ولا تنسَ أن تأخذ قبعتك الدافئة من على المنضدة."
+        }
+      ],
+      vocabularyUsed: [
+        "buy", "shirt", "pants", "sell", "sweater", "expensive", "dress", "own",
+        "necklace", "ring", "lend", "have", "card", "take", "bottle", "hat"
+      ]
+    }
+  ],
+  paragraphs: [
+    {
+      title: "What I Carry Every Day",
+      titleArabic: "ما أحمله كل يوم",
+      kind: "personal story",
+      text: "Every morning before I leave my home, I pack my black backpack carefully. I have my laptop, its fast charger, and a pair of headphones for my daily commute. In the front pocket, I keep my leather wallet with my bank card and some cash money. I also carry a sturdy metal water bottle and an umbrella when the sky looks gray. My keys are always inside my jacket pocket so I do not lose them. Having everything in one bag makes my workday smooth and organized.",
+      translation: "كل صباح قبل مغادرة منزلي، أحزم حقيبة ظهري السوداء بعناية. أحمل حاسوبي المحمول، وشاحنه السريع، وزوجاً من سماعات الرأس لتنقلي اليومي. وفي الجيب الأمامي، أحتفظ بمحفظتي الجلدية مع بطاقتي المصرفية وبعض النقود. كما أحمل زجاجة ماء معدنية متينة ومظلة عندما تبدو السماء رمادية. وتكون مفاتيحي دائماً داخل جيب سترتي حتى لا أفقدها. إن وجود كل شيء في حقيبة واحدة يجعل يوم عملي سلساً ومنظماً.",
+      vocabularyUsed: [
+        "backpack", "have", "laptop", "charger", "headphones", "keep", "wallet", "card",
+        "money", "carry", "bottle", "umbrella", "key", "jacket", "lose", "bag"
+      ]
+    },
+    {
+      title: "My Student Desk and Belongings",
+      titleArabic: "مكتب دراستي ومتعلقاتي",
+      kind: "description",
+      text: "My study desk holds all the important objects I need for learning. On the wooden surface, there is an open grammar book and a spiral notebook where I write new words. Next to my notebook, I have a ceramic mug filled with pens and pencils. In the corner of my desk sits a compact tablet that I use to watch English video lessons. Inside the small wooden box beside my lamp, I store paper clips and my spare door key. I try not to buy expensive gadgets, but I own useful tools that help me study well.",
+      translation: "يحمل مكتب دراستي جميع الأشياء المهمة التي أحتاجها للتعلم. على السطح الخشبي، يوجد كتاب قواعد مفتوح ودفتر ملاحظات أكتب فيه الكلمات الجديدة. وبجانب دفتري، لدي مج خزفي مليء بأقلام الحبر وأقلام الرصاص. وفي زاوية مكتبي يستقر جهاز لوحي مدمج أستخدمه لمشاهدة دروس الفيديو الإنجليزية. وداخل الصندوق الخشبي الصغير بجوار مصباحي، أخزن مشابك الورق ومفتاح الباب الاحتياطي. أحاول عدم شراء أجهزة باهظة الثمن، لكني أمتلك أدوات مفيدة تساعدني على الدراسة جيداً.",
+      vocabularyUsed: [
+        "book", "notebook", "have", "mug", "pen", "pencil", "tablet", "box",
+        "key", "buy", "expensive", "own"
+      ]
+    },
+    {
+      title: "Preparing for an International Journey",
+      titleArabic: "الاستعداد لرحلة دولية",
+      kind: "description",
+      text: "Traveling to a foreign city requires careful preparation of your personal belongings. First, ensure you have a valid passport and your plane ticket stored safely in your hand luggage. Pack your large suitcase with suitable clothes: comfortable shoes, a warm coat, clean shirts, pants, and a cozy sweater. If you go to a sunny place, bring a protective hat and dark sunglasses. You do not need to take expensive jewelry like a gold ring or diamond necklace. Remember to bring your phone and travel adapter so you can always stay connected.",
+      translation: "يتطلب السفر إلى مدينة أجنبية تحضيراً دقيقاً لمتعلقاتك الشخصية. أولاً، تأكد من أن لديك جواز سفر صالح وتذكرة طيرانك محفوظة بأمان في حقيبة يدك. احزم حقيبة سفرك الكبيرة بملابس مناسبة: أحذية مريحة، معطف دافئ، قمصان نظيفة، بنطال، وكنزة صوفية دافئة. وإذا كنت ذاهباً إلى مكان مشمس، فأحضر قبعة واقية ونظارات شمسية داكنة. لا داعي لأخذ مجوهرات باهظة الثمن مثل خاتم ذهبي أو قلادة ألماسية. وتذكر إحضار هاتفك ومحول السفر لتبقى على اتصال دائم.",
+      vocabularyUsed: [
+        "have", "passport", "ticket", "suitcase", "shoes", "coat", "shirt", "pants",
+        "sweater", "bring", "hat", "sunglasses", "take", "expensive", "ring", "necklace", "phone"
+      ]
+    }
+  ]
+};
+
+fs.writeFileSync(path.join(contentDir, "day-04.json"), JSON.stringify(day04, null, 2), "utf8");
+console.log("✓ Day 4 created successfully!");

@@ -1,0 +1,1657 @@
+{
+  "day": 3,
+  "stage": "Foundation — Daily Life",
+  "title": "My Home",
+  "topic": "Rooms, furniture and where things are",
+  "description": "Describe your home and say where things are.",
+  "focus": "Master 50 core words for rooms, furniture, prepositions of place, 'There is / There are', 3 natural dialogues, and 3 reading paragraphs.",
+  "vocabulary": [
+    {
+      "headword": "house",
+      "pronunciation": "/haʊs/",
+      "partOfSpeech": "noun",
+      "definition": "a building that people, usually one family, live in",
+      "example": "They live in a beautiful house with a garden.",
+      "relatedForms": [],
+      "collocations": [
+        "big house",
+        "family house",
+        "move house"
+      ],
+      "synonyms": [
+        "home",
+        "residence"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "places"
+      ],
+      "translation": "منزل / بيت",
+      "exampleArabic": "هم يعيشون في منزل جميل مع حديقة."
+    },
+    {
+      "headword": "apartment",
+      "pronunciation": "/əˈpɑːtmənt/",
+      "partOfSpeech": "noun",
+      "definition": "a set of rooms for living in, especially on one floor of a building",
+      "example": "Our apartment is on the third floor.",
+      "relatedForms": [],
+      "collocations": [
+        "two-bedroom apartment",
+        "small apartment",
+        "rent an apartment"
+      ],
+      "synonyms": [
+        "flat"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "places"
+      ],
+      "translation": "شقة سكنية",
+      "exampleArabic": "شقتنا تقع في الطابق الثالث."
+    },
+    {
+      "headword": "room",
+      "pronunciation": "/ruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a part of the inside of a building that is divided off from other parts",
+      "example": "There are four rooms in our apartment.",
+      "relatedForms": [],
+      "collocations": [
+        "bright room",
+        "spare room",
+        "room door"
+      ],
+      "synonyms": [
+        "chamber"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "spaces"
+      ],
+      "translation": "غرفة / حجرة",
+      "exampleArabic": "توجد أربع غرف في شقتنا."
+    },
+    {
+      "headword": "bedroom",
+      "pronunciation": "/ˈbedruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a room used for sleeping in",
+      "example": "My bedroom is quiet and very comfortable.",
+      "relatedForms": [],
+      "collocations": [
+        "master bedroom",
+        "small bedroom"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "rooms"
+      ],
+      "translation": "غرفة نوم",
+      "exampleArabic": "غرفة نومي هادئة ومريحة للغاية."
+    },
+    {
+      "headword": "living room",
+      "pronunciation": "/ˈlɪvɪŋ ruːm/",
+      "partOfSpeech": "noun",
+      "definition": "the room in a house that is used for relaxing in and entertaining guests",
+      "example": "We watch television together in the living room.",
+      "relatedForms": [],
+      "collocations": [
+        "spacious living room",
+        "living room sofa"
+      ],
+      "synonyms": [
+        "sitting room",
+        "lounge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "rooms"
+      ],
+      "translation": "غرفة المعيشة / الصالة",
+      "exampleArabic": "نشاهد التلفاز معاً في غرفة المعيشة."
+    },
+    {
+      "headword": "kitchen",
+      "pronunciation": "/ˈkɪtʃɪn/",
+      "partOfSpeech": "noun",
+      "definition": "a room where food is prepared and cooked",
+      "example": "The kitchen is bright and has modern appliances.",
+      "relatedForms": [],
+      "collocations": [
+        "kitchen table",
+        "in the kitchen",
+        "clean the kitchen"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "rooms"
+      ],
+      "translation": "مطبخ",
+      "exampleArabic": "المطبخ مشرق ويحتوي على أجهزة حديثة."
+    },
+    {
+      "headword": "bathroom",
+      "pronunciation": "/ˈbɑːθruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a room with a bath or shower and usually a toilet and sink",
+      "example": "The bathroom is next to the master bedroom.",
+      "relatedForms": [],
+      "collocations": [
+        "clean bathroom",
+        "small bathroom",
+        "bathroom mirror"
+      ],
+      "synonyms": [
+        "restroom"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "rooms"
+      ],
+      "translation": "حمام / دورة مياه",
+      "exampleArabic": "الحمام بجوار غرفة النوم الرئيسية."
+    },
+    {
+      "headword": "dining room",
+      "pronunciation": "/ˈdaɪnɪŋ ruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a room in a house used for eating meals",
+      "example": "The family eats dinner together in the dining room.",
+      "relatedForms": [],
+      "collocations": [
+        "dining room table",
+        "formal dining room"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "rooms"
+      ],
+      "translation": "غرفة طعام / سفرة",
+      "exampleArabic": "تتناول العائلة العشاء معاً في غرفة الطعام."
+    },
+    {
+      "headword": "hallway",
+      "pronunciation": "/ˈhɔːlweɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a passage in a building which leads to many of the rooms",
+      "example": "There is a mirror on the wall in the hallway.",
+      "relatedForms": [],
+      "collocations": [
+        "long hallway",
+        "narrow hallway",
+        "dark hallway"
+      ],
+      "synonyms": [
+        "corridor",
+        "hall"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "spaces"
+      ],
+      "translation": "رواق / ممر المنزل",
+      "exampleArabic": "توجد مرآة على الحائط في الممر."
+    },
+    {
+      "headword": "balcony",
+      "pronunciation": "/ˈbælkəni/",
+      "partOfSpeech": "noun",
+      "definition": "a flat area on the outside wall of a building above the ground",
+      "example": "I drink my morning coffee on the sunny balcony.",
+      "relatedForms": [],
+      "collocations": [
+        "small balcony",
+        "balcony view",
+        "stand on the balcony"
+      ],
+      "synonyms": [
+        "terrace"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "spaces"
+      ],
+      "translation": "شرفة / بلكونة",
+      "exampleArabic": "أشرب قهوتي الصباحية في الشرفة المشمسة."
+    },
+    {
+      "headword": "garden",
+      "pronunciation": "/ˈɡɑːdn/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of land next to a house, with flowers, vegetables, and other plants",
+      "example": "There are green plants and red roses in our garden.",
+      "relatedForms": [],
+      "collocations": [
+        "flower garden",
+        "back garden",
+        "water the garden"
+      ],
+      "synonyms": [
+        "yard"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "nature"
+      ],
+      "translation": "حديقة منزلية",
+      "exampleArabic": "توجد نباتات خضراء وورود حمراء في حديقتنا."
+    },
+    {
+      "headword": "door",
+      "pronunciation": "/dɔːr/",
+      "partOfSpeech": "noun",
+      "definition": "a movable piece of wood, metal, etc., used for opening and closing an entrance",
+      "example": "Please close the front door when you come in.",
+      "relatedForms": [],
+      "collocations": [
+        "front door",
+        "open the door",
+        "lock the door"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "parts"
+      ],
+      "translation": "باب",
+      "exampleArabic": "يرجى إغلاق الباب الأمامي عندما تدخل."
+    },
+    {
+      "headword": "window",
+      "pronunciation": "/ˈwɪndəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "an opening in a wall that is fitted with glass to let in light and air",
+      "example": "Open the bedroom window to let fresh air in.",
+      "relatedForms": [],
+      "collocations": [
+        "open window",
+        "window frame",
+        "look out the window"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "parts"
+      ],
+      "translation": "نافذة / شباك",
+      "exampleArabic": "افتح نافذة غرفة النوم لدخول الهواء النقي."
+    },
+    {
+      "headword": "wall",
+      "pronunciation": "/wɔːl/",
+      "partOfSpeech": "noun",
+      "definition": "a vertical structure made of stone or brick that encloses or divides a room",
+      "example": "There are family pictures hanging on the wall.",
+      "relatedForms": [],
+      "collocations": [
+        "brick wall",
+        "white wall",
+        "hang on the wall"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "parts"
+      ],
+      "translation": "حائط / جدار",
+      "exampleArabic": "توجد صور عائلية معلقة على الحائط."
+    },
+    {
+      "headword": "floor",
+      "pronunciation": "/flɔːr/",
+      "partOfSpeech": "noun",
+      "definition": "the flat surface that you walk on inside a building",
+      "example": "The wooden floor in the living room is clean.",
+      "relatedForms": [],
+      "collocations": [
+        "wooden floor",
+        "tile floor",
+        "sweep the floor"
+      ],
+      "synonyms": [
+        "ground"
+      ],
+      "antonyms": [
+        "ceiling"
+      ],
+      "tags": [
+        "home",
+        "parts"
+      ],
+      "translation": "أرضية (الغرفة أو المبنى)",
+      "exampleArabic": "الأرضية الخشبية في غرفة المعيشة نظيفة."
+    },
+    {
+      "headword": "ceiling",
+      "pronunciation": "/ˈsiːlɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "the inside surface of a room that you can see when you look above you",
+      "example": "A beautiful lamp hangs from the high ceiling.",
+      "relatedForms": [],
+      "collocations": [
+        "high ceiling",
+        "white ceiling",
+        "ceiling fan"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "floor"
+      ],
+      "tags": [
+        "home",
+        "parts"
+      ],
+      "translation": "سقف الغرفة",
+      "exampleArabic": "مصباح جميل يتدلى من السقف العالي."
+    },
+    {
+      "headword": "bed",
+      "pronunciation": "/bed/",
+      "partOfSpeech": "noun",
+      "definition": "a large piece of furniture that you sleep on",
+      "example": "There is a soft pillow on the bed.",
+      "relatedForms": [],
+      "collocations": [
+        "make the bed",
+        "single bed",
+        "double bed"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "سرير",
+      "exampleArabic": "توجد وسادة ناعمة على السرير."
+    },
+    {
+      "headword": "sofa",
+      "pronunciation": "/ˈsəʊfə/",
+      "partOfSpeech": "noun",
+      "definition": "a long comfortable seat with a back and arms for two or more people",
+      "example": "We sit on the comfortable sofa and chat.",
+      "relatedForms": [],
+      "collocations": [
+        "leather sofa",
+        "sit on the sofa",
+        "comfortable sofa"
+      ],
+      "synonyms": [
+        "couch"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "أريكة / كنبة",
+      "exampleArabic": "نجلس على الأريكة المريحة ونتجاذب أطراف الحديث."
+    },
+    {
+      "headword": "couch",
+      "pronunciation": "/kaʊtʃ/",
+      "partOfSpeech": "noun",
+      "definition": "another word for sofa, a piece of furniture for sitting or resting on",
+      "example": "My cat loves to sleep on the soft couch.",
+      "relatedForms": [],
+      "collocations": [
+        "comfortable couch",
+        "lie on the couch"
+      ],
+      "synonyms": [
+        "sofa"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "كنبة / مقعد وثير",
+      "exampleArabic": "قطتي تحب النوم على الكنبة الناعمة."
+    },
+    {
+      "headword": "chair",
+      "pronunciation": "/tʃeər/",
+      "partOfSpeech": "noun",
+      "definition": "a seat for one person that has a back, usually four legs, and sometimes arms",
+      "example": "Please take a chair and sit near the window.",
+      "relatedForms": [],
+      "collocations": [
+        "wooden chair",
+        "comfortable chair",
+        "armchair"
+      ],
+      "synonyms": [
+        "seat"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "كرسي",
+      "exampleArabic": "تفضل خذ كرسياً واجلس قرب النافذة."
+    },
+    {
+      "headword": "table",
+      "pronunciation": "/ˈteɪbl/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of furniture with a flat top supported by legs, used for eating or working",
+      "example": "There are fresh flowers on the kitchen table.",
+      "relatedForms": [],
+      "collocations": [
+        "set the table",
+        "dining table",
+        "coffee table"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "طاولة / منضدة",
+      "exampleArabic": "توجد أزهار نضرة على طاولة المطبخ."
+    },
+    {
+      "headword": "desk",
+      "pronunciation": "/desk/",
+      "partOfSpeech": "noun",
+      "definition": "a type of table that you can work or study at, often with drawers",
+      "example": "I study at my wooden desk every evening.",
+      "relatedForms": [],
+      "collocations": [
+        "writing desk",
+        "computer desk",
+        "sit at a desk"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "مكتب (طاولة دراسة أو عمل)",
+      "exampleArabic": "أدرس على مكتبي الخشبي كل مساء."
+    },
+    {
+      "headword": "closet",
+      "pronunciation": "/ˈklɒzɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a small room or cupboard with a door, used for storing clothes",
+      "example": "I hang my jackets inside the bedroom closet.",
+      "relatedForms": [],
+      "collocations": [
+        "walk-in closet",
+        "clothes closet"
+      ],
+      "synonyms": [
+        "wardrobe"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "خزانة ملابس (مدمجة)",
+      "exampleArabic": "أعلق ستراتي داخل خزانة الملابس بغرفة النوم."
+    },
+    {
+      "headword": "wardrobe",
+      "pronunciation": "/ˈwɔːdrəʊb/",
+      "partOfSpeech": "noun",
+      "definition": "a large cupboard for hanging clothes in",
+      "example": "There is a tall wooden wardrobe in the corner of the room.",
+      "relatedForms": [],
+      "collocations": [
+        "wooden wardrobe",
+        "open the wardrobe"
+      ],
+      "synonyms": [
+        "closet"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "دولاب ملابس",
+      "exampleArabic": "يوجد دولاب ملابس خشبي طويل في ركن الغرفة."
+    },
+    {
+      "headword": "shelf",
+      "pronunciation": "/ʃelf/",
+      "partOfSpeech": "noun",
+      "definition": "a flat board fixed to a wall or in a cupboard on which things can be placed",
+      "example": "There are many English books on the top shelf.",
+      "relatedForms": [
+        "shelves (plural)"
+      ],
+      "collocations": [
+        "bookshelf",
+        "top shelf",
+        "bottom shelf"
+      ],
+      "synonyms": [
+        "ledge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "رف (لوضع الكتب والأشياء)",
+      "exampleArabic": "توجد كتب إنجليزية كثيرة على الرف العلوي."
+    },
+    {
+      "headword": "drawer",
+      "pronunciation": "/drɔːr/",
+      "partOfSpeech": "noun",
+      "definition": "a box-shaped container without a top that slides in and out of a piece of furniture",
+      "example": "The keys are inside the top drawer of the desk.",
+      "relatedForms": [],
+      "collocations": [
+        "desk drawer",
+        "open a drawer",
+        "top drawer"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "دُرج (في مكتب أو خزانة)",
+      "exampleArabic": "المفاتيح موجودة داخل الدرج العلوي للمكتب."
+    },
+    {
+      "headword": "mirror",
+      "pronunciation": "/ˈmɪrər/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of special glass in which you can see your reflection",
+      "example": "There is a clean mirror above the bathroom sink.",
+      "relatedForms": [],
+      "collocations": [
+        "bathroom mirror",
+        "look in the mirror"
+      ],
+      "synonyms": [
+        "looking glass"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "مرآة",
+      "exampleArabic": "توجد مرآة نظيفة فوق مغسلة الحمام."
+    },
+    {
+      "headword": "lamp",
+      "pronunciation": "/læmp/",
+      "partOfSpeech": "noun",
+      "definition": "a device that produces light using electricity or an oil flame",
+      "example": "There is a small reading lamp next to my bed.",
+      "relatedForms": [],
+      "collocations": [
+        "desk lamp",
+        "bedside lamp",
+        "turn on the lamp"
+      ],
+      "synonyms": [
+        "light"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "مصباح / أباجورة",
+      "exampleArabic": "يوجد مصباح قراءة صغير بجوار سريري."
+    },
+    {
+      "headword": "carpet",
+      "pronunciation": "/ˈkɑːpɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a heavy woven fabric for covering floors, typically fitted wall to wall",
+      "example": "The bedroom floor has a soft grey carpet.",
+      "relatedForms": [],
+      "collocations": [
+        "thick carpet",
+        "clean the carpet",
+        "fitted carpet"
+      ],
+      "synonyms": [
+        "rug"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "سجاد (مفروش للأرضية)",
+      "exampleArabic": "أرضية غرفة النوم بها سجاد رمادي ناعم."
+    },
+    {
+      "headword": "rug",
+      "pronunciation": "/rʌɡ/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of thick heavy fabric used for covering part of a floor",
+      "example": "There is a colorful rug under the coffee table.",
+      "relatedForms": [],
+      "collocations": [
+        "small rug",
+        "area rug"
+      ],
+      "synonyms": [
+        "mat",
+        "carpet"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "سجادة صغيرة / مفرش أرضي",
+      "exampleArabic": "توجد سجادة صغيرة ملونة تحت طاولة القهوة."
+    },
+    {
+      "headword": "curtain",
+      "pronunciation": "/ˈkɜːtn/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of material hanging across a window to block light or create privacy",
+      "example": "Open the curtain to see the bright sunshine.",
+      "relatedForms": [],
+      "collocations": [
+        "draw the curtain",
+        "window curtain"
+      ],
+      "synonyms": [
+        "drape"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "ستارة",
+      "exampleArabic": "افتح الستارة لرؤية أشعة الشمس الساطعة."
+    },
+    {
+      "headword": "sink",
+      "pronunciation": "/sɪŋk/",
+      "partOfSpeech": "noun",
+      "definition": "a bowl that is fixed to the wall in a kitchen or bathroom with pipes for water",
+      "example": "There is warm running water in the kitchen sink.",
+      "relatedForms": [],
+      "collocations": [
+        "kitchen sink",
+        "bathroom sink"
+      ],
+      "synonyms": [
+        "basin"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "appliances"
+      ],
+      "translation": "حوض / مغسلة",
+      "exampleArabic": "يوجد ماء دافئ يتدفق في حوض المطبخ."
+    },
+    {
+      "headword": "stove",
+      "pronunciation": "/stəʊv/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of kitchen equipment that provides heat for cooking food",
+      "example": "There is a hot soup boiling on the stove.",
+      "relatedForms": [],
+      "collocations": [
+        "gas stove",
+        "electric stove",
+        "cook on a stove"
+      ],
+      "synonyms": [
+        "cooker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "appliances"
+      ],
+      "translation": "موقد / بوتاجاز",
+      "exampleArabic": "يوجد حساء ساخن يغلي على الموقد."
+    },
+    {
+      "headword": "fridge",
+      "pronunciation": "/frɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "a large electric cupboard in which food and drink are kept cool",
+      "example": "There is cold milk and orange juice in the fridge.",
+      "relatedForms": [],
+      "collocations": [
+        "open the fridge",
+        "full fridge"
+      ],
+      "synonyms": [
+        "refrigerator"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "appliances"
+      ],
+      "translation": "ثلاجة",
+      "exampleArabic": "يوجد حليب بارد وعصير برتقال في الثلاجة."
+    },
+    {
+      "headword": "cupboard",
+      "pronunciation": "/ˈkʌbəd/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of furniture or a small closet with shelves for storing food or dishes",
+      "example": "The clean plates and glasses are in the kitchen cupboard.",
+      "relatedForms": [],
+      "collocations": [
+        "kitchen cupboard",
+        "storage cupboard"
+      ],
+      "synonyms": [
+        "cabinet"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "furniture"
+      ],
+      "translation": "خزانة أواني / دولاب مطبخ",
+      "exampleArabic": "الأطباق والأكواب النظيفة موجودة في خزانة المطبخ."
+    },
+    {
+      "headword": "in",
+      "pronunciation": "/ɪn/",
+      "partOfSpeech": "preposition",
+      "definition": "used to show position inside an enclosed space or area",
+      "example": "My books are in the blue backpack.",
+      "relatedForms": [],
+      "collocations": [
+        "in the room",
+        "in the house",
+        "in the kitchen"
+      ],
+      "synonyms": [
+        "inside"
+      ],
+      "antonyms": [
+        "out",
+        "outside"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "في / بداخل",
+      "exampleArabic": "كتبي موجودة في حقيبة الظهر الزرقاء."
+    },
+    {
+      "headword": "on",
+      "pronunciation": "/ɒn/",
+      "partOfSpeech": "preposition",
+      "definition": "used to show position supported by a surface",
+      "example": "The phone is on the wooden table.",
+      "relatedForms": [],
+      "collocations": [
+        "on the table",
+        "on the wall",
+        "on the floor"
+      ],
+      "synonyms": [
+        "upon"
+      ],
+      "antonyms": [
+        "off"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "على / فوق سطح",
+      "exampleArabic": "الهاتف موضوع على الطاولة الخشبية."
+    },
+    {
+      "headword": "under",
+      "pronunciation": "/ˈʌndər/",
+      "partOfSpeech": "preposition",
+      "definition": "below the surface of something or covered by something",
+      "example": "The slippers are under the bed.",
+      "relatedForms": [],
+      "collocations": [
+        "under the table",
+        "under the bed"
+      ],
+      "synonyms": [
+        "beneath",
+        "below"
+      ],
+      "antonyms": [
+        "above",
+        "over"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "تحت / أسفل",
+      "exampleArabic": "الخفّان المنزليان تحت السرير."
+    },
+    {
+      "headword": "behind",
+      "pronunciation": "/bɪˈhaɪnd/",
+      "partOfSpeech": "preposition",
+      "definition": "at or toward the back of someone or something",
+      "example": "The garden is behind our house.",
+      "relatedForms": [],
+      "collocations": [
+        "behind the door",
+        "behind the sofa"
+      ],
+      "synonyms": [
+        "at the back of"
+      ],
+      "antonyms": [
+        "in front of"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "خلف / وراء",
+      "exampleArabic": "الحديقة تقع خلف منزلنا."
+    },
+    {
+      "headword": "in front of",
+      "pronunciation": "/ɪn frʌnt əv/",
+      "partOfSpeech": "preposition",
+      "definition": "positioned closer to the front than someone or something else",
+      "example": "There is a small rug in front of the door.",
+      "relatedForms": [],
+      "collocations": [
+        "stand in front of",
+        "park in front of"
+      ],
+      "synonyms": [
+        "ahead of"
+      ],
+      "antonyms": [
+        "behind"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "أمام / في مواجهة",
+      "exampleArabic": "توجد سجادة صغيرة أمام الباب."
+    },
+    {
+      "headword": "next to",
+      "pronunciation": "/nekst tuː/",
+      "partOfSpeech": "preposition",
+      "definition": "side by side with; beside",
+      "example": "The desk is next to the sunny window.",
+      "relatedForms": [],
+      "collocations": [
+        "sit next to",
+        "stand next to"
+      ],
+      "synonyms": [
+        "beside",
+        "by"
+      ],
+      "antonyms": [
+        "far from"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "بجوار / بجانب",
+      "exampleArabic": "المكتب يقع بجوار النافذة المشمسة."
+    },
+    {
+      "headword": "between",
+      "pronunciation": "/bɪˈtwiːn/",
+      "partOfSpeech": "preposition",
+      "definition": "in the middle of two things, places, or people",
+      "example": "The lamp stands between the chair and the sofa.",
+      "relatedForms": [],
+      "collocations": [
+        "between two chairs",
+        "between the doors"
+      ],
+      "synonyms": [
+        "in between"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "بين (شيئين)",
+      "exampleArabic": "المصباح يقف بين الكرسي والأريكة."
+    },
+    {
+      "headword": "above",
+      "pronunciation": "/əˈbʌv/",
+      "partOfSpeech": "preposition",
+      "definition": "in or to a higher place or position than something",
+      "example": "There is a picture above the fireplace.",
+      "relatedForms": [],
+      "collocations": [
+        "above the table",
+        "above the bed"
+      ],
+      "synonyms": [
+        "over"
+      ],
+      "antonyms": [
+        "below",
+        "under"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "فوق / يعلو",
+      "exampleArabic": "توجد صورة معلقة فوق المدفأة."
+    },
+    {
+      "headword": "near",
+      "pronunciation": "/nɪər/",
+      "partOfSpeech": "preposition",
+      "definition": "not far away in distance or space",
+      "example": "We live near a quiet public park.",
+      "relatedForms": [],
+      "collocations": [
+        "near here",
+        "near the window",
+        "near the station"
+      ],
+      "synonyms": [
+        "close to"
+      ],
+      "antonyms": [
+        "far from"
+      ],
+      "tags": [
+        "grammar",
+        "prepositions"
+      ],
+      "translation": "قريب من / بالقرب من",
+      "exampleArabic": "نحن نعيش بالقرب من حديقة عامة هادئة."
+    },
+    {
+      "headword": "clean",
+      "pronunciation": "/kliːn/",
+      "partOfSpeech": "verb",
+      "definition": "to remove dirt, dust, or unwanted marks from something",
+      "example": "I clean my room every Saturday morning.",
+      "verbForms": {
+        "v1": "clean",
+        "v2": "cleaned",
+        "v3": "cleaned"
+      },
+      "relatedForms": [
+        "clean (adjective)"
+      ],
+      "collocations": [
+        "clean the house",
+        "clean the kitchen",
+        "keep clean"
+      ],
+      "synonyms": [
+        "tidy up",
+        "wash"
+      ],
+      "antonyms": [
+        "dirty"
+      ],
+      "tags": [
+        "actions",
+        "home"
+      ],
+      "translation": "ينظّف",
+      "exampleArabic": "أنظف غرفتي كل صباح سبت."
+    },
+    {
+      "headword": "tidy",
+      "pronunciation": "/ˈtaɪdi/",
+      "partOfSpeech": "adjective",
+      "definition": "having everything ordered and in its right place; neat",
+      "example": "His study desk is always tidy and neat.",
+      "relatedForms": [],
+      "collocations": [
+        "tidy room",
+        "neat and tidy",
+        "keep tidy"
+      ],
+      "synonyms": [
+        "neat",
+        "orderly"
+      ],
+      "antonyms": [
+        "messy",
+        "untidy"
+      ],
+      "tags": [
+        "home",
+        "descriptions"
+      ],
+      "translation": "مرتّب / أنيق ومنظم",
+      "exampleArabic": "مكتب دراسته دائماً مرتب ومنظم."
+    },
+    {
+      "headword": "messy",
+      "pronunciation": "/ˈmesi/",
+      "partOfSpeech": "adjective",
+      "definition": "untidy, dirty, or disorganized",
+      "example": "The children's bedroom is messy after playtime.",
+      "relatedForms": [],
+      "collocations": [
+        "messy room",
+        "messy desk",
+        "get messy"
+      ],
+      "synonyms": [
+        "untidy",
+        "disorderly"
+      ],
+      "antonyms": [
+        "tidy",
+        "clean"
+      ],
+      "tags": [
+        "home",
+        "descriptions"
+      ],
+      "translation": "فوضوي / غير مرتب",
+      "exampleArabic": "غرفة نوم الأطفال فوضوية بعد وقت اللعب."
+    },
+    {
+      "headword": "bright",
+      "pronunciation": "/braɪt/",
+      "partOfSpeech": "adjective",
+      "definition": "full of light; shining",
+      "example": "Our living room is very bright in the morning.",
+      "relatedForms": [],
+      "collocations": [
+        "bright room",
+        "bright sunlight"
+      ],
+      "synonyms": [
+        "light",
+        "sunny"
+      ],
+      "antonyms": [
+        "dark",
+        "dim"
+      ],
+      "tags": [
+        "home",
+        "descriptions"
+      ],
+      "translation": "مشرق / مضيء",
+      "exampleArabic": "غرفة معيشتنا مشرقة جداً في الصباح."
+    },
+    {
+      "headword": "dark",
+      "pronunciation": "/dɑːk/",
+      "partOfSpeech": "adjective",
+      "definition": "with little or no light",
+      "example": "The hallway is dark without the ceiling light.",
+      "relatedForms": [],
+      "collocations": [
+        "dark room",
+        "grow dark",
+        "pitch dark"
+      ],
+      "synonyms": [
+        "dim",
+        "shadowy"
+      ],
+      "antonyms": [
+        "bright",
+        "light"
+      ],
+      "tags": [
+        "home",
+        "descriptions"
+      ],
+      "translation": "مظلم / معتم",
+      "exampleArabic": "الممر مظلم بدون إضاءة السقف."
+    },
+    {
+      "headword": "comfortable",
+      "pronunciation": "/ˈkʌmftəbl/",
+      "partOfSpeech": "adjective",
+      "definition": "providing physical ease and relaxation",
+      "example": "This large sofa is comfortable to sit on.",
+      "relatedForms": [],
+      "collocations": [
+        "comfortable bed",
+        "comfortable chair",
+        "feel comfortable"
+      ],
+      "synonyms": [
+        "cozy",
+        "relaxing"
+      ],
+      "antonyms": [
+        "uncomfortable"
+      ],
+      "tags": [
+        "home",
+        "descriptions"
+      ],
+      "translation": "مريح",
+      "exampleArabic": "هذه الأريكة الكبيرة مريحة للجلوس عليها."
+    }
+  ],
+  "grammar": [
+    {
+      "title": "There is / There are",
+      "titleArabic": "يوجد للمفرد والجمع (There is / There are)",
+      "explanation": "Use 'There is' with singular countable nouns or uncountable nouns, and 'There are' with plural countable nouns to state that something exists in a specific place. In speech, 'There is' often shortens to 'There's'. Negative forms use 'There isn't' and 'There aren't'. For questions, invert the words: 'Is there...?' and 'Are there...?'.",
+      "explanationArabic": "تُستخدم 'There is' (أو اختصارها There's) مع الأسماء المفردة المعدودة والأسماء غير المعدودة للتعبير عن وجود شيء ما. بينما تُستخدم 'There are' مع أسماء الجمع. في حالة النفي نستخدم 'There isn't' للمفرد و'There aren't' للجمع. وفي السؤال نعكس الترتيب: 'Is there...?' للسؤال عن المفرد، و'Are there...?' للسؤال عن الجمع.",
+      "structures": [
+        {
+          "pattern": "There is + singular noun (There is a table)",
+          "label": "Singular statement · إثبات المفرد"
+        },
+        {
+          "pattern": "There are + plural noun (There are two chairs)",
+          "label": "Plural statement · إثبات الجمع"
+        },
+        {
+          "pattern": "There isn't / There aren't",
+          "label": "Negative statement · النفي"
+        },
+        {
+          "pattern": "Is there a...? / Are there any...?",
+          "label": "Questions · السؤال"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "There is a comfortable bed in the bedroom.",
+          "usesVocabulary": [
+            "comfortable",
+            "bed",
+            "bedroom"
+          ],
+          "translation": "يوجد سرير مريح في غرفة النوم."
+        },
+        {
+          "sentence": "There are four wooden chairs around the table.",
+          "usesVocabulary": [
+            "chair",
+            "table"
+          ],
+          "translation": "توجد أربعة كراسٍ خشبية حول الطاولة."
+        },
+        {
+          "sentence": "There is a clean mirror above the sink.",
+          "usesVocabulary": [
+            "clean",
+            "mirror",
+            "above",
+            "sink"
+          ],
+          "translation": "توجد مرآة نظيفة فوق الحوض."
+        },
+        {
+          "sentence": "There are many colorful flowers in the garden.",
+          "usesVocabulary": [
+            "in",
+            "garden"
+          ],
+          "translation": "توجد أزهار ملونة كثيرة في الحديقة."
+        }
+      ],
+      "commonUsage": [
+        "Use 'There's' in everyday speech for singular objects: 'There's a lamp on the desk.'",
+        "Use 'any' with plural negatives and questions: 'Are there any cups in the cupboard?'"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "There is three rooms in the apartment.",
+          "right": "There are three rooms in the apartment.",
+          "note": "Use 'There are' with plural nouns like 'three rooms'."
+        },
+        {
+          "wrong": "There are a big balcony.",
+          "right": "There is a big balcony.",
+          "note": "Use 'There is' with singular nouns like 'a big balcony'."
+        }
+      ]
+    },
+    {
+      "title": "Prepositions of Place",
+      "titleArabic": "حروف جر المكان (Prepositions of Place)",
+      "explanation": "Prepositions of place show the exact location of an object or person relative to another. Common prepositions include in (inside), on (touching a surface), under (below), behind (at the back), in front of (before), next to (beside), between (in the middle of two things), above (higher than), and near (close to).",
+      "explanationArabic": "تُحدد حروف جر المكان الموقع الدقيق للأشياء أو الأشخاص بالنسبة لبعضهم البعض. من أهمها: in (في/بالداخل)، on (على السطح)، under (تحت)، behind (خلف)، in front of (أمام)، next to (بجانب)، between (بين شيئين)، above (أعلى من)، و near (بالقرب من).",
+      "structures": [
+        {
+          "pattern": "Subject + verb + preposition + place (The key is on the table)",
+          "label": "Location sentence structure · تركيب جملة الموقع"
+        },
+        {
+          "pattern": "between A and B",
+          "label": "Between two points · التوسط بين نقطتين"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The lamp is on the desk next to the window.",
+          "usesVocabulary": [
+            "lamp",
+            "on",
+            "desk",
+            "next to",
+            "window"
+          ],
+          "translation": "المصباح موضوع على المكتب بجوار النافذة."
+        },
+        {
+          "sentence": "The slippers are under the bed.",
+          "usesVocabulary": [
+            "under",
+            "bed"
+          ],
+          "translation": "الخفّان تحت السرير."
+        },
+        {
+          "sentence": "The sofa is between the door and the closet.",
+          "usesVocabulary": [
+            "sofa",
+            "between",
+            "door",
+            "closet"
+          ],
+          "translation": "الأريكة تقع بين الباب وخزانة الملابس."
+        },
+        {
+          "sentence": "There is a small rug in front of the sofa.",
+          "usesVocabulary": [
+            "rug",
+            "in front of",
+            "sofa"
+          ],
+          "translation": "توجد سجادة صغيرة أمام الأريكة."
+        }
+      ],
+      "commonUsage": [
+        "Say 'on the wall' and 'on the ceiling' because the item touches that surface.",
+        "Say 'in the room', 'in the drawer', 'in the fridge' because it is inside an enclosed space."
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The mirror is in the wall.",
+          "right": "The mirror is on the wall.",
+          "note": "Things attached to the surface of a wall use the preposition 'on'."
+        },
+        {
+          "wrong": "The cat is next of the chair.",
+          "right": "The cat is next to the chair.",
+          "note": "The correct preposition phrase is always 'next to'."
+        }
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Showing the New Apartment",
+      "titleArabic": "جولة في الشقة الجديدة",
+      "setting": "Hassan welcomes his friend Tariq into his newly rented apartment for a quick tour.",
+      "settingArabic": "حسن يرحب بصديقه طارق في شقته الجديدة المستأجرة لأخذ جولة سريعة.",
+      "lines": [
+        {
+          "speaker": "Hassan",
+          "text": "Welcome to my new apartment, Tariq! Come inside and look around.",
+          "translation": "أهلاً بك في شقتي الجديدة يا طارق! تفضل بالدخول وألقِ نظرة."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Thank you Hassan! Wow, your living room is very bright and tidy.",
+          "translation": "شكراً لك يا حسن! يا للروعة، غرفة معيشتك مشرقة جداً ومرتبة."
+        },
+        {
+          "speaker": "Hassan",
+          "text": "Yes, there is a large window with a nice curtain that lets in morning sunlight.",
+          "translation": "نعم، توجد نافذة كبيرة مع ستارة لطيفة تسمح بدخول أشعة شمس الصباح."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "I love this soft sofa. It is so comfortable to sit on.",
+          "translation": "أعجبتني هذه الأريكة الناعمة؛ إنها مريحة جداً للجلوس."
+        },
+        {
+          "speaker": "Hassan",
+          "text": "There is also a colorful rug on the floor under the table.",
+          "translation": "توجد أيضاً سجادة صغيرة ملونة على الأرضية تحت الطاولة."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Is there a balcony with a nice view?",
+          "translation": "هل توجد شرفة بإطلالة جميلة؟"
+        },
+        {
+          "speaker": "Hassan",
+          "text": "Yes, the door in the kitchen leads to a small balcony near the garden.",
+          "translation": "نعم، الباب الموجود في المطبخ يؤدي إلى شرفة صغيرة بالقرب من الحديقة."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Where is your bedroom?",
+          "translation": "أين تقع غرفة نومك؟"
+        },
+        {
+          "speaker": "Hassan",
+          "text": "Walk down this hallway. The bedroom is on the left, next to the bathroom.",
+          "translation": "امشِ عبر هذا الممر؛ غرفة النوم على اليسار، بجوار الحمام."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "You have a wonderful house Hassan. It is clean and very peaceful.",
+          "translation": "لديك منزل رائع يا حسن؛ إنه نظيف وهادئ للغاية."
+        }
+      ],
+      "vocabularyUsed": [
+        "apartment",
+        "living room",
+        "bright",
+        "tidy",
+        "window",
+        "curtain",
+        "sofa",
+        "comfortable",
+        "rug",
+        "floor",
+        "under",
+        "table",
+        "balcony",
+        "door",
+        "kitchen",
+        "near",
+        "garden",
+        "bedroom",
+        "hallway",
+        "next to",
+        "bathroom",
+        "house",
+        "clean"
+      ]
+    },
+    {
+      "title": "Arranging the Bedroom",
+      "titleArabic": "ترتيب غرفة النوم",
+      "setting": "Two flatmates, Maya and Rania, are moving furniture to organize their bedroom.",
+      "settingArabic": "زميلتان في السكن، مايا ورانيا، تقومان بنقل الأثاث لترتيب غرفة نومهما.",
+      "lines": [
+        {
+          "speaker": "Maya",
+          "text": "Our bedroom is still messy. Let us clean and arrange everything today.",
+          "translation": "غرفة نومنا لا تزال فوضوية. دعنا ننظف ونرتب كل شيء اليوم."
+        },
+        {
+          "speaker": "Rania",
+          "text": "Good idea! Where should we put the wooden desk?",
+          "translation": "فكرة رائعة! أين يجب أن نضع المكتب الخشبي؟"
+        },
+        {
+          "speaker": "Maya",
+          "text": "Place the desk under the window so there is good light for studying.",
+          "translation": "ضعي المكتب تحت النافذة بحيث يتوفر ضوء جيد للمذاكرة."
+        },
+        {
+          "speaker": "Rania",
+          "text": "Perfect. And where does the chair go?",
+          "translation": "ممتاز. وأين نضع الكرسي؟"
+        },
+        {
+          "speaker": "Maya",
+          "text": "Put the chair in front of the desk, and the reading lamp on the shelf.",
+          "translation": "ضعي الكرسي أمام المكتب، ومصباح القراءة على الرف."
+        },
+        {
+          "speaker": "Rania",
+          "text": "What about our clothes? There is a tall wardrobe in the corner.",
+          "translation": "وماذا عن ملابسنا؟ توجد خزانة ملابس طويلة في الركن."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Hang the coats in the wardrobe, and put the socks in the bottom drawer.",
+          "translation": "علقي المعاطف في الدولاب، وضعي الجوارب في الدرج السفلي."
+        },
+        {
+          "speaker": "Rania",
+          "text": "There is a beautiful mirror. Can we hang it on the wall above the bed?",
+          "translation": "توجد مرآة جميلة. هل يمكننا تعليقها على الحائط فوق السرير؟"
+        },
+        {
+          "speaker": "Maya",
+          "text": "Yes, hang it between the door and the bed. The room looks great now!",
+          "translation": "نعم، علقيها بين الباب والسرير. الغرفة تبدو رائعة الآن!"
+        },
+        {
+          "speaker": "Rania",
+          "text": "The grey carpet makes the whole room feel so warm and cozy.",
+          "translation": "السجاد الرمادي يجعل الغرفة بأكملها تشعر بالدفء والراحة."
+        }
+      ],
+      "vocabularyUsed": [
+        "bedroom",
+        "messy",
+        "clean",
+        "desk",
+        "under",
+        "window",
+        "chair",
+        "in front of",
+        "lamp",
+        "shelf",
+        "wardrobe",
+        "drawer",
+        "mirror",
+        "on",
+        "wall",
+        "above",
+        "bed",
+        "between",
+        "door",
+        "room",
+        "carpet"
+      ]
+    },
+    {
+      "title": "Cooking in the Kitchen",
+      "titleArabic": "الطهي في المطبخ",
+      "setting": "Samir is in the kitchen preparing dinner while his sister Layla looks for ingredients.",
+      "settingArabic": "سمير في المطبخ يعد العشاء بينما تبحث أخته ليلى عن المكونات.",
+      "lines": [
+        {
+          "speaker": "Layla",
+          "text": "Samir, where is the salt? The kitchen cupboard is very full.",
+          "translation": "يا سمير، أين الملح؟ خزانة المطبخ ممتلئة جداً."
+        },
+        {
+          "speaker": "Samir",
+          "text": "Look inside the cupboard next to the stove. It is behind the olive oil.",
+          "translation": "انظري داخل الخزانة بجانب الموقد؛ إنه خلف زيت الزيتون."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Found it! Are there any clean bowls left?",
+          "translation": "وجدته! هل توجد أي أطباق عميقة نظيفة متبقية؟"
+        },
+        {
+          "speaker": "Samir",
+          "text": "No, they are in the sink. Please wash them with warm water.",
+          "translation": "لا، إنها في الحوض. يرجى غسلها بالماء الدافئ."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Sure. Is there any cold milk in the fridge?",
+          "translation": "بالتأكيد. هل يوجد أي حليب بارد في الثلاجة؟"
+        },
+        {
+          "speaker": "Samir",
+          "text": "Yes, on the second shelf inside the fridge door.",
+          "translation": "نعم، على الرف الثاني داخل باب الثلاجة."
+        },
+        {
+          "speaker": "Layla",
+          "text": "The hallway is dark. Can you turn on the ceiling light?",
+          "translation": "الممر مظلم. هل يمكنك تشغيل ضوء السقف؟"
+        },
+        {
+          "speaker": "Samir",
+          "text": "Done! Let us carry the dinner plates into the dining room now.",
+          "translation": "تم! دعنا ننقل أطباق العشاء إلى غرفة الطعام الآن."
+        },
+        {
+          "speaker": "Layla",
+          "text": "The dining room table is ready with clean glasses and forks.",
+          "translation": "طاولة غرفة الطعام جاهزة بأكواب وشوك نظيفة."
+        },
+        {
+          "speaker": "Samir",
+          "text": "Wonderful. After dinner, we can relax on the living room couch.",
+          "translation": "رائع. بعد العشاء، يمكننا الاسترخاء على كنبة غرفة المعيشة."
+        }
+      ],
+      "vocabularyUsed": [
+        "kitchen",
+        "cupboard",
+        "stove",
+        "behind",
+        "sink",
+        "fridge",
+        "shelf",
+        "in",
+        "hallway",
+        "dark",
+        "ceiling",
+        "dining room",
+        "table",
+        "clean",
+        "living room",
+        "couch"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "My Cozy Family Home",
+      "titleArabic": "منزلي العائلي الدافئ",
+      "kind": "personal story",
+      "text": "I live with my family in a comfortable house near the city center. There are four rooms in our house: two bedrooms, a bright living room, and a clean kitchen. In the living room, there is a large sofa next to the window and a colorful rug on the wooden floor. My father reads in a comfortable armchair, while my mother cooks on the stove in the kitchen. Outside the back door, there is a small garden with red roses. At night, we close every curtain and turn on the bedside lamp. Our home is a warm and peaceful place.",
+      "translation": "أعيش مع عائلتي في منزل مريح بالقرب من وسط المدينة. توجد أربع غرف في منزلنا: غرفتا نوم، وغرفة معيشة مشرقة، ومطبخ نظيف. في غرفة المعيشة، توجد أريكة كبيرة بجانب النافذة وسجادة صغيرة ملونة على الأرضية الخشبية. يقرأ والدي في كرسي مريح، بينما تطبخ أمي على الموقد في المطبخ. خارج الباب الخلفي، توجد حديقة صغيرة بها ورود حمراء. في الليل، نغلق كل ستارة ونشعل مصباح السرير. منزلنا مكان دافئ وهادئ.",
+      "vocabularyUsed": [
+        "comfortable",
+        "house",
+        "near",
+        "room",
+        "bedroom",
+        "bright",
+        "living room",
+        "clean",
+        "kitchen",
+        "sofa",
+        "next to",
+        "window",
+        "rug",
+        "on",
+        "floor",
+        "stove",
+        "door",
+        "garden",
+        "curtain",
+        "lamp"
+      ]
+    },
+    {
+      "title": "Describing My Bedroom",
+      "titleArabic": "وصف غرفة نومي",
+      "kind": "description",
+      "text": "My bedroom is my favorite room in our apartment. It is very tidy and comfortable. In the middle of the room, there is a soft bed with blue blankets. Next to the bed, there is a study desk with a reading lamp. Above the desk, my brother helped me hang a wooden shelf for my English books. I keep my pens and notebooks inside the top drawer. There is a tall wardrobe in the corner where I hang my jackets and shirts. A clean mirror hangs on the wall near the door. Everything in my bedroom has its own place.",
+      "translation": "غرفة نومي هي غرفتي المفضلة في شقتنا؛ إنها مرتبة ومريحة للغاية. في منتصف الغرفة، يوجد سرير ناعم بأغطية زرقاء. بجوار السرير، يوجد مكتب دراسة مع مصباح قراءة. فوق المكتب، ساعدني أخي في تعليق رف خشبي لكتبي الإنجليزية. أحتفظ بأقلامي ودفاتري داخل الدرج العلوي. يوجد دولاب ملابس طويل في الزاوية أعلق فيه ستراتي وقمصاني. وتتدلى مرآة نظيفة على الحائط بالقرب من الباب. كل شيء في غرفة نومي له مكانه المخصص.",
+      "vocabularyUsed": [
+        "bedroom",
+        "room",
+        "apartment",
+        "tidy",
+        "comfortable",
+        "bed",
+        "next to",
+        "desk",
+        "lamp",
+        "above",
+        "shelf",
+        "in",
+        "drawer",
+        "wardrobe",
+        "mirror",
+        "on",
+        "wall",
+        "near",
+        "door"
+      ]
+    },
+    {
+      "title": "Our Sunny Kitchen",
+      "titleArabic": "مطبخنا المشمس",
+      "kind": "description",
+      "text": "The kitchen is the warmest spot in our house. In the morning, sunlight pours through the large window, making the room bright and cheerful. There is a modern stove against the wall and a big white fridge in the corner. Above the kitchen sink, there is a wooden cupboard where we store clean cups, plates, and bowls. Between the fridge and the stove, there is a small prep table. When the kitchen becomes messy after a big dinner, my sister and I clean the floor and wipe the counters together. Having a tidy kitchen brings joy to our daily cooking.",
+      "translation": "المطبخ هو أدفأ ركن في منزلنا. في الصباح، تتدفق أشعة الشمس عبر النافذة الكبيرة، مما يجعل الغرفة مشرقة ومبهجة. يوجد موقد حديث بجوار الحائط وثلاجة بيضاء كبيرة في الزاوية. وفوق حوض المطبخ، توجد خزانة خشبية نخزن فيها الأكواب والأطباق النظيفة. وبين الثلاجة والموقد، توجد طاولة تحضير صغيرة. وعندما يصبح المطبخ فوضوياً بعد عشاء كبير، أنظف أنا وأختي الأرضية ونمسح الطاولات معاً. إن الحفاظ على مطبخ مرتب يجلب البهجة لطهينا اليومي.",
+      "vocabularyUsed": [
+        "kitchen",
+        "house",
+        "window",
+        "room",
+        "bright",
+        "stove",
+        "wall",
+        "fridge",
+        "above",
+        "sink",
+        "cupboard",
+        "clean",
+        "between",
+        "table",
+        "messy",
+        "floor",
+        "tidy"
+      ]
+    }
+  ]
+}

@@ -74,7 +74,7 @@ export default async function AdminPage() {
                   <td className="px-4 py-3 text-end">
                     <Link
                       href={`/day/${d.dayNumber}`}
-                      className="whitespace-nowrap text-xs font-medium text-indigo-700 hover:underline dark:text-indigo-300"
+                      className="whitespace-nowrap text-xs font-medium text-brand-700 hover:underline dark:text-brand-300"
                     >
                       Open Lesson →
                     </Link>

@@ -3,7 +3,16 @@ import { requireUser } from "@/lib/auth";
 import { getUserStats } from "@/services/stats";
 import { getDaySummaries } from "@/lib/queries";
 import { db } from "@/lib/db";
-import { Card, ProgressBar, SectionHeading, StatTile, buttonClass } from "@/components/ui";
+import {
+  Card,
+  Eyebrow,
+  ProgressBar,
+  SectionHeading,
+  StatTile,
+  Tag,
+  buttonClass,
+  textLinkClass,
+} from "@/components/ui";
 import { VocabularyState } from "@/lib/states";
 
 export const metadata = { title: "Home" };
@@ -45,59 +54,74 @@ export default async function HomePage() {
     .filter(({ index }) => index === currentStageIndex || index === currentStageIndex + 1);
 
   return (
-    <div className="grid gap-6 lg:grid-cols-3">
+    <div className="grid items-start gap-6 lg:grid-cols-3">
       <div className="space-y-6 lg:col-span-2">
-        {/* Where to go next: one clear primary action */}
-        <Card className="space-y-5 sm:p-6">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300">
-              {completed ? "Journey complete" : `Day ${dayNumber} of 90`}
-              {today?.stage ? ` · ${today.stage}` : ""}
-            </p>
-            <h1 className="mt-1.5 text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50">
-              {today?.title ?? `Day ${dayNumber}`}
-            </h1>
+        {/* Where to go next. The one featured surface on this screen (dark in both themes),
+            so the eye lands here first, with a single clear primary action. */}
+        <Card tone="featured" className="space-y-7">
+          <div className="space-y-4">
+            {/* Only the eyebrow + title share a row with the numeral, so the copy below keeps the full
+                width (on a phone a narrow column would wrap the description into ~20-character lines). */}
+            <div className="flex items-start justify-between gap-5">
+              <div className="min-w-0 space-y-3">
+                <Eyebrow tone="onDark">
+                  <span className="sr-only">Day {dayNumber} of 90. </span>
+                  {completed ? "Journey complete" : "Today's lesson"}
+                  {today?.stage ? ` · ${today.stage}` : ""}
+                </Eyebrow>
+                <h1 className="text-[1.75rem] font-semibold leading-tight tracking-tight text-zinc-50 sm:text-4xl">
+                  {today?.title ?? `Day ${dayNumber}`}
+                </h1>
+              </div>
+
+              {/* Decorative day numeral: the eyebrow already tells screen readers which day this is */}
+              <div aria-hidden="true" className="shrink-0 text-end">
+                <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400">Day</p>
+                <p className="mt-1 text-5xl font-semibold leading-none tracking-tighter tabular-nums text-brand-300 sm:text-7xl">
+                  {String(dayNumber).padStart(2, "0")}
+                </p>
+                <p className="mt-2 text-xs text-zinc-400">of 90</p>
+              </div>
+            </div>
+
             {today?.description ? (
-              <p className="mt-2 max-w-2xl text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-                {today.description}
-              </p>
+              <p className="max-w-2xl text-base leading-relaxed text-zinc-300">{today.description}</p>
             ) : null}
             {today?.focus ? (
-              <p className="mt-1.5 max-w-2xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                {today.focus}
-              </p>
+              <p className="max-w-2xl text-sm leading-relaxed text-zinc-400">{today.focus}</p>
             ) : null}
           </div>
 
-          <div className="max-w-xl">
-            <div className="mb-2 flex items-baseline justify-between gap-3 text-sm">
-              <span className="text-zinc-600 dark:text-zinc-400">Words learned today</span>
-              <span className="font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
-                {learnedValue} / 50
-                <span className="ms-2 text-xs font-normal text-zinc-500 dark:text-zinc-400">
-                  {usedToday} used in conversation
-                </span>
+          <div>
+            <div className="mb-3 flex items-baseline justify-between gap-3 text-sm">
+              <span className="text-zinc-300">Words learned today</span>
+              <span className="font-semibold tabular-nums text-zinc-50">
+                {learnedValue}
+                <span className="font-normal text-zinc-400"> / 50</span>
               </span>
             </div>
             <ProgressBar
               value={learnedValue}
               max={50}
               label={`Day ${dayNumber} vocabulary learned`}
-              tone={completed ? "success" : "accent"}
+              tone={completed ? "inverseSuccess" : "inverse"}
             />
+            <p className="mt-2.5 text-xs text-zinc-400">{usedToday} used in conversation</p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            <Link href={`/day/${dayNumber}`} className={buttonClass("primary", "md", "px-5")}>
+            <Link href={`/day/${dayNumber}`} className={buttonClass("inverse", "md", "group px-5")}>
               {completed
                 ? `Revisit Day ${dayNumber}`
                 : learnedToday > 0
                   ? `Continue Day ${dayNumber}`
                   : `Start Day ${dayNumber}`}
-              <span aria-hidden="true">→</span>
+              <span aria-hidden="true" className="transition-transform duration-150 group-hover:translate-x-0.5">
+                →
+              </span>
             </Link>
             {dayNumber > 1 ? (
-              <Link href={`/day/${dayNumber - 1}`} className={buttonClass("ghost")}>
+              <Link href={`/day/${dayNumber - 1}`} className={buttonClass("inverseGhost")}>
                 Revisit Day {dayNumber - 1}
               </Link>
             ) : null}
@@ -108,7 +132,12 @@ export default async function HomePage() {
         <section aria-label="Your progress at a glance" className="grid grid-cols-2 gap-3 lg:grid-cols-4">
           <StatTile
             label="Days completed"
-            value={`${stats.daysCompleted} / 90`}
+            value={
+              <>
+                {stats.daysCompleted}
+                <span className="text-lg font-medium text-zinc-500 dark:text-zinc-400"> / 90</span>
+              </>
+            }
             hint={`${90 - stats.daysCompleted} to go`}
             href="/journey"
           />
@@ -123,53 +152,62 @@ export default async function HomePage() {
         </section>
       </div>
 
-      {/* Path overview: overall progress + where you are now */}
-      <aside aria-label="90-day path" className="space-y-3">
-        <SectionHeading title="90-day path">
-          <Link
-            href="/progress"
-            className="text-sm font-medium text-indigo-700 hover:underline dark:text-indigo-300"
-          >
-            Details →
-          </Link>
-        </SectionHeading>
+      {/* Path overview: overall progress + where you are now. Its top edge lines up with the hero. */}
+      <aside aria-label="90-day path">
+        <Card className="space-y-6">
+          <SectionHeading title="90-day path">
+            <Link href="/progress" className={textLinkClass}>
+              Details →
+            </Link>
+          </SectionHeading>
 
-        <Card className="space-y-5">
           <div>
-            <div className="mb-2 flex items-baseline justify-between text-sm">
-              <span className="text-zinc-600 dark:text-zinc-400">Vocabulary</span>
-              <span className="font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
-                {stats.overallPercent}%
-              </span>
+            <div className="flex items-end justify-between gap-3">
+              <div>
+                <p className="text-xs font-medium text-zinc-500 dark:text-zinc-400">Vocabulary</p>
+                <p className="mt-1.5 text-3xl font-semibold leading-none tracking-tight tabular-nums text-zinc-900 dark:text-zinc-50">
+                  {stats.overallPercent}
+                  <span className="text-lg font-medium text-zinc-500 dark:text-zinc-400">%</span>
+                </p>
+              </div>
+              <p className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
+                {stats.learned.toLocaleString()} / {stats.totalVocabulary.toLocaleString()} words
+              </p>
             </div>
-            <ProgressBar value={stats.learned} max={stats.totalVocabulary} label="Overall vocabulary progress" />
-            <p className="mt-1.5 text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
-              {stats.learned.toLocaleString()} / {stats.totalVocabulary.toLocaleString()} words
-            </p>
+            <ProgressBar
+              className="mt-3"
+              value={stats.learned}
+              max={stats.totalVocabulary}
+              label="Overall vocabulary progress"
+            />
           </div>
 
-          <ul className="divide-y divide-zinc-100 border-t border-zinc-100 dark:divide-zinc-800 dark:border-zinc-800">
+          <ul className="-mt-1 divide-y divide-zinc-100 border-t border-zinc-100 dark:divide-zinc-800 dark:border-zinc-800">
             {pathStages.map(({ stage, index }) => {
               const isCurrent = index === currentStageIndex;
               return (
                 <li key={stage.label}>
                   <Link
                     href={`/journey#day-${stage.from}`}
-                    className="-mx-2 block rounded-xl px-2 py-3 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
+                    className="-mx-2 block rounded-xl px-2 py-3.5 transition-colors hover:bg-zinc-50 dark:hover:bg-zinc-800/50"
                   >
-                    <div className="flex items-start justify-between gap-2">
+                    <div className="flex items-start justify-between gap-3">
                       <div className="min-w-0">
                         <p className="text-sm font-medium text-zinc-900 dark:text-zinc-100">{stage.label}</p>
-                        <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                          Days {stage.from}–{stage.to} · {isCurrent ? "Current stage" : "Up next"}
+                        <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+                          Days {stage.from}–{stage.to}
                         </p>
                       </div>
-                      <span className="shrink-0 text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
-                        {stage.learned} / {stage.total}
-                      </span>
+                      <div className="flex shrink-0 flex-col items-end gap-1.5">
+                        {isCurrent ? <Tag tone="accent">Current stage</Tag> : <Tag>Up next</Tag>}
+                        <span className="text-xs tabular-nums text-zinc-500 dark:text-zinc-400">
+                          {stage.learned} / {stage.total}
+                        </span>
+                      </div>
                     </div>
                     <ProgressBar
-                      className="mt-2"
+                      size="sm"
+                      className="mt-3"
                       value={stage.learned}
                       max={stage.total}
                       label={`${stage.label} progress`}

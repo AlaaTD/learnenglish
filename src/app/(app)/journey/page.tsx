@@ -81,7 +81,7 @@ export default async function JourneyPage() {
                     href={`#day-${stage.from}`}
                     className={`inline-flex h-8 items-center rounded-full border px-3 text-xs font-medium transition-colors ${
                       isCurrent
-                        ? "border-indigo-300 bg-indigo-50 text-indigo-800 dark:border-indigo-800 dark:bg-indigo-950 dark:text-indigo-200"
+                        ? "border-brand-300 bg-brand-50 text-brand-800 dark:border-brand-800 dark:bg-brand-950 dark:text-brand-200"
                         : "border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
                     }`}
                   >
@@ -100,7 +100,7 @@ export default async function JourneyPage() {
           <section key={stage.from} aria-label={stage.label} className="space-y-3">
             <div className="flex flex-wrap items-end justify-between gap-x-4 gap-y-1">
               <div className="min-w-0">
-                <p className="text-xs font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300">
+                <p className="text-xs font-semibold uppercase tracking-wide text-brand-700 dark:text-brand-300">
                   Days {stage.from}–{stage.to}
                 </p>
                 <h2 className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">
@@ -123,13 +123,13 @@ export default async function JourneyPage() {
                         href={`/day/${day.dayNumber}`}
                         aria-current={isCurrent ? "step" : undefined}
                         className={`flex items-center gap-3 px-4 py-3 transition-colors hover:bg-zinc-50 sm:gap-4 dark:hover:bg-zinc-800/50 ${
-                          isCurrent ? "bg-indigo-50/60 dark:bg-indigo-950/30" : ""
+                          isCurrent ? "bg-brand-50/60 dark:bg-brand-950/30" : ""
                         }`}
                       >
                         <span
                           className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-xs font-semibold tabular-nums ${
                             isCurrent
-                              ? "bg-indigo-600 text-white"
+                              ? "bg-brand-600 text-white"
                               : done
                                 ? "bg-emerald-50 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200"
                                 : "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
