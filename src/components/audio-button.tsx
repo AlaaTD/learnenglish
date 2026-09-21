@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useEffect, useSyncExternalStore } from "react";
 import { audio } from "@/lib/audio";
 import { buttonClass } from "./ui";
 
@@ -24,9 +24,22 @@ export function AudioButton({
   );
 
   const targetId = id ?? text.trim();
-  const isPlaying =
-    audioState.isPlaying &&
-    (audioState.activeId === targetId || audioState.activeText === text.trim());
+  // Match by id only: two buttons with identical text must not both light up.
+  const isPlaying = audioState.isPlaying && audioState.activeId === targetId;
+  const errorMessage = audioState.errorId === targetId ? audioState.error : null;
+
+  // Warm the voice list up before the first tap (phones load it lazily).
+  useEffect(() => {
+    audio.init();
+  }, []);
+
+  // Leaving the page (or this button going away) must not leave speech running.
+  useEffect(() => {
+    return () => {
+      const state = audio.getState();
+      if (state.isPlaying && state.activeId === targetId) audio.stop();
+    };
+  }, [targetId]);
 
   function handleClick(e: React.MouseEvent) {
     // Cards are clickable; playing audio must not toggle them
@@ -45,12 +58,12 @@ export function AudioButton({
   const ariaLabel = label ?? defaultLabel;
 
   const className = small
-    ? `inline-flex h-9 w-9 items-center justify-center rounded-xl transition-colors ${
+    ? `inline-flex h-9 w-9 touch-manipulation items-center justify-center rounded-xl transition-colors ${
         isPlaying
           ? "bg-indigo-600 text-white hover:bg-indigo-700"
           : "text-zinc-600 hover:bg-zinc-100 hover:text-indigo-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-indigo-300"
       }`
-    : buttonClass(isPlaying ? "primary" : "secondary", "md", "px-3.5");
+    : buttonClass(isPlaying ? "primary" : "secondary", "md", "px-3.5 touch-manipulation");
 
   return (
     <span className="inline-flex shrink-0 flex-col items-start gap-0.5">
@@ -91,9 +104,15 @@ export function AudioButton({
           </>
         )}
       </button>
-      {isPlaying && audioState.error ? (
-        <span role="alert" className="text-xs text-rose-700 dark:text-rose-300">
-          {audioState.error}
+      {/* Shown only on the button that failed, and only for a few seconds */}
+      {errorMessage ? (
+        <span
+          role="alert"
+          dir="rtl"
+          lang="ar"
+          className="max-w-[14rem] text-xs leading-snug text-rose-700 dark:text-rose-300"
+        >
+          {errorMessage}
         </span>
       ) : null}
     </span>

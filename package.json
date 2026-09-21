@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "eslint",
     "db:backup": "node scripts/backup-db.mjs",
+    "test:audio": "node --no-warnings scripts/test-audio.mjs",
     "content:validate": "node scripts/validate-content.mjs",
     "content:seed": "node scripts/seed.mjs",
     "db:reset": "node scripts/seed.mjs --hard"
