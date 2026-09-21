@@ -230,24 +230,40 @@ export function Tag({
   );
 }
 
+/*
+ * Language colour rule for lesson screens: English content lives on the cool navy / indigo
+ * palette, Arabic help (glosses, translations, explanations) takes the warm `clay` accent.
+ * The language of a line is then readable at a glance, and one warm hue is enough to break up
+ * the blue without adding a second "loud" colour.
+ */
+const arabicTones = {
+  neutral: "text-zinc-700 dark:text-zinc-300",
+  // clay-600 on the light surfaces is 5.2:1, clay-300 on the dark ones is 8.4:1 (both AA).
+  warm: "text-clay-600 dark:text-clay-300",
+} as const;
+
 /**
- * Arabic text block. Neutral colour (long coloured text tires the eye), its own
- * font face + line height, and an optional accent bar on the reading-start side.
+ * Arabic text block with its own font face + line height, and an optional accent bar on the
+ * reading-start side. `tone="warm"` is for short lines (glosses, titles, one-sentence
+ * translations); long passages stay neutral (long coloured text tires the eye) and go inside an
+ * `ArabicPanel` instead.
  */
 export function ArabicText({
   children,
   className = "",
   bordered = false,
+  tone = "neutral",
 }: {
   children: ReactNode;
   className?: string;
   bordered?: boolean;
+  tone?: keyof typeof arabicTones;
 }) {
   return (
     <p
       dir="rtl"
       lang="ar"
-      className={`text-base text-zinc-700 dark:text-zinc-300 ${
+      className={`text-base ${arabicTones[tone]} ${
         bordered ? "border-s-2 border-brand-300 ps-3 dark:border-brand-800" : ""
       } ${className}`}
     >
@@ -256,10 +272,37 @@ export function ArabicText({
   );
 }
 
+/**
+ * A softly warm-tinted panel for longer Arabic explanations and translations, with an optional
+ * Arabic label on top. The text inside keeps the neutral ink colour; only the surface is warm.
+ */
+export function ArabicPanel({
+  label,
+  children,
+  className = "",
+}: {
+  label?: ReactNode;
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`rounded-xl border border-clay-100 bg-clay-50/70 p-4 dark:border-clay-900/70 dark:bg-clay-950/40 ${className}`}
+    >
+      {label ? (
+        <p dir="rtl" lang="ar" className="mb-1.5 text-sm font-semibold text-clay-700 dark:text-clay-300">
+          {label}
+        </p>
+      ) : null}
+      {children}
+    </div>
+  );
+}
+
 // The `inverse*` tones are for bars that sit on the dark featured card (dark in both themes).
 const progressTrack = {
-  accent: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(34_30_25/0.08)] dark:bg-zinc-800 dark:shadow-none",
-  success: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(34_30_25/0.08)] dark:bg-zinc-800 dark:shadow-none",
+  accent: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(5_7_15/0.1)] dark:bg-zinc-800 dark:shadow-none",
+  success: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(5_7_15/0.1)] dark:bg-zinc-800 dark:shadow-none",
   inverse: "bg-white/15",
   inverseSuccess: "bg-white/15",
 } as const;
@@ -406,27 +449,27 @@ export function TabBar({
   const nav = (
     <nav
       aria-label={label}
-      className="rounded-2xl border border-zinc-200 bg-zinc-100/70 p-1 dark:border-zinc-800 dark:bg-zinc-900"
+      className="rounded-2xl border border-night-700/80 bg-night-900/80 p-1.5 shadow-inner backdrop-blur-md"
     >
-      <ul className="flex items-center gap-1 overflow-x-auto scrollbar-none">
+      <ul className="flex items-center gap-1 overflow-x-auto scrollbar-none px-0.5">
         {items.map((item) => (
           <li key={item.key} className="shrink-0 sm:flex-1">
             <Link
               href={item.href}
               aria-current={item.active ? "page" : undefined}
-              className={`flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-3.5 text-sm transition duration-150 ${
+              className={`flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-3.5 text-sm transition-all duration-150 ${
                 item.active
-                  ? "bg-zinc-900 font-semibold text-zinc-50 shadow-card dark:bg-zinc-100 dark:text-zinc-900"
-                  : "font-medium text-zinc-600 hover:bg-white hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                  ? "bg-brand-600 font-semibold text-white shadow-[0_2px_10px_rgba(63,82,163,0.45)] ring-1 ring-white/15"
+                  : "font-medium text-mist-400 hover:bg-white/[0.04] hover:text-mist-100"
               }`}
             >
               <span>{item.label}</span>
               {item.count !== undefined ? (
                 <span
-                  className={`rounded-full px-1.5 py-0.5 text-xs font-medium leading-none tabular-nums ${
+                  className={`rounded-full px-1.5 py-0.5 text-xs font-semibold leading-none tabular-nums ${
                     item.active
-                      ? "bg-white/15 text-zinc-50 dark:bg-zinc-900/10 dark:text-zinc-900"
-                      : "bg-white text-zinc-600 ring-1 ring-inset ring-zinc-200 dark:bg-zinc-800 dark:text-zinc-400 dark:ring-zinc-700"
+                      ? "bg-white/20 text-white"
+                      : "bg-night-800 text-mist-400 ring-1 ring-night-700"
                   }`}
                 >
                   {item.count}
@@ -441,7 +484,7 @@ export function TabBar({
 
   if (!sticky) return nav;
   return (
-    <div className="sticky top-14 z-30 -mx-4 bg-zinc-50/95 px-4 py-2 backdrop-blur sm:mx-0 sm:px-0 dark:bg-zinc-950/95">
+    <div className="sticky top-[78px] sm:top-[84px] z-30 -mx-4 px-4 py-2.5 backdrop-blur-md transition-all sm:mx-0 sm:px-0">
       {nav}
     </div>
   );

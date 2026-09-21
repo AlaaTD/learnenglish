@@ -4,7 +4,7 @@ import { requireUser } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { getWordDetail } from "@/lib/queries";
 import { AudioButton } from "@/components/audio-button";
-import { WordActions } from "@/components/word-actions";
+import { DifficultToggleButton } from "@/components/difficult-toggle-button";
 import { Badge, Card, SectionHeading, SmallLabel, Tag } from "@/components/ui";
 import { VocabularyStateLabel, VocabularyStateStyle, type VocabularyState } from "@/lib/states";
 
@@ -83,10 +83,12 @@ export default async function WordDetailPage({
               </div>
 
               <div className="flex items-center gap-2 sm:flex-col sm:items-end">
-                <SmallLabel>Learning state</SmallLabel>
-                <Badge className={VocabularyStateStyle[item.state as VocabularyState] ?? ""}>
-                  {VocabularyStateLabel[item.state as VocabularyState] ?? item.state}
-                </Badge>
+                <DifficultToggleButton
+                  vocabularyId={item.id}
+                  dayNumber={item.dayNumber}
+                  initialIsDifficult={item.isDifficult}
+                  showLabel
+                />
               </div>
             </div>
 
@@ -191,15 +193,18 @@ export default async function WordDetailPage({
               )}
             </div>
 
-            <div className="border-t border-zinc-100 pt-5 dark:border-zinc-800">
-              <SmallLabel className="mb-2">Personal state controls</SmallLabel>
-              <WordActions
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-zinc-100 pt-5 dark:border-zinc-800">
+              <div>
+                <SmallLabel className="mb-1">الكلمات الصعبة · Difficult words</SmallLabel>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                  احفظ هذه الكلمة لتظهر في قسم الكلمات الصعبة لمراجعتها بسهولة في أي وقت.
+                </p>
+              </div>
+              <DifficultToggleButton
                 vocabularyId={item.id}
                 dayNumber={item.dayNumber}
-                initialState={{
-                  state: item.state as VocabularyState,
-                  usedInConversation: item.usedInConversation,
-                }}
+                initialIsDifficult={item.isDifficult}
+                showLabel
               />
             </div>
           </Card>

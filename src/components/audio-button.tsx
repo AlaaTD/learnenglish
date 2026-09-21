@@ -60,8 +60,9 @@ export function AudioButton({
   const className = small
     ? `inline-flex h-9 w-9 touch-manipulation items-center justify-center rounded-xl transition-colors ${
         isPlaying
-          ? "bg-brand-600 text-white hover:bg-brand-700"
-          : "text-zinc-600 hover:bg-zinc-100 hover:text-brand-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-brand-300"
+          ? "bg-brand-600 text-white hover:bg-brand-700 dark:bg-brand-400 dark:text-zinc-950 dark:hover:bg-brand-300"
+          : // A soft translucent chip (not a fixed grey) so it sits well on cards, bubbles and tinted panels alike.
+            "bg-zinc-900/[0.05] text-zinc-700 hover:bg-brand-100 hover:text-brand-800 dark:bg-white/[0.08] dark:text-zinc-300 dark:hover:bg-brand-900/70 dark:hover:text-brand-200"
       }`
     : buttonClass(isPlaying ? "primary" : "secondary", "md", "px-3.5 touch-manipulation");
 

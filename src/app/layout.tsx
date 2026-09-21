@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Lexend, Readex_Pro } from "next/font/google";
+import { Inter, Lexend, Readex_Pro } from "next/font/google";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
@@ -8,6 +8,14 @@ import "./globals.css";
 // suits a learning product far better than a generic UI face.
 const lexend = Lexend({
   variable: "--font-lexend",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// Inter carries the midnight dashboard shell (nav, footer, home) — its tighter,
+// more neutral letterforms match the approved mock. Lexend remains the reading face.
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
@@ -45,8 +53,8 @@ export const viewport: Viewport = {
   maximumScale: 5,
   // Match the page background (zinc-50 / zinc-950 in globals.css)
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8f5ef" },
-    { media: "(prefers-color-scheme: dark)", color: "#161310" },
+    { media: "(prefers-color-scheme: light)", color: "#eef3fb" },
+    { media: "(prefers-color-scheme: dark)", color: "#090f1d" },
   ],
 };
 
@@ -68,7 +76,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-theme-pref={theme}
-      className={`${lexend.variable} ${readex.variable} h-full`}
+      className={`${lexend.variable} ${readex.variable} ${inter.variable} h-full`}
       suppressHydrationWarning
     >
       <head>

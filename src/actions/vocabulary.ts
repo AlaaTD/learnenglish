@@ -10,10 +10,18 @@ import {
   recordViewed,
   removeFromReview,
   setUsedInConversation,
+  toggleDifficultWord,
 } from "@/services/vocabulary-state";
 
 function revalidateAll() {
   revalidatePath("/", "layout");
+}
+
+export async function toggleDifficultWordAction(vocabularyId: string, dayNumber?: number | null) {
+  const user = await requireUser();
+  const state = await toggleDifficultWord(user.id, vocabularyId, dayNumber ?? null);
+  revalidateAll();
+  return state;
 }
 
 export async function markWordLearnedAction(vocabularyId: string, dayNumber: number | null) {

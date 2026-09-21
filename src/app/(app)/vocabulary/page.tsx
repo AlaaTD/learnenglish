@@ -4,18 +4,9 @@ import { getLibrary, type LibraryParams } from "@/lib/queries";
 import { SearchInput } from "@/components/search-input";
 import { Pagination } from "@/components/pagination";
 import { VocabularyCard } from "@/components/vocabulary-card";
-import { Card, EmptyState, PageHeader, Tag, TabBar, buttonClass, fieldClass } from "@/components/ui";
+import { Card, EmptyState, PageHeader, Tag, TabBar, buttonClass, fieldClass, type TabBarItem } from "@/components/ui";
 
-export const metadata = { title: "My Vocabulary" };
-
-const TABS = [
-  { key: "ALL", label: "All Words", state: undefined },
-  { key: "UNLEARNED", label: "Unlearned", state: "UNLEARNED" },
-  { key: "LEARNING", label: "Learning", state: "LEARNING" },
-  { key: "REVIEW", label: "Review", state: "REVIEW" },
-  { key: "MASTERED", label: "Mastered", state: "MASTERED" },
-  { key: "USED", label: "Used in Conversation", state: "USED" },
-];
+export const metadata = { title: "Vocabulary Library & Difficult Words" };
 
 export default async function VocabularyPage({
   searchParams,
@@ -27,6 +18,7 @@ export default async function VocabularyPage({
 
   const page = Math.max(1, parseInt(pageParam, 10) || 1);
   const day = dayParam ? parseInt(dayParam, 10) || undefined : undefined;
+  const isDifficult = state === "DIFFICULT";
 
   const queryParams: LibraryParams = {
     query: q,
@@ -37,13 +29,11 @@ export default async function VocabularyPage({
     pageSize: 30,
   };
 
-  const { items, total, pageCount } = await getLibrary(user.id, queryParams);
+  const { items, total, pageCount, difficultCount } = await getLibrary(user.id, queryParams);
 
   const settings = await db.userSettings.findUnique({ where: { userId: user.id } });
   const audioRate = settings?.audioSpeed === "slow" ? 0.8 : 1;
   const autoplayAudio = settings?.autoplayAudio ?? false;
-
-  const activeTabKey = state ?? "ALL";
 
   function tabHref(tabState?: string) {
     const p = new URLSearchParams();
@@ -60,19 +50,50 @@ export default async function VocabularyPage({
   if (day) baseParams.set("day", String(day));
   if (sort) baseParams.set("sort", sort);
 
+  const tabs: TabBarItem[] = [
+    {
+      key: "ALL",
+      label: "All Words · جميع الكلمات",
+      href: tabHref(undefined),
+      active: !isDifficult,
+    },
+    {
+      key: "DIFFICULT",
+      label: "Difficult Words · الكلمات الصعبة",
+      href: tabHref("DIFFICULT"),
+      active: isDifficult,
+      count: difficultCount,
+    },
+  ];
+
   return (
     <div className="space-y-5">
-      <PageHeader
-        title="Master Vocabulary Library"
-        description="Browse, search, and manage your full 4,500-word curriculum and personal learning states."
-      />
-
-      {/* One toolbar: search on the left, day + sort filters on the right */}
-      <Card className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-        <div className="min-w-0 flex-1">
-          <SearchInput placeholder="Search word, phrase, definition, or tag..." />
+      {/* Header: Title and topic */}
+      <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-mist-500">
+            <span className="rounded-full bg-brand-900/80 px-2.5 py-0.5 text-brand-300 ring-1 ring-brand-700/60">
+              Vocabulary Library
+            </span>
+            <span className="text-mist-400">· 4,500 Words</span>
+          </div>
+          <h1 className="mt-1.5 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+            {isDifficult ? "الكلمات الصعبة المحفوظة" : "Master Vocabulary Library"}
+          </h1>
+          <p className="mt-1 text-sm text-mist-400 max-w-2xl">
+            {isDifficult
+              ? "الكلمات التي قمت بتمييزها ككلمات صعبة للرجوع إليها ومراجعتها في أي وقت."
+              : "تصفح وابحث في كافة كلمات المنهج (4,500 كلمة) مع تصريفاتها ونطقها وأمثلتها."}
+          </p>
         </div>
-        <form method="GET" className="flex flex-wrap items-center gap-2">
+      </div>
+
+      {/* Toolbar: search + day & sort filters (responsive 2-col on mobile) */}
+      <Card className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between border-night-700/80 bg-night-900/60 shadow-lg backdrop-blur-sm">
+        <div className="min-w-0 flex-1">
+          <SearchInput placeholder={isDifficult ? "ابحث في كلماتك الصعبة..." : "Search word, phrase, definition, or tag..."} />
+        </div>
+        <form method="GET" className="grid grid-cols-2 sm:flex sm:items-center gap-2">
           {q && <input type="hidden" name="q" value={q} />}
           {state && <input type="hidden" name="state" value={state} />}
           <label htmlFor="day-select" className="sr-only">
@@ -83,7 +104,7 @@ export default async function VocabularyPage({
             name="day"
             defaultValue={day ?? ""}
             aria-label="Filter by Day"
-            className={`${fieldClass} min-w-0 flex-1 sm:flex-none`}
+            className={`${fieldClass} w-full rounded-xl bg-night-800 border-night-700 text-mist-200 text-xs sm:text-sm py-2 px-3`}
           >
             <option value="">All Days (1–90)</option>
             {Array.from({ length: 90 }, (_, i) => i + 1).map((d) => (
@@ -100,38 +121,52 @@ export default async function VocabularyPage({
             name="sort"
             defaultValue={sort}
             aria-label="Sort by"
-            className={`${fieldClass} min-w-0 flex-1 sm:flex-none`}
+            className={`${fieldClass} w-full rounded-xl bg-night-800 border-night-700 text-mist-200 text-xs sm:text-sm py-2 px-3`}
           >
             <option value="headword">A – Z</option>
             <option value="day">By Day</option>
           </select>
-          <button type="submit" className={buttonClass("secondary")}>
+          <button
+            type="submit"
+            className="col-span-2 sm:col-auto inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-brand-500 transition-colors"
+          >
             Apply
           </button>
         </form>
       </Card>
 
-      <TabBar
-        label="Vocabulary states"
-        items={TABS.map((t) => ({
-          key: t.key,
-          label: t.label,
-          href: tabHref(t.state),
-          active: activeTabKey === t.key,
-        }))}
-      />
+      {/* Clean 2-tab switcher: All Words vs Difficult Words */}
+      <TabBar label="Vocabulary view" items={tabs} />
 
-      <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-600 dark:text-zinc-400">
+      <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-mist-400">
         <span>
-          Showing <span className="font-medium tabular-nums text-zinc-900 dark:text-zinc-100">{items.length}</span> of{" "}
-          <span className="font-medium tabular-nums text-zinc-900 dark:text-zinc-100">{total}</span> words
+          Showing <span className="font-semibold tabular-nums text-white">{items.length}</span> of{" "}
+          <span className="font-semibold tabular-nums text-white">{total}</span> words
         </span>
         {day && <Tag tone="accent">Filtered to Day {day}</Tag>}
       </div>
 
       {items.length === 0 ? (
-        <EmptyState title="No words found" action={{ href: "/vocabulary", label: "Reset filters" }}>
-          {q ? `No vocabulary matching "${q}". Try another search term.` : "No words in this category yet."}
+        <EmptyState
+          title={
+            isDifficult
+              ? q
+                ? "لا توجد كلمات صعبة مطابقة لبحثك"
+                : "لم تقم بحفظ أي كلمات صعبة بعد"
+              : "No words found"
+          }
+          action={{
+            href: isDifficult ? "/vocabulary" : "/vocabulary",
+            label: isDifficult ? "تصفح جميع الكلمات" : "Reset filters",
+          }}
+        >
+          {isDifficult
+            ? q
+              ? `لا توجد كلمة صعبة تطابق "${q}". جرب كلمة أخرى أو أزل البحث.`
+              : "أثناء دراسة كلمات أي يوم، اضغط على زر النجمة ⭐ بجانب أي كلمة لحفظها هنا ومراجعتها في أي وقت بسهولة."
+            : q
+            ? `No vocabulary matching "${q}". Try another search term.`
+            : "No words in this category yet."}
         </EmptyState>
       ) : (
         <div className="grid items-start gap-3 sm:grid-cols-2 lg:grid-cols-3">

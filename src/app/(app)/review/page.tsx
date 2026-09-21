@@ -1,93 +1,50 @@
-import Link from "next/link";
 import { requireUser } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { getReviewWords } from "@/lib/queries";
-import { AudioButton } from "@/components/audio-button";
-import { WordActions } from "@/components/word-actions";
-import { Card, EmptyState, PageHeader, Tag } from "@/components/ui";
-import { VocabularyState } from "@/lib/states";
+import { getDifficultWords } from "@/lib/queries";
+import { VocabularyCard } from "@/components/vocabulary-card";
+import { EmptyState, PageHeader, Tag } from "@/components/ui";
 
-export const metadata = { title: "Review" };
+export const metadata = { title: "Difficult Words · الكلمات الصعبة" };
 
-export default async function ReviewPage() {
+export default async function DifficultWordsPage() {
   const user = await requireUser();
   const [words, settings] = await Promise.all([
-    getReviewWords(user.id),
+    getDifficultWords(user.id),
     db.userSettings.findUnique({ where: { userId: user.id } }),
   ]);
   const audioRate = settings?.audioSpeed === "slow" ? 0.8 : 1;
+  const autoplayAudio = settings?.autoplayAudio ?? false;
 
   return (
     <div className="space-y-5">
       <PageHeader
-        title="Personal Review"
-        description="Organize and revisit words you marked for review. No quizzes, tests, or timers — you control your own pace."
+        title="Difficult Words · الكلمات الصعبة"
+        description="الكلمات التي قمت بتمييزها كصعبة للتركيز عليها ومراجعتها في أي وقت."
         actions={
           words.length > 0 ? (
             <Tag tone="accent">
-              {words.length} {words.length === 1 ? "word" : "words"} in review
+              ⭐ {words.length} {words.length === 1 ? "word" : "words"}
             </Tag>
           ) : null
         }
       />
 
       {words.length === 0 ? (
-        <EmptyState title="Your review list is empty" action={{ href: "/vocabulary", label: "Browse vocabulary" }}>
-          When you want to revisit a word later, click &ldquo;Add to Review&rdquo; on any vocabulary card.
+        <EmptyState
+          title="قائمة الكلمات الصعبة فارغة"
+          action={{ href: "/vocabulary", label: "تصفح الكلمات" }}
+        >
+          عندما تجد أي كلمة صعبة أثناء تعلمك، اضغط على زر النجمة ⭐ بجانب الكلمة لحفظها هنا والرجوع إليها في أي وقت.
         </EmptyState>
       ) : (
-        <div className="grid items-stretch gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-start gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {words.map((word) => (
-            <Card key={word.id} className="flex flex-col justify-between gap-4">
-              <div>
-                <div className="flex items-start justify-between gap-2">
-                  <div className="min-w-0">
-                    <Link
-                      href={`/vocabulary/${word.id}`}
-                      className="break-words text-lg font-semibold tracking-tight text-zinc-900 hover:text-brand-700 hover:underline dark:text-zinc-50 dark:hover:text-brand-300"
-                    >
-                      {word.headword}
-                    </Link>
-                    {word.pronunciation && (
-                      <p className="font-mono text-sm text-zinc-500 dark:text-zinc-400">{word.pronunciation}</p>
-                    )}
-                  </div>
-                  <AudioButton text={word.headword} rate={audioRate} small />
-                </div>
-
-                <p className="mt-2 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{word.definition}</p>
-
-                <p className="mt-2 border-s-2 border-brand-200 ps-3 text-sm leading-relaxed text-zinc-600 dark:border-brand-800 dark:text-zinc-400">
-                  &ldquo;{word.example}&rdquo;
-                </p>
-              </div>
-
-              <div className="space-y-3 border-t border-zinc-100 pt-3 dark:border-zinc-800">
-                <div className="flex items-center justify-between text-xs">
-                  <Link
-                    href={`/day/${word.dayNumber}`}
-                    className="text-zinc-600 hover:text-zinc-900 hover:underline dark:text-zinc-400 dark:hover:text-zinc-200"
-                  >
-                    Day {word.dayNumber}
-                  </Link>
-                  <Link
-                    href={`/vocabulary/${word.id}`}
-                    className="font-medium text-brand-700 hover:underline dark:text-brand-300"
-                  >
-                    History →
-                  </Link>
-                </div>
-                <WordActions
-                  vocabularyId={word.id}
-                  dayNumber={word.dayNumber}
-                  initialState={{
-                    state: VocabularyState.REVIEW,
-                    usedInConversation: false,
-                  }}
-                  compact
-                />
-              </div>
-            </Card>
+            <VocabularyCard
+              key={word.id}
+              word={word}
+              audioRate={audioRate}
+              autoplayAudio={autoplayAudio}
+            />
           ))}
         </div>
       )}

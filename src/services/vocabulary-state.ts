@@ -7,6 +7,7 @@ import { VocabularyState, DayStatus } from "@/lib/states";
 export type UserVocabularyView = {
   id: string;
   state: VocabularyState;
+  isDifficult: boolean;
   usedInConversation: boolean;
   learnedAt: Date | null;
   reviewAddedAt: Date | null;
@@ -18,6 +19,7 @@ export type UserVocabularyView = {
 function toView(row: {
   id: string;
   state: string;
+  isDifficult?: boolean;
   usedInConversation: boolean;
   learnedAt: Date | null;
   reviewAddedAt: Date | null;
@@ -28,6 +30,7 @@ function toView(row: {
   return {
     id: row.id,
     state: row.state as VocabularyState,
+    isDifficult: row.isDifficult ?? false,
     usedInConversation: row.usedInConversation,
     learnedAt: row.learnedAt,
     reviewAddedAt: row.reviewAddedAt,
@@ -76,6 +79,7 @@ export async function getUserVocabularyView(
     return {
       id: "",
       state: VocabularyState.UNLEARNED,
+      isDifficult: false,
       usedInConversation: false,
       learnedAt: null,
       reviewAddedAt: null,
@@ -213,6 +217,31 @@ export async function recordViewed(
     data: { firstViewedAt: new Date() },
   });
   await recordHistory(userId, vocabularyId, "VIEWED", dayNumber, detail, updated.id);
+  return toView(updated);
+}
+
+export async function toggleDifficultWord(
+  userId: string,
+  vocabularyId: string,
+  dayNumber?: number | null,
+): Promise<UserVocabularyView> {
+  const row = await ensureRow(userId, vocabularyId);
+  const nextDifficult = !row.isDifficult;
+  const updated = await db.userVocabulary.update({
+    where: { id: row.id },
+    data: {
+      isDifficult: nextDifficult,
+      difficultAddedAt: nextDifficult ? new Date() : null,
+    },
+  });
+  await recordHistory(
+    userId,
+    vocabularyId,
+    nextDifficult ? "DIFFICULT_ADDED" : "DIFFICULT_REMOVED",
+    dayNumber ?? null,
+    undefined,
+    updated.id,
+  );
   return toView(updated);
 }
 

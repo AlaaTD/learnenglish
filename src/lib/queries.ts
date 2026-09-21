@@ -124,6 +124,7 @@ export type VocabularyCardData = {
   tags: string[];
   dayNumber: number;
   state: string;
+  isDifficult: boolean;
   usedInConversation: boolean;
   inConversationCount: number;
   inParagraphCount: number;
@@ -151,6 +152,7 @@ function toCard(
   usedInConversation: boolean,
   inConversationCount: number,
   inParagraphCount: number,
+  isDifficult: boolean = false,
 ): VocabularyCardData {
   return {
     ...v,
@@ -163,6 +165,7 @@ function toCard(
     antonyms: parseStringArray(v.antonyms),
     tags: parseStringArray(v.tags),
     state,
+    isDifficult,
     usedInConversation,
     inConversationCount,
     inParagraphCount,
@@ -181,12 +184,19 @@ export async function getDayVocabularyWithState(userId: string, dayNumber: numbe
   });
   const states = await db.userVocabulary.findMany({
     where: { userId, vocabularyId: { in: items.map((i) => i.id) } },
-    select: { vocabularyId: true, state: true, usedInConversation: true },
+    select: { vocabularyId: true, state: true, usedInConversation: true, isDifficult: true },
   });
   const stateMap = new Map(states.map((s) => [s.vocabularyId, s]));
   return items.map((v) => {
     const s = stateMap.get(v.id);
-    return toCard(v, s?.state ?? "UNLEARNED", s?.usedInConversation ?? false, v.conversationLinks.length, v.paragraphLinks.length);
+    return toCard(
+      v,
+      s?.state ?? "UNLEARNED",
+      s?.usedInConversation ?? false,
+      v.conversationLinks.length,
+      v.paragraphLinks.length,
+      s?.isDifficult ?? false,
+    );
   });
 }
 
@@ -194,6 +204,7 @@ export async function getDayVocabularyWithState(userId: string, dayNumber: numbe
 export type LibraryParams = {
   query?: string;
   state?: string;
+  difficult?: boolean;
   day?: number;
   sort?: string; // headword | day | recent
   page?: number;
@@ -201,14 +212,14 @@ export type LibraryParams = {
 };
 
 export async function getLibrary(userId: string, params: LibraryParams) {
-  const { query, state, day, sort = "headword", page = 1, pageSize = 60 } = params;
+  const { query, state, difficult, day, sort = "headword", page = 1, pageSize = 60 } = params;
   const where: {
     headword?: { contains: string };
     definition?: { contains: string };
     tags?: { contains: string };
     dayNumber?: number;
     userStates?: {
-      some?: { userId: string; state?: string; usedInConversation?: boolean };
+      some?: { userId: string; state?: string; usedInConversation?: boolean; isDifficult?: boolean };
       none?: { userId: string };
     };
   } = {};
@@ -216,7 +227,9 @@ export async function getLibrary(userId: string, params: LibraryParams) {
     where.headword = { contains: query.trim() };
   }
   if (day && day >= 1 && day <= 90) where.dayNumber = day;
-  if (state === "USED") {
+  if (difficult || state === "DIFFICULT") {
+    where.userStates = { some: { userId, isDifficult: true } };
+  } else if (state === "USED") {
     where.userStates = { some: { userId, usedInConversation: true } };
   } else if (state && ["UNLEARNED", "LEARNING", "REVIEW", "MASTERED"].includes(state)) {
     where.userStates = { some: { userId, state } };
@@ -227,15 +240,16 @@ export async function getLibrary(userId: string, params: LibraryParams) {
   const orderBy =
     sort === "day" ? [{ dayNumber: "asc" as const }, { order: "asc" as const }] : [{ headword: "asc" as const }];
 
-  const [total, items] = await Promise.all([
+  const [total, difficultCount, items] = await Promise.all([
     db.vocabularyItem.count({ where }),
+    db.userVocabulary.count({ where: { userId, isDifficult: true } }),
     db.vocabularyItem.findMany({
       where,
       orderBy,
       skip: (page - 1) * pageSize,
       take: pageSize,
       include: {
-        userStates: { where: { userId }, select: { state: true, usedInConversation: true } },
+        userStates: { where: { userId }, select: { state: true, usedInConversation: true, isDifficult: true } },
         _count: { select: { conversationLinks: true, paragraphLinks: true } },
       },
     }),
@@ -243,6 +257,7 @@ export async function getLibrary(userId: string, params: LibraryParams) {
 
   return {
     total,
+    difficultCount,
     page,
     pageSize,
     pageCount: Math.max(1, Math.ceil(total / pageSize)),
@@ -253,6 +268,7 @@ export async function getLibrary(userId: string, params: LibraryParams) {
         v.userStates[0]?.usedInConversation ?? false,
         v._count.conversationLinks,
         v._count.paragraphLinks,
+        v.userStates[0]?.isDifficult ?? false,
       ),
     ),
   };
@@ -295,6 +311,7 @@ export async function getWordDetail(userId: string, wordId: string) {
       state?.usedInConversation ?? false,
       item.conversationLinks.length,
       item.paragraphLinks.length,
+      state?.isDifficult ?? false,
     ),
     day: item.day,
     stateRow: state,
@@ -313,6 +330,31 @@ export async function getWordDetail(userId: string, wordId: string) {
       .sort((a, b) => a.dayNumber - b.dayNumber || a.order - b.order),
     grammarExamples,
   };
+}
+
+// Difficult words list: words marked as difficult by the user.
+export async function getDifficultWords(userId: string) {
+  const rows = await db.userVocabulary.findMany({
+    where: { userId, isDifficult: true },
+    orderBy: { difficultAddedAt: "desc" },
+    include: {
+      vocabulary: {
+        include: {
+          _count: { select: { conversationLinks: true, paragraphLinks: true } },
+        },
+      },
+    },
+  });
+  return rows.map((r) =>
+    toCard(
+      r.vocabulary,
+      r.state,
+      r.usedInConversation,
+      r.vocabulary._count.conversationLinks,
+      r.vocabulary._count.paragraphLinks,
+      true,
+    ),
+  );
 }
 
 // Review list: words in REVIEW state, grouped by due date (organizational only).

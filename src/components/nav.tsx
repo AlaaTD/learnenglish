@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { IconChevronDown } from "@/components/dashboard/icons";
 
-type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin";
+type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin" | "difficult";
 
 // Simple stroke icons (one consistent style, inherit the text colour) — replaces
 // the multi-coloured emoji that added visual noise and rendered differently per OS.
@@ -15,6 +16,7 @@ const iconPaths: Record<IconName, string> = {
   journey: "M5 21V4m0 0h11l-2 4 2 4H5",
   words: "M4 5.5A1.5 1.5 0 015.5 4H19v14H5.5A1.5 1.5 0 004 19.5v-14zM4 19.5A1.5 1.5 0 005.5 21H19",
   review: "M20 12a8 8 0 11-2.34-5.66M20 4v5h-5",
+  difficult: "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
   progress: "M5 20V11M12 20V4M19 20v-6",
   settings: "M4 7h9m4 0h3M4 17h3m4 0h9M15 4v6M9 14v6",
   admin: "M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z",
@@ -48,9 +50,6 @@ type NavItem = {
 const startsWith = (prefix: string) => (pathname: string) =>
   pathname === prefix || pathname.startsWith(`${prefix}/`);
 
-// "You are here": a clear clay tint in both themes (text pairs verified >= 8:1)
-const activeTint = "bg-brand-100 text-brand-800 dark:bg-brand-900/70 dark:text-brand-200";
-
 export function Nav({
   userName,
   isAdmin,
@@ -74,8 +73,8 @@ export function Nav({
       match: startsWith("/day"),
     },
     { href: "/journey", label: "Journey", short: "Journey", icon: "journey", match: startsWith("/journey") },
-    { href: "/vocabulary", label: "Vocabulary", short: "Words", icon: "words", match: startsWith("/vocabulary") },
-    { href: "/review", label: "Review", short: "Review", icon: "review", match: startsWith("/review") },
+    { href: "/vocabulary", label: "Vocabulary", short: "Words", icon: "words", match: (p) => p === "/vocabulary" && !p.includes("state=DIFFICULT") },
+    { href: "/review", label: "Difficult Words", short: "Difficult", icon: "difficult", match: startsWith("/review") },
   ];
 
   // Secondary destinations — desktop header, and the phone "Menu" sheet only.
@@ -103,77 +102,151 @@ export function Nav({
 
   const closeMenu = () => setMenuOpen(false);
   const initial = (userName.trim()[0] ?? "L").toUpperCase();
+  const settingsActive = startsWith("/settings")(pathname);
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-zinc-200/80 bg-zinc-50/85 backdrop-blur-md dark:border-zinc-800 dark:bg-zinc-950/85">
-        <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
-          {/* Brand: the navy emblem in a clay ring (its complement), then the wordmark */}
-          <Link
-            href="/"
-            className="group flex shrink-0 items-center gap-3 transition-transform active:scale-95"
-            onClick={closeMenu}
-          >
-            <div className="relative flex h-9 w-9 items-center justify-center rounded-full p-0.5 shadow-card ring-2 ring-brand-500/50 transition-all duration-300 group-hover:ring-brand-500 group-hover:shadow-[0_0_16px_rgba(196,104,58,0.45)] sm:h-10 sm:w-10 dark:ring-brand-400/60 dark:group-hover:ring-brand-400">
-              <Image
-                src="/logo.png"
-                alt="English90 Circular Logo"
-                width={40}
-                height={40}
-                priority
-                className="h-full w-full rounded-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-base font-bold leading-tight tracking-tight text-zinc-900 transition-colors group-hover:text-brand-600 sm:text-lg dark:text-zinc-50 dark:group-hover:text-brand-300">
-                English<span className="text-brand-600 dark:text-brand-400">90</span>
-              </span>
-              <span className="hidden text-xs font-semibold uppercase leading-none tracking-wider text-zinc-500 sm:inline dark:text-zinc-400">
-                Mastery Academy
-              </span>
-            </div>
-          </Link>
+      {/* Floating Island Header Container */}
+      <header className="sticky top-0 z-40 w-full px-3 pt-2.5 pb-1 sm:px-6 transition-all duration-300">
+        <div className="relative mx-auto flex h-[68px] sm:h-[72px] w-full max-w-[1548px] items-center justify-between rounded-2xl lg:rounded-full border border-night-700/80 bg-night-950/85 px-3.5 sm:px-5 shadow-[0_12px_32px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-xl">
+          
+          {/* Left: Brand Identity Pod */}
+          <div className="flex items-center gap-3">
+            <Link
+              href="/"
+              className="group flex shrink-0 items-center gap-3 transition-transform duration-200 active:scale-95"
+              onClick={closeMenu}
+            >
+              <div className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full ring-[2px] ring-brand-500/40 bg-night-900 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:ring-brand-400">
+                <Image
+                  src="/logo.png"
+                  alt="English90 Logo"
+                  width={44}
+                  height={44}
+                  priority
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[19px] font-bold leading-none tracking-tight text-white">
+                    English<span className="text-clay-300">90</span>
+                  </span>
+                  <span className="hidden xl:inline-flex items-center rounded-full bg-brand-900/80 px-2 py-0.5 text-[9.5px] font-semibold tracking-wide text-brand-300 ring-1 ring-brand-700/60">
+                    ACADEMY
+                  </span>
+                </div>
+                <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.2em] text-mist-500">
+                  90-Day System
+                </span>
+              </div>
+            </Link>
+          </div>
 
-          {/* Desktop links */}
-          <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
-            {[...primary, ...secondary].map((item) => {
+          {/* Center: Segmented Floating Navigation Dock (Desktop) */}
+          <nav
+            aria-label="Main"
+            className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-night-700/70 bg-night-900/75 p-1 shadow-inner backdrop-blur-md lg:flex"
+          >
+            {[...primary, ...secondary.filter((item) => item.href !== "/settings")].map((item) => {
               const active = item.match(pathname);
               return (
                 <Link
                   key={item.href}
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`rounded-lg px-3 py-1.5 text-sm transition-colors ${
+                  className={`relative flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[13.5px] transition-all duration-200 ${
                     active
-                      ? `${activeTint} font-semibold`
-                      : "font-medium text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                      ? "bg-brand-600 font-semibold text-white shadow-[0_2px_10px_rgba(63,82,163,0.45)] ring-1 ring-white/15"
+                      : "font-medium text-mist-400 hover:bg-white/[0.05] hover:text-mist-100"
                   }`}
                 >
-                  {item.label}
+                  <Icon name={item.icon} className={`h-4 w-4 ${active ? "text-white" : "text-mist-400"}`} />
+                  <span>{item.label}</span>
+                  {item.href.startsWith("/day") && (
+                    <span
+                      className={`inline-flex items-center rounded-full px-1.5 py-0.2 text-[10px] font-bold ${
+                        active
+                          ? "bg-white/20 text-white"
+                          : "bg-night-800 text-brand-300 ring-1 ring-brand-600/30"
+                      }`}
+                    >
+                      {currentDay}
+                    </span>
+                  )}
                 </Link>
               );
             })}
           </nav>
 
-          {/* Right side: learner chip (desktop) / menu button (phones + tablets) */}
-          <div className="flex items-center gap-2">
+          {/* Right: User Status & Action Pill */}
+          <div className="flex items-center gap-2.5">
+            {/* Live Progress Pill (Desktop XL) */}
             <Link
-              href="/settings"
-              title="Learner settings"
-              className="hidden items-center gap-2 rounded-full border border-zinc-200 bg-white py-1 pe-3 ps-1 text-sm font-medium text-zinc-700 shadow-card transition-colors hover:border-brand-300 sm:flex dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:shadow-none dark:hover:border-brand-700"
+              href={`/day/${currentDay}`}
+              title="Today's learning unit"
+              className="hidden xl:flex items-center gap-2 rounded-full border border-night-700/80 bg-night-900/60 px-3 py-1.5 text-xs transition-colors hover:border-brand-600/60 hover:bg-night-800/80"
             >
-              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-xs font-semibold text-brand-800 dark:bg-brand-900 dark:text-brand-200">
-                {initial}
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
               </span>
-              <span className="max-w-[110px] truncate">{userName}</span>
+              <span className="font-semibold text-mist-200">Day {currentDay}</span>
+              <span className="text-mist-500">/ 90</span>
             </Link>
 
+            {/* Learner Profile Capsule */}
+            <Link
+              href="/settings"
+              title="Learner profile & settings"
+              aria-current={settingsActive ? "page" : undefined}
+              className={`hidden sm:flex items-center gap-2.5 rounded-full border p-1 pe-3.5 transition-all duration-200 ${
+                settingsActive
+                  ? "border-brand-500 bg-brand-900/50 shadow-[0_0_12px_rgba(63,82,163,0.35)]"
+                  : "border-night-700/80 bg-night-900/60 hover:border-brand-600/60 hover:bg-night-800/80"
+              }`}
+            >
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-tr from-brand-800 to-brand-600 text-xs font-bold text-white shadow-sm ring-1 ring-white/15">
+                {initial}
+              </span>
+              <div className="flex flex-col text-left">
+                <span className="max-w-[100px] truncate text-xs font-semibold leading-tight text-zinc-100">{userName}</span>
+                <span className="text-[10px] leading-tight text-mist-500">{isAdmin ? "Admin" : "Learner"}</span>
+              </div>
+              <IconChevronDown className="h-3.5 w-3.5 text-mist-400 transition-transform duration-200" />
+            </Link>
+
+            {/* Mobile Unified Menu & Profile Pill (Clean, uncluttered single button) */}
             <button
               type="button"
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
-              className="flex h-10 w-10 items-center justify-center rounded-xl border border-zinc-300 bg-white text-zinc-700 shadow-card transition-colors hover:bg-zinc-50 lg:hidden dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-200 dark:shadow-none dark:hover:bg-zinc-800"
+              className="flex sm:hidden items-center gap-2 rounded-full border border-night-700/80 bg-night-900/90 py-1 pe-2.5 ps-1 text-mist-200 shadow-sm transition-all duration-200 active:scale-95 hover:bg-night-800 hover:border-brand-600/50"
+            >
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-brand-800 to-brand-600 text-xs font-bold text-white ring-1 ring-white/15">
+                {initial}
+              </span>
+              <svg
+                className="h-4 w-4 text-mist-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                aria-hidden="true"
+              >
+                {menuOpen ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+              </svg>
+            </button>
+
+            {/* Tablet-only Menu Toggle Button (between sm and lg) */}
+            <button
+              type="button"
+              onClick={() => setMenuOpen((prev) => !prev)}
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={menuOpen}
+              className="hidden sm:flex lg:hidden h-10 w-10 items-center justify-center rounded-full border border-night-700/80 bg-night-900/80 text-mist-200 transition-colors hover:bg-night-800 hover:text-white"
             >
               <svg
                 className="h-5 w-5"
@@ -191,20 +264,29 @@ export function Nav({
         </div>
       </header>
 
-      {/* Phone menu: secondary destinations only (primary ones live in the bottom bar) */}
+      {/* Floating Mobile Glass Sheet Menu */}
       {menuOpen && (
         <div className="lg:hidden">
-          <div className="fixed inset-0 z-30 bg-zinc-950/50 backdrop-blur-[2px]" onClick={closeMenu} aria-hidden="true" />
-          <div className="fixed inset-x-0 top-14 z-30 border-b border-zinc-200 bg-white p-3 shadow-lift dark:border-zinc-800 dark:bg-zinc-900">
-            <div className="mb-2 flex items-center gap-3 rounded-xl bg-zinc-50 px-3 py-2.5 ring-1 ring-inset ring-zinc-200 dark:bg-zinc-800/60 dark:ring-zinc-700">
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-sm font-semibold text-brand-800 dark:bg-brand-900 dark:text-brand-200">
-                {initial}
-              </span>
-              <div className="min-w-0">
-                <p className="truncate text-sm font-semibold text-zinc-900 dark:text-zinc-100">{userName}</p>
-                <p className="text-xs text-zinc-500 dark:text-zinc-400">Learner profile</p>
+          <div className="fixed inset-0 z-40 bg-black/70 backdrop-blur-[4px]" onClick={closeMenu} aria-hidden="true" />
+          <div className="fixed inset-x-3 top-[76px] z-50 mx-auto max-w-lg rounded-2xl border border-night-700/90 bg-night-900/95 p-3.5 shadow-2xl backdrop-blur-2xl animate-reveal">
+            {/* User Info Header Card */}
+            <div className="mb-3 flex items-center justify-between rounded-xl bg-night-800/80 p-3 ring-1 ring-inset ring-night-700/80">
+              <div className="flex items-center gap-3">
+                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-sm font-bold text-white shadow-sm ring-1 ring-white/10">
+                  {initial}
+                </span>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-mist-100">{userName}</p>
+                  <p className="text-xs text-mist-400">{isAdmin ? "System Administrator" : "Daily Learner"}</p>
+                </div>
               </div>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-night-950 px-2.5 py-1 text-xs font-semibold text-mist-200 ring-1 ring-night-700">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                Day {currentDay}
+              </span>
             </div>
+
+            {/* Destinations */}
             <nav aria-label="More" className="space-y-1">
               {secondary.map((item) => {
                 const active = item.match(pathname);
@@ -214,13 +296,13 @@ export function Nav({
                     href={item.href}
                     onClick={closeMenu}
                     aria-current={active ? "page" : undefined}
-                    className={`flex h-12 items-center gap-3 rounded-xl px-3 text-sm font-medium transition-colors ${
+                    className={`flex h-11 items-center gap-3 rounded-xl px-3 text-sm font-medium transition-colors ${
                       active
-                        ? activeTint
-                        : "text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                        ? "bg-brand-800/60 font-semibold text-white shadow-sm ring-1 ring-brand-500/30"
+                        : "text-zinc-200 hover:bg-night-800/80 hover:text-white"
                     }`}
                   >
-                    <Icon name={item.icon} />
+                    <Icon name={item.icon} className="h-4 w-4 text-mist-400" />
                     {item.label}
                   </Link>
                 );
@@ -230,12 +312,12 @@ export function Nav({
         </div>
       )}
 
-      {/* Phone bottom bar: the five learning destinations */}
+      {/* Phone Bottom Navigation Bar — Solid, clear contrast, prominent active indicators */}
       <nav
         aria-label="Quick navigation"
-        className="fixed inset-x-0 bottom-0 z-40 border-t border-zinc-200 bg-white/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-md lg:hidden dark:border-zinc-800 dark:bg-zinc-950/90"
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-night-700 bg-night-900/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(0,0,0,0.7)] backdrop-blur-2xl lg:hidden"
       >
-        <ul className="mx-auto grid max-w-lg grid-cols-5">
+        <ul className="mx-auto grid max-w-lg grid-cols-5 px-1 py-1.5">
           {primary.map((item) => {
             const active = item.match(pathname);
             return (
@@ -244,20 +326,24 @@ export function Nav({
                   href={item.href}
                   onClick={closeMenu}
                   aria-current={active ? "page" : undefined}
-                  className={`flex flex-col items-center gap-1 pb-2 pt-2.5 text-xs transition duration-150 active:scale-95 ${
-                    active
-                      ? "font-semibold text-brand-800 dark:text-brand-200"
-                      : "font-medium text-zinc-600 dark:text-zinc-400"
-                  }`}
+                  className="flex flex-col items-center gap-1 py-1 transition-transform duration-150 active:scale-90"
                 >
                   <span
-                    className={`flex h-7 w-12 items-center justify-center rounded-full transition-colors ${
-                      active ? "bg-brand-100 dark:bg-brand-900/70" : ""
+                    className={`flex h-7.5 w-12 sm:w-14 items-center justify-center rounded-full transition-all duration-200 ${
+                      active
+                        ? "bg-brand-600 text-white shadow-[0_2px_12px_rgba(63,82,163,0.6)] ring-1 ring-white/20"
+                        : "text-mist-300 hover:bg-white/[0.06] hover:text-white"
                     }`}
                   >
-                    <Icon name={item.icon} />
+                    <Icon name={item.icon} className={`h-5 w-5 ${active ? "text-white" : "text-mist-300"}`} />
                   </span>
-                  <span className="max-w-full truncate px-1">{item.short}</span>
+                  <span
+                    className={`max-w-full truncate px-0.5 text-[11px] leading-tight ${
+                      active ? "font-bold text-white tracking-wide" : "font-medium text-mist-400"
+                    }`}
+                  >
+                    {item.short}
+                  </span>
                 </Link>
               </li>
             );
