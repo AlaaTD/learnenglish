@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AudioButton } from "./audio-button";
-import { Badge } from "./ui";
+import { ArabicText, Badge, SmallLabel, Tag } from "./ui";
 import { markVocabularyViewedAction } from "@/actions/day";
 import { markWordViewedAction } from "@/actions/vocabulary";
 import { audio } from "@/lib/audio";
@@ -29,6 +29,15 @@ export type VocabularyCardWord = {
   usedInConversation: boolean;
   inConversationCount: number;
   inParagraphCount: number;
+};
+
+// The border carries the learning state quietly; the badge names it.
+const stateBorder: Record<string, string> = {
+  UNLEARNED:
+    "border-zinc-200 hover:border-indigo-300 dark:border-zinc-800 dark:hover:border-indigo-700",
+  LEARNING: "border-sky-200 dark:border-sky-900",
+  REVIEW: "border-amber-200 dark:border-amber-900",
+  MASTERED: "border-emerald-200 dark:border-emerald-900",
 };
 
 export function VocabularyCard({
@@ -72,6 +81,14 @@ export function VocabularyCard({
     }
   }
 
+  const verbCells = word.verbForms
+    ? [
+        { key: "V1 · Base", ar: "المصدر", value: word.verbForms.v1 },
+        { key: "V2 · Past", ar: "الماضي", value: word.verbForms.v2 },
+        { key: "V3 · Participle", ar: "التصريف الثالث", value: word.verbForms.v3 },
+      ]
+    : [];
+
   return (
     <article
       onClick={toggle}
@@ -79,167 +96,117 @@ export function VocabularyCard({
       role="button"
       tabIndex={0}
       aria-expanded={open}
-      className={`group relative overflow-hidden rounded-2xl border bg-white p-4 shadow-xs transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 dark:bg-zinc-900/95 dark:focus-visible:ring-offset-zinc-950 hover:shadow-md ${
-        state === "MASTERED"
-          ? "border-emerald-300/80 shadow-emerald-500/5 dark:border-emerald-800/80"
-          : state === "REVIEW"
-            ? "border-amber-300/80 shadow-amber-500/5 dark:border-amber-800/80"
-            : state === "LEARNING"
-              ? "border-sky-300/80 shadow-sky-500/5 dark:border-sky-800/80"
-              : "border-zinc-200/90 hover:border-indigo-200 dark:border-zinc-800 dark:hover:border-indigo-900"
+      className={`group cursor-pointer rounded-2xl border bg-white p-4 transition-colors dark:bg-zinc-900 ${
+        stateBorder[state] ?? stateBorder.UNLEARNED
       }`}
     >
-      {/* Header: word identity on the left, state + audio stacked on the right */}
+      {/* Header: word identity on the left, state + audio + chevron on the right */}
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-            <span className="text-lg font-bold tracking-tight break-words text-zinc-900 group-hover:text-indigo-600 transition-colors dark:text-zinc-50 dark:group-hover:text-indigo-400">
+            <span className="break-words text-lg font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
               {word.headword}
             </span>
             {word.pronunciation ? (
-              <span className="font-mono text-xs font-medium text-zinc-500 dark:text-zinc-400">
-                {word.pronunciation}
-              </span>
+              <span className="font-mono text-sm text-zinc-500 dark:text-zinc-400">{word.pronunciation}</span>
             ) : null}
             {word.partOfSpeech ? (
-              <span className="rounded-md bg-indigo-50 px-1.5 py-0.5 text-[11px] font-semibold italic text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300">
+              <Tag tone="accent" className="italic">
                 {word.partOfSpeech}
-              </span>
+              </Tag>
             ) : null}
           </div>
-          <p className="mt-1.5 text-sm font-medium leading-relaxed text-zinc-600 dark:text-zinc-300">
-            {word.definition}
-          </p>
-          {word.translation ? (
-            <p className="mt-1 text-sm font-semibold leading-relaxed text-emerald-700 dark:text-emerald-400" dir="rtl">
-              📝 {word.translation}
-            </p>
-          ) : null}
+          <p className="mt-1.5 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">{word.definition}</p>
+          {word.translation ? <ArabicText className="mt-1">{word.translation}</ArabicText> : null}
         </div>
 
-        <div className="flex shrink-0 flex-col items-end gap-1.5">
-          <Badge className={`${VocabularyStateStyle[state]} px-2 text-[11px]`}>
-            {VocabularyStateLabel[state]}
-          </Badge>
-          <AudioButton text={word.headword} id={`word-${word.id}`} rate={audioRate} small />
+        <div className="flex shrink-0 flex-col items-end gap-2">
+          <Badge className={VocabularyStateStyle[state]}>{VocabularyStateLabel[state]}</Badge>
+          <div className="flex items-center gap-1">
+            <AudioButton text={word.headword} id={`word-${word.id}`} rate={audioRate} small />
+            <svg
+              aria-hidden="true"
+              className={`h-4 w-4 text-zinc-500 transition-transform dark:text-zinc-400 ${open ? "rotate-180" : ""}`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </div>
         </div>
       </div>
 
       {open ? (
-        <div className="mt-3.5 space-y-3 border-t border-zinc-100 pt-3.5 dark:border-zinc-800/80" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="mt-4 space-y-4 border-t border-zinc-100 pt-4 dark:border-zinc-800"
+          onClick={(e) => e.stopPropagation()}
+        >
           {/* Example sentence */}
-          <div className="rounded-xl border-l-3 border-indigo-500 bg-indigo-50/40 p-3 dark:bg-indigo-950/20 dark:border-indigo-400">
-            <span className="block text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
-              Example
-            </span>
-            <p className="mt-1 text-sm italic text-zinc-800 dark:text-zinc-200 leading-relaxed">
+          <div className="border-s-2 border-indigo-200 ps-3 dark:border-indigo-800">
+            <SmallLabel>Example</SmallLabel>
+            <p className="mt-1 text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
               &ldquo;{word.example}&rdquo;
             </p>
-            {word.exampleArabic ? (
-              <p className="mt-1.5 text-sm font-semibold text-emerald-700 dark:text-emerald-400 leading-relaxed" dir="rtl">
-                ↩ {word.exampleArabic}
-              </p>
-            ) : null}
+            {word.exampleArabic ? <ArabicText className="mt-1">{word.exampleArabic}</ArabicText> : null}
           </div>
 
-          {/* Verb Conjugation Table (Only for Verbs) */}
-          {word.verbForms && (
-            <div className="rounded-2xl border border-indigo-100/90 bg-gradient-to-br from-indigo-50/60 via-white to-violet-50/40 p-3 sm:p-4 shadow-xs dark:border-indigo-900/50 dark:from-indigo-950/30 dark:via-zinc-900 dark:to-violet-950/20">
-              <div className="flex flex-wrap items-center justify-between gap-1 mb-2.5">
-                <div className="flex items-center gap-1.5">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-md bg-indigo-600 text-[10px] font-bold text-white">
-                    V
-                  </span>
-                  <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-indigo-950 dark:text-indigo-200">
-                    Verb Forms · تصريفات الفعل
-                  </span>
-                </div>
-                <span className="text-[10px] sm:text-[11px] font-semibold text-indigo-600/70 dark:text-indigo-400/70">
-                  المصدر · الماضي · التام
-                </span>
-              </div>
-              <div className="grid grid-cols-3 gap-1.5 sm:gap-2 text-center">
-                <div className="rounded-xl border border-zinc-200/80 bg-white p-2 sm:p-2.5 dark:border-zinc-800 dark:bg-zinc-900">
-                  <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 truncate">
-                    V1 (Base)
-                  </span>
-                  <span className="mt-1 block text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 font-mono break-words">
-                    {word.verbForms.v1}
-                  </span>
-                  <span className="block text-[9px] text-zinc-400 mt-0.5">المصدر</span>
-                </div>
-                <div className="rounded-xl border border-indigo-200/80 bg-indigo-50/50 p-2 sm:p-2.5 dark:border-indigo-900/60 dark:bg-indigo-950/40">
-                  <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 truncate">
-                    V2 (Past)
-                  </span>
-                  <span className="mt-1 block text-xs sm:text-sm font-bold text-indigo-700 dark:text-indigo-300 font-mono break-words">
-                    {word.verbForms.v2}
-                  </span>
-                  <span className="block text-[9px] text-indigo-500/80 mt-0.5">الماضي</span>
-                </div>
-                <div className="rounded-xl border border-violet-200/80 bg-violet-50/50 p-2 sm:p-2.5 dark:border-violet-900/60 dark:bg-violet-950/40">
-                  <span className="block text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-violet-600 dark:text-violet-400 truncate">
-                    V3 (Participle)
-                  </span>
-                  <span className="mt-1 block text-xs sm:text-sm font-bold text-violet-700 dark:text-violet-300 font-mono break-words">
-                    {word.verbForms.v3}
-                  </span>
-                  <span className="block text-[9px] text-violet-500/80 mt-0.5">التصريف الثالث</span>
-                </div>
+          {/* Verb forms (verbs only): one neutral 3-cell strip instead of three coloured tiles */}
+          {word.verbForms ? (
+            <div>
+              <SmallLabel className="mb-1.5">Verb forms · تصريفات الفعل</SmallLabel>
+              <div className="grid grid-cols-3 divide-x divide-zinc-200 overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center rtl:divide-x-reverse dark:divide-zinc-700 dark:border-zinc-700 dark:bg-zinc-800/50">
+                {verbCells.map((cell) => (
+                  <div key={cell.key} className="min-w-0 px-2 py-2.5">
+                    <p className="truncate text-xs text-zinc-500 dark:text-zinc-400">{cell.key}</p>
+                    <p className="mt-0.5 break-words font-mono text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                      {cell.value}
+                    </p>
+                    <p dir="rtl" className="text-xs text-zinc-500 dark:text-zinc-400">
+                      {cell.ar}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
-          )}
+          ) : null}
 
           {word.collocations.length > 0 && (
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-                Collocations
-              </span>
-              <div className="mt-1 flex flex-wrap gap-1.5">
+              <SmallLabel className="mb-1.5">Collocations</SmallLabel>
+              <div className="flex flex-wrap gap-1.5">
                 {word.collocations.map((c, i) => (
-                  <span
-                    key={i}
-                    className="rounded-lg bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800/80 dark:text-zinc-300"
-                  >
-                    {c}
-                  </span>
+                  <Tag key={i}>{c}</Tag>
                 ))}
               </div>
             </div>
           )}
 
           {(word.synonyms.length > 0 || word.antonyms.length > 0) && (
-            <div className="grid gap-2 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2">
               {word.synonyms.length > 0 && (
                 <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                    Synonyms
-                  </span>
-                  <div className="mt-1 flex flex-wrap gap-1">
+                  <SmallLabel className="mb-1.5">Synonyms</SmallLabel>
+                  <div className="flex flex-wrap gap-1.5">
                     {word.synonyms.map((s, i) => (
-                      <span
-                        key={i}
-                        className="rounded-md bg-emerald-50 px-2 py-0.5 text-xs text-emerald-800 dark:bg-emerald-950/50 dark:text-emerald-300"
-                      >
+                      <Tag key={i} tone="success">
                         {s}
-                      </span>
+                      </Tag>
                     ))}
                   </div>
                 </div>
               )}
               {word.antonyms.length > 0 && (
                 <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-rose-600 dark:text-rose-400">
-                    Antonyms
-                  </span>
-                  <div className="mt-1 flex flex-wrap gap-1">
+                  <SmallLabel className="mb-1.5">Antonyms</SmallLabel>
+                  <div className="flex flex-wrap gap-1.5">
                     {word.antonyms.map((a, i) => (
-                      <span
-                        key={i}
-                        className="rounded-md bg-rose-50 px-2 py-0.5 text-xs text-rose-800 dark:bg-rose-950/50 dark:text-rose-300"
-                      >
+                      <Tag key={i} tone="danger">
                         {a}
-                      </span>
+                      </Tag>
                     ))}
                   </div>
                 </div>
@@ -249,60 +216,39 @@ export function VocabularyCard({
 
           {word.relatedForms.length > 0 && (
             <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">
-                Related Forms
-              </span>
-              <div className="mt-1 flex flex-wrap gap-1.5">
+              <SmallLabel className="mb-1.5">Related forms</SmallLabel>
+              <div className="flex flex-wrap gap-1.5">
                 {word.relatedForms.map((rf, i) => (
-                  <span
-                    key={i}
-                    className="rounded-md border border-zinc-200 bg-white px-2 py-0.5 text-xs font-mono text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400"
-                  >
+                  <Tag key={i} className="font-mono">
                     {rf}
-                  </span>
+                  </Tag>
                 ))}
               </div>
             </div>
           )}
 
           {/* Footer meta */}
-          <div className="flex flex-wrap items-center gap-1.5 gap-y-2 pt-1 text-xs">
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
             <Link
               href={`/vocabulary/${word.id}`}
-              className="font-semibold text-indigo-600 hover:underline dark:text-indigo-400"
+              className="font-semibold text-indigo-700 hover:underline dark:text-indigo-300"
             >
               View full details →
             </Link>
-            <span className="rounded-full bg-zinc-100 px-2.5 py-0.5 font-semibold text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
-              Day {word.dayNumber}
-            </span>
+            <Tag>Day {word.dayNumber}</Tag>
             {word.inConversationCount > 0 && (
-              <span className="rounded-full bg-indigo-50 px-2.5 py-0.5 font-medium text-indigo-700 dark:bg-indigo-950/60 dark:text-indigo-300">
-                💬 {word.inConversationCount} dialogue{word.inConversationCount > 1 ? "s" : ""}
-              </span>
+              <Tag tone="accent">
+                In {word.inConversationCount} dialogue{word.inConversationCount > 1 ? "s" : ""}
+              </Tag>
             )}
             {word.inParagraphCount > 0 && (
-              <span className="rounded-full bg-violet-50 px-2.5 py-0.5 font-medium text-violet-700 dark:bg-violet-950/60 dark:text-violet-300">
-                📖 {word.inParagraphCount} passage{word.inParagraphCount > 1 ? "s" : ""}
-              </span>
+              <Tag tone="accent">
+                In {word.inParagraphCount} passage{word.inParagraphCount > 1 ? "s" : ""}
+              </Tag>
             )}
           </div>
         </div>
       ) : null}
-
-      {/* Minimal expand indicator */}
-      <div className="mt-2 flex items-center justify-center">
-        <span className={`inline-flex items-center gap-1 text-xs font-medium transition-colors ${open ? "text-indigo-500" : "text-zinc-400 group-hover:text-indigo-500"}`}>
-          <svg
-            className={`h-3.5 w-3.5 transform transition-transform ${open ? "rotate-180" : ""}`}
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-          </svg>
-        </span>
-      </div>
     </article>
   );
 }

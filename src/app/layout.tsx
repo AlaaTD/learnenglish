@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Sans_Arabic } from "next/font/google";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
 import "./globals.css";
@@ -9,6 +9,14 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+// Arabic translations are core content of this app; a dedicated Arabic face
+// is far easier to read than whatever the OS falls back to.
+const notoArabic = Noto_Sans_Arabic({
+  variable: "--font-noto-arabic",
+  subsets: ["arabic"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "English90 — Your 90-Day English Journey",
@@ -16,6 +24,14 @@ export const metadata: Metadata = {
   },
   description:
     "A structured 90-day English learning system: 50 new words a day, daily grammar, conversations and paragraphs — one complete learning unit at a time.",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    shortcut: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export const viewport: Viewport = {
@@ -23,8 +39,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+    { media: "(prefers-color-scheme: light)", color: "#f7f7f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#171716" },
   ],
 };
 
@@ -46,7 +62,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       data-theme-pref={theme}
-      className={`${inter.variable} h-full`}
+      className={`${inter.variable} ${notoArabic.variable} h-full`}
       suppressHydrationWarning
     >
       <head>

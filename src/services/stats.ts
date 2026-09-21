@@ -33,6 +33,25 @@ export const STAGES: { label: string; from: number; to: number }[] = [
 
 const LEARNED_STATES = [VocabularyState.LEARNING, VocabularyState.REVIEW, VocabularyState.MASTERED];
 
+/**
+ * Lightweight "which day should the learner open next" lookup for the
+ * navigation. Same rule as `getUserStats().currentDay` (first day that is not
+ * completed; day 90 once everything is done) without the heavier aggregates.
+ */
+export async function getCurrentDay(userId: string): Promise<number> {
+  const completed = await db.dayProgress.findMany({
+    where: { userId, status: DayStatus.COMPLETED },
+    select: { dayNumber: true },
+  });
+  const completedSet = new Set(completed.map((c) => c.dayNumber));
+  let currentDay = 1;
+  for (let d = 1; d <= TOTAL_DAYS; d++) {
+    currentDay = d;
+    if (!completedSet.has(d)) break;
+  }
+  return currentDay;
+}
+
 export async function getUserStats(userId: string): Promise<UserStats> {
   const [stateCounts, usedCount, completedDays, wordDays] = await Promise.all([
     db.userVocabulary.groupBy({

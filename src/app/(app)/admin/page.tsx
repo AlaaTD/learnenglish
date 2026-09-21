@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { requireUser } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { getDaySummaries } from "@/lib/queries";
+import { Badge, Card, PageHeader, StatTile } from "@/components/ui";
 
 export const metadata = { title: "Curriculum Admin" };
 
@@ -19,82 +20,71 @@ export default async function AdminPage() {
   ]);
 
   return (
-    <div className="space-y-6">
-      <header className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-            Curriculum Administration
-          </h1>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            Content verification and curriculum overview for all 90 days.
-          </p>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+    <div className="space-y-5">
+      <PageHeader
+        title="Curriculum Administration"
+        description="Content verification and curriculum overview for all 90 days."
+        actions={
+          <Badge className="bg-emerald-50 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200">
             Admin Access
-          </span>
-        </div>
-      </header>
+          </Badge>
+        }
+      />
 
-      {/* Overview Cards */}
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-5">
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs text-zinc-500">Curriculum Days</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-100">{days.length} / 90</p>
-        </div>
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs text-zinc-500">Total Vocabulary</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-100">{totalVocab} / 4,500</p>
-        </div>
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs text-zinc-500">Grammar Lessons</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-100">{totalGrammar}</p>
-        </div>
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs text-zinc-500">Conversations</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-100">{totalConv}</p>
-        </div>
-        <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
-          <p className="text-xs text-zinc-500">Paragraphs</p>
-          <p className="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-100">{totalParas}</p>
-        </div>
-      </div>
+      <section aria-label="Curriculum totals" className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <StatTile label="Curriculum days" value={`${days.length} / 90`} />
+        <StatTile label="Total vocabulary" value={`${totalVocab} / 4,500`} />
+        <StatTile label="Grammar lessons" value={totalGrammar} />
+        <StatTile label="Conversations" value={totalConv} />
+        <StatTile label="Paragraphs" value={totalParas} />
+      </section>
 
-      {/* Days Table */}
-      <div className="overflow-x-auto rounded-xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
-        <table className="w-full min-w-[520px] text-left text-sm">
-          <thead className="border-b border-zinc-200 bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:border-zinc-800 dark:bg-zinc-900/60 dark:text-zinc-400">
-            <tr>
-              <th className="px-4 py-3">Day</th>
-              <th className="px-4 py-3">Title</th>
-              <th className="hidden px-4 py-3 sm:table-cell">Stage</th>
-              <th className="px-4 py-3 text-right">Preview</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
-            {days.map((d) => (
-              <tr key={d.dayNumber} className="hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
-                <td className="px-4 py-3 font-mono font-medium text-zinc-500">
-                  Day {String(d.dayNumber).padStart(2, "0")}
-                </td>
-                <td className="px-4 py-3">
-                  <span className="font-medium text-zinc-900 dark:text-zinc-100">{d.title}</span>
-                  <span className="block text-xs text-zinc-400">{d.topic}</span>
-                </td>
-                <td className="hidden px-4 py-3 text-xs text-zinc-500 sm:table-cell">{d.stage}</td>
-                <td className="px-4 py-3 text-right">
-                  <Link
-                    href={`/day/${d.dayNumber}`}
-                    className="text-xs font-medium text-indigo-600 hover:underline dark:text-indigo-400"
-                  >
-                    Open Lesson →
-                  </Link>
-                </td>
+      <Card padded={false} className="overflow-hidden">
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[520px] text-left text-sm">
+            <thead className="border-b border-zinc-200 bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-600 dark:border-zinc-800 dark:bg-zinc-800/50 dark:text-zinc-400">
+              <tr>
+                <th scope="col" className="px-4 py-3">
+                  Day
+                </th>
+                <th scope="col" className="px-4 py-3">
+                  Title
+                </th>
+                <th scope="col" className="hidden px-4 py-3 sm:table-cell">
+                  Stage
+                </th>
+                <th scope="col" className="px-4 py-3 text-end">
+                  Preview
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+            </thead>
+            <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800">
+              {days.map((d) => (
+                <tr key={d.dayNumber} className="hover:bg-zinc-50 dark:hover:bg-zinc-800/50">
+                  <td className="whitespace-nowrap px-4 py-3 font-mono font-medium tabular-nums text-zinc-600 dark:text-zinc-400">
+                    Day {String(d.dayNumber).padStart(2, "0")}
+                  </td>
+                  <td className="px-4 py-3">
+                    <span className="font-medium text-zinc-900 dark:text-zinc-100">{d.title}</span>
+                    <span className="block text-xs text-zinc-500 dark:text-zinc-400">{d.topic}</span>
+                  </td>
+                  <td className="hidden px-4 py-3 text-xs text-zinc-600 sm:table-cell dark:text-zinc-400">
+                    {d.stage}
+                  </td>
+                  <td className="px-4 py-3 text-end">
+                    <Link
+                      href={`/day/${d.dayNumber}`}
+                      className="whitespace-nowrap text-xs font-medium text-indigo-700 hover:underline dark:text-indigo-300"
+                    >
+                      Open Lesson →
+                    </Link>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </Card>
     </div>
   );
 }

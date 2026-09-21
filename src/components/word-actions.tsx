@@ -10,20 +10,16 @@ import {
   setWordUsedAction,
 } from "@/actions/vocabulary";
 import type { VocabularyState } from "@/lib/states";
+import { buttonClass } from "./ui";
 
 export type WordStateInfo = {
   state: VocabularyState;
   usedInConversation: boolean;
 };
 
-const btn =
-  "inline-flex items-center rounded-lg border px-2.5 py-1.5 text-xs font-medium transition-colors disabled:opacity-50";
-const btnDefault =
-  "border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800";
-const btnPrimary =
-  "border-indigo-600 bg-indigo-600 text-white hover:bg-indigo-700 dark:border-indigo-500 dark:bg-indigo-600 dark:hover:bg-indigo-500";
-const btnActive =
-  "border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950 dark:text-emerald-300";
+const btnDefault = buttonClass("secondary", "sm");
+const btnPrimary = buttonClass("primary", "sm");
+const btnActive = buttonClass("success", "sm");
 
 export function WordActions({
   vocabularyId,
@@ -67,7 +63,7 @@ export function WordActions({
         <button
           type="button"
           disabled={pending}
-          className={`${btn} ${btnPrimary}`}
+          className={`${btnPrimary}`}
           onClick={() =>
             run(
               () => markWordLearnedAction(vocabularyId, dayNumber),
@@ -82,7 +78,7 @@ export function WordActions({
         <button
           type="button"
           disabled={pending}
-          className={`${btn} ${btnDefault}`}
+          className={`${btnDefault}`}
           onClick={() =>
             run(() => addWordToReviewAction(vocabularyId, dayNumber), {
               ...stateInfo,
@@ -97,7 +93,7 @@ export function WordActions({
         <button
           type="button"
           disabled={pending}
-          className={`${btn} ${btnDefault}`}
+          className={`${btnDefault}`}
           onClick={() =>
             run(() => removeWordFromReviewAction(vocabularyId, dayNumber), {
               ...stateInfo,
@@ -112,7 +108,7 @@ export function WordActions({
         <button
           type="button"
           disabled={pending}
-          className={`${btn} ${btnDefault}`}
+          className={`${btnDefault}`}
           onClick={() =>
             run(() => markWordMasteredAction(vocabularyId, dayNumber), {
               ...stateInfo,
@@ -127,7 +123,7 @@ export function WordActions({
         <button
           type="button"
           disabled={pending}
-          className={`${btn} ${btnDefault}`}
+          className={`${btnDefault}`}
           onClick={() =>
             run(() => moveWordToLearningAction(vocabularyId, dayNumber), {
               ...stateInfo,
@@ -142,7 +138,7 @@ export function WordActions({
         <button
           type="button"
           disabled={pending}
-          className={`${btn} ${btnDefault}`}
+          className={`${btnDefault}`}
           onClick={() =>
             run(() => addWordToReviewAction(vocabularyId, dayNumber), {
               ...stateInfo,
@@ -157,7 +153,7 @@ export function WordActions({
         type="button"
         disabled={pending}
         aria-pressed={stateInfo.usedInConversation}
-        className={`${btn} ${stateInfo.usedInConversation ? btnActive : btnDefault}`}
+        className={`${stateInfo.usedInConversation ? btnActive : btnDefault}`}
         title="Track that you used this word in your own conversation practice"
         onClick={() =>
           run(
@@ -168,7 +164,7 @@ export function WordActions({
       >
         {stateInfo.usedInConversation ? "Used ✓" : "Mark as Used"}
       </button>
-      {error && <span className="text-xs text-red-600 dark:text-red-400">{error}</span>}
+      {error && <span role="alert" className="text-xs text-rose-700 dark:text-rose-300">{error}</span>}
     </div>
   );
 }

@@ -1,11 +1,10 @@
-import Link from "next/link";
 import { requireUser } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { getLibrary, type LibraryParams } from "@/lib/queries";
 import { SearchInput } from "@/components/search-input";
 import { Pagination } from "@/components/pagination";
 import { VocabularyCard } from "@/components/vocabulary-card";
-import { EmptyState } from "@/components/ui";
+import { Card, EmptyState, PageHeader, Tag, TabBar, buttonClass, fieldClass } from "@/components/ui";
 
 export const metadata = { title: "My Vocabulary" };
 
@@ -62,114 +61,87 @@ export default async function VocabularyPage({
   if (sort) baseParams.set("sort", sort);
 
   return (
-    <div className="space-y-6">
-      <header className="space-y-1">
-        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">
-          Master Vocabulary Library
-        </h1>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          Browse, search, and manage your full 4,500-word curriculum and personal learning states.
-        </p>
-      </header>
+    <div className="space-y-5">
+      <PageHeader
+        title="Master Vocabulary Library"
+        description="Browse, search, and manage your full 4,500-word curriculum and personal learning states."
+      />
 
-      {/* Search & Filters */}
-      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-        <SearchInput placeholder="Search word, phrase, definition, or tag..." />
-        <div className="flex items-center gap-3">
-          <form method="GET" className="flex flex-wrap items-center gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-            {q && <input type="hidden" name="q" value={q} />}
-            {state && <input type="hidden" name="state" value={state} />}
-            <label htmlFor="day-select" className="sr-only">Filter by Day</label>
-            <select
-              id="day-select"
-              name="day"
-              defaultValue={day ?? ""}
-              aria-label="Filter by Day"
-              className="rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs text-zinc-800 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200"
-            >
-              <option value="">All Days (1–90)</option>
-              {Array.from({ length: 90 }, (_, i) => i + 1).map((d) => (
-                <option key={d} value={d}>
-                  Day {d}
-                </option>
-              ))}
-            </select>
-            <label htmlFor="sort-select" className="sr-only">Sort by</label>
-            <select
-              id="sort-select"
-              name="sort"
-              defaultValue={sort}
-              aria-label="Sort by"
-              className="rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs text-zinc-800 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200"
-            >
-              <option value="headword">A – Z</option>
-              <option value="day">By Day</option>
-            </select>
-            <button
-              type="submit"
-              className="rounded-lg bg-zinc-100 px-3 py-1.5 text-xs font-medium text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
-            >
-              Apply
-            </button>
-          </form>
+      {/* One toolbar: search on the left, day + sort filters on the right */}
+      <Card className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+        <div className="min-w-0 flex-1">
+          <SearchInput placeholder="Search word, phrase, definition, or tag..." />
         </div>
-      </div>
+        <form method="GET" className="flex flex-wrap items-center gap-2">
+          {q && <input type="hidden" name="q" value={q} />}
+          {state && <input type="hidden" name="state" value={state} />}
+          <label htmlFor="day-select" className="sr-only">
+            Filter by Day
+          </label>
+          <select
+            id="day-select"
+            name="day"
+            defaultValue={day ?? ""}
+            aria-label="Filter by Day"
+            className={`${fieldClass} min-w-0 flex-1 sm:flex-none`}
+          >
+            <option value="">All Days (1–90)</option>
+            {Array.from({ length: 90 }, (_, i) => i + 1).map((d) => (
+              <option key={d} value={d}>
+                Day {d}
+              </option>
+            ))}
+          </select>
+          <label htmlFor="sort-select" className="sr-only">
+            Sort by
+          </label>
+          <select
+            id="sort-select"
+            name="sort"
+            defaultValue={sort}
+            aria-label="Sort by"
+            className={`${fieldClass} min-w-0 flex-1 sm:flex-none`}
+          >
+            <option value="headword">A – Z</option>
+            <option value="day">By Day</option>
+          </select>
+          <button type="submit" className={buttonClass("secondary")}>
+            Apply
+          </button>
+        </form>
+      </Card>
 
-      {/* Tabs — horizontally scrollable on small screens */}
-      <nav
-        aria-label="Vocabulary States"
-        className="-mx-3 border-b border-zinc-200 px-3 dark:border-zinc-800 sm:mx-0 sm:px-0"
-      >
-        <ul className="-mb-px flex gap-1 overflow-x-auto scrollbar-none text-sm">
-          {TABS.map((t) => {
-            const active = activeTabKey === t.key;
-            return (
-              <li key={t.key} className="shrink-0">
-                <Link
-                  href={tabHref(t.state)}
-                  aria-current={active ? "page" : undefined}
-                  className={`inline-block whitespace-nowrap border-b-2 px-3 py-2.5 font-medium transition-colors ${
-                    active
-                      ? "border-indigo-600 text-indigo-600 dark:border-indigo-400 dark:text-indigo-400"
-                      : "border-transparent text-zinc-500 hover:border-zinc-300 hover:text-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-700 dark:hover:text-zinc-200"
-                  }`}
-                >
-                  {t.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <TabBar
+        label="Vocabulary states"
+        items={TABS.map((t) => ({
+          key: t.key,
+          label: t.label,
+          href: tabHref(t.state),
+          active: activeTabKey === t.key,
+        }))}
+      />
 
-      {/* Results header */}
-      <div className="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
+      <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-zinc-600 dark:text-zinc-400">
         <span>
-          Showing {items.length} of {total} words
+          Showing <span className="font-medium tabular-nums text-zinc-900 dark:text-zinc-100">{items.length}</span> of{" "}
+          <span className="font-medium tabular-nums text-zinc-900 dark:text-zinc-100">{total}</span> words
         </span>
-        {day && <span>Filtered to Day {day}</span>}
+        {day && <Tag tone="accent">Filtered to Day {day}</Tag>}
       </div>
 
-      {/* Word Cards Grid */}
       {items.length === 0 ? (
-        <EmptyState
-          title="No words found"
-          action={{ href: "/vocabulary", label: "Reset filters" }}
-        >
-          {q
-            ? `No vocabulary matching "${q}". Try another search term.`
-            : "No words in this category yet."}
+        <EmptyState title="No words found" action={{ href: "/vocabulary", label: "Reset filters" }}>
+          {q ? `No vocabulary matching "${q}". Try another search term.` : "No words in this category yet."}
         </EmptyState>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-start gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((word) => (
             <VocabularyCard key={word.id} word={word} audioRate={audioRate} autoplayAudio={autoplayAudio} />
           ))}
         </div>
       )}
 
-      {/* Pagination */}
-      <div className="pt-4">
+      <div className="pt-2">
         <Pagination page={page} pageCount={pageCount} baseParams={baseParams} />
       </div>
     </div>

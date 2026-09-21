@@ -1,7 +1,31 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState, useState, type ReactNode } from "react";
 import { updateSettingsAction } from "@/actions/settings";
+import { Card, ErrorState, SectionHeading, buttonClass, fieldClass } from "./ui";
+
+/** Label + control + optional hint, laid out the same way for every setting. */
+function Field({
+  htmlFor,
+  label,
+  hint,
+  children,
+}: {
+  htmlFor: string;
+  label: string;
+  hint?: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="space-y-1.5">
+      <label htmlFor={htmlFor} className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        {label}
+      </label>
+      {children}
+      {hint ? <p className="text-xs text-zinc-600 dark:text-zinc-400">{hint}</p> : null}
+    </div>
+  );
+}
 
 export function SettingsForm({
   initialSettings,
@@ -39,118 +63,104 @@ export function SettingsForm({
   );
 
   return (
-    <form action={formAction} className="space-y-6">
+    <form action={formAction} className="space-y-4">
       {saved && (
-        <div className="rounded-lg bg-emerald-50 p-3 text-sm text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">
+        <div
+          role="status"
+          className="rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm text-emerald-800 dark:border-emerald-900 dark:bg-emerald-950/60 dark:text-emerald-200"
+        >
           Preferences saved successfully.
         </div>
       )}
-      {state?.error && (
-        <div className="rounded-lg bg-red-50 p-3 text-sm text-red-800 dark:bg-red-950 dark:text-red-300">
-          {state.error}
-        </div>
-      )}
+      {state?.error && <ErrorState message={state.error} />}
 
-      {/* Profile */}
-      <div className="space-y-2">
-        <label htmlFor="name-input" className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          Learner Name
-        </label>
-        <input
-          id="name-input"
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
-        />
-        <p className="text-xs text-zinc-500">Your display name across the platform.</p>
-      </div>
+      <Card className="space-y-4 sm:p-6">
+        <SectionHeading title="Profile" />
+        <Field htmlFor="name-input" label="Learner name" hint="Your display name across the platform.">
+          <input
+            id="name-input"
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className={`${fieldClass} w-full max-w-md`}
+          />
+        </Field>
+      </Card>
 
-      {/* Theme */}
-      <div className="space-y-2 border-t border-zinc-200 pt-6 dark:border-zinc-800">
-        <label htmlFor="theme-select" className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          Interface Theme
-        </label>
-        <select
-          id="theme-select"
-          value={theme}
-          onChange={(e) => {
-            const nextTheme = e.target.value;
-            setTheme(nextTheme);
-            if (typeof document !== "undefined") {
-              const isDark =
-                nextTheme === "dark" ||
-                (nextTheme === "system" &&
-                  window.matchMedia("(prefers-color-scheme: dark)").matches);
-              document.documentElement.classList.toggle("dark", isDark);
-            }
-          }}
-          className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
-        >
-          <option value="system">System Default</option>
-          <option value="light">Light Mode</option>
-          <option value="dark">Dark Mode</option>
-        </select>
-      </div>
+      <Card className="space-y-4 sm:p-6">
+        <SectionHeading title="Appearance" />
+        <Field htmlFor="theme-select" label="Interface theme">
+          <select
+            id="theme-select"
+            value={theme}
+            onChange={(e) => {
+              const nextTheme = e.target.value;
+              setTheme(nextTheme);
+              if (typeof document !== "undefined") {
+                const isDark =
+                  nextTheme === "dark" ||
+                  (nextTheme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+                document.documentElement.classList.toggle("dark", isDark);
+              }
+            }}
+            className={`${fieldClass} w-full max-w-md`}
+          >
+            <option value="system">System Default</option>
+            <option value="light">Light Mode</option>
+            <option value="dark">Dark Mode</option>
+          </select>
+        </Field>
+      </Card>
 
-      {/* Audio Preferences */}
-      <div className="space-y-4 border-t border-zinc-200 pt-6 dark:border-zinc-800">
-        <h2 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">Audio Settings</h2>
-
-        <div className="space-y-2">
-          <label htmlFor="audio-speed-select" className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
-            Pronunciation Speed
-          </label>
+      <Card className="space-y-4 sm:p-6">
+        <SectionHeading title="Audio" />
+        <Field htmlFor="audio-speed-select" label="Pronunciation speed">
           <select
             id="audio-speed-select"
             value={audioSpeed}
             onChange={(e) => setAudioSpeed(e.target.value)}
-            className="w-full max-w-md rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
+            className={`${fieldClass} w-full max-w-md`}
           >
             <option value="normal">Normal Speed (1.0x)</option>
             <option value="slow">Slow &amp; Clear (0.8x)</option>
           </select>
-        </div>
+        </Field>
 
-        <div className="flex items-center gap-3">
+        <label htmlFor="autoplay" className="flex min-h-10 cursor-pointer items-center gap-3">
           <input
             type="checkbox"
             id="autoplay"
             checked={autoplayAudio}
             onChange={(e) => setAutoplayAudio(e.target.checked)}
-            className="h-4 w-4 rounded-sm border-zinc-300 text-indigo-600 focus:ring-indigo-500"
+            className="h-4 w-4 shrink-0 accent-indigo-600"
           />
-          <label htmlFor="autoplay" className="text-sm text-zinc-700 dark:text-zinc-300">
+          <span className="text-sm text-zinc-800 dark:text-zinc-200">
             Autoplay audio when opening new vocabulary words
-          </label>
-        </div>
-      </div>
-
-      {/* Curriculum Rules */}
-      <div className="space-y-2 border-t border-zinc-200 pt-6 dark:border-zinc-800">
-        <label htmlFor="daily-target-input" className="block text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          Daily Vocabulary Target
+          </span>
         </label>
-        <input
-          id="daily-target-input"
-          type="number"
-          min={10}
-          max={100}
-          value={dailyTarget}
-          onChange={(e) => setDailyTarget(Number(e.target.value))}
-          className="w-24 rounded-lg border border-zinc-300 bg-white px-3.5 py-2 text-sm text-zinc-900 focus:border-indigo-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100"
-        />
-        <p className="text-xs text-zinc-500">
-          Standard curriculum pace is exactly 50 words per day (4,500 total over 90 days).
-        </p>
-      </div>
+      </Card>
 
-      <div className="border-t border-zinc-200 pt-6 dark:border-zinc-800">
-        <button
-          type="submit"
-          disabled={pending}
-          className="rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-50"
+      <Card className="space-y-4 sm:p-6">
+        <SectionHeading title="Learning" />
+        <Field
+          htmlFor="daily-target-input"
+          label="Daily vocabulary target"
+          hint="Standard curriculum pace is exactly 50 words per day (4,500 total over 90 days)."
         >
+          <input
+            id="daily-target-input"
+            type="number"
+            min={10}
+            max={100}
+            value={dailyTarget}
+            onChange={(e) => setDailyTarget(Number(e.target.value))}
+            className={`${fieldClass} w-28 tabular-nums`}
+          />
+        </Field>
+      </Card>
+
+      <div className="flex justify-end">
+        <button type="submit" disabled={pending} className={buttonClass("primary", "md", "px-6")}>
           {pending ? "Saving..." : "Save Preferences"}
         </button>
       </div>
