@@ -132,12 +132,30 @@ const words: { word: VocabularyCardWord; open: boolean }[] = [
 
 export default function E90PreviewPage() {
   return (
-    <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-      <div className="grid items-start gap-3 lg:grid-cols-2">
-        {words.map(({ word, open }) => (
-          <VocabularyCard key={word.id} word={word} defaultOpen={open} />
-        ))}
-      </div>
+    <main className="mx-auto w-full max-w-6xl flex-1 space-y-10 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      {/* Reading variant: the actual Day-page memorization layout (single column, hairline dividers) */}
+      <section>
+        <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+          variant=&quot;reading&quot; (Day page)
+        </h2>
+        <div className="mx-auto w-full max-w-[70ch] divide-y divide-zinc-200 dark:divide-zinc-800">
+          {words.map(({ word, open }) => (
+            <VocabularyCard key={word.id} word={word} defaultOpen={open} variant="reading" />
+          ))}
+        </div>
+      </section>
+
+      {/* Grid variant: Library / Difficult Words browsing layout */}
+      <section>
+        <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+          variant=&quot;grid&quot; (Library / Difficult Words)
+        </h2>
+        <div className="grid items-start gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {words.map(({ word, open }) => (
+            <VocabularyCard key={word.id} word={word} defaultOpen={open} variant="grid" />
+          ))}
+        </div>
+      </section>
     </main>
   );
 }

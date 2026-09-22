@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Zero and First Conditional",
+      "titleArabic": "الجملة الشرطية الصفرية والأولى: الحقائق العامة والنتائج المستقبلية المحتملة",
       "explanation": "Conditionals connect a condition (if/when) to a result. The Zero Conditional describes universal facts, computer rules, or scientific truths: 'If + Present Simple, Present Simple' ('If you press Enter, the system executes the command'). The First Conditional describes real or likely future situations: 'If + Present Simple, will + base verb' ('If you install that browser extension, your workflow will become faster').",
       "explanationArabic": "تربط الجمل الشرطية بين شرط (if/when) والنتيجة المترتبة عليه. تصف الحالة الشرطية الصفرية (Zero Conditional) الحقائق العامة أو قواعد الكمبيوتر الثابتة: 'If + مضارع بسيط, مضارع بسيط' ('إذا ضغطت Enter، ينفذ النظام الأمر'). وتصف الحالة الشرطية الأولى (First Conditional) مواقف واقعية أو مرجحة في المستقبل: 'If + مضارع بسيط, will + الفعل الأساسي' ('إذا ثبتّ إضافة المتصفح تلك، فسوف يصبح سير عملك أسرع').",
-      "rules": [
-        "Zero Conditional (General truth / Computer behavior): If / When + Present Simple, Present Simple.",
-        "First Conditional (Likely future outcome): If + Present Simple, will / can / may + base verb.",
-        "You can invert clause order without changing meaning; omit comma when 'if' is in the middle.",
-        "Never use 'will' inside the 'if' clause itself."
-      ],
-      "rulesArabic": [
-        "الحالة الصفرية (حقائق عامة / سلوك الكمبيوتر): If / When + مضارع بسيط, مضارع بسيط.",
-        "الحالة الأولى (نتيجة مستقبلية محتملة): If + مضارع بسيط, will / can / may + الفعل الأساسي.",
-        "يمكن عكس ترتيب الجملتين دون تغيير المعنى، ولا نضع فاصلة إذا جاءت 'if' في المنتصف.",
-        "لا تستخدم 'will' داخل جملة 'if' الشرطية إطلاقاً."
-      ],
       "structures": [
         {
+          "label": "Zero Conditional · الشرطية الصفرية",
           "pattern": "If + Subject + V1 (present), Subject + V1 (present)",
           "explanation": "Zero Conditional: expresses an automatic, constant rule or system reaction.",
           "explanationArabic": "الحالة الصفرية: تعبر عن رد فعل تلقائي أو قاعدة نظامية ثابتة."
         },
         {
+          "label": "First Conditional · الشرطية الأولى",
           "pattern": "If + Subject + V1 (present), Subject + will + V1 (base)",
           "explanation": "First Conditional: expresses a probable future result based on a condition.",
           "explanationArabic": "الحالة الأولى: تعبر عن نتيجة مستقبلية محتملة مبنية على شرط."
         },
         {
+          "label": "First Conditional (Reversed) · الأولى بترتيب معكوس",
           "pattern": "Subject + will + V1 (base) + if + Subject + V1 (present)",
           "explanation": "Alternative First Conditional order without a separating comma.",
           "explanationArabic": "ترتيب بديل للحالة الأولى بدون فاصلة."
@@ -88,6 +80,12 @@
           "note": "Remember third-person singular 's' in Present Simple ('motherboard breaks').",
           "noteArabic": "تذكر إضافة 's' المفرد الغائب في زمن المضارع البسيط ('breaks')."
         }
+      ],
+      "commonUsage": [
+        "Zero Conditional (General truth / Computer behavior): If / When + Present Simple, Present Simple. (الحالة الصفرية (حقائق عامة / سلوك الكمبيوتر): If / When + مضارع بسيط, مضارع بسيط.)",
+        "First Conditional (Likely future outcome): If + Present Simple, will / can / may + base verb. (الحالة الأولى (نتيجة مستقبلية محتملة): If + مضارع بسيط, will / can / may + الفعل الأساسي.)",
+        "You can invert clause order without changing meaning; omit comma when 'if' is in the middle. (يمكن عكس ترتيب الجملتين دون تغيير المعنى، ولا نضع فاصلة إذا جاءت 'if' في المنتصف.)",
+        "Never use 'will' inside the 'if' clause itself. (لا تستخدم 'will' داخل جملة 'if' الشرطية إطلاقاً.)"
       ]
     }
   ],

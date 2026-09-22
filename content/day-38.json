@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Infinitives (verb + to)",
+      "titleArabic": "المصدر مع to (Infinitive): استخدامه بعد أفعال وصفات محددة",
       "explanation": "An infinitive is the base form of a verb preceded by 'to' (to + V1). In English, we use infinitives after specific verbs (decide to, refuse to, manage to, need to, attempt to, fail to), to express purpose or intention ('We deployed a hotfix to resolve the data corruption'), after adjectives ('It is difficult to reproduce an intermittent issue'), and in reported requests ('The engineer asked us to roll back the release').",
       "explanationArabic": "المصدر الكامل (Infinitive) هو صيغة الفعل الأساسية مسبوقة بـ 'to' (أي to + V1). يُستخدم المصدر بعد أفعال محددة مثل (decide to, refuse to, manage to, need to, attempt to, fail to)، وللتعبير عن الهدف أو الغاية ('نشرنا تحديثاً طارئاً لحل تلف البيانات')، وبعد الصفات ('من الصعب إعادة إنتاج مشكلة متقطعة')، وفي صيغ الطلب المنقول ('طلب منا المهندس التراجع عن الإصدار').",
-      "rules": [
-        "Use 'to + base verb' to express purpose or reason for doing something.",
-        "Use infinitive after verbs: decide, hope, manage, attempt, fail, offer, promise, plan, refuse, need.",
-        "Use infinitive after adjectives: difficult to debug, easy to fix, impossible to reproduce.",
-        "Negative infinitive: not to + base verb ('We chose not to roll back immediately')."
-      ],
-      "rulesArabic": [
-        "استخدم 'to + الفعل الأساسي' للتعبير عن الهدف أو السبب للقيام بفعل ما.",
-        "يُستخدم بعد أفعال شائعة: decide, hope, manage, attempt, fail, offer, promise, plan, refuse, need.",
-        "يُستخدم بعد الصفات: difficult to debug, easy to fix, impossible to reproduce.",
-        "صيغة النفي للمصدر: not to + الفعل الأساسي ('اخترنا ألا نتراجع فوراً')."
-      ],
       "structures": [
         {
+          "label": "Infinitive after Verb · المصدر بعد فعل",
           "pattern": "Subject + verb (decide/manage/need) + to + V1 (base)",
           "explanation": "Infinitive as direct complement of specific verbs.",
           "explanationArabic": "المصدر كمكمل مباشر لأفعال معينة."
         },
         {
+          "label": "Infinitive of Purpose · مصدر الغاية",
           "pattern": "Subject + verb + object + to + V1 (base)",
           "explanation": "Expresses purpose or objective of an action.",
           "explanationArabic": "يعبر عن الهدف أو الغرض من الفعل."
         },
         {
+          "label": "Infinitive after Adjective · المصدر بعد صفة",
           "pattern": "It is + adjective + to + V1 (base)",
           "explanation": "Evaluates the ease or difficulty of an action.",
           "explanationArabic": "يقيم مدى سهولة أو صعوبة القيام بفعل ما."
@@ -86,6 +78,12 @@
           "note": "'Attempt' typically takes an infinitive: 'attempt to debug'.",
           "noteArabic": "يأتي الفعل 'attempt' مع المصدر: 'attempt to debug'."
         }
+      ],
+      "commonUsage": [
+        "Use 'to + base verb' to express purpose or reason for doing something. (استخدم 'to + الفعل الأساسي' للتعبير عن الهدف أو السبب للقيام بفعل ما.)",
+        "Use infinitive after verbs: decide, hope, manage, attempt, fail, offer, promise, plan, refuse, need. (يُستخدم بعد أفعال شائعة: decide, hope, manage, attempt, fail, offer, promise, plan, refuse, need.)",
+        "Use infinitive after adjectives: difficult to debug, easy to fix, impossible to reproduce. (يُستخدم بعد الصفات: difficult to debug, easy to fix, impossible to reproduce.)",
+        "Negative infinitive: not to + base verb ('We chose not to roll back immediately'). (صيغة النفي للمصدر: not to + الفعل الأساسي ('اخترنا ألا نتراجع فوراً').)"
       ]
     }
   ],

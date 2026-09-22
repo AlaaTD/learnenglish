@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Gerund vs Infinitive (Review)",
+      "titleArabic": "مراجعة: متى نستخدم Gerund ومتى نستخدم Infinitive",
       "explanation": "This lesson synthesizes when to choose a gerund (verb + -ing) versus an infinitive (verb + to). Some verbs take ONLY gerunds (enjoy, avoid, practice, keep, consider: 'Avoid using dense jargon'). Other verbs take ONLY infinitives (decide, hope, manage, attempt, plan, offer: 'We decided to dial in early'). Some verbs change meaning depending on whether a gerund or infinitive follows (e.g., remember to send the update = don't forget vs remember sending the update = recall the past action).",
       "explanationArabic": "يراجع هذا الدرس ويقارن بين استخدام اسم الفعل (Gerund: verb + -ing) والمصدر (Infinitive: verb + to). هناك أفعال يتبعها اسم الفعل فقط (مثل enjoy, avoid, practice, keep, consider: 'تجنب استخدام المصطلحات المعقدة'). وهناك أفعال يتبعها المصدر فقط (مثل decide, hope, manage, attempt, plan, offer: 'قررنا الاتصال مبكراً'). وهناك أفعال يتغير معناها تماماً باختلاف الصيغة (مثل: remember to send = تذكر أن ترسل مستقبلاً، بينما remember sending = يتذكر أنه قد أرسل بالفعل في الماضي).",
-      "rules": [
-        "Verb + Gerund: admit, avoid, consider, delay, enjoy, finish, keep, practice, suggest.",
-        "Verb + Infinitive: agree, decide, hope, manage, plan, promise, refuse, afford, offer, tend.",
-        "Preposition + Gerund: Always use gerund after prepositions ('Thank you for giving a heads-up').",
-        "Meaning change verbs: stop, remember, forget, regret (e.g., stop talking vs stop to talk)."
-      ],
-      "rulesArabic": [
-        "أفعال يتبعها اسم الفعل: admit, avoid, consider, delay, enjoy, finish, keep, practice, suggest.",
-        "أفعال يتبعها المصدر: agree, decide, hope, manage, plan, promise, refuse, afford, offer, tend.",
-        "حروف الجر + اسم الفعل: يأتي اسم الفعل دائماً بعد حروف الجر ('شكراً على إعطاء التنبيه').",
-        "أفعال يتغير معناها: stop, remember, forget, regret (مثال: توقف عن الكلام مقابل توقف لكي يتكلم)."
-      ],
       "structures": [
         {
+          "label": "Gerund-only Verbs · أفعال يتبعها اسم الفعل",
           "pattern": "Subject + verb (avoid/enjoy) + Verb-ing",
           "explanation": "Gerund pattern for habitual actions or preferences.",
           "explanationArabic": "نمط اسم الفعل للأفعال الاعتيادية أو التفضيلات."
         },
         {
+          "label": "Infinitive-only Verbs · أفعال يتبعها المصدر",
           "pattern": "Subject + verb (decide/manage) + to + V1 (base)",
           "explanation": "Infinitive pattern for intentions, decisions, and future plans.",
           "explanationArabic": "نمط المصدر للقرارات والنوايا والخطط المستقبلية."
         },
         {
+          "label": "Preposition + Gerund · حرف جر واسم فعل",
           "pattern": "Preposition + Verb-ing",
           "explanation": "Universal rule: prepositions require gerund complements.",
           "explanationArabic": "قاعدة عامة: تتطلب حروف الجر مكملاً بصيغة اسم الفعل."
@@ -86,6 +78,12 @@
           "note": "The verb 'promise' requires an infinitive ('promised to send').",
           "noteArabic": "يتطلب الفعل 'promise' مصدراً: 'promised to send'."
         }
+      ],
+      "commonUsage": [
+        "Verb + Gerund: admit, avoid, consider, delay, enjoy, finish, keep, practice, suggest. (أفعال يتبعها اسم الفعل: admit, avoid, consider, delay, enjoy, finish, keep, practice, suggest.)",
+        "Verb + Infinitive: agree, decide, hope, manage, plan, promise, refuse, afford, offer, tend. (أفعال يتبعها المصدر: agree, decide, hope, manage, plan, promise, refuse, afford, offer, tend.)",
+        "Preposition + Gerund: Always use gerund after prepositions ('Thank you for giving a heads-up'). (حروف الجر + اسم الفعل: يأتي اسم الفعل دائماً بعد حروف الجر ('شكراً على إعطاء التنبيه').)",
+        "Meaning change verbs: stop, remember, forget, regret (e.g., stop talking vs stop to talk). (أفعال يتغير معناها: stop, remember, forget, regret (مثال: توقف عن الكلام مقابل توقف لكي يتكلم).)"
       ]
     }
   ],

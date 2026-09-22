@@ -1320,16 +1320,19 @@
       "explanationArabic": "توضح أدوات التعريف والتنكير ما إذا كان الاسم عاماً أو محدداً: 1. نستخدم 'a' قبل الأسماء المفردة المعدودة التي تبدأ بصوت ساكن (a city, a hotel, a bank). 2. نستخدم 'an' قبل الأسماء المفردة المعدودة التي تبدأ بصوت متحرك (an airport, an avenue, an area). 3. نستخدم 'the' للإشارة إلى شيء محدد ومعروف لدى المتكلم والمستمع، أو للأشياء الفريدة من نوعها (the bank on the corner, the station).",
       "structures": [
         {
+          "label": "Article: a · أداة التنكير a",
           "pattern": "a + consonant sound + singular countable noun",
           "explanation": "Indefinite article for consonant sound beginnings",
           "explanationArabic": "أداة تنكير قبل الكلمات المفردة البادئة بصوت ساكن"
         },
         {
+          "label": "Article: an · أداة التنكير an",
           "pattern": "an + vowel sound (a, e, i, o, u) + singular countable noun",
           "explanation": "Indefinite article for vowel sound beginnings",
           "explanationArabic": "أداة تنكير قبل الكلمات المفردة البادئة بصوت متحرك"
         },
         {
+          "label": "Article: the · أداة التعريف the",
           "pattern": "the + specific noun (singular or plural)",
           "explanation": "Definite article for specific or previously mentioned things",
           "explanationArabic": "أداة تعريف للشيء المحدد أو المذكور سابقاً"
@@ -1385,12 +1388,12 @@
         {
           "wrong": "He works in an bank.",
           "right": "He works in a bank.",
-          "explanation": "'Bank' begins with a consonant sound /b/, so use 'a', not 'an'."
+          "note": "'Bank' begins with a consonant sound /b/, so use 'a', not 'an'."
         },
         {
           "wrong": "She goes to an university.",
           "right": "She goes to a university.",
-          "explanation": "'University' begins with the consonant sound /j/ (you), so use 'a', not 'an'."
+          "note": "'University' begins with the consonant sound /j/ (you), so use 'a', not 'an'."
         }
       ]
     }

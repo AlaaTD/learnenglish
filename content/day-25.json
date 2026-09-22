@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم 'too' و 'enough' للتعبير عن درجات الكفاية والزيادة عن الحد المطلوب:\n\n1. 'Too' تفيد الزيادة غير المرغوبة (أكثر من اللازم):\n   - too + صفة: 'This soup is too hot.' (الشوربة ساخنة زيادة عن اللزوم).\n   - too much + اسم غير معدود: 'There is too much salt.' (يوجد ملح أكثر من اللازم).\n   - too many + اسم جمع معدود: 'There are too many people.' (يوجد ناس كثر أكثر من اللازم).\n\n2. 'Enough' تفيد الكفاية والملائمة:\n   - تأتي بعد الصفة: 'sweet enough' (حلو بما يكفي) — انتبه لموقعها بعد الصفة وليس قبلها!\n   - تأتي قبل الاسم: 'enough chairs' (كراسي كافية).\n\n3. 'Not enough' تفيد النقص وعدم الكفاية: 'not warm enough' أو 'not enough cutlery'.",
       "structures": [
         {
+          "label": "Too + Adjective · too والصفة",
           "pattern": "Excess with Adjectives: Subject + be + too + Adjective (+ to + verb)",
           "explanation": "Expresses that a quality is excessive to permit something.",
           "explanationArabic": "للتعبير عن أن الصفة زائدة عن الحد المسموح أو المرغوب."
         },
         {
+          "label": "Adjective + enough · الصفة و enough",
           "pattern": "Sufficiency with Adjectives: Subject + be + Adjective + enough",
           "explanation": "Expresses that a quality satisfies the necessary condition.",
           "explanationArabic": "للتعبير عن أن الصفة ملائمة وتكفي للغرض المطلوب."
         },
         {
+          "label": "Quantity · الكمية",
           "pattern": "Quantity: too much + Uncountable Noun | too many + Countable Noun | enough + Noun",
           "explanation": "Measures excessive or sufficient quantities of things.",
           "explanationArabic": "تحديد الكميات المفرطة أو الكافية من الأسماء المعدودة وغير المعدودة."
@@ -53,6 +56,11 @@
             "not enough"
           ]
         }
+      ],
+      "commonUsage": [
+        "'Too' signals more than is wanted or needed, and often points to a problem: 'This soup is too hot.' (تشير too إلى الزيادة عن المطلوب أو المرغوب، وغالباً تدل على مشكلة.)",
+        "'Enough' comes after adjectives but before nouns: 'sweet enough', but 'enough sugar' -- the word order is opposite. (تأتي enough بعد الصفة لكن قبل الاسم: sweet enough، لكن enough sugar -- الترتيب معكوس.)",
+        "Use 'too much' with uncountable nouns and 'too many' with plural countable nouns: 'too much salt', 'too many people'. (استخدم too much مع الأسماء غير المعدودة وtoo many مع الأسماء المعدودة الجمع.)"
       ],
       "commonMistakes": [
         {

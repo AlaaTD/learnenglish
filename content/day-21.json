@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم التركيب 'be going to' (am / is / are + going to + الفعل المجرد) للحديث عن الخطط والنيات المستقبلية التي تم اتخاذ القرار بشأنها مسبقاً، وكذلك للتنبؤ بالأحداث المستقبلية بناءً على دليل واضح في الحاضر.\n\nالصيغة:\n1. الإثبات: الفاعل + am/is/are + going to + الفعل الأساسي مجرداً.\n2. النفي: الفاعل + am/is/are + not + going to + الفعل الأساسي.\n3. السؤال: Am/Is/Are + الفاعل + going to + الفعل الأساسي؟",
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Affirmative: Subject + am/is/are + going to + Base Verb",
           "explanation": "Expresses a premeditated plan or firm future intention.",
           "explanationArabic": "يعبر عن خطة مستقبلية مدروسة أو عزم مؤكد."
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Negative: Subject + am/is/are + not + going to + Base Verb",
           "explanation": "Expresses an intention not to perform a future action.",
           "explanationArabic": "يعبر عن نية عدم القيام بفعل معين في المستقبل."
         },
         {
+          "label": "Question · السؤال",
           "pattern": "Question: Am/Is/Are + Subject + going to + Base Verb + ...?",
           "explanation": "Inquires about someone's future intentions or plans.",
           "explanationArabic": "يسأل عن خطط أو نيات شخص ما في المستقبل."
@@ -62,6 +65,11 @@
             "lake"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use 'be going to' for plans and intentions you decided on before the moment of speaking: 'We are going to spend our vacation by the sea.' (استخدم be going to للخطط والنوايا التي قررتها قبل لحظة الحديث.)",
+        "Use 'be going to' for predictions based on present evidence you can see right now: 'Look at those clouds -- it's going to rain.' (استخدم be going to للتنبؤات المبنية على دليل حالي واضح تراه الآن.)",
+        "In casual speech, 'going to' is often pronounced 'gonna', but always write 'going to' in full. (في الحديث العامي، تُنطق going to أحياناً gonna، لكن اكتبها going to كاملة دائماً.)"
       ],
       "commonMistakes": [
         {

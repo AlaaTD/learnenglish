@@ -8,31 +8,18 @@
   "grammar": [
     {
       "title": "Gerund vs Infinitive (remember, stop, try)",
+      "titleArabic": "أفعال يتغير معناها حسب Gerund أو Infinitive: remember و stop و try",
       "explanation": "Certain verbs change their fundamental meaning depending on whether they are followed by a gerund (-ing) or an infinitive (to + base verb). 1) 'Remember doing' refers to a past memory ('I remember visiting my grandparents'), whereas 'remember to do' means not forgetting a duty or task ('Remember to feed the infant'). 2) 'Stop doing' means quitting an action altogether ('He stopped smoking'), while 'stop to do' means pausing one activity in order to do another ('She stopped to talk to her sister-in-law'). 3) 'Try doing' means experimenting with a method to see if it works ('Try talking gently to the adolescent'), whereas 'try to do' indicates making an effort or attempt to do something difficult ('Try to nurture your stepdaughter's confidence').",
       "explanationArabic": "تتغير معاني بعض الأفعال الإنجليزية تماماً بحسب ما إذا تَبِعَها اسم فاعل (Gerund بصيغة ing) أو مصدر (Infinitive بصيغة to + الفعل). 1) الفعل (remember): متبوعاً بـ ing يعني تذكر حدث أو ذكرى وقعت في الماضي (I remember visiting my ancestors)، أما متبوعاً بـ to فيعني تذكر القيام بواجب أو مهمة (Remember to call your godfather). 2) الفعل (stop): متبوعاً بـ ing يعني الإقلاع التام والامتناع عن الفعل (He stopped arguing)، ومتبوعاً بـ to يعني التوقف عن نشاط مؤقتاً لغرض القيام بأمر آخر (She stopped to help her stepmother). 3) الفعل (try): متبوعاً بـ ing يعني التجربة واختبار أسلوب ما لمعرفة نتيجته (Try reading a bedtime story)، ومتبوعاً بـ to يعني بذل الجهد ومحاولة إنجاز أمر صعب (Try to preserve family kinship).",
-      "rules": [
-        "Remember + Gerund (-ing): Recalling a past action or memory already completed.",
-        "Remember + Infinitive (to + verb): Remembering to perform an action or obligation.",
-        "Stop + Gerund (-ing): Quitting or ceasing an ongoing habit or action permanently or temporarily.",
-        "Stop + Infinitive (to + verb): Pausing what you are doing in order to do something else.",
-        "Try + Gerund (-ing): Experimenting with an approach or solution to see if it succeeds.",
-        "Try + Infinitive (to + verb): Making an effort or attempt to accomplish something challenging."
-      ],
-      "rulesArabic": [
-        "Remember + ing: استحضار ذكرى من الماضي وقعت بالفعل.",
-        "Remember + to: تذكر أداء واجب أو مهمة يجب فعلها.",
-        "Stop + ing: الإقلاع والتوقف التام عن ممارسة الفعل.",
-        "Stop + to: التوقف عن أمر ما من أجل القيام بأمر آخر (لغرض ما).",
-        "Try + ing: تجربة طريقة أو حل واختبار جدواه لمعرفة النتيجة.",
-        "Try + to: بذل الجهد والمحاولة الشاقة لتحقيق أمر صعب."
-      ],
       "structures": [
         {
+          "label": "Gerund Meaning · المعنى مع اسم الفعل",
           "pattern": "Subject + remember / stop / try + Verb-ing (Gerund)",
           "explanation": "Used for past memories (remember), ceasing actions (stop), or experimenting with solutions (try).",
           "explanationArabic": "يستخدم لذكريات الماضي (remember)، أو التوقف عن الفعل (stop)، أو تجربة أسلوب لمعرفة أثره (try)."
         },
         {
+          "label": "Infinitive Meaning · المعنى مع المصدر",
           "pattern": "Subject + remember / stop / try + to + Base Verb (Infinitive)",
           "explanation": "Used for duties to perform (remember), pausing in order to act (stop), or exerting effort (try).",
           "explanationArabic": "يستخدم لتذكر أداء الواجبات (remember)، أو التوقف المؤقت لغرض محدد (stop)، أو بذل جهد ومحاولة (try)."
@@ -81,6 +68,14 @@
           "note": "Use 'remember to do' when reminding someone to carry out a duty or future task.",
           "noteArabic": "استخدم remember to do للتذكير بأداء مهمة أو واجب مستقبلي."
         }
+      ],
+      "commonUsage": [
+        "Remember + Gerund (-ing): Recalling a past action or memory already completed. (Remember + ing: استحضار ذكرى من الماضي وقعت بالفعل.)",
+        "Remember + Infinitive (to + verb): Remembering to perform an action or obligation. (Remember + to: تذكر أداء واجب أو مهمة يجب فعلها.)",
+        "Stop + Gerund (-ing): Quitting or ceasing an ongoing habit or action permanently or temporarily. (Stop + ing: الإقلاع والتوقف التام عن ممارسة الفعل.)",
+        "Stop + Infinitive (to + verb): Pausing what you are doing in order to do something else. (Stop + to: التوقف عن أمر ما من أجل القيام بأمر آخر (لغرض ما).)",
+        "Try + Gerund (-ing): Experimenting with an approach or solution to see if it succeeds. (Try + ing: تجربة طريقة أو حل واختبار جدواه لمعرفة النتيجة.)",
+        "Try + Infinitive (to + verb): Making an effort or attempt to accomplish something challenging. (Try + to: بذل الجهد والمحاولة الشاقة لتحقيق أمر صعب.)"
       ]
     }
   ],

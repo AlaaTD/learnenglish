@@ -106,10 +106,10 @@ export function Nav({
   const settingsActive = startsWith("/settings")(pathname);
 
   return (
-    <>
+    <div className="e90-chrome contents">
       {/* Floating Island Header Container */}
       <header className="sticky top-0 z-40 w-full px-3 pt-2.5 pb-1 sm:px-6 transition-all duration-300">
-        <div className="relative mx-auto flex h-[68px] sm:h-[72px] w-full max-w-[1548px] items-center justify-between rounded-2xl lg:rounded-full border border-night-700/80 bg-night-950/85 px-3.5 sm:px-5 shadow-[0_12px_32px_rgba(0,0,0,0.45),inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-xl">
+        <div className="relative mx-auto flex h-[68px] sm:h-[72px] w-full max-w-[1548px] items-center justify-between rounded-2xl lg:rounded-full border border-zinc-200 bg-white px-3.5 sm:px-5 shadow-[0_1px_2px_rgba(10,13,12,0.08)] dark:border-night-700 dark:bg-night-950 dark:shadow-[0_1px_2px_rgba(10,13,12,0.4)]">
           
           {/* Left: Brand Identity Pod */}
           <div className="flex items-center gap-3">
@@ -118,7 +118,7 @@ export function Nav({
               className="group flex shrink-0 items-center gap-3 transition-transform duration-200 active:scale-95"
               onClick={closeMenu}
             >
-              <div className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full ring-[2px] ring-brand-500/40 bg-night-900 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:ring-brand-400">
+              <div className="relative flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full ring-[2px] ring-brand-500/40 bg-zinc-100 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:ring-brand-400 dark:bg-night-900">
                 <Image
                   src="/logo.png"
                   alt="English90 Logo"
@@ -130,14 +130,14 @@ export function Nav({
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-[19px] font-bold leading-none tracking-tight text-white">
-                    English<span className="text-clay-300">90</span>
+                  <span className="text-[19px] font-bold leading-none tracking-tight text-zinc-900 dark:text-white">
+                    English<span className="text-clay-600 dark:text-clay-300">90</span>
                   </span>
-                  <span className="hidden xl:inline-flex items-center rounded-full bg-brand-900/80 px-2 py-0.5 text-[9.5px] font-semibold tracking-wide text-brand-300 ring-1 ring-brand-700/60">
+                  <span className="hidden xl:inline-flex items-center rounded-full bg-brand-100 px-2 py-0.5 text-[9.5px] font-semibold tracking-wide text-brand-700 dark:bg-brand-900/80 dark:text-brand-300">
                     ACADEMY
                   </span>
                 </div>
-                <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.2em] text-mist-500">
+                <span className="mt-1 text-[10px] font-medium uppercase tracking-[0.2em] text-zinc-500 dark:text-mist-500">
                   90-Day System
                 </span>
               </div>
@@ -147,7 +147,7 @@ export function Nav({
           {/* Center: Segmented Floating Navigation Dock (Desktop) */}
           <nav
             aria-label="Main"
-            className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-night-700/70 bg-night-900/75 p-1 shadow-inner backdrop-blur-md lg:flex"
+            className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 rounded-full border border-zinc-200 bg-zinc-100 p-1 dark:border-night-700 dark:bg-night-900 lg:flex"
           >
             {[...primary, ...secondary.filter((item) => item.href !== "/settings")].map((item) => {
               const active = item.match(pathname);
@@ -158,18 +158,18 @@ export function Nav({
                   aria-current={active ? "page" : undefined}
                   className={`relative flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[13.5px] transition-all duration-200 ${
                     active
-                      ? "bg-brand-600 font-semibold text-white shadow-[0_2px_10px_rgba(63,82,163,0.45)] ring-1 ring-white/15"
-                      : "font-medium text-mist-400 hover:bg-white/[0.05] hover:text-mist-100"
+                      ? "bg-brand-600 font-semibold text-white"
+                      : "font-medium text-zinc-500 hover:bg-zinc-900/[0.04] hover:text-zinc-900 dark:text-mist-400 dark:hover:bg-white/[0.05] dark:hover:text-mist-100"
                   }`}
                 >
-                  <Icon name={item.icon} className={`h-4 w-4 ${active ? "text-white" : "text-mist-400"}`} />
+                  <Icon name={item.icon} className={`h-4 w-4 ${active ? "text-white" : "text-zinc-500 dark:text-mist-400"}`} />
                   <span>{item.label}</span>
                   {item.href.startsWith("/day") && (
                     <span
                       className={`inline-flex items-center rounded-full px-1.5 py-0.2 text-[10px] font-bold ${
                         active
                           ? "bg-white/20 text-white"
-                          : "bg-night-800 text-brand-300 ring-1 ring-brand-600/30"
+                          : "bg-zinc-200 text-brand-700 dark:bg-night-800 dark:text-brand-300"
                       }`}
                     >
                       {currentDay}
@@ -186,14 +186,14 @@ export function Nav({
             <Link
               href={`/day/${currentDay}`}
               title="Today's learning unit"
-              className="hidden xl:flex items-center gap-2 rounded-full border border-night-700/80 bg-night-900/60 px-3 py-1.5 text-xs transition-colors hover:border-brand-600/60 hover:bg-night-800/80"
+              className="hidden xl:flex items-center gap-2 rounded-full border border-zinc-200 bg-zinc-100/60 px-3 py-1.5 text-xs transition-colors hover:border-brand-500/60 hover:bg-zinc-200/80 dark:border-night-700/80 dark:bg-night-900/60 dark:hover:border-brand-600/60 dark:hover:bg-night-800/80"
             >
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
               </span>
-              <span className="font-semibold text-mist-200">Day {currentDay}</span>
-              <span className="text-mist-500">/ 90</span>
+              <span className="font-semibold text-zinc-700 dark:text-mist-200">Day {currentDay}</span>
+              <span className="text-zinc-500 dark:text-mist-500">/ 90</span>
             </Link>
 
             {/* Learner Profile Capsule */}
@@ -203,18 +203,18 @@ export function Nav({
               aria-current={settingsActive ? "page" : undefined}
               className={`hidden sm:flex items-center gap-2.5 rounded-full border p-1 pe-3.5 transition-all duration-200 ${
                 settingsActive
-                  ? "border-brand-500 bg-brand-900/50 shadow-[0_0_12px_rgba(63,82,163,0.35)]"
-                  : "border-night-700/80 bg-night-900/60 hover:border-brand-600/60 hover:bg-night-800/80"
+                  ? "border-brand-500 bg-brand-50 dark:bg-brand-900/50"
+                  : "border-zinc-200 bg-zinc-100/60 hover:border-brand-500/60 hover:bg-zinc-200/80 dark:border-night-700/80 dark:bg-night-900/60 dark:hover:border-brand-600/60 dark:hover:bg-night-800/80"
               }`}
             >
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-700 text-xs font-bold text-white shadow-sm ring-1 ring-white/15">
                 {initial}
               </span>
               <div className="flex flex-col text-left">
-                <span className="max-w-[100px] truncate text-xs font-semibold leading-tight text-zinc-100">{userName}</span>
-                <span className="text-[10px] leading-tight text-mist-500">{isAdmin ? "Admin" : "Learner"}</span>
+                <span className="max-w-[100px] truncate text-xs font-semibold leading-tight text-zinc-900 dark:text-zinc-100">{userName}</span>
+                <span className="text-[10px] leading-tight text-zinc-500 dark:text-mist-500">{isAdmin ? "Admin" : "Learner"}</span>
               </div>
-              <IconChevronDown className="h-3.5 w-3.5 text-mist-400 transition-transform duration-200" />
+              <IconChevronDown className="h-3.5 w-3.5 text-zinc-400 dark:text-mist-400 transition-transform duration-200" />
             </Link>
 
             {/* Mobile Unified Menu & Profile Pill (Clean, uncluttered single button) */}
@@ -223,13 +223,13 @@ export function Nav({
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
-              className="flex sm:hidden items-center gap-2 rounded-full border border-night-700/80 bg-night-900/90 py-1 pe-2.5 ps-1 text-mist-200 shadow-sm transition-all duration-200 active:scale-95 hover:bg-night-800 hover:border-brand-600/50"
+              className="flex sm:hidden items-center gap-2 rounded-full border border-zinc-200 bg-zinc-100/90 py-1 pe-2.5 ps-1 text-zinc-700 shadow-sm transition-all duration-200 active:scale-95 hover:bg-zinc-200 hover:border-brand-500/50 dark:border-night-700/80 dark:bg-night-900/90 dark:text-mist-200 dark:hover:bg-night-800 dark:hover:border-brand-600/50"
             >
               <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-700 text-xs font-bold text-white ring-1 ring-white/15">
                 {initial}
               </span>
               <svg
-                className="h-4 w-4 text-mist-300"
+                className="h-4 w-4 text-zinc-600 dark:text-mist-300"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -247,7 +247,7 @@ export function Nav({
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
-              className="hidden sm:flex lg:hidden h-10 w-10 items-center justify-center rounded-full border border-night-700/80 bg-night-900/80 text-mist-200 transition-colors hover:bg-night-800 hover:text-white"
+              className="hidden sm:flex lg:hidden h-10 w-10 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100/80 text-zinc-700 transition-colors hover:bg-zinc-200 hover:text-zinc-900 dark:border-night-700/80 dark:bg-night-900/80 dark:text-mist-200 dark:hover:bg-night-800 dark:hover:text-white"
             >
               <svg
                 className="h-5 w-5"
@@ -269,19 +269,19 @@ export function Nav({
       {menuOpen && (
         <div className="lg:hidden">
           <div className="fixed inset-0 z-40 bg-black/70 backdrop-blur-[4px]" onClick={closeMenu} aria-hidden="true" />
-          <div className="fixed inset-x-3 top-[76px] z-50 mx-auto max-w-lg rounded-2xl border border-night-700/90 bg-night-900/95 p-3.5 shadow-2xl backdrop-blur-2xl animate-reveal">
+          <div className="fixed inset-x-3 top-[76px] z-50 mx-auto max-w-lg rounded-2xl border border-zinc-200 bg-white p-3.5 shadow-2xl animate-reveal dark:border-night-700/90 dark:bg-night-900/95">
             {/* User Info Header Card */}
-            <div className="mb-3 flex items-center justify-between rounded-xl bg-night-800/80 p-3 ring-1 ring-inset ring-night-700/80">
+            <div className="mb-3 flex items-center justify-between rounded-xl bg-zinc-100 p-3 ring-1 ring-inset ring-zinc-200 dark:bg-night-800/80 dark:ring-night-700/80">
               <div className="flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-700 text-sm font-bold text-white shadow-sm ring-1 ring-white/10">
                   {initial}
                 </span>
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-semibold text-mist-100">{userName}</p>
-                  <p className="text-xs text-mist-400">{isAdmin ? "System Administrator" : "Daily Learner"}</p>
+                  <p className="truncate text-sm font-semibold text-zinc-900 dark:text-mist-100">{userName}</p>
+                  <p className="text-xs text-zinc-500 dark:text-mist-400">{isAdmin ? "System Administrator" : "Daily Learner"}</p>
                 </div>
               </div>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-night-950 px-2.5 py-1 text-xs font-semibold text-mist-200 ring-1 ring-night-700">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-100 px-2.5 py-1 text-xs font-semibold text-zinc-700 ring-1 ring-zinc-200 dark:bg-night-950 dark:text-mist-200 dark:ring-night-700">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                 Day {currentDay}
               </span>
@@ -299,11 +299,11 @@ export function Nav({
                     aria-current={active ? "page" : undefined}
                     className={`flex h-11 items-center gap-3 rounded-xl px-3 text-sm font-medium transition-colors ${
                       active
-                        ? "bg-brand-800/60 font-semibold text-white shadow-sm ring-1 ring-brand-500/30"
-                        : "text-zinc-200 hover:bg-night-800/80 hover:text-white"
+                        ? "bg-brand-800/60 font-semibold text-white shadow-sm"
+                        : "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-200 dark:hover:bg-night-800/80 dark:hover:text-white"
                     }`}
                   >
-                    <Icon name={item.icon} className="h-4 w-4 text-mist-400" />
+                    <Icon name={item.icon} className="h-4 w-4 text-zinc-500 dark:text-mist-400" />
                     {item.label}
                   </Link>
                 );
@@ -316,7 +316,7 @@ export function Nav({
       {/* Phone Bottom Navigation Bar — Solid, clear contrast, prominent active indicators */}
       <nav
         aria-label="Quick navigation"
-        className="fixed inset-x-0 bottom-0 z-40 border-t border-night-700 bg-night-900/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(0,0,0,0.7)] backdrop-blur-2xl lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-zinc-200 bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_16px_rgba(10,13,12,0.12)] dark:border-night-700 dark:bg-night-900/95 dark:shadow-[0_-4px_16px_rgba(10,13,12,0.5)] lg:hidden"
       >
         <ul className="mx-auto grid max-w-lg grid-cols-5 px-1 py-1.5">
           {primary.map((item) => {
@@ -332,15 +332,15 @@ export function Nav({
                   <span
                     className={`flex h-7.5 w-12 sm:w-14 items-center justify-center rounded-full transition-all duration-200 ${
                       active
-                        ? "bg-brand-600 text-white shadow-[0_2px_12px_rgba(63,82,163,0.6)] ring-1 ring-white/20"
-                        : "text-mist-300 hover:bg-white/[0.06] hover:text-white"
+                        ? "bg-brand-600 text-white"
+                        : "text-zinc-500 hover:bg-zinc-900/[0.05] hover:text-zinc-900 dark:text-mist-300 dark:hover:bg-white/[0.06] dark:hover:text-white"
                     }`}
                   >
-                    <Icon name={item.icon} className={`h-5 w-5 ${active ? "text-white" : "text-mist-300"}`} />
+                    <Icon name={item.icon} className={`h-5 w-5 ${active ? "text-white" : "text-zinc-500 dark:text-mist-300"}`} />
                   </span>
                   <span
                     className={`max-w-full truncate px-0.5 text-[11px] leading-tight ${
-                      active ? "font-bold text-white tracking-wide" : "font-medium text-mist-400"
+                      active ? "font-bold text-zinc-900 dark:text-white tracking-wide" : "font-medium text-zinc-500 dark:text-mist-400"
                     }`}
                   >
                     {item.short}
@@ -351,6 +351,6 @@ export function Nav({
           })}
         </ul>
       </nav>
-    </>
+    </div>
   );
 }

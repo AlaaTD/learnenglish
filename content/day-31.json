@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Present Perfect with for and since",
+      "titleArabic": "المضارع التام مع for و since: التعبير عن المدة ونقطة البداية",
       "explanation": "We use the Present Perfect tense with 'for' and 'since' to talk about situations that started in the past and continue up to now. 'For' is followed by a duration (e.g., for two years, for a long time). 'Since' is followed by a specific point in time (e.g., since Monday, since childhood, since 2019).",
       "explanationArabic": "نستخدم زمن المضارع التام مع 'for' و 'since' للحديث عن مواقف بدأت في الماضي ولا تزال مستمرة حتى الآن. يأتي بعد 'for' مدة زمنية (مثل: for two years، for a long time). بينما يأتي بعد 'since' نقطة زمنية محددة (مثل: since Monday، since childhood، since 2019).",
-      "rules": [
-        "Use 'for' + duration: for two years, for three months, for a long time.",
-        "Use 'since' + starting point: since Monday, since 2015, since childhood.",
-        "Use 'How long have you + V3...?' to ask about duration.",
-        "The Present Perfect shows the action is STILL continuing now."
-      ],
-      "rulesArabic": [
-        "استخدم 'for' + مدة زمنية: for two years (لمدة سنتين)، for a long time (لفترة طويلة).",
-        "استخدم 'since' + نقطة بداية: since Monday (منذ الاثنين)، since 2015 (منذ 2015).",
-        "استخدم 'How long have you + التصريف الثالث...?' للسؤال عن المدة.",
-        "المضارع التام يدل على أن الفعل لا يزال مستمراً حتى الآن."
-      ],
       "structures": [
         {
+          "label": "For + Duration · for والمدة",
           "pattern": "Subject + have/has + V3 + for + duration",
           "explanation": "Describes how long an ongoing situation has lasted.",
           "explanationArabic": "يصف المدة التي استمرت فيها حالة مستمرة."
         },
         {
+          "label": "Since + Point in Time · since ونقطة الزمن",
           "pattern": "Subject + have/has + V3 + since + point in time",
           "explanation": "States when an ongoing situation began.",
           "explanationArabic": "يحدد الوقت الذي بدأت فيه حالة مستمرة."
         },
         {
+          "label": "How long...? · السؤال عن المدة",
           "pattern": "How long + have/has + subject + V3...?",
           "explanation": "Asks about the duration of an ongoing action or state.",
           "explanationArabic": "يسأل عن مدة فعل أو حالة مستمرة."
@@ -88,6 +80,12 @@
           "note": "Use Present Perfect (has worked), not Present Simple (works), to show the action started in the past and continues.",
           "noteArabic": "استخدم المضارع التام (has worked) وليس المضارع البسيط (works) لإظهار أن الفعل بدأ في الماضي ولا يزال مستمراً."
         }
+      ],
+      "commonUsage": [
+        "Use 'for' + duration: for two years, for three months, for a long time. (استخدم 'for' + مدة زمنية: for two years (لمدة سنتين)، for a long time (لفترة طويلة).)",
+        "Use 'since' + starting point: since Monday, since 2015, since childhood. (استخدم 'since' + نقطة بداية: since Monday (منذ الاثنين)، since 2015 (منذ 2015).)",
+        "Use 'How long have you + V3...?' to ask about duration. (استخدم 'How long have you + التصريف الثالث...?' للسؤال عن المدة.)",
+        "The Present Perfect shows the action is STILL continuing now. (المضارع التام يدل على أن الفعل لا يزال مستمراً حتى الآن.)"
       ]
     }
   ],

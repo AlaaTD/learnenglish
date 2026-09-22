@@ -13,16 +13,19 @@
       "explanationArabic": "في اللغة الإنجليزية، تحدد أدوات التعريف والتنكير طبيعة الاسم:\n\n1. أداة النكرة (a / an):\n   - للمفرد المعدود عند ذكره لأول مرة أو بشكل عام غير محدد.\n   - نستخدم 'a' قبل الأصوات الساكنة: 'a jacket', 'a uniform'.\n   - نستخدم 'an' قبل الأصوات المتحركة: 'an outfit', 'an elegant scarf'.\n\n2. أداة المعرفة (the):\n   - للشيء المحدد أو المعروف مسبقاً للطرفين أو الفريد من نوعه: 'The jacket I tried on' (السترة التي قستها).\n\n3. بدون أداة (Zero Article Ø):\n   - مع الجمع العام: 'Clothes protect us' (الملابس تحمينا بشكل عام).\n   - مع الأسماء غير المعدودة بشكل عام: 'Cotton is comfortable' (القطن مريح - لا نضع the هنا).\n   - مع معظم أسماء الدول والمدن والوجبات العامة.",
       "structures": [
         {
+          "label": "Indefinite: a/an · أداة تنكير",
           "pattern": "Indefinite: a + consonant sound / an + vowel sound + Singular Countable Noun",
           "explanation": "Introduces a non-specific singular object.",
           "explanationArabic": "لتقديم اسم مفرد معدود لأول مرة أو بصفة عامة."
         },
         {
+          "label": "Definite: the · أداة تعريف",
           "pattern": "Definite: the + Specific Noun (Singular, Plural, or Uncountable)",
           "explanation": "Refers to an identifiable, unique, or previously mentioned entity.",
           "explanationArabic": "للإشارة إلى شيء محدد أو سبق ذكره أو فريد بذاته."
         },
         {
+          "label": "Zero Article · بدون أداة",
           "pattern": "Zero Article (Ø): Plural Noun / Uncountable Noun in General Sense",
           "explanation": "States general truths without limiting to specific instances.",
           "explanationArabic": "للتعميم مع صيغ الجمع والأسماء المعنوية والمادية غير المعدودة."
@@ -56,6 +59,12 @@
             "fabric"
           ]
         }
+      ],
+      "commonUsage": [
+        "Choose 'a' or 'an' based on the sound of the next word, not its spelling: 'a uniform' (starts with a /juː/ sound) but 'an hour' (silent h). (اختر a أو an بناءً على صوت الكلمة التالية وليس تهجئتها: a uniform يبدأ بصوت y، لكن an hour الـ h فيها صامتة.)",
+        "Use 'the' only when both speaker and listener already know exactly which thing is meant: 'The jacket you tried on fits perfectly.' (استخدم the فقط عندما يعرف المتحدث والمستمع بالضبط الشيء المقصود.)",
+        "Use no article at all with plural nouns and uncountable nouns when speaking generally: 'Cotton is breathable.', 'Clothes reflect personality.' (لا تستخدم أي أداة مع الأسماء الجمع وغير المعدودة عند الحديث عنها بشكل عام.)",
+        "Most country and city names, and meal names in general, take no article: 'She lives in Rome.', 'before dinner'. (معظم أسماء الدول والمدن وأسماء الوجبات العامة لا تأخذ أداة.)"
       ],
       "commonMistakes": [
         {

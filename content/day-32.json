@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Present Perfect vs Past Simple",
+      "titleArabic": "المضارع التام مقابل الماضي البسيط: متى نستخدم كل زمن",
       "explanation": "We use the Present Perfect to talk about experiences, recent actions, or situations that connect the past to the present (often with 'ever', 'never', 'already', 'yet', 'just', 'for', 'since'). We use the Past Simple to talk about finished actions at a definite past time (often with 'yesterday', 'last week', 'in 2020', 'ago'). Choosing the correct tense depends on whether the focus is on the connection to now (Present Perfect) or on when exactly it happened (Past Simple).",
       "explanationArabic": "نستخدم المضارع التام للحديث عن تجارب أو أحداث حديثة أو مواقف تربط الماضي بالحاضر (غالباً مع ever, never, already, yet, just, for, since). ونستخدم الماضي البسيط للحديث عن أفعال انتهت في وقت محدد في الماضي (غالباً مع yesterday, last week, in 2020, ago). ويعتمد اختيار الزمن الصحيح على ما إذا كان التركيز على الصلة بالحاضر (المضارع التام) أم على الوقت المحدد للحدث (الماضي البسيط).",
-      "rules": [
-        "Present Perfect: I have sent the email (result matters now — it has been sent).",
-        "Past Simple: I sent the email yesterday (specific past time).",
-        "Present Perfect: She has worked here for five years (she still works here).",
-        "Past Simple: She worked there for five years (she no longer works there)."
-      ],
-      "rulesArabic": [
-        "المضارع التام: I have sent the email (النتيجة مهمة الآن — تم إرسالها).",
-        "الماضي البسيط: I sent the email yesterday (وقت محدد في الماضي).",
-        "المضارع التام: She has worked here for five years (لا تزال تعمل هنا).",
-        "الماضي البسيط: She worked there for five years (لم تعد تعمل هناك)."
-      ],
       "structures": [
         {
+          "label": "Present Perfect · المضارع التام",
           "pattern": "Subject + have/has + V3 (+ for/since/already/yet)",
           "explanation": "Connects a past action to the present moment.",
           "explanationArabic": "يربط فعلاً ماضياً باللحظة الحالية."
         },
         {
+          "label": "Past Simple · الماضي البسيط",
           "pattern": "Subject + V2 + specific past time",
           "explanation": "Describes a completed action at a known past time.",
           "explanationArabic": "يصف فعلاً مكتملاً في وقت ماضٍ معروف."
         },
         {
+          "label": "Pending Action (yet) · فعل معلق",
           "pattern": "Have/Has + subject + V3 + yet?",
           "explanation": "Asks if a pending action has been completed up to now.",
           "explanationArabic": "يسأل ما إذا كان فعل مرتقب قد تم حتى الآن."
@@ -91,6 +83,12 @@
           "note": "Use Present Perfect with 'ever' for lifetime experiences.",
           "noteArabic": "استخدم المضارع التام مع 'ever' للتجارب الحياتية."
         }
+      ],
+      "commonUsage": [
+        "Present Perfect: I have sent the email (result matters now — it has been sent). (المضارع التام: I have sent the email (النتيجة مهمة الآن — تم إرسالها).)",
+        "Past Simple: I sent the email yesterday (specific past time). (الماضي البسيط: I sent the email yesterday (وقت محدد في الماضي).)",
+        "Present Perfect: She has worked here for five years (she still works here). (المضارع التام: She has worked here for five years (لا تزال تعمل هنا).)",
+        "Past Simple: She worked there for five years (she no longer works there). (الماضي البسيط: She worked there for five years (لم تعد تعمل هناك).)"
       ]
     }
   ],

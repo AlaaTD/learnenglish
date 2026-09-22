@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Past Perfect",
+      "titleArabic": "الماضي التام (Past Perfect): التعبير عن حدث سابق لحدث آخر في الماضي",
       "explanation": "The Past Perfect tense (had + V3) describes an action that happened before another past event or point in time. In project contexts, it clarifies sequence and prerequisites: what was already finished before a deadline, cutoff, or subsequent task.",
       "explanationArabic": "يُستخدم زمن الماضي التام (had + التصريف الثالث) لوصف حدث وقع قبل حدث ماضٍ آخر أو قبل نقطة زمنية في الماضي. وفي سياق المشاريع، يوضح الترتيب والمتطلبات المسبقة: ما الذي تم إنجازه بالفعل قبل حلول موعد نهائي أو بدء مهمة تالية.",
-      "rules": [
-        "Use 'had + V3' for the earlier past event, and Past Simple for the later past event.",
-        "Common conjunctions include 'before', 'by the time', 'after', and 'already'.",
-        "Negative form: had not (hadn't) + V3.",
-        "Question form: Had + subject + V3?"
-      ],
-      "rulesArabic": [
-        "استخدم 'had + V3' للحدث الأسبق في الماضي، والماضي البسيط للحدث اللاحق.",
-        "الروابط الشائعة تشمل: 'before', 'by the time', 'after', 'already'.",
-        "صيغة النفي: had not (hadn't) + التصريف الثالث.",
-        "صيغة السؤال: Had + الفاعل + التصريف الثالث؟"
-      ],
       "structures": [
         {
+          "label": "Earlier Past Action · الحدث الأسبق",
           "pattern": "Subject + had + V3 + before + Subject + V2",
           "explanation": "States an action completed before another past event.",
           "explanationArabic": "يوضح فعلاً اكتمل قبل وقوع حدث ماضٍ آخر."
         },
         {
+          "label": "By the time... · بحلول وقت",
           "pattern": "By the time + Subject + V2, Subject + had + V3",
           "explanation": "Emphasizes completion prior to a specific moment.",
           "explanationArabic": "يؤكد اكتمال الفعل قبل حلول لحظة زمنية معينة."
         },
         {
+          "label": "Question · سؤال",
           "pattern": "Had + Subject + V3 + before + noun/clause?",
           "explanation": "Asks whether an action had been finished beforehand.",
           "explanationArabic": "يسأل عما إذا كان الفعل قد انتهى مسبقاً."
@@ -88,6 +80,12 @@
           "note": "Use Past Perfect (had finished) to make it clear which event happened first.",
           "noteArabic": "استخدم الماضي التام (had finished) لتوضيح أي الحدثين وقع أولاً."
         }
+      ],
+      "commonUsage": [
+        "Use 'had + V3' for the earlier past event, and Past Simple for the later past event. (استخدم 'had + V3' للحدث الأسبق في الماضي، والماضي البسيط للحدث اللاحق.)",
+        "Common conjunctions include 'before', 'by the time', 'after', and 'already'. (الروابط الشائعة تشمل: 'before', 'by the time', 'after', 'already'.)",
+        "Negative form: had not (hadn't) + V3. (صيغة النفي: had not (hadn't) + التصريف الثالث.)",
+        "Question form: Had + subject + V3? (صيغة السؤال: Had + الفاعل + التصريف الثالث؟)"
       ]
     }
   ],

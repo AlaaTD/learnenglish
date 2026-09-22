@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Used to",
+      "titleArabic": "Used to للتعبير عن عادات وحالات ماضية لم تعد موجودة الآن",
       "explanation": "We use 'used to + base verb' to talk about past habits, routines, or states that were true in the past but are NO LONGER true today. For negatives, we use 'didn't use to + base verb' (note 'use', not 'used'). For questions, we use 'Did you use to + base verb?'. In friendship conversations, it is the primary structure for reminiscing about childhood and comparing past dynamics to the present.",
       "explanationArabic": "نستخدم 'used to + الفعل الأساسي' للحديث عن عادات أو حالات أو روتين كان صحيحاً ومستمراً في الماضي ولكنه لم يعد كذلك اليوم. في النفي نستخدم 'didn't use to + الفعل' (لاحظ كتابة use بدون d). وفي السؤال نستخدم 'Did you use to + الفعل؟'. وتعتبر هذه القاعدة الركيزة الأساسية عند استرجاع ذكريات الصداقة ومقارنة الماضي بالحاضر.",
-      "rules": [
-        "Affirmative: Subject + used to + V1 (base verb) for discontinued past habits or states.",
-        "Negative: Subject + didn't use to + V1 (base verb) — 'use', not 'used'.",
-        "Question: Did + subject + use to + V1 (base verb)?",
-        "Do not confuse with 'be used to + -ing' (which means accustomed to)."
-      ],
-      "rulesArabic": [
-        "الإثبات: الفاعل + used to + الفعل الأساسي لعادات أو حالات ماضية انقطعت الآن.",
-        "النفي: الفاعل + didn't use to + الفعل الأساسي (تُكتب use بدون حرف d).",
-        "السؤال: ?Did + الفاعل + use to + الفعل الأساسي",
-        "لا تخلط بينها وبين 'be used to + -ing' التي تعني معتاداً على شيء في الحاضر."
-      ],
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Subject + used to + V1 (base)",
           "explanation": "Expresses a past habit or state that no longer exists.",
           "explanationArabic": "يعبر عن عادة أو حالة ماضية لم تعد موجودة اليوم."
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Subject + didn't use to + V1 (base)",
           "explanation": "Negative form showing something was not true in the past.",
           "explanationArabic": "صيغة النفي لتوضيح أن الأمر لم يكن صحيحاً في الماضي."
         },
         {
+          "label": "Question · السؤال",
           "pattern": "Did + Subject + use to + V1 (base)?",
           "explanation": "Question asking about past habits or states.",
           "explanationArabic": "سؤال عن عادات أو حالات سابقة في الماضي."
@@ -84,6 +76,12 @@
           "note": "'Am used to' means accustomed to. For past discontinued habits, use 'used to + base verb'.",
           "noteArabic": "'Am used to' تعني معتاداً على شيء في الحاضر؛ أما للعادات الماضية المنقطعة فنستخدم 'used to + الفعل المجرد'."
         }
+      ],
+      "commonUsage": [
+        "Affirmative: Subject + used to + V1 (base verb) for discontinued past habits or states. (الإثبات: الفاعل + used to + الفعل الأساسي لعادات أو حالات ماضية انقطعت الآن.)",
+        "Negative: Subject + didn't use to + V1 (base verb) — 'use', not 'used'. (النفي: الفاعل + didn't use to + الفعل الأساسي (تُكتب use بدون حرف d).)",
+        "Question: Did + subject + use to + V1 (base verb)? (السؤال: ?Did + الفاعل + use to + الفعل الأساسي)",
+        "Do not confuse with 'be used to + -ing' (which means accustomed to). (لا تخلط بينها وبين 'be used to + -ing' التي تعني معتاداً على شيء في الحاضر.)"
       ]
     }
   ],

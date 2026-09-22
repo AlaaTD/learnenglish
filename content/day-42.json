@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Relative Clauses (whose, where, when)",
+      "titleArabic": "الجمل الموصولة: whose و where و when للملكية والمكان والزمان",
       "explanation": "Relative clauses provide descriptive context about possession ('whose'), places ('where'), and times ('when'). We use 'whose' as a possessive relative pronoun for people or things ('The bride whose ring was handcrafted...'). We use 'where' to refer to a place or setting ('The botanical garden where they celebrated their wedding...'). We use 'when' to specify a time, moment, or era ('I remember the summer when we fell in love').",
       "explanationArabic": "توفر جمل الوصل سياقاً وصفياً غنياً يحدد الملكية ('whose')، أو الأماكن ('where')، أو الأزمنة ('when'). نستخدم 'whose' كضمير وصل للملكية ('العروس التي صُنع خاتمها يدوياً...'). ونستخدم 'where' للإشارة إلى الأماكن والمواقع ('الحديقة النباتية حيث احتفلا بزفافهما...'). ونستخدم 'when' لتحديد الأوقات واللحظات الزمنية ('أتذكر الصيف عندما وقعنا في الحب').",
-      "rules": [
-        "Use 'whose' to replace possessive adjectives (his, her, their, its) + noun.",
-        "Use 'where' to refer to places (acts as in which / at which).",
-        "Use 'when' to refer to times, days, years, or moments (acts as in which / during which).",
-        "Do not confuse possessive 'whose' with the contraction 'who's' (who is / who has)."
-      ],
-      "rulesArabic": [
-        "استخدم 'whose' للملكية لتحل محل صفات الملكية (his, her, their) متبوعة باسم الشيء المملوك.",
-        "استخدم 'where' للإشارة إلى الأماكن والبلدان والمواقع.",
-        "استخدم 'when' للإشارة إلى الأوقات والسنوات واللحظات الزمنية.",
-        "لا تخلط بين 'whose' الدالة على الملكية و 'who's' التي هي اختصار لـ (who is / who has)."
-      ],
       "structures": [
         {
+          "label": "Whose (Possession) · whose للملكية",
           "pattern": "Noun (person/thing) + whose + noun + clause",
           "explanation": "Identifies an entity through something they possess or cherish.",
           "explanationArabic": "يحدد الشخص أو الشيء من خلال ما يملكه أو يتصف به."
         },
         {
+          "label": "Where (Place) · where للمكان",
           "pattern": "Noun (place) + where + Subject + verb",
           "explanation": "Specifies a location where a significant event unfolded.",
           "explanationArabic": "يحدد المكان الذي وقع فيه حدث ذو معنى."
         },
         {
+          "label": "When (Time) · when للزمان",
           "pattern": "Noun (time) + when + Subject + verb",
           "explanation": "Specifies a moment or season when a milestone occurred.",
           "explanationArabic": "يحدد الوقت أو اللحظة التي شهدت محطة هامة."
@@ -86,6 +78,12 @@
           "note": "Use 'where' to refer to a place when an action occurs there, not bare 'which'.",
           "noteArabic": "استخدم 'where' للإشارة إلى المكان الذي وقع فيه الفعل، وليس 'which' بمفردها."
         }
+      ],
+      "commonUsage": [
+        "Use 'whose' to replace possessive adjectives (his, her, their, its) + noun. (استخدم 'whose' للملكية لتحل محل صفات الملكية (his, her, their) متبوعة باسم الشيء المملوك.)",
+        "Use 'where' to refer to places (acts as in which / at which). (استخدم 'where' للإشارة إلى الأماكن والبلدان والمواقع.)",
+        "Use 'when' to refer to times, days, years, or moments (acts as in which / during which). (استخدم 'when' للإشارة إلى الأوقات والسنوات واللحظات الزمنية.)",
+        "Do not confuse possessive 'whose' with the contraction 'who's' (who is / who has). (لا تخلط بين 'whose' الدالة على الملكية و 'who's' التي هي اختصار لـ (who is / who has).)"
       ]
     }
   ],

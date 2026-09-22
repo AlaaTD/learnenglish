@@ -4,7 +4,7 @@ import { getCurrentDay } from "@/services/stats";
 import { GrammarAcademy } from "@/components/grammar-academy";
 
 export const metadata = {
-  title: "Grammar Academy · أكاديمية القواعد الإنجليزية | English90",
+  title: "Grammar · قواعد اللغة الإنجليزية | English90",
   description: "Comprehensive English Grammar curriculum with detailed formulas, Arabic explanations, and interactive quizzes for every day.",
 };
 

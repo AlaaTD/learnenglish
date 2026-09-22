@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Relative Clauses (who, which, that)",
+      "titleArabic": "الجمل الموصولة: who و which و that لوصف الأشخاص والأشياء",
       "explanation": "Relative clauses give essential information about a person, place, or thing without starting a whole new sentence. We use 'who' for people ('The content creator who uploaded the video...'), 'which' for things or animals ('The modem which arrived yesterday...'), and 'that' for people or things in informal or restrictive clauses ('The phishing scam that targeted our employees...').",
       "explanationArabic": "تُستخدم جمل الوصل (Relative Clauses) لإعطاء معلومات أساسية وتفصيلية عن شخص أو شيء دون الحاجة للبدء في جملة جديدة. نستخدم 'who' للأشخاص ('صانع المحتوى الذي رفع الفيديو...'), و 'which' للأشياء والجماد ('المودم الذي وصل بالأمس...'), و 'that' للأشخاص والأشياء في الجمل المحددة ('عملية الاحتيال التي استهدفت موظفينا...').",
-      "rules": [
-        "Use 'who' when referring to people.",
-        "Use 'which' when referring to things, systems, devices, or concepts.",
-        "Use 'that' for people or things in defining (restrictive) relative clauses.",
-        "Do not put commas around defining relative clauses that provide essential identification."
-      ],
-      "rulesArabic": [
-        "استخدم 'who' عند الإشارة إلى الأشخاص.",
-        "استخدم 'which' عند الإشارة إلى الأشياء أو الأنظمة أو الأجهزة.",
-        "استخدم 'that' للأشخاص أو الأشياء في جمل الوصل المحددة والمفيدة للمراد.",
-        "لا تضع فواصل حول جمل الوصل التعريفية الأساسية للمعنى."
-      ],
       "structures": [
         {
+          "label": "Who (People) · who للأشخاص",
           "pattern": "Noun (person) + who + verb / predicate",
           "explanation": "Identifies a person by their actions or qualities.",
           "explanationArabic": "يحدد الشخص من خلال أفعاله أو صفاته."
         },
         {
+          "label": "Which/That (Things) · which/that للأشياء",
           "pattern": "Noun (thing) + which / that + verb / predicate",
           "explanation": "Identifies a device, system, or object by its characteristics.",
           "explanationArabic": "يحدد جهازاً أو نظاماً أو شيئاً من خلال خصائصه."
         },
         {
+          "label": "Relative as Object · ضمير الوصل كمفعول",
           "pattern": "Noun + that / which + Subject + verb",
           "explanation": "Relative pronoun functioning as the object of the clause.",
           "explanationArabic": "ضمير الوصل عندما يعمل كمفعول به في الجملة."
@@ -85,6 +77,12 @@
           "note": "Use 'which' or 'that' for software and inanimate objects, never 'who'.",
           "noteArabic": "استخدم 'which' أو 'that' للبرمجيات والجمادات، ولا تستخدم 'who' إطلاقاً."
         }
+      ],
+      "commonUsage": [
+        "Use 'who' when referring to people. (استخدم 'who' عند الإشارة إلى الأشخاص.)",
+        "Use 'which' when referring to things, systems, devices, or concepts. (استخدم 'which' عند الإشارة إلى الأشياء أو الأنظمة أو الأجهزة.)",
+        "Use 'that' for people or things in defining (restrictive) relative clauses. (استخدم 'that' للأشخاص أو الأشياء في جمل الوصل المحددة والمفيدة للمراد.)",
+        "Do not put commas around defining relative clauses that provide essential identification. (لا تضع فواصل حول جمل الوصل التعريفية الأساسية للمعنى.)"
       ]
     }
   ],

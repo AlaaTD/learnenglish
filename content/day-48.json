@@ -8,27 +8,18 @@
   "grammar": [
     {
       "title": "So / Such for Results",
+      "titleArabic": "استخدام So و Such للتعبير عن نتيجة مترتبة على درجة عالية من صفة",
       "explanation": "We use 'so ... that' and 'such ... that' to connect a cause or high degree of a quality with its result. 1) Use 'so + adjective/adverb + that + result clause': 'Her integrity was so unshakeable that the board accepted her recommendation without question.' With quantifiers, use 'so much/little + uncountable' or 'so many/few + countable': 'He showed so much candor that everyone relaxed.' 2) Use 'such + (a/an) + adjective + noun + that + result clause': 'He was such a straightforward leader that employees trusted his vision completely'; 'It was such blatant deceit that the judge ordered an immediate investigation.' In conversational English, 'that' can be omitted, but retaining 'that' is standard in clear, formal writing.",
       "explanationArabic": "نستخدم التركيبين (so ... that) و (such ... that) للربط بين السبب (أو الدرجة العالية من الصفة) والنتيجة المترتبة عليها: 1) نستخدم (so + صفة أو ظرف + that + جملة النتيجة): مثل: 'كانت نزاهته قوية جداً لدرجة أن الجميع وثق به' (His integrity was so strong that...). ومع الكميات نستخدم so much / so many. 2) نستخدم (such + a/an + صفة + اسم موصوف + that + جملة النتيجة): مثل: 'كان رجلاً مستقيماً جداً لدرجة أن المستثمرين ائتمنوه' (He was such a straightforward man that...). انتبه: 'so' تسبق الصفة وحدها، بينما 'such' تسبق الاسم الموصوف.",
-      "rules": [
-        "So + Adjective / Adverb + that + Clause: 'Her testimony was so candid that nobody doubted her.'",
-        "Such + (a/an) + Adjective + Noun + that + Clause: 'It was such a shocking betrayal that their friendship ended.'",
-        "So many / so few + Plural Countable Noun + that: 'He told so many falsehoods that his credibility collapsed.'",
-        "So much / so little + Uncountable Noun + that: 'There was so much deceit that legal action followed.'"
-      ],
-      "rulesArabic": [
-        "so + الصفة أو الحال + that: تفيد درجة الصفة المسببة للنتيجة (She was so scrupulous that...).",
-        "such + (a/an) + الصفة + الاسم + that: تفيد أن هذا النوع من الأشخاص أو الأشياء أدى إلى النتيجة (It was such a blatant fraud that...).",
-        "so many / so few مع الأسماء المعدودة الجمع، و so much / so little مع الأسماء غير المعدودة.",
-        "تذكر أن 'that' تعني 'لدرجة أن' وتربط بجملة النتيجة الكاملة (فاعل + فعل)."
-      ],
       "structures": [
         {
+          "label": "So + Adjective · so والصفة",
           "pattern": "Subject + be/verb + so + Adjective/Adverb + that + Result Clause",
           "explanation": "Expresses an extreme degree leading directly to a specific outcome.",
           "explanationArabic": "يعبر عن بلوغ الصفة درجة قصوى تؤدي مباشرة إلى نتيجة محددة."
         },
         {
+          "label": "Such + Noun · such والاسم",
           "pattern": "Subject + be/verb + such + (a/an) + Adjective + Noun + that + Result Clause",
           "explanation": "Emphasizes the nature of a person or thing causing a significant consequence.",
           "explanationArabic": "يؤكد على طبيعة الشخص أو الشيء بما يسبب أثراً ونتيجة بارزة."
@@ -78,6 +69,12 @@
           "note": "Use 'such' before adjective + noun combinations, not 'so'.",
           "noteArabic": "استخدم such قبل تركيبة الصفة والاسم (such shocking deceit)، وليس so."
         }
+      ],
+      "commonUsage": [
+        "So + Adjective / Adverb + that + Clause: 'Her testimony was so candid that nobody doubted her.' (so + الصفة أو الحال + that: تفيد درجة الصفة المسببة للنتيجة (She was so scrupulous that...).)",
+        "Such + (a/an) + Adjective + Noun + that + Clause: 'It was such a shocking betrayal that their friendship ended.' (such + (a/an) + الصفة + الاسم + that: تفيد أن هذا النوع من الأشخاص أو الأشياء أدى إلى النتيجة (It was such a blatant fraud that...).)",
+        "So many / so few + Plural Countable Noun + that: 'He told so many falsehoods that his credibility collapsed.' (so many / so few مع الأسماء المعدودة الجمع، و so much / so little مع الأسماء غير المعدودة.)",
+        "So much / so little + Uncountable Noun + that: 'There was so much deceit that legal action followed.' (تذكر أن 'that' تعني 'لدرجة أن' وتربط بجملة النتيجة الكاملة (فاعل + فعل).)"
       ]
     }
   ],

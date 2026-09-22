@@ -67,6 +67,96 @@ export const textLinkClass =
 export const fieldClass =
   "h-10 rounded-xl border border-zinc-400 bg-white px-3 text-sm text-zinc-900 shadow-card placeholder:text-zinc-500 focus-visible:border-brand-600 dark:border-zinc-500 dark:bg-zinc-900 dark:text-zinc-100 dark:shadow-none dark:placeholder:text-zinc-400 dark:focus-visible:border-brand-400";
 
+/**
+ * On/off control for a single boolean setting. Used instead of a native checkbox wherever the
+ * choice reads as a state to flip (not a box to tick) — autoplay, notifications, etc.
+ */
+export function Switch({
+  checked,
+  onChange,
+  id,
+  label,
+  disabled = false,
+}: {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  id?: string;
+  label?: string;
+  disabled?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      id={id}
+      role="switch"
+      aria-checked={checked}
+      aria-label={label}
+      disabled={disabled}
+      onClick={() => onChange(!checked)}
+      className={`relative inline-flex h-6 w-11 shrink-0 items-center rounded-full transition-colors duration-150 ease-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:outline-brand-400 ${
+        checked ? "bg-brand-600 dark:bg-brand-400" : "bg-zinc-300 dark:bg-zinc-700"
+      }`}
+    >
+      <span
+        aria-hidden="true"
+        className={`inline-block h-[18px] w-[18px] rounded-full bg-white shadow-card transition-transform duration-150 ease-out dark:bg-zinc-950 ${
+          checked ? "translate-x-[23px]" : "translate-x-[3px]"
+        }`}
+      />
+    </button>
+  );
+}
+
+/**
+ * A row of mutually exclusive options rendered as a single pill-shaped control (the selected
+ * option is a solid ink/brand segment). For short option sets — 2 to 4 choices — where a native
+ * `<select>` would hide the alternatives behind a click for no good reason.
+ */
+export function SegmentedControl<Value extends string>({
+  value,
+  onChange,
+  options,
+  label,
+  size = "md",
+}: {
+  value: Value;
+  onChange: (value: Value) => void;
+  options: { value: Value; label: string; icon?: ReactNode }[];
+  label: string;
+  size?: "md" | "sm";
+}) {
+  return (
+    <div
+      role="radiogroup"
+      aria-label={label}
+      className="flex items-center gap-1 rounded-xl border border-zinc-300 bg-zinc-100 p-1 dark:border-zinc-700 dark:bg-zinc-800/60"
+    >
+      {options.map((option) => {
+        const active = option.value === value;
+        return (
+          <button
+            key={option.value}
+            type="button"
+            role="radio"
+            aria-checked={active}
+            onClick={() => onChange(option.value)}
+            className={`flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg font-medium transition-colors duration-150 ${
+              size === "sm" ? "h-8 px-2.5 text-xs" : "h-9 px-3 text-sm"
+            } ${
+              active
+                ? "bg-white text-zinc-900 shadow-card dark:bg-zinc-950 dark:text-zinc-50"
+                : "text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+            }`}
+          >
+            {option.icon}
+            <span>{option.label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 const cardTones = {
   default:
     "rounded-2xl border border-zinc-200 bg-white shadow-card dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-none",
@@ -301,8 +391,8 @@ export function ArabicPanel({
 
 // The `inverse*` tones are for bars that sit on the dark featured card (dark in both themes).
 const progressTrack = {
-  accent: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(5_7_15/0.1)] dark:bg-zinc-800 dark:shadow-none",
-  success: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(5_7_15/0.1)] dark:bg-zinc-800 dark:shadow-none",
+  accent: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(10_13_12/0.1)] dark:bg-zinc-800 dark:shadow-none",
+  success: "bg-zinc-200 shadow-[inset_0_1px_1px_rgb(10_13_12/0.1)] dark:bg-zinc-800 dark:shadow-none",
   inverse: "bg-white/15",
   inverseSuccess: "bg-white/15",
 } as const;
@@ -449,7 +539,7 @@ export function TabBar({
   const nav = (
     <nav
       aria-label={label}
-      className="rounded-2xl border border-night-700/80 bg-night-900/80 p-1.5 shadow-inner backdrop-blur-md"
+      className="rounded-2xl border border-zinc-200 bg-white p-1.5 dark:border-night-700 dark:bg-night-900"
     >
       <ul className="flex items-center gap-1 overflow-x-auto scrollbar-none px-0.5">
         {items.map((item) => (
@@ -457,10 +547,10 @@ export function TabBar({
             <Link
               href={item.href}
               aria-current={item.active ? "page" : undefined}
-              className={`flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-3.5 text-sm transition-all duration-150 ${
+              className={`flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-3.5 text-sm transition-colors duration-150 ${
                 item.active
-                  ? "bg-brand-600 font-semibold text-white shadow-[0_2px_10px_rgba(63,82,163,0.45)] ring-1 ring-white/15"
-                  : "font-medium text-mist-400 hover:bg-white/[0.04] hover:text-mist-100"
+                  ? "bg-brand-600 font-semibold text-white"
+                  : "font-medium text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:text-mist-400 dark:hover:bg-white/[0.04] dark:hover:text-mist-100"
               }`}
             >
               <span>{item.label}</span>
@@ -469,7 +559,7 @@ export function TabBar({
                   className={`rounded-full px-1.5 py-0.5 text-xs font-semibold leading-none tabular-nums ${
                     item.active
                       ? "bg-white/20 text-white"
-                      : "bg-night-800 text-mist-400 ring-1 ring-night-700"
+                      : "bg-zinc-100 text-zinc-600 dark:bg-night-800 dark:text-mist-400"
                   }`}
                 >
                   {item.count}
@@ -484,7 +574,7 @@ export function TabBar({
 
   if (!sticky) return nav;
   return (
-    <div className="sticky top-[78px] sm:top-[84px] z-30 -mx-4 px-4 py-2.5 backdrop-blur-md transition-all sm:mx-0 sm:px-0">
+    <div className="sticky top-[78px] sm:top-[84px] z-30 -mx-4 bg-zinc-50/95 px-4 py-2.5 transition-all dark:bg-night-950/95 sm:mx-0 sm:bg-transparent sm:px-0">
       {nav}
     </div>
   );

@@ -1251,21 +1251,25 @@
       "explanationArabic": "نستخدم الأفعال like (يحب / يعجبه) و love (يعشق / يحب بشدة) و hate (يكره) متبوعة باسم مباشر للتعبير عن مشاعرنا تجاه الأطعمة والمشروبات والأشياء. لنفي الإعجاب نستخدم don't like أو doesn't like. ونستخدم prefer X to Y لتفضيل شيء على آخر.",
       "structures": [
         {
+          "label": "Preference (like/love/hate) · التعبير عن الميل",
           "pattern": "Subject + like / love / hate + Noun",
           "explanation": "Expressing positive or negative preference toward a thing",
           "explanationArabic": "التعبير عن الميول الإيجابية أو السلبية نحو شيء معين"
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Subject + do/does not like + Noun",
           "explanation": "Negative form showing dislike",
           "explanationArabic": "صيغة النفي للتعبير عن عدم الإعجاب بشيء"
         },
         {
+          "label": "Question · السؤال",
           "pattern": "Do/Does + Subject + like + Noun?",
           "explanation": "Question asking about personal taste",
           "explanationArabic": "سؤال للسؤال عن ذوق الشخص أو تفضيله"
         },
         {
+          "label": "Prefer...to... · تفضيل بين شيئين",
           "pattern": "Subject + prefer + Noun A + to + Noun B",
           "explanation": "Expressing preference between two things",
           "explanationArabic": "تفضيل شيء أول على شيء ثانٍ"
@@ -1325,12 +1329,12 @@
         {
           "wrong": "I am like pizza.",
           "right": "I like pizza.",
-          "explanation": "'Like' is a normal main verb here, do not add 'am'."
+          "note": "'Like' is a normal main verb here, do not add 'am'."
         },
         {
           "wrong": "She love fresh fruit.",
           "right": "She loves fresh fruit.",
-          "explanation": "With third person singular (she/he), remember the -s ending: 'loves'."
+          "note": "With third person singular (she/he), remember the -s ending: 'loves'."
         }
       ]
     }

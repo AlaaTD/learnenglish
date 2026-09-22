@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Must / Have to for Obligation",
+      "titleArabic": "استخدام Must و Have to للتعبير عن الإلزام والواجب",
       "explanation": "We use 'must' and 'have to' to talk about obligations and rules at work. 'Must' is commonly used for strong personal obligations or formal official notices ('You must sign the NDA'). 'Have to' expresses external obligations imposed by company rules or law ('Employees have to wear badges'). 'Must not' expresses strong prohibition ('You must not share passwords'), while 'don't have to' expresses lack of obligation, meaning it is not necessary ('You don't have to attend the optional mixer').",
       "explanationArabic": "نستخدم 'must' و 'have to' للتعبير عن الواجبات والالتزامات والقواعد في مكان العمل. يُستخدم 'must' للالتزامات القوية أو الإشعارات الرسمية المكتوبة ('يجب أن توقع اتفاقية السرية'). بينما يُستخدم 'have to' للالتزامات المفروضة خارجياً بموجب لوائح الشركة أو القانون ('يتعين على الموظفين ارتداء الشارات'). كما أن 'must not' تعني النهي والتحريم التام ('ممنوع مشاركة كلمات المرور')، في حين أن 'don't have to' تعني عدم الإلزام؛ أي أن الأمر ليس ضرورياً ويمكنك تركه ('لست مضطراً لحضور اللقاء الاختياري').",
-      "rules": [
-        "Must + base verb: internal obligation or formal official written rule.",
-        "Have to / has to + base verb: external rule, company law, or necessity.",
-        "Must not (mustn't) + base verb = strictly prohibited (NOT allowed).",
-        "Don't / doesn't have to + base verb = not necessary (optional)."
-      ],
-      "rulesArabic": [
-        "Must + الفعل الأساسي: التزام قوي أو قاعدة مكتوبة رسمية.",
-        "Have to / has to + الفعل الأساسي: التزام خارجي مفروض بقانون أو سياسة العمل.",
-        "Must not + الفعل الأساسي = محظور وممنوع تماماً.",
-        "Don't / doesn't have to + الفعل الأساسي = غير ضروري (أمر اختياري)."
-      ],
       "structures": [
         {
+          "label": "Obligation · الإلزام",
           "pattern": "Subject + must / have to + V1 (base)",
           "explanation": "Expresses an obligation to do something.",
           "explanationArabic": "يعبر عن إلزام أو واجب للقيام بفعل ما."
         },
         {
+          "label": "Prohibition · المنع",
           "pattern": "Subject + must not + V1 (base)",
           "explanation": "Expresses strict prohibition.",
           "explanationArabic": "يعبر عن المنع والحظر التام."
         },
         {
+          "label": "No Obligation · عدم الإلزام",
           "pattern": "Subject + do/does not have to + V1 (base)",
           "explanation": "Expresses that something is voluntary, not mandatory.",
           "explanationArabic": "يوضح أن الأمر تطوعي وغير إلزامي."
@@ -85,6 +77,12 @@
           "note": "Never put 'to' after modal 'must'. Use 'must abide' or 'has to abide'.",
           "noteArabic": "لا تضع 'to' بعد 'must' مطلقاً. قل 'must abide' أو 'has to abide'."
         }
+      ],
+      "commonUsage": [
+        "Must + base verb: internal obligation or formal official written rule. (Must + الفعل الأساسي: التزام قوي أو قاعدة مكتوبة رسمية.)",
+        "Have to / has to + base verb: external rule, company law, or necessity. (Have to / has to + الفعل الأساسي: التزام خارجي مفروض بقانون أو سياسة العمل.)",
+        "Must not (mustn't) + base verb = strictly prohibited (NOT allowed). (Must not + الفعل الأساسي = محظور وممنوع تماماً.)",
+        "Don't / doesn't have to + base verb = not necessary (optional). (Don't / doesn't have to + الفعل الأساسي = غير ضروري (أمر اختياري).)"
       ]
     }
   ],

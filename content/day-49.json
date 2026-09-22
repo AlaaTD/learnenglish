@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Linking Words: although, however, because",
+      "titleArabic": "أدوات الربط: although و however و because لربط الأفكار المتقابلة والسببية",
       "explanation": "Linking words help connect ideas within and between sentences. 1) 'Although' (concessive conjunction): introduces a clause that contrasts with the main clause, showing something unexpected ('Although they drifted apart for years, their reunion felt completely natural'). It can go at the start or middle of a sentence. 2) 'However' (contrasting adverb): usually appears at the start of a new sentence or after a semicolon, signaling a contrast or unexpected turn ('He apologized sincerely; however, the estrangement continued'). It is separated from the rest of the sentence by a comma. 3) 'Because' (causal conjunction): introduces the reason or cause for something ('She made amends because she cherished their everlasting friendship'). 'Because' introduces a dependent clause and must be connected to a main clause.",
       "explanationArabic": "الروابط تصل الأفكار ببعضها داخل الجمل وبين الجمل: 1) (although - رغم أن): رابط تنازلي يدخل على جملة تناقض الجملة الرئيسية أو تتعارض معها مع حدوثهما معاً ('رغم ابتعادهما لسنوات، بدا لقاء شملهما طبيعياً تماماً'). يمكن وضعه في بداية الجملة أو منتصفها. 2) (however - غير أن / ولكن): يُستخدم عادة في بداية جملة مستقلة جديدة أو بعد فاصلة منقوطة للتعبير عن التناقض أو التحول المفاجئ ('اعتذر بصدق؛ غير أن الجفوة استمرت'). يُفصل عن بقية الجملة بفاصلة. 3) (because - لأن): رابط سببي يدخل على الجملة الفرعية التي تبين السبب ('صالحت لأنها اعتزت بصداقتهما الدائمة'). يصل جملة فرعية تابعة بجملة رئيسية.",
-      "rules": [
-        "Although + subject + verb (dependent clause), + main clause: 'Although they drifted apart, they reconciled quickly.'",
-        "Alternatively: Main clause + although + dependent clause: 'They reconciled although they had drifted apart.'",
-        "However: starts a sentence or follows a semicolon, followed by a comma: 'Healing took time; however, the renewal of their bond proved worthwhile.'",
-        "Because + cause clause (with subject and verb), attached to main clause: 'She reached out because the fallout had caused deep isolation.'"
-      ],
-      "rulesArabic": [
-        "although + جملة فرعية (فاعل + فعل) + فاصلة + الجملة الرئيسية، أو العكس.",
-        "however يأتي في بداية جملة مستقلة أو بعد فاصلة منقوطة، ويتبعه فاصلة.",
-        "because + جملة فرعية (فاعل + فعل)، ومتصلة بجملة رئيسية إما قبلها أو بعدها.",
-        "تذكر: although و because داخل الجملة (روابط)، أما however فيفصل جملتين مستقلتين."
-      ],
       "structures": [
         {
+          "label": "Although (Contrast) · although للتناقض",
           "pattern": "Although + Subject + Verb ..., Main Clause",
           "explanation": "Introduces a contrasting idea that does not prevent the main action from happening.",
           "explanationArabic": "يدخل على فكرة تناقض الفكرة الرئيسية دون أن تمنعها من الحدوث."
         },
         {
+          "label": "However (Contrast) · however للتناقض",
           "pattern": "Main Clause; however, + Second Main Clause",
           "explanation": "Signals an unexpected contrast or shift between two complete sentences.",
           "explanationArabic": "يشير إلى تناقض مفاجئ أو تحول بين جملتين مستقلتين."
         },
         {
+          "label": "Because (Reason) · because للسبب",
           "pattern": "Main Clause + because + Subject + Verb",
           "explanation": "States the reason or cause for the main action.",
           "explanationArabic": "يبين السبب أو الداعي للحدث الرئيسي."
@@ -91,6 +83,12 @@
           "note": "'However' needs a semicolon before it (or a new sentence) when contrasting two independent clauses.",
           "noteArabic": "استخدم فاصلة منقوطة قبل however عند ربط جملتين مستقلتين، لا فاصلة عادية."
         }
+      ],
+      "commonUsage": [
+        "Although + subject + verb (dependent clause), + main clause: 'Although they drifted apart, they reconciled quickly.' (although + جملة فرعية (فاعل + فعل) + فاصلة + الجملة الرئيسية، أو العكس.)",
+        "Alternatively: Main clause + although + dependent clause: 'They reconciled although they had drifted apart.' (however يأتي في بداية جملة مستقلة أو بعد فاصلة منقوطة، ويتبعه فاصلة.)",
+        "However: starts a sentence or follows a semicolon, followed by a comma: 'Healing took time; however, the renewal of their bond proved worthwhile.' (because + جملة فرعية (فاعل + فعل)، ومتصلة بجملة رئيسية إما قبلها أو بعدها.)",
+        "Because + cause clause (with subject and verb), attached to main clause: 'She reached out because the fallout had caused deep isolation.' (تذكر: although و because داخل الجملة (روابط)، أما however فيفصل جملتين مستقلتين.)"
       ]
     }
   ],

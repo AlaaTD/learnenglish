@@ -1274,16 +1274,19 @@
       "explanationArabic": "تبين حروف الجر الزمنية توقيت حدوث الأفعال: 1. نستخدم 'at' مع الساعات الدقيقة، ونقاط الوقت المحددة مثل الظهيرة والفجر ومنتصف الليل (at 7:00, at noon, at midnight, at dawn). 2. نستخدم 'on' مع أيام الأسبوع والتواريخ المحددة (on Monday, on May 15th). 3. نستخدم 'in' مع الفترات الزمنية الأطول كالأشهر، وفصول السنة، والسنوات، وأجزاء النهار (in the morning, in July, in 2026).",
       "structures": [
         {
+          "label": "Preposition: at · حرف الجر at",
           "pattern": "at + specific clock time / point of time",
           "explanation": "Used with clock times, noon, midnight, dawn, dusk",
           "explanationArabic": "تستخدم مع الساعات، الظهر، منتصف الليل، الفجر، الغسق"
         },
         {
+          "label": "Preposition: on · حرف الجر on",
           "pattern": "on + day of the week / specific calendar date",
           "explanation": "Used with days and dates",
           "explanationArabic": "تستخدم مع أيام الأسبوع والتواريخ"
         },
         {
+          "label": "Preposition: in · حرف الجر in",
           "pattern": "in + part of the day / month / season / year",
           "explanation": "Used with mornings, afternoons, months, years, and long periods",
           "explanationArabic": "تستخدم مع أوقات اليوم الواسعة والأشهر والسنوات والفصول"
@@ -1337,12 +1340,12 @@
         {
           "wrong": "I will see you in Monday.",
           "right": "I will see you on Monday.",
-          "explanation": "Use 'on' with days of the week, not 'in'."
+          "note": "Use 'on' with days of the week, not 'in'."
         },
         {
           "wrong": "The session begins on 8:00.",
           "right": "The session begins at 8:00.",
-          "explanation": "Use 'at' with specific clock times."
+          "note": "Use 'at' with specific clock times."
         }
       ]
     }

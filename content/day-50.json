@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Review: Complex Sentences with although / because / when",
+      "titleArabic": "مراجعة: الجمل المركبة باستخدام although و because و when",
       "explanation": "Complex sentences combine an independent clause (a complete thought that can stand alone) with one or more dependent clauses introduced by subordinating conjunctions. 1) 'Although' introduces a concessive clause that contrasts with the outcome in the main clause ('Although she felt intense trepidation, her inner ardour carried her through'). 2) 'Because' introduces a causal clause explaining why the action or emotional state occurred ('He sought catharsis because the lingering resentfulness was poisoning his peace'). 3) 'When' introduces a temporal clause specifying the condition or time under which the emotion was triggered ('When she saw the crestfallen student, her natural compassion prompted her to offer encouragement'). Using varied clause positions (subordinate clause first vs. main clause first) enriches emotional expression in English.",
       "explanationArabic": "الجمل المعقدة تربط بين جملة رئيسية مستقلة (فكرة مكتملة بذاتها) وجملة فرعية واحدة أو أكثر تبدأ بأداة ربط تابعة. 1) (Although - رغم أن): تقدم جملة تنازلية تتعارض مع النتيجة في الجملة الرئيسية ('رغم أنها شعرت بوجل وخوف شديد، إلا أن حميتها الداخلية دفعتها للأمام'). 2) (Because - لأن): تقدم جملة سببية تفسر سبب حدوث الفعل أو الحالة الشعورية ('طلب التطهير النفسي لأن الحنق المستمر كان يسمم سلامة باله'). 3) (When - عندما / حينما): تقدم جملة زمنية تحدد الوقت أو الشرط الذي انطلقت عنده العاطفة ('عندما رأت الطالب منكسر الخاطر، دفعتها فطرتها لتقديم التشجيع'). تنويع موضع الجملة التابعة (في البداية أو في الوسط) يثري التعبير عن المشاعر بدقة عالية.",
-      "rules": [
-        "Subordinate clause at the beginning requires a comma: 'Although he looked flustered, he answered every question accurately.'",
-        "Subordinate clause after the main clause usually needs NO comma: 'He answered every question accurately although he looked flustered.'",
-        "Because explains reason/cause: 'The audience erupted in exultation because their champion had triumphed.'",
-        "When marks the moment or trigger: 'When his reverie was interrupted, he felt briefly unsettled.'"
-      ],
-      "rulesArabic": [
-        "إذا بدأت الجملة بالجملة الفرعية (Although/Because/When)، نضع فاصلة بعدها وقبل الجملة الرئيسية.",
-        "إذا جاءت الجملة الفرعية في النهاية بعد الجملة الرئيسية، فغالباً لا نحتاج لفاصلة.",
-        "تُستخدم because لتبيان العلة والسبب المحرك للعاطفة.",
-        "تُستخدم when لتحديد لحظة انطلاق الشعور أو رد الفعل."
-      ],
       "structures": [
         {
+          "label": "Although · although",
           "pattern": "Although + Clause, Main Clause",
           "explanation": "Shows an emotional reaction that contrasts with an expectation or obstacle.",
           "explanationArabic": "يبين رد فعل عاطفي يتعارض مع ما كان متوقعاً أو مع وجود عقبة."
         },
         {
+          "label": "Because · because",
           "pattern": "Main Clause + because + Reason Clause",
           "explanation": "Connects an emotional state to its root psychological or situational cause.",
           "explanationArabic": "يربط حالة نفسية أو عاطفية بسببها الجذري أو الدافع لها."
         },
         {
+          "label": "When · when",
           "pattern": "When + Trigger Clause, Main Clause",
           "explanation": "Indicates the exact circumstance that ignited the emotional response.",
           "explanationArabic": "يوضح الظرف أو اللحظة الدقيقة التي أشعلت الاستجابة العاطفية."
@@ -86,6 +78,12 @@
           "note": "A 'because' clause is dependent; it cannot stand alone as a complete sentence with a period.",
           "noteArabic": "جملة because جملة فرعية تابعة، ولا يجوز أن تقف بمفردها كجملة مستقلة منتهية بنقطة."
         }
+      ],
+      "commonUsage": [
+        "Subordinate clause at the beginning requires a comma: 'Although he looked flustered, he answered every question accurately.' (إذا بدأت الجملة بالجملة الفرعية (Although/Because/When)، نضع فاصلة بعدها وقبل الجملة الرئيسية.)",
+        "Subordinate clause after the main clause usually needs NO comma: 'He answered every question accurately although he looked flustered.' (إذا جاءت الجملة الفرعية في النهاية بعد الجملة الرئيسية، فغالباً لا نحتاج لفاصلة.)",
+        "Because explains reason/cause: 'The audience erupted in exultation because their champion had triumphed.' (تُستخدم because لتبيان العلة والسبب المحرك للعاطفة.)",
+        "When marks the moment or trigger: 'When his reverie was interrupted, he felt briefly unsettled.' (تُستخدم when لتحديد لحظة انطلاق الشعور أو رد الفعل.)"
       ]
     }
   ],

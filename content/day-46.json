@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Make / Let / Help + Object + Verb",
+      "titleArabic": "أفعال السببية: Make و Let و Help + مفعول + فعل",
       "explanation": "Causative and permissive verbs ('make', 'let', 'help') express how an agent influences another person's actions. 1) 'Make + object + base verb' means forcing or compelling someone to do something ('The mediator made them listen to each other'). Notice: NEVER use 'to' with 'make' in the active voice! 2) 'Let + object + base verb' means permitting or allowing someone to do something ('She let him explain his perspective'). NEVER use 'to' with 'let'! 3) 'Help + object + (to) base verb' means assisting someone. 'Help' is unique because it can be followed by either the bare infinitive (base verb) or the to-infinitive ('He helped them resolve the dispute' OR 'He helped them to resolve the dispute').",
       "explanationArabic": "أفعال السببية والسماح (Make و Let و Help) تعبر عن كيفية تأثير الفاعل على تصرفات شخص آخر. 1) الصيغة (make + المفعول به + الفعل المجرد): تعني إجبار شخص أو إلزامه بفعل شيء ما ('أجبرهم الوسيط على الاستماع لبعضهم'). تذكر: لا نستخدم to إطلاقاً مع make في المبني للمعلوم! 2) الصيغة (let + المفعول به + الفعل المجرد): تعني السماح أو الإذن لشخص بفعل شيء ('سمحت له بشرح وجهة نظره'). ولا تأخذ to أبداً! 3) الفعل (help + المفعول به + الفعل المجرد أو to + الفعل): يعني المساعدة، وميزته أنه يقبل كلا الصياغتين ('ساعدهم على حل النزاع' سواءً help them settle أو help them to settle).",
-      "rules": [
-        "Make + Object + Bare Infinitive (Verb without to): Expresses compulsion or requirement ('He made me rewrite the report').",
-        "Let + Object + Bare Infinitive (Verb without to): Expresses permission or allowing ('They let us negotiate the terms').",
-        "Help + Object + Bare Infinitive OR to + Verb: Expresses assistance ('She helped him de-escalate the tension' or 'She helped him to de-escalate the tension').",
-        "Never use 'to' after 'make' or 'let' in active sentences (Wrong: 'She let him to speak')."
-      ],
-      "rulesArabic": [
-        "Make + المفعول + المصدر المجرد بدون to: يفيد الإلزام أو الإجبار.",
-        "Let + المفعول + المصدر المجرد بدون to: يفيد الإذن والسماح.",
-        "Help + المفعول + المصدر المجرد (أو to + المصدر): يفيد المعاونة والمساعدة، وكلا الخيارين صحيح لغوياً.",
-        "تحذير: لا تضع to بعد make أو let في الجمل العادية المبنية للمعلوم."
-      ],
       "structures": [
         {
+          "label": "Make (Compel) · make للإلزام",
           "pattern": "Subject + make(s)/made + Object + Base Verb",
           "explanation": "Compelling someone to perform an action.",
           "explanationArabic": "إلزام شخص أو إجباره على أداء الفعل."
         },
         {
+          "label": "Let (Permit) · let للسماح",
           "pattern": "Subject + let(s) + Object + Base Verb",
           "explanation": "Permitting someone to perform an action.",
           "explanationArabic": "السماح لشخص أو الإذن له بأداء الفعل."
         },
         {
+          "label": "Help (Assist) · help للمساعدة",
           "pattern": "Subject + help(s)/helped + Object + (to) + Base Verb",
           "explanation": "Assisting someone to perform an action.",
           "explanationArabic": "مساعدة شخص على إنجاز الفعل."
@@ -84,6 +76,12 @@
           "note": "'Let' + object is always followed directly by the bare verb without 'to'.",
           "noteArabic": "الفعل let متبوعاً بالمفعول به يأخذ دائماً الفعل المجرد بدون to."
         }
+      ],
+      "commonUsage": [
+        "Make + Object + Bare Infinitive (Verb without to): Expresses compulsion or requirement ('He made me rewrite the report'). (Make + المفعول + المصدر المجرد بدون to: يفيد الإلزام أو الإجبار.)",
+        "Let + Object + Bare Infinitive (Verb without to): Expresses permission or allowing ('They let us negotiate the terms'). (Let + المفعول + المصدر المجرد بدون to: يفيد الإذن والسماح.)",
+        "Help + Object + Bare Infinitive OR to + Verb: Expresses assistance ('She helped him de-escalate the tension' or 'She helped him to de-escalate the tension'). (Help + المفعول + المصدر المجرد (أو to + المصدر): يفيد المعاونة والمساعدة، وكلا الخيارين صحيح لغوياً.)",
+        "Never use 'to' after 'make' or 'let' in active sentences (Wrong: 'She let him to speak'). (تحذير: لا تضع to بعد make أو let في الجمل العادية المبنية للمعلوم.)"
       ]
     }
   ],

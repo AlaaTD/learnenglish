@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم زمن المضارع المستمر (am/is/are + الفعل مضافاً له ing) للحديث عن الترتيبات المستقبلية المؤكدة والمحجوزة مسبقاً (Fixed Arrangements) مثل مواعيد السفر التي حُجزت تذاكرها، أو اللقاءات المحددة مع أشخاص آخرين في وقت ومكان محددين.\n\nالفرق بين صيغ المستقبل:\n1. المضارع المستمر: ترتيبات مؤكدة ومحجوزة (تذاكر مشتراة، جداول زمنية رسمية).\n2. Be going to: نية أو خطة شخصية عامة.\n3. Will: قرار لحظي فوري أو وعد.\n\nالقاعدة: الفاعل + am/is/are + فعل + ing + دلالة زمنية مستقبلية (مثل: tomorrow, next week, at 10 AM).",
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Affirmative: Subject + am/is/are + Verb-ing + Future Time Marker",
           "explanation": "States a confirmed, scheduled future arrangement.",
           "explanationArabic": "للتعبير عن موعد أو رحلة محجوزة ومؤكدة في المستقبل."
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Negative: Subject + am/is/are + not + Verb-ing + Future Time Marker",
           "explanation": "States that a previously arranged future event is not taking place.",
           "explanationArabic": "للتعبير عن إلغاء أو عدم إتمام ترتيب مستقبلي محدد."
         },
         {
+          "label": "Question · السؤال",
           "pattern": "Question: Am/Is/Are + Subject + Verb-ing + Future Time Marker + ...?",
           "explanation": "Inquires about someone's confirmed itinerary or schedule.",
           "explanationArabic": "للسؤال عن مواعيد وارتباطات شخص ما المؤكدة في المستقبل."
@@ -54,6 +57,11 @@
             "departure gate"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use the Present Continuous for fixed future plans that already have a confirmed time or booking: 'I am flying to Frankfurt tomorrow morning.' (استخدم المضارع المستمر للخطط المستقبلية الثابتة التي لها موعد أو حجز مؤكد بالفعل.)",
+        "Always add a future time expression so the future meaning is clear, since the same form also describes the present moment: 'tomorrow', 'next week', 'at four o'clock'. (أضف دائماً تعبيراً زمنياً مستقبلياً ليتضح المعنى المستقبلي، لأن الصيغة نفسها تصف الحاضر أيضاً.)",
+        "Compare with 'be going to' for general intentions and 'will' for spontaneous decisions to pick the most accurate future form. (قارن مع be going to للنوايا العامة وwill للقرارات اللحظية لاختيار الصيغة الأدق للمستقبل.)"
       ],
       "commonMistakes": [
         {

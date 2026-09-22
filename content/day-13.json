@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم الماضي المستمر (Past Continuous) المكون من (was/were + verb-ing) لوصف أحداث كانت مستمرة وقيد الحدوث في لحظة محددة في الماضي. نستخدم was مع (I, he, she, it) ونستخدم were مع (you, we, they). ومن أهم استخداماته رسم خلفية المشهد في القصص والروايات (Background Scene مثل: 'The wind was blowing'). وعندما يقاطع حدث مفاجئ قصيراً حدثاً كان مستمراً بالفعل، نضع الحدث المستمر في الماضي المستمر (Past Continuous)، ونضع الحدث القاطع في الماضي البسيط (Past Simple)، ونربط بينهما عادة بـ while أو when أو as (مثل: 'While we were strolling, thunder started').",
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Affirmative: Subject (I/He/She/It) + was + Verb-ing | (You/We/They) + were + Verb-ing",
           "explanation": "Describes an ongoing activity occurring at a specific point in past time.",
           "explanationArabic": "يصف نشاطاً كان مستمراً وقيد التنفيذ في وقت محدد في الماضي."
         },
         {
+          "label": "Background + Interruption · الخلفية والمقاطعة",
           "pattern": "Background + Interruption: While / As + Past Continuous, Past Simple",
           "explanation": "Connects a longer continuous background action with a sudden interrupting event.",
           "explanationArabic": "يربط بين فعل خلفي مستمر طويل وفعل قاطع مفاجئ في الماضي البسيط."
         },
         {
+          "label": "Simultaneous Actions · أحداث متزامنة",
           "pattern": "Simultaneous Past Actions: Past Continuous + while + Past Continuous",
           "explanation": "Shows two ongoing actions taking place at the exact same time in the past.",
           "explanationArabic": "يوضح حدثين كانا مستمرين في نفس الوقت تماماً في الماضي."
@@ -55,6 +58,12 @@
             "hurry"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use the Past Continuous to paint the background scene of a story before the main event happens: 'The sun was shining and birds were singing.' (استخدم الماضي المستمر لرسم خلفية المشهد في القصة قبل وقوع الحدث الرئيسي.)",
+        "Combine both tenses for an interruption: the longer background action takes the Past Continuous, and the short interrupting event takes the Past Simple, usually linked by 'while' or 'when'. (اجمع بين الزمنين للتعبير عن المقاطعة: الحدث الأطول في المستمر، والحدث القاطع القصير في البسيط، غالباً مرتبطين بـ while أو when.)",
+        "Use 'while' with two Past Continuous clauses to show two actions happening at the same time in the past. (استخدم while مع فعلين في الماضي المستمر لوصف حدثين متزامنين في الماضي.)",
+        "Remember 'was' goes with I/he/she/it and 'were' goes with you/we/they -- a very common mix-up. (تذكر أن was تأتي مع I/he/she/it وwere تأتي مع you/we/they -- وهو خطأ شائع جداً.)"
       ],
       "commonMistakes": [
         {

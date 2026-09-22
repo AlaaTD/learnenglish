@@ -1466,21 +1466,25 @@
       "explanationArabic": "نستخدم الفعل المساعد 'can' للتعبير عن امتلاك الشخص القدرة أو المهارة لفعل شيء ما، ونستخدم 'cannot' أو اختصارها 'can't' للتعبير عن عدم الاستطاعة. قواعد أساسية: 1. الفعل 'can' لا يتغير شكله أبداً (لا نضيف s مع he/she/it). 2. يأتي بعده الفعل في المصدر المجرد دائماً بدون 'to'. 3. في السؤال، نقدم can على الفاعل: 'Can you speak English?'",
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Subject + can + base verb",
           "explanation": "Positive sentence expressing ability",
           "explanationArabic": "الجملة المثبتة للتعبير عن القدرة"
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Subject + cannot / can't + base verb",
           "explanation": "Negative sentence expressing lack of ability",
           "explanationArabic": "جملة النفي للتعبير عن عدم الاستطاعة"
         },
         {
+          "label": "Question · السؤال",
           "pattern": "Can + Subject + base verb?",
           "explanation": "Question asking about personal ability",
           "explanationArabic": "سؤال للسؤال عن امتلاك المهارة أو القدرة"
         },
         {
+          "label": "Short Answers · إجابات قصيرة",
           "pattern": "Yes, Subject + can. / No, Subject + can't.",
           "explanation": "Short answers to ability questions",
           "explanationArabic": "الإجابات القصيرة بنعم أو لا"
@@ -1535,12 +1539,12 @@
         {
           "wrong": "He cans speak English.",
           "right": "He can speak English.",
-          "explanation": "Modal verbs like 'can' never add '-s' for the third person singular."
+          "note": "Modal verbs like 'can' never add '-s' for the third person singular."
         },
         {
           "wrong": "I can to drive.",
           "right": "I can drive.",
-          "explanation": "Do not put 'to' after 'can'; use the bare infinitive."
+          "note": "Do not put 'to' after 'can'; use the bare infinitive."
         }
       ]
     }

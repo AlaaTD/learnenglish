@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم الفعل المساعد 'will' (واختصاره 'll، ونفيه won't) في ثلاث حالات رئيسية:\n1. القرارات العفوية واللحظية المتخذة أثناء الكلام مباشرة (مثل: الهاتف يرن — سأرد أنا!).\n2. الوعود وتقديم المساعدة (مثل: أعدك بأنني سأساعدك / سأحمل عنك هذه الحقيبة).\n3. التنبؤات والآراء حول المستقبل بناءً على التخمين أو التفاؤل والتشاؤم وغالباً مع كلمات مثل (probably, perhaps, think, hope).\n\nالقاعدة: الفاعل + will/won't + الفعل الأساسي مجرداً بدون أي إضافات.",
       "structures": [
         {
+          "label": "Spontaneous Decision · قرار لحظي",
           "pattern": "Spontaneous Decision: Subject + will ('ll) + Base Verb",
           "explanation": "Deciding to act instantly at the moment of speaking.",
           "explanationArabic": "اتخاذ قرار فوري في لحظة التحدث دون تخطيط مسبق."
         },
         {
+          "label": "Promise / Offer · وعد أو عرض",
           "pattern": "Promise / Offer: I / We will ('ll) + Base Verb",
           "explanation": "Assuring someone or volunteering help.",
           "explanationArabic": "تقديم وعد قاطع أو عرض مساعدة."
         },
         {
+          "label": "Prediction · تنبؤ",
           "pattern": "Prediction: Subject + will ('ll) / won't + Base Verb",
           "explanation": "Stating what one believes or expects to happen in the future.",
           "explanationArabic": "التنبؤ بما يتوقع حدوثه في المستقبل."
@@ -56,6 +59,11 @@
             "guarantee"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use 'will' for a decision made at the exact moment of speaking, not planned in advance: 'The phone is ringing -- I'll answer it!' (استخدم will لقرار يُتخذ في لحظة الكلام نفسها وليس مخططاً له مسبقاً.)",
+        "Use 'will' for promises and spontaneous offers of help: 'I promise I will help you.' / 'I'll carry that for you.' (استخدم will للوعود والعروض التلقائية لتقديم المساعدة.)",
+        "Use 'will' with 'think', 'hope', or 'believe' for predictions based on opinion rather than visible evidence: 'I think it will rain tomorrow.' (استخدم will مع think أو hope أو believe للتنبؤات المبنية على الرأي وليس على دليل مرئي.)"
       ],
       "commonMistakes": [
         {

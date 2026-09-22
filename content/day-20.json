@@ -13,11 +13,13 @@
       "explanationArabic": "في اللغة الإنجليزية الطبيعية، الإجابة على الأسئلة بكلمة 'Yes' أو 'No' فقط تبدو جافة وغير مهذبة. بدلاً من ذلك، يستخدم المتحدثون الأجوبة القصيرة التي تعكس الفعل المساعد أو الناقص المستخدم في السؤال.\n\nقواعد الأجوبة القصيرة:\n1. استخدام نفس الفعل المساعد (do, did, is, are, have, can, should):\n   - 'Do you keep in touch?' -> 'Yes, I do.' / 'No, I don't.'\n   - 'Did you forward the attachment?' -> 'Yes, I did.' / 'No, I didn't.'\n2. عدم اختصار الضمير مع الفعل في الإثبات (نقول 'Yes, I am' وليس 'Yes, I'm').\n3. في الأسئلة التي تبدأ بأداة استفهام (Wh-): [أداة الاستفهام] + [فعل مساعد] + [فاعل] + [فعل أساسي]...؟",
       "structures": [
         {
+          "label": "Yes/No + Short Answer · سؤال وجواب قصير",
           "pattern": "Yes/No Question: Auxiliary + Subject + Main Verb + ...? -> Short Answer: Yes, S + Aux. / No, S + Aux + not.",
           "explanation": "Standard polite pattern for closed inquiries.",
           "explanationArabic": "النمط المعياري المهذب للأسئلة المغلقة وأجوبتها القصيرة."
         },
         {
+          "label": "Wh- Question · سؤال استفهام",
           "pattern": "Wh- Question: Wh-Word + Auxiliary + Subject + Main Verb + ...?",
           "explanation": "Forms open informational questions across tenses.",
           "explanationArabic": "صياغة الأسئلة الاستفهامية المفتوحة لطلب المعلومات."
@@ -50,6 +52,11 @@
             "catch up"
           ]
         }
+      ],
+      "commonUsage": [
+        "Echo the auxiliary from the question in your short answer instead of a bare 'Yes' or 'No': 'Do you agree?' -- 'Yes, I do.' (كرر الفعل المساعد من السؤال في الإجابة القصيرة بدلاً من قول Yes أو No فقط.)",
+        "Never contract the pronoun and verb in an affirmative short answer: say 'Yes, I am', not 'Yes, I'm'. (لا تختصر الضمير مع الفعل في الإجابة المثبتة القصيرة: قل Yes, I am وليس Yes, I'm.)",
+        "In Wh- questions, place the question word first, then the auxiliary, then the subject: 'Where did you meet him?' (في أسئلة الـ Wh، ضع أداة الاستفهام أولاً، ثم الفعل المساعد، ثم الفاعل.)"
       ],
       "commonMistakes": [
         {

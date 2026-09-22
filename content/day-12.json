@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم الماضي البسيط (Past Simple) للتحدث عن أفعال أو أحداث أو مواقف اكتملت وانتهت في وقت محدد في الماضي (مثل: 'yesterday', 'last week', 'last year'). في الجمل المثبتة، تأخذ جميع الضمائر الفاعلة نفس صيغة الماضي: الأفعال المنتظمة يضاف إليها -ed (مثل: attended, celebrated, discovered)، بينما الأفعال غير المنتظمة تتحول إلى تصريفها الثاني الخاص V2 (مثل: saw, heard, gave, won, broke). وعادة ما نستخدم ظروف الوقت الدالة على الماضي لتحديد وقت وقوع الحدث بدقة.",
       "structures": [
         {
+          "label": "Regular Verbs (-ed) · الأفعال المنتظمة",
           "pattern": "Regular Verbs: Subject + Verb-ed (e.g. attended, celebrated)",
           "explanation": "Add -ed (or -d if ending in -e) to the base verb for regular past actions.",
           "explanationArabic": "إضافة -ed (أو -d فقط إذا انتهى الفعل بـ e) للمصدر لتكوين الماضي المنتظم."
         },
         {
+          "label": "Irregular Verbs (V2) · الأفعال الشاذة",
           "pattern": "Irregular Verbs: Subject + V2 Form (e.g. saw, heard, won, gave)",
           "explanation": "Use the unique second form (V2) memorized for irregular verbs.",
           "explanationArabic": "استخدام التصريف الثاني الخاص (V2) المحفوظ للأفعال غير المنتظمة."
         },
         {
+          "label": "Time Markers · ظروف الزمن",
           "pattern": "Past Time Markers: Yesterday / Last week / In the past + Past Clause",
           "explanation": "Specific time anchors that frame completed historical or past events.",
           "explanationArabic": "ظروف زمنية ماضية محددة تؤطر الحدث المكتمل في سياقه الزمني."
@@ -55,6 +58,11 @@
             "inform"
           ]
         }
+      ],
+      "commonUsage": [
+        "Pair the Past Simple with a finished time expression to anchor the action in the past: 'last week', 'yesterday', 'in 2020'. (اقرن الماضي البسيط بتعبير زمني منتهٍ لتحديد وقوع الحدث في الماضي: last week وyesterday وin 2020.)",
+        "Regular verbs add '-ed', but frequent everyday verbs are irregular and must be learned individually, such as 'saw', 'gave', and 'won'. (الأفعال المنتظمة تضاف لها -ed، لكن الأفعال الشائعة كثيراً ما تكون شاذة ويجب تعلمها فرداً فرداً مثل saw وgave وwon.)",
+        "Use the Past Simple to narrate a sequence of finished actions in the order they happened, one after another. (استخدم الماضي البسيط لسرد سلسلة أحداث منتهية بترتيب وقوعها، واحداً تلو الآخر.)"
       ],
       "commonMistakes": [
         {

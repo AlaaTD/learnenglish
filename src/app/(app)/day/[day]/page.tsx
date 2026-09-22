@@ -118,17 +118,17 @@ export default async function DayPage({
       {/* Header: where you are, title, and sleek day navigator */}
       <div className="flex flex-col gap-3.5 sm:flex-row sm:items-center sm:justify-between">
         <div className="min-w-0">
-          <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider text-mist-500">
-            <span className="rounded-full bg-brand-900/80 px-2.5 py-0.5 text-brand-300 ring-1 ring-brand-700/60">
+          <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-mist-500">
+            <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-brand-700 dark:bg-brand-900/80 dark:text-brand-300">
               Day {String(dayNumber).padStart(2, "0")} of 90
             </span>
-            {day.stage ? <span className="text-mist-400">· {day.stage}</span> : null}
+            {day.stage ? <span className="text-zinc-600 dark:text-mist-400">· {day.stage}</span> : null}
           </div>
-          <h1 className="mt-1.5 text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          <h1 className="mt-1.5 text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
             {day.title}
           </h1>
           {day.topic ? (
-            <p className="mt-1 text-sm text-mist-400">
+            <p className="mt-1 text-sm text-zinc-600 dark:text-mist-400">
               {day.topic}
             </p>
           ) : null}
@@ -137,16 +137,16 @@ export default async function DayPage({
         {/* Day Actions & Prev/Next Navigator */}
         <div className="flex flex-wrap items-center gap-2 shrink-0">
           {completed ? (
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-950/80 px-3 py-1 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-600/40">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
               Completed
             </span>
           ) : null}
-          <div className="inline-flex items-center rounded-full border border-night-700 bg-night-900/80 p-1 shadow-inner backdrop-blur-md">
+          <div className="inline-flex items-center rounded-full border border-zinc-200 bg-white p-1 dark:border-night-700 dark:bg-night-900/80">
             {dayNumber > 1 ? (
               <Link
                 href={`/day/${dayNumber - 1}`}
-                className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium text-mist-300 transition-colors hover:bg-night-800 hover:text-white"
+                className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-mist-300 dark:hover:bg-night-800 dark:hover:text-white"
                 aria-label={`Go to Day ${dayNumber - 1}`}
               >
                 ← Day {dayNumber - 1}
@@ -155,7 +155,7 @@ export default async function DayPage({
             {dayNumber < 90 ? (
               <Link
                 href={`/day/${dayNumber + 1}`}
-                className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium text-mist-300 transition-colors hover:bg-night-800 hover:text-white"
+                className="inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-mist-300 dark:hover:bg-night-800 dark:hover:text-white"
                 aria-label={`Go to Day ${dayNumber + 1}`}
               >
                 Day {dayNumber + 1} →
@@ -165,18 +165,21 @@ export default async function DayPage({
         </div>
       </div>
 
-      {/* Focus + progress in one card (two columns on desktop) */}
-      <Card className="grid gap-4 md:grid-cols-3 md:items-center md:gap-6 border-night-700/80 bg-night-900/60 shadow-lg backdrop-blur-sm">
-        <div className="md:col-span-2">
+      {/* Focus + progress: one quiet block, not a card containing a card (§8 "Nested Visual
+          Boundaries" — the progress figure used to sit in its own bordered sub-box inside this
+          Card; a vertical divider on desktop and plain spacing on mobile does the same
+          separating job without a second boundary). */}
+      <Card className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6 border-zinc-200 bg-white dark:border-night-700/80 dark:bg-night-900/60">
+        <div className="min-w-0 md:flex-1">
           <SmallLabel>Today&apos;s focus</SmallLabel>
           <p className="mt-1 text-sm leading-relaxed text-zinc-800 sm:text-base dark:text-zinc-200">{day.focus}</p>
         </div>
-        <div className="rounded-xl bg-night-800/60 p-3 ring-1 ring-night-700/60">
+        <div className="md:w-64 md:shrink-0 md:border-s md:border-zinc-200 md:ps-6 dark:md:border-night-700/60">
           <div className="mb-2 flex items-baseline justify-between gap-3 text-sm">
-            <span className="text-mist-400">Words learned</span>
-            <span className="font-semibold tabular-nums text-mist-100">
+            <span className="text-zinc-600 dark:text-mist-400">Words learned</span>
+            <span className="font-semibold tabular-nums text-zinc-900 dark:text-mist-100">
               {learnedCount} / 50
-              <span className="ms-1.5 text-xs font-normal text-mist-400">({learnedPercent}%)</span>
+              <span className="ms-1.5 text-xs font-normal text-zinc-600 dark:text-mist-400">({learnedPercent}%)</span>
             </span>
           </div>
           <ProgressBar
@@ -188,7 +191,8 @@ export default async function DayPage({
         </div>
       </Card>
 
-      {/* Visual Infographic Banner */}
+      {/* Visual summary — a quiet inline link, not a visual landmark (§28: "learning first, the
+          visual enrichment second"). The infographic itself is unchanged and one click away. */}
       <DayImageBanner dayNumber={dayNumber} dayTitle={day.title} imageUrl={dayImageUrl} />
 
       {vocabulary.length === 0 ? (
@@ -211,54 +215,47 @@ export default async function DayPage({
         </div>
       ) : (
         <>
-          {/* Grammar Focus Bar — Directs learner to the dedicated Grammar Academy */}
+          {/* Grammar Focus — a quiet inline link, same weight as the visual-summary link above it,
+              not a second full-width landmark card competing with the vocabulary below (§29). */}
           {day.grammarLessons.length > 0 && (
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3.5 rounded-2xl border border-night-700 bg-night-900 p-4 shadow-sm">
-              <div className="flex items-center gap-3.5">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-500/20 text-brand-300 ring-1 ring-brand-500/40">
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </span>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-brand-300">Grammar Focus · تركيز القواعد</span>
-                    <span className="text-xs text-mist-500">Day {dayNumber}</span>
-                  </div>
-                  <p className="text-base font-semibold text-white">
-                    {day.grammarLessons[0].title}
-                    {day.grammarLessons[0].titleArabic && (
-                      <span className="ms-2 font-normal text-clay-300">({day.grammarLessons[0].titleArabic})</span>
-                    )}
-                  </p>
-                </div>
-              </div>
+            <p className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-zinc-600 dark:text-mist-400">
+              <span className="text-zinc-600 dark:text-mist-500">Grammar focus:</span>
+              <span className="font-medium text-zinc-800 dark:text-mist-200">
+                {day.grammarLessons[0].title}
+                {day.grammarLessons[0].titleArabic ? (
+                  <span className="ms-1 font-normal text-clay-700 dark:text-clay-300">({day.grammarLessons[0].titleArabic})</span>
+                ) : null}
+              </span>
               <Link
                 href={`/grammar?day=${dayNumber}`}
-                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-brand-500 hover:shadow-md active:scale-95"
+                className="font-medium text-brand-700 underline decoration-brand-700 underline-offset-2 transition-colors hover:text-brand-800 dark:text-brand-300 dark:hover:text-brand-200"
               >
-                <span>Study &amp; Test in Grammar Academy</span>
-                <span aria-hidden="true">→</span>
+                Study in Grammar →
               </Link>
-            </div>
+            </p>
           )}
 
           <DayTabs day={dayNumber} active={tab} />
 
-          {/* ─── Vocabulary ─── */}
+          {/* ─── Vocabulary ───────────────────────────────────────────────────────
+              Two-up card grid, matching the width of the full-width "Today's focus" card
+              above it. An earlier revision used a single max-w-[70ch] reading column here
+              (see git history for the superseded rationale) — at this page's actual shell
+              width (max-w-[1548px]) that read as a narrow, disconnected strip next to every
+              other full-width section on the page. Card-style grid items fill that width
+              properly while still keeping each word's full interaction surface. */}
           {tab === "vocabulary" && (
-            <section aria-label="Today's vocabulary">
-              <div className="grid items-start gap-3 lg:grid-cols-2">
-                {vocabulary.map((word) => (
-                  <VocabularyCard
-                    key={word.id}
-                    word={word}
-                    trackDay={dayNumber}
-                    audioRate={audioRate}
-                    autoplayAudio={autoplayAudio}
-                  />
-                ))}
-              </div>
+            <section aria-label="Today's vocabulary" className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {vocabulary.map((word) => (
+                <VocabularyCard
+                  key={word.id}
+                  word={word}
+                  trackDay={dayNumber}
+                  audioRate={audioRate}
+                  autoplayAudio={autoplayAudio}
+                  variant="grid"
+                />
+              ))}
             </section>
           )}
 

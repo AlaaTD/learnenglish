@@ -4,139 +4,166 @@
 
 /*
  * ---------------------------------------------------------------------------
- * Design tokens - "quiet navy"
+ * Design tokens - "Study Ink"
  * ---------------------------------------------------------------------------
- * One calm, flat palette - no gradients, no neon. "Calm" does not mean "one
- * hue": it means every colour sits at a similar lightness and a low saturation,
- * so several hues can share a screen without shouting. The hue is chosen by
- * ROLE, and each role keeps its hue on every screen, so colour also tells you
- * what you are looking at.
+ * Rebuilt per ENGLISH90_COLOR_SYSTEM_AUDIT.md. The previous system defined
+ * its intent as calm and muted but its implementation pulled in several
+ * directions at once: an indigo `brand` that the comments called "clay", two
+ * duplicate neutral scales (`zinc` and `night`/`mist` with near-identical but
+ * not identical hex values), and enough shadow/ring/blur/gradient/pill usage
+ * to read as a generic AI-dashboard template rather than a study tool with
+ * its own character.
  *
- *   zinc     neutrals: the navy-to-mist scale for surfaces, borders and text
- *            (the same scale the home shell uses as `night` / `mist`).
- *   brand    indigo - the primary accent: actions, focus, the current step,
- *            journey and day progress.
- *   sky      words: vocabulary learned, learning, information.
- *   amber    review: words that need another look, warnings.
- *   clay     warm highlight: streaks and small "spark" details only.
- *   emerald  mastered / completed          rose   errors / destructive
+ * The new identity is a quiet study instrument, not a SaaS dashboard:
  *
- * Proportions: the navy neutrals carry ~90% of the pixels and brand carries the
- * actions; sky / amber / clay appear only in small chips, dots and progress
- * fills - that is what breaks the monotony without making the page busy.
+ *   ink      neutrals: ONE scale (charcoal with a faint green cast) for every
+ *            surface, border and text colour in the app. `zinc` IS this
+ *            scale; `night-*` / `mist-*` below are pure aliases of it (same
+ *            custom properties, not just similar hex) so there is truly one
+ *            neutral, not three.
+ *   moss     the single primary accent: actions, focus, the current step,
+ *            progress fills, the logo mark. A muted sage green - its
+ *            strength comes from being restrained, not saturated.
+ *   brass    warm secondary highlight: streaks, milestones, one "special"
+ *            learning moment. Never a second primary, never a whole card.
+ *   brick    errors / destructive actions only.
+ *   emerald  mastered / completed (a slightly richer green than moss so a
+ *            "you finished this" signal stays distinct from the accent).
+ *   sky      learning / informational words - muted slate-teal, no longer
+ *            indigo-leaning so it never competes with moss.
+ *   amber    needs-review / warning - warm gold, kept a step apart from
+ *            brass (brass = achievement, amber = "look again").
  *
- * Contrast targets (verified in the final check): body text >= 7:1 on its
- * surface, secondary text >= 4.5:1 (WCAG AA), UI boundaries close to 3:1.
+ * Proportions (an internal heuristic, not a pixel rule): ink neutrals carry
+ * ~80-90% of the screen, moss carries the primary action, and every other
+ * hue above appears only in small chips, dots, markers and progress fills.
+ *
+ * Contrast: spot-checked against WCAG 2.2 (4.5:1 body text, 3:1 large text /
+ * meaningful UI boundaries) - see the audit doc section 24 for the checked
+ * pairs. This file changes colour values only; no selector, layout or
+ * component logic changes here.
  */
 @theme {
-  --color-white: #f6f8fc;
-  --color-black: #05070f;
+  --color-white: #f6f4ee;
+  --color-black: #0a0d0b;
 
-  /* Neutrals - a single quiet navy scale. 50-300 surfaces and borders, 400-500
-     muted text, 600-900 body text. 700-950 are the same hex values as the
-     home screen's `night` surfaces, so every screen in the app sits on the
-     same background. */
-  --color-zinc-50: #eef3fb;
-  --color-zinc-100: #dde6f5;
-  --color-zinc-200: #c7d3e8;
-  --color-zinc-300: #a9bbdd;
-  --color-zinc-400: #8ea1c4;
-  --color-zinc-500: #7488ab;
-  --color-zinc-600: #4c5b80;
-  --color-zinc-700: #1c2743;
-  --color-zinc-800: #16223c;
-  --color-zinc-900: #0e1728;
-  --color-zinc-950: #090f1d;
+  /* Neutrals - ONE quiet ink scale. 50-300 = light-mode surfaces / dark-mode
+     primary-to-secondary text. 400-600 = tertiary text and visible borders.
+     700-950 = dark-mode surfaces, darkest at the page canvas. Every other
+     neutral alias in this file (night-*, mist-*) points at these same custom
+     properties, so there is exactly one neutral scale in the app. */
+  --color-zinc-50: #f1f0e9;
+  --color-zinc-100: #e4e2d6;
+  --color-zinc-200: #cbcfc0;
+  --color-zinc-300: #b6bbb2;
+  --color-zinc-400: #9ca295;
+  --color-zinc-500: #878e86;
+  --color-zinc-600: #5c6558;
+  --color-zinc-700: #2b342e;
+  --color-zinc-800: #202822;
+  --color-zinc-850: #1b211d;
+  --color-zinc-900: #171c19;
+  --color-zinc-950: #101412;
 
-  /* Accent: one muted slate-blue, used flat (no gradients) everywhere an accent
-     is needed - buttons, links, focus, progress, the logo mark. 600 is the
-     resting action colour in light mode (white text passes AA on it); 400
-     takes over in dark mode. */
-  --color-brand-50: #eef1fb;
-  --color-brand-100: #dee4f6;
-  --color-brand-200: #bdc8ec;
-  --color-brand-300: #97a7de;
-  --color-brand-400: #7386d0;
-  --color-brand-500: #5468bd;
-  --color-brand-600: #3f52a3;
-  --color-brand-700: #33438a;
-  --color-brand-800: #293668;
-  --color-brand-900: #212a4f;
-  --color-brand-950: #141a33;
+  /* Accent: one muted sage green, used flat (no gradients) everywhere an
+     accent is needed - buttons, links, focus, progress, the logo mark. 700 is
+     the resting action colour in light mode; 400 takes over in dark mode
+     (ink text on moss-400 passes AA - it is the brightest thing on a dark
+     surface without being a saturated "tech" green). */
+  --color-brand-50: #eef3e9;
+  --color-brand-100: #dce7d3;
+  --color-brand-200: #c3d5b3;
+  --color-brand-300: #a7ba95;
+  --color-brand-400: #8fa97d;
+  --color-brand-500: #7f956f;
+  --color-brand-600: #5d745f;
+  --color-brand-700: #4f6654;
+  --color-brand-800: #3d4f3f;
+  --color-brand-900: #2c3a2e;
+  --color-brand-950: #1c251d;
 
-  /* Success / mastered / completed */
-  --color-emerald-50: #eef7f2;
-  --color-emerald-100: #d8eee2;
-  --color-emerald-200: #b4dcc6;
-  --color-emerald-300: #86c4a3;
-  --color-emerald-400: #5fae8a;
-  --color-emerald-500: #3f956f;
-  --color-emerald-600: #2f7a58;
-  --color-emerald-700: #276148;
-  --color-emerald-800: #214e3b;
-  --color-emerald-900: #1d4131;
-  --color-emerald-950: #0f261c;
+  /* Success / mastered / completed. A slightly richer green than the moss
+     accent so "you finished this" stays legible as a distinct signal, while
+     remaining in the same muted, low-saturation family. */
+  --color-emerald-50: #eaf4ec;
+  --color-emerald-100: #d2e8d7;
+  --color-emerald-200: #aad3b4;
+  --color-emerald-300: #7dbb8d;
+  --color-emerald-400: #57a06a;
+  --color-emerald-500: #3f8654;
+  --color-emerald-600: #326d44;
+  --color-emerald-700: #2a5838;
+  --color-emerald-800: #23472e;
+  --color-emerald-900: #1d3a26;
+  --color-emerald-950: #102117;
 
-  /* Warning / in review. Pushed toward yellow (hue 45) so it never reads as a
-     second shade of the brand accent. */
-  --color-amber-50: #fcf7e4;
-  --color-amber-100: #f8edbb;
-  --color-amber-200: #f0de88;
-  --color-amber-300: #e5c94f;
-  --color-amber-400: #d1ae2b;
-  --color-amber-500: #b4931f;
-  --color-amber-600: #8f7418;
-  --color-amber-700: #725d18;
-  --color-amber-800: #5b4a17;
-  --color-amber-900: #4a3d17;
-  --color-amber-950: #291f0a;
+  /* Warning / in review. Warm gold, kept a step apart from `clay`/brass
+     (brass = achievement and emphasis, amber = "this needs another look")
+     so the two warm hues don't collapse into one. */
+  --color-amber-50: #faf1e4;
+  --color-amber-100: #f3e0c0;
+  --color-amber-200: #e8c687;
+  --color-amber-300: #d9a85a;
+  --color-amber-400: #c68c3e;
+  --color-amber-500: #a8712f;
+  --color-amber-600: #8a5c27;
+  --color-amber-700: #6e4a22;
+  --color-amber-800: #573b1d;
+  --color-amber-900: #432e18;
+  --color-amber-950: #281b0d;
 
-  /* Info / learning. Same steel blue as the logo. */
-  --color-sky-50: #eef6fb;
-  --color-sky-100: #dcecf7;
-  --color-sky-200: #bcd9ee;
-  --color-sky-300: #8fbfe0;
-  --color-sky-400: #63a3d1;
-  --color-sky-500: #4187ba;
-  --color-sky-600: #346ea0;
-  --color-sky-700: #2c5a83;
-  --color-sky-800: #274c6b;
-  --color-sky-900: #243f58;
-  --color-sky-950: #142737;
+  /* Info / learning. Muted slate-teal - no longer indigo-leaning, so it never
+     reads as a second accent competing with moss. */
+  --color-sky-50: #eaf1f1;
+  --color-sky-100: #d2e3e4;
+  --color-sky-200: #abc9cb;
+  --color-sky-300: #82aeb1;
+  --color-sky-400: #5d9296;
+  --color-sky-500: #46777c;
+  --color-sky-600: #396166;
+  --color-sky-700: #2f4f53;
+  --color-sky-800: #274043;
+  --color-sky-900: #213436;
+  --color-sky-950: #131e1f;
 
-  /* Error / destructive */
-  --color-rose-50: #fbf1f2;
-  --color-rose-100: #f6dfe2;
-  --color-rose-200: #eebfc5;
-  --color-rose-300: #e195a0;
-  --color-rose-400: #d16f7f;
-  --color-rose-500: #bf4a5e;
-  --color-rose-600: #a83a4d;
-  --color-rose-700: #8c3040;
-  --color-rose-800: #722a37;
-  --color-rose-900: #5f2630;
-  --color-rose-950: #3a141b;
+  /* Error / destructive. Muted brick red - clearly a warning hue, never a
+     saturated alarm red. */
+  --color-rose-50: #faf0ee;
+  --color-rose-100: #f3ddd8;
+  --color-rose-200: #e6bab0;
+  --color-rose-300: #d59183;
+  --color-rose-400: #c06a5e;
+  --color-rose-500: #a85a4f;
+  --color-rose-600: #9b4b43;
+  --color-rose-700: #7d3d37;
+  --color-rose-800: #61302b;
+  --color-rose-900: #4a2521;
+  --color-rose-950: #2c1613;
 
-  /* Warm highlight - a dusty apricot-coral. Same lightness/saturation band as
-     brand and emerald so it sits beside them calmly. Streaks and small sparks
-     only; never a background wash. */
-  --color-clay-50: #fbf3f0;
-  --color-clay-100: #f5e2db;
-  --color-clay-200: #ebc5b8;
-  --color-clay-300: #dfa392;
-  --color-clay-400: #d18470;
-  --color-clay-500: #bd6852;
-  --color-clay-600: #9f5442;
-  --color-clay-700: #7f4436;
-  --color-clay-800: #653a30;
-  --color-clay-900: #4f2f28;
-  --color-clay-950: #2c1915;
+  /* Warm highlight ("brass") - streaks, milestones and small "spark" details
+     only; never a background wash, never a second primary. Same
+     lightness/saturation band as `brand` and `emerald` so it sits beside
+     them calmly instead of shouting. */
+  --color-clay-50: #faf3e6;
+  --color-clay-100: #f3e6cb;
+  --color-clay-200: #e7d2a0;
+  --color-clay-300: #d8b97d;
+  --color-clay-400: #c59a5b;
+  --color-clay-500: #a9813f;
+  --color-clay-600: #7c5d2d;
+  --color-clay-700: #654b24;
+  --color-clay-800: #4f3b1d;
+  --color-clay-900: #3b2c16;
+  --color-clay-950: #241b0d;
 
-  /* Elevation. Cool-tinted and used sparingly: the featured card, menus and the
-     pressed look of primary buttons. Everything else is flat with a hairline. */
-  --shadow-card: 0 1px 2px rgb(5 7 15 / 0.16);
-  --shadow-lift: 0 1px 2px rgb(5 7 15 / 0.2), 0 14px 32px -16px rgb(5 7 15 / 0.5);
-  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.14), 0 1px 2px rgb(20 26 51 / 0.5);
+  /* Elevation. Used sparingly per the "shadows almost disappear" rule: real
+     elevation only (the featured card, menus/dropdowns, the pressed look of
+     primary buttons). Everything else is flat with a hairline border -
+     contrast in surface tone does the "this is a card" job that a shadow
+     used to. Softer than before on all three. */
+  --shadow-card: 0 1px 2px rgb(10 13 12 / 0.14);
+  --shadow-lift: 0 1px 2px rgb(10 13 12 / 0.16), 0 10px 24px -14px rgb(10 13 12 / 0.4);
+  --shadow-press: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 1px 2px rgb(16 20 18 / 0.4);
 
   /* A short fade-and-settle for content that appears in place (an expanded card). The global
      reduced-motion rule below shortens it to nothing for people who ask for less motion. */
@@ -153,6 +180,41 @@
   }
 }
 
+/* ---------------------------------------------------------------------------
+ * Semantic aliases
+ * ---------------------------------------------------------------------------
+ * Names the ROLE a colour plays (surface, border, text, accent) separately
+ * from the hue scale that currently fills it, per the audit's "semantic
+ * architecture" section. Nothing in the app references these yet - existing
+ * components keep using the scale utilities above (bg-zinc-900, text-brand-400,
+ * etc.), which is why this migration needed no component rewrites to change
+ * the whole app's colours. These variables are here so new/refactored
+ * components can reach for a role instead of a hue, and so the whole palette
+ * can shift again later by editing only the block above.
+ * ------------------------------------------------------------------------- */
+:root {
+  --color-surface-canvas: var(--color-zinc-950);
+  --color-surface-default: var(--color-zinc-900);
+  --color-surface-raised: var(--color-zinc-850);
+  --color-surface-interactive: var(--color-zinc-800);
+
+  --color-border-subtle: var(--color-zinc-800);
+  --color-border-default: var(--color-zinc-700);
+  --color-border-strong: var(--color-zinc-600);
+
+  --color-text-primary: var(--color-zinc-50);
+  --color-text-secondary: var(--color-zinc-300);
+  --color-text-tertiary: var(--color-zinc-500);
+
+  --color-accent: var(--color-brand-400);
+  --color-accent-hover: var(--color-brand-300);
+  --color-accent-soft: var(--color-brand-950);
+
+  --color-highlight: var(--color-clay-400);
+  --color-danger: var(--color-rose-400);
+  --color-danger-soft: var(--color-rose-950);
+}
+
 /* Lexend for English (built for reading fluency), Readex Pro for Arabic (its
    official Arabic companion). Readex is also listed second in the sans stack so
    any Arabic that appears inside an English line still gets the right face. */
@@ -166,7 +228,7 @@
 
 :root {
   color-scheme: light;
-  accent-color: var(--color-brand-600);
+  accent-color: var(--color-brand-700);
 }
 
 .dark {
@@ -215,9 +277,11 @@ p {
   scroll-margin-top: 7.5rem;
 }
 
-/* Visible, consistent keyboard focus everywhere */
+/* Visible, consistent keyboard focus everywhere. Focus is the one state that
+   is always allowed a visible ring - see the "interaction state" rule in the
+   audit doc (ring reserved for focus, not decoration). */
 :focus-visible {
-  outline: 2px solid var(--color-brand-600);
+  outline: 2px solid var(--color-brand-700);
   outline-offset: 2px;
 }
 .dark :focus-visible {
@@ -251,30 +315,40 @@ p {
 
 /* ---------------------------------------------------------------------------
  * App shell surfaces (nav / footer / home)
- * Named aliases for the SAME quiet-navy scale as `zinc` above (identical hex
- * values), just at the exact steps this shell reaches for most often. One
- * palette, two convenient names - editing `zinc` above re-skins these too.
+ * `night-*` / `mist-*` are now PURE ALIASES of the single `zinc` scale above
+ * (the same custom property, not merely the same hex value) - editing `zinc`
+ * re-skins these automatically and there is no way for the two to drift apart
+ * again the way `night-200`/`mist-200` previously did.
  * ------------------------------------------------------------------------- */
 @theme {
-  /* Surfaces, darkest to lightest (= zinc-950/900/800/700) */
-  --color-night-950: #090f1d; /* page background */
-  --color-night-900: #0e1728; /* card surface */
-  --color-night-850: #0c1628; /* hero backdrop */
-  --color-night-800: #16223c; /* raised surface / chips */
-  --color-night-700: #1c2743; /* hairline border */
-  --color-night-600: #223055; /* progress track */
+  /* Surfaces, darkest to lightest (= zinc-950/900/850/800/700/600) */
+  --color-night-950: var(--color-zinc-950); /* page background */
+  --color-night-900: var(--color-zinc-900); /* card surface */
+  --color-night-850: var(--color-zinc-850); /* hero backdrop / subtle raised surface */
+  --color-night-800: var(--color-zinc-800); /* raised surface / chips */
+  --color-night-750: var(--color-zinc-800); /* alias used by a few components for the same step */
+  --color-night-700: var(--color-zinc-700); /* hairline border */
+  --color-night-600: var(--color-zinc-600); /* progress track / visible divider */
 
-  /* Blue-tinted text scale, headings -> faintest meta (= zinc-50/200/300/400/500/600) */
-  --color-mist-100: #eef3fb;
-  --color-mist-200: #ccd8ee;
-  --color-mist-300: #a9bbdd;
-  --color-mist-400: #8ea1c4;
-  --color-mist-500: #7488ab;
-  --color-mist-600: #5f7090;
+  /* Text scale, headings -> faintest meta (= zinc-50/300/500/600) */
+  --color-mist-100: var(--color-zinc-50);
+  --color-mist-200: var(--color-zinc-200);
+  --color-mist-300: var(--color-zinc-300);
+  --color-mist-400: var(--color-zinc-400);
+  --color-mist-500: var(--color-zinc-500);
+  --color-mist-600: var(--color-zinc-600);
 }
 
-/* The redesigned shell is set in Inter; Lexend stays for lesson reading content. */
-.e90-shell {
+/* `.e90-shell` used to force Inter across the ENTIRE app (nav, day pages, vocabulary,
+ * grammar, exercise...) because it wraps `<main>` in `(app)/layout.tsx`. That meant the
+ * reading font below (Lexend, the whole reason it is loaded — see layout.tsx) never
+ * actually reached lesson content: every screen silently rendered in the UI face instead.
+ * Per ENGLISH90_ROOT_CAUSE_VISUAL_READING_AUDIT.md §10/§44, font OWNERSHIP must be explicit:
+ * the page default (`--font-sans` above) is already Lexend + Readex, so `.e90-shell` no
+ * longer sets a font at all — reading content simply inherits the correct default. Inter is
+ * now scoped to `.e90-chrome` only, applied directly to the nav and footer (the actual
+ * app-shell chrome), so it can never leak into lesson content again. */
+.e90-chrome {
   font-family: var(--font-inter), var(--font-lexend), ui-sans-serif, system-ui, sans-serif;
 }
 

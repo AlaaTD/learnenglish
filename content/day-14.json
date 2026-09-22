@@ -13,16 +13,19 @@
       "explanationArabic": "نصيغ الأسئلة والجمل المنفية في زمن الماضي البسيط باستخدام الفعل المساعد 'did' (وهو ماضي do). في النفي، نضع الفاعل ثم did not (أو مختصرة didn't) متبوعة بالفعل الأساسي في صيغة المصدر المجرد (Base Form) مثل: 'I didn't see anyone' وتذكر ألا تضع الفعل في الماضي بعد didn't (فلا تقل didn't saw). وفي الأسئلة، نقدم did قبل الفاعل: 'Did + Subject + Base Verb...؟' مثل: 'Did you witness the event؟' وتكون الإجابات القصيرة: 'Yes, I did.' أو 'No, I didn't.'",
       "structures": [
         {
+          "label": "Negative · النفي",
           "pattern": "Negative: Subject + did not (didn't) + Base Verb",
           "explanation": "Expresses that a past action or event did not occur.",
           "explanationArabic": "ينفي حدوث الفعل في الماضي باستخدام didn't متبوعة بالمصدر."
         },
         {
+          "label": "Yes/No Question · سؤال بنعم/لا",
           "pattern": "Yes/No Question: Did + Subject + Base Verb + ...?",
           "explanation": "Inquires whether a specific past action occurred (Answer: Yes, I did / No, I didn't).",
           "explanationArabic": "سؤال يبدأ بـ Did متبوعة بالفاعل ثم المصدر المجرد."
         },
         {
+          "label": "Wh- Question · سؤال استفهام",
           "pattern": "WH- Question: WH-Word + did + Subject + Base Verb + ...?",
           "explanation": "Asks for specific factual information regarding past events.",
           "explanationArabic": "سؤال يبدأ بأداة استفهام ثم did ثم الفاعل ثم المصدر."
@@ -53,6 +56,11 @@
             "report"
           ]
         }
+      ],
+      "commonUsage": [
+        "Form questions and negatives with 'did'/'didn't' and keep the main verb in its base form: 'Did you see him?', not 'Did you saw him?' (كوّن الأسئلة والنفي بـ did/didn't مع إبقاء الفعل الأساسي في صيغة المصدر.)",
+        "Give short answers using 'did' or 'didn't' instead of repeating the full sentence: 'Did you call her?' -- 'Yes, I did.' (أجب إجابات قصيرة باستخدام did أو didn't بدلاً من تكرار الجملة كاملة.)",
+        "In Wh- questions, the question word comes first, followed by 'did' and then the subject: 'Where did they go?' (في أسئلة الـ Wh، تأتي أداة الاستفهام أولاً، تليها did ثم الفاعل.)"
       ],
       "commonMistakes": [
         {

@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم صيغ المقارنة (Comparatives) لمقارنة شخصين أو مكانين أو شيئين أو خيارين وإبراز الفروق بينهما. بالنسبة للصفات القصيرة ذات المقطع الواحد (والصفات المكونة من مقطعين والمنتهية بـ y)، نضيف -er للصفة (مثل: cheaper, wider, heavier, calmer, warmer). وإذا كانت الصفة تنتهي بساكن-متحرك-ساكن نضاعف الحرف الأخير (مثل wet -> wetter). أما بالنسبة للصفات الطويلة (مقطعين أو أكثر)، فنضع 'more' قبل الصفة (مثل: more comfortable). وعند ذكر الطرفين المقارن بينهما، نستخدم كلمة 'than' للربط (مثل: 'The train is quicker than the bus'). ويمكن إضافة كلمات لبيان مقدار الفرق مثل 'much' أو 'far' (أفضل بكثير) أو 'slightly' (أفضل قليلاً).",
       "structures": [
         {
+          "label": "Short Adjective + -er · صفة قصيرة",
           "pattern": "Short Adjectives: Subject + be / verb + Adjective-er + than + Object",
           "explanation": "For one-syllable adjectives (cheaper, wider, heavier, softer).",
           "explanationArabic": "للصفات القصيرة بإضافة -er متبوعة بـ than."
         },
         {
+          "label": "Long Adjective + more · صفة طويلة",
           "pattern": "Long Adjectives: Subject + be / verb + more + Adjective + than + Object",
           "explanation": "For adjectives of two or more syllables (e.g. more expensive, more durable).",
           "explanationArabic": "للصفات الطويلة بوضع more قبل الصفة متبوعة بـ than."
         },
         {
+          "label": "Degree Modifiers · محددات الدرجة",
           "pattern": "Degree Modifiers: much / far / considerably / slightly + Comparative",
           "explanation": "Expresses whether the difference is vast or minimal (e.g. far better, slightly wider).",
           "explanationArabic": "تحديد مدى الفرق ومقداره (كبير جداً أو طفيف)."
@@ -56,6 +59,12 @@
             "warmer"
           ]
         }
+      ],
+      "commonUsage": [
+        "Add '-er' to short adjectives, doubling the final consonant after a single short vowel: 'big' becomes 'bigger'. (أضف -er للصفات القصيرة، مع مضاعفة الحرف الأخير بعد حرف علة قصير واحد: big تصبح bigger.)",
+        "Use 'more' before adjectives of two or more syllables instead of adding '-er': 'more comfortable', 'more expensive'. (استخدم more قبل الصفات المكونة من مقطعين أو أكثر بدلاً من إضافة -er.)",
+        "Strengthen or soften the difference with 'much', 'far', or 'slightly': 'This route is much faster.' (قوِّ الفرق أو خففه باستخدام much أو far أو slightly.)",
+        "Always connect the two compared items with 'than' (not 'then', the time word): 'cheaper than the other option'. (اربط طرفي المقارنة دائماً بـ than وليس then وهي كلمة زمنية.)"
       ],
       "commonMistakes": [
         {

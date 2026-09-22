@@ -1309,21 +1309,25 @@
       "explanationArabic": "توضح ظروف التكرار مدى تكرار حدوث الفعل. موقعها القياسي: تأتي مباشرة قبل الفعل الأساسي (مثل: I often run). ومع فعل الكينونة be تأتي مباشرة بعده (مثل: She is always punctual). أما العبارات الزمنية مثل once a week و twice a month و weekly فتأتي عادةً في نهاية الجملة.",
       "structures": [
         {
+          "label": "Before Main Verb · قبل الفعل الرئيسي",
           "pattern": "Subject + Adverb of Frequency + Main Verb + Object",
           "explanation": "Normal placement before standard main verbs",
           "explanationArabic": "الموضع المعتاد قبل الأفعال الرئيسية"
         },
         {
+          "label": "After Verb be · بعد الفعل be",
           "pattern": "Subject + be (am/is/are) + Adverb of Frequency",
           "explanation": "Placement immediately following the verb 'be'",
           "explanationArabic": "الموضع بعد فعل الكينونة be مباشرة"
         },
         {
+          "label": "How often...? · السؤال عن التكرار",
           "pattern": "How often + do/does + Subject + Verb?",
           "explanation": "Question used to inquire about frequency of habits",
           "explanationArabic": "سؤال للاستفسار عن مدى تكرار عادة معينة"
         },
         {
+          "label": "Frequency at the End · تكرار في النهاية",
           "pattern": "Subject + Verb + once / twice a week",
           "explanation": "Expressing precise numerical frequencies at the end",
           "explanationArabic": "التعبير عن التكرار بأعداد محددة في نهاية الجملة"
@@ -1378,12 +1382,12 @@
         {
           "wrong": "I go often to the gym.",
           "right": "I often go to the gym.",
-          "explanation": "Place the frequency adverb 'often' before the main verb 'go', not after it."
+          "note": "Place the frequency adverb 'often' before the main verb 'go', not after it."
         },
         {
           "wrong": "She rarely is late.",
           "right": "She is rarely late.",
-          "explanation": "With verb 'be', the adverb comes AFTER 'is', not before."
+          "note": "With verb 'be', the adverb comes AFTER 'is', not before."
         }
       ]
     }

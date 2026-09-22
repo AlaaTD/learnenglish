@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Gerunds (verb + -ing)",
+      "titleArabic": "المصدر الاسمي (Gerund): الفعل + ing كاسم في الجملة",
       "explanation": "A gerund is the -ing form of a verb that functions as a noun in a sentence. Gerunds can act as the subject of a clause ('Writing clean code requires discipline'), the object of specific verbs like enjoy, avoid, practice, keep ('She enjoys learning new programming languages'), or as the object of prepositions ('Before committing changes, review your diff').",
       "explanationArabic": "اسم الفعل (Gerund) هو صيغة الفعل المنتهية بـ -ing والتي تعمل كاسم في الجملة. ويمكن أن تأتي كفاعل للجملة ('كتابة الكود النظيف تتطلب انضباطاً'), أو كمفعول به لأفعال معينة مثل enjoy و avoid و practice و keep ('إنها تستمتع بتعلم لغات برمجة جديدة'), أو بعد حروف الجر ('قبل اعتماد التغييرات، راجع الفروقات').",
-      "rules": [
-        "Use gerund as the grammatical subject of a sentence to name an activity.",
-        "Use gerund after common verbs: avoid, consider, enjoy, finish, practice, suggest, keep.",
-        "Always use a gerund after a preposition (by, before, after, without, in, for).",
-        "Negative gerund: not + verb-ing ('He apologized for not adding a documentation comment')."
-      ],
-      "rulesArabic": [
-        "استخدم اسم الفعل (Gerund) كفاعل للجملة لتسمية نشاط ما.",
-        "استخدمه بعد أفعال شائعة مثل: avoid, consider, enjoy, finish, practice, suggest, keep.",
-        "استخدم اسم الفعل دائماً بعد حروف الجر (by, before, after, without, in, for).",
-        "صيغة النفي لاسم الفعل: not + verb-ing ('اعتذر عن عدم إضافة تعليق التوثيق')."
-      ],
       "structures": [
         {
+          "label": "Gerund as Subject · اسم الفعل فاعلاً",
           "pattern": "Verb-ing + complement + singular verb",
           "explanation": "Gerund as subject of the sentence.",
           "explanationArabic": "اسم الفعل كفاعل للجملة (يعامل معاملة المفرد)."
         },
         {
+          "label": "Gerund after Verb · اسم الفعل بعد فعل",
           "pattern": "Subject + verb (enjoy/avoid/practice) + Verb-ing",
           "explanation": "Gerund as direct object of specific verbs.",
           "explanationArabic": "اسم الفعل كمفعول به مباشر لأفعال معينة."
         },
         {
+          "label": "Gerund after Preposition · اسم الفعل بعد حرف جر",
           "pattern": "Preposition (by/before/after) + Verb-ing",
           "explanation": "Gerund following a preposition.",
           "explanationArabic": "اسم الفعل بعد حرف الجر."
@@ -85,6 +77,12 @@
           "note": "Use the gerund ('Learning') as the subject of the sentence, not the bare verb.",
           "noteArabic": "استخدم اسم الفعل ('Learning') كفاعل للجملة وليس الفعل المجرد."
         }
+      ],
+      "commonUsage": [
+        "Use gerund as the grammatical subject of a sentence to name an activity. (استخدم اسم الفعل (Gerund) كفاعل للجملة لتسمية نشاط ما.)",
+        "Use gerund after common verbs: avoid, consider, enjoy, finish, practice, suggest, keep. (استخدمه بعد أفعال شائعة مثل: avoid, consider, enjoy, finish, practice, suggest, keep.)",
+        "Always use a gerund after a preposition (by, before, after, without, in, for). (استخدم اسم الفعل دائماً بعد حروف الجر (by, before, after, without, in, for).)",
+        "Negative gerund: not + verb-ing ('He apologized for not adding a documentation comment'). (صيغة النفي لاسم الفعل: not + verb-ing ('اعتذر عن عدم إضافة تعليق التوثيق').)"
       ]
     }
   ],

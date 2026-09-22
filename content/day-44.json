@@ -8,27 +8,18 @@
   "grammar": [
     {
       "title": "May / Might / Could for Possibility",
+      "titleArabic": "استخدام May و Might و Could للتعبير عن الاحتمال وعدم اليقين",
       "explanation": "We use the modal verbs 'may', 'might', and 'could' to express possibility about present or future situations when we are not 100% certain. 'May' often suggests a slightly higher likelihood than 'might', while 'could' indicates theoretical or potential capability/possibility. All three are followed directly by the base form of the main verb (infinitive without 'to'). For negatives, use 'may not' or 'might not' (do NOT use 'could not' for possibility, as 'could not' means something is impossible).",
       "explanationArabic": "نستخدم الأفعال الناقصة (May و Might و Could) للتعبير عن الاحتمالية وإمكانية حدوث الشيء في الحاضر أو المستقبل عندما لا نكون متأكدين بنسبة 100%. تشير (May) عادة إلى احتمال أرجح قليلاً من (Might)، بينما تعبر (Could) عن إمكانية نظرية أو محتملة. تتبع جميع هذه الأفعال بالمصدر المجرد من to. وفي النفي، نستخدم (may not) أو (might not)، ولا نستخدم (could not) للاحتمال لأنها تعني الاستحالة القطعية.",
-      "rules": [
-        "Use modal + bare infinitive: Subject + may/might/could + Verb (base form).",
-        "To express present or future uncertainty: 'He might feel apprehension before the test.'",
-        "Negative possibility: use 'may not' or 'might not' ('She may not feel bitterness').",
-        "Be careful: 'could not' means impossibility ('He couldn't be happy about that'), not negative possibility."
-      ],
-      "rulesArabic": [
-        "الصيغة الأساسية: الفاعل + may/might/could + المصدر المجرد من to.",
-        "للتعبير عن عدم التأكد في الحاضر أو المستقبل: He might feel apprehension.",
-        "لنفي الاحتمالية نستخدم may not أو might not حصراً.",
-        "انتبه: could not تعني الاستحالة القطعية وليس مجرد الشك أو الاحتمال المنفي."
-      ],
       "structures": [
         {
+          "label": "Possibility · الاحتمال",
           "pattern": "Subject + may / might / could + base verb + object/complement",
           "explanation": "Expresses that something is possible in the present or future.",
           "explanationArabic": "يعبر عن إمكانية حدوث أمر ما في الحاضر أو المستقبل."
         },
         {
+          "label": "Negative Possibility · نفي الاحتمال",
           "pattern": "Subject + may not / might not + base verb + object/complement",
           "explanation": "Expresses the possibility that something will NOT happen.",
           "explanationArabic": "يعبر عن احتمال عدم وقوع الحدث."
@@ -80,6 +71,12 @@
           "note": "Modal verbs must always be followed by the base verb without -s or -ed.",
           "noteArabic": "الأفعال الناقصة تتبع دائماً بالمصدر المجرد بدون s أو ed."
         }
+      ],
+      "commonUsage": [
+        "Use modal + bare infinitive: Subject + may/might/could + Verb (base form). (الصيغة الأساسية: الفاعل + may/might/could + المصدر المجرد من to.)",
+        "To express present or future uncertainty: 'He might feel apprehension before the test.' (للتعبير عن عدم التأكد في الحاضر أو المستقبل: He might feel apprehension.)",
+        "Negative possibility: use 'may not' or 'might not' ('She may not feel bitterness'). (لنفي الاحتمالية نستخدم may not أو might not حصراً.)",
+        "Be careful: 'could not' means impossibility ('He couldn't be happy about that'), not negative possibility. (انتبه: could not تعني الاستحالة القطعية وليس مجرد الشك أو الاحتمال المنفي.)"
       ]
     }
   ],

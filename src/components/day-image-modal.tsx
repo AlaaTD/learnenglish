@@ -8,75 +8,48 @@ interface DayImageModalProps {
   dayNumber: number;
   dayTitle: string;
   imageUrl: string | null;
+  /** Renders the trigger as a quiet inline text-link instead of a filled brand button. */
+  compact?: boolean;
 }
 
 /* ─── Inline Banner ─────────────────────────────────────────────────────── */
 
 /**
- * A premium-styled banner card that sits above the content tabs.
- * Shows either a CTA to view the infographic, or a disabled state
- * when no image is available.
+ * A single-line, low-weight entry point to the day's visual summary — sits beside the Grammar
+ * Focus link, above the tabs. Per ENGLISH90_ROOT_CAUSE_VISUAL_READING_AUDIT.md §28: "التعلم
+ * أولًا، الإثراء البصري ثانيًا" (learning first, visual enrichment second) — this used to be a
+ * full-width bordered card with a 44px brand-coloured icon block and a shadowed CTA button,
+ * making it one of the largest visual landmarks before the learner ever reaches a word. The
+ * infographic is still one click away; it just no longer competes with the vocabulary below.
  */
 export function DayImageBanner({ dayNumber, dayTitle, imageUrl }: DayImageModalProps) {
   const hasImage = Boolean(imageUrl);
 
   if (!hasImage) {
     return (
-      <div className="relative overflow-hidden rounded-2xl border border-zinc-200/60 bg-zinc-100/50 p-4 sm:p-5 dark:border-zinc-800/60 dark:bg-zinc-900/40">
-        <div className="flex items-center gap-3 sm:gap-4">
-          {/* Disabled icon */}
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-zinc-200 bg-zinc-50 text-zinc-400 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-500 sm:h-12 sm:w-12">
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-            </svg>
-          </span>
-          <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold text-zinc-500 dark:text-zinc-400">
-              ملخص اليوم البصري
-            </p>
-            <p className="mt-0.5 text-xs text-zinc-400 dark:text-zinc-500">
-              لا توجد صورة تلخيصية متاحة لهذا اليوم حالياً
-            </p>
-          </div>
-        </div>
-      </div>
+      <span className="inline-flex items-center gap-1.5 text-sm text-zinc-400 dark:text-mist-500">
+        <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+        </svg>
+        لا توجد صورة ملخصية لهذا اليوم
+      </span>
     );
   }
 
   return (
-    <div className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-card dark:border-zinc-800 dark:bg-zinc-900 dark:shadow-none">
-      <div className="relative flex flex-col gap-3 p-4 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:p-5">
-        {/* Left: Icon + Text */}
-        <div className="flex items-center gap-3 sm:gap-4">
-          {/* Icon container (flat accent) */}
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white shadow-press dark:bg-brand-400 dark:text-zinc-950 dark:shadow-none sm:h-12 sm:w-12">
-            <svg className="h-5 w-5 sm:h-5.5 sm:w-5.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          </span>
-          <div className="min-w-0">
-            <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-100 sm:text-base">
-              ملخص اليوم البصري
-              <span className="ms-2 hidden rounded-full bg-clay-100 px-2 py-0.5 text-[10px] font-bold text-clay-700 sm:inline-block dark:bg-clay-950 dark:text-clay-300">
-                Infographic
-              </span>
-            </p>
-            <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400 sm:text-[13px]">
-              صورة مخصصة تلخص الكلمات والقواعد الأساسية لهذا اليوم
-            </p>
-          </div>
-        </div>
-
-        {/* Right: CTA Button */}
-        <DayImageModal dayNumber={dayNumber} dayTitle={dayTitle} imageUrl={imageUrl} />
-      </div>
-    </div>
+    <span className="inline-flex items-center gap-1.5 text-sm text-zinc-500 dark:text-mist-400">
+      <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+      <span>ملخص اليوم البصري</span>
+      <DayImageModal dayNumber={dayNumber} dayTitle={dayTitle} imageUrl={imageUrl} compact />
+    </span>
   );
 }
 
 /* ─── Modal Trigger Button + Lightbox ───────────────────────────────────── */
 
-export function DayImageModal({ dayNumber, dayTitle, imageUrl }: DayImageModalProps) {
+export function DayImageModal({ dayNumber, dayTitle, imageUrl, compact = false }: DayImageModalProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [zoom, setZoom] = useState(1);
 
@@ -101,6 +74,13 @@ export function DayImageModal({ dayNumber, dayTitle, imageUrl }: DayImageModalPr
   const hasImage = Boolean(imageUrl);
 
   if (!hasImage) {
+    if (compact) {
+      return (
+        <span className="text-zinc-400 dark:text-zinc-500" aria-disabled="true">
+          (لا توجد صورة متاحة)
+        </span>
+      );
+    }
     return (
       <button
         type="button"
@@ -119,27 +99,37 @@ export function DayImageModal({ dayNumber, dayTitle, imageUrl }: DayImageModalPr
 
   return (
     <>
-      {/* CTA trigger button */}
+      {/* CTA trigger */}
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="group/btn inline-flex shrink-0 items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-xs font-semibold text-white shadow-press transition duration-150 hover:bg-brand-700 active:scale-[0.97] sm:px-5 sm:py-2.5 sm:text-sm dark:bg-brand-400 dark:text-zinc-950 dark:shadow-none dark:hover:bg-brand-300"
+        className={
+          compact
+            ? "font-medium text-brand-700 underline decoration-brand-300 underline-offset-2 transition-colors hover:text-brand-800 dark:text-brand-300 dark:decoration-brand-700 dark:hover:text-brand-200"
+            : "group/btn inline-flex shrink-0 items-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-xs font-semibold text-white shadow-press transition duration-150 hover:bg-brand-700 active:scale-[0.97] sm:px-5 sm:py-2.5 sm:text-sm dark:bg-brand-400 dark:text-zinc-950 dark:shadow-none dark:hover:bg-brand-300"
+        }
         title={`عرض صورة ملخص اليوم ${dayNumber}`}
       >
-        <svg
-          className="h-4 w-4 transition-transform duration-200 group-hover/btn:scale-110"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-          />
-        </svg>
-        <span>عرض الملخص البصري</span>
+        {compact ? (
+          <span>عرض</span>
+        ) : (
+          <>
+            <svg
+              className="h-4 w-4 transition-transform duration-200 group-hover/btn:scale-110"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            <span>عرض الملخص البصري</span>
+          </>
+        )}
       </button>
 
       {/* ─── Fullscreen Lightbox Modal ───────────────────────────────────── */}
@@ -148,7 +138,7 @@ export function DayImageModal({ dayNumber, dayTitle, imageUrl }: DayImageModalPr
           role="dialog"
           aria-modal="true"
           aria-label={`صورة ملخص اليوم ${dayNumber}: ${dayTitle}`}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-xl"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-[4px]"
           style={{ animation: "fadeIn 200ms ease-out" }}
           onClick={(e) => {
             if (e.target === e.currentTarget) setIsOpen(false);
@@ -288,7 +278,7 @@ export function DayImageModal({ dayNumber, dayTitle, imageUrl }: DayImageModalPr
                 <img
                   src={imageUrl}
                   alt={`ملخص اليوم ${dayNumber}: ${dayTitle}`}
-                  className="max-h-[80dvh] w-auto max-w-full select-none rounded-xl border border-white/5 object-contain shadow-2xl"
+                  className="max-h-[80dvh] w-auto max-w-full select-none rounded-xl border border-white/5 object-contain"
                   draggable={false}
                 />
               </div>

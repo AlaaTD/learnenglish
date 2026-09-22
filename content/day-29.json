@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Present Perfect (Have you ever...?)",
+      "titleArabic": "المضارع التام: السؤال عن التجارب الحياتية باستخدام Have you ever...؟",
       "explanation": "We use the Present Perfect tense with 'ever' to ask questions about experiences at an unspecified time in a person's life. We answer with 'Yes, I have' or 'No, I haven't' / 'I have never + V3'. If we mention a specific time in the past (such as last year, yesterday, or in 2021), we must switch to the Past Simple.",
       "explanationArabic": "نستخدم زمن المضارع التام مع 'ever' للسؤال عن تجارب حدثت في وقت غير محدد في حياة الشخص حتى الآن. ونجيب بـ 'Yes, I have' أو 'No, I haven't' أو 'I have never + التصريف الثالث'. إذا ذكرنا وقتاً محدداً في الماضي (مثل last year أو yesterday أو in 2021)، يجب أن ننتقل إلى زمن الماضي البسيط (Past Simple).",
-      "rules": [
-        "Structure for questions: Have / Has + subject + ever + past participle (V3)?",
-        "Structure for negative experiences: Subject + have/has + never + past participle (V3).",
-        "Use 'ever' in questions to mean 'at any time in your life'.",
-        "Do NOT use specific past time words (e.g. yesterday, last week) with Present Perfect for life experiences."
-      ],
-      "rulesArabic": [
-        "صيغة السؤال: Have / Has + الفاعل + ever + التصريف الثالث للفعل (V3)؟",
-        "صيغة النفي للتجارب الحياتية: الفاعل + have/has + never + التصريف الثالث للفعل.",
-        "تُستخدم 'ever' في الأسئلة بمعنى 'في أي وقت مضى في حياتك'.",
-        "لا تستخدم كلمات تدل على وقت ماضٍ محدد (مثل yesterday, last year) مع المضارع التام للتجارب الحياتية."
-      ],
       "structures": [
         {
+          "label": "Have you ever...? · هل سبق لك؟",
           "pattern": "Have you ever + past participle (V3)...?",
           "explanation": "Asks whether someone has experienced something at any time in their life.",
           "explanationArabic": "يسأل عما إذا كان الشخص قد عاش أو جرب شيئاً في أي وقت مضى من حياته."
         },
         {
+          "label": "I have never · لم يسبق لي",
           "pattern": "I have never + past participle (V3)...",
           "explanation": "States that the speaker has not had that experience in their life.",
           "explanationArabic": "يقر بأن المتحدث لم يعش تلك التجربة مطلقاً في حياته."
         },
         {
+          "label": "Life Achievements · إنجازات حياتية",
           "pattern": "Subject + have/has + visited / explored + noun",
           "explanation": "States life travel achievements up to the present moment.",
           "explanationArabic": "يوضح الإنجازات والوجهات التي تمت زيارتها واستكشافها حتى اللحظة الحالية."
@@ -90,6 +82,12 @@
           "note": "Do not combine a specific past time ('yesterday') with the Present Perfect tense.",
           "noteArabic": "لا تجمع بين تحديد زمن ماضٍ محدد ('yesterday') وزمن المضارع التام."
         }
+      ],
+      "commonUsage": [
+        "Structure for questions: Have / Has + subject + ever + past participle (V3)? (صيغة السؤال: Have / Has + الفاعل + ever + التصريف الثالث للفعل (V3)؟)",
+        "Structure for negative experiences: Subject + have/has + never + past participle (V3). (صيغة النفي للتجارب الحياتية: الفاعل + have/has + never + التصريف الثالث للفعل.)",
+        "Use 'ever' in questions to mean 'at any time in your life'. (تُستخدم 'ever' في الأسئلة بمعنى 'في أي وقت مضى في حياتك'.)",
+        "Do NOT use specific past time words (e.g. yesterday, last week) with Present Perfect for life experiences. (لا تستخدم كلمات تدل على وقت ماضٍ محدد (مثل yesterday, last year) مع المضارع التام للتجارب الحياتية.)"
       ]
     }
   ],

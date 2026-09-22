@@ -211,15 +211,3 @@ export function generateLessonQuiz(lesson: GrammarAcademyLesson): QuizQuestion[]
   return questions;
 }
 
-export function generateChallengeQuiz(
-  lessons: GrammarAcademyLesson[],
-  count: number = 10
-): QuizQuestion[] {
-  const allQuestions: QuizQuestion[] = [];
-  for (const lesson of lessons) {
-    const qList = generateLessonQuiz(lesson);
-    allQuestions.push(...qList);
-  }
-  const shuffled = shuffle(allQuestions).items;
-  return shuffled.slice(0, Math.min(count, shuffled.length));
-}

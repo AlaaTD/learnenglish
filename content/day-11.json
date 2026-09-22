@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم المضارع البسيط (Present Simple) للتعبير عن العادات الدائمة، الروتين المتكرر، والحقائق الثابتة (مثل: 'I study English every day'). بينما نستخدم المضارع المستمر (Present Continuous) المكون من (am/is/are + verb-ing) للتعبير عن أحداث تقع الآن في هذه اللحظة بالذات، أو مواقف مؤقتة، أو تغيرات تدريجية جارية (مثل: 'Right now, I am sitting at my desk'). تذكر أن أفعال الحواس والشعور والتفكير والملكية (Stative Verbs مثل believe, seem, belong, depend) تأتي عادة في المضارع البسيط فقط لأنها تصف حالة ذهنية وليست حركة بدنية.",
       "structures": [
         {
+          "label": "Present Simple · المضارع البسيط",
           "pattern": "Present Simple: Subject + Base Verb (+ -s / -es for he, she, it)",
           "explanation": "Expresses permanent habits, general facts, and regular daily routines.",
           "explanationArabic": "يعبر عن العادات الدائمة والحقائق العامة والروتين المتكرر."
         },
         {
+          "label": "Present Continuous · المضارع المستمر",
           "pattern": "Present Continuous: Subject + am / is / are + Verb-ing",
           "explanation": "Expresses actions happening at this moment or temporary ongoing situations.",
           "explanationArabic": "يعبر عن أفعال تحدث في هذه اللحظة بالذات أو أحداث مؤقتة مستمرة."
         },
         {
+          "label": "Stative Verbs · أفعال الحالة",
           "pattern": "Stative Verbs Rule: Subject + Stative Verb (Present Simple only)",
           "explanation": "Verbs of thinking, sensing, and belonging (e.g. believe, seem, belong) avoid -ing.",
           "explanationArabic": "أفعال الإدراك والشعور والملكية تأتي في المضارع البسيط وتتجنب صيغة الاستمرار."
@@ -55,6 +58,12 @@
             "improve"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use the Present Simple for habits and routines, and the Present Continuous for what is happening right now: 'I usually rest after lunch, but right now I am preparing a report.' (استخدم المضارع البسيط للعادات والروتين، والمضارع المستمر لما يحدث الآن.)",
+        "Stative verbs such as 'believe', 'know', 'understand', and 'belong' stay in the Present Simple even when talking about this exact moment: 'I believe you.' (تبقى أفعال الحالة مثل believe وknow وbelong في المضارع البسيط حتى عند الحديث عن اللحظة الحالية.)",
+        "Signal words like 'now', 'at the moment', and 'currently' point to the Present Continuous, while 'usually', 'often', and 'every day' point to the Present Simple. (كلمات مثل now وat the moment تشير إلى المضارع المستمر، بينما usually وevery day تشير إلى المضارع البسيط.)",
+        "Use the Present Continuous for temporary situations that are true only for a limited time, not forever: 'She is staying with her cousin this month.' (استخدم المضارع المستمر للمواقف المؤقتة الصحيحة لفترة محدودة فقط وليس للأبد.)"
       ],
       "commonMistakes": [
         {

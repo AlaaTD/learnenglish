@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { IconCheckCircle, IconRotateCcw, IconXCircle, IconArrowRight } from "@/components/dashboard/icons";
 import { AudioButton } from "@/components/audio-button";
-import { EmptyState } from "./ui";
+import { EmptyState, ProgressBar } from "./ui";
 
 export type ExerciseWord = {
   id: string;
@@ -169,21 +169,20 @@ export function DayExercise({
     restart();
   }
 
-  /* ── Loading Skeleton ── */
+  /* ── Loading Skeleton ──
+     Same narrow column and quiet rhythm as the ready state (§26 Rule 09: size/weight/space
+     carry hierarchy, not colour) — a calm placeholder instead of a boxed dashboard skeleton. */
   if (!ready) {
     return (
-      <>
-        <style>{exStyles}</style>
-        <div className="ex-root">
-          <div className="ex-skeleton-bar" />
-          <div className="ex-stage-card">
-            <div className="ex-skeleton-line" style={{ width: "35%", height: 16 }} />
-            <div className="ex-skeleton-box" style={{ height: 140 }} />
-            <div className="ex-skeleton-line" style={{ width: "100%", height: 60 }} />
-            <div className="ex-skeleton-line" style={{ width: "100%", height: 52 }} />
-          </div>
+      <div className="mx-auto w-full max-w-xl animate-pulse space-y-6">
+        <div className="h-1.5 w-full rounded-full bg-zinc-200 dark:bg-night-800" />
+        <div className="space-y-3 pt-2 text-center">
+          <div className="mx-auto h-3 w-40 rounded-full bg-zinc-200 dark:bg-night-800" />
+          <div className="mx-auto h-11 w-56 rounded-lg bg-zinc-200 dark:bg-night-800" />
         </div>
-      </>
+        <div className="h-14 w-full rounded-xl bg-zinc-200 dark:bg-night-800" />
+        <div className="h-12 w-full rounded-xl bg-zinc-200 dark:bg-night-800" />
+      </div>
     );
   }
 
@@ -196,12 +195,15 @@ export function DayExercise({
     );
   }
 
-  /* ── Finished State ── */
+  /* ── Finished State ──
+     Per ENGLISH90_ROOT_CAUSE_VISUAL_READING_AUDIT.md §46 Containers/§26 Rule 02: the previous
+     version's SVG score ring plus a 3-tile boxed stats grid were a small dashboard nested
+     inside the page. The score sentence is now the one reading anchor, and the three numbers
+     below it are a quiet inline row — the same pattern already used for Grammar Academy's quiz
+     result screens, so the two "you finished a quiz" moments in the app now read consistently. */
   if (finished) {
     const percent = Math.round((correctCount / total) * 100);
     const tier = percent >= 85 ? "excellent" : percent >= 60 ? "good" : "low";
-    const circumference = 2 * Math.PI * 52;
-    const ringColor = tier === "excellent" ? "#34d399" : tier === "good" ? "#fbbf24" : "#f87171";
 
     const msgEn =
       tier === "excellent"
@@ -217,7 +219,6 @@ export function DayExercise({
           ? "مجهود رائع! راجع الكلمات التي أخطأت بها بالأسفل لتثبيتها"
           : "استمر في التكرار! الممارسة اليومية هي سر الإتقان";
 
-    // Build missed words list
     const missedAnswers = answers.filter((a) => !a.correct);
     const byId = new Map(usable.map((w) => [w.id, w]));
     const missedWords = missedAnswers
@@ -228,896 +229,225 @@ export function DayExercise({
       .filter((item): item is { word: ExerciseWord; userAnswer: string } => Boolean(item));
 
     return (
-      <>
-        <style>{exStyles}</style>
-        <div className="ex-root">
-          <div className="ex-stage-card ex-done-container">
-            <div className="ex-done-header">
-              <span className="ex-eyebrow">Exercise Completed · اكتمل التمرين</span>
-              <h2 className="ex-done-title">Performance Summary</h2>
-            </div>
+      <div className="mx-auto w-full max-w-xl space-y-7 text-center">
+        <div className="space-y-1.5">
+          <p className="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-mist-500">
+            Exercise Completed · اكتمل التمرين
+          </p>
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white">{percent}%</h2>
+          <p className="text-sm font-medium text-zinc-600 dark:text-mist-300">{msgEn}</p>
+          <p dir="rtl" lang="ar" className="text-sm font-medium text-clay-700 dark:text-clay-300">
+            {msgAr}
+          </p>
+        </div>
 
-            {/* Score Ring */}
-            <div className="ex-ring-wrap">
-              <svg viewBox="0 0 120 120" className="ex-ring-svg">
-                <circle cx="60" cy="60" r="52" fill="none" stroke="#1c2743" strokeWidth="8" />
-                <circle
-                  cx="60"
-                  cy="60"
-                  r="52"
-                  fill="none"
-                  stroke={ringColor}
-                  strokeWidth="8"
-                  strokeLinecap="round"
-                  style={{
-                    strokeDasharray: circumference,
-                    strokeDashoffset: circumference * (1 - percent / 100),
-                    transition: "stroke-dashoffset 1s ease",
-                  }}
-                  transform="rotate(-90 60 60)"
-                />
-              </svg>
-              <div className="ex-ring-text">
-                <span className="ex-ring-num" style={{ color: ringColor }}>
-                  {percent}%
-                </span>
-                <span className="ex-ring-sub">Accuracy</span>
-              </div>
-            </div>
-
-            {/* Stat Cards */}
-            <div className="ex-stats-grid">
-              <div className="ex-stat-tile">
-                <span className="ex-stat-val text-white">{total}</span>
-                <span className="ex-stat-lbl">Total Words · إجمالي</span>
-              </div>
-              <div className="ex-stat-tile">
-                <span className="ex-stat-val text-emerald-400">{correctCount}</span>
-                <span className="ex-stat-lbl">Correct · صحيحة</span>
-              </div>
-              <div className="ex-stat-tile">
-                <span className="ex-stat-val text-rose-400">{wrongCount}</span>
-                <span className="ex-stat-lbl">Mistakes · أخطاء</span>
-              </div>
-            </div>
-
-            {/* Message Box */}
-            <div className="ex-msg-box">
-              <p className="ex-msg-en">{msgEn}</p>
-              <p className="ex-msg-ar">{msgAr}</p>
-            </div>
-
-            {/* Missed Words Section */}
-            {missedWords.length > 0 && (
-              <div className="ex-missed-section">
-                <div className="ex-missed-header">
-                  <span className="ex-missed-title">
-                    Words to Review · كلمات تحتاج إلى مراجعة ({missedWords.length})
-                  </span>
-                </div>
-                <div className="ex-missed-list">
-                  {missedWords.map(({ word, userAnswer }) => (
-                    <div key={word.id} className="ex-missed-row">
-                      <div className="ex-missed-ar" dir="rtl">
-                        {word.translation}
-                      </div>
-                      <div className="ex-missed-arrow">→</div>
-                      <div className="ex-missed-correct">
-                        <span className="ex-missed-headword">{word.headword}</span>
-                        {userAnswer && (
-                          <span className="ex-missed-typed">
-                            (typed: <del>{userAnswer}</del>)
-                          </span>
-                        )}
-                      </div>
-                      <div className="ex-missed-audio">
-                        <AudioButton text={word.headword} small label={`Listen to ${word.headword}`} />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* Action Buttons */}
-            <div className="ex-done-actions">
-              {wrongCount > 0 && (
-                <button
-                  type="button"
-                  onClick={practiceMistakesOnly}
-                  className="ex-btn ex-btn-secondary"
-                >
-                  <IconRotateCcw style={{ width: 17, height: 17 }} />
-                  Practice Missed Words Only ({wrongCount}) · تدريب على الأخطاء فقط
-                </button>
-              )}
-              <button type="button" onClick={restart} className="ex-btn ex-btn-primary">
-                <IconRotateCcw style={{ width: 17, height: 17 }} />
-                Restart All Words ({total}) · إعادة التمرين كاملاً
-              </button>
-            </div>
+        {/* Quiet inline stat row — not a boxed mini-dashboard */}
+        <div className="mx-auto flex max-w-sm items-center justify-center gap-8">
+          <div>
+            <p className="font-mono text-lg font-bold text-zinc-900 dark:text-white">{total}</p>
+            <p className="text-[11px] text-zinc-400 dark:text-mist-500">Total · إجمالي</p>
+          </div>
+          <div>
+            <p className="font-mono text-lg font-bold text-emerald-600 dark:text-emerald-400">{correctCount}</p>
+            <p className="text-[11px] text-zinc-400 dark:text-mist-500">Correct · صحيحة</p>
+          </div>
+          <div>
+            <p className="font-mono text-lg font-bold text-rose-600 dark:text-rose-400">{wrongCount}</p>
+            <p className="text-[11px] text-zinc-400 dark:text-mist-500">Mistakes · أخطاء</p>
           </div>
         </div>
-      </>
+
+        {missedWords.length > 0 && (
+          <div className="space-y-1 border-t border-zinc-200 pt-6 text-start dark:border-night-800">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-mist-500">
+              Words to Review · كلمات تحتاج إلى مراجعة ({missedWords.length})
+            </p>
+            <div className="divide-y divide-zinc-200 dark:divide-night-800">
+              {missedWords.map(({ word, userAnswer }) => (
+                <div key={word.id} className="flex items-center gap-3 py-2.5">
+                  <span dir="rtl" lang="ar" className="min-w-[92px] shrink-0 text-sm font-medium text-zinc-700 dark:text-mist-200">
+                    {word.translation}
+                  </span>
+                  <span aria-hidden="true" className="shrink-0 text-zinc-400 dark:text-mist-600">
+                    →
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <span className="font-semibold text-zinc-900 dark:text-white">{word.headword}</span>
+                    {userAnswer && (
+                      <span className="ms-2 text-xs text-rose-600 dark:text-rose-300">
+                        typed: <del>{userAnswer}</del>
+                      </span>
+                    )}
+                  </div>
+                  <AudioButton text={word.headword} small label={`Listen to ${word.headword}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="flex flex-col gap-2.5 pt-1">
+          {wrongCount > 0 && (
+            <button
+              type="button"
+              onClick={practiceMistakesOnly}
+              className="flex h-11 w-full items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white text-sm font-semibold text-zinc-700 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:border-night-700 dark:bg-night-900 dark:text-mist-200 dark:hover:bg-night-800 dark:hover:text-white"
+            >
+              <IconRotateCcw className="h-4 w-4" />
+              Practice Missed Words Only ({wrongCount}) · تدريب على الأخطاء فقط
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={restart}
+            className="flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-brand-600 text-sm font-semibold text-white transition-colors hover:bg-brand-500"
+          >
+            <IconRotateCcw className="h-4 w-4" />
+            Restart All Words ({total}) · إعادة التمرين كاملاً
+          </button>
+        </div>
+      </div>
     );
   }
 
-  /* ── Main Exercise View ── */
-  const pct = total > 0 ? (answers.length / total) * 100 : 0;
+  /* ── Main Exercise View ──
+     Per §32: "Question → [ input ] → [ Check ] → feedback" at the centre of the screen; the
+     counter, correct/wrong tally and reset become peripheral quiet metadata (§39: progress is
+     page chrome, not word content) instead of a boxed topbar with badges and pills competing
+     with the prompt for attention. */
   const isLast = index + 1 === total;
 
   return (
-    <>
-      <style>{exStyles}</style>
-      <div className="ex-root">
-        {/* Top Control & Stats Bar */}
-        <div className="ex-topbar">
-          <div className="ex-topbar-left">
-            <div className="ex-counter-badge">
-              <span className="ex-counter-label">Question</span>
-              <span className="ex-counter-curr">{index + 1}</span>
-              <span className="ex-counter-sep">/</span>
-              <span className="ex-counter-total">{total}</span>
-            </div>
-
-            <div className="ex-stats-pills">
-              <span className="ex-pill ex-pill-ok">
-                <span className="ex-pill-dot" />
-                {correctCount} Correct
-              </span>
+    <div className="mx-auto w-full max-w-xl space-y-6">
+      {/* Peripheral metadata: position, running tally, reset — quiet text, no pills/badges */}
+      <div className="flex items-center justify-between gap-3 text-xs text-zinc-500 dark:text-mist-500">
+        <span className="font-medium tabular-nums">
+          {index + 1} / {total}
+        </span>
+        <div className="flex items-center gap-4">
+          {(correctCount > 0 || wrongCount > 0) && (
+            <span className="tabular-nums">
+              <span className="text-emerald-600 dark:text-emerald-400">{correctCount} correct</span>
               {wrongCount > 0 && (
-                <span className="ex-pill ex-pill-err">
-                  <span className="ex-pill-dot" />
-                  {wrongCount} Mistakes
-                </span>
+                <>
+                  {" "}
+                  · <span className="text-rose-600 dark:text-rose-400">{wrongCount} mistakes</span>
+                </>
               )}
-            </div>
-          </div>
-
-          <div className="ex-topbar-right">
-            <span className="ex-keycap-hint">Enter ↵</span>
-            <button
-              type="button"
-              onClick={handleResetClick}
-              className={`ex-reset-btn${resetArmed ? " ex-reset-btn--armed" : ""}`}
-              title="Reset progress"
-            >
-              <IconRotateCcw style={{ width: 14, height: 14 }} />
-              {resetArmed ? "Confirm restart?" : "Restart"}
-            </button>
-          </div>
-        </div>
-
-        {/* Smooth Progress Bar */}
-        <div className="ex-progress-track">
-          <div className="ex-progress-bar" style={{ width: `${pct}%` }} />
-        </div>
-
-        {/* Main Stage Card */}
-        <div key={current.id} className="ex-stage-card ex-anim-enter">
-          {/* Card Meta / Eyebrow */}
-          <div className="ex-stage-meta">
-            <span className="ex-eyebrow">Translate into English · ترجم للإنجليزية</span>
-            {current.partOfSpeech && (
-              <span className="ex-pos-tag">{current.partOfSpeech}</span>
-            )}
-          </div>
-
-          {/* Hero Arabic Word Stage */}
-          <div className="ex-hero-arabic-box">
-            <p dir="rtl" lang="ar" className="ex-arabic-head">
-              {current.translation}
-            </p>
-            <span className="ex-arabic-sub">اكتب الكلمة الإنجليزية المناسبة بالأسفل</span>
-          </div>
-
-          {/* User Input Field */}
-          <div className="ex-input-container">
-            <input
-              ref={inputRef}
-              type="text"
-              inputMode="text"
-              autoComplete="off"
-              autoCorrect="off"
-              autoCapitalize="none"
-              spellCheck={false}
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key !== "Enter") return;
-                e.preventDefault();
-                result !== null ? nextWord() : checkAnswer();
-              }}
-              disabled={result !== null}
-              placeholder="Type English word here..."
-              autoFocus
-              className={`ex-input-field${
-                result === "correct"
-                  ? " ex-input-field--ok"
-                  : result === "wrong"
-                    ? " ex-input-field--err"
-                    : ""
-              }`}
-            />
-          </div>
-
-          {/* Feedback Area */}
-          {result === "correct" && (
-            <div className="ex-feedback-box ex-feedback--ok">
-              <div className="ex-feedback-left">
-                <IconCheckCircle className="ex-feedback-icon" />
-                <div className="ex-feedback-content">
-                  <span className="ex-feedback-title">Correct Answer! · إجابة صحيحة</span>
-                  <span className="ex-feedback-word">{current.headword}</span>
-                </div>
-              </div>
-              <AudioButton text={current.headword} small label={`Listen to ${current.headword}`} />
-            </div>
+            </span>
           )}
-
-          {result === "wrong" && (
-            <div className="ex-feedback-box ex-feedback--err">
-              <div className="ex-feedback-left">
-                <IconXCircle className="ex-feedback-icon" />
-                <div className="ex-feedback-content">
-                  <span className="ex-feedback-title">Incorrect · إجابة غير صحيحة</span>
-                  <div className="ex-feedback-comparison">
-                    <span className="ex-wrong-entry">
-                      You typed: <del>{input.trim() || "(empty)"}</del>
-                    </span>
-                    <span className="ex-correct-target">
-                      Correct: <strong>{current.headword}</strong>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <AudioButton text={current.headword} small label={`Listen to ${current.headword}`} />
-            </div>
-          )}
-
-          {/* Action Button */}
-          {result !== null ? (
-            <button
-              type="button"
-              onClick={nextWord}
-              className="ex-btn ex-btn-primary"
-            >
-              <span>{isLast ? "View Results · عرض النتيجة" : "Next Word · الكلمة التالية"}</span>
-              <IconArrowRight style={{ width: 17, height: 17 }} />
-              <span className="ex-btn-keycap">Enter ↵</span>
-            </button>
-          ) : (
-            <button
-              type="button"
-              onClick={checkAnswer}
-              disabled={!input.trim()}
-              className="ex-btn ex-btn-primary"
-            >
-              <span>Check Answer · تحقق من الإجابة</span>
-              <span className="ex-btn-keycap">Enter ↵</span>
-            </button>
-          )}
+          <button
+            type="button"
+            onClick={handleResetClick}
+            className={`font-medium transition-colors ${
+              resetArmed ? "text-rose-600 dark:text-rose-400" : "text-zinc-500 hover:text-zinc-700 dark:text-mist-500 dark:hover:text-mist-300"
+            }`}
+          >
+            {resetArmed ? "Confirm restart?" : "Restart"}
+          </button>
         </div>
       </div>
-    </>
+
+      <ProgressBar value={answers.length} max={total} size="sm" label="Exercise progress" />
+
+      {/* Primary reading anchor: the Arabic prompt — the one thing the eye should land on (§18).
+          No bordered box around it (§26 Rule 05): whitespace does the separating, not a container. */}
+      <div key={current.id} className="animate-reveal space-y-2.5 pt-2 text-center">
+        <p className="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-mist-500">
+          <span>Translate into English · ترجم للإنجليزية</span>
+          {current.partOfSpeech && <span className="text-zinc-400 dark:text-mist-600">· {current.partOfSpeech}</span>}
+        </p>
+        <p dir="rtl" lang="ar" className="text-4xl font-bold text-zinc-900 dark:text-white sm:text-[2.75rem]">
+          {current.translation}
+        </p>
+      </div>
+
+      {/* Input — the interaction, directly below the prompt (§19: never sharing the anchor's line) */}
+      <input
+        ref={inputRef}
+        type="text"
+        inputMode="text"
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="none"
+        spellCheck={false}
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key !== "Enter") return;
+          e.preventDefault();
+          result !== null ? nextWord() : checkAnswer();
+        }}
+        disabled={result !== null}
+        placeholder="Type English word here..."
+        autoFocus
+        className={`h-14 w-full rounded-xl border bg-white px-4 text-center text-xl font-semibold text-zinc-900 outline-none transition-colors placeholder:text-zinc-400 focus:border-brand-500 disabled:cursor-default dark:bg-night-950 dark:text-mist-100 dark:placeholder:text-mist-600 ${
+          result === "correct"
+            ? "border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30"
+            : result === "wrong"
+              ? "border-rose-500 bg-rose-50 dark:bg-rose-950/30"
+              : "border-zinc-300 dark:border-night-700"
+        }`}
+      />
+
+      {/* Feedback — a meaningful state signal, kept as its own bordered unit (§26 Rule 03:
+          borders separate real content, not decoration) */}
+      {result === "correct" && (
+        <div className="flex items-center justify-between gap-3 rounded-xl border border-emerald-300 bg-emerald-50 p-4 animate-reveal dark:border-emerald-700/60 dark:bg-emerald-950/40">
+          <div className="flex min-w-0 items-center gap-3">
+            <IconCheckCircle className="h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+            <div className="min-w-0">
+              <p className="text-xs font-bold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
+                Correct Answer! · إجابة صحيحة
+              </p>
+              <p className="truncate text-base font-semibold text-zinc-900 dark:text-white">{current.headword}</p>
+            </div>
+          </div>
+          <AudioButton text={current.headword} small label={`Listen to ${current.headword}`} />
+        </div>
+      )}
+
+      {result === "wrong" && (
+        <div className="flex items-center justify-between gap-3 rounded-xl border border-rose-300 bg-rose-50 p-4 animate-reveal dark:border-rose-700/60 dark:bg-rose-950/40">
+          <div className="min-w-0 flex items-center gap-3">
+            <IconXCircle className="h-5 w-5 shrink-0 text-rose-600 dark:text-rose-400" />
+            <div className="min-w-0">
+              <p className="text-xs font-bold uppercase tracking-wide text-rose-700 dark:text-rose-300">
+                Incorrect · إجابة غير صحيحة
+              </p>
+              <p className="truncate text-sm text-zinc-700 dark:text-mist-200">
+                <del className="text-rose-600 dark:text-rose-300">{input.trim() || "(empty)"}</del>
+                <span className="mx-1.5 text-zinc-400 dark:text-mist-500">→</span>
+                <strong className="font-semibold text-zinc-900 dark:text-white">{current.headword}</strong>
+              </p>
+            </div>
+          </div>
+          <AudioButton text={current.headword} small label={`Listen to ${current.headword}`} />
+        </div>
+      )}
+
+      {/* Action — one primary control, nothing competes with it (§25 Hierarchy before Decoration) */}
+      {result !== null ? (
+        <button
+          type="button"
+          onClick={nextWord}
+          className="flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-brand-600 text-sm font-semibold text-white transition-colors hover:bg-brand-500"
+        >
+          <span>{isLast ? "View Results · عرض النتيجة" : "Next Word · الكلمة التالية"}</span>
+          <IconArrowRight className="h-4 w-4" />
+        </button>
+      ) : (
+        <button
+          type="button"
+          onClick={checkAnswer}
+          disabled={!input.trim()}
+          className="flex h-12 w-full items-center justify-center rounded-xl bg-brand-600 text-sm font-semibold text-white transition-colors hover:bg-brand-500 disabled:cursor-not-allowed disabled:opacity-40"
+        >
+          Check Answer · تحقق من الإجابة
+        </button>
+      )}
+
+      <p className="text-center text-xs text-zinc-400 dark:text-mist-600">Press Enter ↵</p>
+    </div>
   );
 }
-
-/* ─────────────── Clean, Flat, Professional Styles ─────────────── */
-const exStyles = `
-  /* Root Container - Generous Width for Desktop / Tablets */
-  .ex-root {
-    width: 100%;
-    max-width: 820px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    font-family: inherit;
-  }
-
-  /* Skeleton Loading */
-  .ex-skeleton-bar {
-    height: 6px;
-    border-radius: 999px;
-    background: #1c2743;
-    animation: ex-pulse 1.5s ease-in-out infinite;
-  }
-  .ex-skeleton-box, .ex-skeleton-line {
-    border-radius: 14px;
-    background: #1c2743;
-    animation: ex-pulse 1.5s ease-in-out infinite;
-  }
-  .ex-stage-card .ex-skeleton-box + .ex-skeleton-line,
-  .ex-stage-card .ex-skeleton-line + .ex-skeleton-line {
-    margin-top: 14px;
-  }
-  @keyframes ex-pulse {
-    0%, 100% { opacity: 0.35; }
-    50% { opacity: 0.7; }
-  }
-
-  /* Top Bar */
-  .ex-topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .ex-topbar-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .ex-counter-badge {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 5px;
-    background: #131c31;
-    border: 1px solid #1f2d4e;
-    padding: 6px 14px;
-    border-radius: 999px;
-  }
-  .ex-counter-label {
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #7488ab;
-  }
-  .ex-counter-curr {
-    font-size: 16px;
-    font-weight: 800;
-    color: #f6f8fc;
-  }
-  .ex-counter-sep {
-    font-size: 13px;
-    font-weight: 600;
-    color: #4c5b80;
-  }
-  .ex-counter-total {
-    font-size: 14px;
-    font-weight: 600;
-    color: #8ea1c4;
-  }
-
-  /* Stat Pills */
-  .ex-stats-pills {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .ex-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 999px;
-  }
-  .ex-pill-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 999px;
-  }
-  .ex-pill-ok {
-    background: #0f261c;
-    border: 1px solid #276148;
-    color: #5fae8a;
-  }
-  .ex-pill-ok .ex-pill-dot {
-    background: #5fae8a;
-  }
-  .ex-pill-err {
-    background: #3a141b;
-    border: 1px solid #8c3040;
-    color: #d16f7f;
-  }
-  .ex-pill-err .ex-pill-dot {
-    background: #d16f7f;
-  }
-
-  /* Top Bar Right */
-  .ex-topbar-right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .ex-keycap-hint {
-    font-size: 11px;
-    font-weight: 600;
-    color: #7488ab;
-    background: #131c31;
-    border: 1px solid #1f2d4e;
-    padding: 4px 8px;
-    border-radius: 6px;
-  }
-  .ex-reset-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 12px;
-    font-weight: 600;
-    color: #7488ab;
-    background: transparent;
-    border: 1px solid transparent;
-    padding: 4px 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: color 0.15s, background-color 0.15s, border-color 0.15s;
-  }
-  .ex-reset-btn:hover {
-    color: #c7d3e8;
-    background: #16223c;
-    border-color: #1f2d4e;
-  }
-  .ex-reset-btn--armed {
-    color: #d16f7f !important;
-    background: #3a141b !important;
-    border-color: #8c3040 !important;
-  }
-
-  /* Progress Track */
-  .ex-progress-track {
-    width: 100%;
-    height: 6px;
-    border-radius: 999px;
-    background: #16223c;
-    overflow: hidden;
-  }
-  .ex-progress-bar {
-    height: 100%;
-    border-radius: 999px;
-    background: #5468bd;
-    transition: width 0.35s ease;
-  }
-
-  /* Stage Card */
-  .ex-stage-card {
-    background: #0e1728;
-    border: 1px solid #1c2743;
-    border-radius: 20px;
-    padding: 36px 38px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-shadow: 0 10px 30px -10px rgba(5, 7, 15, 0.5);
-  }
-  @media (max-width: 640px) {
-    .ex-stage-card {
-      padding: 24px 18px;
-      border-radius: 16px;
-      gap: 16px;
-    }
-  }
-
-  .ex-anim-enter {
-    animation: ex-fade 0.22s ease-out;
-  }
-  @keyframes ex-fade {
-    from {
-      opacity: 0;
-      transform: translateY(6px);
-    }
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
-
-  /* Meta & Eyebrow */
-  .ex-stage-meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .ex-eyebrow {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #7488ab;
-  }
-  .ex-pos-tag {
-    font-size: 11px;
-    font-weight: 600;
-    color: #8ea1c4;
-    background: #16223c;
-    border: 1px solid #1c2743;
-    padding: 2px 8px;
-    border-radius: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  /* Hero Arabic Box */
-  .ex-hero-arabic-box {
-    background: #090f1d;
-    border: 1px solid #1c2743;
-    border-radius: 16px;
-    padding: 32px 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 120px;
-  }
-  .ex-arabic-head {
-    font-size: clamp(28px, 5vw, 42px);
-    font-weight: 700;
-    color: #f6f8fc;
-    line-height: 1.5;
-    margin: 0;
-    font-family: var(--font-readex), Cairo, Tahoma, sans-serif;
-  }
-  .ex-arabic-sub {
-    font-size: 13px;
-    color: #7488ab;
-    font-weight: 500;
-  }
-
-  /* Input Field */
-  .ex-input-container {
-    width: 100%;
-  }
-  .ex-input-field {
-    width: 100%;
-    height: 60px;
-    background: #060a12;
-    border: 1.5px solid #1c2743;
-    border-radius: 14px;
-    padding: 0 20px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #f6f8fc;
-    text-align: center;
-    letter-spacing: -0.01em;
-    outline: none;
-    box-sizing: border-box;
-    transition: border-color 0.15s, box-shadow 0.15s, background-color 0.15s;
-    font-family: inherit;
-  }
-  .ex-input-field::placeholder {
-    color: #4c5b80;
-    font-weight: 400;
-    font-size: 17px;
-  }
-  .ex-input-field:focus {
-    border-color: #5468bd;
-    box-shadow: 0 0 0 3px rgba(84, 104, 189, 0.2);
-  }
-  .ex-input-field:disabled {
-    cursor: default;
-  }
-  .ex-input-field--ok {
-    border-color: #5fae8a !important;
-    background: rgba(15, 38, 28, 0.45) !important;
-  }
-  .ex-input-field--err {
-    border-color: #d16f7f !important;
-    background: rgba(58, 20, 27, 0.45) !important;
-  }
-
-  /* Feedback Box */
-  .ex-feedback-box {
-    border-radius: 14px;
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    animation: ex-fade 0.18s ease-out;
-  }
-  .ex-feedback--ok {
-    background: #0f261c;
-    border: 1px solid #276148;
-  }
-  .ex-feedback--err {
-    background: #3a141b;
-    border: 1px solid #8c3040;
-  }
-  .ex-feedback-left {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    min-width: 0;
-  }
-  .ex-feedback-icon {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-  }
-  .ex-feedback--ok .ex-feedback-icon {
-    color: #5fae8a;
-  }
-  .ex-feedback--err .ex-feedback-icon {
-    color: #d16f7f;
-  }
-  .ex-feedback-content {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    min-width: 0;
-  }
-  .ex-feedback-title {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .ex-feedback--ok .ex-feedback-title {
-    color: #86c4a3;
-  }
-  .ex-feedback--err .ex-feedback-title {
-    color: #e195a0;
-  }
-  .ex-feedback-word {
-    font-size: 18px;
-    font-weight: 700;
-    color: #f6f8fc;
-  }
-  .ex-feedback-comparison {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 10px;
-    font-size: 14px;
-  }
-  .ex-wrong-entry {
-    color: #e195a0;
-  }
-  .ex-wrong-entry del {
-    opacity: 0.85;
-  }
-  .ex-correct-target {
-    color: #f6f8fc;
-  }
-  .ex-correct-target strong {
-    font-weight: 700;
-    color: #ffffff;
-  }
-
-  /* Buttons */
-  .ex-btn {
-    width: 100%;
-    height: 52px;
-    border: none;
-    border-radius: 14px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: inherit;
-    transition: background-color 0.15s, opacity 0.15s;
-    box-sizing: border-box;
-  }
-  .ex-btn-primary {
-    background: #3f52a3;
-    color: #ffffff;
-  }
-  .ex-btn-primary:hover:not(:disabled) {
-    background: #5468bd;
-  }
-  .ex-btn-primary:active:not(:disabled) {
-    background: #33438a;
-  }
-  .ex-btn-secondary {
-    background: #16223c;
-    border: 1px solid #1c2743;
-    color: #c7d3e8;
-  }
-  .ex-btn-secondary:hover:not(:disabled) {
-    background: #1c2743;
-    color: #ffffff;
-  }
-  .ex-btn:disabled {
-    opacity: 0.35;
-    cursor: not-allowed;
-  }
-  .ex-btn-keycap {
-    font-size: 11px;
-    font-weight: 600;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 3px 7px;
-    border-radius: 6px;
-    opacity: 0.85;
-  }
-
-  /* ─────────────── Finished / Results View ─────────────── */
-  .ex-done-container {
-    text-align: center;
-    align-items: center;
-    gap: 24px;
-    padding: 44px 38px;
-  }
-  @media (max-width: 640px) {
-    .ex-done-container {
-      padding: 28px 18px;
-    }
-  }
-  .ex-done-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
-  .ex-done-title {
-    font-size: 24px;
-    font-weight: 800;
-    color: #f6f8fc;
-    margin: 0;
-    letter-spacing: -0.02em;
-  }
-
-  /* Ring */
-  .ex-ring-wrap {
-    position: relative;
-    width: 140px;
-    height: 140px;
-    margin: 4px 0;
-  }
-  .ex-ring-svg {
-    width: 100%;
-    height: 100%;
-  }
-  .ex-ring-text {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .ex-ring-num {
-    font-size: 34px;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1;
-  }
-  .ex-ring-sub {
-    font-size: 11px;
-    font-weight: 600;
-    color: #7488ab;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-top: 4px;
-  }
-
-  /* Stats Grid */
-  .ex-stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    width: 100%;
-  }
-  .ex-stat-tile {
-    background: #090f1d;
-    border: 1px solid #1c2743;
-    border-radius: 14px;
-    padding: 16px 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-  }
-  .ex-stat-val {
-    font-size: 26px;
-    font-weight: 800;
-    line-height: 1.1;
-  }
-  .ex-stat-lbl {
-    font-size: 11px;
-    font-weight: 600;
-    color: #7488ab;
-  }
-
-  /* Message Box */
-  .ex-msg-box {
-    background: #090f1d;
-    border: 1px solid #1c2743;
-    border-radius: 14px;
-    padding: 18px 24px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .ex-msg-en {
-    font-size: 14px;
-    color: #c7d3e8;
-    margin: 0;
-    font-weight: 500;
-  }
-  .ex-msg-ar {
-    font-size: 15px;
-    color: #d18470;
-    margin: 8px 0 0;
-    font-weight: 600;
-    direction: rtl;
-    line-height: 1.7;
-    font-family: var(--font-readex), Cairo, Tahoma, sans-serif;
-  }
-
-  /* Missed Words Section */
-  .ex-missed-section {
-    width: 100%;
-    background: #090f1d;
-    border: 1px solid #1c2743;
-    border-radius: 16px;
-    padding: 20px;
-    text-align: left;
-    box-sizing: border-box;
-  }
-  .ex-missed-header {
-    margin-bottom: 14px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #1c2743;
-  }
-  .ex-missed-title {
-    font-size: 13px;
-    font-weight: 700;
-    color: #e195a0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  .ex-missed-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-height: 240px;
-    overflow-y: auto;
-    padding-right: 4px;
-  }
-  .ex-missed-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #16223c;
-    border: 1px solid #1c2743;
-    border-radius: 10px;
-    padding: 10px 14px;
-  }
-  .ex-missed-ar {
-    font-size: 15px;
-    font-weight: 600;
-    color: #f6f8fc;
-    min-width: 100px;
-    font-family: var(--font-readex), Cairo, Tahoma, sans-serif;
-  }
-  .ex-missed-arrow {
-    color: #4c5b80;
-    font-size: 14px;
-  }
-  .ex-missed-correct {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 8px;
-  }
-  .ex-missed-headword {
-    font-size: 15px;
-    font-weight: 700;
-    color: #ffffff;
-  }
-  .ex-missed-typed {
-    font-size: 12px;
-    color: #e195a0;
-  }
-  .ex-missed-audio {
-    flex-shrink: 0;
-  }
-
-  /* Finished Actions */
-  .ex-done-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-`;

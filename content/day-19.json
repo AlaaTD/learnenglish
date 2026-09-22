@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم 'would like' (واختصارها 'd like) كبديل مهذب ولطيف للفعل 'want'. وتستخدم لتقديم العروض بلباقة، وصياغة الطلبات بتهذيب، وتوجيه الدعوات دون أن تبدو كأمر مباشر.",
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Affirmative: Subject + would like ('d like) + (noun / to + verb)",
           "explanation": "Expresses polite wants, desires, or intentions.",
           "explanationArabic": "للتعبير عن الرغبة أو الطلب بأدب."
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Negative: Subject + would not like (wouldn't like) + (noun / to + verb)",
           "explanation": "States polite unwillingness or preference against something.",
           "explanationArabic": "للتعبير عن عدم الرغبة بأسلوب مهذب."
         },
         {
+          "label": "Offers & Invitations · عروض ودعوات",
           "pattern": "Question: Would + subject + like + (noun / to + verb)?",
           "explanation": "Used for polite offers and gracious invitations.",
           "explanationArabic": "لتقديم العروض وتوجيه الدعوات اللبقة."
@@ -58,6 +61,11 @@
           ]
         }
       ],
+      "commonUsage": [
+        "Use 'would like' instead of 'want' to sound more polite when ordering, requesting, or offering something: 'I would like a cup of tea.' (استخدم would like بدلاً من want لتبدو أكثر تهذيباً عند الطلب أو تقديم عرض.)",
+        "Offer something politely with 'Would you like...?' -- 'Do you like...?' asks about general taste, not a specific offer. (اعرض شيئاً بلباقة بـ Would you like...؟ -- بينما Do you like...؟ تسأل عن الذوق العام وليس عرضاً محدداً.)",
+        "Soften a refusal with 'I'd like to, but...' rather than a blunt 'No'. (خفف الرفض بـ I'd like to, but... بدلاً من رفض مباشر بكلمة No.)"
+      ],
       "commonMistakes": [
         {
           "wrong": "I would like attend the party tonight.",
@@ -80,11 +88,13 @@
       "explanationArabic": "نستخدم الفعل الناقص 'could' لصياغة طلبات مهذبة ولطيفة. تفيد 'Could you...؟' رجاء شخص ما القيام بأمر بلباقة، بينما تفيد 'Could I...؟' طلب الإذن بأسلوب رفيع ومحترم.",
       "structures": [
         {
+          "label": "Requesting · طلب فعل",
           "pattern": "Requesting: Could + you + (please) + base verb + ...?",
           "explanation": "Courteously asks someone to do something.",
           "explanationArabic": "لطلب شيء من شخص آخر بأدب ولطف."
         },
         {
+          "label": "Permission · طلب إذن",
           "pattern": "Permission: Could + I + (please) + base verb + ...?",
           "explanation": "Politely requests permission.",
           "explanationArabic": "لطلب الإذن بأدب."
@@ -118,6 +128,11 @@
             "ceremony"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use 'Could you...?' to politely ask someone to do something, and 'Could I...?' to ask for permission for yourself. (استخدم Could you...؟ لطلب فعل شيء بلباقة وCould I...؟ لطلب الإذن لنفسك.)",
+        "Add 'please' at the end to make the request even more courteous: 'Could you please pass the salt?' (أضف please في النهاية لجعل الطلب أكثر لباقة.)",
+        "Reply with 'Certainly' or 'Of course' when agreeing, or 'I'm afraid I can't right now' when declining politely. (رُد بـ Certainly أو Of course عند الموافقة، أو I'm afraid I can't right now عند الرفض بلطف.)"
       ],
       "commonMistakes": [
         {

@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Review: Perfect Tenses and Conditionals",
+      "titleArabic": "مراجعة شاملة: الأزمنة التامة والجمل الشرطية",
       "explanation": "This comprehensive capstone review integrates the major grammar pillars studied across Stage 4: the Present Perfect (connecting past experience to now: 'She has earned two certifications'), the Past Perfect (clarifying which past event happened first: 'They had finalized the shortlist before the panel met'), and Conditionals (Zero for natural rules: 'If you invest in upskilling, your competency grows'; First for likely future outcomes: 'If they offer a sign-on bonus, I will accept the job offer').",
       "explanationArabic": "تراجع هذه الجلسة الختامية وتدمج الركائز النحوية الكبرى التي درسناها عبر المرحلة الرابعة: المضارع التام (لربط الخبرات السابقة بالحاضر: 'لقد حصلت على شهادتي اعتماد'), والماضي التام (لتوضيح أي الحدثين وقع أولاً في الماضي: 'كانوا قد أتموا القائمة المصغرة قبل اجتماع اللجنة'), والجمل الشرطية (الصفرية للقواعد الثابتة: 'إذا استثمرت في تطوير مهاراتك، تنمو كفاءتك'; والأولى للنتائج المستقبلية المحتملة: 'إذا قدموا مكافأة توقيع عقد، فسأقبل عرض العمل').",
-      "rules": [
-        "Present Perfect: have/has + V3 for life experiences, continuing states, or recent actions with present impact.",
-        "Past Perfect: had + V3 for the earlier of two completed past actions.",
-        "Zero Conditional: If + Present Simple, Present Simple (constant facts and career realities).",
-        "First Conditional: If + Present Simple, will + base verb (real future scenarios and career decisions)."
-      ],
-      "rulesArabic": [
-        "المضارع التام: have/has + التصريف الثالث للخبرات الحياتية أو الأحداث المرتبطة بالحاضر.",
-        "الماضي التام: had + التصريف الثالث للحدث الأسبق بين حدثين في الماضي.",
-        "الحالة الشرطية الصفرية: If + مضارع بسيط, مضارع بسيط (للحقائق والبديهيات المهنية).",
-        "الحالة الشرطية الأولى: If + مضارع بسيط, will + الفعل الأساسي (للقرارات والمواقف المستقبلية المحتملة)."
-      ],
       "structures": [
         {
+          "label": "Present Perfect · المضارع التام",
           "pattern": "Subject + have/has + V3 + time expression (so far / since / for)",
           "explanation": "Present Perfect: connects past career accomplishments to current standing.",
           "explanationArabic": "المضارع التام: يربط الإنجازات المهنية الماضية بالمكانة الحالية."
         },
         {
+          "label": "Past Perfect · الماضي التام",
           "pattern": "Subject + had + V3 + before + Subject + V2",
           "explanation": "Past Perfect: sequences earlier milestones before later ones.",
           "explanationArabic": "الماضي التام: يرتب المحطات المهنية الأسبق قبل اللاحقة."
         },
         {
+          "label": "First Conditional · الشرطية الأولى",
           "pattern": "If + Subject + V1, Subject + will + V1 (base)",
           "explanation": "First Conditional: predicts future career outcomes based on strategic action.",
           "explanationArabic": "الحالة الشرطية الأولى: تتنبأ بنتائج مهنية مستقبلية مبنية على خطوات استراتيجية."
@@ -86,6 +78,12 @@
           "note": "Use Past Simple with a specific past time like 'yesterday', unless contrasting with another past event.",
           "noteArabic": "استخدم الماضي البسيط مع التوقيتات المحددة مثل 'yesterday' ما لم تقارن بحدث ماضٍ آخر."
         }
+      ],
+      "commonUsage": [
+        "Present Perfect: have/has + V3 for life experiences, continuing states, or recent actions with present impact. (المضارع التام: have/has + التصريف الثالث للخبرات الحياتية أو الأحداث المرتبطة بالحاضر.)",
+        "Past Perfect: had + V3 for the earlier of two completed past actions. (الماضي التام: had + التصريف الثالث للحدث الأسبق بين حدثين في الماضي.)",
+        "Zero Conditional: If + Present Simple, Present Simple (constant facts and career realities). (الحالة الشرطية الصفرية: If + مضارع بسيط, مضارع بسيط (للحقائق والبديهيات المهنية).)",
+        "First Conditional: If + Present Simple, will + base verb (real future scenarios and career decisions). (الحالة الشرطية الأولى: If + مضارع بسيط, will + الفعل الأساسي (للقرارات والمواقف المستقبلية المحتملة).)"
       ]
     }
   ],

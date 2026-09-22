@@ -13,11 +13,13 @@
       "explanationArabic": "عند السؤال عن المقادير والكميات في التسوق، نستخدم 'How much' مع الأسماء غير المعدودة (Uncountable Nouns) كالماء والحليب والأرز والسكر والمال (مثل: 'How much milk do we need؟' أو 'How much does it cost؟'). في المقابل، نستخدم 'How many' مع الأسماء الجمع المعدودة (Plural Countable Nouns) كالتفاح والعلب والأرغفة والبيض (مثل: 'How many eggs are in that carton؟').",
       "structures": [
         {
+          "label": "How much + Uncountable · مع غير المعدود",
           "pattern": "How much + Uncountable Noun + auxiliary + subject + verb?",
           "explanation": "Asks for the quantity of an uncountable substance (or price with verb cost/be).",
           "explanationArabic": "سؤال عن كمية مادة غير معدودة أو عن السعر."
         },
         {
+          "label": "How many + Countable · مع المعدود",
           "pattern": "How many + Plural Countable Noun + auxiliary + subject + verb?",
           "explanation": "Asks for the specific count or number of discrete individual items.",
           "explanationArabic": "سؤال عن عدد محدد من الأشياء القابلة للعد."
@@ -48,6 +50,11 @@
           ]
         }
       ],
+      "commonUsage": [
+        "Use 'How much' with uncountable nouns like money, water, and rice: 'How much does it cost?' (استخدم How much مع الأسماء غير المعدودة مثل money وwater وrice.)",
+        "Use 'How many' with plural countable nouns like eggs, bags, and tickets: 'How many eggs do we need?' (استخدم How many مع الأسماء المعدودة الجمع مثل eggs وbags وtickets.)",
+        "Some foods look uncountable but become countable in packaged units, like 'a loaf of bread' or 'a carton of milk' -- count the unit, not the substance. (بعض الأطعمة تبدو غير معدودة لكنها تصبح معدودة في شكلها المعبأ مثل a loaf of bread -- عُدّ الوحدة لا المادة نفسها.)"
+      ],
       "commonMistakes": [
         {
           "wrong": "How much loaves of bread did you pick up?",
@@ -70,11 +77,13 @@
       "explanationArabic": "نستخدم 'much' مع الأسماء غير المعدودة وغالباً في الجمل المنفية والأسئلة (مثل: 'We don't have much milk left'). ونستخدم 'many' مع الأسماء المعدودة في النفي والأسئلة (مثل: 'There aren't many eggs left'). أما في الجمل المثبتة، فالأكثر شيوعاً واستخداماً في اللغة اليومية هو 'a lot of' (مثل: 'We bought a lot of produce') بدلاً من استخدام much في الإثبات.",
       "structures": [
         {
+          "label": "Much (Negative) · much في النفي",
           "pattern": "Negative: Subject + auxiliary-not + have / see + much + Uncountable Noun",
           "explanation": "Indicates a small or scarce quantity of an uncountable entity.",
           "explanationArabic": "يدل على قلة كمية اسم غير معدود في صيغة النفي."
         },
         {
+          "label": "Many (Negative) · many في النفي",
           "pattern": "Negative: Subject + auxiliary-not + have / see + many + Plural Countable Noun",
           "explanation": "Indicates a low or insufficient number of individual items.",
           "explanationArabic": "يدل على قلة عدد أشياء معدودة في صيغة النفي."
@@ -103,6 +112,11 @@
             "cashier"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use 'much' and 'many' mostly in negative sentences and questions: 'We don't have much time.' / 'Are there many seats left?' (استخدم much وmany غالباً في الجمل المنفية والأسئلة.)",
+        "In positive statements, everyday English usually prefers 'a lot of' or 'plenty of' over 'much' or 'many': 'We bought a lot of vegetables.' (في الجمل المثبتة، تفضل اللغة اليومية a lot of أو plenty of على much وmany.)",
+        "'A lot of' works naturally with both countable and uncountable nouns, so it is the safest everyday choice in affirmative sentences. (تعمل a lot of بشكل طبيعي مع المعدود وغير المعدود، لذا فهي الخيار الأكثر أماناً في الجمل المثبتة اليومية.)"
       ],
       "commonMistakes": [
         {

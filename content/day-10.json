@@ -1420,21 +1420,25 @@
       "explanationArabic": "تُصاغ الأسئلة في اللغة الإنجليزية بطريقتين أساسيتين بحسب نوع الفعل: 1. الأسئلة مع فعل الكينونة be: نضع صيغة be (am/is/are) قبل الفاعل مباشرة (مثل: 'Are you a student?' أو 'Where is your hometown؟'). ولا نستخدم do مع be إطلاقاً. 2. الأسئلة مع أفعال الحركة العادية: نستخدم الفعل المساعد do (مع I, you, we, they) أو does (مع he, she, it) قبل الفاعل متبوعاً بالفعل الأساسي في صيغة المصدر المجرد (مثل: 'Do you speak English؟' أو 'What do you do؟').",
       "structures": [
         {
+          "label": "Yes/No with be · سؤال بنعم/لا مع be",
           "pattern": "Be (Am/Is/Are) + Subject + Complement?",
           "explanation": "Yes/No question with verb 'be'",
           "explanationArabic": "سؤال بنعم/لا باستخدام فعل الكينونة be"
         },
         {
+          "label": "Wh- Question with be · سؤال استفهام مع be",
           "pattern": "WH-Word + be (am/is/are) + Subject?",
           "explanation": "Information question with verb 'be'",
           "explanationArabic": "سؤال استفهام عن معلومات باستخدام فعل الكينونة be"
         },
         {
+          "label": "Yes/No with do/does · سؤال بنعم/لا مع do/does",
           "pattern": "Do/Does + Subject + Base Verb + Object?",
           "explanation": "Yes/No question with action verbs using auxiliary do/does",
           "explanationArabic": "سؤال بنعم/لا مع الأفعال العادية باستخدام do أو does"
         },
         {
+          "label": "Wh- Question with do/does · سؤال استفهام مع do/does",
           "pattern": "WH-Word + do/does + Subject + Base Verb?",
           "explanation": "Information question with action verbs",
           "explanationArabic": "سؤال استفهام عن معلومات مع الأفعال العادية"
@@ -1492,12 +1496,12 @@
         {
           "wrong": "Where do you from?",
           "right": "Where are you from?",
-          "explanation": "'From' requires the verb 'be' (are you), not the auxiliary 'do'."
+          "note": "'From' requires the verb 'be' (are you), not the auxiliary 'do'."
         },
         {
           "wrong": "What are you do for a job?",
           "right": "What do you do for a job?",
-          "explanation": "Use the auxiliary 'do' with the main action verb 'do', not 'are'."
+          "note": "Use the auxiliary 'do' with the main action verb 'do', not 'are'."
         }
       ]
     }

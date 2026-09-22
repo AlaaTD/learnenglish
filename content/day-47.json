@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Would for Past Habits and Preferences",
+      "titleArabic": "Would للتعبير عن العادات والتفضيلات في الماضي",
       "explanation": "The modal auxiliary 'would' has two major functions in conversational English: 1) Expressing Past Habits (Nostalgic Routines): We use 'would + base verb' to describe repeated, regular actions in the past that no longer occur ('Every summer, our grandmother would bake festive pastries for the village'). Important: unlike 'used to', 'would' cannot describe past states or conditions (Say 'She used to live near the festival', NOT 'She would live...'). 2) Expressing Preferences: We use 'would rather + base verb' or 'would prefer + to-infinitive' to express present or future choices ('I would rather attend a quiet soiree than a noisy street carnival'; 'They would prefer to celebrate at home').",
       "explanationArabic": "للفعل المساعد (would) وظيفتان رئيسيتان هامتان: 1) التعبير عن العادات الماضية المتكررة (Past Habits): نستخدم (would + الفعل المجرد) لوصف أفعال وروتينيات كان يتكرر حدوثها في الماضي بصبغة نوستالجية ومحبة ('في كل عطلة، كانت جدتي تصنع المعجنات للاحتفال'). انتبه: لا نستخدم would مع الحالات الثابتة past states، بل نستخدم used to (نقول: I used to love carnivals، ولا نقول: I would love carnivals). 2) التعبير عن التفضيلات (Preferences): نستخدم (would rather + الفعل المجرد) أو (would prefer + to والمصدر) لتفضيل خيار على آخر ('أفضل حضور أمسية راقية هادئة على الذهاب لكرنفال صاخب').",
-      "rules": [
-        "Past habits: Subject + would + base verb ('During the festival, we would dance until dawn'). Only for repeated actions, not states.",
-        "Would rather + base verb: Expresses preference between options ('I would rather stay home than join the revelry').",
-        "Would prefer + to + verb: Expresses formal preference ('She would prefer to hire an organic caterer').",
-        "Contrast: Use 'used to' for past states/conditions ('He used to be a festival organizer', not 'would be')."
-      ],
-      "rulesArabic": [
-        "العادات الماضية المتكررة: الفاعل + would + المصدر المجرد بدون to (للأفعال الحركية المتكررة فقط).",
-        "صيغة التفضيل (would rather): تُتبع بالمصدر المجرد مباشرة ('would rather dance than sing').",
-        "صيغة التفضيل (would prefer): تُتبع بـ to + المصدر ('would prefer to celebrate quietly').",
-        "الحالات الثابتة: نستخدم used to وليس would مع أفعال الحالة مثل be, live, know, like."
-      ],
       "structures": [
         {
+          "label": "Past Habit (would) · عادة ماضية",
           "pattern": "Subject + would + Base Verb (when + past context)",
           "explanation": "Describes a recurring, habitual past action carried out with nostalgia.",
           "explanationArabic": "يصف عادة أو فعلاً متكرراً في الماضي بنبرة حنين."
         },
         {
+          "label": "Would rather · تفضيل would rather",
           "pattern": "Subject + would rather + Base Verb (+ than + Base Verb)",
           "explanation": "Expresses preference for one action over an alternative.",
           "explanationArabic": "يعبر عن تفضيل فعل معين على بديل آخر."
         },
         {
+          "label": "Would prefer to · تفضيل رسمي",
           "pattern": "Subject + would prefer + to + Base Verb",
           "explanation": "States a formal preference using a to-infinitive.",
           "explanationArabic": "يوضح تفضيلاً رسمياً باستخدام to مع المصدر."
@@ -87,6 +79,12 @@
           "note": "'Would rather' takes the bare infinitive without 'to'.",
           "noteArabic": "التركيب would rather يُتبع بالمصدر المجرد مباشرة بدون to."
         }
+      ],
+      "commonUsage": [
+        "Past habits: Subject + would + base verb ('During the festival, we would dance until dawn'). Only for repeated actions, not states. (العادات الماضية المتكررة: الفاعل + would + المصدر المجرد بدون to (للأفعال الحركية المتكررة فقط).)",
+        "Would rather + base verb: Expresses preference between options ('I would rather stay home than join the revelry'). (صيغة التفضيل (would rather): تُتبع بالمصدر المجرد مباشرة ('would rather dance than sing').)",
+        "Would prefer + to + verb: Expresses formal preference ('She would prefer to hire an organic caterer'). (صيغة التفضيل (would prefer): تُتبع بـ to + المصدر ('would prefer to celebrate quietly').)",
+        "Contrast: Use 'used to' for past states/conditions ('He used to be a festival organizer', not 'would be'). (الحالات الثابتة: نستخدم used to وليس would مع أفعال الحالة مثل be, live, know, like.)"
       ]
     }
   ],

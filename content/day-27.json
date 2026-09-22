@@ -13,11 +13,13 @@
       "explanationArabic": "نستخدم صيغة الأمر (Imperatives) لإعطاء التوجيهات، والتعليمات، والتحذيرات، ووصف الطرق والاتجاهات:\n\n1. الأمر المثبت: نبدأ بالفعل الأساسي في المصدر مباشرة وبدون فاعل:\n   - 'Turn left at the intersection.' (انعطف يساراً عند التقاطع).\n   - 'Go straight along the street.' (سر للأمام على طول الشارع).\n   - يمكن إضافة 'please' لزيادة التهذيب: 'Please stand behind the yellow line.'\n\n2. الأمر المنفي (النهي): نستخدم دائماً 'Don't' + الفعل المجرد:\n   - 'Don't step onto the tracks.' (لا تخطُ على القضبان).\n   - 'Don't drive in the bus lane.' (لا تقد في المسار المخصص للحافلات).",
       "structures": [
         {
+          "label": "Affirmative Imperative · أمر مثبت",
           "pattern": "Affirmative Imperative: Base Verb (+ Object / Direction) (+ please)",
           "explanation": "Directs someone to take a specific action.",
           "explanationArabic": "لتوجيه شخص ما للقيام بفعل محدد أو اتباع اتجاه معين."
         },
         {
+          "label": "Negative Imperative (Don't) · نهي",
           "pattern": "Negative Imperative: Don't + Base Verb + ...",
           "explanation": "Directs someone to avoid doing something.",
           "explanationArabic": "للنهي عن القيام بفعل معين أو التحذير منه."
@@ -54,6 +56,11 @@
           ]
         }
       ],
+      "commonUsage": [
+        "Drop the subject pronoun completely in imperative sentences: 'Turn left', not 'You turn left'. (احذف الضمير الفاعل تماماً في جمل الأمر: Turn left وليس You turn left.)",
+        "Add 'please' to soften an instruction and make it sound more polite: 'Please stand behind the line.' (أضف please لتخفيف التوجيه وجعله أكثر تهذيباً.)",
+        "Form the negative imperative with 'Don't' before the base verb, for any listener: 'Don't cross here.' (كوّن النهي بـ Don't قبل الفعل الأساسي، بغض النظر عمن تخاطبه.)"
+      ],
       "commonMistakes": [
         {
           "wrong": "You turn left at the corner.",
@@ -76,6 +83,7 @@
       "explanationArabic": "تصف حروف الجر الخاصة بالحركة مسار واتجاه تنقل الأشخاص والمركبات، وتأتي مع أفعال الحركة مثل (walk, drive, go, run):\n\n1. along: بمحاذاة أو على طول شيء ممتد (مثل: walk along the river).\n2. across: من طرف إلى آخر قاطعاً سطحاً مستوياً (مثل: walk across the street).\n3. through: عبر شيء مجسم (دخول من جهة وخروج من جهة أخرى كالأنفاق والغابات: through the tunnel).\n4. into / out of: إلى داخل / إلى خارج مكان مغلق (into the train / out of the station).\n5. toward / away from: نحو أو باتجاه / بعيداً عن.\n6. up / down: صعوداً إلى أعلى / نزولاً إلى أسفل.\n7. over / under: فوق مع حركة / تحت.",
       "structures": [
         {
+          "label": "Movement Formula · صيغة الحركة",
           "pattern": "Movement Formula: Subject + Verb of Motion + Preposition of Movement + Noun Phrase",
           "explanation": "Describes the path and destination of physical motion.",
           "explanationArabic": "تصف مسار واتجاه الحركة الجسدية أو تنقل المركبات."
@@ -112,6 +120,11 @@
             "underground"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use 'through' for movement inside a three-dimensional space you enter and exit, like a tunnel or a park, and 'across' for a flat surface like a street. (استخدم through للحركة داخل مساحة مجسمة تدخلها وتخرج منها كالنفق أو الحديقة، وacross للسطح المستوي كالشارع.)",
+        "Use 'into' and 'out of' for entering and leaving an enclosed space: 'step into the subway', 'walk out of the station'. (استخدم into وout of للدخول إلى مكان مغلق والخروج منه.)",
+        "Use 'over' for crossing above something and 'under' for passing beneath it: 'cross over the bridge', 'go under the overpass'. (استخدم over للعبور فوق شيء وunder للمرور تحته.)"
       ],
       "commonMistakes": [
         {

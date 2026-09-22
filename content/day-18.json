@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم الفعل الناقص 'should' ونفيه 'shouldn't' لتقديم النصائح والتوجيهات واقتراح أفضل الحلول العملية. وتتميز الأفعال الناقصة بأنها لا تأخذ -s مع المفرد الغائب (نقول he should وليس he shoulds)، ويأتي بعدها دائماً الفعل الأساسي في المصدر المجرد بدون 'to' (مثل: 'You should consult a doctor' وليس 'to consult'). وفي صياغة أسئلة طلب النصيحة، نقدم should على الفاعل: 'What should I do؟' أو 'Should we start now؟'. وتشاركها في المعنى تراكيب مثل 'ought to' و 'had better' لتقديم النصح مع تأكيد الأهمية.",
       "structures": [
         {
+          "label": "Affirmative · الإثبات",
           "pattern": "Affirmative: Subject + should + Base Verb (bare infinitive)",
           "explanation": "Gives positive advice recommending a beneficial course of action.",
           "explanationArabic": "لتقديم نصيحة إيجابية بالقيام بفعل مفيد (بدون to بعد should)."
         },
         {
+          "label": "Negative · النفي",
           "pattern": "Negative: Subject + should not (shouldn't) + Base Verb",
           "explanation": "Advises against doing something harmful, foolish, or disadvantageous.",
           "explanationArabic": "للنهي عن فعل ضار أو غير حكيم."
         },
         {
+          "label": "Question · السؤال",
           "pattern": "Question: Should + Subject + Base Verb + ...?",
           "explanation": "Asks for advice or inquires about the most prudent decision.",
           "explanationArabic": "لطلب النصيحة أو الاستفسار عن القرار الأفضل."
@@ -54,6 +57,11 @@
             "best bet"
           ]
         }
+      ],
+      "commonUsage": [
+        "Use 'should' for friendly advice and 'shouldn't' to advise against something: 'You should rest.' / 'You shouldn't skip breakfast.' (استخدم should لتقديم نصيحة ودية وshouldn't للتحذير من فعل شيء.)",
+        "Ask for advice with 'What should I do?' or invert 'should' and the subject for yes/no questions: 'Should we wait?' (اطلب النصيحة بـ What should I do؟ أو اعكس should مع الفاعل في أسئلة نعم/لا.)",
+        "Like all modal verbs, 'should' never adds '-s' and is followed directly by the base verb without 'to'. (مثل كل الأفعال الناقصة، لا تأخذ should الـ -s أبداً ويليها الفعل الأساسي مباشرة دون to.)"
       ],
       "commonMistakes": [
         {

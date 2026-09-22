@@ -13,16 +13,19 @@
       "explanationArabic": "نستخدم صيغ التفضيل العليا (Superlatives) لمقارنة شخص أو مكان أو شيء أو مفهوم مع مجموعة كاملة (ثلاثة أو أكثر) لإعلان تميزه في المرتبة القصوى (الأفضل، الأعلى، الأروع، أو الأسوأ). بالنسبة للصفات القصيرة ذات المقطع الواحد، نضيف -est إلى نهاية الصفة ونسبقها دائماً بأداة التعريف 'the' (مثل: 'the highest mountain', 'the fastest runner'). أما بالنسبة للصفات الطويلة، فنضع 'the most' قبل الصفة (مثل: 'the most magnificent view'). وتوجد صيغ شاذة شهيرة: good تصبح 'the best'، و bad تصبح 'the worst'.",
       "structures": [
         {
+          "label": "Short Adjective + -est · صفة قصيرة",
           "pattern": "Short Adjectives: the + Adjective-est + (in / of + Group)",
           "explanation": "For one-syllable adjectives (the highest, the deepest, the rarest).",
           "explanationArabic": "للصفات القصيرة بإضافة the قبلها و -est في نهايتها."
         },
         {
+          "label": "Long Adjective + most · صفة طويلة",
           "pattern": "Long Adjectives: the most + Adjective + (in / of + Group)",
           "explanation": "For two or more syllable adjectives (the most magnificent, the most exceptional).",
           "explanationArabic": "للصفات الطويلة بوضع the most قبل الصفة."
         },
         {
+          "label": "Irregular Forms · صيغ شاذة",
           "pattern": "Irregular Superlatives: the best / the worst / the furthest",
           "explanation": "Special non-standard superlative forms (good -> the best, bad -> the worst).",
           "explanationArabic": "الصيغ الشاذة الخاصة (the best للأفضل و the worst للأسوأ)."
@@ -52,6 +55,12 @@
             "ultimate"
           ]
         }
+      ],
+      "commonUsage": [
+        "Superlatives are almost always preceded by 'the': 'the fastest', 'the most exceptional'. (تُسبق صيغة التفضيل العليا دائماً تقريباً بأداة التعريف the.)",
+        "Add '-est' to short adjectives, and use 'the most' before longer adjectives of two or more syllables. (أضف -est للصفات القصيرة، واستخدم the most قبل الصفات الطويلة المكونة من مقطعين أو أكثر.)",
+        "Watch for irregular forms that break the normal pattern: 'good' becomes 'the best', 'bad' becomes 'the worst'. (انتبه للصيغ الشاذة التي تخالف القاعدة المعتادة: good تصبح the best وbad تصبح the worst.)",
+        "Use 'in' before a place or group and 'of' before a group of people or things: 'the tallest building in the city', 'the best of the three'. (استخدم in قبل مكان أو مجموعة وof قبل مجموعة من الأشخاص أو الأشياء.)"
       ],
       "commonMistakes": [
         {

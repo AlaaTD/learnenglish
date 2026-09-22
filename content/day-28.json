@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Quantifiers (a few, a little, a lot of)",
+      "titleArabic": "محددات الكمية (Quantifiers): a few و a little و a lot of ومتى نستخدم كل منها",
       "explanation": "Quantifiers express amounts or quantities. We use 'a few' and 'several' with plural countable nouns (coins, bills, accounts). We use 'a little' with uncountable nouns (money, cash, debt). We use 'a lot of' and 'plenty of' with both countable and uncountable nouns.",
       "explanationArabic": "محددات الكمية تُستخدم للتعبير عن المقادير. نستخدم 'a few' (بضعة) و 'several' (عدة) مع الأسماء المعدودة في صيغة الجمع (مثل coins, bills). ونستخدم 'a little' (قليل من) مع الأسماء غير المعدودة (مثل cash, money). بينما نستخدم 'a lot of' و 'plenty of' مع الأسماء المعدودة وغير المعدودة على حد سواء.",
-      "rules": [
-        "Use 'a few' with countable nouns: 'a few coins', 'a few banknotes'.",
-        "Use 'a little' with uncountable nouns: 'a little cash', 'a little debt'.",
-        "Use 'a lot of' and 'plenty of' with both count and uncount nouns: 'a lot of cash' or 'a lot of bills'.",
-        "Use 'several' with countable nouns to indicate more than two but not many: 'several accounts'."
-      ],
-      "rulesArabic": [
-        "استخدم 'a few' مع الأسماء المعدودة: 'a few coins' (بضعة عملات معدنية).",
-        "استخدم 'a little' مع الأسماء غير المعدودة: 'a little cash' (القليل من النقد).",
-        "استخدم 'a lot of' و 'plenty of' مع الاثنين: 'a lot of cash' أو 'a lot of bills'.",
-        "استخدم 'several' مع الأسماء المعدودة للإشارة إلى أكثر من اثنين ولكن ليس كثيراً: 'several accounts'."
-      ],
       "structures": [
         {
+          "label": "a few + Countable · مع المعدود",
           "pattern": "a few + plural countable noun",
           "explanation": "Expresses a small positive number of items.",
           "explanationArabic": "يُعبر عن عدد قليل وإيجابي من الأشياء المعدودة."
         },
         {
+          "label": "a little + Uncountable · مع غير المعدود",
           "pattern": "a little + uncountable noun",
           "explanation": "Expresses a small positive amount of something.",
           "explanationArabic": "يُعبر عن كمية قليلة وإيجابية لشيء غير معدود."
         },
         {
+          "label": "a lot of / plenty of · مع الاثنين",
           "pattern": "a lot of / plenty of + count or uncount noun",
           "explanation": "Expresses a large quantity or abundant amount.",
           "explanationArabic": "يُعبر عن كمية كبيرة أو وفيرة."
@@ -87,6 +79,12 @@
           "note": "'coins' is a plural countable noun, so use 'a few', not 'a little'.",
           "noteArabic": "كلمة 'coins' اسم جمع معدود، لذا نستخدم 'a few' وليس 'a little'."
         }
+      ],
+      "commonUsage": [
+        "Use 'a few' with countable nouns: 'a few coins', 'a few banknotes'. (استخدم 'a few' مع الأسماء المعدودة: 'a few coins' (بضعة عملات معدنية).)",
+        "Use 'a little' with uncountable nouns: 'a little cash', 'a little debt'. (استخدم 'a little' مع الأسماء غير المعدودة: 'a little cash' (القليل من النقد).)",
+        "Use 'a lot of' and 'plenty of' with both count and uncount nouns: 'a lot of cash' or 'a lot of bills'. (استخدم 'a lot of' و 'plenty of' مع الاثنين: 'a lot of cash' أو 'a lot of bills'.)",
+        "Use 'several' with countable nouns to indicate more than two but not many: 'several accounts'. (استخدم 'several' مع الأسماء المعدودة للإشارة إلى أكثر من اثنين ولكن ليس كثيراً: 'several accounts'.)"
       ]
     }
   ],

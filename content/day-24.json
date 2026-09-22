@@ -13,16 +13,19 @@
       "explanationArabic": "في المحادثات الفندقية والخدمية اليومية، تحدد الأداة المستخدمة درجة الأدب واللباقة:\n\n1. Can I / Can you...؟: غير رسمية ومباشرة (تستخدم في المواقف العادية وبين الأصدقاء).\n2. Could I / Could you...؟: مهذبة ومحترمة وهي الأكثر استخداماً وانتشاراً في الفنادق والخدمات (ألطف وأرقى بكثير من can).\n3. May I...؟: رسمية جداً وغاية في التهذيب وتستخدم لطلب الإذن لنفسك (نقول May I أو May we، ولا نقول May you إطلاقاً).\n\nالقاعدة: [Can / Could / May] + [الفاعل: I / you / we] + [الفعل الأساسي مجرداً] + ... + please؟",
       "structures": [
         {
+          "label": "Casual: Can · غير رسمي",
           "pattern": "Casual Request: Can + I / you + Base Verb + ... + please?",
           "explanation": "Friendly, direct everyday inquiry.",
           "explanationArabic": "طلب ودي مباشر في المواقف اليومية البسيطة."
         },
         {
+          "label": "Polite: Could · مهذب",
           "pattern": "Standard Polite Request: Could + I / you + Base Verb + ... + please?",
           "explanation": "Respectful, gracious formula ideal for hotels and restaurants.",
           "explanationArabic": "الأسلوب المهذب المعتمد في الفنادق والأماكن العامة."
         },
         {
+          "label": "Formal: May · رسمي جداً",
           "pattern": "Formal Permission Request: May + I / we + Base Verb + ... + please?",
           "explanation": "High-formality respectful request for permission.",
           "explanationArabic": "طلب رسمي ومهذب جداً للاستئذان."
@@ -55,6 +58,11 @@
             "reception"
           ]
         }
+      ],
+      "commonUsage": [
+        "'Can' is casual and direct, 'Could' is the standard polite choice in most situations, and 'May' is the most formal, used mainly for asking permission. (Can غير رسمية ومباشرة، وCould هي الخيار المهذب المعتاد في معظم المواقف، وMay هي الأكثر رسمية وتُستخدم أساساً لطلب الإذن.)",
+        "Use 'May I' or 'May we', never 'May you' -- 'may' asks permission for the speaker, not for the listener. (استخدم May I أو May we، ولا تقل May you أبداً -- لأن may تطلب الإذن للمتحدث لا للمستمع.)",
+        "Add 'please' at the end of the request for extra politeness: 'Could I have some extra towels, please?' (أضف please في نهاية الطلب لمزيد من اللباقة.)"
       ],
       "commonMistakes": [
         {

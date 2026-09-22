@@ -44,6 +44,7 @@ export default async function DifficultWordsPage() {
               word={word}
               audioRate={audioRate}
               autoplayAudio={autoplayAudio}
+              variant="grid"
             />
           ))}
         </div>

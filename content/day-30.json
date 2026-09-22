@@ -8,32 +8,24 @@
   "grammar": [
     {
       "title": "Present Perfect with just, already, yet",
+      "titleArabic": "المضارع التام مع just و already و yet: ربط الأحداث الحديثة والمعلقة بالحاضر",
       "explanation": "We use the Present Perfect tense with 'just', 'already', and 'yet' to connect recent or pending actions with the present moment. 'Just' expresses that an action happened very recently. 'Already' indicates that an action occurred sooner than expected. 'Yet' is used in negative sentences and questions to show that an action is expected, and is placed at the end of the clause.",
       "explanationArabic": "نستخدم زمن المضارع التام مع الكلمات 'just' و 'already' و 'yet' لربط الأحداث القريبة أو المعلقة بالحاضر. تُستخدم 'just' لتدل على أن الفعل حدث للتو قبل قليل. وتُستخدم 'already' للإشارة إلى أن الفعل قد حدث بالفعل مبكراً أو قبل الموعد المتوقع (تأتيان بين have/has والتصريف الثالث). أما 'yet' فتُستخدم في الجمل المنفية والأسئلة لتدل على أن الشيء متوقع حدوثه، ومكانها في نهاية الجملة.",
-      "rules": [
-        "Use 'just' between have/has and the past participle (V3): 'I have just arrived.'",
-        "Use 'already' between have/has and V3 (or at the end for emphasis): 'They have already boarded.'",
-        "Use 'yet' at the end of negative sentences: 'We have not received the lost baggage yet.'",
-        "Use 'yet' at the end of questions: 'Have you checked into the room yet?'"
-      ],
-      "rulesArabic": [
-        "توضع 'just' بين have/has والتصريف الثالث للفعل: 'I have just arrived' (لقد وصلت للتو).",
-        "توضع 'already' بين have/has والتصريف الثالث (أو في نهاية الجملة للتأكيد): 'They have already boarded' (لقد صعدوا بالفعل).",
-        "توضع 'yet' في نهاية الجمل المنفية: 'We have not received the luggage yet' (لم نستلم الحقائب بعد).",
-        "توضع 'yet' في نهاية الأسئلة: 'Have you checked into the room yet?' (هل سجلت دخولك للغرفة بعد؟)."
-      ],
       "structures": [
         {
+          "label": "Just · للتو",
           "pattern": "Subject + have/has + just + V3",
           "explanation": "Expresses an action that occurred only a short moment ago.",
           "explanationArabic": "يُعبر عن حدث وقع منذ برهة وجيزة جداً (للتو)."
         },
         {
+          "label": "Already · بالفعل",
           "pattern": "Subject + have/has + already + V3",
           "explanation": "Expresses an action completed earlier than anticipated.",
           "explanationArabic": "يُعبر عن حدث تم إنجازه بالفعل في وقت أبكر مما كان متوقعاً."
         },
         {
+          "label": "Yet (Questions) · بعد؟ (سؤال)",
           "pattern": "Have/Has + subject + V3 + ... + yet?",
           "explanation": "Asks if an expected event has taken place up to now.",
           "explanationArabic": "يسأل عما إذا كان حدث متوقع قد وقع حتى الآن."
@@ -87,6 +79,12 @@
           "note": "Standard British and formal international English requires Present Perfect with 'yet' for pending status.",
           "noteArabic": "الإنجليزية القياسية تتطلب استخدام المضارع التام مع 'yet' عند السؤال عن أمر متوقع إتمامه."
         }
+      ],
+      "commonUsage": [
+        "Use 'just' between have/has and the past participle (V3): 'I have just arrived.' (توضع 'just' بين have/has والتصريف الثالث للفعل: 'I have just arrived' (لقد وصلت للتو).)",
+        "Use 'already' between have/has and V3 (or at the end for emphasis): 'They have already boarded.' (توضع 'already' بين have/has والتصريف الثالث (أو في نهاية الجملة للتأكيد): 'They have already boarded' (لقد صعدوا بالفعل).)",
+        "Use 'yet' at the end of negative sentences: 'We have not received the lost baggage yet.' (توضع 'yet' في نهاية الجمل المنفية: 'We have not received the luggage yet' (لم نستلم الحقائب بعد).)",
+        "Use 'yet' at the end of questions: 'Have you checked into the room yet?' (توضع 'yet' في نهاية الأسئلة: 'Have you checked into the room yet?' (هل سجلت دخولك للغرفة بعد؟).)"
       ]
     }
   ],
