@@ -1,0 +1,1937 @@
+{
+  "day": 11,
+  "title": "Right Now or Every Day?",
+  "topic": "Habits versus what is happening now",
+  "description": "Choose correctly between habits and actions happening now.",
+  "stage": "Everyday Communication",
+  "focus": "By the end of today, you can communicate clearly about habits versus what is happening now using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Present Simple vs Present Continuous",
+      "titleArabic": "المضارع البسيط مقابل المضارع المستمر: الفرق الجوهري والاستخدام",
+      "explanation": "In English, we use the Present Simple to describe permanent habits, routines, universal truths, and states (e.g. 'I live in a peaceful town and I study English every day'). In contrast, we use the Present Continuous (formed with am / is / are + verb-ing) to describe actions happening right now at this exact moment, temporary situations, or ongoing progressive changes (e.g. 'Right now, I am sitting at my desk and the wind is blowing outside'). Remember that stative verbs (such as believe, know, understand, seem, belong, depend) express states rather than physical actions and are normally used in the Present Simple even if referring to the present moment.",
+      "explanationArabic": "نستخدم المضارع البسيط (Present Simple) للتعبير عن العادات الدائمة، الروتين المتكرر، والحقائق الثابتة (مثل: 'I study English every day'). بينما نستخدم المضارع المستمر (Present Continuous) المكون من (am/is/are + verb-ing) للتعبير عن أحداث تقع الآن في هذه اللحظة بالذات، أو مواقف مؤقتة، أو تغيرات تدريجية جارية (مثل: 'Right now, I am sitting at my desk'). تذكر أن أفعال الحواس والشعور والتفكير والملكية (Stative Verbs مثل believe, seem, belong, depend) تأتي عادة في المضارع البسيط فقط لأنها تصف حالة ذهنية وليست حركة بدنية.",
+      "structures": [
+        {
+          "pattern": "Present Simple: Subject + Base Verb (+ -s / -es for he, she, it)",
+          "explanation": "Expresses permanent habits, general facts, and regular daily routines.",
+          "explanationArabic": "يعبر عن العادات الدائمة والحقائق العامة والروتين المتكرر."
+        },
+        {
+          "pattern": "Present Continuous: Subject + am / is / are + Verb-ing",
+          "explanation": "Expresses actions happening at this moment or temporary ongoing situations.",
+          "explanationArabic": "يعبر عن أفعال تحدث في هذه اللحظة بالذات أو أحداث مؤقتة مستمرة."
+        },
+        {
+          "pattern": "Stative Verbs Rule: Subject + Stative Verb (Present Simple only)",
+          "explanation": "Verbs of thinking, sensing, and belonging (e.g. believe, seem, belong) avoid -ing.",
+          "explanationArabic": "أفعال الإدراك والشعور والملكية تأتي في المضارع البسيط وتتجنب صيغة الاستمرار."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I usually rest after lunch, but right now I am preparing a special report.",
+          "translation": "عادةً ما أستريح بعد الغداء، لكنني الآن أعدّ تقريراً خاصاً.",
+          "usesVocabulary": [
+            "rest",
+            "right now",
+            "prepare"
+          ]
+        },
+        {
+          "sentence": "The director is currently holding a meeting, although he usually visits branches on Tuesday.",
+          "translation": "يعقد المدير اجتماعاً في الوقت الحالي، على الرغم من أنه يزور الفروع عادةً يوم الثلاثاء.",
+          "usesVocabulary": [
+            "currently",
+            "hold"
+          ]
+        },
+        {
+          "sentence": "These books belong to the college, and we believe that quiet study helps students improve.",
+          "translation": "هذه الكتب تخص الكلية، ونحن نؤمن بأن الدراسة الهادئة تساعد الطلاب على التحسن.",
+          "usesVocabulary": [
+            "belong",
+            "believe",
+            "improve"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I am believing you right now.",
+          "right": "I believe you right now.",
+          "note": "'Believe' is a stative verb expressing a mental state, so it uses Present Simple even for current moments.",
+          "noteArabic": "الفعل 'believe' فعل حالة يعبر عن حالة ذهنية، لذا يستخدم في المضارع البسيط حتى لو قصدت اللحظة الحالية."
+        },
+        {
+          "wrong": "Look, the train moves fast right now!",
+          "right": "Look, the train is moving fast right now!",
+          "note": "Use the Present Continuous for observable actions taking place before your eyes at this moment.",
+          "noteArabic": "استخدم المضارع المستمر للأفعال التي تراها تحدث أمام عينيك في هذه اللحظة."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "right now",
+      "pronunciation": "/raɪt naʊ/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "at this exact moment in time",
+      "example": "I am studying English grammar right now at my desk.",
+      "relatedForms": [],
+      "collocations": [
+        "right now at this moment",
+        "do it right now"
+      ],
+      "synonyms": [
+        "immediately",
+        "currently"
+      ],
+      "antonyms": [
+        "later",
+        "eventually"
+      ],
+      "tags": [
+        "time",
+        "present"
+      ],
+      "translation": "الآن / في هذه اللحظة بالذات",
+      "exampleArabic": "أنا أدرس قواعد اللغة الإنجليزية الآن على مكتبي."
+    },
+    {
+      "headword": "at the moment",
+      "pronunciation": "/ət ðə ˈməʊ.mənt/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "at the present time; currently",
+      "example": "She is preparing an important presentation at the moment.",
+      "relatedForms": [],
+      "collocations": [
+        "busy at the moment",
+        "living here at the moment"
+      ],
+      "synonyms": [
+        "currently",
+        "presently"
+      ],
+      "antonyms": [
+        "in the future",
+        "in the past"
+      ],
+      "tags": [
+        "time",
+        "present"
+      ],
+      "translation": "في الوقت الحالي / في هذه الأثناء",
+      "exampleArabic": "هي تجهز عرضاً تقديمياً مهماً في الوقت الحالي."
+    },
+    {
+      "headword": "currently",
+      "pronunciation": "/ˈkʌr.ənt.li/",
+      "partOfSpeech": "adverb",
+      "definition": "at the present time; now",
+      "example": "He is currently working on a major engineering design.",
+      "relatedForms": [
+        "current (adjective)"
+      ],
+      "collocations": [
+        "currently working",
+        "currently unavailable"
+      ],
+      "synonyms": [
+        "presently",
+        "nowadays"
+      ],
+      "antonyms": [
+        "previously",
+        "formerly"
+      ],
+      "tags": [
+        "time",
+        "adverb"
+      ],
+      "translation": "حالياً / في الوقت الراهن",
+      "exampleArabic": "هو يعمل حالياً على تصميم هندسي كبير."
+    },
+    {
+      "headword": "nowadays",
+      "pronunciation": "/ˈnaʊ.ə.deɪz/",
+      "partOfSpeech": "adverb",
+      "definition": "at the present time, in comparison with the past",
+      "example": "Nowadays, many professionals communicate through online platforms.",
+      "relatedForms": [],
+      "collocations": [
+        "nowadays people prefer",
+        "common nowadays"
+      ],
+      "synonyms": [
+        "these days",
+        "today"
+      ],
+      "antonyms": [
+        "in ancient times",
+        "formerly"
+      ],
+      "tags": [
+        "time",
+        "comparison"
+      ],
+      "translation": "في هذه الأيام / في عصرنا الحالي",
+      "exampleArabic": "في هذه الأيام، يتواصل العديد من المهنيين عبر المنصات الرقمية."
+    },
+    {
+      "headword": "at present",
+      "pronunciation": "/ət ˈprez.ənt/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "at the present time; currently",
+      "example": "At present, the manager is reviewing customer feedback.",
+      "relatedForms": [
+        "present (adjective)"
+      ],
+      "collocations": [
+        "at present we are",
+        "no vacancies at present"
+      ],
+      "synonyms": [
+        "currently",
+        "right now"
+      ],
+      "antonyms": [
+        "in future",
+        "past"
+      ],
+      "tags": [
+        "time",
+        "formal"
+      ],
+      "translation": "في الوقت الحاضر",
+      "exampleArabic": "في الوقت الحاضر، يراجع المدير ملاحظات العملاء."
+    },
+    {
+      "headword": "these days",
+      "pronunciation": "/ðiːz deɪz/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "during the present period; nowadays",
+      "example": "More students are learning digital programming these days.",
+      "relatedForms": [],
+      "collocations": [
+        "difficult these days",
+        "these days everyone"
+      ],
+      "synonyms": [
+        "nowadays",
+        "lately"
+      ],
+      "antonyms": [
+        "in former years"
+      ],
+      "tags": [
+        "time",
+        "habit"
+      ],
+      "translation": "في الآونة الأخيرة / هذه الأيام",
+      "exampleArabic": "المزيد من الطلاب يتعلمون البرمجة الرقمية هذه الأيام."
+    },
+    {
+      "headword": "temporarily",
+      "pronunciation": "/ˈtem.prər.əl.i/",
+      "partOfSpeech": "adverb",
+      "definition": "for a limited time only; not permanently",
+      "example": "The family is temporarily staying at an apartment near the center.",
+      "relatedForms": [
+        "temporary (adjective)"
+      ],
+      "collocations": [
+        "temporarily closed",
+        "stay temporarily"
+      ],
+      "synonyms": [
+        "briefly",
+        "provisionally"
+      ],
+      "antonyms": [
+        "permanently",
+        "forever"
+      ],
+      "tags": [
+        "time",
+        "duration"
+      ],
+      "translation": "بشكل مؤقت / مؤقتاً",
+      "exampleArabic": "تقيم العائلة مؤقتاً في شقة بالقرب من المركز."
+    },
+    {
+      "headword": "permanently",
+      "pronunciation": "/ˈpɜː.mə.nənt.li/",
+      "partOfSpeech": "adverb",
+      "definition": "in a way that lasts forever or for a very long time",
+      "example": "They decided to settle permanently in this beautiful town.",
+      "relatedForms": [
+        "permanent (adjective)"
+      ],
+      "collocations": [
+        "permanently disabled",
+        "settle permanently",
+        "reside permanently"
+      ],
+      "synonyms": [
+        "forever",
+        "enduringly"
+      ],
+      "antonyms": [
+        "temporarily",
+        "briefly"
+      ],
+      "tags": [
+        "time",
+        "duration"
+      ],
+      "translation": "بشكل دائم / نهائياً",
+      "exampleArabic": "قرروا الاستقرار بشكل دائم في هذه البلدة الجميلة."
+    },
+    {
+      "headword": "meanwhile",
+      "pronunciation": "/ˈmiːn.waɪl/",
+      "partOfSpeech": "adverb",
+      "definition": "in the intervening period of time; at the same time",
+      "example": "The doctor examined the test results; meanwhile, the nurse prepared the medication.",
+      "relatedForms": [],
+      "collocations": [
+        "meanwhile in the office",
+        "meanwhile back at"
+      ],
+      "synonyms": [
+        "in the meantime",
+        "simultaneously"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "transition"
+      ],
+      "translation": "في غضون ذلك / في هذه الأثناء",
+      "exampleArabic": "فحص الطبيب نتائج الفحوصات؛ وفي غضون ذلك، جهزت الممرضة الدواء."
+    },
+    {
+      "headword": "right away",
+      "pronunciation": "/raɪt əˈweɪ/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "immediately; without any delay",
+      "example": "Please answer the phone right away when it rings.",
+      "relatedForms": [],
+      "collocations": [
+        "start right away",
+        "come right away"
+      ],
+      "synonyms": [
+        "immediately",
+        "instantly"
+      ],
+      "antonyms": [
+        "later",
+        "gradually"
+      ],
+      "tags": [
+        "time",
+        "speed"
+      ],
+      "translation": "على الفور / حالاً",
+      "exampleArabic": "يرجى الرد على الهاتف على الفور عندما يرن."
+    },
+    {
+      "headword": "gradually",
+      "pronunciation": "/ˈɡrædʒ.u.ə.li/",
+      "partOfSpeech": "adverb",
+      "definition": "slowly, over a period of time or step by step",
+      "example": "Her confidence in speaking English is gradually growing.",
+      "relatedForms": [
+        "gradual (adjective)"
+      ],
+      "collocations": [
+        "gradually increase",
+        "gradually improve",
+        "change gradually"
+      ],
+      "synonyms": [
+        "slowly",
+        "progressively"
+      ],
+      "antonyms": [
+        "suddenly",
+        "instantly"
+      ],
+      "tags": [
+        "process",
+        "speed"
+      ],
+      "translation": "تدريجياً / شيئاً فشيئاً",
+      "exampleArabic": "ثقتها في التحدث باللغة الإنجليزية تنمو تدريجياً."
+    },
+    {
+      "headword": "simultaneously",
+      "pronunciation": "/ˌsɪm.əlˈteɪ.ni.əs.li/",
+      "partOfSpeech": "adverb",
+      "definition": "at the exact same time",
+      "example": "The translator is listening and speaking simultaneously.",
+      "relatedForms": [
+        "simultaneous (adjective)"
+      ],
+      "collocations": [
+        "occur simultaneously",
+        "broadcast simultaneously"
+      ],
+      "synonyms": [
+        "at once",
+        "concurrently"
+      ],
+      "antonyms": [
+        "separately",
+        "consecutively"
+      ],
+      "tags": [
+        "time",
+        "advanced"
+      ],
+      "translation": "في آن واحد / بالتزامن",
+      "exampleArabic": "المترجم يستمع ويتحدث في آن واحد."
+    },
+    {
+      "headword": "in progress",
+      "pronunciation": "/ɪn ˈprəʊ.ɡres/",
+      "partOfSpeech": "adjective phrase",
+      "definition": "currently happening or being developed; not yet complete",
+      "example": "The construction of the new school is currently in progress.",
+      "relatedForms": [
+        "progress (noun)"
+      ],
+      "collocations": [
+        "work in progress",
+        "project in progress"
+      ],
+      "synonyms": [
+        "underway",
+        "ongoing"
+      ],
+      "antonyms": [
+        "finished",
+        "completed"
+      ],
+      "tags": [
+        "state",
+        "development"
+      ],
+      "translation": "قيد التنفيذ / جاري العمل عليه",
+      "exampleArabic": "بناء المدرسة الجديدة قيد التنفيذ حالياً."
+    },
+    {
+      "headword": "ongoing",
+      "pronunciation": "/ˈɒnˌɡəʊ.ɪŋ/",
+      "partOfSpeech": "adjective",
+      "definition": "continuing to exist or develop",
+      "example": "Scientific research into clean solar energy is an ongoing effort.",
+      "relatedForms": [],
+      "collocations": [
+        "ongoing process",
+        "ongoing discussion",
+        "ongoing project"
+      ],
+      "synonyms": [
+        "continuous",
+        "continuing"
+      ],
+      "antonyms": [
+        "terminated",
+        "completed"
+      ],
+      "tags": [
+        "state",
+        "quality"
+      ],
+      "translation": "مستمر / متواصل",
+      "exampleArabic": "البحث العلمي في الطاقة الشمسية النظيفة جهد مستمر."
+    },
+    {
+      "headword": "steady",
+      "pronunciation": "/ˈsted.i/",
+      "partOfSpeech": "adjective",
+      "definition": "firmly fixed, constant, regular, or continuous",
+      "example": "The student made steady progress throughout the semester.",
+      "relatedForms": [
+        "steadily (adverb)"
+      ],
+      "collocations": [
+        "steady pace",
+        "steady improvement",
+        "steady job"
+      ],
+      "synonyms": [
+        "constant",
+        "stable",
+        "consistent"
+      ],
+      "antonyms": [
+        "unstable",
+        "irregular"
+      ],
+      "tags": [
+        "quality",
+        "state"
+      ],
+      "translation": "ثابت / مستقر / منتظم",
+      "exampleArabic": "أحرز الطالب تقدماً ثابتاً طوال الفصل الدراسي."
+    },
+    {
+      "headword": "stand",
+      "pronunciation": "/stænd/",
+      "partOfSpeech": "verb",
+      "definition": "to be in an upright position on your feet",
+      "example": "He is standing by the doorway waiting for his colleague.",
+      "verbForms": {
+        "v1": "stand",
+        "v2": "stood",
+        "v3": "stood"
+      },
+      "relatedForms": [
+        "standing",
+        "standpoint"
+      ],
+      "collocations": [
+        "stand up",
+        "stand still",
+        "stand by"
+      ],
+      "synonyms": [
+        "remain upright"
+      ],
+      "antonyms": [
+        "sit",
+        "lie down"
+      ],
+      "tags": [
+        "action",
+        "posture"
+      ],
+      "translation": "يقف / يقف منتصباً",
+      "exampleArabic": "إنه يقف بجوار المدخل منتظراً زميله."
+    },
+    {
+      "headword": "sit",
+      "pronunciation": "/sɪt/",
+      "partOfSpeech": "verb",
+      "definition": "to rest your weight on your buttocks rather than feet",
+      "example": "She is sitting at the study table writing notes.",
+      "verbForms": {
+        "v1": "sit",
+        "v2": "sat",
+        "v3": "sat"
+      },
+      "relatedForms": [
+        "sitting"
+      ],
+      "collocations": [
+        "sit down",
+        "sit quietly",
+        "sit around"
+      ],
+      "synonyms": [
+        "be seated"
+      ],
+      "antonyms": [
+        "stand",
+        "rise"
+      ],
+      "tags": [
+        "action",
+        "posture"
+      ],
+      "translation": "يجلس",
+      "exampleArabic": "إنها تجلس على طاولة المذاكرة وتدون الملاحظات."
+    },
+    {
+      "headword": "hold",
+      "pronunciation": "/həʊld/",
+      "partOfSpeech": "verb",
+      "definition": "to grasp, carry, or support with one's hands or arms",
+      "example": "The teacher is holding a whiteboard marker in his right hand.",
+      "verbForms": {
+        "v1": "hold",
+        "v2": "held",
+        "v3": "held"
+      },
+      "relatedForms": [
+        "holder"
+      ],
+      "collocations": [
+        "hold on",
+        "hold hands",
+        "hold tightly"
+      ],
+      "synonyms": [
+        "grasp",
+        "grip",
+        "clutch"
+      ],
+      "antonyms": [
+        "release",
+        "drop"
+      ],
+      "tags": [
+        "action",
+        "body"
+      ],
+      "translation": "يمسك / يحمل باليد",
+      "exampleArabic": "المعلم يمسك قلم السبورة في يده اليمنى."
+    },
+    {
+      "headword": "wear",
+      "pronunciation": "/weər/",
+      "partOfSpeech": "verb",
+      "definition": "to have clothing, shoes, or accessories on one's body",
+      "example": "He is wearing a stylish dark jacket today.",
+      "verbForms": {
+        "v1": "wear",
+        "v2": "wore",
+        "v3": "worn"
+      },
+      "relatedForms": [
+        "wearable"
+      ],
+      "collocations": [
+        "wear clothes",
+        "wear glasses",
+        "wear a watch"
+      ],
+      "synonyms": [
+        "have on",
+        "dress in"
+      ],
+      "antonyms": [
+        "take off",
+        "remove"
+      ],
+      "tags": [
+        "clothing",
+        "appearance"
+      ],
+      "translation": "يرتدي / يلبس",
+      "exampleArabic": "إنه يرتدي سترة داكنة وأنيقة اليوم."
+    },
+    {
+      "headword": "shine",
+      "pronunciation": "/ʃaɪn/",
+      "partOfSpeech": "verb",
+      "definition": "to give out or reflect light brightly",
+      "example": "The morning sun is shining brightly through the living room windows.",
+      "verbForms": {
+        "v1": "shine",
+        "v2": "shone",
+        "v3": "shone"
+      },
+      "relatedForms": [
+        "shiny",
+        "sunshine"
+      ],
+      "collocations": [
+        "shine brightly",
+        "sun shines"
+      ],
+      "synonyms": [
+        "glow",
+        "beam",
+        "radiate"
+      ],
+      "antonyms": [
+        "fade",
+        "dim"
+      ],
+      "tags": [
+        "nature",
+        "light"
+      ],
+      "translation": "يشرق / يلمع / يسطع",
+      "exampleArabic": "شمس الصباح تسطع ببريق من خلال نوافذ غرفة المعيشة."
+    },
+    {
+      "headword": "blow",
+      "pronunciation": "/bləʊ/",
+      "partOfSpeech": "verb",
+      "definition": "to move creating a current of air (of wind)",
+      "example": "A gentle autumn breeze is blowing across the green park.",
+      "verbForms": {
+        "v1": "blow",
+        "v2": "blew",
+        "v3": "blown"
+      },
+      "relatedForms": [
+        "blower"
+      ],
+      "collocations": [
+        "wind blows",
+        "blow away",
+        "blow gently"
+      ],
+      "synonyms": [
+        "gust",
+        "whistle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "weather",
+        "nature"
+      ],
+      "translation": "يهب (للرياح) / ينفخ",
+      "exampleArabic": "نسيم خريفي عليل يهب عبر الحديقة الخضراء."
+    },
+    {
+      "headword": "happen",
+      "pronunciation": "/ˈhæp.ən/",
+      "partOfSpeech": "verb",
+      "definition": "to take place or come into existence; occur",
+      "example": "Strange events sometimes happen without warning.",
+      "verbForms": {
+        "v1": "happen",
+        "v2": "happened",
+        "v3": "happened"
+      },
+      "relatedForms": [
+        "happening"
+      ],
+      "collocations": [
+        "what happened",
+        "happen suddenly",
+        "bound to happen"
+      ],
+      "synonyms": [
+        "occur",
+        "transpire"
+      ],
+      "antonyms": [],
+      "tags": [
+        "event",
+        "action"
+      ],
+      "translation": "يحدث / يقع",
+      "exampleArabic": "أحداث غريبة تحدث أحياناً دون سابق إنذار."
+    },
+    {
+      "headword": "occur",
+      "pronunciation": "/əˈkɜːr/",
+      "partOfSpeech": "verb",
+      "definition": "to happen or take place, especially unexpectedly or in a pattern",
+      "example": "Thunderstorms frequently occur during hot summer afternoons.",
+      "verbForms": {
+        "v1": "occur",
+        "v2": "occurred",
+        "v3": "occurred"
+      },
+      "relatedForms": [
+        "occurrence"
+      ],
+      "collocations": [
+        "occur regularly",
+        "occur suddenly"
+      ],
+      "synonyms": [
+        "happen",
+        "take place"
+      ],
+      "antonyms": [],
+      "tags": [
+        "event",
+        "formal"
+      ],
+      "translation": "يحدث / يطرأ",
+      "exampleArabic": "تحدث العواصف الرعدية كثيراً خلال فترات بعد الظهر الحارة في الصيف."
+    },
+    {
+      "headword": "improve",
+      "pronunciation": "/ɪmˈpruːv/",
+      "partOfSpeech": "verb",
+      "definition": "to become better or to make something better",
+      "example": "Her English pronunciation is improving every single week.",
+      "verbForms": {
+        "v1": "improve",
+        "v2": "improved",
+        "v3": "improved"
+      },
+      "relatedForms": [
+        "improvement"
+      ],
+      "collocations": [
+        "improve skills",
+        "improve steadily",
+        "improve rapidly"
+      ],
+      "synonyms": [
+        "enhance",
+        "upgrade",
+        "progress"
+      ],
+      "antonyms": [
+        "deteriorate",
+        "worsen"
+      ],
+      "tags": [
+        "progress",
+        "action"
+      ],
+      "translation": "يتحسن / يطوّر / يحسّن",
+      "exampleArabic": "نطقها للغة الإنجليزية يتحسن كل أسبوع."
+    },
+    {
+      "headword": "develop",
+      "pronunciation": "/dɪˈvel.əp/",
+      "partOfSpeech": "verb",
+      "definition": "to grow, expand, or cause something to become more advanced",
+      "example": "The software engineer is developing an innovative mobile app.",
+      "verbForms": {
+        "v1": "develop",
+        "v2": "developed",
+        "v3": "developed"
+      },
+      "relatedForms": [
+        "development",
+        "developer"
+      ],
+      "collocations": [
+        "develop skills",
+        "develop a strategy"
+      ],
+      "synonyms": [
+        "create",
+        "evolve",
+        "grow"
+      ],
+      "antonyms": [
+        "decline",
+        "stagnate"
+      ],
+      "tags": [
+        "progress",
+        "technology"
+      ],
+      "translation": "يطوّر / ينمي / ينشئ",
+      "exampleArabic": "مهندس البرمجيات يطور تطبيقاً هاتفياً مبتكراً."
+    },
+    {
+      "headword": "increase",
+      "pronunciation": "/ɪnˈkriːs/",
+      "partOfSpeech": "verb",
+      "definition": "to become or make greater in size, amount, or degree",
+      "example": "City traffic is increasing noticeably during rush hours.",
+      "verbForms": {
+        "v1": "increase",
+        "v2": "increased",
+        "v3": "increased"
+      },
+      "relatedForms": [
+        "increase (noun)",
+        "increasingly"
+      ],
+      "collocations": [
+        "increase rapidly",
+        "increase prices",
+        "increase steadily"
+      ],
+      "synonyms": [
+        "grow",
+        "rise",
+        "expand"
+      ],
+      "antonyms": [
+        "decrease",
+        "reduce"
+      ],
+      "tags": [
+        "change",
+        "quantity"
+      ],
+      "translation": "يزداد / يرفع / يضاعف",
+      "exampleArabic": "حركة المرور في المدينة تتزايد بشكل ملحوظ في ساعات الذروة."
+    },
+    {
+      "headword": "decrease",
+      "pronunciation": "/dɪˈkriːs/",
+      "partOfSpeech": "verb",
+      "definition": "to become smaller or fewer in size, amount, or intensity",
+      "example": "The evening temperature is decreasing rapidly tonight.",
+      "verbForms": {
+        "v1": "decrease",
+        "v2": "decreased",
+        "v3": "decreased"
+      },
+      "relatedForms": [
+        "decrease (noun)"
+      ],
+      "collocations": [
+        "decrease sharply",
+        "decrease steadily"
+      ],
+      "synonyms": [
+        "drop",
+        "fall",
+        "decline"
+      ],
+      "antonyms": [
+        "increase",
+        "rise"
+      ],
+      "tags": [
+        "change",
+        "quantity"
+      ],
+      "translation": "ينخفض / يقل / يتناقص",
+      "exampleArabic": "درجة حرارة المساء تنخفض بسرعة الليلة."
+    },
+    {
+      "headword": "fall",
+      "pronunciation": "/fɔːl/",
+      "partOfSpeech": "verb",
+      "definition": "to move downward from a higher to a lower level",
+      "example": "Colorful autumn leaves are falling from the branches.",
+      "verbForms": {
+        "v1": "fall",
+        "v2": "fell",
+        "v3": "fallen"
+      },
+      "relatedForms": [
+        "fall (noun)"
+      ],
+      "collocations": [
+        "fall down",
+        "fall asleep",
+        "prices fall"
+      ],
+      "synonyms": [
+        "drop",
+        "descend"
+      ],
+      "antonyms": [
+        "rise",
+        "climb"
+      ],
+      "tags": [
+        "movement",
+        "nature"
+      ],
+      "translation": "يسقط / يهبط / يتساقط",
+      "exampleArabic": "أوراق الخريف الملونة تتساقط من الأغصان."
+    },
+    {
+      "headword": "rise",
+      "pronunciation": "/raɪz/",
+      "partOfSpeech": "verb",
+      "definition": "to move upward or increase in amount, number, or level",
+      "example": "The warm sun is rising over the eastern horizon.",
+      "verbForms": {
+        "v1": "rise",
+        "v2": "rose",
+        "v3": "risen"
+      },
+      "relatedForms": [
+        "rising"
+      ],
+      "collocations": [
+        "sun rises",
+        "prices rise",
+        "rise early"
+      ],
+      "synonyms": [
+        "ascend",
+        "climb",
+        "increase"
+      ],
+      "antonyms": [
+        "fall",
+        "sink",
+        "drop"
+      ],
+      "tags": [
+        "movement",
+        "nature"
+      ],
+      "translation": "يرتفع / يشرق / يعلو",
+      "exampleArabic": "الشمس الدافئة تشرق فوق الأفق الشرقي."
+    },
+    {
+      "headword": "move",
+      "pronunciation": "/muːv/",
+      "partOfSpeech": "verb",
+      "definition": "to go or cause to go from one place or position to another",
+      "example": "The modern express train is moving swiftly along the tracks.",
+      "verbForms": {
+        "v1": "move",
+        "v2": "moved",
+        "v3": "moved"
+      },
+      "relatedForms": [
+        "movement"
+      ],
+      "collocations": [
+        "move forward",
+        "move quickly",
+        "move house"
+      ],
+      "synonyms": [
+        "travel",
+        "shift",
+        "proceed"
+      ],
+      "antonyms": [
+        "stay",
+        "remain still"
+      ],
+      "tags": [
+        "movement",
+        "action"
+      ],
+      "translation": "يتحرك / ينتقل",
+      "exampleArabic": "القطار السريع الحديث يتحرك بسرعة على القضبان."
+    },
+    {
+      "headword": "prepare",
+      "pronunciation": "/prɪˈpeər/",
+      "partOfSpeech": "verb",
+      "definition": "to make something ready for use or to get ready oneself",
+      "example": "The students are preparing their folders for the grammar test.",
+      "verbForms": {
+        "v1": "prepare",
+        "v2": "prepared",
+        "v3": "prepared"
+      },
+      "relatedForms": [
+        "preparation",
+        "prepared"
+      ],
+      "collocations": [
+        "prepare a meal",
+        "prepare for an exam"
+      ],
+      "synonyms": [
+        "arrange",
+        "organize",
+        "ready"
+      ],
+      "antonyms": [],
+      "tags": [
+        "action",
+        "work"
+      ],
+      "translation": "يعدّ / يجهّز / يستعد",
+      "exampleArabic": "الطلاب يعدون ملفاتهم لاختبار القواعد."
+    },
+    {
+      "headword": "send",
+      "pronunciation": "/send/",
+      "partOfSpeech": "verb",
+      "definition": "to cause to go or be taken to a destination",
+      "example": "I am sending a detailed summary to my project team.",
+      "verbForms": {
+        "v1": "send",
+        "v2": "sent",
+        "v3": "sent"
+      },
+      "relatedForms": [
+        "sender"
+      ],
+      "collocations": [
+        "send an email",
+        "send a message",
+        "send letters"
+      ],
+      "synonyms": [
+        "transmit",
+        "dispatch"
+      ],
+      "antonyms": [
+        "receive",
+        "get"
+      ],
+      "tags": [
+        "communication",
+        "action"
+      ],
+      "translation": "يرسل / يبعث",
+      "exampleArabic": "أنا أرسل ملخصاً مفصلاً لفريق مشروعي."
+    },
+    {
+      "headword": "receive",
+      "pronunciation": "/rɪˈsiːv/",
+      "partOfSpeech": "verb",
+      "definition": "to get or be given something provided, sent, or paid",
+      "example": "She is receiving positive praise from her department head.",
+      "verbForms": {
+        "v1": "receive",
+        "v2": "received",
+        "v3": "received"
+      },
+      "relatedForms": [
+        "receiver",
+        "reception"
+      ],
+      "collocations": [
+        "receive a letter",
+        "receive an award",
+        "receive guests"
+      ],
+      "synonyms": [
+        "get",
+        "obtain",
+        "accept"
+      ],
+      "antonyms": [
+        "send",
+        "give"
+      ],
+      "tags": [
+        "communication",
+        "action"
+      ],
+      "translation": "يستلم / يتلقى / يستقبل",
+      "exampleArabic": "إنها تتلقى إشادة إيجابية من رئيس قسمها."
+    },
+    {
+      "headword": "rest",
+      "pronunciation": "/rest/",
+      "partOfSpeech": "verb",
+      "definition": "to cease work or movement in order to relax or recover strength",
+      "example": "After a productive morning, the employees rest in the garden.",
+      "verbForms": {
+        "v1": "rest",
+        "v2": "rested",
+        "v3": "rested"
+      },
+      "relatedForms": [
+        "rest (noun)",
+        "restful"
+      ],
+      "collocations": [
+        "rest comfortably",
+        "rest assured",
+        "take a rest"
+      ],
+      "synonyms": [
+        "relax",
+        "unwind",
+        "take a break"
+      ],
+      "antonyms": [
+        "work",
+        "toil"
+      ],
+      "tags": [
+        "health",
+        "routine"
+      ],
+      "translation": "يستريح / يأخذ قسطاً من الراحة",
+      "exampleArabic": "بعد صباح مثمر، يستريح الموظفون في الحديقة."
+    },
+    {
+      "headword": "feel",
+      "pronunciation": "/fiːl/",
+      "partOfSpeech": "verb",
+      "definition": "to experience an emotion, state of mind, or physical sensation",
+      "example": "I feel optimistic whenever I practice conversational English.",
+      "verbForms": {
+        "v1": "feel",
+        "v2": "felt",
+        "v3": "felt"
+      },
+      "relatedForms": [
+        "feeling"
+      ],
+      "collocations": [
+        "feel confident",
+        "feel energetic",
+        "feel well"
+      ],
+      "synonyms": [
+        "sense",
+        "experience"
+      ],
+      "antonyms": [],
+      "tags": [
+        "emotion",
+        "state"
+      ],
+      "translation": "يشعر / يحس",
+      "exampleArabic": "أشعر بالتفاؤل كلما مارست المحادثة باللغة الإنجليزية."
+    },
+    {
+      "headword": "think",
+      "pronunciation": "/θɪŋk/",
+      "partOfSpeech": "verb",
+      "definition": "to have a particular opinion, belief, or idea; use one's mind",
+      "example": "I think that consistent dedication is the secret to fluency.",
+      "verbForms": {
+        "v1": "think",
+        "v2": "thought",
+        "v3": "thought"
+      },
+      "relatedForms": [
+        "thought",
+        "thinking"
+      ],
+      "collocations": [
+        "think carefully",
+        "think about",
+        "think twice"
+      ],
+      "synonyms": [
+        "believe",
+        "consider",
+        "ponder"
+      ],
+      "antonyms": [],
+      "tags": [
+        "mental",
+        "opinion"
+      ],
+      "translation": "يعتقد / يفكر",
+      "exampleArabic": "أعتقد أن التفاني المستمر هو سر الطلاقة."
+    },
+    {
+      "headword": "hope",
+      "pronunciation": "/həʊp/",
+      "partOfSpeech": "verb",
+      "definition": "to want something to happen and reasonably expect that it may",
+      "example": "We hope to complete our 90-day English journey successfully.",
+      "verbForms": {
+        "v1": "hope",
+        "v2": "hoped",
+        "v3": "hoped"
+      },
+      "relatedForms": [
+        "hope (noun)",
+        "hopeful"
+      ],
+      "collocations": [
+        "hope for the best",
+        "hope so",
+        "sincerely hope"
+      ],
+      "synonyms": [
+        "wish",
+        "aspire",
+        "anticipate"
+      ],
+      "antonyms": [
+        "despair",
+        "dread"
+      ],
+      "tags": [
+        "emotion",
+        "mental"
+      ],
+      "translation": "يأمل / يرجو",
+      "exampleArabic": "نأمل أن نكمل رحلتنا الإنجليزية الممتدة لتسعين يوماً بنجاح."
+    },
+    {
+      "headword": "believe",
+      "pronunciation": "/bɪˈliːv/",
+      "partOfSpeech": "verb",
+      "definition": "to accept that something is true, real, or reliable",
+      "example": "Educators believe that regular reading expands vocabulary quickly.",
+      "verbForms": {
+        "v1": "believe",
+        "v2": "believed",
+        "v3": "believed"
+      },
+      "relatedForms": [
+        "belief",
+        "believer"
+      ],
+      "collocations": [
+        "firmly believe",
+        "believe in yourself"
+      ],
+      "synonyms": [
+        "trust",
+        "be convinced",
+        "hold"
+      ],
+      "antonyms": [
+        "doubt",
+        "disbelieve"
+      ],
+      "tags": [
+        "mental",
+        "belief"
+      ],
+      "translation": "يؤمن / يصدّق / يعتقد",
+      "exampleArabic": "يؤمن المعلمون بأن القراءة المنتظمة توسع المفردات بسرعة."
+    },
+    {
+      "headword": "exist",
+      "pronunciation": "/ɪɡˈzɪst/",
+      "partOfSpeech": "verb",
+      "definition": "to have actual being; be real or present in life",
+      "example": "Many historic monuments still exist in ancient capitals.",
+      "verbForms": {
+        "v1": "exist",
+        "v2": "existed",
+        "v3": "existed"
+      },
+      "relatedForms": [
+        "existence",
+        "existent"
+      ],
+      "collocations": [
+        "cease to exist",
+        "continue to exist"
+      ],
+      "synonyms": [
+        "live",
+        "subsist",
+        "be"
+      ],
+      "antonyms": [
+        "perish",
+        "disappear"
+      ],
+      "tags": [
+        "state",
+        "formal"
+      ],
+      "translation": "يوجد / يتواجد / يحيا",
+      "exampleArabic": "العديد من المعالم التاريخية ما زالت موجودة في العواصم القديمة."
+    },
+    {
+      "headword": "belong",
+      "pronunciation": "/bɪˈlɒŋ/",
+      "partOfSpeech": "verb",
+      "definition": "to be the property of someone or to be an appropriate member of a group",
+      "example": "These reference textbooks belong to the college library.",
+      "verbForms": {
+        "v1": "belong",
+        "v2": "belonged",
+        "v3": "belonged"
+      },
+      "relatedForms": [
+        "belongings"
+      ],
+      "collocations": [
+        "belong to",
+        "belong together"
+      ],
+      "synonyms": [
+        "pertain to",
+        "be owned by"
+      ],
+      "antonyms": [],
+      "tags": [
+        "possession",
+        "state"
+      ],
+      "translation": "ينتمي إلى / يخصّ / يعود ملكيته لـ",
+      "exampleArabic": "هذه الكتب المرجعية تخص مكتبة الكلية."
+    },
+    {
+      "headword": "depend",
+      "pronunciation": "/dɪˈpend/",
+      "partOfSpeech": "verb",
+      "definition": "to be determined or decided by something else; rely upon",
+      "example": "Our weekend outdoor picnic will depend on the weather conditions.",
+      "verbForms": {
+        "v1": "depend",
+        "v2": "depended",
+        "v3": "depended"
+      },
+      "relatedForms": [
+        "dependent",
+        "dependence"
+      ],
+      "collocations": [
+        "depend on",
+        "that depends"
+      ],
+      "synonyms": [
+        "rely",
+        "hinge on"
+      ],
+      "antonyms": [],
+      "tags": [
+        "relationship",
+        "state"
+      ],
+      "translation": "يعتمد على / يتوقف على",
+      "exampleArabic": "نزهتنا الخارجية في عطلة نهاية الأسبوع ستعتمد على الظروف الجوية."
+    },
+    {
+      "headword": "matter",
+      "pronunciation": "/ˈmæt.ər/",
+      "partOfSpeech": "verb",
+      "definition": "to be important or have a significant influence",
+      "example": "Consistent daily practice matters much more than irregular study sessions.",
+      "verbForms": {
+        "v1": "matter",
+        "v2": "mattered",
+        "v3": "mattered"
+      },
+      "relatedForms": [
+        "matter (noun)"
+      ],
+      "collocations": [
+        "matter most",
+        "doesn't matter"
+      ],
+      "synonyms": [
+        "count",
+        "be important",
+        "signify"
+      ],
+      "antonyms": [
+        "be insignificant"
+      ],
+      "tags": [
+        "importance",
+        "state"
+      ],
+      "translation": "يهمّ / يكون ذا أهمية",
+      "exampleArabic": "الممارسة اليومية المنتظمة تهم أكثر بكثير من جلسات الدراسة المتقطعة."
+    },
+    {
+      "headword": "seem",
+      "pronunciation": "/siːm/",
+      "partOfSpeech": "verb",
+      "definition": "to give the impression of being something; appear to be",
+      "example": "The newly introduced vocabulary seems very clear and straightforward.",
+      "verbForms": {
+        "v1": "seem",
+        "v2": "seemed",
+        "v3": "seemed"
+      },
+      "relatedForms": [
+        "seeming"
+      ],
+      "collocations": [
+        "seem likely",
+        "seem obvious",
+        "seem familiar"
+      ],
+      "synonyms": [
+        "appear",
+        "look",
+        "sound"
+      ],
+      "antonyms": [],
+      "tags": [
+        "perception",
+        "state"
+      ],
+      "translation": "يبدو / يظهر بمظهر",
+      "exampleArabic": "المفردات المقدمة حديثاً تبدو واضحة ومباشرة للغاية."
+    },
+    {
+      "headword": "appear",
+      "pronunciation": "/əˈpɪər/",
+      "partOfSpeech": "verb",
+      "definition": "to become visible or to create a specific impression",
+      "example": "The professor appears delighted with our grammar test scores.",
+      "verbForms": {
+        "v1": "appear",
+        "v2": "appeared",
+        "v3": "appeared"
+      },
+      "relatedForms": [
+        "appearance"
+      ],
+      "collocations": [
+        "appear suddenly",
+        "appear calm"
+      ],
+      "synonyms": [
+        "seem",
+        "look",
+        "manifest"
+      ],
+      "antonyms": [
+        "vanish",
+        "disappear"
+      ],
+      "tags": [
+        "perception",
+        "state"
+      ],
+      "translation": "يبدو / يظهر / يتجلى",
+      "exampleArabic": "يبدو الأستاذ مسروراً بدرجاتنا في اختبار القواعد."
+    },
+    {
+      "headword": "sound",
+      "pronunciation": "/saʊnd/",
+      "partOfSpeech": "verb",
+      "definition": "to convey an impression when heard or described",
+      "example": "That cultural documentary sounds fascinating to watch tonight.",
+      "verbForms": {
+        "v1": "sound",
+        "v2": "sounded",
+        "v3": "sounded"
+      },
+      "relatedForms": [
+        "sound (noun)"
+      ],
+      "collocations": [
+        "sound interesting",
+        "sound like",
+        "sound reasonable"
+      ],
+      "synonyms": [
+        "seem",
+        "echo"
+      ],
+      "antonyms": [],
+      "tags": [
+        "perception",
+        "sense"
+      ],
+      "translation": "يبدو (من خلال السمع أو الوصف)",
+      "exampleArabic": "يبدو ذلك الفيلم الوثائقي الثقافي رائعاً لمشاهدته الليلة."
+    },
+    {
+      "headword": "notice",
+      "pronunciation": "/ˈnəʊ.tɪs/",
+      "partOfSpeech": "verb",
+      "definition": "to become aware of someone or something; observe",
+      "example": "Did you notice any subtle changes in today's class schedule?",
+      "verbForms": {
+        "v1": "notice",
+        "v2": "noticed",
+        "v3": "noticed"
+      },
+      "relatedForms": [
+        "noticeable"
+      ],
+      "collocations": [
+        "notice a difference",
+        "hardly notice"
+      ],
+      "synonyms": [
+        "observe",
+        "spot",
+        "detect"
+      ],
+      "antonyms": [
+        "overlook",
+        "ignore"
+      ],
+      "tags": [
+        "perception",
+        "awareness"
+      ],
+      "translation": "يلاحظ / ينتبه إلى",
+      "exampleArabic": "هل لاحظت أي تغييرات طفيفة في جدول الحصص اليوم؟"
+    },
+    {
+      "headword": "realize",
+      "pronunciation": "/ˈrɪə.laɪz/",
+      "partOfSpeech": "verb",
+      "definition": "to become fully aware of something as a clear fact",
+      "example": "I suddenly realize the immense value of regular daily conversation.",
+      "verbForms": {
+        "v1": "realize",
+        "v2": "realized",
+        "v3": "realized"
+      },
+      "relatedForms": [
+        "realization"
+      ],
+      "collocations": [
+        "realize the truth",
+        "suddenly realize"
+      ],
+      "synonyms": [
+        "understand",
+        "grasp",
+        "comprehend"
+      ],
+      "antonyms": [
+        "misunderstand"
+      ],
+      "tags": [
+        "mental",
+        "awareness"
+      ],
+      "translation": "يدرك / يفطن إلى",
+      "exampleArabic": "أدرك فجأة القيمة الهائلة للمحادثة اليومية المنتظمة."
+    },
+    {
+      "headword": "recognize",
+      "pronunciation": "/ˈrek.əɡ.naɪz/",
+      "partOfSpeech": "verb",
+      "definition": "to identify someone or something previously seen, heard, or known",
+      "example": "Learners easily recognize familiar grammatical patterns in readings.",
+      "verbForms": {
+        "v1": "recognize",
+        "v2": "recognized",
+        "v3": "recognized"
+      },
+      "relatedForms": [
+        "recognition",
+        "recognizable"
+      ],
+      "collocations": [
+        "recognize instantly",
+        "recognize talent"
+      ],
+      "synonyms": [
+        "identify",
+        "acknowledge"
+      ],
+      "antonyms": [
+        "forget"
+      ],
+      "tags": [
+        "mental",
+        "perception"
+      ],
+      "translation": "يتعرف على / يميّز",
+      "exampleArabic": "يميز المتعلمون بسهولة الأنماط النحوية المألوفة في القراءات."
+    },
+    {
+      "headword": "remain",
+      "pronunciation": "/rɪˈmeɪn/",
+      "partOfSpeech": "verb",
+      "definition": "to continue to exist or stay in the same place or condition",
+      "example": "The historical library archives remain open to diligent researchers.",
+      "verbForms": {
+        "v1": "remain",
+        "v2": "remained",
+        "v3": "remained"
+      },
+      "relatedForms": [
+        "remainder",
+        "remains"
+      ],
+      "collocations": [
+        "remain calm",
+        "remain silent",
+        "remain open"
+      ],
+      "synonyms": [
+        "stay",
+        "continue",
+        "persist"
+      ],
+      "antonyms": [
+        "leave",
+        "depart"
+      ],
+      "tags": [
+        "state",
+        "continuity"
+      ],
+      "translation": "يبقى / يظل / يمكث",
+      "exampleArabic": "تظل أرشيفات المكتبة التاريخية مفتوحة للباحثين المجتهدين."
+    },
+    {
+      "headword": "continue",
+      "pronunciation": "/kənˈtɪn.juː/",
+      "partOfSpeech": "verb",
+      "definition": "to keep doing something or to resume after an interruption",
+      "example": "We continue our foreign language studies with great enthusiasm.",
+      "verbForms": {
+        "v1": "continue",
+        "v2": "continued",
+        "v3": "continued"
+      },
+      "relatedForms": [
+        "continuous",
+        "continuation"
+      ],
+      "collocations": [
+        "continue working",
+        "continue forward"
+      ],
+      "synonyms": [
+        "persist",
+        "proceed",
+        "carry on"
+      ],
+      "antonyms": [
+        "stop",
+        "discontinue"
+      ],
+      "tags": [
+        "action",
+        "continuity"
+      ],
+      "translation": "يواصل / يستمر في",
+      "exampleArabic": "نواصل دراساتنا للغة الأجنبية بحماس كبير."
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Coordinating Tasks at the Office",
+      "titleArabic": "تنسيق المهام في المكتب",
+      "setting": "Inside a modern open-plan office during a busy morning session",
+      "settingArabic": "داخل مكتب مفتوح حديث خلال فترة عمل صباحية حافلة",
+      "lines": [
+        {
+          "speaker": "Faris",
+          "text": "Good morning Sophia! What project are you currently working on right now at your desk?",
+          "translation": "صباح الخير يا صوفيا! ما هو المشروع الذي تعملين عليه حالياً الآن على مكتبك؟"
+        },
+        {
+          "speaker": "Sophia",
+          "text": "I am preparing the quarterly financial summary to send to our regional executive right away.",
+          "translation": "أنا أعدّ الملخص المالي الفصلي لإرساله إلى مديرنا الإقليمي على الفور."
+        },
+        {
+          "speaker": "Faris",
+          "text": "Is the senior manager standing near the conference room waiting for the printouts at the moment?",
+          "translation": "هل يقف المدير الأول بالقرب من قاعة الاجتماعات منتظراً المطبوعات في الوقت الحالي؟"
+        },
+        {
+          "speaker": "Sophia",
+          "text": "Yes, he is holding the final agenda; meanwhile, our team is printing the updated charts.",
+          "translation": "نعم، إنه يمسك جدول الأعمال النهائي؛ وفي غضون ذلك، يطبع فريقنا المخططات المحدثة."
+        },
+        {
+          "speaker": "Faris",
+          "text": "Nowadays, our company relies heavily on digital workflows, and our efficiency continues to improve.",
+          "translation": "في هذه الأيام، تعتمد شركتنا بشكل كبير على سير العمل الرقمي، وكفاءتنا تواصل التحسن."
+        },
+        {
+          "speaker": "Sophia",
+          "text": "I agree completely. These files belong to the audit committee, so accuracy matters immensely.",
+          "translation": "أوافق تماماً. هذه الملفات تخص لجنة التدقيق، لذا فإن الدقة تهم بشكل هائل."
+        },
+        {
+          "speaker": "Faris",
+          "text": "Do you need me to sit beside you and check whether all columns match the verified database?",
+          "translation": "هل تحتاجين مني أن أجلس بجانبك وأتحقق مما إذا كانت جميع الأعمدة تتطابق مع قاعدة البيانات المعتمدة؟"
+        },
+        {
+          "speaker": "Sophia",
+          "text": "That would be wonderful Faris! I really appreciate your ongoing assistance every morning.",
+          "translation": "سيكون ذلك رائعاً يا فارس! أنا أقدر حقاً مساعدتك المستمرة كل صباح."
+        }
+      ],
+      "vocabularyUsed": [
+        "currently",
+        "right now",
+        "prepare",
+        "send",
+        "right away",
+        "stand",
+        "at the moment",
+        "hold",
+        "meanwhile",
+        "nowadays",
+        "continue",
+        "improve",
+        "belong",
+        "matter",
+        "sit",
+        "ongoing"
+      ]
+    },
+    {
+      "title": "Observing Weather and Seasons in the Park",
+      "titleArabic": "ملاحظة الطقس والفصول في الحديقة العامة",
+      "setting": "Walking together along a paved garden pathway in late autumn",
+      "settingArabic": "التنزه معاً على ممر حديقة مبلط في أواخر فصل الخريف",
+      "lines": [
+        {
+          "speaker": "Tariq",
+          "text": "Look how the bright morning sun is shining, yet a cool autumn wind is blowing through the trees!",
+          "translation": "انظر كيف تسطع شمس الصباح الساطعة، ومع ذلك يهب نسيم خريفي عليل عبر الأشجار!"
+        },
+        {
+          "speaker": "Laila",
+          "text": "Yes, golden leaves fall gently everywhere, and evening temperatures decrease noticeably these days.",
+          "translation": "نعم، تتساقط أوراق الشجر الذهبية بلطف في كل مكان، وتنخفض درجات حرارة المساء بشكل ملحوظ هذه الأيام."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "I notice that more joggers are wearing warm jackets and jogging trousers at present.",
+          "translation": "ألاحظ أن المزيد من ممارسي الجري يرتدون سترات دافئة وبناطيل ركض في الوقت الحاضر."
+        },
+        {
+          "speaker": "Laila",
+          "text": "Natural seasonal transitions seem gradual, but sudden temperature shifts sometimes occur without delay.",
+          "translation": "التحولات الموسمية الطبيعية تبدو تدريجية، لكن تقلبات الحرارة المفاجئة تحدث أحياناً دون تأخير."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Our city park remains remarkably clean because dedicated groundskeepers maintain steady care.",
+          "translation": "حديقة مدينتنا تظل نظيفة بشكل ملحوظ لأن عمال الصيانة المخلصين يحافظون على رعاية ثابتة."
+        },
+        {
+          "speaker": "Laila",
+          "text": "I feel revitalized when we walk outdoors before we sit down to study our university lessons.",
+          "translation": "أشعر بالحيوية عندما نمشي في الهواء الطلق قبل أن نجلس لدراسة دروسنا الجامعية."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Let us rest on that stone bench for five minutes and watch clouds move across the blue sky.",
+          "translation": "دعنا نستريح على ذلك المقعد الحجري لخمس دقائق ونشاهد الغيوم تتحرك عبر السماء الزرقاء."
+        },
+        {
+          "speaker": "Laila",
+          "text": "A great idea Tariq! A peaceful moment outdoors helps me think clearly about my goals.",
+          "translation": "فكرة رائعة يا طارق! لحظة هادئة في الهواء الطلق تساعدني على التفكير بوضوح في أهدافي."
+        }
+      ],
+      "vocabularyUsed": [
+        "shine",
+        "blow",
+        "fall",
+        "decrease",
+        "these days",
+        "notice",
+        "wear",
+        "at present",
+        "seem",
+        "gradually",
+        "occur",
+        "remain",
+        "steady",
+        "feel",
+        "sit",
+        "rest",
+        "move",
+        "think"
+      ]
+    },
+    {
+      "title": "Reflecting on Learning and Personal Development",
+      "titleArabic": "التأمل في التعلم والتطوير الذاتي",
+      "setting": "Discussing study methods over a cup of tea in the student lounge",
+      "settingArabic": "مناقشة أساليب الدراسة أثناء تناول كوب من الشاي في استراحة الطلاب",
+      "lines": [
+        {
+          "speaker": "Zaid",
+          "text": "Do you believe that language fluency depends primarily on natural talent or regular habits?",
+          "translation": "هل تؤمن بأن الطلاقة اللغوية تعتمد في المقام الأول على الموهبة الفطرية أم العادات المنتظمة؟"
+        },
+        {
+          "speaker": "Nour",
+          "text": "I believe that consistent daily habits matter far more than innate talent ever could.",
+          "translation": "أنا أؤمن بأن العادات اليومية المنتظمة تهم أكثر بكثير مما يمكن أن تفعله الموهبة الفطرية."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "I realize now that my comprehension is developing steadily as I continue listening to audio dialogues.",
+          "translation": "أدرك الآن أن فهمي يتطور بثبات كلما واصلت الاستماع إلى الحوارات الصوتية."
+        },
+        {
+          "speaker": "Nour",
+          "text": "When you hear a conversation, do you easily recognize the grammatical structures in progress?",
+          "translation": "عندما تستمع إلى محادثة، هل تميز بسهولة التراكيب النحوية قيد الاستخدام؟"
+        },
+        {
+          "speaker": "Zaid",
+          "text": "Yes, native expressions appear much clearer to me, and my vocabulary skills steadily rise.",
+          "translation": "نعم، تبدو التعبيرات الأصلية أوضح بكثير بالنسبة لي، ومهاراتي اللغوية ترتفع باطراد."
+        },
+        {
+          "speaker": "Nour",
+          "text": "We hope to achieve conversational fluency, and this structured English program is proving effective.",
+          "translation": "نأمل في تحقيق طلاقة في المحادثة، وهذا البرنامج الإنجليزي المنظم يثبت فاعليته."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "Are you temporarily staying near campus or living permanently with your family across town?",
+          "translation": "هل تقيمين مؤقتاً بالقرب من الحرم الجامعي أم تعيشين بشكل دائم مع عائلتك في الجانب الآخر من المدينة؟"
+        },
+        {
+          "speaker": "Nour",
+          "text": "I am staying temporarily in a student dormitory until the semester concludes next month.",
+          "translation": "أنا أقيم مؤقتاً في سكن الطلاب حتى يختتم الفصل الدراسي الشهر المقبل."
+        }
+      ],
+      "vocabularyUsed": [
+        "believe",
+        "depend",
+        "matter",
+        "realize",
+        "develop",
+        "steady",
+        "continue",
+        "recognize",
+        "in progress",
+        "appear",
+        "rise",
+        "hope",
+        "temporarily",
+        "permanently"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Navigating Habits and Current Actions",
+      "titleArabic": "التنقل بين العادات اليومية والأحداث الآنية",
+      "kind": "informative-essay",
+      "text": "Mastering English requires a clear distinction between habitual routines and immediate actions taking place right now. When describing daily habits, we rely on the Present Simple because these patterns remain constant over time. For example, diligent professionals sit at their desks, send correspondence, and receive instructions according to structured timetables. However, when an action is occurring at the moment, the Present Continuous captures the ongoing event. Look outside: the sun is shining, a gentle breeze is blowing, and pedestrians are moving across the avenue. While stative verbs like believe, depend, and belong describe mental and relational realities that do not take continuous forms, dynamic verbs demonstrate how everyday life continues to evolve.",
+      "translation": "يتطلب إتقان اللغة الإنجليزية تمييزاً واضحاً بين الروتين المعتاد والأفعال الفورية التي تقع الآن. فعند وصف العادات اليومية، نعتمد على المضارع البسيط لأن هذه الأنماط تظل ثابتة بمرور الوقت. على سبيل المثال، يجلس المهنيون المجتهدون على مكاتبهم، ويرسلون المراسلات، ويستلمون التوجيهات وفقاً لجداول زمنية منظمة. ومع ذلك، عندما يحدث فعل في هذه اللحظة، يلتقط المضارع المستمر الحدث الجاري. انظر إلى الخارج: الشمس تسطع، ونسيم عليل يهب، والمشاة يتحركون عبر الشارع. وبينما تصف أفعال الحالة مثل believe و depend و belong حقائق ذهنية وعلاقات لا تقبل صيغة الاستمرار، تُظهر أفعال الحركة كيف تستمر الحياة اليومية في التطور.",
+      "vocabularyUsed": [
+        "right now",
+        "remain",
+        "sit",
+        "send",
+        "receive",
+        "occur",
+        "at the moment",
+        "ongoing",
+        "shine",
+        "blow",
+        "move",
+        "believe",
+        "depend",
+        "belong",
+        "continue"
+      ]
+    },
+    {
+      "title": "A Rapidly Changing World of Work",
+      "titleArabic": "عالم عمل يتغير بوتيرة متسارعة",
+      "kind": "opinion-analysis",
+      "text": "Nowadays, employment environments are developing in unprecedented ways across international industries. Many employees who worked permanently in traditional headquarters are currently performing their duties from home temporarily. Remote teams communicate simultaneously across different time zones, and global connections increase while paper files decrease steadily. When unexpected technical difficulties happen, colleagues collaborate right away to find practical solutions. Many analysts believe that flexibility matters just as much as monetary compensation to the modern workforce. As innovative tools continue to appear, organizations that prepare their staff for digital transformation will rise to outstanding prominence, while rigid entities gradually lose ground.",
+      "translation": "في هذه الأيام، تتطور بيئات العمل بطرق غير مسبوقة عبر الصناعات العالمية. والعديد من الموظفين الذين عملوا بشكل دائم في المقرات التقليدية يؤدون واجباتهم حالياً من المنزل بشكل مؤقت. وتتواصل فرق العمل عن بعد في آن واحد عبر مناطق زمنية مختلفة، وتزداد الروابط العالمية بينما تتناقص الملفات الورقية باطراد. وعندما تحدث صعوبات فنية غير متوقعة، يتعاون الزملاء على الفور لإيجاد حلول عملية. ويعتقد العديد من المحللين أن المرونة تهم بقدر التعويض المالي للقوى العاملة الحديثة. ومع استمرار ظهور الأدوات المبتكرة، سترتفع المؤسسات التي تعد موظفيها للتحول الرقمي إلى مكانة بارزة، بينما تفقد الكيانات الجامدة مكانتها تدريجياً.",
+      "vocabularyUsed": [
+        "nowadays",
+        "develop",
+        "permanently",
+        "currently",
+        "temporarily",
+        "simultaneously",
+        "increase",
+        "decrease",
+        "steady",
+        "happen",
+        "right away",
+        "believe",
+        "matter",
+        "continue",
+        "appear",
+        "prepare",
+        "rise",
+        "gradually"
+      ]
+    },
+    {
+      "title": "The Journey Toward Fluency",
+      "titleArabic": "رحلة السعي نحو الطلاقة اللغوية",
+      "kind": "personal-reflection",
+      "text": "Learning a new language is a steady journey where significant transformations exist step by step. At present, our learning project is actively in progress, and students notice measurable enhancements in their communicative ability. When we study consistently, new grammatical rules seem straightforward, and we recognize core expressions without hesitation. We realize that fluency does not depend on miraculous shortcuts, but on honest determination and frequent practice. Even when tasks seem challenging, we hold our high standards and hope for enduring success. Every dialogue we study and every sentence we prepare helps us stand with supreme confidence whenever we speak English in the modern world.",
+      "translation": "إن تعلم لغة جديدة رحلة ثابتة تتواجد فيها تحولات ملموسة خطوة بخطوة. وفي الوقت الحاضر، مشروعنا التعليمي قيد التنفيذ بنشاط، ويلاحظ الطلاب تحسينات ملموسة في قدرتهم على التواصل. وعندما ندرس باستمرار، تبدو القواعد النحوية الجديدة واضحة ومباشرة، ونميز التعبيرات الأساسية دون تردد. ونحن ندرك أن الطلاقة لا تعتمد على طرق مختصرة إعجازية، بل على العزيمة الصادقة والممارسة المتكررة. وحتى عندما تبدو المهام صعبة، فإننا نتمسك بمعاييرنا العالية ونأمل في نجاح دائم. فكل حوار ندرسه وكل جملة نعدها يساعداننا على الوقوف بثقة تامة كلما تحدثنا الإنجليزية في العالم المعاصر.",
+      "vocabularyUsed": [
+        "steady",
+        "exist",
+        "at present",
+        "in progress",
+        "notice",
+        "seem",
+        "recognize",
+        "realize",
+        "depend",
+        "hold",
+        "hope",
+        "prepare",
+        "stand"
+      ]
+    }
+  ]
+}

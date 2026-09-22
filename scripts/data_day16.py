@@ -1,0 +1,969 @@
+# Day 16 Data: Bigger and Better
+# Topic: Comparing things and choices
+# Grammar: ["Comparatives"]
+
+vocab_day16 = [
+    {
+        "headword": "cheaper",
+        "pronunciation": "/ˈtʃiː.pər/",
+        "partOfSpeech": "adjective",
+        "definition": "costing less money; lower in price than something else",
+        "example": "Public bus transport is considerably cheaper than hiring a private taxi.",
+        "relatedForms": ["cheap", "cheaply"],
+        "collocations": ["cheaper option", "much cheaper", "cheaper alternative"],
+        "synonyms": ["less expensive", "more affordable", "economical"],
+        "antonyms": ["more expensive", "costlier"],
+        "tags": ["comparison", "money"],
+        "translation": "أرخص ثمناً",
+        "exampleArabic": "وسائل النقل بالحافلات العامة أرخص بكثير من استئجار سيارة أجرة خاصة."
+    },
+    {
+        "headword": "wider",
+        "pronunciation": "/ˈwaɪ.dər/",
+        "partOfSpeech": "adjective",
+        "definition": "having larger distance from side to side than another thing",
+        "example": "The renovated grand boulevard is much wider than the old market alley.",
+        "relatedForms": ["wide", "widely"],
+        "collocations": ["wider selection", "wider road", "wider perspective"],
+        "synonyms": ["broader", "more spacious"],
+        "antonyms": ["narrower", "tighter"],
+        "tags": ["comparison", "size"],
+        "translation": "أعرض / أوسع",
+        "exampleArabic": "الشارع الرئيسي الذي تم تجديده أوسع بكثير من زقاق السوق القديم."
+    },
+    {
+        "headword": "narrower",
+        "pronunciation": "/ˈnær.əʊ.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "having smaller width or distance between sides than another",
+        "example": "Mountain paths are much narrower and steeper than valley highways.",
+        "relatedForms": ["narrow", "narrowly"],
+        "collocations": ["narrower passage", "narrower margin"],
+        "synonyms": ["slimmer", "tighter"],
+        "antonyms": ["wider", "broader"],
+        "tags": ["comparison", "size"],
+        "translation": "أضيق",
+        "exampleArabic": "المسارات الجبلية أضيق بكثير وأكثر انحداراً من الطرق السريعة في الوادي."
+    },
+    {
+        "headword": "heavier",
+        "pronunciation": "/ˈhev.i.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "having greater weight or density than another thing",
+        "example": "The winter woolen overcoat is noticeably heavier than a summer jacket.",
+        "relatedForms": ["heavy", "heavily"],
+        "collocations": ["heavier burden", "much heavier", "heavier traffic"],
+        "synonyms": ["weightier", "more ponderous"],
+        "antonyms": ["lighter"],
+        "tags": ["comparison", "weight"],
+        "translation": "أثقل وزناً",
+        "exampleArabic": "المعطف الشتوي الصوفي أثقل وزناً بشكل ملحوظ من السترة الصيفية."
+    },
+    {
+        "headword": "lighter",
+        "pronunciation": "/ˈlaɪ.tər/",
+        "partOfSpeech": "adjective",
+        "definition": "having less weight or being less dense than another item",
+        "example": "Modern aluminum laptops are substantially lighter than older desktop units.",
+        "relatedForms": ["light", "lightly"],
+        "collocations": ["lighter weight", "lighter color", "far lighter"],
+        "synonyms": ["less heavy", "featherweight"],
+        "antonyms": ["heavier"],
+        "tags": ["comparison", "weight"],
+        "translation": "أخف وزناً",
+        "exampleArabic": "الحواسيب المحمولة المصنوعة من الألومنيوم الحديث أخف وزناً بشكل كبير من الأجهزة القديمة."
+    },
+    {
+        "headword": "stronger",
+        "pronunciation": "/ˈstrɒŋ.ɡər/",
+        "partOfSpeech": "adjective",
+        "definition": "having greater physical power, durability, or intensity than another",
+        "example": "Reinforced steel beams provide a stronger foundation for the bridge.",
+        "relatedForms": ["strong", "strongly"],
+        "collocations": ["stronger argument", "much stronger", "stronger bond"],
+        "synonyms": ["more powerful", "sturdier", "more robust"],
+        "antonyms": ["weaker", "frailer"],
+        "tags": ["comparison", "strength"],
+        "translation": "أقوى / أمتن",
+        "exampleArabic": "توفر العوارض الفولاذية المدعمة أساساً أقوى للجسر."
+    },
+    {
+        "headword": "weaker",
+        "pronunciation": "/ˈwiː.kər/",
+        "partOfSpeech": "adjective",
+        "definition": "lacking physical strength, energy, or firmness in comparison",
+        "example": "After a bout of fever, his physical endurance felt temporarily weaker.",
+        "relatedForms": ["weak", "weakly"],
+        "collocations": ["weaker signal", "weaker currency", "slightly weaker"],
+        "synonyms": ["frailer", "feebler", "less robust"],
+        "antonyms": ["stronger"],
+        "tags": ["comparison", "strength"],
+        "translation": "أضعف",
+        "exampleArabic": "بعد نوبة الحمى، بدت قدرته البدنية على التحمل أضعف بشكل مؤقت."
+    },
+    {
+        "headword": "darker",
+        "pronunciation": "/ˈdɑː.kər/",
+        "partOfSpeech": "adjective",
+        "definition": "having less light or a deeper shade of color than another",
+        "example": "The mahogany study table has a darker finish than the birch shelves.",
+        "relatedForms": ["dark", "darkly"],
+        "collocations": ["darker shade", "grow darker", "darker complexion"],
+        "synonyms": ["dimmer", "deeper"],
+        "antonyms": ["lighter", "brighter"],
+        "tags": ["comparison", "color"],
+        "translation": "أغمق لوناً / أكثر عتمة",
+        "exampleArabic": "طاولة المذاكرة المصنوعة من خشب الماهوجني ذات طلاء أغمق من رفوف خشب البتولا."
+    },
+    {
+        "headword": "quicker",
+        "pronunciation": "/ˈkwɪk.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "moving, operating, or done with greater speed than another",
+        "example": "Taking the underground subway is far quicker than driving through rush hour.",
+        "relatedForms": ["quick", "quickly"],
+        "collocations": ["quicker route", "quicker way", "quicker response"],
+        "synonyms": ["faster", "speedier", "swifter"],
+        "antonyms": ["slower"],
+        "tags": ["comparison", "speed"],
+        "translation": "أسرع",
+        "exampleArabic": "ركوب مترو الأنفاق أسرع بكثير من القيادة عبر ساعات الذروة."
+    },
+    {
+        "headword": "slower",
+        "pronunciation": "/ˈsləʊ.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "operating or moving at a lesser speed than another thing",
+        "example": "The scenic canal boat was slower than the commuter express train.",
+        "relatedForms": ["slow", "slowly"],
+        "collocations": ["slower pace", "slower process"],
+        "synonyms": ["less rapid", "unhurried"],
+        "antonyms": ["quicker", "faster"],
+        "tags": ["comparison", "speed"],
+        "translation": "أبطأ",
+        "exampleArabic": "كان قارب القناة المائي السياحي أبطأ من قطار الركاب السريع."
+    },
+    {
+        "headword": "cleaner",
+        "pronunciation": "/ˈkliː.nər/",
+        "partOfSpeech": "adjective",
+        "definition": "free from more dirt, pollution, or contamination than another",
+        "example": "Renewable solar power provides a cleaner energy source for modern cities.",
+        "relatedForms": ["clean", "cleanly"],
+        "collocations": ["cleaner air", "cleaner environment", "much cleaner"],
+        "synonyms": ["purer", "more pristine", "spotless"],
+        "antonyms": ["dirtier", "more polluted"],
+        "tags": ["comparison", "environment"],
+        "translation": "أنظف / أنقى",
+        "exampleArabic": "توفر الطاقة الشمسية المتجددة مصدر طاقة أنظف للمدن المعاصرة."
+    },
+    {
+        "headword": "sharper",
+        "pronunciation": "/ˈʃɑː.pər/",
+        "partOfSpeech": "adjective",
+        "definition": "having a thinner, keener edge, or showing greater distinctness and clarity",
+        "example": "The newly upgraded digital screen delivers a much sharper image.",
+        "relatedForms": ["sharp", "sharply"],
+        "collocations": ["sharper image", "sharper focus", "sharper knife"],
+        "synonyms": ["keener", "crisper", "clearer"],
+        "antonyms": ["blunter", "blurrier"],
+        "tags": ["comparison", "quality"],
+        "translation": "أحدّ / أكثر وضوحاً وحدة",
+        "exampleArabic": "تقدم الشاشة الرقمية المحدثة حديثاً صورة أكثر حدة ووضوحاً بكثير."
+    },
+    {
+        "headword": "smoother",
+        "pronunciation": "/ˈsmuː.ðər/",
+        "partOfSpeech": "adjective",
+        "definition": "having an even, regular surface or proceeding with less turbulence",
+        "example": "Repaving the highway created a noticeably smoother driving experience.",
+        "relatedForms": ["smooth", "smoothly"],
+        "collocations": ["smoother ride", "smoother texture", "smoother transition"],
+        "synonyms": ["sleeker", "silkier", "more fluid"],
+        "antonyms": ["rougher", "bumpier"],
+        "tags": ["comparison", "texture"],
+        "translation": "أنعم ملمساً / أكثر سلاسة",
+        "exampleArabic": "أدى إعادة رصف الطريق السريع إلى خلق تجربة قيادة أكثر سلاسة بشكل ملحوظ."
+    },
+    {
+        "headword": "rougher",
+        "pronunciation": "/ˈrʌf.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "having a more uneven or irregular surface; more turbulent",
+        "example": "The sea was rougher during the evening voyage than in the morning.",
+        "relatedForms": ["rough", "roughly"],
+        "collocations": ["rougher terrain", "rougher seas", "rougher texture"],
+        "synonyms": ["bumpier", "more rugged", "choppier"],
+        "antonyms": ["smoother", "calmer"],
+        "tags": ["comparison", "nature"],
+        "translation": "أخشن / أشد اضطراباً ووعورة",
+        "exampleArabic": "كان البحر أشد اضطراباً وأمواجاً خلال رحلة المساء مقارنة بالصباح."
+    },
+    {
+        "headword": "softer",
+        "pronunciation": "/ˈsɒf.tər/",
+        "partOfSpeech": "adjective",
+        "definition": "giving way more easily to pressure; less harsh or loud",
+        "example": "The new organic cotton pillow is far softer than the previous one.",
+        "relatedForms": ["soft", "softly"],
+        "collocations": ["softer texture", "softer voice", "softer light"],
+        "synonyms": ["cushioned", "gentler", "mellower"],
+        "antonyms": ["harder", "firmer"],
+        "tags": ["comparison", "texture"],
+        "translation": "أنعم / أرقّ / أكثر طراوة",
+        "exampleArabic": "وسادة القطن العضوي الجديدة أكثر طراوة ونعومة بكثير من السابقة."
+    },
+    {
+        "headword": "tougher",
+        "pronunciation": "/ˈtʌf.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "stronger, more durable, or able to endure greater hardship",
+        "example": "These reinforced mountain boots are tougher and withstand rocky trails.",
+        "relatedForms": ["tough", "toughly"],
+        "collocations": ["tougher challenge", "tougher material", "tougher stance"],
+        "synonyms": ["more resilient", "sturdier", "hardier"],
+        "antonyms": ["tender", "fragile"],
+        "tags": ["comparison", "quality"],
+        "translation": "أصلب / أمتن / أكثر تحملاً",
+        "exampleArabic": "هذه الأحذية الجبلية المعززة أمتن وتتحمل المسارات الصخرية الوعرة."
+    },
+    {
+        "headword": "calmer",
+        "pronunciation": "/ˈkɑː.mər/",
+        "partOfSpeech": "adjective",
+        "definition": "more peaceful, quiet, or free from agitation than another state",
+        "example": "The library atmosphere was much calmer than the crowded campus cafeteria.",
+        "relatedForms": ["calm", "calmly"],
+        "collocations": ["calmer mood", "calmer weather", "feel calmer"],
+        "synonyms": ["more peaceful", "serener", "quieter"],
+        "antonyms": ["more turbulent", "stormier"],
+        "tags": ["comparison", "state"],
+        "translation": "أهدأ / أكثر سكينة",
+        "exampleArabic": "كانت أجواء المكتبة أهدأ بكثير من كافيتيريا الحرم الجامعي المزدحمة."
+    },
+    {
+        "headword": "cooler",
+        "pronunciation": "/ˈkuː.lər/",
+        "partOfSpeech": "adjective",
+        "definition": "at a lower temperature than before or than another place; moderately cold",
+        "example": "The mountain air is deliciously cooler than the humid coastal plains.",
+        "relatedForms": ["cool", "coolly"],
+        "collocations": ["cooler climate", "cooler breeze", "cooler temperature"],
+        "synonyms": ["chillier", "fresher", "less hot"],
+        "antonyms": ["warmer", "hotter"],
+        "tags": ["comparison", "temperature"],
+        "translation": "أبرد / ألطف برودة",
+        "exampleArabic": "هواء الجبل ألطف برودة بشكل رائع من السهول الساحلية الرطبة."
+    },
+    {
+        "headword": "warmer",
+        "pronunciation": "/ˈwɔː.mər/",
+        "partOfSpeech": "adjective",
+        "definition": "having or giving out a moderate degree of heat, greater than another",
+        "example": "Spring sunshine brings noticeably warmer temperatures to our region.",
+        "relatedForms": ["warm", "warmly"],
+        "collocations": ["warmer climate", "warmer clothes", "warmer welcome"],
+        "synonyms": ["toastier", "balmier"],
+        "antonyms": ["cooler", "colder"],
+        "tags": ["comparison", "temperature"],
+        "translation": "أدفأ",
+        "exampleArabic": "تجلب شمس الربيع درجات حرارة أدفأ بشكل ملحوظ إلى منطقتنا."
+    },
+    {
+        "headword": "dryer",
+        "pronunciation": "/ˈdraɪ.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "free from moisture or liquid in greater comparison with another area",
+        "example": "Inland deserts are substantially dryer than coastal subtropical areas.",
+        "relatedForms": ["dry"],
+        "collocations": ["dryer climate", "dryer weather"],
+        "synonyms": ["more arid", "less humid"],
+        "antonyms": ["wetter", "damper"],
+        "tags": ["comparison", "weather"],
+        "translation": "أكثر جفافاً",
+        "exampleArabic": "الصحاري الداخلية أكثر جفافاً بشكل كبير من المناطق شبه الاستوائية الساحلية."
+    },
+    {
+        "headword": "wetter",
+        "pronunciation": "/ˈwet.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "covered or saturated with more water or another liquid than another",
+        "example": "This winter season proved wetter than the past two dry years.",
+        "relatedForms": ["wet"],
+        "collocations": ["wetter season", "wetter weather", "much wetter"],
+        "synonyms": ["rainier", "damper", "more humid"],
+        "antonyms": ["dryer"],
+        "tags": ["comparison", "weather"],
+        "translation": "أكثر رطوبة ومطراً / أشد بللاً",
+        "exampleArabic": "أثبت هذا الموسم الشتوي أنه أكثر مطراً ورطوبة من العامين الجافين السابقين."
+    },
+    {
+        "headword": "tidier",
+        "pronunciation": "/ˈtaɪ.di.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "more orderly, neat, and well-arranged than previously",
+        "example": "Her study desk looked much tidier after she filed all loose papers.",
+        "relatedForms": ["tidy"],
+        "collocations": ["tidier room", "much tidier"],
+        "synonyms": ["neater", "more organized", "more orderly"],
+        "antonyms": ["messier"],
+        "tags": ["comparison", "order"],
+        "translation": "أكثر ترتيباً ونظاماً",
+        "exampleArabic": "بدا مكتب دراستها أكثر ترتيباً بكثير بعد أن حفظت جميع الأوراق المتفرقة."
+    },
+    {
+        "headword": "superior",
+        "pronunciation": "/suːˈpɪə.ri.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "higher in rank, status, quality, or achievement than another",
+        "example": "Handmade leather craftsmanship is superior in durability to synthetic alternatives.",
+        "relatedForms": ["superiority"],
+        "collocations": ["far superior", "superior quality", "superior performance"],
+        "synonyms": ["better", "higher-grade", "preferable"],
+        "antonyms": ["inferior"],
+        "tags": ["comparison", "quality"],
+        "translation": "أرقى / متفوق / ذو جودة أعلى",
+        "exampleArabic": "تعتبر الحرفية الجلدية المصنوعة يدوياً متفوقة في المتانة على البدائل الصناعية."
+    },
+    {
+        "headword": "inferior",
+        "pronunciation": "/ɪnˈfɪə.ri.ər/",
+        "partOfSpeech": "adjective",
+        "definition": "lower in quality, value, or status in comparison with another thing",
+        "example": "Cheap counterfeit chargers deliver inferior safety and power regulation.",
+        "relatedForms": ["inferiority"],
+        "collocations": ["inferior quality", "vastly inferior"],
+        "synonyms": ["substandard", "second-rate", "poorer"],
+        "antonyms": ["superior"],
+        "tags": ["comparison", "quality"],
+        "translation": "أدنى مرتبة / رديء الجودة مقارنة بغيره",
+        "exampleArabic": "الشواحن المقلدة الرخيصة تقدم أماناً وضبط طاقة أدنى جودة."
+    },
+    {
+        "headword": "preferable",
+        "pronunciation": "/ˈpref.ər.ə.bəl/",
+        "partOfSpeech": "adjective",
+        "definition": "more desirable or suitable; preferred over another option",
+        "example": "A morning study session is preferable to working late when tired.",
+        "relatedForms": ["prefer", "preferably"],
+        "collocations": ["far preferable", "preferable alternative"],
+        "synonyms": ["better", "more desirable", "favored"],
+        "antonyms": ["undesirable"],
+        "tags": ["comparison", "preference"],
+        "translation": "أفضل / محبّذ / أولى بالاتباع",
+        "exampleArabic": "جلسة الدراسة الصباحية محبذة وأفضل بكثير من العمل في وقت متأخر عند الشعور بالإرهاق."
+    },
+    {
+        "headword": "alternative",
+        "pronunciation": "/ɒlˈtɜː.nə.tɪv/",
+        "partOfSpeech": "noun",
+        "definition": "one of two or more available possibilities or choices",
+        "example": "Cycling along the park pathway is a healthy alternative to driving.",
+        "relatedForms": ["alternatively"],
+        "collocations": ["viable alternative", "greener alternative", "no alternative"],
+        "synonyms": ["option", "choice", "substitute"],
+        "antonyms": [],
+        "tags": ["choice", "comparison"],
+        "translation": "بديل / خيار بديل",
+        "exampleArabic": "ركوب الدراجة على طول مسار الحديقة بديل صحي للقيادة."
+    },
+    {
+        "headword": "option",
+        "pronunciation": "/ˈɒp.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "a thing that is or may be chosen; an alternative choice",
+        "example": "Enrolling in an online English class gave him the option to study flexibly.",
+        "relatedForms": ["optional"],
+        "collocations": ["best option", "flexible option", "keep options open"],
+        "synonyms": ["choice", "alternative", "possibility"],
+        "antonyms": [],
+        "tags": ["choice", "decision"],
+        "translation": "خيار / احتمال متاح",
+        "exampleArabic": "منحه التسجيل في فصل لغة إنجليزية عبر الإنترنت الخيار للدراسة بمرونة."
+    },
+    {
+        "headword": "choice",
+        "pronunciation": "/tʃɔɪs/",
+        "partOfSpeech": "noun",
+        "definition": "an act of selecting or making a decision when faced with two or more possibilities",
+        "example": "Making a conscious choice to read daily builds impressive English fluency.",
+        "relatedForms": [],
+        "collocations": ["good choice", "informed choice", "wide choice"],
+        "synonyms": ["selection", "decision", "preference"],
+        "antonyms": [],
+        "tags": ["choice", "decision"],
+        "translation": "اختيار / قرار انتقاء",
+        "exampleArabic": "اتخاذ خيار واعٍ بالقراءة يومياً يبني طلاقة إنجليزية مبهرة."
+    },
+    {
+        "headword": "selection",
+        "pronunciation": "/sɪˈlek.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "the action or fact of carefully choosing someone or something as being best",
+        "example": "The bookstore features a broad selection of contemporary literature.",
+        "relatedForms": ["select"],
+        "collocations": ["wide selection", "careful selection", "selection process"],
+        "synonyms": ["assortment", "range", "array"],
+        "antonyms": [],
+        "tags": ["choice", "variety"],
+        "translation": "تشكيلة / مجموعة مختارة",
+        "exampleArabic": "يضم متجر الكتب تشكيلة واسعة من الأدب المعاصر."
+    },
+    {
+        "headword": "contrast",
+        "pronunciation": "/ˈkɒn.trɑːst/",
+        "partOfSpeech": "noun",
+        "definition": "the state of being strikingly different from something else in juxtaposition",
+        "example": "There is a sharp contrast between quiet rural villages and bustling metropolis centers.",
+        "verbForms": { "v1": "contrast", "v2": "contrasted", "v3": "contrasted" },
+        "relatedForms": ["contrasting"],
+        "collocations": ["sharp contrast", "in contrast to", "marked contrast"],
+        "synonyms": ["difference", "disparity", "divergence"],
+        "antonyms": ["similarity", "harmony"],
+        "tags": ["comparison", "difference"],
+        "translation": "تباين / تضادّ / مفارقة",
+        "exampleArabic": "هناك تباين حاد بين القرى الريفية الهادئة ومراكز العواصم الصاخبة."
+    },
+    {
+        "headword": "difference",
+        "pronunciation": "/ˈdɪf.ər.əns/",
+        "partOfSpeech": "noun",
+        "definition": "a point or way in which people or things are not the same",
+        "example": "Can you identify the subtle grammatical difference between these two phrases?",
+        "relatedForms": ["different", "differ"],
+        "collocations": ["key difference", "noticeable difference", "make a difference"],
+        "synonyms": ["distinction", "variation", "divergence"],
+        "antonyms": ["similarity", "sameness"],
+        "tags": ["comparison", "logic"],
+        "translation": "اختلاف / فارق",
+        "exampleArabic": "هل يمكنك تحديد الفارق النحوي الدقيق بين هاتين العبارتين؟"
+    },
+    {
+        "headword": "similarity",
+        "pronunciation": "/ˌsɪm.ɪˈlær.ə.ti/",
+        "partOfSpeech": "noun",
+        "definition": "the state or feature of being alike or resembling another thing",
+        "example": "Linguists noted the striking structural similarity between the two dialects.",
+        "relatedForms": ["similar", "similarly"],
+        "collocations": ["striking similarity", "bear a similarity"],
+        "synonyms": ["resemblance", "likeness", "parallel"],
+        "antonyms": ["difference", "divergence"],
+        "tags": ["comparison", "logic"],
+        "translation": "تشابه / وجه شَبَه",
+        "exampleArabic": "لاحظ علماء اللغة التشابه الهيكلي المذهل بين اللهجتين."
+    },
+    {
+        "headword": "advantage",
+        "pronunciation": "/ədˈvɑːn.tɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "a condition or circumstance that puts one in a favorable or superior position",
+        "example": "Speaking two languages offers a tremendous advantage in global job markets.",
+        "relatedForms": ["advantageous"],
+        "collocations": ["huge advantage", "unfair advantage", "take advantage of"],
+        "synonyms": ["benefit", "edge", "asset"],
+        "antonyms": ["disadvantage", "drawback"],
+        "tags": ["benefit", "value"],
+        "translation": "ميزة / أفضلية",
+        "exampleArabic": "يوفر التحدث بلغتين ميزة هائلة في أسواق العمل العالمية."
+    },
+    {
+        "headword": "disadvantage",
+        "pronunciation": "/ˌdɪs.ədˈvɑːn.tɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "an unfavorable circumstance or condition that reduces the chances of success",
+        "example": "A lack of practical vocabulary is a severe disadvantage during interviews.",
+        "relatedForms": ["disadvantaged"],
+        "collocations": ["distinct disadvantage", "at a disadvantage"],
+        "synonyms": ["drawback", "handicap", "downside"],
+        "antonyms": ["advantage", "benefit"],
+        "tags": ["problem", "comparison"],
+        "translation": "عيب / سلبية / نقطة ضعف",
+        "exampleArabic": "يعد نقص المفردات العملية عيباً جسيماً أثناء المقابلات الشخصية."
+    },
+    {
+        "headword": "benefit",
+        "pronunciation": "/ˈben.ɪ.fɪt/",
+        "partOfSpeech": "noun",
+        "definition": "an advantage or profit gained from something",
+        "example": "Regular physical exercise provides countless health benefits for the body.",
+        "verbForms": { "v1": "benefit", "v2": "benefited", "v3": "benefited" },
+        "relatedForms": ["beneficial"],
+        "collocations": ["mutual benefit", "health benefits", "reap the benefit"],
+        "synonyms": ["advantage", "perk", "gain"],
+        "antonyms": ["detriment", "loss"],
+        "tags": ["value", "health"],
+        "translation": "فائدة / منفعة",
+        "exampleArabic": "توفر التمارين البدنية المنتظمة فوائد صحية لا تحصى للجسم."
+    },
+    {
+        "headword": "drawback",
+        "pronunciation": "/ˈdrɔː.bæk/",
+        "partOfSpeech": "noun",
+        "definition": "a feature that renders something less acceptable; a disadvantage or problem",
+        "example": "The main drawback of living downtown is the persistent traffic noise.",
+        "relatedForms": [],
+        "collocations": ["major drawback", "only drawback", "significant drawback"],
+        "synonyms": ["disadvantage", "downside", "catch"],
+        "antonyms": ["benefit", "asset"],
+        "tags": ["problem", "comparison"],
+        "translation": "عيب / نقطة سلبية / مأخذ",
+        "exampleArabic": "العيب الرئيسي للعيش في وسط المدينة هو ضوضاء المرور المستمرة."
+    },
+    {
+        "headword": "slightly",
+        "pronunciation": "/ˈslaɪt.li/",
+        "partOfSpeech": "adverb",
+        "definition": "to a small degree; not considerably",
+        "example": "Today's afternoon temperature is slightly warmer than yesterday.",
+        "relatedForms": ["slight"],
+        "collocations": ["slightly higher", "slightly better", "slightly different"],
+        "synonyms": ["a bit", "somewhat", "a little"],
+        "antonyms": ["considerably", "substantially"],
+        "tags": ["degree", "comparison"],
+        "translation": "قليلاً / بدرجة طفيفة",
+        "exampleArabic": "درجة حرارة بعد ظهر اليوم أدفأ قليلاً من أمس."
+    },
+    {
+        "headword": "considerably",
+        "pronunciation": "/kənˈsɪd.ər.ə.bli/",
+        "partOfSpeech": "adverb",
+        "definition": "by a notably large amount or to a significant extent",
+        "example": "Her conversational fluency improved considerably after sixty days of study.",
+        "relatedForms": ["considerable"],
+        "collocations": ["considerably better", "considerably higher", "vary considerably"],
+        "synonyms": ["significantly", "substantially", "greatly"],
+        "antonyms": ["slightly", "marginally"],
+        "tags": ["degree", "comparison"],
+        "translation": "بشكل كبير / إلى حد بعيد",
+        "exampleArabic": "تحسنت طلاقتها في المحادثة بشكل كبير بعد ستين يوماً من الدراسة."
+    },
+    {
+        "headword": "substantially",
+        "pronunciation": "/səbˈstæn.ʃəl.i/",
+        "partOfSpeech": "adverb",
+        "definition": "to a great or significant degree; considerably",
+        "example": "Energy-efficient LED bulbs reduce electricity consumption substantially.",
+        "relatedForms": ["substantial"],
+        "collocations": ["substantially lower", "substantially increase", "differ substantially"],
+        "synonyms": ["considerably", "extensively", "measurably"],
+        "antonyms": ["insignificantly", "slightly"],
+        "tags": ["degree", "comparison"],
+        "translation": "بصورة جوهرية / إلى حد كبير جداً",
+        "exampleArabic": "تخفض مصابيح LED الموفرة للطاقة استهلاك الكهرباء بصورة جوهرية."
+    },
+    {
+        "headword": "significantly",
+        "pronunciation": "/sɪɡˈnɪf.ɪ.kənt.li/",
+        "partOfSpeech": "adverb",
+        "definition": "in a sufficiently great or important way as to be worthy of attention",
+        "example": "Consistent active vocabulary study significantly accelerates overall progress.",
+        "relatedForms": ["significant"],
+        "collocations": ["significantly higher", "increase significantly", "differ significantly"],
+        "synonyms": ["notably", "markedly", "importantly"],
+        "antonyms": ["negligibly"],
+        "tags": ["degree", "importance"],
+        "translation": "بشكل ملحوظ / بفارق كبير",
+        "exampleArabic": "دراسة المفردات النشطة المستمرة تسرع التقدم العام بشكل ملحوظ."
+    },
+    {
+        "headword": "far better",
+        "pronunciation": "/fɑː ˈbet.ər/",
+        "partOfSpeech": "adjective phrase",
+        "definition": "vastly superior or much more effective than an alternative",
+        "example": "Interactive spoken dialogue is far better for retention than passive reading alone.",
+        "relatedForms": [],
+        "collocations": ["far better results", "far better off"],
+        "synonyms": ["much superior", "vastly preferable"],
+        "antonyms": ["far worse"],
+        "tags": ["comparison", "excellence"],
+        "translation": "أفضل بمراحل / أحسن بكثير",
+        "exampleArabic": "الحوار الشفهي التفاعلي أفضل بمراحل لتثبيت المعلومات من القراءة السلبية بمفردها."
+    },
+    {
+        "headword": "much more",
+        "pronunciation": "/mʌtʃ mɔːr/",
+        "partOfSpeech": "adverbial phrase",
+        "definition": "to a much greater extent, intensity, or degree",
+        "example": "She feels much more confident speaking English with native conversation partners.",
+        "relatedForms": [],
+        "collocations": ["much more effective", "much more comfortable"],
+        "synonyms": ["far more", "substantially more"],
+        "antonyms": ["much less"],
+        "tags": ["degree", "comparison"],
+        "translation": "أكثر بكثير",
+        "exampleArabic": "تشعر بثقة أكبر بكثير عند التحدث بالإنجليزية مع شركاء محادثة أصليين."
+    },
+    {
+        "headword": "rather",
+        "pronunciation": "/ˈrɑː.ðər/",
+        "partOfSpeech": "adverb",
+        "definition": "to a certain or significant extent; quite; preferably",
+        "example": "I would rather practice dialogue daily than memorize dry grammar lists.",
+        "relatedForms": [],
+        "collocations": ["would rather", "rather than", "rather unusual"],
+        "synonyms": ["preferably", "quite", "somewhat"],
+        "antonyms": [],
+        "tags": ["preference", "degree"],
+        "translation": "بالأحرى / بالأحرى تفضيلاً / إلى حد ما",
+        "exampleArabic": "أفضّل بالأحرى ممارسة الحوار يومياً على حفظ قوائم القواعد الجامدة."
+    },
+    {
+        "headword": "compared to",
+        "pronunciation": "/kəmˈpeəd tuː/",
+        "partOfSpeech": "prepositional phrase",
+        "definition": "in comparison with; measured against another thing",
+        "example": "Compared to traditional textbooks, interactive language apps are far more engaging.",
+        "relatedForms": ["compare"],
+        "collocations": ["compared to last year", "as compared to"],
+        "synonyms": ["in comparison with", "measured against"],
+        "antonyms": [],
+        "tags": ["comparison", "grammar"],
+        "translation": "مقارنةً بـ / قياساً على",
+        "exampleArabic": "مقارنةً بالكتب الدراسية التقليدية، تعتبر تطبيقات اللغة التفاعلية أكثر جذباً للاهتمام بكثير."
+    },
+    {
+        "headword": "in comparison",
+        "pronunciation": "/ɪn kəmˈpær.ɪ.sən/",
+        "partOfSpeech": "prepositional phrase",
+        "definition": "when compared to someone or something else",
+        "example": "The small rented studio feels cramped in comparison with their countryside villa.",
+        "relatedForms": ["compare"],
+        "collocations": ["in comparison with", "by comparison"],
+        "synonyms": ["comparatively", "by contrast"],
+        "antonyms": [],
+        "tags": ["comparison", "transition"],
+        "translation": "بالمقارنة / في المقابل",
+        "exampleArabic": "يبدو الاستوديو الصغير المستأجر ضيقاً بالمقارنة مع فيلتهم الريفية."
+    },
+    {
+        "headword": "versus",
+        "pronunciation": "/ˈvɜː.səs/",
+        "partOfSpeech": "preposition",
+        "definition": "against, especially in a competition or contrast between choices",
+        "example": "Today's seminar explores online self-study versus classroom instruction.",
+        "relatedForms": ["vs."],
+        "collocations": ["quality versus quantity", "theory versus practice"],
+        "synonyms": ["against", "compared with"],
+        "antonyms": [],
+        "tags": ["comparison", "contrast"],
+        "translation": "مقابل / ضد / في مواجهة",
+        "exampleArabic": "تستكشف ندوة اليوم الدراسة الذاتية عبر الإنترنت مقابل التعليم داخل الفصول."
+    },
+    {
+        "headword": "preference",
+        "pronunciation": "/ˈpref.ər.əns/",
+        "partOfSpeech": "noun",
+        "definition": "a greater liking for one alternative over another or others",
+        "example": "Learners often express a distinct preference for audio dialogue exercises.",
+        "relatedForms": ["prefer", "preferential"],
+        "collocations": ["personal preference", "strong preference", "give preference to"],
+        "synonyms": ["predilection", "partiality", "choice"],
+        "antonyms": ["aversion", "dislike"],
+        "tags": ["choice", "mind"],
+        "translation": "تفضيل / رغبة مختارة",
+        "exampleArabic": "غالباً ما يعرب المتعلمون عن تفضيل واضح لتمارين الحوار الصوتي."
+    },
+    {
+        "headword": "prioritize",
+        "pronunciation": "/praɪˈɒr.ɪ.taɪz/",
+        "partOfSpeech": "verb",
+        "definition": "to determine the order for dealing with a series of items or tasks according to importance",
+        "example": "Successful professionals prioritize high-impact tasks early each morning.",
+        "verbForms": { "v1": "prioritize", "v2": "prioritized", "v3": "prioritized" },
+        "relatedForms": ["priority", "prioritization"],
+        "collocations": ["prioritize tasks", "prioritize health", "strictly prioritize"],
+        "synonyms": ["rank", "put first", "give precedence to"],
+        "antonyms": ["neglect"],
+        "tags": ["action", "productivity"],
+        "translation": "يرتب حسب الأولوية / يقدّم الأهم",
+        "exampleArabic": "يرتب المهنيون الناجحون المهام ذات التأثير العالي حسب الأولوية في وقت مبكر كل صباح."
+    },
+    {
+        "headword": "upgrade",
+        "pronunciation": "/ʌpˈɡreɪd/",
+        "partOfSpeech": "verb",
+        "definition": "to raise something to a higher standard, grade, or level of efficiency",
+        "example": "The college decided to upgrade its multimedia computer laboratories.",
+        "verbForms": { "v1": "upgrade", "v2": "upgraded", "v3": "upgraded" },
+        "relatedForms": ["upgrade (noun)"],
+        "collocations": ["upgrade software", "free upgrade", "upgrade equipment"],
+        "synonyms": ["improve", "enhance", "promote"],
+        "antonyms": ["downgrade"],
+        "tags": ["technology", "progress"],
+        "translation": "يرقّي / يطوّر لمستوى أعلى",
+        "exampleArabic": "قررت الكلية ترقية مختبرات الحاسوب متعددة الوسائط الخاصة بها."
+    },
+    {
+        "headword": "downgrade",
+        "pronunciation": "/ˌdaʊnˈɡreɪd/",
+        "partOfSpeech": "verb",
+        "definition": "to reduce something to a lower rank, level, or status",
+        "example": "The airline downgraded his ticket seat class because of flight overbooking.",
+        "verbForms": { "v1": "downgrade", "v2": "downgraded", "v3": "downgraded" },
+        "relatedForms": ["downgrade (noun)"],
+        "collocations": ["downgrade service", "downgrade status"],
+        "synonyms": ["demote", "devalue", "lower"],
+        "antonyms": ["upgrade", "promote"],
+        "tags": ["status", "change"],
+        "translation": "يخفض الرتبة / يخفّض المستوى",
+        "exampleArabic": "خفضت شركة الطيران درجة مقعد تذكرته بسبب الحجز الزائد للرحلة."
+    }
+]
+
+grammar_day16 = [
+    {
+        "title": "Comparatives",
+        "titleArabic": "صيغ المقارنة (Comparatives): القواعد، التراكيب، واستخدام than",
+        "explanation": "We use comparative adjectives to compare two people, places, things, or options and highlight differences. For short, one-syllable adjectives (and two-syllable adjectives ending in -y), we add -er (e.g. cheaper, wider, heavier, cleaner, softer, tougher, calmer, warmer). If the adjective ends in consonant-vowel-consonant, we double the final consonant before adding -er (e.g. wet -> wetter). For longer adjectives of two or more syllables, we place 'more' before the adjective (e.g. 'more comfortable', 'more expensive', 'more preferable'). When naming both entities in a sentence, connect them with 'than' (e.g. 'The train is quicker than the bus'). You can modify comparatives with adverbs like 'much', 'far', 'considerably', or 'slightly' to express the degree of difference.",
+        "explanationArabic": "نستخدم صيغ المقارنة (Comparatives) لمقارنة شخصين أو مكانين أو شيئين أو خيارين وإبراز الفروق بينهما. بالنسبة للصفات القصيرة ذات المقطع الواحد (والصفات المكونة من مقطعين والمنتهية بـ y)، نضيف -er للصفة (مثل: cheaper, wider, heavier, calmer, warmer). وإذا كانت الصفة تنتهي بساكن-متحرك-ساكن نضاعف الحرف الأخير (مثل wet -> wetter). أما بالنسبة للصفات الطويلة (مقطعين أو أكثر)، فنضع 'more' قبل الصفة (مثل: more comfortable). وعند ذكر الطرفين المقارن بينهما، نستخدم كلمة 'than' للربط (مثل: 'The train is quicker than the bus'). ويمكن إضافة كلمات لبيان مقدار الفرق مثل 'much' أو 'far' (أفضل بكثير) أو 'slightly' (أفضل قليلاً).",
+        "structures": [
+            {
+                "pattern": "Short Adjectives: Subject + be / verb + Adjective-er + than + Object",
+                "explanation": "For one-syllable adjectives (cheaper, wider, heavier, softer).",
+                "explanationArabic": "للصفات القصيرة بإضافة -er متبوعة بـ than."
+            },
+            {
+                "pattern": "Long Adjectives: Subject + be / verb + more + Adjective + than + Object",
+                "explanation": "For adjectives of two or more syllables (e.g. more expensive, more durable).",
+                "explanationArabic": "للصفات الطويلة بوضع more قبل الصفة متبوعة بـ than."
+            },
+            {
+                "pattern": "Degree Modifiers: much / far / considerably / slightly + Comparative",
+                "explanation": "Expresses whether the difference is vast or minimal (e.g. far better, slightly wider).",
+                "explanationArabic": "تحديد مدى الفرق ومقداره (كبير جداً أو طفيف)."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Taking the underground metro is far quicker and cheaper than driving a car.",
+                "translation": "ركوب مترو الأنفاق أسرع وأرخص بمراحل من قيادة السيارة.",
+                "usesVocabulary": ["quicker", "cheaper", "far better"]
+            },
+            {
+                "sentence": "The new laptop model is substantially lighter and features a sharper display.",
+                "translation": "طراز الحاسوب المحمول الجديد أخف وزناً بشكل كبير ويتميز بشاشة أكثر حدة ووضوحاً.",
+                "usesVocabulary": ["substantially", "lighter", "sharper"]
+            },
+            {
+                "sentence": "Compared to yesterday's gale, this morning feels calmer and noticeably warmer.",
+                "translation": "مقارنة بعاصفة أمس، يبدو هذا الصباح أهدأ وأدفأ بشكل ملحوظ.",
+                "usesVocabulary": ["compared to", "calmer", "warmer"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "This laptop is more cheaper than that one.",
+                "right": "This laptop is cheaper than that one.",
+                "note": "Do not combine 'more' with an '-er' adjective. Say 'cheaper', not 'more cheaper'.",
+                "noteArabic": "لا تجمع بين 'more' والصفة المنتهية بـ -er. قل 'cheaper' وليس 'more cheaper'."
+            },
+            {
+                "wrong": "The red bag is heavier then the blue bag.",
+                "right": "The red bag is heavier than the blue bag.",
+                "note": "Use 'than' (with an 'a') for comparisons, not 'then' (time word).",
+                "noteArabic": "استخدم 'than' (بحرف a) للمقارنة، وليس 'then' (التي تعني حينئذ أو بعد ذلك)."
+            }
+        ]
+    }
+]
+
+convs_day16 = [
+    {
+        "title": "Comparing Two Laptops at the Electronics Store",
+        "titleArabic": "مقارنة حاسوبين محمولين في متجر الإلكترونيات",
+        "setting": "Evaluating technological devices with a knowledgeable shop assistant",
+        "settingArabic": "تقييم أجهزة تكنولوجية بمساعدة بائع متجر خبير",
+        "lines": [
+            {
+                "speaker": "Customer",
+                "text": "I am looking for a durable laptop. Between these two models, which option is preferable?",
+                "translation": "أبحث عن حاسوب محمول متين. بين هذين الطرازين، أي خيار هو الأفضل والمحبذ؟"
+            },
+            {
+                "speaker": "Sales Advisor",
+                "text": "The silver model is slightly heavier, but its reinforced metal chassis is considerably tougher.",
+                "translation": "الطراز الفضي أثقل قليلاً، لكن هيكله المعدني المدعم أمتن بشكل كبير."
+            },
+            {
+                "speaker": "Customer",
+                "text": "Is the digital display on the black model superior, or do they share similar screens?",
+                "translation": "هل الشاشة الرقمية في الطراز الأسود متفوقة، أم يشتركان في شاشات متماثلة؟"
+            },
+            {
+                "speaker": "Sales Advisor",
+                "text": "The black model delivers a noticeably sharper image and has a much wider viewing angle.",
+                "translation": "يقدم الطراز الأسود صورة أكثر حدة ووضوحاً بشكل ملحوظ ويتمتع بزاوية رؤية أوسع بكثير."
+            },
+            {
+                "speaker": "Customer",
+                "text": "However, the price tag on the silver laptop is three hundred pounds cheaper!",
+                "translation": "ومع ذلك، فإن بطاقة السعر على الحاسوب الفضي أرخص بثلاثمائة جنيه!"
+            },
+            {
+                "speaker": "Sales Advisor",
+                "text": "True. If budget is your priority, the silver unit is far better value for everyday work.",
+                "translation": "صحيح. إذا كانت الميزانية أولويتك، فإن الجهاز الفضي أفضل قيمة بمراحل للعمل اليومي."
+            },
+            {
+                "speaker": "Customer",
+                "text": "I will prioritize battery longevity and choose the silver model right away.",
+                "translation": "سأرتب الأولوية لعمر البطارية وأختار الطراز الفضي على الفور."
+            },
+            {
+                "speaker": "Sales Advisor",
+                "text": "An excellent choice! We can upgrade your internal solid-state storage before you leave.",
+                "translation": "اختيار ممتاز! يمكننا ترقية وحدة التخزين الداخلية الصلبة لديك قبل أن تغادر."
+            }
+        ],
+        "vocabularyUsed": [
+            "option", "preferable", "slightly", "heavier", "considerably",
+            "tougher", "superior", "sharper", "wider", "cheaper",
+            "far better", "prioritize", "choice", "upgrade"
+        ]
+    },
+    {
+        "title": "Choosing Between City Center and Suburb Living",
+        "titleArabic": "المفاضلة بين السكن في وسط المدينة والضواحي",
+        "setting": "Two colleagues discussing rental apartments over an afternoon coffee",
+        "settingArabic": "زميلان يناقشان شقق الإيجار أثناء تناول قهوة بعد الظهر",
+        "lines": [
+            {
+                "speaker": "Rami",
+                "text": "Have you evaluated the advantage of renting downtown versus moving to the green suburbs?",
+                "translation": "هل قيّمت ميزة الاستئجار في وسط المدينة مقابل الانتقال إلى الضواحي الخضراء؟"
+            },
+            {
+                "speaker": "Husam",
+                "text": "Downtown commuting is quicker, but suburban apartments are substantially wider and cleaner.",
+                "translation": "التنقل في وسط المدينة أسرع، لكن شقق الضواحي أوسع بكثير وأنظف."
+            },
+            {
+                "speaker": "Rami",
+                "text": "What is the primary drawback of suburban living in your honest opinion?",
+                "translation": "ما هو العيب الرئيسي للعيش في الضواحي في رأيك الصادق؟"
+            },
+            {
+                "speaker": "Husam",
+                "text": "The main drawback is that evening train travel is slower and less frequent.",
+                "translation": "العيب الرئيسي هو أن حركة قطارات المساء أبطأ وأقل تواتراً."
+            },
+            {
+                "speaker": "Rami",
+                "text": "Yet the air quality is much cleaner, and the tranquil environment feels considerably calmer.",
+                "translation": "ومع ذلك، فإن جودة الهواء أنظف بكثير، والبيئة الهادئة تبعث على السكينة بشكل كبير."
+            },
+            {
+                "speaker": "Husam",
+                "text": "Compared to the noisy city avenues, suburban nights are wonderfully peaceful and darker.",
+                "translation": "مقارنة بشوارع المدينة الصاخبة، فإن ليالي الضواحي هادئة ورائعة وأكثر عتمة وسكينة."
+            },
+            {
+                "speaker": "Rami",
+                "text": "My clear preference is tranquil countryside living rather than congested urban centers.",
+                "translation": "تفضيلي الواضح هو العيش الريفي الهادئ بدلاً من المراكز الحضرية المزدحمة."
+            },
+            {
+                "speaker": "Husam",
+                "text": "I agree. A tidier home with a garden provides countless benefits for long-term well-being.",
+                "translation": "أوافقك الرأي. منزل أكثر ترتيباً مع حديقة يوفر فوائد لا تحصى للراحة طويلة الأمد."
+            }
+        ],
+        "vocabularyUsed": [
+            "advantage", "versus", "quicker", "substantially", "wider",
+            "cleaner", "drawback", "slower", "considerably", "calmer",
+            "compared to", "darker", "preference", "rather", "tidier", "benefit"
+        ]
+    },
+    {
+        "title": "Deciding on Travel Routes and Transport",
+        "titleArabic": "تحديد مسارات السفر ووسائل النقل",
+        "setting": "Planning a weekend expedition at a travel agency counter",
+        "settingArabic": "التخطيط لرحلة استكشافية في عطلة نهاية الأسبوع عند كاونتر وكالة سفر",
+        "lines": [
+            {
+                "speaker": "Traveler",
+                "text": "Which alternative transport route is preferable for reaching the lakeside resort?",
+                "translation": "أي مسار نقل بديل هو الأفضل والأولى للوصول إلى المنتجع المطل على البحيرة؟"
+            },
+            {
+                "speaker": "Agent",
+                "text": "The scenic mountain pass is far more breathtaking, but the road is narrower and rougher.",
+                "translation": "الممر الجبلي الخلاب يحبس الأنفاس أكثر بكثير، لكن الطريق أضيق وأكثر وعورة."
+            },
+            {
+                "speaker": "Traveler",
+                "text": "What about the valley highway in comparison? Is the driving experience smoother?",
+                "translation": "ماذا عن طريق الوادي السريع في المقابل؟ هل تجربة القيادة أكثر سلاسة؟"
+            },
+            {
+                "speaker": "Agent",
+                "text": "Yes, the highway surface is noticeably smoother and the transit time is significantly quicker.",
+                "translation": "نعم، سطح الطريق السريع أكثر سلاسة بشكل ملحوظ وزمن العبور أسرع بفارق كبير."
+            },
+            {
+                "speaker": "Traveler",
+                "text": "However, is there any noticeable weather difference between the two routes today?",
+                "translation": "ومع ذلك، هل هناك أي فارق ملحوظ في الطقس بين المسارين اليوم؟"
+            },
+            {
+                "speaker": "Agent",
+                "text": "The mountain crest is cooler and wetter tonight, while the valley basin remains dry and warmer.",
+                "translation": "قمة الجبل أبرد وأكثر مطراً الليلة، بينما يظل حوض الوادي جافاً وأدفأ."
+            },
+            {
+                "speaker": "Traveler",
+                "text": "Safety is our priority, so we will choose the highway selection.",
+                "translation": "السلامة هي أولويتنا، لذا سنختار خيار الطريق السريع."
+            },
+            {
+                "speaker": "Agent",
+                "text": "A sensible decision! That route guarantees a safe, comfortable journey with minimal stress.",
+                "translation": "قرار حكيم! يضمن ذلك المسار رحلة آمنة ومريحة بأقل قدر من التوتر."
+            }
+        ],
+        "vocabularyUsed": [
+            "alternative", "preferable", "narrower", "rougher", "in comparison",
+            "smoother", "significantly", "quicker", "difference", "cooler",
+            "wetter", "warmer", "selection"
+        ]
+    }
+]
+
+paras_day16 = [
+    {
+        "title": "The Art of Evaluating Everyday Choices",
+        "titleArabic": "فن تقييم الخيارات والمفاضلة اليومية",
+        "kind": "analytical-essay",
+        "text": "Making informed decisions in modern life requires evaluating every available option through systematic comparison. When consumers assess competing products, they contrast essential qualities such as durability, craftsmanship, and expense. For example, handcrafted leather boots are noticeably heavier and costlier, but their structural longevity is vastly superior compared to cheaper synthetic alternatives. In contrast, lightweight athletic footwear is far softer and lighter, providing a smoother experience for daily running. By analyzing both the advantages and disadvantages of each selection, individuals prioritize their authentic needs rather than succumbing to impulsive marketing. Understanding that no single choice is flawless enables us to select solutions that offer substantially better long-term satisfaction.",
+        "translation": "يتطلب اتخاذ قرارات واعية في الحياة المعاصرة تقييم كل خيار متاح من خلال المقارنة المنهجية. فعندما يقيم المستهلكون المنتجات المتنافسة، يقارنون الصفات الأساسية مثل المتانة، وجودة الصنعة، والتكلفة. على سبيل المثال، تعتبر الأحذية الجلدية المصنوعة يدوياً أثقل وزناً وأعلى ثمناً، ولكن عمرها الهيكلي متفوق بشكل هائل مقارنة بالبدائل الاصطناعية الأرخص. في المقابل، تعتبر الأحذية الرياضية خفيفة الوزن أكثر نعومة وطراوة وأخف وزناً، مما يوفر تجربة أكثر سلاسة للجري اليومي. ومن خلال تحليل كل من المزايا والعيوب لكل اختيار، يرتب الأفراد أولويات احتياجاتهم الحقيقية بدلاً من الانجرار وراء التسويق المندفع. إن إدراك عدم وجود خيار واحد خالٍ من العيوب يمكّننا من انتقاء حلول توفر رضا طويل الأجل أفضل بكثير.",
+        "vocabularyUsed": [
+            "option", "contrast", "heavier", "superior", "compared to",
+            "cheaper", "alternative", "softer", "lighter", "smoother",
+            "advantage", "disadvantage", "selection", "prioritize", "choice", "rather"
+        ]
+    },
+    {
+        "title": "Contrasting Urban Living With Rural Serenity",
+        "titleArabic": "المقارنة بين الحياة الحضرية والسكينة الريفية",
+        "kind": "lifestyle-comparison",
+        "text": "There is a profound contrast between life in vibrant metropolitan cities and tranquil rural townships. Urban centers offer a significantly wider selection of cultural institutions, prestigious universities, and accelerated career paths. However, the prominent drawback of city life is persistent congestion, where roads are narrower and air is dirtier. In comparison, rural living offers cleaner air, fresher water, and a much calmer daily pace. Although country villages are considerably slower and public transit options are fewer, homes are substantially wider and afford a tidier personal environment. Each individual must weigh personal priorities: whether the energetic pulse of the metropolis is preferable to the peaceful, cooler breezes of the countryside.",
+        "translation": "هناك تباين عميق بين الحياة في المدن الكبرى النابضة بالحياة والبلدات الريفية الهادئة. توفر المراكز الحضرية تشكيلة أوسع بكثير من المؤسسات الثقافية والجامعات المرموقة والمسارات المهنية المتسارعة. ومع ذلك، فإن العيب البارز للحياة في المدينة هو الازدحام المستمر، حيث الطرق أضيق والهواء أكثر تلوثاً. وبالمقارنة، يوفر العيش في الريف هواءً أنظف وماءً أعذب وإيقاعاً يومياً أهدأ بكثير. ورغم أن القرى الريفية أبطأ بكثير وخيارات النقل العام فيها أقل، إلا أن المنازل أوسع إلى حد كبير وتتيح بيئة شخصية أكثر ترتيباً. ويجب على كل فرد أن يزن أولوياته الشخصية: ما إذا كان النبض الحيوي للمدينة الكبرى محبذاً أكثر من النسائم الهادئة والألطف برودة في الريف.",
+        "vocabularyUsed": [
+            "contrast", "significantly", "wider", "selection", "drawback",
+            "narrower", "in comparison", "cleaner", "calmer", "considerably",
+            "slower", "option", "substantially", "tidier", "preferable", "cooler"
+        ]
+    },
+    {
+        "title": "Smart Upgrades in Modern Technology",
+        "titleArabic": "الترقيات الذكية في عالم التكنولوجيا المعاصرة",
+        "kind": "technology-review",
+        "text": "When deciding whether to upgrade digital hardware, consumers must analyze concrete performance metrics rather than aesthetic trends. Modern engineering creates devices that are substantially lighter and deliver sharper graphical displays with tougher glass panels. Operating systems process instructions far quicker, ensuring that multitasking workflows feel noticeably smoother. However, a major disadvantage of rapid innovation is that older functional devices are unfairly downgraded or discarded prematurely. Evaluating the difference between genuine operational benefits and minor cosmetic changes helps buyers make informed investments. An informed user realizes that an existing computer with a clean software setup often performs far better than rushed, costly replacements.",
+        "translation": "عند اتخاذ قرار بشأن ترقية الأجهزة الرقمية، يجب على المستهلكين تحليل مقاييس الأداء الملموسة بدلاً من الانجراف وراء الصيحات الشكلية. فالهندسة الحديثة تبتكر أجهزة أخف وزناً بصورة جوهرية وتقدم شاشات رسومية أكثر حدة مع ألواح زجاجية أصلب وأمتن. وتعالج أنظمة التشغيل التعليمات بشكل أسرع بكثير، مما يضمن أن سير العمل متعدد المهام يبدو أكثر سلاسة بشكل ملحوظ. ومع ذلك، فإن العيب الرئيسي للابتكار السريع هو أن الأجهزة الوظيفية الأقدم يتم تخفيض كفاءتها بشكل مجحف أو التخلص منها قبل الأوان. إن تقييم الفارق بين الفوائد التشغيلية الحقيقية والتغييرات الشكلية الطفيفة يساعد المشترين على اتخاذ استثمارات واعية. ويدرك المستخدم الواعي أن الحاسوب الحالي ذا الإعداد البرمجي النظيف غالباً ما يعمل بشكل أفضل بمراحل من البدائل المتسرعة والمكلفة.",
+        "vocabularyUsed": [
+            "upgrade", "rather", "substantially", "lighter", "sharper",
+            "tougher", "quicker", "smoother", "disadvantage", "downgrade",
+            "difference", "benefit", "far better"
+        ]
+    }
+]

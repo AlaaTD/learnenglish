@@ -1,0 +1,1868 @@
+{
+  "day": 18,
+  "title": "Giving Advice",
+  "topic": "Problems and suggestions",
+  "description": "Give friends useful advice about their problems.",
+  "stage": "Everyday Communication",
+  "focus": "By the end of today, you can communicate clearly about problems and suggestions using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Should / Shouldn't",
+      "titleArabic": "استخدام Should و Shouldn't لتقديم النصائح والتوصيات وحل المشكلات",
+      "explanation": "We use the modal verb 'should' (and its negative 'should not' or 'shouldn't') to give advice, make recommendations, or suggest the most sensible course of action. Unlike ordinary verbs, modal verbs do NOT add '-s' for the third person singular (he/she/it should, NOT he shoulds), and they are followed directly by the base bare infinitive without 'to' (e.g. 'You should consult a doctor', NOT 'You should to consult'). For questions asking for advice, invert should and the subject: 'What should I do?' or 'Should we review the notes together?'. Related structures like 'ought to' (+ base verb) and 'had better' (+ base verb) carry similar advisory force.",
+      "explanationArabic": "نستخدم الفعل الناقص 'should' ونفيه 'shouldn't' لتقديم النصائح والتوجيهات واقتراح أفضل الحلول العملية. وتتميز الأفعال الناقصة بأنها لا تأخذ -s مع المفرد الغائب (نقول he should وليس he shoulds)، ويأتي بعدها دائماً الفعل الأساسي في المصدر المجرد بدون 'to' (مثل: 'You should consult a doctor' وليس 'to consult'). وفي صياغة أسئلة طلب النصيحة، نقدم should على الفاعل: 'What should I do؟' أو 'Should we start now؟'. وتشاركها في المعنى تراكيب مثل 'ought to' و 'had better' لتقديم النصح مع تأكيد الأهمية.",
+      "structures": [
+        {
+          "pattern": "Affirmative: Subject + should + Base Verb (bare infinitive)",
+          "explanation": "Gives positive advice recommending a beneficial course of action.",
+          "explanationArabic": "لتقديم نصيحة إيجابية بالقيام بفعل مفيد (بدون to بعد should)."
+        },
+        {
+          "pattern": "Negative: Subject + should not (shouldn't) + Base Verb",
+          "explanation": "Advises against doing something harmful, foolish, or disadvantageous.",
+          "explanationArabic": "للنهي عن فعل ضار أو غير حكيم."
+        },
+        {
+          "pattern": "Question: Should + Subject + Base Verb + ...?",
+          "explanation": "Asks for advice or inquires about the most prudent decision.",
+          "explanationArabic": "لطلب النصيحة أو الاستفسار عن القرار الأفضل."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "You should consult an experienced mentor before making a critical career decision.",
+          "translation": "ينبغي عليك استشارة مرشد ذي خبرة قبل اتخاذ قرار مهني حاسم.",
+          "usesVocabulary": [
+            "should",
+            "consult",
+            "critical"
+          ]
+        },
+        {
+          "sentence": "Learners shouldn't worry about minor mistakes because active practice is essential for progress.",
+          "translation": "لا ينبغي للمتعلمين القلق بشأن الأخطاء الطفيفة لأن الممارسة النشطة ضرورية للتقدم.",
+          "usesVocabulary": [
+            "shouldn't",
+            "essential"
+          ]
+        },
+        {
+          "sentence": "If you experience difficulty with irregular verbs, daily flashcard review is your best bet.",
+          "translation": "إذا واجهت صعوبة في الأفعال غير المنتظمة، فإن المراجعة اليومية بالبطاقات هي خيارك الأضمن.",
+          "usesVocabulary": [
+            "difficulty",
+            "best bet"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "You should to practice speaking every day.",
+          "right": "You should practice speaking every day.",
+          "note": "Never use 'to' after 'should'. Use the bare infinitive base verb directly.",
+          "noteArabic": "لا تضع 'to' بعد 'should' إطلاقاً؛ استخدم المصدر المجرد مباشرة."
+        },
+        {
+          "wrong": "He shoulds avoid staying up late.",
+          "right": "He should avoid staying up late.",
+          "note": "Modal verbs like 'should' never take an '-s' suffix, even with he, she, or it.",
+          "noteArabic": "الأفعال الناقصة مثل 'should' لا يضاف إليها -s أبداً حتى مع he أو she أو it."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "advise",
+      "pronunciation": "/ədˈvaɪz/",
+      "partOfSpeech": "verb",
+      "definition": "to offer suggestions about the best course of action to someone",
+      "example": "Doctors advise patients to maintain regular physical exercise and balanced diets.",
+      "verbForms": {
+        "v1": "advise",
+        "v2": "advised",
+        "v3": "advised"
+      },
+      "relatedForms": [
+        "adviser",
+        "advisory",
+        "advice"
+      ],
+      "collocations": [
+        "strongly advise",
+        "advise against",
+        "advise caution"
+      ],
+      "synonyms": [
+        "counsel",
+        "recommend",
+        "urge"
+      ],
+      "antonyms": [
+        "dissuade"
+      ],
+      "tags": [
+        "advice",
+        "guidance"
+      ],
+      "translation": "ينصح / يوجّه",
+      "exampleArabic": "ينصح الأطباء المرضى بالحفاظ على ممارسة الرياضة البدنية المنتظمة والوجبات المتوازنة."
+    },
+    {
+      "headword": "recommend",
+      "pronunciation": "/ˌrek.əˈmend/",
+      "partOfSpeech": "verb",
+      "definition": "to put forward someone or something with approval as being suitable for a purpose",
+      "example": "I highly recommend this structured 90-day English program to all aspiring learners.",
+      "verbForms": {
+        "v1": "recommend",
+        "v2": "recommended",
+        "v3": "recommended"
+      },
+      "relatedForms": [
+        "recommendation"
+      ],
+      "collocations": [
+        "highly recommend",
+        "recommend a book",
+        "warmly recommend"
+      ],
+      "synonyms": [
+        "endorse",
+        "suggest",
+        "advise"
+      ],
+      "antonyms": [
+        "reject"
+      ],
+      "tags": [
+        "advice",
+        "approval"
+      ],
+      "translation": "يوصي بـ / يزكي",
+      "exampleArabic": "أوصي بشدة بهذا البرنامج الإنجليزي المنظم لمدة 90 يوماً لجميع المتعلمين الطموحين."
+    },
+    {
+      "headword": "suggest",
+      "pronunciation": "/səˈdʒest/",
+      "partOfSpeech": "verb",
+      "definition": "to put forward an idea or plan for someone else's consideration",
+      "example": "The instructor suggested forming small study groups to practice daily conversations.",
+      "verbForms": {
+        "v1": "suggest",
+        "v2": "suggested",
+        "v3": "suggested"
+      },
+      "relatedForms": [
+        "suggestion",
+        "suggestive"
+      ],
+      "collocations": [
+        "suggest an idea",
+        "strongly suggest",
+        "tentatively suggest"
+      ],
+      "synonyms": [
+        "propose",
+        "recommend",
+        "advise"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "communication"
+      ],
+      "translation": "يقترح",
+      "exampleArabic": "اقترح المدرس تشكيل مجموعات دراسة صغيرة لممارسة المحادثات اليومية."
+    },
+    {
+      "headword": "propose",
+      "pronunciation": "/prəˈpəʊz/",
+      "partOfSpeech": "verb",
+      "definition": "to put forward a plan or suggestion for consideration by others",
+      "example": "The committee proposed a sensible budget restructuring to eliminate financial waste.",
+      "verbForms": {
+        "v1": "propose",
+        "v2": "proposed",
+        "v3": "proposed"
+      },
+      "relatedForms": [
+        "proposal",
+        "proposition"
+      ],
+      "collocations": [
+        "propose a solution",
+        "propose changes",
+        "formally propose"
+      ],
+      "synonyms": [
+        "suggest",
+        "submit",
+        "advance"
+      ],
+      "antonyms": [
+        "withdraw"
+      ],
+      "tags": [
+        "action",
+        "planning"
+      ],
+      "translation": "يقترح رسمياً / يطرح خطة",
+      "exampleArabic": "اقترحت اللجنة إعادة هيكلة معقولة للميزانية للقضاء على الهدر المالي."
+    },
+    {
+      "headword": "counsel",
+      "pronunciation": "/ˈkaʊn.səl/",
+      "partOfSpeech": "verb",
+      "definition": "to give advice or guidance to someone, especially professionally or formally",
+      "example": "Experienced mentors counsel university graduates regarding their career options.",
+      "verbForms": {
+        "v1": "counsel",
+        "v2": "counselled",
+        "v3": "counselled"
+      },
+      "relatedForms": [
+        "counselor",
+        "counseling"
+      ],
+      "collocations": [
+        "counsel clients",
+        "seek counsel",
+        "wise counsel"
+      ],
+      "synonyms": [
+        "advise",
+        "guide",
+        "direct"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "guidance"
+      ],
+      "translation": "يقدم المشورة / يرشد مهنياً",
+      "exampleArabic": "يقدم المرشدون ذوو الخبرة المشورة لخريجي الجامعات بشأن خياراتهم المهنية."
+    },
+    {
+      "headword": "urge",
+      "pronunciation": "/ɜːdʒ/",
+      "partOfSpeech": "verb",
+      "definition": "to encourage someone strongly and earnestly to do something",
+      "example": "Health experts urge citizens to drink sufficient water during summer heatwaves.",
+      "verbForms": {
+        "v1": "urge",
+        "v2": "urged",
+        "v3": "urged"
+      },
+      "relatedForms": [
+        "urgent",
+        "urgency"
+      ],
+      "collocations": [
+        "strongly urge",
+        "urge caution",
+        "urge compliance"
+      ],
+      "synonyms": [
+        "exhort",
+        "encourage",
+        "press"
+      ],
+      "antonyms": [
+        "discourage"
+      ],
+      "tags": [
+        "advice",
+        "intensity"
+      ],
+      "translation": "يحثّ / يلحّ في النصح",
+      "exampleArabic": "يحث خبراء الصحة المواطنين على شرب كميات كافية من الماء أثناء موجات الحر الصيفية."
+    },
+    {
+      "headword": "warn",
+      "pronunciation": "/wɔːn/",
+      "partOfSpeech": "verb",
+      "definition": "to inform someone in advance of a possible danger, problem, or unpleasant situation",
+      "example": "Meteorologists warned coastal residents about incoming severe gales.",
+      "verbForms": {
+        "v1": "warn",
+        "v2": "warned",
+        "v3": "warned"
+      },
+      "relatedForms": [
+        "warning"
+      ],
+      "collocations": [
+        "warn about",
+        "warn against",
+        "sternly warn"
+      ],
+      "synonyms": [
+        "caution",
+        "alert",
+        "forewarn"
+      ],
+      "antonyms": [],
+      "tags": [
+        "safety",
+        "communication"
+      ],
+      "translation": "يحذّر / ينبّه من خطر",
+      "exampleArabic": "حذر خبراء الأرصاد الجوية سكان الساحل من عواصف شديدة قادمة."
+    },
+    {
+      "headword": "caution",
+      "pronunciation": "/ˈkɔː.ʃən/",
+      "partOfSpeech": "verb",
+      "definition": "to warn or advise someone with care against possible danger or rash action",
+      "example": "The instructor cautioned students against relying purely on automatic translators.",
+      "verbForms": {
+        "v1": "caution",
+        "v2": "cautioned",
+        "v3": "cautioned"
+      },
+      "relatedForms": [
+        "cautious",
+        "cautiously"
+      ],
+      "collocations": [
+        "urge caution",
+        "exercise caution",
+        "proceed with caution"
+      ],
+      "synonyms": [
+        "warn",
+        "admonish",
+        "alert"
+      ],
+      "antonyms": [],
+      "tags": [
+        "safety",
+        "advice"
+      ],
+      "translation": "يحذر / يوجه بالحذر",
+      "exampleArabic": "حذر المدرس الطلاب من الاعتماد فقط على المترجمات الآلية."
+    },
+    {
+      "headword": "discourage",
+      "pronunciation": "/dɪˈskʌr.ɪdʒ/",
+      "partOfSpeech": "verb",
+      "definition": "to cause someone to lose confidence or enthusiasm, or to dissuade from a course of action",
+      "example": "Teachers discourage students from staying up all night cramming before exams.",
+      "verbForms": {
+        "v1": "discourage",
+        "v2": "discouraged",
+        "v3": "discouraged"
+      },
+      "relatedForms": [
+        "discouragement"
+      ],
+      "collocations": [
+        "discourage from",
+        "actively discourage"
+      ],
+      "synonyms": [
+        "dissuade",
+        "deter",
+        "prevent"
+      ],
+      "antonyms": [
+        "encourage"
+      ],
+      "tags": [
+        "advice",
+        "prevention"
+      ],
+      "translation": "يثبط / ينهى عن / يحبط العزيمة",
+      "exampleArabic": "يثبط المعلمون الطلاب عن السهر طوال الليل للحشو قبل الامتحانات."
+    },
+    {
+      "headword": "encourage",
+      "pronunciation": "/ɪnˈkʌr.ɪdʒ/",
+      "partOfSpeech": "verb",
+      "definition": "to give support, confidence, or hope to someone to do something",
+      "example": "Our mentor encouraged us to speak English aloud despite grammatical errors.",
+      "verbForms": {
+        "v1": "encourage",
+        "v2": "encouraged",
+        "v3": "encouraged"
+      },
+      "relatedForms": [
+        "encouragement",
+        "encouraging"
+      ],
+      "collocations": [
+        "warmly encourage",
+        "encourage participation",
+        "greatly encourage"
+      ],
+      "synonyms": [
+        "inspire",
+        "motivate",
+        "heartened"
+      ],
+      "antonyms": [
+        "discourage"
+      ],
+      "tags": [
+        "motivation",
+        "support"
+      ],
+      "translation": "يشجع / يحفز",
+      "exampleArabic": "شجعنا مرشدنا على التحدث بالإنجليزية بصوت مسموع على الرغم من الأخطاء النحوية."
+    },
+    {
+      "headword": "prevent",
+      "pronunciation": "/prɪˈvent/",
+      "partOfSpeech": "verb",
+      "definition": "to keep something from happening or arising; stop someone from doing something",
+      "example": "Taking brief study breaks prevents mental fatigue and sustains concentration.",
+      "verbForms": {
+        "v1": "prevent",
+        "v2": "prevented",
+        "v3": "prevented"
+      },
+      "relatedForms": [
+        "prevention",
+        "preventative"
+      ],
+      "collocations": [
+        "prevent accidents",
+        "prevent illness",
+        "prevent mistakes"
+      ],
+      "synonyms": [
+        "avert",
+        "stop",
+        "halt"
+      ],
+      "antonyms": [
+        "cause",
+        "allow"
+      ],
+      "tags": [
+        "safety",
+        "action"
+      ],
+      "translation": "يمنع / يتدارك / يقي من",
+      "exampleArabic": "أخذ فترات استراحة قصيرة يمنع الإرهاق الذهني ويحافظ على التركيز."
+    },
+    {
+      "headword": "avoid",
+      "pronunciation": "/əˈvɔɪd/",
+      "partOfSpeech": "verb",
+      "definition": "to keep away from or stop oneself from doing something undesirable",
+      "example": "Careful learners avoid translating word-for-word from their native language.",
+      "verbForms": {
+        "v1": "avoid",
+        "v2": "avoided",
+        "v3": "avoided"
+      },
+      "relatedForms": [
+        "avoidable",
+        "avoidance"
+      ],
+      "collocations": [
+        "avoid mistakes",
+        "avoid conflict",
+        "carefully avoid"
+      ],
+      "synonyms": [
+        "steer clear of",
+        "shun",
+        "evade"
+      ],
+      "antonyms": [
+        "confront",
+        "seek"
+      ],
+      "tags": [
+        "behavior",
+        "wisdom"
+      ],
+      "translation": "يتجنب / يتفادى",
+      "exampleArabic": "يتفادى المتعلمون الحريصون الترجمة الحرفية كلمة بكلمة من لغتهم الأم."
+    },
+    {
+      "headword": "consult",
+      "pronunciation": "/kənˈsʌlt/",
+      "partOfSpeech": "verb",
+      "definition": "to seek information or advice from someone, especially an expert or professional",
+      "example": "You should consult a reputable medical specialist if symptoms persist.",
+      "verbForms": {
+        "v1": "consult",
+        "v2": "consulted",
+        "v3": "consulted"
+      },
+      "relatedForms": [
+        "consultant",
+        "consultation"
+      ],
+      "collocations": [
+        "consult an expert",
+        "consult a doctor",
+        "consult a dictionary"
+      ],
+      "synonyms": [
+        "confer with",
+        "ask",
+        "turn to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "action",
+        "guidance"
+      ],
+      "translation": "يستشير / يراجع مختصاً",
+      "exampleArabic": "ينبغي عليك استشارة أخصائي طبي موثوق إذا استمرت الأعراض."
+    },
+    {
+      "headword": "guidance",
+      "pronunciation": "/ˈɡaɪ.dəns/",
+      "partOfSpeech": "noun",
+      "definition": "advice or information aimed at resolving a problem or difficulty",
+      "example": "New language students thrive under the patient guidance of expert tutors.",
+      "relatedForms": [
+        "guide"
+      ],
+      "collocations": [
+        "seek guidance",
+        "provide guidance",
+        "expert guidance"
+      ],
+      "synonyms": [
+        "direction",
+        "counsel",
+        "advice"
+      ],
+      "antonyms": [],
+      "tags": [
+        "support",
+        "learning"
+      ],
+      "translation": "توجيه / إرشاد",
+      "exampleArabic": "يزدهر طلاب اللغة الجدد في ظل التوجيه الصبور من المعلمين الخبراء."
+    },
+    {
+      "headword": "recommendation",
+      "pronunciation": "/ˌrek.ə.menˈdeɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a suggestion or proposal as to the best course of action",
+      "example": "The advisory board submitted ten practical recommendations to management.",
+      "relatedForms": [
+        "recommend"
+      ],
+      "collocations": [
+        "make a recommendation",
+        "follow a recommendation",
+        "strong recommendation"
+      ],
+      "synonyms": [
+        "suggestion",
+        "proposal",
+        "endorsement"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "work"
+      ],
+      "translation": "توصية / مقترح رسمي",
+      "exampleArabic": "قدم المجلس الاستشاري عشر توصيات عملية للإدارة."
+    },
+    {
+      "headword": "suggestion",
+      "pronunciation": "/səˈdʒes.tʃən/",
+      "partOfSpeech": "noun",
+      "definition": "an idea or plan put forward for consideration",
+      "example": "May I make a small suggestion regarding your vocabulary study schedule?",
+      "relatedForms": [
+        "suggest"
+      ],
+      "collocations": [
+        "helpful suggestion",
+        "make a suggestion",
+        "welcome suggestions"
+      ],
+      "synonyms": [
+        "idea",
+        "proposal",
+        "recommendation"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "communication"
+      ],
+      "translation": "اقتراح / فكرة مطروحة",
+      "exampleArabic": "هل لي أن أقدم اقتراحاً بسيطاً بشأن جدول دراستك للمفردات؟"
+    },
+    {
+      "headword": "advice",
+      "pronunciation": "/ədˈvaɪs/",
+      "partOfSpeech": "noun",
+      "definition": "guidance or recommendations offered with regard to prudent future action",
+      "example": "Her grandfather offered wise advice about patience and persistent hard work.",
+      "relatedForms": [
+        "advise"
+      ],
+      "collocations": [
+        "piece of advice",
+        "take advice",
+        "give advice"
+      ],
+      "synonyms": [
+        "guidance",
+        "counsel",
+        "recommendations"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "wisdom"
+      ],
+      "translation": "نصيحة / مشورة (اسم غير معدود)",
+      "exampleArabic": "قدم جدها نصيحة حكيمة حول الصبر والعمل الجاد المستمر."
+    },
+    {
+      "headword": "tip",
+      "pronunciation": "/tɪp/",
+      "partOfSpeech": "noun",
+      "definition": "a small, practical piece of advice or information",
+      "example": "Here is a handy tip: record your voice to evaluate your spoken English.",
+      "relatedForms": [],
+      "collocations": [
+        "handy tip",
+        "useful tip",
+        "top tips"
+      ],
+      "synonyms": [
+        "hint",
+        "pointer",
+        "suggestion"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "learning"
+      ],
+      "translation": "نصيحة عملية سريعة / تلميحة مفيدة",
+      "exampleArabic": "إليك نصيحة عملية مفيدة: سجّل صوتك لتقييم نطقك باللغة الإنجليزية."
+    },
+    {
+      "headword": "hint",
+      "pronunciation": "/hɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "a slight or indirect indication or suggestion",
+      "example": "The crossword puzzle clue provided a subtle hint toward the answer.",
+      "verbForms": {
+        "v1": "hint",
+        "v2": "hinted",
+        "v3": "hinted"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "helpful hint",
+        "drop a hint",
+        "take a hint"
+      ],
+      "synonyms": [
+        "clue",
+        "inkling",
+        "suggestion"
+      ],
+      "antonyms": [],
+      "tags": [
+        "advice",
+        "clue"
+      ],
+      "translation": "تلميح / إشارة خفية",
+      "exampleArabic": "قدم خيط لغز الكلمات المتقاطعة تلميحاً ذكياً نحو الإجابة."
+    },
+    {
+      "headword": "warning",
+      "pronunciation": "/ˈwɔː.nɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "a statement or event that indicates a possible or impending danger, problem, or consequence",
+      "example": "The highway authority posted clear warnings regarding slippery icy roads.",
+      "relatedForms": [
+        "warn"
+      ],
+      "collocations": [
+        "give a warning",
+        "early warning",
+        "heed a warning"
+      ],
+      "synonyms": [
+        "caution",
+        "alert",
+        "notice"
+      ],
+      "antonyms": [],
+      "tags": [
+        "safety",
+        "communication"
+      ],
+      "translation": "تحذير / إنذار",
+      "exampleArabic": "نشرت هيئة الطرق السريعة تحذيرات واضحة بشأن الطرق الجليدية الزلقة."
+    },
+    {
+      "headword": "dilemma",
+      "pronunciation": "/dɪˈlem.ə/",
+      "partOfSpeech": "noun",
+      "definition": "a situation in which a difficult choice has to be made between two alternatives",
+      "example": "He faced an ethical dilemma when choosing between career advancement and loyalty.",
+      "relatedForms": [],
+      "collocations": [
+        "moral dilemma",
+        "face a dilemma",
+        "difficult dilemma"
+      ],
+      "synonyms": [
+        "quandary",
+        "predicament",
+        "puzzle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "problem",
+        "mind"
+      ],
+      "translation": "معضلة / مأزق بين خيارين صعبين",
+      "exampleArabic": "واجه معضلة أخلاقية عند الاختيار بين التقدم المهني والوفاء بالعهد."
+    },
+    {
+      "headword": "obstacle",
+      "pronunciation": "/ˈɒb.stə.kəl/",
+      "partOfSpeech": "noun",
+      "definition": "a thing that blocks one's way or prevents or hinders progress",
+      "example": "Overcoming shyness is a major obstacle for many adult language learners.",
+      "relatedForms": [],
+      "collocations": [
+        "overcome an obstacle",
+        "major obstacle",
+        "face obstacles"
+      ],
+      "synonyms": [
+        "barrier",
+        "hurdle",
+        "impediment"
+      ],
+      "antonyms": [
+        "aid",
+        "advantage"
+      ],
+      "tags": [
+        "challenge",
+        "life"
+      ],
+      "translation": "عقبة / عائق",
+      "exampleArabic": "التغلب على الخجل عقبة رئيسية للعديد من متعلمي اللغة الكبار."
+    },
+    {
+      "headword": "difficulty",
+      "pronunciation": "/ˈdɪf.ɪ.kəl.ti/",
+      "partOfSpeech": "noun",
+      "definition": "a situation that is difficult; a state of hardship or problem",
+      "example": "She resolved her technical difficulties by consulting the online support guide.",
+      "relatedForms": [
+        "difficult"
+      ],
+      "collocations": [
+        "experience difficulty",
+        "great difficulty",
+        "financial difficulty"
+      ],
+      "synonyms": [
+        "problem",
+        "trouble",
+        "complication"
+      ],
+      "antonyms": [
+        "ease",
+        "simplicity"
+      ],
+      "tags": [
+        "challenge",
+        "problem"
+      ],
+      "translation": "صعوبة / مشكلة",
+      "exampleArabic": "حلت صعوباتها الفنية من خلال مراجعة دليل الدعم عبر الإنترنت."
+    },
+    {
+      "headword": "crisis",
+      "pronunciation": "/ˈkraɪ.sɪs/",
+      "partOfSpeech": "noun",
+      "definition": "a time of intense difficulty, trouble, or danger requiring urgent decisions",
+      "example": "Calm, decisive leadership helped steer the hospital through the healthcare crisis.",
+      "relatedForms": [
+        "crises"
+      ],
+      "collocations": [
+        "resolve a crisis",
+        "economic crisis",
+        "in times of crisis"
+      ],
+      "synonyms": [
+        "emergency",
+        "catastrophe",
+        "critical point"
+      ],
+      "antonyms": [
+        "peace",
+        "stability"
+      ],
+      "tags": [
+        "problem",
+        "emergency"
+      ],
+      "translation": "أزمة / حالة طارئة وحرجة",
+      "exampleArabic": "ساعدت القيادة الهادئة والحاسمة في توجيه المستشفى خلال أزمة الرعاية الصحية."
+    },
+    {
+      "headword": "trouble",
+      "pronunciation": "/ˈtrʌb.əl/",
+      "partOfSpeech": "noun",
+      "definition": "difficulty or problems; a state of distress or disturbance",
+      "example": "If you have trouble understanding this rule, please raise your hand.",
+      "verbForms": {
+        "v1": "trouble",
+        "v2": "troubled",
+        "v3": "troubled"
+      },
+      "relatedForms": [
+        "troublesome"
+      ],
+      "collocations": [
+        "in trouble",
+        "have trouble",
+        "get into trouble"
+      ],
+      "synonyms": [
+        "difficulty",
+        "hardship",
+        "distress"
+      ],
+      "antonyms": [
+        "peace",
+        "ease"
+      ],
+      "tags": [
+        "problem",
+        "life"
+      ],
+      "translation": "متاعب / مشكلة / عناء",
+      "exampleArabic": "إذا واجهت أي صعوبة أو عناء في فهم هذه القاعدة، يرجى رفع يدك."
+    },
+    {
+      "headword": "solution",
+      "pronunciation": "/səˈluː.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a means of solving a problem or dealing with a difficult situation",
+      "example": "Consistent daily speaking practice is the most effective solution for hesitation.",
+      "relatedForms": [
+        "solve"
+      ],
+      "collocations": [
+        "find a solution",
+        "practical solution",
+        "ideal solution"
+      ],
+      "synonyms": [
+        "answer",
+        "remedy",
+        "resolution"
+      ],
+      "antonyms": [
+        "problem"
+      ],
+      "tags": [
+        "success",
+        "problem"
+      ],
+      "translation": "حلّ / مخرج من مشكلة",
+      "exampleArabic": "ممارسة التحدث اليومية المنتظمة هي الحل الأكثر فاعلية للتردد."
+    },
+    {
+      "headword": "resolution",
+      "pronunciation": "/ˌrez.əˈluː.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a firm decision to do or not to do something, or the action of solving a problem",
+      "example": "Negotiators worked patiently toward a peaceful resolution of the dispute.",
+      "relatedForms": [
+        "resolve"
+      ],
+      "collocations": [
+        "New Year's resolution",
+        "dispute resolution",
+        "peaceful resolution"
+      ],
+      "synonyms": [
+        "decision",
+        "settlement",
+        "determination"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decision",
+        "conflict"
+      ],
+      "translation": "حلّ / قرار عزم وحسم",
+      "exampleArabic": "عمل المفاوضون بصبر نحو حل سلمي للنزاع."
+    },
+    {
+      "headword": "remedy",
+      "pronunciation": "/ˈrem.ə.di/",
+      "partOfSpeech": "noun",
+      "definition": "a medicine, treatment, or solution that cures or relieves a disease or difficulty",
+      "example": "A warm cup of herbal tea with honey is a time-tested remedy for throat irritation.",
+      "verbForms": {
+        "v1": "remedy",
+        "v2": "remedied",
+        "v3": "remedied"
+      },
+      "relatedForms": [
+        "remedial"
+      ],
+      "collocations": [
+        "natural remedy",
+        "home remedy",
+        "effective remedy"
+      ],
+      "synonyms": [
+        "cure",
+        "treatment",
+        "antidote"
+      ],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "solution"
+      ],
+      "translation": "علاج / دواء شافٍ / تدارك لمشكلة",
+      "exampleArabic": "كوب دافئ من شاي الأعشاب بالعسل علاج مجرب لتهيج الحلق."
+    },
+    {
+      "headword": "sensible",
+      "pronunciation": "/ˈsen.sə.bəl/",
+      "partOfSpeech": "adjective",
+      "definition": "chosen in accordance with wisdom or prudence; practical and reasonable",
+      "example": "Setting realistic daily study goals is a sensible approach to learning English.",
+      "relatedForms": [
+        "sensibly"
+      ],
+      "collocations": [
+        "sensible decision",
+        "sensible advice",
+        "sensible approach"
+      ],
+      "synonyms": [
+        "prudent",
+        "reasonable",
+        "judicious"
+      ],
+      "antonyms": [
+        "foolish",
+        "senseless"
+      ],
+      "tags": [
+        "wisdom",
+        "character"
+      ],
+      "translation": "عقلاني / حصيف / حكيم",
+      "exampleArabic": "تحديد أهداف دراسية يومية واقعية هو نهج عقلاني وحصيف لتعلم الإنجليزية."
+    },
+    {
+      "headword": "wise",
+      "pronunciation": "/waɪz/",
+      "partOfSpeech": "adjective",
+      "definition": "having or showing experience, knowledge, and good judgement",
+      "example": "It is wise to review yesterday's vocabulary notes before starting a new lesson.",
+      "relatedForms": [
+        "wisely",
+        "wisdom"
+      ],
+      "collocations": [
+        "wise decision",
+        "wise choice",
+        "wise words"
+      ],
+      "synonyms": [
+        "sagacious",
+        "prudent",
+        "discerning"
+      ],
+      "antonyms": [
+        "foolish"
+      ],
+      "tags": [
+        "wisdom",
+        "character"
+      ],
+      "translation": "حكيم / ذو بصيرة",
+      "exampleArabic": "من الحكمة مراجعة ملاحظات مفردات الأمس قبل بدء درس جديد."
+    },
+    {
+      "headword": "foolish",
+      "pronunciation": "/ˈfuː.lɪʃ/",
+      "partOfSpeech": "adjective",
+      "definition": "lacking good sense or judgement; unwise or absurd",
+      "example": "It is foolish to expect complete fluency without active conversational practice.",
+      "relatedForms": [
+        "fool",
+        "foolishly"
+      ],
+      "collocations": [
+        "foolish mistake",
+        "foolish idea",
+        "act foolish"
+      ],
+      "synonyms": [
+        "silly",
+        "senseless",
+        "irrational"
+      ],
+      "antonyms": [
+        "wise",
+        "sensible"
+      ],
+      "tags": [
+        "behavior",
+        "character"
+      ],
+      "translation": "أحمق / غير حكيم / طائش",
+      "exampleArabic": "من الحماقة توقع الطلاقة الكاملة دون ممارسة المحادثة النشطة."
+    },
+    {
+      "headword": "careless",
+      "pronunciation": "/ˈkeə.ləs/",
+      "partOfSpeech": "adjective",
+      "definition": "not giving sufficient attention or thought to avoiding harm or errors",
+      "example": "A careless spelling error on a resume can create an unfavorable impression.",
+      "relatedForms": [
+        "carelessly",
+        "carelessness"
+      ],
+      "collocations": [
+        "careless mistake",
+        "careless driving",
+        "careless attitude"
+      ],
+      "synonyms": [
+        "negligent",
+        "heedless",
+        "inattentive"
+      ],
+      "antonyms": [
+        "careful",
+        "diligent"
+      ],
+      "tags": [
+        "behavior",
+        "character"
+      ],
+      "translation": "مهمل / غير مبالٍ / غافل",
+      "exampleArabic": "يمكن لخطأ إملائي ناجم عن الإهمال في السيرة الذاتية أن يترك انطباعاً غير مواتٍ."
+    },
+    {
+      "headword": "careful",
+      "pronunciation": "/ˈkeə.fəl/",
+      "partOfSpeech": "adjective",
+      "definition": "making sure of avoiding potential danger, mishap, or harm; attentive",
+      "example": "Be careful when reviewing irregular verb forms to ensure complete accuracy.",
+      "relatedForms": [
+        "carefully",
+        "care"
+      ],
+      "collocations": [
+        "careful consideration",
+        "be careful",
+        "careful examination"
+      ],
+      "synonyms": [
+        "attentive",
+        "cautious",
+        "meticulous"
+      ],
+      "antonyms": [
+        "careless",
+        "reckless"
+      ],
+      "tags": [
+        "behavior",
+        "safety"
+      ],
+      "translation": "حريص / متيقظ / دقيق",
+      "exampleArabic": "كن حريصاً عند مراجعة تصريفات الأفعال غير المنتظمة لضمان الدقة التامة."
+    },
+    {
+      "headword": "reckless",
+      "pronunciation": "/ˈrek.ləs/",
+      "partOfSpeech": "adjective",
+      "definition": "heedless of danger or the consequences of one's actions; rash",
+      "example": "Reckless driving during icy winter storms endangers everyone on the road.",
+      "relatedForms": [
+        "recklessly",
+        "recklessness"
+      ],
+      "collocations": [
+        "reckless driving",
+        "reckless behavior",
+        "reckless disregard"
+      ],
+      "synonyms": [
+        "rash",
+        "irresponsible",
+        "careless"
+      ],
+      "antonyms": [
+        "cautious",
+        "careful"
+      ],
+      "tags": [
+        "danger",
+        "behavior"
+      ],
+      "translation": "متهور / طائش وخالٍ من الحذر",
+      "exampleArabic": "القيادة المتهورة أثناء العواصف الشتوية الجليدية تعرض حياة الجميع على الطريق للخطر."
+    },
+    {
+      "headword": "beneficial",
+      "pronunciation": "/ˌben.ɪˈfɪʃ.əl/",
+      "partOfSpeech": "adjective",
+      "definition": "resulting in good; favorable or advantageous",
+      "example": "Daily reading of authentic articles is immensely beneficial for vocabulary acquisition.",
+      "relatedForms": [
+        "benefit"
+      ],
+      "collocations": [
+        "beneficial effect",
+        "mutually beneficial",
+        "highly beneficial"
+      ],
+      "synonyms": [
+        "advantageous",
+        "valuable",
+        "helpful"
+      ],
+      "antonyms": [
+        "harmful",
+        "detrimental"
+      ],
+      "tags": [
+        "value",
+        "quality"
+      ],
+      "translation": "نافع / مفيد / ذو جدوى",
+      "exampleArabic": "القراءة اليومية للمقالات الأصيلة مفيدة للغاية لاكتساب المفردات."
+    },
+    {
+      "headword": "harmful",
+      "pronunciation": "/ˈhɑːm.fəl/",
+      "partOfSpeech": "adjective",
+      "definition": "causing or likely to cause harm, hurt, or damage",
+      "example": "Excessive sugar consumption is harmful to long-term physical health.",
+      "relatedForms": [
+        "harm",
+        "harmfully"
+      ],
+      "collocations": [
+        "harmful effects",
+        "harmful chemicals",
+        "potentially harmful"
+      ],
+      "synonyms": [
+        "detrimental",
+        "damaging",
+        "injurious"
+      ],
+      "antonyms": [
+        "beneficial",
+        "harmless"
+      ],
+      "tags": [
+        "health",
+        "danger"
+      ],
+      "translation": "ضارّ / مؤذٍ",
+      "exampleArabic": "الاستهلاك المفرط للسكر ضار بالصحة البدنية على المدى الطويل."
+    },
+    {
+      "headword": "advisable",
+      "pronunciation": "/ədˈvaɪ.zə.bəl/",
+      "partOfSpeech": "adjective",
+      "definition": "to be recommended; sensible and wise to do",
+      "example": "It is advisable to back up all computer files before initiating software updates.",
+      "relatedForms": [
+        "advise"
+      ],
+      "collocations": [
+        "highly advisable",
+        "advisable to check"
+      ],
+      "synonyms": [
+        "prudent",
+        "recommended",
+        "judicious"
+      ],
+      "antonyms": [
+        "inadvisable"
+      ],
+      "tags": [
+        "advice",
+        "wisdom"
+      ],
+      "translation": "مستحسن / من المنصوح به",
+      "exampleArabic": "من المستحسن عمل نسخة احتياطية لجميع ملفات الحاسوب قبل بدء تحديثات البرامج."
+    },
+    {
+      "headword": "crucial",
+      "pronunciation": "/ˈkruː.ʃəl/",
+      "partOfSpeech": "adjective",
+      "definition": "decisive or critical, especially in the success or failure of something",
+      "example": "Regular oral practice is crucial for achieving spontaneous English speech.",
+      "relatedForms": [
+        "crucially"
+      ],
+      "collocations": [
+        "crucial factor",
+        "crucial role",
+        "crucial decision"
+      ],
+      "synonyms": [
+        "vital",
+        "essential",
+        "critical"
+      ],
+      "antonyms": [
+        "insignificant",
+        "minor"
+      ],
+      "tags": [
+        "importance",
+        "necessity"
+      ],
+      "translation": "حاسم / مصيري / بالغ الأهمية",
+      "exampleArabic": "الممارسة الشفهية المنتظمة حاسمة وبالغة الأهمية لتحقيق التحدث بالإنجليزية بتلقائية."
+    },
+    {
+      "headword": "critical",
+      "pronunciation": "/ˈkrɪt.ɪ.kəl/",
+      "partOfSpeech": "adjective",
+      "definition": "having the potential to become disastrous; at a point of crisis; extremely important",
+      "example": "Prompt medical attention is critical during the first hour of emergency trauma.",
+      "relatedForms": [
+        "critically",
+        "criticism"
+      ],
+      "collocations": [
+        "critical thinking",
+        "critical condition",
+        "critical juncture"
+      ],
+      "synonyms": [
+        "vital",
+        "crucial",
+        "essential"
+      ],
+      "antonyms": [
+        "unimportant"
+      ],
+      "tags": [
+        "importance",
+        "emergency"
+      ],
+      "translation": "حرج / حاسم الأهمية",
+      "exampleArabic": "الرعاية الطبية الفورية حرجة وبالغة الأهمية خلال الساعة الأولى من الصدمة الطارئة."
+    },
+    {
+      "headword": "essential",
+      "pronunciation": "/ɪˈsen.ʃəl/",
+      "partOfSpeech": "adjective",
+      "definition": "absolutely necessary; extremely important and fundamental",
+      "example": "A strong foundation in core vocabulary is essential for reading comprehension.",
+      "relatedForms": [
+        "essentially"
+      ],
+      "collocations": [
+        "essential component",
+        "essential requirement",
+        "essential tool"
+      ],
+      "synonyms": [
+        "indispensable",
+        "vital",
+        "necessary"
+      ],
+      "antonyms": [
+        "optional",
+        "dispensable"
+      ],
+      "tags": [
+        "importance",
+        "necessity"
+      ],
+      "translation": "أساسي / جوهري لا غنى عنه",
+      "exampleArabic": "الأساس القوي في المفردات المحورية أمر جوهري ولا غنى عنه للفهم القرائي."
+    },
+    {
+      "headword": "practical",
+      "pronunciation": "/ˈpræk.tɪ.kəl/",
+      "partOfSpeech": "adjective",
+      "definition": "of or concerned with the actual doing or use of something rather than with theory",
+      "example": "Roleplaying real dialogues offers practical training for overseas travel.",
+      "relatedForms": [
+        "practically",
+        "practice"
+      ],
+      "collocations": [
+        "practical advice",
+        "practical experience",
+        "practical solution"
+      ],
+      "synonyms": [
+        "pragmatic",
+        "applied",
+        "functional"
+      ],
+      "antonyms": [
+        "theoretical",
+        "impractical"
+      ],
+      "tags": [
+        "action",
+        "learning"
+      ],
+      "translation": "عملي / تطبيقي واقعي",
+      "exampleArabic": "يقدم تمثيل الأدوار في الحوارات الواقعية تدريباً عملياً للسفر إلى الخارج."
+    },
+    {
+      "headword": "realistic",
+      "pronunciation": "/ˌrɪəˈlɪs.tɪk/",
+      "partOfSpeech": "adjective",
+      "definition": "having or showing a sensible and practical idea of what can be achieved",
+      "example": "Set realistic milestones rather than expecting bilingual perfection overnight.",
+      "relatedForms": [
+        "realistically",
+        "realism"
+      ],
+      "collocations": [
+        "realistic goal",
+        "realistic view",
+        "realistic expectations"
+      ],
+      "synonyms": [
+        "pragmatic",
+        "down-to-earth",
+        "feasible"
+      ],
+      "antonyms": [
+        "unrealistic",
+        "idealistic"
+      ],
+      "tags": [
+        "mind",
+        "wisdom"
+      ],
+      "translation": "واقعي / معقول التوقعات",
+      "exampleArabic": "حدد أهدافاً مرحلية واقعية بدلاً من توقع الكمال اللغوي بين عشية وضحاها."
+    },
+    {
+      "headword": "effective",
+      "pronunciation": "/ɪˈfek.tɪv/",
+      "partOfSpeech": "adjective",
+      "definition": "successful in producing a desired or intended result",
+      "example": "Spaced repetition flashcards are an effective method for long-term memorization.",
+      "relatedForms": [
+        "effectively",
+        "effectiveness"
+      ],
+      "collocations": [
+        "effective method",
+        "highly effective",
+        "cost effective"
+      ],
+      "synonyms": [
+        "successful",
+        "efficacious",
+        "productive"
+      ],
+      "antonyms": [
+        "ineffective",
+        "useless"
+      ],
+      "tags": [
+        "success",
+        "quality"
+      ],
+      "translation": "فعال / ذو أثر ملموس",
+      "exampleArabic": "البطاقات التعليمية ذات التكرار المتباعد طريقة فعالة للحفظ طويل الأمد."
+    },
+    {
+      "headword": "worthwhile",
+      "pronunciation": "/ˌwɜːθˈwaɪl/",
+      "partOfSpeech": "adjective",
+      "definition": "worth the time, money, or effort spent; of value or significance",
+      "example": "Spending thirty minutes every day learning English is a truly worthwhile investment.",
+      "relatedForms": [],
+      "collocations": [
+        "worthwhile endeavor",
+        "worthwhile investment",
+        "prove worthwhile"
+      ],
+      "synonyms": [
+        "valuable",
+        "rewarding",
+        "useful"
+      ],
+      "antonyms": [
+        "pointless",
+        "worthless"
+      ],
+      "tags": [
+        "value",
+        "time"
+      ],
+      "translation": "جدير بالاهتمام / يستحق الجهد والوقت",
+      "exampleArabic": "قضاء ثلاثين دقيقة يومياً في تعلم الإنجليزية هو استثمار يستحق الجهد بحق."
+    },
+    {
+      "headword": "pointless",
+      "pronunciation": "/ˈpɔɪnt.ləs/",
+      "partOfSpeech": "adjective",
+      "definition": "having little or no sense, use, or purpose; completely futile",
+      "example": "Memorizing obscure archaic words without context is largely pointless for beginners.",
+      "relatedForms": [
+        "pointlessly"
+      ],
+      "collocations": [
+        "pointless exercise",
+        "completely pointless",
+        "feel pointless"
+      ],
+      "synonyms": [
+        "futile",
+        "useless",
+        "meaningless"
+      ],
+      "antonyms": [
+        "worthwhile",
+        "useful"
+      ],
+      "tags": [
+        "judgment",
+        "negative"
+      ],
+      "translation": "عديم الجدوى / بلا طائل",
+      "exampleArabic": "حفظ كلمات قديمة غير مستعملة بدون سياق أمر عديم الجدوى إلى حد كبير للمبتدئين."
+    },
+    {
+      "headword": "should",
+      "pronunciation": "/ʃʊd/",
+      "partOfSpeech": "modal verb",
+      "definition": "used to indicate obligation, duty, or correctness, typically when giving advice",
+      "example": "You should review yesterday's vocabulary items before starting today's dialogues.",
+      "relatedForms": [],
+      "collocations": [
+        "you should try",
+        "should do",
+        "should definitely"
+      ],
+      "synonyms": [
+        "ought to",
+        "had better"
+      ],
+      "antonyms": [
+        "shouldn't"
+      ],
+      "tags": [
+        "grammar",
+        "advice"
+      ],
+      "translation": "ينبغي / يجب (لتقديم النصح والإرشاد)",
+      "exampleArabic": "ينبغي عليك مراجعة مفردات الأمس قبل بدء حوارات اليوم."
+    },
+    {
+      "headword": "shouldn't",
+      "pronunciation": "/ˈʃʊd.ənt/",
+      "partOfSpeech": "modal verb",
+      "definition": "contraction of should not; used to advise against an undesirable action",
+      "example": "You shouldn't feel embarrassed when making mistakes while practicing English.",
+      "relatedForms": [
+        "should not"
+      ],
+      "collocations": [
+        "you shouldn't worry",
+        "shouldn't do that"
+      ],
+      "synonyms": [
+        "ought not to"
+      ],
+      "antonyms": [
+        "should"
+      ],
+      "tags": [
+        "grammar",
+        "advice"
+      ],
+      "translation": "لا ينبغي / لا يجدر بك",
+      "exampleArabic": "لا ينبغي أن تشعر بالحرج عند ارتكاب الأخطاء أثناء ممارسة الإنجليزية."
+    },
+    {
+      "headword": "ought to",
+      "pronunciation": "/ˈɔːt tuː/",
+      "partOfSpeech": "modal verb",
+      "definition": "used to indicate duty or correctness, typically when giving earnest advice",
+      "example": "We ought to practice listening to native dialogues for at least twenty minutes daily.",
+      "relatedForms": [],
+      "collocations": [
+        "ought to know",
+        "ought to try",
+        "ought to do"
+      ],
+      "synonyms": [
+        "should",
+        "had better"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "advice"
+      ],
+      "translation": "يتوجب / من واجبنا أن / يجدر بنا",
+      "exampleArabic": "يجدر بنا ممارسة الاستماع للحوارات الأصلية لعشرين دقيقة على الأقل يومياً."
+    },
+    {
+      "headword": "had better",
+      "pronunciation": "/hæd ˈbet.ər/",
+      "partOfSpeech": "modal phrase",
+      "definition": "used to tell someone what they should do, often with an implied negative consequence",
+      "example": "You had better take an umbrella because dark clouds are gathering outside.",
+      "relatedForms": [
+        "'d better"
+      ],
+      "collocations": [
+        "had better hurry",
+        "had better leave"
+      ],
+      "synonyms": [
+        "should",
+        "ought to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "advice"
+      ],
+      "translation": "من الأفضل لك أن (مع تحذير ضمني)",
+      "exampleArabic": "من الأفضل لك أن تأخذ مظلة لأن الغيوم الداكنة تتجمع في الخارج."
+    },
+    {
+      "headword": "best bet",
+      "pronunciation": "/best bet/",
+      "partOfSpeech": "idiom / noun phrase",
+      "definition": "the safest, most reliable, or most favorable course of action in a situation",
+      "example": "If you want consistent fluency, daily immersion is your best bet.",
+      "relatedForms": [],
+      "collocations": [
+        "your best bet",
+        "the best bet"
+      ],
+      "synonyms": [
+        "safest choice",
+        "ideal option"
+      ],
+      "antonyms": [],
+      "tags": [
+        "idiom",
+        "advice"
+      ],
+      "translation": "الخيار الأضمن / الرهان الأفضل",
+      "exampleArabic": "إذا كنت ترغب في طلاقة مستمرة، فإن المعايشة اليومية للغة هي خيارك الأضمن."
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Seeking Advice on English Study Habits",
+      "titleArabic": "طلب النصيحة بشأن عادات دراسة اللغة الإنجليزية",
+      "setting": "A student discussing learning hurdles with an experienced academic mentor",
+      "settingArabic": "طالب يناقش عقبات التعلم مع مرشد أكاديمي ذي خبرة",
+      "lines": [
+        {
+          "speaker": "Adel",
+          "text": "Professor, I often face a dilemma: should I memorize long grammar rules or prioritize speaking practice?",
+          "translation": "يا بروفيسور، كثيراً ما أواجه معضلة: هل ينبغي عليّ حفظ قواعد النحو الطويلة أم إعطاء الأولوية لممارسة التحدث؟"
+        },
+        {
+          "speaker": "Professor",
+          "text": "I strongly advise you to balance both, but active dialogue practice is far more practical.",
+          "translation": "أنصحك بشدة بموازنة الأمرين، لكن ممارسة الحوار النشط عملية ومجدية أكثر بكثير."
+        },
+        {
+          "speaker": "Adel",
+          "text": "What should I do when I encounter difficulty understanding fast native dialogue in podcasts?",
+          "translation": "ماذا ينبغي عليّ أن أفعل عندما أواجه صعوبة في فهم الحوار السريع للناطقين الأصليين في البودكاست؟"
+        },
+        {
+          "speaker": "Professor",
+          "text": "You shouldn't feel discouraged! You had better listen to shorter audio segments and read along.",
+          "translation": "لا ينبغي أن تشعر بالإحباط! من الأفضل لك أن تستمع لمقاطع صوتية أقصر وتقرأ معها بالتزامن."
+        },
+        {
+          "speaker": "Adel",
+          "text": "Is relying on digital translation apps an effective long-term solution for vocabulary?",
+          "translation": "هل الاعتماد على تطبيقات الترجمة الرقمية حل طويل الأجل فعال للمفردات؟"
+        },
+        {
+          "speaker": "Professor",
+          "text": "I caution you against it. Contextual reading is essential to prevent careless translation mistakes.",
+          "translation": "أحذرك من ذلك. القراءة في سياق أمر جوهري لمنع أخطاء الترجمة الناجمة عن الغفلة."
+        },
+        {
+          "speaker": "Adel",
+          "text": "Thank you for this sensible guidance. I will adopt these realistic study habits right away.",
+          "translation": "شكراً لك على هذا التوجيه الحصيف. سأتبنى هذه العادات الدراسية الواقعية على الفور."
+        },
+        {
+          "speaker": "Professor",
+          "text": "You ought to practice consistently each morning; consistent dedication is your best bet.",
+          "translation": "يجدر بك أن تتدرب باستمرار كل صباح؛ فالتفاني المستمر هو خيارك الأضمن."
+        }
+      ],
+      "vocabularyUsed": [
+        "dilemma",
+        "should",
+        "advise",
+        "practical",
+        "difficulty",
+        "shouldn't",
+        "discourage",
+        "had better",
+        "effective",
+        "solution",
+        "caution",
+        "essential",
+        "prevent",
+        "careless",
+        "sensible",
+        "guidance",
+        "realistic",
+        "ought to",
+        "best bet"
+      ]
+    },
+    {
+      "title": "Resolving a Workplace Time Management Crisis",
+      "titleArabic": "حل أزمة إدارة الوقت في بيئة العمل",
+      "setting": "Two colleagues collaborating to overcome a critical project bottleneck",
+      "settingArabic": "زميلان يتعاونان للتغلب على عقبة حرجة في المشروع",
+      "lines": [
+        {
+          "speaker": "Heba",
+          "text": "We are facing a project schedule crisis! What recommendations do you propose we implement?",
+          "translation": "نحن نواجه أزمة في الجدول الزمني للمشروع! ما التوصيات التي تقترح أن ننفذها؟"
+        },
+        {
+          "speaker": "Riyad",
+          "text": "First, we should eliminate pointless administrative meetings that drain our team's energy.",
+          "translation": "أولاً، ينبغي علينا إلغاء الاجتماعات الإدارية عديمة الجدوى التي تستنزف طاقة فريقنا."
+        },
+        {
+          "speaker": "Heba",
+          "text": "That is very wise. We ought to consult our department supervisor before adjusting the deadlines.",
+          "translation": "هذا تصرف حكيم جداً. يجدر بنا استشارة مشرف قسمنا قبل تعديل المواعيد النهائية."
+        },
+        {
+          "speaker": "Riyad",
+          "text": "I suggest we submit a written proposal demonstrating how task reallocation prevents further delays.",
+          "translation": "أقترح أن نقدم مقترحاً مكتوباً يوضح كيف تمنع إعادة توزيع المهام المزيد من التأخير."
+        },
+        {
+          "speaker": "Heba",
+          "text": "Should we urge management to bring in additional temporary technical support?",
+          "translation": "هل ينبغي علينا حث الإدارة على جلب دعم فني مؤقت إضافي؟"
+        },
+        {
+          "speaker": "Riyad",
+          "text": "Yes, it is highly advisable. That proactive step is critical for protecting overall project quality.",
+          "translation": "نعم، هذا أمر مستحسن للغاية. وتلك الخطوة الاستباقية حرجة وبالغة الأهمية لحماية جودة المشروع العامة."
+        },
+        {
+          "speaker": "Heba",
+          "text": "Let us prepare the summary carefully and avoid reckless last-minute compromises.",
+          "translation": "دعنا نعد الملخص بعناية ونتجنب التنازلات المتهورة في اللحظات الأخيرة."
+        },
+        {
+          "speaker": "Riyad",
+          "text": "Excellent Heba. Clear teamwork provides the most worthwhile resolution to any workplace obstacle.",
+          "translation": "ممتاز يا هبة. العمل الجماعي الواضح يقدم الحل الأكثر جدوى لأي عقبة في العمل."
+        }
+      ],
+      "vocabularyUsed": [
+        "crisis",
+        "recommendation",
+        "propose",
+        "should",
+        "pointless",
+        "wise",
+        "ought to",
+        "consult",
+        "suggest",
+        "prevent",
+        "urge",
+        "advisable",
+        "critical",
+        "careful",
+        "avoid",
+        "reckless",
+        "worthwhile",
+        "resolution",
+        "obstacle"
+      ]
+    },
+    {
+      "title": "Healthy Habits and Wellness Advice",
+      "titleArabic": "عادات صحية ونصائح للعافية والنشاط",
+      "setting": "A doctor offering health and lifestyle counsel to a tired patient",
+      "settingArabic": "طبيب يقدم مشورة صحية ونمط حياة لمريض يشعر بالإجهاد",
+      "lines": [
+        {
+          "speaker": "Doctor",
+          "text": "Your routine blood tests look normal, but you shouldn't ignore chronic fatigue and sleeplessness.",
+          "translation": "فحوصات دمك الروتينية تبدو طبيعية، لكن لا ينبغي عليك تجاهل التعب المزمن والأرق."
+        },
+        {
+          "speaker": "Patient",
+          "text": "What practical lifestyle remedies do you recommend to restore my daily energy?",
+          "translation": "ما العلاجات العملية لنمط الحياة التي توصي بها لاستعادة طاقتي اليومية؟"
+        },
+        {
+          "speaker": "Doctor",
+          "text": "You should avoid caffeinated beverages late at night, as they have harmful effects on deep sleep.",
+          "translation": "ينبغي عليك تجنب المشروبات الغنية بالكافيين في وقت متأخر من الليل، حيث إن لها آثاراً ضارة على النوم العميق."
+        },
+        {
+          "speaker": "Patient",
+          "text": "Is regular evening walking beneficial for calming racing thoughts before bedtime?",
+          "translation": "هل المشي المسائي المنتظم مفيد لتهدئة الأفكار المتسارعة قبل النوم؟"
+        },
+        {
+          "speaker": "Doctor",
+          "text": "A thirty-minute evening stroll is immensely beneficial; I counsel all my patients to try it.",
+          "translation": "نزهة مسائية لمدة ثلاثين دقيقة مفيدة للغاية؛ وأنا أقدم المشورة لجميع مرضاي لتجربتها."
+        },
+        {
+          "speaker": "Patient",
+          "text": "Should I take herbal dietary supplements, or is a balanced natural diet sufficient?",
+          "translation": "هل ينبغي عليّ تناول مكملات غذائية عشبية، أم أن الغذاء الطبيعي المتوازن كافٍ؟"
+        },
+        {
+          "speaker": "Doctor",
+          "text": "Wholesome food is your best bet. Here is an essential tip: prioritize seven hours of sleep nightly.",
+          "translation": "الطعام الصحي هو رهانك الأضمن. وإليك نصيحة جوهرية: اجعل الأولوية لسبع ساعات نوم كل ليلة."
+        },
+        {
+          "speaker": "Patient",
+          "text": "Thank you Doctor for these valuable recommendations. I will follow your advice diligently.",
+          "translation": "شكراً لك يا دكتور على هذه التوصيات القيمة. سأتبع نصيحتك باجتهاد."
+        }
+      ],
+      "vocabularyUsed": [
+        "shouldn't",
+        "practical",
+        "remedy",
+        "recommend",
+        "should",
+        "avoid",
+        "harmful",
+        "beneficial",
+        "counsel",
+        "best bet",
+        "essential",
+        "tip",
+        "recommendation",
+        "advice"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Principles of Constructive Problem Solving",
+      "titleArabic": "مبادئ حل المشكلات بطرق بناءة وعقلانية",
+      "kind": "informative-guide",
+      "text": "When confronted with a challenging dilemma or unexpected obstacle, sensible individuals respond with thoughtful analysis rather than panic. Facing a crisis requires individuals to identify root causes and avoid reckless, hasty reactions that prove harmful in the long run. Seeking wise counsel and consulting knowledgeable mentors is an advisable strategy whenever difficulties arise. Constructive advisors encourage calm deliberation, suggest realistic milestones, and propose practical remedies that resolve trouble systematically. Individuals should evaluate whether a proposed solution is genuinely beneficial or merely a temporary cosmetic fix. Embracing thoughtful guidance ensures that every complex problem becomes a worthwhile opportunity for personal growth and lasting resilience.",
+      "translation": "عند مواجهة معضلة مليئة بالتحديات أو عقبة غير متوقعة، يستجيب الأفراد العقلاء بتحليل مدروس بدلاً من الذعر. وتتطلب مواجهة أي أزمة من الأفراد تحديد الأسباب الجذرية وتجنب ردود الفعل المتهورة والمتسرعة التي تثبت أنها ضارة على المدى الطويل. كما أن التماس المشورة الحكيمة واستشارة المرشدين ذوي المعرفة استراتيجية مستحسنة كلما طرأت الصعوبات. ويشجع المستشارون البناؤون على التفكير المتأني الهادئ، ويقترحون أهدافاً مرحلية واقعية، ويطرحون حلولاً عملية تعالج المشكلات بشكل منهجي. وينبغي على الأفراد تقييم ما إذا كان الحل المقترح نافعاً بحق أم مجرد معالجة شكلية مؤقتة. إن تبني التوجيه الرشيد يضمن أن تصبح كل مشكلة معقدة فرصة تستحق الجهد للنمو الشخصي والصمود الدائم.",
+      "vocabularyUsed": [
+        "dilemma",
+        "obstacle",
+        "sensible",
+        "crisis",
+        "avoid",
+        "reckless",
+        "harmful",
+        "wise",
+        "counsel",
+        "consult",
+        "advisable",
+        "difficulty",
+        "encourage",
+        "suggest",
+        "realistic",
+        "propose",
+        "practical",
+        "remedy",
+        "trouble",
+        "should",
+        "solution",
+        "beneficial",
+        "guidance",
+        "worthwhile"
+      ]
+    },
+    {
+      "title": "A Guide to Effective Language Learning",
+      "titleArabic": "دليل إرشادي للتعلم اللغوي الفعال والمستمر",
+      "kind": "educational-counsel",
+      "text": "Learning English successfully requires adopting sensible daily habits while discarding careless shortcuts. Experienced language tutors urge students to practice oral conversation daily, as spoken interaction is crucial for developing natural fluency. Beginners shouldn't feel discouraged when grammatical errors occur, because making honest mistakes is an essential part of the learning journey. It is advisable to consult authentic audio recordings and repeat dialogues aloud rather than relying exclusively on silent translation. Furthermore, learners ought to avoid pointless memorization of isolated word lists without contextual application. Regular immersion in structured daily reading and listening is your best bet for achieving lasting communicative confidence.",
+      "translation": "يتطلب تعلم اللغة الإنجليزية بنجاح تبني عادات يومية حكيمة مع التخلي عن الطرق المختصرة غير المجدية. ويحث معلمو اللغة ذوو الخبرة الطلاب على ممارسة المحادثة الشفهية يومياً، حيث إن التفاعل الشفهي حاسم وجوهري لتطوير الطلاقة الطبيعية. ولا ينبغي للمبتدئين أن يشعروا بالإحباط عند وقوع الأخطاء النحوية، لأن ارتكاب الأخطاء الصادقة جزء لا يتجزأ من مسار التعلم. ومن المستحسن الاستماع للتسجيلات الصوتية الأصيلة وترديد الحوارات بصوت مسموع بدلاً من الاعتماد حصرياً على الترجمة الصامتة. علاوة على ذلك، يجدر بالمتعلمين تجنب الحفظ عديم الجدوى لقوائم الكلمات المعزولة دون تطبيقها في سياق. إن المعايشة المنتظمة في القراءة والاستماع المنظم يومياً هي رهانك الأضمن لبناء ثقة تواصلية تدوم طويلاً.",
+      "vocabularyUsed": [
+        "sensible",
+        "careless",
+        "urge",
+        "crucial",
+        "shouldn't",
+        "discourage",
+        "essential",
+        "advisable",
+        "consult",
+        "ought to",
+        "avoid",
+        "pointless",
+        "best bet"
+      ]
+    },
+    {
+      "title": "The Power of Timely Guidance and Mentorship",
+      "titleArabic": "أثر التوجيه والإرشاد في الوقت المناسب",
+      "kind": "personal-reflection",
+      "text": "Throughout life's unpredictable journeys, receiving timely advice can prevent catastrophic errors and illuminate unclear pathways. Years ago, when I contemplated abandoning my foreign language ambitions due to acute self-doubt, a dedicated instructor offered wise counsel that reshaped my future. He cautioned me against impatience, recommended realistic daily practice benchmarks, and provided invaluable tips for conversational retention. He warned that pursuing perfection overnight is foolish and counterproductive. Instead, he encouraged me to celebrate small daily milestones and view every minor setback as a solvable challenge. Today, I look back with heartfelt gratitude for that guidance, recognizing that sensible mentorship is one of the most beneficial gifts an educator can bestow.",
+      "translation": "عبر مسارات الحياة غير المتوقعة، يمكن لتلقي النصيحة في الوقت المناسب أن يمنع أخطاء كارثية وينير دروباً غامضة. قبل سنوات، عندما فكرت في التخلي عن طموحاتي في تعلم لغة أجنبية بسبب الشك الذاتي الحاد، قدم لي معلم مخلص مشورة حكيمة أعادت صياغة مستقبلي. حذرني من نفاد الصبر، وأوصى بمعايير ممارسة يومية واقعية، وقدم نصائح لا تقدر بثمن لتثبيت المحادثة في الذاكرة. وحذر من أن السعي وراء الكمال بين عشية وضحاها حماقة تأتي بنتائج عكسية. وبدلاً من ذلك، شجعني على الاحتفاء بالإنجازات اليومية الصغيرة ورؤية كل تعثر بسيط كتحدٍ يمكن حله. واليوم، أنظر إلى الوراء بامتنان عميق لذلك التوجيه، مدركاً أن الإرشاد الحصيف هو واحد من أكثر الهدايا نفعاً التي يمكن للمعلم أن يقدمها.",
+      "vocabularyUsed": [
+        "advice",
+        "prevent",
+        "wise",
+        "counsel",
+        "caution",
+        "recommend",
+        "realistic",
+        "tip",
+        "warn",
+        "foolish",
+        "encourage",
+        "guidance",
+        "sensible",
+        "beneficial"
+      ]
+    }
+  ]
+}

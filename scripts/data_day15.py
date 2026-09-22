@@ -1,0 +1,1015 @@
+# Day 15 Data: At the Supermarket
+# Topic: Shopping, quantities and containers
+# Grammar: ["How much / How many", "Much and Many"]
+
+vocab_day15 = [
+    {
+        "headword": "carton",
+        "pronunciation": "/ˈkɑː.tən/",
+        "partOfSpeech": "noun",
+        "definition": "a light cardboard or plastic container for liquids or goods",
+        "example": "We purchased a carton of fresh almond milk from the dairy aisle.",
+        "relatedForms": [],
+        "collocations": ["carton of milk", "egg carton", "carton of juice"],
+        "synonyms": ["box", "container"],
+        "antonyms": [],
+        "tags": ["containers", "shopping"],
+        "translation": "كرتونة / علبة كرتونية",
+        "exampleArabic": "اشترينا كرتونة من حليب اللوز الطازج من ممر منتجات الألبان."
+    },
+    {
+        "headword": "jar",
+        "pronunciation": "/dʒɑːr/",
+        "partOfSpeech": "noun",
+        "definition": "a wide-mouthed cylindrical container made of glass or pottery",
+        "example": "Mother selected a glass jar of pure mountain honey.",
+        "relatedForms": [],
+        "collocations": ["jar of honey", "jar of jam", "glass jar"],
+        "synonyms": ["pot", "vessel"],
+        "antonyms": [],
+        "tags": ["containers", "food"],
+        "translation": "مرطبان / برطمان زجاجي",
+        "exampleArabic": "اختارت الوالدة برطماناً زجاجياً من عسل الجبل الصافي."
+    },
+    {
+        "headword": "tin",
+        "pronunciation": "/tɪn/",
+        "partOfSpeech": "noun",
+        "definition": "an airtight sealed metal container for preserved food",
+        "example": "He bought a tin of peeled tomatoes for the pasta sauce.",
+        "relatedForms": [],
+        "collocations": ["tin of tuna", "tin of tomatoes", "biscuit tin"],
+        "synonyms": ["can", "metal container"],
+        "antonyms": [],
+        "tags": ["containers", "food"],
+        "translation": "علبة صفيح / معلبات",
+        "exampleArabic": "اشترى علبة صفيح من الطماطم المقشرة لصلصة المعكرونة."
+    },
+    {
+        "headword": "packet",
+        "pronunciation": "/ˈpæk.ɪt/",
+        "partOfSpeech": "noun",
+        "definition": "a paper, cardboard, or plastic wrapper or small container",
+        "example": "Please pick up a packet of whole-grain dry oats.",
+        "relatedForms": [],
+        "collocations": ["packet of biscuits", "packet of seeds", "packet of crisps"],
+        "synonyms": ["pack", "sachet", "parcel"],
+        "antonyms": [],
+        "tags": ["containers", "packaging"],
+        "translation": "كيس صغير / عبوة / مغلف",
+        "exampleArabic": "يرجى أخذ مغلف من الشوفان الجاف كامل الحبة."
+    },
+    {
+        "headword": "loaf",
+        "pronunciation": "/ləʊf/",
+        "partOfSpeech": "noun",
+        "definition": "a shaped mass of baked bread",
+        "example": "The baker gave us a warm crusty loaf of artisanal bread.",
+        "relatedForms": ["loaves"],
+        "collocations": ["loaf of bread", "sliced loaf", "crusty loaf"],
+        "synonyms": ["bread"],
+        "antonyms": [],
+        "tags": ["food", "bakery"],
+        "translation": "رغيف خبز",
+        "exampleArabic": "أعطانا الخباز رغيفاً مقرمشاً دافئاً من الخبز الحرفي."
+    },
+    {
+        "headword": "bunch",
+        "pronunciation": "/bʌntʃ/",
+        "partOfSpeech": "noun",
+        "definition": "a number of things of the same kind fastened or growing together",
+        "example": "She chose a fresh bunch of green grapes and ripe bananas.",
+        "relatedForms": [],
+        "collocations": ["bunch of bananas", "bunch of flowers", "bunch of keys"],
+        "synonyms": ["cluster", "bundle"],
+        "antonyms": [],
+        "tags": ["produce", "quantity"],
+        "translation": "حزمة / عنقود / باقة",
+        "exampleArabic": "اختارت عنقوداً طازجاً من العنب الأخضر والموز الناضج."
+    },
+    {
+        "headword": "sack",
+        "pronunciation": "/sæk/",
+        "partOfSpeech": "noun",
+        "definition": "a large bag made of coarse fabric or strong paper used for storage",
+        "example": "They bought a twenty-kilo sack of basmati rice for the pantry.",
+        "relatedForms": [],
+        "collocations": ["sack of potatoes", "sack of rice", "sack of flour"],
+        "synonyms": ["burlap bag", "pouch"],
+        "antonyms": [],
+        "tags": ["containers", "bulk"],
+        "translation": "شوال / كيس كبير / خيشة",
+        "exampleArabic": "اشتروا شوالاً وزنه عشرون كيلوغراماً من أرز البسمتي للمخزن."
+    },
+    {
+        "headword": "tube",
+        "pronunciation": "/tʃuːb/",
+        "partOfSpeech": "noun",
+        "definition": "a flexible cylinder made of metal or plastic with a screw cap",
+        "example": "I placed a tube of herbal toothpaste into the shopping basket.",
+        "relatedForms": [],
+        "collocations": ["tube of toothpaste", "tube of cream", "plastic tube"],
+        "synonyms": ["cylinder", "pipe"],
+        "antonyms": [],
+        "tags": ["containers", "hygiene"],
+        "translation": "أنبوب / أنبوبة (معجون مثلاً)",
+        "exampleArabic": "وضعت أنبوباً من معجون الأسنان العشبي في سلة التسوق."
+    },
+    {
+        "headword": "slice",
+        "pronunciation": "/slaɪs/",
+        "partOfSpeech": "noun",
+        "definition": "a thin, broad piece of food cut from a larger portion",
+        "example": "He ordered three thin slices of aged cheddar cheese at the counter.",
+        "verbForms": { "v1": "slice", "v2": "sliced", "v3": "sliced" },
+        "relatedForms": ["sliced"],
+        "collocations": ["slice of bread", "slice of cheese", "slice of cake"],
+        "synonyms": ["piece", "slab", "portion"],
+        "antonyms": [],
+        "tags": ["food", "portion"],
+        "translation": "شريحة",
+        "exampleArabic": "طلب ثلاث شرائح رقيقة من جبن الشيدر المعتق عند الكاونتر."
+    },
+    {
+        "headword": "bar",
+        "pronunciation": "/bɑːr/",
+        "partOfSpeech": "noun",
+        "definition": "a solid, typically rectangular piece of chocolate, soap, or snack",
+        "example": "She treated herself to a bar of dark organic chocolate.",
+        "relatedForms": [],
+        "collocations": ["bar of chocolate", "bar of soap", "snack bar"],
+        "synonyms": ["block", "slab"],
+        "antonyms": [],
+        "tags": ["food", "portion"],
+        "translation": "لوح / قالب (شوكولاتة أو صابون)",
+        "exampleArabic": "كافأت نفسها بلوح من الشوكولاتة العضوية الداكنة."
+    },
+    {
+        "headword": "roll",
+        "pronunciation": "/rəʊl/",
+        "partOfSpeech": "noun",
+        "definition": "a cylinder formed by winding flexible material around itself",
+        "example": "We need a roll of aluminum foil and two rolls of kitchen paper.",
+        "verbForms": { "v1": "roll", "v2": "rolled", "v3": "rolled" },
+        "relatedForms": ["roller"],
+        "collocations": ["roll of paper", "bread roll", "roll of tape"],
+        "synonyms": ["coil", "cylinder"],
+        "antonyms": [],
+        "tags": ["containers", "household"],
+        "translation": "لفة / بكرة / رول",
+        "exampleArabic": "نحتاج إلى لفة من رقائق الألومنيوم ولفتين من ورق المطبخ."
+    },
+    {
+        "headword": "tub",
+        "pronunciation": "/tʌb/",
+        "partOfSpeech": "noun",
+        "definition": "a wide, open, shallow plastic or cardboard container for food",
+        "example": "He selected a tub of creamy vanilla ice cream from the freezer.",
+        "relatedForms": [],
+        "collocations": ["tub of ice cream", "tub of butter", "tub of margarine"],
+        "synonyms": ["pot", "basin"],
+        "antonyms": [],
+        "tags": ["containers", "food"],
+        "translation": "علبة دائرية واسعة / حوض بلاستيكي صغير للغذاء",
+        "exampleArabic": "اختار علبة دائرية من مثلجات الفانيليا الكريمية من المجمد."
+    },
+    {
+        "headword": "crate",
+        "pronunciation": "/kreɪt/",
+        "partOfSpeech": "noun",
+        "definition": "a slatted wooden or rigid plastic box used for transporting produce",
+        "example": "The supermarket received ten crates of fresh red apples.",
+        "relatedForms": [],
+        "collocations": ["crate of apples", "wooden crate", "plastic crate"],
+        "synonyms": ["box", "case", "packing case"],
+        "antonyms": [],
+        "tags": ["containers", "produce"],
+        "translation": "صندوق شحن مضلع / سحارة",
+        "exampleArabic": "استلم السوبرماركت عشرة صناديق من التفاح الأحمر الطازج."
+    },
+    {
+        "headword": "package",
+        "pronunciation": "/ˈpæk.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "an object or group of objects wrapped in paper or packed in a box",
+        "example": "The package arrived intact with all dairy items kept chilled.",
+        "verbForms": { "v1": "package", "v2": "packaged", "v3": "packaged" },
+        "relatedForms": ["packaging"],
+        "collocations": ["care package", "parcel package", "sealed package"],
+        "synonyms": ["parcel", "packet", "bundle"],
+        "antonyms": [],
+        "tags": ["shopping", "packaging"],
+        "translation": "طرد / عبوة مغلفة",
+        "exampleArabic": "وصل الطرد سليماً مع بقاء جميع منتجات الألبان مبردة."
+    },
+    {
+        "headword": "pouch",
+        "pronunciation": "/paʊtʃ/",
+        "partOfSpeech": "noun",
+        "definition": "a flexible bag or receptacle of small or moderate size",
+        "example": "She bought a resealable pouch of roasted almonds.",
+        "relatedForms": [],
+        "collocations": ["resealable pouch", "tobacco pouch", "fruit pouch"],
+        "synonyms": ["bag", "sack", "pocket"],
+        "antonyms": [],
+        "tags": ["containers", "packaging"],
+        "translation": "كيس مرن / كيس محكم الغلق",
+        "exampleArabic": "اشترت كيساً مرناً قابلاً لإعادة الغلق من اللوز المحمص."
+    },
+    {
+        "headword": "kilogram",
+        "pronunciation": "/ˈkɪl.ə.ɡræm/",
+        "partOfSpeech": "noun",
+        "definition": "the basic unit of mass in the metric system, equal to 1,000 grams",
+        "example": "We weighed two kilograms of yellow potatoes at the produce scale.",
+        "relatedForms": ["kilo", "kg"],
+        "collocations": ["one kilogram", "price per kilogram"],
+        "synonyms": ["kilo"],
+        "antonyms": [],
+        "tags": ["measurement", "weight"],
+        "translation": "كيلوغرام (1000 غرام)",
+        "exampleArabic": "وزنّا كيلوغرامين من البطاطس الصفراء عند ميزان الخضار."
+    },
+    {
+        "headword": "gram",
+        "pronunciation": "/ɡræm/",
+        "partOfSpeech": "noun",
+        "definition": "a metric unit of mass equal to one thousandth of a kilogram",
+        "example": "The recipe requires exactly two hundred grams of baking flour.",
+        "relatedForms": [],
+        "collocations": ["grams of sugar", "weigh in grams"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["measurement", "weight"],
+        "translation": "غرام",
+        "exampleArabic": "تتطلب الوصفة مائتي غرام بالضبط من دقيق الخَبز."
+    },
+    {
+        "headword": "liter",
+        "pronunciation": "/ˈliː.tər/",
+        "partOfSpeech": "noun",
+        "definition": "a metric unit of capacity equal to one cubic decimeter",
+        "example": "Please pour one liter of mineral water into the cooking pot.",
+        "relatedForms": [],
+        "collocations": ["liter of water", "liter of olive oil"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["measurement", "liquid"],
+        "translation": "لتر (مقياس السوائل)",
+        "exampleArabic": "يرجى سكب لتر واحد من الماء المعدني في قدر الطهي."
+    },
+    {
+        "headword": "dozen",
+        "pronunciation": "/ˈdʌz.ən/",
+        "partOfSpeech": "noun",
+        "definition": "a group or set of twelve items",
+        "example": "We bought a dozen organic brown eggs for the bakery class.",
+        "relatedForms": [],
+        "collocations": ["dozen eggs", "half a dozen", "baker's dozen"],
+        "synonyms": ["twelve"],
+        "antonyms": [],
+        "tags": ["quantity", "number"],
+        "translation": "درزن (اثنا عشر)",
+        "exampleArabic": "اشترينا دستة (درزناً) من البيض البني العضوي لفصل المخبوزات."
+    },
+    {
+        "headword": "pound",
+        "pronunciation": "/paʊnd/",
+        "partOfSpeech": "noun",
+        "definition": "a unit of weight equal to 16 ounces (approx. 453.6 grams)",
+        "example": "The butcher prepared a pound of lean minced beef for burgers.",
+        "relatedForms": [],
+        "collocations": ["pound of meat", "half a pound"],
+        "synonyms": ["lb"],
+        "antonyms": [],
+        "tags": ["measurement", "weight"],
+        "translation": "رطل (وحدة وزن = حوالي 450 غرام)",
+        "exampleArabic": "جهّز الجزار رطلاً من اللحم المفروم قليل الدهن للبرجر."
+    },
+    {
+        "headword": "ounce",
+        "pronunciation": "/aʊns/",
+        "partOfSpeech": "noun",
+        "definition": "a unit of weight equal to one sixteenth of a pound (28.35 grams)",
+        "example": "Add eight ounces of softened cream cheese to the mixture.",
+        "relatedForms": [],
+        "collocations": ["fluid ounce", "ounce of chocolate"],
+        "synonyms": ["oz"],
+        "antonyms": [],
+        "tags": ["measurement", "weight"],
+        "translation": "أونصة / أوقية (نحو 28 غراماً)",
+        "exampleArabic": "أضف ثماني أونصات من الجبن الكريمي الملين إلى المزيج."
+    },
+    {
+        "headword": "amount",
+        "pronunciation": "/əˈmaʊnt/",
+        "partOfSpeech": "noun",
+        "definition": "a quantity of something, typically an uncountable substance",
+        "example": "A considerable amount of sugar is hidden in sugary sodas.",
+        "relatedForms": ["amount (verb)"],
+        "collocations": ["large amount", "small amount", "fair amount"],
+        "synonyms": ["quantity", "volume", "sum"],
+        "antonyms": [],
+        "tags": ["quantity", "measurement"],
+        "translation": "كمية / مقدار (غالباً للكميات غير المعدودة)",
+        "exampleArabic": "كمية كبيرة من السكر مخفية في المشروبات الغازية المحلاة."
+    },
+    {
+        "headword": "quantity",
+        "pronunciation": "/ˈkwɒn.tɪ.ti/",
+        "partOfSpeech": "noun",
+        "definition": "the amount or number of a material or abstract thing not usually estimated by spatial measurement",
+        "example": "Buying food in large quantity often saves money over time.",
+        "relatedForms": ["quantitative"],
+        "collocations": ["large quantity", "vast quantity", "unknown quantity"],
+        "synonyms": ["amount", "measure", "volume"],
+        "antonyms": [],
+        "tags": ["quantity", "measurement"],
+        "translation": "كمية / مقدار كمي",
+        "exampleArabic": "شراء الطعام بكميات كبيرة غالباً ما يوفر المال بمرور الوقت."
+    },
+    {
+        "headword": "portion",
+        "pronunciation": "/ˈpɔː.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "a part of a whole; an amount, section, or piece suitable for one person",
+        "example": "The cafeteria serves a generous portion of steamed vegetables.",
+        "relatedForms": [],
+        "collocations": ["portion of food", "generous portion", "portion size"],
+        "synonyms": ["serving", "helping", "share"],
+        "antonyms": [],
+        "tags": ["food", "portion"],
+        "translation": "حصة طعام / وجبة لشخص / نصيب",
+        "exampleArabic": "يقدم مقصف الكلية حصة سخية من الخضار المطهوة على البخار."
+    },
+    {
+        "headword": "volume",
+        "pronunciation": "/ˈvɒl.juːm/",
+        "partOfSpeech": "noun",
+        "definition": "the amount of space that a substance or object occupies",
+        "example": "Supermarket storage facilities hold an immense volume of goods.",
+        "relatedForms": ["voluminous"],
+        "collocations": ["volume of liquid", "large volume", "sales volume"],
+        "synonyms": ["capacity", "mass", "bulk"],
+        "antonyms": [],
+        "tags": ["measurement", "space"],
+        "translation": "حجم / سعة استيعابية",
+        "exampleArabic": "تستوعب مرافق التخزين في السوبرماركت حجماً هائلاً من البضائع."
+    },
+    {
+        "headword": "total",
+        "pronunciation": "/ˈtəʊ.təl/",
+        "partOfSpeech": "noun",
+        "definition": "the whole number or amount of something after adding up all components",
+        "example": "The total on our grocery checkout receipt came to forty-five pounds.",
+        "relatedForms": ["totally"],
+        "collocations": ["total cost", "grand total", "total amount"],
+        "synonyms": ["sum", "aggregate", "entirety"],
+        "antonyms": ["part"],
+        "tags": ["money", "math"],
+        "translation": "المجموع الكلي / الإجمالي",
+        "exampleArabic": "بلغ المجموع الكلي في إيصال الدفع أربعين وخمسة جنيهات."
+    },
+    {
+        "headword": "trolley",
+        "pronunciation": "/ˈtrɒl.i/",
+        "partOfSpeech": "noun",
+        "definition": "a large metal basket on wheels used by customers for carrying shopping in supermarkets",
+        "example": "She pushed a full shopping trolley down the central beverage aisle.",
+        "relatedForms": [],
+        "collocations": ["shopping trolley", "supermarket trolley", "push a trolley"],
+        "synonyms": ["cart", "shopping cart"],
+        "antonyms": [],
+        "tags": ["shopping", "equipment"],
+        "translation": "عربة تسوق كبيرة (بأربع عجلات)",
+        "exampleArabic": "دفعت عربة تسوق ممتلئة في ممر المشروبات المركزي."
+    },
+    {
+        "headword": "cart",
+        "pronunciation": "/kɑːt/",
+        "partOfSpeech": "noun",
+        "definition": "a wheeled vehicle pushed or pulled by hand for shopping",
+        "example": "Please return the empty shopping cart to the designated parking bay.",
+        "relatedForms": [],
+        "collocations": ["shopping cart", "fill the cart", "online cart"],
+        "synonyms": ["trolley", "carriage"],
+        "antonyms": [],
+        "tags": ["shopping", "equipment"],
+        "translation": "عربة تسوق",
+        "exampleArabic": "يرجى إعادة عربة التسوق الفارغة إلى المكان المخصص في الموقف."
+    },
+    {
+        "headword": "basket",
+        "pronunciation": "/ˈbɑː.skɪt/",
+        "partOfSpeech": "noun",
+        "definition": "a container with a handle, used for carrying few grocery items",
+        "example": "I took a plastic hand basket because I only needed five items.",
+        "relatedForms": [],
+        "collocations": ["shopping basket", "hand basket", "basket of fruit"],
+        "synonyms": ["hamper", "pannier"],
+        "antonyms": [],
+        "tags": ["shopping", "containers"],
+        "translation": "سلة تسوق يدوية",
+        "exampleArabic": "أخذت سلة تسوق يدوية بلاستيكية لأنني احتجت فقط لخمسة أغراض."
+    },
+    {
+        "headword": "cashier",
+        "pronunciation": "/kæʃˈɪər/",
+        "partOfSpeech": "noun",
+        "definition": "a person handling payments and receipts in a store, bank, or other business",
+        "example": "The polite cashier scanned our items swiftly and handed us the change.",
+        "relatedForms": [],
+        "collocations": ["supermarket cashier", "bank cashier", "cashier counter"],
+        "synonyms": ["clerk", "teller"],
+        "antonyms": [],
+        "tags": ["shopping", "jobs"],
+        "translation": "أمين الصندوق / الكاشير",
+        "exampleArabic": "مسح الكاشير المهذب مشترياتنا بسرعة وقدم لنا الباقي."
+    },
+    {
+        "headword": "checkout",
+        "pronunciation": "/ˈtʃek.aʊt/",
+        "partOfSpeech": "noun",
+        "definition": "a point where goods are paid for in a supermarket or other store",
+        "example": "There was a short queue at the self-service checkout counter.",
+        "relatedForms": [],
+        "collocations": ["checkout line", "express checkout", "self-service checkout"],
+        "synonyms": ["cash desk", "till"],
+        "antonyms": [],
+        "tags": ["shopping", "place"],
+        "translation": "نقطة الدفع / كاونتر الحساب",
+        "exampleArabic": "كان هناك طابور قصير عند كاونتر الدفع الذاتي."
+    },
+    {
+        "headword": "counter",
+        "pronunciation": "/ˈkaʊn.tər/",
+        "partOfSpeech": "noun",
+        "definition": "a long flat-topped fixture across which business is conducted with customers",
+        "example": "We asked for freshly sliced turkey at the deli counter.",
+        "relatedForms": [],
+        "collocations": ["deli counter", "service counter", "kitchen counter"],
+        "synonyms": ["bar", "stand", "desk"],
+        "antonyms": [],
+        "tags": ["shopping", "furniture"],
+        "translation": "طاولة البيع / الكاونتر",
+        "exampleArabic": "طلبنا شرائح لحم ديك رومي مقطعة طازجة عند كاونتر الأطعمة الجاهزة."
+    },
+    {
+        "headword": "receipt",
+        "pronunciation": "/rɪˈsiːt/",
+        "partOfSpeech": "noun",
+        "definition": "a written or printed acknowledgment of having received specified money or goods",
+        "example": "Always keep your store receipt in case you need to return an item.",
+        "relatedForms": [],
+        "collocations": ["keep the receipt", "store receipt", "printed receipt"],
+        "synonyms": ["proof of purchase", "voucher", "ticket"],
+        "antonyms": [],
+        "tags": ["shopping", "money"],
+        "translation": "إيصال دفع / فاتورة استلام",
+        "exampleArabic": "احتفظ دائماً بإيصال المتجر في حال احتجت إلى إرجاع أحد الأغراض."
+    },
+    {
+        "headword": "discount",
+        "pronunciation": "/ˈdɪs.kaʊnt/",
+        "partOfSpeech": "noun",
+        "definition": "a deduction from the usual cost of something, typically given for prompt payment",
+        "example": "Students received a twenty percent discount on all stationary items.",
+        "relatedForms": ["discount (verb)"],
+        "collocations": ["special discount", "student discount", "get a discount"],
+        "synonyms": ["reduction", "markdown", "rebate"],
+        "antonyms": ["surcharge", "markup"],
+        "tags": ["shopping", "money"],
+        "translation": "خصم / تخفيض في السعر",
+        "exampleArabic": "حصل الطلاب على خصم بنسبة عشرين بالمائة على جميع الأدوات المكتبية."
+    },
+    {
+        "headword": "special offer",
+        "pronunciation": "/ˈspeʃ.əl ˈɒf.ər/",
+        "partOfSpeech": "noun phrase",
+        "definition": "a product offered at a reduced price or with free extras for a limited time",
+        "example": "The supermarket promoted a buy-one-get-one-free special offer on olive oil.",
+        "relatedForms": [],
+        "collocations": ["on special offer", "take advantage of a special offer"],
+        "synonyms": ["promotion", "deal", "bargain"],
+        "antonyms": [],
+        "tags": ["shopping", "money"],
+        "translation": "عرض ترويجي خاص",
+        "exampleArabic": "روج السوبرماركت لعرض خاص: اشترِ واحداً واحصل على الثاني مجاناً على زيت الزيتون."
+    },
+    {
+        "headword": "bargain",
+        "pronunciation": "/ˈbɑː.ɡɪn/",
+        "partOfSpeech": "noun",
+        "definition": "a thing bought or offered for sale more cheaply than is usual or expected",
+        "example": "Getting five cartons of fruit juice for ten pounds was a real bargain.",
+        "verbForms": { "v1": "bargain", "v2": "bargained", "v3": "bargained" },
+        "relatedForms": [],
+        "collocations": ["real bargain", "bargain hunter", "strike a bargain"],
+        "synonyms": ["good deal", "steal", "discount"],
+        "antonyms": ["rip-off"],
+        "tags": ["shopping", "money"],
+        "translation": "صفقة رابحة / صيد ثمين ورخيص",
+        "exampleArabic": "كان الحصول على خمس كراتين من عصير الفاكهة مقابل عشرة جنيهات صفقة رابحة حقيقية."
+    },
+    {
+        "headword": "sale",
+        "pronunciation": "/seɪl/",
+        "partOfSpeech": "noun",
+        "definition": "a period during which a shop or other business sells goods at reduced prices",
+        "example": "The winter seasonal sale attracted hundreds of bargain hunters today.",
+        "relatedForms": [],
+        "collocations": ["on sale", "clearance sale", "for sale"],
+        "synonyms": ["clearance", "discount period"],
+        "antonyms": [],
+        "tags": ["shopping", "money"],
+        "translation": "تخفيضات / موسم أوكازيون",
+        "exampleArabic": "اجتذبت تخفيضات الشتاء الموسمية مئات الباحثين عن الصفقات اليوم."
+    },
+    {
+        "headword": "price tag",
+        "pronunciation": "/praɪs tæɡ/",
+        "partOfSpeech": "noun phrase",
+        "definition": "a label attached to a product showing its retail price",
+        "example": "He checked the price tag on the organic olive oil bottle before purchasing.",
+        "relatedForms": [],
+        "collocations": ["look at the price tag", "hefty price tag"],
+        "synonyms": ["label", "sticker"],
+        "antonyms": [],
+        "tags": ["shopping", "money"],
+        "translation": "بطاقة السعر / لاصق الثمن",
+        "exampleArabic": "تحقق من بطاقة السعر على زجاجة زيت الزيتون العضوي قبل الشراء."
+    },
+    {
+        "headword": "barcode",
+        "pronunciation": "/ˈbɑː.kəʊd/",
+        "partOfSpeech": "noun",
+        "definition": "a machine-readable code in the form of numbers and a pattern of parallel lines",
+        "example": "The scanner beeped loudly as the cashier passed the product barcode over the glass.",
+        "relatedForms": [],
+        "collocations": ["scan a barcode", "barcode scanner"],
+        "synonyms": ["product code"],
+        "antonyms": [],
+        "tags": ["technology", "shopping"],
+        "translation": "الباركود / الرمز الشريطي للسلعة",
+        "exampleArabic": "أصدر الماسح الضوئي صفيراً عندما مرر الكاشير باركود المنتج فوق الزجاج."
+    },
+    {
+        "headword": "organic",
+        "pronunciation": "/ɔːˈɡæn.ɪk/",
+        "partOfSpeech": "adjective",
+        "definition": "produced or involving production without the use of chemical fertilizers or pesticides",
+        "example": "More families prefer buying organic vegetables for their children's meals.",
+        "relatedForms": ["organically"],
+        "collocations": ["organic farming", "organic produce", "certified organic"],
+        "synonyms": ["natural", "chemical-free"],
+        "antonyms": ["conventional", "artificial"],
+        "tags": ["food", "health"],
+        "translation": "عضوي (طبيعي وخالٍ من الكيماويات)",
+        "exampleArabic": "تفضل المزيد من العائلات شراء الخضار العضوي لوجبات أطفالها."
+    },
+    {
+        "headword": "frozen",
+        "pronunciation": "/ˈfrəʊ.zən/",
+        "partOfSpeech": "adjective",
+        "definition": "preserved by being subjected to extreme cold and turned to ice",
+        "example": "We stocked our freezer with frozen berries and garden peas.",
+        "relatedForms": ["freeze"],
+        "collocations": ["frozen food", "frozen vegetables", "frozen pizza"],
+        "synonyms": ["iced", "chilled"],
+        "antonyms": ["fresh", "thawed"],
+        "tags": ["food", "storage"],
+        "translation": "مجمد / مفرّز",
+        "exampleArabic": "ملأنا مجمدنا بالتوت المجمد وبازلاء الحديقة."
+    },
+    {
+        "headword": "canned",
+        "pronunciation": "/kænd/",
+        "partOfSpeech": "adjective",
+        "definition": "preserved or stored in a sealed metal can",
+        "example": "Canned beans and corn are convenient staples for quick dinners.",
+        "relatedForms": ["can (noun)"],
+        "collocations": ["canned food", "canned soup", "canned fruit"],
+        "synonyms": ["tinned", "preserved"],
+        "antonyms": ["fresh"],
+        "tags": ["food", "packaging"],
+        "translation": "معلب (في علب صفيح)",
+        "exampleArabic": "الفاصوليا والذرة المعلبة سلع أساسية مريحة لوجبات العشاء السريعة."
+    },
+    {
+        "headword": "dairy",
+        "pronunciation": "/ˈdeə.ri/",
+        "partOfSpeech": "noun",
+        "definition": "food products made from or containing milk, such as butter, cheese, and yogurt",
+        "example": "The refrigerated dairy section features a vast variety of cheeses.",
+        "relatedForms": [],
+        "collocations": ["dairy products", "dairy aisle", "dairy-free"],
+        "synonyms": ["milk products"],
+        "antonyms": [],
+        "tags": ["food", "shopping"],
+        "translation": "منتجات الألبان / قسم الألبان والأجبان",
+        "exampleArabic": "يحتوي قسم الألبان المبرد على تشكيلة واسعة من الأجبان."
+    },
+    {
+        "headword": "produce",
+        "pronunciation": "/ˈprɒd.juːs/",
+        "partOfSpeech": "noun",
+        "definition": "agricultural products collectively, especially fresh fruit and vegetables",
+        "example": "Local farmers supply freshly harvested green produce every morning.",
+        "relatedForms": ["producer"],
+        "collocations": ["fresh produce", "organic produce", "produce section"],
+        "synonyms": ["crops", "harvest", "vegetables"],
+        "antonyms": [],
+        "tags": ["food", "agriculture"],
+        "translation": "المحاصيل الزراعية / الخضار والفواكه الطازجة",
+        "exampleArabic": "يمد المزارعون المحليون المتجر بالمحاصيل والخضار الطازجة المحصودة كل صباح."
+    },
+    {
+        "headword": "seafood",
+        "pronunciation": "/ˈsiː.fuːd/",
+        "partOfSpeech": "noun",
+        "definition": "shellfish and sea fish, served as food",
+        "example": "The coastal supermarket displays fresh seafood on beds of crushed ice.",
+        "relatedForms": [],
+        "collocations": ["fresh seafood", "seafood restaurant", "seafood platter"],
+        "synonyms": ["fish", "marine food"],
+        "antonyms": [],
+        "tags": ["food", "sea"],
+        "translation": "المأكولات البحرية / ثمار البحر",
+        "exampleArabic": "يعرض السوبرماركت الساحلي المأكولات البحرية الطازجة على طبقات من الثلج المجروش."
+    },
+    {
+        "headword": "beverage",
+        "pronunciation": "/ˈbev.ər.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "a drink, especially one other than water",
+        "example": "Hot tea and freshly squeezed orange juice are popular breakfast beverages.",
+        "relatedForms": [],
+        "collocations": ["hot beverage", "cold beverage", "alcoholic beverage"],
+        "synonyms": ["drink", "refreshment"],
+        "antonyms": [],
+        "tags": ["drinks", "food"],
+        "translation": "مشروب / مرطبات",
+        "exampleArabic": "الشاي الساخن وعصير البرتقال الطازج المعصور مشروبات إفطار شائعة."
+    },
+    {
+        "headword": "bulk",
+        "pronunciation": "/bʌlk/",
+        "partOfSpeech": "noun",
+        "definition": "large size, mass, or quantity; goods bought in large quantities",
+        "example": "Purchasing cooking flour in bulk lowers household grocery expenses.",
+        "relatedForms": ["bulky"],
+        "collocations": ["in bulk", "bulk purchase", "bulk discount"],
+        "synonyms": ["mass", "large quantity"],
+        "antonyms": ["small portion"],
+        "tags": ["shopping", "quantity"],
+        "translation": "كمية بالجملة / شراء بكميات ضخمة",
+        "exampleArabic": "شراء دقيق الطهي بالجملة يخفض نفقات البقالة المنزلية."
+    },
+    {
+        "headword": "expire",
+        "pronunciation": "/ɪkˈspaɪər/",
+        "partOfSpeech": "verb",
+        "definition": "to cease to be valid, usable, or edible, typically after a fixed period of time",
+        "example": "Always check the label to ensure yogurt does not expire tomorrow.",
+        "verbForms": { "v1": "expire", "v2": "expired", "v3": "expired" },
+        "relatedForms": ["expiration", "expiry"],
+        "collocations": ["expire date", "license expires", "soon expire"],
+        "synonyms": ["run out", "lapse", "go bad"],
+        "antonyms": ["renew"],
+        "tags": ["time", "food"],
+        "translation": "تنتهي صلاحيته / ينقضي أجله",
+        "exampleArabic": "تحقق دائماً من الملصق للتأكد من أن الزبادي لا تنتهي صلاحيته غداً."
+    },
+    {
+        "headword": "ingredient",
+        "pronunciation": "/ɪnˈɡriː.di.ənt/",
+        "partOfSpeech": "noun",
+        "definition": "any of the foods or substances that are combined to make a particular dish",
+        "example": "Fresh basil and extra virgin olive oil are core ingredients in pesto sauce.",
+        "relatedForms": [],
+        "collocations": ["key ingredient", "natural ingredients", "active ingredient"],
+        "synonyms": ["component", "element", "constituent"],
+        "antonyms": [],
+        "tags": ["cooking", "food"],
+        "translation": "مكوّن / عنصر في وصفة",
+        "exampleArabic": "الريحان الطازج وزيت الزيتون البكر الممتاز مكونات أساسية في صلصة البيستو."
+    },
+    {
+        "headword": "weigh",
+        "pronunciation": "/weɪ/",
+        "partOfSpeech": "verb",
+        "definition": "to find out how heavy someone or something is, typically using a scale",
+        "example": "Customers weigh their fresh produce before heading toward the checkout counter.",
+        "verbForms": { "v1": "weigh", "v2": "weighed", "v3": "weighed" },
+        "relatedForms": ["weight"],
+        "collocations": ["weigh options", "weigh heavily", "weigh ingredients"],
+        "synonyms": ["measure mass"],
+        "antonyms": [],
+        "tags": ["measurement", "action"],
+        "translation": "يزن / يقيس الوزن",
+        "exampleArabic": "يزن الزبائن خضرواتهم وفواكههم الطازجة قبل التوجه نحو كاونتر الدفع."
+    }
+]
+
+grammar_day15 = [
+    {
+        "title": "How much / How many",
+        "titleArabic": "السؤال عن الكمية والعدد: الفرق بين How much و How many",
+        "explanation": "When asking about quantities at the market, we use 'How much' with uncountable nouns (substances, liquids, and bulk goods that cannot be counted individually, such as milk, flour, sugar, water, and money: 'How much milk do we need?' or 'How much does this carton cost?'). Conversely, we use 'How many' with plural countable nouns (items that can be separated and numbered, such as apples, eggs, cartons, tins, and loaves: 'How many eggs are in that carton?' or 'How many loaves of bread did you buy?').",
+        "explanationArabic": "عند السؤال عن المقادير والكميات في التسوق، نستخدم 'How much' مع الأسماء غير المعدودة (Uncountable Nouns) كالماء والحليب والأرز والسكر والمال (مثل: 'How much milk do we need؟' أو 'How much does it cost؟'). في المقابل، نستخدم 'How many' مع الأسماء الجمع المعدودة (Plural Countable Nouns) كالتفاح والعلب والأرغفة والبيض (مثل: 'How many eggs are in that carton؟').",
+        "structures": [
+            {
+                "pattern": "How much + Uncountable Noun + auxiliary + subject + verb?",
+                "explanation": "Asks for the quantity of an uncountable substance (or price with verb cost/be).",
+                "explanationArabic": "سؤال عن كمية مادة غير معدودة أو عن السعر."
+            },
+            {
+                "pattern": "How many + Plural Countable Noun + auxiliary + subject + verb?",
+                "explanation": "Asks for the specific count or number of discrete individual items.",
+                "explanationArabic": "سؤال عن عدد محدد من الأشياء القابلة للعد."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "How much organic olive oil did you buy at the grocery store?",
+                "translation": "كم كمية زيت الزيتون العضوي التي اشتريتها من البقالة؟",
+                "usesVocabulary": ["organic"]
+            },
+            {
+                "sentence": "How many cartons of milk and jars of honey do we have in our kitchen?",
+                "translation": "كم عدد كراتين الحليب وبرطمانات العسل الموجودة في مطبخنا؟",
+                "usesVocabulary": ["carton", "jar"]
+            },
+            {
+                "sentence": "How much does that ten-kilogram sack of basmati rice cost?",
+                "translation": "كم يبلغ ثمن شوال أرز البسمتي الذي يزن عشرة كيلوغرامات؟",
+                "usesVocabulary": ["kilogram", "sack"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "How much loaves of bread did you pick up?",
+                "right": "How many loaves of bread did you pick up?",
+                "note": "'Loaves' is a plural countable noun, so use 'How many' (even though 'bread' alone is uncountable).",
+                "noteArabic": "كلمة 'loaves' جمع معدود، لذا نستخدم معها 'How many' (رغم أن كلمة bread بمفردها غير معدودة)."
+            },
+            {
+                "wrong": "How many sugar do you need for the cake?",
+                "right": "How much sugar do you need for the cake?",
+                "note": "'Sugar' is an uncountable noun; use 'How much'.",
+                "noteArabic": "كلمة 'sugar' غير معدودة، لذا يجب استخدام 'How much'."
+            }
+        ]
+    },
+    {
+        "title": "Much and Many",
+        "titleArabic": "استخدام Much و Many في الجمل المنفية والتقريرية",
+        "explanation": "We use 'much' with singular uncountable nouns, predominantly in negative sentences and questions (e.g. 'We don't have much milk left' or 'Is there much olive oil in that jar?'). We use 'many' with plural countable nouns across negative statements and questions (e.g. 'There aren't many eggs left in the carton' or 'Are there many shoppers at the checkout?'). In affirmative statements, natural everyday English usually prefers expressions like 'a lot of' or 'plenty of' (e.g. 'We bought a lot of produce') rather than 'much produce'.",
+        "explanationArabic": "نستخدم 'much' مع الأسماء غير المعدودة وغالباً في الجمل المنفية والأسئلة (مثل: 'We don't have much milk left'). ونستخدم 'many' مع الأسماء المعدودة في النفي والأسئلة (مثل: 'There aren't many eggs left'). أما في الجمل المثبتة، فالأكثر شيوعاً واستخداماً في اللغة اليومية هو 'a lot of' (مثل: 'We bought a lot of produce') بدلاً من استخدام much في الإثبات.",
+        "structures": [
+            {
+                "pattern": "Negative: Subject + auxiliary-not + have / see + much + Uncountable Noun",
+                "explanation": "Indicates a small or scarce quantity of an uncountable entity.",
+                "explanationArabic": "يدل على قلة كمية اسم غير معدود في صيغة النفي."
+            },
+            {
+                "pattern": "Negative: Subject + auxiliary-not + have / see + many + Plural Countable Noun",
+                "explanation": "Indicates a low or insufficient number of individual items.",
+                "explanationArabic": "يدل على قلة عدد أشياء معدودة في صيغة النفي."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "There isn't much butter left in that small plastic tub.",
+                "translation": "لم يتبق الكثير من الزبدة في تلك العلبة البلاستيكية الصغيرة.",
+                "usesVocabulary": ["tub"]
+            },
+            {
+                "sentence": "We don't need many tins of tuna because we already have canned beans.",
+                "translation": "لا نحتاج إلى الكثير من علب التونة لأن لدينا بالفعل فاصوليا معلبة.",
+                "usesVocabulary": ["tin", "canned"]
+            },
+            {
+                "sentence": "Did the cashier scan many items before the scanner jammed?",
+                "translation": "هل مسح الكاشير الكثير من الأغراض قبل أن يتعطل الماسح الضوئي؟",
+                "usesVocabulary": ["cashier"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "We don't have many rice in the pantry.",
+                "right": "We don't have much rice in the pantry.",
+                "note": "'Rice' is uncountable, so use 'much' rather than 'many'.",
+                "noteArabic": "كلمة 'rice' غير معدودة، لذا استخدم 'much' وليس 'many'."
+            },
+            {
+                "wrong": "There aren't much shoppers at the checkout counter.",
+                "right": "There aren't many shoppers at the checkout counter.",
+                "note": "'Shoppers' is a countable plural noun; use 'many'.",
+                "noteArabic": "كلمة 'shoppers' جمع معدود، لذا استخدم 'many'."
+            }
+        ]
+    }
+]
+
+convs_day15 = [
+    {
+        "title": "Grocery Shopping for the Family",
+        "titleArabic": "شراء لوازم البقالة للعائلة",
+        "setting": "Pushing a trolley through the main supermarket produce and dairy aisles",
+        "settingArabic": "دفع عربة التسوق عبر ممرات الخضار والألبان في السوبرماركت",
+        "lines": [
+            {
+                "speaker": "Hani",
+                "text": "Let us check our shopping list. How many loaves of whole-wheat bread do we need?",
+                "translation": "دعنا نتفقد قائمة التسوق لدينا. كم رغيفاً من خبز القمح الكامل نحتاج؟"
+            },
+            {
+                "speaker": "Mona",
+                "text": "Two loaves will be plenty. Also, please pick up a carton of almond milk and a dozen brown eggs.",
+                "translation": "رغيفان سيكونان كافيين. أيضاً، يرجى أخذ كرتونة من حليب اللوز ودستة بيض بني."
+            },
+            {
+                "speaker": "Hani",
+                "text": "Should we get a jar of pure mountain honey, or do we still have enough at home?",
+                "translation": "هل يجب أن نأخذ برطماناً من عسل الجبل الصافي، أم ما زال لدينا ما يكفي في المنزل؟"
+            },
+            {
+                "speaker": "Mona",
+                "text": "There isn't much honey left in the pantry, so let us take a glass jar from that shelf.",
+                "translation": "لم يتبق الكثير من العسل في مخزن المؤونة، لذا دعنا نأخذ برطماناً زجاجياً من ذلك الرف."
+            },
+            {
+                "speaker": "Hani",
+                "text": "Look, that ripe bunch of yellow bananas is on special offer with a twenty percent discount!",
+                "translation": "انظر، ذلك العنقود الناضج من الموز الأصفر عليه عرض ترويجي خاص بخصم عشرين بالمائة!"
+            },
+            {
+                "speaker": "Mona",
+                "text": "What a splendid bargain! Let us weigh two kilograms of potatoes and a sack of yellow onions too.",
+                "translation": "يا لها من صفقة رابحة رائعة! دعنا نزن كيلوغرامين من البطاطس وشوالاً من البصل الأصفر أيضاً."
+            },
+            {
+                "speaker": "Hani",
+                "text": "How much does that total amount to before we head toward the checkout counter?",
+                "translation": "كم يبلغ ذلك المجموع الكلي قبل أن نتوجه نحو كاونتر الدفع؟"
+            },
+            {
+                "speaker": "Mona",
+                "text": "Probably around thirty pounds. Let us place everything carefully in the trolley and proceed.",
+                "translation": "ربما حوالي ثلاثين جنيهاً. دعنا نضع كل شيء بعناية في عربة التسوق ونتقدم."
+            }
+        ],
+        "vocabularyUsed": [
+            "loaf", "carton", "dozen", "jar", "bunch",
+            "special offer", "discount", "bargain", "weigh", "kilogram",
+            "sack", "total", "amount", "checkout", "counter", "trolley"
+        ]
+    },
+    {
+        "title": "Selecting Ingredients at the Deli and Seafood Counter",
+        "titleArabic": "اختيار المكونات عند كاونتر الأطعمة والمأكولات البحرية",
+        "setting": "Ordering fresh provisions from the supermarket counter attendant",
+        "settingArabic": "طلب مؤن طازجة من مسؤول كاونتر السوبرماركت",
+        "lines": [
+            {
+                "speaker": "Customer",
+                "text": "Good morning! Could I please get half a pound of thinly sliced smoked turkey?",
+                "translation": "صباح الخير! هل يمكنني الحصول على نصف رطل من شرائح لحم الديك الرومي المدخن المقطعة رقيقاً؟"
+            },
+            {
+                "speaker": "Attendant",
+                "text": "Certainly! Would you also like a tub of marinated olives or some aged cheddar cheese?",
+                "translation": "بكل تأكيد! هل ترغب أيضاً في علبة دائرية من الزيتون المتبل أو بعض جبن الشيدر المعتق؟"
+            },
+            {
+                "speaker": "Customer",
+                "text": "Yes, please add a small tub of olives. Do you have fresh seafood arriving today?",
+                "translation": "نعم، يرجى إضافة علبة صغيرة من الزيتون. هل لديكم مأكولات بحرية طازجة تصل اليوم؟"
+            },
+            {
+                "speaker": "Attendant",
+                "text": "Yes, we received fresh salmon fillets on ice this morning, as well as frozen shrimp.",
+                "translation": "نعم، استلمنا شرائح سمك السلمون الطازجة على الجليد هذا الصباح، بالإضافة إلى الروبيان المجمد."
+            },
+            {
+                "speaker": "Customer",
+                "text": "I will take five hundred grams of salmon. Make sure the expiration date does not expire soon.",
+                "translation": "سآخذ خمسمائة غرام من السلمون. تأكد من أن تاريخ الصلاحية لا ينتهي قريباً."
+            },
+            {
+                "speaker": "Attendant",
+                "text": "All our seafood is certified organic and freshly delivered; here is your weighed package.",
+                "translation": "جميع مأكولاتنا البحرية معتمدة وعضوية ويتم توريدها طازجة؛ إليك عبوتك الموزونة."
+            },
+            {
+                "speaker": "Customer",
+                "text": "Thank you! I will put this packet in my shopping basket with the olive oil.",
+                "translation": "شكراً لك! سأضع هذه العبوة في سلة تسوقي مع زيت الزيتون."
+            },
+            {
+                "speaker": "Attendant",
+                "text": "Have a wonderful day, and please scan the product barcode at the front cashier.",
+                "translation": "أتمنى لك يوماً رائعاً، ويرجى مسح باركود المنتج عند الكاشير الأمامي."
+            }
+        ],
+        "vocabularyUsed": [
+            "pound", "slice", "tub", "seafood", "frozen",
+            "gram", "expire", "organic", "package", "packet",
+            "basket", "barcode", "cashier"
+        ]
+    },
+    {
+        "title": "Paying at the Supermarket Checkout",
+        "titleArabic": "الدفع عند كاونتر الحساب في السوبرماركت",
+        "setting": "Unloading a shopping cart at the cashier's conveyor belt",
+        "settingArabic": "تفريغ عربة التسوق على سير النقل عند كاونتر الكاشير",
+        "lines": [
+            {
+                "speaker": "Cashier",
+                "text": "Good afternoon! Did you find all your necessary grocery ingredients easily today?",
+                "translation": "مساء الخير! هل وجدت جميع مكونات البقالة الضرورية لديك بسهولة اليوم؟"
+            },
+            {
+                "speaker": "Shopper",
+                "text": "Yes, thank you! I picked up canned vegetables, dairy yogurt, and a pouch of roasted nuts.",
+                "translation": "نعم، شكراً لك! أخذت خضروات معلبة، وزبادي ألبان، وكيساً مرناً من المكسرات المحمصة."
+            },
+            {
+                "speaker": "Cashier",
+                "text": "Did you notice the price tag on this crate of sparkling mineral beverage?",
+                "translation": "هل لاحظت بطاقة السعر على هذا الصندوق من المشروبات الفوارة المعدنية؟"
+            },
+            {
+                "speaker": "Shopper",
+                "text": "Yes, it is on special promotional sale this week, which saves substantial money.",
+                "translation": "نعم، إنه معروض في تخفيضات ترويجية خاصة هذا الأسبوع، مما يوفر مالاً كبيراً."
+            },
+            {
+                "speaker": "Cashier",
+                "text": "Excellent. Would you like to buy cooking oil in bulk, or is this single liter bottle sufficient?",
+                "translation": "ممتاز. هل ترغب في شراء زيت الطهي بالجملة، أم أن هذه العبوة سعة لتر واحد كافية؟"
+            },
+            {
+                "speaker": "Shopper",
+                "text": "One liter is plenty for now. How much is the total after applying my member discount?",
+                "translation": "لتر واحد كافٍ في الوقت الحالي. كم المجموع الكلي بعد تطبيق خصم العضوية الخاص بي؟"
+            },
+            {
+                "speaker": "Cashier",
+                "text": "The total comes to thirty-eight pounds. Here is your receipt and your stamped parking voucher.",
+                "translation": "يبلغ المجموع ثمانية وثلاثين جنيهاً. إليك إيصالك وقسيمة موقف السيارات المختومة."
+            },
+            {
+                "speaker": "Shopper",
+                "text": "Thank you very much. I will load the bags back into my cart and head home.",
+                "translation": "شكراً جزيلاً لك. سأعيد تحميل الأكياس في عربة تسوقي وأتوجه إلى المنزل."
+            }
+        ],
+        "vocabularyUsed": [
+            "cashier", "ingredient", "canned", "dairy", "pouch",
+            "price tag", "crate", "beverage", "sale", "bulk",
+            "liter", "total", "discount", "receipt", "cart"
+        ]
+    }
+]
+
+paras_day15 = [
+    {
+        "title": "Smart Supermarket Shopping Strategies",
+        "titleArabic": "استراتيجيات التسوق الذكي في السوبرماركت",
+        "kind": "practical-guide",
+        "text": "Navigating a modern supermarket efficiently requires practical planning and smart budgeting. Experienced shoppers prepare a structured list before pushing a shopping trolley through the bustling aisles. When purchasing produce, careful customers examine each crate of crisp apples, inspect the green bunches of grapes, and weigh their vegetables at the scale. It is always wise to compare prices per kilogram and evaluate whether purchasing dry staples like rice in bulk offers a true financial bargain. In the dairy and refrigerated aisles, consumers check whether dairy products or fresh poultry might expire within days. By looking closely at every price tag and utilizing available discounts, families maintain healthy diets while avoiding unnecessary grocery expenses.",
+        "translation": "يتطلب التنقل في السوبرماركت الحديث بكفاءة تخطيطاً عملياً وإدارة ميزانية ذكية. فالمتسوقون ذوو الخبرة يعدون قائمة منظمة قبل دفع عربة التسوق عبر الممرات المزدحمة. وعند شراء المنتجات الزراعية، يعاين الزبائن الحريصون كل صندوق من التفاح المقرمش، ويتفقدون عناقيد العنب الخضراء، ويزنون خضرواتهم على الميزان. ومن الحكمة دائماً مقارنة الأسعار لكل كيلوغرام وتقييم ما إذا كان شراء المواد الأساسية الجافة مثل الأرز بالجملة يوفر صفقة رابحة حقيقية. وفي ممرات منتجات الألبان والأغذية المبردة، يتحقق المستهلكون مما إذا كانت الألبان أو الدواجن الطازجة قد تنتهي صلاحيتها في غضون أيام. ومن خلال النظر بعناية في كل بطاقة سعر والاستفادة من الخصومات المتاحة، تحافظ العائلات على وجبات صحية مع تجنب نفقات البقالة غير الضرورية.",
+        "vocabularyUsed": [
+            "trolley", "produce", "crate", "bunch", "weigh",
+            "kilogram", "bulk", "bargain", "dairy", "expire",
+            "price tag", "discount"
+        ]
+    },
+    {
+        "title": "Containers and Packaging in Modern Retail",
+        "titleArabic": "أنواع العبوات والتغليف في تجارة التجزئة الحديثة",
+        "kind": "informative-packaging",
+        "text": "Every supermarket aisle displays an astonishing variety of packaging designed to protect freshness and portion sizes. In the beverage section, liquids are packaged in a carton, a recyclable glass jar, or an airtight metal tin. Bakers shape fresh dough into a golden loaf or roll, while confectioners package chocolate bars and snack bars into neat foil packets. At the deli counter, cheeses are cut into precise slices and packaged in a tub or resealable pouch. Understanding these container terms enables learners to ask precise questions like 'How much olive oil is in this jar?' or 'How many tins of tuna are in that carton?'. Proper packaging preserves the nutritional volume of food and guarantees that consumers enjoy quality ingredients.",
+        "translation": "يعرض كل ممر في السوبرماركت تنوعاً مذهلاً من العبوات المصممة لحماية الطزاجة وأحجام الحصص. ففي قسم المشروبات، تُعبأ السوائل في كرتونة، أو برطمان زجاجي قابل لإعادة التدوير، أو علبة صفيح محكمة الغلق. ويشكل الخبازون العجين الطازج إلى رغيف ذهبي أو لفائف خبز، بينما يغلف صانعو الحلويات ألواح الشوكولاتة وألواح الوجبات الخفيفة في مغلفات رقائق معدنية أنيقة. وعند كاونتر الأطعمة، يُقطع الجبن إلى شرائح دقيقة ويُعبأ في علبة دائرية أو كيس مرن محكم الغلق. إن فهم مصطلحات العبوات هذه يمكّن المتعلمين من طرح أسئلة دقيقة مثل 'كم كمية زيت الزيتون في هذا البرطمان؟' أو 'كم عدد علب التونة في تلك الكرتونة؟'. التغليف المناسب يحفظ القيمة الغذائية للطعام ويضمن استمتاع المستهلكين بمكونات عالية الجودة.",
+        "vocabularyUsed": [
+            "portion", "beverage", "package", "carton", "jar",
+            "tin", "loaf", "roll", "bar", "packet",
+            "counter", "slice", "tub", "pouch", "volume", "ingredient"
+        ]
+    },
+    {
+        "title": "A Productive Saturday Grocery Trip",
+        "titleArabic": "رحلة تسوق أسبوعية موفقة يوم السبت",
+        "kind": "personal-account",
+        "text": "Last Saturday, I completed our weekly grocery run at the hypermarket with complete satisfaction. I took a hand basket for quick essentials before switching to a wheeled cart for bulk items. I bought a dozen organic eggs, two liters of mineral water, and five hundred grams of fresh coastal seafood. While scanning the shelves, I discovered a promotional sale where canned tomatoes and pasta sauces were on special offer. At the checkout counter, the friendly cashier scanned each barcode effortlessly and handed me my itemized receipt. The total was surprisingly modest thanks to loyalty card savings. Preparing meals with wholesome ingredients throughout the week is deeply rewarding after a well-planned shopping trip.",
+        "translation": "يوم السبت الماضي، أنجزت جولة البقالة الأسبوعية في الهايبرماركت برضا تام. أخذت سلة يدوية للأغراض السريعة الأساسية قبل أن أنتقل إلى عربة تسوق ذات عجلات للمشتريات الكبيرة. اشتريت دستة بيض عضوي، ولترين من الماء المعدني، وخمسمائة غرام من المأكولات البحرية الساحلية الطازجة. وأثناء تفقد الرفوف، اكتشفت تخفيضات ترويجية حيث كانت الطماطم المعلبة وصلصات المعكرونة معروضة في عرض خاص. وعند كاونتر الدفع، مسح الكاشير الودود كل باركود بسلاسة وسلمني إيصالي المفصل. وكان المجموع الكلي معتدلاً بشكل مفاجئ بفضل توفير بطاقة الولاء. إن إعداد الوجبات بمكونات صحية طوال الأسبوع أمر مجزٍ للغاية بعد رحلة تسوق جيدة التخطيط.",
+        "vocabularyUsed": [
+            "basket", "cart", "bulk", "dozen", "organic",
+            "liter", "gram", "seafood", "sale", "canned",
+            "special offer", "checkout", "counter", "cashier", "barcode",
+            "receipt", "total", "ingredient"
+        ]
+    }
+]

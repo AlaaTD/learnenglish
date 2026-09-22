@@ -27,3 +27,33 @@ city,town,village,street,road,avenue,corner,square,building,supermarket,market,s
 
 === DAY 10 — Getting to Know You ===
 who,what,where,when,why,how,which,whose,question,answer,conversation,topic,interest,favorite,opinion,reason,country,nationality,hometown,address,number,job,occupation,workplace,greeting,pleasure,farewell,message,information,detail,fact,ask,reply,tell,say,talk,discuss,share,describe,guess,choose,mean,wonder,agree,disagree,curious,polite,honest,clear,true
+
+=== DAY 11 — Right Now or Every Day? ===
+right now,at the moment,currently,nowadays,at present,these days,temporarily,permanently,meanwhile,right away,gradually,simultaneously,in progress,ongoing,steady,stand,sit,hold,wear,shine,blow,happen,occur,improve,develop,increase,decrease,fall,rise,move,prepare,send,receive,rest,feel,think,hope,believe,exist,belong,depend,matter,seem,appear,sound,notice,realize,recognize,remain,continue
+
+=== DAY 12 — Yesterday ===
+last night,last week,last month,last year,the other day,in the past,earlier,recently,lately,suddenly,yesterday morning,yesterday evening,see,hear,inform,encounter,win,defeat,give,pay,cost,catch,throw,break,drop,spill,oversleep,miss,remind,discover,invent,celebrate,attend,join,invite,accept,collect,gather,enjoy,appreciate,participate,experience,memory,incident,occasion,success,mistake,surprise,adventure,journey
+
+=== DAY 13 — What Was Happening? ===
+while,as,at that time,all day,all night,throughout,at that exact moment,background,interruption,coincidence,stroll,whisper,shout,scream,argue,quarrel,fight,struggle,chase,escape,hide,wander,rush,hurry,stare,gaze,glance,peep,wave,cry,weep,sob,laugh,giggle,cough,sneeze,bleed,burn,freeze,melt,drown,choke,slip,trip over,stumble,crash,bang,flash,thunder,lightning
+
+=== DAY 14 — Questions About the Past ===
+investigate,confirm,deny,admit,claim,prove,doubt,suspect,recall,state,mention,observe,examine,inspect,witness,alibi,evidence,proof,clue,record,report,statement,interview,inquiry,mystery,secret,eventually,finally,sincerely,precisely,exactly,barely,whereabouts,outcome,result,conclusion,account,testify,reveal,disappear,deduce,uncover,confess,interrogate,testimony,suspect person,crime scene,motive,truthful,innocent
+
+=== DAY 15 — At the Supermarket ===
+carton,jar,tin,packet,loaf,bunch,sack,tube,slice,bar,roll,tub,crate,package,pouch,kilogram,gram,liter,dozen,pound,ounce,amount,quantity,portion,volume,total,trolley,cart,basket,cashier,checkout,counter,receipt,discount,special offer,bargain,sale,price tag,barcode,organic,frozen,canned,dairy,produce,seafood,beverage,bulk,expire,ingredient,weigh
+
+=== DAY 16 — Bigger and Better ===
+cheaper,wider,narrower,heavier,lighter,stronger,weaker,darker,quicker,slower,cleaner,sharper,smoother,rougher,softer,tougher,calmer,cooler,warmer,dryer,wetter,tidier,superior,inferior,preferable,alternative,option,choice,selection,contrast,difference,similarity,advantage,disadvantage,benefit,drawback,slightly,considerably,substantially,significantly,far better,much more,rather,compared to,in comparison,versus,preference,prioritize,upgrade,downgrade
+
+=== DAY 17 — The Best and the Worst ===
+highest,lowest,deepest,shallowest,widest,narrowest,fastest,slowest,wisest,bravest,cowardly,richest,poorest,greatest,finest,rarest,most common,ultimate,supreme,outstanding,exceptional,magnificent,terrible,awful,dreadful,horrible,champion,winner,benchmark,award,medal,prize,trophy,ranking,top,bottom,peak,summit,crown,perfection,flawless,masterpiece,legend,remarkable,extraordinary,disaster,catastrophe,unbeatable,superiority,master
+
+=== DAY 18 — Giving Advice ===
+advise,recommend,suggest,propose,counsel,urge,warn,caution,discourage,encourage,prevent,avoid,consult,guidance,recommendation,suggestion,advice,tip,hint,warning,dilemma,obstacle,difficulty,crisis,trouble,solution,resolution,remedy,sensible,wise,foolish,careless,careful,reckless,beneficial,harmful,advisable,crucial,critical,essential,practical,realistic,effective,worthwhile,pointless,should,shouldn't,ought to,had better,best bet
+
+=== DAY 19 — Invitations and Offers ===
+invitation,host,visitor,hospitality,courtesy,politeness,offer,entertain,consent,decline,refuse,turn down,attendance,gathering,celebration,party,ceremony,banquet,favor,kindness,honor,privilege,delight,pleased,delighted,grateful,thankful,appreciative,courteous,gracious,cordial,warmly,gladly,certainly,definitely,willingly,hesitate,oblige,treat,accompany,escort,would like,could you,my pleasure,welcome,be our guest,rsvp,refreshments,toast,congratulate
+
+=== DAY 20 — Small Talk and Messages ===
+small talk,chat,gossip,casual,informal,brief,briefly,catch up,reach out,contact,keep in touch,stay in touch,lose touch,reconnect,texting,notification,inbox,voicemail,ping,forward,attach,attachment,emoticon,emoji,abbreviation,acronym,by the way,speaking of,anyway,as for,regarding,concerning,update,latest,news,rumor,compliment,flattery,polite remark,icebreaker,regards,cheers,take care,see you,keep posted,touch base,drop a line,give a shout,catch you later,best wishes

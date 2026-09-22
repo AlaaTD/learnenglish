@@ -1,0 +1,1903 @@
+{
+  "day": 13,
+  "title": "What Was Happening?",
+  "topic": "Background events and interruptions",
+  "description": "Describe what was happening at a moment in the past.",
+  "stage": "Everyday Communication",
+  "focus": "By the end of today, you can communicate clearly about background events and interruptions using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Past Continuous",
+      "titleArabic": "الماضي المستمر: تكوينه، استخدامه، ومشاهد الخلفية والمقاطعة",
+      "explanation": "We use the Past Continuous (formed with was / were + verb-ing) to describe actions or situations that were actively in progress at a specific moment in the past. We use 'was' with I, he, she, it, and 'were' with you, we, they. One of its most powerful and common applications is setting the background scene of a narrative (e.g. 'The sun was shining and birds were singing'). When an ongoing background action was interrupted by a sudden, shorter event, we use the Past Continuous for the background action and the Past Simple for the interrupting event, typically linked by 'when', 'while', or 'as' (e.g. 'While we were strolling in the park, thunder rolled and rain started').",
+      "explanationArabic": "نستخدم الماضي المستمر (Past Continuous) المكون من (was/were + verb-ing) لوصف أحداث كانت مستمرة وقيد الحدوث في لحظة محددة في الماضي. نستخدم was مع (I, he, she, it) ونستخدم were مع (you, we, they). ومن أهم استخداماته رسم خلفية المشهد في القصص والروايات (Background Scene مثل: 'The wind was blowing'). وعندما يقاطع حدث مفاجئ قصيراً حدثاً كان مستمراً بالفعل، نضع الحدث المستمر في الماضي المستمر (Past Continuous)، ونضع الحدث القاطع في الماضي البسيط (Past Simple)، ونربط بينهما عادة بـ while أو when أو as (مثل: 'While we were strolling, thunder started').",
+      "structures": [
+        {
+          "pattern": "Affirmative: Subject (I/He/She/It) + was + Verb-ing | (You/We/They) + were + Verb-ing",
+          "explanation": "Describes an ongoing activity occurring at a specific point in past time.",
+          "explanationArabic": "يصف نشاطاً كان مستمراً وقيد التنفيذ في وقت محدد في الماضي."
+        },
+        {
+          "pattern": "Background + Interruption: While / As + Past Continuous, Past Simple",
+          "explanation": "Connects a longer continuous background action with a sudden interrupting event.",
+          "explanationArabic": "يربط بين فعل خلفي مستمر طويل وفعل قاطع مفاجئ في الماضي البسيط."
+        },
+        {
+          "pattern": "Simultaneous Past Actions: Past Continuous + while + Past Continuous",
+          "explanation": "Shows two ongoing actions taking place at the exact same time in the past.",
+          "explanationArabic": "يوضح حدثين كانا مستمرين في نفس الوقت تماماً في الماضي."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "While we were strolling through the park, loud thunder echoed in the distance.",
+          "translation": "بينما كنا نتنزه عبر الحديقة، تردد صدى رعد قوي في البعيد.",
+          "usesVocabulary": [
+            "while",
+            "stroll",
+            "thunder"
+          ]
+        },
+        {
+          "sentence": "At that exact moment, a brilliant flash of lightning illuminated the courtyard.",
+          "translation": "في تلك اللحظة بالذات، أضاء وميض برق ساطع فناء المنزل.",
+          "usesVocabulary": [
+            "at that exact moment",
+            "flash",
+            "lightning"
+          ]
+        },
+        {
+          "sentence": "He tripped over a tree root while he was hurrying to catch the shuttle.",
+          "translation": "تعثر بجذر شجرة بينما كان يسرع للحاق بحافلة النقل.",
+          "usesVocabulary": [
+            "trip over",
+            "hurry"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "While I was study, the lights went out.",
+          "right": "While I was studying, the lights went out.",
+          "note": "Always add -ing to the base verb after was/were in the past continuous.",
+          "noteArabic": "أضف دائماً -ing للمصدر بعد was أو were لتكوين الماضي المستمر."
+        },
+        {
+          "wrong": "We was walking when it started raining.",
+          "right": "We were walking when it started raining.",
+          "note": "Use 'were' with the subject pronoun 'we', not 'was'.",
+          "noteArabic": "استخدم 'were' مع الضمير 'we' وليس 'was'."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "while",
+      "pronunciation": "/waɪl/",
+      "partOfSpeech": "conjunction",
+      "definition": "during the time that; at the same time as",
+      "example": "While I was studying in my room, the telephone rang loudly.",
+      "relatedForms": [],
+      "collocations": [
+        "while doing",
+        "all the while",
+        "worth while"
+      ],
+      "synonyms": [
+        "as",
+        "whilst"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "grammar"
+      ],
+      "translation": "بينما / في حين",
+      "exampleArabic": "بينما كنت أذاكر في غرفتي، رن الهاتف بصوت عالٍ."
+    },
+    {
+      "headword": "as",
+      "pronunciation": "/æz/",
+      "partOfSpeech": "conjunction",
+      "definition": "at the same time that; while",
+      "example": "As we were walking along the riverbank, rain began to fall.",
+      "relatedForms": [],
+      "collocations": [
+        "just as",
+        "as if",
+        "as though"
+      ],
+      "synonyms": [
+        "while",
+        "when"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "grammar"
+      ],
+      "translation": "بينما / حينما / في الوقت الذي",
+      "exampleArabic": "بينما كنا نسير على طول ضفة النهر، بدأ المطر بالهطول."
+    },
+    {
+      "headword": "at that time",
+      "pronunciation": "/ət ðæt taɪm/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "in that particular past moment or era",
+      "example": "At that time, my family was living in a quiet mountain village.",
+      "relatedForms": [],
+      "collocations": [
+        "busy at that time",
+        "at that exact time"
+      ],
+      "synonyms": [
+        "then",
+        "in those days"
+      ],
+      "antonyms": [
+        "now",
+        "at present"
+      ],
+      "tags": [
+        "time",
+        "past"
+      ],
+      "translation": "في ذلك الوقت / آنذاك",
+      "exampleArabic": "في ذلك الوقت، كانت عائلتي تعيش في قرية جبلية هادئة."
+    },
+    {
+      "headword": "all day",
+      "pronunciation": "/ɔːl deɪ/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "throughout the entire duration of the daytime",
+      "example": "It was snowing heavily all day long outside our cabin.",
+      "relatedForms": [],
+      "collocations": [
+        "all day long",
+        "worked all day"
+      ],
+      "synonyms": [
+        "the whole day"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "duration"
+      ],
+      "translation": "طوال اليوم / طيلة النهار",
+      "exampleArabic": "كانت الثلوج تتساقط بكثافة طوال اليوم خارج كوخنا."
+    },
+    {
+      "headword": "all night",
+      "pronunciation": "/ɔːl naɪt/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "throughout the entire night until dawn",
+      "example": "The wind was howling violently through the valley all night.",
+      "relatedForms": [],
+      "collocations": [
+        "awake all night",
+        "stay up all night"
+      ],
+      "synonyms": [
+        "the whole night"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "duration"
+      ],
+      "translation": "طوال الليل / سائر الليل",
+      "exampleArabic": "كانت الرياح تعوي بعنف عبر الوادي طوال الليل."
+    },
+    {
+      "headword": "throughout",
+      "pronunciation": "/θruːˈaʊt/",
+      "partOfSpeech": "preposition",
+      "definition": "in every part of or during the whole period of time",
+      "example": "Music was playing softly throughout the exhibition gallery.",
+      "relatedForms": [],
+      "collocations": [
+        "throughout the day",
+        "throughout the year",
+        "throughout history"
+      ],
+      "synonyms": [
+        "all through",
+        "during the entirety of"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "space"
+      ],
+      "translation": "طوال / على مدار / في شتى أرجاء",
+      "exampleArabic": "كانت الموسيقى تعزف بهدوء في شتى أرجاء قاعة المعرض."
+    },
+    {
+      "headword": "at that exact moment",
+      "pronunciation": "/ət ðæt ɪɡˈzækt ˈməʊ.mənt/",
+      "partOfSpeech": "adverbial phrase",
+      "definition": "at that precise second or instant in the past",
+      "example": "At that exact moment, a brilliant bolt of lightning illuminated the courtyard.",
+      "relatedForms": [],
+      "collocations": [
+        "arrived at that exact moment"
+      ],
+      "synonyms": [
+        "precisely then",
+        "just then"
+      ],
+      "antonyms": [],
+      "tags": [
+        "time",
+        "precision"
+      ],
+      "translation": "في تلك اللحظة بالذات",
+      "exampleArabic": "في تلك اللحظة بالذات، أنار وميض برق ساطع فناء المنزل."
+    },
+    {
+      "headword": "background",
+      "pronunciation": "/ˈbæk.ɡraʊnd/",
+      "partOfSpeech": "noun",
+      "definition": "the context, circumstances, or conditions behind main events",
+      "example": "Soft classical music was playing in the background during the dinner.",
+      "relatedForms": [],
+      "collocations": [
+        "in the background",
+        "background noise",
+        "family background"
+      ],
+      "synonyms": [
+        "backdrop",
+        "setting",
+        "environment"
+      ],
+      "antonyms": [
+        "foreground"
+      ],
+      "tags": [
+        "context",
+        "scene"
+      ],
+      "translation": "خلفية (المشهد أو الصوت) / سياق",
+      "exampleArabic": "كانت موسيقى كلاسيكية هادئة تعزف في الخلفية أثناء العشاء."
+    },
+    {
+      "headword": "interruption",
+      "pronunciation": "/ˌɪn.təˈrʌp.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "an act or instance of breaking the continuity of something",
+      "example": "The teacher managed to deliver the grammar lesson without any interruption.",
+      "relatedForms": [
+        "interrupt (verb)"
+      ],
+      "collocations": [
+        "frequent interruption",
+        "without interruption"
+      ],
+      "synonyms": [
+        "disruption",
+        "interference",
+        "break"
+      ],
+      "antonyms": [
+        "continuation"
+      ],
+      "tags": [
+        "event",
+        "communication"
+      ],
+      "translation": "مقاطعة / انقطاع",
+      "exampleArabic": "تمكن المعلم من إلقاء درس القواعد دون أية مقاطعة."
+    },
+    {
+      "headword": "coincidence",
+      "pronunciation": "/kəʊˈɪn.sɪ.dəns/",
+      "partOfSpeech": "noun",
+      "definition": "a remarkable concurrence of events or circumstances without causal connection",
+      "example": "Meeting my former mentor at the museum was an astonishing coincidence.",
+      "relatedForms": [
+        "coincide (verb)",
+        "coincidental"
+      ],
+      "collocations": [
+        "pure coincidence",
+        "strange coincidence"
+      ],
+      "synonyms": [
+        "chance",
+        "accident",
+        "fluke"
+      ],
+      "antonyms": [
+        "deliberate plan"
+      ],
+      "tags": [
+        "event",
+        "chance"
+      ],
+      "translation": "صدفة / توافق صدفة",
+      "exampleArabic": "كانت مقابلة مرشدي السابق في المتحف صدفة مدهشة."
+    },
+    {
+      "headword": "stroll",
+      "pronunciation": "/strəʊl/",
+      "partOfSpeech": "verb",
+      "definition": "to walk in a leisurely, relaxed way",
+      "example": "Elderly couples were strolling peacefully through the botanical garden.",
+      "verbForms": {
+        "v1": "stroll",
+        "v2": "strolled",
+        "v3": "strolled"
+      },
+      "relatedForms": [
+        "stroller",
+        "stroll (noun)"
+      ],
+      "collocations": [
+        "stroll along",
+        "go for a stroll",
+        "leisurely stroll"
+      ],
+      "synonyms": [
+        "wander",
+        "amble",
+        "promenade"
+      ],
+      "antonyms": [
+        "rush",
+        "sprint"
+      ],
+      "tags": [
+        "movement",
+        "relaxation"
+      ],
+      "translation": "يتنزه / يتمشى على مهل",
+      "exampleArabic": "كان الأزواج المسنون يتنزهون بسلام عبر حديقة النباتات."
+    },
+    {
+      "headword": "whisper",
+      "pronunciation": "/ˈwɪs.pər/",
+      "partOfSpeech": "verb",
+      "definition": "to speak very softly using one's breath without vibrating vocal cords",
+      "example": "The students were whispering secret answers at the back of the auditorium.",
+      "verbForms": {
+        "v1": "whisper",
+        "v2": "whispered",
+        "v3": "whispered"
+      },
+      "relatedForms": [
+        "whisper (noun)"
+      ],
+      "collocations": [
+        "whisper softly",
+        "whisper in someone's ear"
+      ],
+      "synonyms": [
+        "murmur",
+        "breathe",
+        "mumble"
+      ],
+      "antonyms": [
+        "shout",
+        "yell",
+        "scream"
+      ],
+      "tags": [
+        "sound",
+        "communication"
+      ],
+      "translation": "يهمس",
+      "exampleArabic": "كان الطلاب يهمسون بإجابات سرية في الجزء الخلفي من القاعة."
+    },
+    {
+      "headword": "shout",
+      "pronunciation": "/ʃaʊt/",
+      "partOfSpeech": "verb",
+      "definition": "to utter a loud cry or call in excitement, warning, or anger",
+      "example": "Spectators were shouting enthusiastic cheers as their runner crossed the line.",
+      "verbForms": {
+        "v1": "shout",
+        "v2": "shouted",
+        "v3": "shouted"
+      },
+      "relatedForms": [
+        "shout (noun)"
+      ],
+      "collocations": [
+        "shout loudly",
+        "shout for help",
+        "shout at"
+      ],
+      "synonyms": [
+        "yell",
+        "call out",
+        "cry"
+      ],
+      "antonyms": [
+        "whisper",
+        "murmur"
+      ],
+      "tags": [
+        "sound",
+        "communication"
+      ],
+      "translation": "يصيح / يصرخ عالياً",
+      "exampleArabic": "كان المتفرجون يهتفون بصيحات حماسية بينما اجتاز عداؤهم خط النهاية."
+    },
+    {
+      "headword": "scream",
+      "pronunciation": "/skriːm/",
+      "partOfSpeech": "verb",
+      "definition": "to give a long, loud, piercing cry or sound of extreme emotion or pain",
+      "example": "Passengers were screaming in fear when the rollercoaster plunged downwards.",
+      "verbForms": {
+        "v1": "scream",
+        "v2": "screamed",
+        "v3": "screamed"
+      },
+      "relatedForms": [
+        "scream (noun)"
+      ],
+      "collocations": [
+        "scream with fear",
+        "scream with laughter"
+      ],
+      "synonyms": [
+        "shriek",
+        "screech",
+        "howl"
+      ],
+      "antonyms": [
+        "whisper"
+      ],
+      "tags": [
+        "sound",
+        "emotion"
+      ],
+      "translation": "يصرخ بذعر أو ألم",
+      "exampleArabic": "كان الركاب يصرخون خوفاً عندما هوت قطار الملاهي إلى الأسفل."
+    },
+    {
+      "headword": "argue",
+      "pronunciation": "/ˈɑːɡ.juː/",
+      "partOfSpeech": "verb",
+      "definition": "to give reasons or cite evidence in support of an idea, or contend heatedly",
+      "example": "The two neighbors were arguing heatedly about the shared wooden fence.",
+      "verbForms": {
+        "v1": "argue",
+        "v2": "argued",
+        "v3": "argued"
+      },
+      "relatedForms": [
+        "argument",
+        "arguable"
+      ],
+      "collocations": [
+        "argue about",
+        "argue with",
+        "argue passionately"
+      ],
+      "synonyms": [
+        "dispute",
+        "debate",
+        "quarrel"
+      ],
+      "antonyms": [
+        "agree",
+        "concur"
+      ],
+      "tags": [
+        "conflict",
+        "communication"
+      ],
+      "translation": "يجادل / يتخاصم",
+      "exampleArabic": "كان الجاران يتجادلان بحدة حول السياج الخشبي المشترك."
+    },
+    {
+      "headword": "quarrel",
+      "pronunciation": "/ˈkwɒr.əl/",
+      "partOfSpeech": "verb",
+      "definition": "to have an angry dispute, disagreement, or falling out",
+      "example": "The young siblings were quarreling over who should play with the tablet.",
+      "verbForms": {
+        "v1": "quarrel",
+        "v2": "quarrelled",
+        "v3": "quarrelled"
+      },
+      "relatedForms": [
+        "quarrel (noun)",
+        "quarrelsome"
+      ],
+      "collocations": [
+        "quarrel over",
+        "quarrel with",
+        "bitter quarrel"
+      ],
+      "synonyms": [
+        "bicker",
+        "squabble",
+        "dispute"
+      ],
+      "antonyms": [
+        "harmonize",
+        "reconcile"
+      ],
+      "tags": [
+        "conflict",
+        "action"
+      ],
+      "translation": "يتشاجر كلامياً / يختلف بنزاع",
+      "exampleArabic": "كان الأخوان الصغيران يتشاجران حول مَن يجب أن يلعب بالحاسوب اللوحي."
+    },
+    {
+      "headword": "fight",
+      "pronunciation": "/faɪt/",
+      "partOfSpeech": "verb",
+      "definition": "to take part in a violent struggle involving physical force or fierce battle",
+      "example": "Soldiers were fighting bravely to defend the historic citadel.",
+      "verbForms": {
+        "v1": "fight",
+        "v2": "fought",
+        "v3": "fought"
+      },
+      "relatedForms": [
+        "fighter",
+        "fight (noun)"
+      ],
+      "collocations": [
+        "fight against",
+        "fight for freedom",
+        "fight hard"
+      ],
+      "synonyms": [
+        "battle",
+        "combat",
+        "clash"
+      ],
+      "antonyms": [
+        "surrender",
+        "yield"
+      ],
+      "tags": [
+        "conflict",
+        "action"
+      ],
+      "translation": "يقاتل / يحارب / يكافح",
+      "exampleArabic": "كان الجنود يقاتلون بشجاعة للدفاع عن القلعة التاريخية."
+    },
+    {
+      "headword": "struggle",
+      "pronunciation": "/ˈstrʌɡ.əl/",
+      "partOfSpeech": "verb",
+      "definition": "to make forceful efforts to get free or strive vigorously against difficulties",
+      "example": "The swimmer was struggling against the powerful ocean undertow.",
+      "verbForms": {
+        "v1": "struggle",
+        "v2": "struggled",
+        "v3": "struggled"
+      },
+      "relatedForms": [
+        "struggle (noun)"
+      ],
+      "collocations": [
+        "struggle with",
+        "struggle to survive",
+        "hard struggle"
+      ],
+      "synonyms": [
+        "strive",
+        "toil",
+        "wrestle"
+      ],
+      "antonyms": [
+        "give in"
+      ],
+      "tags": [
+        "effort",
+        "action"
+      ],
+      "translation": "يكافح / يصارع / يجاهد",
+      "exampleArabic": "كان السباح يصارع تيار المحيط الساحب القوي."
+    },
+    {
+      "headword": "chase",
+      "pronunciation": "/tʃeɪs/",
+      "partOfSpeech": "verb",
+      "definition": "to pursue in order to catch or catch up with",
+      "example": "The playful dog was chasing pigeons across the wide town square.",
+      "verbForms": {
+        "v1": "chase",
+        "v2": "chased",
+        "v3": "chased"
+      },
+      "relatedForms": [
+        "chaser",
+        "chase (noun)"
+      ],
+      "collocations": [
+        "chase after",
+        "police chase",
+        "chase dreams"
+      ],
+      "synonyms": [
+        "pursue",
+        "run after",
+        "hunt"
+      ],
+      "antonyms": [
+        "flee",
+        "retreat"
+      ],
+      "tags": [
+        "movement",
+        "action"
+      ],
+      "translation": "يطارد / يلاحق",
+      "exampleArabic": "كان الكلب اللعوب يطارد الحمام عبر ساحة المدينة الواسعة."
+    },
+    {
+      "headword": "escape",
+      "pronunciation": "/ɪˈskeɪp/",
+      "partOfSpeech": "verb",
+      "definition": "to break free from confinement or control; get away from danger",
+      "example": "The frightened deer was escaping rapidly into the dense pine forest.",
+      "verbForms": {
+        "v1": "escape",
+        "v2": "escaped",
+        "v3": "escaped"
+      },
+      "relatedForms": [
+        "escape (noun)",
+        "escapism"
+      ],
+      "collocations": [
+        "narrowly escape",
+        "escape from danger"
+      ],
+      "synonyms": [
+        "flee",
+        "run away",
+        "slip away"
+      ],
+      "antonyms": [
+        "be captured"
+      ],
+      "tags": [
+        "movement",
+        "danger"
+      ],
+      "translation": "يهرب / يفرّ / ينجو",
+      "exampleArabic": "كان الغزال الخائف يفر بسرعة إلى داخل غابة الصنوبر الكثيفة."
+    },
+    {
+      "headword": "hide",
+      "pronunciation": "/haɪd/",
+      "partOfSpeech": "verb",
+      "definition": "to put or keep out of sight, or conceal oneself from view",
+      "example": "The little children were hiding behind the tall curtains during the game.",
+      "verbForms": {
+        "v1": "hide",
+        "v2": "hid",
+        "v3": "hidden"
+      },
+      "relatedForms": [
+        "hidden",
+        "hiding"
+      ],
+      "collocations": [
+        "hide and seek",
+        "hide away",
+        "hide from view"
+      ],
+      "synonyms": [
+        "conceal",
+        "take cover",
+        "shelter"
+      ],
+      "antonyms": [
+        "reveal",
+        "expose",
+        "show"
+      ],
+      "tags": [
+        "action",
+        "secrecy"
+      ],
+      "translation": "يختبئ / يخبئ",
+      "exampleArabic": "كان الأطفال الصغار يختبئون خلف الستائر الطويلة أثناء اللعبة."
+    },
+    {
+      "headword": "wander",
+      "pronunciation": "/ˈwɒn.dər/",
+      "partOfSpeech": "verb",
+      "definition": "to walk or move in a leisurely, casual, or aimless way",
+      "example": "Tourists were wandering through the winding narrow cobblestone streets.",
+      "verbForms": {
+        "v1": "wander",
+        "v2": "wandered",
+        "v3": "wandered"
+      },
+      "relatedForms": [
+        "wanderer"
+      ],
+      "collocations": [
+        "wander around",
+        "wander off",
+        "mind wanders"
+      ],
+      "synonyms": [
+        "roam",
+        "ramble",
+        "meander"
+      ],
+      "antonyms": [],
+      "tags": [
+        "movement",
+        "travel"
+      ],
+      "translation": "يتجول / يطوف هائماً",
+      "exampleArabic": "كان السياح يتجولون عبر الشوارع الحجرية الضيقة والملتوية."
+    },
+    {
+      "headword": "rush",
+      "pronunciation": "/rʌʃ/",
+      "partOfSpeech": "verb",
+      "definition": "to move with urgent haste or great speed",
+      "example": "Commuters were rushing toward the ticket gates as the express arrived.",
+      "verbForms": {
+        "v1": "rush",
+        "v2": "rushed",
+        "v3": "rushed"
+      },
+      "relatedForms": [
+        "rush (noun)"
+      ],
+      "collocations": [
+        "rush hour",
+        "rush in",
+        "rush to help"
+      ],
+      "synonyms": [
+        "hurry",
+        "dash",
+        "race"
+      ],
+      "antonyms": [
+        "linger",
+        "dawdle"
+      ],
+      "tags": [
+        "movement",
+        "speed"
+      ],
+      "translation": "يندفع / يهرول / يستعجل",
+      "exampleArabic": "كان الركاب يهرولون نحو بوابات التذاكر مع وصول القطار السريع."
+    },
+    {
+      "headword": "hurry",
+      "pronunciation": "/ˈhʌr.i/",
+      "partOfSpeech": "verb",
+      "definition": "to move or act with haste; do something quickly",
+      "example": "Shoppers were hurrying home before the evening thunderstorm broke.",
+      "verbForms": {
+        "v1": "hurry",
+        "v2": "hurried",
+        "v3": "hurried"
+      },
+      "relatedForms": [
+        "hurriedly"
+      ],
+      "collocations": [
+        "hurry up",
+        "in a hurry",
+        "hurry back"
+      ],
+      "synonyms": [
+        "haste",
+        "scurry",
+        "speed"
+      ],
+      "antonyms": [
+        "delay",
+        "slow down"
+      ],
+      "tags": [
+        "movement",
+        "speed"
+      ],
+      "translation": "يستعجل / يسرع",
+      "exampleArabic": "كان المتسوقون يسرعون عائدين إلى منازلهم قبل اندلاع العاصفة الرعدية المسائية."
+    },
+    {
+      "headword": "stare",
+      "pronunciation": "/steər/",
+      "partOfSpeech": "verb",
+      "definition": "to look fixedly and vacantly at someone or something with one's eyes wide open",
+      "example": "The boy was staring in awe at the massive dinosaur skeleton.",
+      "verbForms": {
+        "v1": "stare",
+        "v2": "stared",
+        "v3": "stared"
+      },
+      "relatedForms": [
+        "stare (noun)"
+      ],
+      "collocations": [
+        "stare at",
+        "blank stare",
+        "stare into space"
+      ],
+      "synonyms": [
+        "gaze",
+        "peer",
+        "gape"
+      ],
+      "antonyms": [
+        "glance away"
+      ],
+      "tags": [
+        "sight",
+        "perception"
+      ],
+      "translation": "يحدق / يمعن النظر",
+      "exampleArabic": "كان الصبي يحدق بإعجاب في الهيكل العظمي الهائل للديناصور."
+    },
+    {
+      "headword": "gaze",
+      "pronunciation": "/ɡeɪz/",
+      "partOfSpeech": "verb",
+      "definition": "to look steadily and intently, especially in admiration, surprise, or thought",
+      "example": "The astronomer was gazing through the giant telescope at distant galaxies.",
+      "verbForms": {
+        "v1": "gaze",
+        "v2": "gazed",
+        "v3": "gazed"
+      },
+      "relatedForms": [
+        "gaze (noun)"
+      ],
+      "collocations": [
+        "gaze at the stars",
+        "gaze into the distance"
+      ],
+      "synonyms": [
+        "stare",
+        "contemplate",
+        "look fondly"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sight",
+        "emotion"
+      ],
+      "translation": "يتأمل بنظره / يحدق بتمعن وإعجاب",
+      "exampleArabic": "كان عالم الفلك يتأمل من خلال التلسكوب العملاق المجرات البعيدة."
+    },
+    {
+      "headword": "glance",
+      "pronunciation": "/ɡlɑːns/",
+      "partOfSpeech": "verb",
+      "definition": "to take a brief, hurried look at someone or something",
+      "example": "The speaker was glancing occasionally at his prepared notes on the podium.",
+      "verbForms": {
+        "v1": "glance",
+        "v2": "glanced",
+        "v3": "glanced"
+      },
+      "relatedForms": [
+        "glance (noun)"
+      ],
+      "collocations": [
+        "glance at",
+        "quick glance",
+        "glance down"
+      ],
+      "synonyms": [
+        "peek",
+        "glimpse",
+        "scan"
+      ],
+      "antonyms": [
+        "stare",
+        "gaze"
+      ],
+      "tags": [
+        "sight",
+        "action"
+      ],
+      "translation": "يلمح / يلقي نظرة خاطفة",
+      "exampleArabic": "كان المتحدث يلقي نظرة خاطفة بين الحين والآخر على ملاحظاته المعدة على المنصة."
+    },
+    {
+      "headword": "peep",
+      "pronunciation": "/piːp/",
+      "partOfSpeech": "verb",
+      "definition": "to look quickly and furtively at something, especially through a narrow opening",
+      "example": "Curious children were peeping through the garden keyhole.",
+      "verbForms": {
+        "v1": "peep",
+        "v2": "peeped",
+        "v3": "peeped"
+      },
+      "relatedForms": [
+        "peep (noun)"
+      ],
+      "collocations": [
+        "peep through",
+        "peep out",
+        "take a peep"
+      ],
+      "synonyms": [
+        "peek",
+        "peer",
+        "spy"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sight",
+        "secrecy"
+      ],
+      "translation": "يسترق النظر / يختلس النظر",
+      "exampleArabic": "كان الأطفال الفضوليون يسترقون النظر من خلال ثقب مفتاح الحديقة."
+    },
+    {
+      "headword": "wave",
+      "pronunciation": "/weɪv/",
+      "partOfSpeech": "verb",
+      "definition": "to move one's hand to and fro in greeting, farewell, or as a signal",
+      "example": "Our friends were waving joyfully from the ship's upper observation deck.",
+      "verbForms": {
+        "v1": "wave",
+        "v2": "waved",
+        "v3": "waved"
+      },
+      "relatedForms": [
+        "wave (noun)",
+        "wavy"
+      ],
+      "collocations": [
+        "wave goodbye",
+        "wave a hand",
+        "wave frantically"
+      ],
+      "synonyms": [
+        "signal",
+        "beckon",
+        "gesture"
+      ],
+      "antonyms": [],
+      "tags": [
+        "gesture",
+        "communication"
+      ],
+      "translation": "يلوّح بيده",
+      "exampleArabic": "كان أصدقاؤنا يلوحون بأيديهم بفرح من على ظهر السفينة العلوي للمراقبة."
+    },
+    {
+      "headword": "cry",
+      "pronunciation": "/kraɪ/",
+      "partOfSpeech": "verb",
+      "definition": "to shed tears, typically as an expression of distress, pain, or sorrow",
+      "example": "The lost toddler was crying softly until the security officer arrived.",
+      "verbForms": {
+        "v1": "cry",
+        "v2": "cried",
+        "v3": "cried"
+      },
+      "relatedForms": [
+        "cry (noun)",
+        "crying"
+      ],
+      "collocations": [
+        "cry tears",
+        "cry out loud",
+        "cry with joy"
+      ],
+      "synonyms": [
+        "weep",
+        "sob",
+        "shed tears"
+      ],
+      "antonyms": [
+        "laugh",
+        "rejoice"
+      ],
+      "tags": [
+        "emotion",
+        "action"
+      ],
+      "translation": "يبكي / يذرف الدموع",
+      "exampleArabic": "كان الطفل الصغير التائه يبكي بهدوء حتى وصل رجل الأمن."
+    },
+    {
+      "headword": "weep",
+      "pronunciation": "/wiːp/",
+      "partOfSpeech": "verb",
+      "definition": "to shed tears as an expression of sorrow, grief, or deep emotion",
+      "example": "The emotional reader was weeping during the final chapter of the tragedy.",
+      "verbForms": {
+        "v1": "weep",
+        "v2": "wept",
+        "v3": "wept"
+      },
+      "relatedForms": [
+        "weeping"
+      ],
+      "collocations": [
+        "weep bitterly",
+        "weep for joy"
+      ],
+      "synonyms": [
+        "cry",
+        "sob",
+        "mourn"
+      ],
+      "antonyms": [
+        "laugh",
+        "smile"
+      ],
+      "tags": [
+        "emotion",
+        "literature"
+      ],
+      "translation": "ينتحب / يبكي بحرقة",
+      "exampleArabic": "كان القارئ المتأثر عاطفياً ينتحب خلال الفصل الأخير من الرواية المأساوية."
+    },
+    {
+      "headword": "sob",
+      "pronunciation": "/sɒb/",
+      "partOfSpeech": "verb",
+      "definition": "to cry noisily, taking in deep, irregular gasps of air",
+      "example": "The injured athlete was sobbing quietly on the medical bench.",
+      "verbForms": {
+        "v1": "sob",
+        "v2": "sobbed",
+        "v3": "sobbed"
+      },
+      "relatedForms": [
+        "sob (noun)"
+      ],
+      "collocations": [
+        "sob uncontrollably",
+        "sob into one's hands"
+      ],
+      "synonyms": [
+        "whimper",
+        "weep loudly"
+      ],
+      "antonyms": [],
+      "tags": [
+        "emotion",
+        "sound"
+      ],
+      "translation": "يشهق باكياً / ينشج",
+      "exampleArabic": "كان الرياضي المصاب يشهق باكياً بهدوء على مقعد العلاج الطبي."
+    },
+    {
+      "headword": "laugh",
+      "pronunciation": "/lɑːf/",
+      "partOfSpeech": "verb",
+      "definition": "to make sounds and movements expressing amusement or happiness",
+      "example": "The audience was laughing heartily at the clever theatrical comedian.",
+      "verbForms": {
+        "v1": "laugh",
+        "v2": "laughed",
+        "v3": "laughed"
+      },
+      "relatedForms": [
+        "laughter",
+        "laughable"
+      ],
+      "collocations": [
+        "laugh out loud",
+        "laugh heartily",
+        "burst out laughing"
+      ],
+      "synonyms": [
+        "chuckle",
+        "giggle",
+        "cackle"
+      ],
+      "antonyms": [
+        "cry",
+        "weep"
+      ],
+      "tags": [
+        "emotion",
+        "sound"
+      ],
+      "translation": "يضحك",
+      "exampleArabic": "كان الجمهور يضحك من كل قلبه على الممثل الكوميدي المسرحي البارع."
+    },
+    {
+      "headword": "giggle",
+      "pronunciation": "/ˈɡɪɡ.əl/",
+      "partOfSpeech": "verb",
+      "definition": "to laugh lightly in a nervous, affected, or silly manner",
+      "example": "Schoolgirls were giggling behind their notebooks at the back of class.",
+      "verbForms": {
+        "v1": "giggle",
+        "v2": "giggled",
+        "v3": "giggled"
+      },
+      "relatedForms": [
+        "giggle (noun)"
+      ],
+      "collocations": [
+        "giggle nervously",
+        "suppress a giggle"
+      ],
+      "synonyms": [
+        "titter",
+        "snicker",
+        "chuckle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sound",
+        "emotion"
+      ],
+      "translation": "يقهقه بخفة / يضحك مكتوماً",
+      "exampleArabic": "كانت فتيات المدرسة يقهقهن بخفة خلف دفاتر ملاحظاتهن في مؤخرة الفصل."
+    },
+    {
+      "headword": "cough",
+      "pronunciation": "/kɒf/",
+      "partOfSpeech": "verb",
+      "definition": "to expel air from the lungs with a sudden sharp sound",
+      "example": "The patient was coughing repeatedly due to seasonal allergies.",
+      "verbForms": {
+        "v1": "cough",
+        "v2": "coughed",
+        "v3": "coughed"
+      },
+      "relatedForms": [
+        "cough (noun)"
+      ],
+      "collocations": [
+        "cough loudly",
+        "dry cough",
+        "cough up"
+      ],
+      "synonyms": [
+        "hack",
+        "clear throat"
+      ],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "body"
+      ],
+      "translation": "يسعل / يكح",
+      "exampleArabic": "كان المريض يسعل مراراً وتكراراً بسبب حساسية موسمية."
+    },
+    {
+      "headword": "sneeze",
+      "pronunciation": "/sniːz/",
+      "partOfSpeech": "verb",
+      "definition": "to make a sudden involuntary expulsion of air through the nose and mouth",
+      "example": "He was sneezing frequently because of flower pollen floating in the garden.",
+      "verbForms": {
+        "v1": "sneeze",
+        "v2": "sneezed",
+        "v3": "sneezed"
+      },
+      "relatedForms": [
+        "sneeze (noun)"
+      ],
+      "collocations": [
+        "sneeze loudly",
+        "bless you when sneezing"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "body"
+      ],
+      "translation": "يعطس",
+      "exampleArabic": "كان يعطس كثيراً بسبب حبوب لقاح الأزهار المتطايرة في الحديقة."
+    },
+    {
+      "headword": "bleed",
+      "pronunciation": "/bliːd/",
+      "partOfSpeech": "verb",
+      "definition": "to lose blood from the body as a result of injury or illness",
+      "example": "The scraped knee was bleeding slightly until the nurse applied clean gauze.",
+      "verbForms": {
+        "v1": "bleed",
+        "v2": "bled",
+        "v3": "bled"
+      },
+      "relatedForms": [
+        "blood",
+        "bleeding"
+      ],
+      "collocations": [
+        "bleed profusely",
+        "stop bleeding"
+      ],
+      "synonyms": [
+        "lose blood",
+        "hemorrhage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "injury"
+      ],
+      "translation": "ينزف (دماً)",
+      "exampleArabic": "كانت الركبة المخدوشة تنزف قليلاً حتى وضعت الممرضة شاشاً نظيفاً."
+    },
+    {
+      "headword": "burn",
+      "pronunciation": "/bɜːn/",
+      "partOfSpeech": "verb",
+      "definition": "to be consumed or destroyed by fire or heat, or to emit flames",
+      "example": "Dry pine logs were burning brightly in the stone fireplace.",
+      "verbForms": {
+        "v1": "burn",
+        "v2": "burnt",
+        "v3": "burnt"
+      },
+      "relatedForms": [
+        "burning",
+        "burn (noun)"
+      ],
+      "collocations": [
+        "burn down",
+        "burn brightly",
+        "burn calories"
+      ],
+      "synonyms": [
+        "blaze",
+        "flame",
+        "scorch"
+      ],
+      "antonyms": [
+        "extinguish",
+        "quench"
+      ],
+      "tags": [
+        "fire",
+        "action"
+      ],
+      "translation": "يحترق / يشتعل / يحرق",
+      "exampleArabic": "كانت جذوع الصنوبر الجافة تحترق بسطوع في الموقد الحجري."
+    },
+    {
+      "headword": "freeze",
+      "pronunciation": "/friːz/",
+      "partOfSpeech": "verb",
+      "definition": "to be turned into ice or another solid as a result of extreme cold",
+      "example": "The surface of the lake was freezing rapidly during the bitter winter night.",
+      "verbForms": {
+        "v1": "freeze",
+        "v2": "froze",
+        "v3": "frozen"
+      },
+      "relatedForms": [
+        "freezer",
+        "freezing"
+      ],
+      "collocations": [
+        "freeze over",
+        "freeze to death",
+        "freeze completely"
+      ],
+      "synonyms": [
+        "solidify",
+        "chill",
+        "glaciate"
+      ],
+      "antonyms": [
+        "melt",
+        "thaw"
+      ],
+      "tags": [
+        "temperature",
+        "weather"
+      ],
+      "translation": "يتجمد / يجمد",
+      "exampleArabic": "كان سطح البحيرة يتجمد بسرعة خلال ليلة الشتاء القارسة."
+    },
+    {
+      "headword": "melt",
+      "pronunciation": "/melt/",
+      "partOfSpeech": "verb",
+      "definition": "to make or become liquefied by heat",
+      "example": "The morning snow was melting quickly under the radiant noon sunshine.",
+      "verbForms": {
+        "v1": "melt",
+        "v2": "melted",
+        "v3": "melted"
+      },
+      "relatedForms": [
+        "molten",
+        "melting"
+      ],
+      "collocations": [
+        "melt away",
+        "melt down",
+        "ice melts"
+      ],
+      "synonyms": [
+        "thaw",
+        "liquefy",
+        "dissolve"
+      ],
+      "antonyms": [
+        "freeze",
+        "solidify"
+      ],
+      "tags": [
+        "temperature",
+        "action"
+      ],
+      "translation": "يذوب / ينصهر",
+      "exampleArabic": "كان ثلج الصباح يذوب بسرعة تحت أشعة شمس الظهيرة الساطعة."
+    },
+    {
+      "headword": "drown",
+      "pronunciation": "/draʊn/",
+      "partOfSpeech": "verb",
+      "definition": "to die or suffocate through submersion in and inhalation of water",
+      "example": "Lifeguards promptly rescued a struggling swimmer who was drowning.",
+      "verbForms": {
+        "v1": "drown",
+        "v2": "drowned",
+        "v3": "drowned"
+      },
+      "relatedForms": [
+        "drowning"
+      ],
+      "collocations": [
+        "nearly drown",
+        "drown out noise"
+      ],
+      "synonyms": [
+        "suffocate",
+        "submerge"
+      ],
+      "antonyms": [
+        "rescue",
+        "survive"
+      ],
+      "tags": [
+        "danger",
+        "water"
+      ],
+      "translation": "يغرق",
+      "exampleArabic": "أنقذ حراس الإنقاذ على الفور سباحاً متعثراً كان يغرق."
+    },
+    {
+      "headword": "choke",
+      "pronunciation": "/tʃəʊk/",
+      "partOfSpeech": "verb",
+      "definition": "to have severe difficulty in breathing because of a constricted throat",
+      "example": "A diner was choking on a piece of crusty bread until someone performed first aid.",
+      "verbForms": {
+        "v1": "choke",
+        "v2": "choked",
+        "v3": "choked"
+      },
+      "relatedForms": [
+        "choking"
+      ],
+      "collocations": [
+        "choke on food",
+        "choke up"
+      ],
+      "synonyms": [
+        "suffocate",
+        "gag",
+        "strangle"
+      ],
+      "antonyms": [
+        "breathe freely"
+      ],
+      "tags": [
+        "health",
+        "emergency"
+      ],
+      "translation": "يختنق (بالطعام أو انسداد الحلق)",
+      "exampleArabic": "كان أحد رواد المطعم يختنق بقطعة خبز مقرمشة حتى أجرى شخص ما له الإسعافات الأولية."
+    },
+    {
+      "headword": "slip",
+      "pronunciation": "/slɪp/",
+      "partOfSpeech": "verb",
+      "definition": "to lose one's footing and slide involuntarily on a smooth surface",
+      "example": "The pedestrian was slipping on the icy sidewalk when I reached out to steady him.",
+      "verbForms": {
+        "v1": "slip",
+        "v2": "slipped",
+        "v3": "slipped"
+      },
+      "relatedForms": [
+        "slippery",
+        "slip (noun)"
+      ],
+      "collocations": [
+        "slip and fall",
+        "slip away",
+        "slip on ice"
+      ],
+      "synonyms": [
+        "slide",
+        "skid",
+        "lose balance"
+      ],
+      "antonyms": [
+        "grip",
+        "hold steady"
+      ],
+      "tags": [
+        "movement",
+        "accident"
+      ],
+      "translation": "ينزلق / يتزحلق",
+      "exampleArabic": "كان المشاة ينزلق على الرصيف الجليدي عندما مددت يدي لتثبيته."
+    },
+    {
+      "headword": "trip over",
+      "pronunciation": "/trɪp ˈəʊ.vər/",
+      "partOfSpeech": "phrasal verb",
+      "definition": "to catch one's foot on something and stumble or fall",
+      "example": "He tripped over a protruding tree root while jogging in the park.",
+      "verbForms": {
+        "v1": "trip over",
+        "v2": "tripped over",
+        "v3": "tripped over"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "trip over a stone",
+        "trip over a wire"
+      ],
+      "synonyms": [
+        "stumble on",
+        "catch foot on"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accident",
+        "movement"
+      ],
+      "translation": "يتعثر بـ (يعثر قدمه في شيء)",
+      "exampleArabic": "تعثر بجذر شجرة بارز أثناء الركض في الحديقة."
+    },
+    {
+      "headword": "stumble",
+      "pronunciation": "/ˈstʌm.bəl/",
+      "partOfSpeech": "verb",
+      "definition": "to trip or momentarily lose one's balance; almost fall",
+      "example": "The exhausted hiker was stumbling along the dark uneven trail.",
+      "verbForms": {
+        "v1": "stumble",
+        "v2": "stumbled",
+        "v3": "stumbled"
+      },
+      "relatedForms": [
+        "stumbling"
+      ],
+      "collocations": [
+        "stumble upon",
+        "stumble in the dark"
+      ],
+      "synonyms": [
+        "lurch",
+        "falter",
+        "stagger"
+      ],
+      "antonyms": [
+        "walk steadily"
+      ],
+      "tags": [
+        "movement",
+        "balance"
+      ],
+      "translation": "يتعثر / يترنح",
+      "exampleArabic": "كان المتنزه المرهق يتعثر على طول المسار المظلم وغير المستوي."
+    },
+    {
+      "headword": "crash",
+      "pronunciation": "/kræʃ/",
+      "partOfSpeech": "verb",
+      "definition": "to collide violently with an obstacle or vehicle, causing damage or loud noise",
+      "example": "The delivery van crashed into a protective barrier during the sleet.",
+      "verbForms": {
+        "v1": "crash",
+        "v2": "crashed",
+        "v3": "crashed"
+      },
+      "relatedForms": [
+        "crash (noun)"
+      ],
+      "collocations": [
+        "crash into",
+        "car crash",
+        "crash loudly"
+      ],
+      "synonyms": [
+        "collide",
+        "smash",
+        "slam"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accident",
+        "transport"
+      ],
+      "translation": "يصطدم / يتحطم",
+      "exampleArabic": "اصطدمت شاحنة التوصيل بحاجز وقائي أثناء تساقط البرد الماطر."
+    },
+    {
+      "headword": "bang",
+      "pronunciation": "/bæŋ/",
+      "partOfSpeech": "verb",
+      "definition": "to strike or put down forcefully and noisily, producing a sharp loud sound",
+      "example": "The heavy wooden shutter was banging loudly against the brick wall in the gale.",
+      "verbForms": {
+        "v1": "bang",
+        "v2": "banged",
+        "v3": "banged"
+      },
+      "relatedForms": [
+        "bang (noun)"
+      ],
+      "collocations": [
+        "bang on the door",
+        "bang loudly",
+        "big bang"
+      ],
+      "synonyms": [
+        "slam",
+        "strike",
+        "thump"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sound",
+        "action"
+      ],
+      "translation": "يخبط / يرتطم بقوة مصدراً دوياً",
+      "exampleArabic": "كان مصراع النافذة الخشبي الثقيل يرتطم بقوة بجدار القرميد أثناء العاصفة."
+    },
+    {
+      "headword": "flash",
+      "pronunciation": "/flæʃ/",
+      "partOfSpeech": "verb",
+      "definition": "to shine in a sudden, intense, momentary burst of bright light",
+      "example": "Warning beacons were flashing across the stormy harbor entrance.",
+      "verbForms": {
+        "v1": "flash",
+        "v2": "flashed",
+        "v3": "flashed"
+      },
+      "relatedForms": [
+        "flash (noun)",
+        "flashy"
+      ],
+      "collocations": [
+        "flash of light",
+        "flash brightly",
+        "in a flash"
+      ],
+      "synonyms": [
+        "flare",
+        "glimmer",
+        "sparkle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "light",
+        "vision"
+      ],
+      "translation": "يومض / يلمع فجأة",
+      "exampleArabic": "كانت إشارات التحذير تومض عبر مدخل الميناء العاصف."
+    },
+    {
+      "headword": "thunder",
+      "pronunciation": "/ˈθʌn.dər/",
+      "partOfSpeech": "noun",
+      "definition": "a loud rumbling or crashing noise heard after a lightning flash due to air expansion",
+      "example": "Loud thunder was echoing across the valley as the storm approached.",
+      "relatedForms": [
+        "thunderous"
+      ],
+      "collocations": [
+        "clap of thunder",
+        "peal of thunder",
+        "rolling thunder"
+      ],
+      "synonyms": [
+        "boom",
+        "rumble",
+        "crash"
+      ],
+      "antonyms": [],
+      "tags": [
+        "weather",
+        "nature"
+      ],
+      "translation": "رعد / دوي الرعد",
+      "exampleArabic": "كان الرعد القوي يتردد صداه عبر الوادي مع اقتراب العاصفة."
+    },
+    {
+      "headword": "lightning",
+      "pronunciation": "/ˈlaɪt.nɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "a brilliant electric spark discharge between clouds or between a cloud and earth",
+      "example": "A brilliant flash of lightning lit up the dark nocturnal sky.",
+      "relatedForms": [],
+      "collocations": [
+        "flash of lightning",
+        "struck by lightning",
+        "lightning bolt"
+      ],
+      "synonyms": [
+        "electric discharge",
+        "bolt"
+      ],
+      "antonyms": [],
+      "tags": [
+        "weather",
+        "nature"
+      ],
+      "translation": "برق / صاعقة",
+      "exampleArabic": "أضاء وميض برق ساطع السماء الليلية المظلمة."
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Recalling an Interrupted Study Session",
+      "titleArabic": "استرجاع جلسة دراسة قاطعتها العاصفة",
+      "setting": "Two students discussing yesterday evening's unexpected blackout",
+      "settingArabic": "طالبان يناقشان انقطاع الكهرباء المفاجئ مساء أمس",
+      "lines": [
+        {
+          "speaker": "Bilal",
+          "text": "What were you doing yesterday evening when the electrical blackout occurred at eight o'clock?",
+          "translation": "ماذا كنت تفعل مساء أمس عندما حدث انقطاع الكهرباء في تمام الثامنة؟"
+        },
+        {
+          "speaker": "Karima",
+          "text": "While I was studying grammar at my desk, the room plunged into complete darkness.",
+          "translation": "بينما كنت أدرس القواعد على مكتبي، غرقت الغرفة في ظلام دامس."
+        },
+        {
+          "speaker": "Bilal",
+          "text": "Loud thunder was roaring throughout the valley all night, and lightning was flashing repeatedly.",
+          "translation": "كان الرعد القوي يدوي في شتى أرجاء الوادي طوال الليل، وكان البرق يومض مراراً وتكراراً."
+        },
+        {
+          "speaker": "Karima",
+          "text": "At that exact moment, a heavy shutter banged against the wall, causing me to jump in fear!",
+          "translation": "في تلك اللحظة بالذات، ارتطم مصراع نافذة ثقيل بالجدار، مما جعلني أقفز ذعراً!"
+        },
+        {
+          "speaker": "Bilal",
+          "text": "Were people screaming in the hallway, or was everyone remaining relatively calm?",
+          "translation": "هل كان الناس يصرخون في الرواق، أم كان الجميع يلتزمون الهدوء نسبياً؟"
+        },
+        {
+          "speaker": "Karima",
+          "text": "A few neighbors were whispering anxiously in the corridor, but no serious interruption occurred.",
+          "translation": "كان بعض الجيران يهمسون بقلق في الممر، لكن لم تحدث أية مقاطعة خطيرة."
+        },
+        {
+          "speaker": "Bilal",
+          "text": "I lit two candles and read my historical fiction novel while the rain was pouring down outside.",
+          "translation": "أشعلت شمعتين وقرأت روايتي التاريخية الخيالية بينما كان المطر ينهمر في الخارج."
+        },
+        {
+          "speaker": "Karima",
+          "text": "What a strange coincidence that our power returned precisely at midnight!",
+          "translation": "يا لها من صدفة غريبة أن عادت الكهرباء لدينا عند منتصف الليل تماماً!"
+        }
+      ],
+      "vocabularyUsed": [
+        "while",
+        "thunder",
+        "throughout",
+        "all night",
+        "lightning",
+        "flash",
+        "at that exact moment",
+        "bang",
+        "scream",
+        "whisper",
+        "interruption",
+        "coincidence"
+      ]
+    },
+    {
+      "title": "A Dramatic Afternoon at the Marina",
+      "titleArabic": "فترة بعد ظهيرة درامية في المرفأ البحري",
+      "setting": "Sitting at a seaside terrace recounting an emergency rescue",
+      "settingArabic": "الجلوس على شرفة بحرية لسرد تفاصيل عملية إنقاذ طارئة",
+      "lines": [
+        {
+          "speaker": "Captain Samer",
+          "text": "As we were strolling near the pier yesterday, a sudden commotion erupted near the harbor.",
+          "translation": "بينما كنا نتنزه قرب الرصيف البحري أمس، اندلعت ضجة مفاجئة بالقرب من الميناء."
+        },
+        {
+          "speaker": "Mona",
+          "text": "What happened? Were fishermen shouting warnings from their boats?",
+          "translation": "ماذا حدث؟ هل كان الصيادون يصرخون محذرين من قواربهم؟"
+        },
+        {
+          "speaker": "Captain Samer",
+          "text": "Yes! An inexperienced canoeist was struggling in the choppy water and nearly drowning.",
+          "translation": "نعم! كان أحد المجدفين قليلي الخبرة يصارع في المياه المتلاطمة ويكاد يغرق."
+        },
+        {
+          "speaker": "Mona",
+          "text": "How terrifying! Was the harbor patrol boat rushing to his aid at that time?",
+          "translation": "كم هذا مرعب! هل كانت قوارب خفر الميناء تهرع لنجدته في ذلك الوقت؟"
+        },
+        {
+          "speaker": "Captain Samer",
+          "text": "Two vigilant lifeguards were already diving into the waves while crowds were watching from the quay.",
+          "translation": "كان اثنان من حراس الإنقاذ اليقظين يغوصون بالفعل في الأمواج بينما كانت الحشود تراقب من الرصيف."
+        },
+        {
+          "speaker": "Mona",
+          "text": "Did the canoe crash against the stone breakwater during the rescue?",
+          "translation": "هل اصطدم الزورق بكاسر الأمواج الحجري أثناء عملية الإنقاذ؟"
+        },
+        {
+          "speaker": "Captain Samer",
+          "text": "It crashed against the rocks with a loud thump, but the canoeist escaped completely unharmed.",
+          "translation": "اصطدم بالصخور بارتطام عالٍ، لكن المجدف نجا دون أي أذى تماماً."
+        },
+        {
+          "speaker": "Mona",
+          "text": "Thank goodness! Spectators must have waved enthusiastically when they brought him ashore.",
+          "translation": "الحمد لله! لابد أن المتفرجين لوحوا بأيديهم بحماس عندما أحضروه إلى الشاطئ."
+        }
+      ],
+      "vocabularyUsed": [
+        "as",
+        "stroll",
+        "shout",
+        "struggle",
+        "drown",
+        "rush",
+        "at that time",
+        "while",
+        "crash",
+        "escape",
+        "wave"
+      ]
+    },
+    {
+      "title": "A Walk Through the Autumn Woods",
+      "titleArabic": "نزهة سيراً عبر غابات الخريف",
+      "setting": "Two nature enthusiasts reviewing their weekend forest exploration",
+      "settingArabic": "محبان للطبيعة يسترجعان استكشافهما للغابة في عطلة نهاية الأسبوع",
+      "lines": [
+        {
+          "speaker": "Layth",
+          "text": "While we were wandering along the woodland trail, the scenery felt enchanted.",
+          "translation": "بينما كنا نتجول على طول مسار الغابة، بدت المناظر ساحرة."
+        },
+        {
+          "speaker": "Huda",
+          "text": "Golden leaves were falling around us, and soft wind was whispering in the background.",
+          "translation": "كانت أوراق الشجر الذهبية تتساقط حولنا، ورياح هادئة كانت تهمس في الخلفية."
+        },
+        {
+          "speaker": "Layth",
+          "text": "Did you notice two squirrels chasing each other up that towering oak tree?",
+          "translation": "هل لاحظت سنجابين يطارد أحدهما الآخر صعوداً على شجرة البلوط الشاهقة؟"
+        },
+        {
+          "speaker": "Huda",
+          "text": "Yes, they were hiding nuts inside a hollow branch while we were gazing in admiration.",
+          "translation": "نعم، كانا يخبئان المكسرات داخل غصن مجوف بينما كنا نتأمل بإعجاب."
+        },
+        {
+          "speaker": "Layth",
+          "text": "Then I tripped over a mossy log and slipped onto the damp earth!",
+          "translation": "ثم تعثرتُ بجذع شجرة مكسو بالطحالب وانزلقتُ على الأرض الرطبة!"
+        },
+        {
+          "speaker": "Huda",
+          "text": "You stumbled so comically that both of us burst into joyful laughter all day!",
+          "translation": "تعثرتَ بطريقة مضحكة للغاية جعلتنا نضحك بفرح طوال اليوم!"
+        },
+        {
+          "speaker": "Layth",
+          "text": "Luckily I didn't bleed or sprain my ankle, so we continued our hike in good humor.",
+          "translation": "لحسن الحظ لم أنزف ولم ألوِ كاحلي، لذا واصلنا مسيرتنا بروح معنوية عالية."
+        },
+        {
+          "speaker": "Huda",
+          "text": "Moments like that in nature provide the most memorable experiences.",
+          "translation": "لحظات كهذه في الطبيعة تمنحنا أروع التجارب التي لا تُنسى."
+        }
+      ],
+      "vocabularyUsed": [
+        "while",
+        "wander",
+        "whisper",
+        "background",
+        "chase",
+        "hide",
+        "gaze",
+        "trip over",
+        "slip",
+        "stumble",
+        "laugh",
+        "all day",
+        "bleed"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "A Dramatic Storm Over the Valley",
+      "titleArabic": "عاصفة درامية تهب فوق الوادي",
+      "kind": "descriptive-narrative",
+      "text": "Yesterday evening, nature presented an awe-inspiring spectacle across our mountainous district. While families were relaxing inside their homes, dark tempestuous clouds were gathering rapidly in the eastern sky. Throughout the night, fierce winds were blowing violently, and thunder was rumbling like heavy artillery. A brilliant flash of lightning lit up the countryside, illuminating trees that were bending under immense pressure. In the distance, heavy shutters were banging rhythmically against stone farmhouses as farmers were hurrying to secure their livestock. At that exact moment, the rain transformed into icy sleet that froze the windowpanes. By morning, however, the turbulent tempest passed, leaving sparkling dew drops melting in the serene sunrise.",
+      "translation": "مساء أمس، قدمت الطبيعة مشهداً مهيباً يبعث على الرهبة عبر منطقتنا الجبلية. فبينما كانت العائلات تسترخي داخل منازلها، كانت غيوم داكنة عاصفة تتجمع بسرعة في السماء الشرقية. وطوال الليل، كانت رياح عاتية تهب بعنف، وكان الرعد يدوي كأنه مدفعية ثقيلة. وأضاء وميض برق ساطع أرجاء الريف، كاشفاً عن أشجار كانت تنحني تحت وطأة ضغط هائل. وفي البعيد، كانت مصاريع النوافذ الثقيلة ترتطم بإيقاع منتظم بجدران بيوت المزارع الحجرية بينما كان المزارعون يسرعون لتأمين مواشيهم. وفي تلك اللحظة بالذات، تحول المطر إلى جليد مائي جمّد زجاج النوافذ. وبحلول الصباح، انقشعت العاصفة الهوجاء، تاركة قطرات ندى متلألئة تذوب في شروق الشمس الهادئ.",
+      "vocabularyUsed": [
+        "while",
+        "throughout",
+        "thunder",
+        "flash",
+        "lightning",
+        "bang",
+        "hurry",
+        "at that exact moment",
+        "freeze",
+        "melt"
+      ]
+    },
+    {
+      "title": "A Busy Morning in the Old Town",
+      "titleArabic": "صباح حافل بالحياة في البلدة القديمة",
+      "kind": "observational-scene",
+      "text": "At that time, the historic old market was thriving with vibrant morning energy. While local merchants were arranging colorful goods on wooden counters, shoppers were strolling leisurely through the cobblestone alleys. In the background, street performers were singing traditional melodies, and delighted children were laughing and giggling as a playful puppy was chasing autumn leaves. Occasionally, someone coughed or sneezed from the fragrant spice aromas drifting from open bazaar sacks. Outside a busy bakery, two passionate bakers were arguing about a bread recipe, while curious passersby were peeping through the glass showcase. That rich tapestry of sights and sounds created an unforgettable portrait of community vitality.",
+      "translation": "في ذلك الوقت، كان السوق التاريخي القديم يزدهر بحيوية وطاقة صباحية متدفقة. فبينما كان التجار المحليون يرتبون البضائع الملونة على الطاولات الخشبية، كان المتسوقون يتنزهون على مهل عبر الأزقة الحجرية. وفي الخلفية، كان فنانو الشوارع يغنون ألحاناً تقليدية، وكان الأطفال المبتهجون يضحكون ويقهقهون بينما كان جرو لعوب يطارد أوراق الخريف. وبين الحين والآخر، كان شخص يسعل أو يعطس من عبير التوابل الفواحة المتصاعدة من أكياس البازار المفتوحة. وخارج مخبز مزدحم، كان خبازان شغوفان يتجادلان حول وصفة خبز، بينما كان المارة الفضوليون يسترقون النظر عبر واجهة العرض الزجاجية. وشكل ذلك النسيج الغني من المشاهد والأصوات لوحة لا تُنسى من حيوية المجتمع.",
+      "vocabularyUsed": [
+        "at that time",
+        "while",
+        "stroll",
+        "background",
+        "laugh",
+        "giggle",
+        "chase",
+        "cough",
+        "sneeze",
+        "argue",
+        "peep"
+      ]
+    },
+    {
+      "title": "A Fortunate Escape in the Mountains",
+      "titleArabic": "نجاة موفقة في المرتفعات الجبلية",
+      "kind": "suspense-story",
+      "text": "During our mountain hike, unexpected difficulties arose that tested our resilience. As the afternoon chill settled, hikers were wandering off the marked path, searching for shelter as fog was thickening. Suddenly, an exhausted traveler slipped on wet slate, stumbled over loose pebbles, and nearly plunged down a steep crevasse. While he was struggling to regain his footing, his companion reached out and grasped his backpack, preventing a disastrous fall. Below them, a small campfire was burning near a rescue hut where rangers were waving brightly colored flags. That astonishing coincidence saved the group from freezing conditions on the ridge, turning a perilous dilemma into a relieved celebration of safety.",
+      "translation": "خلال رحلتنا الجبلية، طرأت صعوبات غير متوقعة اختبرت قدرتنا على الصمود. ومع حلول برد بعد الظهيرة، كان المتنزهون يطوفون بعيداً عن المسار المحدد، باحثين عن مأوى مع ازدياد كثافة الضباب. وفجأة، انزلق مسافر منهك على صخر مبلل، وتعثر بحصى مفكك، وكاد يهوي في شق صخري عميق. وبينما كان يصارع لاستعادة توازنه، مد رفيقه يده وأمسك بحقيبة ظهره، مانعاً سقوطاً كارثياً. وتحتهم، كانت شعلة نار صغيرة تحترق بالقرب من كوخ إنقاذ حيث كان حراس الغابات يلوحون بأعلام زاهية الألوان. وأنقذت تلك الصدفة المدهشة المجموعة من ظروف التجمد القارسة على حافة الجبل، محولة أزمة محفوفة بالمخاطر إلى احتفال بارتياح بالسلامة.",
+      "vocabularyUsed": [
+        "as",
+        "wander",
+        "slip",
+        "stumble",
+        "while",
+        "struggle",
+        "burn",
+        "wave",
+        "coincidence",
+        "freeze"
+      ]
+    }
+  ]
+}
