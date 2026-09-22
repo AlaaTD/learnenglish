@@ -53,8 +53,8 @@ export const viewport: Viewport = {
   maximumScale: 5,
   // Match the page background (zinc-50 / zinc-950 in globals.css)
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f1f0e9" },
-    { media: "(prefers-color-scheme: dark)", color: "#101412" },
+    { media: "(prefers-color-scheme: light)", color: "#faf9f6" },
+    { media: "(prefers-color-scheme: dark)", color: "#120f0d" },
   ],
 };
 

@@ -44,43 +44,60 @@
  * component logic changes here.
  */
 @theme {
-  --color-white: #f6f4ee;
+  --color-white: #ffffff;
   --color-black: #0a0d0b;
 
-  /* Neutrals - ONE quiet ink scale. 50-300 = light-mode surfaces / dark-mode
-     primary-to-secondary text. 400-600 = tertiary text and visible borders.
-     700-950 = dark-mode surfaces, darkest at the page canvas. Every other
-     neutral alias in this file (night-*, mist-*) points at these same custom
-     properties, so there is exactly one neutral scale in the app. */
-  --color-zinc-50: #f1f0e9;
-  --color-zinc-100: #e4e2d6;
-  --color-zinc-200: #cbcfc0;
-  --color-zinc-300: #b6bbb2;
-  --color-zinc-400: #9ca295;
-  --color-zinc-500: #878e86;
-  --color-zinc-600: #5c6558;
-  --color-zinc-700: #2b342e;
-  --color-zinc-800: #202822;
-  --color-zinc-850: #1b211d;
-  --color-zinc-900: #171c19;
-  --color-zinc-950: #101412;
+  /* Neutrals - ONE quiet ink scale, 400-950 shared identically across both
+     modes. 50-300 is the one deliberate exception: these four steps are
+     reused as light-mode surfaces/borders AND as dark-mode primary-to-
+     secondary text, two roles with very different needs (a wash covering
+     most of the light-mode screen vs. a few words of text on ink-950).
+     Per Apple HIG, dark mode should not be a mechanical inversion of light
+     mode - so the values below are tuned for the light-mode surface role
+     (crisp, clearly stepped, no muddy/green cast), while the `.dark`
+     override further down (see "Light/dark split for 50-300") re-pins
+     50-300 to their original values so every dark-mode text colour that
+     reads these tokens (dark:text-zinc-50/100/200/300, dark:text-white,
+     mist-100/200/300) stays pixel-for-pixel unchanged. 700-950 = dark-mode
+     surfaces, darkest at the page canvas; not touched here. */
+  --color-zinc-50: #faf9f6;
+  --color-zinc-100: #f2f1ee;
+  --color-zinc-200: #e4e2dc;
+  --color-zinc-300: #cfcbc2;
+  --color-zinc-400: #a29c92;
+  --color-zinc-500: #837c72;
+  --color-zinc-600: #5c564c;
+  --color-zinc-700: #3a352e;
+  --color-zinc-800: #262220;
+  --color-zinc-850: #201c19;
+  --color-zinc-900: #1a1613;
+  --color-zinc-950: #120f0d;
 
-  /* Accent: one muted sage green, used flat (no gradients) everywhere an
-     accent is needed - buttons, links, focus, progress, the logo mark. 700 is
-     the resting action colour in light mode; 400 takes over in dark mode
-     (ink text on moss-400 passes AA - it is the brightest thing on a dark
-     surface without being a saturated "tech" green). */
-  --color-brand-50: #eef3e9;
-  --color-brand-100: #dce7d3;
-  --color-brand-200: #c3d5b3;
-  --color-brand-300: #a7ba95;
-  --color-brand-400: #8fa97d;
-  --color-brand-500: #7f956f;
-  --color-brand-600: #5d745f;
-  --color-brand-700: #4f6654;
-  --color-brand-800: #3d4f3f;
-  --color-brand-900: #2c3a2e;
-  --color-brand-950: #1c251d;
+  /* Accent: one deep forest green, used flat (no gradients) everywhere an
+     accent is needed - buttons, links, focus, progress, the logo mark.
+     Re-tuned from the original muted sage (which read as khaki/olive next
+     to the equally-warm neutral scale, "muddy") - kept close to `emerald`'s
+     hue on purpose (that pairing was already the design's approach: the two
+     read as one calm green family, told apart by richness, not hue) but
+     pushed noticeably more saturated and darker than emerald at every
+     matching step, so a solid brand-600 fill never gets mistaken for an
+     emerald "mastered" badge. That same shift away from a light, grayish
+     green also restores real hue distance from `sky` (the info colour,
+     ~187°) - the previous in-between teal had drifted close enough to sky
+     to blur the two as accents, which the original design explicitly
+     avoided. 700 is the resting action colour in light mode; 400 takes over
+     in dark mode (ink text on brand-400 passes AA, ~5.8:1). */
+  --color-brand-50: #e6f3ea;
+  --color-brand-100: #c7e5d1;
+  --color-brand-200: #99cead;
+  --color-brand-300: #69b485;
+  --color-brand-400: #3f9765;
+  --color-brand-500: #2a7d4f;
+  --color-brand-600: #1d633d;
+  --color-brand-700: #174f31;
+  --color-brand-800: #144128;
+  --color-brand-900: #113420;
+  --color-brand-950: #0c2417;
 
   /* Success / mastered / completed. A slightly richer green than the moss
      accent so "you finished this" stays legible as a distinct signal, while
@@ -234,6 +251,40 @@
 .dark {
   color-scheme: dark;
   accent-color: var(--color-brand-400);
+
+  /* Light/dark split for 50-300 (see the comment on the scale above): these
+     four steps double as dark-mode text (dark:text-zinc-50/100/200/300,
+     dark:text-white, mist-100/200/300, --color-text-primary). Re-pin them to
+     their original values here so lightening the light-mode surface role
+     above has zero effect on dark-mode text - every dark-mode colour stays
+     exactly as before this change. */
+  --color-white: #f6f4ee;
+  --color-zinc-50: #f1f0e9;
+  --color-zinc-100: #e4e2d6;
+  --color-zinc-200: #cbcfc0;
+  --color-zinc-300: #b6bbb2;
+
+  /* Dark-mode surfaces and mid-tones (400-950): re-pin to the "ink" scale
+     from ENGLISH90_COLOR_SYSTEM_AUDIT.md section 9.1 (ink-950..ink-600),
+     plus a 400/500 derived to sit hue-consistently between the already-used
+     paper-300 and paper-500 text tones. The base @theme values above for
+     this range had drifted warm (R > G > B, effectively brown) instead of
+     the documented "charcoal with a faint green cast" (G >= R > B) - this
+     is the muddy/inconsistent brown visible throughout dark-mode surfaces,
+     borders and secondary text. Proof it was drift, not intent: the
+     existing --shadow-press / --shadow-card already use the correct cool
+     rgb(16 20 18) / rgb(10 13 12) family, matching ink-950 exactly. This
+     override only touches dark mode; light-mode surfaces (which use
+     50-300, untouched) and light-mode text built from these same steps
+     are unaffected. */
+  --color-zinc-400: #9fa59c;
+  --color-zinc-500: #878e86;
+  --color-zinc-600: #3a443d;
+  --color-zinc-700: #2b342e;
+  --color-zinc-800: #202822;
+  --color-zinc-850: #1b211d;
+  --color-zinc-900: #171c19;
+  --color-zinc-950: #101412;
 }
 
 html {
