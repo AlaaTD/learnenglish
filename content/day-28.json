@@ -1,0 +1,1624 @@
+{
+  "day": 28,
+  "title": "Money Matters",
+  "topic": "Prices, banking and payments",
+  "description": "Talk about money, prices, banks and paying.",
+  "stage": "Real-Life Situations",
+  "focus": "By the end of today, you can communicate clearly about prices, banking and payments using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Quantifiers (a few, a little, a lot of)",
+      "explanation": "Quantifiers express amounts or quantities. We use 'a few' and 'several' with plural countable nouns (coins, bills, accounts). We use 'a little' with uncountable nouns (money, cash, debt). We use 'a lot of' and 'plenty of' with both countable and uncountable nouns.",
+      "explanationArabic": "محددات الكمية تُستخدم للتعبير عن المقادير. نستخدم 'a few' (بضعة) و 'several' (عدة) مع الأسماء المعدودة في صيغة الجمع (مثل coins, bills). ونستخدم 'a little' (قليل من) مع الأسماء غير المعدودة (مثل cash, money). بينما نستخدم 'a lot of' و 'plenty of' مع الأسماء المعدودة وغير المعدودة على حد سواء.",
+      "rules": [
+        "Use 'a few' with countable nouns: 'a few coins', 'a few banknotes'.",
+        "Use 'a little' with uncountable nouns: 'a little cash', 'a little debt'.",
+        "Use 'a lot of' and 'plenty of' with both count and uncount nouns: 'a lot of cash' or 'a lot of bills'.",
+        "Use 'several' with countable nouns to indicate more than two but not many: 'several accounts'."
+      ],
+      "rulesArabic": [
+        "استخدم 'a few' مع الأسماء المعدودة: 'a few coins' (بضعة عملات معدنية).",
+        "استخدم 'a little' مع الأسماء غير المعدودة: 'a little cash' (القليل من النقد).",
+        "استخدم 'a lot of' و 'plenty of' مع الاثنين: 'a lot of cash' أو 'a lot of bills'.",
+        "استخدم 'several' مع الأسماء المعدودة للإشارة إلى أكثر من اثنين ولكن ليس كثيراً: 'several accounts'."
+      ],
+      "structures": [
+        {
+          "pattern": "a few + plural countable noun",
+          "explanation": "Expresses a small positive number of items.",
+          "explanationArabic": "يُعبر عن عدد قليل وإيجابي من الأشياء المعدودة."
+        },
+        {
+          "pattern": "a little + uncountable noun",
+          "explanation": "Expresses a small positive amount of something.",
+          "explanationArabic": "يُعبر عن كمية قليلة وإيجابية لشيء غير معدود."
+        },
+        {
+          "pattern": "a lot of / plenty of + count or uncount noun",
+          "explanation": "Expresses a large quantity or abundant amount.",
+          "explanationArabic": "يُعبر عن كمية كبيرة أو وفيرة."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I only have a few coins and a little cash in my wallet.",
+          "translation": "ليس لدي سوى بضعة عملات معدنية وقليل من النقد في محفظتي.",
+          "usesVocabulary": [
+            "coins",
+            "cash"
+          ]
+        },
+        {
+          "sentence": "The bank branch has a lot of customers waiting near the atm.",
+          "translation": "فرع البنك لديه الكثير من العملاء المنتظرين بالقرب من الصراف الآلي.",
+          "usesVocabulary": [
+            "bank branch",
+            "atm"
+          ]
+        },
+        {
+          "sentence": "She has several savings accounts to earn safe profit.",
+          "translation": "لديها عدة حسابات توفير لتحقيق ربح آمن.",
+          "usesVocabulary": [
+            "several",
+            "savings account",
+            "profit"
+          ]
+        },
+        {
+          "sentence": "There is plenty of foreign currency available without any unexpected fee.",
+          "translation": "هناك وفرة من العملات الأجنبية المتاحة دون أي رسوم غير متوقعة.",
+          "usesVocabulary": [
+            "foreign currency",
+            "fee"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I have a few cash in my pocket.",
+          "right": "I have a little cash in my pocket.",
+          "note": "'cash' is an uncountable noun, so use 'a little', not 'a few'.",
+          "noteArabic": "كلمة 'cash' غير معدودة، لذا نستخدم 'a little' وليس 'a few'."
+        },
+        {
+          "wrong": "She withdrew a little coins from the cash dispenser.",
+          "right": "She withdrew a few coins from the cash dispenser.",
+          "note": "'coins' is a plural countable noun, so use 'a few', not 'a little'.",
+          "noteArabic": "كلمة 'coins' اسم جمع معدود، لذا نستخدم 'a few' وليس 'a little'."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "currency",
+      "pronunciation": "/ˈkɜːrənsi/",
+      "partOfSpeech": "noun",
+      "definition": "The system of money in general use in a particular country.",
+      "example": "What currency do people use in Japan?",
+      "translation": "عملة",
+      "exampleArabic": "ما هي العملة التي يستخدمها الناس في اليابان؟",
+      "relatedForms": [
+        "currencies"
+      ],
+      "collocations": [
+        "local currency",
+        "foreign currency",
+        "currency exchange"
+      ],
+      "synonyms": [
+        "money",
+        "legal tender"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "money"
+      ]
+    },
+    {
+      "headword": "cash",
+      "pronunciation": "/kæʃ/",
+      "partOfSpeech": "noun",
+      "definition": "Money in the form of coins or banknotes, rather than checks or cards.",
+      "example": "I do not have any cash in my wallet right now.",
+      "translation": "نقد / كاش",
+      "exampleArabic": "ليس لدي أي نقد في محفظتي الآن.",
+      "relatedForms": [
+        "cashless"
+      ],
+      "collocations": [
+        "pay in cash",
+        "cash on delivery",
+        "petty cash"
+      ],
+      "synonyms": [
+        "paper money",
+        "ready money"
+      ],
+      "antonyms": [
+        "credit"
+      ],
+      "tags": [
+        "money",
+        "daily"
+      ]
+    },
+    {
+      "headword": "coins",
+      "pronunciation": "/kɔɪnz/",
+      "partOfSpeech": "noun",
+      "definition": "Small flat pieces of metal used as money.",
+      "example": "She keeps loose coins in a ceramic jar on her desk.",
+      "translation": "عملات معدنية",
+      "exampleArabic": "تحتفظ بالعملات المعدنية في جرة خزفية على مكتبها.",
+      "relatedForms": [
+        "coin"
+      ],
+      "collocations": [
+        "gold coins",
+        "silver coins",
+        "pocket coins"
+      ],
+      "synonyms": [
+        "change",
+        "cents"
+      ],
+      "antonyms": [
+        "banknote"
+      ],
+      "tags": [
+        "money"
+      ]
+    },
+    {
+      "headword": "banknote",
+      "pronunciation": "/ˈbæŋknoʊt/",
+      "partOfSpeech": "noun",
+      "definition": "A piece of printed paper money issued by a bank.",
+      "example": "He handed the cashier a crisp twenty-dollar banknote.",
+      "translation": "ورقة نقدية",
+      "exampleArabic": "سلم أمين الصندوق ورقة نقدية جديدة من فئة العشرين دولاراً.",
+      "relatedForms": [
+        "banknotes"
+      ],
+      "collocations": [
+        "paper banknote",
+        "crisp banknote"
+      ],
+      "synonyms": [
+        "bill",
+        "note"
+      ],
+      "antonyms": [
+        "coin"
+      ],
+      "tags": [
+        "money"
+      ]
+    },
+    {
+      "headword": "bills",
+      "pronunciation": "/bɪlz/",
+      "partOfSpeech": "noun",
+      "definition": "Pieces of paper money or statements of money owed for goods or services.",
+      "example": "He carefully separated the ten-dollar bills from the twenties.",
+      "translation": "فواتير / أوراق نقدية",
+      "exampleArabic": "قام بفصل الأوراق النقدية من فئة العشرة دولارات بعناية عن فئة العشرين.",
+      "relatedForms": [
+        "bill"
+      ],
+      "collocations": [
+        "dollar bills",
+        "pay bills",
+        "utility bills"
+      ],
+      "synonyms": [
+        "notes",
+        "invoices"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "banking"
+      ]
+    },
+    {
+      "headword": "atm",
+      "pronunciation": "/ˌeɪ tiː ˈem/",
+      "partOfSpeech": "noun",
+      "definition": "An automated teller machine that dispenses cash and performs basic bank services.",
+      "example": "I need to find an atm to get some paper cash for lunch.",
+      "translation": "صراف آلي (ATM)",
+      "exampleArabic": "أحتاج إلى العثور على صراف آلي للحصول على بعض النقد للغداء.",
+      "relatedForms": [],
+      "collocations": [
+        "atm machine",
+        "atm vestibule",
+        "nearby atm"
+      ],
+      "synonyms": [
+        "cash dispenser"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "technology"
+      ]
+    },
+    {
+      "headword": "cash machine",
+      "pronunciation": "/kæʃ məˈʃiːn/",
+      "partOfSpeech": "noun",
+      "definition": "Another common name for an automated teller machine (ATM).",
+      "example": "The cash machine outside the supermarket was out of order.",
+      "translation": "ماكينة صرف نقود",
+      "exampleArabic": "كانت ماكينة صرف النقود خارج السوبرماركت معطلة.",
+      "relatedForms": [],
+      "collocations": [
+        "broken cash machine",
+        "use a cash machine"
+      ],
+      "synonyms": [
+        "atm",
+        "hole in the wall"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "bank account",
+      "pronunciation": "/bæŋk əˈkaʊnt/",
+      "partOfSpeech": "noun",
+      "definition": "An arrangement made with a bank whereby the bank looks after any deposited money.",
+      "example": "You need identification documents to open a new bank account.",
+      "translation": "حساب بنكي",
+      "exampleArabic": "تحتاج إلى وثائق إثبات هوية لفتح حساب بنكي جديد.",
+      "relatedForms": [],
+      "collocations": [
+        "open a bank account",
+        "close a bank account",
+        "joint bank account"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "checking account",
+      "pronunciation": "/ˈtʃekɪŋ əˌkaʊnt/",
+      "partOfSpeech": "noun",
+      "definition": "A bank account from which money can be withdrawn easily by check or debit card.",
+      "example": "I keep my monthly salary in my checking account for everyday spending.",
+      "translation": "حساب جاري",
+      "exampleArabic": "أحتفظ براتبي الشهري في حسابي الجاري للمصروفات اليومية.",
+      "relatedForms": [],
+      "collocations": [
+        "active checking account",
+        "personal checking account"
+      ],
+      "synonyms": [
+        "current account"
+      ],
+      "antonyms": [
+        "savings account"
+      ],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "savings account",
+      "pronunciation": "/ˈseɪvɪŋz əˌkaʊnt/",
+      "partOfSpeech": "noun",
+      "definition": "A bank account that earns interest on money held for future use.",
+      "example": "She deposits two hundred dollars into her savings account each month.",
+      "translation": "حساب توفير",
+      "exampleArabic": "تودع مئتي دولار في حساب التوفير الخاص بها كل شهر.",
+      "relatedForms": [],
+      "collocations": [
+        "high-yield savings account",
+        "grow a savings account"
+      ],
+      "synonyms": [
+        "deposit account"
+      ],
+      "antonyms": [
+        "checking account"
+      ],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "balance",
+      "pronunciation": "/ˈbæləns/",
+      "partOfSpeech": "noun",
+      "definition": "The amount of money remaining in a bank account after all transactions.",
+      "example": "Please check your current balance on the mobile banking app.",
+      "translation": "رصيد",
+      "exampleArabic": "يرجى التحقق من رصيدك الحالي على تطبيق الخدمات المصرفية عبر الهاتف.",
+      "relatedForms": [
+        "balanced"
+      ],
+      "collocations": [
+        "account balance",
+        "remaining balance",
+        "zero balance"
+      ],
+      "synonyms": [
+        "remainder",
+        "total"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "ledger",
+      "pronunciation": "/ˈledʒər/",
+      "partOfSpeech": "noun",
+      "definition": "A book or computer file in which a bank or business records financial transactions.",
+      "example": "The accountant entered each wire transfer into the general ledger.",
+      "translation": "دفتر الأستاذ / سجل الحسابات",
+      "exampleArabic": "سجل المحاسب كل تحويل بنكي في دفتر الأستاذ العام.",
+      "relatedForms": [
+        "ledgers"
+      ],
+      "collocations": [
+        "general ledger",
+        "accounting ledger",
+        "digital ledger"
+      ],
+      "synonyms": [
+        "record book",
+        "register"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "finance"
+      ]
+    },
+    {
+      "headword": "deposit money",
+      "pronunciation": "/dɪˈpɑːzɪt ˈmʌni/",
+      "partOfSpeech": "verb",
+      "definition": "To put money into a bank account.",
+      "example": "I will visit the bank branch today to deposit money from my bonus.",
+      "translation": "يودع مالاً",
+      "exampleArabic": "سأزور فرع البنك اليوم لإيداع أموال من مكافأتي.",
+      "relatedForms": [
+        "deposited money",
+        "depositing money"
+      ],
+      "collocations": [
+        "deposit money securely",
+        "deposit money directly"
+      ],
+      "synonyms": [
+        "pay in",
+        "bank money"
+      ],
+      "antonyms": [
+        "withdraw"
+      ],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "withdraw",
+      "pronunciation": "/wɪðˈdrɔː/",
+      "partOfSpeech": "verb",
+      "definition": "To take money out of a bank account.",
+      "example": "Can you withdraw fifty dollars from the cash dispenser for dinner?",
+      "translation": "يسحب (أموالاً)",
+      "exampleArabic": "هل يمكنك سحب خمسين دولاراً من الصراف لتناول العشاء؟",
+      "relatedForms": [
+        "withdrew",
+        "withdrawn",
+        "withdrawing"
+      ],
+      "collocations": [
+        "withdraw cash",
+        "withdraw funds"
+      ],
+      "synonyms": [
+        "take out",
+        "pull out"
+      ],
+      "antonyms": [
+        "deposit"
+      ],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "withdrawal",
+      "pronunciation": "/wɪðˈdrɔːəl/",
+      "partOfSpeech": "noun",
+      "definition": "The act of taking money out of an account, or the amount taken.",
+      "example": "There is a daily limit of five hundred dollars on every cash withdrawal.",
+      "translation": "سحب مالي / عملية سحب",
+      "exampleArabic": "هناك حد يومي قدره خمسمائة دولار على كل عملية سحب نقدي.",
+      "relatedForms": [
+        "withdrawals"
+      ],
+      "collocations": [
+        "cash withdrawal",
+        "atm withdrawal",
+        "early withdrawal"
+      ],
+      "synonyms": [
+        "removal",
+        "payout"
+      ],
+      "antonyms": [
+        "deposit"
+      ],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "transfer",
+      "pronunciation": "/trænsˈfɜːr/",
+      "partOfSpeech": "verb",
+      "definition": "To move money from one account or person to another.",
+      "example": "I will transfer the rent payment to my landlord this evening.",
+      "translation": "يحول (أموالاً)",
+      "exampleArabic": "سأقوم بتحويل دفعة الإيجار إلى المؤجر هذا المساء.",
+      "relatedForms": [
+        "transferred",
+        "transferring"
+      ],
+      "collocations": [
+        "transfer money",
+        "transfer funds",
+        "transfer instantly"
+      ],
+      "synonyms": [
+        "remit",
+        "send"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "wire transfer",
+      "pronunciation": "/ˈwaɪər trænsfɜːr/",
+      "partOfSpeech": "noun",
+      "definition": "An electronic transfer of funds across a network administered by banks worldwide.",
+      "example": "We sent an international wire transfer to pay for our hotel reservation.",
+      "translation": "تحويل برقي / تحويل مصرفي إلكتروني",
+      "exampleArabic": "أرسلنا تحويلاً مصرفياً دولياً لدفع قيمة حجز الفندق.",
+      "relatedForms": [
+        "wire transfers"
+      ],
+      "collocations": [
+        "international wire transfer",
+        "wire transfer fee"
+      ],
+      "synonyms": [
+        "telegraphic transfer",
+        "electronic funds transfer"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "finance"
+      ]
+    },
+    {
+      "headword": "exchange rate",
+      "pronunciation": "/ɪksˈtʃeɪndʒ reɪt/",
+      "partOfSpeech": "noun",
+      "definition": "The value of one currency for the purpose of conversion to another.",
+      "example": "The exchange rate between the euro and the dollar improved yesterday.",
+      "translation": "سعر الصرف",
+      "exampleArabic": "تحسن سعر الصرف بين اليورو والدولار يوم أمس.",
+      "relatedForms": [
+        "exchange rates"
+      ],
+      "collocations": [
+        "favorable exchange rate",
+        "current exchange rate"
+      ],
+      "synonyms": [
+        "conversion rate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "travel"
+      ]
+    },
+    {
+      "headword": "foreign currency",
+      "pronunciation": "/ˈfɔːrən ˈkɜːrənsi/",
+      "partOfSpeech": "noun",
+      "definition": "Money that belongs to and is used by a country outside one's own.",
+      "example": "Tourists often exchange foreign currency at the airport terminal.",
+      "translation": "عملة أجنبية",
+      "exampleArabic": "غالباً ما يقوم السياح بصرف العملة الأجنبية في صالة المطار.",
+      "relatedForms": [],
+      "collocations": [
+        "convert foreign currency",
+        "foreign currency reserves"
+      ],
+      "synonyms": [
+        "forex"
+      ],
+      "antonyms": [
+        "domestic currency"
+      ],
+      "tags": [
+        "travel",
+        "money"
+      ]
+    },
+    {
+      "headword": "fee",
+      "pronunciation": "/fiː/",
+      "partOfSpeech": "noun",
+      "definition": "A payment made to a professional person or company in exchange for advice or services.",
+      "example": "The local bank charges a three-dollar fee for out-of-network atm usage.",
+      "translation": "رسوم / عمولة",
+      "exampleArabic": "يفرض البنك المحلي رسوماً قدرها ثلاثة دولارات لاستخدام صراف خارج الشبكة.",
+      "relatedForms": [
+        "fees"
+      ],
+      "collocations": [
+        "service fee",
+        "hidden fee",
+        "annual fee"
+      ],
+      "synonyms": [
+        "charge",
+        "tariff"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "banking"
+      ]
+    },
+    {
+      "headword": "commission",
+      "pronunciation": "/kəˈmɪʃən/",
+      "partOfSpeech": "noun",
+      "definition": "An amount of money, typically a percentage of the value involved of goods, paid to an agent.",
+      "example": "The currency booth charges a small commission on foreign exchange.",
+      "translation": "عمولة",
+      "exampleArabic": "يتقاضى كشك الصرافة عمولة صغيرة على صرف العملات الأجنبية.",
+      "relatedForms": [
+        "commissions"
+      ],
+      "collocations": [
+        "sales commission",
+        "zero commission",
+        "take a commission"
+      ],
+      "synonyms": [
+        "brokerage",
+        "percentage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "finance",
+        "money"
+      ]
+    },
+    {
+      "headword": "loan",
+      "pronunciation": "/loʊn/",
+      "partOfSpeech": "noun",
+      "definition": "A thing that is borrowed, especially a sum of money that is expected to be paid back with interest.",
+      "example": "They applied for a student loan to cover tuition fees.",
+      "translation": "قرض",
+      "exampleArabic": "تقدموا بطلب للحصول على قرض دراسي لتغطية الرسوم الجامعية.",
+      "relatedForms": [
+        "loans"
+      ],
+      "collocations": [
+        "bank loan",
+        "personal loan",
+        "repay a loan"
+      ],
+      "synonyms": [
+        "advance",
+        "credit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "finance"
+      ]
+    },
+    {
+      "headword": "debt",
+      "pronunciation": "/det/",
+      "partOfSpeech": "noun",
+      "definition": "Something, typically money, that is owed or due to another party.",
+      "example": "He worked extra hours to pay off his credit card debt quickly.",
+      "translation": "دَين",
+      "exampleArabic": "عمل ساعات إضافية لسداد ديون بطاقته الائتمانية بسرعة.",
+      "relatedForms": [
+        "debtor",
+        "debts"
+      ],
+      "collocations": [
+        "in debt",
+        "settle a debt",
+        "accumulate debt"
+      ],
+      "synonyms": [
+        "liability",
+        "obligation"
+      ],
+      "antonyms": [
+        "asset"
+      ],
+      "tags": [
+        "finance"
+      ]
+    },
+    {
+      "headword": "interest rate",
+      "pronunciation": "/ˈɪntrəst reɪt/",
+      "partOfSpeech": "noun",
+      "definition": "The proportion of a loan that is charged as interest to the borrower, typically expressed as an annual percentage.",
+      "example": "The central bank decided to lower the official interest rate.",
+      "translation": "سعر الفائدة / نسبة الفائدة",
+      "exampleArabic": "قرر البنك المركزي خفض سعر الفائدة الرسمي.",
+      "relatedForms": [
+        "interest rates"
+      ],
+      "collocations": [
+        "high interest rate",
+        "fixed interest rate",
+        "prime interest rate"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "finance",
+        "banking"
+      ]
+    },
+    {
+      "headword": "mortgage",
+      "pronunciation": "/ˈmɔːrɡɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "A legal agreement by which a bank lends money at interest in exchange for taking title of the debtor's property.",
+      "example": "They secured a thirty-year mortgage to buy their first suburban home.",
+      "translation": "رهن عقاري",
+      "exampleArabic": "حصلوا على رهن عقاري لمدة ثلاثين عاماً لشراء أول منزل لهم في الضواحي.",
+      "relatedForms": [
+        "mortgages"
+      ],
+      "collocations": [
+        "home mortgage",
+        "pay the mortgage",
+        "mortgage lender"
+      ],
+      "synonyms": [
+        "housing loan"
+      ],
+      "antonyms": [],
+      "tags": [
+        "finance",
+        "housing"
+      ]
+    },
+    {
+      "headword": "credit",
+      "pronunciation": "/ˈkredɪt/",
+      "partOfSpeech": "noun",
+      "definition": "The ability of a customer to obtain goods or services before payment, based on the trust that payment will be made.",
+      "example": "Her credit rating was high enough to qualify for the loan immediately.",
+      "translation": "ائتمان / رصيد دائن",
+      "exampleArabic": "كان تصنيفها الائتماني مرتفعاً بما يكفي للتأهل للحصول على القرض على الفور.",
+      "relatedForms": [
+        "creditor"
+      ],
+      "collocations": [
+        "credit score",
+        "credit limit",
+        "buy on credit"
+      ],
+      "synonyms": [
+        "trust",
+        "reputation"
+      ],
+      "antonyms": [
+        "debit"
+      ],
+      "tags": [
+        "banking",
+        "finance"
+      ]
+    },
+    {
+      "headword": "debit",
+      "pronunciation": "/ˈdebɪt/",
+      "partOfSpeech": "noun",
+      "definition": "An entry recording an amount owed or deducted directly from a bank account.",
+      "example": "A debit of fifty dollars appeared on my monthly statement this morning.",
+      "translation": "مدين / خصم مباشر",
+      "exampleArabic": "ظهر خصم بقيمة خمسين دولاراً على كشف حسابي الشهري هذا الصباح.",
+      "relatedForms": [
+        "debited",
+        "debits"
+      ],
+      "collocations": [
+        "direct debit",
+        "debit entry"
+      ],
+      "synonyms": [
+        "deduction",
+        "charge"
+      ],
+      "antonyms": [
+        "credit"
+      ],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "pin",
+      "pronunciation": "/pɪn/",
+      "partOfSpeech": "noun",
+      "definition": "A personal identification number used to access an automated teller machine or bank account.",
+      "example": "Never share your four-digit pin with anyone who asks over the phone.",
+      "translation": "الرقم السري (PIN)",
+      "exampleArabic": "لا تشارك أبداً رقمك السري المكون من أربعة أرقام مع أي شخص يطلبه عبر الهاتف.",
+      "relatedForms": [
+        "pins"
+      ],
+      "collocations": [
+        "enter pin",
+        "secret pin",
+        "reset pin"
+      ],
+      "synonyms": [
+        "passcode",
+        "security code"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "security"
+      ]
+    },
+    {
+      "headword": "contactless",
+      "pronunciation": "/ˈkɑːntæktləs/",
+      "partOfSpeech": "adjective",
+      "definition": "Relating to smart cards that do not require physical connection to an electronic reader.",
+      "example": "I tapped my contactless card on the terminal to pay for coffee.",
+      "translation": "لا تلامسي",
+      "exampleArabic": "مررت بطاقتي اللاتلامسية على جهاز الدفع لدفع ثمن القهوة.",
+      "relatedForms": [],
+      "collocations": [
+        "contactless payment",
+        "contactless reader",
+        "contactless transaction"
+      ],
+      "synonyms": [
+        "tap-and-go"
+      ],
+      "antonyms": [],
+      "tags": [
+        "technology",
+        "shopping"
+      ]
+    },
+    {
+      "headword": "insert card",
+      "pronunciation": "/ɪnˈsɜːrt kɑːrd/",
+      "partOfSpeech": "verb",
+      "definition": "To push a plastic payment card into an electronic chip terminal.",
+      "example": "Please insert card into the slot and follow the on-screen prompts.",
+      "translation": "يدخل البطاقة",
+      "exampleArabic": "يرجى إدخال البطاقة في الفتحة واتباع التعليمات التي تظهر على الشاشة.",
+      "relatedForms": [
+        "inserted card"
+      ],
+      "collocations": [
+        "insert card firmly",
+        "prompt to insert card"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "remove card"
+      ],
+      "tags": [
+        "banking",
+        "action"
+      ]
+    },
+    {
+      "headword": "swipe card",
+      "pronunciation": "/swaɪp kɑːrd/",
+      "partOfSpeech": "verb",
+      "definition": "To pass a card through an electronic magnetic reader.",
+      "example": "If the chip does not work, you can swipe card through the side reader.",
+      "translation": "يمرر البطاقة ممغنطة",
+      "exampleArabic": "إذا لم تعمل الشريحة، يمكنك تمرير البطاقة عبر القارئ الجانبي.",
+      "relatedForms": [
+        "swiped card"
+      ],
+      "collocations": [
+        "swipe card quickly",
+        "swipe card reader"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "action"
+      ]
+    },
+    {
+      "headword": "teller",
+      "pronunciation": "/ˈtelər/",
+      "partOfSpeech": "noun",
+      "definition": "A person employed in a bank to deal with customers, receive deposits, and pay out money.",
+      "example": "The polite bank teller counted out the twenties and handed me a receipt.",
+      "translation": "صراف بنكي (الموظف)",
+      "exampleArabic": "قام الصراف البنكي المهذب بعد أوراق العشرين وسلمني إيصالاً.",
+      "relatedForms": [
+        "tellers"
+      ],
+      "collocations": [
+        "bank teller",
+        "friendly teller",
+        "teller window"
+      ],
+      "synonyms": [
+        "bank clerk",
+        "cashier"
+      ],
+      "antonyms": [],
+      "tags": [
+        "professions",
+        "banking"
+      ]
+    },
+    {
+      "headword": "bank branch",
+      "pronunciation": "/bæŋk bræntʃ/",
+      "partOfSpeech": "noun",
+      "definition": "A retail location where a bank offers a wide array of face-to-face services.",
+      "example": "There is a modern bank branch right on the corner of Main Street.",
+      "translation": "فرع بنك",
+      "exampleArabic": "يوجد فرع بنك حديث مباشرة على زاوية الشارع الرئيسي.",
+      "relatedForms": [
+        "bank branches"
+      ],
+      "collocations": [
+        "local bank branch",
+        "downtown bank branch"
+      ],
+      "synonyms": [
+        "branch office"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking"
+      ]
+    },
+    {
+      "headword": "overdraft",
+      "pronunciation": "/ˈoʊvərdræft/",
+      "partOfSpeech": "noun",
+      "definition": "A deficit in a bank account caused by drawing more money than the account holds.",
+      "example": "He had to pay an overdraft penalty when his balance dipped below zero.",
+      "translation": "سحب على المكشوف",
+      "exampleArabic": "كان عليه دفع غرامة سحب على المكشوف عندما انخفض رصيده إلى ما دون الصفر.",
+      "relatedForms": [
+        "overdrafts"
+      ],
+      "collocations": [
+        "overdraft fee",
+        "overdraft protection",
+        "unauthorized overdraft"
+      ],
+      "synonyms": [
+        "deficit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "banking",
+        "finance"
+      ]
+    },
+    {
+      "headword": "bankrupt",
+      "pronunciation": "/ˈbæŋkrʌpt/",
+      "partOfSpeech": "adjective",
+      "definition": "Declared in law unable to pay outstanding debts.",
+      "example": "The struggling travel agency went bankrupt during the quiet season.",
+      "translation": "مفلس",
+      "exampleArabic": "أفلست وكالة السفر المتعثرة خلال الموسم الهادئ.",
+      "relatedForms": [
+        "bankruptcy"
+      ],
+      "collocations": [
+        "go bankrupt",
+        "declared bankrupt",
+        "financially bankrupt"
+      ],
+      "synonyms": [
+        "insolvent",
+        "ruined"
+      ],
+      "antonyms": [
+        "solvent",
+        "wealthy"
+      ],
+      "tags": [
+        "finance"
+      ]
+    },
+    {
+      "headword": "wealthy",
+      "pronunciation": "/ˈwelθi/",
+      "partOfSpeech": "adjective",
+      "definition": "Having a great deal of money, resources, or assets.",
+      "example": "The wealthy entrepreneur decided to fund several new community clinics.",
+      "translation": "ثري / غني",
+      "exampleArabic": "قرر رائد الأعمال الثري تمويل عدة عيادات مجتمعية جديدة.",
+      "relatedForms": [
+        "wealth",
+        "wealthier",
+        "wealthiest"
+      ],
+      "collocations": [
+        "wealthy investor",
+        "wealthy family",
+        "grow wealthy"
+      ],
+      "synonyms": [
+        "rich",
+        "affluent",
+        "prosperous"
+      ],
+      "antonyms": [
+        "poor",
+        "broke"
+      ],
+      "tags": [
+        "money",
+        "description"
+      ]
+    },
+    {
+      "headword": "broke",
+      "pronunciation": "/broʊk/",
+      "partOfSpeech": "adjective",
+      "definition": "Having completely run out of money.",
+      "example": "Until payday next Friday, I am completely broke.",
+      "translation": "مفلس تماماً / طفران",
+      "exampleArabic": "حتى يوم الراتب الجمعة القادمة، أنا مفلس تماماً.",
+      "relatedForms": [],
+      "collocations": [
+        "completely broke",
+        "flat broke"
+      ],
+      "synonyms": [
+        "penniless",
+        "impecunious"
+      ],
+      "antonyms": [
+        "wealthy",
+        "rich"
+      ],
+      "tags": [
+        "informal",
+        "money"
+      ]
+    },
+    {
+      "headword": "affordable",
+      "pronunciation": "/əˈfɔːrdəbl/",
+      "partOfSpeech": "adjective",
+      "definition": "Inexpensive and reasonably priced so that people can buy it.",
+      "example": "Finding an affordable apartment downtown has become quite challenging.",
+      "translation": "في المتناول / ميسور التكلفة",
+      "exampleArabic": "أصبح العثور على شقة ميسورة التكلفة في وسط المدينة أمراً صعباً للغاية.",
+      "relatedForms": [
+        "afford",
+        "affordability"
+      ],
+      "collocations": [
+        "affordable housing",
+        "affordable price",
+        "affordable healthcare"
+      ],
+      "synonyms": [
+        "economical",
+        "budget-friendly",
+        "reasonable"
+      ],
+      "antonyms": [
+        "expensive",
+        "costly"
+      ],
+      "tags": [
+        "shopping",
+        "description"
+      ]
+    },
+    {
+      "headword": "costly",
+      "pronunciation": "/ˈkɔːstli/",
+      "partOfSpeech": "adjective",
+      "definition": "Costing a lot of money; expensive.",
+      "example": "Fixing the car engine proved to be a very costly repair.",
+      "translation": "مكلف / باهظ الثمن",
+      "exampleArabic": "تبين أن إصلاح محرك السيارة كان مكلفاً للغاية.",
+      "relatedForms": [
+        "costliness"
+      ],
+      "collocations": [
+        "costly mistake",
+        "costly project",
+        "costly repairs"
+      ],
+      "synonyms": [
+        "expensive",
+        "pricey"
+      ],
+      "antonyms": [
+        "cheap",
+        "affordable"
+      ],
+      "tags": [
+        "money",
+        "description"
+      ]
+    },
+    {
+      "headword": "valuable",
+      "pronunciation": "/ˈvæljuəbl/",
+      "partOfSpeech": "adjective",
+      "definition": "Worth a great deal of money, or extremely useful and important.",
+      "example": "She placed her valuable jewelry in a hotel deposit box.",
+      "translation": "قيّم / ثمين",
+      "exampleArabic": "وضعت مجوهراتها الثمينة في صندوق أمانات الفندق.",
+      "relatedForms": [
+        "value",
+        "valuables"
+      ],
+      "collocations": [
+        "valuable advice",
+        "valuable asset",
+        "valuable lessons"
+      ],
+      "synonyms": [
+        "precious",
+        "worthwhile"
+      ],
+      "antonyms": [
+        "worthless"
+      ],
+      "tags": [
+        "description",
+        "money"
+      ]
+    },
+    {
+      "headword": "priceless",
+      "pronunciation": "/ˈpraɪsləs/",
+      "partOfSpeech": "adjective",
+      "definition": "So precious that its value cannot be determined by money.",
+      "example": "The museum holds a collection of priceless historical paintings.",
+      "translation": "لا يقدر بثمن",
+      "exampleArabic": "يضم المتحف مجموعة من اللوحات التاريخية التي لا تقدر بثمن.",
+      "relatedForms": [],
+      "collocations": [
+        "priceless treasure",
+        "priceless heirloom",
+        "priceless reaction"
+      ],
+      "synonyms": [
+        "invaluable",
+        "irreplaceable"
+      ],
+      "antonyms": [
+        "worthless"
+      ],
+      "tags": [
+        "description"
+      ]
+    },
+    {
+      "headword": "worthless",
+      "pronunciation": "/ˈwɜːrθləs/",
+      "partOfSpeech": "adjective",
+      "definition": "Having no real value, use, or importance.",
+      "example": "Old coupons that expired ten years ago are completely worthless.",
+      "translation": "عديم القيمة",
+      "exampleArabic": "قسائم الخصم القديمة التي انتهت قبل عشر سنوات عديمة القيمة تماماً.",
+      "relatedForms": [
+        "worthlessness"
+      ],
+      "collocations": [
+        "worthless currency",
+        "prove worthless"
+      ],
+      "synonyms": [
+        "valueless",
+        "useless"
+      ],
+      "antonyms": [
+        "valuable",
+        "priceless"
+      ],
+      "tags": [
+        "description"
+      ]
+    },
+    {
+      "headword": "invest",
+      "pronunciation": "/ɪnˈvest/",
+      "partOfSpeech": "verb",
+      "definition": "To expend money with the expectation of achieving a future profit.",
+      "example": "Young professionals are encouraged to invest a portion of their income wisely.",
+      "translation": "يستثمر",
+      "exampleArabic": "يتم تشجيع المهنيين الشباب على استثمار جزء من دخلهم بحكمة.",
+      "relatedForms": [
+        "invested",
+        "investing",
+        "investor"
+      ],
+      "collocations": [
+        "invest wisely",
+        "invest in stocks",
+        "invest for retirement"
+      ],
+      "synonyms": [
+        "put in",
+        "commit funds"
+      ],
+      "antonyms": [
+        "divest"
+      ],
+      "tags": [
+        "finance",
+        "business"
+      ]
+    },
+    {
+      "headword": "investment",
+      "pronunciation": "/ɪnˈvestmənt/",
+      "partOfSpeech": "noun",
+      "definition": "The action or process of investing money for profit, or an asset bought with this goal.",
+      "example": "Buying commercial property in this district proved to be a sound investment.",
+      "translation": "استثمار",
+      "exampleArabic": "تبين أن شراء عقار تجاري في هذا الحي كان استثماراً سديداً.",
+      "relatedForms": [
+        "investments"
+      ],
+      "collocations": [
+        "sound investment",
+        "long-term investment",
+        "return on investment"
+      ],
+      "synonyms": [
+        "venture",
+        "holding"
+      ],
+      "antonyms": [],
+      "tags": [
+        "finance",
+        "business"
+      ]
+    },
+    {
+      "headword": "profit",
+      "pronunciation": "/ˈprɑːfɪt/",
+      "partOfSpeech": "noun",
+      "definition": "A financial gain, especially the difference between the amount earned and the amount spent.",
+      "example": "The electronics company reported a higher profit this fiscal quarter.",
+      "translation": "ربح",
+      "exampleArabic": "أعلنت شركة الإلكترونيات عن تحقيق أرباح أعلى في هذا الربع المالي.",
+      "relatedForms": [
+        "profitable",
+        "profitability"
+      ],
+      "collocations": [
+        "net profit",
+        "make a profit",
+        "profit margin"
+      ],
+      "synonyms": [
+        "earnings",
+        "gain"
+      ],
+      "antonyms": [
+        "loss"
+      ],
+      "tags": [
+        "business",
+        "finance"
+      ]
+    },
+    {
+      "headword": "a few",
+      "pronunciation": "/ə fjuː/",
+      "partOfSpeech": "determiner",
+      "definition": "A small number of (used with plural countable nouns to mean some, positively).",
+      "example": "I still have a few dollar bills in my pocket for tipping.",
+      "translation": "بضعة / قليل من (للأسماء المعدودة)",
+      "exampleArabic": "لا يزال لدي بضعة أوراق نقدية في جيبي للإكرامية.",
+      "relatedForms": [
+        "few"
+      ],
+      "collocations": [
+        "quite a few",
+        "a few coins",
+        "a few minutes"
+      ],
+      "synonyms": [
+        "some",
+        "several"
+      ],
+      "antonyms": [
+        "none"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ]
+    },
+    {
+      "headword": "a little",
+      "pronunciation": "/ə ˈlɪtl/",
+      "partOfSpeech": "determiner",
+      "definition": "A small amount of (used with uncountable nouns to mean some, positively).",
+      "example": "Could you lend me a little cash until I reach the branch?",
+      "translation": "قليل من (للأسماء غير المعدودة)",
+      "exampleArabic": "هل يمكنك إقراضي القليل من النقد حتى أصل إلى الفرع؟",
+      "relatedForms": [
+        "little"
+      ],
+      "collocations": [
+        "a little money",
+        "a little patience",
+        "a little time"
+      ],
+      "synonyms": [
+        "some",
+        "a touch of"
+      ],
+      "antonyms": [
+        "a lot of"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ]
+    },
+    {
+      "headword": "a lot of",
+      "pronunciation": "/ə lɑːt əv/",
+      "partOfSpeech": "determiner",
+      "definition": "A large number or amount of (used with both countable and uncountable nouns).",
+      "example": "We spent a lot of money renovating our retail branch last year.",
+      "translation": "الكثير من",
+      "exampleArabic": "أنفقنا الكثير من الأموال في تجديد فرعنا لمبيعات التجزئة العام الماضي.",
+      "relatedForms": [
+        "lots of"
+      ],
+      "collocations": [
+        "a lot of cash",
+        "a lot of bills",
+        "a lot of time"
+      ],
+      "synonyms": [
+        "plenty of",
+        "heaps of"
+      ],
+      "antonyms": [
+        "a little",
+        "a few"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ]
+    },
+    {
+      "headword": "plenty of",
+      "pronunciation": "/ˈplenti əv/",
+      "partOfSpeech": "determiner",
+      "definition": "More than enough of; an abundant amount of (used with count and uncount nouns).",
+      "example": "Do not worry about the dinner bill, we have plenty of cash.",
+      "translation": "وفرة من / الكثير والكافي من",
+      "exampleArabic": "لا تقلق بشأن فاتورة العشاء، فلدينا وفرة من النقد.",
+      "relatedForms": [],
+      "collocations": [
+        "plenty of time",
+        "plenty of options",
+        "plenty of funds"
+      ],
+      "synonyms": [
+        "ample",
+        "abundant"
+      ],
+      "antonyms": [
+        "scarcity"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ]
+    },
+    {
+      "headword": "several",
+      "pronunciation": "/ˈsevrəl/",
+      "partOfSpeech": "determiner",
+      "definition": "More than two but not many (used with plural countable nouns).",
+      "example": "She opened several savings accounts for distinct future goals.",
+      "translation": "عديد / عدة",
+      "exampleArabic": "فتحت عدة حسابات توفير لأهداف مستقبلية مميزة.",
+      "relatedForms": [],
+      "collocations": [
+        "several times",
+        "several people",
+        "several accounts"
+      ],
+      "synonyms": [
+        "a number of",
+        "various"
+      ],
+      "antonyms": [
+        "few"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "At the Bank Branch Counter",
+      "titleArabic": "عند شباك فرع البنك",
+      "setting": "Customer talking to a bank teller about basic transactions",
+      "settingArabic": "عميل يتحدث مع صراف بنكي حول معاملات أساسية",
+      "vocabularyUsed": [
+        "teller",
+        "bank branch",
+        "deposit money",
+        "withdraw",
+        "balance",
+        "checking account",
+        "fee"
+      ],
+      "lines": [
+        {
+          "speaker": "Customer",
+          "text": "Good morning. Is this the teller window for general account inquiries?",
+          "translation": "صباح الخير. هل هذا شباك الصراف للاستفسار عن الحسابات العامة؟"
+        },
+        {
+          "speaker": "Teller",
+          "text": "Yes, welcome to our central bank branch! How can I assist you today?",
+          "translation": "نعم، مرحباً بك في فرع البنك الرئيسي! كيف يمكنني مساعدتك اليوم؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "I need to check my balance and deposit money into my checking account.",
+          "translation": "أحتاج إلى معرفة رصيدي وإيداع أموال في حسابي الجاري."
+        },
+        {
+          "speaker": "Teller",
+          "text": "Certainly. Please provide your identification and insert card into the device.",
+          "translation": "بالتأكيد. يرجى تقديم إثبات هويتك وإدخال البطاقة في الجهاز."
+        },
+        {
+          "speaker": "Customer",
+          "text": "Here you go. I also plan to withdraw three hundred dollars for weekly groceries.",
+          "translation": "تفضل. أخطط أيضاً لسحب ثلاثمائة دولار لمشتريات البقالة الأسبوعية."
+        },
+        {
+          "speaker": "Teller",
+          "text": "Understood. Will that complete your transactions today, or do you have other requests?",
+          "translation": "مفهوم. هل يكمل ذلك معاملاتك اليوم، أم لديك طلبات أخرى؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Is there any service fee charged for this in-person withdrawal?",
+          "translation": "هل هناك أي رسوم خدمة مفروضة على هذا السحب المباشر؟"
+        },
+        {
+          "speaker": "Teller",
+          "text": "No, branch withdrawals for primary account holders are completely free of charge.",
+          "translation": "لا، السحب من الفرع لأصحاب الحسابات الأساسية مجاني تماماً."
+        }
+      ]
+    },
+    {
+      "title": "Exchanging Foreign Currency",
+      "titleArabic": "صرف العملات الأجنبية",
+      "setting": "A traveler exchanging banknotes before going abroad",
+      "settingArabic": "مسافر يصرف أوراقاً نقدية قبل السفر للخارج",
+      "vocabularyUsed": [
+        "foreign currency",
+        "exchange rate",
+        "commission",
+        "cash",
+        "banknote",
+        "bills",
+        "affordable"
+      ],
+      "lines": [
+        {
+          "speaker": "Traveler",
+          "text": "Hello! I would like to exchange some cash into foreign currency for a vacation.",
+          "translation": "مرحباً! أود تحويل بعض النقد إلى عملة أجنبية لقضاء عطلة."
+        },
+        {
+          "speaker": "Agent",
+          "text": "We offer great rates today. What currency destination are you travelling to?",
+          "translation": "نقدم أسعاراً ممتازة اليوم. ما هي وجهة العملة التي تسافر إليها؟"
+        },
+        {
+          "speaker": "Traveler",
+          "text": "I am flying to London. What is the current exchange rate for the British pound?",
+          "translation": "سأسافر إلى لندن. ما هو سعر الصرف الحالي للجنيه الإسترليني؟"
+        },
+        {
+          "speaker": "Agent",
+          "text": "It is one point thirty dollars per pound, and our commission fee is quite affordable.",
+          "translation": "إنه دولار وثلاثون سنتاً لكل جنيه، وعمولتنا ميسورة التكلفة تماماً."
+        },
+        {
+          "speaker": "Traveler",
+          "text": "That sounds fair. Here are several fifty-dollar bills to exchange.",
+          "translation": "هذا يبدو عادلاً. إليك عدة فواتير نقدية من فئة الخمسين دولاراً لصرفها."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Thank you. Would you prefer a large banknote denomination or smaller paper notes?",
+          "translation": "شكراً لك. هل تفضل ورقة نقدية كبيرة الفئة أم أوراقاً ورقية أصغر؟"
+        },
+        {
+          "speaker": "Traveler",
+          "text": "Please provide smaller notes and perhaps a few metal coins for public buses.",
+          "translation": "يرجى تقديم أوراق نقدية أصغر وربما بضعة عملات معدنية لحافلات النقل العام."
+        },
+        {
+          "speaker": "Agent",
+          "text": "Here is your currency along with the official receipt displaying all details.",
+          "translation": "إليك عملتك مع الإيصال الرسمي الذي يوضح كافة التفاصيل."
+        }
+      ]
+    },
+    {
+      "title": "Using the ATM Safely",
+      "titleArabic": "استخدام الصراف الآلي بأمان",
+      "setting": "Two colleagues discussing digital payments and card safety",
+      "settingArabic": "زميلان يناقشان المدفوعات الرقمية وأمان البطاقات",
+      "vocabularyUsed": [
+        "atm",
+        "pin",
+        "contactless",
+        "insert card",
+        "swipe card",
+        "credit",
+        "debit",
+        "withdrawal"
+      ],
+      "lines": [
+        {
+          "speaker": "Omar",
+          "text": "Are you going to the atm down the street before we grab lunch?",
+          "translation": "هل أنت ذاهب إلى الصراف الآلي في نهاية الشارع قبل أن نتناول الغداء؟"
+        },
+        {
+          "speaker": "Layla",
+          "text": "Yes, I need to make a fast withdrawal because the food truck only accepts cash.",
+          "translation": "نعم، أحتاج لإجراء عملية سحب سريعة لأن شاحنة الطعام لا تقبل سوى النقد."
+        },
+        {
+          "speaker": "Omar",
+          "text": "Remember to shield the keypad with your hand whenever you type your pin.",
+          "translation": "تذكري حجب لوحة المفاتيح بيدك كلما كتبتِ رقمك السري."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Always! I usually prefer contactless payments or debit card taps to avoid touching machines.",
+          "translation": "دائماً! عادةً ما أفضل المدفوعات اللاتلامسية أو لمس بطاقة الخصم لتجنب لمس الأجهزة."
+        },
+        {
+          "speaker": "Omar",
+          "text": "Modern machines also let you insert card smoothly without needing to swipe card tracks.",
+          "translation": "تتيح لك الأجهزة الحديثة أيضاً إدخال البطاقة بسلاسة دون الحاجة إلى تمرير شريط البطاقة."
+        },
+        {
+          "speaker": "Layla",
+          "text": "True, chip readers are much safer than the old magnetic swipe stripe.",
+          "translation": "صحيح، قارئات الرقائق أكثر أماناً بكثير من شريط التمرير المغناطيسي القديم."
+        },
+        {
+          "speaker": "Omar",
+          "text": "Do you prefer to use your credit card or your standard debit card for daily small meals?",
+          "translation": "هل تفضلين استخدام بطاقة الائتمان أم بطاقة الخصم العادية للوجبات اليومية الصغيرة؟"
+        },
+        {
+          "speaker": "Layla",
+          "text": "I use debit for small purchases so I never build unnecessary monthly debt.",
+          "translation": "أستخدم الخصم المباشر للمشتريات الصغيرة حتى لا أراكم ديوناً شهرية غير ضرورية."
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Prudent Financial Planning",
+      "titleArabic": "التخطيط المالي الحكيم",
+      "kind": "informative",
+      "vocabularyUsed": [
+        "wealthy",
+        "invest",
+        "investment",
+        "profit",
+        "savings account",
+        "debt",
+        "interest rate"
+      ],
+      "text": "Achieving lasting financial freedom does not require becoming wealthy overnight. Financial advisers consistently suggest opening a dedicated savings account to accumulate an emergency reserve. Once individuals clear expensive consumer debt, they can begin to invest a portion of their monthly surplus into diversified mutual funds. Even if the prevailing interest rate fluctuates, long-term disciplined investment choices tend to yield meaningful profit. By understanding basic financial mechanisms early, families protect their futures against economic volatility.",
+      "translation": "تحقيق الحرية المالية الدائمة لا يتطلب أن تصبح ثرياً بين عشية وضحاها. يوصي المستشارون الماليون باستمرار بفتح حساب توفير مخصص لتجميع احتياطي للطوارئ. بمجرد أن يسدد الأفراد ديونهم الاستهلاكية المكلفة، يمكنهم البدء في استثمار جزء من فائضهم الشهري في صناديق استثمارية متنوعة. وحتى إذا تذبذب سعر الفائدة السائد، تميل خيارات الاستثمار المنضبطة طويلة الأجل إلى تحقيق ربح ذي مغزى. ومن خلال فهم الآليات المالية الأساسية مبكراً، تحمي العائلات مستقبلها من التقلبات الاقتصادية."
+    },
+    {
+      "title": "The Evolution of Daily Payments",
+      "titleArabic": "تطور المدفوعات اليومية",
+      "kind": "informative",
+      "vocabularyUsed": [
+        "cash machine",
+        "wire transfer",
+        "ledger",
+        "overdraft",
+        "broke",
+        "bankrupt",
+        "costly"
+      ],
+      "text": "Years ago, managing commerce meant recording every physical entry in a paper ledger. When people needed funds, they queued outside a bank branch or looked for a solitary cash machine. Today, an electronic wire transfer moves capital across borders within seconds. However, convenience requires caution. Poor spending tracking can trigger an unexpected overdraft penalty, creating costly consequences for students or workers who feel broke before payday. Without sensible management, careless financial liabilities might push vulnerable businesses bankrupt during downturns.",
+      "translation": "منذ سنوات، كانت إدارة التجارة تعني تسجيل كل قيد فعلي في دفتر أستاذ ورقي. وعندما كان الناس يحتاجون إلى أموال، كانوا يصطفون خارج فرع البنك أو يبحثون عن ماكينة صرف نقود منعزلة. واليوم، ينقل التحويل الإلكتروني رؤوس الأموال عبر الحدود في غضون ثوانٍ. ومع ذلك، تتطلب الراحة الحذر. فالافتقار إلى تتبع النفقات قد يتسبب في غرامة سحب على المكشوف غير متوقعة، مما يسبب عواقب مكلفة للطلاب أو العمال الذين يشعرون بالإفلاس قبل يوم الراتب. ودون إدارة حكيمة، قد تدفع الالتزامات المالية الطائشة الشركات الضعيفة إلى الإفلاس أثناء فترات الركود."
+    },
+    {
+      "title": "Understanding True Value",
+      "titleArabic": "فهم القيمة الحقيقية",
+      "kind": "reflective",
+      "vocabularyUsed": [
+        "valuable",
+        "priceless",
+        "worthless",
+        "mortgage",
+        "bank account",
+        "a few",
+        "a little",
+        "a lot of",
+        "plenty of"
+      ],
+      "text": "Many people confuse monetary cost with authentic significance. While paying off a long mortgage is a valuable accomplishment, personal wellbeing remains priceless. Some individuals deposit a lot of funds into their bank account yet feel dissatisfied because they lack purposeful hobbies. A collection of rare items might seem expensive today, but without genuine interest it becomes worthless to its owner. Having plenty of peace of mind with only a few loyal companions and a little material luxury frequently produces deeper satisfaction.",
+      "translation": "يخلط الكثير من الناس بين التكلفة النقدية والأهمية الحقيقية. فبينما يُعد سداد رهن عقاري طويل إنجازاً قيّماً، تظل الراحة الشخصية أمراً لا يقدر بثمن. يقوم بعض الأفراد بإيداع الكثير من الأموال في حسابهم البنكي ولكنهم يشعرون بعدم الرضا لافتقارهم إلى هوايات هادفة. وقد تبدو مجموعة من المقتنيات النادرة باهظة الثمن اليوم، لكنها تصبح عديمة القيمة لمالكها بدون اهتمام حقيقي. إن التمتع بوفرة من راحة البال مع بضعة رفاق مخلصين والقليل من الترف المادي ينتج في كثير من الأحيان رضا أعمق."
+    }
+  ]
+}

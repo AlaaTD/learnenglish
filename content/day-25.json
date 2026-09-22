@@ -1,0 +1,1639 @@
+{
+  "day": 25,
+  "title": "Eating Out",
+  "topic": "Restaurants, menus and ordering",
+  "description": "Order food in a restaurant and react to the meal.",
+  "stage": "Real-Life Situations",
+  "focus": "By the end of today, you can communicate clearly about restaurants, menus and ordering using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Too and Enough",
+      "titleArabic": "استخدام Too و Enough للتعبير عن الكفاية والزيادة المفرطة",
+      "explanation": "We use 'too' and 'enough' to talk about quantity, degree, and suitability:\n\n1. 'Too' means more than is needed, wanted, or acceptable (a negative excess):\n   - 'too + adjective / adverb': 'This steak is too tough.' / 'The soup is too hot.'\n   - 'too much + uncountable noun': 'You added too much salt.'\n   - 'too many + plural countable noun': 'There are too many tables in this small diner.'\n\n2. 'Enough' means as much or as many as needed (sufficiency):\n   - 'adjective / adverb + enough' (Note word order!): 'Is your tea sweet enough?' (NOT 'enough sweet').\n   - 'enough + noun': 'We have enough chairs for everyone.'\n\n3. 'Not enough' expresses insufficiency:\n   - 'not + adjective + enough': 'This dining room is not big enough.'\n   - 'not enough + noun': 'There are not enough forks on the table.'",
+      "explanationArabic": "نستخدم 'too' و 'enough' للتعبير عن درجات الكفاية والزيادة عن الحد المطلوب:\n\n1. 'Too' تفيد الزيادة غير المرغوبة (أكثر من اللازم):\n   - too + صفة: 'This soup is too hot.' (الشوربة ساخنة زيادة عن اللزوم).\n   - too much + اسم غير معدود: 'There is too much salt.' (يوجد ملح أكثر من اللازم).\n   - too many + اسم جمع معدود: 'There are too many people.' (يوجد ناس كثر أكثر من اللازم).\n\n2. 'Enough' تفيد الكفاية والملائمة:\n   - تأتي بعد الصفة: 'sweet enough' (حلو بما يكفي) — انتبه لموقعها بعد الصفة وليس قبلها!\n   - تأتي قبل الاسم: 'enough chairs' (كراسي كافية).\n\n3. 'Not enough' تفيد النقص وعدم الكفاية: 'not warm enough' أو 'not enough cutlery'.",
+      "structures": [
+        {
+          "pattern": "Excess with Adjectives: Subject + be + too + Adjective (+ to + verb)",
+          "explanation": "Expresses that a quality is excessive to permit something.",
+          "explanationArabic": "للتعبير عن أن الصفة زائدة عن الحد المسموح أو المرغوب."
+        },
+        {
+          "pattern": "Sufficiency with Adjectives: Subject + be + Adjective + enough",
+          "explanation": "Expresses that a quality satisfies the necessary condition.",
+          "explanationArabic": "للتعبير عن أن الصفة ملائمة وتكفي للغرض المطلوب."
+        },
+        {
+          "pattern": "Quantity: too much + Uncountable Noun | too many + Countable Noun | enough + Noun",
+          "explanation": "Measures excessive or sufficient quantities of things.",
+          "explanationArabic": "تحديد الكميات المفرطة أو الكافية من الأسماء المعدودة وغير المعدودة."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The waiter brought our soup, but it was too hot to eat immediately.",
+          "translation": "أحضر النادل حساءنا، لكنه كان ساخناً أكثر من اللازم ولا يمكن تناوله على الفور.",
+          "usesVocabulary": [
+            "waiter",
+            "too"
+          ]
+        },
+        {
+          "sentence": "Is this cozy corner table quiet enough for our anniversary dinner?",
+          "translation": "هل هذه الطاولة في الزاوية المريحة هادئة بما يكفي لعشاء ذكرى زواجنا؟",
+          "usesVocabulary": [
+            "enough"
+          ]
+        },
+        {
+          "sentence": "The chef added too much pepper, so there was not enough balance in the sauce.",
+          "translation": "أضاف الشيف الكثير من الفلفل أكثر من اللازم، لذا لم يكن هناك توازن كافٍ في الصلصة.",
+          "usesVocabulary": [
+            "chef",
+            "too much",
+            "not enough"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "This soup is not enough hot.",
+          "right": "This soup is not hot enough.",
+          "note": "'Enough' always comes AFTER the adjective, never before it: 'hot enough'.",
+          "noteArabic": "كلمة 'enough' تأتي دائماً بعد الصفة وليس قبلها؛ نقول 'hot enough'."
+        },
+        {
+          "wrong": "There are too much customers in the restaurant tonight.",
+          "right": "There are too many customers in the restaurant tonight.",
+          "note": "Use 'too many' with plural countable nouns ('customers'), not 'too much'.",
+          "noteArabic": "استخدم 'too many' مع الأسماء الجمع المعدودة (مثل customers) وليس 'too much'."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "eatery",
+      "pronunciation": "/ˈiː.tər.i/",
+      "partOfSpeech": "noun",
+      "definition": "a restaurant, cafe, or other casual establishment serving food to customers",
+      "example": "We discovered a charming seaside eatery serving freshly caught grilled fish.",
+      "relatedForms": [],
+      "collocations": [
+        "local eatery",
+        "popular eatery",
+        "casual eatery"
+      ],
+      "synonyms": [
+        "restaurant",
+        "diner",
+        "cafe"
+      ],
+      "antonyms": [],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "مطعم / مكان لتناول الطعام",
+      "exampleArabic": "اكتشفنا مطعماً ساحلياً ساحراً يقدم السمك المشوي الطازج."
+    },
+    {
+      "headword": "diner",
+      "pronunciation": "/ˈdaɪ.nər/",
+      "partOfSpeech": "noun",
+      "definition": "a small, informal, usually inexpensive restaurant, especially one along a road; also a person who is eating",
+      "example": "The classic American roadside diner serves buttermilk pancakes and hot coffee all day.",
+      "relatedForms": [
+        "dine"
+      ],
+      "collocations": [
+        "roadside diner",
+        "fellow diner",
+        "24-hour diner"
+      ],
+      "synonyms": [
+        "cafeteria",
+        "bistro",
+        "eatery"
+      ],
+      "antonyms": [],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "مطعم صغير غير رسمي / زبون المطعم",
+      "exampleArabic": "يقدم المطعم الأمريكي الكلاسيكي على جانب الطريق فطائر البانكيك والقهوة الساخنة طوال اليوم."
+    },
+    {
+      "headword": "bistro",
+      "pronunciation": "/ˈbiː.strəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "a small, modest, often European-style restaurant serving hearty meals and wine",
+      "example": "We enjoyed a candlelit dinner at a cozy French bistro in the historical quarter.",
+      "relatedForms": [],
+      "collocations": [
+        "French bistro",
+        "neighborhood bistro",
+        "cozy bistro"
+      ],
+      "synonyms": [
+        "brasserie",
+        "trattoria",
+        "cafe"
+      ],
+      "antonyms": [],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "بيسترو (مطعم فرنسي/أوروبي صغير حميمي)",
+      "exampleArabic": "استمتعنا بعشاء على ضوء الشموع في بيسترو فرنسي مريح في الحي التاريخي."
+    },
+    {
+      "headword": "waiter",
+      "pronunciation": "/ˈweɪ.tər/",
+      "partOfSpeech": "noun",
+      "definition": "a man whose job is to serve customers at their tables in a restaurant",
+      "example": "The attentive waiter presented the dessert menu and answered our questions cordially.",
+      "relatedForms": [
+        "waitress",
+        "wait"
+      ],
+      "collocations": [
+        "attentive waiter",
+        "call the waiter",
+        "tip the waiter"
+      ],
+      "synonyms": [
+        "server",
+        "steward"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "dining"
+      ],
+      "translation": "نادل (غرسون)",
+      "exampleArabic": "قدم النادل اليقظ قائمة الحلويات وأجاب على أسئلتنا بكل لطف."
+    },
+    {
+      "headword": "waitress",
+      "pronunciation": "/ˈweɪ.trəs/",
+      "partOfSpeech": "noun",
+      "definition": "a woman whose job is to serve customers at their tables in a restaurant",
+      "example": "Our smiling waitress brought a pitcher of iced lemon water to our table promptly.",
+      "relatedForms": [
+        "waiter"
+      ],
+      "collocations": [
+        "friendly waitress",
+        "experienced waitress"
+      ],
+      "synonyms": [
+        "server",
+        "waitstaff member"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "dining"
+      ],
+      "translation": "نادلة",
+      "exampleArabic": "أحضرت نادلتنا المبتسمة إبريقاً من ماء الليمون المثلج إلى طاولتنا على الفور."
+    },
+    {
+      "headword": "server",
+      "pronunciation": "/ˈsɜː.vər/",
+      "partOfSpeech": "noun",
+      "definition": "a gender-neutral term for a person who serves food and drink in a restaurant",
+      "example": "Our server explained that the chef prepares all pasta sauces fresh from scratch daily.",
+      "relatedForms": [
+        "serve",
+        "service"
+      ],
+      "collocations": [
+        "ask the server",
+        "attentive server",
+        "restaurant server"
+      ],
+      "synonyms": [
+        "waiter",
+        "waitress",
+        "waitstaff"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "dining"
+      ],
+      "translation": "مقدم الطعام / نادل (محايد)",
+      "exampleArabic": "أوضح مقدم الطعام لدينا أن الطاهي يعد جميع صلصات المعكرونة طازجة من الصفر يومياً."
+    },
+    {
+      "headword": "menu",
+      "pronunciation": "/ˈmen.juː/",
+      "partOfSpeech": "noun",
+      "definition": "a printed list of the food and drink options available in a restaurant, with their prices",
+      "example": "Could you please bring us the dinner menu and the beverage list?",
+      "relatedForms": [],
+      "collocations": [
+        "look at the menu",
+        "dinner menu",
+        "tasting menu"
+      ],
+      "synonyms": [
+        "bill of fare",
+        "price list"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "food"
+      ],
+      "translation": "قائمة الطعام (المنيو)",
+      "exampleArabic": "هل يمكنك من فضلك إحضار قائمة العشاء وقائمة المشروبات؟"
+    },
+    {
+      "headword": "course",
+      "pronunciation": "/kɔːs/",
+      "partOfSpeech": "noun",
+      "definition": "each of the successive stages or distinct parts of a formal meal",
+      "example": "The gourmet banquet consisted of a five-course dinner paired with fine regional teas.",
+      "relatedForms": [],
+      "collocations": [
+        "three-course meal",
+        "main course",
+        "first course"
+      ],
+      "synonyms": [
+        "stage",
+        "round",
+        "serving"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "food"
+      ],
+      "translation": "طبق (مرحلة من مراحل الوجبة كالمقبلات أو الطبق الرئيسي)",
+      "exampleArabic": "تألفت المأدبة الفاخرة من عشاء من خمسة أطباق متتالية مع شاي إقليمي فاخر."
+    },
+    {
+      "headword": "appetizer",
+      "pronunciation": "/ˈæp.ə.taɪ.zər/",
+      "partOfSpeech": "noun",
+      "definition": "a small dish of food or a drink taken before a meal or the main course to stimulate one's appetite",
+      "example": "We ordered crispy garlic bruschetta and stuffed mushrooms as an appetizer.",
+      "relatedForms": [
+        "appetite",
+        "appetizing"
+      ],
+      "collocations": [
+        "order an appetizer",
+        "hot appetizer",
+        "appetizer platter"
+      ],
+      "synonyms": [
+        "starter",
+        "hors d'oeuvre",
+        "antipasto"
+      ],
+      "antonyms": [
+        "dessert"
+      ],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "مقبلات (فاتح للشهية)",
+      "exampleArabic": "طلبنا بروشيتا الثوم المقرمشة والفطر المحشو كمقبلات."
+    },
+    {
+      "headword": "starter",
+      "pronunciation": "/ˈstɑː.tər/",
+      "partOfSpeech": "noun",
+      "definition": "the first course of a meal, served before the main dish; synonymous with appetizer in British English",
+      "example": "For my starter, I chose a warm bowl of creamy butternut squash soup.",
+      "relatedForms": [
+        "start"
+      ],
+      "collocations": [
+        "order a starter",
+        "soup as a starter",
+        "starter course"
+      ],
+      "synonyms": [
+        "appetizer",
+        "first course"
+      ],
+      "antonyms": [
+        "main course",
+        "dessert"
+      ],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "طبق أول / مقبلات البداية",
+      "exampleArabic": "كبداية لوجبتي، اخترت وعاءً دافئاً من حساء قرع العسل الكريمي."
+    },
+    {
+      "headword": "main course",
+      "pronunciation": "/ˌmeɪn ˈkɔːs/",
+      "partOfSpeech": "noun",
+      "definition": "the most substantial or primary dish of a multi-course meal",
+      "example": "For the main course, she selected grilled salmon served with asparagus and roasted potatoes.",
+      "relatedForms": [],
+      "collocations": [
+        "order the main course",
+        "main course options"
+      ],
+      "synonyms": [
+        "entree",
+        "principal dish"
+      ],
+      "antonyms": [
+        "appetizer",
+        "dessert"
+      ],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "الطبق الرئيسي",
+      "exampleArabic": "بالنسبة للطبق الرئيسي، اختارت سمك السلمون المشوي المقدم مع الهليون والبطاطس المشوية."
+    },
+    {
+      "headword": "entree",
+      "pronunciation": "/ˈɒn.treɪ/",
+      "partOfSpeech": "noun",
+      "definition": "the main dish of a meal, especially in American usage, or a dish served before the roast",
+      "example": "Every entree on the bistro menu is prepared using locally sourced organic produce.",
+      "relatedForms": [],
+      "collocations": [
+        "vegetarian entree",
+        "dinner entree",
+        "choice of entree"
+      ],
+      "synonyms": [
+        "main dish",
+        "main course"
+      ],
+      "antonyms": [],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "الطبق الأساسي / الوجبة الرئيسية",
+      "exampleArabic": "يتم إعداد كل طبق أساسي في قائمة البيسترو باستخدام منتجات عضوية محلية المصدر."
+    },
+    {
+      "headword": "dessert",
+      "pronunciation": "/dɪˈzɜːt/",
+      "partOfSpeech": "noun",
+      "definition": "the sweet course eaten at the end of a meal",
+      "example": "Could we look at the dessert menu? I would love a slice of warm apple tart.",
+      "relatedForms": [],
+      "collocations": [
+        "order dessert",
+        "dessert menu",
+        "rich dessert"
+      ],
+      "synonyms": [
+        "sweet course",
+        "pudding"
+      ],
+      "antonyms": [
+        "appetizer",
+        "starter"
+      ],
+      "tags": [
+        "food",
+        "sweets"
+      ],
+      "translation": "حلوى بعد الأكل / حلى",
+      "exampleArabic": "هل يمكننا الاطلاع على قائمة الحلويات؟ أود الحصول على شريحة من تارت التفاح الدافئ."
+    },
+    {
+      "headword": "side dish",
+      "pronunciation": "/ˈsaɪd ˌdɪʃ/",
+      "partOfSpeech": "noun",
+      "definition": "a food item that accompanies the main course, such as vegetables, fries, or salad",
+      "example": "The steak comes with a choice of two side dishes, such as steamed broccoli or mashed potatoes.",
+      "relatedForms": [],
+      "collocations": [
+        "order a side dish",
+        "complimentary side dish"
+      ],
+      "synonyms": [
+        "side",
+        "accompaniment"
+      ],
+      "antonyms": [
+        "main course"
+      ],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "طبق جانبي",
+      "exampleArabic": "تأتي شريحة اللحم مع خيار من طبقين جانبيين، مثل البروكلي المطهو بالبخار أو البطاطس المهروسة."
+    },
+    {
+      "headword": "specialty",
+      "pronunciation": "/ˈspeʃ.əl.ti/",
+      "partOfSpeech": "noun",
+      "definition": "a product, especially a food dish, for which a person or place is particularly known and acclaimed",
+      "example": "Wood-fired seafood paella is the renowned specialty of this seaside restaurant.",
+      "relatedForms": [
+        "special",
+        "specialize"
+      ],
+      "collocations": [
+        "house specialty",
+        "chef's specialty",
+        "regional specialty"
+      ],
+      "synonyms": [
+        "signature dish",
+        "delicacy"
+      ],
+      "antonyms": [],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "طبق متخصص مشهور به المطعم",
+      "exampleArabic": "باييلا المأكولات البحرية المطهوة على الحطب هي التخصص الشهير لهذا المطعم الساحلي."
+    },
+    {
+      "headword": "chef",
+      "pronunciation": "/ʃef/",
+      "partOfSpeech": "noun",
+      "definition": "a professional cook, typically the head cook in a restaurant or hotel",
+      "example": "The head chef personally came to our table to ensure the steaks were cooked to perfection.",
+      "relatedForms": [],
+      "collocations": [
+        "executive chef",
+        "head chef",
+        "master chef"
+      ],
+      "synonyms": [
+        "head cook",
+        "culinary master"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "food"
+      ],
+      "translation": "طاهٍ محترف / شيف",
+      "exampleArabic": "جاء كبير الطهاة شخصياً إلى طاولتنا ليتأكد من أن شرائح اللحم قد طُهيت على أكمل وجه."
+    },
+    {
+      "headword": "daily special",
+      "pronunciation": "/ˌdeɪ.li ˈspeʃ.əl/",
+      "partOfSpeech": "noun",
+      "definition": "a featured dish offered by a restaurant on a particular day, not typically on the permanent menu",
+      "example": "Our server recommended the daily special: roasted sea bass with wild herb butter.",
+      "relatedForms": [],
+      "collocations": [
+        "order the daily special",
+        "today's daily special"
+      ],
+      "synonyms": [
+        "dish of the day",
+        "plat du jour"
+      ],
+      "antonyms": [
+        "regular menu"
+      ],
+      "tags": [
+        "food",
+        "dining"
+      ],
+      "translation": "طبق اليوم الخاص",
+      "exampleArabic": "أوصى مقدم الطعام لدينا بطبق اليوم الخاص: سمك القاروص المشوي مع زبدة الأعشاب البرية."
+    },
+    {
+      "headword": "order food",
+      "pronunciation": "/ˈɔː.dər fuːd/",
+      "partOfSpeech": "phrase",
+      "definition": "to request meals or drinks from a server in a restaurant or through a delivery service",
+      "example": "Are you ready to order food, or would you like another five minutes to review the menu?",
+      "verbForms": {
+        "v1": "order food",
+        "v2": "ordered food",
+        "v3": "ordered food"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "ready to order food",
+        "order food online"
+      ],
+      "synonyms": [
+        "place an order",
+        "request dishes"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "actions"
+      ],
+      "translation": "يطلب الطعام",
+      "exampleArabic": "هل أنتم مستعدون لطلب الطعام، أم تودون خمس دقائق أخرى لمراجعة قائمة الطعام؟"
+    },
+    {
+      "headword": "table for two",
+      "pronunciation": "/ˈteɪ.bəl fɔː tuː/",
+      "partOfSpeech": "phrase",
+      "definition": "a dining arrangement or table reserved or requested for a pair of diners",
+      "example": "Good evening; we would like a table for two in the non-smoking section by the window.",
+      "relatedForms": [],
+      "collocations": [
+        "request a table for two",
+        "book a table for two"
+      ],
+      "synonyms": [
+        "couple table",
+        "two-person seating"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "hospitality"
+      ],
+      "translation": "طاولة لشخصين",
+      "exampleArabic": "مساء الخير؛ نود طاولة لشخصين في القسم المخصص لغير المدخنين بجانب النافذة."
+    },
+    {
+      "headword": "bill please",
+      "pronunciation": "/bɪl pliːz/",
+      "partOfSpeech": "phrase",
+      "definition": "a standard polite formula used by a customer to ask a server for the dining check",
+      "example": "Excuse me, we have finished our dessert; could we have the bill please?",
+      "relatedForms": [],
+      "collocations": [
+        "the bill please",
+        "could I have the bill please"
+      ],
+      "synonyms": [
+        "check please",
+        "the tab please"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "money"
+      ],
+      "translation": "الحساب من فضلك (بريطاني)",
+      "exampleArabic": "معذرة، لقد انتهينا من تناول الحلوى؛ هل يمكننا الحصول على الحساب من فضلك؟"
+    },
+    {
+      "headword": "check please",
+      "pronunciation": "/tʃek pliːz/",
+      "partOfSpeech": "phrase",
+      "definition": "an American phrase used to ask the waiter for the restaurant bill",
+      "example": "We are heading to the theater shortly, so check please whenever you have a moment.",
+      "relatedForms": [],
+      "collocations": [
+        "bring the check please",
+        "get the check please"
+      ],
+      "synonyms": [
+        "bill please",
+        "tab please"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "money"
+      ],
+      "translation": "الفاتورة من فضلك (أمريكي)",
+      "exampleArabic": "نحن متوجهون إلى المسرح بعد قليل، لذا الفاتورة من فضلك متى تيسر لك ذلك."
+    },
+    {
+      "headword": "tip the waiter",
+      "pronunciation": "/tɪp ðə ˈweɪ.tər/",
+      "partOfSpeech": "phrase",
+      "definition": "to give an extra gratuity of money to the dining server in appreciation for good service",
+      "example": "Our server was exceptionally polite and attentive, so we decided to tip the waiter twenty percent.",
+      "verbForms": {
+        "v1": "tip the waiter",
+        "v2": "tipped the waiter",
+        "v3": "tipped the waiter"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "customary to tip the waiter",
+        "generously tip the waiter"
+      ],
+      "synonyms": [
+        "leave a gratuity",
+        "reward the server"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "money"
+      ],
+      "translation": "يعطي إكرامية للنادل (بقشيش)",
+      "exampleArabic": "كان مقدم الطعام لدينا مهذباً ويقظاً بشكل استثنائي، لذا قررنا إعطاء النادل إكرامية بنسبة عشرين بالمائة."
+    },
+    {
+      "headword": "service charge",
+      "pronunciation": "/ˈsɜː.vɪs ˌtʃɑːdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "an additional amount added to a restaurant bill to pay for the work of the waitstaff",
+      "example": "Check the bottom of the receipt to see whether an optional ten percent service charge is included.",
+      "relatedForms": [],
+      "collocations": [
+        "include a service charge",
+        "discretionary service charge"
+      ],
+      "synonyms": [
+        "gratuity charge",
+        "service fee"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "dining"
+      ],
+      "translation": "رسوم الخدمة (المضافة للفاتورة)",
+      "exampleArabic": "تحقق من أسفل الإيصال لترى ما إذا كانت رسوم خدمة اختيارية بنسبة عشرة بالمائة مضافة."
+    },
+    {
+      "headword": "cutlery",
+      "pronunciation": "/ˈkʌt.lər.i/",
+      "partOfSpeech": "noun",
+      "definition": "knives, forks, and spoons used for eating or serving food",
+      "example": "The waitress set polished silver cutlery and crystal water glasses beside each plate.",
+      "relatedForms": [],
+      "collocations": [
+        "silver cutlery",
+        "set of cutlery",
+        "stainless steel cutlery"
+      ],
+      "synonyms": [
+        "silverware",
+        "flatware",
+        "utensils"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "objects"
+      ],
+      "translation": "أدوات المائدة (السكاكين والشوك والملاعق)",
+      "exampleArabic": "وضعت النادلة أدوات مائدة فضية ملمعة وكؤوس ماء بلورية بجانب كل طبق."
+    },
+    {
+      "headword": "fork",
+      "pronunciation": "/fɔːk/",
+      "partOfSpeech": "noun",
+      "definition": "an implement with two or more prongs used for lifting food to the mouth or holding it when cutting",
+      "example": "He held his knife in his right hand and his fork in his left hand in the European style.",
+      "relatedForms": [],
+      "collocations": [
+        "knife and fork",
+        "salad fork",
+        "dinner fork"
+      ],
+      "synonyms": [
+        "eating utensil"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "objects"
+      ],
+      "translation": "شوكة",
+      "exampleArabic": "أمسك بسكينه في يده اليمنى وبشوكته في يده اليسرى على الطريقة الأوروبية."
+    },
+    {
+      "headword": "knife",
+      "pronunciation": "/naɪf/",
+      "partOfSpeech": "noun",
+      "definition": "an instrument composed of a blade fixed into a handle, used for cutting food",
+      "example": "Could you bring me a sharper steak knife? This roast meat is slightly tough.",
+      "verbForms": {
+        "v1": "knife",
+        "v2": "knifed",
+        "v3": "knifed"
+      },
+      "relatedForms": [
+        "knives"
+      ],
+      "collocations": [
+        "butter knife",
+        "steak knife",
+        "sharp knife"
+      ],
+      "synonyms": [
+        "blade",
+        "carver"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "objects"
+      ],
+      "translation": "سكين",
+      "exampleArabic": "هل يمكنك إحضار سكين لحم أكثر حدة؟ هذا اللحم المشوي قاسٍ بعض الشيء."
+    },
+    {
+      "headword": "spoon",
+      "pronunciation": "/spuːn/",
+      "partOfSpeech": "noun",
+      "definition": "an implement consisting of a small, shallow oval or round bowl on a long handle, used for eating soup or stirring",
+      "example": "Use the dessert spoon to enjoy your creamy chocolate mousse and berries.",
+      "relatedForms": [
+        "tablespoon",
+        "teaspoon"
+      ],
+      "collocations": [
+        "soup spoon",
+        "dessert spoon",
+        "wooden spoon"
+      ],
+      "synonyms": [
+        "scoop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "objects"
+      ],
+      "translation": "ملعقة",
+      "exampleArabic": "استخدم ملعقة الحلوى للاستمتاع بموس الشوكولاتة الكريمي والتوت."
+    },
+    {
+      "headword": "napkin",
+      "pronunciation": "/ˈnæp.kɪn/",
+      "partOfSpeech": "noun",
+      "definition": "a square piece of cloth or paper used at a meal to wipe the fingers or lips and to protect garments",
+      "example": "Unfold your linen napkin and place it across your lap before the meal begins.",
+      "relatedForms": [],
+      "collocations": [
+        "cloth napkin",
+        "paper napkin",
+        "place a napkin"
+      ],
+      "synonyms": [
+        "serviette"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "objects"
+      ],
+      "translation": "منديل مائدة",
+      "exampleArabic": "افرد منديل المائدة الكتاني وضعه على حجرك قبل أن تبدأ الوجبة."
+    },
+    {
+      "headword": "tablecloth",
+      "pronunciation": "/ˈteɪ.bəl.klɒθ/",
+      "partOfSpeech": "noun",
+      "definition": "a cloth used for covering a dining table, especially an ornamental or protective one",
+      "example": "The fine dining hall was decorated with white linen tablecloths and vibrant red roses.",
+      "relatedForms": [],
+      "collocations": [
+        "white tablecloth",
+        "spill on the tablecloth"
+      ],
+      "synonyms": [
+        "table cover",
+        "linen"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "objects"
+      ],
+      "translation": "مفرش طاولة الطعام",
+      "exampleArabic": "كانت قاعة الطعام الفاخرة مزينة بمفارش موائد كتانية بيضاء وورود حمراء نضرة."
+    },
+    {
+      "headword": "straw",
+      "pronunciation": "/strɔː/",
+      "partOfSpeech": "noun",
+      "definition": "a thin hollow tube of paper or plastic used for sucking up a liquid beverage from a glass",
+      "example": "The server served our iced passionfruit juice with an eco-friendly paper straw.",
+      "relatedForms": [],
+      "collocations": [
+        "drinking straw",
+        "paper straw",
+        "sip through a straw"
+      ],
+      "synonyms": [
+        "drinking tube"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dining",
+        "beverages"
+      ],
+      "translation": "شفاطة عصير (قصبة الشرب)",
+      "exampleArabic": "قدم النادل عصير الباشن فروت المثلج مع شفاطة ورقية صديقة للبيئة."
+    },
+    {
+      "headword": "rare",
+      "pronunciation": "/reər/",
+      "partOfSpeech": "adjective",
+      "definition": "meat cooked for only a very short time, so that the inside remains red, juicy, and soft",
+      "example": "He ordered his beef tenderloin steak rare with a side of garlic roasted vegetables.",
+      "relatedForms": [],
+      "collocations": [
+        "rare steak",
+        "cook it rare"
+      ],
+      "synonyms": [
+        "lightly cooked",
+        "underdone"
+      ],
+      "antonyms": [
+        "well-done"
+      ],
+      "tags": [
+        "food",
+        "cooking"
+      ],
+      "translation": "نصف مطهو / نيء من الداخل (لحم أحمر خفيف الطهو)",
+      "exampleArabic": "طلب شريحة لحم البقر مطهوة خفيفاً (rare) مع طبق جانبي من الخضار المشوية بالثوم."
+    },
+    {
+      "headword": "medium",
+      "pronunciation": "/ˈmiː.di.əm/",
+      "partOfSpeech": "adjective",
+      "definition": "meat cooked so that it is moderately done, with the center remaining warm and pink",
+      "example": "Most chefs recommend cooking ribeye steak to medium so the natural juices remain intact.",
+      "relatedForms": [],
+      "collocations": [
+        "medium rare",
+        "medium well",
+        "cooked medium"
+      ],
+      "synonyms": [
+        "moderately cooked"
+      ],
+      "antonyms": [
+        "rare",
+        "well-done"
+      ],
+      "tags": [
+        "food",
+        "cooking"
+      ],
+      "translation": "متوسط الطهو (بين النيء والمستوي تماماً)",
+      "exampleArabic": "يوصي معظم الطهاة بطهو شريحة الضلع بدرجة متوسطة حتى تظل العصارة الطبيعية بداخلها."
+    },
+    {
+      "headword": "well-done",
+      "pronunciation": "/ˌwel ˈdʌn/",
+      "partOfSpeech": "adjective",
+      "definition": "meat cooked thoroughly throughout, so that no pinkness or raw meat remains inside",
+      "example": "My father prefers his hamburger patties completely well-done and lightly charred on the grill.",
+      "relatedForms": [],
+      "collocations": [
+        "well-done steak",
+        "cook thoroughly well-done"
+      ],
+      "synonyms": [
+        "thoroughly cooked",
+        "fully done"
+      ],
+      "antonyms": [
+        "rare",
+        "raw"
+      ],
+      "tags": [
+        "food",
+        "cooking"
+      ],
+      "translation": "مطهو تماماً / مستوٍ جداً (ناضج بالكامل)",
+      "exampleArabic": "يفضل والدي فطائر الهامبرغر الخاصة به مطهوة تماماً ومحمرة بخفة على الشواية."
+    },
+    {
+      "headword": "raw",
+      "pronunciation": "/rɔː/",
+      "partOfSpeech": "adjective",
+      "definition": "food in its natural state, not having been cooked by heat",
+      "example": "Traditional Japanese sashimi features exquisitely sliced raw salmon and tuna.",
+      "relatedForms": [],
+      "collocations": [
+        "raw vegetables",
+        "raw fish",
+        "eat raw"
+      ],
+      "synonyms": [
+        "uncooked",
+        "fresh",
+        "unprocessed"
+      ],
+      "antonyms": [
+        "cooked",
+        "well-done"
+      ],
+      "tags": [
+        "food",
+        "cooking"
+      ],
+      "translation": "نيء / غير مطبوخ",
+      "exampleArabic": "يتميز الساشيمي الياباني التقليدي بشرائح سمك السلمون والتونة النيئة المقطعة بدقة."
+    },
+    {
+      "headword": "cooked",
+      "pronunciation": "/kʊkt/",
+      "partOfSpeech": "adjective",
+      "definition": "prepared by heating, baking, frying, or boiling rather than raw",
+      "example": "Freshly cooked vegetables retain more vibrant color and natural vitamins when steamed lightly.",
+      "relatedForms": [
+        "cook"
+      ],
+      "collocations": [
+        "freshly cooked",
+        "properly cooked"
+      ],
+      "synonyms": [
+        "prepared",
+        "baked",
+        "boiled"
+      ],
+      "antonyms": [
+        "raw",
+        "uncooked"
+      ],
+      "tags": [
+        "food",
+        "cooking"
+      ],
+      "translation": "مطبوخ / ناضج حرارياً",
+      "exampleArabic": "تحتفظ الخضراوات المطبوخة طازجة بلون أكثر حيوية وفيتامينات طبيعية عند طهوها بالبخار بخفة."
+    },
+    {
+      "headword": "crispy",
+      "pronunciation": "/ˈkrɪs.pi/",
+      "partOfSpeech": "adjective",
+      "definition": "pleasantly thin, dry, and easily broken with a satisfying crunch when chewed",
+      "example": "The appetizer consisted of crispy golden spring rolls served with sweet chili dipping sauce.",
+      "relatedForms": [
+        "crisp"
+      ],
+      "collocations": [
+        "crispy chicken",
+        "crispy crust",
+        "extra crispy"
+      ],
+      "synonyms": [
+        "crunchy",
+        "crackly",
+        "brittle"
+      ],
+      "antonyms": [
+        "soggy",
+        "soft"
+      ],
+      "tags": [
+        "food",
+        "taste"
+      ],
+      "translation": "مقرمش",
+      "exampleArabic": "تكونت المقبلات من لفائف سبرينغ رول ذهبية مقرمشة تقدم مع صلصة الفلفل الحلو."
+    },
+    {
+      "headword": "bland",
+      "pronunciation": "/blænd/",
+      "partOfSpeech": "adjective",
+      "definition": "lacking strong flavor, seasoning, or zest; mild to the point of being uninteresting",
+      "example": "Without aromatic spices and fresh herbs, the boiled chicken tasted remarkably bland.",
+      "relatedForms": [
+        "blandness"
+      ],
+      "collocations": [
+        "taste bland",
+        "rather bland",
+        "bland diet"
+      ],
+      "synonyms": [
+        "flavorless",
+        "tasteless",
+        "insipid"
+      ],
+      "antonyms": [
+        "savory",
+        "flavorful"
+      ],
+      "tags": [
+        "food",
+        "taste"
+      ],
+      "translation": "خالٍ من النكهة / فاتر الطعم / باهت التتبيل",
+      "exampleArabic": "من دون التوابل العطرية والأعشاب الطازجة، بدا طعم الدجاج المسلوق فاتر الطعم وخالياً من النكهة."
+    },
+    {
+      "headword": "salty food",
+      "pronunciation": "/ˈsɔːl.ti fuːd/",
+      "partOfSpeech": "phrase",
+      "definition": "culinary dishes containing an excessive or prominent quantity of sodium chloride",
+      "example": "Individuals with high blood pressure should reduce their consumption of processed salty food.",
+      "relatedForms": [],
+      "collocations": [
+        "avoid salty food",
+        "crave salty food"
+      ],
+      "synonyms": [
+        "salted food",
+        "saline dishes"
+      ],
+      "antonyms": [
+        "sweet food",
+        "bland food"
+      ],
+      "tags": [
+        "food",
+        "health"
+      ],
+      "translation": "طعام مالح",
+      "exampleArabic": "ينبغي على الأفراد الذين يعانون من ارتفاع ضغط الدم تقليل استهلاكهم للأطعمة المالحة المصنعة."
+    },
+    {
+      "headword": "savory",
+      "pronunciation": "/ˈseɪ.vər.i/",
+      "partOfSpeech": "adjective",
+      "definition": "belonging to the category that is salty or spicy rather than sweet in flavor",
+      "example": "We sampled an array of savory appetizers, including warm cheese tarts and olive pastries.",
+      "relatedForms": [
+        "savor"
+      ],
+      "collocations": [
+        "savory dish",
+        "savory snack",
+        "rich and savory"
+      ],
+      "synonyms": [
+        "piquant",
+        "tasty",
+        "salty"
+      ],
+      "antonyms": [
+        "sweet"
+      ],
+      "tags": [
+        "food",
+        "taste"
+      ],
+      "translation": "مملح / شهي حادق (غير حلو)",
+      "exampleArabic": "تذوقنا تشكيلة من المقبلات الشهية الحادقة، بما في ذلك تارت الجبن الدافئ ومعجنات الزيتون."
+    },
+    {
+      "headword": "bitter",
+      "pronunciation": "/ˈbɪt.ər/",
+      "partOfSpeech": "adjective",
+      "definition": "having a sharp, pungent, and disagreeable taste, like dark cocoa or unsweetened coffee",
+      "example": "Black unsweetened espresso has a characteristically bitter and invigorating taste.",
+      "relatedForms": [
+        "bitterness"
+      ],
+      "collocations": [
+        "bitter taste",
+        "bitter dark chocolate"
+      ],
+      "synonyms": [
+        "sharp",
+        "tart",
+        "acrid"
+      ],
+      "antonyms": [
+        "sweet"
+      ],
+      "tags": [
+        "food",
+        "taste"
+      ],
+      "translation": "مر المذاق",
+      "exampleArabic": "تتميز قهوة الإسبريسو السوداء غير المحلاة بمذاق مر ومنشط بامتياز."
+    },
+    {
+      "headword": "vegetarian",
+      "pronunciation": "/ˌvedʒ.ɪˈteə.ri.ən/",
+      "partOfSpeech": "adjective",
+      "definition": "containing or serving no meat or fish, based entirely on plants, dairy, and eggs",
+      "example": "The eatery offers a diverse vegetarian menu with gourmet vegetable curries and grain bowls.",
+      "relatedForms": [
+        "vegetarianism"
+      ],
+      "collocations": [
+        "vegetarian dish",
+        "vegetarian diet",
+        "strictly vegetarian"
+      ],
+      "synonyms": [
+        "meat-free",
+        "plant-based"
+      ],
+      "antonyms": [
+        "carnivorous",
+        "meat-heavy"
+      ],
+      "tags": [
+        "diet",
+        "food"
+      ],
+      "translation": "نباتي (خالٍ من اللحوم والأسماك)",
+      "exampleArabic": "يقدم المطعم قائمة نباتية متنوعة تضم كاري الخضار الفاخر وأطباق الحبوب المغذية."
+    },
+    {
+      "headword": "vegan",
+      "pronunciation": "/ˈviː.ɡən/",
+      "partOfSpeech": "adjective",
+      "definition": "using or containing no animal products whatsoever, including dairy, eggs, and honey",
+      "example": "This bakery specializes in delicious vegan desserts made with almond milk and coconut oil.",
+      "relatedForms": [
+        "veganism"
+      ],
+      "collocations": [
+        "vegan dessert",
+        "vegan diet",
+        "certified vegan"
+      ],
+      "synonyms": [
+        "100% plant-based",
+        "cruelty-free"
+      ],
+      "antonyms": [
+        "omnivore"
+      ],
+      "tags": [
+        "diet",
+        "food"
+      ],
+      "translation": "نباتي صِرف (فيجن - خالٍ تماماً من أي منتج حيواني حتى الحليب والبيض)",
+      "exampleArabic": "يتخصص هذا المخبز في حلويات نباتية صرفة لذيذة مصنوعة من حليب اللوز وزيت جوز الهند."
+    },
+    {
+      "headword": "allergy",
+      "pronunciation": "/ˈæl.ə.dʒi/",
+      "partOfSpeech": "noun",
+      "definition": "a damaging immune response by the body to a substance, especially a particular food item like nuts or seafood",
+      "example": "Inform your server immediately if you have a severe food allergy to peanuts or shellfish.",
+      "relatedForms": [
+        "allergic"
+      ],
+      "collocations": [
+        "peanut allergy",
+        "food allergy",
+        "severe allergy"
+      ],
+      "synonyms": [
+        "hypersensitivity",
+        "intolerance"
+      ],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "dining"
+      ],
+      "translation": "حساسية غذائية",
+      "exampleArabic": "أبلغ مقدم الطعام على الفور إذا كان لديك حساسية غذائية شديدة تجاه الفول السوداني أو المحار."
+    },
+    {
+      "headword": "allergic",
+      "pronunciation": "/əˈlɜː.dʒɪk/",
+      "partOfSpeech": "adjective",
+      "definition": "having an adverse physical reaction to a substance such as shellfish, gluten, or dairy",
+      "example": "She is allergic to cow's milk, so she orders coffee made exclusively with oat milk.",
+      "relatedForms": [
+        "allergy"
+      ],
+      "collocations": [
+        "allergic to nuts",
+        "allergic reaction"
+      ],
+      "synonyms": [
+        "hypersensitive",
+        "intolerant"
+      ],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "adjectives"
+      ],
+      "translation": "مصاب بالحساسية تجاه",
+      "exampleArabic": "إنها تعاني من حساسية تجاه حليب البقر، لذا تطلب القهوة المصنوعة حصرياً بحليب الشوفان."
+    },
+    {
+      "headword": "gluten-free",
+      "pronunciation": "/ˌɡluː.tənˈfriː/",
+      "partOfSpeech": "adjective",
+      "definition": "not containing gluten, a protein composite found in wheat, barley, and rye",
+      "example": "The Italian restaurant offers gluten-free pasta and pizza crusts for diners with celiac disease.",
+      "relatedForms": [
+        "gluten"
+      ],
+      "collocations": [
+        "gluten-free pasta",
+        "gluten-free options",
+        "certified gluten-free"
+      ],
+      "synonyms": [
+        "wheat-free"
+      ],
+      "antonyms": [
+        "gluten-containing"
+      ],
+      "tags": [
+        "diet",
+        "food"
+      ],
+      "translation": "خالٍ من الغلوتين",
+      "exampleArabic": "يقدم المطعم الإيطالي معكرونة وعجينة بيتزا خالية من الغلوتين للزبائن الذين يعانون من مرض حساسية القمح."
+    },
+    {
+      "headword": "too",
+      "pronunciation": "/tuː/",
+      "partOfSpeech": "adverb",
+      "definition": "to a higher degree than is desirable, permissible, or possible; excessively",
+      "example": "Please be careful; this soup is too hot to eat right now.",
+      "relatedForms": [],
+      "collocations": [
+        "too hot",
+        "too expensive",
+        "too sweet"
+      ],
+      "synonyms": [
+        "excessively",
+        "overly",
+        "unduly"
+      ],
+      "antonyms": [
+        "insufficiently"
+      ],
+      "tags": [
+        "grammar",
+        "degree"
+      ],
+      "translation": "أكثر من اللازم / جداً لدرجة سلبية",
+      "exampleArabic": "يرجى توخي الحذر؛ هذا الحساء ساخن أكثر من اللازم ولا يمكن تناوله الآن."
+    },
+    {
+      "headword": "enough",
+      "pronunciation": "/ɪˈnʌf/",
+      "partOfSpeech": "adverb",
+      "definition": "as much or as many as required; sufficiently",
+      "example": "Is your tea sweet enough, or would you like another spoonful of honey?",
+      "relatedForms": [],
+      "collocations": [
+        "good enough",
+        "warm enough",
+        "have enough"
+      ],
+      "synonyms": [
+        "sufficiently",
+        "adequately"
+      ],
+      "antonyms": [
+        "insufficiently"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ],
+      "translation": "بشكل كافٍ / كفاية",
+      "exampleArabic": "هل الشاي حلو بدرجة كافية، أم ترغب في ملعقة عسل أخرى؟"
+    },
+    {
+      "headword": "too much",
+      "pronunciation": "/tuː mʌtʃ/",
+      "partOfSpeech": "phrase",
+      "definition": "an excessive quantity or degree of an uncountable noun",
+      "example": "There is too much salt in this sauce, making it difficult to appreciate the other flavors.",
+      "relatedForms": [],
+      "collocations": [
+        "too much salt",
+        "too much sugar",
+        "too much noise"
+      ],
+      "synonyms": [
+        "an excess of",
+        "an overabundance of"
+      ],
+      "antonyms": [
+        "not enough"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ],
+      "translation": "أكثر من اللازم (للكميات غير المعدودة)",
+      "exampleArabic": "يوجد الكثير من الملح في هذه الصلصة أكثر من اللازم، مما يجعل من الصعب الاستمتاع بالنكهات الأخرى."
+    },
+    {
+      "headword": "too many",
+      "pronunciation": "/tuː ˈmen.i/",
+      "partOfSpeech": "phrase",
+      "definition": "an excessive number of countable items or people",
+      "example": "There are too many customers waiting in line outside the small bistro tonight.",
+      "relatedForms": [],
+      "collocations": [
+        "too many people",
+        "too many orders",
+        "too many tables"
+      ],
+      "synonyms": [
+        "an excessive number of"
+      ],
+      "antonyms": [
+        "not enough",
+        "too few"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ],
+      "translation": "أكثر من اللازم (للأعداد المعدودة)",
+      "exampleArabic": "يوجد الكثير من الزبائن الذين ينتظرون في طابور خارج البيسترو الصغير الليلة أكثر من اللازم."
+    },
+    {
+      "headword": "not enough",
+      "pronunciation": "/nɒt ɪˈnʌf/",
+      "partOfSpeech": "phrase",
+      "definition": "less than what is needed, satisfactory, or adequate",
+      "example": "There are not enough forks on the banquet table; could our server bring three more?",
+      "relatedForms": [],
+      "collocations": [
+        "not enough time",
+        "not enough food",
+        "not enough space"
+      ],
+      "synonyms": [
+        "insufficient",
+        "inadequate",
+        "lacking"
+      ],
+      "antonyms": [
+        "enough",
+        "plenty"
+      ],
+      "tags": [
+        "grammar",
+        "quantity"
+      ],
+      "translation": "غير كافٍ / ليس بما يكفي",
+      "exampleArabic": "لا يوجد ما يكفي من الشوك على طاولة المأدبة؛ هل يمكن لمقدم الطعام إحضار ثلاث شوك إضافية؟"
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Arriving and Ordering at a Coastal Bistro",
+      "titleArabic": "الوصول والطلب في بيسترو ساحلي أنيق",
+      "setting": "A couple dining at a charming local bistro and placing their order with the server",
+      "settingArabic": "زوجان يتناولان العشاء في بيسترو محلي ساحر ويطلبان الطعام من مقدم الخدمة",
+      "lines": [
+        {
+          "speaker": "Host",
+          "text": "Good evening! Welcome to our seaside bistro. Do you have a reservation tonight?",
+          "translation": "مساء الخير! مرحباً بكم في البيسترو الساحلي. هل لديكم حجز مسبق الليلة؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Good evening! Yes, we would like a table for two by the window overlooking the harbor, please.",
+          "translation": "مساء الخير! نعم، نود طاولة لشخصين بجانب النافذة المطلة على المرفأ، من فضلك."
+        },
+        {
+          "speaker": "Server",
+          "text": "Right this way! Here is the dinner menu. Are you ready to order food, or do you need a few minutes?",
+          "translation": "من هذا الطريق! تفضلا قائمة العشاء. هل أنتما مستعدان لطلب الطعام، أم تحتاجان إلى بضع دقائق؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "We are ready! As an appetizer, could we have the crispy calamari and a vegetarian salad?",
+          "translation": "نحن مستعدون! كمقبلات، هل يمكننا الحصول على الحبار المقرمش وسلطة نباتية؟"
+        },
+        {
+          "speaker": "Server",
+          "text": "Excellent choice. And for your main course, what may I bring you from our kitchen?",
+          "translation": "اختيار ممتاز. وبالنسبة لطبقكم الرئيسي، ماذا يمكنني أن أحضر لكم من مطبخنا؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "I will take the chef's daily special, and my wife will have the grilled salmon entree.",
+          "translation": "سآخذ طبق اليوم الخاص من الشيف، وستأخذ زوجتي طبق السلمون المشوي الرئيسي."
+        },
+        {
+          "speaker": "Server",
+          "text": "Does anyone at your table have a food allergy or dietary restriction we should accommodate?",
+          "translation": "هل يعاني أي شخص على طاولتكم من حساسية غذائية أو قيود غذائية ينبغي لنا مراعاتها؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "Yes, my wife is allergic to shellfish and requires a strictly gluten-free preparation.",
+          "translation": "نعم، زوجتي تعاني من حساسية تجاه المحاريات وتتطلب تحضيراً خالياً تماماً من الغلوتين."
+        }
+      ],
+      "vocabularyUsed": [
+        "bistro",
+        "table for two",
+        "menu",
+        "order food",
+        "appetizer",
+        "crispy",
+        "vegetarian",
+        "main course",
+        "chef",
+        "daily special",
+        "entree",
+        "allergy",
+        "allergic",
+        "gluten-free"
+      ]
+    },
+    {
+      "title": "Feedback During the Meal and Table Adjustments",
+      "titleArabic": "ملاحظات أثناء الوجبة وتعديل الطاولة",
+      "setting": "Diners interacting with their waiter regarding food seasoning and table cutlery",
+      "settingArabic": "زبائن يتحدثون مع النادل بشأن تتبيل الطعام وأدوات المائدة",
+      "lines": [
+        {
+          "speaker": "Waiter",
+          "text": "How is everything tasting this evening? Is the steak cooked to your preference?",
+          "translation": "كيف تجدون مذاق كل شيء هذا المساء؟ هل شريحة اللحم مطهوة وفقاً لرغبتكم؟"
+        },
+        {
+          "speaker": "Diner",
+          "text": "The meat is medium and remarkably tender, but the mushroom sauce is a bit too salty.",
+          "translation": "اللحم متوسط الطهو وطري للغاية، لكن صلصة الفطر مالحة أكثر من اللازم قليلاً."
+        },
+        {
+          "speaker": "Waiter",
+          "text": "I apologize sincereley. I will ask the chef to prepare a fresh, milder sauce without delay.",
+          "translation": "أعتذر بصدق. سأطلب من الشيف إعداد صلصة طازجة وأقل ملوحة دون تأخير."
+        },
+        {
+          "speaker": "Diner",
+          "text": "Thank you! Also, there are not enough napkins on our table, and could we get an extra fork?",
+          "translation": "شكراً لك! وأيضاً، لا يوجد ما يكفي من المناديل على طاولتنا، وهل يمكننا الحصول على شوكة إضافية؟"
+        },
+        {
+          "speaker": "Waiter",
+          "text": "Right away. I will also bring clean cutlery and extra straws for your fruit smoothies.",
+          "translation": "على الفور. سأحضر أيضاً أدوات مائدة نظيفة وشفاطات إضافية لعصائر الفواكه الخاصة بكم."
+        },
+        {
+          "speaker": "Diner",
+          "text": "Is the house vegetable soup bland or does it feature aromatic herbs?",
+          "translation": "هل حساء الخضار الخاص بالمطعم فاتر المذاق أم يتميز بأعشاب عطرية؟"
+        },
+        {
+          "speaker": "Waiter",
+          "text": "It is savory and seasoned with fresh rosemary and garlic; it is not bland at all.",
+          "translation": "إنه متبل وشهي بإكليل الجبل الطازج والثوم؛ وليس فاتراً على الإطلاق."
+        },
+        {
+          "speaker": "Diner",
+          "text": "Sounds delicious. We appreciate your attentive care; we will gladly tip the waiter generously tonight.",
+          "translation": "يبدو لذيذاً. نحن نقدر رعايتك واهتمامك؛ وسنعطي النادل إكرامية سخية بكل سرور الليلة."
+        }
+      ],
+      "vocabularyUsed": [
+        "waiter",
+        "cooked",
+        "medium",
+        "too",
+        "salty food",
+        "chef",
+        "not enough",
+        "napkin",
+        "fork",
+        "cutlery",
+        "straw",
+        "bland",
+        "savory",
+        "tip the waiter"
+      ]
+    },
+    {
+      "title": "Requesting the Check and Savoring Dessert",
+      "titleArabic": "طلب الفاتورة والاستمتاع بالحلوى",
+      "setting": "Guests concluding a fine dinner at an Italian eatery and settling the bill",
+      "settingArabic": "ضيوف يختتمون عشاءً فاخراً في مطعم إيطالي ويسددون الحساب",
+      "lines": [
+        {
+          "speaker": "Guest",
+          "text": "That chocolate molten cake was sweet enough and delightfully warm!",
+          "translation": "كانت كعكة الشوكولاتة الذائبة حلوة المذاق بما يكفي ودافئة بشكل مبهج!"
+        },
+        {
+          "speaker": "Server",
+          "text": "I am delighted you enjoyed our dessert! Would you care for an espresso or mint tea?",
+          "translation": "يسعدني أن الحلوى نالت إعجابكم! هل ترغبون في قهوة إسبريسو أو شاي بالنعناع؟"
+        },
+        {
+          "speaker": "Guest",
+          "text": "No thank you, we have had plenty. Excuse me, could we have the bill please?",
+          "translation": "لا شكراً لك، لقد اكتفينا. معذرة، هل يمكننا الحصول على الحساب من فضلك؟"
+        },
+        {
+          "speaker": "Server",
+          "text": "Certainly! Here is your itemized check. It includes a ten percent discretionary service charge.",
+          "translation": "بكل تأكيد! تفضل فاتورتك المفصلة. وهي تتضمن رسوم خدمة تقديرية بنسبة عشرة بالمائة."
+        },
+        {
+          "speaker": "Guest",
+          "text": "I noticed there were too many items listed under side dishes; could you verify line three?",
+          "translation": "لاحظت وجود أطباق مدرجة تحت الأطباق الجانبية أكثر من اللازم؛ هل يمكنك التحقق من السطر الثالث؟"
+        },
+        {
+          "speaker": "Server",
+          "text": "Ah, you are entirely right! That belongs to the adjacent table. I will reprint your invoice immediately.",
+          "translation": "آه، أنت محق تماماً! هذا يخص الطاولة المجاورة. سأعيد طباعة فاتورتك على الفور."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Thank you. Your prompt honesty and professional service make this eatery our favorite dining spot.",
+          "translation": "شكراً لك. إن أمانتك السريعة وخدمتك المهنية تجعلان هذا المطعم وجهتنا المفضلة لتناول الطعام."
+        },
+        {
+          "speaker": "Server",
+          "text": "It was my true pleasure. Have a wonderful rest of your evening, and come back soon!",
+          "translation": "كان ذلك من دواعي سروري الحقيقي. أتمنى لك بقية أمسية رائعة، وشرفنا بزيارتك قريباً!"
+        }
+      ],
+      "vocabularyUsed": [
+        "enough",
+        "dessert",
+        "bill please",
+        "check please",
+        "service charge",
+        "too many",
+        "side dish",
+        "eatery"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Art of Selecting Courses at a Fine Bistro",
+      "titleArabic": "أصول وفنون اختيار أطباق الطعام في المطاعم الراقية",
+      "kind": "culinary-guide",
+      "text": "Dining out at a distinguished neighborhood bistro or traditional eatery is an enjoyable sensory experience. Guests begin by reviewing the dinner menu carefully to examine each distinct culinary course. A memorable meal typically commences with a light, flavorful starter or crispy garlic appetizer to stimulate the palate. For the main course, diners can choose between succulent seafood entrees or premium meats cooked to their exact preference, whether rare, medium, or well-done. Selecting a suitable side dish like steamed asparagus or roasted garlic potatoes complements the rich protein effortlessly. Knowing how to communicate dietary restrictions like vegan requirements or gluten-free allergies ensures a pleasurable, safe dining experience for every guest.",
+      "translation": "إن تناول الطعام في بيسترو مميز بالحي أو مطعم تقليدي هو تجربة حسية ممتعة. ويبدأ الضيوف بمراجعة قائمة العشاء بعناية لفحص كل طبق من أطباق الوجبة المتتالية. وتبدأ الوجبة عادةً بمقبلات خفيفة ولذيذة أو مقبلات ثوم مقرمشة لفتح الشهية. وبالنسبة للطبق الرئيسي، يمكن للزبائن الاختيار بين مأكولات بحرية شهية أو لحوم ممتازة مطهوة وفقاً لرغبتهم، سواء كانت نصف مطهوة أو متوسطة أو ناضجة تماماً. ويؤدي اختيار طبق جانبي مناسب مثل الهليون المطهو بالبخار أو البطاطس المشوية إلى إكمال الوجبة بسلاسة. وتضمن معرفة كيفية إبلاغ النادل بالمتطلبات النباتية أو حساسية الغلوتين تجربة طعام ممتعة وآمنة للجميع.",
+      "vocabularyUsed": [
+        "bistro",
+        "eatery",
+        "menu",
+        "course",
+        "starter",
+        "appetizer",
+        "main course",
+        "entree",
+        "cooked",
+        "rare",
+        "medium",
+        "well-done",
+        "side dish",
+        "vegan",
+        "gluten-free",
+        "allergy"
+      ]
+    },
+    {
+      "title": "Mastering Seasoning: Balancing Too and Enough",
+      "titleArabic": "إتقان التتبيل: الموازنة الدقيقة بين النكهات",
+      "kind": "gastronomic-essay",
+      "text": "In professional culinary arts, mastering the delicate balance between salt, spice, and acidity distinguishes an ordinary cook from a master chef. When a sauce is prepared with too much sodium, the result is excessively salty food that overpowers the palate. Conversely, if a dish lacks enough aromatic seasoning, it tastes remarkably bland and uninspired. A great savory dish harmonizes distinct flavor profiles without tipping into unpleasant bitterness. Diners appreciate meals where spices are pronounced enough to delight without becoming too overwhelming to finish. Achieving this gastronomic harmony demands rigorous culinary intuition, precise measurement, and continuous tasting throughout preparation.",
+      "translation": "في فنون الطهي الاحترافية، يميز إتقان التوازن الدقيق بين الملح والتوابل والحموضة الطاهي العادي عن الشيف الماهر. فعندما تُعد الصلصة بالكثير من الملح أكثر من اللازم، تكون النتيجة طعاماً مالحاً يطغى على التذوق. وعلى العكس من ذلك، إذا افتقر الطبق إلى ما يكفي من التوابل العطرية، فإنه يبدو فاتر النكهة وباهتاً. والطبق الشهي المتوازن يجمع بين النكهات المتباينة دون أن ينزلق إلى مرارة غير مستحبة. ويقدر الزبائن الوجبات التي تكون توابلها بارزة بما يكفي دون أن تصبح حادة أكثر من اللازم. ويتطلب تحقيق هذا التناغم حدساً طهوياً وقياساً دقيقاً وتذوقاً مستمراً.",
+      "vocabularyUsed": [
+        "chef",
+        "too much",
+        "salty food",
+        "enough",
+        "bland",
+        "savory",
+        "bitter",
+        "too"
+      ]
+    },
+    {
+      "title": "Restaurant Etiquette, Cutlery, and Tipping",
+      "titleArabic": "أصول وضوابط المائدة: أدوات الطعام والإكراميات",
+      "kind": "social-etiquette",
+      "text": "Dining in a formal restaurant involves established social customs that facilitate mutual respect between servers and customers. Upon being seated at a table for two draped with a clean linen tablecloth, diners place their cloth napkin across their lap. When using formal cutlery, one begins with the outermost fork and knife, working inward as each successive course arrives. Avoid waving hands aggressively; instead, make gentle eye contact with your waiter or waitress when requesting the check please. Reviewing the bill allows customers to confirm whether an optional service charge is already included. If the service was exemplary, it is customary to tip the waiter generously to express sincere appreciation for their hard work.",
+      "translation": "يتضمن تناول الطعام في مطعم راقٍ أعرافاً اجتماعية تعزز الاحترام المتبادل بين مقدمي الخدمة والزبائن. فعند الجلوس على طاولة لشخصين مغطاة بمفرش طاولة كتاني نظيف، يضع الزبائن منديل المائدة على حجرهم. وعند استخدام أدوات المائدة الرسمية، يبدأ المرء بالشوكة والسكين الخارجيين مع وصول كل طبق. وتجنب التلويح باليد بعنف؛ وبدلاً من ذلك، تواصل بصرياً بلطف مع النادل أو النادلة عند طلب الحساب من فضلك. وتتيح مراجعة الفاتورة للزبائن التأكد مما إذا كانت رسوم الخدمة مضافة بالفعل. وإذا كانت الخدمة استثنائية، فمن المعتاد إعطاء إكرامية سخية للنادل تقديراً لعمله الدؤوب.",
+      "vocabularyUsed": [
+        "server",
+        "table for two",
+        "tablecloth",
+        "napkin",
+        "cutlery",
+        "fork",
+        "knife",
+        "waiter",
+        "waitress",
+        "check please",
+        "bill please",
+        "service charge",
+        "tip the waiter"
+      ]
+    }
+  ]
+}

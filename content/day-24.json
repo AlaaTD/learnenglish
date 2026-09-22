@@ -1,0 +1,1636 @@
+{
+  "day": 24,
+  "title": "Hotels and Stays",
+  "topic": "Accommodation and hotel services",
+  "description": "Book a room and ask for hotel services.",
+  "stage": "Real-Life Situations",
+  "focus": "By the end of today, you can communicate clearly about accommodation and hotel services using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Requests with Can / Could / May",
+      "titleArabic": "صياغة الطلبات المهذبة باستخدام Can و Could و May ومستويات اللباقة",
+      "explanation": "In English hospitality and daily service situations, how you formulate a request communicates your politeness and respect. We use the modal verbs Can, Could, and May with specific degrees of formality:\n\n1. 'Can I / Can you...?': Informal, everyday, direct.\n   - Used with friends or in casual settings: 'Can I get a glass of water, please?'\n2. 'Could I / Could you...?': Polite, respectful, and the most versatile standard formula in hotels and businesses.\n   - Softer than 'can': 'Could I have a wake-up call at seven o'clock, please?' / 'Could you send fresh towels?'\n3. 'May I...?': Very polite and formal permission formula.\n   - Note: We use 'May I' or 'May we' (asking for permission), NOT 'May you'.\n   - 'May I see your booking reference?' / 'May I request a late checkout?'\n\nStructure:\n[Can / Could / May] + [Subject (I / you / we)] + [Base Verb] + ... + please?",
+      "explanationArabic": "في المحادثات الفندقية والخدمية اليومية، تحدد الأداة المستخدمة درجة الأدب واللباقة:\n\n1. Can I / Can you...؟: غير رسمية ومباشرة (تستخدم في المواقف العادية وبين الأصدقاء).\n2. Could I / Could you...؟: مهذبة ومحترمة وهي الأكثر استخداماً وانتشاراً في الفنادق والخدمات (ألطف وأرقى بكثير من can).\n3. May I...؟: رسمية جداً وغاية في التهذيب وتستخدم لطلب الإذن لنفسك (نقول May I أو May we، ولا نقول May you إطلاقاً).\n\nالقاعدة: [Can / Could / May] + [الفاعل: I / you / we] + [الفعل الأساسي مجرداً] + ... + please؟",
+      "structures": [
+        {
+          "pattern": "Casual Request: Can + I / you + Base Verb + ... + please?",
+          "explanation": "Friendly, direct everyday inquiry.",
+          "explanationArabic": "طلب ودي مباشر في المواقف اليومية البسيطة."
+        },
+        {
+          "pattern": "Standard Polite Request: Could + I / you + Base Verb + ... + please?",
+          "explanation": "Respectful, gracious formula ideal for hotels and restaurants.",
+          "explanationArabic": "الأسلوب المهذب المعتمد في الفنادق والأماكن العامة."
+        },
+        {
+          "pattern": "Formal Permission Request: May + I / we + Base Verb + ... + please?",
+          "explanation": "High-formality respectful request for permission.",
+          "explanationArabic": "طلب رسمي ومهذب جداً للاستئذان."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Could I have a wake-up call at six o'clock tomorrow morning, please?",
+          "translation": "هل يمكنني الحصول على مكالمة إيقاظ عند الساعة السادسة صباح الغد، من فضلك؟",
+          "usesVocabulary": [
+            "could I have",
+            "wake-up call"
+          ]
+        },
+        {
+          "sentence": "May I request an upgrade to an executive suite with a panoramic sea view?",
+          "translation": "هل لي أن أطلب ترقية إلى جناح تنفيذي يتمتع بإطلالة بانورامية على البحر؟",
+          "usesVocabulary": [
+            "may I",
+            "suite",
+            "sea view"
+          ]
+        },
+        {
+          "sentence": "Can I get an extra electronic key card from the reception desk, please?",
+          "translation": "هل يمكنني الحصول على بطاقة مفتاح إلكترونية إضافية من مكتب الاستقبال، من فضلك؟",
+          "usesVocabulary": [
+            "can I get",
+            "key card",
+            "reception"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "May you bring me some fresh towels?",
+          "right": "Could you bring me some fresh towels?",
+          "note": "Never say 'May you' when asking someone else to do something. Use 'Could you' or 'Can you'.",
+          "noteArabic": "لا تقل 'May you' أبداً عند طلب خدمة من شخص آخر؛ قل 'Could you' أو 'Can you'."
+        },
+        {
+          "wrong": "Could I to extend my stay for two nights?",
+          "right": "Could I extend my stay for two nights?",
+          "note": "Do not insert 'to' after modal verbs like 'could' or 'may'. Use the bare infinitive directly.",
+          "noteArabic": "لا تضع 'to' بعد الأفعال الناقصة مثل 'could' أو 'may'؛ استخدم المصدر المجرد مباشرة."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "guesthouse",
+      "pronunciation": "/ˈɡest.haʊs/",
+      "partOfSpeech": "noun",
+      "definition": "a private house offering accommodation to paying guests, usually with a homely atmosphere",
+      "example": "We stayed at a charming alpine guesthouse run by a welcoming local family.",
+      "relatedForms": [],
+      "collocations": [
+        "traditional guesthouse",
+        "stay at a guesthouse"
+      ],
+      "synonyms": [
+        "bed and breakfast",
+        "inn",
+        "boarding house"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "hospitality"
+      ],
+      "translation": "بيت ضيافة / نزل صغير",
+      "exampleArabic": "أقمنا في بيت ضيافة ألبيني ساحر تديره عائلة محلية مضيافة."
+    },
+    {
+      "headword": "motel",
+      "pronunciation": "/məʊˈtel/",
+      "partOfSpeech": "noun",
+      "definition": "a roadside hotel designed primarily for motorists, typically with direct parking access to each room",
+      "example": "During our cross-country road trip, we spent the night at a clean roadside motel.",
+      "relatedForms": [],
+      "collocations": [
+        "roadside motel",
+        "motel room"
+      ],
+      "synonyms": [
+        "motor hotel",
+        "highway lodge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "travel"
+      ],
+      "translation": "موتيل (فندق على الطريق السريع للمسافرين بالسيارات)",
+      "exampleArabic": "خلال رحلتنا البرية عبر البلاد، قضينا الليلة في موتيل نظيف على جانب الطريق."
+    },
+    {
+      "headword": "hostel",
+      "pronunciation": "/ˈhɒs.təl/",
+      "partOfSpeech": "noun",
+      "definition": "an establishment that provides inexpensive food and lodging for a specific group of people, like students or backpackers",
+      "example": "Youth hostels provide budget-friendly dormitory rooms and vibrant communal social spaces.",
+      "relatedForms": [],
+      "collocations": [
+        "youth hostel",
+        "backpackers hostel",
+        "book a hostel"
+      ],
+      "synonyms": [
+        "dormitory",
+        "bunkhouse"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "budget"
+      ],
+      "translation": "نُزل للشباب / هوستل اقتصادي",
+      "exampleArabic": "توفر بيوت الشباب غرف نوم مشتركة اقتصادية ومساحات اجتماعية حيوية."
+    },
+    {
+      "headword": "inn",
+      "pronunciation": "/ɪn/",
+      "partOfSpeech": "noun",
+      "definition": "a pub or small traditional hotel, typically one in the country, providing food and accommodation",
+      "example": "The travelers rested by the fireplace in an eighteenth-century English countryside inn.",
+      "relatedForms": [
+        "innkeeper"
+      ],
+      "collocations": [
+        "country inn",
+        "traditional inn",
+        "historic inn"
+      ],
+      "synonyms": [
+        "tavern",
+        "guesthouse",
+        "lodge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "history"
+      ],
+      "translation": "حانة ونُزل تقليدي / فندق ريفي",
+      "exampleArabic": "استراح المسافرون بجانب المدفأة في نُزل ريفي إنجليزي يعود إلى القرن الثامن عشر."
+    },
+    {
+      "headword": "lodge",
+      "pronunciation": "/lɒdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "a small house in the country, used especially by people on vacation or pursuing sports such as skiing or hunting",
+      "example": "Our wooden ski lodge had panoramic floor-to-ceiling windows overlooking snowy slopes.",
+      "verbForms": {
+        "v1": "lodge",
+        "v2": "lodged",
+        "v3": "lodged"
+      },
+      "relatedForms": [
+        "lodging"
+      ],
+      "collocations": [
+        "ski lodge",
+        "safari lodge",
+        "mountain lodge"
+      ],
+      "synonyms": [
+        "cabin",
+        "chalet",
+        "cottage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "nature"
+      ],
+      "translation": "كوخ جبلي / نُزل ريفي",
+      "exampleArabic": "كان لكوخ التزلج الخشبي الخاص بنا نوافذ بانورامية من الأرض حتى السقف تطل على المنحدرات الثلجية."
+    },
+    {
+      "headword": "accommodation",
+      "pronunciation": "/əˌkɒm.əˈdeɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a room, group of rooms, or building in which someone may live or stay temporarily",
+      "example": "The conference registration package includes luxury accommodation and all daily meals.",
+      "relatedForms": [
+        "accommodate"
+      ],
+      "collocations": [
+        "book accommodation",
+        "luxury accommodation",
+        "budget accommodation"
+      ],
+      "synonyms": [
+        "lodging",
+        "housing",
+        "quarters"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "services"
+      ],
+      "translation": "سكن / إقامة فندقية",
+      "exampleArabic": "تتضمن باقة التسجيل في المؤتمر إقامة فندقية فاخرة وجميع الوجبات اليومية."
+    },
+    {
+      "headword": "suite",
+      "pronunciation": "/swiːt/",
+      "partOfSpeech": "noun",
+      "definition": "a set of connected rooms, especially in a hotel, forming one unit of accommodation",
+      "example": "The presidential suite features a king-sized bed, an elegant living parlor, and a private jacuzzi.",
+      "relatedForms": [],
+      "collocations": [
+        "hotel suite",
+        "executive suite",
+        "honeymoon suite"
+      ],
+      "synonyms": [
+        "apartment",
+        "quarters"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accommodation",
+        "luxury"
+      ],
+      "translation": "جناح فندقي",
+      "exampleArabic": "يتميز الجناح الرئاسي بسرير كبير، وصالون معيشة أنيق، وجاكوزي خاص."
+    },
+    {
+      "headword": "single room",
+      "pronunciation": "/ˌsɪŋ.ɡəl ˈruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a hotel room designed for occupancy by one person, usually with one single bed",
+      "example": "As a solo business traveler, I reserved a quiet single room on the top floor.",
+      "relatedForms": [],
+      "collocations": [
+        "book a single room",
+        "single room rate"
+      ],
+      "synonyms": [
+        "solo room",
+        "individual room"
+      ],
+      "antonyms": [
+        "double room"
+      ],
+      "tags": [
+        "hotel",
+        "rooms"
+      ],
+      "translation": "غرفة مفردة (لشخص واحد)",
+      "exampleArabic": "كمسافر فردي في رحلة عمل، حجزت غرفة مفردة هادئة في الطابق العلوي."
+    },
+    {
+      "headword": "double room",
+      "pronunciation": "/ˌdʌb.əl ˈruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a hotel room with one double bed designed to accommodate two people",
+      "example": "The newly married couple booked a deluxe double room overlooking the city square.",
+      "relatedForms": [],
+      "collocations": [
+        "deluxe double room",
+        "standard double room"
+      ],
+      "synonyms": [
+        "couple room"
+      ],
+      "antonyms": [
+        "single room",
+        "twin room"
+      ],
+      "tags": [
+        "hotel",
+        "rooms"
+      ],
+      "translation": "غرفة مزدوجة (بسرير كبير لشخصين)",
+      "exampleArabic": "حجز العروسان الجديدان غرفة مزدوجة فاخرة تطل على ساحة المدينة."
+    },
+    {
+      "headword": "twin room",
+      "pronunciation": "/ˈtwɪn ˌruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a hotel room containing two single beds for two occupants",
+      "example": "My colleague and I shared a comfortable twin room during the three-day seminar.",
+      "relatedForms": [],
+      "collocations": [
+        "book a twin room",
+        "twin room with bath"
+      ],
+      "synonyms": [
+        "two-bed room"
+      ],
+      "antonyms": [
+        "single room",
+        "double room"
+      ],
+      "tags": [
+        "hotel",
+        "rooms"
+      ],
+      "translation": "غرفة بسريرين منفصلين",
+      "exampleArabic": "تشاركت أنا وزميلي غرفة بسريرين منفصلين مريحة طوال الندوة التي استمرت ثلاثة أيام."
+    },
+    {
+      "headword": "vacancy",
+      "pronunciation": "/ˈveɪ.kən.si/",
+      "partOfSpeech": "noun",
+      "definition": "an unoccupied room in a hotel, motel, or guesthouse available for rent",
+      "example": "The hotel neon sign indicated that they had a vacancy for late-arriving travelers.",
+      "relatedForms": [
+        "vacant"
+      ],
+      "collocations": [
+        "room vacancy",
+        "have a vacancy",
+        "check vacancy"
+      ],
+      "synonyms": [
+        "available room",
+        "opening"
+      ],
+      "antonyms": [
+        "no vacancy",
+        "fully booked"
+      ],
+      "tags": [
+        "hotel",
+        "status"
+      ],
+      "translation": "شاغر / غرفة شاغرة",
+      "exampleArabic": "أشارت لافتة النيون بالفندق إلى وجود غرفة شاغرة للمسافرين القادمين في وقت متأخر."
+    },
+    {
+      "headword": "no vacancy",
+      "pronunciation": "/nəʊ ˈveɪ.kən.si/",
+      "partOfSpeech": "phrase",
+      "definition": "a notice indicating that all rooms in a hotel or guesthouse are occupied",
+      "example": "During the international film festival, almost every downtown hotel posted a 'No Vacancy' sign.",
+      "relatedForms": [],
+      "collocations": [
+        "display no vacancy",
+        "sign says no vacancy"
+      ],
+      "synonyms": [
+        "full",
+        "completely occupied"
+      ],
+      "antonyms": [
+        "vacancy"
+      ],
+      "tags": [
+        "hotel",
+        "status"
+      ],
+      "translation": "لا يوجد شاغر / الفندق ممتلئ تماماً",
+      "exampleArabic": "خلال مهرجان السينما الدولي، وضعت جميع فنادق وسط المدينة تقريباً لافتة 'لا يوجد شاغر'."
+    },
+    {
+      "headword": "check in",
+      "pronunciation": "/tʃek ɪn/",
+      "partOfSpeech": "verb",
+      "definition": "to register on arrival at a hotel, airport, or clinic",
+      "example": "Guests can check in at the front desk anytime after two o'clock in the afternoon.",
+      "verbForms": {
+        "v1": "check in",
+        "v2": "checked in",
+        "v3": "checked in"
+      },
+      "relatedForms": [
+        "check-in"
+      ],
+      "collocations": [
+        "check in at reception",
+        "early check in"
+      ],
+      "synonyms": [
+        "register",
+        "sign in",
+        "enroll"
+      ],
+      "antonyms": [
+        "check out"
+      ],
+      "tags": [
+        "hotel",
+        "actions"
+      ],
+      "translation": "يسجل الوصول (في الفندق)",
+      "exampleArabic": "يمكن للنزلاء تسجيل الوصول عند مكتب الاستقبال في أي وقت بعد الثانية بعد الظهر."
+    },
+    {
+      "headword": "check out",
+      "pronunciation": "/tʃek aʊt/",
+      "partOfSpeech": "verb",
+      "definition": "to settle one's hotel bill and vacate the room upon departure",
+      "example": "We need to check out by eleven o'clock tomorrow morning unless we request a late checkout.",
+      "verbForms": {
+        "v1": "check out",
+        "v2": "checked out",
+        "v3": "checked out"
+      },
+      "relatedForms": [
+        "checkout"
+      ],
+      "collocations": [
+        "check out on time",
+        "late check out"
+      ],
+      "synonyms": [
+        "vacate",
+        "depart",
+        "settle up"
+      ],
+      "antonyms": [
+        "check in"
+      ],
+      "tags": [
+        "hotel",
+        "actions"
+      ],
+      "translation": "يسجل المغادرة ويسدد الفاتورة (في الفندق)",
+      "exampleArabic": "يتعين علينا تسجيل المغادرة بحلول الساعة الحادية عشرة صباح الغد ما لم نطلب مغادرة متأخرة."
+    },
+    {
+      "headword": "reception",
+      "pronunciation": "/rɪˈsep.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "the area in a hotel or office where visitors are received and appointments are scheduled",
+      "example": "Please leave your room key at reception whenever you leave the building for the day.",
+      "relatedForms": [
+        "receptionist"
+      ],
+      "collocations": [
+        "reception desk",
+        "hotel reception",
+        "call reception"
+      ],
+      "synonyms": [
+        "front desk",
+        "front office"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "places"
+      ],
+      "translation": "الاستقبال",
+      "exampleArabic": "يرجى ترك مفتاح غرفتك في الاستقبال كلما غادرت المبنى خلال اليوم."
+    },
+    {
+      "headword": "front desk",
+      "pronunciation": "/ˌfrʌnt ˈdesk/",
+      "partOfSpeech": "noun",
+      "definition": "the main service counter in a hotel where guests register, ask questions, and pay bills",
+      "example": "The polite clerk at the front desk offered us complimentary city maps and transit guides.",
+      "relatedForms": [],
+      "collocations": [
+        "front desk clerk",
+        "contact the front desk",
+        "front desk staff"
+      ],
+      "synonyms": [
+        "reception",
+        "counter",
+        "information desk"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "مكتب الاستقبال الرئيسي",
+      "exampleArabic": "قدم لنا الموظف المهذب في مكتب الاستقبال خرائط مجانية للمدينة وأدلة للمواصلات."
+    },
+    {
+      "headword": "concierge",
+      "pronunciation": "/kɒn.siˈeəʒ/",
+      "partOfSpeech": "noun",
+      "definition": "a hotel employee whose job is to assist guests by booking tours, making reservations, and providing advice",
+      "example": "The knowledgeable concierge recommended an exquisite authentic Italian bistro and booked us a table.",
+      "relatedForms": [],
+      "collocations": [
+        "ask the concierge",
+        "concierge desk",
+        "hotel concierge"
+      ],
+      "synonyms": [
+        "guest advisor",
+        "hospitality guide"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "jobs"
+      ],
+      "translation": "الكونسيرج (مسؤول خدمة وإرشاد النزلاء وحجز الرحلات)",
+      "exampleArabic": "أوصى مسؤول الكونسيرج الخبير بمطعم إيطالي أصيل رائع وحجز لنا طاولة هناك."
+    },
+    {
+      "headword": "bellboy",
+      "pronunciation": "/ˈbel.bɔɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a staff member in a hotel employed to carry luggage, run errands, and guide guests to rooms",
+      "example": "The cheerful bellboy carried our heavy suitcases upstairs and demonstrated how to adjust the thermostat.",
+      "relatedForms": [],
+      "collocations": [
+        "call the bellboy",
+        "tip the bellboy"
+      ],
+      "synonyms": [
+        "porter",
+        "bellhop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "jobs"
+      ],
+      "translation": "حامل الحقائب (في الفندق)",
+      "exampleArabic": "حمل عامل الحقائب المبتهج حقائبنا الثقيلة إلى الأعلى وشرح لنا كيفية ضبط منظم الحرارة."
+    },
+    {
+      "headword": "porter",
+      "pronunciation": "/ˈpɔː.tər/",
+      "partOfSpeech": "noun",
+      "definition": "a person employed to carry luggage and other loads, especially in a hotel or railway station",
+      "example": "A uniformed porter loaded our suitcases into a luggage cart as soon as our taxi arrived.",
+      "relatedForms": [],
+      "collocations": [
+        "hotel porter",
+        "station porter",
+        "tip the porter"
+      ],
+      "synonyms": [
+        "baggage handler",
+        "carrier",
+        "bellhop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "jobs"
+      ],
+      "translation": "حمّال / عتّال الأمتعة",
+      "exampleArabic": "قام حمّال يرتدي الزي الرسمي بتحميل حقائبنا في عربة الأمتعة بمجرد وصول سيارة الأجرة."
+    },
+    {
+      "headword": "housekeeping",
+      "pronunciation": "/ˈhaʊsˌkiː.pɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "the department in a hotel responsible for cleaning, sanitizing, and maintaining guest rooms",
+      "example": "Housekeeping delivers fresh cotton towels and replenishes bath supplies every morning.",
+      "relatedForms": [
+        "housekeeper"
+      ],
+      "collocations": [
+        "call housekeeping",
+        "housekeeping service",
+        "daily housekeeping"
+      ],
+      "synonyms": [
+        "room cleaning",
+        "maid service"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "خدمة تنظيف وتدبير الغرف",
+      "exampleArabic": "يقوم قسم تنظيف الغرف بتسليم مناشف قطنية نظيفة وتجديد مستلزمات الحمام كل صباح."
+    },
+    {
+      "headword": "maid",
+      "pronunciation": "/meɪd/",
+      "partOfSpeech": "noun",
+      "definition": "a female worker employed in domestic service or responsible for cleaning hotel rooms",
+      "example": "The floor maid greeted us cordially and inquired whether we required additional pillows.",
+      "relatedForms": [],
+      "collocations": [
+        "hotel maid",
+        "room maid"
+      ],
+      "synonyms": [
+        "cleaner",
+        "housekeeper",
+        "chambermaid"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "jobs"
+      ],
+      "translation": "عاملة تنظيف الغرف",
+      "exampleArabic": "حيتنا عاملة تنظيف الطابق بود واستفسرت عما إذا كنا بحاجة إلى وسائد إضافية."
+    },
+    {
+      "headword": "doorman",
+      "pronunciation": "/ˈdɔː.mən/",
+      "partOfSpeech": "noun",
+      "definition": "a person, often in uniform, stationed at the entrance of a luxury hotel or club to open doors and hail taxis",
+      "example": "The polite doorman greeted arriving visitors and shielded them with a large umbrella during rain.",
+      "relatedForms": [],
+      "collocations": [
+        "hotel doorman",
+        "uniformed doorman"
+      ],
+      "synonyms": [
+        "porter",
+        "door attendant",
+        "greeter"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "jobs"
+      ],
+      "translation": "بواب الفندق",
+      "exampleArabic": "استقبل البواب المهذب الزوار القادمين وحماهم بمظلة كبيرة أثناء هطول المطر."
+    },
+    {
+      "headword": "amenities",
+      "pronunciation": "/əˈmiː.nə.tiz/",
+      "partOfSpeech": "noun",
+      "definition": "desirable or useful features of a building or place that contribute to physical comfort or enjoyment",
+      "example": "Hotel amenities include a heated rooftop swimming pool, a modern gym, and high-speed Wi-Fi.",
+      "relatedForms": [
+        "amenity"
+      ],
+      "collocations": [
+        "hotel amenities",
+        "room amenities",
+        "luxury amenities"
+      ],
+      "synonyms": [
+        "facilities",
+        "conveniences",
+        "perks"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "مرافق ووسائل راحة",
+      "exampleArabic": "تتضمن مرافق الفندق مسبحاً مدفأً على السطح، وصالة ألعاب رياضية حديثة، وإنترنت عالي السرعة."
+    },
+    {
+      "headword": "mini-bar",
+      "pronunciation": "/ˈmɪn.i.bɑːr/",
+      "partOfSpeech": "noun",
+      "definition": "a small refrigerator in a hotel room stocked with beverages and snacks for purchase",
+      "example": "The room features a stocked mini-bar with chilled sparkling water, juices, and gourmet nuts.",
+      "relatedForms": [],
+      "collocations": [
+        "stocked mini-bar",
+        "mini-bar prices"
+      ],
+      "synonyms": [
+        "in-room fridge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "appliances"
+      ],
+      "translation": "ثلاجة صغيرة بالغرفة (ميني بار)",
+      "exampleArabic": "تحتوي الغرفة على ثلاجة صغيرة مجهزة بمياه فوارة مبردة وعصائر ومكسرات فاخرة."
+    },
+    {
+      "headword": "air conditioning",
+      "pronunciation": "/ˈeə kənˌdɪʃ.ən.ɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "a system for cooling and controlling the humidity of the air in a room or building",
+      "example": "The quiet digital air conditioning kept our room blissfully cool during the July heatwave.",
+      "relatedForms": [
+        "air conditioner",
+        "air-conditioned"
+      ],
+      "collocations": [
+        "central air conditioning",
+        "turn on the air conditioning"
+      ],
+      "synonyms": [
+        "climate control",
+        "cooling system",
+        "AC"
+      ],
+      "antonyms": [
+        "heating"
+      ],
+      "tags": [
+        "hotel",
+        "appliances"
+      ],
+      "translation": "تكييف الهواء",
+      "exampleArabic": "حافظ تكييف الهواء الرقمي الهادئ على برودة غرفتنا الرائعة أثناء موجة حر شهر يوليو."
+    },
+    {
+      "headword": "room service",
+      "pronunciation": "/ˈruːm ˌsɜː.vɪs/",
+      "partOfSpeech": "noun",
+      "definition": "a hotel service providing food and drink delivered directly to a guest's room",
+      "example": "We were exhausted after the long flight, so we ordered fresh pasta from room service.",
+      "relatedForms": [],
+      "collocations": [
+        "call room service",
+        "24-hour room service",
+        "order room service"
+      ],
+      "synonyms": [
+        "in-room dining"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "خدمة الغرف (توصيل الطعام للغرفة)",
+      "exampleArabic": "كنا منهكين بعد الرحلة الطويلة، لذا طلبنا معكرونة طازجة من خدمة الغرف."
+    },
+    {
+      "headword": "wake-up call",
+      "pronunciation": "/ˈweɪk.ʌp ˌkɔːl/",
+      "partOfSpeech": "noun",
+      "definition": "a telephone call made by hotel reception to awaken a guest at a specified morning hour",
+      "example": "I requested a 6:00 AM wake-up call so I wouldn't miss my early morning international connection.",
+      "relatedForms": [],
+      "collocations": [
+        "request a wake-up call",
+        "morning wake-up call"
+      ],
+      "synonyms": [
+        "alarm call",
+        "morning reminder"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "مكالمة إيقاظ صباحية",
+      "exampleArabic": "طلبت مكالمة إيقاظ عند الساعة السادسة صباحاً حتى لا تفوتني رحلة المواصلة الصباحية المبكرة."
+    },
+    {
+      "headword": "key card",
+      "pronunciation": "/ˈkiː ˌkɑːd/",
+      "partOfSpeech": "noun",
+      "definition": "a small plastic card encoded with digital data used instead of a key to unlock a hotel door",
+      "example": "Hold your electronic key card against the magnetic sensor to unlock your room door.",
+      "relatedForms": [],
+      "collocations": [
+        "electronic key card",
+        "swipe key card",
+        "lost key card"
+      ],
+      "synonyms": [
+        "smart card",
+        "hotel pass"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "technology"
+      ],
+      "translation": "بطاقة المفتاح الإلكترونية (مفتاح الغرفة)",
+      "exampleArabic": "مرر بطاقة المفتاح الإلكترونية الخاصة بك على المستشعر المغناطيسي لفتح باب غرفتك."
+    },
+    {
+      "headword": "balcony view",
+      "pronunciation": "/ˈbæl.kə.ni vjuː/",
+      "partOfSpeech": "noun",
+      "definition": "the panoramic visual vista visible from an outdoor elevated hotel terrace",
+      "example": "Our fifth-floor room featured a picturesque balcony view overlooking the historic city center.",
+      "relatedForms": [],
+      "collocations": [
+        "magnificent balcony view",
+        "room with balcony view"
+      ],
+      "synonyms": [
+        "terrace view",
+        "patio vista"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "views"
+      ],
+      "translation": "إطلالة من الشرفة",
+      "exampleArabic": "تميزت غرفتنا في الطابق الخامس بإطلالة رائعة من الشرفة تطل على وسط المدينة التاريخي."
+    },
+    {
+      "headword": "sea view",
+      "pronunciation": "/ˈsiː vjuː/",
+      "partOfSpeech": "noun",
+      "definition": "a sight or prospect of the sea from a window or balcony",
+      "example": "We paid an extra fee to secure a deluxe corner suite with an unobstructed sea view.",
+      "relatedForms": [],
+      "collocations": [
+        "room with sea view",
+        "spectacular sea view"
+      ],
+      "synonyms": [
+        "ocean view",
+        "marine vista"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "views"
+      ],
+      "translation": "إطلالة على البحر",
+      "exampleArabic": "دفعنا رسوماً إضافية لحجز جناح زاوية فاخر يتمتع بإطلالة مفتوحة على البحر."
+    },
+    {
+      "headword": "continental breakfast",
+      "pronunciation": "/ˌkɒn.tɪˈnen.təl ˈbrek.fəst/",
+      "partOfSpeech": "noun",
+      "definition": "a light morning meal typically consisting of pastries, bread rolls, butter, jam, fruit, and coffee",
+      "example": "The hotel room rate includes a complimentary continental breakfast served daily from seven to ten.",
+      "relatedForms": [],
+      "collocations": [
+        "complimentary continental breakfast",
+        "serve continental breakfast"
+      ],
+      "synonyms": [
+        "light breakfast"
+      ],
+      "antonyms": [
+        "full cooked breakfast"
+      ],
+      "tags": [
+        "food",
+        "hotel"
+      ],
+      "translation": "إفطار كونتيننتال (إفطار خفيف بمخبوزات وقهوة)",
+      "exampleArabic": "يشمل سعر الغرفة بالفندق إفطار كونتيننتال مجانياً يقدم يومياً من السابعة حتى العاشرة."
+    },
+    {
+      "headword": "buffet",
+      "pronunciation": "/ˈbʊf.eɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a meal consisting of several dishes from which guests serve themselves at long tables",
+      "example": "The lavish hotel dinner buffet offered fresh Mediterranean seafood, roast meats, and exotic salads.",
+      "relatedForms": [],
+      "collocations": [
+        "breakfast buffet",
+        "all-you-can-eat buffet",
+        "buffet dining"
+      ],
+      "synonyms": [
+        "smorgasbord",
+        "self-service spread"
+      ],
+      "antonyms": [
+        "à la carte"
+      ],
+      "tags": [
+        "food",
+        "hotel"
+      ],
+      "translation": "بوفيه مفتوح (خدمة ذاتية للطعام)",
+      "exampleArabic": "قدم بوفيه عشاء الفندق الفاخر مأكولات بحرية طازجة من البحر الأبيض المتوسط ولحوماً مشوية وسلطات متنوعة."
+    },
+    {
+      "headword": "valet parking",
+      "pronunciation": "/ˈvæl.eɪ ˌpɑː.kɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "a service in which an attendant parks and retrieves vehicles for hotel guests",
+      "example": "Pull your rental car up to the grand front entrance; the hotel provides complimentary valet parking.",
+      "relatedForms": [],
+      "collocations": [
+        "complimentary valet parking",
+        "valet parking ticket"
+      ],
+      "synonyms": [
+        "attendant parking"
+      ],
+      "antonyms": [
+        "self-parking"
+      ],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "خدمة صف السيارات (فاليه)",
+      "exampleArabic": "أوقف سيارتك المستأجرة عند المدخل الرئيسي الفاخر؛ يوفر الفندق خدمة صف سيارات مجانية."
+    },
+    {
+      "headword": "elevator",
+      "pronunciation": "/ˈel.ɪ.veɪ.tər/",
+      "partOfSpeech": "noun",
+      "definition": "a platform or compartment housed in a shaft for raising and lowering people or things to different floors",
+      "example": "Step into the glass express elevator to reach the panoramic rooftop terrace in ten seconds.",
+      "relatedForms": [],
+      "collocations": [
+        "take the elevator",
+        "glass elevator",
+        "elevator buttons"
+      ],
+      "synonyms": [
+        "lift"
+      ],
+      "antonyms": [
+        "staircase"
+      ],
+      "tags": [
+        "hotel",
+        "amenities"
+      ],
+      "translation": "مصعد (أسانسير)",
+      "exampleArabic": "ادخل إلى المصعد الزجاجي السريع للوصول إلى شرفة السطح البانورامية في عشر ثوانٍ."
+    },
+    {
+      "headword": "staircase",
+      "pronunciation": "/ˈsteə.keɪs/",
+      "partOfSpeech": "noun",
+      "definition": "a flight of stairs with the supporting framework and banisters",
+      "example": "In case of fire emergency, guests must use the illuminated safety staircase rather than elevators.",
+      "relatedForms": [
+        "stairs"
+      ],
+      "collocations": [
+        "spiral staircase",
+        "climb the staircase",
+        "emergency staircase"
+      ],
+      "synonyms": [
+        "flight of stairs",
+        "stairway"
+      ],
+      "antonyms": [
+        "elevator"
+      ],
+      "tags": [
+        "architecture",
+        "hotel"
+      ],
+      "translation": "درج / سُلَّم المبنى",
+      "exampleArabic": "في حالة الطوارئ والحريق، يجب على النزلاء استخدام الدرج المضاء المخصص للسلامة بدلاً من المصاعد."
+    },
+    {
+      "headword": "lobby",
+      "pronunciation": "/ˈlɒb.i/",
+      "partOfSpeech": "noun",
+      "definition": "a room providing a space out of which one or more other rooms lead; a public entrance hall",
+      "example": "Guests gathered in the marble hotel lobby to admire the towering crystal chandelier and floral displays.",
+      "relatedForms": [],
+      "collocations": [
+        "hotel lobby",
+        "grand lobby",
+        "wait in the lobby"
+      ],
+      "synonyms": [
+        "foyer",
+        "vestibule",
+        "entrance hall"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "architecture"
+      ],
+      "translation": "بهو الفندق / الردهة الرئيسية",
+      "exampleArabic": "تجمع النزلاء في بهو الفندق الرخامي للإعجاب بالثريا الكريستالية الشاهقة وباقات الزهور."
+    },
+    {
+      "headword": "hall",
+      "pronunciation": "/hɔːl/",
+      "partOfSpeech": "noun",
+      "definition": "an interior corridor or passageway leading to several bedrooms or offices",
+      "example": "Walk down the carpeted hall on the third floor until you reach suite 312 on your right.",
+      "relatedForms": [
+        "hallway"
+      ],
+      "collocations": [
+        "hotel hall",
+        "corridor",
+        "spacious hall"
+      ],
+      "synonyms": [
+        "corridor",
+        "passageway"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "buildings"
+      ],
+      "translation": "ممر / ردهة داخلية",
+      "exampleArabic": "امشِ في الممر المفروش بالسجاد في الطابق الثالث حتى تصل إلى الجناح 312 على يمينك."
+    },
+    {
+      "headword": "deposit",
+      "pronunciation": "/dɪˈpɒz.ɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a sum of money placed or kept in an account, or given as a pledge or down payment",
+      "example": "The hotel reception requires a refundable security deposit of fifty dollars upon check-in.",
+      "verbForms": {
+        "v1": "deposit",
+        "v2": "deposited",
+        "v3": "deposited"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "security deposit",
+        "refundable deposit",
+        "pay a deposit"
+      ],
+      "synonyms": [
+        "down payment",
+        "security bond",
+        "advance payment"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "hotel"
+      ],
+      "translation": "عربون / تأمين مالي مسترد",
+      "exampleArabic": "يتطلب مكتب استقبال الفندق تأميناً نقدياً مسترداً قدره خمسون دولاراً عند تسجيل الوصول."
+    },
+    {
+      "headword": "bill",
+      "pronunciation": "/bɪl/",
+      "partOfSpeech": "noun",
+      "definition": "a printed or written statement of the money owed for goods or services supplied",
+      "example": "Before checking out, please review your itemized hotel bill to confirm all room charges.",
+      "verbForms": {
+        "v1": "bill",
+        "v2": "billed",
+        "v3": "billed"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "hotel bill",
+        "pay the bill",
+        "itemized bill"
+      ],
+      "synonyms": [
+        "invoice",
+        "account",
+        "statement"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "hotel"
+      ],
+      "translation": "فاتورة الحساب",
+      "exampleArabic": "قبل تسجيل المغادرة، يرجى مراجعة فاتورة الفندق المفصلة لتأكيد جميع رسوم الغرفة."
+    },
+    {
+      "headword": "invoice",
+      "pronunciation": "/ˈɪn.vɔɪs/",
+      "partOfSpeech": "noun",
+      "definition": "a commercial document issued by a seller to a buyer, relating to a sale transaction and indicating quantities and prices",
+      "example": "The front desk emailed a formal tax invoice directly to our corporate travel management accountant.",
+      "verbForms": {
+        "v1": "invoice",
+        "v2": "invoiced",
+        "v3": "invoiced"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "tax invoice",
+        "issue an invoice",
+        "commercial invoice"
+      ],
+      "synonyms": [
+        "bill",
+        "account",
+        "receipt"
+      ],
+      "antonyms": [],
+      "tags": [
+        "business",
+        "money"
+      ],
+      "translation": "فاتورة ضريبية رسمية",
+      "exampleArabic": "أرسل مكتب الاستقبال فاتورة ضريبية رسمية عبر البريد الإلكتروني مباشرة إلى محاسب إدارة السفر لشركتنا."
+    },
+    {
+      "headword": "complaint",
+      "pronunciation": "/kəmˈpleɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "a statement that something is unsatisfactory, unacceptable, or substandard",
+      "example": "The manager resolved our noise complaint immediately by relocating us to a tranquil penthouse suite.",
+      "relatedForms": [
+        "complain"
+      ],
+      "collocations": [
+        "make a complaint",
+        "lodge a complaint",
+        "handle a complaint"
+      ],
+      "synonyms": [
+        "grievance",
+        "objection",
+        "protest"
+      ],
+      "antonyms": [
+        "compliment",
+        "praise"
+      ],
+      "tags": [
+        "communication",
+        "services"
+      ],
+      "translation": "شكوى / اعتراض",
+      "exampleArabic": "حل المدير شكوانا المتعلقة بالضوضاء على الفور بنقلنا إلى جناح علوي هادئ."
+    },
+    {
+      "headword": "room rate",
+      "pronunciation": "/ˈruːm ˌreɪt/",
+      "partOfSpeech": "noun",
+      "definition": "the price charged for staying in a particular hotel room per night",
+      "example": "Summer room rates increase significantly due to high tourist demand along the coast.",
+      "relatedForms": [],
+      "collocations": [
+        "discounted room rate",
+        "nightly room rate",
+        "standard room rate"
+      ],
+      "synonyms": [
+        "nightly charge",
+        "tariff",
+        "pricing"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "money"
+      ],
+      "translation": "سعر الغرفة (في الليلة)",
+      "exampleArabic": "ترتفع أسعار الغرف الصيفية بشكل ملحوظ بسبب ارتفاع الطلب السياحي على طول الساحل."
+    },
+    {
+      "headword": "extend stay",
+      "pronunciation": "/ɪkˈstend steɪ/",
+      "partOfSpeech": "phrase",
+      "definition": "to arrange to remain at a hotel or lodging for additional nights beyond one's original reservation",
+      "example": "We loved the tranquil island so much that we asked reception if we could extend our stay.",
+      "verbForms": {
+        "v1": "extend stay",
+        "v2": "extended stay",
+        "v3": "extended stay"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "extend your stay",
+        "request to extend stay"
+      ],
+      "synonyms": [
+        "prolong visit",
+        "lengthen stay"
+      ],
+      "antonyms": [
+        "shorten stay"
+      ],
+      "tags": [
+        "hotel",
+        "travel"
+      ],
+      "translation": "يمدد فترة الإقامة",
+      "exampleArabic": "أحببنا الجزيرة الهادئة لدرجة أننا سألنا الاستقبال عما إذا كان بإمكاننا تمديد إقامتنا."
+    },
+    {
+      "headword": "fully booked",
+      "pronunciation": "/ˌfʊl.i ˈbʊkt/",
+      "partOfSpeech": "phrase",
+      "definition": "having all rooms, seats, or tickets reserved with none remaining available",
+      "example": "The seaside resort is completely fully booked for the entire New Year holiday weekend.",
+      "relatedForms": [],
+      "collocations": [
+        "hotel is fully booked",
+        "fully booked for the season"
+      ],
+      "synonyms": [
+        "sold out",
+        "at full capacity",
+        "no vacancy"
+      ],
+      "antonyms": [
+        "vacant",
+        "available"
+      ],
+      "tags": [
+        "hotel",
+        "status"
+      ],
+      "translation": "محجوز بالكامل",
+      "exampleArabic": "المنتجع الساحلي محجوز بالكامل تماماً طوال عطلة نهاية أسبوع رأس السنة."
+    },
+    {
+      "headword": "reserve",
+      "pronunciation": "/rɪˈzɜːv/",
+      "partOfSpeech": "verb",
+      "definition": "to arrange for a room, seat, or ticket to be kept for the use of a particular person",
+      "example": "I will reserve a spacious double room with air conditioning and breakfast included.",
+      "verbForms": {
+        "v1": "reserve",
+        "v2": "reserved",
+        "v3": "reserved"
+      },
+      "relatedForms": [
+        "reservation"
+      ],
+      "collocations": [
+        "reserve in advance",
+        "reserve a room",
+        "reserve a table"
+      ],
+      "synonyms": [
+        "book",
+        "secure",
+        "engage"
+      ],
+      "antonyms": [
+        "cancel"
+      ],
+      "tags": [
+        "actions",
+        "hotel"
+      ],
+      "translation": "يحجز (غرفة أو طاولة)",
+      "exampleArabic": "سأحجز غرفة مزدوجة واسعة مكيفة وشاملة وجبة الإفطار."
+    },
+    {
+      "headword": "tip the porter",
+      "pronunciation": "/tɪp ðə ˈpɔː.tər/",
+      "partOfSpeech": "phrase",
+      "definition": "to give a small gratuity of money to the baggage handler in appreciation for assistance",
+      "example": "It is customary to tip the porter two dollars per bag when he delivers luggage to your room.",
+      "verbForms": {
+        "v1": "tip the porter",
+        "v2": "tipped the porter",
+        "v3": "tipped the porter"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "remember to tip the porter",
+        "customary to tip the porter"
+      ],
+      "synonyms": [
+        "reward the bellboy",
+        "give a gratuity"
+      ],
+      "antonyms": [],
+      "tags": [
+        "manners",
+        "hotel"
+      ],
+      "translation": "يعطي إكرامية للحمّال (يبقشش)",
+      "exampleArabic": "من المعتاد إعطاء إكرامية للحمّال دولارين عن كل حقيبة عندما يوصل الأمتعة إلى غرفتك."
+    },
+    {
+      "headword": "guest service",
+      "pronunciation": "/ˈɡest ˌsɜː.vɪs/",
+      "partOfSpeech": "noun",
+      "definition": "the department or activity of catering to the needs, requests, and inquiries of hotel visitors",
+      "example": "Dial zero on your room telephone to connect with our 24-hour guest service department.",
+      "relatedForms": [],
+      "collocations": [
+        "excellent guest service",
+        "guest service manager"
+      ],
+      "synonyms": [
+        "customer care",
+        "visitor assistance"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hotel",
+        "services"
+      ],
+      "translation": "خدمة النزلاء والضيوف",
+      "exampleArabic": "اطلب الرقم صفر على هاتف غرفتك للاتصال بقسم خدمة النزلاء الذي يعمل على مدار 24 ساعة."
+    },
+    {
+      "headword": "may I",
+      "pronunciation": "/meɪ aɪ/",
+      "partOfSpeech": "phrase",
+      "definition": "a highly polite, formal modal formula used to ask for permission",
+      "example": "May I request an extra feather pillow and a warm blanket for our room?",
+      "relatedForms": [],
+      "collocations": [
+        "may I ask",
+        "may I have",
+        "may I please"
+      ],
+      "synonyms": [
+        "could I please",
+        "am I permitted to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "polite-requests"
+      ],
+      "translation": "هل تأذن لي / هل لي أن (أعلى درجات الأدب)",
+      "exampleArabic": "هل لي أن أطلب وسادة ريش إضافية وبطانية دافئة لغرفتنا؟"
+    },
+    {
+      "headword": "could I have",
+      "pronunciation": "/kʊd aɪ hæv/",
+      "partOfSpeech": "phrase",
+      "definition": "a polite formula used to request something from someone in a restaurant, hotel, or shop",
+      "example": "Could I have a wake-up call at seven tomorrow morning, please?",
+      "relatedForms": [],
+      "collocations": [
+        "could I have the bill",
+        "could I have some water"
+      ],
+      "synonyms": [
+        "may I have",
+        "can I please have"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "polite-requests"
+      ],
+      "translation": "هل يمكنني الحصول على / هل لي بـ (بأدب)",
+      "exampleArabic": "هل يمكنني الحصول على مكالمة إيقاظ عند السابعة من صباح الغد، من فضلك؟"
+    },
+    {
+      "headword": "can I get",
+      "pronunciation": "/kæn aɪ ɡet/",
+      "partOfSpeech": "phrase",
+      "definition": "a casual, everyday spoken request used when ordering goods or asking for services",
+      "example": "Can I get an extra electronic key card for my colleague sharing this suite?",
+      "relatedForms": [],
+      "collocations": [
+        "can I get the menu",
+        "can I get some towels"
+      ],
+      "synonyms": [
+        "could I have",
+        "may I get"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "casual-requests"
+      ],
+      "translation": "هل ممكن آخذ / هل أستطيع الحصول على",
+      "exampleArabic": "هل ممكن آخذ بطاقة مفتاح إلكترونية إضافية لزميلي الذي يشاركني هذا الجناح؟"
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Checking In at the Hotel Front Desk",
+      "titleArabic": "تسجيل الوصول عند مكتب استقبال الفندق",
+      "setting": "A traveler arriving at a luxury hotel and interacting with the front desk receptionist",
+      "settingArabic": "مسافر يصل إلى فندق فاخر ويتحدث مع موظف مكتب الاستقبال",
+      "lines": [
+        {
+          "speaker": "Receptionist",
+          "text": "Good afternoon, sir! Welcome to the Grand Palace. How may I assist you today?",
+          "translation": "مساء الخير يا سيدي! مرحباً بك في جراند بالاس. كيف يمكنني مساعدتك اليوم؟"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Good afternoon. I would like to check in. I have a reservation under the name Tariq Mansour.",
+          "translation": "مساء الخير. أود تسجيل الوصول. لدي حجز مسبق باسم طارق منصور."
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Yes, Mr. Mansour! You have a deluxe double room with a balcony view and air conditioning for four nights.",
+          "translation": "نعم يا سيد منصور! لديك غرفة مزدوجة فاخرة ذات إطلالة من الشرفة ومكيفة لمدة أربع ليالٍ."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Could I have an extra key card for my room? Also, is breakfast included in the room rate?",
+          "translation": "هل يمكنني الحصول على بطاقة مفتاح إضافية لغرفتي؟ وأيضاً، هل وجبة الإفطار مشمولة في سعر الغرفة؟"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "Certainly! Our lavish continental breakfast buffet is served daily in the main hall from 7:00 to 10:30 AM.",
+          "translation": "بكل تأكيد! يقدم بوفيه الإفطار الكونتيننتال الفاخر يومياً في القاعة الرئيسية من 7:00 حتى 10:30 صباحاً."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Wonderful. May I request a quiet room on an upper floor away from the elevator?",
+          "translation": "رائع. هل لي أن أطلب غرفة هادئة في طابق علوي بعيداً عن المصعد؟"
+        },
+        {
+          "speaker": "Receptionist",
+          "text": "I will assign you room 708. We require a refundable security deposit on your credit card upon check-in.",
+          "translation": "سأخصص لك الغرفة 708. ونحن نطلب تأميناً نقدياً مسترداً على بطاقتك الائتمانية عند تسجيل الوصول."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Here is my card. The uniformed porter will assist with my luggage, and I will gladly tip the porter.",
+          "translation": "تفضل بطاقتي. سيساعد الحمّال النظامي في حمل أمتعتي، وسأعطيه إكرامية بكل سرور."
+        }
+      ],
+      "vocabularyUsed": [
+        "may I",
+        "check in",
+        "double room",
+        "balcony view",
+        "air conditioning",
+        "could I have",
+        "key card",
+        "room rate",
+        "continental breakfast",
+        "buffet",
+        "hall",
+        "elevator",
+        "deposit",
+        "porter",
+        "tip the porter",
+        "front desk"
+      ]
+    },
+    {
+      "title": "Hotel Services and Room Amenities Inquiries",
+      "titleArabic": "استفسارات عن خدمات الفندق ومرافق الغرفة",
+      "setting": "A guest calling guest service from their room to request housekeeping and room service",
+      "settingArabic": "نزيل يتصل بقسم خدمة النزلاء من غرفته لطلب خدمة التنظيف وخدمة الغرف",
+      "lines": [
+        {
+          "speaker": "Operator",
+          "text": "Guest service, good evening! This is Maria speaking. How may I help you tonight?",
+          "translation": "خدمة النزلاء، مساء الخير! معك ماريا. كيف لي أن أساعدك الليلة؟"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Good evening Maria. Can I get an extra blanket and some fresh cotton towels from housekeeping?",
+          "translation": "مساء الخير يا ماريا. هل يمكنني الحصول على بطانية إضافية وبعض المناشف القطنية النظيفة من خدمة الغرف؟"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Certainly! Our floor maid will deliver those to your room within ten minutes.",
+          "translation": "بكل تأكيد! ستقوم عاملة الطابق بتوصيلها إلى غرفتك خلال عشر دقائق."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Thank you. Also, could I have a hot herbal tea and a warm club sandwich from room service?",
+          "translation": "شكراً لكِ. وأيضاً، هل يمكنني الحصول على شاي أعشاب ساخن وشطيرة كلوب دافئة من خدمة الغرف؟"
+        },
+        {
+          "speaker": "Operator",
+          "text": "Right away sir. Would you also like a morning wake-up call scheduled for tomorrow?",
+          "translation": "على الفور يا سيدي. هل ترغب أيضاً في جدولة مكالمة إيقاظ صباحية ليوم غد؟"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Yes, please set a wake-up call for 6:30 AM. Does my mini-bar include complimentary bottled water?",
+          "translation": "نعم، يرجى ضبط مكالمة إيقاظ عند الساعة 6:30 صباحاً. هل تحتوي ثلاجتي الصغيرة على مياه معبأة مجانية؟"
+        },
+        {
+          "speaker": "Operator",
+          "text": "The two glass bottles on the top shelf are complimentary; other items are billed at checkout.",
+          "translation": "الزجاجتان على الرف العلوي مجانيتان؛ أما باقي الأغراض فتدفع فواتيرها عند تسجيل المغادرة."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Understood. The hotel amenities and courteous attention make our stay remarkably pleasant.",
+          "translation": "مفهوم. إن مرافق الفندق والاهتمام اللبق يجعلان إقامتنا ممتعة للغاية."
+        }
+      ],
+      "vocabularyUsed": [
+        "guest service",
+        "may I",
+        "can I get",
+        "housekeeping",
+        "maid",
+        "could I have",
+        "room service",
+        "wake-up call",
+        "mini-bar",
+        "amenities",
+        "bill",
+        "check out"
+      ]
+    },
+    {
+      "title": "Settling the Invoice and Checking Out",
+      "titleArabic": "تسوية الفاتورة وتسجيل المغادرة",
+      "setting": "A departing guest reviewing their hotel bill at the reception desk before heading to the airport",
+      "settingArabic": "نزيل مغادر يراجع فاتورة الفندق عند مكتب الاستقبال قبل التوجه إلى المطار",
+      "lines": [
+        {
+          "speaker": "Clerk",
+          "text": "Good morning! Are you ready to check out of suite 405 today?",
+          "translation": "صباح الخير! هل أنت مستعد لتسجيل المغادرة من الجناح 405 اليوم؟"
+        },
+        {
+          "speaker": "Guest",
+          "text": "Yes, I am. I had hoped to extend my stay for one more day, but the concierge mentioned you are fully booked.",
+          "translation": "نعم، أنا مستعد. كنت قد تمنيت تمديد إقامتي ليوم إضافي، لكن الكونسيرج ذكر أن الفندق محجوز بالكامل."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Unfortunately we have no vacancy tonight due to a major medical convention.",
+          "translation": "للأسف ليس لدينا أي شاغر الليلة بسبب مؤتمر طبي كبير."
+        },
+        {
+          "speaker": "Guest",
+          "text": "I understand. Here are my electronic key cards. Could I review the itemized hotel bill?",
+          "translation": "أنا أتفهم ذلك. تفضل بطاقات المفاتيح الإلكترونية. هل يمكنني مراجعة فاتورة الفندق المفصلة؟"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Here is your printed tax invoice. I have deducted your initial security deposit from the total room charges.",
+          "translation": "تفضل فاتورتك الضريبية المطبوعة. لقد خصمت مبلغ التأمين المالي المبدئي من إجمالي رسوم الغرفة."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Everything appears completely correct. I have no complaint whatsoever regarding your exemplary service.",
+          "translation": "يبدو كل شيء صحيحاً تماماً. ليس لدي أي شكوى على الإطلاق بخصوص خدمتكم المثالية."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Thank you very much. The doorman has hailed a taxi for you waiting outside the main lobby.",
+          "translation": "شكراً جزيلاً لك. لقد استدعى البواب سيارة أجرة تنتظرك خارج البهو الرئيسي."
+        },
+        {
+          "speaker": "Guest",
+          "text": "Thank you for such pleasant hospitality! I will definitely reserve accommodation here again next year.",
+          "translation": "شكراً لكم على حسن الضيافة اللطيف! سأحجز إقامة هنا بالتأكيد مرة أخرى في العام القادم."
+        }
+      ],
+      "vocabularyUsed": [
+        "check out",
+        "suite",
+        "extend stay",
+        "concierge",
+        "fully booked",
+        "no vacancy",
+        "key card",
+        "bill",
+        "invoice",
+        "deposit",
+        "complaint",
+        "doorman",
+        "lobby",
+        "reserve",
+        "accommodation"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Diversity of Modern Lodging Accommodations",
+      "titleArabic": "تنوع أماكن الإقامة الفندقية الحديثة",
+      "kind": "informative-guide",
+      "text": "Travelers today can choose from a vast variety of lodging options to suit their budget and stylistic preferences. While road-tripping motorists appreciate the convenience of a highway motel with easy parking, backpackers often select a communal youth hostel to socialize. Rural holidaymakers often book a rustic mountain lodge or a traditional countryside guesthouse offering homemade cuisine. In metropolitan destinations, full-service hotels offer single rooms for solo executives, double rooms for couples, and twin rooms for colleagues. Those seeking supreme luxury reserve an expansive executive suite equipped with private jacuzzis and panoramic balconies. Each type of accommodation ensures that every traveler discovers comfortable shelter suited to their unique journey.",
+      "translation": "يمكن للمسافرين اليوم الاختيار من بين مجموعة واسعة من خيارات الإقامة لتناسب ميزانيتهم وتفضيلاتهم. فبينما يفضل سائقو الرحلات البرية ملاءمة موتيل على الطريق السريع مع سهولة ركن السيارات، يختار الرحالة غالباً نُزل شباب مشتركاً للتعارف. ويحجز مصطافو الريف غالباً كوخاً جبلياً ريفياً أو بيت ضيافة تقليدياً يقدم وجبات منزلية. وفي المدن الكبرى، توفر الفنادق متكاملة الخدمات غرفاً مفردة للمديرين، وغرفاً مزدوجة للأزواج، وغرفاً بسريرين للزملاء. بينما يحجز الباحثون عن الفخامة الفائقة أجنحة تنفيذية واسعة ومجهزة. وتضمن هذه الخيارات إقامة مريحة لكل مسافر.",
+      "vocabularyUsed": [
+        "accommodation",
+        "motel",
+        "hostel",
+        "lodge",
+        "guesthouse",
+        "single room",
+        "double room",
+        "twin room",
+        "suite",
+        "reserve"
+      ]
+    },
+    {
+      "title": "Hospitality Excellence: Behind the Front Desk",
+      "titleArabic": "التميز في الضيافة: ما وراء مكتب الاستقبال الفندقي",
+      "kind": "hospitality-essay",
+      "text": "A world-class hotel operates seamlessly through coordinated teamwork across multiple departments. Upon arrival at the grand lobby, a uniformed doorman welcomes visitors, and a courteous bellboy unloads their baggage. At the front desk, the receptionist checks in guests, verifies reservations, and encodes plastic key cards. A knowledgeable concierge stands ready to arrange transport or recommend top dining bistros. Upstairs, diligent housekeeping staff and dedicated floor maids ensure pristine hygiene by restocking amenities, laundering linens, and replenishing mini-bars. When guests have inquiries or noise complaints, prompt guest service operators resolve issues with gracious composure. This quiet dedication transforms a routine stay into a memorable sanctuary.",
+      "translation": "يعمل الفندق العالمي بسلاسة من خلال عمل جماعي منسق عبر أقسام متعددة. فعند الوصول إلى البهو الفخم، يرحب البواب النظامي بالزوار، ويقوم حامل الحقائب بتفريغ أمتعتهم. وعند مكتب الاستقبال، يسجل الموظف وصول النزلاء، ويدقق الحجوزات، ويبرمج بطاقات المفاتيح البلاستيكية. ويقف مسؤول الكونسيرج على أهبة الاستعداد لترتيب المواصلات أو التوصية بأفضل المطاعم. وفي الطوابق العليا، يحرص عمال تنظيف الغرف على النظافة الفائقة بتجديد المرافق وغسل البياضات وتجهيز الثلاجات الصغيرة. وعند وجود استفسارات أو شكاوى، يحلها موظفو خدمة النزلاء بلباقة، مما يجعل الإقامة ملاذاً رائعاً.",
+      "vocabularyUsed": [
+        "lobby",
+        "doorman",
+        "bellboy",
+        "front desk",
+        "check in",
+        "key card",
+        "concierge",
+        "housekeeping",
+        "maid",
+        "amenities",
+        "mini-bar",
+        "complaint",
+        "guest service"
+      ]
+    },
+    {
+      "title": "Managing Invoices and Seamless Hotel Checkouts",
+      "titleArabic": "إدارة الفواتير وإجراءات تسجيل المغادرة الفندقية السلسة",
+      "kind": "business-guide",
+      "text": "Concluding a hotel stay smoothly requires understanding checkout policies and financial statements. Guests should inquire about the standard checkout deadline—typically eleven o'clock—or arrange a late checkout with reception if their flight departs in the evening. Reviewing the itemized bill or commercial tax invoice ensures that extra services like room service, laundry, and telephone calls are accurately tabulated. Any refundable security deposit collected during check-in is credited back to the traveler's payment card. Satisfied visitors frequently tip the porter who transfers their luggage down the elevator to waiting valet parking attendants. Leaving on a cordial note ensures that future reservations are welcomed with warmth.",
+      "translation": "يتطلب اختتام الإقامة الفندقية بسلاسة فهم سياسات تسجيل المغادرة والبيانات المالية. وينبغي للنزلاء الاستفسار عن موعد المغادرة النهائي—وعادة ما يكون الحادية عشرة صباحاً—أو ترتيب مغادرة متأخرة مع الاستقبال إذا كانت رحلتهم في المساء. وتضمن مراجعة الفاتورة المفصلة أو الفاتورة الضريبية أن الخدمات الإضافية مثل خدمة الغرف والغسيل قد احتُسبت بدقة. ويتم رد أي تأمين مالي مسترد أُخذ عند تسجيل الوصول إلى بطاقة المسافر. وغالباً ما يعطي النزلاء الراضون إكرامية للحمّال الذي ينقل حقائبهم عبر المصعد إلى عمال صف السيارات، مما يترك أثراً طيباً للزيارات القادمة.",
+      "vocabularyUsed": [
+        "check out",
+        "reception",
+        "bill",
+        "invoice",
+        "room service",
+        "deposit",
+        "check in",
+        "tip the porter",
+        "elevator",
+        "valet parking"
+      ]
+    }
+  ]
+}

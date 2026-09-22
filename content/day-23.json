@@ -1,0 +1,1658 @@
+{
+  "day": 23,
+  "title": "At the Airport",
+  "topic": "Flights, tickets and travel documents",
+  "description": "Handle check-in, boarding and flight problems.",
+  "stage": "Real-Life Situations",
+  "focus": "By the end of today, you can communicate clearly about flights, tickets and travel documents using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Present Continuous for Future Arrangements",
+      "titleArabic": "استخدام المضارع المستمر للتعبير عن الترتيبات والارتباطات المستقبلية المؤكدة",
+      "explanation": "We use the Present Continuous (am/is/are + verb-ing) to talk about fixed future arrangements—plans that have already been organized with specific dates, booked tickets, or commitments involving other people.\n\nKey Differences for the Future:\n1. Present Continuous (Arrangements): Highly fixed, booked, or confirmed with another person/organization.\n   - 'I am flying to Frankfurt tomorrow morning.' (Tickets purchased, time scheduled).\n2. Be Going To (Intentions/Decisions): Personal intention or plan, whether fully arranged or not.\n   - 'I am going to visit my cousin this year.'\n3. Will (Spontaneous): Decided right now.\n   - 'I'll help you carry that bag.'\n\nStructure:\n- Affirmative: Subject + am/is/are + verb-ing + future time marker.\n- Negative: Subject + am/is/are + not + verb-ing...\n- Question: Am/Is/Are + Subject + verb-ing...?",
+      "explanationArabic": "نستخدم زمن المضارع المستمر (am/is/are + الفعل مضافاً له ing) للحديث عن الترتيبات المستقبلية المؤكدة والمحجوزة مسبقاً (Fixed Arrangements) مثل مواعيد السفر التي حُجزت تذاكرها، أو اللقاءات المحددة مع أشخاص آخرين في وقت ومكان محددين.\n\nالفرق بين صيغ المستقبل:\n1. المضارع المستمر: ترتيبات مؤكدة ومحجوزة (تذاكر مشتراة، جداول زمنية رسمية).\n2. Be going to: نية أو خطة شخصية عامة.\n3. Will: قرار لحظي فوري أو وعد.\n\nالقاعدة: الفاعل + am/is/are + فعل + ing + دلالة زمنية مستقبلية (مثل: tomorrow, next week, at 10 AM).",
+      "structures": [
+        {
+          "pattern": "Affirmative: Subject + am/is/are + Verb-ing + Future Time Marker",
+          "explanation": "States a confirmed, scheduled future arrangement.",
+          "explanationArabic": "للتعبير عن موعد أو رحلة محجوزة ومؤكدة في المستقبل."
+        },
+        {
+          "pattern": "Negative: Subject + am/is/are + not + Verb-ing + Future Time Marker",
+          "explanation": "States that a previously arranged future event is not taking place.",
+          "explanationArabic": "للتعبير عن إلغاء أو عدم إتمام ترتيب مستقبلي محدد."
+        },
+        {
+          "pattern": "Question: Am/Is/Are + Subject + Verb-ing + Future Time Marker + ...?",
+          "explanation": "Inquires about someone's confirmed itinerary or schedule.",
+          "explanationArabic": "للسؤال عن مواعيد وارتباطات شخص ما المؤكدة في المستقبل."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I am flying on a direct flight with the national airline tomorrow morning.",
+          "translation": "أنا مسافر في رحلة طيران مباشرة مع شركة الطيران الوطنية صباح الغد.",
+          "usesVocabulary": [
+            "direct flight",
+            "airline",
+            "flight"
+          ]
+        },
+        {
+          "sentence": "We are meeting our arriving colleagues in the airport arrival hall at four o'clock.",
+          "translation": "نحن سنلتقي بزملائنا القادمين في صالة وصول المطار عند الساعة الرابعة.",
+          "usesVocabulary": [
+            "arrival hall"
+          ]
+        },
+        {
+          "sentence": "She is boarding her connecting flight at departure gate twelve this afternoon.",
+          "translation": "إنها تصعد على متن رحلة المواصلة عند بوابة المغادرة رقم اثني عشر بعد ظهر اليوم.",
+          "usesVocabulary": [
+            "boarding",
+            "connecting flight",
+            "departure gate"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I flying to London tomorrow.",
+          "right": "I am flying to London tomorrow.",
+          "note": "Never omit the auxiliary verb 'be' (am, is, are) in the Present Continuous.",
+          "noteArabic": "لا تحذف الفعل المساعد (am, is, are) إطلاقاً في زمن المضارع المستمر."
+        },
+        {
+          "wrong": "We are meet our client at the airport tomorrow.",
+          "right": "We are meeting our client at the airport tomorrow.",
+          "note": "Remember to add '-ing' to the main verb when expressing future arrangements.",
+          "noteArabic": "تذكر إضافة '-ing' إلى الفعل الأساسي للتعبير عن الترتيبات المستقبلية المؤكدة."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "airline",
+      "pronunciation": "/ˈeə.laɪn/",
+      "partOfSpeech": "noun",
+      "definition": "an organization providing a regular public service of air transportation on one or more routes",
+      "example": "The national airline operates daily non-stop flights between London and Dubai.",
+      "relatedForms": [],
+      "collocations": [
+        "commercial airline",
+        "budget airline",
+        "airline ticket"
+      ],
+      "synonyms": [
+        "air carrier",
+        "aviation company"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "travel"
+      ],
+      "translation": "شركة طيران",
+      "exampleArabic": "تشغل شركة الطيران الوطنية رحلات يومية مباشرة بين لندن ودبي."
+    },
+    {
+      "headword": "flight",
+      "pronunciation": "/flaɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a journey made through the air, especially in a plane or other aircraft",
+      "example": "Our international flight will take off promptly at ten o'clock tomorrow morning.",
+      "relatedForms": [
+        "fly"
+      ],
+      "collocations": [
+        "book a flight",
+        "direct flight",
+        "domestic flight"
+      ],
+      "synonyms": [
+        "air trip",
+        "journey by air"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "travel"
+      ],
+      "translation": "رحلة جوية / طيران",
+      "exampleArabic": "ستقلع رحلتنا الجوية الدولية في تمام الساعة العاشرة من صباح الغد."
+    },
+    {
+      "headword": "terminal",
+      "pronunciation": "/ˈtɜː.mɪ.nəl/",
+      "partOfSpeech": "noun",
+      "definition": "a large airport building where passengers check in, wait for boarding, and collect luggage",
+      "example": "International departures leave from Terminal 3, while domestic flights depart from Terminal 1.",
+      "relatedForms": [],
+      "collocations": [
+        "airport terminal",
+        "passenger terminal",
+        "terminal building"
+      ],
+      "synonyms": [
+        "concourse",
+        "station building"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "buildings"
+      ],
+      "translation": "صالة المطار / مبنى الركاب",
+      "exampleArabic": "تغادر الرحلات الدولية من مبنى الركاب رقم 3، بينما تغادر الرحلات الداخلية من مبنى الركاب رقم 1."
+    },
+    {
+      "headword": "gate",
+      "pronunciation": "/ɡeɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a specific exit in an airport terminal where passengers wait to board their designated aircraft",
+      "example": "Passengers for flight 402 should proceed immediately to departure gate 14.",
+      "relatedForms": [],
+      "collocations": [
+        "boarding gate",
+        "departure gate",
+        "gate closes"
+      ],
+      "synonyms": [
+        "boarding area",
+        "exit portal"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "travel"
+      ],
+      "translation": "بوابة الصعود للطائرة",
+      "exampleArabic": "يجب على ركاب الرحلة 402 التوجه فوراً إلى بوابة المغادرة رقم 14."
+    },
+    {
+      "headword": "runway",
+      "pronunciation": "/ˈrʌn.weɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a strip of level ground, usually paved, on which aircraft take off and land",
+      "example": "The pilot guided the airliner smoothly along the runway before coming to a stop.",
+      "relatedForms": [],
+      "collocations": [
+        "airport runway",
+        "runway lights",
+        "clear the runway"
+      ],
+      "synonyms": [
+        "airstrip",
+        "landing strip",
+        "tarmac"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "airport"
+      ],
+      "translation": "مدرج المطار (لهبوط وإقلاع الطائرات)",
+      "exampleArabic": "وجّه الطيار طائرة الركاب بسلاسة على طول المدرج قبل التوقف التام."
+    },
+    {
+      "headword": "boarding",
+      "pronunciation": "/ˈbɔː.dɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "the action of getting on or into an aircraft, ship, or other public vehicle",
+      "example": "Boarding will commence twenty minutes prior to scheduled departure.",
+      "relatedForms": [
+        "board"
+      ],
+      "collocations": [
+        "boarding time",
+        "priority boarding",
+        "commence boarding"
+      ],
+      "synonyms": [
+        "embarkation",
+        "entry"
+      ],
+      "antonyms": [
+        "disembarkation"
+      ],
+      "tags": [
+        "aviation",
+        "travel"
+      ],
+      "translation": "صعود الطائرة",
+      "exampleArabic": "سيبدأ الصعود إلى الطائرة قبل عشرين دقيقة من موعد المغادرة المقرر."
+    },
+    {
+      "headword": "boarding pass",
+      "pronunciation": "/ˈbɔː.dɪŋ ˌpɑːs/",
+      "partOfSpeech": "noun",
+      "definition": "a document provided by an airline during check-in, giving a passenger permission to board the aircraft",
+      "example": "Please have your passport and digital boarding pass ready for airport security inspection.",
+      "relatedForms": [],
+      "collocations": [
+        "print a boarding pass",
+        "mobile boarding pass",
+        "scan boarding pass"
+      ],
+      "synonyms": [
+        "boarding card",
+        "travel document"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "documents"
+      ],
+      "translation": "بطاقة صعود الطائرة",
+      "exampleArabic": "يرجى تجهيز جواز سفرك وبطاقة صعود الطائرة الرقمية لتفتيش أمن المطار."
+    },
+    {
+      "headword": "customs",
+      "pronunciation": "/ˈkʌs.təmz/",
+      "partOfSpeech": "noun",
+      "definition": "the official department that administers and collects duties levied by a government on imported goods",
+      "example": "All arriving international travelers must pass through customs after collecting their bags.",
+      "relatedForms": [],
+      "collocations": [
+        "clear customs",
+        "customs officer",
+        "customs declaration"
+      ],
+      "synonyms": [
+        "import duty authority",
+        "border control"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "official"
+      ],
+      "translation": "الجمارك",
+      "exampleArabic": "يجب على جميع المسافرين الدوليين القادمين المرور عبر الجمارك بعد استلام حقائبهم."
+    },
+    {
+      "headword": "immigration",
+      "pronunciation": "/ˌɪm.ɪˈɡreɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "the place at an airport, port, or border where officials examine the passports of those wishing to enter",
+      "example": "The immigration officer examined my entry visa and placed an official entry stamp on my passport.",
+      "relatedForms": [
+        "immigrant",
+        "immigrate"
+      ],
+      "collocations": [
+        "immigration officer",
+        "pass through immigration",
+        "immigration check"
+      ],
+      "synonyms": [
+        "passport inspection",
+        "border authority"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "official"
+      ],
+      "translation": "مراقبة الجوازات / إدارة الهجرة",
+      "exampleArabic": "فحص ضابط الهجرة تأشيرة دخولي ووضع ختم دخول رسمي على جواز سفري."
+    },
+    {
+      "headword": "security checkpoint",
+      "pronunciation": "/sɪˈkjʊə.rə.ti ˈtʃek.pɔɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "a designated barrier where passengers and baggage are screened for prohibited items before entering airside",
+      "example": "Passengers must remove laptops and liquid containers when walking through the security checkpoint.",
+      "relatedForms": [],
+      "collocations": [
+        "airport security checkpoint",
+        "line at the checkpoint"
+      ],
+      "synonyms": [
+        "screening area",
+        "inspection post"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "safety"
+      ],
+      "translation": "نقطة التفتيش الأمني",
+      "exampleArabic": "يجب على الركاب إخراج أجهزة الحاسوب المحمولة وحاويات السوائل عند المرور عبر نقطة التفتيش الأمني."
+    },
+    {
+      "headword": "metal detector",
+      "pronunciation": "/ˈmet.əl dɪˌtek.tər/",
+      "partOfSpeech": "noun",
+      "definition": "an electronic instrument that indicates the presence of metal, used to screen travelers",
+      "example": "Remember to take off your wristwatch and belt before walking through the walk-through metal detector.",
+      "relatedForms": [],
+      "collocations": [
+        "pass through a metal detector",
+        "beep at the metal detector"
+      ],
+      "synonyms": [
+        "scanner",
+        "screening arch"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "technology"
+      ],
+      "translation": "جهاز الكشف عن المعادن",
+      "exampleArabic": "تذكر نزع ساعتك اليدوية وحزامك قبل المرور عبر جهاز الكشف عن المعادن."
+    },
+    {
+      "headword": "carry-on",
+      "pronunciation": "/ˈkær.i.ɒn/",
+      "partOfSpeech": "noun",
+      "definition": "a piece of luggage suitable for taking aboard an aircraft and stowing in an overhead bin or under a seat",
+      "example": "Airlines permit one standard carry-on bag and a small personal backpack in the cabin.",
+      "relatedForms": [],
+      "collocations": [
+        "carry-on bag",
+        "carry-on baggage",
+        "carry-on limits"
+      ],
+      "synonyms": [
+        "hand luggage",
+        "cabin baggage"
+      ],
+      "antonyms": [
+        "checked baggage"
+      ],
+      "tags": [
+        "travel",
+        "luggage"
+      ],
+      "translation": "حقيبة اليد (المحمولة داخل الطائرة)",
+      "exampleArabic": "تسمح شركات الطيران بحقيبة يد واحدة قياسية وحقيبة ظهر شخصية صغيرة داخل مقصورة الركاب."
+    },
+    {
+      "headword": "checked baggage",
+      "pronunciation": "/tʃekt ˈbæɡ.ɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "luggage delivered to an airline at check-in for transportation in the aircraft cargo hold",
+      "example": "Our checked baggage weighed twenty kilograms, well within the airline's complimentary allowance.",
+      "relatedForms": [],
+      "collocations": [
+        "drop off checked baggage",
+        "checked baggage allowance"
+      ],
+      "synonyms": [
+        "hold luggage",
+        "cargo bags"
+      ],
+      "antonyms": [
+        "carry-on"
+      ],
+      "tags": [
+        "travel",
+        "luggage"
+      ],
+      "translation": "الأمتعة المشحونة (في عنبر الشحن)",
+      "exampleArabic": "بلغ وزن أمتعتنا المشحونة عشرين كيلوغراماً، وهو ما يقع تماماً ضمن الوزن المجاني المسموح به."
+    },
+    {
+      "headword": "excess baggage",
+      "pronunciation": "/ɪkˈses ˈbæɡ.ɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "luggage that exceeds the weight or size allowance permitted by an airline, requiring a surcharge",
+      "example": "He had to pay an additional fee at the check-in counter because of his excess baggage.",
+      "relatedForms": [],
+      "collocations": [
+        "pay excess baggage",
+        "excess baggage charges"
+      ],
+      "synonyms": [
+        "overweight luggage",
+        "surplus baggage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "money"
+      ],
+      "translation": "وزن زائد للأمتعة",
+      "exampleArabic": "اضطر لدفع رسوم إضافية عند مكتب تسجيل الدخول بسبب الوزن الزائد لحقائبه."
+    },
+    {
+      "headword": "baggage claim",
+      "pronunciation": "/ˈbæɡ.ɪdʒ ˌkleɪm/",
+      "partOfSpeech": "noun",
+      "definition": "the area in an airport where arriving passengers collect luggage that was checked in",
+      "example": "Follow the overhead directional signs to reach the international baggage claim hall.",
+      "relatedForms": [],
+      "collocations": [
+        "baggage claim area",
+        "proceed to baggage claim"
+      ],
+      "synonyms": [
+        "luggage reclaim",
+        "baggage hall"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "travel"
+      ],
+      "translation": "منطقة استلام الأمتعة",
+      "exampleArabic": "اتبع اللافتات الإرشادية المعلقة للوصول إلى قاعة استلام الأمتعة الدولية."
+    },
+    {
+      "headword": "carousel",
+      "pronunciation": "/ˌkær.əˈsel/",
+      "partOfSpeech": "noun",
+      "definition": "a rotating conveyor belt from which arriving passengers pick up their luggage at an airport",
+      "example": "Our heavy suitcases appeared on carousel number four approximately twenty minutes after landing.",
+      "relatedForms": [],
+      "collocations": [
+        "luggage carousel",
+        "baggage carousel",
+        "wait by the carousel"
+      ],
+      "synonyms": [
+        "revolving belt",
+        "conveyor loop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "technology"
+      ],
+      "translation": "سير استلام الأمتعة المتحرك (الدوار)",
+      "exampleArabic": "ظهرت حقائبنا الثقيلة على السير الدوار رقم أربعة بعد عشرين دقيقة تقريباً من الهبوط."
+    },
+    {
+      "headword": "conveyor belt",
+      "pronunciation": "/kənˈveɪ.ə ˌbelt/",
+      "partOfSpeech": "noun",
+      "definition": "a continuous moving band used for transporting objects from one place to another",
+      "example": "Place your cabin bag flat on the conveyor belt so the security scanner can inspect it.",
+      "relatedForms": [],
+      "collocations": [
+        "moving conveyor belt",
+        "on the conveyor belt"
+      ],
+      "synonyms": [
+        "conveyor",
+        "moving track"
+      ],
+      "antonyms": [],
+      "tags": [
+        "technology",
+        "airport"
+      ],
+      "translation": "حزام ناقل / سير متحرك",
+      "exampleArabic": "ضع حقيبة يدك بشكل مستوٍ على الحزام الناقل حتى يتمكن جهاز المسح الأمني من فحصها."
+    },
+    {
+      "headword": "duty-free",
+      "pronunciation": "/ˌdjuː.tiˈfriː/",
+      "partOfSpeech": "adjective",
+      "definition": "goods exempt from payment of domestic taxes and excise duties, sold in international departure terminals",
+      "example": "She browsed the duty-free boutique to purchase specialty Swiss chocolate and fine perfume.",
+      "relatedForms": [],
+      "collocations": [
+        "duty-free shop",
+        "duty-free allowance",
+        "duty-free prices"
+      ],
+      "synonyms": [
+        "tax-free",
+        "exempt goods"
+      ],
+      "antonyms": [
+        "taxed"
+      ],
+      "tags": [
+        "shopping",
+        "airport"
+      ],
+      "translation": "سوق حرة (معفاة من الرسوم الجمركية)",
+      "exampleArabic": "تصفحت متجر السوق الحرة لشراء شوكولاتة سويسرية فاخرة وعطر أنيق."
+    },
+    {
+      "headword": "lounge",
+      "pronunciation": "/laʊndʒ/",
+      "partOfSpeech": "noun",
+      "definition": "a public room in an airport where passengers can sit, wait, eat, and relax before a flight",
+      "example": "Business class passengers enjoyed complimentary fruit juice and quiet workspaces in the airport lounge.",
+      "verbForms": {
+        "v1": "lounge",
+        "v2": "lounged",
+        "v3": "lounged"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "departure lounge",
+        "business class lounge",
+        "vip lounge"
+      ],
+      "synonyms": [
+        "waiting area",
+        "saloon",
+        "reception area"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "amenities"
+      ],
+      "translation": "صالة استراحة (صالة كبار الشخصيات أو المغادرة)",
+      "exampleArabic": "استمتع ركاب درجة رجال الأعمال بعصير فواكه مجاني ومساحات عمل هادئة في صالة المطار."
+    },
+    {
+      "headword": "delayed",
+      "pronunciation": "/dɪˈleɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "operating or arriving later than planned or scheduled",
+      "example": "Flight 310 is delayed by two hours due to dense morning fog covering the runway.",
+      "relatedForms": [
+        "delay"
+      ],
+      "collocations": [
+        "flight is delayed",
+        "heavily delayed",
+        "delayed departure"
+      ],
+      "synonyms": [
+        "postponed",
+        "late",
+        "held up"
+      ],
+      "antonyms": [
+        "on time",
+        "early"
+      ],
+      "tags": [
+        "aviation",
+        "time"
+      ],
+      "translation": "متأخر (عن موعد الرحلة)",
+      "exampleArabic": "تأخرت الرحلة 310 لمدة ساعتين بسبب الضباب الصباحي الكثيف الذي يغطي المدرج."
+    },
+    {
+      "headword": "on time",
+      "pronunciation": "/ɒn taɪm/",
+      "partOfSpeech": "phrase",
+      "definition": "punctual; arriving or happening exactly at the appointed or expected time",
+      "example": "All transcontinental flights were departing on time despite the brisk autumn breeze.",
+      "relatedForms": [],
+      "collocations": [
+        "arrive on time",
+        "depart on time"
+      ],
+      "synonyms": [
+        "punctual",
+        "on schedule"
+      ],
+      "antonyms": [
+        "delayed",
+        "late"
+      ],
+      "tags": [
+        "time",
+        "aviation"
+      ],
+      "translation": "في الوقت المحدد / في الموعد",
+      "exampleArabic": "كانت جميع الرحلات عبر القارات تغادر في موعدها المحدد على الرغم من النسيم الخريفي المنعش."
+    },
+    {
+      "headword": "cancelled",
+      "pronunciation": "/ˈkæn.səld/",
+      "partOfSpeech": "adjective",
+      "definition": "decided that an organized event, flight, or booking will not take place",
+      "example": "When the blizzard struck the airport, twelve outgoing international departures were cancelled.",
+      "relatedForms": [
+        "cancel",
+        "cancellation"
+      ],
+      "collocations": [
+        "flight is cancelled",
+        "cancelled services"
+      ],
+      "synonyms": [
+        "called off",
+        "annulled",
+        "scrapped"
+      ],
+      "antonyms": [
+        "confirmed"
+      ],
+      "tags": [
+        "aviation",
+        "status"
+      ],
+      "translation": "ملغاة (رحلة ملغاة)",
+      "exampleArabic": "عندما ضربت العاصفة الثلجية المطار، ألغيت اثنتا عشرة رحلة دولية مغادرة."
+    },
+    {
+      "headword": "board",
+      "pronunciation": "/bɔːd/",
+      "partOfSpeech": "verb",
+      "definition": "to get on or into an aircraft, ship, train, or other vehicle",
+      "example": "Passengers holding priority status are invited to board the aircraft first.",
+      "verbForms": {
+        "v1": "board",
+        "v2": "boarded",
+        "v3": "boarded"
+      },
+      "relatedForms": [
+        "boarding"
+      ],
+      "collocations": [
+        "board the plane",
+        "ready to board",
+        "now boarding"
+      ],
+      "synonyms": [
+        "embark",
+        "enter",
+        "step aboard"
+      ],
+      "antonyms": [
+        "disembark",
+        "alight"
+      ],
+      "tags": [
+        "actions",
+        "aviation"
+      ],
+      "translation": "يصعد على متن (الطائرة أو السفينة)",
+      "exampleArabic": "الركاب الحاملون لبطاقات الأولوية مدعوون للصعود على متن الطائرة أولاً."
+    },
+    {
+      "headword": "land",
+      "pronunciation": "/lænd/",
+      "partOfSpeech": "verb",
+      "definition": "to touch down on the ground after a flight",
+      "example": "The airplane will land at Charles de Gaulle Airport in approximately forty minutes.",
+      "verbForms": {
+        "v1": "land",
+        "v2": "landed",
+        "v3": "landed"
+      },
+      "relatedForms": [
+        "landing"
+      ],
+      "collocations": [
+        "land safely",
+        "land on the runway",
+        "emergency landing"
+      ],
+      "synonyms": [
+        "touch down",
+        "arrive",
+        "settle"
+      ],
+      "antonyms": [
+        "take off"
+      ],
+      "tags": [
+        "aviation",
+        "movement"
+      ],
+      "translation": "يهبط (للطائرة)",
+      "exampleArabic": "ستهبط الطائرة في مطار شارل ديغول بعد أربعين دقيقة تقريباً."
+    },
+    {
+      "headword": "take off",
+      "pronunciation": "/teɪk ɒf/",
+      "partOfSpeech": "verb",
+      "definition": "to become airborne; leave the ground and begin flying",
+      "example": "We watched the twin-engine jet take off gracefully into the cloudless azure sky.",
+      "verbForms": {
+        "v1": "take off",
+        "v2": "took off",
+        "v3": "taken off"
+      },
+      "relatedForms": [
+        "takeoff"
+      ],
+      "collocations": [
+        "take off smoothly",
+        "cleared to take off"
+      ],
+      "synonyms": [
+        "become airborne",
+        "lift off",
+        "soar"
+      ],
+      "antonyms": [
+        "land"
+      ],
+      "tags": [
+        "aviation",
+        "phrasal-verb"
+      ],
+      "translation": "تقلع (للطائرة)",
+      "exampleArabic": "شاهدنا الطائرة النفاثة ذات المحركين تقلع برشاقة في سماء زرقاء صافية."
+    },
+    {
+      "headword": "departure gate",
+      "pronunciation": "/dɪˈpɑː.tʃər ɡeɪt/",
+      "partOfSpeech": "noun",
+      "definition": "the gate where travelers assemble to board a departing flight",
+      "example": "Check the electronic airport monitors to confirm your specific departure gate number.",
+      "relatedForms": [],
+      "collocations": [
+        "proceed to departure gate",
+        "departure gate changed"
+      ],
+      "synonyms": [
+        "boarding gate",
+        "exit gate"
+      ],
+      "antonyms": [
+        "arrival gate"
+      ],
+      "tags": [
+        "airport",
+        "travel"
+      ],
+      "translation": "بوابة المغادرة",
+      "exampleArabic": "تحقق من شاشات المطار الإلكترونية لتأكيد رقم بوابة المغادرة المحددة لرحلتك."
+    },
+    {
+      "headword": "arrival hall",
+      "pronunciation": "/əˈraɪ.vəl hɔːl/",
+      "partOfSpeech": "noun",
+      "definition": "the terminal area where welcoming families and drivers greet arriving passengers",
+      "example": "My brother was waiting in the busy arrival hall holding a welcoming handwritten sign.",
+      "relatedForms": [],
+      "collocations": [
+        "meet in arrival hall",
+        "exit to arrival hall"
+      ],
+      "synonyms": [
+        "arrivals lounge",
+        "reception concourse"
+      ],
+      "antonyms": [
+        "departure hall"
+      ],
+      "tags": [
+        "airport",
+        "buildings"
+      ],
+      "translation": "صالة الوصول",
+      "exampleArabic": "كان أخي ينتظر في صالة الوصول المزدحمة حاملاً لافتة ترحيب مكتوبة بخط اليد."
+    },
+    {
+      "headword": "transit",
+      "pronunciation": "/ˈtræn.zɪt/",
+      "partOfSpeech": "noun",
+      "definition": "the action of passing through or across a place on the way to another destination",
+      "example": "Passengers in direct transit through Frankfurt do not need an additional entry visa.",
+      "verbForms": {
+        "v1": "transit",
+        "v2": "transited",
+        "v3": "transited"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "in transit",
+        "transit lounge",
+        "transit passenger"
+      ],
+      "synonyms": [
+        "passage",
+        "transfer",
+        "crossover"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "aviation"
+      ],
+      "translation": "عبور (ترانزيت)",
+      "exampleArabic": "لا يحتاج الركاب العابرون ترانزيت عبر فرانكفورت إلى تأشيرة دخول إضافية."
+    },
+    {
+      "headword": "layover",
+      "pronunciation": "/ˈleɪˌəʊ.vər/",
+      "partOfSpeech": "noun",
+      "definition": "a period of rest or waiting before further travel, especially between connecting flights",
+      "example": "We had a four-hour layover in Istanbul, which gave us ample time to enjoy lunch.",
+      "relatedForms": [],
+      "collocations": [
+        "long layover",
+        "short layover",
+        "overnight layover"
+      ],
+      "synonyms": [
+        "stopover",
+        "break in journey"
+      ],
+      "antonyms": [
+        "direct flight"
+      ],
+      "tags": [
+        "travel",
+        "time"
+      ],
+      "translation": "فترة توقف بين رحلتين (توقف مؤقت)",
+      "exampleArabic": "كان لدينا توقف مؤقت لمدة أربع ساعات في إسطنبول، مما منحنا متسعاً من الوقت لتناول الغداء."
+    },
+    {
+      "headword": "connection",
+      "pronunciation": "/kəˈnek.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a linking flight or train that a passenger takes after arriving on an earlier one",
+      "example": "Hurry up or we are going to miss our domestic connection to Munich!",
+      "relatedForms": [
+        "connect"
+      ],
+      "collocations": [
+        "miss a connection",
+        "tight connection",
+        "flight connection"
+      ],
+      "synonyms": [
+        "connecting transfer",
+        "onward flight"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "aviation"
+      ],
+      "translation": "رحلة مواصلة (رحلة ربط)",
+      "exampleArabic": "أسرع وإلا سنفوت رحلة المواصلة الداخلية إلى ميونيخ!"
+    },
+    {
+      "headword": "cockpit",
+      "pronunciation": "/ˈkɒk.pɪt/",
+      "partOfSpeech": "noun",
+      "definition": "the compartment for the pilot and copilot, containing the aircraft flight controls and navigational instruments",
+      "example": "The captain welcomed young passengers to view the digital flight instruments in the cockpit.",
+      "relatedForms": [],
+      "collocations": [
+        "flight cockpit",
+        "inside the cockpit",
+        "cockpit voice recorder"
+      ],
+      "synonyms": [
+        "flight deck"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "aircraft"
+      ],
+      "translation": "كابينة القيادة (قمرة قيادة الطائرة)",
+      "exampleArabic": "رحب الكابتن بالركاب الصغار لمشاهدة أدوات الطيران الرقمية في قمرة القيادة."
+    },
+    {
+      "headword": "cabin",
+      "pronunciation": "/ˈkæb.ɪn/",
+      "partOfSpeech": "noun",
+      "definition": "the interior compartment of an aircraft where passengers and flight attendants are seated",
+      "example": "Flight attendants dimmed the cabin lighting so long-haul travelers could rest comfortably.",
+      "relatedForms": [],
+      "collocations": [
+        "aircraft cabin",
+        "cabin crew",
+        "cabin pressure"
+      ],
+      "synonyms": [
+        "passenger compartment",
+        "interior"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "aircraft"
+      ],
+      "translation": "مقصورة الركاب (في الطائرة)",
+      "exampleArabic": "خفف المضيفون إضاءة مقصورة الركاب حتى يتمكن مسافرو الرحلات الطويلة من الاستراحة بهدوء."
+    },
+    {
+      "headword": "pilot",
+      "pronunciation": "/ˈpaɪ.lət/",
+      "partOfSpeech": "noun",
+      "definition": "a person who operates the flying controls of an aircraft",
+      "example": "The experienced pilot communicated calmly with air traffic control during heavy turbulence.",
+      "verbForms": {
+        "v1": "pilot",
+        "v2": "piloted",
+        "v3": "piloted"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "chief pilot",
+        "co-pilot",
+        "airline pilot"
+      ],
+      "synonyms": [
+        "aviator",
+        "captain",
+        "flier"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "jobs",
+        "aviation"
+      ],
+      "translation": "طيار / قبطان الطائرة",
+      "exampleArabic": "تواصل الطيار ذو الخبرة بهدوء مع برج مراقبة الحركة الجوية أثناء الاضطراب الجوي الشديد."
+    },
+    {
+      "headword": "flight attendant",
+      "pronunciation": "/ˈflaɪt əˌten.dənt/",
+      "partOfSpeech": "noun",
+      "definition": "an airline employee who serves meals and attends to the safety and comfort of passengers on an aircraft",
+      "example": "The courteous flight attendant demonstrated safety protocols before our aircraft took off.",
+      "relatedForms": [],
+      "collocations": [
+        "ask a flight attendant",
+        "senior flight attendant"
+      ],
+      "synonyms": [
+        "cabin crew member",
+        "steward",
+        "stewardess"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "aviation"
+      ],
+      "translation": "مضيف / مضيفة طيران",
+      "exampleArabic": "شرحت مضيفة الطيران المهذبة بروتوكولات السلامة قبل إقلاع طائرتنا."
+    },
+    {
+      "headword": "seatbelt",
+      "pronunciation": "/ˈsiːt.belt/",
+      "partOfSpeech": "noun",
+      "definition": "a safety strap fastened around a seated person to prevent injury in case of turbulence or impact",
+      "example": "Please ensure your seatbelt is securely fastened whenever the illuminated safety sign is on.",
+      "relatedForms": [],
+      "collocations": [
+        "fasten seatbelt",
+        "unbuckle seatbelt",
+        "wear seatbelt"
+      ],
+      "synonyms": [
+        "safety belt",
+        "harness"
+      ],
+      "antonyms": [],
+      "tags": [
+        "safety",
+        "aviation"
+      ],
+      "translation": "حزام الأمان",
+      "exampleArabic": "يرجى التأكد من ربط حزام الأمان بإحكام كلما كانت إشارة السلامة المضيئة تعمل."
+    },
+    {
+      "headword": "aisle seat",
+      "pronunciation": "/ˈaɪl siːt/",
+      "partOfSpeech": "noun",
+      "definition": "a seat adjacent to the passage between rows of seats in an aircraft, bus, or train",
+      "example": "I prefer an aisle seat because it allows me to stand up and stretch without disturbing neighbors.",
+      "relatedForms": [],
+      "collocations": [
+        "reserve an aisle seat",
+        "aisle seat preference"
+      ],
+      "synonyms": [
+        "passage seat"
+      ],
+      "antonyms": [
+        "window seat"
+      ],
+      "tags": [
+        "travel",
+        "seating"
+      ],
+      "translation": "مقعد بجانب الممر",
+      "exampleArabic": "أفضل مقعداً بجانب الممر لأنه يتيح لي الوقوف والتمدد دون إزعاج الجيران."
+    },
+    {
+      "headword": "window seat",
+      "pronunciation": "/ˈwɪn.dəʊ siːt/",
+      "partOfSpeech": "noun",
+      "definition": "a seat positioned beside an airplane window providing views of the sky and landscape",
+      "example": "Children love sitting in a window seat to watch the fluffy white clouds drift past below.",
+      "relatedForms": [],
+      "collocations": [
+        "book a window seat",
+        "sit in a window seat"
+      ],
+      "synonyms": [
+        "side seat"
+      ],
+      "antonyms": [
+        "aisle seat"
+      ],
+      "tags": [
+        "travel",
+        "seating"
+      ],
+      "translation": "مقعد بجانب النافذة",
+      "exampleArabic": "يحب الأطفال الجلوس في مقعد بجانب النافذة لمشاهدة السحب البيضاء الرقيقة وهي تتهادى في الأسفل."
+    },
+    {
+      "headword": "overhead bin",
+      "pronunciation": "/ˌəʊ.və.hed ˈbɪn/",
+      "partOfSpeech": "noun",
+      "definition": "an enclosed storage compartment located directly above passenger seats in an aircraft cabin",
+      "example": "The flight attendant helped me lift my compact wheeled carry-on into the overhead bin.",
+      "relatedForms": [],
+      "collocations": [
+        "stow in overhead bin",
+        "close the overhead bin"
+      ],
+      "synonyms": [
+        "overhead compartment",
+        "luggage locker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "cabin"
+      ],
+      "translation": "الخزانة العلوية لحفظ الأمتعة (فوق المقاعد)",
+      "exampleArabic": "ساعدني مضيف الطيران في رفع حقيبة اليد ذات العجلات في الخزانة العلوية."
+    },
+    {
+      "headword": "turbulence",
+      "pronunciation": "/ˈtɜː.bjə.ləns/",
+      "partOfSpeech": "noun",
+      "definition": "violent or unsteady movement of air or water, creating sudden shaking of an aircraft",
+      "example": "The aircraft encountered moderate atmospheric turbulence while flying over the mountain peaks.",
+      "relatedForms": [
+        "turbulent"
+      ],
+      "collocations": [
+        "severe turbulence",
+        "encounter turbulence",
+        "clear-air turbulence"
+      ],
+      "synonyms": [
+        "air pocket",
+        "rough air",
+        "instability"
+      ],
+      "antonyms": [
+        "smooth flight"
+      ],
+      "tags": [
+        "aviation",
+        "weather"
+      ],
+      "translation": "اضطراب جوي / مطب هوائي",
+      "exampleArabic": "واجهت الطائرة اضطراباً جوياً متوسطاً أثناء التحليق فوق قمم الجبال."
+    },
+    {
+      "headword": "altitude",
+      "pronunciation": "/ˈæl.tɪ.tʃuːd/",
+      "partOfSpeech": "noun",
+      "definition": "the height of an aircraft or other celestial object in relation to sea level or ground level",
+      "example": "Our commercial airliner reached a cruising altitude of thirty-six thousand feet.",
+      "relatedForms": [],
+      "collocations": [
+        "cruising altitude",
+        "high altitude",
+        "lose altitude"
+      ],
+      "synonyms": [
+        "elevation",
+        "height",
+        "level"
+      ],
+      "antonyms": [],
+      "tags": [
+        "aviation",
+        "measurement"
+      ],
+      "translation": "ارتفاع جوي (عن مستوى سطح البحر)",
+      "exampleArabic": "وصلت طائرة الركاب إلى ارتفاع طيران تجاري قدره ستة وثلاثون ألف قدم."
+    },
+    {
+      "headword": "direct flight",
+      "pronunciation": "/daɪˈrekt flaɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a flight between two places without a change of aircraft, with or without an intermediate stop",
+      "example": "Booking a direct flight saves hours of travel fatigue by eliminating intermediate layovers.",
+      "relatedForms": [],
+      "collocations": [
+        "non-stop direct flight",
+        "book a direct flight"
+      ],
+      "synonyms": [
+        "non-stop flight",
+        "through flight"
+      ],
+      "antonyms": [
+        "connecting flight"
+      ],
+      "tags": [
+        "travel",
+        "aviation"
+      ],
+      "translation": "رحلة طيران مباشرة",
+      "exampleArabic": "يوفر حجز رحلة طيران مباشرة ساعات من إرهاق السفر من خلال الاستغناء عن فترات التوقف."
+    },
+    {
+      "headword": "connecting flight",
+      "pronunciation": "/kəˈnek.tɪŋ flaɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a flight requiring passengers to disembark and change planes at an intermediate airport",
+      "example": "Because no direct route was available, we took a connecting flight via Amsterdam.",
+      "relatedForms": [],
+      "collocations": [
+        "catch a connecting flight",
+        "miss a connecting flight"
+      ],
+      "synonyms": [
+        "onward transfer",
+        "connection"
+      ],
+      "antonyms": [
+        "direct flight"
+      ],
+      "tags": [
+        "travel",
+        "aviation"
+      ],
+      "translation": "رحلة ترانزيت متصلة (تتطلب تبديل طائرة)",
+      "exampleArabic": "نظراً لعدم توفر مسار مباشر، استقللنا رحلة متصلة عبر أمستردام."
+    },
+    {
+      "headword": "domestic",
+      "pronunciation": "/dəˈmes.tɪk/",
+      "partOfSpeech": "adjective",
+      "definition": "relating to, occurring inside, or originating within one particular country; not international",
+      "example": "Passengers traveling on domestic flights do not undergo international customs procedures.",
+      "relatedForms": [],
+      "collocations": [
+        "domestic flight",
+        "domestic airline",
+        "domestic terminal"
+      ],
+      "synonyms": [
+        "internal",
+        "national",
+        "home-based"
+      ],
+      "antonyms": [
+        "international",
+        "foreign"
+      ],
+      "tags": [
+        "travel",
+        "geography"
+      ],
+      "translation": "داخلي / محلي (داخل حدود الدولة)",
+      "exampleArabic": "لا يخضع الركاب المسافرون على الرحلات الداخلية لإجراءات الجمارك الدولية."
+    },
+    {
+      "headword": "declaration",
+      "pronunciation": "/ˌdek.ləˈreɪ.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a formal written statement of items being brought into a country for customs clearance",
+      "example": "Travelers must complete a formal customs declaration listing any commercial goods or gifts.",
+      "relatedForms": [
+        "declare"
+      ],
+      "collocations": [
+        "customs declaration",
+        "make a declaration",
+        "sign a declaration"
+      ],
+      "synonyms": [
+        "statement",
+        "disclosure",
+        "manifest"
+      ],
+      "antonyms": [],
+      "tags": [
+        "official",
+        "customs"
+      ],
+      "translation": "إقرار جمركي / إفصاح رسمي",
+      "exampleArabic": "يجب على المسافرين إكمال إقرار جمركي رسمي يدرج أي بضائع تجارية أو هدايا."
+    },
+    {
+      "headword": "declare",
+      "pronunciation": "/dɪˈkleər/",
+      "partOfSpeech": "verb",
+      "definition": "to officially state that one possesses goods subject to customs duties or agricultural restrictions",
+      "example": "I have nothing to declare because all items in my carry-on are personal clothing and books.",
+      "verbForms": {
+        "v1": "declare",
+        "v2": "declared",
+        "v3": "declared"
+      },
+      "relatedForms": [
+        "declaration"
+      ],
+      "collocations": [
+        "declare goods",
+        "nothing to declare",
+        "declare at customs"
+      ],
+      "synonyms": [
+        "state",
+        "disclose",
+        "report"
+      ],
+      "antonyms": [
+        "conceal"
+      ],
+      "tags": [
+        "official",
+        "verbs"
+      ],
+      "translation": "يفصح عن / يصرّح في الجمارك",
+      "exampleArabic": "ليس لدي ما أصرح به لأن جميع الأغراض في حقيبتي المحمولة هي ملابس شخصية وكتب."
+    },
+    {
+      "headword": "passport control",
+      "pronunciation": "/ˈpɑːs.pɔːt kənˌtrəʊl/",
+      "partOfSpeech": "noun",
+      "definition": "the checkpoint where border immigration authorities inspect travelers' passports and travel visas",
+      "example": "There was a fast biometric scanning lane at passport control for European citizens.",
+      "relatedForms": [],
+      "collocations": [
+        "queue at passport control",
+        "clear passport control"
+      ],
+      "synonyms": [
+        "border checkpoint",
+        "immigration desk"
+      ],
+      "antonyms": [],
+      "tags": [
+        "airport",
+        "official"
+      ],
+      "translation": "نقطة مراقبة الجوازات",
+      "exampleArabic": "كان هناك ممر فحص حيوي سريع عند نقطة مراقبة الجوازات للمواطنين الأوروبيين."
+    },
+    {
+      "headword": "visa",
+      "pronunciation": "/ˈviː.zə/",
+      "partOfSpeech": "noun",
+      "definition": "an official endorsement on a passport permitting the bearer to enter, transit, or remain in a country",
+      "example": "Make sure you apply for your tourist visa at least six weeks before traveling abroad.",
+      "relatedForms": [],
+      "collocations": [
+        "tourist visa",
+        "visa application",
+        "visa requirement"
+      ],
+      "synonyms": [
+        "entry permit",
+        "travel authorization"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "documents"
+      ],
+      "translation": "تأشيرة دخول (فيزا)",
+      "exampleArabic": "تأكد من تقديم طلب الحصول على تأشيرة سياحية قبل ستة أسابيع على الأقل من السفر إلى الخارج."
+    },
+    {
+      "headword": "stamp",
+      "pronunciation": "/stæmp/",
+      "partOfSpeech": "noun",
+      "definition": "an official ink mark stamped into a passport by border officials indicating entry or exit date",
+      "example": "The immigration agent pressed an official purple exit stamp into my passport pages.",
+      "verbForms": {
+        "v1": "stamp",
+        "v2": "stamped",
+        "v3": "stamped"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "passport stamp",
+        "entry stamp",
+        "exit stamp"
+      ],
+      "synonyms": [
+        "seal",
+        "imprint",
+        "endorsement"
+      ],
+      "antonyms": [],
+      "tags": [
+        "travel",
+        "official"
+      ],
+      "translation": "ختم الجوازات",
+      "exampleArabic": "طبع ضابط الهجرة ختم خروج أرجواني رسمي في صفحات جواز سفري."
+    },
+    {
+      "headword": "embark",
+      "pronunciation": "/ɪmˈbɑːk/",
+      "partOfSpeech": "verb",
+      "definition": "to go on board a ship, aircraft, or other vehicle to begin a journey",
+      "example": "Passengers began to embark smoothly through the covered jet bridge onto the airliner.",
+      "verbForms": {
+        "v1": "embark",
+        "v2": "embarked",
+        "v3": "embarked"
+      },
+      "relatedForms": [
+        "embarkation"
+      ],
+      "collocations": [
+        "embark on a journey",
+        "embark passengers"
+      ],
+      "synonyms": [
+        "board",
+        "go aboard"
+      ],
+      "antonyms": [
+        "disembark"
+      ],
+      "tags": [
+        "travel",
+        "movement"
+      ],
+      "translation": "يركب / يصعد على متن (سفينة أو طائرة)",
+      "exampleArabic": "بدأ الركاب بالصعود بسلاسة عبر الجسر المغطى إلى متن طائرة الركاب."
+    },
+    {
+      "headword": "disembark",
+      "pronunciation": "/ˌdɪs.ɪmˈbɑːk/",
+      "partOfSpeech": "verb",
+      "definition": "to leave a ship, aircraft, or other vehicle after a journey",
+      "example": "After landing safely, passengers were instructed to remain seated until cleared to disembark.",
+      "verbForms": {
+        "v1": "disembark",
+        "v2": "disembarked",
+        "v3": "disembarked"
+      },
+      "relatedForms": [
+        "disembarkation"
+      ],
+      "collocations": [
+        "disembark the aircraft",
+        "ready to disembark"
+      ],
+      "synonyms": [
+        "alight",
+        "get off",
+        "step down"
+      ],
+      "antonyms": [
+        "embark",
+        "board"
+      ],
+      "tags": [
+        "travel",
+        "movement"
+      ],
+      "translation": "ينزل من (الطائرة أو السفينة)",
+      "exampleArabic": "بعد الهبوط بسلام، طُلب من الركاب البقاء في مقاعدهم حتى يُصرح لهم بالنزول من الطائرة."
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Checking In and Navigating Airport Security",
+      "titleArabic": "تسجيل الدخول وعبور التفتيش الأمني في المطار",
+      "setting": "Two colleagues arriving at the international departure terminal to check in luggage and pass screening",
+      "settingArabic": "زميلان يصلان إلى صالة المغادرة الدولية لتسجيل الأمتعة واجتياز التفتيش الأمني",
+      "lines": [
+        {
+          "speaker": "Zaid",
+          "text": "Here we are at Terminal 2! Are you checking any luggage or taking only a carry-on?",
+          "translation": "ها نحن قد وصلنا إلى مبنى الركاب رقم 2! هل ستشحن أي أمتعة أم ستحمل حقيبة يد فقط؟"
+        },
+        {
+          "speaker": "Mona",
+          "text": "I dropped off my checked baggage at the airline counter. Luckily, I avoided any excess baggage fees.",
+          "translation": "قمت بتسليم أمتعتي المشحونة عند مكتب شركة الطيران. ولحسن الحظ، تجنبت أي رسوم للوزن الزائد."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "Great. Look at the line for the security checkpoint; let's get our documents ready.",
+          "translation": "رائع. انظري إلى الطابور عند نقطة التفتيش الأمني؛ دعنا نجهز مستنداتنا."
+        },
+        {
+          "speaker": "Mona",
+          "text": "I have my printed boarding pass and passport in hand. Remember to remove your belt before the metal detector.",
+          "translation": "معي بطاقة صعود الطائرة المطبوعة وجواز سفري في يدي. تذكر نزع حزامك قبل جهاز الكشف عن المعادن."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "I placed my laptop flat on the conveyor belt. Which departure gate are we departing from?",
+          "translation": "وضعت حاسوبي المحمول منبسطاً على السير الناقل. من أي بوابة مغادرة سننطلق؟"
+        },
+        {
+          "speaker": "Mona",
+          "text": "The monitor indicates gate 22. Boarding is commencing in forty minutes.",
+          "translation": "تشير الشاشة إلى البوابة 22. وسيبدأ الصعود إلى الطائرة خلال أربعين دقيقة."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "Our flight is departing on time! Let's stop quickly at the duty-free shop before going to the gate.",
+          "translation": "رحلتنا ستقلع في موعدها المحدد! دعنا نتوقف سريعاً عند متجر السوق الحرة قبل الذهاب إلى البوابة."
+        },
+        {
+          "speaker": "Mona",
+          "text": "Sounds good. Then we can relax in the business lounge until our priority group is called to board.",
+          "translation": "يبدو ذلك جيداً. وبعدها يمكننا الاسترخاء في صالة الاستراحة حتى يتم استدعاء مجموعة الأولوية للصعود."
+        }
+      ],
+      "vocabularyUsed": [
+        "terminal",
+        "carry-on",
+        "checked baggage",
+        "airline",
+        "excess baggage",
+        "security checkpoint",
+        "boarding pass",
+        "metal detector",
+        "conveyor belt",
+        "departure gate",
+        "gate",
+        "boarding",
+        "flight",
+        "on time",
+        "duty-free",
+        "lounge",
+        "board"
+      ]
+    },
+    {
+      "title": "Onboard the Aircraft and In-Flight Comfort",
+      "titleArabic": "على متن الطائرة وراحة الرحلة الجوية",
+      "setting": "A passenger interacting with a flight attendant during a long-haul flight",
+      "settingArabic": "راكب يتحدث مع مضيفة الطيران أثناء رحلة طيران طويلة المدى",
+      "lines": [
+        {
+          "speaker": "Passenger",
+          "text": "Excuse me, could you help me find room in the overhead bin for my wheeled carry-on bag?",
+          "translation": "معذرة، هل يمكنكِ مساعدتي في إيجاد متسع بالخزانة العلوية لحقيبتي ذات العجلات؟"
+        },
+        {
+          "speaker": "Flight Attendant",
+          "text": "Certainly sir! There is space above row twelve. Are you seated in an aisle seat or a window seat?",
+          "translation": "بكل تأكيد يا سيدي! هناك متسع فوق الصف الثاني عشر. هل تجلس في مقعد بجانب الممر أم مقعد بجانب النافذة؟"
+        },
+        {
+          "speaker": "Passenger",
+          "text": "I have seat 14A, which is a window seat. What altitude are we cruising at today?",
+          "translation": "معي المقعد 14A، وهو مقعد بجانب النافذة. على أي ارتفاع نطير اليوم؟"
+        },
+        {
+          "speaker": "Flight Attendant",
+          "text": "The pilot just announced that we are cruising smoothly at an altitude of 35,000 feet.",
+          "translation": "أعلن الطيار للتو أننا نحلق بسلاسة على ارتفاع 35,000 قدم."
+        },
+        {
+          "speaker": "Passenger",
+          "text": "That is wonderful. Is our aircraft taking off smoothly from connecting airports later?",
+          "translation": "هذا رائع. هل ستقلع طائرتنا بسلاسة من مطارات المواصلة لاحقاً؟"
+        },
+        {
+          "speaker": "Flight Attendant",
+          "text": "This is a direct flight to Singapore, so we will land directly without any intermediate layover.",
+          "translation": "هذه رحلة طيران مباشرة إلى سنغافورة، لذا سنهبط مباشرة دون أي توقف مؤقت."
+        },
+        {
+          "speaker": "Passenger",
+          "text": "Should I keep my seatbelt fastened throughout the entire flight?",
+          "translation": "هل ينبغي علي إبقاء حزام الأمان مربوطاً طوال الرحلة بأكملها؟"
+        },
+        {
+          "speaker": "Flight Attendant",
+          "text": "Yes, please keep your seatbelt fastened while seated in the cabin to protect against unexpected turbulence.",
+          "translation": "نعم، يرجى إبقاء حزام الأمان مربوطاً أثناء الجلوس في المقصورة للحماية من أي اضطراب جوي مفاجئ."
+        }
+      ],
+      "vocabularyUsed": [
+        "overhead bin",
+        "carry-on",
+        "flight attendant",
+        "aisle seat",
+        "window seat",
+        "altitude",
+        "pilot",
+        "take off",
+        "direct flight",
+        "land",
+        "layover",
+        "seatbelt",
+        "cabin",
+        "turbulence"
+      ]
+    },
+    {
+      "title": "Arriving and Passing Border Controls",
+      "titleArabic": "الوصول واجتياز نقاط التفتيش الحدودية",
+      "setting": "An international traveler clearing immigration and customs at the arrival airport",
+      "settingArabic": "مسافر دولي ينهي إجراءات الهجرة والجمارك في مطار الوصول",
+      "lines": [
+        {
+          "speaker": "Officer",
+          "text": "Good afternoon. Welcome to Toronto. May I inspect your passport and entry visa, please?",
+          "translation": "مساء الخير. مرحباً بك في تورونتو. هل يمكنني فحص جواز سفرك وتأشيرة الدخول، من فضلك؟"
+        },
+        {
+          "speaker": "Traveler",
+          "text": "Good afternoon officer. Here is my passport. I am attending an academic symposium this week.",
+          "translation": "مساء الخير يا حضرة الضابط. تفضل جواز سفري. أنا أحضر ندوة أكاديمية هذا الأسبوع."
+        },
+        {
+          "speaker": "Officer",
+          "text": "Everything is in order. Here is your official entry stamp. Please clear passport control and proceed to baggage claim.",
+          "translation": "كل شيء على ما يرام. تفضل ختم الدخول الرسمي. يرجى تجاوز نقطة مراقبة الجوازات والتوجه لاستلام الأمتعة."
+        },
+        {
+          "speaker": "Traveler",
+          "text": "Thank you. Which carousel is handling passenger baggage from the London flight?",
+          "translation": "شكراً لك. أي سير دوار يتعامل مع أمتعة ركاب رحلة لندن؟"
+        },
+        {
+          "speaker": "Officer",
+          "text": "Check carousel 3. After collecting your luggage, submit your declaration card at customs.",
+          "translation": "تحقق من السير رقم 3. وبعد استلام أمتعتك، سلم بطاقة الإقرار الجمركي الخاصة بك عند الجمارك."
+        },
+        {
+          "speaker": "Traveler",
+          "text": "Do I need to declare standard souvenirs and personal items?",
+          "translation": "هل أحتاج إلى الإفصاح عن الهدايا التذكارية القياسية والأغراض الشخصية؟"
+        },
+        {
+          "speaker": "Officer",
+          "text": "No, if you have nothing to declare, proceed directly through the green channel into the arrival hall.",
+          "translation": "لا، إذا لم يكن لديك ما تفصح عنه، فاعبر مباشرة عبر المسار الأخضر إلى صالة الوصول."
+        },
+        {
+          "speaker": "Traveler",
+          "text": "Wonderful. My host is waiting for me outside in the arrival hall. Have a pleasant afternoon!",
+          "translation": "رائع. مضيفي ينتظرني في الخارج في صالة الوصول. أتمنى لك ظهيرة ممتعة!"
+        }
+      ],
+      "vocabularyUsed": [
+        "visa",
+        "stamp",
+        "passport control",
+        "baggage claim",
+        "carousel",
+        "declaration",
+        "customs",
+        "declare",
+        "arrival hall",
+        "flight"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "A Guide to Smooth Airport Check-in and Boarding",
+      "titleArabic": "دليل إرشادي لتسهيل إجراءات المطار وصعود الطائرة",
+      "kind": "travel-guide",
+      "text": "Navigating a bustling international airport terminal requires punctuality, organization, and calm composure. Experienced travelers arrive at least three hours before an international flight departs to drop off checked baggage and resolve any excess baggage queries. Travelers keep their passport, entry visa, and mobile boarding pass readily accessible. Passing through the security checkpoint is effortless when one removes footwear and places laptops flat on the conveyor belt before stepping through the walk-through metal detector. Once through security, travelers can visit a duty-free shop or relax comfortably in the departure lounge. Monitoring overhead information screens ensures that one arrives at the designated departure gate well before boarding commences.",
+      "translation": "يتطلب التجول في مبنى ركاب بمطار دولي مزدحم الالتزام بالمواعيد، والتنظيم، والهدوء. ويصل المسافرون ذوو الخبرة قبل ثلاث ساعات على الأقل من مغادرة أي رحلة دولية لتسليم الأمتعة المشحونة وحل أي استفسارات تتعلق بالوزن الزائد. ويحرص المسافرون على إبقاء جواز السفر وتأشيرة الدخول وبطاقة صعود الطائرة في متناول اليد. كما أن اجتياز نقطة التفتيش الأمني يتم بسلاسة عند خلع الأحذية ووضع الحواسيب المحمولة على السير الناقل قبل المرور عبر جهاز الكشف عن المعادن. وبعد التفتيش، يمكن للمسافرين زيارة السوق الحرة أو الاسترخاء في صالة المغادرة. وتضمن متابعة شاشات المعلومات الوصول للبوابة المحددة قبل بدء الصعود.",
+      "vocabularyUsed": [
+        "terminal",
+        "flight",
+        "checked baggage",
+        "excess baggage",
+        "visa",
+        "boarding pass",
+        "security checkpoint",
+        "conveyor belt",
+        "metal detector",
+        "duty-free",
+        "lounge",
+        "departure gate",
+        "boarding"
+      ]
+    },
+    {
+      "title": "The Miracle of Modern Commercial Aviation",
+      "titleArabic": "معجزة الطيران التجاري الحديث في السماء",
+      "kind": "technology-essay",
+      "text": "Commercial aviation connects distant cultures and continents with unmatched speed and safety. High above mountain ranges, an advanced airliner cruises at an altitude exceeding thirty-five thousand feet. Inside the high-tech cockpit, the captain and co-pilot monitor digital navigation radar and communicate with air traffic controllers. Meanwhile, in the passenger cabin, a dedicated flight attendant serves warm beverages and assists travelers. Passengers relax in their reserved aisle seat or gaze out from a window seat as the airplane maneuvers smoothly through occasional atmospheric turbulence. Whether taking off along an illuminated runway or landing on time at a distant destination, modern airlines make international journeying a routine marvel.",
+      "translation": "يربط الطيران التجاري بين الثقافات والقارات البعيدة بسرعة وأمان لا مثيل لهما. وفي الأعالي فوق سلاسل الجبال، تحلق طائرة ركاب متطورة على ارتفاع يتجاوز خمسة وثلاثين ألف قدم. وداخل قمرة القيادة عالية التقنية، يراقب القبطان ومساعده رادار الملاحة الرقمي ويتواصلان مع مراقبي الحركة الجوية. وفي غضون ذلك، داخل مقصورة الركاب، تقدم مضيفة الطيران المخلصة مشروبات دافئة وتساعد المسافرين. ويسترخي الركاب في مقاعدهم المحجوزة بجانب الممر أو يتطلعون من مقعد النافذة بينما تعبر الطائرة بسلاسة أي مطب هوائي عابر. وسواء عند الإقلاع على مدرج مضاء أو الهبوط في الموعد، تجعل شركات الطيران السفر الدولي أعجوبة مألوفة.",
+      "vocabularyUsed": [
+        "altitude",
+        "cockpit",
+        "pilot",
+        "cabin",
+        "flight attendant",
+        "aisle seat",
+        "window seat",
+        "turbulence",
+        "take off",
+        "runway",
+        "land",
+        "on time",
+        "airline"
+      ]
+    },
+    {
+      "title": "Arrival Protocols and International Border Security",
+      "titleArabic": "بروتوكولات الوصول وأمن الحدود الدولية بالمطارات",
+      "kind": "informative-guide",
+      "text": "After an airliner completes its landing and passengers disembark onto the jet bridge, official arrival procedures commence immediately. International voyagers proceed through passport control, where border officers scrutinize entry visas and apply an indelible entry stamp. Arriving passengers then walk to the spacious baggage claim area to await their suitcases on the rotating carousel. Before exiting into the public arrival hall, all travelers must pass customs inspection. Those transporting taxable goods submit a formal customs declaration, whereas travelers with nothing to declare pass through the green exit corridor. These structured border checkpoints guarantee national safety while warmly welcoming international visitors.",
+      "translation": "بعد أن تكمل طائرة الركاب هبوطها وينزل الركاب عبر الجسر، تبدأ إجراءات الوصول الرسمية على الفور. ويتوجه المسافرون الدوليون عبر نقطة مراقبة الجوازات، حيث يدقق ضباط الحدود في تأشيرات الدخول ويضعون ختم دخول رسمي. ثم يتجه الركاب القادمون إلى منطقة استلام الأمتعة الواسعة لانتظار حقائبهم على السير الدوار المتحرك. وقبل الخروج إلى صالة الوصول العامة، يجب على جميع المسافرين اجتياز تفتيش الجمارك. ويقدم أولئك الذين يحملون بضائع خاضعة للضريبة إقراراً جمركياً رسمياً، بينما يمر المسافرون الذين ليس لديهم ما يفصحون عنه عبر الممر الأخضر. وتضمن هذه النقاط الأمنية سلامة البلاد مع الترحيب بالزوار.",
+      "vocabularyUsed": [
+        "disembark",
+        "passport control",
+        "visa",
+        "stamp",
+        "baggage claim",
+        "carousel",
+        "arrival hall",
+        "customs",
+        "declaration",
+        "declare"
+      ]
+    }
+  ]
+}

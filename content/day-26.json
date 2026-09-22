@@ -1,0 +1,1736 @@
+{
+  "day": 26,
+  "title": "Shopping for Clothes",
+  "topic": "Clothes, sizes and shopping",
+  "description": "Buy clothes, ask for sizes and pay.",
+  "stage": "Real-Life Situations",
+  "focus": "By the end of today, you can communicate clearly about clothes, sizes and shopping using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Articles Review (a / an / the / zero)",
+      "titleArabic": "مراجعة شاملة لأدوات التعريف والتنكير: a و an و the وبدون أداة (Zero Article)",
+      "explanation": "In English, noun phrases use specific articles depending on whether the noun is singular or plural, countable or uncountable, and whether it represents general or specific information:\n\n1. Indefinite Articles ('a' and 'an'):\n   - Used with singular countable nouns mentioned for the first time or non-specifically.\n   - Use 'a' before consonant sounds: 'a shirt', 'a boutique', 'a uniform' (/juː/ sound).\n   - Use 'an' before vowel sounds: 'an outfit', 'an elegant scarf', 'an hour'.\n\n2. Definite Article ('the'):\n   - Used with singular or plural, countable or uncountable nouns when both speaker and listener know which specific item is meant (previously mentioned, unique, or defined by context).\n   - 'The jacket you tried on fits perfectly.' / 'The designer is from Milan.'\n\n3. Zero Article (No Article Ø):\n   - Used when speaking about plural countable nouns in general: 'Clothes reflect personality.' (NOT 'The clothes').\n   - Used with uncountable nouns in a general sense: 'Cotton is breathable.' / 'Silk feels smooth.'\n   - Used with most proper names, countries, cities, and meals in general: 'She lives in Rome.' / 'Before dinner'.",
+      "explanationArabic": "في اللغة الإنجليزية، تحدد أدوات التعريف والتنكير طبيعة الاسم:\n\n1. أداة النكرة (a / an):\n   - للمفرد المعدود عند ذكره لأول مرة أو بشكل عام غير محدد.\n   - نستخدم 'a' قبل الأصوات الساكنة: 'a jacket', 'a uniform'.\n   - نستخدم 'an' قبل الأصوات المتحركة: 'an outfit', 'an elegant scarf'.\n\n2. أداة المعرفة (the):\n   - للشيء المحدد أو المعروف مسبقاً للطرفين أو الفريد من نوعه: 'The jacket I tried on' (السترة التي قستها).\n\n3. بدون أداة (Zero Article Ø):\n   - مع الجمع العام: 'Clothes protect us' (الملابس تحمينا بشكل عام).\n   - مع الأسماء غير المعدودة بشكل عام: 'Cotton is comfortable' (القطن مريح - لا نضع the هنا).\n   - مع معظم أسماء الدول والمدن والوجبات العامة.",
+      "structures": [
+        {
+          "pattern": "Indefinite: a + consonant sound / an + vowel sound + Singular Countable Noun",
+          "explanation": "Introduces a non-specific singular object.",
+          "explanationArabic": "لتقديم اسم مفرد معدود لأول مرة أو بصفة عامة."
+        },
+        {
+          "pattern": "Definite: the + Specific Noun (Singular, Plural, or Uncountable)",
+          "explanation": "Refers to an identifiable, unique, or previously mentioned entity.",
+          "explanationArabic": "للإشارة إلى شيء محدد أو سبق ذكره أو فريد بذاته."
+        },
+        {
+          "pattern": "Zero Article (Ø): Plural Noun / Uncountable Noun in General Sense",
+          "explanation": "States general truths without limiting to specific instances.",
+          "explanationArabic": "للتعميم مع صيغ الجمع والأسماء المعنوية والمادية غير المعدودة."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I saw a stylish silk scarf in an exclusive designer boutique.",
+          "translation": "رأيت وشاحاً حريرياً أنيقاً في بوتيك مصممين حصري.",
+          "usesVocabulary": [
+            "stylish",
+            "silk",
+            "scarf",
+            "designer",
+            "boutique"
+          ]
+        },
+        {
+          "sentence": "The fitting room is located behind the tailored suit display.",
+          "translation": "تقع غرفة القياس خلف منصة عرض البدلات المفصلة.",
+          "usesVocabulary": [
+            "fitting room"
+          ]
+        },
+        {
+          "sentence": "Cotton and linen are breathable fabrics for hot summer weather.",
+          "translation": "القطن والكتان أقمشة تسمح بالتنفس للطقس الصيفي الحار.",
+          "usesVocabulary": [
+            "cotton",
+            "linen",
+            "fabric"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The cotton is very comfortable to wear.",
+          "right": "Cotton is very comfortable to wear.",
+          "note": "Do not use 'the' when referring to materials or substances in general.",
+          "noteArabic": "لا تضع 'the' قبل أسماء الأقمشة والمواد الخام عند الحديث عنها بشكل عام."
+        },
+        {
+          "wrong": "She bought an uniform for school.",
+          "right": "She bought a uniform for school.",
+          "note": "'Uniform' starts with a 'y' consonant sound (/juː/), so it takes 'a', not 'an'.",
+          "noteArabic": "كلمة 'uniform' تبدأ بصوت ساكن يشبه الياء (/juː/)، لذا تأخذ 'a' وليس 'an'."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "garment",
+      "pronunciation": "/ˈɡɑː.mənt/",
+      "partOfSpeech": "noun",
+      "definition": "an item of clothing",
+      "example": "Each handmade wool garment is carefully inspected before being displayed on store racks.",
+      "relatedForms": [],
+      "collocations": [
+        "outer garment",
+        "delicate garment",
+        "woven garment"
+      ],
+      "synonyms": [
+        "clothing item",
+        "apparel",
+        "attire"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "shopping"
+      ],
+      "translation": "قطعة ملابس / رداء",
+      "exampleArabic": "يتم فحص كل قطعة ملابس صوفية مصنوعة يدوياً بعناية قبل عرضها على رفوف المتاجر."
+    },
+    {
+      "headword": "apparel",
+      "pronunciation": "/əˈpær.əl/",
+      "partOfSpeech": "noun",
+      "definition": "clothing, especially of a specified kind or sold commercially",
+      "example": "The shopping mall features several department stores offering designer athletic apparel.",
+      "relatedForms": [],
+      "collocations": [
+        "sports apparel",
+        "men's apparel",
+        "children's apparel"
+      ],
+      "synonyms": [
+        "clothing",
+        "garments",
+        "wear"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "business"
+      ],
+      "translation": "أزياء / ملابس (مصطلح تجاري)",
+      "exampleArabic": "يضم مركز التسوق العديد من المتاجر الكبرى التي تقدم أزياء رياضية من تصميم أشهر المصممين."
+    },
+    {
+      "headword": "clothing",
+      "pronunciation": "/ˈkləʊ.ðɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "clothes collectively; garments worn to cover the body",
+      "example": "Pack warm thermal clothing if you intend to hike across high mountain passes.",
+      "relatedForms": [
+        "clothe",
+        "clothes"
+      ],
+      "collocations": [
+        "protective clothing",
+        "winter clothing",
+        "casual clothing"
+      ],
+      "synonyms": [
+        "apparel",
+        "attire",
+        "garments"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "essentials"
+      ],
+      "translation": "ملابس / كسوة",
+      "exampleArabic": "احزم ملابس حرارية دافئة إذا كنت تنوي المشي عبر الممرات الجبلية العالية."
+    },
+    {
+      "headword": "attire",
+      "pronunciation": "/əˈtaɪər/",
+      "partOfSpeech": "noun",
+      "definition": "clothes, especially of a formal or particular type",
+      "example": "Business formal attire, including a dark jacket and silk tie, is required for the gala banquet.",
+      "verbForms": {
+        "v1": "attire",
+        "v2": "attired",
+        "v3": "attired"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "formal attire",
+        "casual attire",
+        "appropriate attire"
+      ],
+      "synonyms": [
+        "dress",
+        "outfit",
+        "garb"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "formal"
+      ],
+      "translation": "زي / هندام رسمي",
+      "exampleArabic": "يتطلب حضور حفل المأدبة الفاخر زياً رسمياً لرجال الأعمال يشمل سترة داكنة وربطة عنق حريرية."
+    },
+    {
+      "headword": "outfit",
+      "pronunciation": "/ˈaʊt.fɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a set of clothes worn together, especially for a particular occasion or activity",
+      "example": "She bought a stylish new outfit consisting of a linen blazer and matching tailored trousers.",
+      "verbForms": {
+        "v1": "outfit",
+        "v2": "outfitted",
+        "v3": "outfitted"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "stylish outfit",
+        "casual outfit",
+        "put together an outfit"
+      ],
+      "synonyms": [
+        "ensemble",
+        "get-up",
+        "suit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "fashion"
+      ],
+      "translation": "طقم ملابس متكامل",
+      "exampleArabic": "اشترت طقم ملابس أنيقاً جديداً يتكون من بليزر كتاني وبنطال مفصل متناسق."
+    },
+    {
+      "headword": "fitting room",
+      "pronunciation": "/ˈfɪt.ɪŋ ˌruːm/",
+      "partOfSpeech": "noun",
+      "definition": "an enclosure in a clothing store where customers can try on garments in private",
+      "example": "You can take up to four garments into the fitting room at a time to check the fit.",
+      "relatedForms": [],
+      "collocations": [
+        "head to the fitting room",
+        "in the fitting room"
+      ],
+      "synonyms": [
+        "dressing room",
+        "changing cubicle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "shopping",
+        "places"
+      ],
+      "translation": "غرفة قياس الملابس (البروفة)",
+      "exampleArabic": "يمكنك أخذ ما يصل إلى أربع قطع ملابس في غرفة القياس في كل مرة للتحقق من المقاس."
+    },
+    {
+      "headword": "dressing room",
+      "pronunciation": "/ˈdres.ɪŋ ˌruːm/",
+      "partOfSpeech": "noun",
+      "definition": "a room or stall in a store where people try on clothes; interchangeable with fitting room",
+      "example": "The department store has spacious dressing rooms equipped with three-sided mirrors.",
+      "relatedForms": [],
+      "collocations": [
+        "spacious dressing room",
+        "store dressing room"
+      ],
+      "synonyms": [
+        "fitting room",
+        "changing room"
+      ],
+      "antonyms": [],
+      "tags": [
+        "shopping",
+        "places"
+      ],
+      "translation": "غرفة تبديل وقياس الملابس",
+      "exampleArabic": "يحتوي المتجر الكبير على غرف قياس واسعة مجهزة بمرايا ثلاثية الجوانب."
+    },
+    {
+      "headword": "try on",
+      "pronunciation": "/traɪ ɒn/",
+      "partOfSpeech": "verb",
+      "definition": "to put on a garment or accessory to see whether it fits and looks good before purchasing",
+      "example": "Would you like to try on this dark denim jacket in a smaller size?",
+      "verbForms": {
+        "v1": "try on",
+        "v2": "tried on",
+        "v3": "tried on"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "try on a jacket",
+        "try on shoes",
+        "try on clothes"
+      ],
+      "synonyms": [
+        "test fit",
+        "sample wear"
+      ],
+      "antonyms": [],
+      "tags": [
+        "shopping",
+        "phrasal-verb"
+      ],
+      "translation": "يقيس (ملابس أو حذاء)",
+      "exampleArabic": "هل ترغب في قياس سترة الدنيم الداكنة هذه بمقاس أصغر؟"
+    },
+    {
+      "headword": "size",
+      "pronunciation": "/saɪz/",
+      "partOfSpeech": "noun",
+      "definition": "the relative extent or dimensions of a garment, indicated by letters (S, M, L) or numbers",
+      "example": "Excuse me, do you have these tailored trousers in a medium size?",
+      "verbForms": {
+        "v1": "size",
+        "v2": "sized",
+        "v3": "sized"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "shoe size",
+        "dress size",
+        "in my size"
+      ],
+      "synonyms": [
+        "measurement",
+        "proportions",
+        "dimensions"
+      ],
+      "antonyms": [],
+      "tags": [
+        "shopping",
+        "measurement"
+      ],
+      "translation": "مقاس (الملابس أو الأحذية)",
+      "exampleArabic": "معذرة، هل لديكم هذا البنطال المفصل بمقاس متوسط (M)؟"
+    },
+    {
+      "headword": "fit",
+      "pronunciation": "/fɪt/",
+      "partOfSpeech": "verb",
+      "definition": "to be of the right shape and size for someone or something",
+      "example": "These leather gloves fit my hands perfectly without feeling too tight.",
+      "verbForms": {
+        "v1": "fit",
+        "v2": "fit",
+        "v3": "fit"
+      },
+      "relatedForms": [
+        "fitted"
+      ],
+      "collocations": [
+        "fit well",
+        "fit comfortably",
+        "perfect fit"
+      ],
+      "synonyms": [
+        "suit",
+        "match dimensions",
+        "conform"
+      ],
+      "antonyms": [],
+      "tags": [
+        "shopping",
+        "verbs"
+      ],
+      "translation": "يناسب مقاسه / يلائم",
+      "exampleArabic": "هذه القفازات الجلدية تناسب يدي تماماً دون أن تبدو ضيقة أكثر من اللازم."
+    },
+    {
+      "headword": "tight",
+      "pronunciation": "/taɪt/",
+      "partOfSpeech": "adjective",
+      "definition": "fitting closely or too closely to the body, restricting movement or comfort",
+      "example": "This cotton collar feels too tight around my neck; I need a wider size.",
+      "relatedForms": [
+        "tightly",
+        "tightness"
+      ],
+      "collocations": [
+        "too tight",
+        "tight fit",
+        "tight shoes"
+      ],
+      "synonyms": [
+        "constricting",
+        "snug",
+        "pinching"
+      ],
+      "antonyms": [
+        "loose",
+        "baggy"
+      ],
+      "tags": [
+        "clothing",
+        "adjectives"
+      ],
+      "translation": "ضيق (على الجسم)",
+      "exampleArabic": "تبدو ياقة هذا القميص القطني ضيقة جداً حول رقبتي؛ أحتاج إلى مقاس أوسع."
+    },
+    {
+      "headword": "loose",
+      "pronunciation": "/luːs/",
+      "partOfSpeech": "adjective",
+      "definition": "not fitting tightly or closely; relaxed and providing freedom of movement",
+      "example": "In hot desert climates, people prefer loose linen shirts to stay cool in the sunshine.",
+      "relatedForms": [
+        "loosely",
+        "loosen"
+      ],
+      "collocations": [
+        "loose fit",
+        "loose clothing",
+        "wear it loose"
+      ],
+      "synonyms": [
+        "baggy",
+        "relaxed",
+        "roomy"
+      ],
+      "antonyms": [
+        "tight",
+        "snug"
+      ],
+      "tags": [
+        "clothing",
+        "adjectives"
+      ],
+      "translation": "فضفاض / واسع ومريح",
+      "exampleArabic": "في المناخات الصحراوية الحارة، يفضل الناس القمصان الكتانية الفضفاضة للبقاء منتعشين تحت أشعة الشمس."
+    },
+    {
+      "headword": "baggy",
+      "pronunciation": "/ˈbæɡ.i/",
+      "partOfSpeech": "adjective",
+      "definition": "loose-fitting and hanging in folds or bunches, typical of certain relaxed fashion trends",
+      "example": "Streetwear fashion trends often feature oversized hoodies and comfortable baggy jeans.",
+      "relatedForms": [],
+      "collocations": [
+        "baggy pants",
+        "baggy sweater",
+        "baggy jeans"
+      ],
+      "synonyms": [
+        "oversized",
+        "loose",
+        "slack"
+      ],
+      "antonyms": [
+        "skinny",
+        "tight"
+      ],
+      "tags": [
+        "clothing",
+        "fashion"
+      ],
+      "translation": "متهدل / واسع جداً (باغي)",
+      "exampleArabic": "غالباً ما تتميز صيحات أزياء الشارع بالسترات الفضفاضة وبناطيل الجينز الواسعة المريحة."
+    },
+    {
+      "headword": "short-sleeved",
+      "pronunciation": "/ˌʃɔːtˈsliːvd/",
+      "partOfSpeech": "adjective",
+      "definition": "having sleeves that stop above or at the elbow",
+      "example": "He wore a crisp short-sleeved cotton polo shirt for their weekend tennis match.",
+      "relatedForms": [],
+      "collocations": [
+        "short-sleeved shirt",
+        "short-sleeved polo"
+      ],
+      "synonyms": [
+        "half-sleeve"
+      ],
+      "antonyms": [
+        "long-sleeved"
+      ],
+      "tags": [
+        "clothing",
+        "adjectives"
+      ],
+      "translation": "نصف كم (بأكمام قصيرة)",
+      "exampleArabic": "ارتدى قميص بولو قطنياً أنيقاً بنصف كم لمباراة التنس في عطلة نهاية الأسبوع."
+    },
+    {
+      "headword": "long-sleeved",
+      "pronunciation": "/ˌlɒŋˈsliːvd/",
+      "partOfSpeech": "adjective",
+      "definition": "having sleeves extending down to the wrist",
+      "example": "A long-sleeved silk blouse is a versatile piece for formal corporate settings.",
+      "relatedForms": [],
+      "collocations": [
+        "long-sleeved shirt",
+        "long-sleeved dress"
+      ],
+      "synonyms": [
+        "full-sleeve"
+      ],
+      "antonyms": [
+        "short-sleeved",
+        "sleeveless"
+      ],
+      "tags": [
+        "clothing",
+        "adjectives"
+      ],
+      "translation": "كم طويل (بأكمام طويلة)",
+      "exampleArabic": "تعتبر البلوزة الحريرية ذات الأكمام الطويلة قطعة متعددة الاستخدامات في بيئات العمل الرسمية."
+    },
+    {
+      "headword": "collar",
+      "pronunciation": "/ˈkɒl.ər/",
+      "partOfSpeech": "noun",
+      "definition": "the part of a shirt, dress, coat, or jacket that encircles the neck",
+      "example": "Fasten the top button of your shirt collar before adjusting your formal tie.",
+      "relatedForms": [],
+      "collocations": [
+        "stiff collar",
+        "shirt collar",
+        "coat collar"
+      ],
+      "synonyms": [
+        "neckband",
+        "choker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "parts"
+      ],
+      "translation": "ياقة (ياقة القميص)",
+      "exampleArabic": "أغلق الزر العلوي لياقة قميصك قبل تعديل ربطة عنقك الرسمية."
+    },
+    {
+      "headword": "sleeve",
+      "pronunciation": "/sliːv/",
+      "partOfSpeech": "noun",
+      "definition": "the part of a garment that wholly or partly covers a person's arm",
+      "example": "He rolled up his shirt sleeves and immediately got to work repairing the machine.",
+      "relatedForms": [
+        "sleeved",
+        "sleeveless"
+      ],
+      "collocations": [
+        "roll up sleeves",
+        "long sleeve",
+        "short sleeve"
+      ],
+      "synonyms": [
+        "arm covering"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "parts"
+      ],
+      "translation": "كُم (كُم القميص أو السترة)",
+      "exampleArabic": "شمر عن أكمام قميصه وشرع على الفور في العمل على إصلاح الآلة."
+    },
+    {
+      "headword": "button",
+      "pronunciation": "/ˈbʌt.ən/",
+      "partOfSpeech": "noun",
+      "definition": "a small disc or knob sewn on a garment to fasten it through a buttonhole or for ornament",
+      "example": "A polished pearl button fell off my blazer, so I need to sew on a replacement.",
+      "verbForms": {
+        "v1": "button",
+        "v2": "buttoned",
+        "v3": "buttoned"
+      },
+      "relatedForms": [
+        "unbutton"
+      ],
+      "collocations": [
+        "button up",
+        "shirt button",
+        "spare button"
+      ],
+      "synonyms": [
+        "fastener",
+        "stud"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "accessories"
+      ],
+      "translation": "زر (زر الملابس)",
+      "exampleArabic": "سقط زر لؤلؤي ملمع من سترتي، لذا أحتاج إلى خياطة زر بديل."
+    },
+    {
+      "headword": "zipper",
+      "pronunciation": "/ˈzɪp.ər/",
+      "partOfSpeech": "noun",
+      "definition": "a fastening device consisting of two flexible strips of interlocking plastic or metal teeth",
+      "example": "Make sure the sturdy metal zipper on your travel backpack is completely closed.",
+      "verbForms": {
+        "v1": "zipper",
+        "v2": "zippered",
+        "v3": "zippered"
+      },
+      "relatedForms": [
+        "zip"
+      ],
+      "collocations": [
+        "metal zipper",
+        "pull the zipper",
+        "zipper stuck"
+      ],
+      "synonyms": [
+        "zip fastener",
+        "clasp"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "accessories"
+      ],
+      "translation": "سحّاب (سوستة)",
+      "exampleArabic": "تأكد من إغلاق السحاب المعدني المتين على حقيبة ظهرك المخصصة للسفر بالكامل."
+    },
+    {
+      "headword": "pocket",
+      "pronunciation": "/ˈpɒk.ɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a small bag or pouch sewn into or on clothing for carrying small items",
+      "example": "Keep your hotel key card in your secure inner jacket pocket so you don't misplace it.",
+      "relatedForms": [],
+      "collocations": [
+        "deep pocket",
+        "inside pocket",
+        "coat pocket"
+      ],
+      "synonyms": [
+        "pouch",
+        "compartment"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "parts"
+      ],
+      "translation": "جيب",
+      "exampleArabic": "احتفظ ببطاقة مفتاح الفندق في جيب سترتك الداخلي الآمن حتى لا تضيعها."
+    },
+    {
+      "headword": "cotton",
+      "pronunciation": "/ˈkɒt.ən/",
+      "partOfSpeech": "noun",
+      "definition": "a soft white fibrous substance surrounding the seeds of a tropical plant, spun into textile yarn",
+      "example": "Breathable pure cotton is the ideal fabric for hot summer weather.",
+      "relatedForms": [],
+      "collocations": [
+        "100% cotton",
+        "organic cotton",
+        "cotton shirt"
+      ],
+      "synonyms": [
+        "cotton yarn",
+        "textile fiber"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fabrics",
+        "materials"
+      ],
+      "translation": "قطن",
+      "exampleArabic": "يعتبر القطن الخالص الذي يسمح بالتنفس القماش المثالي للطقس الصيفي الحار."
+    },
+    {
+      "headword": "wool",
+      "pronunciation": "/wʊl/",
+      "partOfSpeech": "noun",
+      "definition": "the fine, soft curly or wavy hair forming the coat of a sheep, shorn and spun into yarn",
+      "example": "A thick merino wool sweater provides supreme warmth during chilly winter evenings.",
+      "relatedForms": [
+        "woolen",
+        "woolly"
+      ],
+      "collocations": [
+        "pure wool",
+        "merino wool",
+        "wool blanket"
+      ],
+      "synonyms": [
+        "fleece",
+        "yarn"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fabrics",
+        "materials"
+      ],
+      "translation": "صوف",
+      "exampleArabic": "توفر كنزة صوف الميرينو السميكة دفئاً فائقاً خلال أمسيات الشتاء الباردة."
+    },
+    {
+      "headword": "silk",
+      "pronunciation": "/sɪlk/",
+      "partOfSpeech": "noun",
+      "definition": "a fine, strong, soft lustrous fiber produced by silkworms, made into rich textile fabric",
+      "example": "The diplomatic delegation presented the ambassador with an exquisite hand-embroidered silk scarf.",
+      "relatedForms": [
+        "silky",
+        "silken"
+      ],
+      "collocations": [
+        "pure silk",
+        "silk tie",
+        "silk blouse"
+      ],
+      "synonyms": [
+        "fine filament",
+        "satin"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fabrics",
+        "luxury"
+      ],
+      "translation": "حرير",
+      "exampleArabic": "قدم الوفد الدبلوماسي للسفير وشاحاً حريرياً رائعاً مطرزاً يدوياً."
+    },
+    {
+      "headword": "leather",
+      "pronunciation": "/ˈleð.ər/",
+      "partOfSpeech": "noun",
+      "definition": "a material made from the skin of an animal by tanning or a similar process",
+      "example": "He purchased a durable brown leather belt and matching handcrafted boots.",
+      "verbForms": {
+        "v1": "leather",
+        "v2": "leathered",
+        "v3": "leathered"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "genuine leather",
+        "leather jacket",
+        "leather goods"
+      ],
+      "synonyms": [
+        "hide",
+        "suede"
+      ],
+      "antonyms": [],
+      "tags": [
+        "materials",
+        "shopping"
+      ],
+      "translation": "جلد (طبيعي أو مدبوغ)",
+      "exampleArabic": "اشترى حزاماً جلدياً بنياً متيناً وحذاءً متناسقاً مصنوعاً يدوياً."
+    },
+    {
+      "headword": "denim",
+      "pronunciation": "/ˈden.ɪm/",
+      "partOfSpeech": "noun",
+      "definition": "a sturdy cotton twill fabric, typically blue, used for jeans, overalls, and other work clothes",
+      "example": "Dark blue denim remains a timeless staple in modern casual wardrobes across the globe.",
+      "relatedForms": [],
+      "collocations": [
+        "blue denim",
+        "denim jeans",
+        "denim jacket"
+      ],
+      "synonyms": [
+        "jean fabric",
+        "twill"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fabrics",
+        "fashion"
+      ],
+      "translation": "دنيم (قماش الجينز)",
+      "exampleArabic": "يظل الدنيم الأزرق الداكن عنصراً أساسياً خالداً في خزائن الملابس غير الرسمية الحديثة حول العالم."
+    },
+    {
+      "headword": "linen",
+      "pronunciation": "/ˈlɪn.ɪn/",
+      "partOfSpeech": "noun",
+      "definition": "cloth woven from flax fibers, prized for its lightness and cool breathability in hot climates",
+      "example": "He chose a beige linen suit for the seaside afternoon wedding ceremony.",
+      "relatedForms": [],
+      "collocations": [
+        "pure linen",
+        "linen trousers",
+        "crisp linen"
+      ],
+      "synonyms": [
+        "flax cloth",
+        "summer fabric"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fabrics",
+        "materials"
+      ],
+      "translation": "كتان",
+      "exampleArabic": "اختار بدلة كتانية بيج لحفل الزفاف الساحلي الذي أقيم بعد الظهر."
+    },
+    {
+      "headword": "synthetic",
+      "pronunciation": "/sɪnˈθet.ɪk/",
+      "partOfSpeech": "adjective",
+      "definition": "made by chemical synthesis, especially to imitate a natural product like nylon or polyester",
+      "example": "Active sportswear often utilizes synthetic fibers designed to wick sweat away rapidly.",
+      "relatedForms": [
+        "synthetically",
+        "synthesize"
+      ],
+      "collocations": [
+        "synthetic fabric",
+        "synthetic fiber",
+        "purely synthetic"
+      ],
+      "synonyms": [
+        "artificial",
+        "man-made",
+        "polyester"
+      ],
+      "antonyms": [
+        "natural",
+        "organic"
+      ],
+      "tags": [
+        "fabrics",
+        "science"
+      ],
+      "translation": "اصطناعي / نسيج صناعي",
+      "exampleArabic": "تستخدم الملابس الرياضية النشطة غالباً أليافاً اصطناعية مصممة لامتصاص العرق بسرعة."
+    },
+    {
+      "headword": "pattern",
+      "pronunciation": "/ˈpæt.ən/",
+      "partOfSpeech": "noun",
+      "definition": "a repeated decorative design printed or woven on fabric or clothing",
+      "example": "The floral pattern on her summer dress added a cheerful touch to the garden gathering.",
+      "verbForms": {
+        "v1": "pattern",
+        "v2": "patterned",
+        "v3": "patterned"
+      },
+      "relatedForms": [
+        "patterned"
+      ],
+      "collocations": [
+        "intricate pattern",
+        "geometric pattern",
+        "floral pattern"
+      ],
+      "synonyms": [
+        "design",
+        "motif",
+        "print"
+      ],
+      "antonyms": [
+        "plain"
+      ],
+      "tags": [
+        "design",
+        "fashion"
+      ],
+      "translation": "نقشة / رسمة قماش",
+      "exampleArabic": "أضافت النقشة الزهرية على فستانها الصيفي لمسة مبهجة إلى التجمع في الحديقة."
+    },
+    {
+      "headword": "striped",
+      "pronunciation": "/straɪpt/",
+      "partOfSpeech": "adjective",
+      "definition": "marked with long narrow bands of differing color or texture",
+      "example": "The maritime sailor wore a classic navy and white striped cotton jersey.",
+      "relatedForms": [
+        "stripe"
+      ],
+      "collocations": [
+        "striped shirt",
+        "vertical striped",
+        "striped pattern"
+      ],
+      "synonyms": [
+        "banded",
+        "stripy",
+        "streaked"
+      ],
+      "antonyms": [
+        "plain"
+      ],
+      "tags": [
+        "patterns",
+        "fashion"
+      ],
+      "translation": "مخطط / مقلّم",
+      "exampleArabic": "ارتدى البحار كنزة قطنية كلاسيكية مخططة باللونين الكحلي والأبيض."
+    },
+    {
+      "headword": "plaid",
+      "pronunciation": "/plæd/",
+      "partOfSpeech": "noun",
+      "definition": "cloth with a pattern of checking or tartan, consisting of crossed horizontal and vertical bands in multiple colors",
+      "example": "Hikers often wear warm flannel plaid shirts when exploring autumn mountain forests.",
+      "relatedForms": [],
+      "collocations": [
+        "plaid shirt",
+        "tartan plaid",
+        "red plaid"
+      ],
+      "synonyms": [
+        "tartan",
+        "checked pattern"
+      ],
+      "antonyms": [],
+      "tags": [
+        "patterns",
+        "fashion"
+      ],
+      "translation": "كاروهات / قماش مقلم بمربعات (تارتان)",
+      "exampleArabic": "يرتدي المتنزهون غالباً قمصان فلانيل كاروهات دافئة عند استكشاف غابات الجبال في الخريف."
+    },
+    {
+      "headword": "polka-dot",
+      "pronunciation": "/ˈpɒl.kə.dɒt/",
+      "partOfSpeech": "noun",
+      "definition": "a pattern of a number of filled circles of the same size, distributed across fabric",
+      "example": "She paired a vintage polka-dot blouse with high-waisted black trousers.",
+      "relatedForms": [],
+      "collocations": [
+        "polka-dot dress",
+        "polka-dot scarf"
+      ],
+      "synonyms": [
+        "spotted pattern",
+        "dotted design"
+      ],
+      "antonyms": [],
+      "tags": [
+        "patterns",
+        "fashion"
+      ],
+      "translation": "منقط (أقمشة منقطة بدوائر)",
+      "exampleArabic": "نسقت بلوزة كلاسيكية منقطة بدوائر مع بنطال أسود عالي الخصر."
+    },
+    {
+      "headword": "plain",
+      "pronunciation": "/pleɪn/",
+      "partOfSpeech": "adjective",
+      "definition": "not decorated or elaborated; without any pattern, stripe, or embellishment",
+      "example": "For formal job interviews, a plain white cotton shirt creates a crisp, professional impression.",
+      "relatedForms": [
+        "plainly",
+        "plainness"
+      ],
+      "collocations": [
+        "plain white shirt",
+        "plain background",
+        "simple and plain"
+      ],
+      "synonyms": [
+        "unpatterned",
+        "solid color",
+        "unadorned"
+      ],
+      "antonyms": [
+        "patterned",
+        "striped",
+        "plaid"
+      ],
+      "tags": [
+        "patterns",
+        "style"
+      ],
+      "translation": "سادة (بدون نقوش أو خطوط)",
+      "exampleArabic": "في مقابلات العمل الرسمية، يترك القميص القطني الأبيض السادة انطباعاً مهنياً رصيناً."
+    },
+    {
+      "headword": "stylish",
+      "pronunciation": "/ˈstaɪ.lɪʃ/",
+      "partOfSpeech": "adjective",
+      "definition": "fashionably elegant, sophisticated, and smart in appearance",
+      "example": "She wore a stylish woolen overcoat that drew appreciative compliments from colleagues.",
+      "relatedForms": [
+        "style",
+        "stylishly"
+      ],
+      "collocations": [
+        "stylish appearance",
+        "stylish clothes",
+        "look stylish"
+      ],
+      "synonyms": [
+        "chic",
+        "smart",
+        "elegant"
+      ],
+      "antonyms": [
+        "dowdy",
+        "unfashionable"
+      ],
+      "tags": [
+        "fashion",
+        "adjectives"
+      ],
+      "translation": "أنيق / ذو ذوق رفيع",
+      "exampleArabic": "ارتدت معطفاً صوفياً أنيقاً حاز على إطراء مقدر من زملائها."
+    },
+    {
+      "headword": "fashionable",
+      "pronunciation": "/ˈfæʃ.ən.ə.bəl/",
+      "partOfSpeech": "adjective",
+      "definition": "characteristic of, influenced by, or representing a current popular style",
+      "example": "High-end boutiques along the boulevard display the most fashionable autumn collections.",
+      "relatedForms": [
+        "fashion",
+        "fashionably"
+      ],
+      "collocations": [
+        "fashionable district",
+        "fashionable clothing",
+        "stay fashionable"
+      ],
+      "synonyms": [
+        "trendy",
+        "vogue",
+        "popular"
+      ],
+      "antonyms": [
+        "outdated",
+        "old-fashioned"
+      ],
+      "tags": [
+        "fashion",
+        "trends"
+      ],
+      "translation": "مواكِب للموضة / دارج",
+      "exampleArabic": "تعرض المتاجر الراقية على طول الجادة أحدث المجموعات الخريفية المواكبة للموضة."
+    },
+    {
+      "headword": "trendy",
+      "pronunciation": "/ˈtren.di/",
+      "partOfSpeech": "adjective",
+      "definition": "very fashionable and modern, conforming to the latest popular trends",
+      "example": "Young shoppers flock to trendy boutiques in the creative arts district on Saturdays.",
+      "relatedForms": [
+        "trend"
+      ],
+      "collocations": [
+        "trendy outfit",
+        "trendy cafe",
+        "look trendy"
+      ],
+      "synonyms": [
+        "fashionable",
+        "hip",
+        "stylish"
+      ],
+      "antonyms": [
+        "dated",
+        "unfashionable"
+      ],
+      "tags": [
+        "fashion",
+        "youth"
+      ],
+      "translation": "مواكب لأحدث صرعة (تريندي)",
+      "exampleArabic": "يتوافد المتسوقون الشباب إلى المتاجر العصرية في حي الفنون الإبداعية أيام السبت."
+    },
+    {
+      "headword": "vintage",
+      "pronunciation": "/ˈvɪn.tɪdʒ/",
+      "partOfSpeech": "adjective",
+      "definition": "denoting something from the past of high quality, especially fashion from a recognized previous era",
+      "example": "He found an authentic vintage leather bomber jacket in an antique second-hand boutique.",
+      "relatedForms": [],
+      "collocations": [
+        "vintage clothing",
+        "vintage watch",
+        "vintage style"
+      ],
+      "synonyms": [
+        "retro",
+        "classic",
+        "antique"
+      ],
+      "antonyms": [
+        "modern",
+        "contemporary"
+      ],
+      "tags": [
+        "fashion",
+        "style"
+      ],
+      "translation": "كلاسيكي أصيل / فينتاج (من حقبة سابقة راقية)",
+      "exampleArabic": "عثر على سترة جلدية كلاسيكية أصيلة (vintage) في متجر تحف للملابس المستعملة."
+    },
+    {
+      "headword": "casual wear",
+      "pronunciation": "/ˈkæʒ.u.əl weər/",
+      "partOfSpeech": "noun",
+      "definition": "comfortable, informal clothes suited for everyday leisure, recreation, or informal socializing",
+      "example": "On Fridays, our technology company permits employees to dress in comfortable casual wear.",
+      "relatedForms": [],
+      "collocations": [
+        "smart casual wear",
+        "everyday casual wear"
+      ],
+      "synonyms": [
+        "informal clothing",
+        "leisurewear"
+      ],
+      "antonyms": [
+        "formal wear"
+      ],
+      "tags": [
+        "clothing",
+        "style"
+      ],
+      "translation": "ملابس كاجوال غير رسمية",
+      "exampleArabic": "في أيام الجمعة، تسمح شركة التكنولوجيا الخاصة بنا للموظفين بارتداء ملابس كاجوال مريحة."
+    },
+    {
+      "headword": "formal wear",
+      "pronunciation": "/ˈfɔː.məl weər/",
+      "partOfSpeech": "noun",
+      "definition": "clothing suitable for dignified social events such as galas, award ceremonies, and weddings",
+      "example": "The invitation stated clearly that formal wear is strictly required for the gala dinner.",
+      "relatedForms": [],
+      "collocations": [
+        "require formal wear",
+        "elegant formal wear"
+      ],
+      "synonyms": [
+        "evening dress",
+        "black tie attire"
+      ],
+      "antonyms": [
+        "casual wear"
+      ],
+      "tags": [
+        "clothing",
+        "formal"
+      ],
+      "translation": "ملابس رسمية / أزياء الحفلات الرسمية",
+      "exampleArabic": "أوضحت بطاقة الدعوة جلياً أن الملابس الرسمية مطلوبة بدقة لحفل العشاء الفاخر."
+    },
+    {
+      "headword": "costume",
+      "pronunciation": "/ˈkɒs.tʃuːm/",
+      "partOfSpeech": "noun",
+      "definition": "a set of clothes in a style typical of a particular country, historical period, or theatrical production",
+      "example": "The theatrical actors wore elaborate eighteenth-century baroque costumes and wigs.",
+      "verbForms": {
+        "v1": "costume",
+        "v2": "costumed",
+        "v3": "costumed"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "period costume",
+        "theatrical costume",
+        "costume designer"
+      ],
+      "synonyms": [
+        "outfit",
+        "disguise",
+        "attire"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "theatre"
+      ],
+      "translation": "زي تنكري / زي تاريخي مسرحي",
+      "exampleArabic": "ارتدى الممثلون المسرحيون أزياء باروكية وشعر مستعار يعود للقرن الثامن عشر."
+    },
+    {
+      "headword": "uniform",
+      "pronunciation": "/ˈjuː.nɪ.fɔːm/",
+      "partOfSpeech": "noun",
+      "definition": "the distinctive clothing worn by members of the same organization or body, such as soldiers or school pupils",
+      "example": "Police officers, airline pilots, and hospital nurses wear distinctive professional uniforms.",
+      "verbForms": {
+        "v1": "uniform",
+        "v2": "uniformed",
+        "v3": "uniformed"
+      },
+      "relatedForms": [
+        "uniformed"
+      ],
+      "collocations": [
+        "school uniform",
+        "military uniform",
+        "wear a uniform"
+      ],
+      "synonyms": [
+        "livery",
+        "regalia",
+        "official dress"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "jobs"
+      ],
+      "translation": "زي رسمي موحد (يونيفورم)",
+      "exampleArabic": "يرتدي ضباط الشرطة، وطيارو الخطوط الجوية، وممرضات المستشفيات زياً رسمياً موحداً ومميزاً."
+    },
+    {
+      "headword": "underwear",
+      "pronunciation": "/ˈʌn.də.weər/",
+      "partOfSpeech": "noun",
+      "definition": "clothing worn under other clothes, typically next to the skin",
+      "example": "When packing for international travel, ensure you have sufficient changes of clean underwear.",
+      "relatedForms": [],
+      "collocations": [
+        "thermal underwear",
+        "cotton underwear"
+      ],
+      "synonyms": [
+        "undergarments",
+        "lingerie",
+        "intimates"
+      ],
+      "antonyms": [
+        "outerwear"
+      ],
+      "tags": [
+        "clothing",
+        "essentials"
+      ],
+      "translation": "ملابس داخلية",
+      "exampleArabic": "عند حزم الأمتعة للسفر الدولي، تأكد من توفر غيارات كافية من الملابس الداخلية النظيفة."
+    },
+    {
+      "headword": "socks",
+      "pronunciation": "/sɒks/",
+      "partOfSpeech": "noun",
+      "definition": "garments for the foot and lower leg, typically knitted from wool, cotton, or nylon",
+      "example": "Thermal merino wool socks prevent blisters and keep feet warm on snowy mountain trails.",
+      "relatedForms": [
+        "sock"
+      ],
+      "collocations": [
+        "pair of socks",
+        "wool socks",
+        "ankle socks"
+      ],
+      "synonyms": [
+        "hosiery",
+        "footwear"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "accessories"
+      ],
+      "translation": "جوارب / شرابات",
+      "exampleArabic": "تمنع الجوارب الصوفية الحرارية ظهور البثور وتبقي القدمين دافئتين في مسارات الجبال الثلجية."
+    },
+    {
+      "headword": "scarf",
+      "pronunciation": "/skɑːf/",
+      "partOfSpeech": "noun",
+      "definition": "a length of fabric worn around the neck or head for warmth, sun protection, or fashion",
+      "example": "He wrapped a cozy knitted cashmere scarf snugly around his neck against the winter wind.",
+      "verbForms": {
+        "v1": "scarf",
+        "v2": "scarfed",
+        "v3": "scarfed"
+      },
+      "relatedForms": [
+        "scarves"
+      ],
+      "collocations": [
+        "silk scarf",
+        "knitted scarf",
+        "wear a scarf"
+      ],
+      "synonyms": [
+        "muffler",
+        "shawl",
+        "wrap"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "accessories"
+      ],
+      "translation": "وشاح / لفحة / كوفية",
+      "exampleArabic": "لف وشاحاً دافئاً من الكشمير المحبوك بإحكام حول عنقه اتقاءً لرياح الشتاء."
+    },
+    {
+      "headword": "gloves",
+      "pronunciation": "/ɡlʌvz/",
+      "partOfSpeech": "noun",
+      "definition": "coverings for the hand made of leather, wool, or fabric, having separate sheaths for each finger",
+      "example": "She pulled on a pair of soft lined leather gloves to shield her hands from the icy freezing wind.",
+      "relatedForms": [
+        "glove"
+      ],
+      "collocations": [
+        "pair of gloves",
+        "leather gloves",
+        "winter gloves"
+      ],
+      "synonyms": [
+        "mittens",
+        "hand coverings"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "accessories"
+      ],
+      "translation": "قفازات",
+      "exampleArabic": "ارتدت زوجاً من القفازات الجلدية المبطنة الناعمة لحماية يديها من الرياح الجليدية القارسة."
+    },
+    {
+      "headword": "belt",
+      "pronunciation": "/belt/",
+      "partOfSpeech": "noun",
+      "definition": "a strip of leather or other material worn around the waist to support garments or for decoration",
+      "example": "A polished brass buckle complemented his formal black leather belt.",
+      "verbForms": {
+        "v1": "belt",
+        "v2": "belted",
+        "v3": "belted"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "leather belt",
+        "tighten one's belt",
+        "fasten a belt"
+      ],
+      "synonyms": [
+        "strap",
+        "sash",
+        "girdle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "clothing",
+        "accessories"
+      ],
+      "translation": "حزام (وسط)",
+      "exampleArabic": "أكمل الإبزيم النحاسي الملمع حزامه الجلدي الأسود الرسمي."
+    },
+    {
+      "headword": "jewelry",
+      "pronunciation": "/ˈdʒuː.əl.ri/",
+      "partOfSpeech": "noun",
+      "definition": "personal ornaments, such as necklaces, rings, or bracelets, made from precious metals and gems",
+      "example": "She wore minimal gold jewelry, letting the architectural lines of her gown take center stage.",
+      "relatedForms": [
+        "jewel",
+        "jeweler"
+      ],
+      "collocations": [
+        "fine jewelry",
+        "gold jewelry",
+        "wear jewelry"
+      ],
+      "synonyms": [
+        "adornment",
+        "gems",
+        "bijoux"
+      ],
+      "antonyms": [],
+      "tags": [
+        "accessories",
+        "luxury"
+      ],
+      "translation": "مجوهرات / حلي",
+      "exampleArabic": "ارتدت مجوهرات ذهبية ناعمة وبسيطة، تاركة الخطوط الهندسية لفستانها في صدارة المشهد."
+    },
+    {
+      "headword": "boutique",
+      "pronunciation": "/buːˈtiːk/",
+      "partOfSpeech": "noun",
+      "definition": "a small store selling fashionable clothes, designer apparel, or specialized luxury goods",
+      "example": "We visited an exclusive designer boutique on the pedestrian promenade to admire bespoke suits.",
+      "relatedForms": [],
+      "collocations": [
+        "fashion boutique",
+        "designer boutique",
+        "exclusive boutique"
+      ],
+      "synonyms": [
+        "specialty shop",
+        "store",
+        "parlor"
+      ],
+      "antonyms": [
+        "supermarket"
+      ],
+      "tags": [
+        "shopping",
+        "places"
+      ],
+      "translation": "بوتيك (متجر أزياء راقٍ)",
+      "exampleArabic": "زرنا بوتيكاً راقياً لمصممين في ممشى المشاة لمشاهدة البدلات المصممة حسب الطلب."
+    },
+    {
+      "headword": "fabric",
+      "pronunciation": "/ˈfæb.rɪk/",
+      "partOfSpeech": "noun",
+      "definition": "cloth or other material produced by weaving or knitting cotton, wool, silk, or other fibers",
+      "example": "This lightweight linen fabric breathes naturally, keeping travelers cool in humid tropical regions.",
+      "relatedForms": [],
+      "collocations": [
+        "delicate fabric",
+        "woven fabric",
+        "synthetic fabric"
+      ],
+      "synonyms": [
+        "textile",
+        "cloth",
+        "material"
+      ],
+      "antonyms": [],
+      "tags": [
+        "materials",
+        "textiles"
+      ],
+      "translation": "قماش / نسيج",
+      "exampleArabic": "هذا القماش الكتاني خفيف الوزن يسمح بالتنفس طبيعياً، مما يحافظ على انتعاش المسافرين في المناطق الاستوائية الرطبة."
+    },
+    {
+      "headword": "designer",
+      "pronunciation": "/dɪˈzaɪ.nər/",
+      "partOfSpeech": "noun",
+      "definition": "a person who plans the form, look, or workings of clothing or other products before they are made",
+      "example": "The famous fashion designer unveiled an innovative collection made entirely from recycled fabrics.",
+      "relatedForms": [
+        "design"
+      ],
+      "collocations": [
+        "fashion designer",
+        "designer clothes",
+        "designer label"
+      ],
+      "synonyms": [
+        "couturier",
+        "stylist",
+        "creator"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "fashion"
+      ],
+      "translation": "مصمم (مصمم أزياء)",
+      "exampleArabic": "كشف مصمم الأزياء الشهير عن تشكيلة مبتكرة مصنوعة بالكامل من أقمشة معاد تدويرها."
+    },
+    {
+      "headword": "brand",
+      "pronunciation": "/brænd/",
+      "partOfSpeech": "noun",
+      "definition": "a type of product manufactured by a particular company under a particular commercial name",
+      "example": "Consumers often prioritize this Italian brand because of its reputation for premium leatherwork.",
+      "verbForms": {
+        "v1": "brand",
+        "v2": "branded",
+        "v3": "branded"
+      },
+      "relatedForms": [
+        "branding"
+      ],
+      "collocations": [
+        "famous brand",
+        "brand name",
+        "luxury brand"
+      ],
+      "synonyms": [
+        "label",
+        "make",
+        "trademark"
+      ],
+      "antonyms": [],
+      "tags": [
+        "business",
+        "shopping"
+      ],
+      "translation": "علامة تجارية / ماركة",
+      "exampleArabic": "غالباً ما يفضل المستهلكون هذه الماركة الإيطالية بسبب سمعتها في المشغولات الجلدية الممتازة."
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Shopping for a Formal Event Outfit",
+      "titleArabic": "التسوق لشراء طقم ملابس لفعالية رسمية",
+      "setting": "A shopper consulting a sales assistant in an upscale clothing boutique",
+      "settingArabic": "متسوق يستشير بائعاً في بوتيك ملابس راقٍ",
+      "lines": [
+        {
+          "speaker": "Assistant",
+          "text": "Good afternoon! May I help you find a suitable outfit for a special occasion today?",
+          "translation": "مساء الخير! هل لي أن أساعدك في إيجاد طقم ملابس مناسب لمناسبة خاصة اليوم؟"
+        },
+        {
+          "speaker": "Shopper",
+          "text": "Good afternoon! I am looking for business formal attire for an upcoming corporate gala dinner.",
+          "translation": "مساء الخير! أنا أبحث عن زي رسمي لرجال الأعمال لحفل عشاء رسمي قادم للشركة."
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Certainly. We have a pure wool tailored blazer and matching trousers from a renowned Italian designer brand.",
+          "translation": "بكل تأكيد. لدينا بليزر صوف خالص مفصل وبنطال متناسق من علامة تجارية إيطالية شهيرة."
+        },
+        {
+          "speaker": "Shopper",
+          "text": "That looks very stylish. Which size do you recommend, and where is the fitting room?",
+          "translation": "هذا يبدو أنيقاً للغاية. أي مقاس تنصحني به، وأين تقع غرفة القياس؟"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "The fitting room is right behind that display. Try on this size 40 jacket; the fabric has a natural stretch.",
+          "translation": "غرفة القياس تقع مباشرة خلف منصة العرض تلك. جرب قياس هذه السترة مقاس 40؛ فالقماش يتميز بمرونة طبيعية."
+        },
+        {
+          "speaker": "Shopper",
+          "text": "The jacket fits well across the shoulders, but the sleeves feel slightly too tight around my wrists.",
+          "translation": "السترة تناسب كتفي تماماً، لكن الأكمام تبدو ضيقة قليلاً حول معصمي."
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Our in-house tailor can easily adjust the sleeve length and move the button for a perfect fit.",
+          "translation": "يمكن لخياطنا الداخلي تعديل طول الكم بسهولة ونقل الزر للحصول على مقاس مثالي."
+        },
+        {
+          "speaker": "Shopper",
+          "text": "Splendid! I will also take a plain white cotton shirt and a classic black leather belt.",
+          "translation": "رائع! سآخذ أيضاً قميصاً قطنياً أبيض سادة وحزاماً جلدياً أسود كلاسيكياً."
+        }
+      ],
+      "vocabularyUsed": [
+        "outfit",
+        "attire",
+        "wool",
+        "designer",
+        "brand",
+        "stylish",
+        "size",
+        "fitting room",
+        "try on",
+        "fabric",
+        "fit",
+        "sleeve",
+        "tight",
+        "button",
+        "plain",
+        "cotton",
+        "leather",
+        "belt",
+        "boutique"
+      ]
+    },
+    {
+      "title": "Casual Wardrobe and Summer Fabrics",
+      "titleArabic": "الملابس الكاجوال والأقمشة الصيفية الخفيفة",
+      "setting": "Two friends browsing racks of summer apparel in a trendy department store",
+      "settingArabic": "صديقان يتصفحان رفوف الملابس الصيفية في متجر أزياء عصري",
+      "lines": [
+        {
+          "speaker": "Layla",
+          "text": "Nadia, look at this lightweight floral pattern blouse! Is it pure silk or a synthetic blend?",
+          "translation": "يا نادية، انظري إلى هذه البلوزة خفيفة الوزن بنقشة الزهور! هل هي من الحرير الخالص أم مزيج اصطناعي؟"
+        },
+        {
+          "speaker": "Nadia",
+          "text": "The clothing label indicates it is 100% organic cotton. It looks remarkably fashionable and breezy.",
+          "translation": "يشير ملصق الملابس إلى أنها من القطن العضوي 100%. وتبدو مواكبة للموضة ومريحة للغاية."
+        },
+        {
+          "speaker": "Layla",
+          "text": "I prefer loose linen shirts for hot vacations. I dislike tight collars that constrict breathing in humid heat.",
+          "translation": "أفضل القمصان الكتانية الفضفاضة في العطلات الحارة. فأنا أكره الياقات الضيقة التي تعيق التنفس في الحرارة الرطبة."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "I agree! Are you going to buy these blue denim shorts? They would look great with a striped scarf.",
+          "translation": "أتفق معكِ! هل ستشترين هذا الشورت من قماش الدنيم الأزرق؟ سيبدو رائعاً مع وشاح مخطط."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Yes! Let's take these garments to the dressing room so I can try on both sizes.",
+          "translation": "نعم! دعنا نأخذ قطع الملابس هذه إلى غرفة القياس حتى أتمكن من تجربة كلا المقاسين."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "Don't forget to check whether the front zipper and side pocket seams are smooth and sturdy.",
+          "translation": "لا تنسي التحقق مما إذا كان السحاب الأمامي وخياطة الجيب الجانبي سلسة ومتينة."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Good point. This trendy boutique offers exceptional quality at reasonable prices.",
+          "translation": "نقطة جيدة. يقدم هذا البوتيك العصري جودة استثنائية بأسعار معقولة."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "Indeed! Casual wear should always combine comfort with an attractive aesthetic.",
+          "translation": "بالتأكيد! يجب أن تجمع الملابس الكاجوال دائماً بين الراحة والمظهر الجذاب."
+        }
+      ],
+      "vocabularyUsed": [
+        "pattern",
+        "silk",
+        "synthetic",
+        "clothing",
+        "cotton",
+        "fashionable",
+        "loose",
+        "linen",
+        "tight",
+        "collar",
+        "denim",
+        "striped",
+        "scarf",
+        "garment",
+        "dressing room",
+        "try on",
+        "zipper",
+        "pocket",
+        "trendy",
+        "boutique",
+        "casual wear"
+      ]
+    },
+    {
+      "title": "Selecting Vintage Accessories and Jewelry",
+      "titleArabic": "اختيار الإكسسوارات الكلاسيكية والمجوهرات",
+      "setting": "A shopper exploring vintage accessories in a specialty retro shop",
+      "settingArabic": "متسوق يستكشف الإكسسوارات الكلاسيكية في متجر أثري متخصص",
+      "lines": [
+        {
+          "speaker": "Clerk",
+          "text": "Welcome to our vintage apparel parlor! Are you looking for costume accessories or fine jewelry?",
+          "translation": "مرحباً بكم في صالون أزيائنا الكلاسيكية! هل تبحث عن إكسسوارات تنكرية أم مجوهرات راقية؟"
+        },
+        {
+          "speaker": "Customer",
+          "text": "I am searching for a pair of vintage leather gloves and perhaps a patterned silk pocket square.",
+          "translation": "أنا أبحث عن زوج من القفازات الجلدية الكلاسيكية وربما منديل جيب حريري منقوش."
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Look at this display cabinet. We have authentic lined gloves and a beautiful polka-dot scarf from the 1960s.",
+          "translation": "انظر إلى خزانة العرض هذه. لدينا قفازات مبطنة أصلية ووشاح منقط رائع يعود لستينيات القرن الماضي."
+        },
+        {
+          "speaker": "Customer",
+          "text": "That polka-dot pattern is magnificent! Does this hand-woven wool scarf match my dark overcoat?",
+          "translation": "تلك النقشة المنقطة بالدوائر رائعة حقاً! هل يتناسق هذا الوشاح الصوفي المنسوج يدوياً مع معطفي الداكن؟"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "It pairs wonderfully. Notice the understated plaid weave; it is subtle yet unmistakably stylish.",
+          "translation": "إنه يتناسق بشكل رائع. لاحظ نسيج الكاروهات الرصين؛ فهو ناعم ولكنه أنيق دون أدنى شك."
+        },
+        {
+          "speaker": "Customer",
+          "text": "Do you also stock thermal underwear and wool socks for chilly winter travel?",
+          "translation": "هل تتوفر لديكم أيضاً ملابس داخلية حرارية وجوارب صوفية للسفر في الشتاء القارس؟"
+        },
+        {
+          "speaker": "Clerk",
+          "text": "Yes, we carry pure wool socks in aisle four, right beside our military uniform collection.",
+          "translation": "نعم، لدينا جوارب صوفية خالصة في الممر رقم أربعة، بجانب مجموعة الزي العسكري الرسمي تماماً."
+        },
+        {
+          "speaker": "Customer",
+          "text": "Excellent! I will take the gloves, the socks, and the vintage scarf.",
+          "translation": "ممتاز! سآخذ القفازات، والجوارب، والوشاح الكلاسيكي."
+        }
+      ],
+      "vocabularyUsed": [
+        "vintage",
+        "apparel",
+        "costume",
+        "jewelry",
+        "leather",
+        "gloves",
+        "silk",
+        "polka-dot",
+        "scarf",
+        "wool",
+        "plaid",
+        "stylish",
+        "underwear",
+        "socks",
+        "uniform"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Evolution of Fabrics: From Natural to Synthetic",
+      "titleArabic": "تطور صناعة الأقمشة: من الألياف الطبيعية إلى الأنسجة الصناعية",
+      "kind": "informative-essay",
+      "text": "The textile industry has evolved dramatically, offering modern shoppers an astonishing array of fabrics. Natural fibers have adorned humanity for centuries: breathable cotton remains the world's most versatile staple, while insulating wool provides supreme warmth during harsh winters. Luxurious pure silk reflects centuries of artisanal mastery, and durable leather offers timeless resilience for boots and jackets. In warm tropical climates, lightweight linen ensures unmatched cooling comfort. Conversely, modern technological research has introduced high-performance synthetic fibers that wick moisture, resist wrinkles, and stretch effortlessly. Choosing the right fabric ensures that a garment delivers lasting comfort, durability, and practical elegance.",
+      "translation": "تطورت صناعة النسيج بشكل كبير، مما أتاح للمتسوقين المعاصرين تشكيلة مذهلة من الأقمشة. لقد زينت الألياف الطبيعية البشرية لقرون: فالقطن الطبيعي القابل للتنفس يظل القماش الأكثر تنوعاً في العالم، بينما يوفر الصوف العازل دفئاً فائقاً خلال فصول الشتاء القاسية. ويعكس الحرير الخالص الفاخر قروناً من الإتقان الحرفي، ويوفر الجلد المتين متانة خالدة للأحذية والسترات. وفي المناخات الاستوائية، يضمن الكتان الخفيف راحة لا مثيل لها. وعلى العكس من ذلك، أدخلت الأبحاث التكنولوجية أليافاً اصطناعية عالية الأداء تمتص الرطوبة وتقاوم التجاعيد. ويضمن اختيار القماش المناسب راحة وأناقة عملية تدوم طويلاً.",
+      "vocabularyUsed": [
+        "fabric",
+        "cotton",
+        "wool",
+        "silk",
+        "leather",
+        "linen",
+        "synthetic",
+        "garment"
+      ]
+    },
+    {
+      "title": "Finding the Perfect Fit: Shopping Etiquette and Sizes",
+      "titleArabic": "إيجاد المقاس المثالي: أصول التسوق وتجربة الملابس",
+      "kind": "shopping-guide",
+      "text": "Finding clothes that fit harmoniously requires patience and careful evaluation in the fitting room. Shoppers should never assume that every brand shares identical sizing standards; a medium in one designer label might feel loose, while in another boutique it feels excessively tight. When trying on trousers or jackets, test movements: raise your arms to verify sleeve length and check that buttons fasten without straining. Inspect seams, ensure that the front zipper operates smoothly, and verify that pockets lie flat. Choosing tailored garments that balance comfort with structure enhances confidence, ensuring that your daily attire projects effortless professional poise.",
+      "translation": "يتطلب العثور على ملابس تلائم الجسم بشكل متناسق الصبر والتقييم الدقيق في غرفة القياس. ويجب ألا يفترض المتسوقون أبداً أن جميع الماركات تتبع معايير مقاسات متطابقة؛ فالمقاس المتوسط في علامة مصمم قد يبدو فضفاضاً، بينما في بوتيك آخر يبدو ضيقاً للغاية. وعند قياس البناطيل أو السترات، اختبر حركاتك: ارفع ذراعيك للتحقق من طول الكم وتأكد من إغلاق الأزرار دون شد. وافحص الدرزات، وتأكد من عمل السحاب بسلاسة، وأن الجيوب مستوية. ويعزز اختيار الملابس المفصلة التي توازن بين الراحة والأناقة الثقة بالنفس، مما يضمن أن يعكس هندامك اليومي وقاراً مهنياً واثقاً.",
+      "vocabularyUsed": [
+        "fit",
+        "fitting room",
+        "brand",
+        "designer",
+        "loose",
+        "boutique",
+        "tight",
+        "sleeve",
+        "button",
+        "zipper",
+        "pocket",
+        "attire"
+      ]
+    },
+    {
+      "title": "Expressing Individuality: Patterns, Trends, and Vintage Style",
+      "titleArabic": "التعبير عن الشخصية: النقشات، وصيحات الموضة، والأسلوب الكلاسيكي",
+      "kind": "fashion-reflection",
+      "text": "Personal fashion serves as an outward canvas through which individuals express identity, creativity, and cultural belonging. While minimalist dressers gravitate toward plain monochrome apparel and clean tailored lines, bold trendsetters embrace vibrant patterns, such as classic striped jerseys, rustic plaid flannels, or playful polka-dot dresses. Meanwhile, the growing passion for vintage fashion encourages shoppers to explore historical garments, retro jewelry, and second-hand leather accessories that tell authentic stories. Blending casual wear with formal wear elements allows individuals to cultivate a unique, stylish wardrobe that transcends fleeting seasonal trends.",
+      "translation": "تعمل الموضة الشخصية كلوحة خارجية يعبر من خلالها الأفراد عن هويتهم وإبداعهم وانتمائهم الثقافي. فبينما يميل أصحاب الذوق البسيط إلى الملابس السادة أحادية اللون والخطوط المفصلة الواضحة، يتبنى رواد الموضة الجريئون نقشات نابضة بالحياة، مثل القمصان المخططة الكلاسيكية، أو قمصان الكاروهات الريفية، أو الفساتين المنقطة بالدوائر. وفي الوقت نفسه، يشجع الشغف المتزايد بالأزياء الكلاسيكية المتسوقين على استكشاف الملابس التاريخية، والمجوهرات القديمة، والإكسسوارات الجلدية التي تروي قصصاً أصيلة. ويمكّن مزج عناصر الملابس الكاجوال بالملابس الرسمية الأفراد من بناء خزانة أنيقة تتجاوز صيحات الموضة الموسمية العابرة.",
+      "vocabularyUsed": [
+        "plain",
+        "apparel",
+        "pattern",
+        "striped",
+        "plaid",
+        "polka-dot",
+        "vintage",
+        "garment",
+        "jewelry",
+        "leather",
+        "casual wear",
+        "formal wear",
+        "stylish"
+      ]
+    }
+  ]
+}

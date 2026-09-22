@@ -1,0 +1,978 @@
+# Day 21 Data: Holiday Plans
+# Topic: Future plans and intentions
+# Grammar: ["Be going to"]
+
+vocab_day21 = [
+    {
+        "headword": "vacation",
+        "pronunciation": "/veɪˈkeɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "an extended period of leisure and recreation, especially one spent away from home or traveling",
+        "example": "We are going to spend our summer vacation exploring national parks and scenic lakes.",
+        "verbForms": { "v1": "vacation", "v2": "vacationed", "v3": "vacationed" },
+        "relatedForms": ["vacationer"],
+        "collocations": ["summer vacation", "take a vacation", "go on vacation"],
+        "synonyms": ["holiday", "break", "getaway"],
+        "antonyms": ["work", "routine"],
+        "tags": ["travel", "holidays"],
+        "translation": "عطلة / إجازة",
+        "exampleArabic": "نحن ذاهبون لقضاء عطلتنا الصيفية في استكشاف الحدائق الوطنية والبحيرات الطبيعية."
+    },
+    {
+        "headword": "resort",
+        "pronunciation": "/rɪˈzɔːt/",
+        "partOfSpeech": "noun",
+        "definition": "a place that is a popular destination for vacations or recreation, typically offering lodging and amenities",
+        "example": "The seaside resort offers private swimming pools, beachfront dining, and spa facilities.",
+        "verbForms": { "v1": "resort", "v2": "resorted", "v3": "resorted" },
+        "relatedForms": [],
+        "collocations": ["beach resort", "luxury resort", "mountain resort"],
+        "synonyms": ["retreat", "holiday center", "spa"],
+        "antonyms": [],
+        "tags": ["travel", "accommodation"],
+        "translation": "منتجع سياحي",
+        "exampleArabic": "يقدم المنتجع الساحلي مسابح خاصة، وتناول الطعام على الشاطئ، ومرافق صحية."
+    },
+    {
+        "headword": "tourism",
+        "pronunciation": "/ˈtʊə.rɪ.zəm/",
+        "partOfSpeech": "noun",
+        "definition": "the commercial organization and operation of vacations and visits to places of interest",
+        "example": "Sustainable tourism contributes significantly to the local economy while protecting heritage.",
+        "relatedForms": ["tourist", "touristic"],
+        "collocations": ["boost tourism", "international tourism", "eco tourism"],
+        "synonyms": ["travel industry", "sightseeing"],
+        "antonyms": [],
+        "tags": ["travel", "economy"],
+        "translation": "سياحة",
+        "exampleArabic": "تسهم السياحة المستدامة بشكل كبير في الاقتصاد المحلي مع حماية التراث."
+    },
+    {
+        "headword": "tourist",
+        "pronunciation": "/ˈtʊə.rɪst/",
+        "partOfSpeech": "noun",
+        "definition": "a person who travels to a place for pleasure, curiosity, or culture",
+        "example": "Thousands of foreign tourists visit the historic palace and gardens every weekend.",
+        "relatedForms": ["tourism", "touristy"],
+        "collocations": ["tourist attraction", "foreign tourist", "tourist guide"],
+        "synonyms": ["traveler", "visitor", "sightseer"],
+        "antonyms": ["local", "resident"],
+        "tags": ["travel", "people"],
+        "translation": "سائح",
+        "exampleArabic": "يزور آلاف السياح الأجانب القصر التاريخي والحدائق في كل عطلة نهاية أسبوع."
+    },
+    {
+        "headword": "sightseer",
+        "pronunciation": "/ˈsaɪtˌsiː.ər/",
+        "partOfSpeech": "noun",
+        "definition": "a person who visits places of interest in a city or region as a tourist",
+        "example": "Eager sightseers gathered on the observation deck to photograph the sunrise over the bay.",
+        "relatedForms": ["sightseeing"],
+        "collocations": ["eager sightseer", "group of sightseers"],
+        "synonyms": ["tourist", "sight visitor"],
+        "antonyms": [],
+        "tags": ["travel", "people"],
+        "translation": "متفرج / زائر المعالم السياحية",
+        "exampleArabic": "تجمع المتفرجون المتحمسون على منصة المراقبة لتصوير شروق الشمس فوق الخليج."
+    },
+    {
+        "headword": "itinerary",
+        "pronunciation": "/aɪˈtɪn.ər.ər.i/",
+        "partOfSpeech": "noun",
+        "definition": "a planned route, schedule, or journey detailing dates, destinations, and activities",
+        "example": "Our detailed travel itinerary includes a boat cruise, three museum tours, and a mountain hike.",
+        "relatedForms": [],
+        "collocations": ["travel itinerary", "detailed itinerary", "plan an itinerary"],
+        "synonyms": ["schedule", "route", "travel plan"],
+        "antonyms": [],
+        "tags": ["travel", "planning"],
+        "translation": "برنامج الرحلة / مسار السفر",
+        "exampleArabic": "يتضمن برنامج رحلتنا المفصل جولة بحرية بالقارب، وثلاث جولات في المتاحف، ونزهة جبلية."
+    },
+    {
+        "headword": "scenery",
+        "pronunciation": "/ˈsiː.nər.i/",
+        "partOfSpeech": "noun",
+        "definition": "the natural features of a landscape considered in terms of their visual appearance and beauty",
+        "example": "The train passed through breathtaking mountain scenery covered in alpine pine trees.",
+        "relatedForms": ["scenic"],
+        "collocations": ["breathtaking scenery", "stunning scenery", "mountain scenery"],
+        "synonyms": ["landscape", "views", "panorama"],
+        "antonyms": [],
+        "tags": ["nature", "travel"],
+        "translation": "مناظر طبيعية خلابة",
+        "exampleArabic": "مر القطار عبر مناظر جبلية خلابة تغطيها أشجار الصنوبر الألبية."
+    },
+    {
+        "headword": "landscape",
+        "pronunciation": "/ˈlænd.skeɪp/",
+        "partOfSpeech": "noun",
+        "definition": "all the visible features of an area of countryside or land, often considered in terms of aesthetic appeal",
+        "example": "The volcanic landscape of the island features dramatic black sand beaches and rocky cliffs.",
+        "relatedForms": ["landscaping"],
+        "collocations": ["natural landscape", "rugged landscape", "urban landscape"],
+        "synonyms": ["terrain", "countryside", "topography"],
+        "antonyms": [],
+        "tags": ["nature", "geography"],
+        "translation": "تضاريس / مشهد طبيعي",
+        "exampleArabic": "تتميز التضاريس البركانية للجزيرة بشواطئ رملية سوداء مذهلة ومنحدرات صخرية."
+    },
+    {
+        "headword": "excursion",
+        "pronunciation": "/ɪkˈskɜː.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "a short journey or trip, especially one taken as a leisure activity",
+        "example": "We booked a full-day boat excursion to explore the coral reefs around the tropical archipelago.",
+        "relatedForms": [],
+        "collocations": ["day excursion", "boat excursion", "go on an excursion"],
+        "synonyms": ["outing", "day trip", "jaunt"],
+        "antonyms": [],
+        "tags": ["travel", "activities"],
+        "translation": "نزهة استكشافية / رحلة قصيرة",
+        "exampleArabic": "حجزنا رحلة بحرية ليوم كامل لاستكشاف الشعاب المرجانية حول الأرخبيل الاستوائي."
+    },
+    {
+        "headword": "sightseeing",
+        "pronunciation": "/ˈsaɪtˌsiː.ɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "the activity of visiting places of interest in a particular location",
+        "example": "We are going to do lots of sightseeing in Rome before heading south to Naples.",
+        "relatedForms": ["sightsee", "sightseer"],
+        "collocations": ["go sightseeing", "sightseeing tour", "city sightseeing"],
+        "synonyms": ["touring", "visiting landmarks"],
+        "antonyms": [],
+        "tags": ["travel", "activities"],
+        "translation": "مشاهدة المعالم السياحية",
+        "exampleArabic": "نحن نعتزم القيام بالكثير من جولات مشاهدة المعالم في روما قبل التوجه جنوباً إلى نابولي."
+    },
+    {
+        "headword": "guidebook",
+        "pronunciation": "/ˈɡaɪd.bʊk/",
+        "partOfSpeech": "noun",
+        "definition": "a book of information about a place designed for the use of visitors or tourists",
+        "example": "According to the guidebook, this traditional family bakery has operated since 1880.",
+        "relatedForms": [],
+        "collocations": ["travel guidebook", "consult a guidebook", "pocket guidebook"],
+        "synonyms": ["travel guide", "handbook", "manual"],
+        "antonyms": [],
+        "tags": ["travel", "books"],
+        "translation": "دليل سياحي (كتيب إرشادي)",
+        "exampleArabic": "وفقاً للدليل السياحي، فإن هذا المخبز العائلي التقليدي يعمل منذ عام 1880."
+    },
+    {
+        "headword": "souvenir",
+        "pronunciation": "/ˌsuː.vənˈɪər/",
+        "partOfSpeech": "noun",
+        "definition": "a thing that is kept as a reminder of a person, place, or memorable event",
+        "example": "She bought a miniature porcelain windmill as a keepsake souvenir of her trip to Amsterdam.",
+        "relatedForms": [],
+        "collocations": ["buy a souvenir", "souvenir shop", "cherished souvenir"],
+        "synonyms": ["memento", "keepsake", "token"],
+        "antonyms": [],
+        "tags": ["travel", "shopping"],
+        "translation": "تذكار / هدية تذكارية",
+        "exampleArabic": "اشترت مجسماً صغيراً لطاحونة هواء من الخزف كتذكار لرحلتها إلى أمستردام."
+    },
+    {
+        "headword": "sunscreen",
+        "pronunciation": "/ˈsʌn.skriːn/",
+        "partOfSpeech": "noun",
+        "definition": "a cream or lotion rubbed onto the skin to protect it from the sun's ultraviolet rays",
+        "example": "You should apply waterproof sunscreen every two hours when sunbathing on the beach.",
+        "relatedForms": [],
+        "collocations": ["apply sunscreen", "high protection sunscreen", "waterproof sunscreen"],
+        "synonyms": ["sunblock", "suntan lotion"],
+        "antonyms": [],
+        "tags": ["health", "beach"],
+        "translation": "واقي شمس",
+        "exampleArabic": "ينبغي عليك وضع واقي شمس مقاوم للماء كل ساعتين عند الاستلقاء تحت الشمس على الشاطئ."
+    },
+    {
+        "headword": "swimsuit",
+        "pronunciation": "/ˈswɪm.suːt/",
+        "partOfSpeech": "noun",
+        "definition": "a garment worn for swimming or sunbathing",
+        "example": "Don't forget to pack your swimsuit and beach towel for our trip to the coastal resort.",
+        "relatedForms": [],
+        "collocations": ["pack a swimsuit", "wear a swimsuit"],
+        "synonyms": ["bathing suit", "swimming costume"],
+        "antonyms": [],
+        "tags": ["clothing", "beach"],
+        "translation": "بدلة سباحة / مايوه",
+        "exampleArabic": "لا تنسَ حزم بدلة السباحة ومنشفة الشاطئ لرحلتنا إلى المنتجع الساحلي."
+    },
+    {
+        "headword": "luggage",
+        "pronunciation": "/ˈlʌɡ.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "suitcases or other bags in which to pack personal belongings for traveling",
+        "example": "The bellboy assisted the family by loading their heavy luggage onto the luggage trolley.",
+        "relatedForms": [],
+        "collocations": ["pack luggage", "excess luggage", "piece of luggage"],
+        "synonyms": ["baggage", "suitcases", "gear"],
+        "antonyms": [],
+        "tags": ["travel", "objects"],
+        "translation": "أمتعة / حقائب السفر",
+        "exampleArabic": "ساعد عامل الحقائب العائلة بتحميل أمتعتهم الثقيلة على عربة الأمتعة."
+    },
+    {
+        "headword": "reservation",
+        "pronunciation": "/ˌrez.əˈveɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "an arrangement to secure accommodations, transportation, or a table in advance",
+        "example": "We made an online reservation for a seaside villa three months before the holiday peak.",
+        "relatedForms": ["reserve", "reserved"],
+        "collocations": ["make a reservation", "confirm a reservation", "cancel a reservation"],
+        "synonyms": ["booking", "order", "pre-booking"],
+        "antonyms": [],
+        "tags": ["travel", "services"],
+        "translation": "حجز مسبق",
+        "exampleArabic": "قمنا بحجز مسبق عبر الإنترنت لفيلا ساحلية قبل ثلاثة أشهر من ذروة موسم العطلات."
+    },
+    {
+        "headword": "booking",
+        "pronunciation": "/ˈbʊk.ɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "an act of reserving accommodations, travel, or entertainment",
+        "example": "Please show your booking confirmation reference number at the reception desk.",
+        "relatedForms": ["book", "booked"],
+        "collocations": ["advance booking", "hotel booking", "booking reference"],
+        "synonyms": ["reservation", "appointment"],
+        "antonyms": [],
+        "tags": ["travel", "services"],
+        "translation": "حجز (تأكيد حجز)",
+        "exampleArabic": "يرجى إبراز الرقم المرجعي لتأكيد حجزك لدى مكتب الاستقبال."
+    },
+    {
+        "headword": "brochure",
+        "pronunciation": "/ˈbrəʊ.ʃər/",
+        "partOfSpeech": "noun",
+        "definition": "a small booklet containing pictures and information about a product, service, or holiday package",
+        "example": "The travel agency gave us a colorful brochure advertising Mediterranean island cruises.",
+        "relatedForms": [],
+        "collocations": ["travel brochure", "holiday brochure", "glossy brochure"],
+        "synonyms": ["pamphlet", "booklet", "leaflet"],
+        "antonyms": [],
+        "tags": ["travel", "advertising"],
+        "translation": "كتيب إعلاني / منشور سياحي",
+        "exampleArabic": "أعطتنا وكالة السفر كتيباً سياحياً ملوناً يعلن عن رحلات بحرية في جزر البحر الأبيض المتوسط."
+    },
+    {
+        "headword": "agency",
+        "pronunciation": "/ˈeɪ.dʒən.si/",
+        "partOfSpeech": "noun",
+        "definition": "a business or organization providing a specific service on behalf of another",
+        "example": "We booked our complete flight and hotel package through a licensed travel agency.",
+        "relatedForms": ["agent"],
+        "collocations": ["travel agency", "booking agency", "local agency"],
+        "synonyms": ["bureau", "firm", "service provider"],
+        "antonyms": [],
+        "tags": ["business", "travel"],
+        "translation": "وكالة (وكالة سفر)",
+        "exampleArabic": "حجزنا باقة الطيران والفندق الكاملة من خلال وكالة سفر مرخصة."
+    },
+    {
+        "headword": "explore",
+        "pronunciation": "/ɪkˈsplɔːr/",
+        "partOfSpeech": "verb",
+        "definition": "to travel through an unfamiliar area in order to learn about it or discover new features",
+        "example": "Tomorrow morning we are going to explore the historic winding streets of the old town.",
+        "verbForms": { "v1": "explore", "v2": "explored", "v3": "explored" },
+        "relatedForms": ["exploration", "explorer", "exploratory"],
+        "collocations": ["explore the area", "explore nature", "eager to explore"],
+        "synonyms": ["discover", "investigate", "scout"],
+        "antonyms": [],
+        "tags": ["actions", "travel"],
+        "translation": "يستكشف / يجوب",
+        "exampleArabic": "في صباح الغد نعتزم استكشاف الشوارع التاريخية المتعرجة للمدينة القديمة."
+    },
+    {
+        "headword": "unwind",
+        "pronunciation": "/ʌnˈwaɪnd/",
+        "partOfSpeech": "verb",
+        "definition": "to release tension and relax after a period of work, exertion, or stress",
+        "example": "A peaceful lakeside holiday is the ideal setting to unwind after months of intense work.",
+        "verbForms": { "v1": "unwind", "v2": "unwound", "v3": "unwound" },
+        "relatedForms": [],
+        "collocations": ["unwind after work", "unwind with music", "chance to unwind"],
+        "synonyms": ["de-stress", "recharge", "loosen up"],
+        "antonyms": ["stress", "tense"],
+        "tags": ["relaxation", "health"],
+        "translation": "يريح أعصابه / يستجم",
+        "exampleArabic": "تعد العطلة الهادئة بجانب البحيرة بيئة مثالية للاستجمام وإراحة الأعصاب بعد شهور من العمل المكثف."
+    },
+    {
+        "headword": "sunbathe",
+        "pronunciation": "/ˈsʌn.beɪð/",
+        "partOfSpeech": "verb",
+        "definition": "to sit or lie in the sunshine, especially to get a suntan or enjoy the warmth",
+        "example": "Guests love to sunbathe on comfortable lounge chairs beside the hotel infinity pool.",
+        "verbForms": { "v1": "sunbathe", "v2": "sunbathed", "v3": "sunbathed" },
+        "relatedForms": ["sunbather", "sunbathing"],
+        "collocations": ["sunbathe on the beach", "sunbathe safely"],
+        "synonyms": ["tan", "bask"],
+        "antonyms": [],
+        "tags": ["beach", "relaxation"],
+        "translation": "يأخذ حمام شمس",
+        "exampleArabic": "يحب الضيوف أخذ حمام شمس على مقاعد الاستلقاء المريحة بجانب مسبح الفندق اللامتناهي."
+    },
+    {
+        "headword": "hike",
+        "pronunciation": "/haɪk/",
+        "partOfSpeech": "verb",
+        "definition": "to walk for a long distance, especially across country or along forest and mountain paths",
+        "example": "We are going to hike along the scenic alpine trail up to the emerald glacial lake.",
+        "verbForms": { "v1": "hike", "v2": "hiked", "v3": "hiked" },
+        "relatedForms": ["hiker", "hiking"],
+        "collocations": ["hike up the mountain", "go on a hike", "strenuous hike"],
+        "synonyms": ["trek", "walk", "tramp"],
+        "antonyms": [],
+        "tags": ["outdoors", "sports"],
+        "translation": "يتنزه مشياً في الطبيعة / يسير مسافات طويلة",
+        "exampleArabic": "نحن نعتزم السير في مسار ألبيني رائع وصولاً إلى البحيرة الجليدية الزمردية."
+    },
+    {
+        "headword": "trek",
+        "pronunciation": "/trek/",
+        "partOfSpeech": "verb",
+        "definition": "to make an arduous journey on foot through wilderness or mountainous terrain",
+        "example": "Adventuresome backpackers trek through the Himalayas to witness magnificent mountain sunrises.",
+        "verbForms": { "v1": "trek", "v2": "trekked", "v3": "trekked" },
+        "relatedForms": ["trekker", "trekking"],
+        "collocations": ["trek across", "mountain trek", "trek through the jungle"],
+        "synonyms": ["hike", "march", "traverse"],
+        "antonyms": [],
+        "tags": ["outdoors", "adventure"],
+        "translation": "يرتحل مشياً في تضاريس وعرة",
+        "exampleArabic": "يرتحل الرحالة المغامرون مشياً عبر جبال الهيمالايا لمشاهدة شروق الشمس الجبلي الرائع."
+    },
+    {
+        "headword": "camp",
+        "pronunciation": "/kæmp/",
+        "partOfSpeech": "verb",
+        "definition": "to live in a tent or temporary shelter, especially on vacation in the countryside",
+        "example": "We are going to camp near the clear river where we can hear the water flowing at night.",
+        "verbForms": { "v1": "camp", "v2": "camped", "v3": "camped" },
+        "relatedForms": ["camper", "camping"],
+        "collocations": ["camp out", "camp overnight", "go camping"],
+        "synonyms": ["bivouac", "encamp", "pitch a tent"],
+        "antonyms": [],
+        "tags": ["outdoors", "activities"],
+        "translation": "يخيّم / يعسكر في الطبيعة",
+        "exampleArabic": "نحن ذاهبون للتخييم بالقرب من النهر الصافي حيث يمكننا سماع تدفق المياه ليلاً."
+    },
+    {
+        "headword": "campsite",
+        "pronunciation": "/ˈkæmp.saɪt/",
+        "partOfSpeech": "noun",
+        "definition": "a place used for camping, often with facilities like water, electricity, and showers",
+        "example": "The forest campsite provides clean drinking water, fire pits, and shaded tent areas.",
+        "relatedForms": [],
+        "collocations": ["pitch at a campsite", "book a campsite", "campsite amenities"],
+        "synonyms": ["campground", "camping ground"],
+        "antonyms": [],
+        "tags": ["outdoors", "travel"],
+        "translation": "موقع التخييم / مخيّم",
+        "exampleArabic": "يوفر موقع التخييم في الغابة مياه شرب نظيفة ومواقد للنار ومناطق مظللة للخيام."
+    },
+    {
+        "headword": "tent",
+        "pronunciation": "/tent/",
+        "partOfSpeech": "noun",
+        "definition": "a portable shelter of canvas or nylon fabric supported by poles and ropes",
+        "example": "It took us fifteen minutes to pitch our waterproof tent before the evening rain began.",
+        "relatedForms": [],
+        "collocations": ["pitch a tent", "put up a tent", "two-person tent"],
+        "synonyms": ["shelter", "canopy", "bivouac"],
+        "antonyms": [],
+        "tags": ["outdoors", "equipment"],
+        "translation": "خيمة",
+        "exampleArabic": "استغرق منا الأمر خمس عشرة دقيقة لنصب خيمتنا المقاومة للماء قبل أن يبدأ مطر المساء."
+    },
+    {
+        "headword": "campfire",
+        "pronunciation": "/ˈkæmpˌfaɪər/",
+        "partOfSpeech": "noun",
+        "definition": "an open-air fire in a camp, used for cooking, warmth, and social gathering",
+        "example": "Campers gathered around the crackling campfire to roast marshmallows and tell stories.",
+        "relatedForms": [],
+        "collocations": ["build a campfire", "sit around the campfire", "extinguish the campfire"],
+        "synonyms": ["bonfire", "open fire"],
+        "antonyms": [],
+        "tags": ["outdoors", "social"],
+        "translation": "نار المخيم",
+        "exampleArabic": "تجمع المخيمون حول نار المخيم المتفرقعة لتحميص المارشميلو وسرد الحكايات."
+    },
+    {
+        "headword": "seaside",
+        "pronunciation": "/ˈsiː.saɪd/",
+        "partOfSpeech": "noun",
+        "definition": "a place by the sea, especially where people go for vacations and recreation",
+        "example": "Every August, families flock to the pleasant seaside to enjoy swimming and fresh ocean breezes.",
+        "relatedForms": [],
+        "collocations": ["by the seaside", "seaside town", "seaside resort"],
+        "synonyms": ["coast", "seashore", "beachfront"],
+        "antonyms": ["inland"],
+        "tags": ["nature", "travel"],
+        "translation": "ساحل البحر / شاطئ البحر",
+        "exampleArabic": "في كل شهر أغسطس، تتوافد العائلات إلى ساحل البحر اللطيف للاستمتاع بالسباحة ونسيم المحيط العليل."
+    },
+    {
+        "headword": "beach",
+        "pronunciation": "/biːtʃ/",
+        "partOfSpeech": "noun",
+        "definition": "a strip of land covered with sand or pebbles along the edge of a sea, lake, or river",
+        "example": "Children built elaborate sandcastles on the golden beach while their parents relaxed under umbrellas.",
+        "relatedForms": [],
+        "collocations": ["sandy beach", "pebble beach", "go to the beach"],
+        "synonyms": ["shore", "strand", "coast"],
+        "antonyms": [],
+        "tags": ["nature", "beach"],
+        "translation": "شاطئ / بلاج",
+        "exampleArabic": "بنى الأطفال قلاعاً رملية متقنة على الشاطئ الذهبي بينما استرخى آباؤهم تحت المظلات."
+    },
+    {
+        "headword": "island",
+        "pronunciation": "/ˈaɪ.lənd/",
+        "partOfSpeech": "noun",
+        "definition": "a piece of land entirely surrounded by water",
+        "example": "The ferry departs every hour to transport visitors to the picturesque volcanic island.",
+        "relatedForms": ["islander"],
+        "collocations": ["tropical island", "remote island", "island hopping"],
+        "synonyms": ["isle", "atoll", "archipelago"],
+        "antonyms": ["mainland"],
+        "tags": ["geography", "travel"],
+        "translation": "جزيرة",
+        "exampleArabic": "تغادر العبّارة كل ساعة لنقل الزوار إلى الجزيرة البركانية الخلابة."
+    },
+    {
+        "headword": "mountain",
+        "pronunciation": "/ˈmaʊn.tɪn/",
+        "partOfSpeech": "noun",
+        "definition": "a large natural elevation of the earth's surface rising abruptly from the surrounding level",
+        "example": "Snow-capped mountain peaks framed the horizon above the peaceful green valley.",
+        "relatedForms": ["mountainous", "mountaineer"],
+        "collocations": ["climb a mountain", "mountain range", "mountain peak"],
+        "synonyms": ["peak", "height", "alp"],
+        "antonyms": ["valley", "plain"],
+        "tags": ["nature", "geography"],
+        "translation": "جبل",
+        "exampleArabic": "أحاطت قمم الجبال المغطاة بالثلوج بالأفق فوق الوادي الأخضر الهادئ."
+    },
+    {
+        "headword": "lake",
+        "pronunciation": "/leɪk/",
+        "partOfSpeech": "noun",
+        "definition": "a large body of water surrounded by land",
+        "example": "We rented a small wooden rowboat and drifted across the calm, crystalline lake.",
+        "relatedForms": [],
+        "collocations": ["freshwater lake", "lakeside cottage", "serene lake"],
+        "synonyms": ["loch", "pond", "reservoir"],
+        "antonyms": [],
+        "tags": ["nature", "geography"],
+        "translation": "بحيرة",
+        "exampleArabic": "استأجرنا قارباً خشبياً صغيراً للتجديف وانجرفنا عبر البحيرة البلورية الهادئة."
+    },
+    {
+        "headword": "forest",
+        "pronunciation": "/ˈfɒr.ɪst/",
+        "partOfSpeech": "noun",
+        "definition": "a large area covered chiefly with trees and undergrowth",
+        "example": "The ancient pine forest provides a shaded sanctuary for wildlife and peaceful woodland hikers.",
+        "relatedForms": ["forestry", "forested"],
+        "collocations": ["dense forest", "rain forest", "pine forest"],
+        "synonyms": ["woods", "woodland", "jungle"],
+        "antonyms": [],
+        "tags": ["nature", "trees"],
+        "translation": "غابة",
+        "exampleArabic": "توفر غابة الصنوبر القديمة ملاذاً مظللاً للحياة البرية والمتنزهين في هدوء."
+    },
+    {
+        "headword": "waterfall",
+        "pronunciation": "/ˈwɔː.tə.fɔːl/",
+        "partOfSpeech": "noun",
+        "definition": "a cascade of water falling from a height, formed when a river or stream flows over a precipice",
+        "example": "The magnificent waterfall plunged eighty meters into a roaring, mist-filled canyon pool.",
+        "relatedForms": [],
+        "collocations": ["roaring waterfall", "cascade of water", "waterfall trail"],
+        "synonyms": ["cascade", "cataract", "chute"],
+        "antonyms": [],
+        "tags": ["nature", "travel"],
+        "translation": "شلال",
+        "exampleArabic": "هوى الشلال المهيب من ارتفاع ثمانين متراً في بركة وادي هادرة تغمرها سحب الرذاذ."
+    },
+    {
+        "headword": "abroad",
+        "pronunciation": "/əˈbrɔːd/",
+        "partOfSpeech": "adverb",
+        "definition": "in or to a foreign country or countries",
+        "example": "Next spring, my sister is going to study abroad at a renowned art university in Florence.",
+        "relatedForms": [],
+        "collocations": ["travel abroad", "study abroad", "live abroad"],
+        "synonyms": ["overseas", "in foreign lands"],
+        "antonyms": ["domestically", "at home"],
+        "tags": ["travel", "movement"],
+        "translation": "في الخارج / إلى بلد أجنبي",
+        "exampleArabic": "في الربيع القادم، تنوي أختي الدراسة في الخارج بجامعة فنون شهيرة في فلورنسا."
+    },
+    {
+        "headword": "overseas",
+        "pronunciation": "/ˌəʊ.vəˈsiːz/",
+        "partOfSpeech": "adverb",
+        "definition": "in or to a foreign country, especially one across the sea",
+        "example": "Many young professionals seek job opportunities overseas to broaden their cultural horizons.",
+        "relatedForms": [],
+        "collocations": ["work overseas", "travel overseas", "overseas market"],
+        "synonyms": ["abroad", "internationally"],
+        "antonyms": ["domestic"],
+        "tags": ["travel", "geography"],
+        "translation": "ما وراء البحار / في بلاد أجنبية",
+        "exampleArabic": "يبحث العديد من المهنيين الشباب عن فرص عمل وراء البحار لتوسيع آفاقهم الثقافية."
+    },
+    {
+        "headword": "upcoming",
+        "pronunciation": "/ˈʌpˌkʌm.ɪŋ/",
+        "partOfSpeech": "adjective",
+        "definition": "happening or appearing soon; forthcoming in the near future",
+        "example": "We are making all our lodging reservations for the upcoming festive winter break.",
+        "relatedForms": [],
+        "collocations": ["upcoming trip", "upcoming event", "upcoming holiday"],
+        "synonyms": ["forthcoming", "approaching", "impending"],
+        "antonyms": ["past", "bygone"],
+        "tags": ["time", "future"],
+        "translation": "قادم / مقبل / مرتقب",
+        "exampleArabic": "نقوم بإجراء جميع حجوزات الإقامة الخاصة بنا لعطلة الشتاء الاحتفالية القادمة."
+    },
+    {
+        "headword": "intention",
+        "pronunciation": "/ɪnˈten.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "a thing intended; an aim or plan for future action",
+        "example": "Her firm intention is to finish writing her historical travel novel before next autumn.",
+        "relatedForms": ["intend", "intentional"],
+        "collocations": ["have no intention of", "firm intention", "declare an intention"],
+        "synonyms": ["aim", "purpose", "objective"],
+        "antonyms": [],
+        "tags": ["planning", "mind"],
+        "translation": "نيّة / عزم / قصد",
+        "exampleArabic": "نيتها الراسخة هي إنهاء كتابة رواية السفر التاريخية قبل الخريف القادم."
+    },
+    {
+        "headword": "anticipate",
+        "pronunciation": "/ænˈtɪs.ɪ.peɪt/",
+        "partOfSpeech": "verb",
+        "definition": "to regard as probable; to expect or look forward to with eager pleasure",
+        "example": "Tourists eagerly anticipate their first glimpse of the ancient desert monuments.",
+        "verbForms": { "v1": "anticipate", "v2": "anticipated", "v3": "anticipated" },
+        "relatedForms": ["anticipation", "anticipatory"],
+        "collocations": ["eagerly anticipate", "anticipate problems", "anticipate arrival"],
+        "synonyms": ["expect", "await", "look forward to"],
+        "antonyms": ["dread"],
+        "tags": ["emotions", "verbs"],
+        "translation": "يترقب / يتطلع بشوق",
+        "exampleArabic": "يترقب السياح بشوق أول إطلالة لهم على الآثار الصحراوية القديمة."
+    },
+    {
+        "headword": "voyage",
+        "pronunciation": "/ˈvɔɪ.ɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "a long journey involving travel by sea or in space",
+        "example": "The cruise ship embarked on a fourteen-day transatlantic voyage from Southampton to New York.",
+        "verbForms": { "v1": "voyage", "v2": "voyaged", "v3": "voyaged" },
+        "relatedForms": ["voyager"],
+        "collocations": ["maiden voyage", "sea voyage", "epic voyage"],
+        "synonyms": ["crossing", "passage", "cruise"],
+        "antonyms": [],
+        "tags": ["travel", "sea"],
+        "translation": "رحلة بحرية طويلة",
+        "exampleArabic": "انطلقت السفينة السياحية في رحلة بحرية عبر الأطلسي مدتها أربعة عشر يوماً من ساوثهامبتون إلى نيويورك."
+    },
+    {
+        "headword": "getaway",
+        "pronunciation": "/ˈɡet.ə.weɪ/",
+        "partOfSpeech": "noun",
+        "definition": "a short holiday or vacation, especially one taken to escape routine or stress",
+        "example": "A weekend cabin getaway in the mountains is exactly what we need to relax.",
+        "relatedForms": [],
+        "collocations": ["weekend getaway", "romantic getaway", "quick getaway"],
+        "synonyms": ["break", "retreat", "holiday"],
+        "antonyms": [],
+        "tags": ["travel", "holidays"],
+        "translation": "عطلة قصيرة للهروب من الروتين / ملاذ",
+        "exampleArabic": "إن عطلة نهاية أسبوع قصيرة في كوخ بالجبال هي بالضبط ما نحتاجه للاسترخاء."
+    },
+    {
+        "headword": "coastline",
+        "pronunciation": "/ˈkəʊst.laɪn/",
+        "partOfSpeech": "noun",
+        "definition": "the outline of a coast, especially with regard to its shape and appearance",
+        "example": "The rugged Mediterranean coastline boasts secluded coves, towering cliffs, and turquoise water.",
+        "relatedForms": ["coast", "coastal"],
+        "collocations": ["rugged coastline", "picturesque coastline", "along the coastline"],
+        "synonyms": ["shoreline", "seaboard", "coast"],
+        "antonyms": [],
+        "tags": ["nature", "geography"],
+        "translation": "خط الساحل / الشريط الساحلي",
+        "exampleArabic": "يتميز الشريط الساحلي الوعر للبحر الأبيض المتوسط بخلجان منعزلة، ومنحدرات شاهقة، ومياه فيروزية."
+    },
+    {
+        "headword": "harbor",
+        "pronunciation": "/ˈhɑː.bər/",
+        "partOfSpeech": "noun",
+        "definition": "a sheltered place on the coast where ships and boats can moor safely",
+        "example": "Fishing boats and pleasure yachts swayed gently in the protected harbor at twilight.",
+        "verbForms": { "v1": "harbor", "v2": "harbored", "v3": "harbored" },
+        "relatedForms": [],
+        "collocations": ["natural harbor", "busy harbor", "harbor mouth"],
+        "synonyms": ["port", "haven", "dock"],
+        "antonyms": [],
+        "tags": ["travel", "sea"],
+        "translation": "ميناء / مرفأ بحري",
+        "exampleArabic": "تمايلت قوارب الصيد واليخوت الترفيهية بلطف في المرفأ المحمي عند الشفق."
+    },
+    {
+        "headword": "voyager",
+        "pronunciation": "/ˈvɔɪ.ɪ.dʒər/",
+        "partOfSpeech": "noun",
+        "definition": "a person who goes on a long journey, especially by sea or into uncharted waters",
+        "example": "Ancient seafaring voyagers navigated across vast oceans using stars, currents, and trade winds.",
+        "relatedForms": ["voyage"],
+        "collocations": ["intrepid voyager", "ocean voyager"],
+        "synonyms": ["traveler", "explorer", "navigator"],
+        "antonyms": [],
+        "tags": ["travel", "people"],
+        "translation": "ملاح / مسافر في رحلة بحرية",
+        "exampleArabic": "أبحر الملاحون القدامى عبر المحيطات الشاسعة مسترشدين بالنجوم، والتيارات البحرية، والرياح التجارية."
+    },
+    {
+        "headword": "destination",
+        "pronunciation": "/ˌdes.tɪˈneɪ.ʃən/",
+        "partOfSpeech": "noun",
+        "definition": "the place to which someone or something is going or being sent",
+        "example": "Our final destination on this European tour is the historic coastal town of Dubrovnik.",
+        "relatedForms": [],
+        "collocations": ["final destination", "holiday destination", "popular destination"],
+        "synonyms": ["endpoint", "stopping place", "target"],
+        "antonyms": ["origin", "starting point"],
+        "tags": ["travel", "movement"],
+        "translation": "وجهة السفر / المقصد",
+        "exampleArabic": "وجهتنا النهائية في هذه الجولة الأوروبية هي بلدة دوبروفنيك الساحلية التاريخية."
+    },
+    {
+        "headword": "wanderlust",
+        "pronunciation": "/ˈwɒn.də.lʌst/",
+        "partOfSpeech": "noun",
+        "definition": "a strong, innate desire or impulse to travel and explore the world",
+        "example": "His insatiable wanderlust drove him to backpack across thirty countries in four years.",
+        "relatedForms": [],
+        "collocations": ["feel wanderlust", "stricken with wanderlust", "satisfy wanderlust"],
+        "synonyms": ["travel bug", "roving spirit", "restlessness"],
+        "antonyms": [],
+        "tags": ["emotions", "travel"],
+        "translation": "شغف الترحال / حب السفر والاستكشاف",
+        "exampleArabic": "دفعه شغفه الجامح بالترحال إلى السفر بحقيبة ظهر عبر ثلاثين دولة خلال أربع سنوات."
+    },
+    {
+        "headword": "sunshine",
+        "pronunciation": "/ˈsʌn.ʃaɪn/",
+        "partOfSpeech": "noun",
+        "definition": "direct sunlight unbroken by cloud, especially providing warmth and bright cheer",
+        "example": "We are traveling south to escape rainy autumn drizzle and bask in tropical sunshine.",
+        "relatedForms": ["shiny", "sun"],
+        "collocations": ["bright sunshine", "glorious sunshine", "hours of sunshine"],
+        "synonyms": ["sunlight", "daylight", "radiance"],
+        "antonyms": ["darkness", "shade"],
+        "tags": ["nature", "weather"],
+        "translation": "أشعة الشمس / دفء الشمس",
+        "exampleArabic": "نحن مسافرون جنوباً للهروب من رذاذ الخريف الممطر والتمتع بأشعة الشمس الاستوائية الدافئة."
+    },
+    {
+        "headword": "holidaymaker",
+        "pronunciation": "/ˈhɒl.ə.deɪˌmeɪ.kər/",
+        "partOfSpeech": "noun",
+        "definition": "a person who is on holiday away from home, especially at a tourist resort",
+        "example": "Thousands of joyful holidaymakers filled the coastal promenade every evening at sunset.",
+        "relatedForms": ["holiday"],
+        "collocations": ["British holidaymaker", "cheerful holidaymakers"],
+        "synonyms": ["vacationer", "tourist", "traveler"],
+        "antonyms": [],
+        "tags": ["travel", "people"],
+        "translation": "مصطاف / قاضي العطلة",
+        "exampleArabic": "ملأ آلاف المصطافين المبتهجين الممشى الساحلي كل مساء عند غروب الشمس."
+    },
+    {
+        "headword": "be going to",
+        "pronunciation": "/biː ˈɡəʊ.ɪŋ tuː/",
+        "partOfSpeech": "phrase",
+        "definition": "a grammatical construction used to express future plans, firm intentions, or predictions based on evidence",
+        "example": "We are going to book our flight tickets this evening before the promotional discount ends.",
+        "relatedForms": ["gonna"],
+        "collocations": ["be going to travel", "be going to stay", "be going to visit"],
+        "synonyms": ["intend to", "plan to"],
+        "antonyms": [],
+        "tags": ["grammar", "future"],
+        "translation": "ينوي أن / سـ (للتعبير عن الخطط المستقبلية المؤكدة)",
+        "exampleArabic": "نحن نعتزم حجز تذاكر طيراننا هذا المساء قبل انتهاء الخصم الترويجي."
+    }
+]
+
+grammar_day21 = [
+    {
+        "title": "Be going to",
+        "titleArabic": "صيغة Be going to للتعبير عن الخطط والنيات المستقبلية",
+        "explanation": "We use the structure 'be going to' (am/is/are going to + base verb) to talk about planned future actions, intentions decided before the moment of speaking, and predictions based on clear present evidence.\n\nStructure:\n1. Affirmative: Subject + am/is/are + going to + Base Verb (infinitive).\n   Example: I am going to explore the island. / They are going to camp near the lake.\n2. Negative: Subject + am/is/are + not + going to + Base Verb.\n   Example: She is not going to travel abroad this summer.\n3. Questions: Am/Is/Are + Subject + going to + Base Verb...?\n   Example: Are you going to make a hotel reservation today? — Yes, I am. / No, I'm not.\n\nContraction note: In informal spoken English, 'going to' is often pronounced as 'gonna', but in formal writing always use 'going to'.",
+        "explanationArabic": "نستخدم التركيب 'be going to' (am / is / are + going to + الفعل المجرد) للحديث عن الخطط والنيات المستقبلية التي تم اتخاذ القرار بشأنها مسبقاً، وكذلك للتنبؤ بالأحداث المستقبلية بناءً على دليل واضح في الحاضر.\n\nالصيغة:\n1. الإثبات: الفاعل + am/is/are + going to + الفعل الأساسي مجرداً.\n2. النفي: الفاعل + am/is/are + not + going to + الفعل الأساسي.\n3. السؤال: Am/Is/Are + الفاعل + going to + الفعل الأساسي؟",
+        "structures": [
+            {
+                "pattern": "Affirmative: Subject + am/is/are + going to + Base Verb",
+                "explanation": "Expresses a premeditated plan or firm future intention.",
+                "explanationArabic": "يعبر عن خطة مستقبلية مدروسة أو عزم مؤكد."
+            },
+            {
+                "pattern": "Negative: Subject + am/is/are + not + going to + Base Verb",
+                "explanation": "Expresses an intention not to perform a future action.",
+                "explanationArabic": "يعبر عن نية عدم القيام بفعل معين في المستقبل."
+            },
+            {
+                "pattern": "Question: Am/Is/Are + Subject + going to + Base Verb + ...?",
+                "explanation": "Inquires about someone's future intentions or plans.",
+                "explanationArabic": "يسأل عن خطط أو نيات شخص ما في المستقبل."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "We are going to spend our summer vacation exploring a scenic seaside resort.",
+                "translation": "نحن ذاهبون لقضاء عطلتنا الصيفية في استكشاف منتجع ساحلي رائع.",
+                "usesVocabulary": ["be going to", "vacation", "resort", "seaside", "explore"]
+            },
+            {
+                "sentence": "Are you going to make a reservation for our upcoming mountain getaway?",
+                "translation": "هل أنت ذاهب لعمل حجز مسبق لملاذنا الجبلي القادم؟",
+                "usesVocabulary": ["be going to", "reservation", "upcoming", "mountain", "getaway"]
+            },
+            {
+                "sentence": "They are going to camp in the forest and build a warm campfire beside the lake.",
+                "translation": "هم يعتزمون التخييم في الغابة وإشعال نار مخيم دافئة بجانب البحيرة.",
+                "usesVocabulary": ["be going to", "camp", "forest", "campfire", "lake"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "I am going to traveling abroad next week.",
+                "right": "I am going to travel abroad next week.",
+                "note": "After 'be going to', always use the base form of the verb, never the -ing form.",
+                "noteArabic": "بعد 'be going to' يأتي الفعل الأساسي مجرداً بدون أي إضافات، ولا نستخدم صيغة -ing."
+            },
+            {
+                "wrong": "She going to book a flight ticket tomorrow.",
+                "right": "She is going to book a flight ticket tomorrow.",
+                "note": "Do not forget the auxiliary verb 'be' (am, is, are) before 'going to'.",
+                "noteArabic": "لا تنسَ وضع الفعل المساعد (am, is, are) قبل 'going to'."
+            }
+        ]
+    }
+]
+
+convs_day21 = [
+    {
+        "title": "Planning the Summer Vacation Itinerary",
+        "titleArabic": "تخطيط مسار وبرنامج العطلة الصيفية",
+        "setting": "Two colleagues browsing travel brochures during lunch break and planning a holiday getaway",
+        "settingArabic": "زميلان يتصفحان كتيبات السفر أثناء استراحة الغداء ويخططان لقضاء إجازة",
+        "lines": [
+            {
+                "speaker": "Hassan",
+                "text": "Tariq, have you decided where you are going to spend your upcoming annual vacation?",
+                "translation": "يا طارق، هل قررت أين ستقضي عطلتك السنوية القادمة؟"
+            },
+            {
+                "speaker": "Tariq",
+                "text": "Yes! I picked up a colorful brochure from a local travel agency, and my intention is to travel abroad.",
+                "translation": "نعم! أخذت كتيباً ملوناً من وكالة سفر محلية، ونيتي هي السفر إلى الخارج."
+            },
+            {
+                "speaker": "Hassan",
+                "text": "That sounds exciting! What is your final destination, and how are you going to unwind?",
+                "translation": "هذا يبدو مشوقاً! ما هي وجهتك النهائية، وكيف تنوي الاستجمام وإراحة أعصابك؟"
+            },
+            {
+                "speaker": "Tariq",
+                "text": "I am going to visit a picturesque seaside resort located on a Mediterranean island.",
+                "translation": "سأزور منتجعاً ساحلياً بديعاً يقع على جزيرة في البحر الأبيض المتوسط."
+            },
+            {
+                "speaker": "Hassan",
+                "text": "Are you going to sunbathe on the beach or explore historical sights along the coastline?",
+                "translation": "هل ستأخذ حمام شمس على الشاطئ أم تستكشف معالم تاريخية على طول الشريط الساحلي؟"
+            },
+            {
+                "speaker": "Tariq",
+                "text": "Both! Our detailed itinerary includes a boat excursion around the harbor and lots of sightseeing.",
+                "translation": "كلاهما! يتضمن برنامج رحلتنا المفصل جولة بحرية حول المرفأ والكثير من مشاهدة المعالم."
+            },
+            {
+                "speaker": "Hassan",
+                "text": "Did you confirm your hotel booking and pack your swimsuit and sunscreen yet?",
+                "translation": "هل أكدت حجز فندقك وحزمت بدلة السباحة وواقي الشمس بعد؟"
+            },
+            {
+                "speaker": "Tariq",
+                "text": "I made the online reservation yesterday. I eagerly anticipate the trip; my wanderlust is at an all-time high!",
+                "translation": "أجريت الحجز المسبق عبر الإنترنت أمس. إنني أترقب الرحلة بشغف؛ فشغفي بالترحال في أعلى مستوياته!"
+            }
+        ],
+        "vocabularyUsed": [
+            "be going to", "vacation", "brochure", "agency", "intention",
+            "abroad", "destination", "unwind", "seaside", "resort",
+            "island", "sunbathe", "beach", "explore", "coastline",
+            "itinerary", "excursion", "harbor", "sightseeing", "booking",
+            "swimsuit", "sunscreen", "reservation", "anticipate", "wanderlust"
+        ]
+    },
+    {
+        "title": "A Camping Expedition in the National Forest",
+        "titleArabic": "رحلة تخييم استكشافية في الغابة الوطنية",
+        "setting": "Two outdoor enthusiasts preparing gear for an alpine camping trip",
+        "settingArabic": "اثنان من هواة الطبيعة يجهزان العتاد لرحلة تخييم جبلية",
+        "lines": [
+            {
+                "speaker": "Kareem",
+                "text": "Samir, are we ready for our weekend getaway? What time are we going to hit the road?",
+                "translation": "يا سمير، هل نحن مستعدون لعطلتنا القصيرة؟ في أي ساعة سننطلق على الطريق؟"
+            },
+            {
+                "speaker": "Samir",
+                "text": "Early tomorrow! We are going to hike up the rocky mountain trail to reach the alpine campsite before noon.",
+                "translation": "في وقت مبكر غداً! سنمشي صعوداً في مسار الجبل الصخري لنصل إلى موقع التخييم قبل الظهر."
+            },
+            {
+                "speaker": "Kareem",
+                "text": "Excellent. Did you double check that our waterproof tent and sleeping bags are packed in the luggage?",
+                "translation": "ممتاز. هل تأكدت من أن خيمتنا المقاومة للماء وأكياس النوم محزومة داخل الأمتعة؟"
+            },
+            {
+                "speaker": "Samir",
+                "text": "Everything is ready. We are going to camp beside the deep lake and cook dinner over an open campfire.",
+                "translation": "كل شيء جاهز. سنخيم بجانب البحيرة العميقة ونطهو العشاء فوق نار مخيم مفتوحة."
+            },
+            {
+                "speaker": "Kareem",
+                "text": "The mountain scenery and the roaring forest waterfall will offer spectacular photography opportunities.",
+                "translation": "إن المناظر الجبلية وشلال الغابة الهادر سيتيحان فرصاً مذهلة لالتقاط الصور."
+            },
+            {
+                "speaker": "Samir",
+                "text": "I agree! On Sunday, we are going to trek through the dense pine forest to complete our nature circuit.",
+                "translation": "أوافقك الرأي! ويوم الأحد، سنرتحل مشياً عبر غابة الصنوبر الكثيفة لإكمال جولتنا في الطبيعة."
+            },
+            {
+                "speaker": "Kareem",
+                "text": "According to the park guidebook, this trail is popular among every nature-loving holidaymaker.",
+                "translation": "وفقاً للدليل الإرشادي للحديقة، فإن هذا المسار يحظى بشعبية لدى كل مصطاف محب للطبيعة."
+            },
+            {
+                "speaker": "Samir",
+                "text": "It will be unforgettable. Living in pure sunshine and clean mountain air is the best remedy for stress.",
+                "translation": "ستكون تجربة لا تُنسى. العيش في دفء أشعة الشمس النقية وهوء الجبل العليل هو أفضل دواء للإجهاد."
+            }
+        ],
+        "vocabularyUsed": [
+            "getaway", "be going to", "hike", "mountain", "campsite",
+            "tent", "luggage", "camp", "lake", "campfire",
+            "scenery", "forest", "waterfall", "trek", "guidebook",
+            "holidaymaker", "sunshine"
+        ]
+    },
+    {
+        "title": "A Grand Overseas Voyage and Tourism",
+        "titleArabic": "رحلة بحرية كبرى وراء البحار والسياحة الدولية",
+        "setting": "Two friends chatting enthusiastically about an upcoming overseas ocean voyage",
+        "settingArabic": "صديقتان تتحدثان بحماس عن رحلة بحرية قادمة في المحيط وراء البحار",
+        "lines": [
+            {
+                "speaker": "Dina",
+                "text": "Nour, I heard rumors that you and your husband are going to travel overseas next month!",
+                "translation": "يا دينا، سمعت أنكِ وزوجكِ تنويان السفر وراء البحار الشهر القادم!"
+            },
+            {
+                "speaker": "Nour",
+                "text": "Yes! We booked a grand ocean voyage that departs from the southern harbor on a modern passenger ship.",
+                "translation": "نعم! حجزنا رحلة بحرية كبرى بالمحيط تنطلق من المرفأ الجنوبي على متن سفينة ركاب حديثة."
+            },
+            {
+                "speaker": "Dina",
+                "text": "What an incredible adventure! Every sightseer on that voyage will surely admire the coastal landscape.",
+                "translation": "يا لها من مغامرة رائعة! من المؤكد أن كل متفرج في تلك الرحلة سيعجب بالمشهد الساحلي الطبيعي."
+            },
+            {
+                "speaker": "Nour",
+                "text": "Indeed. As a keen tourist, I am going to keep a travel diary and purchase an authentic handcrafted souvenir in each port.",
+                "translation": "بالتأكيد. كسائحة شغوفة، سأحتفظ بمذكرات سفر وأشتري تذكاراً يدوياً أصيلاً في كل ميناء."
+            },
+            {
+                "speaker": "Dina",
+                "text": "International tourism has revived so much recently. You will feel like an intrepid modern voyager!",
+                "translation": "لقد انتعشت السياحة الدولية كثيراً مؤخراً. ستشعرين وكأنك ملاح عصري جريء!"
+            },
+            {
+                "speaker": "Nour",
+                "text": "We are going to witness stunning archipelagos and experience the rich cultural heritage of three continents.",
+                "translation": "سنشهد أرخبيلاً مذهلاً ونخوض تجربة التراث الثقافي الغني لثلاث قارات."
+            },
+            {
+                "speaker": "Dina",
+                "text": "Please bring back lots of photographs so we can marvel at the scenery together when you return.",
+                "translation": "يرجى جلب الكثير من الصور حتى نتمكن من الاستمتاع بجمال المناظر الطبيعية معاً عندما تعودين."
+            },
+            {
+                "speaker": "Nour",
+                "text": "I certainly will! We are going to cherish every single moment of this voyage of a lifetime.",
+                "translation": "سأفعل ذلك بالتأكيد! نحن عازمون على الاعتزاز بكل لحظة في هذه الرحلة البحرية الفريدة."
+            }
+        ],
+        "vocabularyUsed": [
+            "overseas", "be going to", "voyage", "harbor", "sightseer",
+            "landscape", "tourist", "souvenir", "tourism", "voyager",
+            "scenery"
+        ]
+    }
+]
+
+paras_day21 = [
+    {
+        "title": "The Joy of Planning a Seaside Holiday",
+        "titleArabic": "بهجة التخطيط لعطلة شاطئية مبهجة",
+        "kind": "travel-guide",
+        "text": "Anticipating an upcoming summer vacation provides immense motivation throughout long workweeks. Diligent travelers consult a colorful travel agency brochure and draft a comprehensive itinerary well in advance. When planning a seaside getaway to a tropical island resort, booking accommodations early guarantees rooms with panoramic ocean views. Thoughtful packing is essential; one must remember a comfortable swimsuit, reliable sunscreen, and protective sunglasses in their luggage. Upon arrival at the harbor, visitors love to stroll along the coastline, explore historic landmarks, and sunbathe on the warm golden beach. Engaging in coastal tourism allows tired workers to unwind completely and return home refreshed.",
+        "translation": "إن ترقب عطلة صيفية قادمة يمنح حافزاً هائلاً طوال أسابيع العمل الطويلة. ويستشير المسافرون المجتهدون كتيبات وكالات السفر ويضعون برنامج رحلة شاملاً قبل وقت كافٍ. وعند التخطيط لملاذ ساحلي إلى منتجع في جزيرة استوائية، فإن حجز الإقامة مبكراً يضمن غرفاً بإطلالات بانورامية على المحيط. كما أن الحزم المدروس للأمتعة أمر جوهري؛ حيث يجب على المرء أن يتذكر بدلة السباحة المريحة، وواقي الشمس الموثوق به، في أمتعته. وعند الوصول إلى المرفأ، يحب الزوار التنزه على طول الساحل، واستكشاف المعالم التاريخية، وأخذ حمام شمس على الشاطئ الذهبي الدافئ. وتتيح السياحة الساحلية للموظفين المرهقين الاستجمام التام والعودة بحيوية متجددة.",
+        "vocabularyUsed": [
+            "anticipate", "upcoming", "vacation", "agency", "brochure",
+            "itinerary", "seaside", "getaway", "island", "resort",
+            "booking", "swimsuit", "sunscreen", "luggage", "harbor",
+            "coastline", "explore", "sunbathe", "beach", "tourism", "unwind"
+        ]
+    },
+    {
+        "title": "Embracing Nature in the Mountain Wilderness",
+        "titleArabic": "معايشة سحر الطبيعة في البراري الجبلية",
+        "kind": "outdoor-reflection",
+        "text": "For adventurers seeking respite from bustling cities, venturing into mountain wilderness offers an exhilarating escape. Eager backpackers hike up rugged trails, traverse deep pine forests, and pause to admire a roaring waterfall plunging into an alpine lake. Camping in nature requires pitching a sturdy tent at a designated campsite before sunset. As twilight falls over the majestic landscape, friends gather around a crackling campfire to share warm meals and inspiring stories. Waking up to pristine mountain scenery and invigorating sunshine fuels the spirit with enduring wanderlust. Every outdoor trek reminds holidaymakers of nature's timeless splendor and replenishes human vitality.",
+        "translation": "بالنسبة للمغامرين الباحثين عن الراحة من صخب المدن، فإن الانطلاق إلى البراري الجبلية يوفر ملاذاً مبهجاً وممتعاً. ويمشي الرحالة المتحمسون عبر المسارات الوعرة، ويعبرون غابات الصنوبر العميقة، ويتوقفون للإعجاب بشلال هادر يتدفق في بحيرة ألبية. ويتطلب التخييم في الطبيعة نصب خيمة متينة في موقع تخييم محدد قبل غروب الشمس. ومع هبوط الشفق على التضاريس المهيبة، يجتمع الأصدقاء حول نار مخيم متفرقعة لتشارك الوجبات الدافئة والقصص الملهمة. والاستيقاظ على مناظر جبلية عذراء وأشعة شمس منعشة يغذي الروح بشغف ترحال يدوم طويلاً. وإن كل مسار يعبره المصطافون يذكرهم بروعة الطبيعة الخالدة ويجدد النشاط الإنساني.",
+        "vocabularyUsed": [
+            "mountain", "hike", "forest", "waterfall", "lake",
+            "tent", "campsite", "landscape", "campfire", "scenery",
+            "sunshine", "wanderlust", "trek", "holidaymaker"
+        ]
+    },
+    {
+        "title": "The Transformative Power of Traveling Abroad",
+        "titleArabic": "الأثر التنويري للسفر إلى الخارج والترحال",
+        "kind": "cultural-essay",
+        "text": "Traveling abroad to unfamiliar destinations expands individual perspectives and shatters cultural prejudices. Whether embarking on a transatlantic ocean voyage or navigating historic European cities with a trusted guidebook in hand, the modern voyager encounters living history. Dedicated sightseers marvel at ancient architecture, purchase a commemorative souvenir from local artisans, and interact with hospitable hosts. A firm intention to experience foreign traditions firsthand enriches the mind far beyond ordinary textbooks. Traveling overseas satisfies deep human curiosity and teaches travelers that despite diverse languages, humanity shares common hopes, dreams, and hospitality across every continent.",
+        "translation": "إن السفر إلى الخارج نحو وجهات غير مألوفة يوسع المدارك الفردية ويبدد الأحكام الثقافية المسبقة. وسواء كان ذلك بالانطلاق في رحلة بحرية عبر الأطلسي أو التجول في المدن الأوروبية التاريخية وبيدك دليل إرشادي موثوق، فإن الملاح العصري يلتقي بالتاريخ الحي. وينبهر المتفرجون المخلصون بالعمارة القديمة، ويشترون تذكاراً تذكارياً من الحرفيين المحليين، ويتفاعلون مع المضيفين الكرماء. وإن العزم الصادق على معايشة التقاليد الأجنبية مباشرة يثري العقل بما يفوق الكتب الدراسية العادية. والسفر وراء البحار يلبي الفضول الإنساني العميق ويعلم المسافرين أنه رغم تنوع اللغات، فإن البشرية تتقاسم آمالاً وأحلاماً وكرم ضيافة مشتركاً عبر كل قارة.",
+        "vocabularyUsed": [
+            "abroad", "destination", "voyage", "guidebook", "voyager",
+            "sightseer", "souvenir", "intention", "overseas"
+        ]
+    }
+]

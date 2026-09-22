@@ -1,0 +1,1691 @@
+{
+  "day": 27,
+  "title": "Getting Around",
+  "topic": "Transport and directions",
+  "description": "Use buses, trains and taxis and follow directions.",
+  "stage": "Real-Life Situations",
+  "focus": "By the end of today, you can communicate clearly about transport and directions using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Imperatives",
+      "titleArabic": "صيغة الأمر (Imperatives) لإعطاء التوجيهات والتعليمات والإرشادات",
+      "explanation": "We use imperative sentences to give direct instructions, directions, warnings, and polite commands.\n\nRules:\n1. Affirmative Imperative: Start directly with the Base Verb (bare infinitive) without any subject pronoun:\n   - 'Turn left at the intersection.' / 'Go straight along this avenue.'\n   - Add 'please' for politeness: 'Please cross at the crosswalk.'\n\n2. Negative Imperative: Always use 'Don't' + Base Verb (regardless of person or number):\n   - 'Don't cross the railway tracks.' / 'Don't exceed the speed limit.'\n\nUsage in Directions:\n- 'Turn left / right' (انعطف يساراً / يميناً)\n- 'Go straight' (سر للأمام مباشرة)\n- 'Walk past the museum' (تجاوز المتحف مشياً)\n- 'Cross over the bridge' (اعبر الجسر)",
+      "explanationArabic": "نستخدم صيغة الأمر (Imperatives) لإعطاء التوجيهات، والتعليمات، والتحذيرات، ووصف الطرق والاتجاهات:\n\n1. الأمر المثبت: نبدأ بالفعل الأساسي في المصدر مباشرة وبدون فاعل:\n   - 'Turn left at the intersection.' (انعطف يساراً عند التقاطع).\n   - 'Go straight along the street.' (سر للأمام على طول الشارع).\n   - يمكن إضافة 'please' لزيادة التهذيب: 'Please stand behind the yellow line.'\n\n2. الأمر المنفي (النهي): نستخدم دائماً 'Don't' + الفعل المجرد:\n   - 'Don't step onto the tracks.' (لا تخطُ على القضبان).\n   - 'Don't drive in the bus lane.' (لا تقد في المسار المخصص للحافلات).",
+      "structures": [
+        {
+          "pattern": "Affirmative Imperative: Base Verb (+ Object / Direction) (+ please)",
+          "explanation": "Directs someone to take a specific action.",
+          "explanationArabic": "لتوجيه شخص ما للقيام بفعل محدد أو اتباع اتجاه معين."
+        },
+        {
+          "pattern": "Negative Imperative: Don't + Base Verb + ...",
+          "explanation": "Directs someone to avoid doing something.",
+          "explanationArabic": "للنهي عن القيام بفعل معين أو التحذير منه."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Turn left at the traffic light and go straight along the avenue.",
+          "translation": "انعطف يساراً عند إشارة المرور وسر للأمام مباشرة على طول الجادة.",
+          "usesVocabulary": [
+            "turn left",
+            "traffic light",
+            "go straight",
+            "along"
+          ]
+        },
+        {
+          "sentence": "Don't walk across the tracks; use the pedestrian crosswalk instead.",
+          "translation": "لا تمشِ عبر القضبان؛ بل استخدم ممر المشاة بدلاً من ذلك.",
+          "usesVocabulary": [
+            "track",
+            "crosswalk",
+            "across"
+          ]
+        },
+        {
+          "sentence": "Walk past the old railway station and cross over the bridge toward the town center.",
+          "translation": "امشِ متجاوزاً محطة السكة الحديدية القديمة واعبر فوق الجسر باتجاه مركز البلدة.",
+          "usesVocabulary": [
+            "walk past",
+            "railway",
+            "cross over",
+            "toward"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "You turn left at the corner.",
+          "right": "Turn left at the corner.",
+          "note": "Do not include the pronoun 'you' in imperative direction sentences.",
+          "noteArabic": "لا تضع الضمير 'you' في جمل الأمر الخاصة بالاتجاهات؛ ابدأ بالفعل مباشرة."
+        },
+        {
+          "wrong": "Not cross the street here.",
+          "right": "Don't cross the street here.",
+          "note": "Always use 'Don't + verb' for negative imperatives, never 'Not + verb'.",
+          "noteArabic": "استخدم دائماً 'Don't' مع الفعل لصياغة النهي، ولا تبدأ بـ 'Not'."
+        }
+      ]
+    },
+    {
+      "title": "Prepositions of Movement",
+      "titleArabic": "حروف الجر الدالة على الحركة والاتجاه (Prepositions of Movement)",
+      "explanation": "Prepositions of movement show the path, trajectory, and direction taken by a person or vehicle, usually following action verbs like walk, drive, ride, run, or go:\n\n1. along: moving parallel to a line or edge (e.g. 'walk along the river / sidewalk').\n2. across: moving from one side to the other across a flat surface (e.g. 'walk across the street / square').\n3. through: moving inside an enclosed space or three-dimensional area from one side and exiting the other (e.g. 'drive through the tunnel / park').\n4. into / out of: entering or exiting an enclosed space (e.g. 'step into the subway / walk out of the station').\n5. toward / away from: moving closer to or further away from a point (e.g. 'walk toward the tower / move away from the platform edge').\n6. up / down: ascending or descending (e.g. 'walk up the stairs / ride down the escalator').\n7. over / under: crossing above or beneath a structure (e.g. 'cross over the bridge / go under the overpass').",
+      "explanationArabic": "تصف حروف الجر الخاصة بالحركة مسار واتجاه تنقل الأشخاص والمركبات، وتأتي مع أفعال الحركة مثل (walk, drive, go, run):\n\n1. along: بمحاذاة أو على طول شيء ممتد (مثل: walk along the river).\n2. across: من طرف إلى آخر قاطعاً سطحاً مستوياً (مثل: walk across the street).\n3. through: عبر شيء مجسم (دخول من جهة وخروج من جهة أخرى كالأنفاق والغابات: through the tunnel).\n4. into / out of: إلى داخل / إلى خارج مكان مغلق (into the train / out of the station).\n5. toward / away from: نحو أو باتجاه / بعيداً عن.\n6. up / down: صعوداً إلى أعلى / نزولاً إلى أسفل.\n7. over / under: فوق مع حركة / تحت.",
+      "structures": [
+        {
+          "pattern": "Movement Formula: Subject + Verb of Motion + Preposition of Movement + Noun Phrase",
+          "explanation": "Describes the path and destination of physical motion.",
+          "explanationArabic": "تصف مسار واتجاه الحركة الجسدية أو تنقل المركبات."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The commuter stepped out of the subway carriage and walked toward the exit.",
+          "translation": "خرج الراكب من داخل عربة المترو ومشى باتجاه المخرج.",
+          "usesVocabulary": [
+            "commuter",
+            "out of",
+            "subway",
+            "toward"
+          ]
+        },
+        {
+          "sentence": "Drive through the tunnel and cross over the river into the historical district.",
+          "translation": "قُد عبر النفق واعبر فوق النهر إلى داخل الحي التاريخي.",
+          "usesVocabulary": [
+            "through",
+            "over",
+            "into"
+          ]
+        },
+        {
+          "sentence": "Walk along the sidewalk and go down the steps into the underground station.",
+          "translation": "امشِ على طول رصيف المشاة وانزل الدرج إلى داخل محطة قطار الأنفاق.",
+          "usesVocabulary": [
+            "along",
+            "sidewalk",
+            "down",
+            "into",
+            "underground"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "He walked across the tunnel.",
+          "right": "He walked through the tunnel.",
+          "note": "Use 'through' for 3D enclosed spaces like tunnels or forests, and 'across' for flat 2D surfaces like streets.",
+          "noteArabic": "استخدم 'through' للأماكن المجسمة والمغلقة كالأنفاق والغابات، واستخدم 'across' للأسطح المستوية كالشوارع والساحات."
+        },
+        {
+          "wrong": "We drove into the bridge.",
+          "right": "We drove over the bridge.",
+          "note": "You travel 'over' or 'across' a bridge, not 'into' it.",
+          "noteArabic": "نقول نتحرك 'over' (فوق) أو 'across' (عبر) الجسر، ولا نقول 'into'."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "subway",
+      "pronunciation": "/ˈsʌb.weɪ/",
+      "partOfSpeech": "noun",
+      "definition": "an underground electric railroad, especially in a metropolitan city such as New York",
+      "example": "Commuters take the express subway to reach the downtown financial district in twenty minutes.",
+      "relatedForms": [],
+      "collocations": [
+        "subway station",
+        "subway train",
+        "ride the subway"
+      ],
+      "synonyms": [
+        "metro",
+        "underground",
+        "tube"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "city"
+      ],
+      "translation": "مترو الأنفاق (القطار الأرضي)",
+      "exampleArabic": "يستقل الركاب مترو الأنفاق السريع للوصول إلى الحي المالي بوسط المدينة في عشرين دقيقة."
+    },
+    {
+      "headword": "metro",
+      "pronunciation": "/ˈmet.rəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "an underground or elevated railway system in a city, especially in European capitals like Paris",
+      "example": "The Paris metro network has convenient stations located within walking distance of all landmarks.",
+      "relatedForms": [],
+      "collocations": [
+        "metro line",
+        "metro ticket",
+        "take the metro"
+      ],
+      "synonyms": [
+        "subway",
+        "underground",
+        "rapid transit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "city"
+      ],
+      "translation": "المترو / شبكة قطارات المدينة",
+      "exampleArabic": "تمتلك شبكة مترو باريس محطات ملائمة تقع على مسافة قريبة سيراً من جميع المعالم."
+    },
+    {
+      "headword": "underground",
+      "pronunciation": "/ˈʌn.də.ɡraʊnd/",
+      "partOfSpeech": "noun",
+      "definition": "the British name for an underground railway system, especially the London Underground (the Tube)",
+      "example": "We purchased an electronic transit pass to travel across London on the underground.",
+      "relatedForms": [],
+      "collocations": [
+        "London underground",
+        "underground map"
+      ],
+      "synonyms": [
+        "tube",
+        "subway",
+        "metro"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "british"
+      ],
+      "translation": "قطار الأنفاق (التسمية البريطانية لمترو لندن)",
+      "exampleArabic": "اشترينا بطاقة مواصلات إلكترونية للتنقل عبر لندن على متن قطار الأنفاق."
+    },
+    {
+      "headword": "tram",
+      "pronunciation": "/træm/",
+      "partOfSpeech": "noun",
+      "definition": "a passenger vehicle powered by electricity conveyed by overhead wires and running on rails in city streets",
+      "example": "Historic yellow trams rattle gently along the picturesque cobbled avenues of Lisbon.",
+      "relatedForms": [
+        "tramway"
+      ],
+      "collocations": [
+        "tram line",
+        "tram stop",
+        "board the tram"
+      ],
+      "synonyms": [
+        "streetcar",
+        "trolley",
+        "cable car"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "city"
+      ],
+      "translation": "ترام (قطار الشارع الكهربائي السطحي)",
+      "exampleArabic": "تتحرك الترامات الصفراء التاريخية برفق على طول الجادات المرصوفة بالحصى في لشبونة."
+    },
+    {
+      "headword": "trolleybus",
+      "pronunciation": "/ˈtrɒl.i.bʌs/",
+      "partOfSpeech": "noun",
+      "definition": "a bus powered by electricity obtained from overhead wires by means of trolley poles, not running on rails",
+      "example": "Quiet electric trolleybuses provide clean, zero-emission public transit across the city center.",
+      "relatedForms": [],
+      "collocations": [
+        "electric trolleybus",
+        "ride the trolleybus"
+      ],
+      "synonyms": [
+        "trackless trolley"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "environment"
+      ],
+      "translation": "ترولي باص (حافلة كهربائية بأسلاك علوية)",
+      "exampleArabic": "توفر حافلات الترولي باص الكهربائية الهادئة نقلاً عاماً نظيفاً وخالياً من الانبعاثات عبر وسط المدينة."
+    },
+    {
+      "headword": "railway",
+      "pronunciation": "/ˈreɪl.weɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a track made of steel rails along which passenger and freight trains run",
+      "example": "The national railway network connects major industrial hubs with scenic coastal ports.",
+      "relatedForms": [
+        "rail"
+      ],
+      "collocations": [
+        "railway station",
+        "railway network",
+        "high-speed railway"
+      ],
+      "synonyms": [
+        "railroad",
+        "train line",
+        "tracks"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "infrastructure"
+      ],
+      "translation": "سكة حديدية / خط قطار",
+      "exampleArabic": "تربط شبكة السكك الحديدية الوطنية المراكز الصناعية الكبرى بالموانئ الساحلية الخلابة."
+    },
+    {
+      "headword": "train",
+      "pronunciation": "/treɪn/",
+      "partOfSpeech": "noun",
+      "definition": "a series of connected railway carriages or wagons moved by a locomotive engine",
+      "example": "The high-speed passenger train travels between Tokyo and Kyoto at nearly 300 kilometers per hour.",
+      "verbForms": {
+        "v1": "train",
+        "v2": "trained",
+        "v3": "trained"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "express train",
+        "board the train",
+        "train ticket"
+      ],
+      "synonyms": [
+        "locomotive",
+        "rail transit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "vehicles"
+      ],
+      "translation": "قطار",
+      "exampleArabic": "يسافر قطار الركاب فائق السرعة بين طوكيو وكيوتو بسرعة تقارب 300 كيلومتر في الساعة."
+    },
+    {
+      "headword": "commuter",
+      "pronunciation": "/kəˈmjuː.tər/",
+      "partOfSpeech": "noun",
+      "definition": "a person who travels some distance to work on a regular daily basis",
+      "example": "Thousands of suburban commuters crowd the central railway platforms during morning rush hour.",
+      "relatedForms": [
+        "commute"
+      ],
+      "collocations": [
+        "daily commuter",
+        "suburban commuter",
+        "commuter train"
+      ],
+      "synonyms": [
+        "daily traveler",
+        "passenger"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "people"
+      ],
+      "translation": "مسافر يومي للعمل (راكب يومي)",
+      "exampleArabic": "يحتشد آلاف الركاب اليوميين القادمين من الضواحي على أرصفة محطة السكة الحديدية المركزية خلال ساعة الذروة الصباحية."
+    },
+    {
+      "headword": "passenger",
+      "pronunciation": "/ˈpæs.ən.dʒər/",
+      "partOfSpeech": "noun",
+      "definition": "a traveler on a public or private conveyance other than the driver, pilot, or crew",
+      "example": "All passengers on the ferry were asked to remain seated until the vessel moored securely.",
+      "relatedForms": [],
+      "collocations": [
+        "train passenger",
+        "passenger seat",
+        "transit passenger"
+      ],
+      "synonyms": [
+        "traveler",
+        "commuter",
+        "rider"
+      ],
+      "antonyms": [
+        "driver",
+        "conductor"
+      ],
+      "tags": [
+        "people",
+        "transport"
+      ],
+      "translation": "راكب / مسافر",
+      "exampleArabic": "طُلب من جميع الركاب على متن العبّارة البقاء في مقاعدهم حتى ترسو السفينة بأمان."
+    },
+    {
+      "headword": "fare",
+      "pronunciation": "/feər/",
+      "partOfSpeech": "noun",
+      "definition": "the money a passenger on public transportation has to pay for a journey",
+      "example": "You can tap your contactless bank card against the sensor to pay the standard bus fare.",
+      "relatedForms": [],
+      "collocations": [
+        "bus fare",
+        "train fare",
+        "pay the fare"
+      ],
+      "synonyms": [
+        "ticket price",
+        "charge",
+        "tariff"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "transport"
+      ],
+      "translation": "أجرة الركوب / تذكرة المواصلات",
+      "exampleArabic": "يمكنك تمرير بطاقتك المصرفية اللاتلامسية على جهاز الاستشعار لدفع أجرة الحافلة القياسية."
+    },
+    {
+      "headword": "ticket machine",
+      "pronunciation": "/ˈtɪk.ɪt məˌʃiːn/",
+      "partOfSpeech": "noun",
+      "definition": "an automated vending kiosk that sells transit tickets, tokens, or passes to commuters",
+      "example": "Use the touchscreen ticket machine in the metro station lobby to buy a single-journey token.",
+      "relatedForms": [],
+      "collocations": [
+        "automated ticket machine",
+        "queue at the ticket machine"
+      ],
+      "synonyms": [
+        "ticket kiosk",
+        "vending kiosk"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "technology"
+      ],
+      "translation": "ماكينة بيع التذاكر الآلية",
+      "exampleArabic": "استخدم ماكينة بيع التذاكر ذات الشاشة اللمسية في بهو محطة المترو لشراء تذكرة رحلة واحدة."
+    },
+    {
+      "headword": "turnstile",
+      "pronunciation": "/ˈtɜːn.staɪl/",
+      "partOfSpeech": "noun",
+      "definition": "a mechanical gate with revolving arms allowing only one person at a time to pass through upon scanning a ticket",
+      "example": "Tap your travel card against the electronic reader to unlock the subway turnstile.",
+      "relatedForms": [],
+      "collocations": [
+        "pass through the turnstile",
+        "automatic turnstile"
+      ],
+      "synonyms": [
+        "baffle gate",
+        "ticket barrier"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "infrastructure"
+      ],
+      "translation": "البوابة الدوارة لدخول المحطة (تورنستيل)",
+      "exampleArabic": "مرر بطاقة السفر الخاصة بك على القارئ الإلكتروني لفتح البوابة الدوارة لمترو الأنفاق."
+    },
+    {
+      "headword": "platform",
+      "pronunciation": "/ˈplæt.fɔːm/",
+      "partOfSpeech": "noun",
+      "definition": "a raised level surface on which passengers stand while waiting for a train or subway car",
+      "example": "Please stand behind the yellow safety line when waiting on the railway platform.",
+      "relatedForms": [],
+      "collocations": [
+        "train platform",
+        "platform number",
+        "crowded platform"
+      ],
+      "synonyms": [
+        "trackside",
+        "quay",
+        "stage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "places"
+      ],
+      "translation": "رصيف المحطة (رصيف القطار)",
+      "exampleArabic": "يرجى الوقوف خلف خط الأمان الأصفر عند الانتظار على رصيف القطار."
+    },
+    {
+      "headword": "track",
+      "pronunciation": "/træk/",
+      "partOfSpeech": "noun",
+      "definition": "a pair of parallel steel rails on which trains, trams, or subways run",
+      "example": "Do not step onto the railway tracks under any circumstances; it is extremely hazardous.",
+      "verbForms": {
+        "v1": "track",
+        "v2": "tracked",
+        "v3": "tracked"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "railway track",
+        "train on track",
+        "cross the tracks"
+      ],
+      "synonyms": [
+        "rails",
+        "rail line",
+        "tramway"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "infrastructure"
+      ],
+      "translation": "قضبان السكة الحديدية",
+      "exampleArabic": "لا تخطُ على قضبان السكك الحديدية تحت أي ظرف من الظروف؛ فهذا أمر بالغ الخطورة."
+    },
+    {
+      "headword": "conductor",
+      "pronunciation": "/kənˈdʌk.tər/",
+      "partOfSpeech": "noun",
+      "definition": "a person in charge of a train, tram, or bus, who collects fares or inspects tickets",
+      "example": "The uniformed conductor walked through the carriage to inspect passengers' electronic tickets.",
+      "relatedForms": [
+        "conduct"
+      ],
+      "collocations": [
+        "train conductor",
+        "show ticket to conductor"
+      ],
+      "synonyms": [
+        "ticket inspector",
+        "guard"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "transport"
+      ],
+      "translation": "كمسري القطار / محصل التذاكر",
+      "exampleArabic": "مر كمسري القطار النظامي عبر العربة لفحص التذاكر الإلكترونية للركاب."
+    },
+    {
+      "headword": "route",
+      "pronunciation": "/ruːt/",
+      "partOfSpeech": "noun",
+      "definition": "a way or course taken in getting from a starting point to a destination",
+      "example": "Bus route 15 travels past major tourist landmarks, including the cathedral and university.",
+      "verbForms": {
+        "v1": "route",
+        "v2": "routed",
+        "v3": "routed"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "bus route",
+        "scenic route",
+        "fastest route"
+      ],
+      "synonyms": [
+        "path",
+        "itinerary",
+        "course"
+      ],
+      "antonyms": [],
+      "tags": [
+        "navigation",
+        "transport"
+      ],
+      "translation": "خط سير / مسار الطريق",
+      "exampleArabic": "يمر خط الحافلة رقم 15 بأهم المعالم السياحية، بما في ذلك الكاتدرائية والجامعة."
+    },
+    {
+      "headword": "bus lane",
+      "pronunciation": "/ˈbʌs ˌleɪn/",
+      "partOfSpeech": "noun",
+      "definition": "a division of a road marked off with painted lines and signs for the exclusive use of buses and emergency vehicles",
+      "example": "Private motorists are fined heavily if they drive in the designated rush-hour bus lane.",
+      "relatedForms": [],
+      "collocations": [
+        "dedicated bus lane",
+        "drive in the bus lane"
+      ],
+      "synonyms": [
+        "transit lane"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "transport"
+      ],
+      "translation": "المسار المخصص للحافلات",
+      "exampleArabic": "يتم تغريم سائقي السيارات الخاصة بشدة إذا قادوا مركباتهم في المسار المخصص للحافلات وقت الذروة."
+    },
+    {
+      "headword": "taxi rank",
+      "pronunciation": "/ˈtæk.si ˌræŋk/",
+      "partOfSpeech": "noun",
+      "definition": "a designated parking place where taxicabs wait to pick up passengers in order of arrival",
+      "example": "There is a 24-hour taxi rank stationed right outside the central railway station entrance.",
+      "relatedForms": [],
+      "collocations": [
+        "queue at the taxi rank",
+        "official taxi rank"
+      ],
+      "synonyms": [
+        "cab stand",
+        "taxi stand"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "city"
+      ],
+      "translation": "موقف سيارات الأجرة (التاكسي)",
+      "exampleArabic": "يوجد موقف سيارات أجرة يعمل على مدار 24 ساعة يقع مباشرة خارج مدخل محطة السكة الحديدية المركزية."
+    },
+    {
+      "headword": "cab",
+      "pronunciation": "/kæb/",
+      "partOfSpeech": "noun",
+      "definition": "a taxicab or passenger vehicle for hire with a driver",
+      "example": "It began raining heavily, so we hailed a yellow cab to take us back to our hotel.",
+      "relatedForms": [
+        "cabby",
+        "cabdriver"
+      ],
+      "collocations": [
+        "hail a cab",
+        "yellow cab",
+        "take a cab"
+      ],
+      "synonyms": [
+        "taxi",
+        "taxicab"
+      ],
+      "antonyms": [],
+      "tags": [
+        "transport",
+        "vehicles"
+      ],
+      "translation": "سيارة أجرة (تاكسي)",
+      "exampleArabic": "بدأ المطر بالهطول بغزارة، لذا أشرنا لسيارة أجرة صفراء لتعيدنا إلى فندقنا."
+    },
+    {
+      "headword": "chauffeur",
+      "pronunciation": "/ˈʃəʊ.fər/",
+      "partOfSpeech": "noun",
+      "definition": "a person employed to drive a private or luxury automobile for an individual or executive",
+      "example": "A professional uniformed chauffeur met the visiting dignitaries in a polished black sedan.",
+      "verbForms": {
+        "v1": "chauffeur",
+        "v2": "chauffeured",
+        "v3": "chauffeured"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "private chauffeur",
+        "chauffeur-driven limousine"
+      ],
+      "synonyms": [
+        "driver",
+        "personal driver"
+      ],
+      "antonyms": [],
+      "tags": [
+        "jobs",
+        "luxury"
+      ],
+      "translation": "سائق خاص (شوفير)",
+      "exampleArabic": "استقبل سائق خاص يرتدي الزي الرسمي كبار الشخصيات الزائرة بسيارة سوداء ملمعة."
+    },
+    {
+      "headword": "pedestrian",
+      "pronunciation": "/pəˈdes.tri.ən/",
+      "partOfSpeech": "noun",
+      "definition": "a person walking along a road or in a developed area on foot",
+      "example": "Motorists must yield right of way to any pedestrian crossing at an illuminated crosswalk.",
+      "relatedForms": [],
+      "collocations": [
+        "pedestrian precinct",
+        "pedestrian crossing",
+        "pedestrian walkway"
+      ],
+      "synonyms": [
+        "walker",
+        "foot passenger",
+        "stroller"
+      ],
+      "antonyms": [
+        "driver",
+        "motorist"
+      ],
+      "tags": [
+        "roads",
+        "people"
+      ],
+      "translation": "مُشاة (المار على قدميه)",
+      "exampleArabic": "يجب على سائقي السيارات إعطاء حق الأولوية لأي من المشاة يعبر عند ممر المشاة المضاء."
+    },
+    {
+      "headword": "crosswalk",
+      "pronunciation": "/ˈkrɒs.wɔːk/",
+      "partOfSpeech": "noun",
+      "definition": "a marked part of a road where pedestrians have right of way to cross safely; American usage",
+      "example": "Always look both ways before stepping onto the crosswalk, even if the pedestrian light is green.",
+      "relatedForms": [],
+      "collocations": [
+        "use the crosswalk",
+        "paint a crosswalk"
+      ],
+      "synonyms": [
+        "pedestrian crossing",
+        "zebra crossing"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "safety"
+      ],
+      "translation": "ممر المشاة (المخطط على الأسفلت)",
+      "exampleArabic": "انظر دائماً في كلا الاتجاهين قبل النزول إلى ممر المشاة، حتى لو كانت إشارة المشاة خضراء."
+    },
+    {
+      "headword": "zebra crossing",
+      "pronunciation": "/ˌzeb.rə ˈkrɒs.ɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "a pedestrian crossing marked with alternating white stripes on the road, where vehicles must stop",
+      "example": "In the UK, traffic must stop immediately when a walker steps onto a zebra crossing.",
+      "relatedForms": [],
+      "collocations": [
+        "cross at the zebra crossing",
+        "zebra crossing stripes"
+      ],
+      "synonyms": [
+        "pedestrian crossing",
+        "crosswalk"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "british"
+      ],
+      "translation": "ممر الحمار الوحشي للمشاة (مخطط بالأبيض والأسود)",
+      "exampleArabic": "في بريطانيا، يجب على حركة المرور التوقف فوراً عندما يخطو أحد المشاة على ممر المشاة المخطط."
+    },
+    {
+      "headword": "traffic light",
+      "pronunciation": "/ˈtræf.ɪk ˌlaɪt/",
+      "partOfSpeech": "noun",
+      "definition": "a set of automatically operated colored lights (red, amber, green) for controlling traffic at road junctions",
+      "example": "Stop your vehicle when the traffic light turns amber, unless stopping would cause an accident.",
+      "relatedForms": [],
+      "collocations": [
+        "wait at the traffic light",
+        "traffic light turns green"
+      ],
+      "synonyms": [
+        "traffic signal",
+        "stoplight"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "driving"
+      ],
+      "translation": "إشارة المرور الضوئية",
+      "exampleArabic": "أوقف مركبتك عندما تتحول إشارة المرور إلى اللون الكهرماني (الأصفر)، ما لم يكن التوقف سيسبب حادثاً."
+    },
+    {
+      "headword": "intersection",
+      "pronunciation": "/ˌɪn.təˈsek.ʃən/",
+      "partOfSpeech": "noun",
+      "definition": "a point at which two or more roads intersect, meet, or cross",
+      "example": "Turn left at the next busy intersection, right past the stone fountain.",
+      "relatedForms": [
+        "intersect"
+      ],
+      "collocations": [
+        "busy intersection",
+        "four-way intersection",
+        "road intersection"
+      ],
+      "synonyms": [
+        "crossroads",
+        "junction",
+        "crossing"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "navigation"
+      ],
+      "translation": "تقاطع طرق / مفترق طرق",
+      "exampleArabic": "انعطف يساراً عند تقاطع الطرق المزدحم التالي، بعد النافورة الحجرية مباشرة."
+    },
+    {
+      "headword": "roundabout",
+      "pronunciation": "/ˈraʊnd.ə.baʊt/",
+      "partOfSpeech": "noun",
+      "definition": "a road junction at which traffic moves in one direction around a central circular island",
+      "example": "Take the second exit at the roundabout to join the coastal highway toward the airport.",
+      "relatedForms": [],
+      "collocations": [
+        "traffic roundabout",
+        "navigate a roundabout",
+        "first exit at roundabout"
+      ],
+      "synonyms": [
+        "traffic circle",
+        "rotary"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "navigation"
+      ],
+      "translation": "ميدان مروري / دوّار",
+      "exampleArabic": "اسلك المخرج الثاني عند الدوار للانضمام إلى الطريق السريع الساحلي باتجاه المطار."
+    },
+    {
+      "headword": "sidewalk",
+      "pronunciation": "/ˈsaɪd.wɔːk/",
+      "partOfSpeech": "noun",
+      "definition": "a paved path for pedestrians at the side of a road; American term for pavement",
+      "example": "The municipal council repaired the broken paving stones along the downtown sidewalk.",
+      "relatedForms": [],
+      "collocations": [
+        "walk on the sidewalk",
+        "crowded sidewalk"
+      ],
+      "synonyms": [
+        "pavement",
+        "footpath",
+        "walkway"
+      ],
+      "antonyms": [
+        "roadway"
+      ],
+      "tags": [
+        "roads",
+        "city"
+      ],
+      "translation": "رصيف المشاة (الموازي للشارع)",
+      "exampleArabic": "أصلح المجلس البلدي أحجار الرصف المكسورة على طول رصيف المشاة بوسط المدينة."
+    },
+    {
+      "headword": "highway",
+      "pronunciation": "/ˈhaɪ.weɪ/",
+      "partOfSpeech": "noun",
+      "definition": "a main public road connecting major towns or cities, typically with multiple lanes for fast traffic",
+      "example": "We drove along the scenic coastal highway, marveling at the ocean vistas below.",
+      "relatedForms": [],
+      "collocations": [
+        "coastal highway",
+        "interstate highway",
+        "highway exit"
+      ],
+      "synonyms": [
+        "motorway",
+        "freeway",
+        "expressway"
+      ],
+      "antonyms": [
+        "backstreet",
+        "alley"
+      ],
+      "tags": [
+        "roads",
+        "travel"
+      ],
+      "translation": "طريق سريع رئيسي (هاي واي)",
+      "exampleArabic": "قدنا السيارة على طول الطريق السريع الساحلي الخلاب، مبهورين بمناظر المحيط في الأسفل."
+    },
+    {
+      "headword": "freeway",
+      "pronunciation": "/ˈfriː.weɪ/",
+      "partOfSpeech": "noun",
+      "definition": "an express highway with controlled access, no toll charges, and no intersections, designed for fast transit",
+      "example": "Traffic flowed smoothly on the eight-lane freeway outside the metropolitan boundary.",
+      "relatedForms": [],
+      "collocations": [
+        "busy freeway",
+        "freeway interchange",
+        "freeway entrance"
+      ],
+      "synonyms": [
+        "expressway",
+        "motorway",
+        "interstate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "driving"
+      ],
+      "translation": "طريق سريع حر (بدون تقاطعات)",
+      "exampleArabic": "تدفقت حركة المرور بسلاسة على الطريق السريع الحر المكون من ثمانية مسارات خارج حدود المدينة."
+    },
+    {
+      "headword": "motorway",
+      "pronunciation": "/ˈməʊ.tə.weɪ/",
+      "partOfSpeech": "noun",
+      "definition": "the British term for a dual-carriageway road designed for fast traffic, with limited access points",
+      "example": "The speed limit on British motorways is seventy miles per hour under normal conditions.",
+      "relatedForms": [],
+      "collocations": [
+        "join the motorway",
+        "motorway service station"
+      ],
+      "synonyms": [
+        "highway",
+        "freeway",
+        "autobahn"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "british"
+      ],
+      "translation": "طريق سيارات سريع (المصطلح البريطاني للطريق السريع)",
+      "exampleArabic": "السرعة القصوى المحددة على الطرق السريعة البريطانية هي سبعون ميلاً في الساعة في الظروف العادية."
+    },
+    {
+      "headword": "lane",
+      "pronunciation": "/leɪn/",
+      "partOfSpeech": "noun",
+      "definition": "a division of a road marked off by painted lines and designated for use by a single line of vehicles",
+      "example": "Always activate your turn indicator before merging into the left-hand passing lane.",
+      "relatedForms": [],
+      "collocations": [
+        "fast lane",
+        "traffic lane",
+        "bike lane"
+      ],
+      "synonyms": [
+        "traffic channel",
+        "track"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roads",
+        "driving"
+      ],
+      "translation": "حارة مرورية / مسار بالشارع",
+      "exampleArabic": "قم دائماً بتشغيل إشارة الانعطاف قبل الاندماج في الحارة المرورية اليسرى المخصصة للتجاوز."
+    },
+    {
+      "headword": "speed limit",
+      "pronunciation": "/ˈspiːd ˌlɪm.ɪt/",
+      "partOfSpeech": "noun",
+      "definition": "the maximum legal speed at which a vehicle may be driven on a particular stretch of road",
+      "example": "Speed cameras monitor compliance with the thirty-mile-per-hour speed limit in school zones.",
+      "relatedForms": [],
+      "collocations": [
+        "exceed the speed limit",
+        "strict speed limit"
+      ],
+      "synonyms": [
+        "legal speed ceiling"
+      ],
+      "antonyms": [],
+      "tags": [
+        "driving",
+        "rules"
+      ],
+      "translation": "السرعة القصوى المسموح بها (السرعة القانونية)",
+      "exampleArabic": "تراقب كاميرات السرعة الالتزام بالسرعة القصوى البالغة ثلاثين ميلاً في الساعة في مناطق المدارس."
+    },
+    {
+      "headword": "one-way street",
+      "pronunciation": "/ˌwʌn.weɪ ˈstriːt/",
+      "partOfSpeech": "noun",
+      "definition": "a street along which vehicular traffic may move in one direction only",
+      "example": "Do not turn right; that narrow lane is a strictly designated one-way street.",
+      "relatedForms": [],
+      "collocations": [
+        "drive down a one-way street",
+        "one-way street sign"
+      ],
+      "synonyms": [
+        "unidirectional road"
+      ],
+      "antonyms": [
+        "two-way street"
+      ],
+      "tags": [
+        "roads",
+        "navigation"
+      ],
+      "translation": "شارع باتجاه واحد",
+      "exampleArabic": "لا تنعطف يميناً؛ ذلك الزقاق الضيق هو شارع محدد باتجاه واحد بدقة."
+    },
+    {
+      "headword": "dead end",
+      "pronunciation": "/ˌded ˈend/",
+      "partOfSpeech": "noun",
+      "definition": "a street, road, or passage with no exit at one end; a cul-de-sac",
+      "example": "We made an incorrect turn and found ourselves trapped at a quiet residential dead end.",
+      "relatedForms": [],
+      "collocations": [
+        "reach a dead end",
+        "dead-end street"
+      ],
+      "synonyms": [
+        "cul-de-sac",
+        "blind alley",
+        "impasse"
+      ],
+      "antonyms": [
+        "thoroughfare"
+      ],
+      "tags": [
+        "roads",
+        "navigation"
+      ],
+      "translation": "طريق مسدود (نهاية مغلقة)",
+      "exampleArabic": "انعطفنا انعطافاً غير صحيح ووجدنا أنفسنا محاصرين في نهاية طريق سكني مسدود وهادئ."
+    },
+    {
+      "headword": "alley",
+      "pronunciation": "/ˈæl.i/",
+      "partOfSpeech": "noun",
+      "definition": "a narrow passageway between or behind buildings",
+      "example": "Follow the cobblestone alley behind the old cathedral to find the artisan bookshop.",
+      "relatedForms": [
+        "alleyway"
+      ],
+      "collocations": [
+        "narrow alley",
+        "blind alley",
+        "cobbled alley"
+      ],
+      "synonyms": [
+        "lane",
+        "passageway",
+        "pathway"
+      ],
+      "antonyms": [
+        "avenue",
+        "boulevard"
+      ],
+      "tags": [
+        "city",
+        "places"
+      ],
+      "translation": "زقاق / ممر ضيق بين المباني",
+      "exampleArabic": "اتبع الزقاق المرصوف بالحصى خلف الكاتدرائية القديمة للعثور على متجر الكتب الحرفي."
+    },
+    {
+      "headword": "turn left",
+      "pronunciation": "/tɜːn left/",
+      "partOfSpeech": "phrase",
+      "definition": "to change one's direction of movement toward the left side",
+      "example": "Turn left at the pharmacy, and the public library will be straight ahead of you.",
+      "verbForms": {
+        "v1": "turn left",
+        "v2": "turned left",
+        "v3": "turned left"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "turn left at the light",
+        "turn left immediately"
+      ],
+      "synonyms": [
+        "bear left",
+        "make a left"
+      ],
+      "antonyms": [
+        "turn right"
+      ],
+      "tags": [
+        "directions",
+        "imperatives"
+      ],
+      "translation": "انعطف يساراً",
+      "exampleArabic": "انعطف يساراً عند الصيدلية، وستكون المكتبة العامة أمامك مباشرة."
+    },
+    {
+      "headword": "turn right",
+      "pronunciation": "/tɜːn raɪt/",
+      "partOfSpeech": "phrase",
+      "definition": "to change one's direction of movement toward the right side",
+      "example": "Turn right after crossing the stone bridge, and follow the river promenade.",
+      "verbForms": {
+        "v1": "turn right",
+        "v2": "turned right",
+        "v3": "turned right"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "turn right at the corner",
+        "take a right"
+      ],
+      "synonyms": [
+        "bear right",
+        "make a right"
+      ],
+      "antonyms": [
+        "turn left"
+      ],
+      "tags": [
+        "directions",
+        "imperatives"
+      ],
+      "translation": "انعطف يميناً",
+      "exampleArabic": "انعطف يميناً بعد عبور الجسر الحجري، واتبع ممشى النهر."
+    },
+    {
+      "headword": "go straight",
+      "pronunciation": "/ɡəʊ streɪt/",
+      "partOfSpeech": "phrase",
+      "definition": "to proceed in a direct forward line without turning left or right",
+      "example": "Go straight along the boulevard for two blocks until you see the central post office.",
+      "verbForms": {
+        "v1": "go straight",
+        "v2": "went straight",
+        "v3": "gone straight"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "go straight ahead",
+        "keep going straight"
+      ],
+      "synonyms": [
+        "proceed forward",
+        "continue straight"
+      ],
+      "antonyms": [
+        "turn back"
+      ],
+      "tags": [
+        "directions",
+        "imperatives"
+      ],
+      "translation": "سر بشكل مستقيم / واصل السير للأمام",
+      "exampleArabic": "سر بشكل مستقيم على طول الجادة لمسافة شارعين حتى ترى مكتب البريد المركزي."
+    },
+    {
+      "headword": "walk past",
+      "pronunciation": "/wɔːk pɑːst/",
+      "partOfSpeech": "phrase",
+      "definition": "to continue walking, passing alongside a landmark without entering or stopping",
+      "example": "Walk past the municipal theater, and you will find the subway entrance on your right.",
+      "verbForms": {
+        "v1": "walk past",
+        "v2": "walked past",
+        "v3": "walked past"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "walk past the bank",
+        "walk past quickly"
+      ],
+      "synonyms": [
+        "go past",
+        "bypass"
+      ],
+      "antonyms": [
+        "enter"
+      ],
+      "tags": [
+        "directions",
+        "movement"
+      ],
+      "translation": "يمشي متجاوزاً (يمر بجانب الشيء)",
+      "exampleArabic": "امشِ متجاوزاً المسرح البلدي، وستجد مدخل مترو الأنفاق على يمينك."
+    },
+    {
+      "headword": "cross over",
+      "pronunciation": "/krɒs ˈəʊ.vər/",
+      "partOfSpeech": "phrase",
+      "definition": "to go across from one side of a road, river, or barrier to the opposite side",
+      "example": "Cross over the avenue at the pedestrian crosswalk when the signal turns green.",
+      "verbForms": {
+        "v1": "cross over",
+        "v2": "crossed over",
+        "v3": "crossed over"
+      },
+      "relatedForms": [],
+      "collocations": [
+        "cross over the street",
+        "cross over the bridge"
+      ],
+      "synonyms": [
+        "traverse",
+        "pass over"
+      ],
+      "antonyms": [],
+      "tags": [
+        "directions",
+        "movement"
+      ],
+      "translation": "يعبر إلى الجانب الآخر",
+      "exampleArabic": "اعبر إلى الجانب الآخر من الشارع عند ممر المشاة عندما تتحول الإشارة إلى اللون الأخضر."
+    },
+    {
+      "headword": "along",
+      "pronunciation": "/əˈlɒŋ/",
+      "partOfSpeech": "preposition",
+      "definition": "moving in a constant direction on a more or less horizontal surface, following the line of",
+      "example": "Stroll along the shaded riverside path to enjoy the cool evening breeze.",
+      "relatedForms": [],
+      "collocations": [
+        "walk along",
+        "drive along the coast",
+        "run along"
+      ],
+      "synonyms": [
+        "down",
+        "beside",
+        "parallel to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "على طول / بمحاذاة",
+      "exampleArabic": "تنزه على طول الممشى النهري المظلل للاستمتاع بنسيم المساء العليل."
+    },
+    {
+      "headword": "across",
+      "pronunciation": "/əˈkrɒs/",
+      "partOfSpeech": "preposition",
+      "definition": "from one side to the other of something with clear boundaries, such as a street, river, or square",
+      "example": "The cyclist rode briskly across the wide intersection before the light changed.",
+      "relatedForms": [],
+      "collocations": [
+        "walk across",
+        "swim across",
+        "across the street"
+      ],
+      "synonyms": [
+        "from one side to the other",
+        "transversely"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "عبر / قاطعاً إلى الجانب الآخر",
+      "exampleArabic": "قاد راكب الدراجة بدراجته بسرعة عبر التقاطع الواسع قبل أن تتغير الإشارة."
+    },
+    {
+      "headword": "through",
+      "pronunciation": "/θruː/",
+      "partOfSpeech": "preposition",
+      "definition": "moving in one side and out of the other side of an opening, channel, tunnel, or enclosed area",
+      "example": "The railway express passed through a three-kilometer tunnel beneath the mountain ridge.",
+      "relatedForms": [],
+      "collocations": [
+        "walk through the park",
+        "pass through",
+        "drive through"
+      ],
+      "synonyms": [
+        "by way of",
+        "penetrating"
+      ],
+      "antonyms": [],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "خلال / عبر (داخل الشيء من جهة والخروج من أخرى)",
+      "exampleArabic": "مر قطار السكة الحديدية السريع عبر نفق بطول ثلاثة كيلومترات تحت سلسلة الجبال."
+    },
+    {
+      "headword": "toward",
+      "pronunciation": "/təˈwɔːd/",
+      "partOfSpeech": "preposition",
+      "definition": "in the direction of someone or something",
+      "example": "Walk toward the illuminated clock tower, and you will see the station entrance.",
+      "relatedForms": [
+        "towards"
+      ],
+      "collocations": [
+        "head toward",
+        "walk toward",
+        "move toward"
+      ],
+      "synonyms": [
+        "in the direction of",
+        "aiming at"
+      ],
+      "antonyms": [
+        "away from"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "باتجاه / نحو",
+      "exampleArabic": "امشِ باتجاه برج الساعة المضاء، وسترى مدخل المحطة."
+    },
+    {
+      "headword": "away from",
+      "pronunciation": "/əˈweɪ frɒm/",
+      "partOfSpeech": "preposition",
+      "definition": "moving so as to increase distance from a particular person, place, or point",
+      "example": "Move away from the platform edge when a fast non-stopping train speeds past.",
+      "relatedForms": [],
+      "collocations": [
+        "step away from",
+        "drive away from",
+        "run away from"
+      ],
+      "synonyms": [
+        "distant from",
+        "leaving"
+      ],
+      "antonyms": [
+        "toward"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "بعيداً عن",
+      "exampleArabic": "ابتعد عن حافة الرصيف عندما يمر قطار سريع لا يتوقف مسرعاً."
+    },
+    {
+      "headword": "into",
+      "pronunciation": "/ˈɪn.tuː/",
+      "partOfSpeech": "preposition",
+      "definition": "expressing movement or action with the result that someone or something becomes enclosed or surrounded by something else",
+      "example": "Step into the subway carriage quickly before the pneumatic sliding doors close.",
+      "relatedForms": [],
+      "collocations": [
+        "walk into the station",
+        "drive into",
+        "climb into"
+      ],
+      "synonyms": [
+        "inside",
+        "in to"
+      ],
+      "antonyms": [
+        "out of"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "إلى داخل",
+      "exampleArabic": "ادخل إلى داخل عربة المترو بسرعة قبل أن تغلق الأبواب المنزلقة الهوائية."
+    },
+    {
+      "headword": "out of",
+      "pronunciation": "/aʊt ɒv/",
+      "partOfSpeech": "preposition",
+      "definition": "indicating movement away from the inside of an enclosed space or container",
+      "example": "Commuters poured out of the train doors onto the platform at eight in the morning.",
+      "relatedForms": [],
+      "collocations": [
+        "step out of",
+        "get out of",
+        "climb out of"
+      ],
+      "synonyms": [
+        "from inside",
+        "exiting"
+      ],
+      "antonyms": [
+        "into"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "إلى خارج / خارجاً من",
+      "exampleArabic": "تدفق الركاب اليوميون خارجين من أبواب القطار إلى الرصيف عند الثامنة صباحاً."
+    },
+    {
+      "headword": "up",
+      "pronunciation": "/ʌp/",
+      "partOfSpeech": "preposition",
+      "definition": "from a lower to a higher position on; ascending",
+      "example": "Walk up the broad stone staircase to reach the cathedral square at the top of the hill.",
+      "relatedForms": [],
+      "collocations": [
+        "walk up the hill",
+        "climb up the stairs",
+        "go up"
+      ],
+      "synonyms": [
+        "ascending",
+        "upward along"
+      ],
+      "antonyms": [
+        "down"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "صعوداً على / إلى أعلى",
+      "exampleArabic": "امشِ صعوداً على الدرج الحجري العريض للوصول إلى ساحة الكاتدرائية في أعلى التل."
+    },
+    {
+      "headword": "down",
+      "pronunciation": "/daʊn/",
+      "partOfSpeech": "preposition",
+      "definition": "from a higher to a lower position on; descending",
+      "example": "Go down the escalator to reach metro line 4 and the express airport shuttle.",
+      "relatedForms": [],
+      "collocations": [
+        "walk down the street",
+        "go down the stairs",
+        "drive down"
+      ],
+      "synonyms": [
+        "descending",
+        "downward along"
+      ],
+      "antonyms": [
+        "up"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "نزولاً على / إلى أسفل",
+      "exampleArabic": "انزل عبر السلم الكهربائي للوصول إلى خط المترو رقم 4 وحافلة المطار السريعة."
+    },
+    {
+      "headword": "over",
+      "pronunciation": "/ˈəʊ.vər/",
+      "partOfSpeech": "preposition",
+      "definition": "extending directly upwards from, or moving across the top of something from one side to the other",
+      "example": "The historic tram line crosses over the arched river bridge into the old quarter.",
+      "relatedForms": [],
+      "collocations": [
+        "go over the bridge",
+        "walk over the pass",
+        "fly over"
+      ],
+      "synonyms": [
+        "above",
+        "across the top of"
+      ],
+      "antonyms": [
+        "under"
+      ],
+      "tags": [
+        "prepositions",
+        "movement"
+      ],
+      "translation": "فوق / عبر أعلى (الجسر أو الحاجز)",
+      "exampleArabic": "يعبر خط الترام التاريخي فوق جسر النهر المقوس إلى الحي القديم."
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Asking for Directions to the Central Subway Station",
+      "titleArabic": "طلب وصف الطريق إلى محطة مترو الأنفاق المركزية",
+      "setting": "A tourist asking a friendly local pedestrian for directions in a busy metropolitan square",
+      "settingArabic": "سائح يسأل أحد المشاة المحليين اللطفاء عن الاتجاهات في ميدان مدينة مزدحم",
+      "lines": [
+        {
+          "speaker": "Tourist",
+          "text": "Excuse me! Could you tell me how to get to the central subway station from here?",
+          "translation": "معذرة! هل يمكنك إخباري بكيفية الوصول إلى محطة مترو الأنفاق المركزية من هنا؟"
+        },
+        {
+          "speaker": "Pedestrian",
+          "text": "Certainly! Go straight along this sidewalk past the old fountain until you reach the traffic light.",
+          "translation": "بكل تأكيد! سر للأمام مباشرة على طول رصيف المشاة متجاوزاً النافورة القديمة حتى تصل إلى إشارة المرور."
+        },
+        {
+          "speaker": "Tourist",
+          "text": "Do I turn left or turn right at the intersection?",
+          "translation": "هل أنعطف يساراً أم يميناً عند التقاطع؟"
+        },
+        {
+          "speaker": "Pedestrian",
+          "text": "Turn right at the intersection onto the wide avenue. Then cross over the street at the zebra crossing.",
+          "translation": "انعطف يميناً عند التقاطع إلى الجادة الواسعة. ثم اعبر الشارع عند ممر المشاة."
+        },
+        {
+          "speaker": "Tourist",
+          "text": "Is the subway entrance far, or is it within easy walking distance?",
+          "translation": "هل مدخل المترو بعيد، أم أنه على مسافة قريبة سيراً على الأقدام؟"
+        },
+        {
+          "speaker": "Pedestrian",
+          "text": "It is only two blocks away. Walk past the bookstore, and you will see the electronic turnstiles and ticket machine.",
+          "translation": "إنه على بعد شارعين فقط. امشِ متجاوزاً متجر الكتب، وسترى البوابات الدوارة الإلكترونية وماكينة التذاكر."
+        },
+        {
+          "speaker": "Tourist",
+          "text": "What is the standard metro fare for a single trip downtown?",
+          "translation": "كم تبلغ أجرة المترو القياسية لرحلة واحدة إلى وسط المدينة؟"
+        },
+        {
+          "speaker": "Pedestrian",
+          "text": "The transit fare is two dollars fifty. You can tap your bank card directly at the turnstile.",
+          "translation": "أجرة المواصلات دولارين ونصف. يمكنك تمرير بطاقتك المصرفية مباشرة عند البوابة الدوارة."
+        }
+      ],
+      "vocabularyUsed": [
+        "subway",
+        "pedestrian",
+        "go straight",
+        "along",
+        "sidewalk",
+        "traffic light",
+        "turn left",
+        "turn right",
+        "intersection",
+        "cross over",
+        "zebra crossing",
+        "walk past",
+        "turnstile",
+        "ticket machine",
+        "metro",
+        "fare"
+      ]
+    },
+    {
+      "title": "Taking the Tram and Connecting to the Railway",
+      "titleArabic": "ركوب الترام والانتقال إلى قطار السكة الحديدية",
+      "setting": "Two commuters riding a city tram and discussing transit connections to the railway station",
+      "settingArabic": "راكبان يوميان يستقلان ترام المدينة ويناقشان التحويلات إلى محطة القطار",
+      "lines": [
+        {
+          "speaker": "Adel",
+          "text": "Look, our electric tram is arriving at the platform right on schedule!",
+          "translation": "انظر، ترامنا الكهربائي يصل إلى الرصيف في موعده المحدد تماماً!"
+        },
+        {
+          "speaker": "Mazen",
+          "text": "Step into the carriage quickly. Does this tram route travel directly past the railway terminal?",
+          "translation": "ادخل إلى داخل العربة بسرعة. هل يمر مسار هذا الترام مباشرة بمحطة السكة الحديدية؟"
+        },
+        {
+          "speaker": "Adel",
+          "text": "Yes, it travels along the dedicated bus lane and glides over the historic arched river bridge.",
+          "translation": "نعم، إنه يسير على طول المسار المخصص للحافلات وينساب فوق جسر النهر المقوس التاريخي."
+        },
+        {
+          "speaker": "Mazen",
+          "text": "Good. We need to catch the 9:15 high-speed train from platform number four.",
+          "translation": "جيد. نحتاج إلى اللحاق بقطار السرعة العالية عند الساعة 9:15 من الرصيف رقم أربعة."
+        },
+        {
+          "speaker": "Adel",
+          "text": "The conductor on this train always checks seat reservations, so keep your QR code open on your phone.",
+          "translation": "يدقق كمسري هذا القطار دائماً في حجوزات المقاعد، لذا احتفظ برمز الاستجابة السريعة مفتوحاً على هاتفك."
+        },
+        {
+          "speaker": "Mazen",
+          "text": "Will there be many fellow commuters heading to the capital this morning?",
+          "translation": "هل سيكون هناك العديد من الركاب اليوميين المتجهين إلى العاصمة هذا الصباح؟"
+        },
+        {
+          "speaker": "Adel",
+          "text": "Usually hundreds of passengers fill every car, but our reserved seats will guarantee a relaxed journey.",
+          "translation": "عادة ما يملأ مئات الركاب كل عربة، لكن مقاعدنا المحجوزة ستضمن رحلة مريحة."
+        },
+        {
+          "speaker": "Mazen",
+          "text": "Here is our stop. Step out of the tram carefully, and walk toward the central station concourse.",
+          "translation": "ها هي محطتنا. انزل خارجاً من الترام بحذر، وامشِ باتجاه البهو الرئيسي للمحطة المركزية."
+        }
+      ],
+      "vocabularyUsed": [
+        "tram",
+        "platform",
+        "into",
+        "route",
+        "railway",
+        "bus lane",
+        "over",
+        "train",
+        "conductor",
+        "commuter",
+        "passenger",
+        "out of",
+        "toward"
+      ]
+    },
+    {
+      "title": "Navigating City Traffic and Highway Driving",
+      "titleArabic": "القيادة في زحام المدينة والتنقل عبر الطرق السريعة",
+      "setting": "A driver and passenger navigating complex city streets and joining the highway",
+      "settingArabic": "سائق وراكب يتنقلان عبر شوارع المدينة المزدحمة وينضمان إلى الطريق السريع",
+      "lines": [
+        {
+          "speaker": "Driver",
+          "text": "Watch the navigation screen; should I take the next exit at the circular roundabout?",
+          "translation": "راقب شاشة الملاحة؛ هل ينبغي أن أسلك المخرج التالي عند الدوار المروري؟"
+        },
+        {
+          "speaker": "Navigator",
+          "text": "Take the second exit at the roundabout. Don't enter that alleyway; it is a one-way street!",
+          "translation": "اسلك المخرج الثاني عند الدوار. لا تدخل ذلك الزقاق؛ فهو شارع باتجاه واحد!"
+        },
+        {
+          "speaker": "Driver",
+          "text": "Thank you! I almost made a mistake. We certainly don't want to get trapped in a dead end.",
+          "translation": "شكراً لك! كدت أرتكب خطأً. بالتأكيد لا نريد أن نحاصر في طريق مسدود."
+        },
+        {
+          "speaker": "Navigator",
+          "text": "Now merge into the right lane and follow the feeder road up toward the interstate highway.",
+          "translation": "الآن اندمج في الحارة اليمنى واتبع الطريق الفرعي صعوداً باتجاه الطريق السريع بين الولايات."
+        },
+        {
+          "speaker": "Driver",
+          "text": "Traffic on this multilane freeway is moving at a steady pace. What is the posted speed limit?",
+          "translation": "تسير حركة المرور على هذا الطريق السريع الحر متعدد المسارات بوتيرة ثابتة. ما هي السرعة القانونية المحددة؟"
+        },
+        {
+          "speaker": "Navigator",
+          "text": "The speed limit is 65 miles per hour. Stay in the center lane and maintain a safe following distance.",
+          "translation": "السرعة القصوى المحددة هي 65 ميلاً في الساعة. ابقَ في الحارة الوسطى وحافظ على مسافة أمان كافية."
+        },
+        {
+          "speaker": "Driver",
+          "text": "Look ahead; an illuminated overhead sign indicates that the taxi rank and airport terminal are nearby.",
+          "translation": "انظر أمامك؛ تشير لافتة علوية مضاءة إلى أن موقف سيارات الأجرة ومبنى المطار قريبان."
+        },
+        {
+          "speaker": "Navigator",
+          "text": "Splendid! We will arrive with plenty of time before our flight departs.",
+          "translation": "رائع! سنصل بمتسع وافر من الوقت قبل مغادرة رحلتنا."
+        }
+      ],
+      "vocabularyUsed": [
+        "roundabout",
+        "alley",
+        "one-way street",
+        "dead end",
+        "lane",
+        "up",
+        "toward",
+        "highway",
+        "freeway",
+        "speed limit",
+        "taxi rank",
+        "cab"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Network of Urban Transit: Metros, Trams, and Commuters",
+      "titleArabic": "شبكة النقل الحضري: المترو والترام والركاب اليوميون",
+      "kind": "urban-guide",
+      "text": "Modern metropolitan cities rely on integrated public transportation networks to move millions of daily commuters efficiently. Beneath city streets, electric subway and metro trains speed along steel tracks, arriving at crowded platforms every few minutes. Passengers purchase a prepaid transit card at an automated ticket machine, tap to unlock the turnstile, and step into the train carriage. Above ground, sleek modern trams and electric trolleybuses glide silently along dedicated bus lanes, stopping at clearly marked street corners. Public transit reduces urban traffic congestion, eliminates the frustration of parking, and offers an affordable fare for students, workers, and visitors alike.",
+      "translation": "تعتمد المدن الكبرى المعاصرة على شبكات نقل عام متكاملة لنقل ملايين الركاب اليوميين بكفاءة. وتحت شوارع المدينة، تسير قطارات المترو ومترو الأنفاق الكهربائية بسرعة على طول القضبان الفولاذية، وتصل إلى الأرصفة المزدحمة كل بضع دقائق. ويشتري الركاب بطاقة مواصلات مسبقة الدفع من ماكينة التذاكر الآلية، ويمررونها لفتح البوابة الدوارة، ثم يدخلون إلى عربة القطار. وفوق الأرض، تنساب الترامات الحديثة وحافلات الترولي باص الكهربائية بهدوء على طول المسارات المخصصة للحافلات. ويقلل النقل العام من الازدحام المروري، ويوفر أجرة ركوب اقتصادية للجميع.",
+      "vocabularyUsed": [
+        "commuter",
+        "subway",
+        "metro",
+        "track",
+        "platform",
+        "ticket machine",
+        "turnstile",
+        "into",
+        "tram",
+        "trolleybus",
+        "along",
+        "bus lane",
+        "fare"
+      ]
+    },
+    {
+      "title": "Mastering City Navigation: Giving and Following Directions",
+      "titleArabic": "إتقان التجول في المدينة: مهارات وصف واتباع الاتجاهات",
+      "kind": "navigation-guide",
+      "text": "Finding one's way through an unfamiliar historical city requires understanding clear navigational imperatives. When a lost pedestrian requests directions, locals use concise commands: go straight along the wide boulevard, turn left at the stone fountain, and cross over the avenue at the zebra crossing. Travelers should observe road signs carefully to avoid mistakenly driving down a designated one-way street or becoming trapped at a dead end. Walking past towering cathedrals and exploring narrow cobblestone alleys reveals hidden courtyards and artisan shops. By paying attention to traffic lights, landmarks, and street intersections, any visitor can explore urban landscapes with relaxed confidence.",
+      "translation": "يتطلب إيجاد طريقك عبر مدينة تاريخية غير مألوفة فهم توجيهات الملاحة بوضوح. فعندما يطلب أحد المشاة التائهين الاتجاهات، يستخدم السكان المحليون أوامر موجزة: سر للأمام مباشرة على طول الجادة العريضة، وانعطف يساراً عند النافورة الحجرية، واعبر الشارع عند ممر المشاة. ويجب على المسافرين مراقبة لافتات الطريق بعناية لتجنب القيادة بالخطأ في شارع باتجاه واحد أو الوقوع في نهاية طريق مسدود. كما أن المشي متجاوزاً الكاتدرائيات الشاهقة واستكشاف الأزقة الضيقة يكشف عن متاجر حرفية مدهشة وبثقة هادئة.",
+      "vocabularyUsed": [
+        "pedestrian",
+        "go straight",
+        "along",
+        "turn left",
+        "cross over",
+        "zebra crossing",
+        "one-way street",
+        "dead end",
+        "walk past",
+        "alley",
+        "traffic light",
+        "intersection"
+      ]
+    },
+    {
+      "title": "The Dynamics of Movement: Prepositions in Action",
+      "titleArabic": "ديناميكية الحركة: التطبيق العملي لحروف جر الانتقال",
+      "kind": "linguistic-guide",
+      "text": "Describing motion accurately in English depends on utilizing precise prepositions of movement. When driving out of an underground parking garage and heading up onto the multilane highway, vehicles accelerate toward their destinations. Along the winding route, drivers navigate through mountain tunnels, steer around a circular roundabout, and cross over sprawling suspension bridges spanning broad river valleys. Meanwhile, pedestrians stroll along the riverbank sidewalk, walk down stone steps to the water's edge, and step into waiting river taxis. Knowing whether to move toward, away from, across, or through a landmark enables seamless communication whether giving driving directions or coordinating daily travels.",
+      "translation": "يعتمد وصف الحركة بدقة في اللغة الإنجليزية على استخدام حروف جر الحركة بدقة متناهية. فعند الخروج بالسيارة من مرآب أرضي والتوجه صعوداً إلى الطريق السريع، تتسارع المركبات نحو وجهاتها. وعلى طول المسار المتعرج، يقود السائقون عبر أنفاق الجبال، ويدورون حول دوار مروري، ويعبرون فوق جسور معلقة تمتد عبر أودية الأنهار. وفي الوقت نفسه، يتنزه المشاة على طول رصيف ضفة النهر، وينزلون الدرج الحجري، ويدخلون إلى قوارب الأجرة المائية. ومعرفة استخدام حروف الجر يضمن تواصلاً سلساً في التوجيهات والتنقل.",
+      "vocabularyUsed": [
+        "out of",
+        "underground",
+        "up",
+        "highway",
+        "toward",
+        "along",
+        "through",
+        "roundabout",
+        "over",
+        "sidewalk",
+        "down",
+        "into",
+        "away from",
+        "across"
+      ]
+    }
+  ]
+}

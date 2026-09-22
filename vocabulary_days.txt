@@ -57,3 +57,43 @@ invitation,host,visitor,hospitality,courtesy,politeness,offer,entertain,consent,
 
 === DAY 20 — Small Talk and Messages ===
 small talk,chat,gossip,casual,informal,brief,briefly,catch up,reach out,contact,keep in touch,stay in touch,lose touch,reconnect,texting,notification,inbox,voicemail,ping,forward,attach,attachment,emoticon,emoji,abbreviation,acronym,by the way,speaking of,anyway,as for,regarding,concerning,update,latest,news,rumor,compliment,flattery,polite remark,icebreaker,regards,cheers,take care,see you,keep posted,touch base,drop a line,give a shout,catch you later,best wishes
+
+
+=== DAY 21 — Holiday Plans ===
+vacation,resort,tourism,tourist,sightseer,itinerary,scenery,landscape,excursion,sightseeing,guidebook,souvenir,sunscreen,swimsuit,luggage,reservation,booking,brochure,agency,explore,unwind,sunbathe,hike,trek,camp,campsite,tent,campfire,seaside,beach,island,mountain,lake,forest,waterfall,abroad,overseas,upcoming,intention,anticipate,voyage,getaway,coastline,harbor,voyager,destination,wanderlust,sunshine,holidaymaker,be going to
+
+
+=== DAY 22 — Decisions and Predictions ===
+predict,prediction,forecast,foresee,prophesy,promise,swear,vow,pledge,guarantee,assure,assurance,commit,commitment,decide,decision,spontaneous,instant,instantly,immediate,definitely not,probably,likely,unlikely,certain,uncertain,doubtful,perhaps,maybe,possibility,probability,destiny,fate,fortune,horoscope,crystal ball,optimistic,pessimistic,bet,gamble,expect,expectation,envision,assume,presume,suppose,swear to,word of honor,will,won't
+
+
+=== DAY 23 — At the Airport ===
+airline,flight,terminal,gate,runway,boarding,boarding pass,customs,immigration,security checkpoint,metal detector,carry-on,checked baggage,excess baggage,baggage claim,carousel,conveyor belt,duty-free,lounge,delayed,on time,cancelled,board,land,take off,departure gate,arrival hall,transit,layover,connection,cockpit,cabin,pilot,flight attendant,seatbelt,aisle seat,window seat,overhead bin,turbulence,altitude,direct flight,connecting flight,domestic,declaration,declare,passport control,visa,stamp,embark,disembark
+
+
+=== DAY 24 — Hotels and Stays ===
+guesthouse,motel,hostel,inn,lodge,accommodation,suite,single room,double room,twin room,vacancy,no vacancy,check in,check out,reception,front desk,concierge,bellboy,porter,housekeeping,maid,doorman,amenities,mini-bar,air conditioning,room service,wake-up call,key card,balcony view,sea view,continental breakfast,buffet,valet parking,elevator,staircase,lobby,hall,deposit,bill,invoice,complaint,room rate,extend stay,fully booked,reserve,tip the porter,guest service,may I,could I have,can I get
+
+
+=== DAY 25 — Eating Out ===
+eatery,diner,bistro,waiter,waitress,server,menu,course,appetizer,starter,main course,entree,dessert,side dish,specialty,chef,daily special,order food,table for two,bill please,check please,tip the waiter,service charge,cutlery,fork,knife,spoon,napkin,tablecloth,straw,rare,medium,well-done,raw,cooked,crispy,bland,salty food,savory,bitter,vegetarian,vegan,allergy,allergic,gluten-free,too,enough,too much,too many,not enough
+
+
+=== DAY 26 — Shopping for Clothes ===
+garment,apparel,clothing,attire,outfit,fitting room,dressing room,try on,size,fit,tight,loose,baggy,short-sleeved,long-sleeved,collar,sleeve,button,zipper,pocket,cotton,wool,silk,leather,denim,linen,synthetic,pattern,striped,plaid,polka-dot,plain,stylish,fashionable,trendy,vintage,casual wear,formal wear,costume,uniform,underwear,socks,scarf,gloves,belt,jewelry,boutique,fabric,designer,brand
+
+
+=== DAY 27 — Getting Around ===
+subway,metro,underground,tram,trolleybus,railway,train,commuter,passenger,fare,ticket machine,turnstile,platform,track,conductor,route,bus lane,taxi rank,cab,chauffeur,pedestrian,crosswalk,zebra crossing,traffic light,intersection,roundabout,sidewalk,highway,freeway,motorway,lane,speed limit,one-way street,dead end,alley,turn left,turn right,go straight,walk past,cross over,along,across,through,toward,away from,into,out of,up,down,over
+
+
+=== DAY 28 — Money Matters ===
+currency,cash,coins,banknote,bills,atm,cash machine,bank account,checking account,savings account,balance,ledger,deposit money,withdraw,withdrawal,transfer,wire transfer,exchange rate,foreign currency,fee,commission,loan,debt,interest rate,mortgage,credit,debit,pin,contactless,insert card,swipe card,teller,bank branch,overdraft,bankrupt,wealthy,broke,affordable,costly,valuable,priceless,worthless,invest,investment,profit,a few,a little,a lot of,plenty of,several
+
+
+=== DAY 29 — Travel Experiences ===
+escapade,memorable,unforgettable,expedition,milestone,bucket list,lifetime,spectacular,breathtaking,bizarre,exotic,marvelous,astonishing,stunning,fascinating,monument,historic site,ruins,ancient,temple,pyramid,castle,palace,cathedral,shrine,marvel,safari,scuba diving,snorkeling,skydiving,bungee jumping,paragliding,rafting,cruise,sail,navigate,witness firsthand,conquer,climb,roam,ever,never before,once in a lifetime,so far,up to now,in my life,have you ever,I have never,visited,explored
+
+
+=== DAY 30 — Trips and Stories ===
+chronicle,anecdote,narrative,storyteller,tale,memoir,journal,diary,logbook,travelogue,recount,narrate,describe in detail,reminisce,relive,vivid,thrilling,dramatic,humorous,spooky,unexpected turn,plot twist,climax,mishap,misadventure,setback,breakdown,stranded,lost baggage,missed flight,friendly stranger,local hospitality,lifesaver,happy ending,lesson learned,reflection,nostalgia,souvenir story,photo album,snapshot,just now,as of now,not yet,still pending,recently happened,finished trip,ongoing journey,unforgettable trip,storyline,memories made
