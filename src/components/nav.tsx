@@ -73,7 +73,6 @@ export function Nav({
       match: startsWith("/day"),
     },
     { href: "/journey", label: "Journey", short: "Journey", icon: "journey", match: startsWith("/journey") },
-    { href: "/vocabulary", label: "Vocabulary", short: "Words", icon: "words", match: (p) => p === "/vocabulary" && !p.includes("state=DIFFICULT") },
     { href: "/review", label: "Difficult Words", short: "Difficult", icon: "difficult", match: startsWith("/review") },
   ];
 
@@ -317,7 +316,7 @@ export function Nav({
         aria-label="Quick navigation"
         className="fixed inset-x-0 bottom-0 z-40 border-t border-night-700 bg-night-900/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(0,0,0,0.7)] backdrop-blur-2xl lg:hidden"
       >
-        <ul className="mx-auto grid max-w-lg grid-cols-5 px-1 py-1.5">
+        <ul className="mx-auto grid max-w-lg grid-cols-4 px-1 py-1.5">
           {primary.map((item) => {
             const active = item.match(pathname);
             return (

@@ -3,6 +3,7 @@ import { TabBar } from "./ui";
 const tabs = [
   { key: "vocabulary", label: "Vocabulary", count: "50" },
   { key: "grammar", label: "Grammar" },
+  { key: "exercise", label: "Exercise" },
   { key: "conversations", label: "Conversations", count: "3" },
   { key: "paragraphs", label: "Paragraphs", count: "3" },
   { key: "words", label: "My Words" },

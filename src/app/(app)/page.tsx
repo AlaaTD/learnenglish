@@ -164,6 +164,13 @@ export default async function HomePage() {
                   Revisit Day {dayNumber - 1}
                 </Link>
               ) : null}
+              <Link
+                href="/vocabulary"
+                className="inline-flex h-[52px] items-center gap-3 rounded-full border-[1.5px] border-zinc-600 px-9 text-[17px] font-semibold text-zinc-100 transition hover:border-zinc-500 hover:bg-white/[0.04] active:translate-y-px"
+              >
+                <IconBookOpen className="h-[19px] w-[19px] text-zinc-200" />
+                Vocabulary
+              </Link>
             </div>
           </div>
 

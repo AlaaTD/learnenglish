@@ -1,0 +1,29 @@
+=== DAY 1 — My Daily Routine ===
+wake up,get up,alarm,brush,shower,get dressed,breakfast,coffee,cereal,pack,leave,walk,work,arrive,start,busy,check,email,lunch,afternoon,finish,tired,hungry,evening,dinner,cook,wash,dishes,laundry,watch,television,relax,go shopping,night,bedtime,go to bed,sleep,usually,always,sometimes,never,early,late,every day,o'clock,half past,daily,routine,habit,free
+
+=== DAY 2 — People and Family ===
+family,mother,father,parent,brother,sister,son,daughter,child,baby,husband,wife,grandfather,grandmother,grandparent,grandchild,uncle,aunt,cousin,relative,person,friend,neighbor,colleague,partner,guest,name,age,man,woman,boy,girl,married,single,tall,short,young,old,kind,friendly,funny,smart,quiet,close,live,meet,introduce,call,visit,help
+
+=== DAY 3 — My Home ===
+house,apartment,room,bedroom,living room,kitchen,bathroom,dining room,hallway,balcony,garden,door,window,wall,floor,ceiling,bed,sofa,couch,chair,table,desk,closet,wardrobe,shelf,drawer,mirror,lamp,carpet,rug,curtain,sink,stove,fridge,cupboard,in,on,under,behind,in front of,next to,between,above,near,clean,tidy,messy,bright,dark,comfortable
+
+=== DAY 4 — The Things I Have ===
+bag,backpack,wallet,purse,key,phone,laptop,tablet,charger,camera,headphones,notebook,pen,pencil,book,glasses,sunglasses,umbrella,bottle,cup,mug,money,card,passport,ticket,jacket,coat,shoes,hat,shirt,pants,dress,sweater,ring,necklace,box,suitcase,have,own,carry,bring,take,lose,find,buy,sell,borrow,lend,keep,expensive
+
+=== DAY 5 — Food I Eat ===
+meal,snack,food,bread,rice,pasta,pizza,sandwich,cheese,butter,egg,meat,chicken,beef,fish,soup,salad,vegetable,potato,tomato,onion,fruit,apple,banana,orange,sugar,salt,pepper,water,tea,milk,juice,eat,drink,taste,smell,serve,order,like,love,hate,prefer,delicious,sweet,sour,salty,spicy,fresh,hot,cold
+
+=== DAY 6 — My Week ===
+often,rarely,seldom,hardly ever,frequently,occasionally,regularly,constantly,weekly,monthly,yearly,once,twice,monday,tuesday,wednesday,thursday,friday,saturday,sunday,week,weekend,weekday,month,year,calendar,schedule,plan,activity,hobby,sport,game,match,gym,pool,park,cinema,museum,concert,play,swim,run,jog,read,write,listen,travel,stay,practice,spend
+
+=== DAY 7 — Telling the Time ===
+time,clock,hour,minute,second,quarter past,quarter to,noon,midnight,dawn,dusk,sunrise,sunset,moment,period,duration,deadline,appointment,meeting,date,event,session,timetable,at,before,after,during,until,since,for,by,from,to,now,then,soon,already,yet,still,ago,today,tomorrow,yesterday,tonight,punctual,urgent,wait,delay,cancel,postpone
+
+=== DAY 8 — What I Can Do ===
+ability,skill,talent,language,music,song,instrument,guitar,piano,driver,license,computer,drawing,painting,photograph,chess,bicycle,car,can,speak,sing,dance,draw,paint,ride,drive,fly,fix,repair,build,create,bake,type,count,solve,remember,forget,understand,learn,teach,explain,show,try,able,fluent,quick,slow,easy,hard,difficult
+
+=== DAY 9 — In My City ===
+city,town,village,street,road,avenue,corner,square,building,supermarket,market,store,shop,pharmacy,hospital,clinic,bank,post office,police station,school,university,library,hotel,restaurant,cafe,bakery,station,bus stop,airport,bridge,river,center,suburb,area,map,direction,traffic,pavement,turn,cross,follow,pass,stop,reach,locate,crowded,peaceful,modern,famous,local
+
+=== DAY 10 — Getting to Know You ===
+who,what,where,when,why,how,which,whose,question,answer,conversation,topic,interest,favorite,opinion,reason,country,nationality,hometown,address,number,job,occupation,workplace,greeting,pleasure,farewell,message,information,detail,fact,ask,reply,tell,say,talk,discuss,share,describe,guess,choose,mean,wonder,agree,disagree,curious,polite,honest,clear,true

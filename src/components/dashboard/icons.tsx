@@ -151,3 +151,23 @@ export function IconChevronRight(props: IconProps) {
     </Stroke>
   );
 }
+
+/** Filled outline circle with a check mark (exercise: correct answer). */
+export function IconCheckCircle(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m8.3 12.3 2.6 2.6 4.8-5.2" />
+    </Stroke>
+  );
+}
+
+/** Outline circle with an X (exercise: wrong answer). */
+export function IconXCircle(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m9.2 9.2 5.6 5.6M14.8 9.2l-5.6 5.6" />
+    </Stroke>
+  );
+}
