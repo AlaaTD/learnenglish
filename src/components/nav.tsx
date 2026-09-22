@@ -6,13 +6,14 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IconChevronDown } from "@/components/dashboard/icons";
 
-type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin" | "difficult";
+type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin" | "difficult" | "grammar";
 
 // Simple stroke icons (one consistent style, inherit the text colour) — replaces
 // the multi-coloured emoji that added visual noise and rendered differently per OS.
 const iconPaths: Record<IconName, string> = {
   home: "M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z",
   day: "M8 3v3M16 3v3M4 8h16M5 5h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z",
+  grammar: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
   journey: "M5 21V4m0 0h11l-2 4 2 4H5",
   words: "M4 5.5A1.5 1.5 0 015.5 4H19v14H5.5A1.5 1.5 0 004 19.5v-14zM4 19.5A1.5 1.5 0 005.5 21H19",
   review: "M20 12a8 8 0 11-2.34-5.66M20 4v5h-5",
@@ -72,6 +73,7 @@ export function Nav({
       icon: "day",
       match: startsWith("/day"),
     },
+    { href: "/grammar", label: "Grammar", short: "Grammar", icon: "grammar", match: startsWith("/grammar") },
     { href: "/journey", label: "Journey", short: "Journey", icon: "journey", match: startsWith("/journey") },
     { href: "/review", label: "Difficult Words", short: "Difficult", icon: "difficult", match: startsWith("/review") },
   ];
@@ -205,7 +207,7 @@ export function Nav({
                   : "border-night-700/80 bg-night-900/60 hover:border-brand-600/60 hover:bg-night-800/80"
               }`}
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-tr from-brand-800 to-brand-600 text-xs font-bold text-white shadow-sm ring-1 ring-white/15">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-700 text-xs font-bold text-white shadow-sm ring-1 ring-white/15">
                 {initial}
               </span>
               <div className="flex flex-col text-left">
@@ -223,7 +225,7 @@ export function Nav({
               aria-expanded={menuOpen}
               className="flex sm:hidden items-center gap-2 rounded-full border border-night-700/80 bg-night-900/90 py-1 pe-2.5 ps-1 text-mist-200 shadow-sm transition-all duration-200 active:scale-95 hover:bg-night-800 hover:border-brand-600/50"
             >
-              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-brand-800 to-brand-600 text-xs font-bold text-white ring-1 ring-white/15">
+              <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-700 text-xs font-bold text-white ring-1 ring-white/15">
                 {initial}
               </span>
               <svg
@@ -316,7 +318,7 @@ export function Nav({
         aria-label="Quick navigation"
         className="fixed inset-x-0 bottom-0 z-40 border-t border-night-700 bg-night-900/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_30px_rgba(0,0,0,0.7)] backdrop-blur-2xl lg:hidden"
       >
-        <ul className="mx-auto grid max-w-lg grid-cols-4 px-1 py-1.5">
+        <ul className="mx-auto grid max-w-lg grid-cols-5 px-1 py-1.5">
           {primary.map((item) => {
             const active = item.match(pathname);
             return (

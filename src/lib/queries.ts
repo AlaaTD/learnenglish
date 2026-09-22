@@ -378,3 +378,62 @@ export async function getReviewWords(userId: string) {
     due: r.reviewDueAt ? r.reviewDueAt.getTime() <= now : true,
   }));
 }
+
+export type GrammarAcademyLesson = {
+  id: string;
+  dayNumber: number;
+  order: number;
+  title: string;
+  titleArabic: string | null;
+  explanation: string;
+  explanationArabic: string | null;
+  structures: { pattern: string; label: string; explanation?: string; explanationArabic?: string }[];
+  examples: { sentence: string; usesVocabulary: string[]; translation?: string }[];
+  commonUsage: string[];
+  commonMistakes: { wrong: string; right: string; note: string; noteArabic?: string }[];
+  day: {
+    dayNumber: number;
+    title: string;
+    stage: string;
+    topic: string;
+    focus: string;
+  };
+};
+
+export async function getAllGrammarLessons(): Promise<GrammarAcademyLesson[]> {
+  const rows = await db.grammarLesson.findMany({
+    orderBy: [
+      { dayNumber: "asc" },
+      { order: "asc" },
+    ],
+    include: {
+      day: {
+        select: {
+          dayNumber: true,
+          title: true,
+          stage: true,
+          topic: true,
+          focus: true,
+        },
+      },
+    },
+  });
+
+  return rows.map((g) => {
+    const raw = g as Record<string, unknown>;
+    return {
+      id: g.id,
+      dayNumber: g.dayNumber,
+      order: g.order,
+      title: g.title,
+      titleArabic: (raw.titleArabic as string | null) ?? null,
+      explanation: g.explanation,
+      explanationArabic: (raw.explanationArabic as string | null) ?? null,
+      structures: parseJson<{ pattern: string; label: string; explanation?: string; explanationArabic?: string }[]>(g.structures, []),
+      examples: parseJson<{ sentence: string; usesVocabulary: string[]; translation?: string }[]>(g.examples, []),
+      commonUsage: parseStringArray(g.commonUsage),
+      commonMistakes: parseJson<{ wrong: string; right: string; note: string; noteArabic?: string }[]>(g.commonMistakes, []),
+      day: g.day,
+    };
+  });
+}

@@ -1,0 +1,1022 @@
+# -*- coding: utf-8 -*-
+"""Generator for Day 44: Feelings and Emotions."""
+
+import json
+
+vocab_data = [
+    {
+        "headword": "agony",
+        "pronunciation": "/ˈæɡəni/",
+        "partOfSpeech": "noun",
+        "definition": "Extreme physical or mental suffering.",
+        "example": "He endured agonizing days of mental agony waiting for the diagnostic results.",
+        "translation": "عذاب / ألم نفسي أو جسدي شديد",
+        "exampleArabic": "تحمل أياماً معذبة من الألم النفسي الشديد بانتظار نتائج التشخيص.",
+        "relatedForms": ["agonize", "agonizing"],
+        "collocations": ["mental agony", "in sheer agony"],
+        "synonyms": ["torment", "anguish", "suffering"],
+        "antonyms": ["bliss", "peace"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "annoyance",
+        "pronunciation": "/əˈnɔɪəns/",
+        "partOfSpeech": "noun",
+        "definition": "The feeling of being slightly irritated or bothered by something.",
+        "example": "She clicked her tongue in mild annoyance when the internet connection dropped again.",
+        "translation": "انزعاج / تضايق خفيف",
+        "exampleArabic": "طقطقت بلسانها في انزعاج خفيف عندما انقطع اتصال الإنترنت مجدداً.",
+        "relatedForms": ["annoy", "annoyed"],
+        "collocations": ["express annoyance", "slight annoyance"],
+        "synonyms": ["irritation", "vexation", "displeasure"],
+        "antonyms": ["satisfaction", "pleasure"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "anticipation",
+        "pronunciation": "/ænˌtɪsɪˈpeɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "A feeling of excited or nervous expectation about what will happen.",
+        "example": "The audience buzzed with eager anticipation right before the curtain rose.",
+        "translation": "ترقب / توقع مشوب بالحماس",
+        "exampleArabic": "ضج الجمهور بالترقب المشوب بالحماس قبل أن يُرفع الستار مباشرة.",
+        "relatedForms": ["anticipate", "anticipatory"],
+        "collocations": ["eager anticipation", "wait in anticipation"],
+        "synonyms": ["expectation", "suspense", "excitement"],
+        "antonyms": ["dread", "indifference"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "apathy",
+        "pronunciation": "/ˈæpəθi/",
+        "partOfSpeech": "noun",
+        "definition": "Lack of enthusiasm, emotion, or concern about anything.",
+        "example": "Voter apathy resulted in a historically low turnout at the local election.",
+        "translation": "لامبالاة / فتور المشاعر والاهتمام",
+        "exampleArabic": "أدت لامبالاة الناخبين إلى نسبة إقبال منخفضة تاريخياً في الانتخابات المحلية.",
+        "relatedForms": ["apathetic"],
+        "collocations": ["general apathy", "political apathy"],
+        "synonyms": ["indifference", "lethargy", "unconcern"],
+        "antonyms": ["enthusiasm", "passion"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "apprehension",
+        "pronunciation": "/ˌæprɪˈhenʃn/",
+        "partOfSpeech": "noun",
+        "definition": "Anxiety or fear that something bad or unpleasant will happen.",
+        "example": "A dark sense of apprehension seized him as he walked toward the boss's office.",
+        "translation": "توجس / قلق وخوف من وقوع مكروه",
+        "exampleArabic": "استولى عليه شعور غامض بالتوجس وهو يسير نحو مكتب المدير.",
+        "relatedForms": ["apprehensive"],
+        "collocations": ["deep apprehension", "feel apprehension"],
+        "synonyms": ["anxiety", "foreboding", "dread"],
+        "antonyms": ["confidence", "calm"],
+        "tags": ["emotions", "fear"]
+    },
+    {
+        "headword": "astonishment",
+        "pronunciation": "/əˈstɒnɪʃmənt/",
+        "partOfSpeech": "noun",
+        "definition": "Great surprise, bewilderment, or sudden amazement.",
+        "example": "To everyone's utter astonishment, the underdog team won the championship match.",
+        "translation": "دهشة عارمة / ذهول مباغت",
+        "exampleArabic": "لدهشة الجميع العارمة، فاز الفريق غير المرشح بمباراة البطولة.",
+        "relatedForms": ["astonish", "astonished"],
+        "collocations": ["utter astonishment", "gasp in astonishment"],
+        "synonyms": ["amazement", "shock", "wonder"],
+        "antonyms": ["expectation", "boredom"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "bitterness",
+        "pronunciation": "/ˈbɪtənəs/",
+        "partOfSpeech": "noun",
+        "definition": "Anger and resentment at being treated unfairly or feeling wronged.",
+        "example": "He spoke without any bitterness despite losing his job unfairly.",
+        "translation": "مرارة / حسرة وضغينة ناتجة عن الظلم",
+        "exampleArabic": "تحدث دون أي مرارة على الرغم من فقدان وظيفته بشكل غير عادل.",
+        "relatedForms": ["bitter", "bitterly"],
+        "collocations": ["feel bitterness", "harbor bitterness"],
+        "synonyms": ["resentment", "rancor", "acrimony"],
+        "antonyms": ["sweetness", "forgiveness"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "bliss",
+        "pronunciation": "/blɪs/",
+        "partOfSpeech": "noun",
+        "definition": "Perfect happiness, serene peace, and ecstatic joy.",
+        "example": "Relaxing on a warm deserted beach felt like pure bliss after months of hard work.",
+        "translation": "نعيم / سعادة غامرة وراحة مطلقة",
+        "exampleArabic": "كان الاسترخاء على شاطئ دافئ ومهجور بمثابة نعيم خالص بعد أشهر من العمل الشاق.",
+        "relatedForms": ["blissful", "blissfully"],
+        "collocations": ["pure bliss", "wedded bliss"],
+        "synonyms": ["ecstasy", "paradise", "joy"],
+        "antonyms": ["misery", "torment"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "cheerfulness",
+        "pronunciation": "/ˈtʃɪəflnəs/",
+        "partOfSpeech": "noun",
+        "definition": "The state or quality of being bright, happy, and optimistic.",
+        "example": "Her infectious cheerfulness brightened the entire office on gloomy rainy days.",
+        "translation": "بهجة / مرح وبشاشة الوجه",
+        "exampleArabic": "أضاءت بهجتها المعدية المكتب بأكمله في الأيام الممطرة الكئيبة.",
+        "relatedForms": ["cheerful", "cheerfully"],
+        "collocations": ["radiant cheerfulness", "contagious cheerfulness"],
+        "synonyms": ["good humor", "buoyancy", "gladness"],
+        "antonyms": ["gloom", "misery"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "compassion",
+        "pronunciation": "/kəmˈpæʃn/",
+        "partOfSpeech": "noun",
+        "definition": "Deep sympathy and sorrow for another who is suffering, accompanied by a strong desire to alleviate it.",
+        "example": "The humanitarian volunteer treated the refugees with profound compassion and kindness.",
+        "translation": "شفقة ورحمة / تعاطف مقترن برغبة في المساعدة",
+        "exampleArabic": "عامل المتطوع الإنساني اللاجئين برحمة وشفقة عميقة ولطف بالغ.",
+        "relatedForms": ["compassionate"],
+        "collocations": ["show compassion", "deep compassion"],
+        "synonyms": ["empathy", "mercy", "benevolence"],
+        "antonyms": ["cruelty", "callousness"],
+        "tags": ["emotions", "virtue"]
+    },
+    {
+        "headword": "confusion",
+        "pronunciation": "/kənˈfjuːʒn/",
+        "partOfSpeech": "noun",
+        "definition": "A state of bewilderment, lack of clarity, or uncertainty about what is happening.",
+        "example": "The sudden alteration in the flight schedule caused great confusion at the departure gate.",
+        "translation": "حيرة / ارتباك وتخبط ذهني",
+        "exampleArabic": "أحدث التغيير المفاجئ في جدول الرحلة ارتباكاً وحيرة كبيرة عند بوابة المغادرة.",
+        "relatedForms": ["confuse", "confused"],
+        "collocations": ["state of confusion", "utter confusion"],
+        "synonyms": ["bewilderment", "perplexity", "disorientation"],
+        "antonyms": ["clarity", "comprehension"],
+        "tags": ["emotions", "mental"]
+    },
+    {
+        "headword": "contentment",
+        "pronunciation": "/kənˈtentmənt/",
+        "partOfSpeech": "noun",
+        "definition": "A state of calm happiness, peace of mind, and complete satisfaction.",
+        "example": "A smile of genuine contentment appeared on his face as he watched his children play safely.",
+        "translation": "رضا / قناعة وراحة بال",
+        "exampleArabic": "ظهرت ابتسامة رضا حقيقي على وجهه وهو يراقب أطفاله يلعبون بأمان.",
+        "relatedForms": ["content", "contented"],
+        "collocations": ["peaceful contentment", "sense of contentment"],
+        "synonyms": ["satisfaction", "peace of mind", "serenity"],
+        "antonyms": ["discontent", "dissatisfaction"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "despair",
+        "pronunciation": "/dɪˈspeə/",
+        "partOfSpeech": "noun",
+        "definition": "The complete loss, absence, or surrender of hope.",
+        "example": "In a moment of sheer despair, he thought his creative career was ruined beyond repair.",
+        "translation": "يأس / انقطاع كامل للأمل",
+        "exampleArabic": "في لحظة من اليأس الخالص، ظن أن مسيرته الإبداعية دُمرت بلا رجعة.",
+        "relatedForms": ["despairing", "desperately"],
+        "collocations": ["deep despair", "plunged into despair"],
+        "synonyms": ["hopelessness", "despondency", "gloom"],
+        "antonyms": ["hope", "optimism"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "devastation",
+        "pronunciation": "/ˌdevəˈsteɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "Great destruction or overwhelming personal shock, grief, and heartbreak.",
+        "example": "The sudden loss of her beloved grandmother left her in a state of emotional devastation.",
+        "translation": "تحطم نفسي / صدمة وحزن مدمر",
+        "exampleArabic": "تركها الفقدان المفاجئ لجدتها الحبيبة في حالة من التحطم النفسي الشديد.",
+        "relatedForms": ["devastate", "devastated"],
+        "collocations": ["emotional devastation", "complete devastation"],
+        "synonyms": ["destruction", "ruin", "heartbreak"],
+        "antonyms": ["recovery", "consolation"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "discontent",
+        "pronunciation": "/ˌdɪskənˈtent/",
+        "partOfSpeech": "noun",
+        "definition": "A feeling of dissatisfaction or restlessness with one's current circumstances.",
+        "example": "Simmering discontent among the factory workers eventually led to a peaceful walkout.",
+        "translation": "سخط / عدم رضا وتذمر",
+        "exampleArabic": "أدى التذمر والاستياء المتصاعد بين عمال المصنع في النهاية إلى إضراب سلمي.",
+        "relatedForms": ["discontented"],
+        "collocations": ["growing discontent", "voice discontent"],
+        "synonyms": ["dissatisfaction", "unhappiness", "restlessness"],
+        "antonyms": ["contentment", "satisfaction"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "disgust",
+        "pronunciation": "/dɪsˈɡʌst/",
+        "partOfSpeech": "noun",
+        "definition": "A strong feeling of revulsion or profound distaste aroused by something offensive or repulsive.",
+        "example": "He recoiled in visible disgust upon uncovering the rotten garbage behind the fence.",
+        "translation": "اشمئزاز / نفور وتقزز شديد",
+        "exampleArabic": "تراجع في اشمئزاز واضح عندما اكتشف القمامة الفاسدة خلف السياج.",
+        "relatedForms": ["disgusting", "disgusted"],
+        "collocations": ["intense disgust", "shudder with disgust"],
+        "synonyms": ["repulsion", "revulsion", "distaste"],
+        "antonyms": ["admiration", "delight"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "dismay",
+        "pronunciation": "/dɪsˈmeɪ/",
+        "partOfSpeech": "noun",
+        "definition": "Sudden disappointment, consternation, or distress caused by something unexpected.",
+        "example": "Much to our dismay, our reserved hotel booking had been cancelled without prior notice.",
+        "translation": "خيبة / فزع واستياء مفاجئ",
+        "exampleArabic": "ومما أصابنا بالخيبة والاستياء الشديد، أُلغي حجز فندقنا المؤكد دون إشعار مسبق.",
+        "relatedForms": ["dismayed"],
+        "collocations": ["to someone's dismay", "express dismay"],
+        "synonyms": ["consternation", "alarm", "disappointment"],
+        "antonyms": ["delight", "satisfaction"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "distress",
+        "pronunciation": "/dɪˈstres/",
+        "partOfSpeech": "noun",
+        "definition": "Extreme anxiety, mental sorrow, physical suffering, or acute trouble.",
+        "example": "The family experienced tremendous financial and mental distress during the harsh winter.",
+        "translation": "ضائقة / كرب ومعاناة شديدة",
+        "exampleArabic": "عاشت الأسرة ضائقة مالية ونفسية هائلة خلال فصل الشتاء القاسي.",
+        "relatedForms": ["distressful", "distressed"],
+        "collocations": ["severe distress", "cause distress"],
+        "synonyms": ["anguish", "suffering", "torment"],
+        "antonyms": ["comfort", "ease"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "dread",
+        "pronunciation": "/dred/",
+        "partOfSpeech": "noun",
+        "definition": "Great apprehension or deep fear about future misfortune or danger.",
+        "example": "A cold sense of dread washed over her as she walked into the courtroom.",
+        "translation": "فزع ورهبة / خوف شديد وتوجس مقيت",
+        "exampleArabic": "غمرها شعور بارد بالفزع والرهبة وهي تخطو داخل قاعة المحكمة.",
+        "relatedForms": ["dreadful", "dreaded"],
+        "collocations": ["sense of dread", "fill with dread"],
+        "synonyms": ["terror", "fear", "trepidation"],
+        "antonyms": ["anticipation", "calm"],
+        "tags": ["emotions", "fear"]
+    },
+    {
+        "headword": "ecstasy",
+        "pronunciation": "/ˈekstəsi/",
+        "partOfSpeech": "noun",
+        "definition": "An overwhelming feeling of transcendent happiness or joyful excitement.",
+        "example": "The victorious supporters were in absolute ecstasy when the final whistle blew.",
+        "translation": "نشوة / وجد وسعادة طاغية",
+        "exampleArabic": "كان المشجعون المنتصرون في نشوة عارمة عندما انطلقت صافرة النهاية.",
+        "relatedForms": ["ecstatic"],
+        "collocations": ["state of ecstasy", "pure ecstasy"],
+        "synonyms": ["euphoria", "rapture", "elation"],
+        "antonyms": ["depression", "misery"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "elation",
+        "pronunciation": "/ɪˈleɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "Great happiness, pride, and exhilarating joy.",
+        "example": "His elation was evident as he held up his doctoral diploma before his proud parents.",
+        "translation": "ابتهاج / فرح واعتزاز غامر",
+        "exampleArabic": "كان ابتهاجه وفرحه جلياً وهو يرفع شهادة الدكتوراه أمام والديه الفخورين.",
+        "relatedForms": ["elated"],
+        "collocations": ["feeling of elation", "sheer elation"],
+        "synonyms": ["exhilaration", "jubilation", "delight"],
+        "antonyms": ["despondency", "depression"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "embarrassment",
+        "pronunciation": "/ɪmˈbærəsmənt/",
+        "partOfSpeech": "noun",
+        "definition": "A feeling of self-conscious awkwardness, discomfort, or shame.",
+        "example": "He blushed in deep embarrassment when he called his new boss by the wrong name.",
+        "translation": "حرج / ارتباك وخجل شديد",
+        "exampleArabic": "احمرّ وجهه من الحرج الشديد عندما نادى مديره الجديد بالاسم الخطأ.",
+        "relatedForms": ["embarrass", "embarrassed"],
+        "collocations": ["hide embarrassment", "acute embarrassment"],
+        "synonyms": ["humiliation", "mortification", "shame"],
+        "antonyms": ["poise", "confidence"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "anguish",
+        "pronunciation": "/ˈæŋɡwɪʃ/",
+        "partOfSpeech": "noun",
+        "definition": "Severe mental pain, grief, or excruciating suffering.",
+        "example": "The mother’s cry of anguish echoed through the quiet hospital corridor.",
+        "translation": "لوعة / ألم وجداني حارق وحسرة",
+        "exampleArabic": "ترددت صرخة اللوعة والحسرة من الأم في ممر المستشفى الهادئ.",
+        "relatedForms": ["anguished"],
+        "collocations": ["cry of anguish", "mental anguish"],
+        "synonyms": ["torment", "agony", "heartbreak"],
+        "antonyms": ["relief", "serenity"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "enthusiasm",
+        "pronunciation": "/ɪnˈθjuːziæzəm/",
+        "partOfSpeech": "noun",
+        "definition": "Intense, eager enjoyment, interest, or energetic approval.",
+        "example": "The young students embraced the robotics project with remarkable enthusiasm and creativity.",
+        "translation": "حماس / شغف واندفاع إيجابي",
+        "exampleArabic": "احتضن الطلاب الشباب مشروع الروبوتات بحماس ملحوظ وإبداع متميز.",
+        "relatedForms": ["enthusiastic", "enthusiast"],
+        "collocations": ["boundless enthusiasm", "show enthusiasm"],
+        "synonyms": ["passion", "eagerness", "zeal"],
+        "antonyms": ["apathy", "indifference"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "euphoria",
+        "pronunciation": "/juːˈfɔːriə/",
+        "partOfSpeech": "noun",
+        "definition": "A state of intense heightened happiness, well-being, and excitement.",
+        "example": "The marathon runner experienced post-race euphoria upon setting an unprecedented personal record.",
+        "translation": "نشوة عارمة / شعور استثنائي بالبهجة",
+        "exampleArabic": "عاش عداء الماراثون نشوة عارمة بعد السباق إثر تحقيقه رقماً قياسياً شخصياً غير مسبوق.",
+        "relatedForms": ["euphoric"],
+        "collocations": ["burst of euphoria", "feeling of euphoria"],
+        "synonyms": ["ecstasy", "elation", "rapture"],
+        "antonyms": ["dysphoria", "gloom"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "exasperation",
+        "pronunciation": "/ɪɡˌzæspəˈreɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "A feeling of intense irritation, fatigue, or annoyance resulting from persistent difficulties.",
+        "example": "In sheer exasperation, she threw her hands up after repeating the same instructions five times.",
+        "translation": "نفاد صبر / سخط وضجر شديد",
+        "exampleArabic": "ومن شدة نفاد الصبر والضجر، رفعت يديها استسلاماً بعد تكرار نفس التعليمات خمس مرات.",
+        "relatedForms": ["exasperate", "exasperated"],
+        "collocations": ["sigh in exasperation", "utter exasperation"],
+        "synonyms": ["irritation", "frustration", "annoyance"],
+        "antonyms": ["patience", "tolerance"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "fascination",
+        "pronunciation": "/ˌfæsɪˈneɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "The power to charm, entrance, or hold one's deep, spellbound interest.",
+        "example": "His lifelong fascination with astronomy began the first time he looked through a telescope.",
+        "translation": "شغف وانبهار / افتتان ساحر بالشيء",
+        "exampleArabic": "بدأ انبهاره وافتتانه مدى الحياة بعلم الفلك في المرة الأولى التي نظر فيها عبر التلسكوب.",
+        "relatedForms": ["fascinate", "fascinating"],
+        "collocations": ["lifelong fascination", "fascination with"],
+        "synonyms": ["captivation", "allure", "wonder"],
+        "antonyms": ["boredom", "disinterest"],
+        "tags": ["emotions", "mental"]
+    },
+    {
+        "headword": "frenzy",
+        "pronunciation": "/ˈfrenzi/",
+        "partOfSpeech": "noun",
+        "definition": "A state of wild, uncontrollable excitement, agitated behavior, or chaotic activity.",
+        "example": "Shoppers rushed inside in a mad frenzy as the holiday discount doors opened.",
+        "translation": "هستيريا وهيجان / ثورة حماس محمومة وغير منضبطة",
+        "exampleArabic": "اندفع المتسوقون إلى الداخل في هيجان محموم بمجرد فتح أبواب تخفيضات العطلات.",
+        "relatedForms": ["frenzied"],
+        "collocations": ["feeding frenzy", "frenzy of excitement"],
+        "synonyms": ["hysteria", "agitation", "turmoil"],
+        "antonyms": ["calm", "tranquility"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "fright",
+        "pronunciation": "/fraɪt/",
+        "partOfSpeech": "noun",
+        "definition": "A sudden, intense, shocking feeling of fear or terror.",
+        "example": "The loud bang gave the sleeping dog such a fright that it bounded across the lawn.",
+        "translation": "فزعة / خوف مفاجئ ومباغت",
+        "exampleArabic": "أحدثت الفرقعة المدوية فزعة شديدة للكلب النائم جعلته يقفز راكضاً عبر الحديقة.",
+        "relatedForms": ["frighten", "frightened"],
+        "collocations": ["stage fright", "take fright"],
+        "synonyms": ["scare", "terror", "dread"],
+        "antonyms": ["bravery", "composure"],
+        "tags": ["emotions", "fear"]
+    },
+    {
+        "headword": "fury",
+        "pronunciation": "/ˈfjʊəri/",
+        "partOfSpeech": "noun",
+        "definition": "Wild, violent, explosive anger or fierce rage.",
+        "example": "He slammed the door in blind fury when he learned that his ideas had been plagiarized.",
+        "translation": "سخط عارم / غضب ثائر ومشتعل",
+        "exampleArabic": "أغلق الباب بعنف في غضب ثائر وسخط عارم حين علم أن أفكاره قُلدت وسُرقت.",
+        "relatedForms": ["furious", "furiously"],
+        "collocations": ["blind fury", "full of fury"],
+        "synonyms": ["rage", "wrath", "indignation"],
+        "antonyms": ["calm", "serenity"],
+        "tags": ["emotions", "anger"]
+    },
+    {
+        "headword": "grief",
+        "pronunciation": "/ɡriːf/",
+        "partOfSpeech": "noun",
+        "definition": "Profound mental anguish or sorrow, especially over the passing of a cherished loved one.",
+        "example": "Time helped dull the sharpest edges of her grief, though she never forgot her dear friend.",
+        "translation": "أسى / حزن عميق لفقد عزيز",
+        "exampleArabic": "ساعد مرور الوقت في تلطيف حدة أساها وحزنها العميق، رغم أنها لم تنسَ صديقها العزيز أبداً.",
+        "relatedForms": ["grieve", "grievous"],
+        "collocations": ["overcome with grief", "process grief"],
+        "synonyms": ["sorrow", "mourning", "bereavement"],
+        "antonyms": ["joy", "comfort"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "helplessness",
+        "pronunciation": "/ˈhelpləsnəs/",
+        "partOfSpeech": "noun",
+        "definition": "The distressing condition of being unable to defend oneself or alter unfortunate circumstances.",
+        "example": "Seeing his ailing grandmother in pain provoked a painful sense of helplessness in him.",
+        "translation": "عجز / قلة حيلة وضعف",
+        "exampleArabic": "أثار مرأى جدته المريضة وهي تتألم شعوراً مؤلماً بالعجز وقلة الحيلة لديه.",
+        "relatedForms": ["helpless", "helplessly"],
+        "collocations": ["sense of helplessness", "feeling of helplessness"],
+        "synonyms": ["powerlessness", "vulnerability", "impotence"],
+        "antonyms": ["empowerment", "control"],
+        "tags": ["emotions", "mental"]
+    },
+    {
+        "headword": "hysteria",
+        "pronunciation": "/hɪˈstɪəriə/",
+        "partOfSpeech": "noun",
+        "definition": "Exaggerated, wild, or uncontrollable emotional outbursts among individuals or crowds.",
+        "example": "Mass hysteria erupted in the arena when the international pop idol stepped onto the stage.",
+        "translation": "هستيريا / صخب وانفعال جماعي جامح",
+        "exampleArabic": "اندلعت هستيريا جماهيرية في القاعة بمجرد أن صعد نجم البوب العالمي إلى المسرح.",
+        "relatedForms": ["hysterical", "hysterically"],
+        "collocations": ["mass hysteria", "verge of hysteria"],
+        "synonyms": ["frenzy", "panic", "madness"],
+        "antonyms": ["composure", "rationality"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "indifference",
+        "pronunciation": "/ɪnˈdɪfrəns/",
+        "partOfSpeech": "noun",
+        "definition": "A complete lack of interest, emotional concern, sympathy, or enthusiasm.",
+        "example": "His cold indifference toward his classmates' ambitious fundraising project surprised everyone.",
+        "translation": "برود وتجاهل / عدم اكتراث تام",
+        "exampleArabic": "فاجأ بروده وعدم اكتراثه التام تجاه مشروع زملائه الطموح لجمع التبرعات الجميع.",
+        "relatedForms": ["indifferent", "indifferently"],
+        "collocations": ["total indifference", "treat with indifference"],
+        "synonyms": ["apathy", "unconcern", "detachment"],
+        "antonyms": ["enthusiasm", "care"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "bewilderment",
+        "pronunciation": "/bɪˈwɪldəmənt/",
+        "partOfSpeech": "noun",
+        "definition": "A state of perplexity, dazed puzzlement, and profound confusion.",
+        "example": "The tourist stared in complete bewilderment at the complicated metro transit map.",
+        "translation": "ذهول وارتباك / حيرة وضياع فكري",
+        "exampleArabic": "حدق السائح في ذهول وحيرة تامة في خريطة مسارات المترو المعقدة.",
+        "relatedForms": ["bewilder", "bewildered"],
+        "collocations": ["stare in bewilderment", "utter bewilderment"],
+        "synonyms": ["confusion", "perplexity", "puzzlement"],
+        "antonyms": ["understanding", "enlightenment"],
+        "tags": ["emotions", "mental"]
+    },
+    {
+        "headword": "irritation",
+        "pronunciation": "/ˌɪrɪˈteɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "The condition of feeling mildly impatient, exasperated, or annoyed.",
+        "example": "He rubbed his temple to suppress his growing irritation at the unending traffic jam.",
+        "translation": "حنق / ضيق واستثارة للأعصاب",
+        "exampleArabic": "فرك صدغه ليكتم حنقه وضيق أعصابه المتزايد من الاختناق المروري اللانهائي.",
+        "relatedForms": ["irritate", "irritable"],
+        "collocations": ["growing irritation", "hide irritation"],
+        "synonyms": ["annoyance", "vexation", "peevishness"],
+        "antonyms": ["patience", "delight"],
+        "tags": ["emotions", "reactions"]
+    },
+    {
+        "headword": "serenity",
+        "pronunciation": "/səˈrenəti/",
+        "partOfSpeech": "noun",
+        "definition": "The state of being calm, tranquil, balanced, and undisturbed.",
+        "example": "The serene mountain lake at sunrise bestowed an unforgettable sense of inner serenity.",
+        "translation": "سكينة / صفاء وسلام داخلي هادئ",
+        "exampleArabic": "منحت بحيرة الجبل الهادئة عند شروق الشمس شعوراً لا يُنسى بالسكينة والصفاء الداخلي.",
+        "relatedForms": ["serene", "serenely"],
+        "collocations": ["inner serenity", "calm serenity"],
+        "synonyms": ["tranquility", "peacefulness", "calmness"],
+        "antonyms": ["agitation", "turmoil"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "melancholy",
+        "pronunciation": "/ˈmelənkəli/",
+        "partOfSpeech": "noun",
+        "definition": "A thoughtful, gentle, pensive sadness, often without an explicit or immediate trigger.",
+        "example": "Listening to the old cello symphony filled him with a quiet, nostalgic melancholy.",
+        "translation": "شجن / كآبة رقيقة وحزن تأملي",
+        "exampleArabic": "ملأه الاستماع إلى سيمفونية التشيلو القديمة بشجن هادئ وحزن تأملي رقيق.",
+        "relatedForms": ["melancholic"],
+        "collocations": ["quiet melancholy", "tinge of melancholy"],
+        "synonyms": ["sadness", "sorrow", "pensiveness"],
+        "antonyms": ["cheerfulness", "glee"],
+        "tags": ["emotions", "mental"]
+    },
+    {
+        "headword": "misery",
+        "pronunciation": "/ˈmɪzəri/",
+        "partOfSpeech": "noun",
+        "definition": "A condition of intense suffering, wretchedness, or profound mental unhappiness.",
+        "example": "Living in damp, unheated housing caused immense misery for many poor families.",
+        "translation": "بؤس / شقاء ومعاناة بالغة",
+        "exampleArabic": "تسبب العيش في مساكن رطبة وغير مدفأة في بؤس وشقاء هائل للعديد من الأسر الفقيرة.",
+        "relatedForms": ["miserable", "miserably"],
+        "collocations": ["sheer misery", "life of misery"],
+        "synonyms": ["wretchedness", "despair", "suffering"],
+        "antonyms": ["bliss", "comfort"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "humiliation",
+        "pronunciation": "/hjuːˌmɪliˈeɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "The painful, degrading feeling of being shamed or made to look utterly foolish.",
+        "example": "He endured the public humiliation with remarkable stoicism and did not lash out.",
+        "translation": "مذلة / إهانة وخزي محرج",
+        "exampleArabic": "تحمل المذلة والإهانة العلنية برباطة جأش ملحوظة ولم يفقد صوابه.",
+        "relatedForms": ["humiliate", "humiliated"],
+        "collocations": ["public humiliation", "suffer humiliation"],
+        "synonyms": ["mortification", "degradation", "ignominy"],
+        "antonyms": ["honor", "dignity"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "optimism",
+        "pronunciation": "/ˈɒptɪmɪzəm/",
+        "partOfSpeech": "noun",
+        "definition": "Hopefulness, positive expectation, and confident belief in favorable outcomes.",
+        "example": "Despite initial setbacks, the young entrepreneur greeted every new morning with cautious optimism.",
+        "translation": "تفاؤل / نظرة إيجابية ورجاء بالخير",
+        "exampleArabic": "على الرغم من العقبات الأولية، استقبل رائد الأعمال الشاب كل صباح جديد بتفاؤل حذر.",
+        "relatedForms": ["optimist", "optimistic"],
+        "collocations": ["cautious optimism", "infectious optimism"],
+        "synonyms": ["hopefulness", "confidence", "positivity"],
+        "antonyms": ["pessimism", "defeatism"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "panic",
+        "pronunciation": "/ˈpænɪk/",
+        "partOfSpeech": "noun",
+        "definition": "Sudden overwhelming fear that blinds logical thought and sparks erratic action.",
+        "example": "A wave of blind panic spread across the theater when the fire alarm rang out.",
+        "translation": "هلع / ذعر فجائي يفقد التوازن",
+        "exampleArabic": "سرت موجة من الهلع والذعر الأعمى في المسرح عندما دوى جرس إنذار الحريق.",
+        "relatedForms": ["panicky", "panicked"],
+        "collocations": ["blind panic", "wave of panic"],
+        "synonyms": ["terror", "alarm", "hysteria"],
+        "antonyms": ["calm", "serenity"],
+        "tags": ["emotions", "fear"]
+    },
+    {
+        "headword": "pessimism",
+        "pronunciation": "/ˈpesɪmɪzəm/",
+        "partOfSpeech": "noun",
+        "definition": "A persistent disposition to anticipate the worst potential outcomes in any circumstance.",
+        "example": "His chronic pessimism prevented him from taking bold leaps in his professional life.",
+        "translation": "تشاؤم / ميل لتوقع الأسوأ وسوداوية",
+        "exampleArabic": "منعه تشاؤمه المزمن من الإقدام على قفزات جريئة في حياته المهنية.",
+        "relatedForms": ["pessimist", "pessimistic"],
+        "collocations": ["deep pessimism", "overcome pessimism"],
+        "synonyms": ["defeatism", "negativity", "cynicism"],
+        "antonyms": ["optimism", "hope"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "rage",
+        "pronunciation": "/reɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "Violent, blinding, and uncontrollable wrath or furious passion.",
+        "example": "He shook with explosive rage when he discovered his computer had been deliberately sabotaged.",
+        "translation": "ثورة غضب / هيجان وحنق شديد",
+        "exampleArabic": "ارتجف من ثورة الغضب والهيجان حين اكتشف أن حاسوبه قد تم تخريبه عمداً.",
+        "relatedForms": ["raging"],
+        "collocations": ["fit of rage", "blind rage"],
+        "synonyms": ["fury", "wrath", "anger"],
+        "antonyms": ["calm", "tranquility"],
+        "tags": ["emotions", "anger"]
+    },
+    {
+        "headword": "relief",
+        "pronunciation": "/rɪˈliːf/",
+        "partOfSpeech": "noun",
+        "definition": "A comforting feeling of liberation and ease after distress, danger, or anxiety passes.",
+        "example": "She let out a massive sigh of relief after hearing her child was found uninjured.",
+        "translation": "ارتياح / فرج وزوال الهم والقلق",
+        "exampleArabic": "أطلقت تنهيدة ارتياح كبرى بعد أن علمت أن طفلها وُجد سالماً دون أذى.",
+        "relatedForms": ["relieve", "relieved"],
+        "collocations": ["sigh of relief", "breathe a sigh of relief"],
+        "synonyms": ["alleviation", "comfort", "solace"],
+        "antonyms": ["distress", "anxiety"],
+        "tags": ["emotions", "positive"]
+    },
+    {
+        "headword": "remorse",
+        "pronunciation": "/rɪˈmɔːs/",
+        "partOfSpeech": "noun",
+        "definition": "Deep, gnawing regret, guilt, and sorrow for having committed a wrongdoing.",
+        "example": "He felt genuine remorse for hurting his loyal brother during their heated quarrel.",
+        "translation": "ندم / تأنيب ضمير ووخز وجداني",
+        "exampleArabic": "شعر بندم صادق وتأنيب ضمير لإيذائه أخاه المخلص خلال شجارهما الحاد.",
+        "relatedForms": ["remorseful", "remorseless"],
+        "collocations": ["genuine remorse", "filled with remorse"],
+        "synonyms": ["regret", "contrition", "repentance"],
+        "antonyms": ["defiance", "indifference"],
+        "tags": ["emotions", "moral"]
+    },
+    {
+        "headword": "resentment",
+        "pronunciation": "/rɪˈzentmənt/",
+        "partOfSpeech": "noun",
+        "definition": "A lingering, bitter grievance or displeasure born from feeling treated unjustly.",
+        "example": "Carrying quiet resentment toward colleagues only poisons one's own peace of mind.",
+        "translation": "استياء / ضغينة وحقد داخلي مكتوم",
+        "exampleArabic": "إن حمل الاستياء والضغينة المكتومة تجاه الزملاء لا يفسد سوى راحة بال المرء نفسه.",
+        "relatedForms": ["resent", "resentful"],
+        "collocations": ["harbor resentment", "fuel resentment"],
+        "synonyms": ["bitterness", "grudge", "ill will"],
+        "antonyms": ["goodwill", "forgiveness"],
+        "tags": ["emotions", "negative"]
+    },
+    {
+        "headword": "sorrow",
+        "pronunciation": "/ˈsɒrəʊ/",
+        "partOfSpeech": "noun",
+        "definition": "Profound sadness, heartbreak, or distress caused by tragedy, adversity, or loss.",
+        "example": "The quiet melody expressed the deep sorrow of a displaced community leaving its homeland.",
+        "translation": "حزن / شجو وأسى على فراق أو فاجعة",
+        "exampleArabic": "عبّرت النغمة الهادئة عن الحزن والشجو العميق لمجتمع مهجر يغادر موطنه.",
+        "relatedForms": ["sorrowful", "sorrowfully"],
+        "collocations": ["deep sorrow", "drown in sorrow"],
+        "synonyms": ["grief", "heartache", "sadness"],
+        "antonyms": ["joy", "delight"],
+        "tags": ["emotions", "suffering"]
+    },
+    {
+        "headword": "sympathy",
+        "pronunciation": "/ˈsɪmpəθi/",
+        "partOfSpeech": "noun",
+        "definition": "Feelings of pity, sorrow, and compassionate support for someone else’s hardships.",
+        "example": "Neighbors expressed heartfelt sympathy to the widow by preparing homemade meals for her.",
+        "translation": "تعاطف / مواساة ومؤازرة وجدانية",
+        "exampleArabic": "عبّر الجيران عن تعاطف ومواساة قلبية للأرملة من خلال إعداد وجبات منزلية لها.",
+        "relatedForms": ["sympathetic", "sympathize"],
+        "collocations": ["heartfelt sympathy", "offer sympathy"],
+        "synonyms": ["compassion", "commiseration", "fellow feeling"],
+        "antonyms": ["callousness", "hostility"],
+        "tags": ["emotions", "virtue"]
+    },
+    {
+        "headword": "terror",
+        "pronunciation": "/ˈterə/",
+        "partOfSpeech": "noun",
+        "definition": "An overwhelming, paralyzing surge of intense dread and sheer fright.",
+        "example": "Trapped in the pitch-dark forest during the thunderstorm, he was paralyzed by cold terror.",
+        "translation": "رعب / خوف ساحق ومشل للحركة",
+        "exampleArabic": "ولما حُوصر في الغابة الحالكة السواد أثناء العاصفة الرعدية، تملكه رعب ساحق شل حركته.",
+        "relatedForms": ["terrify", "terrified"],
+        "collocations": ["paralyzed by terror", "sheer terror"],
+        "synonyms": ["panic", "horror", "dread"],
+        "antonyms": ["calm", "courage"],
+        "tags": ["emotions", "fear"]
+    }
+]
+
+grammar_data = [
+    {
+        "title": "May / Might / Could for Possibility",
+        "explanation": "We use the modal verbs 'may', 'might', and 'could' to express possibility about present or future situations when we are not 100% certain. 'May' often suggests a slightly higher likelihood than 'might', while 'could' indicates theoretical or potential capability/possibility. All three are followed directly by the base form of the main verb (infinitive without 'to'). For negatives, use 'may not' or 'might not' (do NOT use 'could not' for possibility, as 'could not' means something is impossible).",
+        "explanationArabic": "نستخدم الأفعال الناقصة (May و Might و Could) للتعبير عن الاحتمالية وإمكانية حدوث الشيء في الحاضر أو المستقبل عندما لا نكون متأكدين بنسبة 100%. تشير (May) عادة إلى احتمال أرجح قليلاً من (Might)، بينما تعبر (Could) عن إمكانية نظرية أو محتملة. تتبع جميع هذه الأفعال بالمصدر المجرد من to. وفي النفي، نستخدم (may not) أو (might not)، ولا نستخدم (could not) للاحتمال لأنها تعني الاستحالة القطعية.",
+        "rules": [
+            "Use modal + bare infinitive: Subject + may/might/could + Verb (base form).",
+            "To express present or future uncertainty: 'He might feel apprehension before the test.'",
+            "Negative possibility: use 'may not' or 'might not' ('She may not feel bitterness').",
+            "Be careful: 'could not' means impossibility ('He couldn't be happy about that'), not negative possibility."
+        ],
+        "rulesArabic": [
+            "الصيغة الأساسية: الفاعل + may/might/could + المصدر المجرد من to.",
+            "للتعبير عن عدم التأكد في الحاضر أو المستقبل: He might feel apprehension.",
+            "لنفي الاحتمالية نستخدم may not أو might not حصراً.",
+            "انتبه: could not تعني الاستحالة القطعية وليس مجرد الشك أو الاحتمال المنفي."
+        ],
+        "structures": [
+            {
+                "pattern": "Subject + may / might / could + base verb + object/complement",
+                "explanation": "Expresses that something is possible in the present or future.",
+                "explanationArabic": "يعبر عن إمكانية حدوث أمر ما في الحاضر أو المستقبل."
+            },
+            {
+                "pattern": "Subject + may not / might not + base verb + object/complement",
+                "explanation": "Expresses the possibility that something will NOT happen.",
+                "explanationArabic": "يعبر عن احتمال عدم وقوع الحدث."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "He may experience severe agony if he ignores that infected tooth.",
+                "translation": "قد يعاني من عذاب شديد إذا تجاهل ذلك السن الملتهب.",
+                "usesVocabulary": ["agony"]
+            },
+            {
+                "sentence": "The bad news might cause deep sorrow and distress among the staff.",
+                "translation": "قد تسبب الأخبار السيئة حزناً وكرباً عميقين بين الموظفين.",
+                "usesVocabulary": ["sorrow", "distress"]
+            },
+            {
+                "sentence": "A short walk in the park could bring much-needed serenity and relief.",
+                "translation": "قد تجلب نزهة قصيرة في الحديقة سكينة وارتياحاً هو في أمسّ الحاجة إليه.",
+                "usesVocabulary": ["serenity", "relief"]
+            },
+            {
+                "sentence": "They might not show much enthusiasm, but they feel genuine compassion.",
+                "translation": "قد لا يُظهرون حماساً كبيراً، لكنهم يشعرون برحمة وتعاطف صادق.",
+                "usesVocabulary": ["enthusiasm", "compassion"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "She could not come tomorrow because she might be busy.",
+                "right": "She might not come tomorrow because she might be busy.",
+                "note": "Use 'might not' or 'may not' for future possibility of not doing something. 'Could not' means she is incapable or it is impossible.",
+                "noteArabic": "استخدم might not أو may not لاحتمال عدم الحدوث. استخدام could not يعني العجز أو الاستحالة المطلقة."
+            },
+            {
+                "wrong": "He may feels annoyance when you interrupt him.",
+                "right": "He may feel annoyance when you interrupt him.",
+                "note": "Modal verbs must always be followed by the base verb without -s or -ed.",
+                "noteArabic": "الأفعال الناقصة تتبع دائماً بالمصدر المجرد بدون s أو ed."
+            }
+        ]
+    }
+]
+
+# We need 3 conversations using vocabulary words.
+# Let's divide 50 words across convs and paras:
+# Convs: 25 words (8 or 9 words each)
+# Paras: 25 words (8 or 9 words each)
+# Let's ensure ALL 50 words are covered!
+
+# Group 1 (Conv 1 - 9 words):
+# anticipation, cheerfulness, bliss, contentment, enthusiasm, ecstasy, elation, euphoria, optimism
+# Group 2 (Conv 2 - 9 words):
+# annoyance, irritation, exasperation, bitterness, resentment, rage, fury, disgust, humiliation
+# Group 3 (Conv 3 - 9 words):
+# apprehension, dread, fright, terror, panic, hysteria, bewilderment, confusion, helplessness
+
+# Group 4 (Para 1 - 8 words):
+# agony, anguish, devastation, distress, despair, grief, misery, sorrow
+# Group 5 (Para 2 - 8 words):
+# apathy, indifference, dismay, sympathy, compassion, relief, remorse, serenity
+# Group 6 (Para 3 - 7 words + overlaps):
+# fascination, frenzy, pessimism, plus reinforcement of key words!
+
+convs_data = [
+    {
+        "title": "A Day of Joyful News",
+        "titleArabic": "يوم حافل بالأخبار السعيدة",
+        "setting": "Bright open-plan modern creative agency",
+        "settingArabic": "وكالة إبداعية حديثة مشرقة ومفتوحة",
+        "roles": ["Senior Copywriter", "Art Director"],
+        "vocabularyUsed": ["anticipation", "cheerfulness", "bliss", "contentment", "enthusiasm", "ecstasy", "elation", "euphoria", "optimism"],
+        "lines": [
+            {
+                "speaker": "Nora",
+                "text": "Good morning, Tariq! You are radiating boundless cheerfulness today. Did you get the news?",
+                "translation": "صباح الخير يا طارق! أنت تشع بهجة ومرحاً لا حدود لهما اليوم. هل تلقيت الأخبار؟"
+            },
+            {
+                "speaker": "Tariq",
+                "text": "Yes, I did! I was waiting in trembling anticipation all morning, and the director approved our international grant.",
+                "translation": "نعم بالفعل! كنت أنتظر بترقب واضطراب طوال الصباح، وقد وافق المدير على منحتنا الدولية."
+            },
+            {
+                "speaker": "Nora",
+                "text": "That is wonderful! When I read the confirmation email, I was in pure ecstasy; it felt like a dream.",
+                "translation": "هذا رائع! عندما قرأت البريد الإلكتروني التأكيدي، كنت في نشوة خالصة؛ لقد بدا الأمر كأنه حلم."
+            },
+            {
+                "speaker": "Tariq",
+                "text": "I can understand that elation completely. We might experience some hectic weeks, but working on this project is pure bliss.",
+                "translation": "يمكنني فهم هذا الابتهاج تماماً. قد نمر ببعض الأسابيع الصاخبة، لكن العمل في هذا المشروع هو نعيم خالص."
+            },
+            {
+                "speaker": "Nora",
+                "text": "The entire team tackled the presentation with genuine enthusiasm, which convinced the committee.",
+                "translation": "لقد تعامل الفريق بأكمله مع العرض التقديمي بحماس حقيقي، وهو ما أقنع اللجنة."
+            },
+            {
+                "speaker": "Tariq",
+                "text": "True! The post-announcement euphoria has energised everyone, yet I also feel a deep sense of peaceful contentment.",
+                "translation": "صحيح! إن النشوة التي تلت الإعلان قد بثت الطاقة في الجميع، ومع ذلك أشعر أيضاً بإحساس عميق بالرضا الهادئ."
+            },
+            {
+                "speaker": "Nora",
+                "text": "That balance is healthy. Having persistent optimism helps us keep motivated for the tough challenges ahead.",
+                "translation": "هذا التوازن صحي. إن التحلي بالتفاؤل المستمر يساعدنا على البقاء متحمسين للتحديات الصعبة المقبلة."
+            },
+            {
+                "speaker": "Tariq",
+                "text": "Indeed. This milestone could open doors that redefine our careers for years to come.",
+                "translation": "بالتأكيد. يمكن لهذا الإنجاز أن يفتح أبواباً تعيد تحديد مساراتنا المهنية لسنوات قادمة."
+            }
+        ]
+    },
+    {
+        "title": "Resolving Work Place Tensions",
+        "titleArabic": "حل التوترات في بيئة العمل",
+        "setting": "Private glass conference room overlooking the city",
+        "settingArabic": "غرفة اجتماعات زجاجية خاصة تطل على المدينة",
+        "roles": ["Project Lead", "Lead Designer"],
+        "vocabularyUsed": ["annoyance", "irritation", "exasperation", "bitterness", "resentment", "rage", "fury", "disgust", "humiliation"],
+        "lines": [
+            {
+                "speaker": "Karim",
+                "text": "Layla, I noticed your obvious annoyance during the client conference call yesterday.",
+                "translation": "ليلى، لاحظت انزعاجك الواضح خلال المكالمة الجماعية مع العميل بالأمس."
+            },
+            {
+                "speaker": "Layla",
+                "text": "To be frank, my growing irritation turned into sheer exasperation when they rejected our third revision without reading it.",
+                "translation": "بصراحة، تحول ضيقي وحنقي المتزايد إلى نفاد صبر تام عندما رفضوا مراجعتنا الثالثة دون قراءتها."
+            },
+            {
+                "speaker": "Karim",
+                "text": "I understand your feelings, but holding onto bitterness toward the client will not salvage the partnership.",
+                "translation": "أفهم مشاعرك، لكن التمسك بالمرارة والضغينة تجاه العميل لن ينقذ الشراكة."
+            },
+            {
+                "speaker": "Layla",
+                "text": "It was not just the critique; being publicly rebuked in front of our interns caused sharp humiliation.",
+                "translation": "لم يكن النقد فقط هو المشكلة؛ بل إن توبيخي علناً أمام المتدربين تسبب في مذلة وإحراج شديد."
+            },
+            {
+                "speaker": "Karim",
+                "text": "That was unprofessional of them. I felt sudden fury when the director laughed, but reacting with explosive rage never helps.",
+                "translation": "كان ذلك غير مهني منهم. شعرت بسخط وغضب مباغت حين ضحك المدير، لكن الرد بثورة غضب عارمة لا يفيد قط."
+            },
+            {
+                "speaker": "Layla",
+                "text": "I felt deep disgust at their dismissive attitude. It fosters poisonous resentment across the entire design team.",
+                "translation": "شعرت باشمئزاز عميق من موقفهم الاستخفافي. هذا يغذي ضغينة سامة عبر فريق التصميم بأكمله."
+            },
+            {
+                "speaker": "Karim",
+                "text": "We may present an objective counter-proposal tomorrow. If we remain calm, we could defuse their skepticism.",
+                "translation": "قد نقدم مقترحاً مضاداً وموضوعياً غداً. إذا حافظنا على هدوئنا، يمكننا نزع فتيل شكوكهم."
+            },
+            {
+                "speaker": "Layla",
+                "text": "You are right. Let us channel this energy constructively rather than letting negative passions simmer.",
+                "translation": "أنت على حق. دعنا نوجه هذه الطاقة بشكل بناء بدلاً من ترك المشاعر السلبية تغلي بداخلنا."
+            }
+        ]
+    },
+    {
+        "title": "Navigating an Unexpected Crisis",
+        "titleArabic": "التعامل مع أزمة طارئة غير متوقعة",
+        "setting": "Courtyard outside an evacuated commercial tower",
+        "settingArabic": "فناء خارجي خارج برج تجاري تم إخلاؤه",
+        "roles": ["Safety Warden", "Office Employee"],
+        "vocabularyUsed": ["apprehension", "dread", "fright", "terror", "panic", "hysteria", "bewilderment", "confusion", "helplessness"],
+        "lines": [
+            {
+                "speaker": "Omar",
+                "text": "Were you inside the high-rise when the emergency sirens started sounding?",
+                "translation": "هل كنتِ داخل البرج الشاهق حين بدأت صفارات الإنذار تدوي؟"
+            },
+            {
+                "speaker": "Samira",
+                "text": "Yes, a chilling sense of dread seized me because nobody knew whether it was a real fire or a false drill.",
+                "translation": "نعم، استولى عليّ شعور بارد بالفزع والرهبة لأنه لم يكن أحد يعرف هل هو حريق حقيقي أم تدريب كاذب."
+            },
+            {
+                "speaker": "Omar",
+                "text": "The initial loud horn gave everyone quite a fright, and utter confusion followed because the emergency exits were locked.",
+                "translation": "سببت الصفارة الصاخبة الأولى فزعة شديدة للجميع، وتلاها ارتباك وحيرة تامة لأن مخارج الطوارئ كانت موصدة."
+            },
+            {
+                "speaker": "Samira",
+                "text": "People began running down the stairwells in blind panic, which only accelerated the disorder.",
+                "translation": "بدأ الناس يهرولون أسفل السلالم في هلع وذعر أعمى، وهو ما زاد الفوضى تسارعاً."
+            },
+            {
+                "speaker": "Omar",
+                "text": "I felt intense apprehension when the lights went out. The darkness triggered widespread hysteria among the crowd.",
+                "translation": "شعرت بتوجس وقلق بالغ عندما انطفأت الأنوار. لقد أثار الظلام هستيريا واسعة النطاق بين الحشود."
+            },
+            {
+                "speaker": "Samira",
+                "text": "In that pitch darkness, a sudden wave of sheer terror struck several people who could not breathe properly.",
+                "translation": "في ذلك الظلام الحالك، ضربت موجة مباغتة من الرعب الساحق عدة أشخاص لم يتمكنوا من التنفس جيداً."
+            },
+            {
+                "speaker": "Omar",
+                "text": "I watched visitors stare in total bewilderment, overwhelmed by an acute sense of helplessness.",
+                "translation": "شاهدت الزوار يحدقون في ذهول وحيرة تامة، مغلوبين بشعور حاد بالعجز وقلة الحيلة."
+            },
+            {
+                "speaker": "Samira",
+                "text": "Fortunately, the security marshals intervened quickly; another minute might have resulted in severe stampede injuries.",
+                "translation": "لحسن الحظ، تدخل مسؤولو الأمن سريعاً؛ إذ كان من الممكن لدقيقة أخرى أن تسفر عن إصابات تدافع بالغة."
+            }
+        ]
+    }
+]
+
+para1_text = (
+    "When severe natural disasters strike vulnerable towns, families often endure unimaginable "
+    "agony and mental anguish. The sudden devastation of losing family homes and cherished belongings "
+    "causes acute emotional distress across entire neighborhoods. Many survivors describe falling into "
+    "temporary despair when confronted with widespread ruin. In community centers, neighbors share their "
+    "deep grief and lingering sorrow, comforting mothers who weep openly. Yet amid such heartbreaking "
+    "misery, volunteers provide warm meals and emotional shelter, proving that human solidarity can "
+    "illuminate the darkest hours of tragedy."
+)
+
+para2_text = (
+    "In modern urban life, widespread social apathy and cold indifference can quietly erode community bonds. "
+    "Much to the dismay of social workers, elderly residents frequently face prolonged loneliness without "
+    "receiving basic neighborhood checkups. However, showing active compassion and heartfelt sympathy costs "
+    "nothing and restores trust. When volunteers visit isolated citizens, seniors express profound relief and "
+    "rediscover precious emotional serenity. Meanwhile, busy professionals who once neglected their families "
+    "often voice sincere remorse, realizing that meaningful human connection remains far more valuable than "
+    "unending material pursuits."
+)
+
+para3_text = (
+    "Observing human reactions in high-pressure situations reveals how rapidly collective moods fluctuate. "
+    "A child’s spontaneous fascination with glittering lights can soften adult stress, yet deep economic "
+    "discontent frequently stirs unrest. In chaotic trading markets, investors often buy in a sudden frenzy, "
+    "only to face acute embarrassment when values tumble. Observers watched in complete astonishment as "
+    "unfounded rumors triggered mass selloffs. While commentators crippled by chronic pessimism forecast "
+    "endless downturns, quiet moments of reflective melancholy remind us that emotional turbulence is cyclical. "
+    "Balanced leaders recognize these patterns early, ensuring rational decisions prevail."
+)
+
+paras_data = [
+    {
+        "title": "Healing After Tragedy",
+        "titleArabic": "التعافي في أعقاب الكوارث",
+        "kind": "informative",
+        "text": para1_text,
+        "translation": "عندما تضرب الكوارث الطبيعية الشديدة البلدات الضعيفة، غالباً ما تتحمل الأسر عذاباً ولوعة لا يمكن تصورها. فالدمار المفاجئ الناجم عن فقدان المنازل والمقتنيات العزيزة يسبب كرباً وضائقة عاطفية حادة عبر أحياء بأكملها. ويصف العديد من الناجين سقوطهم في يأس مؤقت عند مواجهة الخراب الواسع. وفي المراكز المجتمعية، يتشارك الجيران أساهم العميق وحزنهم العالق، مواسين الأمهات اللواتي يبكين علانية. ومع ذلك، وسط هذا الشقاء والبؤس المفجع، يقدم المتطوعون وجبات دافئة وملاذاً نفسياً، مبرهنين على أن التضامن الإنساني قادر على إنارة أحلك ساعات المأساة.",
+        "vocabularyUsed": ["agony", "anguish", "devastation", "distress", "despair", "grief", "misery", "sorrow"]
+    },
+    {
+        "title": "The Power of Community Care",
+        "titleArabic": "قوة الرعاية المجتمعية",
+        "kind": "persuasive",
+        "text": para2_text,
+        "translation": "في الحياة الحضرية الحديثة، يمكن للّامبالاة الاجتماعية واسعة النطاق والبرود وعدم الاكتراث أن يقوضا الروابط المجتمعية بهدوء. ومما يثير خيبة واستياء الأخصائيين الاجتماعيين، أن السكان المسنين يواجهون كثيراً وحدة طويلة الأمد دون تلقي تفقدات الجيران الأساسية. ومع ذلك، فإن إظهار الرحمة والتعاطف القلبي الفاعل لا يكلف شيئاً ويعيد بناء الثقة. وعندما يزور المتطوعون المواطنين المنعزلين، يعبر كبار السن عن ارتياح عميق ويستعيدون سكينة عاطفية ثمينة. وفي الوقت نفسه، فإن المهنيين المنشغلين الذين أهملوا أسرهم ذات يوم غالباً ما يعربون عن ندم صادق، مدركين أن التواصل الإنساني الهادف يظل أثمن بكثير من الملاحقات المادية اللانهائية.",
+        "vocabularyUsed": ["apathy", "indifference", "dismay", "compassion", "sympathy", "relief", "serenity", "remorse"]
+    },
+    {
+        "title": "Emotional Extremes in Society",
+        "titleArabic": "أقصى المشاعر وتطرفاتها في المجتمع",
+        "kind": "reflective",
+        "text": para3_text,
+        "translation": "تكشف مراقبة ردود الفعل البشرية في المواقف شديدة الضغط عن مدى سرعة تقلب الأمزجة الجماعية. يمكن لشغف الطفل العفوي بالأضواء البراقة أن يخفف من توتر البالغين، ومع ذلك فإن السخط والتذمر الاقتصادي العميق كثيراً ما يثير الاضطرابات. وفي أسواق التداول الفوضوية، غالباً ما يشتري المستثمرون في هيجان مباغت، فقط ليواجهوا حرجاً وارتباكاً حاداً عندما تهوي القيم. راقب المراقبون في دهشة وذهول تام كيف أطلقت الشائعات التي لا أساس لها عمليات بيع جماعية. وبينما يتوقع المعلقون المقيدون بالتشاؤم المزمن تراجعات لا تنتهي، فإن لحظات الشجن التأملي الهادئة تذكرنا بأن الاضطراب العاطفي ذو طبيعة دورية. ويدرك القادة المتزنون هذه الأنماط مبكراً، مما يضمن سيادة القرارات العقلانية.",
+        "vocabularyUsed": ["fascination", "discontent", "frenzy", "embarrassment", "astonishment", "pessimism", "melancholy"]
+    }
+]
+
+# Write out python file
+with open("scripts/data_day44.py", "w", encoding="utf-8") as f:
+    f.write("# -*- coding: utf-8 -*-\n")
+    f.write('"""Data definition for Day 44: Feelings and Emotions."""\n\n')
+    f.write("true = True\nfalse = False\n\n")
+    f.write(f"vocab_day44 = {json.dumps(vocab_data, ensure_ascii=False, indent=4)}\n\n")
+    f.write(f"grammar_day44 = {json.dumps(grammar_data, ensure_ascii=False, indent=4)}\n\n")
+    f.write(f"convs_day44 = {json.dumps(convs_data, ensure_ascii=False, indent=4)}\n\n")
+    f.write(f"paras_day44 = {json.dumps(paras_data, ensure_ascii=False, indent=4)}\n")
+
+print("Successfully created scripts/data_day44.py")
+
+from scripts.curriculum_engine import write_day
+write_day(44, vocab_data, grammar_data, convs_data, paras_data)
+
+

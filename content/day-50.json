@@ -1,0 +1,1806 @@
+{
+  "day": 50,
+  "title": "Emotions in Depth",
+  "topic": "Understanding people's feelings",
+  "description": "Explain feelings and reactions in longer sentences.",
+  "stage": "Relationships, Personality and Emotions",
+  "focus": "By the end of today, you can communicate clearly about understanding people's feelings using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Review: Complex Sentences with although / because / when",
+      "explanation": "Complex sentences combine an independent clause (a complete thought that can stand alone) with one or more dependent clauses introduced by subordinating conjunctions. 1) 'Although' introduces a concessive clause that contrasts with the outcome in the main clause ('Although she felt intense trepidation, her inner ardour carried her through'). 2) 'Because' introduces a causal clause explaining why the action or emotional state occurred ('He sought catharsis because the lingering resentfulness was poisoning his peace'). 3) 'When' introduces a temporal clause specifying the condition or time under which the emotion was triggered ('When she saw the crestfallen student, her natural compassion prompted her to offer encouragement'). Using varied clause positions (subordinate clause first vs. main clause first) enriches emotional expression in English.",
+      "explanationArabic": "الجمل المعقدة تربط بين جملة رئيسية مستقلة (فكرة مكتملة بذاتها) وجملة فرعية واحدة أو أكثر تبدأ بأداة ربط تابعة. 1) (Although - رغم أن): تقدم جملة تنازلية تتعارض مع النتيجة في الجملة الرئيسية ('رغم أنها شعرت بوجل وخوف شديد، إلا أن حميتها الداخلية دفعتها للأمام'). 2) (Because - لأن): تقدم جملة سببية تفسر سبب حدوث الفعل أو الحالة الشعورية ('طلب التطهير النفسي لأن الحنق المستمر كان يسمم سلامة باله'). 3) (When - عندما / حينما): تقدم جملة زمنية تحدد الوقت أو الشرط الذي انطلقت عنده العاطفة ('عندما رأت الطالب منكسر الخاطر، دفعتها فطرتها لتقديم التشجيع'). تنويع موضع الجملة التابعة (في البداية أو في الوسط) يثري التعبير عن المشاعر بدقة عالية.",
+      "rules": [
+        "Subordinate clause at the beginning requires a comma: 'Although he looked flustered, he answered every question accurately.'",
+        "Subordinate clause after the main clause usually needs NO comma: 'He answered every question accurately although he looked flustered.'",
+        "Because explains reason/cause: 'The audience erupted in exultation because their champion had triumphed.'",
+        "When marks the moment or trigger: 'When his reverie was interrupted, he felt briefly unsettled.'"
+      ],
+      "rulesArabic": [
+        "إذا بدأت الجملة بالجملة الفرعية (Although/Because/When)، نضع فاصلة بعدها وقبل الجملة الرئيسية.",
+        "إذا جاءت الجملة الفرعية في النهاية بعد الجملة الرئيسية، فغالباً لا نحتاج لفاصلة.",
+        "تُستخدم because لتبيان العلة والسبب المحرك للعاطفة.",
+        "تُستخدم when لتحديد لحظة انطلاق الشعور أو رد الفعل."
+      ],
+      "structures": [
+        {
+          "pattern": "Although + Clause, Main Clause",
+          "explanation": "Shows an emotional reaction that contrasts with an expectation or obstacle.",
+          "explanationArabic": "يبين رد فعل عاطفي يتعارض مع ما كان متوقعاً أو مع وجود عقبة."
+        },
+        {
+          "pattern": "Main Clause + because + Reason Clause",
+          "explanation": "Connects an emotional state to its root psychological or situational cause.",
+          "explanationArabic": "يربط حالة نفسية أو عاطفية بسببها الجذري أو الدافع لها."
+        },
+        {
+          "pattern": "When + Trigger Clause, Main Clause",
+          "explanation": "Indicates the exact circumstance that ignited the emotional response.",
+          "explanationArabic": "يوضح الظرف أو اللحظة الدقيقة التي أشعلت الاستجابة العاطفية."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Although she faced deep mortification, her natural effervescence helped her recover quickly.",
+          "translation": "رغم أنها واجهت حرجاً وخزياً شديدين، إلا أن حيويتها الفطرية وتألقها ساعداها على التعافي سريعاً.",
+          "usesVocabulary": [
+            "mortification",
+            "effervescence"
+          ]
+        },
+        {
+          "sentence": "The painter pursued his craft with unyielding ardour because he believed in the redemptive power of art.",
+          "translation": "واصل الرسام مهنته بحماسة وشغف لا يلين لأنه كان يؤمن بالقوة التطهيرية للفن.",
+          "usesVocabulary": [
+            "ardour"
+          ]
+        },
+        {
+          "sentence": "When she noticed the student looking crestfallen, her instinct prompted her to listen with patient empathy.",
+          "translation": "عندما لاحظت أن الطالب يبدو منكسر الخاطر، دفعتها فطرتها وغريزتها للاستماع بتعاطف وصبْر.",
+          "usesVocabulary": [
+            "crestfallen",
+            "instinct"
+          ]
+        },
+        {
+          "sentence": "Although his inner turmoil caused profound dejection, quiet introspection gradually restored his clarity.",
+          "translation": "رغم أن اضطرابه الداخلي أحدث قنوطاً وانكساراً عميقاً، فإن التأمل الذاتي الهادئ أعاد إليه بصيرته تدريجياً.",
+          "usesVocabulary": [
+            "turmoil",
+            "dejection",
+            "introspection"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Although he felt deep trepidation, but he delivered the speech courageously.",
+          "right": "Although he felt deep trepidation, he delivered the speech courageously.",
+          "note": "Do not pair 'although' with 'but' in the same sentence. Use either 'although' or 'but', never both.",
+          "noteArabic": "لا تجمع بين although و but في جملة واحدة أبداً؛ اختر أحدهما فقط."
+        },
+        {
+          "wrong": "Because the speaker became flustered. The audience felt uncomfortable.",
+          "right": "Because the speaker became flustered, the audience felt uncomfortable.",
+          "note": "A 'because' clause is dependent; it cannot stand alone as a complete sentence with a period.",
+          "noteArabic": "جملة because جملة فرعية تابعة، ولا يجوز أن تقف بمفردها كجملة مستقلة منتهية بنقطة."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "exhilaration",
+      "pronunciation": "/ɪɡˌzɪləˈreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of great happiness, excitement, or elation.",
+      "example": "Reaching the mountain summit filled the hikers with a surge of pure exhilaration.",
+      "translation": "نشوة وابتهاج عارم / إثارة وفرحة غامرة",
+      "exampleArabic": "ملأ الوصول إلى قمة الجبل المتنزهين بموجة من النشوة والابتهاج العارم.",
+      "relatedForms": [
+        "exhilarate",
+        "exhilarated"
+      ],
+      "collocations": [
+        "surge of exhilaration",
+        "pure exhilaration"
+      ],
+      "synonyms": [
+        "thrill",
+        "elation",
+        "excitement"
+      ],
+      "antonyms": [
+        "dejection",
+        "depression"
+      ],
+      "tags": [
+        "emotions",
+        "positive"
+      ]
+    },
+    {
+      "headword": "rapture",
+      "pronunciation": "/ˈræptʃə/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of intense pleasure or enthusiasm.",
+      "example": "The audience listened in silent rapture as the soloist played the final movement.",
+      "translation": "انخطاف ونشوة / انبهار وشغف شديد",
+      "exampleArabic": "استمع الجمهور في نشوة وانخطاف صامت بينما عزف العازف المنفرد المقطع الأخير.",
+      "relatedForms": [
+        "rapturous"
+      ],
+      "collocations": [
+        "silent rapture",
+        "listen in rapture"
+      ],
+      "synonyms": [
+        "ecstasy",
+        "delight",
+        "enchantment"
+      ],
+      "antonyms": [
+        "indifference",
+        "boredom"
+      ],
+      "tags": [
+        "emotions",
+        "positive"
+      ]
+    },
+    {
+      "headword": "glee",
+      "pronunciation": "/ɡliː/",
+      "partOfSpeech": "noun",
+      "definition": "Great delight, especially from one's own good fortune or another's misfortune.",
+      "example": "The children opened their holiday presents with unrestrained glee and laughter.",
+      "translation": "جذل وحبور / فرح ومرح طفولي غامر",
+      "exampleArabic": "فتح الأطفال هدايا العيد بجذل وحبور وضحكات لا حدود لها.",
+      "relatedForms": [
+        "gleeful",
+        "gleefully"
+      ],
+      "collocations": [
+        "unrestrained glee",
+        "chuckle with glee"
+      ],
+      "synonyms": [
+        "delight",
+        "merriment",
+        "jubilation"
+      ],
+      "antonyms": [
+        "gloom",
+        "misery"
+      ],
+      "tags": [
+        "emotions",
+        "positive"
+      ]
+    },
+    {
+      "headword": "adoration",
+      "pronunciation": "/ˌædəˈreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Deep love, devotion, and profound respect for someone.",
+      "example": "He gazed at his newborn daughter with unconditional adoration and wonder.",
+      "translation": "عشق ومودة عميقة / إكبار وهيام",
+      "exampleArabic": "تطلع إلى طفلته الرضيعة بمحبة مطلقة وإكبار وذهول عميق.",
+      "relatedForms": [
+        "adore",
+        "adoring"
+      ],
+      "collocations": [
+        "gaze with adoration",
+        "mutual adoration"
+      ],
+      "synonyms": [
+        "devotion",
+        "veneration",
+        "cherishing"
+      ],
+      "antonyms": [
+        "contempt",
+        "loathing"
+      ],
+      "tags": [
+        "emotions",
+        "relationships"
+      ]
+    },
+    {
+      "headword": "exultation",
+      "pronunciation": "/ˌeɡzʌlˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of triumphant elation or jubilation.",
+      "example": "A collective shout of exultation erupted across the stadium when the final goal was scored.",
+      "translation": "ابتهاج بالنصر / تهليل وفرحة الظفر",
+      "exampleArabic": "دوت صرخة ابتهاج وظفر جماعية في أرجاء الملعب عندما سُجل الهدف الحاسم.",
+      "relatedForms": [
+        "exult",
+        "exultant"
+      ],
+      "collocations": [
+        "shout of exultation",
+        "triumphant exultation"
+      ],
+      "synonyms": [
+        "triumph",
+        "jubilation",
+        "celebration"
+      ],
+      "antonyms": [
+        "defeat",
+        "despair"
+      ],
+      "tags": [
+        "emotions",
+        "success"
+      ]
+    },
+    {
+      "headword": "ardour",
+      "pronunciation": "/ˈɑːdə/",
+      "partOfSpeech": "noun",
+      "definition": "Great warmth of feeling, passion, or intense devotion.",
+      "example": "She pursued her medical research with youthful ardour and unwavering determination.",
+      "translation": "حماسة متقدة / شغف وحمية بالغة",
+      "exampleArabic": "واصلت أبحاثها الطبية بحماسة متقدة وشغف وعزيمة لا تلين.",
+      "relatedForms": [
+        "ardent",
+        "ardently"
+      ],
+      "collocations": [
+        "youthful ardour",
+        "patriotic ardour"
+      ],
+      "synonyms": [
+        "passion",
+        "fervour",
+        "zeal"
+      ],
+      "antonyms": [
+        "apathy",
+        "indifference"
+      ],
+      "tags": [
+        "emotions",
+        "motivation"
+      ]
+    },
+    {
+      "headword": "zeal",
+      "pronunciation": "/ziːl/",
+      "partOfSpeech": "noun",
+      "definition": "Great energy or enthusiasm in pursuit of a cause or an objective.",
+      "example": "The community volunteers tackled the neighborhood restoration with remarkable zeal.",
+      "translation": "حمية وغيرية / حماس واندفاع في العمل",
+      "exampleArabic": "أقبل متطوعو الحي على مشروع الترميم بحمية ونشاط لافت للأنظار.",
+      "relatedForms": [
+        "zealous",
+        "zealously"
+      ],
+      "collocations": [
+        "missionary zeal",
+        "remarkable zeal"
+      ],
+      "synonyms": [
+        "enthusiasm",
+        "ardour",
+        "fervour"
+      ],
+      "antonyms": [
+        "indifference",
+        "lethargy"
+      ],
+      "tags": [
+        "emotions",
+        "work"
+      ]
+    },
+    {
+      "headword": "effervescence",
+      "pronunciation": "/ˌefəˈvesns/",
+      "partOfSpeech": "noun",
+      "definition": "Vivacity and enthusiasm; high spirits or sparkle in personality.",
+      "example": "Her natural effervescence brought infectious joy into the quietest meeting rooms.",
+      "translation": "حيوية فائضة / بهجة وتألق مرح",
+      "exampleArabic": "جلبت حيويتها الفائضة وتألقها المرح بهجة معدية إلى أكثر غرف الاجتماعات هدوءاً.",
+      "relatedForms": [
+        "effervescent"
+      ],
+      "collocations": [
+        "natural effervescence",
+        "youthful effervescence"
+      ],
+      "synonyms": [
+        "bubbly personality",
+        "vivacity",
+        "sparkle"
+      ],
+      "antonyms": [
+        "dullness",
+        "gloom"
+      ],
+      "tags": [
+        "personality",
+        "emotions"
+      ]
+    },
+    {
+      "headword": "jubilation",
+      "pronunciation": "/ˌdʒuːbɪˈleɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of extreme joy and celebration.",
+      "example": "News of the peace accord was greeted with spontaneous jubilation in the city center.",
+      "translation": "احتفال وفرح عارم / ابتهاج شعبي عام",
+      "exampleArabic": "استُقبلت أنباء اتفاق السلام بابتهاج واحتفال شعبي عارم وعفوي في وسط المدينة.",
+      "relatedForms": [
+        "jubilant"
+      ],
+      "collocations": [
+        "spontaneous jubilation",
+        "scenes of jubilation"
+      ],
+      "synonyms": [
+        "exultation",
+        "celebration",
+        "rejoicing"
+      ],
+      "antonyms": [
+        "mourning",
+        "sorrow"
+      ],
+      "tags": [
+        "emotions",
+        "celebration"
+      ]
+    },
+    {
+      "headword": "reverie",
+      "pronunciation": "/ˈrevəri/",
+      "partOfSpeech": "noun",
+      "definition": "A state of being pleasantly lost in one's thoughts; a daydream.",
+      "example": "A sudden knock at the door broke her peaceful reverie by the window.",
+      "translation": "سرحان لطيف / استغراق في أحلام اليقظة",
+      "exampleArabic": "قطعت طرقة مفاجئة على الباب استغراقها اللطيف في أفكارها وأحلام يقظتها بجوار النافذة.",
+      "relatedForms": [],
+      "collocations": [
+        "lost in reverie",
+        "break a reverie"
+      ],
+      "synonyms": [
+        "daydream",
+        "musing",
+        "trance"
+      ],
+      "antonyms": [
+        "focus",
+        "alertness"
+      ],
+      "tags": [
+        "mind",
+        "emotions"
+      ]
+    },
+    {
+      "headword": "contempt",
+      "pronunciation": "/kənˈtempt/",
+      "partOfSpeech": "noun",
+      "definition": "The feeling that a person or a thing is worthless or beneath consideration.",
+      "example": "He looked at the corrupt politician with cold, unmistakable contempt.",
+      "translation": "ازدراء واحتقار / شعور بدونية الآخر",
+      "exampleArabic": "نظر إلى السياسي الفاسد بازدراء بارد لا لبس فيه.",
+      "relatedForms": [
+        "contemptuous",
+        "contemptible"
+      ],
+      "collocations": [
+        "open contempt",
+        "treat with contempt"
+      ],
+      "synonyms": [
+        "scorn",
+        "disdain",
+        "derision"
+      ],
+      "antonyms": [
+        "respect",
+        "admiration"
+      ],
+      "tags": [
+        "emotions",
+        "judgment"
+      ]
+    },
+    {
+      "headword": "envy",
+      "pronunciation": "/ˈenvi/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of discontented or resentful longing aroused by someone else's possessions or luck.",
+      "example": "Watching his classmate receive the scholarship stirred an uncomfortable pang of envy.",
+      "translation": "غبطة مشوبة بحسد / تمنّي ما لدى الغير",
+      "exampleArabic": "أثار مشهد زميله وهو ينال المنحة الدراسية وخزة مزعجة من الحسد في صدره.",
+      "relatedForms": [
+        "envious",
+        "enviably"
+      ],
+      "collocations": [
+        "green with envy",
+        "pang of envy"
+      ],
+      "synonyms": [
+        "jealousy",
+        "covetousness",
+        "resentment"
+      ],
+      "antonyms": [
+        "generosity",
+        "goodwill"
+      ],
+      "tags": [
+        "emotions",
+        "social"
+      ]
+    },
+    {
+      "headword": "mortification",
+      "pronunciation": "/ˌmɔːtɪfɪˈkeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Great embarrassment and shame caused by something humiliating.",
+      "example": "To her utter mortification, she forgot the keynote speaker's name in front of hundreds.",
+      "translation": "حرج وخزي بالغ / ارتباك مخجل ومؤلم",
+      "exampleArabic": "لحرجها وخزيها الشديدين، نسيت اسم المتحدث الرئيسي أمام مئات الحاضرين.",
+      "relatedForms": [
+        "mortify",
+        "mortified"
+      ],
+      "collocations": [
+        "utter mortification",
+        "die of mortification"
+      ],
+      "synonyms": [
+        "humiliation",
+        "embarrassment",
+        "shame"
+      ],
+      "antonyms": [
+        "pride",
+        "composure"
+      ],
+      "tags": [
+        "emotions",
+        "reactions"
+      ]
+    },
+    {
+      "headword": "desolation",
+      "pronunciation": "/ˌdesəˈleɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A state of complete emptiness or feeling utterly alone and abandoned.",
+      "example": "After his family moved to another continent, a profound desolation settled over his empty apartment.",
+      "translation": "وحشة وخواء نفسي / شعور بالهجران والوحدة القاتلة",
+      "exampleArabic": "بعد أن انتقلت عائلته لقارة أخرى، خيمت وحشة وخواء نفسي عميق على شقته الفارغة.",
+      "relatedForms": [
+        "desolate"
+      ],
+      "collocations": [
+        "sense of desolation",
+        "utter desolation"
+      ],
+      "synonyms": [
+        "bleakness",
+        "loneliness",
+        "bereavement"
+      ],
+      "antonyms": [
+        "comfort",
+        "warmth"
+      ],
+      "tags": [
+        "emotions",
+        "solitude"
+      ]
+    },
+    {
+      "headword": "torment",
+      "pronunciation": "/ˈtɔːment/",
+      "partOfSpeech": "noun",
+      "definition": "Severe physical or mental suffering; agonizing emotional distress.",
+      "example": "Enduring years of unanswered questions about her brother was a slow, exhausting torment.",
+      "translation": "عذاب نفسي / ألم ومعاناة وجدانية مبرحة",
+      "exampleArabic": "كان تحمل سنوات من الأسئلة المعلقة دون إجابة حول أخيها عذاباً نفسياً بطيئاً ومرهقاً.",
+      "relatedForms": [
+        "torment",
+        "tormented"
+      ],
+      "collocations": [
+        "mental torment",
+        "slow torment"
+      ],
+      "synonyms": [
+        "agony",
+        "anguish",
+        "misery"
+      ],
+      "antonyms": [
+        "peace",
+        "solace"
+      ],
+      "tags": [
+        "emotions",
+        "suffering"
+      ]
+    },
+    {
+      "headword": "shame",
+      "pronunciation": "/ʃeɪm/",
+      "partOfSpeech": "noun",
+      "definition": "A painful feeling of humiliation or distress caused by the consciousness of wrong or foolish behavior.",
+      "example": "He was overwhelmed by intense shame when he realized how much his dishonesty had hurt his mother.",
+      "translation": "عار وخزي / وخز الضمير والندم العميق",
+      "exampleArabic": "غمره عار وخزي شديد عندما أدرك مدى الأذى الذي ألحقه كذبه بأمه.",
+      "relatedForms": [
+        "ashamed",
+        "shameful"
+      ],
+      "collocations": [
+        "sense of shame",
+        "feel deep shame"
+      ],
+      "synonyms": [
+        "humiliation",
+        "guilt",
+        "remorse"
+      ],
+      "antonyms": [
+        "pride",
+        "dignity"
+      ],
+      "tags": [
+        "emotions",
+        "morals"
+      ]
+    },
+    {
+      "headword": "chagrin",
+      "pronunciation": "/ˈʃæɡrɪn/",
+      "partOfSpeech": "noun",
+      "definition": "Annoyance or distress at having failed or been humiliated.",
+      "example": "Much to his chagrin, the rookie competitor won the championship trophy.",
+      "translation": "غيظ وخيبة / استياء وإحباط لعدم التوفيق",
+      "exampleArabic": "لغيظه وخيبته الكبيرة، فاز المتسابق المبتدئ بكأس البطولة.",
+      "relatedForms": [
+        "chagrined"
+      ],
+      "collocations": [
+        "much to his chagrin",
+        "feel chagrin"
+      ],
+      "synonyms": [
+        "annoyance",
+        "vexation",
+        "disappointment"
+      ],
+      "antonyms": [
+        "delight",
+        "satisfaction"
+      ],
+      "tags": [
+        "emotions",
+        "reactions"
+      ]
+    },
+    {
+      "headword": "dejection",
+      "pronunciation": "/dɪˈdʒekʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A sad and depressed state; low spirits.",
+      "example": "His shoulders slumped in total dejection after receiving the third rejection letter in one week.",
+      "translation": "انكسار وقنوط / تدنّي المعنويات والحزن",
+      "exampleArabic": "تهدلت كتفاه في انكسار وقنوط تام بعد تلقيه خطاب الرفض الثالث خلال أسبوع واحد.",
+      "relatedForms": [
+        "dejected",
+        "dejectedly"
+      ],
+      "collocations": [
+        "state of dejection",
+        "look of dejection"
+      ],
+      "synonyms": [
+        "depression",
+        "despondency",
+        "gloom"
+      ],
+      "antonyms": [
+        "cheerfulness",
+        "optimism"
+      ],
+      "tags": [
+        "emotions",
+        "sadness"
+      ]
+    },
+    {
+      "headword": "woe",
+      "pronunciation": "/wəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "Great sorrow or distress; misfortune and trouble.",
+      "example": "The historic ballad told of the countless woes faced by ancient seafaring families.",
+      "translation": "شجون ومصائب / أحزان وبلايا كبرى",
+      "exampleArabic": "روت القصيدة التاريخية عن الشجون والمصائب التي لا تُحصى والتي واجهتها أسر البحارة القدماء.",
+      "relatedForms": [
+        "woeful",
+        "woefully"
+      ],
+      "collocations": [
+        "tale of woe",
+        "burden of woe"
+      ],
+      "synonyms": [
+        "sorrow",
+        "grief",
+        "affliction"
+      ],
+      "antonyms": [
+        "joy",
+        "blessing"
+      ],
+      "tags": [
+        "emotions",
+        "adversity"
+      ]
+    },
+    {
+      "headword": "trepidation",
+      "pronunciation": "/ˌtrepɪˈdeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of fear, agitation, or alarm about something that may happen.",
+      "example": "She opened the envelope containing the medical results with noticeable trepidation.",
+      "translation": "وجل وارتياب / خوف وارتجاف من المجهول",
+      "exampleArabic": "فتحت الظرف الذي يحتوي على النتائج الطبية بوجل وارتياب ملحوظين.",
+      "relatedForms": [],
+      "collocations": [
+        "with trepidation",
+        "sense of trepidation"
+      ],
+      "synonyms": [
+        "dread",
+        "anxiety",
+        "nervousness"
+      ],
+      "antonyms": [
+        "calm",
+        "confidence"
+      ],
+      "tags": [
+        "emotions",
+        "fear"
+      ]
+    },
+    {
+      "headword": "turmoil",
+      "pronunciation": "/ˈtɜːmɔɪl/",
+      "partOfSpeech": "noun",
+      "definition": "A state of great disturbance, confusion, or emotional uncertainty.",
+      "example": "His inner turmoil was evident to everyone in the room despite his calm facade.",
+      "translation": "اضطراب وتخبط / صراع وجداني داخلي",
+      "exampleArabic": "كان اضطرابه الداخلي وتخبطه واضحاً للجميع في الغرفة بالرغم من هدوئه الظاهري.",
+      "relatedForms": [],
+      "collocations": [
+        "inner turmoil",
+        "emotional turmoil"
+      ],
+      "synonyms": [
+        "chaos",
+        "upheaval",
+        "unrest"
+      ],
+      "antonyms": [
+        "serenity",
+        "peace"
+      ],
+      "tags": [
+        "emotions",
+        "mind"
+      ]
+    },
+    {
+      "headword": "malice",
+      "pronunciation": "/ˈmælɪs/",
+      "partOfSpeech": "noun",
+      "definition": "The desire to harm someone; ill will or spiteful intent.",
+      "example": "The anonymous rumor was spread with calculated malice to harm her reputation.",
+      "translation": "خبث وضغينة / نية الإيذاء وإضمار الشر",
+      "exampleArabic": "نُشرت الشائعة المجهولة بخبث مدروس وضغينة للإضرار بسمعتها.",
+      "relatedForms": [
+        "malicious",
+        "maliciously"
+      ],
+      "collocations": [
+        "act with malice",
+        "bear malice"
+      ],
+      "synonyms": [
+        "spite",
+        "ill will",
+        "animosity"
+      ],
+      "antonyms": [
+        "goodwill",
+        "kindness"
+      ],
+      "tags": [
+        "emotions",
+        "character"
+      ]
+    },
+    {
+      "headword": "indignation",
+      "pronunciation": "/ˌɪndɪɡˈneɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Anger or annoyance provoked by what is perceived as unfair treatment.",
+      "example": "A wave of righteous indignation swept the audience when the deceptive charges were read.",
+      "translation": "سخط واستنكار / غضب مبرر من الظلم",
+      "exampleArabic": "اجتاحت موجة من السخط والاستنكار المبرر الحاضرين حين تُليت التهم المضللة.",
+      "relatedForms": [
+        "indignant",
+        "indignantly"
+      ],
+      "collocations": [
+        "righteous indignation",
+        "express indignation"
+      ],
+      "synonyms": [
+        "outrage",
+        "resentment",
+        "fury"
+      ],
+      "antonyms": [
+        "acceptance",
+        "complacency"
+      ],
+      "tags": [
+        "emotions",
+        "justice"
+      ]
+    },
+    {
+      "headword": "rancour",
+      "pronunciation": "/ˈræŋkə/",
+      "partOfSpeech": "noun",
+      "definition": "Bitterness or resentfulness, especially when long-standing.",
+      "example": "They negotiated a settlement without rancour, putting ten years of legal fighting behind them.",
+      "translation": "حقد وضغينة مستحكمة / غل متجذر",
+      "exampleArabic": "تفاوضا على تسوية دون حقد أو ضغينة مستحكمة، واضعين عشر سنوات من النزاع القانوني وراءهما.",
+      "relatedForms": [
+        "rancorous"
+      ],
+      "collocations": [
+        "without rancour",
+        "bitter rancour"
+      ],
+      "synonyms": [
+        "animosity",
+        "malice",
+        "resentment"
+      ],
+      "antonyms": [
+        "harmony",
+        "forgiveness"
+      ],
+      "tags": [
+        "emotions",
+        "conflict"
+      ]
+    },
+    {
+      "headword": "resentfulness",
+      "pronunciation": "/rɪˈzentflnəs/",
+      "partOfSpeech": "noun",
+      "definition": "The characteristic of feeling or showing bitter indignation at having been treated unfairly.",
+      "example": "Unresolved resentfulness can quietly poison personal relationships from within.",
+      "translation": "شعور دفين بالحنق / استياء ومرارة متراكمة",
+      "exampleArabic": "يمكن للشعور الدفين بالحنق والاستياء غير المعالج أن يسمم العلاقات الشخصية بهدوء من الداخل.",
+      "relatedForms": [
+        "resentful",
+        "resent"
+      ],
+      "collocations": [
+        "lingering resentfulness",
+        "overcome resentfulness"
+      ],
+      "synonyms": [
+        "bitterness",
+        "discontent",
+        "grudge"
+      ],
+      "antonyms": [
+        "gratitude",
+        "contentment"
+      ],
+      "tags": [
+        "emotions",
+        "relationships"
+      ]
+    },
+    {
+      "headword": "flustered",
+      "pronunciation": "/ˈflʌstəd/",
+      "partOfSpeech": "adjective",
+      "definition": "Agitated or confused, especially as a result of being in a hurry or put on the spot.",
+      "example": "When the microphone stopped working, the speaker became noticeably flustered.",
+      "translation": "مرتبك ومحتار / مضطرب تحت الضغط",
+      "exampleArabic": "عندما تعطل الميكروفون، بدا المتحدث مرتبكاً ومضطرباً بشكل ملحوظ.",
+      "relatedForms": [
+        "fluster"
+      ],
+      "collocations": [
+        "become flustered",
+        "look flustered"
+      ],
+      "synonyms": [
+        "rattled",
+        "agitated",
+        "discomposed"
+      ],
+      "antonyms": [
+        "composed",
+        "unfazed"
+      ],
+      "tags": [
+        "emotions",
+        "reactions"
+      ]
+    },
+    {
+      "headword": "crestfallen",
+      "pronunciation": "/ˈkrestfɔːlən/",
+      "partOfSpeech": "adjective",
+      "definition": "Sad and disappointed after having had high hopes.",
+      "example": "He looked thoroughly crestfallen when the scholarship committee announced another winner.",
+      "translation": "منكسر الخاطر / خائب الرجاء ومحبط",
+      "exampleArabic": "بدا منكسر الخاطر وخائب الرجاء تماماً عندما أعلنت لجنة المنح اسم فائز آخر.",
+      "relatedForms": [],
+      "collocations": [
+        "look crestfallen",
+        "utterly crestfallen"
+      ],
+      "synonyms": [
+        "downhearted",
+        "disappointed",
+        "dejected"
+      ],
+      "antonyms": [
+        "elated",
+        "triumphant"
+      ],
+      "tags": [
+        "emotions",
+        "disappointment"
+      ]
+    },
+    {
+      "headword": "agitated",
+      "pronunciation": "/ˈædʒɪteɪtɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "Feeling or appearing troubled or nervously excited.",
+      "example": "The agitated patient paced up and down the hallway while waiting for test results.",
+      "translation": "مضطرب وقلق / متوتر الأعصاب ومهتاج",
+      "exampleArabic": "راح المريض المضطرب والمهتاج يروح ويجيء في الردهة بانتظار نتائج التحاليل.",
+      "relatedForms": [
+        "agitate",
+        "agitation"
+      ],
+      "collocations": [
+        "visibly agitated",
+        "grow agitated"
+      ],
+      "synonyms": [
+        "restless",
+        "nervous",
+        "perturbed"
+      ],
+      "antonyms": [
+        "tranquil",
+        "serene"
+      ],
+      "tags": [
+        "emotions",
+        "reactions"
+      ]
+    },
+    {
+      "headword": "subdued",
+      "pronunciation": "/səbˈdjuːd/",
+      "partOfSpeech": "adjective",
+      "definition": "Quiet and rather reflective or depressed; lacking usual energy.",
+      "example": "The mood in the locker room remained unusually subdued after their narrow loss.",
+      "translation": "واجم وخافت النبرة / هادئ بحزن",
+      "exampleArabic": "ظل الجو في غرفة الملابس واجماً وخافتاً على غير العادة بعد خسارتهم بفارق ضئيل.",
+      "relatedForms": [
+        "subdue"
+      ],
+      "collocations": [
+        "subdued mood",
+        "unusually subdued"
+      ],
+      "synonyms": [
+        "muted",
+        "quiet",
+        "restrained"
+      ],
+      "antonyms": [
+        "boisterous",
+        "exuberant"
+      ],
+      "tags": [
+        "emotions",
+        "behavior"
+      ]
+    },
+    {
+      "headword": "vulnerable",
+      "pronunciation": "/ˈvʌlnərəbl/",
+      "partOfSpeech": "adjective",
+      "definition": "Susceptible to physical or emotional attack or harm; open to being hurt.",
+      "example": "Sharing her deep childhood memories made her feel unexpectedly vulnerable.",
+      "translation": "هش ومكشوف / قابل للتأثر والجرح العاطفي",
+      "exampleArabic": "جعلتها مشاركة ذكريات طفولتها العميقة تشعر بهشاشة وعرضة للجرح على غير متوقع.",
+      "relatedForms": [
+        "vulnerability",
+        "vulnerably"
+      ],
+      "collocations": [
+        "feel vulnerable",
+        "emotionally vulnerable"
+      ],
+      "synonyms": [
+        "exposed",
+        "defenseless",
+        "sensitive"
+      ],
+      "antonyms": [
+        "invulnerable",
+        "protected"
+      ],
+      "tags": [
+        "emotions",
+        "psychology"
+      ]
+    },
+    {
+      "headword": "baffled",
+      "pronunciation": "/ˈbæfld/",
+      "partOfSpeech": "adjective",
+      "definition": "Totally bewildered or perplexed by something difficult to understand.",
+      "example": "Detectives were completely baffled by the sudden disappearance of the priceless painting.",
+      "translation": "حائر ومحتار كلياً / مستغرب وعاجز عن الفهم",
+      "exampleArabic": "كان المحققون في حيرة وذهول تام أمام الاختفاء المفاجئ للوحة الثمينة.",
+      "relatedForms": [
+        "baffle",
+        "baffling"
+      ],
+      "collocations": [
+        "completely baffled",
+        "left baffled"
+      ],
+      "synonyms": [
+        "perplexed",
+        "mystified",
+        "puzzled"
+      ],
+      "antonyms": [
+        "clear",
+        "comprehending"
+      ],
+      "tags": [
+        "emotions",
+        "mind"
+      ]
+    },
+    {
+      "headword": "exasperated",
+      "pronunciation": "/ɪɡˈzɑːspəreɪtɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "Intensely irritated and frustrated by persistent difficulties or someone's behavior.",
+      "example": "After repeating the instructions four times, the teacher gave an exasperated sigh.",
+      "translation": "مستشاط غيظاً وضجراً / نافد الصبر من الاستياء",
+      "exampleArabic": "بعد تكرار التعليمات أربع مرات، تنهد المعلم تنهيدة مستشاطة بالغيظ ونفاد الصبر.",
+      "relatedForms": [
+        "exasperate",
+        "exasperation"
+      ],
+      "collocations": [
+        "exasperated sigh",
+        "sound exasperated"
+      ],
+      "synonyms": [
+        "infuriated",
+        "vexed",
+        "irritated"
+      ],
+      "antonyms": [
+        "patient",
+        "pleased"
+      ],
+      "tags": [
+        "emotions",
+        "reactions"
+      ]
+    },
+    {
+      "headword": "startled",
+      "pronunciation": "/ˈstɑːtld/",
+      "partOfSpeech": "adjective",
+      "definition": "Sudden shock or surprise caused by an unexpected noise, movement, or event.",
+      "example": "The startled cat leaped onto the top bookshelf when the thunder crashed.",
+      "translation": "مفزوع ومجفول / مباغت ومذعور فجأة",
+      "exampleArabic": "قفزت القطة المفزوعة إلى أعلى رف في المكتبة عندما دوى الرعد.",
+      "relatedForms": [
+        "startle",
+        "startling"
+      ],
+      "collocations": [
+        "startled look",
+        "easily startled"
+      ],
+      "synonyms": [
+        "shocked",
+        "alarmed",
+        "frightened"
+      ],
+      "antonyms": [
+        "unfazed",
+        "expectant"
+      ],
+      "tags": [
+        "emotions",
+        "reactions"
+      ]
+    },
+    {
+      "headword": "moved",
+      "pronunciation": "/muːvd/",
+      "partOfSpeech": "adjective",
+      "definition": "Touched by deep emotion, sympathy, or gratitude.",
+      "example": "She was deeply moved by the unexpected kindness of total strangers in a foreign city.",
+      "translation": "متأثر وجدانياً / مفعم بالشكر والتعاطف",
+      "exampleArabic": "تأثرت وجدانياً بعمق بفضل اللطف غير المتوقع الذي أبداه غرباء تماماً في مدينة أجنبية.",
+      "relatedForms": [
+        "moving"
+      ],
+      "collocations": [
+        "deeply moved",
+        "visibly moved"
+      ],
+      "synonyms": [
+        "touched",
+        "affected",
+        "stirred"
+      ],
+      "antonyms": [
+        "unmoved",
+        "indifferent"
+      ],
+      "tags": [
+        "emotions",
+        "gratitude"
+      ]
+    },
+    {
+      "headword": "absorbed",
+      "pronunciation": "/əbˈzɔːbd/",
+      "partOfSpeech": "adjective",
+      "definition": "Having one's attention wholly engaged or engrossed in something.",
+      "example": "He sat in the garden so absorbed in his novel that he did not notice the afternoon rain begin.",
+      "translation": "مستغرق ومنهمك تماماً / شارد في نشاط ما",
+      "exampleArabic": "جلس في الحديقة مستغرقاً في روايته لدرجة أنه لم يلحظ بدء سقوط مطر بعد الظهر.",
+      "relatedForms": [
+        "absorb",
+        "absorbing"
+      ],
+      "collocations": [
+        "absorbed in thought",
+        "deeply absorbed"
+      ],
+      "synonyms": [
+        "engrossed",
+        "immersed",
+        "captivated"
+      ],
+      "antonyms": [
+        "distracted",
+        "inattentive"
+      ],
+      "tags": [
+        "mind",
+        "focus"
+      ]
+    },
+    {
+      "headword": "astonished",
+      "pronunciation": "/əˈstɒnɪʃt/",
+      "partOfSpeech": "adjective",
+      "definition": "Greatly surprised or impressed; amazed.",
+      "example": "The engineers were astonished by how quickly the prototype exceeded performance targets.",
+      "translation": "مندهش ومذهول / معجب بشدة بالمفاجأة",
+      "exampleArabic": "ذهل المهندسون واندهشوا من مدى سرعة تجاوز النموذج الأولي لأهداف الأداء.",
+      "relatedForms": [
+        "astonish",
+        "astonishing"
+      ],
+      "collocations": [
+        "astonished at",
+        "utterly astonished"
+      ],
+      "synonyms": [
+        "amazed",
+        "astounded",
+        "flabbergasted"
+      ],
+      "antonyms": [
+        "unimpressed",
+        "indifferent"
+      ],
+      "tags": [
+        "emotions",
+        "surprise"
+      ]
+    },
+    {
+      "headword": "unsettled",
+      "pronunciation": "/ʌnˈsetld/",
+      "partOfSpeech": "adjective",
+      "definition": "Lacking stability; feeling anxious, uncertain, or disturbed.",
+      "example": "The strange silence in the old house left the guests feeling slightly unsettled.",
+      "translation": "قلق ومضطرب / غير مستقر البال",
+      "exampleArabic": "ترك الصمت الغريب في البيت القديم الضيوف في حالة قلق واضطراب طفيف في البال.",
+      "relatedForms": [
+        "unsettle"
+      ],
+      "collocations": [
+        "feel unsettled",
+        "unsettled mind"
+      ],
+      "synonyms": [
+        "uneasy",
+        "disturbed",
+        "anxious"
+      ],
+      "antonyms": [
+        "settled",
+        "calm"
+      ],
+      "tags": [
+        "emotions",
+        "anxiety"
+      ]
+    },
+    {
+      "headword": "bewildered",
+      "pronunciation": "/bɪˈwɪldəd/",
+      "partOfSpeech": "adjective",
+      "definition": "Confused and indecisive; puzzled.",
+      "example": "She stood bewildered at the airport transit terminal after her connecting flight was cancelled.",
+      "translation": "حيران وتائه / مرتبك لعدم معرفة التصرف",
+      "exampleArabic": "وقفت حيرانة وتائهة في صالة الترانزيت بالمطار بعد إلغاء رحلتها المتصلة.",
+      "relatedForms": [
+        "bewilder"
+      ],
+      "collocations": [
+        "bewildered look",
+        "utterly bewildered"
+      ],
+      "synonyms": [
+        "perplexed",
+        "confused",
+        "mystified"
+      ],
+      "antonyms": [
+        "sure",
+        "enlightened"
+      ],
+      "tags": [
+        "emotions",
+        "mind"
+      ]
+    },
+    {
+      "headword": "perturbed",
+      "pronunciation": "/pəˈtɜːbd/",
+      "partOfSpeech": "adjective",
+      "definition": "Feeling anxious or unsettled; upset by unexpected complications.",
+      "example": "The manager was perturbed to discover that two senior analysts planned to resign together.",
+      "translation": "منزعج ومضطرب / قلق ومتوجس من أمر طرأ",
+      "exampleArabic": "انزعج المدير واضطرب حين اكتشف أن اثنين من كبار المحللين يخططان للاستقالة معاً.",
+      "relatedForms": [
+        "perturb",
+        "perturbation"
+      ],
+      "collocations": [
+        "visibly perturbed",
+        "perturbed by"
+      ],
+      "synonyms": [
+        "troubled",
+        "unsettled",
+        "agitated"
+      ],
+      "antonyms": [
+        "untroubled",
+        "composed"
+      ],
+      "tags": [
+        "emotions",
+        "anxiety"
+      ]
+    },
+    {
+      "headword": "enthralled",
+      "pronunciation": "/ɪnˈθrɔːld/",
+      "partOfSpeech": "adjective",
+      "definition": "Filled with wonder and delight; captivated by something fascinating.",
+      "example": "The young listeners were enthralled by the grandfather's stories of voyages across the ocean.",
+      "translation": "مفتون ومأخوذ بالسحر / مسلوب اللب بالإعجاب",
+      "exampleArabic": "كان المستمعون الصغار مأخوذين ومفتونين بحكايات الجد عن رحلاته عبر المحيط.",
+      "relatedForms": [
+        "enthral",
+        "enthralling"
+      ],
+      "collocations": [
+        "utterly enthralled",
+        "held enthralled"
+      ],
+      "synonyms": [
+        "captivated",
+        "charmed",
+        "mesmerized"
+      ],
+      "antonyms": [
+        "bored",
+        "disenchanted"
+      ],
+      "tags": [
+        "emotions",
+        "wonder"
+      ]
+    },
+    {
+      "headword": "sentiment",
+      "pronunciation": "/ˈsentɪmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling or emotion, or an attitude toward a situation prompted by feeling.",
+      "example": "Public sentiment shifted in favor of environmental reform after the investigative report.",
+      "translation": "وجدان وشعور / مشاعر الرأي العام",
+      "exampleArabic": "تحول الوجدان والشعور العام لصالح الإصلاح البيئي بعد نشر التقرير الاستقصائي.",
+      "relatedForms": [
+        "sentimental"
+      ],
+      "collocations": [
+        "public sentiment",
+        "noble sentiment"
+      ],
+      "synonyms": [
+        "feeling",
+        "attitude",
+        "view"
+      ],
+      "antonyms": [
+        "fact",
+        "rationality"
+      ],
+      "tags": [
+        "emotions",
+        "mind"
+      ]
+    },
+    {
+      "headword": "disposition",
+      "pronunciation": "/ˌdɪspəˈzɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A person's inherent qualities of mind and character; natural temperament.",
+      "example": "Despite life's harsh hardships, she maintained a cheerful and generous disposition.",
+      "translation": "سجية وطبيعة شخصية / طبع وتكوين مزاجي",
+      "exampleArabic": "على الرغم من مصاعب الحياة القاسية، احتفظت بسجية وطبيعة مرحة وسخية.",
+      "relatedForms": [
+        "dispose"
+      ],
+      "collocations": [
+        "sunny disposition",
+        "calm disposition"
+      ],
+      "synonyms": [
+        "temperament",
+        "nature",
+        "character"
+      ],
+      "antonyms": [],
+      "tags": [
+        "personality",
+        "psychology"
+      ]
+    },
+    {
+      "headword": "temperament",
+      "pronunciation": "/ˈtemprəmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A person's or animal's nature, especially as it permanently affects their behavior.",
+      "example": "His artistic temperament drove him to create masterpieces while also testing his friends' patience.",
+      "translation": "مزاج وطباع فطرية / جبلّة وسلوك طبيعي",
+      "exampleArabic": "دفعه مزاجه الفني وطباعه الفطرية إلى إبداع روائع مع اختبار صبر أصدقائه في آن واحد.",
+      "relatedForms": [
+        "temperamental"
+      ],
+      "collocations": [
+        "fiery temperament",
+        "artistic temperament"
+      ],
+      "synonyms": [
+        "disposition",
+        "nature",
+        "constitution"
+      ],
+      "antonyms": [],
+      "tags": [
+        "personality",
+        "psychology"
+      ]
+    },
+    {
+      "headword": "psyche",
+      "pronunciation": "/ˈsaɪki/",
+      "partOfSpeech": "noun",
+      "definition": "The human soul, mind, or spirit, especially regarding its unconscious depths.",
+      "example": "Childhood experiences leave indelible imprints upon the adult human psyche.",
+      "translation": "النفس والوجدان / الروح وبنية الشخصية الداخلية",
+      "exampleArabic": "تترك تجارب الطفولة بصمات لا تُمحى في النفس والوجدان الإنساني عند البلوغ.",
+      "relatedForms": [
+        "psychological"
+      ],
+      "collocations": [
+        "human psyche",
+        "deep in the psyche"
+      ],
+      "synonyms": [
+        "soul",
+        "mind",
+        "inner self"
+      ],
+      "antonyms": [
+        "body"
+      ],
+      "tags": [
+        "psychology",
+        "mind"
+      ]
+    },
+    {
+      "headword": "instinct",
+      "pronunciation": "/ˈɪnstɪŋkt/",
+      "partOfSpeech": "noun",
+      "definition": "An innate, typically fixed pattern of behavior in response to certain stimuli; intuition.",
+      "example": "Her maternal instinct prompted her to look back just before the baby crawled near the stairs.",
+      "translation": "غريزة وفطرة / حاسة داخلية موجهة",
+      "exampleArabic": "دفعتها غريزتها وفطرتها كأم إلى الالتفات للخلف تماماً قبل أن يحبو الطفل قرب الدرج.",
+      "relatedForms": [
+        "instinctive",
+        "instinctively"
+      ],
+      "collocations": [
+        "gut instinct",
+        "trust one's instinct"
+      ],
+      "synonyms": [
+        "intuition",
+        "impulse",
+        "sixth sense"
+      ],
+      "antonyms": [
+        "reason",
+        "deliberation"
+      ],
+      "tags": [
+        "mind",
+        "psychology"
+      ]
+    },
+    {
+      "headword": "impulse",
+      "pronunciation": "/ˈɪmpʌls/",
+      "partOfSpeech": "noun",
+      "definition": "A sudden strong and unreflective urge or desire to act.",
+      "example": "On a sudden impulse, he booked a weekend flight to Rome to attend the art retrospective.",
+      "translation": "دافع فجائي ونزوة / رغبة عفوية جامحة",
+      "exampleArabic": "بناءً على دافع ونزوة فجائية، حجز تذكرة طيران لعطلة نهاية الأسبوع إلى روما لحضور المعرض الاستعادي للفنون.",
+      "relatedForms": [
+        "impulsive",
+        "impulsively"
+      ],
+      "collocations": [
+        "sudden impulse",
+        "resist an impulse"
+      ],
+      "synonyms": [
+        "urge",
+        "instinct",
+        "whim"
+      ],
+      "antonyms": [
+        "forethought",
+        "plan"
+      ],
+      "tags": [
+        "emotions",
+        "action"
+      ]
+    },
+    {
+      "headword": "yearning",
+      "pronunciation": "/ˈjɜːnɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of intense longing for something, typically something hard to attain.",
+      "example": "He felt a perpetual yearning for the tranquil mountains of his ancestral village.",
+      "translation": "حنين وشوق عارم / توقان وجداني عميق",
+      "exampleArabic": "شعر بحنين وشوق عارم ودائم لجبال قريته الموروثة الهادئة.",
+      "relatedForms": [
+        "yearn"
+      ],
+      "collocations": [
+        "deep yearning",
+        "yearning for home"
+      ],
+      "synonyms": [
+        "longing",
+        "craving",
+        "desire"
+      ],
+      "antonyms": [
+        "indifference",
+        "contentment"
+      ],
+      "tags": [
+        "emotions",
+        "desire"
+      ]
+    },
+    {
+      "headword": "catharsis",
+      "pronunciation": "/kəˈθɑːsɪs/",
+      "partOfSpeech": "noun",
+      "definition": "The process of releasing, and thereby providing relief from, strong or repressed emotions.",
+      "example": "Writing the confessional memoir provided a profound sense of catharsis after years of grief.",
+      "translation": "تطهير نفسي وتفريغ وجداني / انجلاب الراحة بعد البكاء أو التعبير",
+      "exampleArabic": "وفرت كتابة المذكرات الاعترافية شعوراً عميقاً بالتطهير النفسي والتفريغ الوجداني بعد سنوات من الحزن.",
+      "relatedForms": [
+        "cathartic"
+      ],
+      "collocations": [
+        "emotional catharsis",
+        "sense of catharsis"
+      ],
+      "synonyms": [
+        "release",
+        "purging",
+        "liberation"
+      ],
+      "antonyms": [
+        "suppression",
+        "repression"
+      ],
+      "tags": [
+        "psychology",
+        "healing"
+      ]
+    },
+    {
+      "headword": "ambivalence",
+      "pronunciation": "/æmˈbɪvələns/",
+      "partOfSpeech": "noun",
+      "definition": "The state of having mixed feelings or contradictory ideas about something or someone.",
+      "example": "She felt great ambivalence about accepting the prestigious promotion in another city.",
+      "translation": "تضارب المشاعر والتردد / مشاعر متناقضة ومزدوجة",
+      "exampleArabic": "شعرت بتضارب مشاعر وتردد عميق بشأن قبول الترقية المرموقة في مدينة أخرى.",
+      "relatedForms": [
+        "ambivalent"
+      ],
+      "collocations": [
+        "feel ambivalence",
+        "deep ambivalence"
+      ],
+      "synonyms": [
+        "equivocation",
+        "uncertainty",
+        "hesitation"
+      ],
+      "antonyms": [
+        "certainty",
+        "decisiveness"
+      ],
+      "tags": [
+        "psychology",
+        "decision"
+      ]
+    },
+    {
+      "headword": "introspection",
+      "pronunciation": "/ˌɪntrəˈspekʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The examination or observation of one's own mental and emotional processes.",
+      "example": "A week-long silent retreat provided the solitary space she needed for quiet introspection.",
+      "translation": "استبطان ومحاسبة النفس / تأمل ذاتي داخلي",
+      "exampleArabic": "وفرت خلوة التأمل الصامت لمدة أسبوع المساحة الانفرادية التي احتاجتها للاستبطان والتأمل الذاتي الهادئ.",
+      "relatedForms": [
+        "introspective"
+      ],
+      "collocations": [
+        "quiet introspection",
+        "period of introspection"
+      ],
+      "synonyms": [
+        "self-examination",
+        "soul-searching",
+        "reflection"
+      ],
+      "antonyms": [
+        "extroversion"
+      ],
+      "tags": [
+        "mind",
+        "psychology"
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Unpacking a Storm of Inner Feelings",
+      "titleArabic": "تفكيك عاصفة من المشاعر الداخلية",
+      "setting": "A quiet psychologist's consulting room bathed in soft morning light",
+      "settingArabic": "غرفة استشارة نفسية هادئة يغمرها ضوء الصباح الناعم",
+      "roles": [
+        "Dr. Muna",
+        "Client"
+      ],
+      "vocabularyUsed": [
+        "turmoil",
+        "vulnerable",
+        "mortification",
+        "resentfulness",
+        "chagrin",
+        "subdued",
+        "introspection",
+        "catharsis"
+      ],
+      "lines": [
+        {
+          "speaker": "Dr. Muna",
+          "text": "Welcome, Tarek. You seem unusually subdued today compared to our previous session.",
+          "translation": "أهلاً بك يا طارق. تبدو واجماً وهادئاً على غير العادة اليوم مقارنة بجلساتنا السابقة."
+        },
+        {
+          "speaker": "Tarek",
+          "text": "I am experiencing immense inner turmoil because my company overlooked my promotion after five years of loyalty.",
+          "translation": "أعيش اضطراباً وصراعاً داخلياً هائلاً لأن شركتي تجاهلت ترقيتي بعد خمس سنوات من الوفاء."
+        },
+        {
+          "speaker": "Dr. Muna",
+          "text": "When that happened, did you feel more anger or a sense of personal humiliation?",
+          "translation": "حينما حدث ذلك، هل شعرت بالغضب أكثر أم بإحساس من المهانة الشخصية؟"
+        },
+        {
+          "speaker": "Tarek",
+          "text": "It was utter mortification at first. I felt so vulnerable seeing open contempt from colleagues as I left the room.",
+          "translation": "كان خزياً وحرجاً تاماً في البداية. شعرت بهشاشة وضعف شديدين لرؤية ازدراء علني من الزملاء وأنا أغادر الغرفة."
+        },
+        {
+          "speaker": "Dr. Muna",
+          "text": "Although that initial chagrin was agonizing, what lingering sentiment remains with you now?",
+          "translation": "رغم أن ذلك الخزي والاستياء الأولي كان مبرحاً، فما هو الشعور الباقي الذي يلازمك الآن؟"
+        },
+        {
+          "speaker": "Tarek",
+          "text": "My supervisor acted with pure malice, which stirred deep indignation; however, lingering resentfulness is what truly exhausts me.",
+          "translation": "تصرف مشرفي بخبث وضغينة محضة، مما أثار سخطاً واستنكاراً شديداً؛ غير أن الحنق الدفين المتراكم هو ما ينهكني حقاً."
+        },
+        {
+          "speaker": "Dr. Muna",
+          "text": "Through structured introspection, we can transform that pain into a healthy emotional catharsis.",
+          "translation": "من خلال التأمل الذاتي المنظم، يمكننا تحويل ذلك الألم إلى تطهير نفسي وتفريغ وجداني صحي."
+        },
+        {
+          "speaker": "Tarek",
+          "text": "I want that relief, because living under the constant weight of bitterness is completely exhausting.",
+          "translation": "أريد ذلك التحرر والراحة، لأن العيش تحت وطأة المرارة المستمرة أمر منهك للغاية."
+        }
+      ]
+    },
+    {
+      "title": "The Art of Reading Human Reactions",
+      "titleArabic": "فن قراءة ردود الأفعال البشرية",
+      "setting": "A backstage prep area before a major international debate",
+      "settingArabic": "منطقة التحضير خلف الكواليس قبل مناظرة دولية كبرى",
+      "roles": [
+        "Coach Farouk",
+        "Debater Huda"
+      ],
+      "vocabularyUsed": [
+        "flustered",
+        "trepidation",
+        "agitated",
+        "baffled",
+        "exasperated",
+        "startled",
+        "perturbed",
+        "enthralled",
+        "astonished",
+        "bewildered"
+      ],
+      "lines": [
+        {
+          "speaker": "Coach Farouk",
+          "text": "Huda, breathe deeply. When young debaters step onto this stage, feeling trepidation is entirely natural.",
+          "translation": "هدى، تنفسي بعمق. عندما يصعد المتناظرون الشباب إلى هذا المسرح، فإن الشعور بالوجل والخوف طبيعي تماماً."
+        },
+        {
+          "speaker": "Huda",
+          "text": "I was visibly flustered during the mock round because the adjudicators were astonished by unverified statistics.",
+          "translation": "كنت مرتبكة ومضطربة بشكل ملحوظ خلال الجولة التجريبية لأن المحكمين ذهلوا واندهشوا من إحصاءات غير موثقة."
+        },
+        {
+          "speaker": "Coach Farouk",
+          "text": "When you grow agitated, your rebuttal suffers. Never look bewildered or baffled before the audience.",
+          "translation": "حينما تصبحين مهتاجة ومضطربة، تتأثر حجتك. لا تبدي تائهة ومتحيرة أو عاجزة عن الفهم أمام الجمهور أبداً."
+        },
+        {
+          "speaker": "Huda",
+          "text": "I became exasperated because the opponents interrupted repeatedly without sanction.",
+          "translation": "استشطت غيظاً واستياءً لأن الخصوم قاطعوا مراراً وتكراراً دون عقوبة."
+        },
+        {
+          "speaker": "Coach Farouk",
+          "text": "The audience will be startled if you react defensively; however, they will be enthralled if you remain composed.",
+          "translation": "سيفزع الجمهور ويجفل إن كان رد فعلك دفاعياً؛ غير أنهم سينبهرون ويفتنون إن حافظتِ على رباطة جأشك."
+        },
+        {
+          "speaker": "Huda",
+          "text": "Although their aggressive tactics perturbed me initially, I now understand how to turn their hostility against them.",
+          "translation": "رغم أن تكتيكاتهم الهجومية أزعجتني وأربكتني في البداية، إلا أنني أفهم الآن كيف أقلب عدوانيتهم ضدهم."
+        },
+        {
+          "speaker": "Coach Farouk",
+          "text": "Excellent. Harness that nervous energy, because authentic conviction is what wins hearts on this platform.",
+          "translation": "ممتاز. سَخّري تلك الطاقة العصبية، لأن الإيمان الصادق هو ما يكسب القلوب على هذه المنصة."
+        },
+        {
+          "speaker": "Huda",
+          "text": "I am ready. When the opening bell rings, I will present our case with absolute focus and clarity.",
+          "translation": "أنا مستعدة. عندما يرن جرس البداية، سأطرح قضيتنا بتركيز مطلق ووضوح تام."
+        }
+      ]
+    },
+    {
+      "title": "Exploring the Nuances of the Human Soul",
+      "titleArabic": "استكشاف لطائف النفس والوجدان الإنساني",
+      "setting": "A quiet library corner between a philosophy professor and a graduate student",
+      "settingArabic": "زاوية مكتبة هادئة تجمع أستاذ الفلسفة مع طالب دراسات عليا",
+      "roles": [
+        "Professor Sami",
+        "Graduate Researcher"
+      ],
+      "vocabularyUsed": [
+        "psyche",
+        "temperament",
+        "disposition",
+        "yearning",
+        "ambivalence",
+        "ardour",
+        "adoration",
+        "exhilaration",
+        "reverie",
+        "rapture",
+        "absorbed",
+        "glee"
+      ],
+      "lines": [
+        {
+          "speaker": "Professor Sami",
+          "text": "Lina, your essay captures the complexity of the human psyche with unusual subtlety.",
+          "translation": "لينا، يلتقط مقالك تعقيدات النفس والوجدان الإنساني ببراعة واستبصار غير معتادين."
+        },
+        {
+          "speaker": "Lina",
+          "text": "Thank you, Professor. I wanted to examine why temperament often clashes with rational life decisions.",
+          "translation": "شكراً لك يا بروفيسور. أردت فحص السبب في تعارض الطباع الفطرية والمزاج غالباً مع القرارات العقلانية في الحياة."
+        },
+        {
+          "speaker": "Professor Sami",
+          "text": "A person may have a peaceful disposition, although sudden emotional crises can shake their foundational values.",
+          "translation": "قد يمتلك المرء سجية وطبيعة مسالمة، رغم أن الأزمات العاطفية المفاجئة قادرة على زعزعة قيمه الراسخة."
+        },
+        {
+          "speaker": "Lina",
+          "text": "I observed that deep yearning for creative freedom often coexists with agonizing ambivalence about financial stability.",
+          "translation": "لاحظت أن الشوق والحنين العميق للحرية الإبداعية يتعايش غالباً مع تردد وازدواجية مشاعر مبرحة بشأن الاستقرار المالي."
+        },
+        {
+          "speaker": "Professor Sami",
+          "text": "When young artists work with unbridled ardour, they experience an exhilaration that pure logic cannot match.",
+          "translation": "عندما يعمل الفنانون الشباب بحماسة وشغف متقد، يمرون بنشوة وفرحة عارمة تعجز الحسابات المنطقية المجردة عن مضاهاتها."
+        },
+        {
+          "speaker": "Lina",
+          "text": "They remain utterly absorbed in their craft, finding pure rapture and childlike glee in artistic creation.",
+          "translation": "يظلون مستغرقين ومنهمكين تماماً في حرفتهم، واجدين انخطافاً ونشوة عارمة وجذلاً طفولياً في الإبداع الفني."
+        },
+        {
+          "speaker": "Professor Sami",
+          "text": "Because human adoration for beauty runs so deep, art will always remain our richest guide to understanding ourselves.",
+          "translation": "لأن عشق وإكبار الإنسان للجمال عميق للغاية، سيظل الفن دائماً مرشدنا الأغنى لفهم ذواتنا."
+        },
+        {
+          "speaker": "Lina",
+          "text": "When lost in creative reverie, every person's inner landscape becomes an entire universe waiting to be mapped.",
+          "translation": "حين يستغرق المرء في أحلام اليقظة الإبداعية، يصبح المشهد الداخلي لكل إنسان كوناً بأكمله ينتظر من يستكشفه."
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Layered Tapestry of Human Sentiment",
+      "titleArabic": "النسيج المركب للوجدان والمشاعر الإنسانية",
+      "kind": "reflective",
+      "text": "Human feelings rarely exist in pure or isolated states; rather, our emotional landscape is defined by layers of contradiction and nuance. A person might feel genuine affection and adoration for a mentor while simultaneously wrestling with an uncomfortable pang of envy when that mentor receives worldwide acclaim. Although social norms often encourage us to project an image of steady cheerfulness, our inner psyche frequently experiences quiet ambivalence. When unexpected disappointment strikes, a crestfallen individual may exhibit a subdued disposition that masks profound turmoil underneath. Understanding these complex undercurrents allows us to navigate our own instinctive impulses with greater maturity and to extend genuine patience to those who appear flustered or unsettled.",
+      "translation": "نادراً ما توجد المشاعر الإنسانية في حالات نقية أو معزولة؛ بل إن مشهدنا العاطفي يتسم بطبقات من التناقض والدقة. قد يشعر المرء بمودة وعشق صادق لمعلمه بينما يصارع في الوقت ذاته وخزة مزعجة من الحسد حين ينال ذلك المعلم إشادة عالمية. ورغم أن الأعراف الاجتماعية تحثنا غالباً على إظهار صورة من البهجة الثابتة، فإن نفسيتنا ووجداننا الداخلي يمران بتضارب مشاعر وتردد صامت. وحين تحل خيبة أمل غير متوقعة، قد يُظهر الشخص منكسر الخاطر طبعاً وسجية واجمة تخفي تحتها اضطراباً عميقاً. إن فهم هذه التيارات الخفية المعقدة يتيح لنا إدارة نزواتنا ودوافعنا الغريزية بنضج أكبر ومد يد الصبر الحقيقي لأولئك الذين يبدون مرتبكين أو قلقين.",
+      "vocabularyUsed": [
+        "adoration",
+        "envy",
+        "psyche",
+        "ambivalence",
+        "crestfallen",
+        "subdued",
+        "disposition",
+        "turmoil",
+        "instinct",
+        "impulse",
+        "flustered",
+        "unsettled"
+      ]
+    },
+    {
+      "title": "Transforming Emotional Pain into Insight",
+      "titleArabic": "تحويل الألم الوجداني إلى حكمة وبصيرة",
+      "kind": "persuasive",
+      "text": "The journey through painful emotional states can be agonizing, yet it frequently serves as a powerful catalyst for personal transformation. When severe mortification or shame strikes because of a public error, our instinctive reaction is often to withdraw into bitter desolation. Lingering resentfulness, malice, and rancour can easily poison the spirit if left unaddressed; however, committing to honest introspection creates a pathway toward meaningful healing. Although facing past dejection and historic woe requires tremendous courage, releasing suppressed grief through emotional catharsis restores emotional equilibrium. Those moved by genuine kindness discover that even prolonged periods of torment can eventually give way to profound wisdom and an enduring appreciation for life's simpler consolations.",
+      "translation": "قد تكون الرحلة عبر الحالات العاطفية المؤلمة مبرحة، إلا أنها كثيراً ما تكون حافزاً قوياً للتحول الشخصي. فحين يحل خزي وحرج شديد أو عار بسبب خطأ علني، يكون رد فعلنا الغريزي هو الانسحاب إلى خواء ووحشة مريرة. ويمكن للحنق الدفين المتراكم والضغينة المستحكمة أن يسمما الروح بسهولة إن تُركا دون معالجة؛ غير أن الالتزام بالتأمل الذاتي الصادق يخلق مساراً نحو الشفاء المجدي. ورغم أن مواجهة القنوط والانكسار الماضي تتطلب شجاعة هائلة، فإن إطلاق الحزن المكبوت عبر التطهير والتفريغ الوجداني يعيد التوازن النفسي. ولأن قدرة الإنسان على التعافي هائلة، فإن حتى الفترات الطويلة من العذاب النفسي يمكن أن تفسح المجال في النهاية لحكمة عميقة وتقدير راسخ لأبسط مسرات الحياة.",
+      "vocabularyUsed": [
+        "mortification",
+        "shame",
+        "desolation",
+        "resentfulness",
+        "rancour",
+        "introspection",
+        "dejection",
+        "catharsis",
+        "torment"
+      ]
+    },
+    {
+      "title": "The Radiant Heights of Triumphant Joy",
+      "titleArabic": "الآفاق المشرقة لفرحة الظفر والابتهاج",
+      "kind": "narrative",
+      "text": "In moments of triumphant breakthrough, positive emotions elevate the spirit with extraordinary intensity. When a lifelong dream is finally realized, a surge of pure exhilaration sweeps through the soul, accompanied by spontaneous jubilation and joyous exultation. Those who pursue meaningful callings with youthful ardour and unwavering zeal know that such peak moments are not mere accidents; they are the hard-won fruit of relentless dedication. Lost in peaceful reverie after a long struggle, the mind experiences an infectious effervescence that fills daily existence with wonder. Because true fulfillment springs from deep alignment between our innermost values and our daily actions, the joy it generates is neither fleeting nor fragile.",
+      "translation": "في لحظات النصر والإنجاز العظيم، ترقى المشاعر الإيجابية بالروح بكثافة غير عادية. وحين يتحقق حلم العمر أخيراً، تكتسح الروحَ موجةٌ من النشوة والابتهاج العارم، مصحوبة باحتفال عفوي وتهليل بالظفر. إن أولئك الذين يتابعون غايات ذات معنى بحماسة فتية وشغف وحمية لا تتزعزع يعلمون أن هذه اللحظات الذروية ليست مجرد صدف؛ بل هي الثمرة المستحقة لجهد متفانٍ لا يلين. وفي استغراق وأحلام يقظة هادئة بعد صراع طويل، تختبر النفس حيوية وبهجة متدفقة تملأ الوجود اليومي بالروعة والانبهار. ولأن التحقق الحقيقي ينبع من انسجام عميق بين قيمنا الجوهرية وأفعالنا اليومية، فإن الفرح الذي يولده ليس عابراً ولا هشاً.",
+      "vocabularyUsed": [
+        "exhilaration",
+        "jubilation",
+        "exultation",
+        "ardour",
+        "zeal",
+        "reverie",
+        "effervescence"
+      ]
+    }
+  ]
+}

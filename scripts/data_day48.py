@@ -1,0 +1,1778 @@
+# -*- coding: utf-8 -*-
+"""Data definition for Day 48: Trust and Honesty."""
+
+true = True
+false = False
+
+vocab_day48 = [
+    {
+        "headword": "integrity",
+        "pronunciation": "/ɪnˈteɡrəti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being honest and having strong moral principles that you refuse to compromise.",
+        "example": "Throughout his four decades in public service, his unshakeable integrity earned the respect of allies and rivals alike.",
+        "translation": "نزاهة / استقامة أخلاقية ومبدئية",
+        "exampleArabic": "طوال عقوده الأربعة في الخدمة العامة، نالت نزاهته الراسخة احترام الحلفاء والخصوم على حد سواء.",
+        "relatedForms": [],
+        "collocations": [
+            "uncompromising integrity",
+            "moral integrity"
+        ],
+        "synonyms": [
+            "honesty",
+            "uprightness",
+            "probity"
+        ],
+        "antonyms": [
+            "corruption",
+            "dishonesty"
+        ],
+        "tags": [
+            "virtue",
+            "character"
+        ]
+    },
+    {
+        "headword": "candor",
+        "pronunciation": "/ˈkændə/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being open, sincere, and honest in expression; frankness.",
+        "example": "The executive’s refreshing candor about company missteps restored faith among nervous shareholders.",
+        "translation": "صراحة / وضوح وصدق نقي بلا مواربة",
+        "exampleArabic": "أعادت صراحة المدير التنفيذي المنعشة بشأن عثرات الشركة الثقة بين المساهمين القلقين.",
+        "relatedForms": [
+            "candid"
+        ],
+        "collocations": [
+            "speak with candor",
+            "refreshing candor"
+        ],
+        "synonyms": [
+            "frankness",
+            "openness",
+            "forthrightness"
+        ],
+        "antonyms": [
+            "guile",
+            "deceit"
+        ],
+        "tags": [
+            "virtue",
+            "communication"
+        ]
+    },
+    {
+        "headword": "sincerity",
+        "pronunciation": "/sɪnˈserəti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being free from pretense, deceit, or hypocrisy; genuine honesty.",
+        "example": "There was undeniable sincerity in her trembling voice as she apologized for the oversight.",
+        "translation": "إخلاص / صدق النية والسريرة",
+        "exampleArabic": "كان هناك إخلاص لا يُنكر في صوتها المرتجف وهي تعتذر عن هذا السهو.",
+        "relatedForms": [
+            "sincere",
+            "sincerely"
+        ],
+        "collocations": [
+            "deep sincerity",
+            "doubt one's sincerity"
+        ],
+        "synonyms": [
+            "genuineness",
+            "honesty",
+            "earnestness"
+        ],
+        "antonyms": [
+            "insincerity",
+            "hypocrisy"
+        ],
+        "tags": [
+            "virtue",
+            "character"
+        ]
+    },
+    {
+        "headword": "probity",
+        "pronunciation": "/ˈprəʊbəti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of having strong moral principles; complete honesty and decency.",
+        "example": "The financial auditor enjoyed an international reputation for uncompromising professional probity.",
+        "translation": "استقامة ونزاهة / عفة وطهارة اليد",
+        "exampleArabic": "تمتع مدقق الحسابات المالي بسمعة دولية في الاستقامة والنزاهة المهنية الصارمة.",
+        "relatedForms": [],
+        "collocations": [
+            "financial probity",
+            "unimpeachable probity"
+        ],
+        "synonyms": [
+            "integrity",
+            "rectitude",
+            "honesty"
+        ],
+        "antonyms": [
+            "corruption",
+            "venality"
+        ],
+        "tags": [
+            "virtue",
+            "ethics"
+        ]
+    },
+    {
+        "headword": "veracity",
+        "pronunciation": "/vəˈræsəti/",
+        "partOfSpeech": "noun",
+        "definition": "Conformity to facts; accuracy and habitual truthfulness.",
+        "example": "The investigative journalist gathered multiple corroborating testimonies to establish the veracity of the report.",
+        "translation": "صدق ومصداقية / صحة القول ومطابقته للحقيقة",
+        "exampleArabic": "جمع الصحفي الاستقصائي شهادات متعددة مؤيدة لإثبات صدق التقرير ومصداقيته.",
+        "relatedForms": [
+            "veracious"
+        ],
+        "collocations": [
+            "doubt the veracity",
+            "confirm the veracity"
+        ],
+        "synonyms": [
+            "truthfulness",
+            "accuracy",
+            "correctness"
+        ],
+        "antonyms": [
+            "falsity",
+            "untruth"
+        ],
+        "tags": [
+            "truth",
+            "character"
+        ]
+    },
+    {
+        "headword": "uprightness",
+        "pronunciation": "/ˈʌpraɪtnəs/",
+        "partOfSpeech": "noun",
+        "definition": "The condition or quality of being honorable, honest, and morally respectable.",
+        "example": "His lifelong moral uprightness guided his decisions as a respected community elder.",
+        "translation": "استقامة وسداد / صلاح السيرة والخلق",
+        "exampleArabic": "وجهت استقامته الأخلاقية وصلاح سيرته مدى الحياة قراراته كمسن محترم في المجتمع.",
+        "relatedForms": [
+            "upright"
+        ],
+        "collocations": [
+            "moral uprightness",
+            "known for uprightness"
+        ],
+        "synonyms": [
+            "rectitude",
+            "righteousness",
+            "integrity"
+        ],
+        "antonyms": [
+            "dishonor",
+            "wickedness"
+        ],
+        "tags": [
+            "virtue",
+            "character"
+        ]
+    },
+    {
+        "headword": "rectitude",
+        "pronunciation": "/ˈrektɪtjuːd/",
+        "partOfSpeech": "noun",
+        "definition": "Morally correct behavior or thinking; righteousness.",
+        "example": "Even under extreme political pressure, the judge maintained an austere sense of ethical rectitude.",
+        "translation": "صواب وسداد / استقامة الضمير والمبدأ",
+        "exampleArabic": "حتى تحت وطأة الضغط السياسي الشديد، حافظ القاضي على استقامة ضميره الأخلاقي ونزاهته الصارمة.",
+        "relatedForms": [],
+        "collocations": [
+            "moral rectitude",
+            "unbending rectitude"
+        ],
+        "synonyms": [
+            "righteousness",
+            "probity",
+            "virtue"
+        ],
+        "antonyms": [
+            "iniquity",
+            "depravity"
+        ],
+        "tags": [
+            "virtue",
+            "ethics"
+        ]
+    },
+    {
+        "headword": "fidelity",
+        "pronunciation": "/fɪˈdeləti/",
+        "partOfSpeech": "noun",
+        "definition": "Faithfulness to a person, cause, or belief, demonstrated by continuing loyalty and support.",
+        "example": "The loyal dog stood guard by the farmhouse, demonstrating touching fidelity to its family.",
+        "translation": "وفاء وإخلاص / ثبات على العهد والولاء",
+        "exampleArabic": "وقف الكلب الوفي حارساً بجوار المزرعة، مبرهناً على وفاء وإخلاص مؤثر لعائلته.",
+        "relatedForms": [],
+        "collocations": [
+            "unwavering fidelity",
+            "marital fidelity"
+        ],
+        "synonyms": [
+            "loyalty",
+            "faithfulness",
+            "allegiance"
+        ],
+        "antonyms": [
+            "infidelity",
+            "betrayal"
+        ],
+        "tags": [
+            "virtue",
+            "trust"
+        ]
+    },
+    {
+        "headword": "allegiance",
+        "pronunciation": "/əˈliːdʒəns/",
+        "partOfSpeech": "noun",
+        "definition": "Loyalty or commitment of a subordinate to a superior or of an individual to a group or cause.",
+        "example": "New citizens solemnly recited an oath of allegiance to uphold constitutional liberties.",
+        "translation": "ولاء وبيعة / إخلاص وانتماء للوطن أو المبدأ",
+        "exampleArabic": "تلا المواطنون الجدد بمهابة قسم الولاء والبيعة لصيانة الحريات الدستورية.",
+        "relatedForms": [],
+        "collocations": [
+            "pledge allegiance",
+            "swear allegiance"
+        ],
+        "synonyms": [
+            "loyalty",
+            "fidelity",
+            "commitment"
+        ],
+        "antonyms": [
+            "treason",
+            "disloyalty"
+        ],
+        "tags": [
+            "trust",
+            "loyalty"
+        ]
+    },
+    {
+        "headword": "reliability",
+        "pronunciation": "/rɪˌlaɪəˈbɪləti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being trustworthy or of performing consistently well.",
+        "example": "Clients chose her architectural consultancy because of its exceptional reliability and punctuality.",
+        "translation": "موثوقية / أمانة واعتمادية يُركن إليها",
+        "exampleArabic": "اختار العملاء استشارتها المعمارية بسبب موثوقيتها الاستثنائية ودقتها في المواعيد.",
+        "relatedForms": [
+            "reliable",
+            "reliably"
+        ],
+        "collocations": [
+            "proven reliability",
+            "test reliability"
+        ],
+        "synonyms": [
+            "dependability",
+            "trustworthiness",
+            "consistency"
+        ],
+        "antonyms": [
+            "unreliability",
+            "instability"
+        ],
+        "tags": [
+            "trust",
+            "virtue"
+        ]
+    },
+    {
+        "headword": "authenticity",
+        "pronunciation": "/ˌɔːθenˈtɪsəti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being real, genuine, and not a copy or imitation.",
+        "example": "The museum curator verified the authenticity of the Renaissance parchment before authorizing the purchase.",
+        "translation": "أصالة / مصداقية وحقيقة خالية من التزييف",
+        "exampleArabic": "تحقق أمين المتحف من أصالة المخطوطة العائدة لعصر النهضة قبل الإذن بالشراء.",
+        "relatedForms": [
+            "authentic",
+            "authenticate"
+        ],
+        "collocations": [
+            "guarantee authenticity",
+            "test authenticity"
+        ],
+        "synonyms": [
+            "genuineness",
+            "legitimacy",
+            "originality"
+        ],
+        "antonyms": [
+            "spuriousness",
+            "fakery"
+        ],
+        "tags": [
+            "truth",
+            "character"
+        ]
+    },
+    {
+        "headword": "transparency",
+        "pronunciation": "/trænsˈpærənsi/",
+        "partOfSpeech": "noun",
+        "definition": "The condition of being open and honest, without secret motives or hidden agendas.",
+        "example": "Complete fiscal transparency within the charity guaranteed that every donated dollar reached the needy.",
+        "translation": "شفافية / وضوح تام وخلو من الغموض",
+        "exampleArabic": "ضمنت الشفافية المالية الكاملة داخل الجمعية الخيرية وصول كل دولار متبرع به إلى المحتاجين.",
+        "relatedForms": [
+            "transparent",
+            "transparently"
+        ],
+        "collocations": [
+            "full transparency",
+            "ensure transparency"
+        ],
+        "synonyms": [
+            "openness",
+            "clarity",
+            "candor"
+        ],
+        "antonyms": [
+            "opacity",
+            "secrecy"
+        ],
+        "tags": [
+            "virtue",
+            "ethics"
+        ]
+    },
+    {
+        "headword": "frankness",
+        "pronunciation": "/ˈfræŋknəs/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being open, honest, and direct in speech or writing.",
+        "example": "I appreciated his candid frankness when he pointed out the grammatical errors in my manuscript.",
+        "translation": "صراحة ومكاشفة / وضوح وجرأة في قول الحق",
+        "exampleArabic": "قدرت صراحته ومكاشفته الواضحة عندما أشار إلى الأخطاء النحوية في مسودتي.",
+        "relatedForms": [
+            "frank",
+            "frankly"
+        ],
+        "collocations": [
+            "brutal frankness",
+            "speak with frankness"
+        ],
+        "synonyms": [
+            "candor",
+            "directness",
+            "plain speaking"
+        ],
+        "antonyms": [
+            "evasiveness",
+            "guile"
+        ],
+        "tags": [
+            "communication",
+            "virtue"
+        ]
+    },
+    {
+        "headword": "forthrightness",
+        "pronunciation": "/ˈfɔːθraɪtnəs/",
+        "partOfSpeech": "noun",
+        "definition": "Directness and honesty in manner and speech.",
+        "example": "Her refreshing forthrightness disarmed the aggressive panel and won over the entire audience.",
+        "translation": "استقامة وصراحة مباشرة / حسم بلا تردد",
+        "exampleArabic": "نزعت صراحتها المباشرة واستقامتها فتيل توتر اللجنة الصعبة وكسبت تأييد الجمهور بأكمله.",
+        "relatedForms": [
+            "forthright"
+        ],
+        "collocations": [
+            "admirable forthrightness",
+            "uncompromising forthrightness"
+        ],
+        "synonyms": [
+            "directness",
+            "candor",
+            "straightforwardness"
+        ],
+        "antonyms": [
+            "deviousness",
+            "ambiguity"
+        ],
+        "tags": [
+            "communication",
+            "character"
+        ]
+    },
+    {
+        "headword": "steadfastness",
+        "pronunciation": "/ˈstedfɑːstnəs/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being resolutely firm, loyal, and unwavering.",
+        "example": "Her steadfastness during adversity gave the entire community the courage to endure the crisis.",
+        "translation": "ثبات وصمود / رسوخ على المبدأ والعهد",
+        "exampleArabic": "منح ثباتها وصمودها أثناء المحن المجتمع بأسره الشجاعة لتحمل الأزمة وتجاوزها.",
+        "relatedForms": [
+            "steadfast",
+            "steadfastly"
+        ],
+        "collocations": [
+            "unwavering steadfastness",
+            "remarkable steadfastness"
+        ],
+        "synonyms": [
+            "fidelity",
+            "constancy",
+            "resolution"
+        ],
+        "antonyms": [
+            "fickleness",
+            "vacillation"
+        ],
+        "tags": [
+            "virtue",
+            "character"
+        ]
+    },
+    {
+        "headword": "candid",
+        "pronunciation": "/ˈkændɪd/",
+        "partOfSpeech": "adjective",
+        "definition": "Truthful and straightforward; frank and unreserved.",
+        "example": "During the exit interview, she shared candid feedback on how managerial workflows could improve.",
+        "translation": "صريح ومنفتح / غير متصنع ومباشر",
+        "exampleArabic": "خلال مقابلة مغادرة العمل، قدمت آراء صريحة ومباشرة حول كيفية تحسين مسارات العمل الإدارية.",
+        "relatedForms": [
+            "candidly",
+            "candor"
+        ],
+        "collocations": [
+            "candid interview",
+            "candid conversation"
+        ],
+        "synonyms": [
+            "frank",
+            "honest",
+            "blunt"
+        ],
+        "antonyms": [
+            "evasive",
+            "insincere"
+        ],
+        "tags": [
+            "character",
+            "communication"
+        ]
+    },
+    {
+        "headword": "straightforward",
+        "pronunciation": "/ˌstreɪtˈfɔːwəd/",
+        "partOfSpeech": "adjective",
+        "definition": "Uncomplicated and direct; honest and open in dealing with people.",
+        "example": "He is a straightforward businessman who always honors oral agreements without tedious haggling.",
+        "translation": "مستقيم وواضح / بسيط وصريح في المعاملة",
+        "exampleArabic": "إنه رجل أعمال مستقيم وصريح يفي دائماً بالاتفاقات الشفهية دون مماطلة أو مساومة عقيمة.",
+        "relatedForms": [
+            "straightforwardly",
+            "straightforwardness"
+        ],
+        "collocations": [
+            "straightforward person",
+            "straightforward approach"
+        ],
+        "synonyms": [
+            "direct",
+            "honest",
+            "transparent"
+        ],
+        "antonyms": [
+            "devious",
+            "complicated"
+        ],
+        "tags": [
+            "character",
+            "behavior"
+        ]
+    },
+    {
+        "headword": "unfeigned",
+        "pronunciation": "/ʌnˈfeɪnd/",
+        "partOfSpeech": "adjective",
+        "definition": "Genuine, sincere, and not pretended or hypocritical.",
+        "example": "She listened with unfeigned sorrow to the tragic news of her former teacher's passing.",
+        "translation": "صادق وخالص / غير متصنع ولا زائف",
+        "exampleArabic": "استمعت بحزن صادق وخالص لا تصنع فيه إلى النبأ المأساوي لوفاة معلمتها السابقة.",
+        "relatedForms": [],
+        "collocations": [
+            "unfeigned joy",
+            "unfeigned respect"
+        ],
+        "synonyms": [
+            "genuine",
+            "heartfelt",
+            "authentic"
+        ],
+        "antonyms": [
+            "feigned",
+            "insincere"
+        ],
+        "tags": [
+            "virtue",
+            "feelings"
+        ]
+    },
+    {
+        "headword": "scrupulous",
+        "pronunciation": "/ˈskruːpjələs/",
+        "partOfSpeech": "adjective",
+        "definition": "Diligent, thorough, and extremely attentive to moral details and honesty.",
+        "example": "The scrupulous research assistant checked every cited reference three times before publication.",
+        "translation": "دقيق ومتحرٍ للأمانة / متورع وحريص على النزاهة",
+        "exampleArabic": "قام المساعد البحثي الدقيق والمتحري للأمانة بفحص كل مرجع مقتبس ثلاث مرات قبل النشر.",
+        "relatedForms": [
+            "scrupulously",
+            "scrupulousness"
+        ],
+        "collocations": [
+            "scrupulous honesty",
+            "scrupulous attention"
+        ],
+        "synonyms": [
+            "painstaking",
+            "meticulous",
+            "conscientious"
+        ],
+        "antonyms": [
+            "unscrupulous",
+            "careless"
+        ],
+        "tags": [
+            "character",
+            "virtue"
+        ]
+    },
+    {
+        "headword": "incorruptible",
+        "pronunciation": "/ˌɪnkəˈrʌptəbl/",
+        "partOfSpeech": "adjective",
+        "definition": "Not susceptible to corruption, especially by bribery; honest and righteous beyond reproach.",
+        "example": "The incorruptible prosecutor refused lavish bribes from powerful cartel leaders.",
+        "translation": "عصي على الفساد / لا يُرشى ونزيه ناصع",
+        "exampleArabic": "رفض المدعي العام العصي على الفساد والنزيه رشاوى باذخة من قادة العصابات ذوي النفوذ.",
+        "relatedForms": [
+            "incorruptibility"
+        ],
+        "collocations": [
+            "incorruptible judge",
+            "incorruptible character"
+        ],
+        "synonyms": [
+            "unbribable",
+            "virtuous",
+            "upright"
+        ],
+        "antonyms": [
+            "corruptible",
+            "venal"
+        ],
+        "tags": [
+            "virtue",
+            "ethics"
+        ]
+    },
+    {
+        "headword": "deceit",
+        "pronunciation": "/dɪˈsiːt/",
+        "partOfSpeech": "noun",
+        "definition": "The action or practice of deceiving someone by concealing or misrepresenting the truth.",
+        "example": "His elaborate web of deceit unraveled when forensic accountants discovered the hidden shell company.",
+        "translation": "خداع وتضليل / مكر وتزييف الحقيقة",
+        "exampleArabic": "انفرطت شبكة خداعه وتضليله المعقدة عندما اكتشف المحاسبون الجنائيون الشركة الوهمية المخفية.",
+        "relatedForms": [
+            "deceitful",
+            "deceitfully"
+        ],
+        "collocations": [
+            "web of deceit",
+            "practicing deceit"
+        ],
+        "synonyms": [
+            "fraud",
+            "duplicity",
+            "deception"
+        ],
+        "antonyms": [
+            "honesty",
+            "candor"
+        ],
+        "tags": [
+            "dishonesty",
+            "lies"
+        ]
+    },
+    {
+        "headword": "deception",
+        "pronunciation": "/dɪˈsepʃn/",
+        "partOfSpeech": "noun",
+        "definition": "The act of deceiving; a trick, falsehood, or sham used to mislead others.",
+        "example": "The undercover detective uncovered a sophisticated cyber deception targeting elderly bank customers.",
+        "translation": "حيلة وخداع / تمويه ومراوغة",
+        "exampleArabic": "كشف المحقق السري عن عملية خداع وتضليل إلكتروني متطورة تستهدف عملاء البنوك من كبار السن.",
+        "relatedForms": [
+            "deceive",
+            "deceptive"
+        ],
+        "collocations": [
+            "act of deception",
+            "master of deception"
+        ],
+        "synonyms": [
+            "trickery",
+            "subterfuge",
+            "guile"
+        ],
+        "antonyms": [
+            "transparency",
+            "candor"
+        ],
+        "tags": [
+            "dishonesty",
+            "lies"
+        ]
+    },
+    {
+        "headword": "dishonesty",
+        "pronunciation": "/dɪsˈɒnəsti/",
+        "partOfSpeech": "noun",
+        "definition": "Deceitfulness, lack of honesty or integrity.",
+        "example": "Intellectual dishonesty in academic research destroys scientific credibility and wastes public funding.",
+        "translation": "انعدام الأمانة / عدم نزاهة وغش",
+        "exampleArabic": "إن انعدام الأمانة الفكرية في البحث الأكاديمي يدمر المصداقية العلمية ويهدر التمويل العام.",
+        "relatedForms": [
+            "dishonest"
+        ],
+        "collocations": [
+            "blatant dishonesty",
+            "intellectual dishonesty"
+        ],
+        "synonyms": [
+            "untruthfulness",
+            "fraudulence",
+            "chicanery"
+        ],
+        "antonyms": [
+            "honesty",
+            "probity"
+        ],
+        "tags": [
+            "dishonesty",
+            "character"
+        ]
+    },
+    {
+        "headword": "fraud",
+        "pronunciation": "/frɔːd/",
+        "partOfSpeech": "noun",
+        "definition": "Wrongful or criminal deception intended to result in financial or personal gain.",
+        "example": "The corrupt investment broker was convicted on eight counts of federal wire fraud.",
+        "translation": "احتيال ونصب / غش تجاري وجنائي",
+        "exampleArabic": "أُدين وسيط الاستثمار الفاسد بثماني تهم تتعلق بالاحتيال والنصب الإلكتروني الفيدرالي.",
+        "relatedForms": [
+            "fraudulent",
+            "fraudulently"
+        ],
+        "collocations": [
+            "commit fraud",
+            "credit card fraud"
+        ],
+        "synonyms": [
+            "swindle",
+            "forgery",
+            "embezzlement"
+        ],
+        "antonyms": [
+            "fairness",
+            "legitimacy"
+        ],
+        "tags": [
+            "crime",
+            "dishonesty"
+        ]
+    },
+    {
+        "headword": "fabrication",
+        "pronunciation": "/ˌfæbrɪˈkeɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "An invented false story, claim, or fake evidence.",
+        "example": "The scandalous accusation was proven to be a malicious fabrication concocted by a rival political campaign.",
+        "translation": "افتراء واختلاق / تلفيق لا أساس له من الصحة",
+        "exampleArabic": "ثبت أن الاتهام الفاضح كان افتراء وتلفيقاً خبيثاً دبرته حملة سياسية منافسة.",
+        "relatedForms": [
+            "fabricate"
+        ],
+        "collocations": [
+            "pure fabrication",
+            "total fabrication"
+        ],
+        "synonyms": [
+            "invention",
+            "falsehood",
+            "untruth"
+        ],
+        "antonyms": [
+            "fact",
+            "truth"
+        ],
+        "tags": [
+            "lies",
+            "dishonesty"
+        ]
+    },
+    {
+        "headword": "hypocrisy",
+        "pronunciation": "/hɪˈpɒkrəsi/",
+        "partOfSpeech": "noun",
+        "definition": "The practice of claiming to have higher moral standards or beliefs to which one's behavior does not conform.",
+        "example": "Voters rejected the senator's glaring hypocrisy after he secretly accepted corporate donations he condemned publicly.",
+        "translation": "نفاق ورياء / إظهار خلاف ما يُبطن",
+        "exampleArabic": "رفض الناخبون نفاق ورياء السيناتور الصارخ بعد قبوله سراً تبرعات من شركات كان يندد بها علناً.",
+        "relatedForms": [
+            "hypocritical",
+            "hypocrite"
+        ],
+        "collocations": [
+            "sheer hypocrisy",
+            "rank hypocrisy"
+        ],
+        "synonyms": [
+            "duplicity",
+            "insincerity",
+            "double-dealing"
+        ],
+        "antonyms": [
+            "sincerity",
+            "integrity"
+        ],
+        "tags": [
+            "dishonesty",
+            "character"
+        ]
+    },
+    {
+        "headword": "duplicity",
+        "pronunciation": "/djuːˈplɪsəti/",
+        "partOfSpeech": "noun",
+        "definition": "Deceitfulness in speech or conduct; double-dealing.",
+        "example": "The treacherous diplomat’s duplicity was revealed when decrypted cables showed he was advising both armies.",
+        "translation": "ازدواجية ومكر / مخادعة وخيانة ذات وجهين",
+        "exampleArabic": "انكشفت ازدواجية الدبلوماسي الخائن ومكره عندما أظهرت البرقيات المفكوكة الشفرة أنه كان يقدم المشورة لكلا الجيشين.",
+        "relatedForms": [
+            "duplicitous"
+        ],
+        "collocations": [
+            "act of duplicity",
+            "uncover duplicity"
+        ],
+        "synonyms": [
+            "double-dealing",
+            "deceit",
+            "treachery"
+        ],
+        "antonyms": [
+            "straightforwardness",
+            "candor"
+        ],
+        "tags": [
+            "dishonesty",
+            "treachery"
+        ]
+    },
+    {
+        "headword": "treachery",
+        "pronunciation": "/ˈtretʃəri/",
+        "partOfSpeech": "noun",
+        "definition": "Betrayal of trust; deceptive action or treason.",
+        "example": "Selling military base blueprints to an adversary was an unforgivable act of national treachery.",
+        "translation": "غدر وخيانة / نقض العهد والأمانة",
+        "exampleArabic": "كان بيع مخططات القواعد العسكرية للخصم عملاً لا يُغتفر من أعمال الغدر والخيانة الوطنية.",
+        "relatedForms": [
+            "treacherous",
+            "treacherously"
+        ],
+        "collocations": [
+            "act of treachery",
+            "foul treachery"
+        ],
+        "synonyms": [
+            "betrayal",
+            "treason",
+            "perfidy"
+        ],
+        "antonyms": [
+            "fidelity",
+            "loyalty"
+        ],
+        "tags": [
+            "treachery",
+            "crime"
+        ]
+    },
+    {
+        "headword": "betrayal",
+        "pronunciation": "/bɪˈtreɪəl/",
+        "partOfSpeech": "noun",
+        "definition": "The action of betraying someone's trust or violating a sacred confidence.",
+        "example": "Discovering that her business co-founder had embezzled client deposits felt like the ultimate personal betrayal.",
+        "translation": "طعنة خيانة / خذلان الثقة والأمانة",
+        "exampleArabic": "كان اكتشاف أن شريكها المؤسس في العمل قد اختلس ودائع العملاء بمثابة أقصى طعنة خيانة وخذلان شخصي.",
+        "relatedForms": [
+            "betray",
+            "betrayer"
+        ],
+        "collocations": [
+            "deep betrayal",
+            "sense of betrayal"
+        ],
+        "synonyms": [
+            "treachery",
+            "disloyalty",
+            "faithlessness"
+        ],
+        "antonyms": [
+            "loyalty",
+            "fidelity"
+        ],
+        "tags": [
+            "treachery",
+            "trust"
+        ]
+    },
+    {
+        "headword": "insincerity",
+        "pronunciation": "/ˌɪnsɪnˈserəti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of not expressing genuine feelings; deceitful politeness.",
+        "example": "Her flattering compliments were delivered with such obvious insincerity that everyone felt awkward.",
+        "translation": "نفاق ومراءاة / افتقار إلى الصدق والنية الخالصة",
+        "exampleArabic": "قُدمت إطراءاتها المبالغ فيها بمثل هذا النفاق والمراءاة الواضحة لدرجة أن الجميع شعر بالحرج.",
+        "relatedForms": [
+            "insincere",
+            "insincerely"
+        ],
+        "collocations": [
+            "glaring insincerity",
+            "tainted with insincerity"
+        ],
+        "synonyms": [
+            "hypocrisy",
+            "falsehood",
+            "shallowness"
+        ],
+        "antonyms": [
+            "sincerity",
+            "genuineness"
+        ],
+        "tags": [
+            "dishonesty",
+            "character"
+        ]
+    },
+    {
+        "headword": "falsehood",
+        "pronunciation": "/ˈfɔːlshʊd/",
+        "partOfSpeech": "noun",
+        "definition": "The state of being untrue; a lie or untrue statement.",
+        "example": "Spreading deliberate falsehoods on social platforms can incite real-world harm and panics.",
+        "translation": "بهتان وباطل / كذبة وزور",
+        "exampleArabic": "يمكن لنشر الأكاذيب والبهتان المتعمد على منصات التواصل أن يثير أضراراً وحالات ذعر حقيقية في الواقع.",
+        "relatedForms": [],
+        "collocations": [
+            "deliberate falsehood",
+            "utter a falsehood"
+        ],
+        "synonyms": [
+            "lie",
+            "untruth",
+            "fabrication"
+        ],
+        "antonyms": [
+            "truth",
+            "veracity"
+        ],
+        "tags": [
+            "lies",
+            "dishonesty"
+        ]
+    },
+    {
+        "headword": "perjury",
+        "pronunciation": "/ˈpɜːdʒəri/",
+        "partOfSpeech": "noun",
+        "definition": "The offense of willfully telling an untruth in court after having taken an oath.",
+        "example": "The witness was indicted for criminal perjury when video surveillance refuted his sworn alibi.",
+        "translation": "شهادة زور / حنث باليمين القانوني",
+        "exampleArabic": "وُجهت إلى الشاهد تهمة شهادة الزور الجنائية والحنث باليمين عندما فندت كاميرات المراقبة حجته المؤكدة بالقسم.",
+        "relatedForms": [
+            "perjure"
+        ],
+        "collocations": [
+            "commit perjury",
+            "charged with perjury"
+        ],
+        "synonyms": [
+            "false swearing",
+            "lying under oath"
+        ],
+        "antonyms": [
+            "truthful testimony"
+        ],
+        "tags": [
+            "legal",
+            "lies"
+        ]
+    },
+    {
+        "headword": "guile",
+        "pronunciation": "/ɡaɪl/",
+        "partOfSpeech": "noun",
+        "definition": "Sly or cunning intelligence, especially used to deceive.",
+        "example": "The swindler relied on smooth charm and subtle guile to persuade investors to hand over life savings.",
+        "translation": "دهاء ومكر / خبث وتدليس",
+        "exampleArabic": "اعتمد المحتال على سحر الكلام الناعم ومكره ودهائه الخبيث لإقناع المستثمرين بتسليم مدخرات حياتهم.",
+        "relatedForms": [
+            "guileless",
+            "guileful"
+        ],
+        "collocations": [
+            "subtle guile",
+            "use guile"
+        ],
+        "synonyms": [
+            "cunning",
+            "craftiness",
+            "trickery"
+        ],
+        "antonyms": [
+            "candor",
+            "ingenuousness"
+        ],
+        "tags": [
+            "dishonesty",
+            "cunning"
+        ]
+    },
+    {
+        "headword": "subterfuge",
+        "pronunciation": "/ˈsʌbtəfjuːdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "Deceit used in order to achieve one's goal; a clever stratagem or evasion.",
+        "example": "He obtained confidential competitor blueprints through bribery, hacking, and elaborate corporate subterfuge.",
+        "translation": "حيلة ومراوغة / مكر وسيلة للتحايل",
+        "exampleArabic": "حصل على مخططات المنافسين السرية من خلال الرشوة والاختراق والمراوغة والحيل المؤسسية المعقدة.",
+        "relatedForms": [],
+        "collocations": [
+            "resort to subterfuge",
+            "elaborate subterfuge"
+        ],
+        "synonyms": [
+            "trickery",
+            "deception",
+            "artifice"
+        ],
+        "antonyms": [
+            "openness",
+            "candor"
+        ],
+        "tags": [
+            "dishonesty",
+            "cunning"
+        ]
+    },
+    {
+        "headword": "pretense",
+        "pronunciation": "/prɪˈtens/",
+        "partOfSpeech": "noun",
+        "definition": "An attempt to make something that is not the case appear true; a false display.",
+        "example": "She maintained a cheerful pretense at work, hiding the grief that overwhelmed her personal life.",
+        "translation": "تظاهر وادعاء / اصطناع مظهر زائف",
+        "exampleArabic": "حافظت على تظاهر وادعاء بالبهجة في العمل، مخفية الحزن العميق الذي طغى على حياتها الشخصية.",
+        "relatedForms": [
+            "pretend"
+        ],
+        "collocations": [
+            "false pretense",
+            "drop the pretense"
+        ],
+        "synonyms": [
+            "make-believe",
+            "affectation",
+            "facade"
+        ],
+        "antonyms": [
+            "authenticity",
+            "honesty"
+        ],
+        "tags": [
+            "dishonesty",
+            "behavior"
+        ]
+    },
+    {
+        "headword": "trickery",
+        "pronunciation": "/ˈtrɪkəri/",
+        "partOfSpeech": "noun",
+        "definition": "The practice of deception, fraud, or tricking someone.",
+        "example": "The consumer watchdog warned online buyers against deceptive retail pricing trickery.",
+        "translation": "حيل وخداع / ممارسات تدليس وتلاعب",
+        "exampleArabic": "حذر جهاز حماية المستهلك المشترين عبر الإنترنت من حيل التسعير وخداع التجزئة المضلل.",
+        "relatedForms": [
+            "trick",
+            "tricky"
+        ],
+        "collocations": [
+            "resort to trickery",
+            "optical trickery"
+        ],
+        "synonyms": [
+            "deception",
+            "chicanery",
+            "subterfuge"
+        ],
+        "antonyms": [
+            "fairness",
+            "honesty"
+        ],
+        "tags": [
+            "dishonesty",
+            "cunning"
+        ]
+    },
+    {
+        "headword": "deviousness",
+        "pronunciation": "/ˈdiːviəsnəs/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being deceitful and underhanded; crooked cleverness.",
+        "example": "The mastermind’s calculated deviousness made it difficult for police detectives to predict his next move.",
+        "translation": "مراوغة وخبث / مسالك ملتوية وخبيثة",
+        "exampleArabic": "جعلت مراوغة العقل المدبر وخبثه المحسوب من الصعب على محققي الشرطة توقع خطوته التالية.",
+        "relatedForms": [
+            "devious",
+            "deviously"
+        ],
+        "collocations": [
+            "unmatched deviousness",
+            "sheer deviousness"
+        ],
+        "synonyms": [
+            "crookedness",
+            "slyness",
+            "duplicity"
+        ],
+        "antonyms": [
+            "straightforwardness",
+            "candor"
+        ],
+        "tags": [
+            "dishonesty",
+            "cunning"
+        ]
+    },
+    {
+        "headword": "perfidy",
+        "pronunciation": "/ˈpɜːfədi/",
+        "partOfSpeech": "noun",
+        "definition": "Deceitfulness, treachery, and breach of trust.",
+        "example": "History remembers the turncoat general for his shocking perfidy on the eve of the decisive battle.",
+        "translation": "غدر وخيانة للأمانة / نكث العهد والميثاق",
+        "exampleArabic": "يذكر التاريخ الجنرال الخائن المنشق بغدره الصادم وخيانته للأمانة عشية المعركة الحاسمة.",
+        "relatedForms": [
+            "perfidious"
+        ],
+        "collocations": [
+            "shocking perfidy",
+            "unforgivable perfidy"
+        ],
+        "synonyms": [
+            "treachery",
+            "betrayal",
+            "disloyalty"
+        ],
+        "antonyms": [
+            "fidelity",
+            "loyalty"
+        ],
+        "tags": [
+            "treachery",
+            "character"
+        ]
+    },
+    {
+        "headword": "mendacity",
+        "pronunciation": "/menˈdæsəti/",
+        "partOfSpeech": "noun",
+        "definition": "Untruthfulness, the quality or habit of lying.",
+        "example": "The disgraced politician’s persistent mendacity alienated even his most devoted campaign supporters.",
+        "translation": "كذب وافتراء / اعتياد الكذب والبهتان",
+        "exampleArabic": "أدى كذب وافتراء السياسي المفضوح المستمر إلى نفور حتى أشد مؤيدي حملته إخلاصاً.",
+        "relatedForms": [
+            "mendacious"
+        ],
+        "collocations": [
+            "persistent mendacity",
+            "culture of mendacity"
+        ],
+        "synonyms": [
+            "untruthfulness",
+            "dishonesty",
+            "deceit"
+        ],
+        "antonyms": [
+            "veracity",
+            "truthfulness"
+        ],
+        "tags": [
+            "lies",
+            "character"
+        ]
+    },
+    {
+        "headword": "artifice",
+        "pronunciation": "/ˈɑːtɪfɪs/",
+        "partOfSpeech": "noun",
+        "definition": "Clever or cunning devices or expedients, especially as used to trick or deceive others.",
+        "example": "The counterfeit painting was created with extraordinary artifice, mimicking seventeenth-century brushstrokes.",
+        "translation": "حيلة وتصنع ماكر / صنعة تزييف بارعة",
+        "exampleArabic": "صُنعت اللوحة المزيفة بحيلة وتصنع ماكر غير عادي، محاكية ضربات فرشاة القرن السابع عشر.",
+        "relatedForms": [],
+        "collocations": [
+            "clever artifice",
+            "devoid of artifice"
+        ],
+        "synonyms": [
+            "stratagem",
+            "trick",
+            "ruse"
+        ],
+        "antonyms": [
+            "simplicity",
+            "candor"
+        ],
+        "tags": [
+            "dishonesty",
+            "cunning"
+        ]
+    },
+    {
+        "headword": "confide",
+        "pronunciation": "/kənˈfaɪd/",
+        "partOfSpeech": "verb",
+        "definition": "Tell someone about a secret or private matter while trusting them not to repeat it to others.",
+        "example": "She chose to confide her deepest personal apprehensions in her wise maternal grandmother.",
+        "translation": "يأمن على سره / يُفضي بالسر موثوقاً به",
+        "exampleArabic": "اختارت أن تفضي بمخاوفها وتوجساتها الشخصية العميقة وتأمن على سرها لدى جدتها الحكيمة لأمها.",
+        "relatedForms": [
+            "confidence",
+            "confidant"
+        ],
+        "collocations": [
+            "confide in someone",
+            "confide a secret"
+        ],
+        "synonyms": [
+            "entrust",
+            "disclose",
+            "reveal"
+        ],
+        "antonyms": [
+            "conceal",
+            "hide"
+        ],
+        "tags": [
+            "trust",
+            "communication"
+        ]
+    },
+    {
+        "headword": "entrust",
+        "pronunciation": "/ɪnˈtrʌst/",
+        "partOfSpeech": "verb",
+        "definition": "Assign the responsibility for doing something to someone; put something in someone's care.",
+        "example": "The departing laboratory director chose to entrust the delicate clinical trials to his senior biochemist.",
+        "translation": "يعهد إلى / يودع أمانة أو مسؤولية لدى غيره",
+        "exampleArabic": "اختار مدير المختبر المغادر أن يعهد بالتجارب السريرية الحساسة إلى كبير الكيميائيين لديه ويستودعه إياها.",
+        "relatedForms": [],
+        "collocations": [
+            "entrust with responsibility",
+            "entrust care"
+        ],
+        "synonyms": [
+            "charge",
+            "commit",
+            "delegate"
+        ],
+        "antonyms": [
+            "withhold",
+            "distrust"
+        ],
+        "tags": [
+            "trust",
+            "responsibility"
+        ]
+    },
+    {
+        "headword": "mislead",
+        "pronunciation": "/ˌmɪsˈliːd/",
+        "partOfSpeech": "verb",
+        "definition": "Cause someone to have a wrong idea or impression about someone or something.",
+        "example": "The deceptive advertising campaign was penalized for attempting to mislead young consumers about sugar content.",
+        "translation": "يضلل / يقود إلى وهم أو فهم خاطئ",
+        "exampleArabic": "عوقبت الحملة الإعلانية المضللة لمحاولتها تضليل المستهلكين الشباب بشأن محتوى السكر.",
+        "relatedForms": [
+            "misleading"
+        ],
+        "collocations": [
+            "deliberately mislead",
+            "mislead the public"
+        ],
+        "synonyms": [
+            "deceive",
+            "delude",
+            "misinform"
+        ],
+        "antonyms": [
+            "guide",
+            "clarify"
+        ],
+        "tags": [
+            "lies",
+            "deception"
+        ]
+    },
+    {
+        "headword": "deceive",
+        "pronunciation": "/dɪˈsiːv/",
+        "partOfSpeech": "verb",
+        "definition": "Cause someone to believe something that is not true, typically in order to gain some personal advantage.",
+        "example": "He attempted to deceive immigration authorities by presenting a forged passport and alias.",
+        "translation": "يخدع / يغش ويموه الحقيقة",
+        "exampleArabic": "حاول خداع سلطات الهجرة وتقديم جواز سفر مزور واسم مستعار.",
+        "relatedForms": [
+            "deception",
+            "deceptive"
+        ],
+        "collocations": [
+            "deceive oneself",
+            "deliberately deceive"
+        ],
+        "synonyms": [
+            "trick",
+            "hoodwink",
+            "mislead"
+        ],
+        "antonyms": [
+            "enlighten",
+            "inform"
+        ],
+        "tags": [
+            "lies",
+            "dishonesty"
+        ]
+    },
+    {
+        "headword": "falsify",
+        "pronunciation": "/ˈfɔːlsɪfaɪ/",
+        "partOfSpeech": "verb",
+        "definition": "Alter information or evidence so as to mislead or cheat.",
+        "example": "The dishonest laboratory technician conspired to falsify blood test results to speed drug approvals.",
+        "translation": "يزور / يزيّف البيانات والوثائق",
+        "exampleArabic": "تآمر فني المختبر غير النزيه لتزوير وتزييف نتائج اختبارات الدم لتسريع الموافقات على الأدوية.",
+        "relatedForms": [
+            "falsification"
+        ],
+        "collocations": [
+            "falsify records",
+            "falsify data"
+        ],
+        "synonyms": [
+            "forge",
+            "alter",
+            "fake"
+        ],
+        "antonyms": [
+            "verify",
+            "authenticate"
+        ],
+        "tags": [
+            "crime",
+            "lies"
+        ]
+    },
+    {
+        "headword": "distort",
+        "pronunciation": "/dɪˈstɔːt/",
+        "partOfSpeech": "verb",
+        "definition": "Give a misleading or false account or impression of facts.",
+        "example": "Partisan media channels often distort political statements to provoke public outrage and clicks.",
+        "translation": "يحرف / يشوه الحقائق ويغير مجراها",
+        "exampleArabic": "غالباً ما تحرف القنوات الإعلامية الحزبية التصريحات السياسية وتشوهها لإثارة السخط العام وزيادة المشاهدات.",
+        "relatedForms": [
+            "distortion"
+        ],
+        "collocations": [
+            "distort the truth",
+            "distort facts"
+        ],
+        "synonyms": [
+            "misrepresent",
+            "twist",
+            "skew"
+        ],
+        "antonyms": [
+            "clarify",
+            "represent accurately"
+        ],
+        "tags": [
+            "lies",
+            "communication"
+        ]
+    },
+    {
+        "headword": "exaggerate",
+        "pronunciation": "/ɪɡˈzædʒəreɪt/",
+        "partOfSpeech": "verb",
+        "definition": "Represent something as being larger, greater, better, or worse than it really is.",
+        "example": "Job applicants who exaggerate their technical qualifications are quickly exposed during practical tests.",
+        "translation": "يبالغ / يهوّل ويضخم الأمر فوق حقيقته",
+        "exampleArabic": "إن المتقدمين للوظائف الذين يبالغون في مؤهلاتهم الفنية ويضخمونها سرعان ما يُكشفون أثناء الاختبارات العملية.",
+        "relatedForms": [
+            "exaggeration"
+        ],
+        "collocations": [
+            "wildly exaggerate",
+            "tend to exaggerate"
+        ],
+        "synonyms": [
+            "overstate",
+            "magnify",
+            "inflate"
+        ],
+        "antonyms": [
+            "understate",
+            "minimize"
+        ],
+        "tags": [
+            "communication",
+            "lies"
+        ]
+    },
+    {
+        "headword": "unmask",
+        "pronunciation": "/ʌnˈmɑːsk/",
+        "partOfSpeech": "verb",
+        "definition": "Expose the true, hidden character, identity, or deceit of someone.",
+        "example": "The investigative documentary helped unmask the fraudulent charity that pocketed millions in donations.",
+        "translation": "يكشف القناع / يفضح الوجه الحقيقي للمخادع",
+        "exampleArabic": "ساعد الوثائقي الاستقصائي في إماطة اللثام وكشف قناع الجمعية الخيرية المحتالة التي استولت على ملايين التبرعات.",
+        "relatedForms": [],
+        "collocations": [
+            "unmask a villain",
+            "unmask hypocrisy"
+        ],
+        "synonyms": [
+            "expose",
+            "reveal",
+            "uncover"
+        ],
+        "antonyms": [
+            "mask",
+            "cloak"
+        ],
+        "tags": [
+            "truth",
+            "action"
+        ]
+    },
+    {
+        "headword": "credibility",
+        "pronunciation": "/ˌkredəˈbɪləti/",
+        "partOfSpeech": "noun",
+        "definition": "The quality of being trusted and believed in.",
+        "example": "Once a researcher is caught publishing fraudulent statistics, professional credibility vanishes permanently.",
+        "translation": "مصداقية / مكانة الثقة والاعتبار",
+        "exampleArabic": "بمجرد ضبط الباحث وهو ينشر إحصاءات مزيفة، تتلاشى مصداقيته المهنية ومكانته بشكل دائم.",
+        "relatedForms": [
+            "credible",
+            "credibly"
+        ],
+        "collocations": [
+            "gain credibility",
+            "lose credibility"
+        ],
+        "synonyms": [
+            "trustworthiness",
+            "reliability",
+            "integrity"
+        ],
+        "antonyms": [
+            "implausibility",
+            "unreliability"
+        ],
+        "tags": [
+            "trust",
+            "reputation"
+        ]
+    },
+    {
+        "headword": "mistrust",
+        "pronunciation": "/ˌmɪsˈtrʌst/",
+        "partOfSpeech": "noun",
+        "definition": "Lack of trust, suspicion, or doubt in someone's motives or reliability.",
+        "example": "Years of broken promises created deep political mistrust between the regional delegates.",
+        "translation": "ارتياب وشك / عدم ثقة وسوء ظن",
+        "exampleArabic": "أدت سنوات من الوعود المنقوضة إلى ارتياب وشك سياسي عميق بين ممثلي الأقاليم.",
+        "relatedForms": [
+            "mistrustful"
+        ],
+        "collocations": [
+            "deep mistrust",
+            "foster mistrust"
+        ],
+        "synonyms": [
+            "distrust",
+            "suspicion",
+            "skepticism"
+        ],
+        "antonyms": [
+            "trust",
+            "confidence"
+        ],
+        "tags": [
+            "trust",
+            "feelings"
+        ]
+    }
+]
+
+grammar_day48 = [
+    {
+        "title": "So / Such for Results",
+        "explanation": "We use 'so ... that' and 'such ... that' to connect a cause or high degree of a quality with its result. 1) Use 'so + adjective/adverb + that + result clause': 'Her integrity was so unshakeable that the board accepted her recommendation without question.' With quantifiers, use 'so much/little + uncountable' or 'so many/few + countable': 'He showed so much candor that everyone relaxed.' 2) Use 'such + (a/an) + adjective + noun + that + result clause': 'He was such a straightforward leader that employees trusted his vision completely'; 'It was such blatant deceit that the judge ordered an immediate investigation.' In conversational English, 'that' can be omitted, but retaining 'that' is standard in clear, formal writing.",
+        "explanationArabic": "نستخدم التركيبين (so ... that) و (such ... that) للربط بين السبب (أو الدرجة العالية من الصفة) والنتيجة المترتبة عليها: 1) نستخدم (so + صفة أو ظرف + that + جملة النتيجة): مثل: 'كانت نزاهته قوية جداً لدرجة أن الجميع وثق به' (His integrity was so strong that...). ومع الكميات نستخدم so much / so many. 2) نستخدم (such + a/an + صفة + اسم موصوف + that + جملة النتيجة): مثل: 'كان رجلاً مستقيماً جداً لدرجة أن المستثمرين ائتمنوه' (He was such a straightforward man that...). انتبه: 'so' تسبق الصفة وحدها، بينما 'such' تسبق الاسم الموصوف.",
+        "rules": [
+            "So + Adjective / Adverb + that + Clause: 'Her testimony was so candid that nobody doubted her.'",
+            "Such + (a/an) + Adjective + Noun + that + Clause: 'It was such a shocking betrayal that their friendship ended.'",
+            "So many / so few + Plural Countable Noun + that: 'He told so many falsehoods that his credibility collapsed.'",
+            "So much / so little + Uncountable Noun + that: 'There was so much deceit that legal action followed.'"
+        ],
+        "rulesArabic": [
+            "so + الصفة أو الحال + that: تفيد درجة الصفة المسببة للنتيجة (She was so scrupulous that...).",
+            "such + (a/an) + الصفة + الاسم + that: تفيد أن هذا النوع من الأشخاص أو الأشياء أدى إلى النتيجة (It was such a blatant fraud that...).",
+            "so many / so few مع الأسماء المعدودة الجمع، و so much / so little مع الأسماء غير المعدودة.",
+            "تذكر أن 'that' تعني 'لدرجة أن' وتربط بجملة النتيجة الكاملة (فاعل + فعل)."
+        ],
+        "structures": [
+            {
+                "pattern": "Subject + be/verb + so + Adjective/Adverb + that + Result Clause",
+                "explanation": "Expresses an extreme degree leading directly to a specific outcome.",
+                "explanationArabic": "يعبر عن بلوغ الصفة درجة قصوى تؤدي مباشرة إلى نتيجة محددة."
+            },
+            {
+                "pattern": "Subject + be/verb + such + (a/an) + Adjective + Noun + that + Result Clause",
+                "explanation": "Emphasizes the nature of a person or thing causing a significant consequence.",
+                "explanationArabic": "يؤكد على طبيعة الشخص أو الشيء بما يسبب أثراً ونتيجة بارزة."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The prosecutor was so incorruptible that criminal cartels abandoned all attempts at bribery.",
+                "translation": "كان المدعي العام نزيهاً وعصياً على الفساد لدرجة أن العصابات الإجرامية تخلت عن كل محاولات الرشوة.",
+                "usesVocabulary": [
+                    "incorruptible"
+                ]
+            },
+            {
+                "sentence": "It was such a blatant fabrication that the municipal council dismissed the petition immediately.",
+                "translation": "لقد كان افتراء وتلفيقاً صارخاً لدرجة أن المجلس البلدي رفض العريضة على الفور.",
+                "usesVocabulary": [
+                    "fabrication"
+                ]
+            },
+            {
+                "sentence": "The witness spoke with so much candor that the entire courtroom believed her account.",
+                "translation": "تحدثت الشاهدة بمثل هذه الصراحة والوضوح لدرجة أن قاعة المحكمة بأكملها صدقت روايتها.",
+                "usesVocabulary": [
+                    "candor"
+                ]
+            },
+            {
+                "sentence": "The company demonstrated such scrupulous transparency that investors doubled their commitments.",
+                "translation": "أظهرت الشركة شفافية دقيقة ونزيهة لدرجة أن المستثمرين ضاعفوا التزاماتهم المالية.",
+                "usesVocabulary": [
+                    "scrupulous",
+                    "transparency"
+                ]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "He told so lies that nobody trusted him anymore.",
+                "right": "He told so many lies that nobody trusted him anymore.",
+                "note": "Use 'so many' with countable plural nouns like 'lies', not just 'so'.",
+                "noteArabic": "استخدم so many مع الأسماء المعدودة الجمع، ولا تستخدم so وحدها قبل الاسم."
+            },
+            {
+                "wrong": "It was so shocking deceit that everyone felt betrayed.",
+                "right": "It was such shocking deceit that everyone felt betrayed.",
+                "note": "Use 'such' before adjective + noun combinations, not 'so'.",
+                "noteArabic": "استخدم such قبل تركيبة الصفة والاسم (such shocking deceit)، وليس so."
+            }
+        ]
+    }
+]
+
+convs_day48 = [
+    {
+        "title": "A Transparent Business Partnership",
+        "titleArabic": "شراكة عمل مبنية على الشفافية والصراحة",
+        "setting": "Modern executive coffee lounge overlooking an atrium",
+        "settingArabic": "ردهة قهوة تنفيذية حديثة تطل على فناء زجاجي",
+        "roles": [
+            "Co-Founder",
+            "Senior Partner"
+        ],
+        "vocabularyUsed": [
+            "integrity",
+            "candor",
+            "sincerity",
+            "candid",
+            "straightforward",
+            "unfeigned",
+            "confide",
+            "entrust",
+            "credibility"
+        ],
+        "lines": [
+            {
+                "speaker": "Bassam",
+                "text": "Laila, when we launched this firm, our shared promise was that uncompromising integrity would govern every decision.",
+                "translation": "ليلى، عندما أطلقنا هذه الشركة، كان وعدنا المشترك أن تحكم النزاهة الراسخة التي لا مساومة عليها كل قرار نتخذه."
+            },
+            {
+                "speaker": "Laila",
+                "text": "Indeed. Your consistent candor in executive sessions has earned us unmatched credibility among institutional investors.",
+                "translation": "بالفعل. إن صراحتك المستمرة والواضحة في الجلسات التنفيذية قد أكسبتنا مصداقية لا مثيل لها بين المستثمرين المؤسسيين."
+            },
+            {
+                "speaker": "Bassam",
+                "text": "I was so candid with the client about our software glitch that they actually praised our straightforward communication.",
+                "translation": "كنت صريحاً ومنفتحاً جداً مع العميل بشأن الخلل البرمجي لدرجة أنهم أشادوا بتواصلنا المستقيم والواضح."
+            },
+            {
+                "speaker": "Laila",
+                "text": "Clients recognize unfeigned dedication instantly. That is why they choose to entrust us with their most sensitive accounts.",
+                "translation": "يدرك العملاء التفاني الصادق والخالص على الفور. لهذا السبب يختارون أن يعهدوا إلينا بأكثر حساباتهم حساسية."
+            },
+            {
+                "speaker": "Bassam",
+                "text": "When colleagues feel safe, they confide their operational worries early instead of hiding them behind false optimism.",
+                "translation": "عندما يشعر الزملاء بالأمان، فإنهم يففضون بمخاوفهم التشغيلية مبكراً بدلاً من إخفائها وراء تفاؤل زائف."
+            },
+            {
+                "speaker": "Laila",
+                "text": "Exactly. True sincerity in leadership means welcoming honest feedback even when it exposes our blind spots.",
+                "translation": "بالضبط. إن الإخلاص والصدق الحقيقي في القيادة يعني الترحيب بالآراء الصادقة حتى عندما تكشف نقاط ضعفنا."
+            },
+            {
+                "speaker": "Bassam",
+                "text": "It creates such a robust culture of trust that top talent lines up to work with our organization.",
+                "translation": "هذا يخلق ثقافة ثقة قوية ومتينة لدرجة أن أفضل الكفاءات والمواهب تصطف للعمل مع مؤسستنا."
+            },
+            {
+                "speaker": "Laila",
+                "text": "Let us continue guarding this legacy; building trust takes decades, yet a single lapse can ruin it overnight.",
+                "translation": "دعنا نواصل حراسة هذا الإرث؛ فبناء الثقة يستغرق عقوداً، لكن هفوة واحدة قادرة على تدميره بين عشية وضحاها."
+            }
+        ]
+    },
+    {
+        "title": "Uncovering a Corporate Scam",
+        "titleArabic": "كشف النقاب عن احتيال مؤسسي",
+        "setting": "Auditor’s investigative analysis room with financial printouts",
+        "settingArabic": "غرفة التحليل الاستقصائي للمدقق مع كشوفات مالية مطبوعة",
+        "roles": [
+            "Forensic Auditor",
+            "Legal Counsel"
+        ],
+        "vocabularyUsed": [
+            "deceit",
+            "deception",
+            "dishonesty",
+            "fraud",
+            "fabrication",
+            "hypocrisy",
+            "mislead",
+            "deceive",
+            "unmask"
+        ],
+        "lines": [
+            {
+                "speaker": "Farouk",
+                "text": "Counselor, our audit reveals that the offshore logistics reports were pure fabrication designed to mislead the tax authorities.",
+                "translation": "حضرة المستشار، يكشف تدقيقنا أن تقارير الخدمات اللوجستية الخارجية كانت افتراء وتلفيقاً خالصاً مصمماً لتضليل السلطات الضريبية."
+            },
+            {
+                "speaker": "Nadia",
+                "text": "Are you certain? The Chief Financial Officer spoke publicly against corporate dishonesty only last week!",
+                "translation": "هل أنت متأكد؟ لقد تحدث المدير المالي علناً ضد انعدام الأمانة والفساد المؤسسي في الأسبوع الماضي فقط!"
+            },
+            {
+                "speaker": "Farouk",
+                "text": "His public stance was sheer hypocrisy. Behind the scenes, he orchestrated a multi-million-dollar wire fraud scheme.",
+                "translation": "كان موقفه العلني نفاقاً ورياءً محضاً. وخلف الكواليس، دبر مخطط احتيال ونصب مالي بملايين الدولارات."
+            },
+            {
+                "speaker": "Nadia",
+                "text": "It was such a calculated deceit that even senior board members failed to notice the missing inventory reserves.",
+                "translation": "لقد كان خداعاً وتضليلاً محسوباً لدرجة أن أعضاء مجلس الإدارة الكبار أنفسهم عجزوا عن ملاحظة احتياطيات المخزون المفقودة."
+            },
+            {
+                "speaker": "Farouk",
+                "text": "He relied on systematic accounting deception, using fake shell companies to deceive international credit rating agencies.",
+                "translation": "اعتمد على حيل وخداع محاسبي منهجي، مستخدماً شركات وهمية لخداع وكالات التصنيف الائتماني الدولية وتضليلها."
+            },
+            {
+                "speaker": "Nadia",
+                "text": "Our evidence is so conclusive that the regulatory tribunal will easily unmask every conspirator involved.",
+                "translation": "أدلتنا قاطعة وواضحة جداً لدرجة أن المحكمة التنظيمية ستكشف بسهولة القناع عن كل متآمر متورط."
+            },
+            {
+                "speaker": "Farouk",
+                "text": "I have compiled the chronological ledger discrepancies into a certified briefing package for the federal prosecutor.",
+                "translation": "لقد جمعت تناقضات الدفاتر المحاسبية وفق الترتيب الزمني في ملف موجز معتمد للمدعي العام الفيدرالي."
+            },
+            {
+                "speaker": "Nadia",
+                "text": "Justice will be served; integrity must always prevail over criminal greed.",
+                "translation": "ستتحقق العدالة؛ فالنزاهة يجب أن تنتصر دائماً على الطمع الإجرامي."
+            }
+        ]
+    },
+    {
+        "title": "Healing After a Breach of Trust",
+        "titleArabic": "التعافي وإعادة البناء بعد خذلان الثقة",
+        "setting": "Quiet bench under an ancient oak in a university park",
+        "settingArabic": "مقعد هادئ تحت شجرة بلوط عتيقة في حديقة الجامعة",
+        "roles": [
+            "Senior Researcher",
+            "Former Colleague"
+        ],
+        "vocabularyUsed": [
+            "duplicity",
+            "treachery",
+            "betrayal",
+            "insincerity",
+            "falsify",
+            "distort",
+            "exaggerate",
+            "mistrust",
+            "pretense"
+        ],
+        "lines": [
+            {
+                "speaker": "Kareem",
+                "text": "Samir, thank you for agreeing to meet. I know the past year has been poisoned by profound mistrust between us.",
+                "translation": "سمير، شكراً لموافقتك على اللقاء. أعلم أن العام الماضي قد تسمم بارتياب وشك عميق بيننا."
+            },
+            {
+                "speaker": "Samir",
+                "text": "To be frank, Kareem, watching you distort our research findings to claim exclusive credit felt like an unforgivable betrayal.",
+                "translation": "بصراحة يا كريم، كانت رؤيتك تحرف نتائج أبحاثنا وتنسب الفضل لنفسك حصرياً بمثابة طعنة خيانة لا تُغتفر."
+            },
+            {
+                "speaker": "Kareem",
+                "text": "I had no intention to falsify our data, but I admit I did exaggerate my personal contribution out of foolish insecurity.",
+                "translation": "لم تكن لدي أي نية لتزوير بياناتنا، لكني أعترف أنني بالغت في إبراز مساهمتي الشخصية بدافع من انعدام الأمان الأحمق."
+            },
+            {
+                "speaker": "Samir",
+                "text": "It was not just the article; your pleasant pretense in lab meetings while secretly filing the patent was classic duplicity.",
+                "translation": "لم يكن الأمر يتعلق بالمقال فقط؛ بل إن تظاهرك اللطيف المصطنع في اجتماعات المختبر بينما تسجل البراءة سراً كان ازدواجية ومكراً خالصاً."
+            },
+            {
+                "speaker": "Kareem",
+                "text": "I am not here with smooth insincerity or cheap excuses. I formally withdrew the solo patent application yesterday.",
+                "translation": "لست هنا بنفاق وتملق معسول أو بأعذار واهية. لقد سحبت رسمياً طلب براءة الاختراع الفردي بالأمس."
+            },
+            {
+                "speaker": "Samir",
+                "text": "That was such a surprising concession that it genuinely proves your remorse is authentic.",
+                "translation": "لقد كان ذلك تنازلاً مفاجئاً لدرجة أنه يثبت بصدق أن ندمك وتأنيب ضميرك حقيقي."
+            },
+            {
+                "speaker": "Kareem",
+                "text": "Labeling my action as treacherous treachery was completely fair. I hope time will allow me to earn back your respect.",
+                "translation": "كان وصف تصرفي بأنه خيانة وغدر عادلاً تماماً. آمل أن يتيح لي الوقت استعادة احترامك من جديد."
+            },
+            {
+                "speaker": "Samir",
+                "text": "Rebuilding shattered confidence takes time, but sincere accountability is the first essential step.",
+                "translation": "إن إعادة بناء الثقة المحطمة تتطلب وقتاً، لكن تحمل المسؤولية بصدق هو الخطوة الأساسية الأولى."
+            }
+        ]
+    }
+]
+
+paras_day48 = [
+    {
+        "title": "The Pillars of Moral Leadership",
+        "titleArabic": "أركان القيادة الأخلاقية والاستقامة",
+        "kind": "informative",
+        "text": "In the halls of justice, the enduring moral foundation of a nation depends on the uncompromising probity of its judges. A magistrate committed to absolute veracity examines witness testimonies with rigorous detachment, verifying every fact. Throughout history, civic leaders celebrated for their uprightness recognized that true authority requires moral rectitude. Without steadfast fidelity to constitutional oaths, the solemn allegiance of citizens dissolves into cynical indifference. Public institutions must maintain unimpeachable reliability in delivering public services, ensuring that justice is never subordinated to wealth or power. The unwavering steadfastness of honest civil servants preserves democracy during turbulent crises, reminding future generations that ethical principles must outshine personal ambition.",
+        "translation": "في قاعات العدالة، يعتمد الأساس الأخلاقي الراسخ للأمة على النزاهة والاستقامة الصارمة لقضاتها. ويفحص القاضي الملتزم بالصدق والمصداقية المطلقة شهادات الشهود بتجرد دقيق، متحققاً من كل حقيقة. وطوال التاريخ، أدرك القادة المدنيون المشهود لهم بصلاح السيرة والاستقامة أن السلطة الحقيقية تتطلب استقامة الضمير والمبدأ. ودون وفاء وثبات لا يتزعزع على الأقسام الدستورية، ينحل الولاء والبيعة المهيبة للمواطنين إلى لامبالاة ساخرة. ويجب على المؤسسات العامة الحفاظ على موثوقية لا تشوبها شائبة في تقديم الخدمات العامة، مما يضمن ألا تخضع العدالة أبداً للثروة أو النفوذ. إن الصمود والثبات الراسخ للموظفين العموميين الشرفاء يحمي الديمقراطية في الأزمات العاصفة، مذكراً أجيال المستقبل بأن المبادئ الأخلاقية يجب أن تسمو فوق الطموح الشخصي.",
+        "vocabularyUsed": [
+            "probity",
+            "veracity",
+            "uprightness",
+            "rectitude",
+            "fidelity",
+            "allegiance",
+            "reliability",
+            "steadfastness"
+        ]
+    },
+    {
+        "title": "Transparency and Ethical Fortitude",
+        "titleArabic": "الشفافية والصلابة الأخلاقية في المؤسسات",
+        "kind": "persuasive",
+        "text": "When organizations prioritize genuine authenticity and fiscal transparency, employees feel safe voicing innovative ideas. A company culture that cherishes candid frankness empowers junior workers to critique flawed proposals without fearing retaliation. Leaders who communicate with admirable forthrightness build resilient teams capable of weathering market storms. In such environments, scrupulous researchers uphold high ethical standards, ensuring flawed data is discarded immediately. An incorruptible investigator will never tolerate the spread of a malicious falsehood. In contrast, when an executive commits criminal perjury during a federal inquiry, the resulting institutional scandal can permanently destroy decadelong reputations.",
+        "translation": "عندما تمنح المؤسسات الأولوية للأصالة الحقيقية والشفافية المالية، يشعر الموظفون بالأمان عند طرح أفكار مبتكرة. وتمكّن ثقافة الشركة التي تعتز بالمكاشفة والصراحة الواضحة العمال المبتدئين من نقد المقترحات المعيبة دون خوف من الانتقام. ويبني القادة الذين يتواصلون باستقامة وصراحة مباشرة مثيرة للإعجاب فرقاً مرنة قادرة على تجاوز عواصف السوق. وفي مثل هذه البيئات، يلتزم الباحثون الدقيقون والمتحرون للأمانة بمعايير أخلاقية رفيعة، مما يضمن التخلص من البيانات المعيبة على الفور. ولن يتسامح محقق نزيه وعصي على الفساد أبداً مع انتشار بهتان وباطل خبيث. وفي المقابل، عندما يرتكب مسؤول تنفيذي شهادة زور جنائية أثناء تحقيق فيدرالي، فإن الفضيحة المؤسسية الناتجة قادرة على تدمير سمعة عقود بشكل دائم.",
+        "vocabularyUsed": [
+            "authenticity",
+            "transparency",
+            "frankness",
+            "forthrightness",
+            "scrupulous",
+            "incorruptible",
+            "falsehood",
+            "perjury"
+        ]
+    },
+    {
+        "title": "Dismantling Networks of Deception",
+        "titleArabic": "تفكيك شبكات الخداع والتضليل",
+        "kind": "reflective",
+        "text": "History warns that tyrants and dishonest opportunists routinely deploy subtle guile to manipulate public anxieties. Through calculated political subterfuge, corrupt regimes disguise systemic theft behind patriotic slogans. Ordinary citizens are frequently deceived by sophisticated retail trickery and digital misinformation that distort reality. The calculated deviousness of predatory financiers can devastate vulnerable pension funds, demonstrating the horrifying perfidy of unconstrained greed. When investigative watchdogs expose chronic institutional mendacity, the cleverest legal artifice crumbles under scrutiny. Truth possesses an innate resilience that inevitably triumphs over the most intricate labyrinths of deceit.",
+        "translation": "يحذر التاريخ من أن الطغاة والانتهازيين غير النزهاء يوظفون عادة الدهاء والمكر الخبيث للتلاعب بمخاوف الجماهير. ومن خلال الحيل والمراوغات السياسية المحسوبة، تخفي الأنظمة الفاسدة السرقة المنهجية وراء شعارات وطنية. وكثيراً ما يُخدع المواطنون العاديون بحيل التسعير وخداع التجزئة المضلل والتضليل الرقمي الذي يشوه الواقع. ويمكن للمراوغة والخبث المحسوب للمضاربين الماليين المفترسين أن تدمر صناديق التقاعد الضعيفة، مبرهنة على الغدر وخيانة الأمانة المروعة للطمع غير المقيد. وعندما يكشف مراقبو الاستقصاء عن الكذب والافتراء المؤسسي المزمن، فإن أذكى الحيل والتصنع القانوني ينهار تحت وطأة التدقيق. فالحقيقة تمتلك مرونة فطرية تنتصر حتماً على أعقد متاهات الخداع والتضليل.",
+        "vocabularyUsed": [
+            "guile",
+            "subterfuge",
+            "trickery",
+            "deviousness",
+            "perfidy",
+            "mendacity",
+            "artifice"
+        ]
+    }
+]

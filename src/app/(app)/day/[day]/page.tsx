@@ -31,7 +31,7 @@ import { getDayImageUrl } from "@/lib/day-image";
 
 export const metadata = { title: "Day" };
 
-const VALID_TABS: DayTab[] = ["vocabulary", "grammar", "exercise", "conversations", "paragraphs", "words"];
+const VALID_TABS: DayTab[] = ["vocabulary", "exercise", "conversations", "paragraphs", "words"];
 
 /**
  * Sub-section title inside a lesson card: a short marker bar, the English title in readable ink,
@@ -211,6 +211,38 @@ export default async function DayPage({
         </div>
       ) : (
         <>
+          {/* Grammar Focus Bar — Directs learner to the dedicated Grammar Academy */}
+          {day.grammarLessons.length > 0 && (
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3.5 rounded-2xl border border-night-700 bg-night-900 p-4 shadow-sm">
+              <div className="flex items-center gap-3.5">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-500/20 text-brand-300 ring-1 ring-brand-500/40">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </span>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-brand-300">Grammar Focus · تركيز القواعد</span>
+                    <span className="text-xs text-mist-500">Day {dayNumber}</span>
+                  </div>
+                  <p className="text-base font-semibold text-white">
+                    {day.grammarLessons[0].title}
+                    {day.grammarLessons[0].titleArabic && (
+                      <span className="ms-2 font-normal text-clay-300">({day.grammarLessons[0].titleArabic})</span>
+                    )}
+                  </p>
+                </div>
+              </div>
+              <Link
+                href={`/grammar?day=${dayNumber}`}
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-2.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-brand-500 hover:shadow-md active:scale-95"
+              >
+                <span>Study &amp; Test in Grammar Academy</span>
+                <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          )}
+
           <DayTabs day={dayNumber} active={tab} />
 
           {/* ─── Vocabulary ─── */}
@@ -230,172 +262,7 @@ export default async function DayPage({
             </section>
           )}
 
-          {/* ─── Grammar ─── */}
-          {tab === "grammar" && (
-            <section aria-label="Today's grammar" className="space-y-4">
-              <TabIntro>
-                Clear patterns, structural formulas, and real examples using today&apos;s 50 vocabulary words with
-                Arabic explanations.
-              </TabIntro>
 
-              {day.grammarLessons.map((lesson) => (
-                <Card key={lesson.id} className="space-y-6 sm:p-6">
-                  <div className="space-y-4">
-                    <div>
-                      <Tag tone="accent">Grammar focus</Tag>
-                      <h2 className="mt-2 text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-                        {lesson.title}
-                      </h2>
-                      {lesson.titleArabic ? (
-                        <ArabicText tone="warm" className="mt-0.5 font-medium">
-                          {lesson.titleArabic}
-                        </ArabicText>
-                      ) : null}
-                    </div>
-
-                    <div className={`grid gap-4 ${lesson.explanationArabic ? "md:grid-cols-2" : ""}`}>
-                      <p className="text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
-                        {lesson.explanation}
-                      </p>
-                      {lesson.explanationArabic ? (
-                        <ArabicPanel label="الشرح باللغة العربية:">
-                          <ArabicText>{lesson.explanationArabic}</ArabicText>
-                        </ArabicPanel>
-                      ) : null}
-                    </div>
-                  </div>
-
-                  {lesson.structures.length > 0 && (
-                    <div className="space-y-3">
-                      <SubHeading ar="الصيغ والأنماط">Structural Formulas &amp; Patterns</SubHeading>
-                      <div className="grid gap-3 sm:grid-cols-2">
-                        {lesson.structures.map((s, i) => (
-                          <div
-                            key={i}
-                            className="rounded-xl border border-zinc-200 bg-zinc-50 p-3.5 dark:border-zinc-800 dark:bg-zinc-800/40"
-                          >
-                            <Tag tone="accent">{s.label}</Tag>
-                            <p className="mt-2 break-words font-mono text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-                              {s.pattern}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  <div className="space-y-3">
-                    <SubHeading ar="أمثلة تطبيقية">Practical Examples — Using Today&apos;s Vocabulary</SubHeading>
-                    <ul className="divide-y divide-zinc-100 overflow-hidden rounded-xl border border-zinc-200 dark:divide-zinc-800 dark:border-zinc-800">
-                      {lesson.examples.map((ex, i) => (
-                        <li key={i} className="flex items-start justify-between gap-3 p-3.5 sm:p-4">
-                          <div className="min-w-0 flex-1">
-                            <p className="text-base font-medium leading-relaxed text-zinc-900 dark:text-zinc-100">
-                              &ldquo;{ex.sentence}&rdquo;
-                            </p>
-                            {ex.translation ? (
-                              <ArabicText tone="warm" className="mt-1">
-                                {ex.translation}
-                              </ArabicText>
-                            ) : null}
-                            {(ex.usesVocabulary?.length ?? 0) > 0 && (
-                              <div className="mt-2 flex flex-wrap items-center gap-1.5">
-                                <span className="text-xs text-zinc-500 dark:text-zinc-400">Words:</span>
-                                {ex.usesVocabulary.map((v, vi) => (
-                                  <Tag key={vi} tone="accent">
-                                    {v}
-                                  </Tag>
-                                ))}
-                              </div>
-                            )}
-                          </div>
-                          <AudioButton
-                            text={ex.sentence}
-                            id={`grammar-${lesson.id}-${i}`}
-                            rate={audioRate}
-                            small
-                            label="Listen to example"
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {lesson.commonUsage.length > 0 && (
-                    <div className="space-y-3 rounded-xl bg-zinc-50 p-4 dark:bg-zinc-800/40">
-                      <SubHeading ar="ملاحظات الاستخدام اليومي">Everyday Usage Notes</SubHeading>
-                      <ul className="space-y-2 text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
-                        {lesson.commonUsage.map((u, i) => (
-                          <li key={i} className="flex items-start gap-2.5">
-                            <span
-                              aria-hidden="true"
-                              className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-600 dark:bg-brand-400"
-                            />
-                            <span>{u}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-
-                  {lesson.commonMistakes.length > 0 && (
-                    <div className="space-y-3">
-                      <SubHeading tone="danger" ar="أخطاء شائعة وتصحيحها">
-                        Common Mistakes &amp; Corrections
-                      </SubHeading>
-                      <div className="space-y-3">
-                        {lesson.commonMistakes.map((m, i) => (
-                          <div
-                            key={i}
-                            className="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800"
-                          >
-                            <div className="grid divide-y divide-zinc-100 sm:grid-cols-2 sm:divide-x sm:divide-y-0 dark:divide-zinc-800">
-                              <div className="flex items-start gap-2.5 p-3.5">
-                                <span
-                                  aria-hidden="true"
-                                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-rose-100 text-xs font-bold text-rose-800 dark:bg-rose-950 dark:text-rose-200"
-                                >
-                                  ✕
-                                </span>
-                                <div className="min-w-0">
-                                  <p className="text-xs font-semibold text-rose-700 dark:text-rose-300">
-                                    Incorrect · خطأ
-                                  </p>
-                                  <p className="mt-0.5 break-words font-mono text-sm text-rose-800 line-through dark:text-rose-200">
-                                    {m.wrong}
-                                  </p>
-                                </div>
-                              </div>
-                              <div className="flex items-start gap-2.5 p-3.5">
-                                <span
-                                  aria-hidden="true"
-                                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200"
-                                >
-                                  ✓
-                                </span>
-                                <div className="min-w-0">
-                                  <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300">
-                                    Correct · صواب
-                                  </p>
-                                  <p className="mt-0.5 break-words font-mono text-sm font-semibold text-emerald-800 dark:text-emerald-200">
-                                    {m.right}
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <p className="border-t border-zinc-100 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-800/40 dark:text-zinc-400">
-                              <span className="font-semibold text-brand-700 dark:text-brand-300">Why · التفسير: </span>
-                              {m.note}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </Card>
-              ))}
-            </section>
-          )}
 
           {/* ─── Exercise ─── */}
           {tab === "exercise" && (
