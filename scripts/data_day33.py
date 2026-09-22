@@ -1,0 +1,958 @@
+# -*- coding: utf-8 -*-
+"""Data definition for Day 33: Projects and Deadlines."""
+
+vocab_day33 = [
+    {
+        "headword": "project charter",
+        "pronunciation": "/ˈprɑːdʒekt ˈtʃɑːrtər/",
+        "partOfSpeech": "noun",
+        "definition": "A formal document that outlines the scope, objectives, and participants in a project.",
+        "example": "The executive committee signed the project charter before work officially began.",
+        "translation": "ميثاق المشروع / وثيقة التأسيس",
+        "exampleArabic": "وقعت اللجنة التنفيذية ميثاق المشروع قبل بدء العمل رسمياً.",
+        "relatedForms": [],
+        "collocations": ["sign the project charter", "draft a project charter", "approve the charter"],
+        "synonyms": ["project definition"],
+        "antonyms": [],
+        "tags": ["projects", "management"]
+    },
+    {
+        "headword": "scope creep",
+        "pronunciation": "/skoʊp kriːp/",
+        "partOfSpeech": "noun",
+        "definition": "The uncontrolled growth or addition of new features beyond the original project boundaries.",
+        "example": "Frequent client requests caused severe scope creep that delayed our launch.",
+        "translation": "زحف النطاق / توسع نطاق المشروع دون ضبط",
+        "exampleArabic": "تسببت طلبات العميل المتكررة في زحف شديد في النطاق أدى إلى تأخير إطلاقنا.",
+        "relatedForms": [],
+        "collocations": ["prevent scope creep", "monitor scope creep", "suffer from scope creep"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["projects", "challenges"]
+    },
+    {
+        "headword": "work breakdown structure",
+        "pronunciation": "/wɜːrk ˈbreɪkdaʊn ˈstrʌktʃər/",
+        "partOfSpeech": "noun",
+        "definition": "A hierarchical decomposition of the total scope of work into smaller, manageable components.",
+        "example": "Our project manager created a detailed work breakdown structure to organize every task.",
+        "translation": "هيكل تجزئة العمل",
+        "exampleArabic": "أنشأ مدير مشروعنا هيكل تجزئة عمل تفصيلي لتنظيم كل مهمة.",
+        "relatedForms": ["WBS"],
+        "collocations": ["develop a work breakdown structure", "review the work breakdown structure"],
+        "synonyms": ["task hierarchy"],
+        "antonyms": [],
+        "tags": ["projects", "planning"]
+    },
+    {
+        "headword": "critical path",
+        "pronunciation": "/ˈkrɪtɪkəl pæθ/",
+        "partOfSpeech": "noun",
+        "definition": "The sequence of dependent tasks that determines the minimum time required to complete a project.",
+        "example": "Any delay along the critical path directly pushes back the final delivery date.",
+        "translation": "المسار الحرج",
+        "exampleArabic": "أي تأخير على طول المسار الحرج يؤخر تاريخ التسليم النهائي مباشرة.",
+        "relatedForms": [],
+        "collocations": ["on the critical path", "identify the critical path", "critical path method"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["projects", "strategy"]
+    },
+    {
+        "headword": "contingency plan",
+        "pronunciation": "/kənˈtɪndʒənsi plæn/",
+        "partOfSpeech": "noun",
+        "definition": "A backup strategy designed to account for unexpected problems or emergency situations.",
+        "example": "We prepared a contingency plan in case the overseas vendor failed to deliver on time.",
+        "translation": "خطة طوارئ / خطة بديلة",
+        "exampleArabic": "أعددنا خطة طوارئ في حالة فشل المورد الخارجي في التسليم في الوقت المحدد.",
+        "relatedForms": ["contingency", "contingencies"],
+        "collocations": ["activate a contingency plan", "develop a contingency plan", "have a contingency plan"],
+        "synonyms": ["backup plan", "Plan B"],
+        "antonyms": [],
+        "tags": ["projects", "planning"]
+    },
+    {
+        "headword": "risk assessment",
+        "pronunciation": "/rɪsk əˈsesmənt/",
+        "partOfSpeech": "noun",
+        "definition": "The systematic process of identifying, analyzing, and mitigating potential hazards or obstacles.",
+        "example": "A thorough risk assessment revealed that server capacity could become an issue.",
+        "translation": "تقييم المخاطر",
+        "exampleArabic": "كشف تقييم شامل للمخاطر أن سعة الخادم قد تصبح مشكلة.",
+        "relatedForms": ["assess risks"],
+        "collocations": ["conduct a risk assessment", "comprehensive risk assessment", "initial risk assessment"],
+        "synonyms": ["risk analysis"],
+        "antonyms": [],
+        "tags": ["projects", "analysis"]
+    },
+    {
+        "headword": "feasibility study",
+        "pronunciation": "/ˌfiːzəˈbɪləti ˈstʌdi/",
+        "partOfSpeech": "noun",
+        "definition": "An analysis of the viability and practical possibility of a proposed project idea.",
+        "example": "The engineering team conducted a feasibility study before purchasing new equipment.",
+        "translation": "دراسة جدوى",
+        "exampleArabic": "أجرى فريق الهندسة دراسة جدوى قبل شراء المعدات الجديدة.",
+        "relatedForms": ["feasible"],
+        "collocations": ["run a feasibility study", "feasibility study report", "preliminary feasibility study"],
+        "synonyms": ["viability assessment"],
+        "antonyms": [],
+        "tags": ["projects", "research"]
+    },
+    {
+        "headword": "gantt chart",
+        "pronunciation": "/ɡænt tʃɑːrt/",
+        "partOfSpeech": "noun",
+        "definition": "A horizontal bar chart illustrating a project schedule, showing start and finish dates of elements.",
+        "example": "The Gantt chart clearly displays task dependencies across the six-month timeline.",
+        "translation": "مخطط جانت (جدول زمني بياني)",
+        "exampleArabic": "يعرض مخطط جانت بوضوح تبعيات المهام عبر الجدول الزمني الممتد لستة أشهر.",
+        "relatedForms": [],
+        "collocations": ["plot on a Gantt chart", "update the Gantt chart", "consult the Gantt chart"],
+        "synonyms": ["project timeline chart"],
+        "antonyms": [],
+        "tags": ["projects", "tools"]
+    },
+    {
+        "headword": "status report",
+        "pronunciation": "/ˈsteɪtəs rɪˈpɔːrt/",
+        "partOfSpeech": "noun",
+        "definition": "A formal periodic update detailing current progress, completed tasks, and upcoming milestones.",
+        "example": "Every Friday afternoon, each team lead submits a weekly status report.",
+        "translation": "تقرير الحالة / تقرير سير العمل",
+        "exampleArabic": "كل يوم جمعة بعد الظهر، يقدم كل قائد فريق تقريراً أسبوعياً عن سير العمل.",
+        "relatedForms": [],
+        "collocations": ["submit a status report", "weekly status report", "monthly status report"],
+        "synonyms": ["progress update"],
+        "antonyms": [],
+        "tags": ["projects", "communication"]
+    },
+    {
+        "headword": "baseline metric",
+        "pronunciation": "/ˈbeɪslaɪn ˈmetrɪk/",
+        "partOfSpeech": "noun",
+        "definition": "An initial standard or measurement used for future comparison and performance tracking.",
+        "example": "We established a baseline metric for website response times before releasing the patch.",
+        "translation": "مقياس خط الأساس / القيمة المرجعية",
+        "exampleArabic": "أنشأنا مقياس خط أساس لأوقات استجابة الموقع قبل إطلاق التحديث.",
+        "relatedForms": ["baseline"],
+        "collocations": ["set a baseline metric", "compare against the baseline metric"],
+        "synonyms": ["initial benchmark"],
+        "antonyms": [],
+        "tags": ["projects", "metrics"]
+    },
+    {
+        "headword": "due date",
+        "pronunciation": "/djuː deɪt/",
+        "partOfSpeech": "noun",
+        "definition": "The exact date by which something must be finished, delivered, or submitted.",
+        "example": "The due date for the revised budget proposal is next Wednesday morning.",
+        "translation": "تاريخ الاستحقاق / موعد التسليم",
+        "exampleArabic": "تاريخ استحقاق مقترح الميزانية المعدل هو صباح الأربعاء القادم.",
+        "relatedForms": [],
+        "collocations": ["approach the due date", "meet a due date", "miss the due date"],
+        "synonyms": ["target date", "deadline"],
+        "antonyms": [],
+        "tags": ["timing", "projects"]
+    },
+    {
+        "headword": "cutoff date",
+        "pronunciation": "/ˈkʌtɔːf deɪt/",
+        "partOfSpeech": "noun",
+        "definition": "A final designated date beyond which no further submissions, changes, or applications are accepted.",
+        "example": "The cutoff date for project expense claims is the last day of each calendar month.",
+        "translation": "التاريخ النهائي الفاصل",
+        "exampleArabic": "التاريخ النهائي الفاصل لمطالبات نفقات المشروع هو اليوم الأخير من كل شهر ميلادي.",
+        "relatedForms": ["cutoff"],
+        "collocations": ["strict cutoff date", "after the cutoff date", "establish a cutoff date"],
+        "synonyms": ["closing date"],
+        "antonyms": [],
+        "tags": ["timing"]
+    },
+    {
+        "headword": "interim target",
+        "pronunciation": "/ˈɪntərɪm ˈtɑːrɡɪt/",
+        "partOfSpeech": "noun",
+        "definition": "A provisional or temporary intermediate goal set to gauge progress toward a final objective.",
+        "example": "Completing the database migration was an essential interim target for the quarter.",
+        "translation": "هدف مرحلي / هدف وسيط",
+        "exampleArabic": "كان استكمال نقل قاعدة البيانات هدفاً مرحلياً أساسياً لهذا الربع.",
+        "relatedForms": [],
+        "collocations": ["set an interim target", "reach an interim target", "interim target date"],
+        "synonyms": ["intermediate goal", "stage goal"],
+        "antonyms": [],
+        "tags": ["goals", "projects"]
+    },
+    {
+        "headword": "checkpoint",
+        "pronunciation": "/ˈtʃekpɔɪnt/",
+        "partOfSpeech": "noun",
+        "definition": "A designated stage or moment in a process where results are evaluated before continuing.",
+        "example": "The team holds a weekly checkpoint to review completed work and solve blockers.",
+        "translation": "نقطة تفتيش ومراجعة / محطة تدقيق",
+        "exampleArabic": "يعقد الفريق محطة تدقيق أسبوعية لمراجعة العمل المنجز وحل العوائق.",
+        "relatedForms": ["checkpoints"],
+        "collocations": ["project checkpoint", "scheduled checkpoint", "pass a checkpoint"],
+        "synonyms": ["review point", "milestone check"],
+        "antonyms": [],
+        "tags": ["projects", "process"]
+    },
+    {
+        "headword": "timeline",
+        "pronunciation": "/ˈtaɪmlaɪn/",
+        "partOfSpeech": "noun",
+        "definition": "A linear representation of the chronological events, milestones, and phases of a project.",
+        "example": "The client approved an aggressive four-week timeline for designing the new portal.",
+        "translation": "جدول زمني / تسلسل زمني",
+        "exampleArabic": "وافق العميل على جدول زمني حاسم مدته أربعة أسابيع لتصميم البوابة الجديدة.",
+        "relatedForms": ["timelines"],
+        "collocations": ["project timeline", "tight timeline", "adjust the timeline"],
+        "synonyms": ["schedule", "chronology"],
+        "antonyms": [],
+        "tags": ["timing", "planning"]
+    },
+    {
+        "headword": "timeframe",
+        "pronunciation": "/ˈtaɪmfreɪm/",
+        "partOfSpeech": "noun",
+        "definition": "A specified period of time during which an activity or project is planned to occur.",
+        "example": "Is it realistic to complete the prototype within such a brief timeframe?",
+        "translation": "إطار زمني / مدة زمنية محددة",
+        "exampleArabic": "هل من الواقعي إكمال النموذج الأولي في مثل هذا الإطار الزمني القصير؟",
+        "relatedForms": ["timeframes"],
+        "collocations": ["within a short timeframe", "realistic timeframe", "specify a timeframe"],
+        "synonyms": ["window", "duration", "timespan"],
+        "antonyms": [],
+        "tags": ["timing"]
+    },
+    {
+        "headword": "buffer time",
+        "pronunciation": "/ˈbʌfər taɪm/",
+        "partOfSpeech": "noun",
+        "definition": "Extra time built into a schedule to accommodate unexpected delays or complications.",
+        "example": "Smart planners always insert three days of buffer time before the final release.",
+        "translation": "وقت احتياطي / مهلة إضافية للأمان",
+        "exampleArabic": "يضيف المخططون الأذكياء دائماً ثلاثة أيام كوقت احتياطي قبل الإصدار النهائي.",
+        "relatedForms": ["buffer"],
+        "collocations": ["build in buffer time", "adequate buffer time", "cushion of buffer time"],
+        "synonyms": ["cushion", "slack"],
+        "antonyms": [],
+        "tags": ["timing", "planning"]
+    },
+    {
+        "headword": "slack time",
+        "pronunciation": "/slæk taɪm/",
+        "partOfSpeech": "noun",
+        "definition": "The amount of time a project task can be delayed without delaying subsequent tasks or the project end.",
+        "example": "Because task B had two days of slack time, its slight delay did not hurt the launch date.",
+        "translation": "الوقت الفائض / فترة السماح",
+        "exampleArabic": "نظراً لأن المهمة ب كان بها يومان من الوقت الفائض، فإن تأخيرها البسيط لم يضر بموعد الإطلاق.",
+        "relatedForms": ["slack"],
+        "collocations": ["calculate slack time", "zero slack time", "utilize slack time"],
+        "synonyms": ["float"],
+        "antonyms": [],
+        "tags": ["timing", "projects"]
+    },
+    {
+        "headword": "turnaround",
+        "pronunciation": "/ˈtɜːrnəraʊnd/",
+        "partOfSpeech": "noun",
+        "definition": "The time taken to complete a process, produce a response, or fulfill a request.",
+        "example": "The design agency promised a 24-hour turnaround for all marketing graphic edits.",
+        "translation": "زمن الإنجاز / مدة الاستجابة",
+        "exampleArabic": "وعدت وكالة التصميم بإنجاز مدته 24 ساعة لجميع تعديلات الرسومات التسويقية.",
+        "relatedForms": ["turnaround time"],
+        "collocations": ["quick turnaround", "rapid turnaround", "turnaround time"],
+        "synonyms": ["processing time", "completion time"],
+        "antonyms": [],
+        "tags": ["timing", "performance"]
+    },
+    {
+        "headword": "crunch time",
+        "pronunciation": "/krʌntʃ taɪm/",
+        "partOfSpeech": "noun",
+        "definition": "A critical period just before a major deadline when immense effort and overtime are required.",
+        "example": "It is crunch time for the engineering team as the launch date is only forty-eight hours away.",
+        "translation": "وقت الذروة / فترة الضغط الحاسم قبل الموعد النهائي",
+        "exampleArabic": "إنه وقت الضغط الحاسم لفريق الهندسة حيث تفصلنا ثمانٍ وأربعون ساعة فقط عن موعد الإطلاق.",
+        "relatedForms": [],
+        "collocations": ["enter crunch time", "during crunch time", "handle crunch time"],
+        "synonyms": ["the eleventh hour", "pressure period"],
+        "antonyms": [],
+        "tags": ["work", "pressure"]
+    },
+    {
+        "headword": "ahead of schedule",
+        "pronunciation": "/əˈhed əv ˈskedʒuːl/",
+        "partOfSpeech": "adverb",
+        "definition": "Happening or completed earlier than the originally planned or estimated date.",
+        "example": "Thanks to excellent coordination, the team finished phase one three weeks ahead of schedule.",
+        "translation": "قبل الموعد المحدد / متقدم عن الجدول الزمني",
+        "exampleArabic": "بفضل التنسيق الممتاز، أنهى الفريق المرحلة الأولى قبل الموعد المحدد بثلاثة أسابيع.",
+        "relatedForms": [],
+        "collocations": ["finish ahead of schedule", "running ahead of schedule"],
+        "synonyms": ["early", "in advance"],
+        "antonyms": ["behind schedule"],
+        "tags": ["status", "timing"]
+    },
+    {
+        "headword": "behind schedule",
+        "pronunciation": "/bɪˈhaɪnd ˈskedʒuːl/",
+        "partOfSpeech": "adverb",
+        "definition": "Running later than the planned timetable or deadline.",
+        "example": "When backend development fell behind schedule, the lead brought in two contractors.",
+        "translation": "متأخر عن الجدول الزمني",
+        "exampleArabic": "عندما تأخر تطوير الواجهة الخلفية عن الجدول الزمني، استعان القائد بمتعاقدين اثنين.",
+        "relatedForms": [],
+        "collocations": ["fall behind schedule", "running behind schedule", "far behind schedule"],
+        "synonyms": ["delayed", "lagging"],
+        "antonyms": ["ahead of schedule", "on schedule"],
+        "tags": ["status", "timing"]
+    },
+    {
+        "headword": "on schedule",
+        "pronunciation": "/ɑːn ˈskedʒuːl/",
+        "partOfSpeech": "adverb",
+        "definition": "Proceeding exactly in accordance with the planned timetable.",
+        "example": "All deliverables for the quarterly sprint were handed over strictly on schedule.",
+        "translation": "في الموعد المحدد تماماً / وفق الجدول الزمني",
+        "exampleArabic": "تم تسليم جميع مخرجات دورة العمل الربعية تماماً في الموعد المحدد.",
+        "relatedForms": [],
+        "collocations": ["remain on schedule", "deliver on schedule", "keep on schedule"],
+        "synonyms": ["on time", "punctually"],
+        "antonyms": ["behind schedule"],
+        "tags": ["status", "timing"]
+    },
+    {
+        "headword": "underway",
+        "pronunciation": "/ˌʌndərˈweɪ/",
+        "partOfSpeech": "adjective",
+        "definition": "Currently happening or in the process of being done.",
+        "example": "Major infrastructure renovations are already underway across the entire office building.",
+        "translation": "جارٍ تنفيذه / على قدم وساق",
+        "exampleArabic": "عمليات تجديد البنية التحتية الكبرى جارية بالفعل على قدم وساق في مبنى المكاتب بأكمله.",
+        "relatedForms": [],
+        "collocations": ["get underway", "well underway", "investigations underway"],
+        "synonyms": ["in progress", "happening", "active"],
+        "antonyms": ["completed", "halted"],
+        "tags": ["status"]
+    },
+    {
+        "headword": "under development",
+        "pronunciation": "/ˈʌndər dɪˈveləpmənt/",
+        "partOfSpeech": "phrase",
+        "definition": "In the process of being designed, built, or programmed.",
+        "example": "The automated billing module is currently under development by the payment team.",
+        "translation": "قيد التطوير / يجري تطويره",
+        "exampleArabic": "وحدة الفوترة الآلية قيد التطوير حالياً بواسطة فريق المدفوعات.",
+        "relatedForms": [],
+        "collocations": ["currently under development", "system under development"],
+        "synonyms": ["in production", "being built"],
+        "antonyms": ["deployed", "finished"],
+        "tags": ["status", "technology"]
+    },
+    {
+        "headword": "ongoing task",
+        "pronunciation": "/ˈɑːnɡoʊɪŋ tæsk/",
+        "partOfSpeech": "noun",
+        "definition": "A task that is continually in progress and does not have a single fixed end date.",
+        "example": "Monitoring network security against cyber threats is an ongoing task for our IT staff.",
+        "translation": "مهمة مستمرة / عمل دائم المتابعة",
+        "exampleArabic": "تعد مراقبة أمن الشبكة ضد التهديدات السيبرانية مهمة مستمرة لفريق تكنولوجيا المعلومات لدينا.",
+        "relatedForms": ["ongoing"],
+        "collocations": ["an ongoing task", "manage an ongoing task"],
+        "synonyms": ["continuous task", "routine task"],
+        "antonyms": ["one-off task"],
+        "tags": ["tasks", "work"]
+    },
+    {
+        "headword": "overdue",
+        "pronunciation": "/ˌoʊvərˈduː/",
+        "partOfSpeech": "adjective",
+        "definition": "Not completed or paid by the required date; past the deadline.",
+        "example": "The security audit was two weeks overdue before management stepped in.",
+        "translation": "متأخر عن موعد استحقاقه / فات ميعاده",
+        "exampleArabic": "كان تدقيق الأمان متأخراً بأسبوعين عن موعده قبل أن تتدخل الإدارة.",
+        "relatedForms": [],
+        "collocations": ["long overdue", "overdue payment", "overdue assignment"],
+        "synonyms": ["late", "unpaid", "delayed"],
+        "antonyms": ["on time", "early"],
+        "tags": ["timing", "status"]
+    },
+    {
+        "headword": "pending approval",
+        "pronunciation": "/ˈpendɪŋ əˈpruːvəl/",
+        "partOfSpeech": "phrase",
+        "definition": "Waiting for formal confirmation or agreement from an authorized supervisor or committee.",
+        "example": "The purchase request for new server hardware remains pending approval from finance.",
+        "translation": "بانتظار الموافقة / معلّق للاعتماد",
+        "exampleArabic": "طلب شراء أجهزة الخوادم الجديدة لا يزال بانتظار الموافقة من قسم المالية.",
+        "relatedForms": ["pending"],
+        "collocations": ["remains pending approval", "status pending approval"],
+        "synonyms": ["awaiting confirmation", "under review"],
+        "antonyms": ["approved", "rejected"],
+        "tags": ["status", "process"]
+    },
+    {
+        "headword": "sign-off",
+        "pronunciation": "/ˈsaɪnɔːf/",
+        "partOfSpeech": "noun",
+        "definition": "Formal approval, agreement, or confirmation indicating acceptance of completed work.",
+        "example": "We cannot deploy the software update to production without final sign-off from QA.",
+        "translation": "الموافقة الرسمية النهائية / التوقيع بالاعتماد",
+        "exampleArabic": "لا يمكننا نشر تحديث البرنامج على بيئة الإنتاج بدون التوقيع النهائي بالاعتماد من فريق الجودة.",
+        "relatedForms": ["sign off"],
+        "collocations": ["obtain sign-off", "final sign-off", "client sign-off"],
+        "synonyms": ["formal approval", "endorsement"],
+        "antonyms": ["rejection"],
+        "tags": ["process", "management"]
+    },
+    {
+        "headword": "handover",
+        "pronunciation": "/ˈhændoʊvər/",
+        "partOfSpeech": "noun",
+        "definition": "The formal transfer of control, knowledge, or responsibility from one team to another.",
+        "example": "The developers conducted a comprehensive handover session for the operations team.",
+        "translation": "تسليم واستلام المهام / النقل الرسمي للمسؤولية",
+        "exampleArabic": "عقد المطورون جلسة تسليم واستلام شاملة لفريق العمليات التشغيلية.",
+        "relatedForms": ["hand over"],
+        "collocations": ["project handover", "smooth handover", "complete the handover"],
+        "synonyms": ["transition", "transfer"],
+        "antonyms": ["takeover"],
+        "tags": ["process", "projects"]
+    },
+    {
+        "headword": "stakeholder",
+        "pronunciation": "/ˈsteɪkhoʊldər/",
+        "partOfSpeech": "noun",
+        "definition": "A person, group, or organization that has an interest or concern in a project's outcome.",
+        "example": "We briefed key stakeholders on our progress during the monthly governance forum.",
+        "translation": "صاحب مصلحة / طرف معني بالمشروع",
+        "exampleArabic": "أطلعنا أصحاب المصلحة الرئيسيين على تقدمنا خلال منتدى الحوكمة الشهري.",
+        "relatedForms": ["stakeholders"],
+        "collocations": ["key stakeholder", "stakeholder engagement", "stakeholder expectations"],
+        "synonyms": ["interested party"],
+        "antonyms": [],
+        "tags": ["roles", "management"]
+    },
+    {
+        "headword": "sponsor",
+        "pronunciation": "/ˈspɑːnsər/",
+        "partOfSpeech": "noun",
+        "definition": "An executive or entity that provides financial backing and political support for a project.",
+        "example": "The vice president served as our executive sponsor and secured necessary funding.",
+        "translation": "الراعي التنفيذي للمشروع / الممول والداعم",
+        "exampleArabic": "عمل نائب الرئيس كراعٍ تنفيذي لمشروعنا وأمن التمويل اللازم.",
+        "relatedForms": ["sponsors", "sponsorship"],
+        "collocations": ["executive sponsor", "project sponsor", "seek a sponsor"],
+        "synonyms": ["patron", "backer"],
+        "antonyms": [],
+        "tags": ["roles", "management"]
+    },
+    {
+        "headword": "coordinator",
+        "pronunciation": "/koʊˈɔːrdɪneɪtər/",
+        "partOfSpeech": "noun",
+        "definition": "A person whose job is to organize and synchronize activities and communication between groups.",
+        "example": "Our logistics coordinator arranged travel and equipment shipments for the onsite launch.",
+        "translation": "منسق / مسؤول التنسيق",
+        "exampleArabic": "قام منسق الخدمات اللوجستية لدينا بترتيب السفر وشحنات المعدات للإطلاق الميداني.",
+        "relatedForms": ["coordinate", "coordination"],
+        "collocations": ["project coordinator", "event coordinator", "program coordinator"],
+        "synonyms": ["organizer", "facilitator"],
+        "antonyms": [],
+        "tags": ["roles", "people"]
+    },
+    {
+        "headword": "contractor",
+        "pronunciation": "/ˈkɑːntræktər/",
+        "partOfSpeech": "noun",
+        "definition": "An external specialist or firm hired under a contract to perform specific project tasks.",
+        "example": "The firm brought in an independent contractor to conduct penetration testing on the app.",
+        "translation": "متعاقد / مقاول خارجي",
+        "exampleArabic": "استعانت الشركة بمتعاقد مستقل لإجراء اختبارات الاختراق على التطبيق.",
+        "relatedForms": ["contract", "contracting"],
+        "collocations": ["independent contractor", "hire a contractor", "general contractor"],
+        "synonyms": ["freelancer", "external specialist"],
+        "antonyms": ["permanent employee"],
+        "tags": ["roles", "work"]
+    },
+    {
+        "headword": "vendor",
+        "pronunciation": "/ˈvendər/",
+        "partOfSpeech": "noun",
+        "definition": "A company or supplier that sells goods or software services to an organization.",
+        "example": "We evaluated proposals from three cloud vendors before selecting the most reliable provider.",
+        "translation": "مورد / بائع معتمد",
+        "exampleArabic": "قيمنا عروضاً من ثلاثة موردين للخدمات السحابية قبل اختيار المزود الأكثر موثوقية.",
+        "relatedForms": ["vendors"],
+        "collocations": ["software vendor", "select a vendor", "approved vendor"],
+        "synonyms": ["supplier", "seller", "provider"],
+        "antonyms": ["buyer", "client"],
+        "tags": ["business", "procurement"]
+    },
+    {
+        "headword": "bandwidth",
+        "pronunciation": "/ˈbændwɪdθ/",
+        "partOfSpeech": "noun",
+        "definition": "In workplace terminology: the time, energy, and capacity available to take on extra work.",
+        "example": "I would love to help with the data migration, but I simply do not have the bandwidth this week.",
+        "translation": "القدرة الاستيعابية للعمل / الوقت المتاح",
+        "exampleArabic": "أود مساعدتك في نقل البيانات، لكني ببساطة لا أملك القدرة الاستيعابية هذا الأسبوع.",
+        "relatedForms": [],
+        "collocations": ["have the bandwidth", "lack bandwidth", "mental bandwidth"],
+        "synonyms": ["capacity", "availability"],
+        "antonyms": [],
+        "tags": ["work", "capacity"]
+    },
+    {
+        "headword": "capacity",
+        "pronunciation": "/kəˈpæsəti/",
+        "partOfSpeech": "noun",
+        "definition": "The maximum amount of work or production that a team or facility can handle at one time.",
+        "example": "The engineering department is operating at full capacity to finish the mobile redesign.",
+        "translation": "طاقة استيعابية / قدرة إنتاجية",
+        "exampleArabic": "يعمل قسم الهندسة بكامل طاقته الاستيعابية لإنهاء إعادة تصميم تطبيق الهاتف.",
+        "relatedForms": [],
+        "collocations": ["at full capacity", "expand capacity", "reach capacity"],
+        "synonyms": ["volume", "capability"],
+        "antonyms": ["incapacity"],
+        "tags": ["work", "planning"]
+    },
+    {
+        "headword": "resource allocation",
+        "pronunciation": "/ˈriːsɔːrs ˌæləˈkeɪʃən/",
+        "partOfSpeech": "noun",
+        "definition": "The strategic assignment of personnel, equipment, and funds to specific tasks.",
+        "example": "Effective resource allocation ensured that high-priority tickets received immediate attention.",
+        "translation": "تخصيص الموارد / توزيع الإمكانات",
+        "exampleArabic": "ضمن التخصيص الفعال للموارد حصول التذاكر ذات الأولوية العالية على اهتمام فوري.",
+        "relatedForms": ["allocate resources"],
+        "collocations": ["smart resource allocation", "adjust resource allocation", "resource allocation model"],
+        "synonyms": ["resource assignment"],
+        "antonyms": [],
+        "tags": ["projects", "management"]
+    },
+    {
+        "headword": "action item",
+        "pronunciation": "/ˈækʃən ˈaɪtəm/",
+        "partOfSpeech": "noun",
+        "definition": "A specific, documented task arising from a meeting that is assigned to a specific individual.",
+        "example": "Let's list all action items with owners and deadlines before we conclude this sync.",
+        "translation": "بند تنفيذي / إجراء مطلوب تنفيذه",
+        "exampleArabic": "دعنا ندرج جميع البنود التنفيذية مع أسماء مسؤوليها ومواعيد تسليمها قبل اختتام هذا اللقاء التنسيقي.",
+        "relatedForms": ["action items"],
+        "collocations": ["assign an action item", "review action items", "clear action items"],
+        "synonyms": ["to-do item", "assigned task"],
+        "antonyms": [],
+        "tags": ["tasks", "meetings"]
+    },
+    {
+        "headword": "deliverable",
+        "pronunciation": "/dɪˈlɪvərəbəl/",
+        "partOfSpeech": "noun",
+        "definition": "A tangible or intangible good or service produced as a result of a project that is submitted to a client.",
+        "example": "The final deliverable for phase one included design mockups and documentation.",
+        "translation": "مخرج من مخرجات المشروع / نتاج للتسليم",
+        "exampleArabic": "تضمن المخرج النهائي للمرحلة الأولى نماذج التصميم والتوثيق المكتبي.",
+        "relatedForms": ["deliverables"],
+        "collocations": ["key deliverable", "final deliverable", "project deliverable"],
+        "synonyms": ["output", "product", "end result"],
+        "antonyms": [],
+        "tags": ["projects", "deliverables"]
+    },
+    {
+        "headword": "assign",
+        "pronunciation": "/əˈsaɪn/",
+        "partOfSpeech": "verb",
+        "definition": "To allocate a task, responsibility, or role to someone.",
+        "example": "The team director assigned the database redesign to our senior backend engineer.",
+        "translation": "يكلّف / يسند مهمة",
+        "exampleArabic": "كلف مدير الفريق مهندسنا الأول للواجهة الخلفية بإعادة تصميم قاعدة البيانات.",
+        "relatedForms": ["assigned", "assigns", "assignment"],
+        "collocations": ["assign a task", "assign responsibilities", "assign an owner"],
+        "synonyms": ["allocate", "designate", "entrust"],
+        "antonyms": ["withdraw", "revoke"],
+        "tags": ["actions", "management"]
+    },
+    {
+        "headword": "delegate",
+        "pronunciation": "/ˈdelɪɡeɪt/",
+        "partOfSpeech": "verb",
+        "definition": "To entrust a task, authority, or responsibility to another person, typically a subordinate.",
+        "example": "A successful manager learns to delegate routine chores and concentrate on strategic goals.",
+        "translation": "يفوض / يوكل صلاحيات أو مهام",
+        "exampleArabic": "يتعلم المدير الناجح تفويض المهام الروتينية والتركيز على الأهداف الاستراتيجية.",
+        "relatedForms": ["delegated", "delegates", "delegation"],
+        "collocations": ["delegate tasks", "delegate authority", "delegate effectively"],
+        "synonyms": ["entrust", "empower", "pass on"],
+        "antonyms": ["retain", "micromanage"],
+        "tags": ["actions", "leadership"]
+    },
+    {
+        "headword": "streamline",
+        "pronunciation": "/ˈstriːmlaɪn/",
+        "partOfSpeech": "verb",
+        "definition": "To make a system, organization, or process simpler, more efficient, and faster.",
+        "example": "We adopted automated deployment pipelines to streamline our release workflow.",
+        "translation": "يبسّط / يجعله أكثر كفاءة وسلاسة",
+        "exampleArabic": "اعتمدنا خطوط أنابيب النشر الآلية لتبسيط سير عمل الإصدارات لدينا وجعله أكثر سلاسة.",
+        "relatedForms": ["streamlined", "streamlines", "streamlining"],
+        "collocations": ["streamline operations", "streamline a process", "streamline workflow"],
+        "synonyms": ["simplify", "optimize", "expedite"],
+        "antonyms": ["complicate", "clutter"],
+        "tags": ["actions", "optimization"]
+    },
+    {
+        "headword": "accelerate",
+        "pronunciation": "/əkˈseləreɪt/",
+        "partOfSpeech": "verb",
+        "definition": "To increase the speed of progress or cause something to happen sooner than planned.",
+        "example": "Hiring three additional coders helped accelerate feature development by two weeks.",
+        "translation": "يسرّع / يعجل بالإنجاز",
+        "exampleArabic": "ساعد توظيف ثلاثة مبرمجين إضافيين في تسريع تطوير الميزات بأسبوعين.",
+        "relatedForms": ["accelerated", "accelerates", "acceleration"],
+        "collocations": ["accelerate progress", "accelerate delivery", "accelerate growth"],
+        "synonyms": ["speed up", "hasten", "quicken"],
+        "antonyms": ["slow down", "delay", "decelerate"],
+        "tags": ["actions", "timing"]
+    },
+    {
+        "headword": "defer",
+        "pronunciation": "/dɪˈfɜːr/",
+        "partOfSpeech": "verb",
+        "definition": "To put off an action or decision to a later time; postpone intentionally.",
+        "example": "The committee decided to defer the payment gateway upgrade until the next fiscal quarter.",
+        "translation": "يؤجل بقرار متعمد / يرجئ",
+        "exampleArabic": "قررت اللجنة تأجيل ترقية بوابة الدفع إلى الربع المالي التالي.",
+        "relatedForms": ["deferred", "defers", "deferral"],
+        "collocations": ["defer a decision", "defer judgment", "defer payment"],
+        "synonyms": ["postpone", "delay", "put off"],
+        "antonyms": ["expedite", "prioritize"],
+        "tags": ["actions", "timing"]
+    },
+    {
+        "headword": "push back",
+        "pronunciation": "/pʊʃ bæk/",
+        "partOfSpeech": "phrasal verb",
+        "definition": "To delay or reschedule an event or target date to a later point in time.",
+        "example": "Because testing took longer than anticipated, we had to push back the public launch date.",
+        "translation": "يؤخر موعداً / يرجئ للوراء",
+        "exampleArabic": "نظراً لأن الاختبار استغرق وقتاً أطول من المتوقع، اضطررنا لتأخير موعد الإطلاق العام.",
+        "relatedForms": ["pushed back", "pushing back"],
+        "collocations": ["push back the deadline", "push back a meeting"],
+        "synonyms": ["delay", "reschedule later"],
+        "antonyms": ["move up", "bring forward"],
+        "tags": ["phrasal verbs", "timing"]
+    },
+    {
+        "headword": "oversee",
+        "pronunciation": "/ˌoʊvərˈsiː/",
+        "partOfSpeech": "verb",
+        "definition": "To supervise, watch over, and direct a project or group of workers to ensure quality and deadlines.",
+        "example": "A veteran architect was brought on board to oversee the construction of the server farm.",
+        "translation": "يشرف على / يراقب سير العمل",
+        "exampleArabic": "تمت الاستعانة بمهندس معماري متمرس للإشراف على بناء مزرعة الخوادم.",
+        "relatedForms": ["oversaw", "overseen", "overseeing"],
+        "collocations": ["oversee operations", "oversee a project", "oversee implementation"],
+        "synonyms": ["supervise", "manage", "direct"],
+        "antonyms": ["neglect", "ignore"],
+        "tags": ["actions", "leadership"]
+    },
+    {
+        "headword": "execute",
+        "pronunciation": "/ˈeksɪkjuːt/",
+        "partOfSpeech": "verb",
+        "definition": "To carry out or put into effect a plan, command, or course of action.",
+        "example": "The marketing team executed the advertising campaign flawlessly across all digital channels.",
+        "translation": "ينفّذ / يطبق عملياً",
+        "exampleArabic": "نفذ فريق التسويق الحملة الإعلانية بلا أخطاء عبر جميع القنوات الرقمية.",
+        "relatedForms": ["executed", "executes", "execution"],
+        "collocations": ["execute a plan", "execute a strategy", "execute flawlessly"],
+        "synonyms": ["implement", "carry out", "perform"],
+        "antonyms": ["abandon", "neglect"],
+        "tags": ["actions", "management"]
+    },
+    {
+        "headword": "finalize",
+        "pronunciation": "/ˈfaɪnəlaɪz/",
+        "partOfSpeech": "verb",
+        "definition": "To settle, complete, or conclude the final details of something.",
+        "example": "Both legal teams met yesterday afternoon to finalize the enterprise contract terms.",
+        "translation": "يضع اللمسات الأخيرة / يبرم نهائياً",
+        "exampleArabic": "التقى الفريقان القانونيان بعد ظهر أمس لوضع اللمسات الأخيرة على شروط عقد المؤسسة.",
+        "relatedForms": ["finalized", "finalizes", "finalization"],
+        "collocations": ["finalize the agreement", "finalize details", "finalize plans"],
+        "synonyms": ["complete", "conclude", "wrap up"],
+        "antonyms": ["initiate", "begin"],
+        "tags": ["actions", "completion"]
+    },
+    {
+        "headword": "rollout",
+        "pronunciation": "/ˈroʊlaʊt/",
+        "partOfSpeech": "noun",
+        "definition": "The formal introduction and staggered release of a new product, system, or software version.",
+        "example": "The staged rollout of version 3.0 began with pilot users in California before going nationwide.",
+        "translation": "الإطلاق المرحلي / طرح النظام أو المنتج للمستخدمين",
+        "exampleArabic": "بدأ الإطلاق المرحلي للإصدار 3.0 بمستخدمين تجريبيين في كاليفورنيا قبل تعميمه على مستوى البلاد.",
+        "relatedForms": ["roll out"],
+        "collocations": ["software rollout", "phased rollout", "smooth rollout"],
+        "synonyms": ["release", "launch", "deployment"],
+        "antonyms": ["withdrawal", "recall"],
+        "tags": ["projects", "release"]
+    }
+]
+
+grammar_day33 = [
+    {
+        "title": "Past Perfect",
+        "explanation": "The Past Perfect tense (had + V3) describes an action that happened before another past event or point in time. In project contexts, it clarifies sequence and prerequisites: what was already finished before a deadline, cutoff, or subsequent task.",
+        "explanationArabic": "يُستخدم زمن الماضي التام (had + التصريف الثالث) لوصف حدث وقع قبل حدث ماضٍ آخر أو قبل نقطة زمنية في الماضي. وفي سياق المشاريع، يوضح الترتيب والمتطلبات المسبقة: ما الذي تم إنجازه بالفعل قبل حلول موعد نهائي أو بدء مهمة تالية.",
+        "rules": [
+            "Use 'had + V3' for the earlier past event, and Past Simple for the later past event.",
+            "Common conjunctions include 'before', 'by the time', 'after', and 'already'.",
+            "Negative form: had not (hadn't) + V3.",
+            "Question form: Had + subject + V3?"
+        ],
+        "rulesArabic": [
+            "استخدم 'had + V3' للحدث الأسبق في الماضي، والماضي البسيط للحدث اللاحق.",
+            "الروابط الشائعة تشمل: 'before', 'by the time', 'after', 'already'.",
+            "صيغة النفي: had not (hadn't) + التصريف الثالث.",
+            "صيغة السؤال: Had + الفاعل + التصريف الثالث؟"
+        ],
+        "structures": [
+            {
+                "pattern": "Subject + had + V3 + before + Subject + V2",
+                "explanation": "States an action completed before another past event.",
+                "explanationArabic": "يوضح فعلاً اكتمل قبل وقوع حدث ماضٍ آخر."
+            },
+            {
+                "pattern": "By the time + Subject + V2, Subject + had + V3",
+                "explanation": "Emphasizes completion prior to a specific moment.",
+                "explanationArabic": "يؤكد اكتمال الفعل قبل حلول لحظة زمنية معينة."
+            },
+            {
+                "pattern": "Had + Subject + V3 + before + noun/clause?",
+                "explanation": "Asks whether an action had been finished beforehand.",
+                "explanationArabic": "يسأل عما إذا كان الفعل قد انتهى مسبقاً."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The executive sponsor had approved the project charter before we scheduled the kickoff.",
+                "translation": "كان الراعي التنفيذي قد وافق على ميثاق المشروع قبل أن نجدول الانطلاق.",
+                "usesVocabulary": ["sponsor", "project charter"]
+            },
+            {
+                "sentence": "By the time the cutoff date arrived, the contractor had already submitted the final deliverable.",
+                "translation": "بحلول وقت حلول التاريخ الفاصل، كان المتعاقد قد سلم المخرج النهائي بالفعل.",
+                "usesVocabulary": ["cutoff date", "contractor", "deliverable"]
+            },
+            {
+                "sentence": "We had finished the risk assessment and identified the critical path before development started.",
+                "translation": "كنا قد أنهينا تقييم المخاطر وحددنا المسار الحرج قبل بدء التطوير.",
+                "usesVocabulary": ["risk assessment", "critical path"]
+            },
+            {
+                "sentence": "The coordinator had not assigned all action items before the checkpoint adjourned.",
+                "translation": "لم يكن المنسق قد أسند جميع البنود التنفيذية قبل رفع جلسة المراجعة.",
+                "usesVocabulary": ["coordinator", "action item", "checkpoint"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "We had finalized the rollout yesterday.",
+                "right": "We finalized the rollout yesterday. / We had finalized the rollout before yesterday's meeting.",
+                "note": "Do not use Past Perfect for an isolated action with a specific past time. It requires a relationship to another past event.",
+                "noteArabic": "لا تستخدم الماضي التام لحدث ماضٍ منفرد له وقت محدد؛ بل يلزم وجود علاقة بحدث ماضٍ آخر."
+            },
+            {
+                "wrong": "Before the deadline arrived, the team finished the deliverable.",
+                "right": "Before the deadline arrived, the team had finished the deliverable.",
+                "note": "Use Past Perfect (had finished) to make it clear which event happened first.",
+                "noteArabic": "استخدم الماضي التام (had finished) لتوضيح أي الحدثين وقع أولاً."
+            }
+        ]
+    }
+]
+
+convs_day33 = [
+    {
+        "title": "Project Kickoff and Scope Review",
+        "titleArabic": "انطلاق المشروع ومراجعة النطاق",
+        "setting": "Conference room at software firm",
+        "settingArabic": "غرفة الاجتماعات في شركة برمجيات",
+        "roles": ["Project Manager", "Technical Lead"],
+        "vocabularyUsed": ["project charter", "scope creep", "work breakdown structure", "critical path", "contingency plan", "risk assessment", "feasibility study", "gantt chart", "sponsor", "stakeholder"],
+        "lines": [
+            {
+                "speaker": "Project Manager",
+                "text": "Welcome everyone. Our executive sponsor had formally signed the project charter before we scheduled this kickoff.",
+                "translation": "أهلاً بالجميع. كان راعينا التنفيذي قد وقع ميثاق المشروع رسمياً قبل أن نجدول هذا الاجتماع الافتتاحي."
+            },
+            {
+                "speaker": "Technical Lead",
+                "text": "That is wonderful news. Have all the external stakeholders agreed to the boundaries we set?",
+                "translation": "هذه أخبار رائعة. هل وافق جميع أصحاب المصلحة الخارجيين على الحدود التي وضعناها؟"
+            },
+            {
+                "speaker": "Project Manager",
+                "text": "Yes, but we must stay alert to prevent scope creep, which hurt our last release.",
+                "translation": "نعم، ولكن يجب أن نبقى متيقظين لمنع زحف النطاق، الذي أضر بإصدارنا السابق."
+            },
+            {
+                "speaker": "Technical Lead",
+                "text": "I prepared a work breakdown structure that decomposes the modules into bite-sized tasks.",
+                "translation": "لقد أعددت هيكل تجزئة العمل الذي يفكك الوحدات البرمجية إلى مهام صغيرة قابلة للإدارة."
+            },
+            {
+                "speaker": "Project Manager",
+                "text": "Excellent. We also need to map every dependency onto the Gantt chart immediately.",
+                "translation": "ممتاز. نحتاج أيضاً إلى رسم كل تبعية على مخطط جانت على الفور."
+            },
+            {
+                "speaker": "Technical Lead",
+                "text": "I already pinpointed tasks along the critical path where no delay can be tolerated.",
+                "translation": "لقد حددت بالفعل المهام الواقعة على طول المسار الحرج حيث لا يمكن التسامح مع أي تأخير."
+            },
+            {
+                "speaker": "Project Manager",
+                "text": "Did the engineering team finish their preliminary feasibility study?",
+                "translation": "هل أنهى فريق الهندسة دراسة الجدوى التمهيدية الخاصة بهم؟"
+            },
+            {
+                "speaker": "Technical Lead",
+                "text": "Yes, and based on the risk assessment, we also drafted a solid contingency plan for server failure.",
+                "translation": "نعم، وبناءً على تقييم المخاطر، صغنا أيضاً خطة طوارئ قوية في حالة تعطل الخادم."
+            }
+        ]
+    },
+    {
+        "title": "Timeline and Deadline Pressure",
+        "titleArabic": "ضغط الجدول الزمني والمواعيد النهائية",
+        "setting": "Office hallway conversation",
+        "settingArabic": "محادثة في ممر المكتب",
+        "roles": ["Senior Coordinator", "Lead Developer"],
+        "vocabularyUsed": ["due date", "cutoff date", "interim target", "checkpoint", "timeline", "timeframe", "buffer time", "slack time", "turnaround", "crunch time"],
+        "lines": [
+            {
+                "speaker": "Senior Coordinator",
+                "text": "Hi Mark, how does our timeline look ahead of tomorrow's client presentation?",
+                "translation": "مرحباً مارك، كيف يبدو جدولنا الزمني قبل عرض العميل التقديمي غداً؟"
+            },
+            {
+                "speaker": "Lead Developer",
+                "text": "We are definitely entering crunch time, but our progress matches our latest checkpoint.",
+                "translation": "نحن بالتأكيد ندخل وقت الضغط الحاسم، لكن تقدمنا يتطابق مع آخر محطة تدقيق لدينا."
+            },
+            {
+                "speaker": "Senior Coordinator",
+                "text": "Remember that the cutoff date for submitting backend changes is sharp at five o'clock.",
+                "translation": "تذكر أن التاريخ والوقت الفاصل النهائي لإرسال تغييرات الواجهة الخلفية هو الخامسة تماماً."
+            },
+            {
+                "speaker": "Lead Developer",
+                "text": "We had hit every interim target by noon yesterday, so the due date for the API is secure.",
+                "translation": "كنا قد حققنا كل هدف مرحلي بحلول ظهر أمس، لذا فإن موعد استحقاق واجهة برمجة التطبيقات آمن."
+            },
+            {
+                "speaker": "Senior Coordinator",
+                "text": "Did you leave sufficient buffer time in case automated tests uncover bugs?",
+                "translation": "هل تركت وقتاً احتياطياً كافياً في حال كشفت الاختبارات الآلية عن أخطاء؟"
+            },
+            {
+                "speaker": "Lead Developer",
+                "text": "Yes, we calculated about eight hours of slack time before the live deployment begins.",
+                "translation": "نعم، حسبنا حوالي ثماني ساعات من الوقت الفائض قبل أن يبدأ النشر المباشر."
+            },
+            {
+                "speaker": "Senior Coordinator",
+                "text": "The client appreciated our rapid turnaround on the previous revision.",
+                "translation": "قدّر العميل زمن الإنجاز السريع لدينا في المراجعة السابقة."
+            },
+            {
+                "speaker": "Lead Developer",
+                "text": "Working within such a tight timeframe pushed our skills, but the results look rock solid.",
+                "translation": "العمل داخل هذا الإطار الزمني الضيق دفع مهاراتنا، لكن النتائج تبدو صلبة للغاية."
+            }
+        ]
+    },
+    {
+        "title": "Status Update and Resource Allocation",
+        "titleArabic": "تحديث سير العمل وتوزيع الموارد",
+        "setting": "Virtual sync between operations lead and director",
+        "settingArabic": "اجتماع افتراضي بين مسؤول العمليات والمدير",
+        "roles": ["Operations Lead", "Director"],
+        "vocabularyUsed": ["status report", "baseline metric", "ahead of schedule", "behind schedule", "on schedule", "underway", "under development", "ongoing task", "overdue", "pending approval", "sign-off", "handover"],
+        "lines": [
+            {
+                "speaker": "Operations Lead",
+                "text": "Good morning director. I just submitted our weekly status report for review.",
+                "translation": "صباح الخير سيدي المدير. لقد أرسلت للتو تقرير سير العمل الأسبوعي للمراجعة."
+            },
+            {
+                "speaker": "Director",
+                "text": "Thank you. How are the core modules comparing against our initial baseline metric?",
+                "translation": "شكراً لك. كيف تقارن الوحدات الأساسية بمقياس خط الأساس الأولي لدينا؟"
+            },
+            {
+                "speaker": "Operations Lead",
+                "text": "Overall performance improved by fifteen percent, and testing is currently underway.",
+                "translation": "تحسن الأداء العام بنسبة خمسة عشر بالمائة، والاختبار جارٍ تنفيذه حالياً."
+            },
+            {
+                "speaker": "Director",
+                "text": "Are we running ahead of schedule on the payment gateway, or did it fall behind schedule?",
+                "translation": "هل نتقدم عن الجدول الزمني في بوابة الدفع، أم أنها تأخرت عن الجدول المحدد؟"
+            },
+            {
+                "speaker": "Operations Lead",
+                "text": "The payment gateway is strictly on schedule, while the analytics portal remains under development.",
+                "translation": "بوابة الدفع في الموعد المحدد تماماً، بينما تظل بوابة التحليلات قيد التطوير."
+            },
+            {
+                "speaker": "Director",
+                "text": "Are there any overdue deliverables that require my executive intervention?",
+                "translation": "هل هناك أي مخرجات متأخرة عن موعدها تتطلب تدخلي التنفيذي؟"
+            },
+            {
+                "speaker": "Operations Lead",
+                "text": "Nothing is overdue, though the vendor contract is still pending approval from legal.",
+                "translation": "لا يوجد شيء متأخر، مع أن عقد المورد لا يزال بانتظار الموافقة من القسم القانوني."
+            },
+            {
+                "speaker": "Director",
+                "text": "Once legal gives final sign-off, we can complete the formal handover to the client team.",
+                "translation": "بمجرد أن يمنح القسم القانوني الاعتماد النهائي، يمكننا إكمال إجراءات التسليم والاستلام الرسمية لفريق العميل."
+            }
+        ]
+    }
+]
+
+paras_day33 = [
+    {
+        "title": "Managing High-Stakes Projects",
+        "titleArabic": "إدارة المشاريع عالية الأهمية",
+        "kind": "informative",
+        "vocabularyUsed": ["project charter", "critical path", "risk assessment", "contingency plan", "coordinator", "assign", "delegate", "streamline"],
+        "text": "Managing high-stakes enterprise projects demands discipline, foresight, and clear communication. Before the technical team writes a single line of code, leaders draft a comprehensive project charter that defines objectives and constraints. The coordinator must identify the critical path to ensure no single bottleneck delays the final delivery date. A proactive risk assessment enables teams to prepare a sensible contingency plan before emergencies emerge. Senior managers assign key deliverables to experienced leads and delegate specialized tasks to skilled contributors. Organizations continuously streamline their operational workflows to reduce friction, cut costs, and maintain competitive momentum in dynamic global markets.",
+        "translation": "تتطلب إدارة المشاريع المؤسسية عالية المخاطر الانضباط وبعد النظر والتواصل الواضح. قبل أن يكتب الفريق الفني سطراً واحداً من التعليمات البرمجية، يصيغ القادة ميثاق مشروع شاملاً يحدد الأهداف والقيود. يجب على المنسق تحديد المسار الحرج للتأكد من عدم وجود أي عنق زجاجة يؤخر تاريخ التسليم النهائي. يتيح تقييم المخاطر الاستباقي للفرق إعداد خطة طوارئ معقولة قبل ظهور حالات الطوارئ. يسند كبار المديرين المخرجات الرئيسية إلى قادة متمرسين ويفوضون المهام المتخصصة للمساهمين المهرة. تعمل المنظمات باستمرار على تبسيط سير عملها التشغيلي لتقليل الاحتكاك وخفض التكاليف والحفاظ على الزخم التنافسي في الأسواق العالمية الديناميكية."
+    },
+    {
+        "title": "Navigating Deadlines and Workload",
+        "titleArabic": "التعامل مع المواعيد النهائية وعبء العمل",
+        "kind": "reflective",
+        "vocabularyUsed": ["bandwidth", "capacity", "resource allocation", "action item", "deliverable", "accelerate", "defer", "push back"],
+        "text": "Modern professionals frequently balance competing priorities under tight project deadlines. When an employee reaches maximum capacity, acknowledging limited personal bandwidth is essential for preventing burnout. Intelligent resource allocation allows project managers to distribute urgent action items without overwhelming individual specialists. If team velocity threatens to drop, leaders may decide to accelerate core features while choosing to defer non-critical enhancements to future cycles. Pushing back an unrealistic target date often protects software stability and team morale far better than delivering an unfinished product. Every high-quality deliverable reflects deliberate trade-offs between speed, scope, and relentless dedication to craftsmanship.",
+        "translation": "يوازن المحترفون المعاصرون باستمرار بين الأولويات المتنافسة في ظل مواعيد نهائية ضيقة للمشاريع. عندما يصل الموظف إلى أقصى طاقته، فإن إدراك القدرة الاستيعابية المحدودة أمر ضروري لمنع الاحتراق الوظيفي. يتيح التخصيص الذكي للموارد لمديري المشاريع توزيع البنود التنفيذية العاجلة دون إرهاق المتخصصين الأفراد. وإذا هددت سرعة الفريق بالانخفاض، فقد يقرر القادة تسريع الميزات الأساسية مع اختيار تأجيل التحسينات غير الحيوية إلى دورات مستقبلية. غالباً ما يؤدي تأخير موعد غير واقعي إلى حماية استقرار البرمجيات والروح المعنوية للفريق بشكل أفضل بكثير من تقديم منتج غير مكتمل. يعكس كل مخرج عالي الجودة مقايضات مدروسة بين السرعة والنطاق والتفاني الدؤوب في الإتقان."
+    },
+    {
+        "title": "Executing Vendor Partnerships and Rollouts",
+        "titleArabic": "تنفيذ شراكات الموردين والإطلاقات المرحلية",
+        "kind": "informative",
+        "vocabularyUsed": ["contractor", "vendor", "oversee", "execute", "finalize", "rollout", "ongoing task", "due date"],
+        "text": "Large technology transformations rarely succeed through internal efforts alone. Enterprise firms routinely hire external contractors and partner with an approved vendor to supply specialized cloud infrastructure. Senior engineering executives oversee every integration layer to guarantee compliance with security protocols. Cross-functional teams execute deployment plans methodically, ensuring that every due date is respected. Before leadership finalizes contract renewals, vendors undergo rigorous evaluation against service-level agreements. The subsequent rollout of new digital tools across thousands of corporate users requires detailed training sessions and constant technical support. Monitoring user adoption remains an ongoing task that sustains lasting productivity gains long after launch day.",
+        "translation": "نادراً ما تنجح التحولات التكنولوجية الكبرى من خلال الجهود الداخلية وحدها. تستعين الشركات المؤسسية بانتظام بمتعاقدين خارجيين وتتحالف مع مورد معتمد لتوفير بنية تحتية سحابية متخصصة. يشرف كبار مسؤولي الهندسة التنفيذيين على كل طبقة تكامل لضمان الامتثال لبروتوكولات الأمان. تنفذ الفرق متعددة الوظائف خطط النشر بشكل منهجي، مع ضمان احترام كل تاريخ استحقاق. وقبل أن تضع القيادة اللمسات الأخيرة على تجديد العقود، يخضع الموردون لتقييم صارم وفقاً لاتفاقيات مستوى الخدمة. يتطلب الإطلاق المرحلي اللاحق للأدوات الرقمية الجديدة عبر آلاف المستخدمين في الشركة جلسات تدريبية مفصلة ودعماً فنياً مستمراً. وتظل مراقبة تبني المستخدمين مهمة مستمرة تدعم مكاسب الإنتاجية الدائمة بعد يوم الإطلاق بفترة طويلة."
+    }
+]

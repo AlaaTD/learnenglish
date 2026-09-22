@@ -1,0 +1,958 @@
+# -*- coding: utf-8 -*-
+"""Data definition for Day 38: Technical Problems."""
+
+vocab_day38 = [
+    {
+        "headword": "software bug",
+        "pronunciation": "/ˈsɔːftwer bʌɡ/",
+        "partOfSpeech": "noun",
+        "definition": "An error, flaw, or fault in a computer program that causes it to produce incorrect or unexpected results.",
+        "example": "A subtle software bug in the billing service charged several customers twice.",
+        "translation": "خلل برمجي (علة أو ثغرة في الكود)",
+        "exampleArabic": "تسبب خلل برمجي خفي في خدمة الفوترة في فرض رسوم مضاعفة على العديد من العملاء.",
+        "relatedForms": ["software bugs"],
+        "collocations": ["critical software bug", "fix a software bug", "uncover a software bug"],
+        "synonyms": ["coding defect", "programming error"],
+        "antonyms": ["intended behavior"],
+        "tags": ["bugs", "quality"]
+    },
+    {
+        "headword": "glitch",
+        "pronunciation": "/ɡlɪtʃ/",
+        "partOfSpeech": "noun",
+        "definition": "A sudden, usually temporary malfunction or fault of equipment or software.",
+        "example": "A temporary visual glitch caused the website navbar to flicker on mobile devices.",
+        "translation": "عطل أو تشويش عابر (جليتش)",
+        "exampleArabic": "تسبب عطل بصري عابر في وميض شريط تنقل الموقع على أجهزة الهاتف المحمول.",
+        "relatedForms": ["glitches", "glitched"],
+        "collocations": ["minor glitch", "technical glitch", "experience a glitch"],
+        "synonyms": ["hiccup", "snag", "malfunction"],
+        "antonyms": [],
+        "tags": ["problems", "software"]
+    },
+    {
+        "headword": "fatal crash",
+        "pronunciation": "/ˈfeɪtl kræʃ/",
+        "partOfSpeech": "noun",
+        "definition": "A total and unrecoverable software termination that abruptly halts all program execution.",
+        "example": "A null pointer dereference triggered a fatal crash during the client demonstration.",
+        "translation": "انهيار برمجي قاتل وغير قابل للإصلاح",
+        "exampleArabic": "أدى إلغاء الإشارة إلى مؤشر فارغ إلى انهيار برمجي قاتل أثناء العرض التقديمي للعميل.",
+        "relatedForms": ["fatal crashes"],
+        "collocations": ["suffer a fatal crash", "prevent a fatal crash"],
+        "synonyms": ["abrupt crash", "catastrophic abort"],
+        "antonyms": ["graceful shutdown"],
+        "tags": ["failures", "critical"]
+    },
+    {
+        "headword": "system lockup",
+        "pronunciation": "/ˈsɪstəm ˈlɑːkʌp/",
+        "partOfSpeech": "noun",
+        "definition": "A state where a computer or operating system becomes completely unresponsive to keyboard and mouse input.",
+        "example": "Thermal throttling and GPU overheating caused a complete system lockup during rendering.",
+        "translation": "تجمد النظام التام وتوقفه عن الاستجابة",
+        "exampleArabic": "تسبب خفض الأداء الحراري وارتفاع حرارة كارت الشاشة في تجمد النظام التام أثناء التصيير.",
+        "relatedForms": ["lockup"],
+        "collocations": ["cause a system lockup", "experience system lockup"],
+        "synonyms": ["total freeze", "system freeze"],
+        "antonyms": ["normal operation"],
+        "tags": ["failures", "systems"]
+    },
+    {
+        "headword": "hang",
+        "pronunciation": "/hæŋ/",
+        "partOfSpeech": "verb",
+        "definition": "When a program stops responding to user interactions while continuing to run in the background.",
+        "example": "The application hangs indefinitely whenever it attempts to connect to an offline database.",
+        "translation": "يُعلّق / يتوقف عن الاستجابة مؤقتاً",
+        "exampleArabic": "يتوقف التطبيق عن الاستجابة بشكل دائم كلما حاول الاتصال بقاعدة بيانات غير متصلة بالإنترنت.",
+        "relatedForms": ["hanged", "hung", "hanging"],
+        "collocations": ["application hangs", "cause the app to hang"],
+        "synonyms": ["freeze", "become unresponsive"],
+        "antonyms": ["respond smoothly"],
+        "tags": ["problems", "performance"]
+    },
+    {
+        "headword": "memory leak",
+        "pronunciation": "/ˈmeməri liːk/",
+        "partOfSpeech": "noun",
+        "definition": "A failure in a program to release discarded memory, causing the application to consume more RAM over time.",
+        "example": "Because of a severe memory leak, the production server required a daily reboot.",
+        "translation": "تسريب الذاكرة (استهلاك متزايد للرام دون تحريره)",
+        "exampleArabic": "بسبب تسريب حاد في الذاكرة، احتاج خادم الإنتاج إلى إعادة تشغيل يومية.",
+        "relatedForms": ["memory leaks"],
+        "collocations": ["detect a memory leak", "fix a memory leak"],
+        "synonyms": ["resource leak"],
+        "antonyms": ["garbage collection"],
+        "tags": ["memory", "bugs"]
+    },
+    {
+        "headword": "buffer overflow",
+        "pronunciation": "/ˈbʌfər ˈoʊvərfloʊ/",
+        "partOfSpeech": "noun",
+        "definition": "An anomaly where a program writes data beyond the allocated boundary of a memory buffer.",
+        "example": "Malicious hackers exploit buffer overflow vulnerabilities to execute arbitrary shell code.",
+        "translation": "تجاوز سعة المخزن المؤقت (ثغرة الذاكرة)",
+        "exampleArabic": "يستغل القراصنة الخبثاء ثغرات تجاوز سعة المخزن المؤقت لتنفيذ أوامر صدفية عشوائية.",
+        "relatedForms": ["buffer overflows"],
+        "collocations": ["buffer overflow vulnerability", "prevent buffer overflow"],
+        "synonyms": ["buffer overrun"],
+        "antonyms": ["bounds checking"],
+        "tags": ["security", "memory"]
+    },
+    {
+        "headword": "stack overflow",
+        "pronunciation": "/stæk ˈoʊvərfloʊ/",
+        "partOfSpeech": "noun",
+        "definition": "A runtime error that occurs when a program exceeds the allocated call stack memory, often due to infinite recursion.",
+        "example": "An uncontrolled recursive loop exhausted memory and crashed the thread with a stack overflow.",
+        "translation": "طوفان مكدس الذاكرة (امتلاء الستاك)",
+        "exampleArabic": "استنفدت حلقة عودية غير خاضعة للرقابة الذاكرة وأسقطت المسار البرمجي مع طوفان مكدس الذاكرة.",
+        "relatedForms": ["stack overflows"],
+        "collocations": ["trigger a stack overflow", "stack overflow error"],
+        "synonyms": ["call stack exhaustion"],
+        "antonyms": [],
+        "tags": ["memory", "runtime"]
+    },
+    {
+        "headword": "race condition",
+        "pronunciation": "/reɪs kənˈdɪʃən/",
+        "partOfSpeech": "noun",
+        "definition": "A concurrency flaw where the output of a software process depends on the uncontrollable timing of threads.",
+        "example": "A subtle race condition caused duplicate accounts to be created when two clicks occurred simultaneously.",
+        "translation": "حالة تسابق بين المسارات البرمجية",
+        "exampleArabic": "تسببت حالة تسابق خفية في إنشاء حسابات مكررة عندما حدثت نقرتان في نفس اللحظة.",
+        "relatedForms": ["race conditions"],
+        "collocations": ["intermittent race condition", "eliminate race conditions"],
+        "synonyms": ["timing glitch", "concurrency conflict"],
+        "antonyms": ["thread synchronization"],
+        "tags": ["concurrency", "bugs"]
+    },
+    {
+        "headword": "deadlock",
+        "pronunciation": "/ˈdedlɑːk/",
+        "partOfSpeech": "noun",
+        "definition": "A situation where two or more competing computing threads are each waiting for the other to release a resource.",
+        "example": "The database transaction froze indefinitely after entering an unresolvable deadlock.",
+        "translation": "الجمود التام / التعليق التبادلي (ديدلوك)",
+        "exampleArabic": "تجمدت معاملة قاعدة البيانات إلى أجل غير مسمى بعد دخولها في حالة جمود تام غير قابلة للحل.",
+        "relatedForms": ["deadlocks"],
+        "collocations": ["cause a deadlock", "detect a deadlock", "break a deadlock"],
+        "synonyms": ["mutual lock", "standstill"],
+        "antonyms": ["concurrency flow"],
+        "tags": ["concurrency", "database"]
+    },
+    {
+        "headword": "infinite loop",
+        "pronunciation": "/ˈɪnfɪnət luːp/",
+        "partOfSpeech": "noun",
+        "definition": "A sequence of instructions in a computer program which loops endlessly because the exit condition is never satisfied.",
+        "example": "The CPU spiked to one hundred percent utilization because a while loop became an infinite loop.",
+        "translation": "حلقة تكرار لا نهائية",
+        "exampleArabic": "قفز استهلاك المعالج إلى مائة بالمائة لأن حلقة while تحولت إلى حلقة تكرار لا نهائية.",
+        "relatedForms": ["infinite loops"],
+        "collocations": ["stuck in an infinite loop", "break out of an infinite loop"],
+        "synonyms": ["endless loop"],
+        "antonyms": ["terminating loop"],
+        "tags": ["logic", "bugs"]
+    },
+    {
+        "headword": "null pointer",
+        "pronunciation": "/nʌl ˈpɔɪntər/",
+        "partOfSpeech": "noun",
+        "definition": "A pointer or reference that does not refer to any valid object or memory address.",
+        "example": "Attempting to access a property on a null pointer results in a severe runtime exception.",
+        "translation": "مؤشر فارغ لا يشير لشيء (نَل بوينتر)",
+        "exampleArabic": "تؤدي محاولة الوصول إلى خاصية على مؤشر فارغ إلى استثناء تشغيلي حاد.",
+        "relatedForms": ["null pointers"],
+        "collocations": ["null pointer exception", "dereference a null pointer"],
+        "synonyms": ["null reference"],
+        "antonyms": ["valid pointer"],
+        "tags": ["memory", "bugs"]
+    },
+    {
+        "headword": "segmentation fault",
+        "pronunciation": "/ˌseɡmənˈteɪʃən fɔːlt/",
+        "partOfSpeech": "noun",
+        "definition": "An error raised by hardware memory management units when a program accesses an unauthorized memory area.",
+        "example": "The C++ application terminated abruptly with a segmentation fault during array parsing.",
+        "translation": "خطأ تجزئة الذاكرة (سيجفولت)",
+        "exampleArabic": "توقف تطبيق C++ فجأة بخطأ في تجزئة الذاكرة أثناء تحليل المصفوفة.",
+        "relatedForms": ["segfault"],
+        "collocations": ["cause a segmentation fault", "trigger a segfault"],
+        "synonyms": ["segfault", "memory access violation"],
+        "antonyms": ["valid memory access"],
+        "tags": ["memory", "critical"]
+    },
+    {
+        "headword": "data corruption",
+        "pronunciation": "/ˈdeɪtə kəˈrʌpʃən/",
+        "partOfSpeech": "noun",
+        "definition": "Errors in computer data that occur during writing, reading, storage, transmission, or processing.",
+        "example": "A sudden power outage without a backup battery caused catastrophic data corruption on the main drive.",
+        "translation": "تلف البيانات وفساد الملفات",
+        "exampleArabic": "تسبب انقطاع مفاجئ للتيار الكهربائي بدون بطارية احتياطية في تلف كارثي للبيانات على القرص الرئيسي.",
+        "relatedForms": ["corrupted data"],
+        "collocations": ["suffer data corruption", "prevent data corruption"],
+        "synonyms": ["data degradation", "file damage"],
+        "antonyms": ["data integrity"],
+        "tags": ["storage", "failures"]
+    },
+    {
+        "headword": "system failure",
+        "pronunciation": "/ˈsɪstəm ˈfeɪljər/",
+        "partOfSpeech": "noun",
+        "definition": "The breakdown or complete cessation of normal operation of a whole hardware or software system.",
+        "example": "Dual power outages at the primary data center caused an unprecedented regional system failure.",
+        "translation": "فشل وانهيار النظام بالكامل",
+        "exampleArabic": "تسبب انقطاع مزدوج للتيار الكهربائي في مركز البيانات الأساسي في فشل غير مسبوق للنظام الإقليمي.",
+        "relatedForms": ["system failures"],
+        "collocations": ["total system failure", "recover from system failure"],
+        "synonyms": ["system breakdown", "service outage"],
+        "antonyms": ["system uptime"],
+        "tags": ["failures", "critical"]
+    },
+    {
+        "headword": "error message",
+        "pronunciation": "/ˈerər ˈmesɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "Information displayed on a screen indicating that an unexpected problem or illegal action has occurred.",
+        "example": "Read the exact error message carefully before attempting to modify source files.",
+        "translation": "رسالة الخطأ",
+        "exampleArabic": "اقرأ رسالة الخطأ بدقة وعناية قبل محاولة تعديل الملفات المصدرية.",
+        "relatedForms": ["error messages"],
+        "collocations": ["display an error message", "cryptic error message"],
+        "synonyms": ["warning notification", "fault alert"],
+        "antonyms": ["success message"],
+        "tags": ["diagnostics", "ui"]
+    },
+    {
+        "headword": "error code",
+        "pronunciation": "/ˈerər koʊd/",
+        "partOfSpeech": "noun",
+        "definition": "A standardized alphanumeric indicator that identifies the nature of a specific technical error.",
+        "example": "HTTP error code 404 indicates that the requested web page was not found on the server.",
+        "translation": "رمز الخطأ (كود الخطأ)",
+        "exampleArabic": "يشير رمز الخطأ HTTP 404 إلى أن صفحة الويب المطلوبة لم يتم العثور عليها على الخادم.",
+        "relatedForms": ["error codes"],
+        "collocations": ["look up the error code", "return an error code"],
+        "synonyms": ["status code", "diagnostic code"],
+        "antonyms": [],
+        "tags": ["diagnostics"]
+    },
+    {
+        "headword": "stack trace",
+        "pronunciation": "/stæk treɪs/",
+        "partOfSpeech": "noun",
+        "definition": "A report showing the active stack frames and nested function calls at the moment an exception occurred.",
+        "example": "Analyzing the stack trace allowed the engineer to locate the exact line where the exception exploded.",
+        "translation": "تتبع مكدس الاستدعاءات (الستاك تريس)",
+        "exampleArabic": "أتاح تحليل تتبع مكدس الاستدعاءات للمهندس تحديد السطر الدقيق الذي انفجر فيه الاستثناء البرمجي.",
+        "relatedForms": ["stack traces"],
+        "collocations": ["inspect the stack trace", "print a stack trace"],
+        "synonyms": ["call stack backtrace", "backtrace"],
+        "antonyms": [],
+        "tags": ["debugging", "diagnostics"]
+    },
+    {
+        "headword": "crash dump",
+        "pronunciation": "/kræʃ dʌmp/",
+        "partOfSpeech": "noun",
+        "definition": "A raw record of the contents of memory saved to disk immediately after an operating system crashes.",
+        "example": "Kernel developers analyzed the crash dump file to determine why the storage driver panicked.",
+        "translation": "ملف تفريغ الذاكرة بعد الانهيار (الكراش دَمب)",
+        "exampleArabic": "حلل مطورو النواة ملف تفريغ الذاكرة لتحديد سبب ذعر برنامج تشغيل التخزين.",
+        "relatedForms": ["crash dumps", "memory dump"],
+        "collocations": ["generate a crash dump", "analyze crash dump"],
+        "synonyms": ["core dump", "memory dump"],
+        "antonyms": [],
+        "tags": ["debugging", "systems"]
+    },
+    {
+        "headword": "log file",
+        "pronunciation": "/lɔːɡ faɪl/",
+        "partOfSpeech": "noun",
+        "definition": "A file that records events, transactions, and system messages occurring in an operating system or software.",
+        "example": "Check the authentication log file to see all recent failed administrative login attempts.",
+        "translation": "ملف السجل والأحداث (اللوج فايل)",
+        "exampleArabic": "تحقق من ملف سجل المصادقة للاطلاع على جميع محاولات تسجيل الدخول الإدارية الفاشلة الأخيرة.",
+        "relatedForms": ["log files"],
+        "collocations": ["inspect log file", "rotate log files", "server log file"],
+        "synonyms": ["event log", "audit trail"],
+        "antonyms": [],
+        "tags": ["diagnostics", "systems"]
+    },
+    {
+        "headword": "exception",
+        "pronunciation": "/ɪkˈsepʃən/",
+        "partOfSpeech": "noun",
+        "definition": "An anomalous or exceptional condition requiring special processing, triggered during software execution.",
+        "example": "Wrap risky file reading code inside a try-catch block to handle the exception gracefully.",
+        "translation": "الاستثناء البرمجي (خطأ تشغيلي طارئ)",
+        "exampleArabic": "قم بلف كود قراءة الملفات المحفوف بالمخاطر داخل كتلة try-catch للتعامل مع الاستثناء بسلاسة.",
+        "relatedForms": ["exceptions", "exceptional"],
+        "collocations": ["throw an exception", "catch an exception", "unhandled exception"],
+        "synonyms": ["runtime error", "software trap"],
+        "antonyms": ["normal flow"],
+        "tags": ["runtime", "errors"]
+    },
+    {
+        "headword": "blue screen of death",
+        "pronunciation": "/bluː skriːn əv deθ/",
+        "partOfSpeech": "noun",
+        "definition": "A critical stop error screen displayed on Windows operating systems following a fatal system crash.",
+        "example": "Faulty RAM caused the workstation to crash into a terrifying blue screen of death.",
+        "translation": "شاشة الموت الزرقاء في ويندوز (BSOD)",
+        "exampleArabic": "تسببت ذاكرة الوصول العشوائي التالفة في انهيار محطة العمل بظهور شاشة الموت الزرقاء المخيفة.",
+        "relatedForms": ["BSOD"],
+        "collocations": ["trigger a blue screen of death", "face the blue screen of death"],
+        "synonyms": ["BSOD", "kernel stop error"],
+        "antonyms": [],
+        "tags": ["systems", "failures"]
+    },
+    {
+        "headword": "warning prompt",
+        "pronunciation": "/ˈwɔːrnɪŋ prɑːmpt/",
+        "partOfSpeech": "noun",
+        "definition": "A dialog box notifying a user of a potential hazard or asking for confirmation before proceeding.",
+        "example": "The operating system displayed a warning prompt before formatting the external hard drive.",
+        "translation": "نافذة التنبيه والتحذير",
+        "exampleArabic": "عرض نظام التشغيل نافذة تنبيه تحذيرية قبل تهيئة القرص الصلب الخارجي.",
+        "relatedForms": ["warning prompts"],
+        "collocations": ["display a warning prompt", "dismiss warning prompt"],
+        "synonyms": ["alert dialog", "confirmation prompt"],
+        "antonyms": [],
+        "tags": ["ui", "diagnostics"]
+    },
+    {
+        "headword": "unresponsive",
+        "pronunciation": "/ˌʌnrɪˈspɑːnsɪv/",
+        "partOfSpeech": "adjective",
+        "definition": "Failing to react or respond to user inputs or external commands.",
+        "example": "If the browser window remains unresponsive for more than a minute, kill the process via task manager.",
+        "translation": "غير مستجيب / معلق",
+        "exampleArabic": "إذا ظلت نافذة المتصفح غير مستجيبة لأكثر من دقيقة، فأوقف العملية عبر مدير المهام.",
+        "relatedForms": ["unresponsiveness"],
+        "collocations": ["become unresponsive", "completely unresponsive"],
+        "synonyms": ["frozen", "hung", "deadlocked"],
+        "antonyms": ["responsive", "active"],
+        "tags": ["performance", "problems"]
+    },
+    {
+        "headword": "intermittent issue",
+        "pronunciation": "/ˌɪntərˈmɪtənt ˈɪʃuː/",
+        "partOfSpeech": "noun",
+        "definition": "A problem that occurs irregularly or randomly, making it notoriously difficult to debug and reproduce.",
+        "example": "Hunting down an intermittent issue that only occurs once a week tested the developer's patience.",
+        "translation": "مشكلة متقطعة الحدوث (تحدث أحياناً وتختفي)",
+        "exampleArabic": "اختبر تتبع مشكلة متقطعة الحدوث تحدث مرة واحدة فقط في الأسبوع صبر المطور.",
+        "relatedForms": ["intermittent issues"],
+        "collocations": ["diagnose an intermittent issue", "frustrating intermittent issue"],
+        "synonyms": ["sporadic bug", "flaky problem"],
+        "antonyms": ["reproducible bug"],
+        "tags": ["debugging", "challenges"]
+    },
+    {
+        "headword": "bug report",
+        "pronunciation": "/bʌɡ rɪˈpɔːrt/",
+        "partOfSpeech": "noun",
+        "definition": "A formal document describing a software defect, including expected behavior, actual results, and logs.",
+        "example": "The QA tester filed an exhaustive bug report outlining how the payment form failed on iOS.",
+        "translation": "تقرير الإبلاغ عن خطأ برمجي (بَج ريبورت)",
+        "exampleArabic": "قدم فاحص الجودة تقرير إبلاغ شاملاً يوضح كيفية فشل نموذج الدفع على نظام iOS.",
+        "relatedForms": ["bug reports"],
+        "collocations": ["file a bug report", "submit a bug report", "detailed bug report"],
+        "synonyms": ["defect report", "issue ticket"],
+        "antonyms": [],
+        "tags": ["quality", "reporting"]
+    },
+    {
+        "headword": "ticket number",
+        "pronunciation": "/ˈtɪkɪt ˈnʌmbər/",
+        "partOfSpeech": "noun",
+        "definition": "A unique reference identifier assigned to an issue or request in a tracking system.",
+        "example": "Please quote your support ticket number whenever you contact customer assistance.",
+        "translation": "رقم التذكرة في نظام الدعم الفني",
+        "exampleArabic": "يرجى ذكر رقم تذكرة الدعم الخاصة بك كلما تواصلت مع خدمة مساعدة العملاء.",
+        "relatedForms": ["ticket numbers"],
+        "collocations": ["assigned ticket number", "reference ticket number"],
+        "synonyms": ["incident ID", "case number"],
+        "antonyms": [],
+        "tags": ["support", "tracking"]
+    },
+    {
+        "headword": "reproduce bug",
+        "pronunciation": "/ˌriːprəˈduːs bʌɡ/",
+        "partOfSpeech": "phrase",
+        "definition": "To replicate the exact steps and conditions that cause a specific software defect to appear.",
+        "example": "Before developers can fix a problem, they must be able to reproduce the bug reliably in staging.",
+        "translation": "يُعيد إنتاج الخطأ البرمجي وإظهاره",
+        "exampleArabic": "قبل أن يتمكن المطورون من إصلاح مشكلة، يجب أن يكونوا قادرين على إعادة إنتاج الخطأ بشكل موثوق في بيئة الاختبار.",
+        "relatedForms": ["reproduced bug", "reproducing bug"],
+        "collocations": ["consistently reproduce bug", "attempt to reproduce bug"],
+        "synonyms": ["replicate issue"],
+        "antonyms": [],
+        "tags": ["debugging", "actions"]
+    },
+    {
+        "headword": "steps to reproduce",
+        "pronunciation": "/steps tuː ˌriːprəˈduːs/",
+        "partOfSpeech": "phrase",
+        "definition": "A numbered, sequential list of instructions showing exactly how to recreate a software flaw.",
+        "example": "Include clear steps to reproduce in the issue tracker so engineers can verify the fix.",
+        "translation": "خطوات إعادة إظهار الخطأ",
+        "exampleArabic": "قم بتضمين خطوات واضحة لإعادة إظهار الخطأ في متتبع المشكلات حتى يتمكن المهندسون من التحقق من الإصلاح.",
+        "relatedForms": [],
+        "collocations": ["exact steps to reproduce", "clear steps to reproduce"],
+        "synonyms": ["reproduction steps"],
+        "antonyms": [],
+        "tags": ["quality", "documentation"]
+    },
+    {
+        "headword": "severity level",
+        "pronunciation": "/sɪˈverəti ˈlevəl/",
+        "partOfSpeech": "noun",
+        "definition": "A measure of the technical impact that a bug has on software functionality (e.g., Critical, Major, Minor).",
+        "example": "The security vulnerability was classified at the highest severity level due to remote execution risks.",
+        "translation": "مستوى خطورة العطل أو الثغرة",
+        "exampleArabic": "تم تصنيف الثغرة الأمنية في أعلى مستوى خطورة نظراً لمخاطر التنفيذ عن بعد.",
+        "relatedForms": ["severity levels"],
+        "collocations": ["critical severity level", "assign a severity level"],
+        "synonyms": ["impact rating"],
+        "antonyms": [],
+        "tags": ["quality", "triage"]
+    },
+    {
+        "headword": "priority level",
+        "pronunciation": "/praɪˈɔːrəti ˈlevəl/",
+        "partOfSpeech": "noun",
+        "definition": "A ranking dictating the urgency and order in which an issue must be addressed and resolved.",
+        "example": "This cosmetic typo has low severity, but management gave it a high priority level for the demo.",
+        "translation": "مستوى الأولوية في المعالجة",
+        "exampleArabic": "هذا الخطأ المطبعي ذو خطورة منخفضة، لكن الإدارة منحته مستوى أولوية عالياً من أجل العرض التقديمي.",
+        "relatedForms": ["priority levels"],
+        "collocations": ["urgent priority level", "set priority level"],
+        "synonyms": ["urgency ranking"],
+        "antonyms": [],
+        "tags": ["management", "triage"]
+    },
+    {
+        "headword": "triage meeting",
+        "pronunciation": "/ˈtriːɑːʒ ˈmiːtɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "A collaborative session where engineers and product owners review new bugs and assign priority.",
+        "example": "During the daily triage meeting, the team reviewed twelve new bug tickets.",
+        "translation": "اجتماع الفرز وتحديد الأولويات للأعطال",
+        "exampleArabic": "خلال اجتماع الفرز وتحديد الأولويات اليومي، راجع الفريق اثنتي عشرة تذكرة عطل جديدة.",
+        "relatedForms": ["triage meetings"],
+        "collocations": ["hold a triage meeting", "daily triage meeting"],
+        "synonyms": ["bug triage session"],
+        "antonyms": [],
+        "tags": ["meetings", "quality"]
+    },
+    {
+        "headword": "help desk ticket",
+        "pronunciation": "/help desk ˈtɪkɪt/",
+        "partOfSpeech": "noun",
+        "definition": "A formal support request logged by an end user asking for technical support or reporting hardware failure.",
+        "example": "Open a help desk ticket if your laptop monitor fails to power on.",
+        "translation": "تذكرة مكتب الدعم الفني",
+        "exampleArabic": "افتح تذكرة بمكتب الدعم الفني إذا فشلت شاشة حاسوبك المحمول في العمل.",
+        "relatedForms": ["help desk tickets"],
+        "collocations": ["submit a help desk ticket", "close a help desk ticket"],
+        "synonyms": ["IT support ticket"],
+        "antonyms": [],
+        "tags": ["support", "workplace"]
+    },
+    {
+        "headword": "incident report",
+        "pronunciation": "/ˈɪnsɪdənt rɪˈpɔːrt/",
+        "partOfSpeech": "noun",
+        "definition": "A formal document describing an unplanned outage, security breach, or operational disruption.",
+        "example": "Following the four-hour cloud downtime, the site reliability team authored a formal incident report.",
+        "translation": "تقرير الحادثة أو انقطاع الخدمة",
+        "exampleArabic": "في أعقاب توقف الخدمة السحابية لمدة أربع ساعات، صاغ فريق موثوقية الموقع تقريراً رسمياً عن الحادثة.",
+        "relatedForms": ["incident reports"],
+        "collocations": ["publish an incident report", "complete an incident report"],
+        "synonyms": ["outage report"],
+        "antonyms": [],
+        "tags": ["devops", "reporting"]
+    },
+    {
+        "headword": "post-mortem analysis",
+        "pronunciation": "/ˌpoʊst ˈmɔːrtəm əˈnæləsɪs/",
+        "partOfSpeech": "noun",
+        "definition": "A blameless retrospective analysis conducted after a major failure to discover systemic causes.",
+        "example": "Our post-mortem analysis revealed that an automated deployment script lacked input sanitization.",
+        "translation": "التحليل البَعدي للحادثة (استخلاص الدروس بعد الكارثة)",
+        "exampleArabic": "كشف تحليل ما بعد الحادثة لدينا أن برنامج نصي للنشر الآلي كان يفتقر إلى تنقية المدخلات.",
+        "relatedForms": ["post-mortems"],
+        "collocations": ["conduct a post-mortem analysis", "blameless post-mortem analysis"],
+        "synonyms": ["retrospective review", "after-action review"],
+        "antonyms": [],
+        "tags": ["learning", "management"]
+    },
+    {
+        "headword": "debug",
+        "pronunciation": "/diːˈbʌɡ/",
+        "partOfSpeech": "verb",
+        "definition": "To identify and remove errors from computer hardware or software.",
+        "example": "He spent all Saturday morning debugging the memory corruption issue.",
+        "translation": "يصحح الأخطاء البرمجية (يديبج)",
+        "exampleArabic": "أمضى طوال صباح يوم السبت في تصحيح أخطاء مشكلة تلف الذاكرة.",
+        "relatedForms": ["debugged", "debugging", "debugs"],
+        "collocations": ["debug code", "debug an application", "step through and debug"],
+        "synonyms": ["troubleshoot", "fix bugs"],
+        "antonyms": [],
+        "tags": ["actions", "debugging"]
+    },
+    {
+        "headword": "debugger",
+        "pronunciation": "/diːˈbʌɡər/",
+        "partOfSpeech": "noun",
+        "definition": "A computer program used to test and debug other programs by pausing execution and inspecting variables.",
+        "example": "Attach the debugger to the running process and set a breakpoint on line 42.",
+        "translation": "أداة تصحيح الأخطاء وتتبع الكود (الديبجر)",
+        "exampleArabic": "قم بإرفاق أداة تصحيح الأخطاء بالعملية الجارية وضع نقطة توقف عند السطر 42.",
+        "relatedForms": ["debuggers"],
+        "collocations": ["attach a debugger", "interactive debugger"],
+        "synonyms": ["debugging tool"],
+        "antonyms": [],
+        "tags": ["tools", "debugging"]
+    },
+    {
+        "headword": "workaround",
+        "pronunciation": "/ˈwɜːrkəraʊnd/",
+        "partOfSpeech": "noun",
+        "definition": "A method or temporary bypass used to overcome a defect or problem without addressing the underlying root cause.",
+        "example": "As an immediate workaround, restarting the microservice every hour kept orders flowing.",
+        "translation": "حل مؤقت بديل (التفاف حول المشكلة)",
+        "exampleArabic": "كحل مؤقت بديل، حافظت إعادة تشغيل الخدمة المصغرة كل ساعة على تدفق الطلبات.",
+        "relatedForms": ["workarounds"],
+        "collocations": ["temporary workaround", "find a workaround"],
+        "synonyms": ["quick fix", "temporary bypass"],
+        "antonyms": ["permanent fix"],
+        "tags": ["solutions", "temporary"]
+    },
+    {
+        "headword": "hotfix",
+        "pronunciation": "/ˈhɑːtfɪks/",
+        "partOfSpeech": "noun",
+        "definition": "An emergency single-issue software patch applied directly to live production systems to fix a critical defect.",
+        "example": "The engineering team deployed an emergency hotfix at midnight to patch the payment leak.",
+        "translation": "تحديث طارئ فوري لمعالجة خطأ حرج (هوت فيكس)",
+        "exampleArabic": "نشر فريق الهندسة تحديثاً طارئاً فورياً في منتصف الليل لسد ثغرة تسريب الدفع.",
+        "relatedForms": ["hotfixes"],
+        "collocations": ["deploy a hotfix", "emergency hotfix"],
+        "synonyms": ["quick patch", "emergency patch"],
+        "antonyms": [],
+        "tags": ["release", "fixing"]
+    },
+    {
+        "headword": "patch",
+        "pronunciation": "/pætʃ/",
+        "partOfSpeech": "noun",
+        "definition": "A piece of software designed to update a computer program or its supporting data to fix or improve it.",
+        "example": "Install the security patch immediately to protect your server from remote exploitation.",
+        "translation": "رقعة برمجية / باتش إصلاحي",
+        "exampleArabic": "ثبت الرقعة الأمنية على الفور لحماية خادمك من الاستغلال عن بعد.",
+        "relatedForms": ["patches", "patched"],
+        "collocations": ["apply a patch", "security patch", "software patch"],
+        "synonyms": ["software fix", "update patch"],
+        "antonyms": [],
+        "tags": ["maintenance", "security"]
+    },
+    {
+        "headword": "bug fix",
+        "pronunciation": "/bʌɡ fɪks/",
+        "partOfSpeech": "noun",
+        "definition": "A targeted change made to a system or program to correct a defect or unexpected behavior.",
+        "example": "Release notes for version 2.4 listed twenty minor bug fixes and UI polish improvements.",
+        "translation": "إصلاح برمجي لخلل",
+        "exampleArabic": "أدرجت ملاحظات الإصدار للنسخة 2.4 عشرين إصلاحاً برمجياً طفيفاً وتحسينات على واجهة المستخدم.",
+        "relatedForms": ["bug fixes"],
+        "collocations": ["include a bug fix", "critical bug fix"],
+        "synonyms": ["defect correction"],
+        "antonyms": [],
+        "tags": ["release", "quality"]
+    },
+    {
+        "headword": "roll back",
+        "pronunciation": "/roʊl bæk/",
+        "partOfSpeech": "phrasal verb",
+        "definition": "To return a software system or database to a previous stable state after a failed update.",
+        "example": "When the release broke authentication, the DevOps lead decided to roll back to the previous stable build.",
+        "translation": "يتراجع عن التحديث ويعود للإصدار السابق",
+        "exampleArabic": "عندما عطل الإصدار الجديد المصادقة، قرر مسؤول العمليات التراجع إلى البناء المستقر السابق.",
+        "relatedForms": ["rolled back", "rolling back", "rollback"],
+        "collocations": ["roll back changes", "roll back to previous version"],
+        "synonyms": ["revert", "undo deployment"],
+        "antonyms": ["roll forward"],
+        "tags": ["deployment", "actions"]
+    },
+    {
+        "headword": "root cause",
+        "pronunciation": "/ruːt kɔːz/",
+        "partOfSpeech": "noun",
+        "definition": "The fundamental, underlying reason for a failure or defect which, if removed, prevents recurrence.",
+        "example": "A faulty network cable in rack four was identified as the root cause of the packet loss.",
+        "translation": "السبب الجذري للمشكلة",
+        "exampleArabic": "تم تحديد كابل شبكة معيب في الحامل الرابع باعتباره السبب الجذري لفقدان حزم البيانات.",
+        "relatedForms": ["root causes"],
+        "collocations": ["identify root cause", "root cause analysis"],
+        "synonyms": ["underlying cause", "primary source"],
+        "antonyms": ["symptom"],
+        "tags": ["analysis", "quality"]
+    },
+    {
+        "headword": "troubleshoot",
+        "pronunciation": "/ˈtrʌbəlʃuːt/",
+        "partOfSpeech": "verb",
+        "definition": "To apply a logical, systematic search for the source of a problem in order to solve it.",
+        "example": "The senior engineer helped us troubleshoot why the cache server refused inbound connections.",
+        "translation": "يستكشف الأخطاء ويصلحها",
+        "exampleArabic": "ساعدنا المهندس الأول في استكشاف الأخطاء ومعرفة سبب رفض خادم التخزين المؤقت للاتصالات الواردة.",
+        "relatedForms": ["troubleshot", "troubleshooting"],
+        "collocations": ["troubleshoot an issue", "troubleshoot hardware"],
+        "synonyms": ["diagnose", "debug"],
+        "antonyms": [],
+        "tags": ["actions", "maintenance"]
+    },
+    {
+        "headword": "diagnose",
+        "pronunciation": "/ˌdaɪəɡˈnoʊs/",
+        "partOfSpeech": "verb",
+        "definition": "To identify the nature and cause of a technical problem by examination of symptoms.",
+        "example": "Automated monitoring scripts help administrators diagnose disk space shortages early.",
+        "translation": "يشخّص المشكلة الفنية",
+        "exampleArabic": "تساعد برامج المراقبة الآلية المسؤولين على تشخيص نقص مساحة القرص مبكراً.",
+        "relatedForms": ["diagnosed", "diagnoses", "diagnosis"],
+        "collocations": ["diagnose the fault", "accurately diagnose"],
+        "synonyms": ["pinpoint", "identify"],
+        "antonyms": [],
+        "tags": ["actions", "diagnostics"]
+    },
+    {
+        "headword": "resolve",
+        "pronunciation": "/rɪˈzɑːlv/",
+        "partOfSpeech": "verb",
+        "definition": "To settle, solve, or clear up a problem, ticket, or defect permanently.",
+        "example": "The customer support team resolved over one hundred tickets before lunchtime.",
+        "translation": "يحل المشكلة بشكل نهائي",
+        "exampleArabic": "حل فريق دعم العملاء أكثر من مائة تذكرة قبل وقت الغداء.",
+        "relatedForms": ["resolved", "resolves", "resolution"],
+        "collocations": ["resolve an incident", "resolve completely"],
+        "synonyms": ["solve", "settle", "rectify"],
+        "antonyms": ["worsen", "leave unresolved"],
+        "tags": ["actions", "solutions"]
+    },
+    {
+        "headword": "isolate issue",
+        "pronunciation": "/ˈaɪsəleɪt ˈɪʃuː/",
+        "partOfSpeech": "phrase",
+        "definition": "To separate and identify the exact component or environment variable causing a failure.",
+        "example": "By disabling third-party plugins one by one, we managed to isolate the issue to the theme.",
+        "translation": "يعزل المشكلة ويحدد موضعها بالتحديد",
+        "exampleArabic": "من خلال تعطيل الملحقات الخارجية واحداً تلو الآخر، تمكنا من عزل المشكلة في قالب الموقع.",
+        "relatedForms": ["isolated issue", "isolating issue"],
+        "collocations": ["quickly isolate issue", "isolate the issue to a module"],
+        "synonyms": ["pinpoint problem", "quarantine fault"],
+        "antonyms": [],
+        "tags": ["debugging", "actions"]
+    },
+    {
+        "headword": "stress test",
+        "pronunciation": "/stres test/",
+        "partOfSpeech": "noun",
+        "definition": "A test designed to determine the stability and endurance of software under extreme conditions or loads.",
+        "example": "We performed an intensive stress test simulating fifty thousand simultaneous checkout operations.",
+        "translation": "اختبار الإجهاد والتحمل الأقصى (ستريس تست)",
+        "exampleArabic": "أجرينا اختبار إجهاد مكثف يحاكي خمسين ألف عملية شراء متزامنة.",
+        "relatedForms": ["stress tests", "stress-tested"],
+        "collocations": ["conduct a stress test", "pass a stress test"],
+        "synonyms": ["load test", "endurance test"],
+        "antonyms": [],
+        "tags": ["testing", "quality"]
+    },
+    {
+        "headword": "smoke test",
+        "pronunciation": "/smoʊk test/",
+        "partOfSpeech": "noun",
+        "definition": "A preliminary software test that reveals simple failures severe enough to reject a prospective release.",
+        "example": "If the build fails the basic smoke test, QA refuses to accept it for deep evaluation.",
+        "translation": "اختبار التحقق الأولي السريع (سموك تست)",
+        "exampleArabic": "إذا فشل البناء في اختبار التحقق الأولي السريع، يرفض فريق الجودة قبوله للتقييم المتعمق.",
+        "relatedForms": ["smoke tests"],
+        "collocations": ["run a smoke test", "pass the smoke test"],
+        "synonyms": ["build verification test"],
+        "antonyms": ["deep regression test"],
+        "tags": ["testing", "quality"]
+    },
+    {
+        "headword": "sanity check",
+        "pronunciation": "/ˈsænəti tʃek/",
+        "partOfSpeech": "noun",
+        "definition": "A very quick evaluation to determine whether a calculation or system state is reasonable and correct.",
+        "example": "Perform a sanity check on the calculated prices before sending invoices to enterprise clients.",
+        "translation": "فحص المعقولية والتأكد السريع من المنطق",
+        "exampleArabic": "قم بإجراء فحص معقولية على الأسعار المحسوبة قبل إرسال الفواتير إلى عملاء الشركات.",
+        "relatedForms": ["sanity checks"],
+        "collocations": ["run a sanity check", "perform a sanity check"],
+        "synonyms": ["plausibility check", "quick check"],
+        "antonyms": [],
+        "tags": ["testing", "verification"]
+    }
+]
+
+grammar_day38 = [
+    {
+        "title": "Infinitives (verb + to)",
+        "explanation": "An infinitive is the base form of a verb preceded by 'to' (to + V1). In English, we use infinitives after specific verbs (decide to, refuse to, manage to, need to, attempt to, fail to), to express purpose or intention ('We deployed a hotfix to resolve the data corruption'), after adjectives ('It is difficult to reproduce an intermittent issue'), and in reported requests ('The engineer asked us to roll back the release').",
+        "explanationArabic": "المصدر الكامل (Infinitive) هو صيغة الفعل الأساسية مسبوقة بـ 'to' (أي to + V1). يُستخدم المصدر بعد أفعال محددة مثل (decide to, refuse to, manage to, need to, attempt to, fail to)، وللتعبير عن الهدف أو الغاية ('نشرنا تحديثاً طارئاً لحل تلف البيانات')، وبعد الصفات ('من الصعب إعادة إنتاج مشكلة متقطعة')، وفي صيغ الطلب المنقول ('طلب منا المهندس التراجع عن الإصدار').",
+        "rules": [
+            "Use 'to + base verb' to express purpose or reason for doing something.",
+            "Use infinitive after verbs: decide, hope, manage, attempt, fail, offer, promise, plan, refuse, need.",
+            "Use infinitive after adjectives: difficult to debug, easy to fix, impossible to reproduce.",
+            "Negative infinitive: not to + base verb ('We chose not to roll back immediately')."
+        ],
+        "rulesArabic": [
+            "استخدم 'to + الفعل الأساسي' للتعبير عن الهدف أو السبب للقيام بفعل ما.",
+            "يُستخدم بعد أفعال شائعة: decide, hope, manage, attempt, fail, offer, promise, plan, refuse, need.",
+            "يُستخدم بعد الصفات: difficult to debug, easy to fix, impossible to reproduce.",
+            "صيغة النفي للمصدر: not to + الفعل الأساسي ('اخترنا ألا نتراجع فوراً')."
+        ],
+        "structures": [
+            {
+                "pattern": "Subject + verb (decide/manage/need) + to + V1 (base)",
+                "explanation": "Infinitive as direct complement of specific verbs.",
+                "explanationArabic": "المصدر كمكمل مباشر لأفعال معينة."
+            },
+            {
+                "pattern": "Subject + verb + object + to + V1 (base)",
+                "explanation": "Expresses purpose or objective of an action.",
+                "explanationArabic": "يعبر عن الهدف أو الغرض من الفعل."
+            },
+            {
+                "pattern": "It is + adjective + to + V1 (base)",
+                "explanation": "Evaluates the ease or difficulty of an action.",
+                "explanationArabic": "يقيم مدى سهولة أو صعوبة القيام بفعل ما."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "The developers managed to isolate the issue after inspecting the crash dump.",
+                "translation": "تمكن المطورون من عزل المشكلة بعد فحص ملف تفريغ الذاكرة.",
+                "usesVocabulary": ["isolate issue", "crash dump"]
+            },
+            {
+                "sentence": "We decided to roll back the deployment to prevent data corruption across database shards.",
+                "translation": "قررنا التراجع عن عملية النشر لمنع تلف البيانات عبر أجزاء قاعدة البيانات.",
+                "usesVocabulary": ["roll back", "data corruption"]
+            },
+            {
+                "sentence": "It is critical to reproduce the bug before you attempt to apply an emergency hotfix.",
+                "translation": "من الضروري للغاية إعادة إنتاج الخطأ البرمجي قبل أن تحاول تطبيق تحديث طارئ فوري.",
+                "usesVocabulary": ["reproduce bug", "hotfix"]
+            },
+            {
+                "sentence": "The team agreed to conduct a post-mortem analysis to discover the root cause.",
+                "translation": "وافق الفريق على إجراء تحليل بَعدي للحادثة لاكتشاف السبب الجذري.",
+                "usesVocabulary": ["post-mortem analysis", "root cause"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "We decided for to deploy a bug fix.",
+                "right": "We decided to deploy a bug fix.",
+                "note": "Never place 'for' before an infinitive 'to'. Use 'decided to deploy'.",
+                "noteArabic": "لا تضع 'for' قبل 'to' المصدرية؛ قل 'decided to deploy'."
+            },
+            {
+                "wrong": "The engineer attempted debugging the fatal crash.",
+                "right": "The engineer attempted to debug the fatal crash.",
+                "note": "'Attempt' typically takes an infinitive: 'attempt to debug'.",
+                "noteArabic": "يأتي الفعل 'attempt' مع المصدر: 'attempt to debug'."
+            }
+        ]
+    }
+]
+
+convs_day38 = [
+    {
+        "title": "Production Outage and Triage",
+        "titleArabic": "انقطاع في بيئة الإنتاج وتحديد الأولويات",
+        "setting": "Site reliability war room",
+        "settingArabic": "غرفة طوارئ موثوقية الموقع",
+        "roles": ["DevOps Lead", "Backend Engineer"],
+        "vocabularyUsed": ["software bug", "glitch", "fatal crash", "system lockup", "hang", "memory leak", "buffer overflow", "stack overflow", "race condition", "deadlock"],
+        "lines": [
+            {
+                "speaker": "DevOps Lead",
+                "text": "Alert! The payment gateway suffered a fatal crash and three worker pods experienced system lockup.",
+                "translation": "تنبيه! تعرضت بوابة الدفع لانهيار قاتل وواجهت ثلاث كبسولات عمل تجمد النظام التام."
+            },
+            {
+                "speaker": "Backend Engineer",
+                "text": "I see dozens of threads that hang while trying to acquire a database connection lock.",
+                "translation": "أرى العشرات من المسارات البرمجية المعلقة أثناء محاولة الحصول على قفل اتصال بقاعدة البيانات."
+            },
+            {
+                "speaker": "DevOps Lead",
+                "text": "Did a recent software bug cause a database deadlock between checkout and inventory?",
+                "translation": "هل تسبب خلل برمجي حديث في جمود تام بقاعدة البيانات بين الدفع والمخزون؟"
+            },
+            {
+                "speaker": "Backend Engineer",
+                "text": "Yes, our diagnostic charts reveal a concurrency race condition occurring under peak traffic.",
+                "translation": "نعم، تكشف مخططات التشخيص لدينا عن حالة تسابق بين المسارات تحدث تحت ذروة الزيارات."
+            },
+            {
+                "speaker": "DevOps Lead",
+                "text": "Could an unchecked memory leak be exhausting cluster RAM at the same time?",
+                "translation": "هل يمكن لتسريب غير مفحوص للذاكرة أن يستنفد رام المجموعة في نفس الوقت؟"
+            },
+            {
+                "speaker": "Backend Engineer",
+                "text": "RAM consumption looks stable, so this is not a buffer overflow or a stack overflow issue.",
+                "translation": "يبدو استهلاك الرام مستقراً، لذا فهذه ليست مشكلة تجاوز سعة مخزن أو طوفان مكدس."
+            },
+            {
+                "speaker": "DevOps Lead",
+                "text": "Was this caused by a minor network glitch, or do we need immediate code remediation?",
+                "translation": "هل نتج هذا عن عطل شبكي طفيف، أم أننا بحاجة إلى إصلاح فوري في الكود؟"
+            },
+            {
+                "speaker": "Backend Engineer",
+                "text": "We need to patch the locking order to eliminate the deadlock right now.",
+                "translation": "نحن بحاجة إلى ترقيع ترتيب أقفال البيانات للقضاء على الجمود التام حالاً."
+            }
+        ]
+    },
+    {
+        "title": "Error Analysis and Debugging",
+        "titleArabic": "تحليل الأخطاء وتصحيحها",
+        "setting": "Development desk dual-monitor workstation",
+        "settingArabic": "مكتب تطوير بمحطة عمل ذات شاشتين",
+        "roles": ["Senior Architect", "Junior Developer"],
+        "vocabularyUsed": ["infinite loop", "null pointer", "segmentation fault", "data corruption", "system failure", "error message", "error code", "stack trace", "crash dump", "log file", "exception", "blue screen of death", "warning prompt", "unresponsive", "intermittent issue"],
+        "lines": [
+            {
+                "speaker": "Senior Architect",
+                "text": "Why did the test runner mark the server suite as unresponsive?",
+                "translation": "لماذا صنف مشغل الاختبارات حزمة الخادم بأنها غير مستجيبة؟"
+            },
+            {
+                "speaker": "Junior Developer",
+                "text": "The billing thread encountered an unhandled exception and produced an infinite loop.",
+                "translation": "واجه مسار الفوترة استثناءً غير معالج وأنتج حلقة تكرار لا نهائية."
+            },
+            {
+                "speaker": "Senior Architect",
+                "text": "Did you inspect the stack trace and check the server log file?",
+                "translation": "هل فحصت تتبع مكدس الاستدعاءات وتحققت من ملف سجل الخادم؟"
+            },
+            {
+                "speaker": "Junior Developer",
+                "text": "The log file shows error code 500 triggered by dereferencing a null pointer.",
+                "translation": "يُظهر ملف السجل رمز الخطأ 500 الناتج عن محاولة استخدام مؤشر فارغ."
+            },
+            {
+                "speaker": "Senior Architect",
+                "text": "Fortunately, it did not trigger a segmentation fault or cause data corruption in storage.",
+                "translation": "لحسن الحظ، لم يتسبب في خطأ تجزئة الذاكرة أو يؤدي إلى تلف البيانات في التخزين."
+            },
+            {
+                "speaker": "Junior Developer",
+                "text": "On my Windows test machine, it actually triggered a blue screen of death with a memory crash dump!",
+                "translation": "على جهاز اختباري الذي يعمل بنظام ويندوز، تسبب بالفعل في شاشة الموت الزرقاء مع ملف تفريغ الذاكرة!"
+            },
+            {
+                "speaker": "Senior Architect",
+                "text": "An intermittent issue like that requires careful error message logging and sanity checks.",
+                "translation": "تتطلب مشكلة متقطعة الحدوث كهذه تسجيلاً دقيقاً لرسائل الأخطاء وفحوصات معقولية."
+            },
+            {
+                "speaker": "Junior Developer",
+                "text": "I added a warning prompt in the UI to prevent users from submitting invalid input.",
+                "translation": "أضفت نافذة تنبيه تحذيرية في الواجهة لمنع المستخدمين من إرسال مدخلات غير صالحة."
+            }
+        ]
+    },
+    {
+        "title": "Bug Reporting and Incident Resolution",
+        "titleArabic": "الإبلاغ عن الأعطال وحل الحوادث",
+        "setting": "Customer support and engineering standup",
+        "settingArabic": "اجتماع وقوف مشترك بين دعم العملاء والهندسة",
+        "roles": ["QA Manager", "Support Lead"],
+        "vocabularyUsed": ["bug report", "ticket number", "reproduce bug", "steps to reproduce", "severity level", "priority level", "triage meeting", "help desk ticket", "incident report", "post-mortem analysis", "debug", "debugger", "workaround", "hotfix", "patch", "bug fix", "roll back", "root cause", "troubleshoot", "diagnose", "resolve", "isolate issue", "stress test", "smoke test", "sanity check"],
+        "lines": [
+            {
+                "speaker": "QA Manager",
+                "text": "We opened help desk ticket 9401 with a high severity level and urgent priority level.",
+                "translation": "فتحنا تذكرة دعم فني رقم 9401 بمستوى خطورة عالٍ ومستوى أولوية عاجل."
+            },
+            {
+                "speaker": "Support Lead",
+                "text": "Our team followed the clear steps to reproduce and managed to reproduce the bug on staging.",
+                "translation": "اتبع فريقنا الخطوات الواضحة لإعادة إظهار العطل وتمكن من إعادة إنتاج الخطأ على بيئة الاختبار."
+            },
+            {
+                "speaker": "QA Manager",
+                "text": "In our morning triage meeting, the architect attached an interactive debugger to troubleshoot the service.",
+                "translation": "في اجتماع فرز الأعطال الصباحي، أرفق المهندس المعماري أداة تصحيح تفاعلية لاستكشاف أخطاء الخدمة."
+            },
+            {
+                "speaker": "Support Lead",
+                "text": "Did they discover a reliable workaround while they prepare a permanent bug fix?",
+                "translation": "هل اكتشفوا حلاً بديلاً مؤقتاً وموثوقاً بينما يعدون إصلاحاً برمجياً دائماً؟"
+            },
+            {
+                "speaker": "QA Manager",
+                "text": "Yes, we deployed an emergency hotfix and security patch to resolve the issue safely.",
+                "translation": "نعم، نشرنا تحديثاً طارئاً ورقعة أمنية لحل المشكلة بأمان."
+            },
+            {
+                "speaker": "Support Lead",
+                "text": "Did the release pass the automated smoke test and subsequent stress test?",
+                "translation": "هل اجتاز الإصدار اختبار التحقق الأولي السريع واختبار الإجهاد اللاحق؟"
+            },
+            {
+                "speaker": "QA Manager",
+                "text": "Both tests passed flawlessly, and we ran a final sanity check before publishing our incident report.",
+                "translation": "اجتاز كلا الاختبارين بنجاح لا تشوبه شائبة، وأجرينا فحص معقولية نهائي قبل نشر تقرير الحادثة."
+            },
+            {
+                "speaker": "Support Lead",
+                "text": "We will conduct a blameless post-mortem analysis tomorrow to understand the fundamental root cause.",
+                "translation": "سنجري تحليلاً بَعدياً خالياً من اللوم غداً لفهم السبب الجذري الأساسي."
+            }
+        ]
+    }
+]
+
+paras_day38 = [
+    {
+        "title": "Systematic Software Debugging and Problem Isolation",
+        "titleArabic": "تصحيح البرمجيات المنهجي وعزل المشكلات",
+        "kind": "informative",
+        "vocabularyUsed": ["debug", "debugger", "isolate issue", "root cause", "troubleshoot", "diagnose", "resolve", "workaround"],
+        "text": "When critical software malfunctions arise, engineering discipline dictates methodical problem solving over hasty assumptions. Skilled developers use an interactive debugger to inspect call stacks and step through suspicious instruction paths. By methodically eliminating external variables, technicians manage to isolate the issue to a single faulty module. Instead of settling for a superficial workaround, thorough teams strive to troubleshoot until they uncover the true root cause. Taking the time to accurately diagnose system bottlenecks prevents fragile patches that collapse under future strain. Once engineers resolve the underlying defect permanently, they write regression tests to ensure that identical bugs never re-emerge in production releases.",
+        "translation": "عندما تظهر أعطال برمجية حرجة، يفرض الانضباط الهندسي حلاً منهجياً للمشكلات بدلاً من الافتراضات المتسرعة. ويستخدم المطورون المهرة أداة تصحيح أخطاء تفاعلية لفحص مكدسات الاستدعاء والتنقل عبر مسارات التعليمات المشبوهة خطوة بخطوة. ومن خلال التخلص المنهجي من المتغيرات الخارجية، ينجح الفنيون في عزل المشكلة في وحدة معيبة واحدة. وبدلاً من الاكتفاء بحل بديل سطحي، تسعى الفرق المتعمقة إلى استكشاف الأخطاء وإصلاحها حتى تكشف السبب الجذري الحقيقي. كما أن تخصيص الوقت لتشخيص اختناقات النظام بدقة يمنع الترقيعات الهشة التي تنهار تحت الضغط المستقبلي. وبمجرد أن يحل المهندسون الخلل الأساسي بشكل دائم، يكتبون اختبارات انحدار لضمان عدم ظهور أخطاء متطابقة أبداً في إصدارات الإنتاج."
+    },
+    {
+        "title": "Incident Management and Post-Mortem Culture",
+        "titleArabic": "إدارة الحوادث وثقافة التحليل البَعدي",
+        "kind": "informative",
+        "vocabularyUsed": ["incident report", "post-mortem analysis", "triage meeting", "bug report", "severity level", "priority level", "ticket number", "help desk ticket"],
+        "text": "World-class technology organizations foster transparent cultures centered on continuous operational learning. When users submit an urgent help desk ticket, support personnel record every detail and log an official ticket number. Quality assurance leads convene a triage meeting to classify the defect by severity level and establish an appropriate priority level. When outages impact thousands of customers, the operations team files a detailed incident report describing timelines and mitigation steps. Afterwards, cross-functional stakeholders participate in a blameless post-mortem analysis. Studying systemic breakdowns openly without pointing fingers empowers engineering teams to build resilient architectures that withstand unforeseen industrial disruptions.",
+        "translation": "تعزز مؤسسات التكنولوجيا عالمية المستوى ثقافات شفافة تركز على التعلم التشغيلي المستمر. وعندما يرسل المستخدمون تذكرة دعم فني عاجلة، يسجل موظفو الدعم كل التفاصيل ويسجلون رقم تذكرة رسمياً. ويعقد قادة ضمان الجودة اجتماع فرز لتصنيف الخلل حسب مستوى الخطورة وتحديد مستوى الأولوية المناسب. وعندما تؤثر الانقطاعات على آلاف العملاء، يقدم فريق العمليات تقريراً مفصلاً عن الحادثة يصف الجداول الزمنية وخطوات التخفيف. وبعد ذلك، يشارك أصحاب المصلحة متعددو التخصصات في تحليل بَعدي خالٍ من اللوم. إن دراسة الأعطال النظامية بانفتاح دون توجيه أصابع الاتهام تمكّن الفرق الهندسية من بناء معماريات مرنة تصمد أمام الاضطرابات غير المتوقعة."
+    },
+    {
+        "title": "Verifying Stability with Quality Assurance",
+        "titleArabic": "التحقق من الاستقرار عبر ضمان الجودة",
+        "kind": "informative",
+        "vocabularyUsed": ["smoke test", "stress test", "sanity check", "hotfix", "patch", "bug fix", "roll back"],
+        "text": "Before any newly engineered code touches production servers, rigorous verification is essential. As soon as a developer crafts a critical bug fix, automated testing pipelines execute a rapid smoke test to verify basic startup health. If an urgent vulnerability demands an immediate security patch or emergency hotfix, teams conduct a sanity check on dependent services. Engineering teams also perform a comprehensive stress test to ensure applications endure heavy concurrent traffic without memory exhaustion. If unexpected anomalies surface during deployment, automated monitoring mechanisms decide to roll back the release instantaneously. Strict quality gates guarantee that only rock-solid code reaches end users across enterprise cloud networks.",
+        "translation": "قبل أن يلمس أي كود جديد خوادم الإنتاج، يعد التحقق الصارم أمراً أساسياً. وبمجرد أن يصيغ المطور إصلاحاً برمجياً مهماً، تنفذ خطوط أنابيب الاختبار الآلية اختبار تحقق أولي سريع للتأكد من سلامة بدء التشغيل الأساسية. وإذا تطلبت ثغرة عاجلة رقعة أمنية فورية أو تحديثاً طارئاً، تجري الفرق فحص معقولية على الخدمات المعتمدة. كما تنفذ الفرق الهندسية اختبار إجهاد شامل لضمان صمود التطبيقات أمام الزيارات المتزامنة الكثيفة دون استنفاد الذاكرة. وإذا ظهرت أعطال غير متوقعة أثناء النشر، تقرر آليات المراقبة الآلية التراجع الفوري عن الإصدار. وتضمن بوابات الجودة الصارمة وصول الكود فائق الاستقرار فقط إلى المستخدمين عبر شبكات السحابة المؤسسية."
+    }
+]

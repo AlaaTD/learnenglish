@@ -1,0 +1,963 @@
+# -*- coding: utf-8 -*-
+"""Data definition for Day 35: Computers and Software."""
+
+vocab_day35 = [
+    {
+        "headword": "motherboard",
+        "pronunciation": "/ˈmʌðərbɔːrd/",
+        "partOfSpeech": "noun",
+        "definition": "The main printed circuit board in a computer holding the CPU and memory sockets.",
+        "example": "The technician replaced the fried motherboard to revive the workstation.",
+        "translation": "اللوحة الأم (المذربورد)",
+        "exampleArabic": "استبدل الفني اللوحة الأم التالفة لإعادة محطة العمل إلى العمل.",
+        "relatedForms": ["motherboards"],
+        "collocations": ["computer motherboard", "replace a motherboard"],
+        "synonyms": ["mainboard", "system board"],
+        "antonyms": [],
+        "tags": ["hardware", "components"]
+    },
+    {
+        "headword": "processor",
+        "pronunciation": "/ˈprɑːsesər/",
+        "partOfSpeech": "noun",
+        "definition": "An integrated electronic circuit that performs mathematical calculations and instructions.",
+        "example": "A high-speed multi-core processor enables smooth video rendering.",
+        "translation": "المعالج (شريحة المعالجة)",
+        "exampleArabic": "يتيح المعالج عالي السرعة متعدد النواة إمكانية تصيير الفيديو بسلاسة.",
+        "relatedForms": ["processors"],
+        "collocations": ["fast processor", "multi-core processor", "processor speed"],
+        "synonyms": ["CPU", "microprocessor"],
+        "antonyms": [],
+        "tags": ["hardware", "components"]
+    },
+    {
+        "headword": "central processing unit",
+        "pronunciation": "/ˈsentrəl ˈprɑːsesɪŋ ˈjuːnɪt/",
+        "partOfSpeech": "noun",
+        "definition": "The primary component of a computer that executes program instructions and processes data.",
+        "example": "The central processing unit reached ninety degrees Celsius under heavy benchmark loads.",
+        "translation": "وحدة المعالجة المركزية",
+        "exampleArabic": "وصلت وحدة المعالجة المركزية إلى تسعين درجة مئوية تحت أحمال اختبار الأداء العالية.",
+        "relatedForms": ["CPU"],
+        "collocations": ["overheat the central processing unit", "modern central processing unit"],
+        "synonyms": ["CPU", "processor"],
+        "antonyms": [],
+        "tags": ["hardware", "components"]
+    },
+    {
+        "headword": "graphics card",
+        "pronunciation": "/ˈɡræfɪks kɑːrd/",
+        "partOfSpeech": "noun",
+        "definition": "A dedicated expansion card that produces output images on a video display device.",
+        "example": "3D animators and game developers require a powerful dedicated graphics card.",
+        "translation": "بطاقة الرسوميات / كارت الشاشة",
+        "exampleArabic": "يحتاج مخرجو الرسوم المتحركة ثلاثية الأبعاد ومطورو الألعاب إلى كارت شاشة مخصص وقوي.",
+        "relatedForms": ["graphics cards", "GPU"],
+        "collocations": ["dedicated graphics card", "install a graphics card"],
+        "synonyms": ["video card", "GPU"],
+        "antonyms": [],
+        "tags": ["hardware", "components"]
+    },
+    {
+        "headword": "hard drive",
+        "pronunciation": "/hɑːrd draɪv/",
+        "partOfSpeech": "noun",
+        "definition": "A high-capacity mechanical data storage device using rotating magnetic disks.",
+        "example": "We archived ten years of financial databases onto an external mechanical hard drive.",
+        "translation": "القرص الصلب الميكانيكي (هارد ديسك)",
+        "exampleArabic": "أرشفنا عشر سنوات من قواعد البيانات المالية على قرص صلب ميكانيكي خارجي.",
+        "relatedForms": ["hard drives", "HDD"],
+        "collocations": ["external hard drive", "spinning hard drive"],
+        "synonyms": ["hard disk", "HDD"],
+        "antonyms": ["SSD"],
+        "tags": ["hardware", "storage"]
+    },
+    {
+        "headword": "solid-state drive",
+        "pronunciation": "/ˈsɑːlɪd steɪt draɪv/",
+        "partOfSpeech": "noun",
+        "definition": "A fast data storage device using flash memory chips rather than magnetic spinning disks.",
+        "example": "Booting from an NVMe solid-state drive takes less than ten seconds.",
+        "translation": "قرص الحالة الصلبة (SSD السريع)",
+        "exampleArabic": "يستغرق الإقلاع من قرص الحالة الصلبة بتقنية NVMe أقل من عشر ثوانٍ.",
+        "relatedForms": ["solid-state drives", "SSD"],
+        "collocations": ["fast solid-state drive", "install a solid-state drive"],
+        "synonyms": ["SSD", "flash drive storage"],
+        "antonyms": ["hard drive"],
+        "tags": ["hardware", "storage"]
+    },
+    {
+        "headword": "ram",
+        "pronunciation": "/ræm/",
+        "partOfSpeech": "noun",
+        "definition": "Random-Access Memory; volatile working memory that stores data actively in use.",
+        "example": "Upgrading the laptop from 8GB to 32GB of RAM solved the memory shortage.",
+        "translation": "ذاكرة الوصول العشوائي (الرام)",
+        "exampleArabic": "أدت ترقية الحاسوب المحمول من 8 إلى 32 غيغابايت من الرام إلى حل مشكلة نقص الذاكرة.",
+        "relatedForms": ["RAM"],
+        "collocations": ["amount of RAM", "DDR5 RAM", "upgrade the RAM"],
+        "synonyms": ["system memory", "random-access memory"],
+        "antonyms": ["ROM"],
+        "tags": ["hardware", "memory"]
+    },
+    {
+        "headword": "memory module",
+        "pronunciation": "/ˈmeməri ˈmɑːdʒuːl/",
+        "partOfSpeech": "noun",
+        "definition": "A printed circuit board on which memory chips are mounted and installed into memory slots.",
+        "example": "Make sure you insert the memory module firmly into the motherboard until it clicks.",
+        "translation": "شريحة الذاكرة / وحدة الميموري (رام ستيك)",
+        "exampleArabic": "تأكد من إدخال شريحة الذاكرة بإحكام في اللوحة الأم حتى تستقر بصوت نقرة.",
+        "relatedForms": ["memory modules"],
+        "collocations": ["dual memory modules", "install a memory module"],
+        "synonyms": ["RAM stick", "DIMM"],
+        "antonyms": [],
+        "tags": ["hardware", "components"]
+    },
+    {
+        "headword": "power supply",
+        "pronunciation": "/ˈpaʊər səˈplaɪ/",
+        "partOfSpeech": "noun",
+        "definition": "A hardware component that supplies electricity to all parts of a computer system.",
+        "example": "The gaming rig needed an 850-watt power supply to support two modern graphics cards.",
+        "translation": "مزود الطاقة (الباور سبلاي)",
+        "exampleArabic": "احتاج جهاز الألعاب إلى مزود طاقة بقدرة 850 واط لدعم كرتي شاشة حديثين.",
+        "relatedForms": ["power supplies", "PSU"],
+        "collocations": ["modular power supply", "reliable power supply"],
+        "synonyms": ["PSU", "power unit"],
+        "antonyms": [],
+        "tags": ["hardware", "components"]
+    },
+    {
+        "headword": "cooling fan",
+        "pronunciation": "/ˈkuːlɪŋ fæn/",
+        "partOfSpeech": "noun",
+        "definition": "A mechanical fan inside a computer case used for cooling internal components.",
+        "example": "The cooling fan spins faster whenever the system runs compute-heavy simulations.",
+        "translation": "مروحة التبريد",
+        "exampleArabic": "تدور مروحة التبريد بشكل أسرع كلما أجرى النظام عمليات محاكاة ثقيلة حسابياً.",
+        "relatedForms": ["cooling fans"],
+        "collocations": ["case cooling fan", "silent cooling fan"],
+        "synonyms": ["chassis fan"],
+        "antonyms": [],
+        "tags": ["hardware", "cooling"]
+    },
+    {
+        "headword": "peripheral",
+        "pronunciation": "/pəˈrɪfərəl/",
+        "partOfSpeech": "noun",
+        "definition": "Any auxiliary external device connected to a computer, such as a printer or scanner.",
+        "example": "All input peripherals like the barcode reader communicate via standard USB.",
+        "translation": "جهاز طرفي / ملحق خارجي للكمبيوتر",
+        "exampleArabic": "تتواصل جميع الأجهزة الطرفية للإدخال مثل قارئ الباركود عبر منفذ USB القياسي.",
+        "relatedForms": ["peripherals"],
+        "collocations": ["computer peripheral", "external peripheral", "wireless peripheral"],
+        "synonyms": ["accessory", "auxiliary device"],
+        "antonyms": [],
+        "tags": ["hardware", "devices"]
+    },
+    {
+        "headword": "external monitor",
+        "pronunciation": "/ɪkˈstɜːrnl ˈmɑːnɪtər/",
+        "partOfSpeech": "noun",
+        "definition": "A separate display screen plugged into a laptop or computer to provide extra screen space.",
+        "example": "Connecting an external 4K monitor drastically boosted my programming efficiency.",
+        "translation": "شاشة خارجية إضافية",
+        "exampleArabic": "أدى توصيل شاشة خارجية بدقة 4K إلى رفع كفاءتي البرمجية بشكل كبير.",
+        "relatedForms": ["external monitors"],
+        "collocations": ["connect an external monitor", "dual external monitors"],
+        "synonyms": ["secondary display"],
+        "antonyms": ["built-in screen"],
+        "tags": ["hardware", "displays"]
+    },
+    {
+        "headword": "webcam",
+        "pronunciation": "/ˈwebkæm/",
+        "partOfSpeech": "noun",
+        "definition": "A video camera that feeds or streams an image or video in real time through a computer.",
+        "example": "Please turn on your webcam during the video interview so the committee can see you.",
+        "translation": "كاميرا الويب (كاميرا الحاسوب)",
+        "exampleArabic": "يرجى تشغيل كاميرا الويب الخاصة بك أثناء المقابلة بالفيديو لتتمكن اللجنة من رؤيتك.",
+        "relatedForms": ["webcams"],
+        "collocations": ["HD webcam", "built-in webcam", "enable webcam"],
+        "synonyms": ["video camera"],
+        "antonyms": [],
+        "tags": ["hardware", "video"]
+    },
+    {
+        "headword": "microphone",
+        "pronunciation": "/ˈmaɪkrəfoʊn/",
+        "partOfSpeech": "noun",
+        "definition": "An instrument for converting sound waves into electrical energy variations which may then be amplified.",
+        "example": "He bought a noise-canceling USB microphone for professional podcast recordings.",
+        "translation": "الميكروفون (اللاقط الصوتي)",
+        "exampleArabic": "اشترى ميكروفون USB عازلاً للضوضاء لتسجيلات البودكاست الاحترافية.",
+        "relatedForms": ["microphones", "mic"],
+        "collocations": ["mute the microphone", "unmute microphone", "USB microphone"],
+        "synonyms": ["mic", "audio input"],
+        "antonyms": ["speaker"],
+        "tags": ["hardware", "audio"]
+    },
+    {
+        "headword": "usb port",
+        "pronunciation": "/ˌjuː es ˈbiː pɔːrt/",
+        "partOfSpeech": "noun",
+        "definition": "A standard connection port enabling computers to connect to various external peripherals.",
+        "example": "Plug the thumb drive into the USB port on the left side of your laptop chassis.",
+        "translation": "منفذ يو إس بي (USB)",
+        "exampleArabic": "أدخل محرك الأقراص في منفذ USB الموجود على الجانب الأيسر من هيكل الحاسوب المحمول.",
+        "relatedForms": ["USB ports"],
+        "collocations": ["high-speed USB port", "USB-C port"],
+        "synonyms": ["USB connector", "bus port"],
+        "antonyms": [],
+        "tags": ["hardware", "connectivity"]
+    },
+    {
+        "headword": "hdmi cable",
+        "pronunciation": "/ˌeɪtʃ diː em ˈaɪ ˈkeɪbəl/",
+        "partOfSpeech": "noun",
+        "definition": "A cable capable of transmitting high-definition video and audio signals between devices.",
+        "example": "Connect your laptop to the projector using this high-speed HDMI cable.",
+        "translation": "كابل إتش دي إم آي (HDMI)",
+        "exampleArabic": "قم بتوصيل الحاسوب المحمول بجهاز العرض باستخدام كابل HDMI عالي السرعة هذا.",
+        "relatedForms": ["HDMI cables"],
+        "collocations": ["plug in the HDMI cable", "gold-plated HDMI cable"],
+        "synonyms": ["video cable"],
+        "antonyms": [],
+        "tags": ["hardware", "cables"]
+    },
+    {
+        "headword": "adapter",
+        "pronunciation": "/əˈdæptər/",
+        "partOfSpeech": "noun",
+        "definition": "A device used to connect pieces of equipment that cannot be connected directly.",
+        "example": "I need a USB-C to Ethernet adapter because my ultrabook lacks a wired network port.",
+        "translation": "محوّل / موائم التوصيل (أدابتر)",
+        "exampleArabic": "أحتاج إلى محول من USB-C إلى إيثرنت لأن حاسوبي فائق النحافة يفتقر إلى منفذ شبكة سلكي.",
+        "relatedForms": ["adapters"],
+        "collocations": ["power adapter", "display adapter", "network adapter"],
+        "synonyms": ["converter", "connector"],
+        "antonyms": [],
+        "tags": ["hardware", "connectivity"]
+    },
+    {
+        "headword": "dongle",
+        "pronunciation": "/ˈdɑːŋɡəl/",
+        "partOfSpeech": "noun",
+        "definition": "A small device able to be connected to and used with a computer, especially to allow wireless access.",
+        "example": "Keep the small wireless mouse dongle safely plugged into your secondary port.",
+        "translation": "دونجل (قطعة استقبال لاسلكية صغيرة)",
+        "exampleArabic": "احتفظ بقطعة الدونجل الصغيرة الخاصة بالفأرة اللاسلكية موصولة بأمان في منفذك الثانوي.",
+        "relatedForms": ["dongles"],
+        "collocations": ["wireless dongle", "Bluetooth dongle", "USB dongle"],
+        "synonyms": ["wireless receiver"],
+        "antonyms": [],
+        "tags": ["hardware", "peripherals"]
+    },
+    {
+        "headword": "docking station",
+        "pronunciation": "/ˈdɑːkɪŋ ˈsteɪʃən/",
+        "partOfSpeech": "noun",
+        "definition": "A desktop base for a laptop allowing connection to multiple monitors, power, and peripherals via a single wire.",
+        "example": "Placing the laptop on the docking station instantly connects two displays and the keyboard.",
+        "translation": "قاعدة التوصيل المكتبية (الدوجنغ ستيشن)",
+        "exampleArabic": "يؤدي وضع الحاسوب المحمول على قاعدة التوصيل إلى ربط شاشتين ولوحة المفاتيح على الفور.",
+        "relatedForms": ["docking stations"],
+        "collocations": ["Thunderbolt docking station", "laptop docking station"],
+        "synonyms": ["hub", "port replicator"],
+        "antonyms": [],
+        "tags": ["hardware", "workspace"]
+    },
+    {
+        "headword": "touchpad",
+        "pronunciation": "/ˈtʌtʃpæd/",
+        "partOfSpeech": "noun",
+        "definition": "A touch-sensitive pad on a laptop that serves as a mouse pointing device.",
+        "example": "You can perform multi-finger gestures on the glass touchpad to switch desktop spaces.",
+        "translation": "لوحة اللمس المدمجة في اللابتوب",
+        "exampleArabic": "يمكنك إجراء إيماءات متعددة الأصابع على لوحة اللمس الزجاجية للتنقل بين أسطح المكتب.",
+        "relatedForms": ["touchpads"],
+        "collocations": ["laptop touchpad", "touchpad gestures", "disable touchpad"],
+        "synonyms": ["trackpad"],
+        "antonyms": ["external mouse"],
+        "tags": ["hardware", "input"]
+    },
+    {
+        "headword": "operating system",
+        "pronunciation": "/ˈɑːpəreɪtɪŋ ˈsɪstəm/",
+        "partOfSpeech": "noun",
+        "definition": "The low-level software that supports a computer's basic functions, such as scheduling tasks and controlling peripherals.",
+        "example": "Linux is the most popular server operating system worldwide for cloud deployments.",
+        "translation": "نظام التشغيل (مثل ويندوز أو لينكس أو ماك)",
+        "exampleArabic": "لينكس هو نظام تشغيل الخوادم الأكثر شعبية عالمياً لعمليات النشر السحابية.",
+        "relatedForms": ["operating systems", "OS"],
+        "collocations": ["modern operating system", "install an operating system"],
+        "synonyms": ["OS", "system software"],
+        "antonyms": [],
+        "tags": ["software", "systems"]
+    },
+    {
+        "headword": "firmware",
+        "pronunciation": "/ˈfɜːrmwer/",
+        "partOfSpeech": "noun",
+        "definition": "Permanent or semi-permanent software programmed directly into read-only hardware memory.",
+        "example": "Never interrupt power while flashing the motherboard UEFI firmware.",
+        "translation": "البرمجيات الثابتة المدمجة بالعتاد (الفيرموير)",
+        "exampleArabic": "لا تقطع الطاقة أبداً أثناء تثبيت البرمجيات الثابتة للوحة الأم (UEFI).",
+        "relatedForms": [],
+        "collocations": ["update firmware", "firmware version", "flashing firmware"],
+        "synonyms": ["microcode", "embedded software"],
+        "antonyms": [],
+        "tags": ["software", "hardware"]
+    },
+    {
+        "headword": "device driver",
+        "pronunciation": "/dɪˈvaɪs ˈdraɪvər/",
+        "partOfSpeech": "noun",
+        "definition": "A specialized software program that controls a particular hardware device attached to a computer.",
+        "example": "You must install the latest graphics card device driver for optimal gaming stability.",
+        "translation": "برنامج تعريف الجهاز (التعريفات)",
+        "exampleArabic": "يجب عليك تثبيت أحدث برنامج تعريف لكارت الشاشة للحصول على استقرار مثالي في الألعاب.",
+        "relatedForms": ["device drivers"],
+        "collocations": ["graphics device driver", "install a device driver", "outdated device driver"],
+        "synonyms": ["driver"],
+        "antonyms": [],
+        "tags": ["software", "systems"]
+    },
+    {
+        "headword": "file system",
+        "pronunciation": "/faɪl ˈsɪstəm/",
+        "partOfSpeech": "noun",
+        "definition": "The method and data structure that an operating system uses to control how data is stored and retrieved.",
+        "example": "The ext4 file system provides reliable journaling against unexpected power cuts.",
+        "translation": "نظام الملفات (طريقة تنظيم وتخزين الملفات)",
+        "exampleArabic": "يوفر نظام الملفات ext4 تسجيلاً موثوقاً للسجلات ضد انقطاع التيار الكهربائي غير المتوقع.",
+        "relatedForms": ["file systems"],
+        "collocations": ["corrupted file system", "format file system"],
+        "synonyms": ["file organization"],
+        "antonyms": [],
+        "tags": ["systems", "storage"]
+    },
+    {
+        "headword": "partition",
+        "pronunciation": "/pɑːrˈtɪʃən/",
+        "partOfSpeech": "noun",
+        "definition": "A logical division of a computer storage disk that acts as if it were a separate drive.",
+        "example": "He created a separate 100GB partition on his primary drive to dual-boot Linux.",
+        "translation": "قسم من القرص الصلب (بارتشن)",
+        "exampleArabic": "أنشأ قسماً منفصلاً بحجم 100 غيغابايت على قرصه الأساسي للإقلاع المزدوج مع لينكس.",
+        "relatedForms": ["partitions", "partitioned"],
+        "collocations": ["disk partition", "create a partition", "system partition"],
+        "synonyms": ["disk volume", "slice"],
+        "antonyms": [],
+        "tags": ["storage", "systems"]
+    },
+    {
+        "headword": "kernel",
+        "pronunciation": "/ˈkɜːrnl/",
+        "partOfSpeech": "noun",
+        "definition": "The essential core of a computer operating system that manages hardware resources directly.",
+        "example": "A kernel panic forced the server to halt operations and reboot automatically.",
+        "translation": "نواة نظام التشغيل (الكرنل)",
+        "exampleArabic": "أدى ذعر النواة إلى إجبار الخادم على إيقاف العمليات وإعادة التشغيل تلقائياً.",
+        "relatedForms": ["kernels"],
+        "collocations": ["operating system kernel", "Linux kernel", "kernel crash"],
+        "synonyms": ["system core"],
+        "antonyms": ["user space"],
+        "tags": ["systems", "software"]
+    },
+    {
+        "headword": "bootloader",
+        "pronunciation": "/ˈbuːtloʊdər/",
+        "partOfSpeech": "noun",
+        "definition": "A small program that loads an operating system into memory when a computer boots up.",
+        "example": "The technician reinstalled the GRUB bootloader after the partition table got scrambled.",
+        "translation": "برنامج الإقلاع المبدئي (البوت لودر)",
+        "exampleArabic": "أعاد الفني تثبيت برنامج الإقلاع GRUB بعد أن اختلط جدول الأقسام.",
+        "relatedForms": ["bootloaders"],
+        "collocations": ["system bootloader", "corrupted bootloader"],
+        "synonyms": ["startup loader"],
+        "antonyms": [],
+        "tags": ["systems", "boot"]
+    },
+    {
+        "headword": "virtual machine",
+        "pronunciation": "/ˈvɜːrtʃuəl məˈʃiːn/",
+        "partOfSpeech": "noun",
+        "definition": "An emulation of a computer system created inside software running on physical hardware.",
+        "example": "Developers spin up a new virtual machine to test code safely in an isolated environment.",
+        "translation": "آلة افتراضية / جهاز وهمي (VM)",
+        "exampleArabic": "يقوم المطورون بتشغيل آلة افتراضية جديدة لاختبار الكود بأمان في بيئة معزولة.",
+        "relatedForms": ["virtual machines", "VM"],
+        "collocations": ["run a virtual machine", "spin up a virtual machine"],
+        "synonyms": ["VM", "emulated guest"],
+        "antonyms": ["bare metal"],
+        "tags": ["software", "virtualization"]
+    },
+    {
+        "headword": "emulator",
+        "pronunciation": "/ˈemjuleɪtər/",
+        "partOfSpeech": "noun",
+        "definition": "Hardware or software that permits one computer system to behave like another system.",
+        "example": "The mobile app engineer tested the application inside an Android emulator on macOS.",
+        "translation": "المحاكي البرمجي (إيموليتر)",
+        "exampleArabic": "اختبر مهندس تطبيقات الهاتف المحمول التطبيق داخل محاكي أندرويد على نظام ماك.",
+        "relatedForms": ["emulate", "emulators"],
+        "collocations": ["run an emulator", "mobile emulator"],
+        "synonyms": ["simulator"],
+        "antonyms": [],
+        "tags": ["software", "development"]
+    },
+    {
+        "headword": "system update",
+        "pronunciation": "/ˈsɪstəm ˈʌpdeɪt/",
+        "partOfSpeech": "noun",
+        "definition": "A patch or release that fixes bugs, closes vulnerabilities, and adds features to an operating system.",
+        "example": "Restart your computer tonight so the mandatory security system update can apply.",
+        "translation": "تحديث النظام الشامل",
+        "exampleArabic": "أعد تشغيل حاسوبك الليلة حتى يتمكن تحديث النظام الأمني الإلزامي من التطبيق.",
+        "relatedForms": ["system updates"],
+        "collocations": ["install a system update", "pending system update"],
+        "synonyms": ["OS update", "software patch"],
+        "antonyms": [],
+        "tags": ["maintenance", "systems"]
+    },
+    {
+        "headword": "application software",
+        "pronunciation": "/ˌæplɪˈkeɪʃən ˈsɔːftwer/",
+        "partOfSpeech": "noun",
+        "definition": "Computing programs designed to perform specific user tasks, distinct from the operating system itself.",
+        "example": "Photoshop and Excel are prime examples of productivity application software.",
+        "translation": "البرمجيات التطبيقية (برامج المستخدم)",
+        "exampleArabic": "يعد فوتوشوب وإكسل من الأمثلة البارزة على البرمجيات التطبيقية الإنتاجية.",
+        "relatedForms": ["apps"],
+        "collocations": ["install application software", "enterprise application software"],
+        "synonyms": ["app", "end-user program"],
+        "antonyms": ["system software"],
+        "tags": ["software"]
+    },
+    {
+        "headword": "utility program",
+        "pronunciation": "/juːˈtɪləti ˈproʊɡræm/",
+        "partOfSpeech": "noun",
+        "definition": "System software designed to help analyze, configure, optimize, or maintain a computer.",
+        "example": "Disk Cleanup is a handy utility program that deletes temporary caches automatically.",
+        "translation": "برنامج صيانة وأدوات مساعدة (أداة خدمية)",
+        "exampleArabic": "تنظيف القرص هو أداة خدمية مفيدة تحذف ملفات التخزين المؤقت تلقائياً.",
+        "relatedForms": ["utility programs"],
+        "collocations": ["system utility program", "diagnostic utility program"],
+        "synonyms": ["utility tool", "maintenance app"],
+        "antonyms": [],
+        "tags": ["software", "tools"]
+    },
+    {
+        "headword": "spreadsheet",
+        "pronunciation": "/ˈspredʃiːt/",
+        "partOfSpeech": "noun",
+        "definition": "An interactive computer application for organization, analysis, and storage of data in tabular cells.",
+        "example": "The accountant entered the quarterly income data into an organized financial spreadsheet.",
+        "translation": "جدول بيانات إلكتروني (إكسل أو شبيهه)",
+        "exampleArabic": "أدخل المحاسب بيانات الدخل الفصلية في جدول بيانات مالي منظم.",
+        "relatedForms": ["spreadsheets"],
+        "collocations": ["create a spreadsheet", "spreadsheet formula", "open a spreadsheet"],
+        "synonyms": ["workbook", "worksheet"],
+        "antonyms": [],
+        "tags": ["software", "productivity"]
+    },
+    {
+        "headword": "word processor",
+        "pronunciation": "/wɜːrd ˈprɑːsesər/",
+        "partOfSpeech": "noun",
+        "definition": "A program used for creating, formatting, editing, and printing text documents.",
+        "example": "I drafted my entire master thesis using an open-source word processor.",
+        "translation": "معالج الكلمات والنصوص (مثل مايكروسوفت وورد)",
+        "exampleArabic": "صغت رسالة الماجستير بأكملها باستخدام برنامج معالج كلمات مفتوح المصدر.",
+        "relatedForms": ["word processing"],
+        "collocations": ["modern word processor", "use a word processor"],
+        "synonyms": ["text editor"],
+        "antonyms": [],
+        "tags": ["software", "writing"]
+    },
+    {
+        "headword": "antivirus program",
+        "pronunciation": "/ˌæntiˈvaɪrəs ˈproʊɡræm/",
+        "partOfSpeech": "noun",
+        "definition": "Software designed to detect, intercept, and destroy malware, trojans, and viruses.",
+        "example": "The company mandates an active antivirus program on every employee computer.",
+        "translation": "برنامج مكافحة الفيروسات",
+        "exampleArabic": "تفرض الشركة برنامج مكافحة فيروسات نشطاً على جهاز كل موظف.",
+        "relatedForms": ["antivirus"],
+        "collocations": ["run an antivirus program", "update antivirus program"],
+        "synonyms": ["malware scanner"],
+        "antonyms": ["malware"],
+        "tags": ["security", "software"]
+    },
+    {
+        "headword": "firewall utility",
+        "pronunciation": "/ˈfaɪərwɔːl juːˈtɪləti/",
+        "partOfSpeech": "noun",
+        "definition": "A security software tool that monitors and controls incoming and outgoing network traffic.",
+        "example": "The built-in firewall utility blocked suspicious inbound connection attempts from strange IPs.",
+        "translation": "أداة الجدار الناري البرمجية لحماية الشبكة",
+        "exampleArabic": "حجبت أداة الجدار الناري المدمجة محاولات اتصال واردة مشبوهة من عناوين IP مجهولة.",
+        "relatedForms": ["firewalls"],
+        "collocations": ["enable the firewall utility", "configure firewall utility"],
+        "synonyms": ["firewall software"],
+        "antonyms": [],
+        "tags": ["security", "network"]
+    },
+    {
+        "headword": "compression tool",
+        "pronunciation": "/kəmˈpreʃən tuːl/",
+        "partOfSpeech": "noun",
+        "definition": "A software utility that reduces the size of files or packages them into a zip or tar archive.",
+        "example": "Use a compression tool to zip the heavy image folder before emailing it.",
+        "translation": "أداة ضغط الملفات (مثل وينرار أو زيب)",
+        "exampleArabic": "استخدم أداة ضغط ملفات لضغط مجلد الصور الثقيل بصيغة zip قبل إرساله بالبريد.",
+        "relatedForms": ["compress"],
+        "collocations": ["file compression tool", "archive compression tool"],
+        "synonyms": ["zip utility", "archiver"],
+        "antonyms": [],
+        "tags": ["software", "tools"]
+    },
+    {
+        "headword": "media player",
+        "pronunciation": "/ˈmiːdiə ˈpleɪər/",
+        "partOfSpeech": "noun",
+        "definition": "A piece of software for playing multimedia files like music recordings and movies.",
+        "example": "VLC is a versatile media player that supports nearly every known audio and video codec.",
+        "translation": "مشغل الوسائط والفيديو والصوت",
+        "exampleArabic": "برنامج VLC هو مشغل وسائط متعدد الاستخدامات يدعم تقريباً كل ترميز صوت وفيديو معروف.",
+        "relatedForms": ["media players"],
+        "collocations": ["default media player", "open in media player"],
+        "synonyms": ["video player", "audio player"],
+        "antonyms": [],
+        "tags": ["software", "media"]
+    },
+    {
+        "headword": "browser extension",
+        "pronunciation": "/ˈbraʊzər ɪkˈstenʃən/",
+        "partOfSpeech": "noun",
+        "definition": "A small software module that customizes and adds features to a web browser.",
+        "example": "I installed a grammar-checking browser extension to catch typos while writing emails.",
+        "translation": "إضافة المتصفح (إكستنشن)",
+        "exampleArabic": "ثبت إضافة متصفح للتدقيق اللغوي لاكتشاف الأخطاء المطبعية أثناء كتابة الرسائل.",
+        "relatedForms": ["browser extensions", "add-on"],
+        "collocations": ["install a browser extension", "disable browser extension"],
+        "synonyms": ["browser add-on", "plugin"],
+        "antonyms": [],
+        "tags": ["web", "software"]
+    },
+    {
+        "headword": "installer",
+        "pronunciation": "/ɪnˈstɔːlər/",
+        "partOfSpeech": "noun",
+        "definition": "A software program that automates the installation of an application onto a computer.",
+        "example": "Download the official installer package from the verified company website.",
+        "translation": "برنامج التثبيت (ملف السيت أب أو حزمة التثبيت)",
+        "exampleArabic": "قم بتنزيل حزمة برنامج التثبيت الرسمية من موقع الشركة الموثق.",
+        "relatedForms": ["installers"],
+        "collocations": ["download installer", "run the installer", "installer package"],
+        "synonyms": ["setup program", "setup wizard"],
+        "antonyms": ["uninstaller"],
+        "tags": ["software", "installation"]
+    },
+    {
+        "headword": "execute command",
+        "pronunciation": "/ˈeksɪkjuːt kəˈmænd/",
+        "partOfSpeech": "phrase",
+        "definition": "To instruct a computer system or command line interface to carry out a specific instruction.",
+        "example": "Press Enter to execute the command and compile your source files.",
+        "translation": "ينفذ أمراً برمجياً أو نظامياً",
+        "exampleArabic": "اضغط على زر Enter لتنفيذ الأمر وتجميع ملفاتك المصدرية.",
+        "relatedForms": ["executed command", "executing command"],
+        "collocations": ["execute a terminal command", "safely execute command"],
+        "synonyms": ["run command", "issue command"],
+        "antonyms": ["cancel command"],
+        "tags": ["actions", "terminal"]
+    },
+    {
+        "headword": "install",
+        "pronunciation": "/ɪnˈstɔːl/",
+        "partOfSpeech": "verb",
+        "definition": "To set up software or hardware on a computer so it is ready for use.",
+        "example": "You need administrator rights to install developer tooling on this corporate device.",
+        "translation": "يثبت / ينصّب برنامجاً أو جهازاً",
+        "exampleArabic": "تحتاج إلى صلاحيات المسؤول لتثبيت أدوات المطورين على جهاز الشركة هذا.",
+        "relatedForms": ["installed", "installs", "installation"],
+        "collocations": ["install software", "install updates", "freshly install"],
+        "synonyms": ["set up", "load"],
+        "antonyms": ["uninstall", "remove"],
+        "tags": ["actions", "software"]
+    },
+    {
+        "headword": "uninstall",
+        "pronunciation": "/ˌʌnɪnˈstɔːl/",
+        "partOfSpeech": "verb",
+        "definition": "To remove a software program and its associated configuration files from a computer.",
+        "example": "Uninstall unused programs to free up valuable gigabytes on your main partition.",
+        "translation": "يلغي تثبيت برنامج / يزيل البرنامج",
+        "exampleArabic": "قم بإلغاء تثبيت البرامج غير المستخدمة لتفريغ غيغابايتات ثمينة على قسم القرص الرئيسي.",
+        "relatedForms": ["uninstalled", "uninstalls", "uninstallation"],
+        "collocations": ["uninstall an app", "cleanly uninstall"],
+        "synonyms": ["remove", "delete"],
+        "antonyms": ["install"],
+        "tags": ["actions", "software"]
+    },
+    {
+        "headword": "reinstall",
+        "pronunciation": "/ˌriːɪnˈstɔːl/",
+        "partOfSpeech": "verb",
+        "definition": "To install an operating system or software program again, typically to fix corruption.",
+        "example": "When the graphics driver corrupted, he had to reinstall it from scratch.",
+        "translation": "يعيد تثبيت البرنامج من جديد",
+        "exampleArabic": "عندما تلف برنامج تعريف كارت الشاشة، اضطر إلى إعادة تثبيته من الصفر.",
+        "relatedForms": ["reinstalled", "reinstalls", "reinstallation"],
+        "collocations": ["reinstall the OS", "reinstall drivers"],
+        "synonyms": ["install again"],
+        "antonyms": [],
+        "tags": ["actions", "troubleshooting"]
+    },
+    {
+        "headword": "reboot",
+        "pronunciation": "/ˌriːˈbuːt/",
+        "partOfSpeech": "verb",
+        "definition": "To restart a computer system and reload its operating system.",
+        "example": "If the workstation freezes completely, reboot the machine using the physical power switch.",
+        "translation": "يعيد التشغيل (ريبوت)",
+        "exampleArabic": "إذا تجمدت محطة العمل تماماً، أعد تشغيل الجهاز باستخدام مفتاح الطاقة الفعلي.",
+        "relatedForms": ["rebooted", "reboots", "rebooting"],
+        "collocations": ["reboot the server", "force reboot", "clean reboot"],
+        "synonyms": ["restart"],
+        "antonyms": ["shut down"],
+        "tags": ["actions", "systems"]
+    },
+    {
+        "headword": "configure",
+        "pronunciation": "/kənˈfɪɡjər/",
+        "partOfSpeech": "verb",
+        "definition": "To arrange or set up software or hardware to work in a particular way or meet requirements.",
+        "example": "The sysadmin spent two hours configuring the local proxy settings.",
+        "translation": "يضبط إعدادات / يُهيّئ",
+        "exampleArabic": "أمضى مسؤول النظام ساعتين في تهيئة وضبط إعدادات البروكسي المحلي.",
+        "relatedForms": ["configured", "configures", "configuration"],
+        "collocations": ["configure settings", "properly configure", "configure parameters"],
+        "synonyms": ["set up", "adjust", "customize"],
+        "antonyms": [],
+        "tags": ["actions", "setup"]
+    },
+    {
+        "headword": "customize",
+        "pronunciation": "/ˈkʌstəmaɪz/",
+        "partOfSpeech": "verb",
+        "definition": "To modify software, user interfaces, or features to suit individual personal preferences.",
+        "example": "Power users love to customize their keyboard shortcuts and terminal color themes.",
+        "translation": "يخصّص حسب رغبته",
+        "exampleArabic": "يحب المستخدمون المتقدمون تخصيص اختصارات لوحة المفاتيح وسمات ألوان الطرفية لديهم.",
+        "relatedForms": ["customized", "customizes", "customization"],
+        "collocations": ["customize settings", "customize the interface", "fully customize"],
+        "synonyms": ["tailor", "personalize", "modify"],
+        "antonyms": ["standardize"],
+        "tags": ["actions", "settings"]
+    },
+    {
+        "headword": "sync files",
+        "pronunciation": "/sɪŋk faɪlz/",
+        "partOfSpeech": "phrase",
+        "definition": "To coordinate the contents of files across multiple devices or clouds so they match identically.",
+        "example": "Cloud drives sync files silently in the background whenever changes are detected.",
+        "translation": "يُزامن الملفات بين الأجهزة",
+        "exampleArabic": "تزامن محركات الأقراص السحابية الملفات بصمت في الخلفية كلما تم اكتشاف تغييرات.",
+        "relatedForms": ["synced files", "syncing files"],
+        "collocations": ["sync files automatically", "sync files across devices"],
+        "synonyms": ["synchronize files"],
+        "antonyms": ["desync"],
+        "tags": ["actions", "cloud"]
+    },
+    {
+        "headword": "encrypt data",
+        "pronunciation": "/ɪnˈkrɪpt ˈdeɪtə/",
+        "partOfSpeech": "phrase",
+        "definition": "To convert information into secret code to prevent unauthorized digital access.",
+        "example": "Modern laptops encrypt data at rest using AES-256 bit hardware encryption.",
+        "translation": "يشفّر البيانات لحمايتها",
+        "exampleArabic": "تشفر أجهزة الكمبيوتر المحمولة الحديثة البيانات المخزنة باستخدام تشفير أجهزة AES-256 بت.",
+        "relatedForms": ["encrypted data", "encrypting data"],
+        "collocations": ["encrypt data at rest", "encrypt sensitive data"],
+        "synonyms": ["encode data", "cipher"],
+        "antonyms": ["decrypt data"],
+        "tags": ["security", "actions"]
+    },
+    {
+        "headword": "troubleshoot system",
+        "pronunciation": "/ˈtrʌbəlʃuːt ˈsɪstəm/",
+        "partOfSpeech": "phrase",
+        "definition": "To trace, diagnose, and rectify faults in a mechanical or electronic computer system.",
+        "example": "The IT helpdesk engineer used diagnostic logs to troubleshoot system crashes.",
+        "translation": "يشخّص ويصلح أعطال النظام",
+        "exampleArabic": "استخدم مهندس مكتب المساعدة لتكنولوجيا المعلومات سجلات التشخيص لاستكشاف أعطال النظام وحلها.",
+        "relatedForms": ["troubleshot system", "troubleshooting system"],
+        "collocations": ["troubleshoot system issues", "effectively troubleshoot system"],
+        "synonyms": ["diagnose problems", "debug system"],
+        "antonyms": [],
+        "tags": ["actions", "maintenance"]
+    }
+]
+
+grammar_day35 = [
+    {
+        "title": "Zero and First Conditional",
+        "explanation": "Conditionals connect a condition (if/when) to a result. The Zero Conditional describes universal facts, computer rules, or scientific truths: 'If + Present Simple, Present Simple' ('If you press Enter, the system executes the command'). The First Conditional describes real or likely future situations: 'If + Present Simple, will + base verb' ('If you install that browser extension, your workflow will become faster').",
+        "explanationArabic": "تربط الجمل الشرطية بين شرط (if/when) والنتيجة المترتبة عليه. تصف الحالة الشرطية الصفرية (Zero Conditional) الحقائق العامة أو قواعد الكمبيوتر الثابتة: 'If + مضارع بسيط, مضارع بسيط' ('إذا ضغطت Enter، ينفذ النظام الأمر'). وتصف الحالة الشرطية الأولى (First Conditional) مواقف واقعية أو مرجحة في المستقبل: 'If + مضارع بسيط, will + الفعل الأساسي' ('إذا ثبتّ إضافة المتصفح تلك، فسوف يصبح سير عملك أسرع').",
+        "rules": [
+            "Zero Conditional (General truth / Computer behavior): If / When + Present Simple, Present Simple.",
+            "First Conditional (Likely future outcome): If + Present Simple, will / can / may + base verb.",
+            "You can invert clause order without changing meaning; omit comma when 'if' is in the middle.",
+            "Never use 'will' inside the 'if' clause itself."
+        ],
+        "rulesArabic": [
+            "الحالة الصفرية (حقائق عامة / سلوك الكمبيوتر): If / When + مضارع بسيط, مضارع بسيط.",
+            "الحالة الأولى (نتيجة مستقبلية محتملة): If + مضارع بسيط, will / can / may + الفعل الأساسي.",
+            "يمكن عكس ترتيب الجملتين دون تغيير المعنى، ولا نضع فاصلة إذا جاءت 'if' في المنتصف.",
+            "لا تستخدم 'will' داخل جملة 'if' الشرطية إطلاقاً."
+        ],
+        "structures": [
+            {
+                "pattern": "If + Subject + V1 (present), Subject + V1 (present)",
+                "explanation": "Zero Conditional: expresses an automatic, constant rule or system reaction.",
+                "explanationArabic": "الحالة الصفرية: تعبر عن رد فعل تلقائي أو قاعدة نظامية ثابتة."
+            },
+            {
+                "pattern": "If + Subject + V1 (present), Subject + will + V1 (base)",
+                "explanation": "First Conditional: expresses a probable future result based on a condition.",
+                "explanationArabic": "الحالة الأولى: تعبر عن نتيجة مستقبلية محتملة مبنية على شرط."
+            },
+            {
+                "pattern": "Subject + will + V1 (base) + if + Subject + V1 (present)",
+                "explanation": "Alternative First Conditional order without a separating comma.",
+                "explanationArabic": "ترتيب بديل للحالة الأولى بدون فاصلة."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "If the cooling fan fails, the central processing unit overheats quickly.",
+                "translation": "إذا تعطلت مروحة التبريد، تسخن وحدة المعالجة المركزية بسرعة.",
+                "usesVocabulary": ["cooling fan", "central processing unit"]
+            },
+            {
+                "sentence": "If you connect the external monitor via the HDMI cable, the display will automatically mirror your screen.",
+                "translation": "إذا قمت بتوصيل الشاشة الخارجية عبر كابل HDMI، فسوف تعرض الشاشة سطح مكتبك تلقائياً.",
+                "usesVocabulary": ["external monitor", "hdmi cable"]
+            },
+            {
+                "sentence": "When users sync files to the cloud, the application software encrypts data instantly.",
+                "translation": "عندما يزامن المستخدمون الملفات مع السحابة، تشفر البرمجيات التطبيقية البيانات فوراً.",
+                "usesVocabulary": ["sync files", "application software", "encrypt data"]
+            },
+            {
+                "sentence": "If you install this utility program, it will optimize your solid-state drive performance.",
+                "translation": "إذا قمت بتثبيت هذا البرنامج الخدمي، فسوف يحسن أداء قرص الحالة الصلبة لديك.",
+                "usesVocabulary": ["utility program", "solid-state drive", "install"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "If you will reboot the computer, the operating system will apply the update.",
+                "right": "If you reboot the computer, the operating system will apply the update.",
+                "note": "Never put 'will' inside the 'if' condition clause. Use Present Simple after 'if'.",
+                "noteArabic": "لا تضع 'will' داخل جملة الشرط بعد 'if' مطلقاً؛ استخدم المضارع البسيط بعد 'if'."
+            },
+            {
+                "wrong": "If the motherboard break, the computer does not turn on.",
+                "right": "If the motherboard breaks, the computer does not turn on.",
+                "note": "Remember third-person singular 's' in Present Simple ('motherboard breaks').",
+                "noteArabic": "تذكر إضافة 's' المفرد الغائب في زمن المضارع البسيط ('breaks')."
+            }
+        ]
+    }
+]
+
+convs_day35 = [
+    {
+        "title": "Upgrading Workstation Hardware",
+        "titleArabic": "ترقية عتاد محطة العمل",
+        "setting": "IT department hardware workbench",
+        "settingArabic": "منضدة صيانة العتاد في قسم تكنولوجيا المعلومات",
+        "roles": ["Hardware Tech", "Junior Sysadmin"],
+        "vocabularyUsed": ["motherboard", "processor", "central processing unit", "graphics card", "hard drive", "solid-state drive", "ram", "memory module", "power supply", "cooling fan"],
+        "lines": [
+            {
+                "speaker": "Hardware Tech",
+                "text": "Let's inspect this workstation. The user reported that the cooling fan is making excessive noise.",
+                "translation": "دعنا نفحص محطة العمل هذه. أبلغ المستخدم أن مروحة التبريد تصدر ضوضاء مفرطة."
+            },
+            {
+                "speaker": "Junior Sysadmin",
+                "text": "If the central processing unit overheats, the system throttles speed to avoid permanent damage.",
+                "translation": "إذا ارتفعت درجة حرارة وحدة المعالجة المركزية، يخفض النظام السرعة لتجنب التلف الدائم."
+            },
+            {
+                "speaker": "Hardware Tech",
+                "text": "We should also swap out this old mechanical hard drive for an ultra-fast solid-state drive.",
+                "translation": "يجب علينا أيضاً استبدال هذا القرص الصلب الميكانيكي القديم بقرص حالة صلبة فائق السرعة."
+            },
+            {
+                "speaker": "Junior Sysadmin",
+                "text": "Will the existing motherboard support the newer generation processor?",
+                "translation": "هل ستدعم اللوحة الأم الحالية معالج الجيل الأحدث؟"
+            },
+            {
+                "speaker": "Hardware Tech",
+                "text": "Yes, but we need to insert another memory module so the machine has 32GB of RAM.",
+                "translation": "نعم، لكننا نحتاج إلى إدخال شريحة ذاكرة أخرى حتى يحتوي الجهاز على 32 غيغابايت من الرام."
+            },
+            {
+                "speaker": "Junior Sysadmin",
+                "text": "And will our 500-watt power supply handle that beefy new graphics card?",
+                "translation": "وهل سيتعامل مزود الطاقة بقدرة 500 واط مع كارت الشاشة الجديد القوي هذا؟"
+            },
+            {
+                "speaker": "Hardware Tech",
+                "text": "If we install that powerful graphics card, we will definitely upgrade the power supply to 750 watts.",
+                "translation": "إذا قمنا بتثبيت كارت الشاشة القوي هذا، فسنقوم بالتأكيد بترقية مزود الطاقة إلى 750 واط."
+            },
+            {
+                "speaker": "Junior Sysadmin",
+                "text": "Understood. Once we finish assembly, this system will run intensive graphic tasks effortlessly.",
+                "translation": "مفهوم. بمجرد الانتهاء من التجميع، سيقوم هذا النظام بتشغيل المهام الرسومية المكثفة دون عناء."
+            }
+        ]
+    },
+    {
+        "title": "Desk Setup and Peripherals",
+        "titleArabic": "إعداد المكتب والأجهزة الطرفية",
+        "setting": "Modern open-plan office desk",
+        "settingArabic": "مكتب في مساحة عمل مفتوحة وحديثة",
+        "roles": ["Office Tech", "New Developer"],
+        "vocabularyUsed": ["peripheral", "external monitor", "webcam", "microphone", "usb port", "hdmi cable", "adapter", "dongle", "docking station", "touchpad"],
+        "lines": [
+            {
+                "speaker": "Office Tech",
+                "text": "Here is your new desktop workspace. You can plug every peripheral into this docking station.",
+                "translation": "ها هي مساحة عمل مكتبك الجديدة. يمكنك توصيل كل جهاز طرفي بقاعدة التوصيل المكتبية هذه."
+            },
+            {
+                "speaker": "New Developer",
+                "text": "That is convenient! Does it connect to the large external monitor via an HDMI cable?",
+                "translation": "هذا مريح جداً! هل تتصل بالشاشة الخارجية الكبيرة عبر كابل HDMI؟"
+            },
+            {
+                "speaker": "Office Tech",
+                "text": "Yes, and if you need an extra USB port, there are three available on the rear hub.",
+                "translation": "نعم، وإذا كنت بحاجة إلى منفذ USB إضافي، فهناك ثلاثة منافذ متوفرة في الموزع الخلفي."
+            },
+            {
+                "speaker": "New Developer",
+                "text": "Where should I connect my wireless mouse dongle?",
+                "translation": "أين يجب أن أقوم بتوصيل دونجل الفأرة اللاسلكية الخاص بي؟"
+            },
+            {
+                "speaker": "Office Tech",
+                "text": "Plug it into the front slot; if you prefer gestures, the laptop touchpad is also very responsive.",
+                "translation": "قم بتوصيله في الفتحة الأمامية؛ وإذا كنت تفضل الإيماءات، فإن لوحة اللمس في اللابتوب سريعة الاستجابة أيضاً."
+            },
+            {
+                "speaker": "New Developer",
+                "text": "What about my audio setup for remote team standups?",
+                "translation": "وماذا عن إعداد الصوت الخاص بي لاجتماعات الفريق اليومية عن بعد؟"
+            },
+            {
+                "speaker": "Office Tech",
+                "text": "This standalone webcam features an integrated noise-canceling microphone.",
+                "translation": "تتميز كاميرا الويب المستقلة هذه بميكروفون مدمج عازل للضوضاء."
+            },
+            {
+                "speaker": "New Developer",
+                "text": "Do I need any specialized display adapter for client presentations in the boardroom?",
+                "translation": "هل أحتاج إلى أي محول عرض متخصص لعروض العملاء التقديمية في قاعة الاجتماعات؟"
+            },
+            {
+                "speaker": "Office Tech",
+                "text": "Keep this compact USB-C adapter in your laptop bag, and you will connect to any conference display.",
+                "translation": "احتفظ بمحول USB-C الصغير هذا في حقيبة جهازك، وستتصل بأي شاشة مؤتمرات."
+            }
+        ]
+    },
+    {
+        "title": "Configuring Operating Systems and Security",
+        "titleArabic": "تهيئة أنظمة التشغيل والأمان",
+        "setting": "Systems administration server room",
+        "settingArabic": "غرفة خوادم إدارة الأنظمة",
+        "roles": ["Senior Sysadmin", "Cloud Engineer"],
+        "vocabularyUsed": ["operating system", "firmware", "device driver", "file system", "partition", "kernel", "bootloader", "virtual machine", "emulator", "system update", "reinstall", "reboot"],
+        "lines": [
+            {
+                "speaker": "Senior Sysadmin",
+                "text": "Did you apply the latest system update to the staging server cluster?",
+                "translation": "هل قمت بتطبيق أحدث تحديث للنظام على مجموعة خوادم بيئة الاختبار؟"
+            },
+            {
+                "speaker": "Cloud Engineer",
+                "text": "Yes, but before I reboot the machines, I want to verify that the bootloader is intact.",
+                "translation": "نعم، ولكن قبل أن أقوم بإعادة تشغيل الأجهزة، أريد التحقق من أن برنامج الإقلاع سليم."
+            },
+            {
+                "speaker": "Senior Sysadmin",
+                "text": "Good precaution. If the kernel panics during startup, the entire cluster goes offline.",
+                "translation": "احتياط جيد. إذا حدث ذعر في النواة أثناء بدء التشغيل، فستخرج المجموعة بأكملها عن الخدمة."
+            },
+            {
+                "speaker": "Cloud Engineer",
+                "text": "I checked the root partition and confirmed the journaling file system shows zero corruption.",
+                "translation": "لقد فحصت قسم القرص الجذري وتأكدت من أن نظام تسجيل الملفات يظهر انعدام أي تلف."
+            },
+            {
+                "speaker": "Senior Sysadmin",
+                "text": "Did the server vendor publish updated UEFI firmware for the motherboards?",
+                "translation": "هل نشر مورد الخوادم برمجيات ثابتة محدثة (Firmware) للوحات الأم؟"
+            },
+            {
+                "speaker": "Cloud Engineer",
+                "text": "They released a new storage device driver, which I tested safely inside a virtual machine.",
+                "translation": "لقد أصدروا برنامج تعريف جديد لأجهزة التخزين، واختبرته بأمان داخل آلة افتراضية."
+            },
+            {
+                "speaker": "Senior Sysadmin",
+                "text": "Excellent testing. Did you also verify the mobile deployment using an Android emulator?",
+                "translation": "اختبار ممتاز. هل تحققت أيضاً من نشر تطبيق الهاتف باستخدام محاكي أندرويد؟"
+            },
+            {
+                "speaker": "Cloud Engineer",
+                "text": "If the emulator passes automated integration checks, we will not need to reinstall any dependencies.",
+                "translation": "إذا اجتاز المحاكي فحوصات التكامل الآلية، فلن نحتاج إلى إعادة تثبيت أي تبعيات."
+            }
+        ]
+    }
+]
+
+paras_day35 = [
+    {
+        "title": "Essential Productivity and Maintenance Applications",
+        "titleArabic": "التطبيقات الأساسية للإنتاجية والصيانة",
+        "kind": "informative",
+        "vocabularyUsed": ["application software", "utility program", "spreadsheet", "word processor", "antivirus program", "firewall utility", "compression tool", "media player", "browser extension", "installer"],
+        "text": "Modern computer users interact with diverse application software designed to simplify complex daily workflows. Business professionals rely on a powerful word processor to generate client contracts, while financial departments crunch numbers inside a sophisticated spreadsheet. To maintain security, a reliable antivirus program inspects downloads continuously, while an active firewall utility blocks unauthorized inbound network intrusions. When organizing oversized archives, an efficient compression tool packages folders into lightweight archives. Users often install a specialized browser extension to accelerate research, while an intuitive media player handles training webinars. Whenever you launch an installer to set up a new utility program, always confirm that the publisher certificate is verified and authentic.",
+        "translation": "يتفاعل مستخدمو الكمبيوتر المعاصرون مع برمجيات تطبيقية متنوعة مصممة لتبسيط سير العمل اليومي المعقد. ويعتمد المحترفون على معالج كلمات قوي لإنشاء عقود العملاء، بينما تحلل الأقسام المالية الأرقام داخل جدول بيانات متطور. وللحفاظ على الأمان، يفحص برنامج مكافحة فيروسات موثوق التنزيلات باستمرار، بينما تحجب أداة الجدار الناري النشطة الاختراقات الشبكية الواردة غير المصرح بها. وعند تنظيم الأرشيفات الضخمة، تجمع أداة ضغط فعالة المجلدات في أرشيفات خفيفة الوزن. وغالباً ما يثبت المستخدمون إضافة متصفح متخصصة لتسريع البحث، بينما يتعامل مشغل وسائط بديهي مع الندوات التدريبية عبر الإنترنت. وكلما شغلت حزمة برنامج تثبيت لإعداد أداة خدمية جديدة، تأكد دائماً من أن شهادة الناشر موثقة ومطابقة للأصل."
+    },
+    {
+        "title": "Core System Maintenance and Best Practices",
+        "titleArabic": "صيانة النظام الأساسية وأفضل الممارسات",
+        "kind": "informative",
+        "vocabularyUsed": ["execute command", "install", "uninstall", "configure", "customize", "sync files", "encrypt data", "troubleshoot system"],
+        "text": "Maintaining a stable workstation requires regular software hygiene and careful configuration. Power users frequently execute command line scripts to automate mundane system routines. When developers configure their development environment, they customize keyboard shortcuts and appearance settings to maximize comfort. It is prudent practice to uninstall obsolete applications that consume background resources. Cloud backup services sync files continuously, ensuring documents remain preserved if hardware ever fails. In corporate settings, security mandates demand that companies encrypt data across all endpoints. Whenever anomalies arise, skilled administrators methodically troubleshoot system errors by examining diagnostic logs, inspecting resource monitors, and verifying operating system integrity before applying software patches.",
+        "translation": "يتطلب الحفاظ على محطة عمل مستقرة نظافة برمجية دورية وتهيئة دقيقة. وينفذ المستخدمون المتقدمون أوامر برمجية متكررة عبر الطرفية لأتمتة الروتين اليومي للنظام. وعندما يضبط المطورون بيئة التطوير الخاصة بهم، فإنهم يخصصون اختصارات لوحة المفاتيح وإعدادات المظهر لتحقيق أقصى درجات الراحة. ومن الممارسات الحكيمة إلغاء تثبيت التطبيقات المهجورة التي تستهلك موارد الجهاز في الخلفية. وتزامن خدمات النسخ الاحتياطي السحابية الملفات باستمرار، مما يضمن الحفاظ على المستندات في حالة فشل العتاد في أي وقت. وفي البيئات المؤسسية، تفرض متطلبات الأمان تشفير البيانات عبر جميع الأجهزة الطرفية. وكلما ظهرت أعطال، يشخص المسؤولون المهرة أخطاء النظام ويصلحونها بطريقة منهجية من خلال فحص سجلات التشخيص ومراقبة الموارد والتحقق من سلامة نظام التشغيل قبل تطبيق التحديثات البرمجية."
+    },
+    {
+        "title": "The Harmony of Hardware and Operating Systems",
+        "titleArabic": "تناغم العتاد وأنظمة التشغيل",
+        "kind": "reflective",
+        "vocabularyUsed": ["operating system", "kernel", "motherboard", "processor", "ram", "firmware", "device driver"],
+        "text": "Every computing device relies on an intricate partnership between physical silicon and elegant low-level software. The motherboard serves as the foundational highway uniting every vital component, from the multi-core processor to high-speed modules of RAM. At the lowest layer, embedded firmware initializes hardware circuits during initial bootup. Above the firmware, the operating system kernel coordinates task execution, memory protection, and resource scheduling. Without a well-coded device driver, modern operating systems could never harness the full potential of cutting-edge hardware. When hardware and software operate in seamless symphony, complex simulations compute instantly, empowering human ingenuity to push technological boundaries across science, medicine, and engineering.",
+        "translation": "يعتمد كل جهاز حاسوبي على شراكة معقدة بين السيليكون المادي والبرمجيات منخفضة المستوى الدقيقة. وتعمل اللوحة الأم كطريق أساسي يربط كل مكون حيوي، بدءاً من المعالج متعدد النواة وحتى وحدات الرام عالية السرعة. وفي أدنى طبقة، تُهيئ البرمجيات الثابتة المدمجة الدوائر الصلبة أثناء الإقلاع الأولي. وفوق البرمجيات الثابتة، تنسق نواة نظام التشغيل تنفيذ المهام وحماية الذاكرة وجدولة الموارد. وبدون برنامج تعريف مكتوب بإتقان، لن تتمكن أنظمة التشغيل الحديثة أبداً من تسخير الإمكانات الكاملة لأحدث المعدات. وعندما يعمل العتاد والبرمجيات في سيمفونية سلسة، تكتمل العمليات الحسابية المعقدة في لحظة، مما يمكّن الإبداع البشري من دفع الحدود التكنولوجية عبر العلوم والطب والهندسة."
+    }
+]

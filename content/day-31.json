@@ -1,0 +1,1617 @@
+{
+  "day": 31,
+  "title": "My Job",
+  "topic": "Jobs, duties and workplaces",
+  "description": "Describe your job, duties and work history.",
+  "stage": "Work, Career and Technology",
+  "focus": "By the end of today, you can communicate clearly about jobs, duties and workplaces using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Present Perfect with for and since",
+      "explanation": "We use the Present Perfect tense with 'for' and 'since' to talk about situations that started in the past and continue up to now. 'For' is followed by a duration (e.g., for two years, for a long time). 'Since' is followed by a specific point in time (e.g., since Monday, since childhood, since 2019).",
+      "explanationArabic": "نستخدم زمن المضارع التام مع 'for' و 'since' للحديث عن مواقف بدأت في الماضي ولا تزال مستمرة حتى الآن. يأتي بعد 'for' مدة زمنية (مثل: for two years، for a long time). بينما يأتي بعد 'since' نقطة زمنية محددة (مثل: since Monday، since childhood، since 2019).",
+      "rules": [
+        "Use 'for' + duration: for two years, for three months, for a long time.",
+        "Use 'since' + starting point: since Monday, since 2015, since childhood.",
+        "Use 'How long have you + V3...?' to ask about duration.",
+        "The Present Perfect shows the action is STILL continuing now."
+      ],
+      "rulesArabic": [
+        "استخدم 'for' + مدة زمنية: for two years (لمدة سنتين)، for a long time (لفترة طويلة).",
+        "استخدم 'since' + نقطة بداية: since Monday (منذ الاثنين)، since 2015 (منذ 2015).",
+        "استخدم 'How long have you + التصريف الثالث...?' للسؤال عن المدة.",
+        "المضارع التام يدل على أن الفعل لا يزال مستمراً حتى الآن."
+      ],
+      "structures": [
+        {
+          "pattern": "Subject + have/has + V3 + for + duration",
+          "explanation": "Describes how long an ongoing situation has lasted.",
+          "explanationArabic": "يصف المدة التي استمرت فيها حالة مستمرة."
+        },
+        {
+          "pattern": "Subject + have/has + V3 + since + point in time",
+          "explanation": "States when an ongoing situation began.",
+          "explanationArabic": "يحدد الوقت الذي بدأت فيه حالة مستمرة."
+        },
+        {
+          "pattern": "How long + have/has + subject + V3...?",
+          "explanation": "Asks about the duration of an ongoing action or state.",
+          "explanationArabic": "يسأل عن مدة فعل أو حالة مستمرة."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "She has worked as a manager for two years at this headquarters.",
+          "translation": "عملت كمديرة لمدة سنتين في هذا المقر الرئيسي.",
+          "usesVocabulary": [
+            "manager",
+            "for two years",
+            "headquarters"
+          ]
+        },
+        {
+          "sentence": "He has been a freelancer since childhood dreams inspired his career path.",
+          "translation": "كان عاملاً مستقلاً منذ أن ألهمت أحلام طفولته مساره المهني.",
+          "usesVocabulary": [
+            "freelancer",
+            "since childhood",
+            "career path"
+          ]
+        },
+        {
+          "sentence": "How long have you been an employee at this company?",
+          "translation": "منذ متى وأنت موظف في هذه الشركة؟",
+          "usesVocabulary": [
+            "how long",
+            "employee"
+          ]
+        },
+        {
+          "sentence": "The intern has gained valuable experience since Monday morning.",
+          "translation": "اكتسب المتدرب خبرة قيمة منذ صباح يوم الاثنين.",
+          "usesVocabulary": [
+            "intern",
+            "since Monday"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I have worked here since three years.",
+          "right": "I have worked here for three years.",
+          "note": "'Three years' is a duration, so use 'for', not 'since'. Use 'since' with a point in time like 'since 2021'.",
+          "noteArabic": "'three years' هي مدة زمنية، لذا نستخدم 'for' وليس 'since'. نستخدم 'since' مع نقطة زمنية محددة مثل 'since 2021'."
+        },
+        {
+          "wrong": "She works here for a long time.",
+          "right": "She has worked here for a long time.",
+          "note": "Use Present Perfect (has worked), not Present Simple (works), to show the action started in the past and continues.",
+          "noteArabic": "استخدم المضارع التام (has worked) وليس المضارع البسيط (works) لإظهار أن الفعل بدأ في الماضي ولا يزال مستمراً."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "profession",
+      "pronunciation": "/prəˈfeʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A paid occupation, especially one that involves prolonged training and a formal qualification.",
+      "example": "Teaching is widely regarded as one of the most noble professions.",
+      "translation": "مهنة (تتطلب تأهيلاً)",
+      "exampleArabic": "يُنظر إلى التعليم على نطاق واسع على أنه من أنبل المهن.",
+      "relatedForms": [
+        "professional",
+        "professionally"
+      ],
+      "collocations": [
+        "choose a profession",
+        "legal profession",
+        "medical profession"
+      ],
+      "synonyms": [
+        "career",
+        "vocation",
+        "calling"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "career"
+      ]
+    },
+    {
+      "headword": "career path",
+      "pronunciation": "/kəˈrɪr pæθ/",
+      "partOfSpeech": "noun",
+      "definition": "The progression of jobs and roles that make up a person's working life.",
+      "example": "She mapped out a clear career path from junior analyst to department head.",
+      "translation": "المسار المهني / الخطة الوظيفية",
+      "exampleArabic": "رسمت مساراً مهنياً واضحاً من محللة مبتدئة إلى رئيسة قسم.",
+      "relatedForms": [],
+      "collocations": [
+        "follow a career path",
+        "change career path",
+        "clear career path"
+      ],
+      "synonyms": [
+        "career trajectory"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "planning"
+      ]
+    },
+    {
+      "headword": "employer",
+      "pronunciation": "/ɪmˈplɔɪər/",
+      "partOfSpeech": "noun",
+      "definition": "A person or organization that employs people.",
+      "example": "A good employer provides health insurance and professional development opportunities.",
+      "translation": "صاحب العمل / جهة التوظيف",
+      "exampleArabic": "يوفر صاحب العمل الجيد التأمين الصحي وفرص التطوير المهني.",
+      "relatedForms": [
+        "employ",
+        "employment"
+      ],
+      "collocations": [
+        "current employer",
+        "former employer",
+        "top employer"
+      ],
+      "synonyms": [
+        "company",
+        "firm",
+        "organization"
+      ],
+      "antonyms": [
+        "employee"
+      ],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "employee",
+      "pronunciation": "/ɪmˈplɔɪiː/",
+      "partOfSpeech": "noun",
+      "definition": "A person employed for wages or salary.",
+      "example": "Every employee must complete an online safety training module by Friday.",
+      "translation": "موظف / عامل",
+      "exampleArabic": "يجب على كل موظف إكمال وحدة تدريب السلامة عبر الإنترنت بحلول يوم الجمعة.",
+      "relatedForms": [
+        "employees"
+      ],
+      "collocations": [
+        "full-time employee",
+        "new employee",
+        "senior employee"
+      ],
+      "synonyms": [
+        "worker",
+        "staff member"
+      ],
+      "antonyms": [
+        "employer"
+      ],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "coworker",
+      "pronunciation": "/ˈkoʊwɜːrkər/",
+      "partOfSpeech": "noun",
+      "definition": "A person with whom one works in the same company or organization.",
+      "example": "My coworker and I have shared the same office for three years now.",
+      "translation": "زميل عمل",
+      "exampleArabic": "تشاركت أنا وزميلي في العمل نفس المكتب لمدة ثلاث سنوات حتى الآن.",
+      "relatedForms": [
+        "coworkers"
+      ],
+      "collocations": [
+        "friendly coworker",
+        "close coworker"
+      ],
+      "synonyms": [
+        "colleague",
+        "associate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "people"
+      ]
+    },
+    {
+      "headword": "supervisor",
+      "pronunciation": "/ˈsuːpərvaɪzər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who oversees a worker or a group of workers.",
+      "example": "The floor supervisor reviewed each team member's weekly progress report.",
+      "translation": "مشرف / مسؤول مباشر",
+      "exampleArabic": "راجع مشرف الطابق تقرير التقدم الأسبوعي لكل عضو في الفريق.",
+      "relatedForms": [
+        "supervise",
+        "supervision"
+      ],
+      "collocations": [
+        "direct supervisor",
+        "shift supervisor"
+      ],
+      "synonyms": [
+        "overseer",
+        "manager"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "people"
+      ]
+    },
+    {
+      "headword": "manager",
+      "pronunciation": "/ˈmænɪdʒər/",
+      "partOfSpeech": "noun",
+      "definition": "A person responsible for controlling or administering all or part of an organization.",
+      "example": "The project manager scheduled a planning session for Monday morning.",
+      "translation": "مدير",
+      "exampleArabic": "حدد مدير المشروع جلسة تخطيط صباح يوم الاثنين.",
+      "relatedForms": [
+        "manage",
+        "management",
+        "managerial"
+      ],
+      "collocations": [
+        "project manager",
+        "general manager",
+        "line manager"
+      ],
+      "synonyms": [
+        "administrator",
+        "director"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "people"
+      ]
+    },
+    {
+      "headword": "director",
+      "pronunciation": "/dɪˈrektər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who is in charge of an activity, department, or organization.",
+      "example": "The marketing director presented the annual brand strategy to the board.",
+      "translation": "مدير تنفيذي / مدير إدارة",
+      "exampleArabic": "قدم مدير التسويق استراتيجية العلامة التجارية السنوية لمجلس الإدارة.",
+      "relatedForms": [
+        "direct",
+        "direction"
+      ],
+      "collocations": [
+        "managing director",
+        "creative director",
+        "board of directors"
+      ],
+      "synonyms": [
+        "head",
+        "chief"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "leadership"
+      ]
+    },
+    {
+      "headword": "executive",
+      "pronunciation": "/ɪɡˈzekjətɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A person with senior managerial responsibility in a business organization.",
+      "example": "The chief executive announced a new remote work policy for all departments.",
+      "translation": "مسؤول تنفيذي / مدير كبير",
+      "exampleArabic": "أعلن المسؤول التنفيذي الأول سياسة جديدة للعمل عن بُعد لجميع الأقسام.",
+      "relatedForms": [
+        "executives"
+      ],
+      "collocations": [
+        "senior executive",
+        "chief executive officer"
+      ],
+      "synonyms": [
+        "officer",
+        "director"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "leadership"
+      ]
+    },
+    {
+      "headword": "intern",
+      "pronunciation": "/ˈɪntɜːrn/",
+      "partOfSpeech": "noun",
+      "definition": "A student or trainee who works temporarily to gain practical experience.",
+      "example": "The summer intern impressed everyone with her thorough research abilities.",
+      "translation": "متدرب (تدريب عملي)",
+      "exampleArabic": "أثارت المتدربة الصيفية إعجاب الجميع بقدراتها البحثية الشاملة.",
+      "relatedForms": [
+        "internship"
+      ],
+      "collocations": [
+        "summer intern",
+        "paid intern",
+        "unpaid intern"
+      ],
+      "synonyms": [
+        "trainee",
+        "apprentice"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "education"
+      ]
+    },
+    {
+      "headword": "trainee",
+      "pronunciation": "/treɪˈniː/",
+      "partOfSpeech": "noun",
+      "definition": "A person undergoing training for a particular job or profession.",
+      "example": "Each new trainee receives a mentor during the first three months.",
+      "translation": "متدرب (جديد)",
+      "exampleArabic": "يحصل كل متدرب جديد على مرشد خلال الأشهر الثلاثة الأولى.",
+      "relatedForms": [
+        "train",
+        "trainer",
+        "training"
+      ],
+      "collocations": [
+        "graduate trainee",
+        "management trainee"
+      ],
+      "synonyms": [
+        "learner",
+        "apprentice"
+      ],
+      "antonyms": [
+        "trainer"
+      ],
+      "tags": [
+        "work",
+        "education"
+      ]
+    },
+    {
+      "headword": "freelancer",
+      "pronunciation": "/ˈfriːlænsər/",
+      "partOfSpeech": "noun",
+      "definition": "A self-employed person who earns money by selling services to different employers.",
+      "example": "As a freelancer, he enjoys the flexibility of choosing his own projects.",
+      "translation": "عامل مستقل / فريلانسر",
+      "exampleArabic": "بصفته عاملاً مستقلاً، يستمتع بمرونة اختيار مشاريعه بنفسه.",
+      "relatedForms": [
+        "freelance",
+        "freelancing"
+      ],
+      "collocations": [
+        "freelance designer",
+        "freelance writer"
+      ],
+      "synonyms": [
+        "independent contractor",
+        "self-employed worker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "entrepreneur",
+      "pronunciation": "/ˌɑːntrəprəˈnɜːr/",
+      "partOfSpeech": "noun",
+      "definition": "A person who organizes and operates a business, taking on financial risk to do so.",
+      "example": "The young entrepreneur launched a successful tech startup from her garage.",
+      "translation": "رائد أعمال",
+      "exampleArabic": "أطلقت رائدة الأعمال الشابة شركة تقنية ناشئة ناجحة من مرآبها.",
+      "relatedForms": [
+        "entrepreneurial",
+        "entrepreneurship"
+      ],
+      "collocations": [
+        "serial entrepreneur",
+        "successful entrepreneur"
+      ],
+      "synonyms": [
+        "business owner",
+        "founder"
+      ],
+      "antonyms": [],
+      "tags": [
+        "business"
+      ]
+    },
+    {
+      "headword": "office space",
+      "pronunciation": "/ˈɔːfɪs speɪs/",
+      "partOfSpeech": "noun",
+      "definition": "An area or building used for commercial or professional work activities.",
+      "example": "The company rented additional office space to accommodate the growing team.",
+      "translation": "مساحة مكتبية",
+      "exampleArabic": "استأجرت الشركة مساحة مكتبية إضافية لاستيعاب الفريق المتنامي.",
+      "relatedForms": [],
+      "collocations": [
+        "shared office space",
+        "modern office space",
+        "rent office space"
+      ],
+      "synonyms": [
+        "workspace"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "places"
+      ]
+    },
+    {
+      "headword": "headquarters",
+      "pronunciation": "/ˈhedkwɔːrtərz/",
+      "partOfSpeech": "noun",
+      "definition": "The main offices of an organization, especially a military one or a company.",
+      "example": "The company moved its global headquarters to downtown Singapore.",
+      "translation": "المقر الرئيسي",
+      "exampleArabic": "نقلت الشركة مقرها الرئيسي العالمي إلى وسط مدينة سنغافورة.",
+      "relatedForms": [],
+      "collocations": [
+        "corporate headquarters",
+        "regional headquarters"
+      ],
+      "synonyms": [
+        "head office",
+        "main office"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "places"
+      ]
+    },
+    {
+      "headword": "cubicle",
+      "pronunciation": "/ˈkjuːbɪkl/",
+      "partOfSpeech": "noun",
+      "definition": "A small partitioned-off area of a room used for work in an office.",
+      "example": "He decorated his cubicle with family photos and a small potted plant.",
+      "translation": "حجيرة مكتبية / مكتب مفصول بحواجز",
+      "exampleArabic": "زيّن حجيرته المكتبية بصور عائلية ونبتة صغيرة في أصيص.",
+      "relatedForms": [
+        "cubicles"
+      ],
+      "collocations": [
+        "office cubicle",
+        "work in a cubicle"
+      ],
+      "synonyms": [
+        "booth",
+        "partition"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "places"
+      ]
+    },
+    {
+      "headword": "workstation",
+      "pronunciation": "/ˈwɜːrksteɪʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A desk and computer set up for one person in an office environment.",
+      "example": "The IT department upgraded every workstation with dual monitors last month.",
+      "translation": "محطة عمل",
+      "exampleArabic": "قام قسم تكنولوجيا المعلومات بترقية كل محطة عمل بشاشتين الشهر الماضي.",
+      "relatedForms": [
+        "workstations"
+      ],
+      "collocations": [
+        "personal workstation",
+        "ergonomic workstation"
+      ],
+      "synonyms": [
+        "desk setup"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "technology"
+      ]
+    },
+    {
+      "headword": "shift",
+      "pronunciation": "/ʃɪft/",
+      "partOfSpeech": "noun",
+      "definition": "A period of time during which a set group of workers works.",
+      "example": "Hospital nurses often work twelve-hour shifts to provide continuous care.",
+      "translation": "وردية عمل / نوبة",
+      "exampleArabic": "غالباً ما يعمل ممرضو المستشفى في ورديات من اثنتي عشرة ساعة لتقديم رعاية مستمرة.",
+      "relatedForms": [
+        "shifts"
+      ],
+      "collocations": [
+        "night shift",
+        "morning shift",
+        "work a shift"
+      ],
+      "synonyms": [
+        "work period",
+        "rotation"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "time"
+      ]
+    },
+    {
+      "headword": "overtime",
+      "pronunciation": "/ˈoʊvərtaɪm/",
+      "partOfSpeech": "noun",
+      "definition": "Time worked in addition to one's normal working hours.",
+      "example": "Engineers worked considerable overtime to meet the product launch deadline.",
+      "translation": "وقت إضافي / عمل إضافي",
+      "exampleArabic": "عمل المهندسون ساعات إضافية كبيرة للوفاء بالموعد النهائي لإطلاق المنتج.",
+      "relatedForms": [],
+      "collocations": [
+        "work overtime",
+        "overtime pay",
+        "mandatory overtime"
+      ],
+      "synonyms": [
+        "extra hours"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "time"
+      ]
+    },
+    {
+      "headword": "full-time",
+      "pronunciation": "/ˌfʊl ˈtaɪm/",
+      "partOfSpeech": "adjective",
+      "definition": "Occupying or using the whole of someone's available working time.",
+      "example": "She transitioned from an internship to a full-time engineering position.",
+      "translation": "دوام كامل",
+      "exampleArabic": "انتقلت من تدريب عملي إلى وظيفة هندسة بدوام كامل.",
+      "relatedForms": [],
+      "collocations": [
+        "full-time job",
+        "full-time employee",
+        "work full-time"
+      ],
+      "synonyms": [
+        "permanent"
+      ],
+      "antonyms": [
+        "part-time"
+      ],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "part-time",
+      "pronunciation": "/ˌpɑːrt ˈtaɪm/",
+      "partOfSpeech": "adjective",
+      "definition": "For only part of the usual working day or week.",
+      "example": "Many university students take part-time retail jobs during the semester.",
+      "translation": "دوام جزئي",
+      "exampleArabic": "يلتحق العديد من طلاب الجامعات بوظائف بيع بالتجزئة بدوام جزئي خلال الفصل الدراسي.",
+      "relatedForms": [],
+      "collocations": [
+        "part-time work",
+        "part-time hours"
+      ],
+      "synonyms": [
+        "half-time"
+      ],
+      "antonyms": [
+        "full-time"
+      ],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "salary",
+      "pronunciation": "/ˈsæləri/",
+      "partOfSpeech": "noun",
+      "definition": "A fixed regular payment, typically paid on a monthly basis, made by an employer to an employee.",
+      "example": "The company offers a competitive salary along with excellent retirement benefits.",
+      "translation": "راتب شهري",
+      "exampleArabic": "تقدم الشركة راتباً تنافسياً إلى جانب مزايا تقاعد ممتازة.",
+      "relatedForms": [
+        "salaries",
+        "salaried"
+      ],
+      "collocations": [
+        "annual salary",
+        "starting salary",
+        "salary increase"
+      ],
+      "synonyms": [
+        "pay",
+        "remuneration"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "work"
+      ]
+    },
+    {
+      "headword": "wage",
+      "pronunciation": "/weɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "A fixed regular payment earned for work, typically calculated on an hourly or daily basis.",
+      "example": "The government raised the minimum wage to fifteen dollars per hour.",
+      "translation": "أجر (بالساعة أو اليوم)",
+      "exampleArabic": "رفعت الحكومة الحد الأدنى للأجور إلى خمسة عشر دولاراً في الساعة.",
+      "relatedForms": [
+        "wages"
+      ],
+      "collocations": [
+        "minimum wage",
+        "hourly wage",
+        "living wage"
+      ],
+      "synonyms": [
+        "pay",
+        "earnings"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "work"
+      ]
+    },
+    {
+      "headword": "income",
+      "pronunciation": "/ˈɪnkʌm/",
+      "partOfSpeech": "noun",
+      "definition": "Money received on a regular basis for work or through investments.",
+      "example": "Diversifying income sources can provide greater financial security over time.",
+      "translation": "دخل",
+      "exampleArabic": "يمكن أن يوفر تنويع مصادر الدخل أماناً مالياً أكبر بمرور الوقت.",
+      "relatedForms": [],
+      "collocations": [
+        "monthly income",
+        "passive income",
+        "disposable income"
+      ],
+      "synonyms": [
+        "revenue",
+        "earnings"
+      ],
+      "antonyms": [
+        "expenditure"
+      ],
+      "tags": [
+        "money"
+      ]
+    },
+    {
+      "headword": "paycheck",
+      "pronunciation": "/ˈpeɪtʃek/",
+      "partOfSpeech": "noun",
+      "definition": "A check or payment for wages or salary issued to an employee.",
+      "example": "She deposits her paycheck directly into her savings account every month.",
+      "translation": "شيك الراتب / الراتب المستلم",
+      "exampleArabic": "تودع راتبها مباشرة في حساب التوفير الخاص بها كل شهر.",
+      "relatedForms": [
+        "paychecks"
+      ],
+      "collocations": [
+        "receive a paycheck",
+        "monthly paycheck",
+        "first paycheck"
+      ],
+      "synonyms": [
+        "pay slip",
+        "pay packet"
+      ],
+      "antonyms": [],
+      "tags": [
+        "money",
+        "work"
+      ]
+    },
+    {
+      "headword": "bonus",
+      "pronunciation": "/ˈboʊnəs/",
+      "partOfSpeech": "noun",
+      "definition": "An extra amount of money added to wages as a reward for good performance.",
+      "example": "Top-performing sales representatives received a generous year-end bonus.",
+      "translation": "مكافأة إضافية / بونص",
+      "exampleArabic": "حصل ممثلو المبيعات الأفضل أداءً على مكافأة سخية في نهاية العام.",
+      "relatedForms": [
+        "bonuses"
+      ],
+      "collocations": [
+        "annual bonus",
+        "performance bonus",
+        "signing bonus"
+      ],
+      "synonyms": [
+        "reward",
+        "incentive"
+      ],
+      "antonyms": [
+        "penalty"
+      ],
+      "tags": [
+        "money",
+        "work"
+      ]
+    },
+    {
+      "headword": "promotion",
+      "pronunciation": "/prəˈmoʊʃən/",
+      "partOfSpeech": "noun",
+      "definition": "Advancement in rank, position, or status within a company.",
+      "example": "Her promotion to regional manager came after five years of dedicated service.",
+      "translation": "ترقية",
+      "exampleArabic": "جاءت ترقيتها إلى مديرة إقليمية بعد خمس سنوات من الخدمة المتفانية.",
+      "relatedForms": [
+        "promote",
+        "promoted"
+      ],
+      "collocations": [
+        "earn a promotion",
+        "deserve a promotion",
+        "job promotion"
+      ],
+      "synonyms": [
+        "advancement",
+        "elevation"
+      ],
+      "antonyms": [
+        "demotion"
+      ],
+      "tags": [
+        "work",
+        "career"
+      ]
+    },
+    {
+      "headword": "resign",
+      "pronunciation": "/rɪˈzaɪn/",
+      "partOfSpeech": "verb",
+      "definition": "To voluntarily leave a job or other position.",
+      "example": "He decided to resign from his corporate role and pursue teaching instead.",
+      "translation": "يستقيل",
+      "exampleArabic": "قرر الاستقالة من منصبه في الشركة ومتابعة التدريس بدلاً من ذلك.",
+      "relatedForms": [
+        "resigned",
+        "resignation"
+      ],
+      "collocations": [
+        "resign from a position",
+        "officially resign"
+      ],
+      "synonyms": [
+        "quit",
+        "step down",
+        "leave"
+      ],
+      "antonyms": [
+        "join"
+      ],
+      "tags": [
+        "work",
+        "action"
+      ]
+    },
+    {
+      "headword": "retire",
+      "pronunciation": "/rɪˈtaɪər/",
+      "partOfSpeech": "verb",
+      "definition": "To leave one's job and cease to work, typically upon reaching a certain age.",
+      "example": "My father plans to retire at sixty-five and travel across South America.",
+      "translation": "يتقاعد",
+      "exampleArabic": "يخطط والدي للتقاعد في سن الخامسة والستين والسفر عبر أمريكا الجنوبية.",
+      "relatedForms": [
+        "retired",
+        "retirement",
+        "retiree"
+      ],
+      "collocations": [
+        "retire early",
+        "retire from work",
+        "plan to retire"
+      ],
+      "synonyms": [
+        "stop working"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "life"
+      ]
+    },
+    {
+      "headword": "hire",
+      "pronunciation": "/ˈhaɪər/",
+      "partOfSpeech": "verb",
+      "definition": "To employ someone for wages to do a specific job.",
+      "example": "The startup plans to hire fifteen software engineers before the end of the quarter.",
+      "translation": "يوظف / يعيّن",
+      "exampleArabic": "تخطط الشركة الناشئة لتوظيف خمسة عشر مهندس برمجيات قبل نهاية الربع.",
+      "relatedForms": [
+        "hired",
+        "hiring"
+      ],
+      "collocations": [
+        "hire talent",
+        "hire new staff",
+        "recently hired"
+      ],
+      "synonyms": [
+        "employ",
+        "recruit",
+        "engage"
+      ],
+      "antonyms": [
+        "fire",
+        "dismiss"
+      ],
+      "tags": [
+        "work",
+        "action"
+      ]
+    },
+    {
+      "headword": "fire",
+      "pronunciation": "/ˈfaɪər/",
+      "partOfSpeech": "verb",
+      "definition": "To dismiss an employee from a job.",
+      "example": "The company had to fire three employees due to repeated policy violations.",
+      "translation": "يفصل من العمل / يطرد",
+      "exampleArabic": "اضطرت الشركة إلى فصل ثلاثة موظفين بسبب انتهاكات متكررة للسياسات.",
+      "relatedForms": [
+        "fired",
+        "firing"
+      ],
+      "collocations": [
+        "get fired",
+        "fire someone",
+        "wrongfully fired"
+      ],
+      "synonyms": [
+        "dismiss",
+        "terminate",
+        "let go"
+      ],
+      "antonyms": [
+        "hire"
+      ],
+      "tags": [
+        "work",
+        "action"
+      ]
+    },
+    {
+      "headword": "recruit",
+      "pronunciation": "/rɪˈkruːt/",
+      "partOfSpeech": "verb",
+      "definition": "To enlist new members or employees for an organization.",
+      "example": "Universities actively recruit international students for their graduate programs.",
+      "translation": "يجنّد / يستقطب للتوظيف",
+      "exampleArabic": "تستقطب الجامعات بنشاط طلاباً دوليين لبرامج الدراسات العليا.",
+      "relatedForms": [
+        "recruited",
+        "recruitment",
+        "recruiter"
+      ],
+      "collocations": [
+        "recruit talent",
+        "recruit graduates",
+        "actively recruit"
+      ],
+      "synonyms": [
+        "enlist",
+        "hire"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "action"
+      ]
+    },
+    {
+      "headword": "apply for",
+      "pronunciation": "/əˈplaɪ fɔːr/",
+      "partOfSpeech": "verb",
+      "definition": "To make a formal request for something, such as a job or admission.",
+      "example": "She plans to apply for the senior marketing position advertised online.",
+      "translation": "يتقدم بطلب للحصول على",
+      "exampleArabic": "تخطط للتقدم بطلب للحصول على منصب التسويق الأقدم المُعلن عنه عبر الإنترنت.",
+      "relatedForms": [
+        "applied for",
+        "application"
+      ],
+      "collocations": [
+        "apply for a job",
+        "apply for a visa",
+        "apply for admission"
+      ],
+      "synonyms": [
+        "submit an application"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "action"
+      ]
+    },
+    {
+      "headword": "qualified",
+      "pronunciation": "/ˈkwɑːlɪfaɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "Having the necessary skills, knowledge, or experience to do something.",
+      "example": "Only qualified candidates with relevant certifications will be shortlisted.",
+      "translation": "مؤهل",
+      "exampleArabic": "سيتم اختيار المرشحين المؤهلين فقط الذين يمتلكون الشهادات ذات الصلة.",
+      "relatedForms": [
+        "qualify",
+        "qualification"
+      ],
+      "collocations": [
+        "highly qualified",
+        "well qualified",
+        "qualified professional"
+      ],
+      "synonyms": [
+        "competent",
+        "capable",
+        "certified"
+      ],
+      "antonyms": [
+        "unqualified"
+      ],
+      "tags": [
+        "work",
+        "description"
+      ]
+    },
+    {
+      "headword": "experienced",
+      "pronunciation": "/ɪkˈspɪriənst/",
+      "partOfSpeech": "adjective",
+      "definition": "Having knowledge or skill in a particular field gained over time.",
+      "example": "The team needs an experienced project lead with at least ten years in the industry.",
+      "translation": "خبير / ذو خبرة",
+      "exampleArabic": "يحتاج الفريق إلى قائد مشاريع ذي خبرة لا تقل عن عشر سنوات في الصناعة.",
+      "relatedForms": [],
+      "collocations": [
+        "experienced professional",
+        "experienced manager"
+      ],
+      "synonyms": [
+        "seasoned",
+        "skilled",
+        "veteran"
+      ],
+      "antonyms": [
+        "inexperienced",
+        "novice"
+      ],
+      "tags": [
+        "work",
+        "description"
+      ]
+    },
+    {
+      "headword": "responsibility",
+      "pronunciation": "/rɪˌspɑːnsəˈbɪləti/",
+      "partOfSpeech": "noun",
+      "definition": "A duty or obligation to satisfactorily perform or complete a task.",
+      "example": "Managing the annual budget is a key responsibility of the finance manager.",
+      "translation": "مسؤولية",
+      "exampleArabic": "إدارة الميزانية السنوية هي مسؤولية رئيسية لمدير المالية.",
+      "relatedForms": [
+        "responsible",
+        "responsibilities"
+      ],
+      "collocations": [
+        "key responsibility",
+        "take responsibility",
+        "shared responsibility"
+      ],
+      "synonyms": [
+        "duty",
+        "obligation",
+        "accountability"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "duty",
+      "pronunciation": "/ˈduːti/",
+      "partOfSpeech": "noun",
+      "definition": "A moral or legal obligation; a task required as part of one's job.",
+      "example": "One of her primary duties is to ensure customer satisfaction across all channels.",
+      "translation": "واجب / مهمة وظيفية",
+      "exampleArabic": "من واجباتها الأساسية ضمان رضا العملاء عبر جميع القنوات.",
+      "relatedForms": [
+        "duties"
+      ],
+      "collocations": [
+        "primary duty",
+        "on duty",
+        "off duty"
+      ],
+      "synonyms": [
+        "task",
+        "obligation",
+        "function"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "task",
+      "pronunciation": "/tæsk/",
+      "partOfSpeech": "noun",
+      "definition": "A piece of work to be done or undertaken.",
+      "example": "She completed every assigned task before the end of the working day.",
+      "translation": "مهمة / عمل مطلوب إنجازه",
+      "exampleArabic": "أكملت كل مهمة مكلفة بها قبل نهاية يوم العمل.",
+      "relatedForms": [
+        "tasks"
+      ],
+      "collocations": [
+        "daily task",
+        "complete a task",
+        "assign a task"
+      ],
+      "synonyms": [
+        "job",
+        "assignment",
+        "chore"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "assignment",
+      "pronunciation": "/əˈsaɪnmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A task or piece of work allocated to someone as part of a job or course of study.",
+      "example": "The journalism assignment required extensive field research across three cities.",
+      "translation": "مهمة موكلة / تكليف",
+      "exampleArabic": "تطلب التكليف الصحفي بحثاً ميدانياً مكثفاً عبر ثلاث مدن.",
+      "relatedForms": [
+        "assign",
+        "assigned"
+      ],
+      "collocations": [
+        "work assignment",
+        "complete an assignment",
+        "new assignment"
+      ],
+      "synonyms": [
+        "task",
+        "project",
+        "commission"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "education"
+      ]
+    },
+    {
+      "headword": "workload",
+      "pronunciation": "/ˈwɜːrkloʊd/",
+      "partOfSpeech": "noun",
+      "definition": "The amount of work to be done by someone or something.",
+      "example": "The new software system significantly reduced the administrative workload.",
+      "translation": "حجم العمل / عبء العمل",
+      "exampleArabic": "قلل نظام البرمجيات الجديد بشكل كبير من عبء العمل الإداري.",
+      "relatedForms": [
+        "workloads"
+      ],
+      "collocations": [
+        "heavy workload",
+        "manage workload",
+        "reduce workload"
+      ],
+      "synonyms": [
+        "work volume"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "job description",
+      "pronunciation": "/dʒɑːb dɪˈskrɪpʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A formal account of an employee's responsibilities, duties, and required qualifications.",
+      "example": "Always read the full job description carefully before submitting your application.",
+      "translation": "الوصف الوظيفي",
+      "exampleArabic": "اقرأ دائماً الوصف الوظيفي الكامل بعناية قبل تقديم طلبك.",
+      "relatedForms": [],
+      "collocations": [
+        "detailed job description",
+        "write a job description"
+      ],
+      "synonyms": [
+        "job spec",
+        "role description"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "for two years",
+      "pronunciation": "/fɔːr tuː jɪrz/",
+      "partOfSpeech": "prepositional phrase",
+      "definition": "A time expression used with Present Perfect to indicate the duration of an ongoing situation.",
+      "example": "I have worked at this company for two years and I still enjoy every day.",
+      "translation": "لمدة سنتين",
+      "exampleArabic": "لقد عملت في هذه الشركة لمدة سنتين ولا أزال أستمتع بكل يوم.",
+      "relatedForms": [],
+      "collocations": [
+        "for two years now",
+        "lived here for two years"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "time"
+      ]
+    },
+    {
+      "headword": "since Monday",
+      "pronunciation": "/sɪns ˈmʌndeɪ/",
+      "partOfSpeech": "prepositional phrase",
+      "definition": "A time expression used with Present Perfect to indicate the starting point of an ongoing situation.",
+      "example": "She has been preparing the quarterly report since Monday morning.",
+      "translation": "منذ يوم الاثنين",
+      "exampleArabic": "كانت تُعد التقرير الربعي منذ صباح يوم الاثنين.",
+      "relatedForms": [],
+      "collocations": [
+        "since Monday morning",
+        "working since Monday"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "time"
+      ]
+    },
+    {
+      "headword": "for a long time",
+      "pronunciation": "/fɔːr ə lɔːŋ taɪm/",
+      "partOfSpeech": "prepositional phrase",
+      "definition": "An expression indicating an extended period of duration, used with Present Perfect.",
+      "example": "They have been loyal clients of this accounting firm for a long time.",
+      "translation": "لفترة طويلة",
+      "exampleArabic": "لقد كانوا عملاء مخلصين لشركة المحاسبة هذه لفترة طويلة.",
+      "relatedForms": [],
+      "collocations": [
+        "waited for a long time",
+        "known for a long time"
+      ],
+      "synonyms": [
+        "for ages",
+        "for years"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "time"
+      ]
+    },
+    {
+      "headword": "since childhood",
+      "pronunciation": "/sɪns ˈtʃaɪldhʊd/",
+      "partOfSpeech": "prepositional phrase",
+      "definition": "From the time of being a child until now.",
+      "example": "He has dreamed of becoming a pilot since childhood.",
+      "translation": "منذ الطفولة",
+      "exampleArabic": "حلم بأن يصبح طياراً منذ طفولته.",
+      "relatedForms": [],
+      "collocations": [
+        "since early childhood",
+        "passionate since childhood"
+      ],
+      "synonyms": [
+        "since I was young"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "time"
+      ]
+    },
+    {
+      "headword": "how long",
+      "pronunciation": "/haʊ lɔːŋ/",
+      "partOfSpeech": "question phrase",
+      "definition": "A question asking about the duration or length of time something has been happening.",
+      "example": "How long have you been working in the financial consulting industry?",
+      "translation": "منذ متى / كم من الوقت",
+      "exampleArabic": "منذ متى وأنت تعمل في صناعة الاستشارات المالية؟",
+      "relatedForms": [],
+      "collocations": [
+        "how long have you",
+        "how long has it been"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "questions"
+      ]
+    },
+    {
+      "headword": "job title",
+      "pronunciation": "/dʒɑːb ˈtaɪtl/",
+      "partOfSpeech": "noun",
+      "definition": "The name that describes a person's job or position in an organization.",
+      "example": "Her official job title is Senior Data Analyst at the research division.",
+      "translation": "المسمى الوظيفي",
+      "exampleArabic": "مسماها الوظيفي الرسمي هو محللة بيانات أولى في قسم الأبحاث.",
+      "relatedForms": [],
+      "collocations": [
+        "official job title",
+        "current job title"
+      ],
+      "synonyms": [
+        "position title",
+        "role name"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work"
+      ]
+    },
+    {
+      "headword": "tenure",
+      "pronunciation": "/ˈtenjər/",
+      "partOfSpeech": "noun",
+      "definition": "The holding of an office or position; the period of time during which a position is held.",
+      "example": "During his tenure as CEO, the company doubled its annual revenue.",
+      "translation": "فترة شغل المنصب / ولاية",
+      "exampleArabic": "خلال فترة شغله لمنصب الرئيس التنفيذي، ضاعفت الشركة إيراداتها السنوية.",
+      "relatedForms": [
+        "tenured"
+      ],
+      "collocations": [
+        "during his tenure",
+        "long tenure",
+        "academic tenure"
+      ],
+      "synonyms": [
+        "term",
+        "incumbency"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "time"
+      ]
+    },
+    {
+      "headword": "seniority",
+      "pronunciation": "/siːniˈɔːrəti/",
+      "partOfSpeech": "noun",
+      "definition": "The fact or state of being older or higher in position or status than someone else.",
+      "example": "Promotions at this firm are based on both merit and seniority.",
+      "translation": "أقدمية / الأسبقية في المنصب",
+      "exampleArabic": "تستند الترقيات في هذه الشركة إلى كل من الجدارة والأقدمية.",
+      "relatedForms": [
+        "senior"
+      ],
+      "collocations": [
+        "order of seniority",
+        "seniority level"
+      ],
+      "synonyms": [
+        "rank",
+        "precedence"
+      ],
+      "antonyms": [
+        "juniority"
+      ],
+      "tags": [
+        "work",
+        "hierarchy"
+      ]
+    },
+    {
+      "headword": "commute",
+      "pronunciation": "/kəˈmjuːt/",
+      "partOfSpeech": "verb",
+      "definition": "To travel some distance between one's home and place of work on a regular basis.",
+      "example": "She commutes forty-five minutes by train to reach her office downtown.",
+      "translation": "يتنقل يومياً بين المنزل والعمل",
+      "exampleArabic": "تتنقل خمسة وأربعين دقيقة بالقطار للوصول إلى مكتبها في وسط المدينة.",
+      "relatedForms": [
+        "commuted",
+        "commuter",
+        "commuting"
+      ],
+      "collocations": [
+        "daily commute",
+        "long commute",
+        "commute to work"
+      ],
+      "synonyms": [
+        "travel to work"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "transport"
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "First Day at the Office",
+      "titleArabic": "اليوم الأول في المكتب",
+      "setting": "A new employee being introduced to their workplace by the supervisor",
+      "settingArabic": "موظف جديد يتعرف على مكان عمله بتوجيه من المشرف",
+      "vocabularyUsed": [
+        "employee",
+        "supervisor",
+        "cubicle",
+        "workstation",
+        "office space",
+        "coworker",
+        "shift",
+        "task",
+        "manager",
+        "job title"
+      ],
+      "lines": [
+        {
+          "speaker": "Supervisor",
+          "text": "Welcome aboard! I am your direct supervisor, and I will show you around our office space.",
+          "translation": "أهلاً بك! أنا مشرفك المباشر وسأريك أرجاء مساحتنا المكتبية."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "Thank you so much. I am excited to start my first day as a full-time employee here.",
+          "translation": "شكراً جزيلاً. أنا متحمس لبدء أول يوم لي كموظف بدوام كامل هنا."
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "This is your cubicle. Your workstation has been set up with everything you need.",
+          "translation": "هذه حجيرتك المكتبية. تم إعداد محطة عملك بكل ما تحتاجه."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "It looks great! What shift will I normally be working during the week?",
+          "translation": "تبدو رائعة! ما الوردية التي سأعمل فيها عادة خلال الأسبوع؟"
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "You will be on the morning shift from eight until four. The manager will assign your first task.",
+          "translation": "ستكون في وردية الصباح من الثامنة حتى الرابعة. سيكلفك المدير بأول مهمة لك."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "Perfect. My official job title is Junior Analyst, correct? Will I meet my coworker soon?",
+          "translation": "ممتاز. مسماي الوظيفي الرسمي هو محلل مبتدئ، أليس كذلك؟ هل سأقابل زميلي قريباً؟"
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "Absolutely. She has been with the company for three years and is very helpful.",
+          "translation": "بالتأكيد. لقد كانت مع الشركة لمدة ثلاث سنوات وهي متعاونة جداً."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "I look forward to learning from experienced team members like her.",
+          "translation": "أتطلع إلى التعلم من أعضاء الفريق ذوي الخبرة مثلها."
+        }
+      ]
+    },
+    {
+      "title": "Discussing Career Progress",
+      "titleArabic": "مناقشة التقدم المهني",
+      "setting": "Two professionals catching up at a networking event",
+      "settingArabic": "محترفان يتحدثان في حدث للتواصل المهني",
+      "vocabularyUsed": [
+        "promotion",
+        "salary",
+        "career path",
+        "employer",
+        "qualified",
+        "for a long time",
+        "how long",
+        "for two years",
+        "since Monday",
+        "experienced"
+      ],
+      "lines": [
+        {
+          "speaker": "Ahmad",
+          "text": "How long have you been working in the banking industry? I started for two years ago.",
+          "translation": "منذ متى وأنتِ تعملين في القطاع المصرفي؟ أنا بدأت منذ سنتين."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "I have been in banking for a long time — almost twelve years now, actually.",
+          "translation": "أعمل في المصارف لفترة طويلة — حوالي اثنتي عشرة سنة حتى الآن في الواقع."
+        },
+        {
+          "speaker": "Ahmad",
+          "text": "That is impressive! Have you received any recent promotion or role change?",
+          "translation": "هذا مثير للإعجاب! هل حصلتِ على أي ترقية حديثة أو تغيير في الدور؟"
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Yes, my employer promoted me to vice president last quarter with a better salary.",
+          "translation": "نعم، رقّاني صاحب العمل إلى نائبة الرئيس في الربع الماضي مع راتب أفضل."
+        },
+        {
+          "speaker": "Ahmad",
+          "text": "You must be highly qualified and experienced to reach that level since Monday was your anniversary.",
+          "translation": "لا بد أنكِ مؤهلة وذات خبرة عالية للوصول إلى هذا المستوى خاصة أن ذكرى بدايتك كانت يوم الاثنين."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "Thank you. I always planned my career path carefully and sought challenging roles.",
+          "translation": "شكراً لك. لطالما خططت لمساري المهني بعناية وسعيت إلى أدوار تحمل تحديات."
+        },
+        {
+          "speaker": "Ahmad",
+          "text": "I am considering a new career path myself after working in retail for eight years.",
+          "translation": "أنا أفكر في مسار مهني جديد بنفسي بعد العمل في البيع بالتجزئة لمدة ثماني سنوات."
+        },
+        {
+          "speaker": "Sarah",
+          "text": "That sounds exciting. I am sure your extensive retail experience will transfer well.",
+          "translation": "هذا يبدو مثيراً. أنا متأكدة أن خبرتك الواسعة في التجزئة ستنتقل بشكل جيد."
+        }
+      ]
+    },
+    {
+      "title": "Talking About Different Work Styles",
+      "titleArabic": "الحديث عن أنماط العمل المختلفة",
+      "setting": "Friends comparing freelance work versus office employment",
+      "settingArabic": "أصدقاء يقارنون بين العمل المستقل والتوظيف في المكاتب",
+      "vocabularyUsed": [
+        "freelancer",
+        "entrepreneur",
+        "overtime",
+        "full-time",
+        "part-time",
+        "commute",
+        "income",
+        "workload",
+        "fire",
+        "assignment"
+      ],
+      "lines": [
+        {
+          "speaker": "Layla",
+          "text": "Have you enjoyed working as a freelancer since you left your full-time corporate role?",
+          "translation": "هل استمتعتِ بالعمل كعاملة مستقلة منذ أن تركتِ دورك المؤسسي بدوام كامل؟"
+        },
+        {
+          "speaker": "Noor",
+          "text": "Absolutely. The best part is eliminating my daily commute across the city.",
+          "translation": "بالتأكيد. أفضل جزء هو التخلص من تنقلي اليومي عبر المدينة."
+        },
+        {
+          "speaker": "Layla",
+          "text": "I heard many freelancers struggle with unstable income though. Is that true?",
+          "translation": "سمعت أن الكثير من العاملين المستقلين يعانون من عدم استقرار الدخل. هل هذا صحيح؟"
+        },
+        {
+          "speaker": "Noor",
+          "text": "It was tough at first, but now I earn more than my previous full-time salary.",
+          "translation": "كان صعباً في البداية، لكنني الآن أكسب أكثر من راتبي السابق بدوام كامل."
+        },
+        {
+          "speaker": "Layla",
+          "text": "My cousin became an entrepreneur last year. He manages a heavy workload and works overtime daily.",
+          "translation": "أصبح ابن عمي رائد أعمال العام الماضي. يتعامل مع عبء عمل ثقيل ويعمل ساعات إضافية يومياً."
+        },
+        {
+          "speaker": "Noor",
+          "text": "True. Before freelancing, my employer nearly fired me for rejecting a weekend assignment.",
+          "translation": "صحيح. قبل العمل المستقل، كاد صاحب عملي أن يفصلني لرفضي تكليفاً في عطلة نهاية الأسبوع."
+        },
+        {
+          "speaker": "Layla",
+          "text": "I currently work part-time while studying, so I value flexibility above all.",
+          "translation": "أعمل حالياً بدوام جزئي أثناء الدراسة، لذا أقدّر المرونة فوق كل شيء."
+        },
+        {
+          "speaker": "Noor",
+          "text": "That is the wisest approach. Balance your studies and build skills simultaneously.",
+          "translation": "هذا هو النهج الأحكم. وازني بين دراستك وبناء مهاراتك في آن واحد."
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Modern Workplace",
+      "titleArabic": "مكان العمل الحديث",
+      "kind": "informative",
+      "vocabularyUsed": [
+        "headquarters",
+        "cubicle",
+        "workstation",
+        "director",
+        "executive",
+        "intern",
+        "trainee",
+        "responsibility",
+        "duty"
+      ],
+      "text": "Modern corporate headquarters have evolved dramatically from the cramped cubicle farms of the past century. Today, open-plan office designs feature ergonomic workstations surrounded by collaborative lounge areas. A senior director or executive might sit in a glass-walled room overlooking the main floor, while nearby, a bright-eyed intern shadows a seasoned analyst. Fresh graduate trainee programs offer structured learning paths that accelerate professional growth. Each role carries its own responsibility and daily duty. Companies invest heavily in creating environments where innovation thrives because they understand that physical workspace directly influences productivity and employee satisfaction.",
+      "translation": "تطورت المقرات الرئيسية للشركات الحديثة بشكل كبير من مزارع الحجيرات المكتبية الضيقة في القرن الماضي. واليوم تتميز تصميمات المكاتب المفتوحة بمحطات عمل مريحة محاطة بمناطق استراحة تعاونية. قد يجلس مدير كبير أو مسؤول تنفيذي في غرفة بجدران زجاجية تطل على الطابق الرئيسي، بينما يرافق متدرب حماسي قريب محللاً متمرساً. تقدم برامج المتدربين الجدد من الخريجين مسارات تعلم منظمة تسرع النمو المهني. تستثمر الشركات بكثافة في إنشاء بيئات يزدهر فيها الابتكار لأنها تدرك أن مساحة العمل المادية تؤثر مباشرة على الإنتاجية ورضا الموظفين."
+    },
+    {
+      "title": "Choosing the Right Career",
+      "titleArabic": "اختيار المهنة المناسبة",
+      "kind": "reflective",
+      "vocabularyUsed": [
+        "profession",
+        "career path",
+        "employer",
+        "apply for",
+        "resign",
+        "retire",
+        "since childhood",
+        "for a long time",
+        "tenure",
+        "seniority"
+      ],
+      "text": "Selecting the right profession is among the most significant decisions in life. Many people dream about a specific career path since childhood, while others discover their passion much later. A thoughtful individual researches potential employers carefully before deciding to apply for a role. Sometimes, after working for a long time in one field, a professional may resign to pursue something entirely different. Others remain devoted to a single industry, building tenure and seniority, and eventually retire with pride after decades of service. Regardless of the chosen route, continuous learning and authentic self-awareness remain essential ingredients for professional fulfillment.",
+      "translation": "يُعد اختيار المهنة المناسبة من أهم القرارات في الحياة. يحلم كثير من الناس بمسار مهني محدد منذ الطفولة، بينما يكتشف آخرون شغفهم في وقت لاحق بكثير. يبحث الشخص المتأني عن أصحاب العمل المحتملين بعناية قبل أن يقرر التقدم بطلب لدور ما. وأحياناً، بعد العمل لفترة طويلة في مجال واحد، قد يستقيل المحترف لمتابعة شيء مختلف تماماً. بينما يظل آخرون مخلصين لصناعة واحدة ويتقاعدون في النهاية بفخر بعد عقود من الخدمة. وبغض النظر عن المسار المختار، يظل التعلم المستمر والوعي الذاتي الصادق مكونين أساسيين للإشباع المهني."
+    },
+    {
+      "title": "Financial Growth Through Employment",
+      "titleArabic": "النمو المالي من خلال التوظيف",
+      "kind": "informative",
+      "vocabularyUsed": [
+        "salary",
+        "wage",
+        "paycheck",
+        "bonus",
+        "promotion",
+        "hire",
+        "recruit",
+        "job description"
+      ],
+      "text": "When companies hire new talent, they typically present a detailed job description outlining the role and a competitive salary or hourly wage. For entry-level positions, an initial paycheck may seem modest, but consistent performance often leads to a meaningful promotion and substantial pay increases. Outstanding achievers frequently receive an annual bonus that rewards their exceptional contributions. Smart organizations recruit proactively, seeking diverse candidates who bring fresh perspectives. Understanding the difference between a fixed salary and an hourly wage helps professionals negotiate effectively and plan their household finances with greater confidence.",
+      "translation": "عندما توظف الشركات مواهب جديدة، فإنها عادة تقدم وصفاً وظيفياً تفصيلياً يحدد الدور وراتباً أو أجراً بالساعة تنافسياً. بالنسبة للوظائف المبتدئة، قد يبدو الراتب الأول متواضعاً، لكن الأداء المتسق غالباً ما يؤدي إلى ترقية ذات مغزى وزيادات كبيرة في الراتب. يحصل المتميزون في كثير من الأحيان على مكافأة سنوية تكافئ مساهماتهم الاستثنائية. تستقطب المنظمات الذكية المرشحين بشكل استباقي بحثاً عن مرشحين متنوعين يجلبون وجهات نظر جديدة. إن فهم الفرق بين الراتب الثابت والأجر بالساعة يساعد المهنيين على التفاوض بفعالية وتخطيط مواردهم المالية المنزلية بثقة أكبر."
+    }
+  ]
+}

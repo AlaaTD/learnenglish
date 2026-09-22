@@ -1,0 +1,963 @@
+# -*- coding: utf-8 -*-
+"""Data definition for Day 39: Communication at Work."""
+
+vocab_day39 = [
+    {
+        "headword": "instant messaging",
+        "pronunciation": "/ˈɪnstənt ˈmesɪdʒɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "The exchange of typed messages in real time over the internet between two or more users.",
+        "example": "Our remote workforce depends on corporate instant messaging for quick daily coordination.",
+        "translation": "المراسلة الفورية السريعة",
+        "exampleArabic": "تعتمد قوتنا العاملة عن بعد على المراسلة الفورية المؤسسية للتنسيق اليومي السريع.",
+        "relatedForms": [],
+        "collocations": ["use instant messaging", "instant messaging app"],
+        "synonyms": ["direct chat", "IM"],
+        "antonyms": [],
+        "tags": ["communication", "tools"]
+    },
+    {
+        "headword": "direct message",
+        "pronunciation": "/dəˈrekt ˈmesɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "A private digital message sent from one individual user directly to another within a platform.",
+        "example": "Send me a direct message with the server credentials so we keep them off public channels.",
+        "translation": "رسالة مباشرة خاصة (DM)",
+        "exampleArabic": "أرسل لي رسالة مباشرة تتضمن بيانات اعتماد الخادم لنبقيها بعيداً عن القنوات العامة.",
+        "relatedForms": ["direct messages", "DM"],
+        "collocations": ["send a direct message", "check direct messages"],
+        "synonyms": ["private message", "DM"],
+        "antonyms": ["public post"],
+        "tags": ["communication", "chat"]
+    },
+    {
+        "headword": "chat channel",
+        "pronunciation": "/tʃæt ˈtʃænl/",
+        "partOfSpeech": "noun",
+        "definition": "A dedicated topic-specific discussion stream inside a team collaboration application.",
+        "example": "Post your question in the frontend engineering chat channel so all designers can chime in.",
+        "translation": "قناة دردشة جماعية متخصصة",
+        "exampleArabic": "انشر سؤالك في قناة دردشة هندسة الواجهة الأمامية ليتمكن جميع المصممين من إبداء آرائهم.",
+        "relatedForms": ["chat channels"],
+        "collocations": ["join a chat channel", "dedicated chat channel"],
+        "synonyms": ["discussion channel", "room"],
+        "antonyms": [],
+        "tags": ["communication", "tools"]
+    },
+    {
+        "headword": "thread reply",
+        "pronunciation": "/θred rɪˈplaɪ/",
+        "partOfSpeech": "noun",
+        "definition": "A comment posted directly underneath a specific original message to keep discussions grouped.",
+        "example": "Please post your feedback as a thread reply so the main channel stays clean and readable.",
+        "translation": "رد داخل سلسلة المحادثة (ثريد)",
+        "exampleArabic": "يرجى نشر ملاحظاتك كرد داخل سلسلة المحادثة لتبقى القناة الرئيسية نظيفة وسهلة القراءة.",
+        "relatedForms": ["thread replies"],
+        "collocations": ["leave a thread reply", "post a thread reply"],
+        "synonyms": ["inline reply", "nested comment"],
+        "antonyms": [],
+        "tags": ["chat", "collaboration"]
+    },
+    {
+        "headword": "status message",
+        "pronunciation": "/ˈsteɪtəs ˈmesɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "A short custom note displayed next to a user's name showing their current availability or focus.",
+        "example": "I set my status message to 'In Deep Focus' so colleagues know I am writing code.",
+        "translation": "رسالة الحالة الشخصية / نبذة التواجد",
+        "exampleArabic": "قمت بتعيين رسالة حالتي إلى 'في تركيز عميق' حتى يعلم الزملاء أنني أكتب الكود.",
+        "relatedForms": ["status messages"],
+        "collocations": ["update status message", "custom status message"],
+        "synonyms": ["availability note"],
+        "antonyms": [],
+        "tags": ["chat", "presence"]
+    },
+    {
+        "headword": "notification badge",
+        "pronunciation": "/ˌnoʊtɪfɪˈkeɪʃən bædʒ/",
+        "partOfSpeech": "noun",
+        "definition": "A small visual indicator, often a red number dot, showing unread messages or alerts.",
+        "example": "Seeing a red notification badge on the team icon prompted me to check the deployment logs.",
+        "translation": "شارة التنبيهات والأشعار المرئية",
+        "exampleArabic": "دفعني ظهور شارة التنبيهات الحمراء على أيقونة الفريق إلى فحص سجلات النشر.",
+        "relatedForms": ["notification badges"],
+        "collocations": ["red notification badge", "clear notification badge"],
+        "synonyms": ["unread counter", "alert pill"],
+        "antonyms": [],
+        "tags": ["ui", "communication"]
+    },
+    {
+        "headword": "tag someone",
+        "pronunciation": "/tæɡ ˈsʌmwʌn/",
+        "partOfSpeech": "phrase",
+        "definition": "To mention an individual in a digital message using the '@' symbol to send them a direct alert.",
+        "example": "Tag someone from the DevOps team if the staging cluster stops responding.",
+        "translation": "يُشير لشخص في المحادثة (@شخص)",
+        "exampleArabic": "أشر لشخص من فريق العمليات إذا توقفت مجموعة بيئة الاختبار عن الاستجابة.",
+        "relatedForms": ["tagged someone", "tagging someone"],
+        "collocations": ["tag someone in a message", "tag someone for review"],
+        "synonyms": ["at-mention", "call out"],
+        "antonyms": [],
+        "tags": ["chat", "actions"]
+    },
+    {
+        "headword": "mute channel",
+        "pronunciation": "/mjuːt ˈtʃænl/",
+        "partOfSpeech": "phrase",
+        "definition": "To disable notifications from a busy conversation stream without leaving the group.",
+        "example": "I mute the general channel during quiet coding hours to minimize disruptive distractions.",
+        "translation": "يكتم إشعارات القناة",
+        "exampleArabic": "أكتم إشعارات القناة العامة أثناء ساعات البرمجة الهادئة لتقليل المقاطعات المشتتة.",
+        "relatedForms": ["muted channel", "muting channel"],
+        "collocations": ["mute channel temporarily", "mute channel notifications"],
+        "synonyms": ["silence channel"],
+        "antonyms": ["unmute channel"],
+        "tags": ["chat", "productivity"]
+    },
+    {
+        "headword": "pinned message",
+        "pronunciation": "/pɪnd ˈmesɪdʒ/",
+        "partOfSpeech": "noun",
+        "definition": "A prominent message fastened to the top of a channel for quick reference by all members.",
+        "example": "Check the pinned message for current API endpoint documentation and staging passwords.",
+        "translation": "الرسالة المثبتة في أعلى القناة",
+        "exampleArabic": "تحقق من الرسالة المثبتة للاطلاع على وثائق نقاط نهاية API الحالية وكلمات مرور بيئة الاختبار.",
+        "relatedForms": ["pinned messages"],
+        "collocations": ["read the pinned message", "pin a message"],
+        "synonyms": ["featured notice", "sticky message"],
+        "antonyms": [],
+        "tags": ["chat", "organization"]
+    },
+    {
+        "headword": "read receipt",
+        "pronunciation": "/riːd rɪˈsiːt/",
+        "partOfSpeech": "noun",
+        "definition": "A notification confirming that a recipient has opened and viewed a dispatched message.",
+        "example": "The delivery receipt turned into a blue read receipt as soon as the client viewed the proposal.",
+        "translation": "إشعار قراءة الرسالة وتأكيد الوصول",
+        "exampleArabic": "تحول إشعار التسليم إلى إشعار قراءة أزرق بمجرد أن اطلع العميل على المقترح.",
+        "relatedForms": ["read receipts"],
+        "collocations": ["enable read receipts", "turn off read receipts"],
+        "synonyms": ["seen indicator"],
+        "antonyms": [],
+        "tags": ["messaging", "features"]
+    },
+    {
+        "headword": "conference call",
+        "pronunciation": "/ˈkɑːnfərəns kɔːl/",
+        "partOfSpeech": "noun",
+        "definition": "A telephone or digital call in which someone talks to several people at the same time.",
+        "example": "We held a conference call with our European partners to coordinate product launch logistics.",
+        "translation": "مكالمة هاتفية جماعية (كونفرانس كول)",
+        "exampleArabic": "أجرينا مكالمة هاتفية جماعية مع شركائنا الأوروبيين لتنسيق لوجستيات إطلاق المنتج.",
+        "relatedForms": ["conference calls"],
+        "collocations": ["join a conference call", "schedule a conference call"],
+        "synonyms": ["teleconference", "group call"],
+        "antonyms": ["one-on-one call"],
+        "tags": ["voice", "meetings"]
+    },
+    {
+        "headword": "voice call",
+        "pronunciation": "/vɔɪs kɔːl/",
+        "partOfSpeech": "noun",
+        "definition": "A real-time audio connection over a cellular or internet protocol without video streaming.",
+        "example": "When text chat becomes confusing, switching to a quick voice call clears up ambiguities.",
+        "translation": "مكالمة صوتية",
+        "exampleArabic": "عندما يصبح الدردشة النصية مربكة، فإن الانتقال إلى مكالمة صوتية سريعة يزيل كل لبس.",
+        "relatedForms": ["voice calls"],
+        "collocations": ["make a voice call", "answer a voice call"],
+        "synonyms": ["audio call", "phone conversation"],
+        "antonyms": ["video call"],
+        "tags": ["voice", "communication"]
+    },
+    {
+        "headword": "video conference",
+        "pronunciation": "/ˈvɪdioʊ ˈkɑːnfərəns/",
+        "partOfSpeech": "noun",
+        "definition": "A meeting involving participants in different locations who communicate using audio and video transmissions.",
+        "example": "Our executive quarterly review took place via high-definition video conference.",
+        "translation": "مؤتمر مرئي عبر الفيديو",
+        "exampleArabic": "انعقدت مراجعتنا الربعية التنفيذية عبر مؤتمر مرئي عالي الوضوح بالفيديو.",
+        "relatedForms": ["video conferences"],
+        "collocations": ["host a video conference", "join a video conference"],
+        "synonyms": ["video meeting", "webinar"],
+        "antonyms": ["in-person meeting"],
+        "tags": ["video", "meetings"]
+    },
+    {
+        "headword": "screen sharing",
+        "pronunciation": "/skriːn ˈʃerɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "The act of broadcasting one's computer desktop or window to other participants during an online call.",
+        "example": "Enable screen sharing so everyone in the standup can view your code demo clearly.",
+        "translation": "مشاركة الشاشة مع الحضور",
+        "exampleArabic": "قم بتفعيل مشاركة الشاشة حتى يتمكن الجميع في الاجتماع السريع من مشاهدة عرض الكود بوضوح.",
+        "relatedForms": [],
+        "collocations": ["start screen sharing", "enable screen sharing"],
+        "synonyms": ["desktop broadcast"],
+        "antonyms": [],
+        "tags": ["video", "features"]
+    },
+    {
+        "headword": "breakout room",
+        "pronunciation": "/ˈbreɪkaʊt ruːm/",
+        "partOfSpeech": "noun",
+        "definition": "A smaller sub-room within a virtual video meeting where participants gather for intimate discussions.",
+        "example": "The workshop facilitator divided thirty attendees into five small breakout rooms for ideation.",
+        "translation": "غرفة جانبية فرعية في الاجتماع الافتراضي",
+        "exampleArabic": "قسم ميسر ورشة العمل ثلاثين مشاركاً إلى خمس غرف جانبية فرعية صغيرة لتوليد الأفكار.",
+        "relatedForms": ["breakout rooms"],
+        "collocations": ["assign to a breakout room", "join a breakout room"],
+        "synonyms": ["sub-group room"],
+        "antonyms": ["main session"],
+        "tags": ["video", "meetings"]
+    },
+    {
+        "headword": "mute audio",
+        "pronunciation": "/mjuːt ˈɔːdioʊ/",
+        "partOfSpeech": "phrase",
+        "definition": "To silence the input of one's microphone during a voice or video call.",
+        "example": "Remember to mute audio while others are presenting to eliminate background barking.",
+        "translation": "يكتم الصوت من الميكروفون",
+        "exampleArabic": "تذكر كتم الصوت أثناء تقديم الآخرين للعروض للقضاء على نباح الكلاب في الخلفية.",
+        "relatedForms": ["muted audio", "muting audio"],
+        "collocations": ["mute audio on entry", "quickly mute audio"],
+        "synonyms": ["silence microphone"],
+        "antonyms": ["unmute audio"],
+        "tags": ["audio", "actions"]
+    },
+    {
+        "headword": "unmute audio",
+        "pronunciation": "/ʌnˈmjuːt ˈɔːdioʊ/",
+        "partOfSpeech": "phrase",
+        "definition": "To re-enable one's microphone to speak during a digital meeting.",
+        "example": "You are on mute; please unmute audio before asking your question to the panel.",
+        "translation": "يفتح كتم الصوت ويبدأ بالحديث",
+        "exampleArabic": "صوتك مكتوم؛ يرجى فتح كتم الصوت قبل طرح سؤالك على أعضاء اللجنة.",
+        "relatedForms": ["unmuted audio", "unmuting audio"],
+        "collocations": ["unmute audio to speak"],
+        "synonyms": ["enable microphone"],
+        "antonyms": ["mute audio"],
+        "tags": ["audio", "actions"]
+    },
+    {
+        "headword": "dial in",
+        "pronunciation": "/ˈdaɪəl ɪn/",
+        "partOfSpeech": "phrasal verb",
+        "definition": "To join a telephone conference or virtual meeting by calling a specific phone number.",
+        "example": "If your home Wi-Fi drops, you can dial in using the local telephone bridge number.",
+        "translation": "يتصل بالهاتف للانضمام للاجتماع",
+        "exampleArabic": "إذا انقطع اتصال الواي فاي المنزلي، يمكنك الاتصال هاتفياً باستخدام رقم جسر الهاتف المحلي.",
+        "relatedForms": ["dialed in", "dialing in"],
+        "collocations": ["dial in via phone", "dial in to the meeting"],
+        "synonyms": ["call in", "phone in"],
+        "antonyms": ["hang up"],
+        "tags": ["voice", "actions"]
+    },
+    {
+        "headword": "virtual background",
+        "pronunciation": "/ˈvɜːrtʃuəl ˈbækɡraʊnd/",
+        "partOfSpeech": "noun",
+        "definition": "A digital image or blurred backdrop substituted for a user's real room during video calls.",
+        "example": "She applied an elegant office virtual background to conceal her messy kitchen.",
+        "translation": "الخلفية الافتراضية في مكالمات الفيديو",
+        "exampleArabic": "طبقت خلفية افتراضية مكتبية أنيقة لإخفاء مطبخها غير المرتب.",
+        "relatedForms": ["virtual backgrounds"],
+        "collocations": ["set a virtual background", "blurred virtual background"],
+        "synonyms": ["digital backdrop", "background filter"],
+        "antonyms": [],
+        "tags": ["video", "features"]
+    },
+    {
+        "headword": "connection lag",
+        "pronunciation": "/kəˈnekʃən læɡ/",
+        "partOfSpeech": "noun",
+        "definition": "A noticeable delay between data being sent and received over an internet audio or video connection.",
+        "example": "Severe connection lag made it difficult to hold a fluid conversation with overseas leads.",
+        "translation": "بطء وتأخر الاتصال (اللاج)",
+        "exampleArabic": "جعل التأخر الشديد في الاتصال من الصعب إجراء محادثة سلسة مع القادة في الخارج.",
+        "relatedForms": [],
+        "collocations": ["experience connection lag", "minimize connection lag"],
+        "synonyms": ["latency delay", "lag"],
+        "antonyms": ["low latency"],
+        "tags": ["networking", "problems"]
+    },
+    {
+        "headword": "quick update",
+        "pronunciation": "/kwɪk ˈʌpdeɪt/",
+        "partOfSpeech": "noun",
+        "definition": "A brief message or talk giving the latest facts or situation regarding an ongoing project.",
+        "example": "Let me give you a quick update on our backend database migration before the demo.",
+        "translation": "تحديث سريع وموجز",
+        "exampleArabic": "دعني أقدم لك تحديثاً سريعاً وموجزاً عن نقل قاعدة البيانات الخلفية لدينا قبل العرض.",
+        "relatedForms": ["quick updates"],
+        "collocations": ["give a quick update", "provide a quick update"],
+        "synonyms": ["brief status", "short briefing"],
+        "antonyms": ["detailed report"],
+        "tags": ["communication", "updates"]
+    },
+    {
+        "headword": "briefing",
+        "pronunciation": "/ˈbriːfɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "A meeting for giving information or instructions, or the information itself.",
+        "example": "The executive team attended a confidential security briefing on emerging cyber threats.",
+        "translation": "إحاطة إعلامية أو إدارية / إيجاز",
+        "exampleArabic": "حضر الفريق التنفيذي إيجازاً وإحاطة أمنية سرية حول التهديدات السيبرانية الناشئة.",
+        "relatedForms": ["briefings"],
+        "collocations": ["morning briefing", "confidential briefing", "conduct a briefing"],
+        "synonyms": ["orientation", "debrief", "summary"],
+        "antonyms": [],
+        "tags": ["management", "updates"]
+    },
+    {
+        "headword": "official broadcast",
+        "pronunciation": "/əˈfɪʃəl ˈbrɔːdkæst/",
+        "partOfSpeech": "noun",
+        "definition": "A formal, authorized communication transmitted to an entire organization or subscriber audience.",
+        "example": "The CEO issued an official broadcast announcing our expansion into Asian markets.",
+        "translation": "بيان أو بث رسمي معتمد",
+        "exampleArabic": "أصدر الرئيس التنفيذي بياناً رسمياً يعلن فيه توسعنا في الأسواق الآسيوية.",
+        "relatedForms": ["official broadcasts"],
+        "collocations": ["issue an official broadcast", "company official broadcast"],
+        "synonyms": ["official dispatch", "formal statement"],
+        "antonyms": [],
+        "tags": ["communication", "management"]
+    },
+    {
+        "headword": "company-wide notice",
+        "pronunciation": "/ˈkʌmpəni waɪd ˈnoʊtɪs/",
+        "partOfSpeech": "noun",
+        "definition": "An official memorandum sent to every single employee across an entire enterprise.",
+        "example": "Human Resources sent a company-wide notice outlining the upcoming holiday schedule.",
+        "translation": "إشعار عام لجميع موظفي الشركة",
+        "exampleArabic": "أرسل قسم الموارد البشرية إشعاراً عاماً لجميع موظفي الشركة يوضح جدول العطلات القادم.",
+        "relatedForms": ["company-wide notices"],
+        "collocations": ["send a company-wide notice", "publish a company-wide notice"],
+        "synonyms": ["all-hands announcement", "circular"],
+        "antonyms": [],
+        "tags": ["communication", "corporate"]
+    },
+    {
+        "headword": "written directive",
+        "pronunciation": "/ˈrɪtn dəˈrektɪv/",
+        "partOfSpeech": "noun",
+        "definition": "An official instruction in writing issued by management establishing a policy or action.",
+        "example": "The director issued a written directive mandating two-factor authentication on all laptops.",
+        "translation": "توجيه خطي رسمي ملزم",
+        "exampleArabic": "أصدر المدير توجيهاً خطياً رسمياً يفرض المصادقة الثنائية على جميع أجهزة الكمبيوتر المحمولة.",
+        "relatedForms": ["written directives"],
+        "collocations": ["issue a written directive", "follow a written directive"],
+        "synonyms": ["official mandate", "written order"],
+        "antonyms": [],
+        "tags": ["policy", "management"]
+    },
+    {
+        "headword": "sync up",
+        "pronunciation": "/sɪŋk ʌp/",
+        "partOfSpeech": "phrasal verb",
+        "definition": "To meet briefly or communicate with someone to align ideas, progress, and goals.",
+        "example": "Let's sync up for ten minutes tomorrow morning to divide the client deliverables.",
+        "translation": "يلتقي للتنسيق وتوحيد الرؤى",
+        "exampleArabic": "دعنا نلتقي للتنسيق لمدة عشر دقائق صباح الغد لتقسيم مخرجات العميل.",
+        "relatedForms": ["synced up", "syncing up"],
+        "collocations": ["sync up with someone", "sync up tomorrow"],
+        "synonyms": ["coordinate", "align", "catch up"],
+        "antonyms": [],
+        "tags": ["collaboration", "phrasal verbs"]
+    },
+    {
+        "headword": "align on priorities",
+        "pronunciation": "/əˈlaɪn ɑːn praɪˈɔːrətiːz/",
+        "partOfSpeech": "phrase",
+        "definition": "To reach a shared, mutual agreement regarding which tasks are most urgent and important.",
+        "example": "The directors met before the quarter began to align on priorities and allocate headcount.",
+        "translation": "يتفق على ترتيب الأولويات المشتركة",
+        "exampleArabic": "اجتمع المديرون قبل بدء الربع المالي للاتفاق على الأولويات وتوزيع عدد الموظفين.",
+        "relatedForms": ["aligned on priorities", "aligning on priorities"],
+        "collocations": ["align on priorities early", "help teams align on priorities"],
+        "synonyms": ["agree on goals", "standardize priorities"],
+        "antonyms": ["conflict on goals"],
+        "tags": ["strategy", "actions"]
+    },
+    {
+        "headword": "keep in the loop",
+        "pronunciation": "/kiːp ɪn ðə luːp/",
+        "partOfSpeech": "idiom",
+        "definition": "To keep someone informed about events, developments, or decisions affecting them.",
+        "example": "Please cc me on all client correspondence so I can keep in the loop regarding revisions.",
+        "translation": "يُبقيه على اطلاع دائم وفي الصورة",
+        "exampleArabic": "يرجى وضعي في نسخة البريد لجميع مراسلات العملاء لأبقى على اطلاع دائم بالتعديلات.",
+        "relatedForms": ["kept in the loop"],
+        "collocations": ["keep me in the loop", "stay in the loop"],
+        "synonyms": ["keep informed", "keep posted"],
+        "antonyms": ["leave out of the loop"],
+        "tags": ["communication", "idioms"]
+    },
+    {
+        "headword": "give a heads-up",
+        "pronunciation": "/ɡɪv ə ˈhedzʌp/",
+        "partOfSpeech": "phrase",
+        "definition": "To give someone an advance warning or reminder about something before it occurs.",
+        "example": "Thanks for giving us a heads-up that the payment service would be undergoing maintenance.",
+        "translation": "يُعطي تنبيهاً مسبقاً / يلفت الانتباه مبكراً",
+        "exampleArabic": "شكراً لإعطائنا تنبيهاً مسبقاً بأن خدمة الدفع ستخضع للصيانة.",
+        "relatedForms": ["gave a heads-up", "giving a heads-up"],
+        "collocations": ["give a quick heads-up", "appreciate the heads-up"],
+        "synonyms": ["give advance notice", "forewarn"],
+        "antonyms": [],
+        "tags": ["communication", "phrases"]
+    },
+    {
+        "headword": "circle back",
+        "pronunciation": "/ˈsɜːrkəl bæk/",
+        "partOfSpeech": "phrasal verb",
+        "definition": "To return to discuss an issue or topic at a later, more convenient time.",
+        "example": "I do not have those budget numbers right now, but I will circle back with you after lunch.",
+        "translation": "يعود للنقاش في وقت لاحق / يرجع للموضوع ثانية",
+        "exampleArabic": "لا أملك أرقام الميزانية تلك حالياً، لكني سأعود للنقاش معك بعد الغداء.",
+        "relatedForms": ["circled back", "circling back"],
+        "collocations": ["circle back later", "circle back to this topic"],
+        "synonyms": ["follow up later", "revisit"],
+        "antonyms": [],
+        "tags": ["communication", "phrasal verbs"]
+    },
+    {
+        "headword": "leave a voicemail",
+        "pronunciation": "/liːv ə ˈvɔɪsmeɪl/",
+        "partOfSpeech": "phrase",
+        "definition": "To record a verbal audio message on a phone system when the intended recipient cannot answer.",
+        "example": "Because she was in an executive session, I decided to leave a voicemail explaining the delay.",
+        "translation": "يترك رسالة صوتية على الهاتف (بريد صوتي)",
+        "exampleArabic": "نظراً لأنها كانت في جلسة تنفيذية، قررت ترك رسالة صوتية تشرح سبب التأخير.",
+        "relatedForms": ["left a voicemail", "leaving a voicemail"],
+        "collocations": ["leave a detailed voicemail", "leave a quick voicemail"],
+        "synonyms": ["record a message"],
+        "antonyms": [],
+        "tags": ["phone", "actions"]
+    },
+    {
+        "headword": "take a message",
+        "pronunciation": "/teɪk ə ˈmesɪdʒ/",
+        "partOfSpeech": "phrase",
+        "definition": "To write down a note from a caller for a person who is currently unavailable.",
+        "example": "The receptionist offered to take a message when the department director stepped out.",
+        "translation": "يدوّن رسالة من المتصل",
+        "exampleArabic": "عرض موظف الاستقبال تدوين رسالة عندما غادر مدير القسم مكتبه.",
+        "relatedForms": ["took a message", "taking a message"],
+        "collocations": ["can I take a message", "take a message for someone"],
+        "synonyms": ["record a note"],
+        "antonyms": [],
+        "tags": ["phone", "actions"]
+    },
+    {
+        "headword": "forward a call",
+        "pronunciation": "/ˈfɔːrwərd ə kɔːl/",
+        "partOfSpeech": "phrase",
+        "definition": "To redirect an incoming telephone call to another extension, department, or external phone number.",
+        "example": "Please hold the line while I forward your call to our billing specialist.",
+        "translation": "يُحوّل المكالمة لشخص أو قسم آخر",
+        "exampleArabic": "يرجى الانتظار على الخط بينما أقوم بتحويل مكالمتك إلى أخصائي الفوترة لدينا.",
+        "relatedForms": ["forwarded a call", "forwarding a call"],
+        "collocations": ["forward a call to an extension", "automatically forward a call"],
+        "synonyms": ["transfer a call"],
+        "antonyms": [],
+        "tags": ["phone", "actions"]
+    },
+    {
+        "headword": "put on hold",
+        "pronunciation": "/pʊt ɑːn hoʊld/",
+        "partOfSpeech": "phrase",
+        "definition": "To temporarily suspend a phone conversation while the caller waits, often accompanied by music.",
+        "example": "The airline agent had to put me on hold while verifying flight availability.",
+        "translation": "يضع المتصل على الانتظار (هولد)",
+        "exampleArabic": "اضطر موظف شركة الطيران إلى وضعي على الانتظار أثناء التحقق من توفر الرحلات.",
+        "relatedForms": ["put on hold", "putting on hold"],
+        "collocations": ["put the customer on hold", "be put on hold"],
+        "synonyms": ["place on pause", "suspend call"],
+        "antonyms": ["resume call"],
+        "tags": ["phone", "actions"]
+    },
+    {
+        "headword": "initiate contact",
+        "pronunciation": "/ɪˈnɪʃieɪt ˈkɑːntækt/",
+        "partOfSpeech": "phrase",
+        "definition": "To take the first step in communicating with an individual or organization.",
+        "example": "Our sales representative will initiate contact with the enterprise prospect next Tuesday.",
+        "translation": "يبادر بالتواصل والاتصال",
+        "exampleArabic": "سيبادر مندوب المبيعات لدينا بالتواصل مع العميل المحتمل يوم الثلاثاء القادم.",
+        "relatedForms": ["initiated contact", "initiating contact"],
+        "collocations": ["initiate contact via email", "formally initiate contact"],
+        "synonyms": ["reach out", "make initial contact"],
+        "antonyms": ["sever contact"],
+        "tags": ["actions", "sales"]
+    },
+    {
+        "headword": "return a call",
+        "pronunciation": "/rɪˈtɜːrn ə kɔːl/",
+        "partOfSpeech": "phrase",
+        "definition": "To telephone someone back after receiving a missed call or voicemail from them.",
+        "example": "I will return your call as soon as this quarterly planning session wraps up.",
+        "translation": "يُعاود الاتصال هاتفياً",
+        "exampleArabic": "سأعاود الاتصال بك بمجرد انتهاء جلسة التخطيط الربعية هذه.",
+        "relatedForms": ["returned a call", "returning a call"],
+        "collocations": ["promptly return a call", "return a call within an hour"],
+        "synonyms": ["call back"],
+        "antonyms": ["ignore a call"],
+        "tags": ["phone", "actions"]
+    },
+    {
+        "headword": "phone directory",
+        "pronunciation": "/foʊn dəˈrektəri/",
+        "partOfSpeech": "noun",
+        "definition": "An alphabetical list of telephone numbers and extension contacts in an organization or district.",
+        "example": "Consult the internal corporate phone directory to find the regional sales director's extension.",
+        "translation": "دليل أرقام الهواتف",
+        "exampleArabic": "راجع دليل هواتف الشركة الداخلي للعثور على الرقم الداخلي لمدير المبيعات الإقليمي.",
+        "relatedForms": ["phone directories"],
+        "collocations": ["corporate phone directory", "look up in the phone directory"],
+        "synonyms": ["telephone directory", "contact list"],
+        "antonyms": [],
+        "tags": ["phone", "organization"]
+    },
+    {
+        "headword": "toll-free number",
+        "pronunciation": "/ˌtoʊl ˈfriː ˈnʌmbər/",
+        "partOfSpeech": "noun",
+        "definition": "A telephone number that callers can dial without incurring long-distance charges.",
+        "example": "Customers can call our 24/7 technical assistance hotline using our toll-free number.",
+        "translation": "رقم هاتف مجاني للاتصال (الرقم الأخضر)",
+        "exampleArabic": "يمكن للعملاء الاتصال بالخط الساخن للمساعدة الفنية على مدار الساعة باستخدام رقمنا المجاني.",
+        "relatedForms": ["toll-free numbers"],
+        "collocations": ["dial a toll-free number", "nationwide toll-free number"],
+        "synonyms": ["freephone", "1-800 number"],
+        "antonyms": ["toll number"],
+        "tags": ["phone", "business"]
+    },
+    {
+        "headword": "extension number",
+        "pronunciation": "/ɪkˈstenʃən ˈnʌmbər/",
+        "partOfSpeech": "noun",
+        "definition": "A short internal telephone number assigned to an individual desk phone within an office system.",
+        "example": "Dial our main switchboard and enter extension number 402 to reach accounting directly.",
+        "translation": "رقم التحويلة الداخلية للهاتف",
+        "exampleArabic": "اتصل بلوحة التبديل الرئيسية لدينا وأدخل رقم التحويلة 402 للوصول إلى المحاسبة مباشرة.",
+        "relatedForms": ["extension numbers"],
+        "collocations": ["reach an extension number", "internal extension number"],
+        "synonyms": ["phone extension"],
+        "antonyms": [],
+        "tags": ["phone", "office"]
+    },
+    {
+        "headword": "busy signal",
+        "pronunciation": "/ˈbɪzi ˈsɪɡnəl/",
+        "partOfSpeech": "noun",
+        "definition": "A beeping sound heard on a telephone line indicating that the called party is on another call.",
+        "example": "I tried calling support three times, but each attempt was met with a rapid busy signal.",
+        "translation": "نغمة انشغال الخط (صوت الخط المشغول)",
+        "exampleArabic": "حاولت الاتصال بالدعم ثلاث مرات، لكن كل محاولة قوبلت بنغمة انشغال خط متسارعة.",
+        "relatedForms": ["busy signals"],
+        "collocations": ["get a busy signal", "hear a busy signal"],
+        "synonyms": ["engaged tone"],
+        "antonyms": ["ringing tone"],
+        "tags": ["phone", "sound"]
+    },
+    {
+        "headword": "concise",
+        "pronunciation": "/kənˈsaɪs/",
+        "partOfSpeech": "adjective",
+        "definition": "Giving a lot of information clearly and in a few words; brief but comprehensive.",
+        "example": "Executive leadership appreciates concise update emails that focus directly on measurable deliverables.",
+        "translation": "موجز ومختصر وبليغ",
+        "exampleArabic": "تقدر القيادة التنفيذية رسائل البريد الإلكتروني التحديثية الموجزة التي تركز مباشرة على المخرجات القابلة للقياس.",
+        "relatedForms": ["concisely", "conciseness"],
+        "collocations": ["concise email", "be concise", "clear and concise"],
+        "synonyms": ["succinct", "brief", "pithy"],
+        "antonyms": ["wordy", "rambling"],
+        "tags": ["tone", "writing"]
+    },
+    {
+        "headword": "diplomatic",
+        "pronunciation": "/ˌdɪpləˈmætɪk/",
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing an ability to deal with people in a sensitive, tactful, and effective way.",
+        "example": "The manager gave a very diplomatic answer to avoid taking sides in the departmental rivalry.",
+        "translation": "دبلوماسي ولبق في التعامل",
+        "exampleArabic": "قدم المدير إجابة دبلوماسية للغاية لتجنب الانحياز في التنافس بين الأقسام.",
+        "relatedForms": ["diplomatically", "diplomacy"],
+        "collocations": ["diplomatic response", "diplomatic approach"],
+        "synonyms": ["tactful", "politic", "discreet"],
+        "antonyms": ["tactless", "blunt"],
+        "tags": ["tone", "interpersonal"]
+    },
+    {
+        "headword": "assertive",
+        "pronunciation": "/əˈsɜːrtɪv/",
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing a confident and forceful personality without being aggressive.",
+        "example": "Being assertive in negotiation helped our procurement lead secure favorable vendor terms.",
+        "translation": "حازم وواثق دون عدوانية",
+        "exampleArabic": "ساعد التحلي بالحزم في المفاوضات مسؤول المشتريات لدينا على تأمين شروط مواتية مع الموردين.",
+        "relatedForms": ["assertively", "assertiveness"],
+        "collocations": ["assertive communication", "be assertive"],
+        "synonyms": ["confident", "decisive", "firm"],
+        "antonyms": ["passive", "submissive"],
+        "tags": ["tone", "behavior"]
+    },
+    {
+        "headword": "tactful",
+        "pronunciation": "/ˈtæktfəl/",
+        "partOfSpeech": "adjective",
+        "definition": "Having or showing skill and sensitivity in dealing with others or with difficult issues.",
+        "example": "She offered tactful suggestions that corrected the junior coder without embarrassing him.",
+        "translation": "لبق وكيّس ومراعٍ لمشاعر الآخرين",
+        "exampleArabic": "قدمت اقتراحات لبقة صححت خطأ المبرمج المبتدئ دون إحراجه.",
+        "relatedForms": ["tactfully", "tact"],
+        "collocations": ["tactful approach", "tactful manner"],
+        "synonyms": ["diplomatic", "considerate", "delicate"],
+        "antonyms": ["tactless", "clumsy"],
+        "tags": ["tone", "behavior"]
+    },
+    {
+        "headword": "constructive feedback",
+        "pronunciation": "/kənˈstrʌktɪv ˈfiːdbæk/",
+        "partOfSpeech": "noun",
+        "definition": "Helpful criticism and observations intended to foster improvement and growth.",
+        "example": "Constructive feedback from senior architects transformed my raw prototype into an enterprise solution.",
+        "translation": "نقد بناء وتغذية راجعة مفيدة",
+        "exampleArabic": "حولت التغذية الراجعة البناءة من كبار المهندسين المعماريين نموذجي الأولي الخام إلى حل مؤسسي متكامل.",
+        "relatedForms": [],
+        "collocations": ["provide constructive feedback", "receive constructive feedback"],
+        "synonyms": ["helpful critique", "positive guidance"],
+        "antonyms": ["destructive criticism"],
+        "tags": ["feedback", "growth"]
+    },
+    {
+        "headword": "active listening",
+        "pronunciation": "/ˈæktɪv ˈlɪsnɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "The practice of paying close, non-judgmental attention to a speaker and validating their points.",
+        "example": "Practicing active listening during client consultations prevents costly misunderstandings.",
+        "translation": "الاستماع الفعال والإصغاء الواعي",
+        "exampleArabic": "تمنع ممارسة الاستماع الفعال أثناء استشارات العملاء سوء الفهم المكلف.",
+        "relatedForms": [],
+        "collocations": ["practice active listening", "demonstrate active listening"],
+        "synonyms": ["attentive listening", "mindful listening"],
+        "antonyms": ["passive listening"],
+        "tags": ["interpersonal", "skills"]
+    },
+    {
+        "headword": "clarification request",
+        "pronunciation": "/ˌklærəfɪˈkeɪʃən rɪˈkwest/",
+        "partOfSpeech": "noun",
+        "definition": "A polite inquiry asking a speaker or writer to explain an ambiguous point more clearly.",
+        "example": "I submitted a clarification request regarding the vague compliance requirement in section four.",
+        "translation": "طلب توضيح واستفسار عن غموض",
+        "exampleArabic": "قدمت طلب توضيح بشأن متطلب الامتثال الغامض في القسم الرابع.",
+        "relatedForms": ["clarification requests"],
+        "collocations": ["send a clarification request", "respond to clarification request"],
+        "synonyms": ["request for explanation"],
+        "antonyms": [],
+        "tags": ["communication", "clarity"]
+    },
+    {
+        "headword": "miscommunication",
+        "pronunciation": "/ˌmɪskəˌmjuːnɪˈkeɪʃən/",
+        "partOfSpeech": "noun",
+        "definition": "Failure to communicate adequately or properly, resulting in confusion or mistaken actions.",
+        "example": "The scheduling mix-up was caused by a simple miscommunication regarding timezone offsets.",
+        "translation": "سوء تواصل / خلل في التفاهم",
+        "exampleArabic": "نتج ارتباك الجدولة عن سوء تواصل بسيط بشأن فروق التوقيت الزمني.",
+        "relatedForms": ["miscommunicate"],
+        "collocations": ["avoid miscommunication", "cause miscommunication"],
+        "synonyms": ["misunderstanding", "mix-up"],
+        "antonyms": ["clear communication"],
+        "tags": ["problems", "communication"]
+    },
+    {
+        "headword": "jargon",
+        "pronunciation": "/ˈdʒɑːrɡən/",
+        "partOfSpeech": "noun",
+        "definition": "Special words or expressions that are used by a particular profession and are difficult for others to understand.",
+        "example": "Avoid using dense technical jargon when explaining product features to non-technical customers.",
+        "translation": "المصطلحات التخصصية المعقدة (رطانة المهنة)",
+        "exampleArabic": "تجنب استخدام المصطلحات التخصصية المعقدة عند شرح ميزات المنتج للعملاء غير التقنيين.",
+        "relatedForms": [],
+        "collocations": ["technical jargon", "heavy jargon", "avoid jargon"],
+        "synonyms": ["specialized terminology", "buzzwords", "slang"],
+        "antonyms": ["plain language"],
+        "tags": ["language", "writing"]
+    },
+    {
+        "headword": "paraphrase",
+        "pronunciation": "/ˈpærəfreɪz/",
+        "partOfSpeech": "verb",
+        "definition": "To express the meaning of something using different words, especially to achieve greater clarity.",
+        "example": "To confirm I understand your requirements, let me paraphrase what you just described.",
+        "translation": "يُعيد الصياغة بأسلوبه الخاص للتأكيد",
+        "exampleArabic": "لتأكيد فهمي لمتطلباتك، دعني أعد صياغة ما وصفته للتو بأسلوبي.",
+        "relatedForms": ["paraphrased", "paraphrases", "paraphrasing"],
+        "collocations": ["paraphrase an idea", "accurately paraphrase"],
+        "synonyms": ["rephrase", "reword", "restate"],
+        "antonyms": ["quote directly"],
+        "tags": ["language", "clarity"]
+    }
+]
+
+grammar_day39 = [
+    {
+        "title": "Gerund vs Infinitive (Review)",
+        "explanation": "This lesson synthesizes when to choose a gerund (verb + -ing) versus an infinitive (verb + to). Some verbs take ONLY gerunds (enjoy, avoid, practice, keep, consider: 'Avoid using dense jargon'). Other verbs take ONLY infinitives (decide, hope, manage, attempt, plan, offer: 'We decided to dial in early'). Some verbs change meaning depending on whether a gerund or infinitive follows (e.g., remember to send the update = don't forget vs remember sending the update = recall the past action).",
+        "explanationArabic": "يراجع هذا الدرس ويقارن بين استخدام اسم الفعل (Gerund: verb + -ing) والمصدر (Infinitive: verb + to). هناك أفعال يتبعها اسم الفعل فقط (مثل enjoy, avoid, practice, keep, consider: 'تجنب استخدام المصطلحات المعقدة'). وهناك أفعال يتبعها المصدر فقط (مثل decide, hope, manage, attempt, plan, offer: 'قررنا الاتصال مبكراً'). وهناك أفعال يتغير معناها تماماً باختلاف الصيغة (مثل: remember to send = تذكر أن ترسل مستقبلاً، بينما remember sending = يتذكر أنه قد أرسل بالفعل في الماضي).",
+        "rules": [
+            "Verb + Gerund: admit, avoid, consider, delay, enjoy, finish, keep, practice, suggest.",
+            "Verb + Infinitive: agree, decide, hope, manage, plan, promise, refuse, afford, offer, tend.",
+            "Preposition + Gerund: Always use gerund after prepositions ('Thank you for giving a heads-up').",
+            "Meaning change verbs: stop, remember, forget, regret (e.g., stop talking vs stop to talk)."
+        ],
+        "rulesArabic": [
+            "أفعال يتبعها اسم الفعل: admit, avoid, consider, delay, enjoy, finish, keep, practice, suggest.",
+            "أفعال يتبعها المصدر: agree, decide, hope, manage, plan, promise, refuse, afford, offer, tend.",
+            "حروف الجر + اسم الفعل: يأتي اسم الفعل دائماً بعد حروف الجر ('شكراً على إعطاء التنبيه').",
+            "أفعال يتغير معناها: stop, remember, forget, regret (مثال: توقف عن الكلام مقابل توقف لكي يتكلم)."
+        ],
+        "structures": [
+            {
+                "pattern": "Subject + verb (avoid/enjoy) + Verb-ing",
+                "explanation": "Gerund pattern for habitual actions or preferences.",
+                "explanationArabic": "نمط اسم الفعل للأفعال الاعتيادية أو التفضيلات."
+            },
+            {
+                "pattern": "Subject + verb (decide/manage) + to + V1 (base)",
+                "explanation": "Infinitive pattern for intentions, decisions, and future plans.",
+                "explanationArabic": "نمط المصدر للقرارات والنوايا والخطط المستقبلية."
+            },
+            {
+                "pattern": "Preposition + Verb-ing",
+                "explanation": "Universal rule: prepositions require gerund complements.",
+                "explanationArabic": "قاعدة عامة: تتطلب حروف الجر مكملاً بصيغة اسم الفعل."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Effective leaders avoid using confusing jargon when delivering an official broadcast.",
+                "translation": "يتجنب القادة الفعالون استخدام المصطلحات المعقدة المربكة عند إلقاء بيان رسمي.",
+                "usesVocabulary": ["jargon", "official broadcast"]
+            },
+            {
+                "sentence": "We decided to mute audio during the video conference to prevent background noise.",
+                "translation": "قررنا كتم الصوت أثناء المؤتمر المرئي لمنع الضوضاء في الخلفية.",
+                "usesVocabulary": ["mute audio", "video conference"]
+            },
+            {
+                "sentence": "Thank you for giving a heads-up before initiating contact with the enterprise client.",
+                "translation": "شكراً لك على إعطاء تنبيه مسبق قبل المبادرة بالتواصل مع العميل المؤسسي.",
+                "usesVocabulary": ["give a heads-up", "initiate contact"]
+            },
+            {
+                "sentence": "She managed to resolve the miscommunication by practicing active listening.",
+                "translation": "نجحت في حل سوء التفاهم من خلال ممارسة الاستماع الفعال.",
+                "usesVocabulary": ["miscommunication", "active listening"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "We considered to forward a call to your extension number.",
+                "right": "We considered forwarding a call to your extension number.",
+                "note": "The verb 'consider' takes a gerund, not an infinitive ('considered forwarding').",
+                "noteArabic": "يأتي بعد الفعل 'consider' اسم فعل وليس مصدراً: 'considered forwarding'."
+            },
+            {
+                "wrong": "He promised sending a quick update after the conference call.",
+                "right": "He promised to send a quick update after the conference call.",
+                "note": "The verb 'promise' requires an infinitive ('promised to send').",
+                "noteArabic": "يتطلب الفعل 'promise' مصدراً: 'promised to send'."
+            }
+        ]
+    }
+]
+
+convs_day39 = [
+    {
+        "title": "Chat Channels and Team Etiquette",
+        "titleArabic": "قنوات الدردشة وآداب الفريق",
+        "setting": "Digital workplace chat discussion",
+        "settingArabic": "نقاش دردشة في مكان العمل الرقمي",
+        "roles": ["Senior Teammate", "New Colleague"],
+        "vocabularyUsed": ["instant messaging", "direct message", "chat channel", "thread reply", "status message", "notification badge", "tag someone", "mute channel", "pinned message", "read receipt"],
+        "lines": [
+            {
+                "speaker": "Senior Teammate",
+                "text": "Hi Alex! As a remote team, we conduct most day-to-day operations via instant messaging.",
+                "translation": "مرحباً أليكس! كفريق يعمل عن بعد، نجري معظم عملياتنا اليومية عبر المراسلة الفورية."
+            },
+            {
+                "speaker": "New Colleague",
+                "text": "Should I send a direct message if I need help with onboarding tasks?",
+                "translation": "هل يجب أن أرسل رسالة مباشرة خاصة إذا احتجت إلى مساعدة في مهام التهيئة؟"
+            },
+            {
+                "speaker": "Senior Teammate",
+                "text": "It is better to post inside our main chat channel and consult the pinned message for documentation links.",
+                "translation": "من الأفضل النشر داخل قناة الدردشة الرئيسية ومراجعة الرسالة المثبتة للحصول على روابط التوثيق."
+            },
+            {
+                "speaker": "New Colleague",
+                "text": "Got it. When responding to questions, I will always post as a thread reply.",
+                "translation": "فهمت. وعند الرد على الأسئلة، سأنشر دائماً كرد داخل سلسلة المحادثة."
+            },
+            {
+                "speaker": "Senior Teammate",
+                "text": "Exactly. Feel free to tag someone when an issue is truly urgent.",
+                "translation": "بالضبط. ولا تتردد في الإشارة لأحد الزملاء عندما تكون المشكلة عاجلة حقاً."
+            },
+            {
+                "speaker": "New Colleague",
+                "text": "I noticed a red notification badge on my sidebar. How can I mute channel chatter?",
+                "translation": "لاحظت وجود شارة تنبيهات حمراء على شريطي الجانبي. كيف يمكنني كتم إشعارات القناة؟"
+            },
+            {
+                "speaker": "Senior Teammate",
+                "text": "Right-click the channel name to mute notifications, and update your status message when you step away.",
+                "translation": "انقر بزر الفأرة الأيمن على اسم القناة لكتم الإشعارات، وحدث رسالة حالتك عندما تبتعد."
+            },
+            {
+                "speaker": "New Colleague",
+                "text": "Does our chat system enable a read receipt so coworkers know their note was seen?",
+                "translation": "هل يتيح نظام الدردشة لدينا إشعار القراءة حتى يعلم الزملاء أنه تمت رؤية رسالتهم؟"
+            },
+            {
+                "speaker": "Senior Teammate",
+                "text": "Yes, but we encourage asynchronous replies so people can write code without constant interruption.",
+                "translation": "نعم، ولكننا نشجع الردود غير المتزامنة حتى يتمكن الزملاء من كتابة الكود دون انقطاع مستمر."
+            }
+        ]
+    },
+    {
+        "title": "Video Conferencing and Alignment",
+        "titleArabic": "المؤتمرات المرئية والتنسيق المشترك",
+        "setting": "Virtual engineering meeting room",
+        "settingArabic": "غرفة اجتماعات هندسية افتراضية",
+        "roles": ["Engineering Manager", "Product Designer"],
+        "vocabularyUsed": ["conference call", "voice call", "video conference", "screen sharing", "breakout room", "mute audio", "unmute audio", "dial in", "virtual background", "connection lag", "quick update", "sync up", "align on priorities", "circle back"],
+        "lines": [
+            {
+                "speaker": "Engineering Manager",
+                "text": "Welcome to our weekly video conference! Please remember to mute audio unless you are presenting.",
+                "translation": "أهلاً بكم في مؤتمرنا المرئي الأسبوعي! يرجى تذكر كتم الصوت ما لم تكن تقدم عرضاً."
+            },
+            {
+                "speaker": "Product Designer",
+                "text": "I will unmute audio now to start screen sharing my latest mobile checkout prototypes.",
+                "translation": "سأفتح كتم الصوت الآن للبدء في مشاركة شاشتي لعرض أحدث نماذج الدفع لتطبيق الهاتف."
+            },
+            {
+                "speaker": "Engineering Manager",
+                "text": "I like your professional office virtual background. Is everyone hearing clearly without connection lag?",
+                "translation": "تعجبني خلفيتك الافتراضية المكتبية الاحترافية. هل يسمع الجميع بوضوح دون بطء في الاتصال؟"
+            },
+            {
+                "speaker": "Product Designer",
+                "text": "The audio is crisp. If anyone's connection stutters, they can dial in via telephone.",
+                "translation": "الصوت واضح جداً. وإذا تعثر اتصال أي شخص، فيمكنه الاتصال هاتفياً بالاجتماع."
+            },
+            {
+                "speaker": "Engineering Manager",
+                "text": "Let's divide into two breakout rooms for twenty minutes so designers and developers can sync up.",
+                "translation": "دعونا ننقسم إلى غرفتين فرعيتين جانبيتين لمدة عشرين دقيقة حتى يتمكن المصممون والمطورون من التنسيق معاً."
+            },
+            {
+                "speaker": "Product Designer",
+                "text": "That will help us align on priorities before our sprint commitments are finalized.",
+                "translation": "سيساعدنا ذلك في الاتفاق على الأولويات قبل إتمام التزامات فترة العمل."
+            },
+            {
+                "speaker": "Engineering Manager",
+                "text": "Each room lead will deliver a quick update when we reconvene in the main session.",
+                "translation": "سيقدم كل قائد غرفة تحديثاً سريعاً وموجزاً عندما نجتمع مجدداً في الجلسة الرئيسية."
+            },
+            {
+                "speaker": "Product Designer",
+                "text": "And we will circle back to that budget estimate tomorrow during our one-on-one voice call.",
+                "translation": "وسنعود لمناقشة تقدير الميزانية ذلك غداً خلال مكالمتنا الصوتية الفردية."
+            }
+        ]
+    },
+    {
+        "title": "Office Phone Calls and Professional Tone",
+        "titleArabic": "مكالمات هاتف المكتب والأسلوب الاحترافي",
+        "setting": "Corporate headquarters reception and executive suite",
+        "settingArabic": "استقبال المقر الرئيسي للشركة والجناح التنفيذي",
+        "roles": ["Executive Assistant", "External Partner"],
+        "vocabularyUsed": ["briefing", "official broadcast", "company-wide notice", "written directive", "keep in the loop", "give a heads-up", "leave a voicemail", "take a message", "forward a call", "put on hold", "initiate contact", "return a call", "phone directory", "toll-free number", "extension number", "busy signal", "concise", "diplomatic", "assertive", "tactful", "constructive feedback", "active listening", "clarification request", "miscommunication", "jargon", "paraphrase"],
+        "lines": [
+            {
+                "speaker": "Executive Assistant",
+                "text": "Good morning, Enterprise Tech. You have reached our nationwide toll-free number. How may I assist you?",
+                "translation": "صباح الخير، شركة إنتربرايز تك. لقد وصلت إلى رقمنا المجاني على مستوى البلاد. كيف يمكنني مساعدتك؟"
+            },
+            {
+                "speaker": "External Partner",
+                "text": "Hello, I looked up extension number 305 in your phone directory, but I received a busy signal.",
+                "translation": "مرحباً، بحثت عن رقم التحويلة 305 في دليل هواتفكم، لكنني تلقيت نغمة انشغال الخط."
+            },
+            {
+                "speaker": "Executive Assistant",
+                "text": "The director is currently in a morning briefing. Would you like to leave a voicemail, or shall I take a message?",
+                "translation": "المدير حالياً في إحاطة صباحية. هل تود ترك رسالة صوتية، أم أقوم بتدوين رسالة لك؟"
+            },
+            {
+                "speaker": "External Partner",
+                "text": "Please take a message: I am initiating contact to deliver constructive feedback on the vendor contract.",
+                "translation": "يرجى تدوين رسالة: أنا أبادر بالتواصل لتقديم ملاحظات ونقد بناء بشأن عقد المورد."
+            },
+            {
+                "speaker": "Executive Assistant",
+                "text": "To avoid any miscommunication, allow me to paraphrase your notes so my summary is concise and tactful.",
+                "translation": "لتجنب أي سوء تواصل، اسمح لي بإعادة صياغة ملاحظاتك ليكون ملخصي موجزاً ولبقاً."
+            },
+            {
+                "speaker": "External Partner",
+                "text": "Thank you for practicing active listening. Tell him I submitted a formal clarification request via email as well.",
+                "translation": "شكراً لك على ممارسة الاستماع الفعال. أخبره أنني قدمت طلب توضيح رسمي عبر البريد الإلكتروني أيضاً."
+            },
+            {
+                "speaker": "Executive Assistant",
+                "text": "I will give him a heads-up immediately following the official broadcast, and ask him to return your call this afternoon.",
+                "translation": "سأعطيه تنبيهاً مسبقاً فور انتهاء البث والبيان الرسمي، وسأطلب منه معاودة الاتصال بك بعد ظهر اليوم."
+            },
+            {
+                "speaker": "External Partner",
+                "text": "I appreciate your diplomatic and assertive assistance. Have a wonderful workday!",
+                "translation": "أنا أقدر مساعدتك الدبلوماسية والحازمة. أتمنى لك يوم عمل رائعاً!"
+            }
+        ]
+    }
+]
+
+paras_day39 = [
+    {
+        "title": "Mastering Modern Asynchronous Communication",
+        "titleArabic": "إتقان التواصل غير المتزامن الحديث",
+        "kind": "informative",
+        "vocabularyUsed": ["instant messaging", "direct message", "thread reply", "mute channel", "pinned message", "status message", "concise", "tactful"],
+        "text": "In distributed global organizations, mastering asynchronous communication is the cornerstone of sustained productivity. Rather than demanding instantaneous replies, effective teammates use instant messaging thoughtfully. When asking complex technical questions in a public room, organizing discussion into a thread reply keeps shared channels organized and clutter-free. Before asking basic questions, prudent professionals consult the pinned message to locate essential guides and credentials. Setting an accurate status message informs colleagues when you are available for collaboration. Power users frequently mute channel alerts during deep work blocks to prevent mental fragmentation. By composing concise and tactful messages, team members convey respect for each other's attention, enabling uninterrupted focus and high team output.",
+        "translation": "في المؤسسات العالمية الموزعة، يعد إتقان التواصل غير المتزامن حجر الزاوية للإنتاجية المستدامة. وبدلاً من المطالبة بردود فورية، يستخدم الزملاء الفعالون المراسلة الفورية بوعي وتأنٍ. وعند طرح أسئلة فنية معقدة في غرفة عامة، فإن تنظيم النقاش في ردود داخل سلسلة المحادثة يحافظ على تنظيم القنوات المشتركة وخلوها من الفوضى. وقبل طرح الأسئلة الأساسية، يراجع المحترفون الحريصون الرسالة المثبتة لتحديد مكان الأدلة وبيانات الاعتماد الأساسية. كما أن تعيين رسالة حالة دقيقة يخبر الزملاء بالأوقات التي تكون فيها متاحاً للتعاون. ويكتم المستخدمون المتقدمون تنبيهات القنوات أثناء فترات العمل العميق لمنع التشتت الذهني. ومن خلال صياغة رسائل موجزة ولبقة، يعبر أعضاء الفريق عن احترامهم لتركيز بعضهم البعض، مما يتيح إنجازاً عالياً للفريق دون انقطاع."
+    },
+    {
+        "title": "Clear Directives and Organizational Alignment",
+        "titleArabic": "التوجيهات الواضحة والتنسيق المؤسسي",
+        "kind": "informative",
+        "vocabularyUsed": ["official broadcast", "company-wide notice", "written directive", "align on priorities", "keep in the loop", "give a heads-up", "briefing"],
+        "text": "Organizational excellence depends upon clear downward, upward, and lateral communication flows. When executive leaders roll out corporate restructuring, publishing a company-wide notice prevents watercooler rumors from demoralizing the workforce. Senior directors issue a written directive to ensure uniform compliance with data protection laws across global subsidiaries. Before an all-hands product launch, department heads gather for an executive briefing to align on priorities and allocate resources. Diligent project coordinators continually keep in the loop every external stakeholder by giving a quick heads-up before changes take effect. Through open communication channels and structured leadership messaging, companies foster psychological safety, transparency, and deep organizational cohesion.",
+        "translation": "يعتمد التميز المؤسسي على تدفقات التواصل الواضحة هبوطاً وصعوداً وبشكل أفقي. وعندما يطلق القادة التنفيذيون إعادة هيكلة للشركة، فإن نشر إشعار عام لجميع موظفي الشركة يمنع شائعات الممرات من إحباط القوة العاملة. ويصدر كبار المديرين توجيهاً خطياً ملزماً لضمان الامتثال الموحد لقوانين حماية البيانات عبر الشركات التابعة العالمية. وقبل الإطلاق الشامل للمنتج، يجتمع رؤساء الأقسام لإحاطة تنفيذية للاتفاق على الأولويات وتوزيع الموارد. ويحرص منسقو المشاريع الدؤوبون باستمرار على إبقاء كل طرف معني خارجي في الصورة من خلال إعطاء تنبيه مسبق سريع قبل سريان التغييرات. ومن خلال قنوات التواصل المفتوحة والرسائل القيادية المنظمة، تعزز الشركات الأمان النفسي والشفافية والتماسك المؤسسي العميق."
+    },
+    {
+        "title": "The Art of Professional Voice and Interpersonal Tone",
+        "titleArabic": "فن التواصل الصوتي والأسلوب المهني بين الأشخاص",
+        "kind": "reflective",
+        "vocabularyUsed": ["constructive feedback", "active listening", "clarification request", "miscommunication", "jargon", "paraphrase", "diplomatic", "assertive"],
+        "text": "True workplace influence requires emotional maturity and finely tuned interpersonal communication. When participating in high-stakes negotiations, adopting an assertive yet diplomatic posture earns respect from clients and competitors alike. Skilled professionals avoid burying their arguments beneath dense technical jargon, choosing instead plain English that illuminates complex concepts. Practicing active listening demonstrates genuine empathy, while submitting a polite clarification request prevents dangerous miscommunication. When evaluating colleagues' contributions, delivering constructive feedback fosters long-term career growth. Before closing crucial conversations, taking a moment to accurately paraphrase key agreements ensures total alignment, transforming ordinary office conversations into enduring bridges of mutual trust and professional achievement.",
+        "translation": "يتطلب التأثير الحقيقي في مكان العمل نضجاً عاطفياً وتواصلاً دقيقاً ومتقناً بين الأشخاص. وعند المشاركة في مفاوضات عالية المخاطر، فإن تبني موقف حازم ودبلوماسي في آن واحد يكسب احترام العملاء والمنافسين على حد سواء. ويتجنب المحترفون المهرة دفن حججهم تحت مصطلحات تخصصية معقدة، ويختارون بدلاً من ذلك لغة واضحة تنير المفاهيم الصعبة. وتُظهر ممارسة الاستماع الفعال تعاطفاً حقيقياً، بينما يمنع تقديم طلب توضيح مهذب سوء التواصل الخطير. وعند تقييم مساهمات الزملاء، فإن تقديم النقد البناء يعزز النمو المهني طويل الأجل. وقبل إنهاء المحادثات الحاسمة، يضمن تخصيص لحظة لإعادة صياغة الاتفاقات الرئيسية بدقة توافقاً كاملاً، محولاً محادثات المكتب العادية إلى جسور دائمة من الثقة المتبادلة والإنجاز المهني."
+    }
+]

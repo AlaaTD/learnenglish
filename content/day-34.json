@@ -1,0 +1,1737 @@
+{
+  "day": 34,
+  "title": "Working Together",
+  "topic": "Teams, roles and office rules",
+  "description": "Talk about teamwork, rules and obligations at work.",
+  "stage": "Work, Career and Technology",
+  "focus": "By the end of today, you can communicate clearly about teams, roles and office rules using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Must / Have to for Obligation",
+      "explanation": "We use 'must' and 'have to' to talk about obligations and rules at work. 'Must' is commonly used for strong personal obligations or formal official notices ('You must sign the NDA'). 'Have to' expresses external obligations imposed by company rules or law ('Employees have to wear badges'). 'Must not' expresses strong prohibition ('You must not share passwords'), while 'don't have to' expresses lack of obligation, meaning it is not necessary ('You don't have to attend the optional mixer').",
+      "explanationArabic": "نستخدم 'must' و 'have to' للتعبير عن الواجبات والالتزامات والقواعد في مكان العمل. يُستخدم 'must' للالتزامات القوية أو الإشعارات الرسمية المكتوبة ('يجب أن توقع اتفاقية السرية'). بينما يُستخدم 'have to' للالتزامات المفروضة خارجياً بموجب لوائح الشركة أو القانون ('يتعين على الموظفين ارتداء الشارات'). كما أن 'must not' تعني النهي والتحريم التام ('ممنوع مشاركة كلمات المرور')، في حين أن 'don't have to' تعني عدم الإلزام؛ أي أن الأمر ليس ضرورياً ويمكنك تركه ('لست مضطراً لحضور اللقاء الاختياري').",
+      "rules": [
+        "Must + base verb: internal obligation or formal official written rule.",
+        "Have to / has to + base verb: external rule, company law, or necessity.",
+        "Must not (mustn't) + base verb = strictly prohibited (NOT allowed).",
+        "Don't / doesn't have to + base verb = not necessary (optional)."
+      ],
+      "rulesArabic": [
+        "Must + الفعل الأساسي: التزام قوي أو قاعدة مكتوبة رسمية.",
+        "Have to / has to + الفعل الأساسي: التزام خارجي مفروض بقانون أو سياسة العمل.",
+        "Must not + الفعل الأساسي = محظور وممنوع تماماً.",
+        "Don't / doesn't have to + الفعل الأساسي = غير ضروري (أمر اختياري)."
+      ],
+      "structures": [
+        {
+          "pattern": "Subject + must / have to + V1 (base)",
+          "explanation": "Expresses an obligation to do something.",
+          "explanationArabic": "يعبر عن إلزام أو واجب للقيام بفعل ما."
+        },
+        {
+          "pattern": "Subject + must not + V1 (base)",
+          "explanation": "Expresses strict prohibition.",
+          "explanationArabic": "يعبر عن المنع والحظر التام."
+        },
+        {
+          "pattern": "Subject + do/does not have to + V1 (base)",
+          "explanation": "Expresses that something is voluntary, not mandatory.",
+          "explanationArabic": "يوضح أن الأمر تطوعي وغير إلزامي."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "All new hires must sign the non-disclosure agreement before their orientation begins.",
+          "translation": "يجب على جميع الموظفين الجدد توقيع اتفاقية السرية قبل بدء برنامج التهيئة.",
+          "usesVocabulary": [
+            "non-disclosure agreement"
+          ]
+        },
+        {
+          "sentence": "Employees have to comply with the attendance policy and honor office etiquette.",
+          "translation": "يتعين على الموظفين الامتثال لسياسة الحضور واحترام آداب السلوك المكتبي.",
+          "usesVocabulary": [
+            "comply with",
+            "attendance policy",
+            "etiquette"
+          ]
+        },
+        {
+          "sentence": "You must not breach confidentiality or violate our strict harassment policy.",
+          "translation": "يجب ألا تخرق السرية التامة أو تنتهك سياستنا الصارمة لمكافحة المضايقة.",
+          "usesVocabulary": [
+            "confidentiality",
+            "harassment policy"
+          ]
+        },
+        {
+          "sentence": "You do not have to wear formal attire every day because our dress code is business casual.",
+          "translation": "لست مضطراً لارتداء الزي الرسمي كل يوم لأن قواعد اللباس لدينا غير رسمية ومريحة.",
+          "usesVocabulary": [
+            "dress code"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "You must not attend the optional team building if you are busy.",
+          "right": "You don't have to attend the optional team building if you are busy.",
+          "note": "'Must not' means prohibited. Use 'don't have to' when something is optional or not required.",
+          "noteArabic": "'Must not' تعني ممنوع ومحظور. استخدم 'don't have to' عندما يكون الأمر اختيارياً أو غير مفروض."
+        },
+        {
+          "wrong": "He must to abide by the workplace policy.",
+          "right": "He must abide by the workplace policy. / He has to abide by the workplace policy.",
+          "note": "Never put 'to' after modal 'must'. Use 'must abide' or 'has to abide'.",
+          "noteArabic": "لا تضع 'to' بعد 'must' مطلقاً. قل 'must abide' أو 'has to abide'."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "team player",
+      "pronunciation": "/tiːm ˈpleɪər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who plays or works well as a member of a group or team.",
+      "example": "Sarah is a true team player who always helps colleagues meet their deadlines.",
+      "translation": "شخص متعاون / عضو فريق متعاون ومخلص",
+      "exampleArabic": "سارة عضو فريق متعاون بحق ودائماً ما تساعد الزملاء على الوفاء بمواعيدهم النهائية.",
+      "relatedForms": [],
+      "collocations": [
+        "be a team player",
+        "valuable team player"
+      ],
+      "synonyms": [
+        "collaborator",
+        "supportive coworker"
+      ],
+      "antonyms": [
+        "lone wolf",
+        "individualist"
+      ],
+      "tags": [
+        "teamwork",
+        "people"
+      ]
+    },
+    {
+      "headword": "synergy",
+      "pronunciation": "/ˈsɪnərdʒi/",
+      "partOfSpeech": "noun",
+      "definition": "The interaction or cooperation of two or more entities to produce a combined effect greater than the sum of their separate effects.",
+      "example": "The synergy between design and engineering created an exceptionally intuitive app.",
+      "translation": "التآزر / التكامل والتعاون المثمر",
+      "exampleArabic": "أنتج التآزر بين التصميم والهندسة تطبيقاً بديهياً وسهل الاستخدام بشكل استثنائي.",
+      "relatedForms": [
+        "synergistic",
+        "synergies"
+      ],
+      "collocations": [
+        "create synergy",
+        "positive synergy",
+        "team synergy"
+      ],
+      "synonyms": [
+        "collaboration",
+        "cooperation",
+        "harmony"
+      ],
+      "antonyms": [
+        "antagonism",
+        "friction"
+      ],
+      "tags": [
+        "teamwork",
+        "business"
+      ]
+    },
+    {
+      "headword": "morale",
+      "pronunciation": "/məˈræl/",
+      "partOfSpeech": "noun",
+      "definition": "The confidence, enthusiasm, and discipline of a person or group at a particular time.",
+      "example": "Company outings and public appreciation awards greatly boosted employee morale.",
+      "translation": "الروح المعنوية",
+      "exampleArabic": "عززت النزهات الجماعية للشركة وجوائز التقدير العامة الروح المعنوية للموظفين بشكل كبير.",
+      "relatedForms": [],
+      "collocations": [
+        "boost morale",
+        "high morale",
+        "low morale"
+      ],
+      "synonyms": [
+        "team spirit",
+        "confidence",
+        "enthusiasm"
+      ],
+      "antonyms": [
+        "discouragement",
+        "apathy"
+      ],
+      "tags": [
+        "teamwork",
+        "workplace"
+      ]
+    },
+    {
+      "headword": "cohesion",
+      "pronunciation": "/koʊˈhiːʒən/",
+      "partOfSpeech": "noun",
+      "definition": "The state of sticking together or uniting closely as a functional group.",
+      "example": "Daily standups foster group cohesion by ensuring everyone knows current objectives.",
+      "translation": "التماسك والترابط الجماعي",
+      "exampleArabic": "تعزز الاجتماعات اليومية السريعة التماسك الجماعي من خلال ضمان معرفة الجميع بالأهداف الحالية.",
+      "relatedForms": [
+        "cohesive",
+        "cohesiveness"
+      ],
+      "collocations": [
+        "group cohesion",
+        "social cohesion",
+        "build cohesion"
+      ],
+      "synonyms": [
+        "unity",
+        "solidarity",
+        "connectedness"
+      ],
+      "antonyms": [
+        "division",
+        "fragmentation"
+      ],
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "solidarity",
+      "pronunciation": "/ˌsɑːlɪˈdærəti/",
+      "partOfSpeech": "noun",
+      "definition": "Mutual support and unity among individuals who share common interests or responsibilities.",
+      "example": "Team members expressed solidarity with their lead when an impossible timeline was imposed.",
+      "translation": "التضامن والوقوف صفاً واحداً",
+      "exampleArabic": "أعرب أعضاء الفريق عن تضامنهم مع قائدهم عندما فُرض جدول زمني مستحيل.",
+      "relatedForms": [],
+      "collocations": [
+        "express solidarity",
+        "show solidarity",
+        "stand in solidarity"
+      ],
+      "synonyms": [
+        "unity",
+        "mutual support"
+      ],
+      "antonyms": [
+        "discord",
+        "rivalry"
+      ],
+      "tags": [
+        "teamwork",
+        "values"
+      ]
+    },
+    {
+      "headword": "camaraderie",
+      "pronunciation": "/ˌkɑːməˈrɑːdəri/",
+      "partOfSpeech": "noun",
+      "definition": "Mutual trust and friendship among people who spend a lot of time together.",
+      "example": "The camaraderie developed during the grueling product sprint turned coworkers into close friends.",
+      "translation": "المودة والزمالة الحميمة / روح الألفة",
+      "exampleArabic": "حولت روح الألفة والمودة التي تطورت خلال فترة العمل الشاقة زملاء العمل إلى أصدقاء مقربين.",
+      "relatedForms": [],
+      "collocations": [
+        "sense of camaraderie",
+        "foster camaraderie",
+        "workplace camaraderie"
+      ],
+      "synonyms": [
+        "companionship",
+        "fellowship",
+        "brotherhood"
+      ],
+      "antonyms": [
+        "hostility",
+        "estrangement"
+      ],
+      "tags": [
+        "relationships",
+        "workplace"
+      ]
+    },
+    {
+      "headword": "group dynamic",
+      "pronunciation": "/ɡruːp daɪˈnæmɪk/",
+      "partOfSpeech": "noun",
+      "definition": "The patterns of interaction and relationship between members of a team or group.",
+      "example": "Introducing an overly aggressive member completely disrupted the positive group dynamic.",
+      "translation": "ديناميكية المجموعة / طبيعة التفاعل الداخلي بين الأعضاء",
+      "exampleArabic": "أدى تقديم عضو مفرط في العدوانية إلى تعطيل ديناميكية المجموعة الإيجابية تماماً.",
+      "relatedForms": [
+        "group dynamics"
+      ],
+      "collocations": [
+        "healthy group dynamic",
+        "understand group dynamic"
+      ],
+      "synonyms": [
+        "team climate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "psychology",
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "cross-functional",
+      "pronunciation": "/krɔːs ˈfʌŋkʃənl/",
+      "partOfSpeech": "adjective",
+      "definition": "Composed of members from different departments or functional areas within an organization.",
+      "example": "We established a cross-functional squad of designers, marketers, and backend coders.",
+      "translation": "عابر للوظائف / متعدد التخصصات والأقسام",
+      "exampleArabic": "أنشأنا فرقة عابرة للوظائف تضم مصممين ومسوقين ومبرمجي واجهة خلفية.",
+      "relatedForms": [],
+      "collocations": [
+        "cross-functional team",
+        "cross-functional collaboration"
+      ],
+      "synonyms": [
+        "interdisciplinary",
+        "multidisciplinary"
+      ],
+      "antonyms": [
+        "siloed"
+      ],
+      "tags": [
+        "management",
+        "teams"
+      ]
+    },
+    {
+      "headword": "collaborator",
+      "pronunciation": "/kəˈlæbəreɪtər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who works jointly on an activity or project with others.",
+      "example": "Alex was a dependable collaborator who shared credit willingly with everyone.",
+      "translation": "متعاون / شريك في العمل",
+      "exampleArabic": "كان أليكس شريكاً ومساعداً يُعتمد عليه يشارك الفضل والتقدير عن طيب خاطر مع الجميع.",
+      "relatedForms": [
+        "collaborate",
+        "collaboration"
+      ],
+      "collocations": [
+        "frequent collaborator",
+        "close collaborator"
+      ],
+      "synonyms": [
+        "partner",
+        "associate",
+        "co-worker"
+      ],
+      "antonyms": [
+        "rival",
+        "opponent"
+      ],
+      "tags": [
+        "people",
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "peer",
+      "pronunciation": "/pɪr/",
+      "partOfSpeech": "noun",
+      "definition": "A person who is equal to another in abilities, qualifications, age, background, or social status.",
+      "example": "Every quarter, employees participate in anonymous peer reviews to help each other grow.",
+      "translation": "نظير / قرين في نفس المستوى المهني",
+      "exampleArabic": "في كل ربع عام، يشارك الموظفون في تقييمات الأقران المجهولة لمساعدة بعضهم البعض على النمو.",
+      "relatedForms": [
+        "peers"
+      ],
+      "collocations": [
+        "peer review",
+        "peer pressure",
+        "peer feedback"
+      ],
+      "synonyms": [
+        "equal",
+        "counterpart",
+        "colleague"
+      ],
+      "antonyms": [
+        "superior",
+        "subordinate"
+      ],
+      "tags": [
+        "roles",
+        "people"
+      ]
+    },
+    {
+      "headword": "facilitator",
+      "pronunciation": "/fəˈsɪlɪteɪtər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who helps a group understand common objectives and guides them without taking sides.",
+      "example": "The meeting facilitator ensured that introverted team members also voiced their opinions.",
+      "translation": "ميسّر / ميسر الجلسة والنقاش",
+      "exampleArabic": "حرص ميسر الاجتماع على أن يعبر أعضاء الفريق الهادئون أيضاً عن آرائهم.",
+      "relatedForms": [
+        "facilitate",
+        "facilitation"
+      ],
+      "collocations": [
+        "workshop facilitator",
+        "discussion facilitator",
+        "act as facilitator"
+      ],
+      "synonyms": [
+        "moderator",
+        "coordinator",
+        "guide"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roles",
+        "meetings"
+      ]
+    },
+    {
+      "headword": "mediator",
+      "pronunciation": "/ˈmiːdieɪtər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who attempts to make people involved in a conflict come to an agreement.",
+      "example": "Human Resources assigned an impartial mediator to resolve the disagreement between the leads.",
+      "translation": "وسيط لحل النزاع / مُوفّق",
+      "exampleArabic": "عينت إدارة الموارد البشرية وسيطاً محايداً لحل الخلاف بين القادة.",
+      "relatedForms": [
+        "mediate",
+        "mediation"
+      ],
+      "collocations": [
+        "impartial mediator",
+        "act as mediator",
+        "professional mediator"
+      ],
+      "synonyms": [
+        "arbitrator",
+        "conciliator",
+        "negotiator"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roles",
+        "conflict"
+      ]
+    },
+    {
+      "headword": "mentor",
+      "pronunciation": "/ˈmentɔːr/",
+      "partOfSpeech": "noun",
+      "definition": "An experienced and trusted adviser who guides a less experienced person in their career.",
+      "example": "Having a senior engineer as a mentor helped David learn coding best practices quickly.",
+      "translation": "مرشد مهني / ناصح خبير",
+      "exampleArabic": "ساعد وجود مهندس أول كمرشد مهني ديفيد على تعلم أفضل ممارسات البرمجة بسرعة.",
+      "relatedForms": [
+        "mentorship",
+        "mentors",
+        "mentoring"
+      ],
+      "collocations": [
+        "career mentor",
+        "trusted mentor",
+        "find a mentor"
+      ],
+      "synonyms": [
+        "guide",
+        "coach",
+        "advisor",
+        "tutor"
+      ],
+      "antonyms": [
+        "mentee",
+        "student"
+      ],
+      "tags": [
+        "roles",
+        "career"
+      ]
+    },
+    {
+      "headword": "mentee",
+      "pronunciation": "/menˈtiː/",
+      "partOfSpeech": "noun",
+      "definition": "A person who is advised, trained, or counseled by an experienced mentor.",
+      "example": "The mentee scheduled a monthly coaching session to review personal career milestones.",
+      "translation": "المتدرّب المتلقي للإرشاد",
+      "exampleArabic": "حدد المتدرب جلسة توجيه شهرية لمراجعة أهدافه المهنية الشخصية.",
+      "relatedForms": [
+        "mentees"
+      ],
+      "collocations": [
+        "coach a mentee",
+        "support a mentee"
+      ],
+      "synonyms": [
+        "protege",
+        "apprentice",
+        "trainee"
+      ],
+      "antonyms": [
+        "mentor"
+      ],
+      "tags": [
+        "roles",
+        "career"
+      ]
+    },
+    {
+      "headword": "subordinate",
+      "pronunciation": "/səˈbɔːrdɪnət/",
+      "partOfSpeech": "noun",
+      "definition": "A person who has a lower position and is under the authority or control of another in an organization.",
+      "example": "A respectful manager treats every subordinate with dignity and active listening.",
+      "translation": "مرؤوس / موظف تابع في التدرج الوظيفي",
+      "exampleArabic": "يعامل المدير المحترم كل مرؤوس بكرامة واستماع فعال.",
+      "relatedForms": [
+        "subordinates",
+        "subordination"
+      ],
+      "collocations": [
+        "direct subordinate",
+        "manage subordinates"
+      ],
+      "synonyms": [
+        "junior employee",
+        "underling"
+      ],
+      "antonyms": [
+        "superior",
+        "boss"
+      ],
+      "tags": [
+        "roles",
+        "hierarchy"
+      ]
+    },
+    {
+      "headword": "line manager",
+      "pronunciation": "/laɪn ˈmænɪdʒər/",
+      "partOfSpeech": "noun",
+      "definition": "A person with direct managerial responsibility for employees in an organizational unit.",
+      "example": "If you wish to take annual leave, you must submit a formal request to your line manager.",
+      "translation": "المدير المباشر",
+      "exampleArabic": "إذا كنت ترغب في الحصول على إجازة سنوية، فيجب عليك تقديم طلب رسمي لمديرك المباشر.",
+      "relatedForms": [
+        "line management"
+      ],
+      "collocations": [
+        "report to a line manager",
+        "consult your line manager"
+      ],
+      "synonyms": [
+        "direct supervisor",
+        "immediate boss"
+      ],
+      "antonyms": [
+        "subordinate"
+      ],
+      "tags": [
+        "roles",
+        "management"
+      ]
+    },
+    {
+      "headword": "mutual respect",
+      "pronunciation": "/ˈmjuːtʃuəl rɪˈspekt/",
+      "partOfSpeech": "noun",
+      "definition": "A two-way feeling of deep admiration and fair consideration between people or groups.",
+      "example": "A healthy workplace culture is built upon open communication and genuine mutual respect.",
+      "translation": "الاحترام المتبادل",
+      "exampleArabic": "تُبنى ثقافة مكان العمل الصحية على التواصل المفتوح والاحترام المتبادل الصادق.",
+      "relatedForms": [],
+      "collocations": [
+        "treat with mutual respect",
+        "culture of mutual respect",
+        "foster mutual respect"
+      ],
+      "synonyms": [
+        "reciprocal esteem",
+        "mutual regard"
+      ],
+      "antonyms": [
+        "mutual contempt"
+      ],
+      "tags": [
+        "values",
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "liaison",
+      "pronunciation": "/liˈeɪzɑːn/",
+      "partOfSpeech": "noun",
+      "definition": "Communication or cooperation that facilitates a close working relationship between people or organizations.",
+      "example": "David acted as the primary liaison between our design squad and the offshore dev center.",
+      "translation": "مسؤول الاتصال والتنسيق / جهة اتصال رابطة",
+      "exampleArabic": "عمل ديفيد كمسؤول اتصال رئيسي بين فريق التصميم لدينا ومركز التطوير الخارجي.",
+      "relatedForms": [
+        "liaise"
+      ],
+      "collocations": [
+        "act as a liaison",
+        "maintain liaison",
+        "liaison officer"
+      ],
+      "synonyms": [
+        "intermediary",
+        "go-between",
+        "contact"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roles",
+        "communication"
+      ]
+    },
+    {
+      "headword": "spokesperson",
+      "pronunciation": "/ˈspoʊkspɜːrsən/",
+      "partOfSpeech": "noun",
+      "definition": "A person nominated to speak on behalf of an organization or group.",
+      "example": "The corporate spokesperson delivered an official press release addressing data privacy.",
+      "translation": "متحدث رسمي / ناطق باسم الجهة",
+      "exampleArabic": "ألقى المتحدث الرسمي باسم الشركة بياناً صحفياً رسمياً يتناول خصوصية البيانات.",
+      "relatedForms": [
+        "spokespeople",
+        "spokespersons"
+      ],
+      "collocations": [
+        "official spokesperson",
+        "company spokesperson"
+      ],
+      "synonyms": [
+        "representative",
+        "mouthpiece"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roles",
+        "communication"
+      ]
+    },
+    {
+      "headword": "ombudsman",
+      "pronunciation": "/ˈɑːmbʊdzmən/",
+      "partOfSpeech": "noun",
+      "definition": "An independent official appointed to investigate individual complaints against a company or organization.",
+      "example": "Employees who suspect ethics violations can bring their concerns anonymously to the corporate ombudsman.",
+      "translation": "أمين المظالم / مسؤول تلقي الشكاوى المحايد",
+      "exampleArabic": "يمكن للموظفين الذين يشتبهون في انتهاكات أخلاقية تقديم مخاوفهم بشكل مجهول إلى أمين مظالم الشركة.",
+      "relatedForms": [
+        "ombudsperson",
+        "ombudsmen"
+      ],
+      "collocations": [
+        "consult the ombudsman",
+        "corporate ombudsman",
+        "file with the ombudsman"
+      ],
+      "synonyms": [
+        "complaints commissioner",
+        "public advocate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "roles",
+        "governance"
+      ]
+    },
+    {
+      "headword": "code of conduct",
+      "pronunciation": "/koʊd əv ˈkɑːndʌkt/",
+      "partOfSpeech": "noun",
+      "definition": "A formal set of rules outlining the proper practices and responsibilities of an organization or individual.",
+      "example": "All newly hired personnel must sign the company code of conduct during orientation.",
+      "translation": "مدونة قواعد السلوك المهني / ميثاق الشرف الأخلاقي",
+      "exampleArabic": "يجب على جميع الموظفين الجدد توقيع مدونة قواعد السلوك المهني للشركة أثناء برنامج التهيئة.",
+      "relatedForms": [],
+      "collocations": [
+        "violate the code of conduct",
+        "sign the code of conduct",
+        "adhere to the code of conduct"
+      ],
+      "synonyms": [
+        "ethical guidelines",
+        "code of ethics"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "rules"
+      ]
+    },
+    {
+      "headword": "compliance",
+      "pronunciation": "/kəmˈplaɪəns/",
+      "partOfSpeech": "noun",
+      "definition": "The act of obeying an order, rule, regulation, or law.",
+      "example": "Our compliance department audits customer records annually to satisfy GDPR standards.",
+      "translation": "الامتثال / الالتزام بالمعايير والأنظمة",
+      "exampleArabic": "يقوم قسم الامتثال لدينا بتدقيق سجلات العملاء سنوياً لاستيفاء معايير حماية البيانات العامة.",
+      "relatedForms": [
+        "compliant",
+        "comply"
+      ],
+      "collocations": [
+        "regulatory compliance",
+        "ensure compliance",
+        "in compliance with"
+      ],
+      "synonyms": [
+        "conformity",
+        "adherence",
+        "obedience"
+      ],
+      "antonyms": [
+        "non-compliance",
+        "violation",
+        "defiance"
+      ],
+      "tags": [
+        "policy",
+        "legal"
+      ]
+    },
+    {
+      "headword": "workplace policy",
+      "pronunciation": "/ˈwɜːrkpleɪs ˈpɑːləsi/",
+      "partOfSpeech": "noun",
+      "definition": "A formal statement of principles and rules established by an employer to govern office operations.",
+      "example": "The revised workplace policy permits staff to work remotely up to two days each week.",
+      "translation": "سياسة مكان العمل / اللائحة الداخلية للشركة",
+      "exampleArabic": "تسمح سياسة مكان العمل المعدلة للموظفين بالعمل عن بعد لمدة تصل إلى يومين في كل أسبوع.",
+      "relatedForms": [
+        "workplace policies"
+      ],
+      "collocations": [
+        "implement a workplace policy",
+        "company workplace policy"
+      ],
+      "synonyms": [
+        "office regulations",
+        "corporate guidelines"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "workplace"
+      ]
+    },
+    {
+      "headword": "dress code",
+      "pronunciation": "/dres koʊd/",
+      "partOfSpeech": "noun",
+      "definition": "A set of rules regarding what garments people should wear at an event or in an office.",
+      "example": "Our office has a business casual dress code, but formal attire is expected for client lunches.",
+      "translation": "قواعد اللباس / الزي المعتمد",
+      "exampleArabic": "مكتبنا لديه قواعد لباس غير رسمي للعمل، لكن يُتوقع ارتداء الزي الرسمي في غداء العملاء.",
+      "relatedForms": [],
+      "collocations": [
+        "strict dress code",
+        "casual dress code",
+        "follow the dress code"
+      ],
+      "synonyms": [
+        "attire rules"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "appearance"
+      ]
+    },
+    {
+      "headword": "attendance policy",
+      "pronunciation": "/əˈtendəns ˈpɑːləsi/",
+      "partOfSpeech": "noun",
+      "definition": "A set of workplace rules governing employee punctuality, leaves, and consequences for absenteeism.",
+      "example": "Repeated unexcused tardiness violates our attendance policy and triggers a formal warning.",
+      "translation": "سياسة الحضور والانصراف",
+      "exampleArabic": "التأخير المتكرر غير المبرر ينتهك سياسة الحضور والانصراف لدينا ويستدعي إنذاراً رسمياً.",
+      "relatedForms": [],
+      "collocations": [
+        "strict attendance policy",
+        "enforce the attendance policy"
+      ],
+      "synonyms": [
+        "punctuality guidelines"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "workplace"
+      ]
+    },
+    {
+      "headword": "disciplinary action",
+      "pronunciation": "/ˈdɪsəplɪneri ˈækʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A penalty or reprimand imposed by an employer on an employee who breaches rules.",
+      "example": "Sharing trade secrets will lead to immediate termination and legal disciplinary action.",
+      "translation": "إجراء تأديبي / عقوبة انضباطية",
+      "exampleArabic": "مشاركة أسرار العمل ستؤدي إلى إنهاء الخدمة الفوري وإجراء تأديبي قانوني.",
+      "relatedForms": [],
+      "collocations": [
+        "face disciplinary action",
+        "take disciplinary action",
+        "subject to disciplinary action"
+      ],
+      "synonyms": [
+        "punitive measure",
+        "sanction"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "legal"
+      ]
+    },
+    {
+      "headword": "grievance",
+      "pronunciation": "/ˈɡriːvəns/",
+      "partOfSpeech": "noun",
+      "definition": "A formal feeling of dissatisfaction or protest over unfair treatment in the workplace.",
+      "example": "The employee filed a formal grievance with the labor board regarding unpaid overtime hours.",
+      "translation": "مظلمة / شكوى رسمية من تعامل غير عادل",
+      "exampleArabic": "قدم الموظف شكوى ومظلمة رسمية إلى مجلس العمل بشأن ساعات العمل الإضافية غير المدفوعة.",
+      "relatedForms": [
+        "grievances"
+      ],
+      "collocations": [
+        "file a grievance",
+        "air a grievance",
+        "resolve a grievance"
+      ],
+      "synonyms": [
+        "complaint",
+        "protest",
+        "objection"
+      ],
+      "antonyms": [
+        "satisfaction",
+        "praise"
+      ],
+      "tags": [
+        "legal",
+        "conflict"
+      ]
+    },
+    {
+      "headword": "whistleblower",
+      "pronunciation": "/ˈwɪsəlbloʊər/",
+      "partOfSpeech": "noun",
+      "definition": "A person who informs on a person or organization engaged in an illicit or unethical activity.",
+      "example": "Protected by federal statutes, the brave whistleblower exposed corruption inside the agency.",
+      "translation": "المبلغ عن المخالفات / كاشف الفساد",
+      "exampleArabic": "محمياً بالقوانين الفيدرالية، كشف المبلغ الشجاع عن المخالفات الفساد داخل الوكالة.",
+      "relatedForms": [
+        "whistleblowing"
+      ],
+      "collocations": [
+        "whistleblower protection",
+        "act as a whistleblower"
+      ],
+      "synonyms": [
+        "informant",
+        "tipster"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "ethics"
+      ]
+    },
+    {
+      "headword": "non-disclosure agreement",
+      "pronunciation": "/ˌnɑːndɪˈskloʊʒər əˈɡriːmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A legal contract between parties guaranteeing that proprietary information shared will remain confidential.",
+      "example": "You must sign a non-disclosure agreement before we reveal the proprietary algorithm to you.",
+      "translation": "اتفاقية عدم الإفصاح والسرية",
+      "exampleArabic": "يجب عليك توقيع اتفاقية عدم الإفصاح قبل أن نكشف لك عن الخوارزمية الخاصة بالشركة.",
+      "relatedForms": [
+        "NDA"
+      ],
+      "collocations": [
+        "sign a non-disclosure agreement",
+        "breach a non-disclosure agreement"
+      ],
+      "synonyms": [
+        "confidentiality agreement",
+        "NDA"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "contracts"
+      ]
+    },
+    {
+      "headword": "harassment policy",
+      "pronunciation": "/həˈræsmənt ˈpɑːləsi/",
+      "partOfSpeech": "noun",
+      "definition": "A company regulation prohibiting unwelcome, hostile, or intimidating behavior toward coworkers.",
+      "example": "Our strict harassment policy guarantees zero tolerance for discrimination or bullying.",
+      "translation": "سياسة مكافحة المضايقة والتحرش",
+      "exampleArabic": "تضمن سياستنا الصارمة لمكافحة المضايقة عدم التسامح مطلقاً مع التمييز أو التنمر.",
+      "relatedForms": [
+        "anti-harassment"
+      ],
+      "collocations": [
+        "zero-tolerance harassment policy",
+        "violate the harassment policy"
+      ],
+      "synonyms": [
+        "anti-bullying guidelines"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "ethics"
+      ]
+    },
+    {
+      "headword": "mandatory",
+      "pronunciation": "/ˈmændətɔːri/",
+      "partOfSpeech": "adjective",
+      "definition": "Required by law or workplace rules; not optional.",
+      "example": "Attending the quarterly cybersecurity refresher session is mandatory for all personnel.",
+      "translation": "إلزامي / إجباري بنص اللائحة",
+      "exampleArabic": "حضور جلسة التنشيط الفصلية للأمن السيبراني إلزامي لجميع الموظفين.",
+      "relatedForms": [
+        "mandate"
+      ],
+      "collocations": [
+        "mandatory training",
+        "mandatory attendance",
+        "mandatory requirement"
+      ],
+      "synonyms": [
+        "compulsory",
+        "obligatory",
+        "required"
+      ],
+      "antonyms": [
+        "optional",
+        "voluntary"
+      ],
+      "tags": [
+        "obligation",
+        "rules"
+      ]
+    },
+    {
+      "headword": "compulsory",
+      "pronunciation": "/kəmˈpʌlsəri/",
+      "partOfSpeech": "adjective",
+      "definition": "Required by a law or rule; having the force of an obligation.",
+      "example": "Wearing hard hats and high-visibility vests is compulsory on the construction site.",
+      "translation": "إجباري / فرضي بحكم القانون",
+      "exampleArabic": "ارتداء الخوذات الصلبة والسترات عالية الوضوح إجباري في موقع البناء.",
+      "relatedForms": [],
+      "collocations": [
+        "compulsory education",
+        "compulsory safety gear"
+      ],
+      "synonyms": [
+        "mandatory",
+        "enforced"
+      ],
+      "antonyms": [
+        "elective",
+        "discretionary"
+      ],
+      "tags": [
+        "obligation",
+        "rules"
+      ]
+    },
+    {
+      "headword": "obligatory",
+      "pronunciation": "/əˈblɪɡətɔːri/",
+      "partOfSpeech": "adjective",
+      "definition": "Customarily or legally expected; demanded by duty or decorum.",
+      "example": "Submitting timesheets by Friday evening is obligatory for all salaried contractors.",
+      "translation": "واجب / ملزم أخلاقياً أو مهنياً",
+      "exampleArabic": "إرسال سجلات ساعات العمل بحلول مساء الجمعة واجب وملزم لجميع المتعاقدين براتب.",
+      "relatedForms": [
+        "obligate",
+        "obligation"
+      ],
+      "collocations": [
+        "obligatory step",
+        "make it obligatory"
+      ],
+      "synonyms": [
+        "binding",
+        "prescribed"
+      ],
+      "antonyms": [
+        "voluntary"
+      ],
+      "tags": [
+        "obligation"
+      ]
+    },
+    {
+      "headword": "prohibited",
+      "pronunciation": "/prəˈhɪbɪtɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "Forbidden by law, regulation, or administrative rule.",
+      "example": "Installing unauthorized third-party software on company laptops is strictly prohibited.",
+      "translation": "محظور / ممنوع قانوناً أو نظاماً",
+      "exampleArabic": "تثبيت برامج غير مصرح بها من أطراف ثالثة على أجهزة الكمبيوتر المحمولة للشركة محظور تماماً.",
+      "relatedForms": [
+        "prohibit",
+        "prohibition"
+      ],
+      "collocations": [
+        "expressly prohibited",
+        "strictly prohibited"
+      ],
+      "synonyms": [
+        "banned",
+        "forbidden",
+        "disallowed"
+      ],
+      "antonyms": [
+        "permitted",
+        "allowed"
+      ],
+      "tags": [
+        "rules",
+        "prohibition"
+      ]
+    },
+    {
+      "headword": "strictly forbidden",
+      "pronunciation": "/ˈstrɪktli fərˈbɪdn/",
+      "partOfSpeech": "phrase",
+      "definition": "Completely disallowed under any circumstances with severe consequences for breach.",
+      "example": "Smoking anywhere inside the data center facility is strictly forbidden.",
+      "translation": "ممنوع منعاً باتاً",
+      "exampleArabic": "التدخين في أي مكان داخل منشأة مركز البيانات ممنوع منعاً باتاً.",
+      "relatedForms": [],
+      "collocations": [
+        "strictly forbidden by law",
+        "strictly forbidden under company rules"
+      ],
+      "synonyms": [
+        "totally banned",
+        "categorically outlawed"
+      ],
+      "antonyms": [
+        "freely allowed"
+      ],
+      "tags": [
+        "rules",
+        "prohibition"
+      ]
+    },
+    {
+      "headword": "adherence",
+      "pronunciation": "/ədˈhɪrəns/",
+      "partOfSpeech": "noun",
+      "definition": "Attachment or commitment to a person, cause, standard, or set of rules.",
+      "example": "Strict adherence to hygiene protocols kept hospital workers safe during the outbreak.",
+      "translation": "الالتزام الدقيق / التقيد بالمعايير",
+      "exampleArabic": "حافظ الالتزام الدقيق ببروتوكولات النظافة على سلامة العاملين في المستشفى أثناء تفشي المرض.",
+      "relatedForms": [
+        "adhere",
+        "adherent"
+      ],
+      "collocations": [
+        "adherence to guidelines",
+        "strict adherence",
+        "ensure adherence"
+      ],
+      "synonyms": [
+        "compliance",
+        "conformity",
+        "faithfulness"
+      ],
+      "antonyms": [
+        "noncompliance",
+        "infringement"
+      ],
+      "tags": [
+        "standards",
+        "behavior"
+      ]
+    },
+    {
+      "headword": "punctuality",
+      "pronunciation": "/ˌpʌŋktʃuˈæləti/",
+      "partOfSpeech": "noun",
+      "definition": "The quality or habit of being on time and arriving promptly.",
+      "example": "Our director values punctuality and always begins meetings on the exact minute.",
+      "translation": "الانضباط في المواعيد / الالتزام بالوقت",
+      "exampleArabic": "يقدر مديرنا الانضباط في المواعيد ويبدأ الاجتماعات دائماً في الدقيقة المحددة بالضبط.",
+      "relatedForms": [
+        "punctual",
+        "punctually"
+      ],
+      "collocations": [
+        "prize punctuality",
+        "flawless punctuality"
+      ],
+      "synonyms": [
+        "promptness",
+        "timeliness"
+      ],
+      "antonyms": [
+        "lateness",
+        "tardiness"
+      ],
+      "tags": [
+        "values",
+        "workplace"
+      ]
+    },
+    {
+      "headword": "protocol",
+      "pronunciation": "/ˈproʊtəkɑːl/",
+      "partOfSpeech": "noun",
+      "definition": "The official procedure or system of rules governing affairs of state or workplace diplomacy.",
+      "example": "Security protocol requires visitors to surrender badges upon leaving the compound.",
+      "translation": "بروتوكول / إجراء رسمي متفق عليه",
+      "exampleArabic": "يتطلب البروتوكول الأمني من الزوار تسليم الشارات عند مغادرة المجمع.",
+      "relatedForms": [
+        "protocols"
+      ],
+      "collocations": [
+        "follow protocol",
+        "safety protocol",
+        "standard protocol"
+      ],
+      "synonyms": [
+        "procedure",
+        "convention",
+        "code of behavior"
+      ],
+      "antonyms": [],
+      "tags": [
+        "procedure",
+        "standards"
+      ]
+    },
+    {
+      "headword": "confidentiality",
+      "pronunciation": "/ˌkɑːnfɪˌdenʃiˈæləti/",
+      "partOfSpeech": "noun",
+      "definition": "The state of keeping or being kept secret or private.",
+      "example": "Breaching client confidentiality can result in immediate loss of professional licensing.",
+      "translation": "السرية التامة / كتمان الأسرار",
+      "exampleArabic": "يمكن أن يؤدي خرق سرية العميل إلى فقدان فوري للترخيص المهني.",
+      "relatedForms": [
+        "confidential",
+        "confidentially"
+      ],
+      "collocations": [
+        "strict confidentiality",
+        "maintain confidentiality",
+        "breach of confidentiality"
+      ],
+      "synonyms": [
+        "privacy",
+        "secrecy",
+        "discretion"
+      ],
+      "antonyms": [
+        "publicity",
+        "openness"
+      ],
+      "tags": [
+        "ethics",
+        "legal"
+      ]
+    },
+    {
+      "headword": "etiquette",
+      "pronunciation": "/ˈetɪkət/",
+      "partOfSpeech": "noun",
+      "definition": "The customary code of polite behavior in society or among members of a particular profession.",
+      "example": "Muting your microphone while someone else is speaking is basic digital meeting etiquette.",
+      "translation": "آداب السلوك المهني / الإتيكيت واللياقة",
+      "exampleArabic": "كتم صوت الميكروفون أثناء حديث شخص آخر هو من أساسيات آداب الاجتماعات الرقمية.",
+      "relatedForms": [],
+      "collocations": [
+        "business etiquette",
+        "meeting etiquette",
+        "proper etiquette"
+      ],
+      "synonyms": [
+        "decorum",
+        "manners",
+        "politeness"
+      ],
+      "antonyms": [
+        "rudeness",
+        "impoliteness"
+      ],
+      "tags": [
+        "behavior",
+        "workplace"
+      ]
+    },
+    {
+      "headword": "collaborate",
+      "pronunciation": "/kəˈlæbəreɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To work jointly on an activity, especially to produce or create something.",
+      "example": "Our frontend developers collaborate closely with product designers every morning.",
+      "translation": "يتعاون / يعمل مع الآخرين لإنجاز عمل مشترك",
+      "exampleArabic": "يتعاون مطورو الواجهة الأمامية لدينا بشكل وثيق مع مصممي المنتجات كل صباح.",
+      "relatedForms": [
+        "collaborated",
+        "collaborates",
+        "collaborating"
+      ],
+      "collocations": [
+        "collaborate on a project",
+        "collaborate closely",
+        "collaborate with partners"
+      ],
+      "synonyms": [
+        "cooperate",
+        "partner",
+        "team up"
+      ],
+      "antonyms": [
+        "clash",
+        "dispute"
+      ],
+      "tags": [
+        "actions",
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "comply with",
+      "pronunciation": "/kəmˈplaɪ wɪð/",
+      "partOfSpeech": "phrasal verb",
+      "definition": "To act in accordance with a wish, rule, standard, or command.",
+      "example": "Every vendor must comply with international cloud security standards to retain our business.",
+      "translation": "يمتثل لـ / يلتزم بـ",
+      "exampleArabic": "يجب على كل مورد الامتثال لمعايير أمن السحابة الدولية لمواصلة العمل معنا.",
+      "relatedForms": [
+        "complied with",
+        "complying with"
+      ],
+      "collocations": [
+        "comply with regulations",
+        "comply with laws",
+        "fail to comply with"
+      ],
+      "synonyms": [
+        "conform to",
+        "abide by",
+        "observe"
+      ],
+      "antonyms": [
+        "disobey",
+        "defy"
+      ],
+      "tags": [
+        "actions",
+        "rules"
+      ]
+    },
+    {
+      "headword": "abide by",
+      "pronunciation": "/əˈbaɪd baɪ/",
+      "partOfSpeech": "phrasal verb",
+      "definition": "To accept or act in accordance with a rule, decision, or recommendation.",
+      "example": "Both management and the labor union agreed to abide by the arbitrator's ruling.",
+      "translation": "ينصاع لـ / يتقيد بـ",
+      "exampleArabic": "وافقت كل من الإدارة والنقابة العمالية على الانصياع لحكم المحكّم.",
+      "relatedForms": [
+        "abided by",
+        "abiding by"
+      ],
+      "collocations": [
+        "abide by the rules",
+        "abide by the decision",
+        "abide by the contract"
+      ],
+      "synonyms": [
+        "obey",
+        "stand by",
+        "respect"
+      ],
+      "antonyms": [
+        "reject",
+        "violate"
+      ],
+      "tags": [
+        "actions",
+        "rules"
+      ]
+    },
+    {
+      "headword": "adhere to",
+      "pronunciation": "/ədˈhɪr tuː/",
+      "partOfSpeech": "phrasal verb",
+      "definition": "To believe in and follow the practices of; stick firmly to a rule or standard.",
+      "example": "Medical professionals must adhere to strict sanitation procedures at all times.",
+      "translation": "يلتزم بـ / يستمسك بـ",
+      "exampleArabic": "يجب على المتخصصين الطبيين الالتزام بإجراءات التعقيم الصارمة في جميع الأوقات.",
+      "relatedForms": [
+        "adhered to",
+        "adhering to"
+      ],
+      "collocations": [
+        "adhere to standards",
+        "adhere to guidelines",
+        "adhere to principles"
+      ],
+      "synonyms": [
+        "follow",
+        "keep to",
+        "stick to"
+      ],
+      "antonyms": [
+        "flout",
+        "abandon"
+      ],
+      "tags": [
+        "actions",
+        "standards"
+      ]
+    },
+    {
+      "headword": "interact",
+      "pronunciation": "/ˌɪntərˈækt/",
+      "partOfSpeech": "verb",
+      "definition": "To communicate or be involved directly with someone while performing an activity.",
+      "example": "Client-facing managers interact with dozens of key enterprise partners every week.",
+      "translation": "يتفاعل / يتواصل ويتعامل",
+      "exampleArabic": "يتفاعل المديرون المواجهون للعملاء مع عشرات الشركاء المؤسسيين الرئيسيين كل أسبوع.",
+      "relatedForms": [
+        "interacted",
+        "interacts",
+        "interaction"
+      ],
+      "collocations": [
+        "interact with colleagues",
+        "interact positively",
+        "interact regularly"
+      ],
+      "synonyms": [
+        "engage",
+        "communicate",
+        "connect"
+      ],
+      "antonyms": [
+        "isolate",
+        "withdraw"
+      ],
+      "tags": [
+        "actions",
+        "communication"
+      ]
+    },
+    {
+      "headword": "cooperate",
+      "pronunciation": "/koʊˈɑːpəreɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To work helpfully and harmoniously toward the same end or purpose.",
+      "example": "The security team and legal counsel cooperated closely during the investigation.",
+      "translation": "يتعاون / ينسق بانسجام",
+      "exampleArabic": "تعاون فريق الأمن والمستشار القانوني بشكل وثيق أثناء التحقيق.",
+      "relatedForms": [
+        "cooperated",
+        "cooperates",
+        "cooperation"
+      ],
+      "collocations": [
+        "cooperate fully",
+        "cooperate with authorities",
+        "willing to cooperate"
+      ],
+      "synonyms": [
+        "work together",
+        "collaborate",
+        "assist"
+      ],
+      "antonyms": [
+        "resist",
+        "obstruct"
+      ],
+      "tags": [
+        "actions",
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "resolve conflict",
+      "pronunciation": "/rɪˈzɑːlv ˈkɑːnflɪkt/",
+      "partOfSpeech": "phrase",
+      "definition": "To settle a disagreement or friction between parties through constructive discussion.",
+      "example": "A skilled manager steps in early to resolve conflict before tension impacts productivity.",
+      "translation": "يحل النزاع / يسوّي الخلاف",
+      "exampleArabic": "يتدخل المدير الماهر مبكراً لحل النزاع قبل أن يؤثر التوتر على الإنتاجية.",
+      "relatedForms": [
+        "resolved conflict",
+        "resolving conflict"
+      ],
+      "collocations": [
+        "resolve workplace conflict",
+        "resolve conflict peacefully"
+      ],
+      "synonyms": [
+        "settle a dispute",
+        "reconcile differences"
+      ],
+      "antonyms": [
+        "escalate conflict"
+      ],
+      "tags": [
+        "conflict",
+        "actions"
+      ]
+    },
+    {
+      "headword": "reach consensus",
+      "pronunciation": "/riːtʃ kənˈsensəs/",
+      "partOfSpeech": "phrase",
+      "definition": "To achieve a general agreement among all members of a group on a decision or plan.",
+      "example": "After debating for two hours, the committee finally reached consensus on the new budget.",
+      "translation": "يتوصل إلى إجماع / يتفق بالرأي",
+      "exampleArabic": "بعد نقاش استمر ساعتين، توصلت اللجنة أخيراً إلى إجماع بشأن الميزانية الجديدة.",
+      "relatedForms": [
+        "reached consensus",
+        "reaching consensus"
+      ],
+      "collocations": [
+        "reach a consensus",
+        "strive to reach consensus"
+      ],
+      "synonyms": [
+        "come to an agreement",
+        "find common ground"
+      ],
+      "antonyms": [
+        "disagree",
+        "reach an impasse"
+      ],
+      "tags": [
+        "decisions",
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "joint effort",
+      "pronunciation": "/dʒɔɪnt ˈefərt/",
+      "partOfSpeech": "noun",
+      "definition": "A cooperative exertion or undertaking carried out by two or more people or teams together.",
+      "example": "Launching the international website was a successful joint effort between marketing and dev.",
+      "translation": "جهد مشترك / عمل تضافرت فيه القوى",
+      "exampleArabic": "كان إطلاق الموقع الدولي جهداً مشتركاً ناجحاً بين التسويق والتطوير.",
+      "relatedForms": [],
+      "collocations": [
+        "through joint effort",
+        "successful joint effort"
+      ],
+      "synonyms": [
+        "collaborative endeavor",
+        "combined effort"
+      ],
+      "antonyms": [
+        "solo project"
+      ],
+      "tags": [
+        "teamwork"
+      ]
+    },
+    {
+      "headword": "team building",
+      "pronunciation": "/tiːm ˈbɪldɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Activities and exercises designed to increase interpersonal motivation and promote cooperative teamwork.",
+      "example": "The company scheduled an afternoon of team building exercises at a local outdoor retreat.",
+      "translation": "بناء الفريق / أنشطة تعزيز روح العمل الجماعي",
+      "exampleArabic": "جدولت الشركة فترة بعد ظهر مخصصة لأنشطة بناء الفريق في منتجع خارجي محلي.",
+      "relatedForms": [],
+      "collocations": [
+        "team building exercise",
+        "team building activity",
+        "team building workshop"
+      ],
+      "synonyms": [
+        "group bonding"
+      ],
+      "antonyms": [],
+      "tags": [
+        "teamwork",
+        "activities"
+      ]
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Onboarding Policy and Office Rules",
+      "titleArabic": "سياسة التهيئة وقواعد المكتب",
+      "setting": "HR orientation office",
+      "settingArabic": "مكتب تهيئة الموارد البشرية",
+      "roles": [
+        "HR Director",
+        "New Employee"
+      ],
+      "vocabularyUsed": [
+        "code of conduct",
+        "compliance",
+        "workplace policy",
+        "dress code",
+        "attendance policy",
+        "disciplinary action",
+        "grievance",
+        "whistleblower",
+        "non-disclosure agreement",
+        "harassment policy",
+        "line manager"
+      ],
+      "lines": [
+        {
+          "speaker": "HR Director",
+          "text": "Welcome to the company. First, you have to read and sign this non-disclosure agreement.",
+          "translation": "مرحباً بك في الشركة. أولاً، يتعين عليك قراءة وتوقيع اتفاقية عدم الإفصاح والسرية هذه."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "Of course. Does our department have to abide by a strict dress code daily?",
+          "translation": "بالتأكيد. هل يتعين على قسمنا الالتزام بقواعد لباس صارمة يومياً؟"
+        },
+        {
+          "speaker": "HR Director",
+          "text": "Our workplace policy is business casual, but you must wear formal clothing for client pitches.",
+          "translation": "سياستنا لمكان العمل غير رسمية، لكن يجب عليك ارتداء ملابس رسمية لعروض العملاء."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "Understood. How does the company monitor punctuality under the attendance policy?",
+          "translation": "مفهوم. كيف تراقب الشركة الانضباط في المواعيد بموجب سياسة الحضور؟"
+        },
+        {
+          "speaker": "HR Director",
+          "text": "You must log your hours, and any extended absence requires approval from your line manager.",
+          "translation": "يجب عليك تسجيل ساعات عملك، وأي غياب مطول يتطلب موافقة من مديرك المباشر."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "What are the rules regarding professional ethics and our code of conduct?",
+          "translation": "ما هي القواعد المتعلقة بأخلاقيات المهنة ومدونة قواعد السلوك لدينا؟"
+        },
+        {
+          "speaker": "HR Director",
+          "text": "We enforce zero tolerance under our harassment policy; severe breaches face immediate disciplinary action.",
+          "translation": "نحن نطبق عدم التسامح مطلقاً بموجب سياستنا لمكافحة المضايقة؛ والانتهاكات الجسيمة تواجه إجراءً تأديبياً فورياً."
+        },
+        {
+          "speaker": "New Employee",
+          "text": "And what is the proper procedure if someone needs to file a grievance or act as a whistleblower?",
+          "translation": "وما هو الإجراء المتبع إذا احتاج شخص ما لتقديم مظلمة أو العمل ككاشف عن المخالفات والفساد؟"
+        },
+        {
+          "speaker": "HR Director",
+          "text": "Our compliance department protects every whistleblower, ensuring confidential review of every single grievance.",
+          "translation": "يحمي قسم الامتثال لدينا كل كاشف مخالفات، مما يضمن مراجعة سرية لكل مظلمة على حدة."
+        }
+      ]
+    },
+    {
+      "title": "Cross-Functional Collaboration",
+      "titleArabic": "التعاون بين الفرق متعددة التخصصات",
+      "setting": "Shared workspace creative hub",
+      "settingArabic": "المقر الإبداعي في مساحة العمل المشتركة",
+      "roles": [
+        "Squad Lead",
+        "UX Designer"
+      ],
+      "vocabularyUsed": [
+        "team player",
+        "synergy",
+        "morale",
+        "cohesion",
+        "solidarity",
+        "camaraderie",
+        "group dynamic",
+        "cross-functional",
+        "collaborator",
+        "peer",
+        "team building",
+        "joint effort"
+      ],
+      "lines": [
+        {
+          "speaker": "Squad Lead",
+          "text": "Our cross-functional squad made tremendous progress this week thanks to strong team synergy.",
+          "translation": "حقق فريقنا متعدد التخصصات تقدماً هائلاً هذا الأسبوع بفضل التآزر الجماعي القوي."
+        },
+        {
+          "speaker": "UX Designer",
+          "text": "Working side by side with engineering peers created a wonderful sense of camaraderie.",
+          "translation": "خلق العمل جنباً إلى جنب مع الزملاء الأقران في الهندسة شعوراً رائعاً بالمودة والزمالة."
+        },
+        {
+          "speaker": "Squad Lead",
+          "text": "Alex proved to be an exceptional collaborator and a dependable team player throughout the sprint.",
+          "translation": "أثبت أليكس أنه شريك ومتعاون استثنائي وعضو فريق يُعتمد عليه طوال فترة العمل."
+        },
+        {
+          "speaker": "UX Designer",
+          "text": "When the server crash happened, everyone stood in solidarity until the issue was fixed.",
+          "translation": "عندما حدث تعطل الخادم، وقف الجميع في تضامن حتى تم إصلاح المشكلة."
+        },
+        {
+          "speaker": "Squad Lead",
+          "text": "That collective support protected overall morale and strengthened our group cohesion.",
+          "translation": "حمى ذلك الدعم الجماعي الروح المعنوية العامة وعزز تماسك مجموعتنا."
+        },
+        {
+          "speaker": "UX Designer",
+          "text": "I noticed how much our group dynamic improved after that outdoor team building day.",
+          "translation": "لاحظت كم تحسنت ديناميكية مجموعتنا بعد يوم بناء الفريق في الهواء الطلق."
+        },
+        {
+          "speaker": "Squad Lead",
+          "text": "Delivering this mobile application was truly a joint effort that every teammate can celebrate.",
+          "translation": "كان تسليم هذا التطبيق المحمول جهداً مشتركاً بحق يمكن لكل زميل بالفريق الاحتفال به."
+        },
+        {
+          "speaker": "UX Designer",
+          "text": "We have to sustain this momentum as we head into the next release cycle.",
+          "translation": "يتعين علينا الحفاظ على هذا الزخم ونحن نتجه إلى دورة الإصدار التالية."
+        }
+      ]
+    },
+    {
+      "title": "Resolving Disagreements and Upholding Protocols",
+      "titleArabic": "حل الخلافات ودعم البروتوكولات",
+      "setting": "Quiet meeting alcove",
+      "settingArabic": "زاوية اجتماعات هادئة",
+      "roles": [
+        "Mediator",
+        "Team Facilitator"
+      ],
+      "vocabularyUsed": [
+        "facilitator",
+        "mediator",
+        "mentor",
+        "mentee",
+        "subordinate",
+        "mutual respect",
+        "liaison",
+        "spokesperson",
+        "ombudsman",
+        "resolve conflict",
+        "reach consensus"
+      ],
+      "lines": [
+        {
+          "speaker": "Mediator",
+          "text": "Thank you for convening this session. As an appointed mediator, I aim to resolve conflict impartially.",
+          "translation": "شكراً لك على عقد هذه الجلسة. بصفتي وسيطاً معيناً، أهدف إلى حل النزاع بحيادية."
+        },
+        {
+          "speaker": "Team Facilitator",
+          "text": "As meeting facilitator, I will ensure both parties speak with mutual respect and without interruptions.",
+          "translation": "بصفتي ميسراً للاجتماع، سأضمن تحدث كلا الطرفين باحترام متبادل ودون مقاطعات."
+        },
+        {
+          "speaker": "Mediator",
+          "text": "Remember that a senior manager must not treat any subordinate unfairly, regardless of project stress.",
+          "translation": "تذكر أنه يجب على أي مدير أول ألا يعامل أي مرؤوس بشكل غير عادل، بغض النظر عن ضغط المشروع."
+        },
+        {
+          "speaker": "Team Facilitator",
+          "text": "The senior engineer actually acts as a dedicated mentor to that junior mentee, so emotions ran high.",
+          "translation": "المهندس الأول يعمل في الواقع كمرشد مخلص لهذا المتدرب الشاب، لذا كانت المشاعر جياشة."
+        },
+        {
+          "speaker": "Mediator",
+          "text": "Our departmental liaison helped clarify the misunderstanding before it reached the corporate ombudsman.",
+          "translation": "ساعد مسؤول الاتصال في قسمنا في توضيح سوء الفهم قبل أن يصل إلى أمين المظالم في الشركة."
+        },
+        {
+          "speaker": "Team Facilitator",
+          "text": "I am confident both leads can reach consensus on task distribution within the hour.",
+          "translation": "أنا واثق من أن كلا القائدين يمكنهما التوصل إلى إجماع حول توزيع المهام في غضون ساعة."
+        },
+        {
+          "speaker": "Mediator",
+          "text": "Once agreement is reached, who will serve as the official spokesperson to announce the compromise?",
+          "translation": "بمجرد التوصل إلى اتفاق، من سيعمل كمتحدث رسمي للإعلان عن هذه التسوية؟"
+        },
+        {
+          "speaker": "Team Facilitator",
+          "text": "The department head will announce it, proving that mature dialogue can overcome any workplace dispute.",
+          "translation": "سيعلن ذلك رئيس القسم، ليثبت أن الحوار الناضج يمكن أن يتغلب على أي نزاع في مكان العمل."
+        }
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Workplace Obligations and Legal Standards",
+      "titleArabic": "الالتزامات في مكان العمل والمعايير القانونية",
+      "kind": "informative",
+      "vocabularyUsed": [
+        "mandatory",
+        "compulsory",
+        "obligatory",
+        "prohibited",
+        "strictly forbidden",
+        "adherence",
+        "compliance",
+        "code of conduct"
+      ],
+      "text": "Every corporate organization establishes explicit standards to maintain professional integrity and regulatory compliance. Attending annual health and safety sessions is mandatory for all personnel. In manufacturing and lab environments, wearing protective equipment is compulsory by federal law. Strict adherence to established data privacy protocols is obligatory whenever handling customer records. Employees must remember that sharing private passwords or installing unauthorized third-party utilities is strictly forbidden. Disclosing proprietary intellectual property is prohibited under all circumstances. By respecting the company code of conduct, professionals create an equitable, legally sound workplace where everyone works with confidence and security.",
+      "translation": "تضع كل مؤسسة معايير واضحة للحفاظ على النزاهة المهنية والامتثال للأنظمة. وحضور جلسات الصحة والسلامة السنوية إلزامي لجميع الموظفين. وفي بيئات التصنيع والمختبرات، يعد ارتداء معدات الحماية إجبارياً بموجب القانون الفيدرالي. كما أن الالتزام الدقيق ببروتوكولات خصوصية البيانات المعمول بها واجب عند التعامل مع سجلات العملاء. ويجب على الموظفين أن يتذكروا أن مشاركة كلمات المرور الخاصة أو تثبيت أدوات غير مصرح بها ممنوع منعاً باتاً. كما أن الكشف عن الملكية الفكرية الخاصة بالشركة محظور في جميع الظروف. ومن خلال احترام مدونة قواعد السلوك بالشركة، يبني المحترفون مكان عمل منصفاً وسليماً قانونياً يعمل فيه الجميع بثقة وأمان."
+    },
+    {
+      "title": "The Pillars of Professional Etiquette",
+      "titleArabic": "ركائز آداب السلوك المهني",
+      "kind": "reflective",
+      "vocabularyUsed": [
+        "punctuality",
+        "protocol",
+        "confidentiality",
+        "etiquette",
+        "interact",
+        "collaborate",
+        "cooperate"
+      ],
+      "text": "True professionalism encompasses far more than technical competency; it requires emotional intelligence and consistent etiquette. When teammates interact daily, mutual consideration sets the tone for productive dialogue. Practicing punctuality shows genuine respect for other people's crowded calendars. Following standard security protocol protects digital assets, while safeguarding client confidentiality prevents disastrous legal consequences. Team members who collaborate openly across functional borders achieve greater innovation than isolated contributors. When unexpected roadblocks arise, individuals must cooperate selflessly to find lasting solutions. Cultivating these essential workplace habits transforms ordinary coworkers into high-performing, deeply united teams capable of overcoming any industrial challenge.",
+      "translation": "تشمل الاحترافية الحقيقية ما هو أكثر بكثير من الكفاءة الفنية؛ فهي تتطلب ذكاءً عاطفياً وآداب سلوك متسقة. وعندما يتفاعل الزملاء يومياً، فإن التقدير المتبادل يحدد نبرة الحوار المثمر. وتُظهر ممارسة الانضباط في المواعيد احتراماً صادقاً للجداول المزدحمة للآخرين. كما أن اتباع البروتوكول الأمني القياسي يحمي الأصول الرقمية، بينما يمنع الحفاظ على سرية العملاء العواقب القانونية الكارثية. ويحقق أعضاء الفريق الذين يتعاونون بانفتاح عبر الحدود الوظيفية ابتكاراً أكبر من المساهمين المنعزلين. وعندما تظهر عقبات غير متوقعة، يجب على الأفراد التعاون بنكران ذات لإيجاد حلول دائمة. إن تنمية هذه العادات الأساسية في مكان العمل تحول زملاء العمل العاديين إلى فرق عالية الأداء ومترابطة بعمق وقادرة على التغلب على أي تحدٍ صناعي."
+    },
+    {
+      "title": "Building Harmony and Handling Disagreements",
+      "titleArabic": "بناء الانسجام والتعامل مع الخلافات",
+      "kind": "informative",
+      "vocabularyUsed": [
+        "abide by",
+        "adhere to",
+        "comply with",
+        "resolve conflict",
+        "reach consensus",
+        "peer",
+        "facilitator",
+        "mediator"
+      ],
+      "text": "Constructive teamwork flourishes when professionals consciously abide by shared values and adhere to common principles. In high-pressure project environments, different opinions inevitably surface among colleagues. When disagreements occur, teams should comply with formal procedures designed to resolve conflict without damaging personal relationships. Bringing in an objective facilitator helps participants exchange feedback candidly, while an impartial mediator can help opposing factions reach consensus on controversial initiatives. Giving constructive feedback to a peer requires tact, empathy, and active listening. Organizations that cultivate transparent problem-solving frameworks experience significantly lower turnover and higher employee satisfaction across all functional divisions.",
+      "translation": "يزدهر العمل الجماعي البناء عندما ينصاع المحترفون عن وعي للقيم المشتركة ويتمسكون بالمبادئ الموحدة. وفي بيئات المشاريع عالية الضغط، تطفو الآراء المختلفة حتماً على السطح بين الزملاء. وعندما تحدث الخلافات، يجب على الفرق الامتثال للإجراءات الرسمية المصممة لحل النزاع دون الإضرار بالعلاقات الشخصية. وتساعد الاستعانة بميسر موضوعي المشاركين على تبادل الآراء بصراحة، بينما يمكن لوسيط محايد مساعدة الفصائل المتعارضة على التوصل إلى إجماع بشأن المبادرات المثيرة للجدل. ويتطلب تقديم ملاحظات بناءة لزميل أو قرين اللباقة والتعاطف والاستماع الفعال. وتتمتع المؤسسات التي تزرع أطر عمل شفافة لحل المشكلات بمعدل دوران وظيفي أقل بكثير ورضا أعلى للموظفين عبر جميع الأقسام الوظيفية."
+    }
+  ]
+}
