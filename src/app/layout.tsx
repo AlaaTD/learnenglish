@@ -60,7 +60,7 @@ export const viewport: Viewport = {
 
 const themeScript = `(function(){try{var p=document.documentElement.getAttribute('data-theme-pref')||'system';var d=p==='dark'||(p==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();`;
 
-export default async function RootLayout({ children }: LayoutProps<"/">) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   let theme = "system";
   try {
     const user = await getCurrentUser();

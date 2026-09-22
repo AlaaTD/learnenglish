@@ -10,35 +10,37 @@ const candidates = [
   path.join(root, "dev.db"),
 ];
 const dbPath = candidates.find((p) => fs.existsSync(p));
-const backupPath = path.join(root, "dev.backup.db");
-const prismaDbPath = path.join(root, "prisma", "dev.db");
-const rootDbPath = path.join(root, "dev.db");
 const backupsDir = path.join(root, "backups");
+const backupPath = path.join(backupsDir, "dev.backup.db");
+const prismaDbPath = path.join(root, "prisma", "dev.db");
 
 if (!dbPath) {
-  console.log("No dev.db found to backup in root or prisma/");
+  console.log("No dev.db found to backup in prisma/");
   process.exit(0);
 }
 
 try {
-  // 1. Copy to standard dev.backup.db
+  fs.mkdirSync(backupsDir, { recursive: true });
+
+  // 1. Copy to standard backups/dev.backup.db
   fs.copyFileSync(dbPath, backupPath);
 
   // 2. Ensure prisma/dev.db is also synced
   fs.mkdirSync(path.dirname(prismaDbPath), { recursive: true });
-  fs.copyFileSync(dbPath, prismaDbPath);
+  if (dbPath !== prismaDbPath) {
+    fs.copyFileSync(dbPath, prismaDbPath);
+  }
 
   // 3. Create timestamped archive in backups/
-  fs.mkdirSync(backupsDir, { recursive: true });
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
   const archivePath = path.join(backupsDir, `dev-${timestamp}.db`);
   fs.copyFileSync(dbPath, archivePath);
 
-  // Keep only the last 10 timestamped backups to save space
+  // Keep only the last 3 timestamped backups to save space
   const files = fs.readdirSync(backupsDir)
     .filter((f) => f.startsWith("dev-") && f.endsWith(".db"))
     .sort();
-  while (files.length > 10) {
+  while (files.length > 3) {
     const oldest = files.shift();
     if (oldest) fs.unlinkSync(path.join(backupsDir, oldest));
   }
