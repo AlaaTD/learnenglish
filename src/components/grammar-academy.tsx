@@ -292,7 +292,7 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
                     placeholder="ابحث عن قاعدة أو زمن أو موضوع..."
                     lang="ar"
                     style={{ lineHeight: "1.25rem" }}
-                    className="w-full rounded-lg border border-zinc-300 bg-white py-2 ps-3 pe-8 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-brand-500 focus:outline-none dark:border-night-700 dark:bg-night-950/60 dark:text-white dark:placeholder:text-mist-500"
+                    className="w-full rounded-lg border border-zinc-300 bg-white py-2 ps-3 pe-8 text-base text-zinc-900 placeholder:text-zinc-400 focus:border-brand-500 focus:outline-none sm:text-sm dark:border-night-700 dark:bg-night-950/60 dark:text-white dark:placeholder:text-mist-500"
                   />
                   {searchQuery && (
                     <button
