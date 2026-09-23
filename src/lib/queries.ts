@@ -477,12 +477,25 @@ export type ConfusableGroupData = {
 };
 
 export async function getAllConfusableGroups(): Promise<ConfusableGroupData[]> {
-  const rows = await db.confusableGroup.findMany({
-    orderBy: [
-      { category: "asc" },
-      { order: "asc" },
-    ],
-  });
+  const model = (db as any).confusableGroup;
+  let rows: any[];
+  if (model) {
+    rows = await model.findMany({
+      orderBy: [
+        { category: "asc" },
+        { order: "asc" },
+      ],
+    });
+  } else {
+    const { PrismaClient } = await import("@prisma/client");
+    const fresh = new PrismaClient();
+    rows = await fresh.confusableGroup.findMany({
+      orderBy: [
+        { category: "asc" },
+        { order: "asc" },
+      ],
+    });
+  }
 
   return rows.map((r) => ({
     id: r.id,

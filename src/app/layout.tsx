@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
+import { ThemeScript } from "@/components/theme-script";
 import { Inter, Lexend, Readex_Pro } from "next/font/google";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
@@ -59,8 +59,6 @@ export const viewport: Viewport = {
   ],
 };
 
-const themeScript = `(function(){try{var p=document.documentElement.getAttribute('data-theme-pref')||'system';var d=p==='dark'||(p==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();`;
-
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   let theme = "system";
   try {
@@ -80,14 +78,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       className={`${lexend.variable} ${readex.variable} ${inter.variable} h-full`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
-        <Script
-          id="theme-script"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{ __html: themeScript }}
-        />
-        {children}
-      </body>
+      <head>
+        <ThemeScript />
+      </head>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

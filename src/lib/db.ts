@@ -40,6 +40,16 @@ if (!process.env.DATABASE_URL) {
 
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
+// In development, hot reload might keep an older PrismaClient instance in globalThis.
+// If the cached instance lacks newly added models (e.g. confusableGroup), discard it.
+const cachedPrisma = globalForPrisma.prisma as unknown as Record<string, unknown> | undefined;
+if (cachedPrisma && !("confusableGroup" in cachedPrisma)) {
+  try {
+    (cachedPrisma as { $disconnect?: () => void }).$disconnect?.();
+  } catch {}
+  delete globalForPrisma.prisma;
+}
+
 export const db =
   globalForPrisma.prisma ??
   new PrismaClient({
