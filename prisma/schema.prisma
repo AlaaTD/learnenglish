@@ -232,3 +232,29 @@ model DayProgress {
   @@unique([userId, dayNumber])
   @@index([userId, status])
 }
+
+// ---------------------------------------------------------------------------
+// Confusables — groups of commonly confused English words
+// ---------------------------------------------------------------------------
+
+model ConfusableGroup {
+  id            String @id @default(cuid())
+  slug          String @unique  // e.g. "make-vs-do"
+  category      String          // e.g. "verbs-of-action"
+  order         Int             // display order within category
+
+  title         String          // e.g. "make vs do"
+  titleArabic   String          // e.g. "الفرق بين make و do"
+  summary       String          // one-line English rule summary
+  summaryArabic String          // شرح موجز بالعربية
+
+  words         String @default("[]") // JSON ConfusableWord[]
+  examples      String @default("[]") // JSON ConfusableExample[]
+  mistakes      String @default("[]") // JSON ConfusableMistake[]
+  tips          String @default("[]") // JSON string[]
+  tipsArabic    String @default("[]") // JSON string[]
+
+  @@index([category])
+  @@index([order])
+}
+

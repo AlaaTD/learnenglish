@@ -1273,10 +1273,10 @@
   ],
   "grammar": [
     {
-      "title": "Have / Has",
-      "titleArabic": "استخدام Have و Has للتعبير عن الامتلاك",
-      "explanation": "We use 'have' and 'has' to express ownership, relationships, and possession in the present simple. Use 'have' with I, you, we, and they. Use 'has' with he, she, and it. For negative sentences, use 'do not have' (don't have) or 'does not have' (doesn't have). For questions, start with 'Do' or 'Does'.",
-      "explanationArabic": "نستخدم الفعلين have و has للتعبير عن الملكية والصلات الشخصية في الحاضر البسيط. نستخدم have مع الضمائر (I, you, we, they)، ونستخدم has مع الضمائر المفردة الغائبة (he, she, it). في النفي، نستخدم do not have (don't have) أو does not have (doesn't have). وفي صيغة السؤال، نبدأ بـ Do أو Does مع بقاء الفعل في المصدر have.",
+      "title": "Have / Has & Possessive Adjectives",
+      "titleArabic": "قواعد الملكية: أفعال التملك (Have / Has) وصفات الملكية (my, your, his, her...)",
+      "explanation": "We use 'have' and 'has' to talk about the possessions and attributes people have, and possessive adjectives (my, your, his, her, its, our, their) placed directly before nouns to show ownership clearly.",
+      "explanationArabic": "نستخدم الفعلين have و has للتعبير عما يملكه الأشخاص من أغراض وسمات، ونستخدم صفات الملكية (my, your, his, her, its, our, their) قبل الأسماء مباشرة لبيان صاحب الشيء بدقة.",
       "structures": [
         {
           "label": "Have — I/You/We/They · الإثبات بـ have",
@@ -1301,6 +1301,24 @@
           "pattern": "Do/Does + subject + have + object?",
           "explanation": "Yes/No question asking about possession",
           "explanationArabic": "سؤال بنعم/لا للسؤال عن امتلاك شيء"
+        },
+        {
+          "label": "Possessive + Noun · صفة الملكية والاسم",
+          "pattern": "Possessive Adjective + Noun",
+          "explanation": "Attributive possession placed directly before the noun",
+          "explanationArabic": "صفة الملكية متبوعة بالاسم مباشرة"
+        },
+        {
+          "label": "Identifying Ownership · تحديد الملكية",
+          "pattern": "This/That is + my/your/his/her + noun",
+          "explanation": "Identifying personal belonging using demonstratives",
+          "explanationArabic": "تحديد ملكية الشيء باستخدام أسماء الإشارة"
+        },
+        {
+          "pattern": "Is this / Are these + possessive adjective + noun ...?",
+          "label": "Question Pattern · صيغة السؤال",
+          "explanation": "Used to ask about ownership or possession of an item.",
+          "explanationArabic": "تُستخدم للسؤال عن ملكية أو صاحب الشيء."
         }
       ],
       "examples": [
@@ -1338,46 +1356,7 @@
             "umbrella",
             "suitcase"
           ]
-        }
-      ],
-      "commonUsage": [
-        "I have a phone. (لدي هاتف.)",
-        "She has a red dress. (لديها فستان أحمر.)",
-        "We don't have enough money. (ليس لدينا مال كافٍ.)"
-      ],
-      "commonMistakes": [
-        {
-          "wrong": "He have a new laptop.",
-          "right": "He has a new laptop.",
-          "note": "He takes 'has', not 'have'."
         },
-        {
-          "wrong": "She doesn't has a car.",
-          "right": "She doesn't have a car.",
-          "note": "After 'does not / doesn't', always return the verb to base form 'have'."
-        }
-      ]
-    },
-    {
-      "title": "Possessive Adjectives",
-      "titleArabic": "صفات الملكية (my, your, his, her, its, our, their)",
-      "explanation": "Possessive adjectives show who owns or possesses something. They always come before a noun: my (لي), your (لك / لكم), his (له), her (لها), its (له/لها لغير العاقل), our (لنا), their (لهم). They do not change for singular or plural nouns.",
-      "explanationArabic": "صفات الملكية تبين من يمتلك الشيء أو يرتبط به، وتأتي دائماً قبل الاسم مباشرة: my (لي)، your (لكَ/لكِ/لكم)، his (له)، her (لها)، its (لغير العاقل)، our (لنا)، their (لهم). وتبقى ثابتة لا تتغير سواء كان الاسم الموصوف مفرداً أو جمعاً.",
-      "structures": [
-        {
-          "label": "Possessive + Noun · صفة الملكية والاسم",
-          "pattern": "Possessive Adjective + Noun",
-          "explanation": "Attributive possession placed directly before the noun",
-          "explanationArabic": "صفة الملكية متبوعة بالاسم مباشرة"
-        },
-        {
-          "label": "Identifying Ownership · تحديد الملكية",
-          "pattern": "This/That is + my/your/his/her + noun",
-          "explanation": "Identifying personal belonging using demonstratives",
-          "explanationArabic": "تحديد ملكية الشيء باستخدام أسماء الإشارة"
-        }
-      ],
-      "examples": [
         {
           "sentence": "This is my wallet and these are my shoes.",
           "translation": "هذه محفظتي وهذا حذائي.",
@@ -1414,19 +1393,39 @@
         }
       ],
       "commonUsage": [
-        "My notebook is on the table. (دفتر ملاحظاتي على الطاولة.)",
-        "Is this your passport? (هل هذا جواز سفرك؟)"
+        "Use 'have' with I, you, we, they, and plural nouns: 'They have a cozy house.' (استخدم 'have' مع I و you و we و they والجمع: 'لديهم منزل دافئ'.)",
+        "Use 'has' with he, she, it, and singular nouns: 'He has an urgent meeting.' (استخدم 'has' مع he و she و it والمفرد: 'لديه اجتماع عاجل'.)",
+        "In negatives, use 'don't have' or 'doesn't have' — never say doesn't has: 'She doesn't have time.' (في النفي، استخدم don't have أو doesn't have — ولا تقل doesn't has أبداً.)",
+        "In questions, start with Do or Does: 'Do you have a question?' / 'Does he have a car?' (في الأسئلة، ابدأ بـ Do أو Does واجعل الفعل المصدر have دائماً.)",
+        "Possessive adjectives always precede a noun directly: 'my keys', 'his phone', 'our project'. (تأتي صفات الملكية دائماً قبل الاسم مباشرة لتحديد صاحبه: 'مفاتيحي'، 'هاتفه'.)",
+        "Distinguish 'its' (possessive: 'The dog wagged its tail') from 'it's' (contraction of it is). (ميز بين its الملكية بدون فاصلة، و it's التي تعني 'إنه يكون'.)",
+        "Their vs There vs They're: 'their car' (ملكية), 'over there' (مكان), 'they're coming' (هم قادمون). (انتبه للتشابه الصوتي: their للملكية، there للمكان، they're اختصار they are.)",
+        "Do not use articles (a/an/the) before possessive adjectives: say 'my friend', not 'the my friend'. (لا تضع أداة تعريف قبل صفة الملكية: قل my friend مباشرة.)"
       ],
       "commonMistakes": [
         {
+          "wrong": "He have a new laptop.",
+          "right": "He has a new laptop.",
+          "note": "He takes 'has', not 'have'.",
+          "noteArabic": "مع ضمائر المفرد الغائب (he, she, it) نستخدم 'has' وليس 'have'."
+        },
+        {
+          "wrong": "She doesn't has a car.",
+          "right": "She doesn't have a car.",
+          "note": "After 'does not / doesn't', always return the verb to base form 'have'.",
+          "noteArabic": "بعد أداة النفي doesn't، يعود الفعل دائماً إلى المصدر المجرد 'have'."
+        },
+        {
           "wrong": "This is he jacket.",
           "right": "This is his jacket.",
-          "note": "Use the possessive adjective 'his', not the subject pronoun 'he'."
+          "note": "Use the possessive adjective 'his', not the subject pronoun 'he'.",
+          "noteArabic": "نستخدم صفة الملكية 'his' للمذكر قبل الاسم، وليس ضمير الفاعل 'he'."
         },
         {
           "wrong": "I lost my's wallet.",
           "right": "I lost my wallet.",
-          "note": "Possessive adjectives (my, your, his) do not take an apostrophe 's."
+          "note": "Possessive adjectives (my, your, his) do not take an apostrophe 's.",
+          "noteArabic": "صفات الملكية (my, your, his, her) لا تضاف لها أبداً فاصلة الملكية 's."
         }
       ]
     }

@@ -42,6 +42,45 @@ const COMMON_GRAMMAR_TOKENS = [
   "as well as", "in spite of", "despite", "therefore", "furthermore",
 ];
 
+const GRAMMAR_DISTRACTOR_GROUPS: Record<string, string[]> = {
+  be: ["am", "is", "are", "was", "were", "been", "being"],
+  do: ["do", "does", "did", "doing", "done"],
+  have: ["have", "has", "had", "having"],
+  modals: ["can", "could", "should", "would", "must", "might", "may"],
+  relatives: ["who", "which", "that", "whose", "where", "when"],
+  prepositions: ["at", "on", "in", "to", "for", "with", "from", "by", "into", "through"],
+  quantifiers: ["a few", "a little", "much", "many", "a lot of", "several", "enough", "too"],
+  connectors: ["although", "however", "because", "since", "while", "so", "unless", "until"],
+  negatives: ["doesn't", "don't", "didn't", "isn't", "aren't", "wasn't", "weren't", "haven't", "hasn't"],
+  frequency: ["always", "usually", "often", "sometimes", "rarely", "never"],
+};
+
+function getSmartGrammarDistractors(target: string): string[] {
+  const clean = target.toLowerCase();
+
+  for (const group of Object.values(GRAMMAR_DISTRACTOR_GROUPS)) {
+    if (group.includes(clean)) {
+      return group.filter((w) => w !== clean);
+    }
+  }
+
+  // Verb morphology heuristics
+  if (clean.endsWith("ing") && clean.length > 4) {
+    const base = clean.replace(/ing$/, "");
+    return [base, base + "s", base + "ed", base + "es"].filter((w) => w !== clean);
+  }
+  if (clean.endsWith("ed") && clean.length > 3) {
+    const base = clean.replace(/ed$/, "");
+    return [base, base + "s", base + "ing"].filter((w) => w !== clean);
+  }
+  if (clean.endsWith("s") && clean.length > 3) {
+    const base = clean.replace(/s$/, "");
+    return [base, base + "ing", base + "ed"].filter((w) => w !== clean);
+  }
+
+  return COMMON_GRAMMAR_TOKENS.filter((t) => t !== clean);
+}
+
 export function generateLessonQuiz(lesson: GrammarAcademyLesson): QuizQuestion[] {
   const questions: QuizQuestion[] = [];
   let qCounter = 1;
@@ -118,9 +157,9 @@ export function generateLessonQuiz(lesson: GrammarAcademyLesson): QuizQuestion[]
         .map((w, i) => (i === targetIndex ? "________" : w))
         .join(" ");
 
-      // Plausible distractors
-      const distractors = COMMON_GRAMMAR_TOKENS.filter((t) => t !== targetWord);
-      const chosenDistractors = shuffle(distractors).items.slice(0, 3);
+      // Intelligent grammatical distractors
+      const pool = getSmartGrammarDistractors(targetWord);
+      const chosenDistractors = shuffle(pool).items.slice(0, 3);
       const rawOptions = [targetWord, ...chosenDistractors];
       const { items: shuffledOptions, getNewIndex } = shuffle(rawOptions);
       const correctIndex = getNewIndex(0);
@@ -140,7 +179,9 @@ export function generateLessonQuiz(lesson: GrammarAcademyLesson): QuizQuestion[]
         options: shuffledOptions,
         correctIndex,
         explanation: `In this context, "${targetWord}" correctly fits the grammatical structure of "${lesson.title}".`,
-        explanationArabic: `الخيار الصحيح هو "${targetWord}" ليتوافق التركيب النحوي مع سياق الجملة وقاعدة الدرس.`,
+        explanationArabic: ex.translation
+          ? `الخيار الصحيح هو "${targetWord}". معنى الجملة: "${ex.translation}".`
+          : `الخيار الصحيح هو "${targetWord}" ليتوافق التركيب النحوي مع سياق الجملة وقاعدة الدرس.`,
       });
     }
   }

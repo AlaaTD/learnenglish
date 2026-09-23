@@ -1531,20 +1531,23 @@
         }
       ],
       "commonUsage": [
-        "I can swim. (أستطيع السباحة.)",
-        "Can you help me? (هل يمكنك مساعدتي؟)",
-        "They can't speak French. (لا يستطيعون التحدث بالفرنسية.)"
+        "Can is a modal auxiliary: it NEVER changes form and NEVER adds -s: 'He can speak fluent Arabic.' (الفعل can لا يتغير شكله أبداً ولا يضاف له -s مع المفرد.)",
+        "Always follow can with the bare base infinitive without 'to': 'She can dance', not 'can to dance'. (يتبع can دائماً الفعل في المصدر المجرد بدون to.)",
+        "Pronunciation tip: 'can' is usually unstressed /kən/, while 'can't' is stressed and clearer /kænt/ or /kɑːnt/. (في النطق، تُنطق can بنبرة خفيفة، بينما can't بنبرة قوية واضحة.)",
+        "Use can also for polite requests and asking for permission: 'Can you help me with this luggage?' (تُستخدم can أيضاً لطلب المساعدة أو الاستئذان بلباقة.)"
       ],
       "commonMistakes": [
         {
           "wrong": "He cans speak English.",
           "right": "He can speak English.",
-          "note": "Modal verbs like 'can' never add '-s' for the third person singular."
+          "note": "Modal verbs like 'can' never add '-s' for the third person singular.",
+          "noteArabic": "الأفعال الناقصة مثل 'can' لا تقبل إضافة -s إطلاقاً حتى مع الفاعل المفرد."
         },
         {
           "wrong": "I can to drive.",
           "right": "I can drive.",
-          "note": "Do not put 'to' after 'can'; use the bare infinitive."
+          "note": "Do not put 'to' after 'can'; use the bare infinitive.",
+          "noteArabic": "يأتي بعد 'can' المصدر المجرد بدون 'to' (لا تقل can to)."
         }
       ]
     }

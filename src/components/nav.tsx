@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IconChevronDown } from "@/components/dashboard/icons";
 
-type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin" | "difficult" | "grammar";
+type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin" | "difficult" | "grammar" | "confusables";
 
 // Simple stroke icons (one consistent style, inherit the text colour) — replaces
 // the multi-coloured emoji that added visual noise and rendered differently per OS.
@@ -14,6 +14,7 @@ const iconPaths: Record<IconName, string> = {
   home: "M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z",
   day: "M8 3v3M16 3v3M4 8h16M5 5h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z",
   grammar: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+  confusables: "M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4",
   journey: "M5 21V4m0 0h11l-2 4 2 4H5",
   words: "M4 5.5A1.5 1.5 0 015.5 4H19v14H5.5A1.5 1.5 0 004 19.5v-14zM4 19.5A1.5 1.5 0 005.5 21H19",
   review: "M20 12a8 8 0 11-2.34-5.66M20 4v5h-5",
@@ -80,6 +81,7 @@ export function Nav({
 
   // Secondary destinations — desktop header, and the phone "Menu" sheet only.
   const secondary: NavItem[] = [
+    { href: "/confusables", label: "Confusables", short: "Confusables", icon: "confusables", match: startsWith("/confusables") },
     { href: "/progress", label: "Progress", short: "Progress", icon: "progress", match: startsWith("/progress") },
     { href: "/settings", label: "Settings", short: "Settings", icon: "settings", match: startsWith("/settings") },
     ...(isAdmin

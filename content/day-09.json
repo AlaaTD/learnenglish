@@ -1380,20 +1380,23 @@
         }
       ],
       "commonUsage": [
-        "I live in a peaceful town. (أعيش في بلدة هادئة.)",
-        "The library is near the school. (المكتبة قريبة من المدرسة.)",
-        "He is an honest driver. (إنه سائق أمين.)"
+        "Use 'a' before consonant SOUNDS: 'a car', 'a user' (/juː/), 'a European city' (/j/). (استخدم 'a' قبل الأصوات الساكنة — العبرة بالصوت المنطوق وليس الحرف المكتوب.)",
+        "Use 'an' before vowel SOUNDS: 'an apple', 'an hour' (الصامت h غير ملفوظ), 'an honest person'. (استخدم 'an' قبل الأصوات المتحركة — مثل an hour لأن حرف h صامت.)",
+        "Use 'the' when both the speaker and listener know which specific item is meant: 'Pass the salt, please.' (استخدم 'the' عندما يكون الشيء معلوماً ومحدداً للطرفين.)",
+        "Zero article: do not use a/an with plural or uncountable general nouns: 'Books expand our horizons.' (لا تضع أداة تنكير مع أسماء الجمع العامة أو الأسماء غير المعدودة العامة.)"
       ],
       "commonMistakes": [
         {
           "wrong": "He works in an bank.",
           "right": "He works in a bank.",
-          "note": "'Bank' begins with a consonant sound /b/, so use 'a', not 'an'."
+          "note": "'Bank' begins with a consonant sound /b/, so use 'a', not 'an'.",
+          "noteArabic": "كلمة 'bank' تبدأ بصوت ساكن (/b/)، لذا نستخدم معها أداة التنكير 'a' وليس 'an'."
         },
         {
           "wrong": "She goes to an university.",
           "right": "She goes to a university.",
-          "note": "'University' begins with the consonant sound /j/ (you), so use 'a', not 'an'."
+          "note": "'University' begins with the consonant sound /j/ (you), so use 'a', not 'an'.",
+          "noteArabic": "كلمة 'university' تبدأ بنطق صوت ساكن شبه صوت الياء (/j/)، لذا تأخذ 'a' وليس 'an'."
         }
       ]
     }

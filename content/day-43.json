@@ -7,10 +7,10 @@
   "focus": "By the end of today, you can communicate clearly about character and describing people using the day's 50 vocabulary items and grammar.",
   "grammar": [
     {
-      "title": "Comparatives for Personality",
-      "titleArabic": "صيغ المقارنة في وصف الشخصية",
-      "explanation": "We use comparative adjectives to compare character traits between people. For short adjectives (one syllable), add -er + than ('Liam is calmer than his brother'). For long adjectives (two or more syllables), use more + adjective + than ('She is more charismatic and meticulous than her manager'). For irregulars, good becomes better, bad becomes worse. To express equality, use 'as + adjective + as' ('He is as level-headed as a veteran pilot').",
-      "explanationArabic": "نستخدم صفات المقارنة للمفاضلة بين سمات الشخصيات وطباع الأفراد. للصفات القصيرة ذات المقطع الواحد، نضيف er + than (مثل: 'ليام أكثر هدوءاً من أخيه'). وللصفات الطويلة المكونة من مقطعين أو أكثر، نستخدم more + الصفة + than (مثل: 'إنها أكثر كاريزما ودقة من مديرها'). وللصفات الشاذة: good تصبح better، و bad تصبح worse. وللتعبير عن التساوي في الصفة نستخدم: as + الصفة + as.",
+      "title": "Character & Advice: Personality Comparatives & Ought to / Had better",
+      "titleArabic": "وصف الشخصية والنصائح: صيغ المقارنة و Ought to و Had better",
+      "explanation": "We use comparative adjectives to evaluate and contrast people's personality traits, and modal structures 'ought to' (moral and sensible advice) and 'had better' (urgent advice with warnings) to recommend sound courses of action.",
+      "explanationArabic": "نستخدم صفات المقارنة للمفاضلة بين سمات الشخصيات وطباع الأفراد، ونستخدم التركيبين 'ought to' (لتقديم النصح الأخلاقي والمبدئي) و'had better' (للنصيحة العاجلة والتحذير من عواقب وخيمة) لتوجيه السلوك بحكمة.",
       "structures": [
         {
           "label": "Long Adjective + more · صفة طويلة",
@@ -29,6 +29,24 @@
           "pattern": "Subject + is + as + adjective + as + Object",
           "explanation": "States that two people share an identical degree of a personality trait.",
           "explanationArabic": "يوضح أن شخصين يشتركان في نفس القدر من سمة الشخصية."
+        },
+        {
+          "label": "Ought to · نصيحة مبدئية",
+          "pattern": "Subject + ought to + V1 (base)",
+          "explanation": "Gives principled or ethical advice.",
+          "explanationArabic": "يقدم نصيحة مبدئية أو أخلاقية رصينة."
+        },
+        {
+          "label": "Had better · نصيحة حازمة",
+          "pattern": "Subject + had better + V1 (base) + or else...",
+          "explanation": "Gives strong urgent advice with an implied or stated consequence.",
+          "explanationArabic": "يقدم نصيحة عاجلة وحازمة محذراً من عاقبة سلبية."
+        },
+        {
+          "label": "Had better not · تحذير",
+          "pattern": "Subject + had better not + V1 (base)",
+          "explanation": "Warns someone against performing a risky action.",
+          "explanationArabic": "يحذر شخصاً من مغبة الإقدام على تصرف محفوف بالمخاطر."
         }
       ],
       "examples": [
@@ -63,55 +81,7 @@
             "level-headed",
             "down-to-earth"
           ]
-        }
-      ],
-      "commonMistakes": [
-        {
-          "wrong": "He is more witty than his brother.",
-          "right": "He is wittier than his brother.",
-          "note": "Two-syllable adjectives ending in -y take -ier, not 'more'.",
-          "noteArabic": "الصفات المنتهية بحرف y مثل witty تصبح wittier بإضافة ier وليس more."
         },
-        {
-          "wrong": "She is more charismatic that her sister.",
-          "right": "She is more charismatic than her sister.",
-          "note": "Use 'than' for comparisons, never 'that'.",
-          "noteArabic": "استخدم 'than' في أسلوب المقارنة وليس 'that'."
-        }
-      ],
-      "commonUsage": [
-        "One-syllable adjectives: add -er (calmer than, wiser than). (الصفات ذات المقطع الواحد: نضيف er (مثل: calmer than).)",
-        "Adjectives ending in -y: change to -ier (wittier than, friendlier than). (الصفات المنتهية بـ y: تُقلب إلى ier (مثل: wittier than).)",
-        "Multi-syllable adjectives: use 'more + adjective + than' (more charismatic than, more eloquent than). (الصفات متعددة المقاطع: نستخدم 'more + الصفة + than' (مثل: more charismatic than).)",
-        "Irregular comparatives: good -> better, bad -> worse, far -> farther/further. (الصفات الشاذة: good تصبح better، و bad تصبح worse.)"
-      ]
-    },
-    {
-      "title": "Ought to / Had better",
-      "titleArabic": "استخدام Ought to و Had better لتقديم النصيحة والتحذير",
-      "explanation": "Both 'ought to' and 'had better' give advice and recommendations. 'Ought to' expresses moral duty, objective correctness, or polite advisory recommendation ('You ought to be more humble in victory'). 'Had better' expresses strong advice with an urgent warning or negative consequence if ignored ('You had better control your hot-tempered outbursts, or you will get fired'). Note: 'had better' refers to present or future urgency, NOT past time.",
-      "explanationArabic": "يُستخدم كل من 'ought to' و 'had better' لتقديم النصائح والتوصيات. تعبر 'ought to' عن الواجب الأخلاقي أو الصواب المبدئي والتوصية المهذبة ('ينبغي عليك أن تكون أكثر تواضعاً عند النصر'). بينما تعبر 'had better' عن نصيحة قوية مصحوبة بتحذير عاجل من عواقب وخيمة إذا تُركت ('من الأفضل لك كبح غضبك وعصبيتك وإلا فستُطرد من العمل'). ملاحظة: تشير 'had better' إلى الحاضر أو المستقبل رغم صيغة had.",
-      "structures": [
-        {
-          "label": "Ought to · نصيحة مبدئية",
-          "pattern": "Subject + ought to + V1 (base)",
-          "explanation": "Gives principled or ethical advice.",
-          "explanationArabic": "يقدم نصيحة مبدئية أو أخلاقية رصينة."
-        },
-        {
-          "label": "Had better · نصيحة حازمة",
-          "pattern": "Subject + had better + V1 (base) + or else...",
-          "explanation": "Gives strong urgent advice with an implied or stated consequence.",
-          "explanationArabic": "يقدم نصيحة عاجلة وحازمة محذراً من عاقبة سلبية."
-        },
-        {
-          "label": "Had better not · تحذير",
-          "pattern": "Subject + had better not + V1 (base)",
-          "explanation": "Warns someone against performing a risky action.",
-          "explanationArabic": "يحذر شخصاً من مغبة الإقدام على تصرف محفوف بالمخاطر."
-        }
-      ],
-      "examples": [
         {
           "sentence": "You ought to stay humble and unpretentious despite receiving international acclaim.",
           "translation": "ينبغي عليك أن تظل متواضعاً وعفوياً رغم حصولك على إشادة دولية.",
@@ -144,7 +114,29 @@
           ]
         }
       ],
+      "commonUsage": [
+        "One-syllable adjectives: add -er (calmer than, wiser than). (الصفات ذات المقطع الواحد: نضيف er (مثل: calmer than).)",
+        "Adjectives ending in -y: change to -ier (wittier than, friendlier than). (الصفات المنتهية بـ y: تُقلب إلى ier (مثل: wittier than).)",
+        "Multi-syllable adjectives: use 'more + adjective + than' (more charismatic than, more eloquent than). (الصفات متعددة المقاطع: نستخدم 'more + الصفة + than' (مثل: more charismatic than).)",
+        "Irregular comparatives: good -> better, bad -> worse, far -> farther/further. (الصفات الشاذة: good تصبح better، و bad تصبح worse.)",
+        "Ought to + base verb: moral duty, recommendation ('He ought to be more magnanimous'). (Ought to + الفعل الأساسي: واجب أخلاقي أو نصيحة رصينة ('ينبغي أن يكون أكثر كرماً وتسامحاً').)",
+        "Negative ought to: ought not to + base verb. (نفي ought to: نضع not قبل to فتصبح ought not to.)",
+        "Had better + base verb: urgent advice with warning of bad consequences ('You had better listen'). (Had better + الفعل الأساسي: نصيحة حازمة مع التحذير من عواقب سلبية ('من الأفضل لك الاستماع').)",
+        "Negative had better: had better not + base verb ('You had better not be petty'). (نفي had better: نضع not بعدها فتصبح had better not + الفعل.)"
+      ],
       "commonMistakes": [
+        {
+          "wrong": "He is more witty than his brother.",
+          "right": "He is wittier than his brother.",
+          "note": "Two-syllable adjectives ending in -y take -ier, not 'more'.",
+          "noteArabic": "الصفات المنتهية بحرف y مثل witty تصبح wittier بإضافة ier وليس more."
+        },
+        {
+          "wrong": "She is more charismatic that her sister.",
+          "right": "She is more charismatic than her sister.",
+          "note": "Use 'than' for comparisons, never 'that'.",
+          "noteArabic": "استخدم 'than' في أسلوب المقارنة وليس 'that'."
+        },
         {
           "wrong": "You had better to listen to your mentor.",
           "right": "You had better listen to your mentor.",
@@ -157,12 +149,6 @@
           "note": "'Ought' always retains its 'to': 'ought not to listen'.",
           "noteArabic": "تحتفظ 'ought' بحرف الجر 'to' دائماً في النفي: 'ought not to listen'."
         }
-      ],
-      "commonUsage": [
-        "Ought to + base verb: moral duty, recommendation ('He ought to be more magnanimous'). (Ought to + الفعل الأساسي: واجب أخلاقي أو نصيحة رصينة ('ينبغي أن يكون أكثر كرماً وتسامحاً').)",
-        "Negative ought to: ought not to + base verb. (نفي ought to: نضع not قبل to فتصبح ought not to.)",
-        "Had better + base verb: urgent advice with warning of bad consequences ('You had better listen'). (Had better + الفعل الأساسي: نصيحة حازمة مع التحذير من عواقب سلبية ('من الأفضل لك الاستماع').)",
-        "Negative had better: had better not + base verb ('You had better not be petty'). (نفي had better: نضع not بعدها فتصبح had better not + الفعل.)"
       ]
     }
   ],

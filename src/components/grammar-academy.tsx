@@ -7,11 +7,31 @@ import { generateLessonQuiz, type QuizQuestion } from "@/lib/grammar-quiz";
 import { AudioButton } from "@/components/audio-button";
 import { Ar } from "@/components/ui";
 
+function parseUsageNote(note: string): { english: string; arabic?: string } {
+  const match = note.match(/^(.*?)\s*\(([\u0600-\u06FF\s\d.,'":؟!-]+)\)\s*$/);
+  if (match) {
+    return { english: match[1].trim(), arabic: match[2].trim() };
+  }
+  if (/^[\u0600-\u06FF\s\d.,'":؟!-]+$/.test(note)) {
+    return { english: "", arabic: note.trim() };
+  }
+  return { english: note.trim() };
+}
+
 interface GrammarAcademyProps {
   lessons: GrammarAcademyLesson[];
   initialDay?: number;
   currentDay?: number;
 }
+
+const STAGES = [
+  { id: "all", label: "الكل (56)", min: 1, max: 90 },
+  { id: "stage_1", label: "1-10: التأسيس", min: 1, max: 10 },
+  { id: "stage_2", label: "11-20: التواصل", min: 11, max: 20 },
+  { id: "stage_3", label: "21-30: مواقف واقعية", min: 21, max: 30 },
+  { id: "stage_4", label: "31-40: العمل والتكنولوجيا", min: 31, max: 40 },
+  { id: "stage_5", label: "41-50: المشاعر والعلاقات", min: 41, max: 50 },
+];
 
 export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: GrammarAcademyProps) {
   // Selection is keyed by lesson id, not day number: some days carry two grammar
@@ -27,13 +47,14 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
 
   const [activeTab, setActiveTab] = useState<"study" | "quiz">("study");
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedStageFilter, setSelectedStageFilter] = useState<string>("all");
   const [quizScores, setQuizScores] = useState<Record<string, { score: number; total: number; percentage: number }>>({});
 
   // Unified lesson picker: combines search + day/lesson selection into a single combobox
-  // (replaces the old always-visible sidebar list — keeps mobile layouts compact).
   const [isLessonPickerOpen, setIsLessonPickerOpen] = useState(false);
   const lessonPickerRef = useRef<HTMLDivElement>(null);
   const lessonSearchInputRef = useRef<HTMLInputElement>(null);
+  const selectedLessonButtonRef = useRef<HTMLButtonElement | null>(null);
 
   // Load saved quiz scores from localStorage
   useEffect(() => {
@@ -47,8 +68,7 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
     }
   }, []);
 
-  // Close the lesson picker on outside click or Escape, the two standard ways users expect a
-  // combobox popover to dismiss.
+  // Close the lesson picker on outside click or Escape
   useEffect(() => {
     if (!isLessonPickerOpen) return;
 
@@ -69,21 +89,38 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
     };
   }, [isLessonPickerOpen]);
 
-  // Focus the search field the moment the picker opens; clear the filter on close so the next
-  // open always starts from the full list.
+  // Focus the search field the moment the picker opens; clear the filter on close
   useEffect(() => {
     if (isLessonPickerOpen) {
       lessonSearchInputRef.current?.focus();
     } else {
       setSearchQuery("");
+      setSelectedStageFilter("all");
     }
   }, [isLessonPickerOpen]);
 
-  // Filter lessons based on search query
+  // Auto-scroll to selected lesson when picker opens
+  useEffect(() => {
+    if (isLessonPickerOpen) {
+      const timer = setTimeout(() => {
+        selectedLessonButtonRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      }, 60);
+      return () => clearTimeout(timer);
+    }
+  }, [isLessonPickerOpen, selectedLessonId]);
+
+  // Filter lessons based on search query and stage filter
   const filteredLessons = useMemo(() => {
-    if (!searchQuery.trim()) return lessons;
-    const q = searchQuery.toLowerCase();
-    return lessons.filter(
+    let list = lessons;
+    if (selectedStageFilter !== "all") {
+      const stageObj = STAGES.find((s) => s.id === selectedStageFilter);
+      if (stageObj) {
+        list = list.filter((l) => l.dayNumber >= stageObj.min && l.dayNumber <= stageObj.max);
+      }
+    }
+    if (!searchQuery.trim()) return list;
+    const q = searchQuery.toLowerCase().trim();
+    return list.filter(
       (lesson) =>
         lesson.title.toLowerCase().includes(q) ||
         (lesson.titleArabic && lesson.titleArabic.includes(q)) ||
@@ -92,36 +129,21 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
         lesson.day.topic.toLowerCase().includes(q) ||
         String(lesson.dayNumber) === q
     );
-  }, [lessons, searchQuery]);
+  }, [lessons, searchQuery, selectedStageFilter]);
 
-  // Group consecutive lessons that share a day number (6 of the 90 days carry two
-  // grammar topics) into one card, so the picker shows the day once instead of
-  // repeating its number and "اليوم" badge for each topic taught that day.
-  const groupedLessons = useMemo(() => {
-    const groups: { dayNumber: number; dayLessons: GrammarAcademyLesson[] }[] = [];
-    for (const lesson of filteredLessons) {
-      const lastGroup = groups[groups.length - 1];
-      if (lastGroup && lastGroup.dayNumber === lesson.dayNumber) {
-        lastGroup.dayLessons.push(lesson);
-      } else {
-        groups.push({ dayNumber: lesson.dayNumber, dayLessons: [lesson] });
-      }
-    }
-    return groups;
-  }, [filteredLessons]);
+
 
   // Current active lesson
   const currentLesson = useMemo(() => {
     return lessons.find((l) => l.id === selectedLessonId) || lessons[0];
   }, [lessons, selectedLessonId]);
 
-  // Next lesson in curriculum order — may be the second lesson of the same day
-  // (for the 6 days that carry two grammar topics) before it advances to the
-  // next day, unlike a plain "dayNumber + 1" jump.
-  const nextLesson = useMemo(() => {
-    const idx = lessons.findIndex((l) => l.id === currentLesson?.id);
-    return idx >= 0 ? lessons[idx + 1] : undefined;
+  // Previous and Next lessons in curriculum order
+  const currentIdx = useMemo(() => {
+    return lessons.findIndex((l) => l.id === currentLesson?.id);
   }, [lessons, currentLesson]);
+
+  const nextLesson = currentIdx >= 0 && currentIdx < lessons.length - 1 ? lessons[currentIdx + 1] : undefined;
 
   // Quiz state for current lesson
   const [lessonQuestions, setLessonQuestions] = useState<QuizQuestion[]>([]);
@@ -215,177 +237,245 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
         </div>
       </div>
 
-      {/* ─── Lesson selector: its own full-width row, clearly labelled and styled as a
-          dropdown — the primary "which lesson" control, kept above and visually separate
-          from the Study/Quiz switch below it (they are not peers: Study/Quiz act on
-          whichever lesson is chosen here). ─── */}
-      <div className="space-y-1">
-        <label className="block px-0.5 text-[11px] font-semibold uppercase tracking-widest text-zinc-400 dark:text-mist-600">
-          Lesson
-        </label>
-        {/* Lesson picker: a single combobox trigger that opens search + the day/lesson list,
-            replacing the old always-open sidebar column so mobile gets its space back. */}
-        <div className="relative" ref={lessonPickerRef}>
-          {/* Trigger — looks exactly like a native <select> input */}
-          <button
-            type="button"
-            onClick={() => setIsLessonPickerOpen((open) => !open)}
-            aria-haspopup="listbox"
-            aria-expanded={isLessonPickerOpen}
-            className={`group flex w-full items-center rounded-lg border bg-zinc-50 text-start transition-all dark:bg-night-950 ${
+      {/* ─── Lesson Selector ─── */}
+      <div className="relative" ref={lessonPickerRef}>
+        <button
+          type="button"
+          onClick={() => setIsLessonPickerOpen((open) => !open)}
+          aria-haspopup="listbox"
+          aria-expanded={isLessonPickerOpen}
+          className={`group flex w-full items-center gap-3 rounded-xl border bg-white px-3 py-2.5 text-start shadow-xs transition-all dark:bg-night-900 ${
+            isLessonPickerOpen
+              ? "border-brand-500 ring-2 ring-brand-500/20 shadow-md dark:border-brand-500"
+              : "border-zinc-300 hover:border-zinc-400 dark:border-night-700 dark:hover:border-night-600"
+          }`}
+        >
+          {/* Day Badge */}
+          <span className="flex h-9 w-9 shrink-0 flex-col items-center justify-center rounded-lg bg-brand-50 border border-brand-200/80 text-brand-700 dark:bg-brand-950/60 dark:border-brand-800/80 dark:text-brand-300 font-bold font-mono">
+            <span className="text-[8px] uppercase tracking-tighter opacity-75 leading-none">Day</span>
+            <span className="text-sm leading-tight">{currentLesson?.dayNumber}</span>
+          </span>
+
+          {/* Title — single line with English, score inline */}
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2">
+              <span className="truncate text-sm font-bold text-zinc-900 dark:text-white" dir="ltr">
+                {currentLesson?.title}
+              </span>
+              {lessonScore && (
+                <span className="shrink-0 rounded-full bg-emerald-100 px-1.5 py-px text-[10px] font-semibold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                  {lessonScore.percentage}%
+                </span>
+              )}
+            </div>
+            {currentLesson?.titleArabic && (
+              <Ar className="block truncate text-[11px] text-clay-600 dark:text-clay-400 mt-px">
+                {currentLesson.titleArabic}
+              </Ar>
+            )}
+          </div>
+
+          {/* Chevron */}
+          <span
+            className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg transition-all duration-200 ${
               isLessonPickerOpen
-                ? "border-brand-500 ring-2 ring-brand-500/20 dark:border-brand-500"
-                : "border-zinc-300 dark:border-night-700"
+                ? "rotate-180 bg-brand-600 text-white dark:bg-brand-600 dark:text-white"
+                : "bg-zinc-100 text-zinc-500 group-hover:bg-brand-100 group-hover:text-brand-700 dark:bg-night-800 dark:text-mist-400 dark:group-hover:bg-brand-950 dark:group-hover:text-brand-300"
             }`}
           >
-            {/* Inline label — always visible, anchors the field semantically */}
-            <span className="select-none shrink-0 border-r border-zinc-200 px-3 py-2.5 text-[11px] font-bold uppercase tracking-wider text-zinc-400 dark:border-night-700 dark:text-mist-600">
-              درس
-            </span>
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </span>
+        </button>
 
-            {/* Current value */}
-            <span className="min-w-0 flex-1 truncate px-3 py-2.5 text-sm font-medium text-zinc-800 dark:text-zinc-100">
-              {currentLesson?.title ?? (
-                <span className="text-zinc-400 dark:text-mist-600">اختر درساً…</span>
-              )}
-            </span>
+        {/* Mobile Backdrop Overlay */}
+        {isLessonPickerOpen && (
+          <div
+            className="fixed inset-0 z-30 bg-black/40 backdrop-blur-[2px] sm:hidden"
+            onClick={() => setIsLessonPickerOpen(false)}
+            aria-hidden="true"
+          />
+        )}
 
-            {/* Chevron zone — full-height, contrasting bg like a native select arrow */}
-            <span
-              aria-hidden="true"
-              className={`flex shrink-0 flex-col items-center justify-center self-stretch rounded-r-lg px-3 transition-colors ${
-                isLessonPickerOpen
-                  ? "bg-brand-600 text-white"
-                  : "bg-zinc-200 text-zinc-500 group-hover:bg-zinc-300 dark:bg-night-700 dark:text-mist-300 dark:group-hover:bg-night-600"
-              }`}
-            >
-              <svg
-                className={`h-3.5 w-3.5 transition-transform duration-150 ${isLessonPickerOpen ? "rotate-180" : ""}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="3"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </span>
-          </button>
-
-          {isLessonPickerOpen && (
-            <div
-              role="listbox"
-              aria-label="قائمة الدروس"
-              className="absolute start-0 top-full z-20 mt-1.5 w-full overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-night-700 dark:bg-night-900 sm:w-[26rem] sm:max-w-[calc(100vw-2rem)]"
-            >
-              <div className="space-y-2 border-b border-zinc-200 p-2.5 dark:border-night-800">
-                <div className="flex items-center justify-between px-0.5">
-                  <Ar className="text-xs font-semibold text-zinc-500 dark:text-mist-400">
-                    قائمة الدروس ({filteredLessons.length})
-                  </Ar>
-                </div>
-                <div className="relative" dir="rtl">
-                  <input
-                    ref={lessonSearchInputRef}
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="ابحث عن قاعدة أو زمن أو موضوع..."
-                    lang="ar"
-                    style={{ lineHeight: "1.25rem" }}
-                    className="w-full rounded-lg border border-zinc-300 bg-white py-2 ps-3 pe-8 text-base text-zinc-900 placeholder:text-zinc-400 focus:border-brand-500 focus:outline-none sm:text-sm dark:border-night-700 dark:bg-night-950/60 dark:text-white dark:placeholder:text-mist-500"
-                  />
-                  {searchQuery && (
-                    <button
-                      type="button"
-                      onClick={() => setSearchQuery("")}
-                      aria-label="Clear search"
-                      className="absolute end-2 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-900 dark:text-mist-500 dark:hover:text-white"
-                    >
-                      ✕
-                    </button>
-                  )}
+        {/* Popover Dropdown Sheet */}
+        {isLessonPickerOpen && (
+          <div
+            role="listbox"
+            aria-label="قائمة دروس وقواعد اللغة"
+            className="fixed inset-x-3 top-20 z-40 sm:absolute sm:inset-x-auto sm:start-0 sm:top-full sm:mt-2 w-auto sm:w-[32rem] sm:max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl dark:border-night-700 dark:bg-night-900 animate-fadeIn"
+          >
+            {/* Header with Search */}
+            <div className="border-b border-zinc-200/80 p-3 space-y-2.5 dark:border-night-800">
+              <div className="flex items-center justify-between">
+                <Ar className="text-sm font-bold text-zinc-900 dark:text-white">
+                  اختر الدرس
+                </Ar>
+                <div className="flex items-center gap-2">
+                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-[11px] font-semibold text-zinc-500 dark:bg-night-800 dark:text-mist-400">
+                    {filteredLessons.length} درس
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setIsLessonPickerOpen(false)}
+                    className="flex h-7 w-7 items-center justify-center rounded-lg text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 dark:text-mist-500 dark:hover:bg-night-800 dark:hover:text-mist-200"
+                    aria-label="إغلاق القائمة"
+                  >
+                    ✕
+                  </button>
                 </div>
               </div>
 
-              <div className="max-h-[40vh] overflow-y-auto p-2 scrollbar-thin sm:max-h-72">
-                {groupedLessons.map(({ dayNumber, dayLessons }) => {
-                  const isCurrentDay = dayNumber === currentDay;
-                  const isGroupSelected = dayLessons.some((l) => l.id === selectedLessonId);
-
-                  return (
-                    <div key={dayNumber} className="mb-1 last:mb-0">
-                      <div className="flex items-center gap-2 px-1.5 pt-1.5">
-                        <span
-                          className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[10px] font-bold font-mono ${
-                            isGroupSelected
-                              ? "bg-brand-500 text-white"
-                              : "bg-zinc-100 text-zinc-500 dark:bg-night-800 dark:text-mist-400"
-                          }`}
-                        >
-                          {dayNumber}
-                        </span>
-                        {isCurrentDay && (
-                          <span className="rounded-full bg-emerald-100 px-1.5 py-0.5 text-[9px] font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-                            اليوم
-                          </span>
-                        )}
-                      </div>
-
-                      {dayLessons.map((lesson) => {
-                        const isSelected = lesson.id === selectedLessonId;
-                        const scoreData = quizScores[lesson.id];
-
-                        return (
-                          <button
-                            key={lesson.id}
-                            type="button"
-                            role="option"
-                            aria-selected={isSelected}
-                            onClick={() => {
-                              setSelectedLessonId(lesson.id);
-                              setIsLessonPickerOpen(false);
-                            }}
-                            className={`flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-start transition-colors ${
-                              isSelected
-                                ? "bg-brand-50 dark:bg-brand-950/40"
-                                : "hover:bg-zinc-50 dark:hover:bg-night-850/60"
-                            }`}
-                          >
-                            {/* Selected indicator */}
-                            <span className={`mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full transition-colors ${
-                              isSelected ? "bg-brand-500" : "bg-transparent"
-                            }`} />
-                            <span className="min-w-0 flex-1">
-                              <span className={`block truncate text-sm ${
-                                isSelected ? "font-semibold text-brand-700 dark:text-brand-300" : "font-medium text-zinc-800 dark:text-zinc-200"
-                              }`}>{lesson.title}</span>
-                              {lesson.titleArabic && (
-                                <Ar className="block truncate text-xs text-zinc-400 dark:text-mist-500">
-                                  {lesson.titleArabic}
-                                </Ar>
-                              )}
-                            </span>
-                            {scoreData && (
-                              <span className="shrink-0 rounded-md bg-emerald-100 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
-                                {scoreData.percentage}%
-                              </span>
-                            )}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  );
-                })}
-
-                {filteredLessons.length === 0 && (
-                  <div className="p-6 text-center text-sm text-zinc-500 dark:text-mist-400">
-                    لا توجد دروس تطابق بحثك. جرب كلمة أخرى.
-                  </div>
+              {/* Search Input */}
+              <div className="relative" dir="rtl">
+                <span className="pointer-events-none absolute start-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-mist-500">
+                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </span>
+                <input
+                  ref={lessonSearchInputRef}
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="ابحث بالاسم أو رقم اليوم..."
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 py-2 ps-9 pe-8 text-base text-zinc-900 placeholder:text-zinc-400 focus:border-brand-500 focus:bg-white focus:outline-none sm:text-sm dark:border-night-700 dark:bg-night-950/70 dark:text-white dark:placeholder:text-mist-500 dark:focus:bg-night-950"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className="absolute end-2.5 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-900 dark:text-mist-500 dark:hover:text-white"
+                    aria-label="مسح البحث"
+                  >
+                    ✕
+                  </button>
                 )}
               </div>
+
+              {/* Stage Filter Chips */}
+              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs">
+                {STAGES.map((st) => (
+                  <button
+                    key={st.id}
+                    type="button"
+                    onClick={() => setSelectedStageFilter(st.id)}
+                    className={`shrink-0 rounded-lg px-2.5 py-1 font-medium transition-all ${
+                      selectedStageFilter === st.id
+                        ? "bg-brand-600 text-white shadow-xs"
+                        : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-night-800 dark:text-mist-300 dark:hover:bg-night-750"
+                    }`}
+                  >
+                    {st.label}
+                  </button>
+                ))}
+              </div>
             </div>
-          )}
-        </div>
+
+            {/* Scrollable List of Lessons */}
+            <div className="max-h-[55vh] sm:max-h-80 overflow-y-auto p-2 space-y-1 scrollbar-thin">
+              {filteredLessons.map((lesson) => {
+                const isSelected = lesson.id === selectedLessonId;
+                const isCurrentDay = lesson.dayNumber === currentDay;
+                const scoreData = quizScores[lesson.id];
+
+                return (
+                  <button
+                    key={lesson.id}
+                    ref={isSelected ? selectedLessonButtonRef : undefined}
+                    type="button"
+                    role="option"
+                    aria-selected={isSelected}
+                    onClick={() => {
+                      setSelectedLessonId(lesson.id);
+                      setIsLessonPickerOpen(false);
+                    }}
+                    className={`group/item flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-start transition-all ${
+                      isSelected
+                        ? "bg-brand-50 ring-1 ring-brand-400 dark:bg-brand-950/30 dark:ring-brand-600"
+                        : "hover:bg-zinc-50 dark:hover:bg-night-800/60"
+                    }`}
+                  >
+                    {/* Day Number Badge */}
+                    <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-xs font-bold ${
+                      isSelected
+                        ? "bg-brand-600 text-white"
+                        : isCurrentDay
+                          ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
+                          : "bg-zinc-100 text-zinc-500 dark:bg-night-800 dark:text-mist-400"
+                    }`}>
+                      {lesson.dayNumber}
+                    </span>
+
+                    {/* Lesson Title — compact */}
+                    <div className="min-w-0 flex-1">
+                      <span
+                        dir="ltr"
+                        className={`block truncate text-[13px] font-semibold leading-snug ${
+                          isSelected
+                            ? "text-brand-700 dark:text-brand-300"
+                            : "text-zinc-800 dark:text-white"
+                        }`}
+                      >
+                        {lesson.title}
+                      </span>
+                      {lesson.titleArabic && (
+                        <span dir="rtl" lang="ar" className="block truncate text-[11px] text-clay-600 dark:text-clay-400 mt-px">
+                          {lesson.titleArabic}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Right: Score or status */}
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      {isCurrentDay && (
+                        <span className="rounded-full bg-emerald-100 px-1.5 py-px text-[8px] font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                          اليوم
+                        </span>
+                      )}
+                      {scoreData ? (
+                        <span className="rounded-md bg-emerald-50 border border-emerald-200 px-1.5 py-px text-[10px] font-bold text-emerald-700 dark:bg-emerald-950/60 dark:border-emerald-800 dark:text-emerald-300">
+                          {scoreData.percentage}%
+                        </span>
+                      ) : (
+                        <span className="text-[9px] text-zinc-400 opacity-0 group-hover/item:opacity-100 dark:text-mist-500">
+                          لم يُختبر
+                        </span>
+                      )}
+                      {isSelected && (
+                        <span className="flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 text-[9px] font-bold text-white">
+                          ✓
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                );
+              })}
+
+              {filteredLessons.length === 0 && (
+                <div className="py-10 text-center space-y-2">
+                  <p className="text-2xl">🔍</p>
+                  <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                    لم نجد درساً يطابق &ldquo;{searchQuery}&rdquo;
+                  </p>
+                  <p className="text-xs text-zinc-400 dark:text-mist-500">
+                    جرب البحث برقم اليوم أو اسم القاعدة
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery("");
+                      setSelectedStageFilter("all");
+                    }}
+                    className="mt-2 text-xs font-semibold text-brand-600 hover:underline dark:text-brand-400"
+                  >
+                    إعادة تعيين البحث
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* ─── Study / Quiz mode switcher: its own row below the lesson selector, not beside
@@ -512,11 +602,16 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
                         <p className="break-words font-mono text-sm font-medium leading-relaxed text-emerald-700 dark:text-emerald-300">
                           {s.pattern}
                         </p>
+                        {s.explanation && (
+                          <p className="text-xs text-zinc-500 dark:text-mist-400">
+                            {s.explanation}
+                          </p>
+                        )}
                       </div>
                       {/* Arabic explanation — RTL, separated */}
                       {s.explanationArabic && (
                         <div dir="rtl" className="border-t border-zinc-200 pt-2 dark:border-night-800">
-                          <p lang="ar" className="text-xs leading-relaxed text-zinc-500 dark:text-mist-400">
+                          <p lang="ar" className="text-xs leading-relaxed text-zinc-600 dark:text-mist-300 font-medium">
                             {s.explanationArabic}
                           </p>
                         </div>
@@ -585,18 +680,40 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
             {/* Everyday Usage Notes */}
             {currentLesson.commonUsage.length > 0 && (
               <div className="space-y-4 border-t border-zinc-200 pt-7 dark:border-night-800">
-                <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
-                  <Ar>
-                    ملاحظات الاستخدام اليومي <span className="text-zinc-400 dark:text-mist-500">(Usage Notes)</span>
-                  </Ar>
-                </h3>
-                <ul className="space-y-2">
-                  {currentLesson.commonUsage.map((note, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
-                      <span>{note}</span>
-                    </li>
-                  ))}
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
+                    <Ar>
+                      ملاحظات الاستخدام اليومي <span className="text-zinc-400 dark:text-mist-500">(Usage Notes)</span>
+                    </Ar>
+                  </h3>
+                  <Ar className="text-xs text-zinc-400 dark:text-mist-500">{currentLesson.commonUsage.length} ملاحظات</Ar>
+                </div>
+                <ul className="space-y-3">
+                  {currentLesson.commonUsage.map((note, i) => {
+                    const parsed = parseUsageNote(note);
+                    return (
+                      <li
+                        key={i}
+                        className="rounded-lg border border-zinc-200/80 bg-zinc-50/70 p-3.5 space-y-2 dark:border-night-800 dark:bg-night-900/40"
+                      >
+                        {parsed.english && (
+                          <div dir="ltr" className="flex items-start gap-2.5">
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                            <p className="text-sm leading-relaxed text-zinc-800 dark:text-zinc-200">
+                              {parsed.english}
+                            </p>
+                          </div>
+                        )}
+                        {parsed.arabic && (
+                          <div dir="rtl" className={parsed.english ? "border-t border-zinc-200/60 pt-2 dark:border-night-800" : ""}>
+                            <p lang="ar" className="text-xs leading-relaxed text-clay-700 dark:text-clay-300">
+                              {parsed.arabic}
+                            </p>
+                          </div>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}
@@ -607,29 +724,54 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
                 outer card (§8). */}
             {currentLesson.commonMistakes.length > 0 && (
               <div className="space-y-4 border-t border-zinc-200 pt-7 dark:border-night-800">
-                <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
-                  <Ar>
-                    الأخطاء الشائعة <span className="text-zinc-400 dark:text-mist-500">(Common Mistakes)</span>
-                  </Ar>
-                </h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
+                    <Ar>
+                      الأخطاء الشائعة <span className="text-zinc-400 dark:text-mist-500">(Common Mistakes)</span>
+                    </Ar>
+                  </h3>
+                  <Ar className="text-xs text-zinc-400 dark:text-mist-500">{currentLesson.commonMistakes.length} أخطاء شائعة</Ar>
+                </div>
                 <div className="space-y-3">
                   {currentLesson.commonMistakes.map((m, i) => (
                     <div key={i} className="overflow-hidden rounded-lg border border-zinc-200 dark:border-night-800">
                       <div className="grid grid-cols-1 divide-y divide-zinc-200 dark:divide-night-800 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
-                        <div className="flex items-start gap-2.5 bg-rose-50 p-3.5 dark:bg-rose-950/20">
+                        <div dir="ltr" className="flex items-start gap-2.5 bg-rose-50 p-3.5 dark:bg-rose-950/20">
                           <span className="mt-0.5 shrink-0 text-xs font-bold text-rose-600 dark:text-rose-400">✕</span>
                           <p className="font-mono text-sm text-rose-700 dark:text-rose-200 line-through">{m.wrong}</p>
                         </div>
-                        <div className="flex items-start gap-2.5 bg-emerald-50 p-3.5 dark:bg-emerald-950/20">
-                          <span className="mt-0.5 shrink-0 text-xs font-bold text-emerald-600 dark:text-emerald-400">✓</span>
-                          <p className="font-mono text-sm font-semibold text-emerald-700 dark:text-emerald-200">{m.right}</p>
+                        <div dir="ltr" className="flex items-start justify-between gap-2.5 bg-emerald-50 p-3.5 dark:bg-emerald-950/20">
+                          <div className="flex items-start gap-2.5">
+                            <span className="mt-0.5 shrink-0 text-xs font-bold text-emerald-600 dark:text-emerald-400">✓</span>
+                            <p className="font-mono text-sm font-semibold text-emerald-700 dark:text-emerald-200">{m.right}</p>
+                          </div>
+                          <div className="shrink-0 pt-0.5">
+                            <AudioButton
+                              text={m.right}
+                              id={`grammar-mistake-r-${currentLesson.id}-${i}`}
+                              small
+                              label="استمع للجملة الصحيحة"
+                            />
+                          </div>
                         </div>
                       </div>
-                      <div className="border-t border-zinc-200 bg-zinc-50 p-3 text-xs text-zinc-600 dark:border-night-800 dark:bg-night-900/60 dark:text-mist-300">
-                        <Ar>
-                          <span className="font-semibold text-clay-700 dark:text-clay-400">التفسير: </span>
-                          {m.note}
-                        </Ar>
+                      <div className="border-t border-zinc-200 bg-zinc-50 p-3.5 space-y-2 dark:border-night-800 dark:bg-night-900/60">
+                        {m.noteArabic && (
+                          <div dir="rtl">
+                            <p lang="ar" className="text-xs leading-relaxed text-clay-800 dark:text-clay-200 font-medium">
+                              <span className="font-semibold text-clay-600 dark:text-clay-400">تفسير القاعدة: </span>
+                              {m.noteArabic}
+                            </p>
+                          </div>
+                        )}
+                        {m.note && (
+                          <div dir="ltr" className={m.noteArabic ? "border-t border-zinc-200/60 pt-1.5 dark:border-night-800" : ""}>
+                            <p className="text-xs text-zinc-600 dark:text-mist-300">
+                              <span className="font-semibold text-zinc-500 dark:text-mist-400">Rule: </span>
+                              {m.note}
+                            </p>
+                          </div>
+                        )}
                       </div>
                     </div>
                   ))}
@@ -758,7 +900,7 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
                         >
                           {String.fromCharCode(65 + idx)}
                         </span>
-                        <span className="min-w-0 flex-1 break-words">{option}</span>
+                        <span dir="ltr" className="min-w-0 flex-1 break-words font-mono text-xs sm:text-sm">{option}</span>
                       </button>
                     );
                   })}

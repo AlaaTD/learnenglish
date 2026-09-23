@@ -1332,20 +1332,23 @@
         }
       ],
       "commonUsage": [
-        "I wake up at seven. (أستيقظ في تمام السابعة.)",
-        "We meet on Monday. (نلتقي يوم الإثنين.)",
-        "It is cold in winter. (الجو بارد في فصل الشتاء.)"
+        "Use 'at' for precise clock times and specific moments: 'at 7:30 AM', 'at noon', 'at night', 'at midnight'. (استخدم 'at' للأوقات المحددة بالساعة ولحظات معينة مثل at noon و at night.)",
+        "Use 'on' for days of the week and specific calendar dates: 'on Monday', 'on May 15th', 'on my birthday'. (استخدم 'on' لأيام الأسبوع والتواريخ المحددة بيوم.)",
+        "Use 'in' for longer periods: months, seasons, years, decades, and parts of the day: 'in June', 'in winter', 'in 2026', 'in the morning'. (استخدم 'in' للفترات الأطول كالشهور والفصول والسنوات وأجزاء اليوم.)",
+        "Do NOT use at/on/in before 'next', 'last', 'every', or 'this': 'I saw him last Monday', not on last Monday. (لا تضع حرف جر قبل كلمات مثل next أو last أو every أو this.)"
       ],
       "commonMistakes": [
         {
           "wrong": "I will see you in Monday.",
           "right": "I will see you on Monday.",
-          "note": "Use 'on' with days of the week, not 'in'."
+          "note": "Use 'on' with days of the week, not 'in'.",
+          "noteArabic": "نستخدم حرف الجر 'on' مع أيام الأسبوع وتواريخ الأيام، وليس 'in'."
         },
         {
           "wrong": "The session begins on 8:00.",
           "right": "The session begins at 8:00.",
-          "note": "Use 'at' with specific clock times."
+          "note": "Use 'at' with specific clock times.",
+          "noteArabic": "نستخدم حرف الجر 'at' مع الساعات والأوقات المحددة بالساعة والدقيقة."
         }
       ]
     }

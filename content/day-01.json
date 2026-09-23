@@ -101,31 +101,35 @@
         }
       ],
       "commonUsage": [
-        "Habits and routines: I eat breakfast at eight.",
-        "How often: always, usually, sometimes, never — I always sleep eight hours.",
-        "Schedules and fixed times: The train leaves at half past six.",
-        "Facts: Water boils at 100 degrees."
+        "Use the Present Simple for habits and daily routines that repeat: 'I drink coffee every morning.' (استخدم المضارع البسيط للعادات والروتين اليومي المتكرر: 'أشرب القهوة كل صباح'.)",
+        "Use it with frequency adverbs (always, usually, sometimes, never) to express how often: 'She never arrives late.' (استخدمه مع ظروف التكرار لبيان مدى تكرار الفعل: 'هي لا تتأخر أبداً'.)",
+        "Use it for universal facts and scientific truths: 'Water boils at 100 degrees.' (استخدمه للحقائق العلمية والثابتة: 'الماء يغلي عند 100 درجة'.)",
+        "Use it for fixed schedules and public timetables: 'The train departs at six.' (استخدمه للمواعيد والجداول الزمنية المحددة مسبقاً: 'القطار يغادر في السادسة'.)"
       ],
       "commonMistakes": [
         {
           "wrong": "I wakes up at seven.",
           "right": "I wake up at seven.",
-          "note": "With I, you, we and they, the verb has no -s."
+          "note": "With I, you, we and they, the verb has no -s.",
+          "noteArabic": "مع ضمائر المتكلم والجمع (I, you, we, they) نستخدم الفعل في المصدر بدون إضافة -s."
         },
         {
           "wrong": "He don't work on Fridays.",
           "right": "He doesn't work on Fridays.",
-          "note": "With he, she and it, use doesn't, not don't."
+          "note": "With he, she and it, use doesn't, not don't.",
+          "noteArabic": "مع ضمائر المفرد الغائب (he, she, it) نستخدم doesn't في النفي وليس don't."
         },
         {
           "wrong": "Does she works in a bank?",
           "right": "Does she work in a bank?",
-          "note": "After does, use the base verb without -s."
+          "note": "After does, use the base verb without -s.",
+          "noteArabic": "بعد الفعل المساعد does، يعود الفعل الأساسي إلى صيغة المصدر المجردة بدون -s."
         },
         {
           "wrong": "I am wake up early every day.",
           "right": "I wake up early every day.",
-          "note": "Routines use the present simple, not am/is/are + verb."
+          "note": "Routines use the present simple, not am/is/are + verb.",
+          "noteArabic": "للتعبير عن العادات اليومية نستخدم زمن المضارع البسيط مباشرة، ولا نضع am/is/are قبل الفعل الأساسي."
         }
       ]
     }

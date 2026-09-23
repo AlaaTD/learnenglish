@@ -1178,10 +1178,10 @@
   ],
   "grammar": [
     {
-      "title": "There is / There are",
-      "titleArabic": "يوجد للمفرد والجمع (There is / There are)",
-      "explanation": "Use 'There is' with singular countable nouns or uncountable nouns, and 'There are' with plural countable nouns to state that something exists in a specific place. In speech, 'There is' often shortens to 'There's'. Negative forms use 'There isn't' and 'There aren't'. For questions, invert the words: 'Is there...?' and 'Are there...?'.",
-      "explanationArabic": "تُستخدم 'There is' (أو اختصارها There's) مع الأسماء المفردة المعدودة والأسماء غير المعدودة للتعبير عن وجود شيء ما. بينما تُستخدم 'There are' مع أسماء الجمع. في حالة النفي نستخدم 'There isn't' للمفرد و'There aren't' للجمع. وفي السؤال نعكس الترتيب: 'Is there...?' للسؤال عن المفرد، و'Are there...?' للسؤال عن الجمع.",
+      "title": "There is / There are & Prepositions of Place",
+      "titleArabic": "قواعد المكان: التعبير عن الوجود (There is / There are) وحروف الجر المكانية",
+      "explanation": "We use 'There is' (singular/uncountable) and 'There are' (plural) to express the existence of items, combined with prepositions of place (in, on, under, behind, next to, between) to specify their exact locations in a room or home.",
+      "explanationArabic": "نستخدم 'There is' (مع المفرد وغير المعدود) و'There are' (مع الجمع) للتعبير عن وجود الأشياء، ونقرنها بحروف جر المكان (in, on, under, behind, next to, between) لتحديد موقعها الدقيق داخل الغرفة أو المنزل.",
       "structures": [
         {
           "pattern": "There is + singular noun (There is a table)",
@@ -1198,6 +1198,20 @@
         {
           "pattern": "Is there a...? / Are there any...?",
           "label": "Questions · السؤال"
+        },
+        {
+          "pattern": "Subject + verb + preposition + place (The key is on the table)",
+          "label": "Location sentence structure · تركيب جملة الموقع"
+        },
+        {
+          "pattern": "between A and B",
+          "label": "Between two points · التوسط بين نقطتين"
+        },
+        {
+          "pattern": "Subject + verb + preposition + noun phrase",
+          "label": "General Pattern · النمط العام",
+          "explanation": "Indicates the exact spatial position of a person or object.",
+          "explanationArabic": "يوضح الموقع المكاني الدقيق لشخص أو شيء بالنسبة لغيره."
         }
       ],
       "examples": [
@@ -1235,41 +1249,7 @@
             "garden"
           ],
           "translation": "توجد أزهار ملونة كثيرة في الحديقة."
-        }
-      ],
-      "commonUsage": [
-        "Use 'There's' in everyday speech for singular objects: 'There's a lamp on the desk.'",
-        "Use 'any' with plural negatives and questions: 'Are there any cups in the cupboard?'"
-      ],
-      "commonMistakes": [
-        {
-          "wrong": "There is three rooms in the apartment.",
-          "right": "There are three rooms in the apartment.",
-          "note": "Use 'There are' with plural nouns like 'three rooms'."
         },
-        {
-          "wrong": "There are a big balcony.",
-          "right": "There is a big balcony.",
-          "note": "Use 'There is' with singular nouns like 'a big balcony'."
-        }
-      ]
-    },
-    {
-      "title": "Prepositions of Place",
-      "titleArabic": "حروف جر المكان (Prepositions of Place)",
-      "explanation": "Prepositions of place show the exact location of an object or person relative to another. Common prepositions include in (inside), on (touching a surface), under (below), behind (at the back), in front of (before), next to (beside), between (in the middle of two things), above (higher than), and near (close to).",
-      "explanationArabic": "تُحدد حروف جر المكان الموقع الدقيق للأشياء أو الأشخاص بالنسبة لبعضهم البعض. من أهمها: in (في/بالداخل)، on (على السطح)، under (تحت)، behind (خلف)، in front of (أمام)، next to (بجانب)، between (بين شيئين)، above (أعلى من)، و near (بالقرب من).",
-      "structures": [
-        {
-          "pattern": "Subject + verb + preposition + place (The key is on the table)",
-          "label": "Location sentence structure · تركيب جملة الموقع"
-        },
-        {
-          "pattern": "between A and B",
-          "label": "Between two points · التوسط بين نقطتين"
-        }
-      ],
-      "examples": [
         {
           "sentence": "The lamp is on the desk next to the window.",
           "usesVocabulary": [
@@ -1310,19 +1290,39 @@
         }
       ],
       "commonUsage": [
-        "Say 'on the wall' and 'on the ceiling' because the item touches that surface.",
-        "Say 'in the room', 'in the drawer', 'in the fridge' because it is inside an enclosed space."
+        "Use 'There is' (There's) with singular countable nouns and uncountable nouns: 'There's a sofa in the living room.' (استخدم 'There is' مع الأسماء المفردة وغير المعدودة: 'توجد أريكة في غرفة المعيشة'.)",
+        "Use 'There are' with plural countable nouns: 'There are two windows.' (استخدم 'There are' مع أسماء الجمع: 'توجد نافذتان'.)",
+        "Use 'any' with plural negatives and questions: 'Are there any cups in the kitchen?' (استخدم 'any' مع صيغ النفي والأسئلة لجمع الأشياء: 'هل توجد أي أكواب؟'.)",
+        "Short answers repeat is/are: 'Is there a balcony?' - 'Yes, there is.' / 'No, there isn't.' (في الإجابات المختصرة نكرر is/are: 'Yes, there is'.)",
+        "Use 'on' when an object touches a flat surface or wall: 'The clock is on the wall.' (استخدم 'on' عندما يكون الشيء ملامساً لسطح مستوٍ أو جدار: 'الساعة على الجدار'.)",
+        "Use 'in' when an object is inside a 3D enclosed space or room: 'The keys are in the drawer.' (استخدم 'in' عندما يكون الشيء داخل مساحة مغلقة أو غرفة: 'المفاتيح في الدرج'.)",
+        "Use 'next to' or 'beside' for immediate adjacency side-by-side: 'The lamp is next to the bed.' (استخدم 'next to' أو 'beside' للدلالة على المجاورة المباشرة جنباً إلى جنب.)",
+        "Use 'between' when locating something between two distinct objects: 'The desk is between the windows.' (استخدم 'between' لتحديد موقع شيء يقع بين شيئين محددين.)"
       ],
       "commonMistakes": [
         {
+          "wrong": "There is three rooms in the apartment.",
+          "right": "There are three rooms in the apartment.",
+          "note": "Use 'There are' with plural nouns like 'three rooms'.",
+          "noteArabic": "نستخدم 'There are' مع أسماء الجمع مثل 'three rooms'."
+        },
+        {
+          "wrong": "There are a big balcony.",
+          "right": "There is a big balcony.",
+          "note": "Use 'There is' with singular nouns like 'a big balcony'.",
+          "noteArabic": "نستخدم 'There is' مع الأسماء المفردة مثل 'a big balcony'."
+        },
+        {
           "wrong": "The mirror is in the wall.",
           "right": "The mirror is on the wall.",
-          "note": "Things attached to the surface of a wall use the preposition 'on'."
+          "note": "Things attached to the surface of a wall use the preposition 'on'.",
+          "noteArabic": "الأشياء المثبتة على سطح الحائط تأخذ حرف الجر 'on' وليس 'in'."
         },
         {
           "wrong": "The cat is next of the chair.",
           "right": "The cat is next to the chair.",
-          "note": "The correct preposition phrase is always 'next to'."
+          "note": "The correct preposition phrase is always 'next to'.",
+          "noteArabic": "التركيب الصحيح لحرف الجر دائماً هو 'next to' ولا نستخدم 'next of'."
         }
       ]
     }

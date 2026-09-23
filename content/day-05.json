@@ -1321,20 +1321,23 @@
         }
       ],
       "commonUsage": [
-        "I like apples. (أحب التفاح.)",
-        "He loves chocolate. (هو يحب الشوكولاتة جداً.)",
-        "They hate cold soup. (هم يكرهون الحساء البارد.)"
+        "Follow these feeling verbs directly with a noun or an -ing activity: 'I love fresh coffee.' / 'I love reading.' (يتبع هذه الأفعال اسم مباشر أو نشاط بصيغة ing: 'أحب القهوة الطازجة'.)",
+        "Express degrees of preference: hate < don't like < like < really like < love. (تدرج التفضيل: الكره hate، ثم عدم الإعجاب don't like، ثم الإعجاب like، ثم الحب الشديد love.)",
+        "In negatives with he/she/it, use doesn't like/hate: 'He doesn't like cold weather.' (مع المفرد الغائب ننفي بـ doesn't like بدون s في الفعل.)",
+        "In questions, use Do / Does: 'Do you like Italian food?' - 'Yes, I do.' (في السؤال استخدم Do أو Does: 'هل تحب الطعام الإيطالي؟'.)"
       ],
       "commonMistakes": [
         {
           "wrong": "I am like pizza.",
           "right": "I like pizza.",
-          "note": "'Like' is a normal main verb here, do not add 'am'."
+          "note": "'Like' is a normal main verb here, do not add 'am'.",
+          "noteArabic": "الفعل 'like' فعل أساسي في الجملة ولا نضع قبله فعل الكينونة 'am'."
         },
         {
           "wrong": "She love fresh fruit.",
           "right": "She loves fresh fruit.",
-          "note": "With third person singular (she/he), remember the -s ending: 'loves'."
+          "note": "With third person singular (she/he), remember the -s ending: 'loves'.",
+          "noteArabic": "مع الفاعل المفرد (he, she, it) نضيف -s لنهاية الفعل في المضارع البسيط: 'loves'."
         }
       ]
     }

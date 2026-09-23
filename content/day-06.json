@@ -1374,20 +1374,23 @@
         }
       ],
       "commonUsage": [
-        "I rarely eat fast food. (نادراً ما أتناول الوجبات السريعة.)",
-        "How often do you go to the gym? (كم مرة تذهب إلى الجيم؟)",
-        "We occasionally visit the museum. (نزور المتحف بين الحين والآخر.)"
+        "Place frequency adverbs immediately BEFORE the main verb: 'I usually study at night.' (ضع ظرف التكرار قبل الفعل الأساسي مباشرة: 'أنا عادة أدرس في الليل'.)",
+        "Place frequency adverbs AFTER the verb 'be' (am, is, are): 'She is always punctual.' (ضع ظرف التكرار بعد فعل الكينونة be مباشرة: 'هي دائماً دقيقة في المواعيد'.)",
+        "In questions with 'How often', answer with a frequency adverb or phrase: 'How often do you train?' - 'Twice a week.' (للسؤال عن التكرار استخدم 'How often': 'كم مرة تتدرب؟'.)",
+        "Negative adverbs like 'never' and 'rarely' make the sentence negative without needing 'not'. (الظروف مثل never و rarely تعطي معنى النفي بنفسها دون الحاجة لأداة نفي إضافية.)"
       ],
       "commonMistakes": [
         {
           "wrong": "I go often to the gym.",
           "right": "I often go to the gym.",
-          "note": "Place the frequency adverb 'often' before the main verb 'go', not after it."
+          "note": "Place the frequency adverb 'often' before the main verb 'go', not after it.",
+          "noteArabic": "توضع ظروف التكرار (often, always, usually) قبل الفعل الأساسي مباشرة."
         },
         {
           "wrong": "She rarely is late.",
           "right": "She is rarely late.",
-          "note": "With verb 'be', the adverb comes AFTER 'is', not before."
+          "note": "With verb 'be', the adverb comes AFTER 'is', not before.",
+          "noteArabic": "مع فعل الكينونة (am, is, are) يأتي ظرف التكرار بعده وليس قبله."
         }
       ]
     }

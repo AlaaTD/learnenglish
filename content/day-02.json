@@ -1319,25 +1319,29 @@
         }
       ],
       "commonUsage": [
-        "Always use 'am' exclusively with the pronoun 'I' (I am / I'm).",
-        "Use contractions in speaking and casual messages: he's, she's, we're, they're.",
-        "In questions, invert the subject and verb: 'You are married' becomes 'Are you married?'."
+        "Always pair 'am' exclusively with the pronoun 'I' (I am / I'm): 'I am ready.' (يقترن 'am' حصرياً مع الضمير 'I': 'أنا مستعد'.)",
+        "Use contractions in everyday speech and messages: he's, she's, it's, we're, they're. (استخدم الاختصارات في المحادثات والرسائل اليومية السريعة مثل he's و they're.)",
+        "In yes/no questions, invert the subject and verb: 'You are tired' becomes 'Are you tired?'. (في الأسئلة، اعكس ترتيب الفاعل والفعل: 'Are you tired?'.)",
+        "Negative sentences are formed by placing 'not' directly after the verb be: 'He is not here.' (يتكون النفي بوضع 'not' مباشرة بعد فعل الكينونة: 'He is not here'.)"
       ],
       "commonMistakes": [
         {
           "wrong": "He are my brother.",
           "right": "He is my brother.",
-          "note": "Use 'is' with third-person singular pronouns (he, she, it) and singular nouns."
+          "note": "Use 'is' with third-person singular pronouns (he, she, it) and singular nouns.",
+          "noteArabic": "نستخدم 'is' مع ضمائر المفرد الغائب (he, she, it) والأسماء المفردة."
         },
         {
           "wrong": "They is married.",
           "right": "They are married.",
-          "note": "Use 'are' with plural subjects and the pronouns they, we, and you."
+          "note": "Use 'are' with plural subjects and the pronouns they, we, and you.",
+          "noteArabic": "نستخدم 'are' مع ضمائر الجمع والمخاطب (they, we, you) والأسماء الجمع."
         },
         {
           "wrong": "I is a student.",
           "right": "I am a student.",
-          "note": "The pronoun 'I' always pairs with 'am' in the present tense."
+          "note": "The pronoun 'I' always pairs with 'am' in the present tense.",
+          "noteArabic": "ضمير المتكلم 'I' يقترن دائماً بـ 'am' في المضارع (I am أو I'm)."
         }
       ]
     }

@@ -1488,20 +1488,23 @@
         }
       ],
       "commonUsage": [
-        "What is your name? (ما اسمك؟)",
-        "Where do you live? (أين تعيش؟)",
-        "Are you ready? (هل أنت مستعد؟)"
+        "Identify whether the sentence has an action verb or describes a state: action verbs use 'do/does', state/identity uses 'am/is/are'. (إذا كانت الجملة تحتوي على فعل حركة نستخدم do/does، وإذا كانت هوية أو وصفاً نستخدم be.)",
+        "Question word order: Question word + Auxiliary (do/does/is/are) + Subject + Base verb/Complement? (ترتيب السؤال: أداة الاستفهام + الفعل المساعد + الفاعل + الفعل الأساسي أو التكملة.)",
+        "Short answers repeat the auxiliary: 'Do you work here?' - 'Yes, I do.' / 'Are they ready?' - 'No, they aren't.' (في الإجابات السريعة نكرر الفعل المساعد المستخدم في السؤال.)",
+        "Never use do/does together with am/is/are in the same clause: say 'Do you know?', not 'Are you know?'. (لا تجمع بين do وأفعال be في نفس السؤال إطلاقاً.)"
       ],
       "commonMistakes": [
         {
           "wrong": "Where do you from?",
           "right": "Where are you from?",
-          "note": "'From' requires the verb 'be' (are you), not the auxiliary 'do'."
+          "note": "'From' requires the verb 'be' (are you), not the auxiliary 'do'.",
+          "noteArabic": "للسؤال عن الموطن أو الأصل نستخدم فعل الكينونة 'Where are you from?' بدون do."
         },
         {
           "wrong": "What are you do for a job?",
           "right": "What do you do for a job?",
-          "note": "Use the auxiliary 'do' with the main action verb 'do', not 'are'."
+          "note": "Use the auxiliary 'do' with the main action verb 'do', not 'are'.",
+          "noteArabic": "عند السؤال عن المهنة أو الفعل الأساسي، نستخدم الفعل المساعد 'do' (ماذا تفعل) وليس 'are'."
         }
       ]
     }

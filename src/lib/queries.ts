@@ -437,3 +437,66 @@ export async function getAllGrammarLessons(): Promise<GrammarAcademyLesson[]> {
     };
   });
 }
+
+export type ConfusableWord = {
+  word: string;
+  color?: string;
+  rule: string;
+  ruleArabic: string;
+  collocations?: string[];
+};
+
+export type ConfusableExample = {
+  sentence: string;
+  sentenceArabic?: string;
+  focus: string;
+  note?: string;
+};
+
+export type ConfusableMistake = {
+  wrong: string;
+  right: string;
+  noteArabic?: string;
+  note?: string;
+};
+
+export type ConfusableGroupData = {
+  id: string;
+  slug: string;
+  category: string;
+  order: number;
+  title: string;
+  titleArabic: string;
+  summary: string;
+  summaryArabic: string;
+  words: ConfusableWord[];
+  examples: ConfusableExample[];
+  mistakes: ConfusableMistake[];
+  tips: string[];
+  tipsArabic: string[];
+};
+
+export async function getAllConfusableGroups(): Promise<ConfusableGroupData[]> {
+  const rows = await db.confusableGroup.findMany({
+    orderBy: [
+      { category: "asc" },
+      { order: "asc" },
+    ],
+  });
+
+  return rows.map((r) => ({
+    id: r.id,
+    slug: r.slug,
+    category: r.category,
+    order: r.order,
+    title: r.title,
+    titleArabic: r.titleArabic,
+    summary: r.summary,
+    summaryArabic: r.summaryArabic,
+    words: parseJson<ConfusableWord[]>(r.words, []),
+    examples: parseJson<ConfusableExample[]>(r.examples, []),
+    mistakes: parseJson<ConfusableMistake[]>(r.mistakes, []),
+    tips: parseStringArray(r.tips),
+    tipsArabic: parseStringArray(r.tipsArabic),
+  }));
+}

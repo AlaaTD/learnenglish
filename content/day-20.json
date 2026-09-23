@@ -23,6 +23,12 @@
           "pattern": "Wh- Question: Wh-Word + Auxiliary + Subject + Main Verb + ...?",
           "explanation": "Forms open informational questions across tenses.",
           "explanationArabic": "صياغة الأسئلة الاستفهامية المفتوحة لطلب المعلومات."
+        },
+        {
+          "pattern": "Question Word + Auxiliary + Subject + Main Verb ...?",
+          "label": "Information Question · سؤال لطلب معلومات",
+          "explanation": "Standard Wh- question order for asking about specific facts.",
+          "explanationArabic": "الترتيب القياسي لأسئلة المعلومات (ماذا، أين، متى، كيف)."
         }
       ],
       "examples": [

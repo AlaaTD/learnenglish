@@ -23,6 +23,18 @@
           "pattern": "Subject + be/verb + such + (a/an) + Adjective + Noun + that + Result Clause",
           "explanation": "Emphasizes the nature of a person or thing causing a significant consequence.",
           "explanationArabic": "يؤكد على طبيعة الشخص أو الشيء بما يسبب أثراً ونتيجة بارزة."
+        },
+        {
+          "pattern": "Subject + verb + so + adjective / adverb + that + result clause",
+          "label": "so ... that · لدرجة أن",
+          "explanation": "Emphasizes the extreme degree of a quality leading to a consequence.",
+          "explanationArabic": "يؤكد بلوغ الصفة أو الظرف درجة عالية ترتبت عليها نتيجة معينة."
+        },
+        {
+          "pattern": "Subject + verb + such + (a/an) + adjective + noun + that + result clause",
+          "label": "such ... that · لدرجة أن مع الاسم",
+          "explanation": "Used before an adjective modifying a noun to describe a notable result.",
+          "explanationArabic": "يُستخدم قبل الصفة المتبوعة باسم للتعبير عن نتيجة قوية مترتبة على ذلك."
         }
       ],
       "examples": [

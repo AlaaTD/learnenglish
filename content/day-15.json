@@ -7,10 +7,10 @@
   "focus": "By the end of today, you can communicate clearly about shopping, quantities and containers using the day's 50 vocabulary items and grammar.",
   "grammar": [
     {
-      "title": "How much / How many",
-      "titleArabic": "السؤال عن الكمية والعدد: الفرق بين How much و How many",
-      "explanation": "When asking about quantities at the market, we use 'How much' with uncountable nouns (substances, liquids, and bulk goods that cannot be counted individually, such as milk, flour, sugar, water, and money: 'How much milk do we need?' or 'How much does this carton cost?'). Conversely, we use 'How many' with plural countable nouns (items that can be separated and numbered, such as apples, eggs, cartons, tins, and loaves: 'How many eggs are in that carton?' or 'How many loaves of bread did you buy?').",
-      "explanationArabic": "عند السؤال عن المقادير والكميات في التسوق، نستخدم 'How much' مع الأسماء غير المعدودة (Uncountable Nouns) كالماء والحليب والأرز والسكر والمال (مثل: 'How much milk do we need؟' أو 'How much does it cost؟'). في المقابل، نستخدم 'How many' مع الأسماء الجمع المعدودة (Plural Countable Nouns) كالتفاح والعلب والأرغفة والبيض (مثل: 'How many eggs are in that carton؟').",
+      "title": "Quantities: How much / How many & Much / Many",
+      "titleArabic": "قواعد الكميات والأعداد: السؤال بـ How much و How many واستخدام Much و Many",
+      "explanation": "We ask about amounts using 'How much' with uncountable nouns and 'How many' with plural countable nouns. In negative statements and questions, 'much' refers to uncountable quantities and 'many' refers to countable numbers.",
+      "explanationArabic": "نسأل عن الكميات باستخدام 'How much' مع الأسماء غير المعدودة و'How many' مع أسماء الجمع المعدودة. وفي الجمل المنفية والاستفهامية، نستخدم 'much' للكميات غير المعدودة و'many' للأعداد المعدودة.",
       "structures": [
         {
           "label": "How much + Uncountable · مع غير المعدود",
@@ -23,6 +23,42 @@
           "pattern": "How many + Plural Countable Noun + auxiliary + subject + verb?",
           "explanation": "Asks for the specific count or number of discrete individual items.",
           "explanationArabic": "سؤال عن عدد محدد من الأشياء القابلة للعد."
+        },
+        {
+          "pattern": "How much + uncountable noun + is there / do you have?",
+          "label": "Uncountable Question · سؤال الكمية",
+          "explanation": "Asks about the quantity of an uncountable item.",
+          "explanationArabic": "يُسأل به عن كمية شيء غير معدود (مثل المال أو السكر)."
+        },
+        {
+          "pattern": "How many + plural countable noun + are there / do you have?",
+          "label": "Countable Question · سؤال العدد",
+          "explanation": "Asks about the exact number of countable objects.",
+          "explanationArabic": "يُسأل به عن العدد الدقيق لأشياء قابلة للعد."
+        },
+        {
+          "label": "Much (Negative) · much في النفي",
+          "pattern": "Negative: Subject + auxiliary-not + have / see + much + Uncountable Noun",
+          "explanation": "Indicates a small or scarce quantity of an uncountable entity.",
+          "explanationArabic": "يدل على قلة كمية اسم غير معدود في صيغة النفي."
+        },
+        {
+          "label": "Many (Negative) · many في النفي",
+          "pattern": "Negative: Subject + auxiliary-not + have / see + many + Plural Countable Noun",
+          "explanation": "Indicates a low or insufficient number of individual items.",
+          "explanationArabic": "يدل على قلة عدد أشياء معدودة في صيغة النفي."
+        },
+        {
+          "pattern": "Subject + negative auxiliary + much + uncountable noun",
+          "label": "Negative with Much · النفي مع Much",
+          "explanation": "Expresses a small or insufficient amount of an uncountable item.",
+          "explanationArabic": "ينفي وجود كمية كبيرة من شيء غير معدود."
+        },
+        {
+          "pattern": "Subject + negative auxiliary + many + plural countable noun",
+          "label": "Negative with Many · النفي مع Many",
+          "explanation": "Expresses a small number of countable items in negative sentences.",
+          "explanationArabic": "ينفي وجود عدد كبير من الأشياء المعدودة."
         }
       ],
       "examples": [
@@ -48,48 +84,7 @@
             "kilogram",
             "sack"
           ]
-        }
-      ],
-      "commonUsage": [
-        "Use 'How much' with uncountable nouns like money, water, and rice: 'How much does it cost?' (استخدم How much مع الأسماء غير المعدودة مثل money وwater وrice.)",
-        "Use 'How many' with plural countable nouns like eggs, bags, and tickets: 'How many eggs do we need?' (استخدم How many مع الأسماء المعدودة الجمع مثل eggs وbags وtickets.)",
-        "Some foods look uncountable but become countable in packaged units, like 'a loaf of bread' or 'a carton of milk' -- count the unit, not the substance. (بعض الأطعمة تبدو غير معدودة لكنها تصبح معدودة في شكلها المعبأ مثل a loaf of bread -- عُدّ الوحدة لا المادة نفسها.)"
-      ],
-      "commonMistakes": [
-        {
-          "wrong": "How much loaves of bread did you pick up?",
-          "right": "How many loaves of bread did you pick up?",
-          "note": "'Loaves' is a plural countable noun, so use 'How many' (even though 'bread' alone is uncountable).",
-          "noteArabic": "كلمة 'loaves' جمع معدود، لذا نستخدم معها 'How many' (رغم أن كلمة bread بمفردها غير معدودة)."
         },
-        {
-          "wrong": "How many sugar do you need for the cake?",
-          "right": "How much sugar do you need for the cake?",
-          "note": "'Sugar' is an uncountable noun; use 'How much'.",
-          "noteArabic": "كلمة 'sugar' غير معدودة، لذا يجب استخدام 'How much'."
-        }
-      ]
-    },
-    {
-      "title": "Much and Many",
-      "titleArabic": "استخدام Much و Many في الجمل المنفية والتقريرية",
-      "explanation": "We use 'much' with singular uncountable nouns, predominantly in negative sentences and questions (e.g. 'We don't have much milk left' or 'Is there much olive oil in that jar?'). We use 'many' with plural countable nouns across negative statements and questions (e.g. 'There aren't many eggs left in the carton' or 'Are there many shoppers at the checkout?'). In affirmative statements, natural everyday English usually prefers expressions like 'a lot of' or 'plenty of' (e.g. 'We bought a lot of produce') rather than 'much produce'.",
-      "explanationArabic": "نستخدم 'much' مع الأسماء غير المعدودة وغالباً في الجمل المنفية والأسئلة (مثل: 'We don't have much milk left'). ونستخدم 'many' مع الأسماء المعدودة في النفي والأسئلة (مثل: 'There aren't many eggs left'). أما في الجمل المثبتة، فالأكثر شيوعاً واستخداماً في اللغة اليومية هو 'a lot of' (مثل: 'We bought a lot of produce') بدلاً من استخدام much في الإثبات.",
-      "structures": [
-        {
-          "label": "Much (Negative) · much في النفي",
-          "pattern": "Negative: Subject + auxiliary-not + have / see + much + Uncountable Noun",
-          "explanation": "Indicates a small or scarce quantity of an uncountable entity.",
-          "explanationArabic": "يدل على قلة كمية اسم غير معدود في صيغة النفي."
-        },
-        {
-          "label": "Many (Negative) · many في النفي",
-          "pattern": "Negative: Subject + auxiliary-not + have / see + many + Plural Countable Noun",
-          "explanation": "Indicates a low or insufficient number of individual items.",
-          "explanationArabic": "يدل على قلة عدد أشياء معدودة في صيغة النفي."
-        }
-      ],
-      "examples": [
         {
           "sentence": "There isn't much butter left in that small plastic tub.",
           "translation": "لم يتبق الكثير من الزبدة في تلك العلبة البلاستيكية الصغيرة.",
@@ -114,11 +109,26 @@
         }
       ],
       "commonUsage": [
+        "Use 'How much' with uncountable nouns like money, water, and rice: 'How much does it cost?' (استخدم How much مع الأسماء غير المعدودة مثل money وwater وrice.)",
+        "Use 'How many' with plural countable nouns like eggs, bags, and tickets: 'How many eggs do we need?' (استخدم How many مع الأسماء المعدودة الجمع مثل eggs وbags وtickets.)",
+        "Some foods look uncountable but become countable in packaged units, like 'a loaf of bread' or 'a carton of milk' -- count the unit, not the substance. (بعض الأطعمة تبدو غير معدودة لكنها تصبح معدودة في شكلها المعبأ مثل a loaf of bread -- عُدّ الوحدة لا المادة نفسها.)",
         "Use 'much' and 'many' mostly in negative sentences and questions: 'We don't have much time.' / 'Are there many seats left?' (استخدم much وmany غالباً في الجمل المنفية والأسئلة.)",
         "In positive statements, everyday English usually prefers 'a lot of' or 'plenty of' over 'much' or 'many': 'We bought a lot of vegetables.' (في الجمل المثبتة، تفضل اللغة اليومية a lot of أو plenty of على much وmany.)",
         "'A lot of' works naturally with both countable and uncountable nouns, so it is the safest everyday choice in affirmative sentences. (تعمل a lot of بشكل طبيعي مع المعدود وغير المعدود، لذا فهي الخيار الأكثر أماناً في الجمل المثبتة اليومية.)"
       ],
       "commonMistakes": [
+        {
+          "wrong": "How much loaves of bread did you pick up?",
+          "right": "How many loaves of bread did you pick up?",
+          "note": "'Loaves' is a plural countable noun, so use 'How many' (even though 'bread' alone is uncountable).",
+          "noteArabic": "كلمة 'loaves' جمع معدود، لذا نستخدم معها 'How many' (رغم أن كلمة bread بمفردها غير معدودة)."
+        },
+        {
+          "wrong": "How many sugar do you need for the cake?",
+          "right": "How much sugar do you need for the cake?",
+          "note": "'Sugar' is an uncountable noun; use 'How much'.",
+          "noteArabic": "كلمة 'sugar' غير معدودة، لذا يجب استخدام 'How much'."
+        },
         {
           "wrong": "We don't have many rice in the pantry.",
           "right": "We don't have much rice in the pantry.",

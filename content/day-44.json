@@ -23,6 +23,12 @@
           "pattern": "Subject + may not / might not + base verb + object/complement",
           "explanation": "Expresses the possibility that something will NOT happen.",
           "explanationArabic": "يعبر عن احتمال عدم وقوع الحدث."
+        },
+        {
+          "pattern": "Subject + may / might not + base verb",
+          "label": "Negative Possibility · احتمال عدم الحدوث",
+          "explanation": "Shows that something possibly will not happen (note: 'could not' means impossibility, not uncertainty).",
+          "explanationArabic": "يوضح احتمال عدم وقوع الفعل (مع ملاحظة أن could not تعني الاستحالة وليس الشك)."
         }
       ],
       "examples": [

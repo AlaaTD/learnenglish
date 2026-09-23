@@ -23,6 +23,18 @@
           "pattern": "Subject + remember / stop / try + to + Base Verb (Infinitive)",
           "explanation": "Used for duties to perform (remember), pausing in order to act (stop), or exerting effort (try).",
           "explanationArabic": "يستخدم لتذكر أداء الواجبات (remember)، أو التوقف المؤقت لغرض محدد (stop)، أو بذل جهد ومحاولة (try)."
+        },
+        {
+          "pattern": "remember / stop / try + verb-ing",
+          "label": "Gerund Meaning · المعنى مع اسم الفاعل",
+          "explanation": "Focuses on the memory of a past event (remember), quitting a habit (stop), or experimenting (try).",
+          "explanationArabic": "يتعلق بذكرى حدث ماضٍ (remember)، أو الإقلاع عن عادة نهائياً (stop)، أو تجربة وسيلة جديدة (try)."
+        },
+        {
+          "pattern": "remember / stop / try + to + base verb",
+          "label": "Infinitive Meaning · المعنى مع المصدر",
+          "explanation": "Focuses on not forgetting a duty (remember), pausing to perform a purpose (stop), or making an effort (try).",
+          "explanationArabic": "يتعلق بأداء واجب مستقبلي (remember)، أو التوقف المؤقت لغرض آخر (stop)، أو بذل جهد شاق (try)."
         }
       ],
       "examples": [

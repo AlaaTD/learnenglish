@@ -7,10 +7,10 @@
   "focus": "By the end of today, you can communicate clearly about polite social english using the day's 50 vocabulary items and grammar.",
   "grammar": [
     {
-      "title": "Would like",
-      "titleArabic": "صيغة التفضيل والطلب المهذب Would like",
-      "explanation": "We use 'would like' (often contracted as ''d like') as a polite, courteous way to say 'want'. Unlike 'want', which can sound abrupt or demanding, 'would like' softens requests, expresses desires elegantly, and extends hospitable invitations.\n\nStructure:\n1. Affirmative: Subject + would like ('d like) + noun / to + infinitive.\n   Example: I would like a cup of tea. / We'd like to reserve a table.\n2. Negative: Subject + would not like (wouldn't like) + noun / to + infinitive.\n   Example: She wouldn't like to disturb you.\n3. Questions (Offers & Invitations): Would + subject + like + noun / to + infinitive?\n   Example: Would you like some dessert? / Would you like to join us for dinner tonight?\n\nShort Answers:\n- Yes, please. / Yes, I would love to! (Accepting)\n- No, thank you. / I'd like to, but I'm afraid I have other plans. (Declining politely)",
-      "explanationArabic": "نستخدم 'would like' (واختصارها 'd like) كبديل مهذب ولطيف للفعل 'want'. وتستخدم لتقديم العروض بلباقة، وصياغة الطلبات بتهذيب، وتوجيه الدعوات دون أن تبدو كأمر مباشر.",
+      "title": "Polite Social English: Would like & Requests with Could",
+      "titleArabic": "الأسلوب الاجتماعي اللبق: التعبير عن الرغبة بـ Would like والطلبات المهذبة بـ Could",
+      "explanation": "We use 'would like' as a polite alternative to 'want' for making offers and expressing preferences, and the modal 'could' to formulate courteous, gentle requests and ask for permission gracefully.",
+      "explanationArabic": "نستخدم 'would like' كبديل راقٍ ولبق للفعل 'want' لتقديم العروض والتعبير عن الرغبات، ونستخدم الفعل الناقص 'could' لصياغة طلبات مهذبة ورقيقة وطلب الإذن بأسلوب رفيع.",
       "structures": [
         {
           "label": "Affirmative · الإثبات",
@@ -29,6 +29,24 @@
           "pattern": "Question: Would + subject + like + (noun / to + verb)?",
           "explanation": "Used for polite offers and gracious invitations.",
           "explanationArabic": "لتقديم العروض وتوجيه الدعوات اللبقة."
+        },
+        {
+          "label": "Requesting · طلب فعل",
+          "pattern": "Requesting: Could + you + (please) + base verb + ...?",
+          "explanation": "Courteously asks someone to do something.",
+          "explanationArabic": "لطلب شيء من شخص آخر بأدب ولطف."
+        },
+        {
+          "label": "Permission · طلب إذن",
+          "pattern": "Permission: Could + I + (please) + base verb + ...?",
+          "explanation": "Politely requests permission.",
+          "explanationArabic": "لطلب الإذن بأدب."
+        },
+        {
+          "pattern": "Could I please + base verb ...?",
+          "label": "Asking Permission · طلب الإذن بأدب",
+          "explanation": "Politely requests permission to do something.",
+          "explanationArabic": "طلب الإذن بالقيام بفعل معين بأعلى درجات الأدب."
         }
       ],
       "examples": [
@@ -59,48 +77,7 @@
             "visitor",
             "hospitality"
           ]
-        }
-      ],
-      "commonUsage": [
-        "Use 'would like' instead of 'want' to sound more polite when ordering, requesting, or offering something: 'I would like a cup of tea.' (استخدم would like بدلاً من want لتبدو أكثر تهذيباً عند الطلب أو تقديم عرض.)",
-        "Offer something politely with 'Would you like...?' -- 'Do you like...?' asks about general taste, not a specific offer. (اعرض شيئاً بلباقة بـ Would you like...؟ -- بينما Do you like...؟ تسأل عن الذوق العام وليس عرضاً محدداً.)",
-        "Soften a refusal with 'I'd like to, but...' rather than a blunt 'No'. (خفف الرفض بـ I'd like to, but... بدلاً من رفض مباشر بكلمة No.)"
-      ],
-      "commonMistakes": [
-        {
-          "wrong": "I would like attend the party tonight.",
-          "right": "I would like to attend the party tonight.",
-          "note": "'Would like' requires the full infinitive with 'to' before another verb.",
-          "noteArabic": "تحتاج 'would like' إلى المصدر الكامل مسبوقاً بـ 'to' قبل الفعل التالي."
         },
-        {
-          "wrong": "Do you like to join us for dinner tonight?",
-          "right": "Would you like to join us for dinner tonight?",
-          "note": "Use 'Would you like...?' for specific invitations and offers, not 'Do you like...?'.",
-          "noteArabic": "استخدم 'Would you like...؟' للدعوات والعروض المحددة، وليس 'Do you like...؟' التي تسأل عن العادات العامة."
-        }
-      ]
-    },
-    {
-      "title": "Polite Requests with Could",
-      "titleArabic": "الطلبات المهذبة باستخدام Could",
-      "explanation": "We use the modal auxiliary 'could' to make polite, respectful requests when asking other people to do something ('Could you...?') or when asking for permission ('Could I...?'). 'Could' is much softer and more courteous than 'can' or direct imperative orders.\n\nKey Patterns:\n1. Asking someone to do something: 'Could you (please) + base verb...?'\n   Example: Could you please pass me the document?\n   Example: Could you possibly escort the visitors to the conference hall?\n\n2. Asking for permission: 'Could I (please) + base verb...?'\n   Example: Could I borrow your pen for a minute, please?\n\nPolite Replies:\n- Agreeing: 'Certainly!', 'Gladly!', 'Of course!', 'My pleasure!', 'I\\'d be happy to oblige!'\n- Refusing politely: 'I\\'m afraid I can\\'t right now.', 'I\\'d like to help, but I must decline.'",
-      "explanationArabic": "نستخدم الفعل الناقص 'could' لصياغة طلبات مهذبة ولطيفة. تفيد 'Could you...؟' رجاء شخص ما القيام بأمر بلباقة، بينما تفيد 'Could I...؟' طلب الإذن بأسلوب رفيع ومحترم.",
-      "structures": [
-        {
-          "label": "Requesting · طلب فعل",
-          "pattern": "Requesting: Could + you + (please) + base verb + ...?",
-          "explanation": "Courteously asks someone to do something.",
-          "explanationArabic": "لطلب شيء من شخص آخر بأدب ولطف."
-        },
-        {
-          "label": "Permission · طلب إذن",
-          "pattern": "Permission: Could + I + (please) + base verb + ...?",
-          "explanation": "Politely requests permission.",
-          "explanationArabic": "لطلب الإذن بأدب."
-        }
-      ],
-      "examples": [
         {
           "sentence": "Could you please confirm your attendance and return your RSVP by Friday?",
           "translation": "هل يمكنك من فضلك تأكيد حضورك وإرسال تأكيد الرد بحلول يوم الجمعة؟",
@@ -130,11 +107,26 @@
         }
       ],
       "commonUsage": [
+        "Use 'would like' instead of 'want' to sound more polite when ordering, requesting, or offering something: 'I would like a cup of tea.' (استخدم would like بدلاً من want لتبدو أكثر تهذيباً عند الطلب أو تقديم عرض.)",
+        "Offer something politely with 'Would you like...?' -- 'Do you like...?' asks about general taste, not a specific offer. (اعرض شيئاً بلباقة بـ Would you like...؟ -- بينما Do you like...؟ تسأل عن الذوق العام وليس عرضاً محدداً.)",
+        "Soften a refusal with 'I'd like to, but...' rather than a blunt 'No'. (خفف الرفض بـ I'd like to, but... بدلاً من رفض مباشر بكلمة No.)",
         "Use 'Could you...?' to politely ask someone to do something, and 'Could I...?' to ask for permission for yourself. (استخدم Could you...؟ لطلب فعل شيء بلباقة وCould I...؟ لطلب الإذن لنفسك.)",
         "Add 'please' at the end to make the request even more courteous: 'Could you please pass the salt?' (أضف please في النهاية لجعل الطلب أكثر لباقة.)",
         "Reply with 'Certainly' or 'Of course' when agreeing, or 'I'm afraid I can't right now' when declining politely. (رُد بـ Certainly أو Of course عند الموافقة، أو I'm afraid I can't right now عند الرفض بلطف.)"
       ],
       "commonMistakes": [
+        {
+          "wrong": "I would like attend the party tonight.",
+          "right": "I would like to attend the party tonight.",
+          "note": "'Would like' requires the full infinitive with 'to' before another verb.",
+          "noteArabic": "تحتاج 'would like' إلى المصدر الكامل مسبوقاً بـ 'to' قبل الفعل التالي."
+        },
+        {
+          "wrong": "Do you like to join us for dinner tonight?",
+          "right": "Would you like to join us for dinner tonight?",
+          "note": "Use 'Would you like...?' for specific invitations and offers, not 'Do you like...?'.",
+          "noteArabic": "استخدم 'Would you like...؟' للدعوات والعروض المحددة، وليس 'Do you like...؟' التي تسأل عن العادات العامة."
+        },
         {
           "wrong": "Could you to help me with this heavy suitcase?",
           "right": "Could you help me with this heavy suitcase?",

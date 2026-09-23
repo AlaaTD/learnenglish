@@ -208,4 +208,11 @@ for (const data of days) {
 }
 
 console.log(`\nSeed complete: ${vocabCount} vocabulary items, ${convCount} conversations, ${paraCount} paragraphs, ${linkCount} vocabulary links (${reinforceCount} reinforcement links).`);
+
+try {
+  execSync(`node "${join(root, "scripts", "seed-confusables.mjs")}"`, { stdio: "inherit" });
+} catch (e) {
+  // auto-seed confusables attempt
+}
+
 await prisma.$disconnect();
