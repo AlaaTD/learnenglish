@@ -259,7 +259,7 @@ export function DayExercise({
 
   if (!ready) {
     return (
-      <div className="mx-auto w-full max-w-xl animate-pulse space-y-6">
+      <div className="w-full animate-pulse space-y-6">
         <div className="h-1.5 w-full rounded-full bg-zinc-200 dark:bg-night-800" />
         <div className="space-y-3 pt-2 text-center">
           <div className="mx-auto h-3 w-40 rounded-full bg-zinc-200 dark:bg-night-800" />
@@ -325,7 +325,7 @@ export function DayExercise({
       .filter((item): item is { word: ExerciseWord; userAnswer: string } => Boolean(item));
 
     return (
-      <div className="mx-auto w-full max-w-xl space-y-7">
+      <div className="w-full space-y-7">
         {modeSwitcher}
 
         <div className="space-y-7 text-center">
@@ -412,7 +412,7 @@ export function DayExercise({
 
   if (mode === "single") {
     return (
-      <div className="mx-auto w-full max-w-xl space-y-6">
+      <div className="w-full space-y-6">
         {modeSwitcher}
 
         {}
@@ -550,7 +550,7 @@ export function DayExercise({
 
   // ---- batch ("all words together") mode ----
   return (
-    <div className="mx-auto w-full max-w-2xl space-y-6">
+    <div className="w-full space-y-6">
       {modeSwitcher}
 
       {!batchChecked ? (
@@ -566,7 +566,7 @@ export function DayExercise({
 
           <ProgressBar value={batchFilledCount} max={batchTotal} size="sm" label="Batch exercise progress" />
 
-          <div className="space-y-2.5">
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
             {batchOrder.map((word, i) => (
               <div
                 key={word.id}
@@ -589,7 +589,7 @@ export function DayExercise({
                   onChange={(e) => setBatchInput(word.id, e.target.value)}
                   onKeyDown={(e) => handleBatchInputKeyDown(e, i)}
                   placeholder="Type English word..."
-                  className="h-11 min-w-0 flex-1 rounded-lg border border-zinc-300 bg-white px-3 text-sm font-medium text-zinc-900 outline-none transition-colors placeholder:text-zinc-400 focus:border-brand-500 dark:border-night-700 dark:bg-night-950 dark:text-mist-100 dark:placeholder:text-mist-600"
+                  className="h-11 min-w-0 flex-1 rounded-lg border border-zinc-300 bg-white px-3 text-base font-medium text-zinc-900 outline-none transition-colors placeholder:text-zinc-400 focus:border-brand-500 dark:border-night-700 dark:bg-night-950 dark:text-mist-100 dark:placeholder:text-mist-600"
                 />
                 <span
                   dir="rtl"
@@ -617,7 +617,7 @@ export function DayExercise({
         </>
       ) : (
         <div className="space-y-6">
-          <div className="space-y-2.5">
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
             {batchOrder.map((word, i) => {
               const ans = batchAnswers.find((a) => a.wordId === word.id);
               const isCorrect = ans?.correct ?? false;
