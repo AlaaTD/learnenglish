@@ -216,24 +216,22 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
   return (
     <div className="space-y-8 animate-fadeIn pb-16">
       {/* ─── Header ─── */}
-      <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-night-700 dark:bg-night-900 sm:p-8">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
-          <div className="min-w-0">
-            <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
-              Grammar{" "}
-              <Ar className="text-lg font-semibold text-clay-700 dark:text-clay-300 sm:text-xl">· قواعد اللغة الإنجليزية</Ar>
-            </h1>
-          </div>
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
+        <div className="min-w-0">
+          <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
+            Grammar{" "}
+            <Ar className="text-lg font-semibold text-clay-700 dark:text-clay-300 sm:text-xl">· قواعد اللغة الإنجليزية</Ar>
+          </h1>
+        </div>
 
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 shrink-0">
-            <Link
-              href={`/day/${currentDay}`}
-              className="flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-mist-300 dark:hover:bg-night-800 dark:hover:text-white"
-            >
-              <span>Day {currentDay}</span>
-              <span aria-hidden="true">→</span>
-            </Link>
-          </div>
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 shrink-0">
+          <Link
+            href={`/day/${currentDay}`}
+            className="flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium text-zinc-600 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:text-mist-300 dark:hover:bg-night-800 dark:hover:text-white"
+          >
+            <span>Day {currentDay}</span>
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
 

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IconChevronDown } from "@/components/dashboard/icons";
 
-type IconName = "home" | "day" | "journey" | "words" | "review" | "progress" | "settings" | "admin" | "difficult" | "grammar" | "confusables";
+type IconName = "home" | "day" | "journey" | "words" | "review" | "settings" | "admin" | "difficult" | "grammar" | "confusables";
 
 // Simple stroke icons (one consistent style, inherit the text colour) — replaces
 // the multi-coloured emoji that added visual noise and rendered differently per OS.
@@ -19,7 +19,6 @@ const iconPaths: Record<IconName, string> = {
   words: "M4 5.5A1.5 1.5 0 015.5 4H19v14H5.5A1.5 1.5 0 004 19.5v-14zM4 19.5A1.5 1.5 0 005.5 21H19",
   review: "M20 12a8 8 0 11-2.34-5.66M20 4v5h-5",
   difficult: "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
-  progress: "M5 20V11M12 20V4M19 20v-6",
   settings: "M4 7h9m4 0h3M4 17h3m4 0h9M15 4v6M9 14v6",
   admin: "M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z",
 };
@@ -82,7 +81,6 @@ export function Nav({
   // Secondary destinations — desktop header, and the phone "Menu" sheet only.
   const secondary: NavItem[] = [
     { href: "/confusables", label: "Confusables", short: "Confusables", icon: "confusables", match: startsWith("/confusables") },
-    { href: "/progress", label: "Progress", short: "Progress", icon: "progress", match: startsWith("/progress") },
     { href: "/settings", label: "Settings", short: "Settings", icon: "settings", match: startsWith("/settings") },
     ...(isAdmin
       ? [{ href: "/admin", label: "Admin", short: "Admin", icon: "admin" as const, match: startsWith("/admin") }]

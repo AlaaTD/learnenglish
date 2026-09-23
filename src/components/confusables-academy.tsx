@@ -1,20 +1,34 @@
 "use client";
 
 import { useState, useMemo, useEffect, useRef } from "react";
-import Link from "next/link";
+import type { ComponentType, SVGProps } from "react";
 import type { ConfusableGroupData } from "@/lib/queries";
 import { AudioButton } from "@/components/audio-button";
 import { Ar } from "@/components/ui";
+import {
+  IconBolt,
+  IconClock,
+  IconSparkle,
+  IconGrid,
+  IconPalette,
+  IconTargetArrow,
+  IconBookOpen,
+  IconChatDots,
+  IconSearch,
+  IconChevronDown,
+} from "@/components/dashboard/icons";
 
 // ─────────────────────────────────────────────────────────────
 // Category Metadata & Definitions
 // ─────────────────────────────────────────────────────────────
 
+type IconComponent = ComponentType<SVGProps<SVGSVGElement>>;
+
 export interface CategoryInfo {
   id: string;
   label: string;
   labelEn: string;
-  icon: string;
+  icon: IconComponent;
   badgeColor: string;
   badgeBg: string;
   badgeBorder: string;
@@ -25,7 +39,7 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
     id: "all",
     label: "الكل",
     labelEn: "All",
-    icon: "✨",
+    icon: IconSparkle,
     badgeColor: "text-zinc-800 dark:text-zinc-200",
     badgeBg: "bg-zinc-100 dark:bg-zinc-800",
     badgeBorder: "border-zinc-300 dark:border-zinc-700",
@@ -34,7 +48,7 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
     id: "verbs-of-action",
     label: "أفعال الحركة والإنجاز",
     labelEn: "Verbs of Action",
-    icon: "⚡",
+    icon: IconBolt,
     badgeColor: "text-rose-700 dark:text-rose-300",
     badgeBg: "bg-rose-50 dark:bg-rose-950/50",
     badgeBorder: "border-rose-200 dark:border-rose-800/60",
@@ -43,7 +57,7 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
     id: "prepositions-time",
     label: "حروف الجر والوقت",
     labelEn: "Prepositions & Time",
-    icon: "⏱️",
+    icon: IconClock,
     badgeColor: "text-sky-700 dark:text-sky-300",
     badgeBg: "bg-sky-50 dark:bg-sky-950/50",
     badgeBorder: "border-sky-200 dark:border-sky-800/60",
@@ -52,7 +66,7 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
     id: "adjectives-adverbs",
     label: "الصفات والظروف",
     labelEn: "Adjectives & Adverbs",
-    icon: "🎨",
+    icon: IconPalette,
     badgeColor: "text-emerald-700 dark:text-emerald-300",
     badgeBg: "bg-emerald-50 dark:bg-emerald-950/50",
     badgeBorder: "border-emerald-200 dark:border-emerald-800/60",
@@ -61,7 +75,7 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
     id: "modal-verbs",
     label: "الأفعال الناقصة",
     labelEn: "Modal Verbs",
-    icon: "🎯",
+    icon: IconTargetArrow,
     badgeColor: "text-amber-700 dark:text-amber-300",
     badgeBg: "bg-amber-50 dark:bg-amber-950/50",
     badgeBorder: "border-amber-200 dark:border-amber-800/60",
@@ -70,69 +84,37 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
     id: "nouns-articles",
     label: "الأسماء والتعريف",
     labelEn: "Nouns & Articles",
-    icon: "📚",
-    badgeColor: "text-indigo-700 dark:text-indigo-300",
-    badgeBg: "bg-indigo-50 dark:bg-indigo-950/50",
-    badgeBorder: "border-indigo-200 dark:border-indigo-800/60",
+    icon: IconBookOpen,
+    badgeColor: "text-brand-700 dark:text-brand-300",
+    badgeBg: "bg-brand-50 dark:bg-brand-950/50",
+    badgeBorder: "border-brand-200 dark:border-brand-800/60",
   },
   {
     id: "phrases-expressions",
     label: "تعبيرات شائعة",
     labelEn: "Phrases & Expressions",
-    icon: "💬",
-    badgeColor: "text-orange-700 dark:text-orange-300",
-    badgeBg: "bg-orange-50 dark:bg-orange-950/50",
-    badgeBorder: "border-orange-200 dark:border-orange-800/60",
+    icon: IconChatDots,
+    badgeColor: "text-clay-700 dark:text-clay-300",
+    badgeBg: "bg-clay-50 dark:bg-clay-950/50",
+    badgeBorder: "border-clay-200 dark:border-clay-800/60",
   },
   {
     id: "tricky-pairs",
     label: "أزواج خادعة",
     labelEn: "Tricky Pairs",
-    icon: "🧩",
-    badgeColor: "text-purple-700 dark:text-purple-300",
-    badgeBg: "bg-purple-50 dark:bg-purple-950/50",
-    badgeBorder: "border-purple-200 dark:border-purple-800/60",
+    icon: IconGrid,
+    badgeColor: "text-white dark:text-zinc-950",
+    badgeBg: "bg-zinc-900 dark:bg-zinc-100",
+    badgeBorder: "border-zinc-900 dark:border-zinc-100",
   },
 ];
 
-const WORD_PALETTES = [
-  {
-    border: "border-blue-200 dark:border-blue-800/60",
-    bg: "bg-blue-50/50 dark:bg-blue-950/20",
-    badge: "bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-200",
-    pill: "bg-blue-100/70 text-blue-900 dark:bg-blue-900/40 dark:text-blue-200 hover:bg-blue-200 dark:hover:bg-blue-800/60",
-  },
-  {
-    border: "border-purple-200 dark:border-purple-800/60",
-    bg: "bg-purple-50/50 dark:bg-purple-950/20",
-    badge: "bg-purple-100 text-purple-800 dark:bg-purple-900/60 dark:text-purple-200",
-    pill: "bg-purple-100/70 text-purple-900 dark:bg-purple-900/40 dark:text-purple-200 hover:bg-purple-200 dark:hover:bg-purple-800/60",
-  },
-  {
-    border: "border-emerald-200 dark:border-emerald-800/60",
-    bg: "bg-emerald-50/50 dark:bg-emerald-950/20",
-    badge: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-200",
-    pill: "bg-emerald-100/70 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-200 hover:bg-emerald-200 dark:hover:bg-emerald-800/60",
-  },
-  {
-    border: "border-rose-200 dark:border-rose-800/60",
-    bg: "bg-rose-50/50 dark:bg-rose-950/20",
-    badge: "bg-rose-100 text-rose-800 dark:bg-rose-900/60 dark:text-rose-200",
-    pill: "bg-rose-100/70 text-rose-900 dark:bg-rose-900/40 dark:text-rose-200 hover:bg-rose-200 dark:hover:bg-rose-800/60",
-  },
-  {
-    border: "border-amber-200 dark:border-amber-800/60",
-    bg: "bg-amber-50/50 dark:bg-amber-950/20",
-    badge: "bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-200",
-    pill: "bg-amber-100/70 text-amber-900 dark:bg-amber-900/40 dark:text-amber-200 hover:bg-amber-200 dark:hover:bg-amber-800/60",
-  },
-  {
-    border: "border-indigo-200 dark:border-indigo-800/60",
-    bg: "bg-indigo-50/50 dark:bg-indigo-950/20",
-    badge: "bg-indigo-100 text-indigo-800 dark:bg-indigo-900/60 dark:text-indigo-200",
-    pill: "bg-indigo-100/70 text-indigo-900 dark:bg-indigo-900/40 dark:text-indigo-200 hover:bg-indigo-200 dark:hover:bg-indigo-800/60",
-  },
-];
+// Unified word-comparison card style — matches the "Structural Formulas" card
+// background in grammar-academy.tsx (bg-zinc-50 / dark:bg-night-900/60) instead of
+// the old per-word rotating palette (brand/clay/emerald/rose/amber/sky).
+const WORD_CARD_STYLE = "border-zinc-200 bg-zinc-50 dark:border-night-800 dark:bg-night-900/60";
+const WORD_COLLOCATION_PILL_STYLE =
+  "bg-brand-100/70 text-brand-900 dark:bg-brand-900/40 dark:text-brand-200 hover:bg-brand-200 dark:hover:bg-brand-800/60";
 
 // ─────────────────────────────────────────────────────────────
 // Confusable Quiz Types & Generator
@@ -166,7 +148,7 @@ function generateConfusableQuiz(group: ConfusableGroupData): ConfusableQuizItem[
         prompt: "اختر الجملة الصحيحة لغوياً (Which sentence is correct?):",
         options,
         correctIndex,
-        explanation: `✅ Correct: "${m.right}"`,
+        explanation: `Correct: "${m.right}"`,
         explanationArabic: m.noteArabic || "الاستخدام الصحيح للكلمة يراعي السياق والمعنى المناسب.",
       });
     });
@@ -244,12 +226,7 @@ interface ConfusablesAcademyProps {
   currentDay?: number;
 }
 
-export function ConfusablesAcademy({
-  groups,
-  initialSlug,
-  initialCategory = "all",
-  currentDay = 1,
-}: ConfusablesAcademyProps) {
+export function ConfusablesAcademy({ groups, initialSlug, initialCategory = "all" }: ConfusablesAcademyProps) {
   // Active Group selection
   const [selectedSlug, setSelectedSlug] = useState<string>(() => {
     if (initialSlug) {
@@ -315,14 +292,6 @@ export function ConfusablesAcademy({
   const currentGroup = useMemo(() => {
     return groups.find((g) => g.slug === selectedSlug) || groups[0];
   }, [groups, selectedSlug]);
-
-  // Current group index & navigation
-  const currentIndex = useMemo(() => {
-    return groups.findIndex((g) => g.slug === currentGroup?.slug);
-  }, [groups, currentGroup]);
-
-  const prevGroup = currentIndex > 0 ? groups[currentIndex - 1] : null;
-  const nextGroup = currentIndex < groups.length - 1 ? groups[currentIndex + 1] : null;
 
   // Filtered groups for picker & sidebar
   const filteredGroups = useMemo(() => {
@@ -403,404 +372,360 @@ export function ConfusablesAcademy({
     }
   };
 
-  const currentCategoryInfo =
-    CONFUSABLE_CATEGORIES.find((c) => c.id === currentGroup?.category) || CONFUSABLE_CATEGORIES[0];
-
   const currentScore = currentGroup ? quizScores[currentGroup.slug] : null;
 
   return (
-    <div className="mx-auto max-w-7xl px-3 sm:px-6 py-6 space-y-6">
+    <div className="mx-auto max-w-7xl px-3 sm:px-6 py-6 space-y-6 animate-fadeIn">
       {/* ─────────────────────────────────────────────────────────────
-          1. Hero Header Banner
+          1. Page Title — plain text, no card
       ───────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden rounded-3xl border border-zinc-200/80 bg-gradient-to-br from-white via-zinc-50 to-brand-50/30 p-5 sm:p-8 shadow-sm dark:border-night-700/80 dark:from-night-950 dark:via-night-900 dark:to-night-900/60">
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
-          <div className="space-y-2">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-100 px-3 py-1 text-xs font-bold text-brand-800 dark:bg-brand-900/80 dark:text-brand-200">
-                <span>⚡</span>
-                <span>Confusables Academy</span>
-              </span>
-              <span className="inline-flex items-center rounded-full bg-zinc-200/80 px-2.5 py-0.5 text-xs font-semibold text-zinc-700 dark:bg-night-800 dark:text-mist-300">
-                34 مجموعة مقارنة
-              </span>
-              <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300">
-                {Object.keys(quizScores).length} مكتملة بالاختبار
-              </span>
-            </div>
+      <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
+        Confusables{" "}
+        <Ar className="text-lg font-semibold text-clay-700 dark:text-clay-300 sm:text-xl">
+          · الكلمات المتشابهة
+        </Ar>
+      </h1>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-zinc-900 dark:text-white">
-              الكلمات المتشابهة في الإنجليزية
-            </h1>
-            <p className="max-w-2xl text-sm sm:text-base text-zinc-600 dark:text-mist-300 leading-relaxed">
-              فك الاشتباك بين الكلمات الأكثر التباساً في اللغة الإنجليزية — مثل{" "}
-              <code className="rounded bg-brand-100/60 px-1 py-0.5 text-xs font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-300">
-                make vs do
-              </code>
-              ،{" "}
-              <code className="rounded bg-brand-100/60 px-1 py-0.5 text-xs font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-300">
-                like vs love
-              </code>
-              ، و{" "}
-              <code className="rounded bg-brand-100/60 px-1 py-0.5 text-xs font-semibold text-brand-800 dark:bg-brand-900/40 dark:text-brand-300">
-                say vs tell
-              </code>{" "}
-              — مع قواعد دقيقة، جمل تطبيقية، واختبارات تفاعلية فورية.
-            </p>
-          </div>
-
-          {/* Quick Group Selector Trigger */}
-          <div className="shrink-0 flex flex-col sm:flex-row gap-2.5">
-            <button
-              type="button"
-              onClick={() => setIsPickerOpen(true)}
-              className="inline-flex items-center justify-between sm:justify-center gap-3 rounded-2xl border border-zinc-300 bg-white px-5 py-3 text-sm font-semibold text-zinc-800 shadow-sm transition hover:border-brand-500 hover:bg-zinc-50 dark:border-night-700 dark:bg-night-900 dark:text-zinc-100 dark:hover:border-brand-500"
-            >
-              <span className="flex items-center gap-2">
-                <span className="text-lg">🔍</span>
-                <span className="text-right">
-                  <span className="block text-[11px] font-medium text-zinc-500 dark:text-mist-400">تصفح المجموعات</span>
-                  <span className="font-bold text-zinc-900 dark:text-white">{currentGroup?.title}</span>
+      {/* ─────────────────────────────────────────────────────────────
+          2. Group Picker
+      ───────────────────────────────────────────────────────────── */}
+      <div className="relative" ref={pickerRef}>
+        <button
+          type="button"
+          onClick={() => setIsPickerOpen((open) => !open)}
+          aria-haspopup="listbox"
+          aria-expanded={isPickerOpen}
+          className={`group flex w-full items-center gap-3 rounded-xl border bg-white px-3 py-2.5 text-start shadow-xs transition-all dark:bg-night-900 ${
+            isPickerOpen
+              ? "border-brand-500 ring-2 ring-brand-500/20 shadow-md dark:border-brand-500"
+              : "border-zinc-300 hover:border-zinc-400 dark:border-night-700 dark:hover:border-night-600"
+          }`}
+        >
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center gap-2">
+              <span className="truncate text-sm font-bold text-zinc-900 dark:text-white" dir="ltr">
+                {currentGroup?.title}
+              </span>
+              {currentScore && (
+                <span className="shrink-0 rounded-full bg-emerald-100 px-1.5 py-px text-[10px] font-semibold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+                  {currentScore.percentage}%
                 </span>
-              </span>
-              <svg className="h-5 w-5 text-zinc-400" viewBox="0 0 20 20" fill="currentColor">
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
+              )}
+            </div>
+            {currentGroup?.titleArabic && (
+              <Ar className="mt-px block truncate text-[11px] text-clay-600 dark:text-clay-400">
+                {currentGroup.titleArabic}
+              </Ar>
+            )}
           </div>
-        </div>
 
-        {/* Category Filter Chips Bar */}
-        <div className="mt-6 flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
-          {CONFUSABLE_CATEGORIES.map((cat) => {
-            const isActive = activeCategory === cat.id;
-            return (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => {
-                  setActiveCategory(cat.id);
-                  // If switching categories and current group is not in this category, select first in category
-                  if (cat.id !== "all") {
-                    const firstInCat = groups.find((g) => g.category === cat.id);
-                    if (firstInCat && currentGroup?.category !== cat.id) {
-                      setSelectedSlug(firstInCat.slug);
-                    }
-                  }
-                }}
-                className={`flex shrink-0 items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all ${
-                  isActive
-                    ? "bg-zinc-900 text-white shadow dark:bg-white dark:text-zinc-950"
-                    : "bg-white/80 text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900 dark:bg-night-900/80 dark:text-mist-400 dark:hover:bg-night-800 dark:hover:text-mist-100"
-                }`}
-              >
-                <span>{cat.icon}</span>
-                <span>{cat.label}</span>
-                {cat.id !== "all" && (
-                  <span className="text-[10px] opacity-70">
-                    ({groups.filter((g) => g.category === cat.id).length})
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      </section>
-
-      {/* ─────────────────────────────────────────────────────────────
-          2. Modal / Dropdown Picker for all 34 Groups
-      ───────────────────────────────────────────────────────────── */}
-      {isPickerOpen && (
-        <div className="fixed inset-0 z-50 flex items-start justify-center p-3 sm:p-6 sm:pt-16 bg-black/60 backdrop-blur-sm animate-reveal">
-          <div
-            ref={pickerRef}
-            className="w-full max-w-2xl overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-2xl dark:border-night-700 dark:bg-night-950 max-h-[85vh] flex flex-col"
+          <span
+            className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg transition-all duration-200 ${
+              isPickerOpen
+                ? "rotate-180 bg-brand-600 text-white dark:bg-brand-600 dark:text-white"
+                : "bg-zinc-100 text-zinc-500 group-hover:bg-brand-100 group-hover:text-brand-700 dark:bg-night-800 dark:text-mist-400 dark:group-hover:bg-brand-950 dark:group-hover:text-brand-300"
+            }`}
           >
-            {/* Picker Header & Search */}
-            <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-night-700 space-y-3 bg-zinc-50 dark:bg-night-900">
+            <IconChevronDown className="h-4 w-4" />
+          </span>
+        </button>
+
+        {isPickerOpen && (
+          <div
+            className="fixed inset-0 z-30 bg-black/40 backdrop-blur-[2px] sm:hidden"
+            onClick={() => setIsPickerOpen(false)}
+            aria-hidden="true"
+          />
+        )}
+
+        {isPickerOpen && (
+          <div
+            role="listbox"
+            aria-label="قائمة مجموعات الكلمات المتشابهة"
+            className="fixed inset-x-3 top-20 z-40 sm:absolute sm:inset-x-auto sm:start-0 sm:top-full sm:mt-2 w-auto sm:w-[32rem] sm:max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-2xl dark:border-night-700 dark:bg-night-900 animate-fadeIn"
+          >
+            {/* Search & Category Filters */}
+            <div className="space-y-2.5 border-b border-zinc-200/80 p-3 dark:border-night-800">
               <div className="flex items-center justify-between">
+                <Ar className="text-sm font-bold text-zinc-900 dark:text-white">اختر مجموعة الكلمات</Ar>
                 <div className="flex items-center gap-2">
-                  <span className="text-xl">📚</span>
-                  <h3 className="text-base font-bold text-zinc-900 dark:text-white">
-                    اختر مجموعة الكلمات المتشابهة
-                  </h3>
+                  <span className="rounded-full bg-zinc-100 px-2 py-0.5 text-[11px] font-semibold text-zinc-500 dark:bg-night-800 dark:text-mist-400">
+                    {filteredGroups.length} مجموعة
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setIsPickerOpen(false)}
+                    className="flex h-7 w-7 items-center justify-center rounded-lg text-zinc-400 hover:bg-zinc-100 hover:text-zinc-700 dark:text-mist-500 dark:hover:bg-night-800 dark:hover:text-mist-200"
+                    aria-label="إغلاق القائمة"
+                  >
+                    ✕
+                  </button>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => setIsPickerOpen(false)}
-                  className="rounded-full p-1.5 text-zinc-400 hover:bg-zinc-200 hover:text-zinc-700 dark:hover:bg-night-800 dark:hover:text-mist-200"
-                >
-                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
               </div>
 
-              {/* Search input */}
-              <div className="relative">
+              <div className="relative" dir="rtl">
+                <span className="pointer-events-none absolute start-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-mist-500">
+                  <IconSearch className="h-4 w-4" />
+                </span>
                 <input
                   ref={searchInputRef}
                   type="search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="ابحث بالكلمة بالإنجليزية أو بالعربية (مثال: make, do, like, سفر)..."
-                  className="w-full rounded-2xl border border-zinc-300 bg-white py-2.5 pl-10 pr-4 text-sm text-zinc-900 placeholder:text-zinc-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 dark:border-night-700 dark:bg-night-950 dark:text-white dark:placeholder:text-mist-500"
+                  placeholder="ابحث بالكلمة الإنجليزية أو العربية..."
+                  className="w-full rounded-xl border border-zinc-200 bg-zinc-50 py-2 ps-9 pe-8 text-base text-zinc-900 placeholder:text-zinc-400 focus:border-brand-500 focus:bg-white focus:outline-none sm:text-sm dark:border-night-700 dark:bg-night-950/70 dark:text-white dark:placeholder:text-mist-500 dark:focus:bg-night-950"
                 />
-                <span className="absolute left-3.5 top-3 text-zinc-400">🔍</span>
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery("")}
+                    className="absolute end-2.5 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-900 dark:text-mist-500 dark:hover:text-white"
+                    aria-label="مسح البحث"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
+
+              <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto text-xs">
+                {CONFUSABLE_CATEGORIES.map((cat) => (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => {
+                      setActiveCategory(cat.id);
+                      if (cat.id !== "all") {
+                        const firstInCat = groups.find((g) => g.category === cat.id);
+                        if (firstInCat && currentGroup?.category !== cat.id) {
+                          setSelectedSlug(firstInCat.slug);
+                        }
+                      }
+                    }}
+                    className={`shrink-0 rounded-lg px-2.5 py-1 font-medium transition-all ${
+                      activeCategory === cat.id
+                        ? "bg-brand-600 text-white shadow-xs"
+                        : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200 dark:bg-night-800 dark:text-mist-300 dark:hover:bg-night-750"
+                    }`}
+                  >
+                    {cat.label}
+                  </button>
+                ))}
               </div>
             </div>
 
             {/* Groups list */}
-            <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-2">
-              {filteredGroups.length === 0 ? (
-                <div className="py-12 text-center text-zinc-500 dark:text-mist-400">
-                  <p className="text-base font-semibold">لم يتم العثور على مجموعات مطابقة</p>
-                  <p className="text-xs mt-1">جرب البحث بكلمة أخرى أو قم بإلغاء الفلتر</p>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                  {filteredGroups.map((g) => {
-                    const isCurrent = g.slug === currentGroup?.slug;
-                    const cat = CONFUSABLE_CATEGORIES.find((c) => c.id === g.category);
-                    const score = quizScores[g.slug];
+            <div className="scrollbar-thin max-h-[55vh] space-y-1 overflow-y-auto p-2 sm:max-h-80">
+              {filteredGroups.map((g) => {
+                const isSelected = g.slug === currentGroup?.slug;
+                const scoreData = quizScores[g.slug];
 
-                    return (
-                      <button
-                        key={g.slug}
-                        type="button"
-                        onClick={() => {
-                          setSelectedSlug(g.slug);
-                          setIsPickerOpen(false);
-                        }}
-                        className={`flex items-start justify-between p-3 rounded-2xl text-right transition border ${
-                          isCurrent
-                            ? "border-brand-500 bg-brand-50/70 dark:border-brand-500 dark:bg-brand-950/40"
-                            : "border-zinc-200 bg-white hover:border-zinc-300 hover:bg-zinc-50 dark:border-night-800 dark:bg-night-900/60 dark:hover:border-night-700 dark:hover:bg-night-800"
+                return (
+                  <button
+                    key={g.slug}
+                    type="button"
+                    role="option"
+                    aria-selected={isSelected}
+                    onClick={() => {
+                      setSelectedSlug(g.slug);
+                      setIsPickerOpen(false);
+                    }}
+                    className={`group/item flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-start transition-all ${
+                      isSelected
+                        ? "bg-brand-50 ring-1 ring-brand-400 dark:bg-brand-950/30 dark:ring-brand-600"
+                        : "hover:bg-zinc-50 dark:hover:bg-night-800/60"
+                    }`}
+                  >
+                    <div className="min-w-0 flex-1">
+                      <span
+                        dir="ltr"
+                        className={`block truncate text-[13px] font-semibold leading-snug ${
+                          isSelected ? "text-brand-700 dark:text-brand-300" : "text-zinc-800 dark:text-white"
                         }`}
                       >
-                        <div className="space-y-1 min-w-0 flex-1">
-                          <div className="flex items-center gap-1.5 flex-wrap">
-                            <span className="font-bold text-sm text-zinc-900 dark:text-white">
-                              {g.title}
-                            </span>
-                            {cat && (
-                              <span className="text-[10px] rounded-md px-1.5 py-0.5 bg-zinc-100 text-zinc-600 dark:bg-night-800 dark:text-mist-400">
-                                {cat.icon} {cat.label}
-                              </span>
-                            )}
-                          </div>
-                          <p className="text-xs text-zinc-500 dark:text-mist-400 line-clamp-1">
-                            {g.titleArabic}
-                          </p>
-                        </div>
+                        {g.title}
+                      </span>
+                      <span
+                        dir="rtl"
+                        lang="ar"
+                        className="mt-px block truncate text-[11px] text-clay-600 dark:text-clay-400"
+                      >
+                        {g.titleArabic}
+                      </span>
+                    </div>
 
-                        {score && (
-                          <span
-                            className={`shrink-0 ml-2 rounded-full px-2 py-0.5 text-[10px] font-bold ${
-                              score.percentage === 100
-                                ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300"
-                                : "bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-300"
-                            }`}
-                          >
-                            {score.percentage}% ⭐
-                          </span>
-                        )}
-                      </button>
-                    );
-                  })}
+                    <div className="flex shrink-0 items-center gap-1.5">
+                      {scoreData ? (
+                        <span className="rounded-md border border-emerald-200 bg-emerald-50 px-1.5 py-px text-[10px] font-bold text-emerald-700 dark:border-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300">
+                          {scoreData.percentage}%
+                        </span>
+                      ) : (
+                        <span className="text-[9px] text-zinc-400 opacity-0 group-hover/item:opacity-100 dark:text-mist-500">
+                          لم يُختبر
+                        </span>
+                      )}
+                      {isSelected && (
+                        <span className="flex h-4 w-4 items-center justify-center rounded-full bg-brand-600 text-[9px] font-bold text-white">
+                          ✓
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                );
+              })}
+
+              {filteredGroups.length === 0 && (
+                <div className="space-y-2 py-10 text-center">
+                  <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                    لم نجد مجموعة تطابق &ldquo;{searchQuery}&rdquo;
+                  </p>
+                  <p className="text-xs text-zinc-400 dark:text-mist-500">جرب البحث بكلمة أخرى أو ألغِ الفلتر</p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery("");
+                      setActiveCategory("all");
+                    }}
+                    className="mt-2 text-xs font-semibold text-brand-600 hover:underline dark:text-brand-400"
+                  >
+                    إعادة تعيين البحث
+                  </button>
                 </div>
               )}
             </div>
 
-            {/* Picker Footer */}
-            <div className="p-3 border-t border-zinc-200 dark:border-night-700 bg-zinc-50 dark:bg-night-900 flex items-center justify-between text-xs text-zinc-500 dark:text-mist-400">
-              <span>إجمالي المعروض: {filteredGroups.length} من {groups.length}</span>
+            {/* Footer */}
+            <div className="flex items-center justify-between border-t border-zinc-200 bg-zinc-50 p-3 text-xs text-zinc-500 dark:border-night-700 dark:bg-night-900 dark:text-mist-400">
+              <span>
+                إجمالي المعروض: {filteredGroups.length} من {groups.length}
+              </span>
               <button
                 type="button"
                 onClick={() => setIsPickerOpen(false)}
-                className="px-3 py-1 font-semibold text-brand-600 dark:text-brand-400 hover:underline"
+                className="px-3 py-1 font-semibold text-brand-600 hover:underline dark:text-brand-400"
               >
                 إغلاق
               </button>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
-      {/* ─────────────────────────────────────────────────────────────
-          3. Current Group Card Header & Navigator
-      ───────────────────────────────────────────────────────────── */}
       {currentGroup && (
         <div className="space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-zinc-200 bg-white p-4 sm:p-6 shadow-sm dark:border-night-700 dark:bg-night-900">
-            {/* Title & Navigation */}
-            <div className="space-y-1">
-              <div className="flex items-center gap-2 flex-wrap">
-                <span
-                  className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold ${currentCategoryInfo.badgeBg} ${currentCategoryInfo.badgeColor} border ${currentCategoryInfo.badgeBorder}`}
-                >
-                  <span>{currentCategoryInfo.icon}</span>
-                  <span>{currentCategoryInfo.label}</span>
-                </span>
-                <span className="text-xs text-zinc-500 dark:text-mist-400">
-                  مجموعة {currentIndex + 1} من {groups.length}
-                </span>
+          {/* Tab Switcher: Study vs Quiz — same markup/style as grammar-academy's Study/Quiz tabs */}
+          <div className="flex justify-center sm:justify-start">
+            <div className="flex items-stretch gap-1 rounded-xl border border-zinc-200 bg-zinc-100 p-1 dark:border-night-800 dark:bg-night-800/60">
+              <button
+                onClick={() => setActiveTab("study")}
+                className={`flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg px-3 py-2 text-xs font-semibold transition-all sm:flex-none sm:px-4 sm:text-sm ${
+                  activeTab === "study"
+                    ? "bg-brand-600 text-white shadow-sm"
+                    : "text-zinc-500 hover:text-zinc-900 dark:text-mist-400 dark:hover:text-white"
+                }`}
+              >
+                <svg className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <Ar>
+                  الدراسة<span className="hidden sm:inline"> والمقارنة (Study)</span>
+                </Ar>
+              </button>
+
+              <button
+                onClick={() => setActiveTab("quiz")}
+                className={`flex flex-1 items-center justify-center gap-1.5 whitespace-nowrap rounded-lg px-3 py-2 text-xs font-semibold transition-all sm:flex-none sm:px-4 sm:text-sm ${
+                  activeTab === "quiz"
+                    ? "bg-brand-600 text-white shadow-sm"
+                    : "text-zinc-500 hover:text-zinc-900 dark:text-mist-400 dark:hover:text-white"
+                }`}
+              >
+                <svg className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.75">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <Ar>
+                  الاختبار<span className="hidden sm:inline"> التفاعلي (Quiz)</span>
+                </Ar>
                 {currentScore && (
-                  <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-bold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
-                    نتيجة الاختبار: {currentScore.percentage}%
+                  <span className="shrink-0 rounded-full bg-emerald-500/20 px-1.5 py-0.5 text-[10px] text-emerald-700 dark:text-emerald-300 sm:px-2 sm:text-[11px]">
+                    {currentScore.percentage}%
                   </span>
                 )}
-              </div>
-
-              <div className="flex items-baseline gap-3">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 dark:text-white">
-                  {currentGroup.title}
-                </h2>
-                <span className="text-base sm:text-lg font-bold text-brand-700 dark:text-brand-400">
-                  <Ar>{currentGroup.titleArabic}</Ar>
-                </span>
-              </div>
-            </div>
-
-            {/* Prev / Next Buttons */}
-            <div className="flex items-center gap-2 self-end sm:self-auto">
-              <button
-                type="button"
-                disabled={!prevGroup}
-                onClick={() => prevGroup && setSelectedSlug(prevGroup.slug)}
-                className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 disabled:pointer-events-none dark:border-night-700 dark:bg-night-900 dark:text-mist-200 dark:hover:bg-night-800"
-              >
-                <span>السابق</span>
-                <span>◀</span>
-              </button>
-              <button
-                type="button"
-                disabled={!nextGroup}
-                onClick={() => nextGroup && setSelectedSlug(nextGroup.slug)}
-                className="inline-flex items-center gap-1 rounded-xl border border-zinc-200 bg-white px-3 py-2 text-xs font-semibold text-zinc-700 hover:bg-zinc-100 disabled:opacity-40 disabled:pointer-events-none dark:border-night-700 dark:bg-night-900 dark:text-mist-200 dark:hover:bg-night-800"
-              >
-                <span>▶</span>
-                <span>التالي</span>
               </button>
             </div>
-          </div>
-
-          {/* Tab Switcher: Study vs Quiz */}
-          <div className="flex border-b border-zinc-200 dark:border-night-700">
-            <button
-              type="button"
-              onClick={() => setActiveTab("study")}
-              className={`flex items-center gap-2 border-b-2 px-6 py-3 text-sm font-bold transition-colors ${
-                activeTab === "study"
-                  ? "border-brand-600 text-brand-600 dark:border-brand-400 dark:text-brand-400"
-                  : "border-transparent text-zinc-500 hover:text-zinc-800 dark:text-mist-400 dark:hover:text-mist-200"
-              }`}
-            >
-              <span>📖</span>
-              <span>الدراسة والقواعد والفروقات</span>
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveTab("quiz")}
-              className={`flex items-center gap-2 border-b-2 px-6 py-3 text-sm font-bold transition-colors ${
-                activeTab === "quiz"
-                  ? "border-brand-600 text-brand-600 dark:border-brand-400 dark:text-brand-400"
-                  : "border-transparent text-zinc-500 hover:text-zinc-800 dark:text-mist-400 dark:hover:text-mist-200"
-              }`}
-            >
-              <span>⚡</span>
-              <span>اختبار سريع ({currentQuizQuestions.length} أسئلة)</span>
-              {currentScore && (
-                <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300">
-                  {currentScore.percentage}%
-                </span>
-              )}
-            </button>
           </div>
 
           {/* ─────────────────────────────────────────────────────────────
               TAB 1: STUDY & COMPARISON
           ───────────────────────────────────────────────────────────── */}
           {activeTab === "study" && (
-            <div className="space-y-8 animate-reveal">
+            <div className="animate-reveal space-y-8">
+              {/* Term title — folded into the study details instead of a separate header card */}
+              <div className="flex flex-wrap items-baseline gap-3">
+                <h2 dir="ltr" className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-3xl">
+                  {currentGroup.title}
+                </h2>
+                <Ar className="text-base font-semibold text-clay-700 dark:text-clay-300 sm:text-lg">
+                  {currentGroup.titleArabic}
+                </Ar>
+              </div>
+
               {/* Summary Banner */}
-              <div className="rounded-2xl border border-brand-200 bg-brand-50/40 p-4 sm:p-5 dark:border-brand-900/40 dark:bg-brand-950/20">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl mt-0.5">💡</span>
-                  <div className="space-y-1">
-                    <p className="text-sm sm:text-base font-bold text-brand-900 dark:text-brand-200">
-                      {currentGroup.summary}
-                    </p>
-                    <p className="text-sm font-medium text-brand-800 dark:text-brand-300">
-                      <Ar>{currentGroup.summaryArabic}</Ar>
-                    </p>
-                  </div>
-                </div>
+              <div className="space-y-1.5 rounded-2xl border border-brand-200 bg-brand-50/40 p-4 dark:border-brand-900/40 dark:bg-brand-950/20 sm:p-5">
+                <p className="text-sm font-bold text-brand-900 dark:text-brand-200 sm:text-base">
+                  {currentGroup.summary}
+                </p>
+                <p className="text-sm font-medium text-brand-800 dark:text-brand-300">
+                  <Ar>{currentGroup.summaryArabic}</Ar>
+                </p>
               </div>
 
               {/* Word Comparison Cards Grid */}
-              <div className="space-y-3">
-                <h3 className="text-lg font-bold text-zinc-900 dark:text-white flex items-center gap-2">
-                  <span>⚖️</span>
-                  <span>مقارنة الكلمات والقواعد المحددة</span>
-                </h3>
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
+                    <Ar>
+                      مقارنة الكلمات <span className="text-zinc-400 dark:text-mist-500">(Word Comparison)</span>
+                    </Ar>
+                  </h3>
+                  <Ar className="text-xs text-zinc-400 dark:text-mist-500">{currentGroup.words.length} كلمات</Ar>
+                </div>
 
                 <div
                   className={`grid grid-cols-1 gap-4 ${
                     currentGroup.words.length === 2
                       ? "md:grid-cols-2"
                       : currentGroup.words.length === 3
-                      ? "md:grid-cols-3"
-                      : "md:grid-cols-2 lg:grid-cols-4"
+                        ? "md:grid-cols-3"
+                        : "md:grid-cols-2 lg:grid-cols-4"
                   }`}
                 >
-                  {currentGroup.words.map((w, index) => {
-                    const palette = WORD_PALETTES[index % WORD_PALETTES.length];
+                  {currentGroup.words.map((w) => {
                     return (
                       <div
                         key={w.word}
-                        className={`rounded-2xl border p-5 flex flex-col justify-between space-y-4 ${palette.border} ${palette.bg}`}
+                        className={`flex flex-col justify-between space-y-4 rounded-2xl border p-5 ${WORD_CARD_STYLE}`}
                       >
                         <div className="space-y-3">
-                          {/* Word header + Audio */}
-                          <div className="flex items-center justify-between border-b border-zinc-200/60 pb-3 dark:border-zinc-800">
-                            <div className="flex items-center gap-2.5">
-                              <span className="text-2xl font-black text-zinc-900 dark:text-white">
-                                {w.word}
-                              </span>
-                              <span
-                                className={`rounded-md px-2 py-0.5 text-xs font-semibold ${palette.badge}`}
-                              >
-                                كلمة {index + 1}
-                              </span>
-                            </div>
+                          {/* Word header + Audio — English row, isolated direction */}
+                          <div dir="ltr" className="flex items-center justify-between border-b border-zinc-200/60 pb-3 dark:border-zinc-800">
+                            <span className="text-2xl font-black text-zinc-900 dark:text-white">{w.word}</span>
                             <AudioButton text={w.word} small />
                           </div>
 
                           {/* Rule in English */}
                           <div>
-                            <span className="text-[11px] uppercase tracking-wider font-bold text-zinc-500 dark:text-mist-400">
+                            <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 dark:text-mist-400">
                               Core Rule
                             </span>
-                            <p className="text-sm font-semibold text-zinc-800 dark:text-zinc-200 mt-0.5">
-                              {w.rule}
-                            </p>
+                            <p className="mt-0.5 text-sm font-semibold text-zinc-800 dark:text-zinc-200">{w.rule}</p>
                           </div>
 
                           {/* Rule in Arabic */}
                           <div className="rounded-xl bg-white/70 p-3 dark:bg-night-900/80">
-                            <span className="text-[11px] uppercase tracking-wider font-bold text-brand-700 dark:text-brand-400">
+                            <span className="text-[11px] font-bold uppercase tracking-wider text-brand-700 dark:text-brand-400">
                               القاعدة بالعربية
                             </span>
-                            <p className="text-sm font-medium text-zinc-800 dark:text-zinc-100 mt-0.5">
+                            <p className="mt-0.5 text-sm font-medium text-zinc-800 dark:text-zinc-100">
                               <Ar>{w.ruleArabic}</Ar>
                             </p>
                           </div>
@@ -808,18 +733,18 @@ export function ConfusablesAcademy({
 
                         {/* Collocations Pills */}
                         {w.collocations && w.collocations.length > 0 && (
-                          <div className="space-y-2 pt-2 border-t border-zinc-200/60 dark:border-zinc-800">
+                          <div className="space-y-2 border-t border-zinc-200/60 pt-2 dark:border-zinc-800">
                             <span className="text-[11px] font-bold text-zinc-500 dark:text-mist-400">
                               متلازمات شائعة (Collocations):
                             </span>
-                            <div className="flex flex-wrap gap-1.5">
+                            <div dir="ltr" className="flex flex-wrap gap-1.5">
                               {w.collocations.map((col) => (
                                 <button
                                   key={col}
                                   type="button"
                                   title="انقر للنسخ"
                                   onClick={() => handleCopy(col)}
-                                  className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition ${palette.pill}`}
+                                  className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition ${WORD_COLLOCATION_PILL_STYLE}`}
                                 >
                                   {copiedCollocation === col ? "✓ تم النسخ" : col}
                                 </button>
@@ -835,24 +760,27 @@ export function ConfusablesAcademy({
 
               {/* Examples in Context */}
               {currentGroup.examples && currentGroup.examples.length > 0 && (
-                <div className="space-y-3">
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white flex items-center gap-2">
-                    <span>✍️</span>
-                    <span>أمثلة تطبيقية واقعية</span>
-                  </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
+                      <Ar>
+                        أمثلة تطبيقية <span className="text-zinc-400 dark:text-mist-500">(Practical Examples)</span>
+                      </Ar>
+                    </h3>
+                    <span className="text-xs text-zinc-400 dark:text-mist-500">استمع للنطق الأصلي</span>
+                  </div>
 
-                  <div className="divide-y divide-zinc-200 rounded-2xl border border-zinc-200 bg-white overflow-hidden shadow-sm dark:divide-night-800 dark:border-night-700 dark:bg-night-900">
+                  <div className="divide-y divide-zinc-200 dark:divide-night-800">
                     {currentGroup.examples.map((ex, idx) => (
                       <div
                         key={idx}
-                        className="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-zinc-50/60 dark:hover:bg-night-800/40 transition"
+                        className="flex flex-col gap-2.5 py-3.5 first:pt-0 sm:flex-row sm:items-start sm:justify-between"
                       >
-                        <div className="space-y-1.5 flex-1">
-                          <div className="flex items-center gap-3">
-                            <span className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white">
-                              {ex.sentence}
-                            </span>
-                            <AudioButton text={ex.sentence} small />
+                        <div className="min-w-0 flex-1 space-y-2">
+                          <div dir="ltr" className="flex flex-wrap items-center gap-3">
+                            <p className="text-base leading-relaxed text-zinc-900 dark:text-white">
+                              &ldquo;{ex.sentence}&rdquo;
+                            </p>
                             {ex.focus && (
                               <span className="rounded-full bg-brand-100 px-2.5 py-0.5 text-[11px] font-bold text-brand-800 dark:bg-brand-900/60 dark:text-brand-200">
                                 {ex.focus}
@@ -861,16 +789,25 @@ export function ConfusablesAcademy({
                           </div>
 
                           {ex.sentenceArabic && (
-                            <p className="text-sm font-medium text-zinc-600 dark:text-mist-300">
-                              <Ar>{ex.sentenceArabic}</Ar>
-                            </p>
+                            <div dir="rtl" className="border-t border-zinc-100 pt-1.5 dark:border-night-800">
+                              <p lang="ar" className="text-sm leading-relaxed text-clay-700 dark:text-clay-300">
+                                {ex.sentenceArabic}
+                              </p>
+                            </div>
                           )}
 
                           {ex.note && (
-                            <p className="text-xs font-semibold text-brand-700 dark:text-brand-400">
-                              ℹ️ {ex.note}
-                            </p>
+                            <div className="flex items-start gap-2 pt-0.5">
+                              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                              <p dir="ltr" className="text-xs text-zinc-500 dark:text-mist-400">
+                                {ex.note}
+                              </p>
+                            </div>
                           )}
+                        </div>
+
+                        <div className="shrink-0 pt-0.5">
+                          <AudioButton text={ex.sentence} small label="استمع للمثال" />
                         </div>
                       </div>
                     ))}
@@ -880,38 +817,56 @@ export function ConfusablesAcademy({
 
               {/* Common Mistakes */}
               {currentGroup.mistakes && currentGroup.mistakes.length > 0 && (
-                <div className="space-y-3">
-                  <h3 className="text-lg font-bold text-zinc-900 dark:text-white flex items-center gap-2">
-                    <span>❌</span>
-                    <span>أخطاء شائعة احذر منها (Common Mistakes)</span>
-                  </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-sm font-semibold text-zinc-700 dark:text-mist-200">
+                      <Ar>
+                        الأخطاء الشائعة <span className="text-zinc-400 dark:text-mist-500">(Common Mistakes)</span>
+                      </Ar>
+                    </h3>
+                    <Ar className="text-xs text-zinc-400 dark:text-mist-500">
+                      {currentGroup.mistakes.length} أخطاء شائعة
+                    </Ar>
+                  </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  <div className="space-y-3">
                     {currentGroup.mistakes.map((m, idx) => (
-                      <div
-                        key={idx}
-                        className="rounded-2xl border border-rose-200 bg-rose-50/30 p-4 space-y-3 dark:border-rose-900/50 dark:bg-rose-950/20"
-                      >
-                        {/* Wrong */}
-                        <div className="flex items-start gap-2">
-                          <span className="text-rose-600 dark:text-rose-400 font-bold shrink-0">❌</span>
-                          <p className="text-sm font-semibold text-rose-800 line-through dark:text-rose-300">
-                            {m.wrong}
-                          </p>
+                      <div key={idx} className="overflow-hidden rounded-lg border border-zinc-200 dark:border-night-800">
+                        <div className="grid grid-cols-1 divide-y divide-zinc-200 dark:divide-night-800 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
+                          <div dir="ltr" className="flex items-start gap-2.5 bg-rose-50 p-3.5 dark:bg-rose-950/20">
+                            <span className="mt-0.5 shrink-0 text-xs font-bold text-rose-600 dark:text-rose-400">
+                              ✕
+                            </span>
+                            <p className="font-mono text-sm text-rose-700 line-through dark:text-rose-200">
+                              {m.wrong}
+                            </p>
+                          </div>
+                          <div
+                            dir="ltr"
+                            className="flex items-start justify-between gap-2.5 bg-emerald-50 p-3.5 dark:bg-emerald-950/20"
+                          >
+                            <div className="flex items-start gap-2.5">
+                              <span className="mt-0.5 shrink-0 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                                ✓
+                              </span>
+                              <p className="font-mono text-sm font-semibold text-emerald-700 dark:text-emerald-200">
+                                {m.right}
+                              </p>
+                            </div>
+                            <div className="shrink-0 pt-0.5">
+                              <AudioButton text={m.right} small label="استمع للجملة الصحيحة" />
+                            </div>
+                          </div>
                         </div>
-
-                        {/* Right */}
-                        <div className="flex items-start gap-2 pt-2 border-t border-rose-200/60 dark:border-rose-900/40">
-                          <span className="text-emerald-600 dark:text-emerald-400 font-bold shrink-0">✅</span>
-                          <p className="text-sm font-bold text-emerald-800 dark:text-emerald-300">
-                            {m.right}
-                          </p>
-                        </div>
-
-                        {/* Note in Arabic */}
                         {m.noteArabic && (
-                          <div className="rounded-xl bg-white/80 p-2.5 text-xs text-zinc-700 dark:bg-night-900 dark:text-mist-200">
-                            <Ar>{m.noteArabic}</Ar>
+                          <div className="border-t border-zinc-200 bg-zinc-50 p-3.5 dark:border-night-800 dark:bg-night-900/60">
+                            <p
+                              dir="rtl"
+                              lang="ar"
+                              className="text-xs font-medium leading-relaxed text-clay-800 dark:text-clay-200"
+                            >
+                              {m.noteArabic}
+                            </p>
                           </div>
                         )}
                       </div>
@@ -920,24 +875,32 @@ export function ConfusablesAcademy({
                 </div>
               )}
 
-              {/* Golden Rules & Pro Tips */}
+              {/* Golden Rule */}
               {(currentGroup.tips?.length > 0 || currentGroup.tipsArabic?.length > 0) && (
-                <div className="rounded-2xl border border-amber-300 bg-amber-50/60 p-5 shadow-sm dark:border-amber-800/60 dark:bg-amber-950/30 space-y-3">
-                  <div className="flex items-center gap-2 text-amber-900 dark:text-amber-200">
-                    <span className="text-xl">🏆</span>
-                    <h3 className="text-base font-bold">القاعدة الذهبية لتذكر الفرق (Golden Rule)</h3>
+                <div className="space-y-3 rounded-2xl border border-clay-200 bg-clay-50/60 p-5 dark:border-clay-900/50 dark:bg-clay-950/30">
+                  <div className="space-y-1">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-clay-600 dark:text-clay-400">
+                      Golden Rule
+                    </span>
+                    <h3 className="text-base font-bold text-clay-900 dark:text-clay-100">
+                      القاعدة الذهبية لتذكر الفرق
+                    </h3>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-2 pt-1">
                     {currentGroup.tips?.map((tip, idx) => (
-                      <p key={idx} className="text-sm font-semibold text-amber-950 dark:text-amber-100">
-                        • {tip}
-                      </p>
+                      <div key={`tip-en-${idx}`} dir="ltr" className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-clay-500" />
+                        <p className="text-sm font-medium text-clay-900 dark:text-clay-100">{tip}</p>
+                      </div>
                     ))}
                     {currentGroup.tipsArabic?.map((tipAr, idx) => (
-                      <p key={idx} className="text-sm font-bold text-amber-900 dark:text-amber-200">
-                        <Ar>• {tipAr}</Ar>
-                      </p>
+                      <div key={`tip-ar-${idx}`} className="flex items-start gap-2">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-clay-500" />
+                        <p className="text-sm font-semibold text-clay-800 dark:text-clay-200">
+                          <Ar>{tipAr}</Ar>
+                        </p>
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -949,7 +912,7 @@ export function ConfusablesAcademy({
               TAB 2: INTERACTIVE QUIZ
           ───────────────────────────────────────────────────────────── */}
           {activeTab === "quiz" && (
-            <div className="space-y-6 animate-reveal">
+            <div className="animate-reveal space-y-6">
               {currentQuizQuestions.length === 0 ? (
                 <div className="rounded-2xl border border-zinc-200 bg-white p-12 text-center dark:border-night-700 dark:bg-night-900">
                   <p className="text-base text-zinc-600 dark:text-mist-300">
@@ -959,10 +922,10 @@ export function ConfusablesAcademy({
               ) : (
                 <>
                   {/* Quiz Instructions / Score Header */}
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-zinc-200 bg-white p-4 sm:p-5 dark:border-night-700 dark:bg-night-900">
+                  <div className="flex flex-col justify-between gap-4 rounded-2xl border border-zinc-200 bg-white p-4 dark:border-night-700 dark:bg-night-900 sm:flex-row sm:items-center sm:p-5">
                     <div className="space-y-1">
                       <h3 className="text-base font-bold text-zinc-900 dark:text-white">
-                        اختبار تثبيت الفروقات: {currentGroup.title}
+                        <Ar>اختبار تثبيت الفروقات:</Ar> <span dir="ltr">{currentGroup.title}</span>
                       </h3>
                       <p className="text-xs text-zinc-500 dark:text-mist-400">
                         أجب عن الأسئلة لتثبيت القواعد والتفريق التلقائي بين الكلمات.
@@ -971,9 +934,7 @@ export function ConfusablesAcademy({
 
                     {isQuizSubmitted && (
                       <div className="flex items-center gap-3">
-                        <span className="text-sm font-bold text-zinc-900 dark:text-white">
-                          النتيجة:
-                        </span>
+                        <span className="text-sm font-bold text-zinc-900 dark:text-white">النتيجة:</span>
                         <span
                           className={`rounded-full px-3 py-1 text-sm font-black ${
                             (currentScore?.percentage ?? 0) >= 80
@@ -1004,7 +965,7 @@ export function ConfusablesAcademy({
                       return (
                         <div
                           key={q.id}
-                          className={`rounded-2xl border p-5 transition space-y-4 ${
+                          className={`space-y-4 rounded-2xl border p-5 transition ${
                             isQuizSubmitted
                               ? isCorrect
                                 ? "border-emerald-300 bg-emerald-50/30 dark:border-emerald-900/40 dark:bg-emerald-950/20"
@@ -1018,19 +979,17 @@ export function ConfusablesAcademy({
                               <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-800 dark:bg-brand-900/80 dark:text-brand-300">
                                 {qIndex + 1}
                               </span>
-                              <p className="text-base font-bold text-zinc-900 dark:text-white">
-                                {q.prompt}
-                              </p>
+                              <p className="text-base font-bold text-zinc-900 dark:text-white">{q.prompt}</p>
                             </div>
                             {q.promptArabic && (
-                              <p className="text-xs text-zinc-500 dark:text-mist-400 mr-8">
+                              <p className="mr-8 text-xs text-zinc-500 dark:text-mist-400">
                                 <Ar>{q.promptArabic}</Ar>
                               </p>
                             )}
                           </div>
 
                           {/* Options Grid */}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mr-8">
+                          <div className="mr-8 grid grid-cols-1 gap-2 sm:grid-cols-2">
                             {q.options.map((option, optIdx) => {
                               const isThisSelected = selectedIdx === optIdx;
                               let optionClass =
@@ -1057,15 +1016,11 @@ export function ConfusablesAcademy({
                                   type="button"
                                   disabled={isQuizSubmitted}
                                   onClick={() => handleSelectOption(q.id, optIdx)}
-                                  className={`rounded-xl border p-3 text-right text-sm transition flex items-center justify-between ${optionClass}`}
+                                  className={`rounded-xl border p-3 text-start text-sm transition ${optionClass}`}
                                 >
-                                  <span>{option}</span>
-                                  {isQuizSubmitted && optIdx === q.correctIndex && (
-                                    <span className="text-emerald-600 font-bold">✓</span>
-                                  )}
-                                  {isQuizSubmitted && isThisSelected && optIdx !== q.correctIndex && (
-                                    <span className="text-rose-600 font-bold">✗</span>
-                                  )}
+                                  <span dir="ltr" className="block break-words font-mono text-xs sm:text-sm">
+                                    {option}
+                                  </span>
                                 </button>
                               );
                             })}
@@ -1073,10 +1028,8 @@ export function ConfusablesAcademy({
 
                           {/* Explanation banner on submit */}
                           {isQuizSubmitted && (
-                            <div className="mr-8 rounded-xl bg-white/90 p-3 text-xs dark:bg-night-950/80 border border-zinc-200 dark:border-night-700 space-y-1">
-                              <p className="font-semibold text-zinc-900 dark:text-white">
-                                {q.explanation}
-                              </p>
+                            <div className="mr-8 space-y-1 rounded-xl border border-zinc-200 bg-white/90 p-3 text-xs dark:border-night-700 dark:bg-night-950/80">
+                              <p className="font-semibold text-zinc-900 dark:text-white">{q.explanation}</p>
                               {q.explanationArabic && (
                                 <p className="font-medium text-zinc-600 dark:text-mist-300">
                                   <Ar>{q.explanationArabic}</Ar>
@@ -1096,7 +1049,7 @@ export function ConfusablesAcademy({
                         type="button"
                         onClick={handleSubmitQuiz}
                         disabled={Object.keys(selectedAnswers).length < currentQuizQuestions.length}
-                        className="rounded-2xl bg-brand-600 px-8 py-3 text-sm font-bold text-white shadow hover:bg-brand-700 disabled:opacity-50 disabled:pointer-events-none transition"
+                        className="rounded-2xl bg-brand-600 px-8 py-3 text-sm font-bold text-white transition hover:bg-brand-700 disabled:pointer-events-none disabled:opacity-50"
                       >
                         تصحيح الإجابات وحساب النتيجة
                       </button>

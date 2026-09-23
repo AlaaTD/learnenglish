@@ -171,3 +171,62 @@ export function IconXCircle(props: IconProps) {
     </Stroke>
   );
 }
+
+
+export function IconBolt(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <path d="M12.5 2.5 5 13.5h5.5L10 21.5l8.5-12h-5.5z" />
+    </Stroke>
+  );
+}
+
+export function IconClock(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7.5v5l3.5 2" />
+    </Stroke>
+  );
+}
+
+export function IconSparkle({ children, ...props }: IconProps) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M11 2c.6 3.6 2 5.4 5.6 6C13 8.6 11.2 10.4 10.6 14 10 10.4 8.6 8.6 5 8c3.6-.6 5.4-2.4 6-6z" />
+      <path d="M17.5 14c.3 1.8 1 2.7 2.8 3-1.8.3-2.5 1.2-2.8 3-.3-1.8-1-2.7-2.8-3 1.8-.3 2.5-1.2 2.8-3z" />
+      {children}
+    </svg>
+  );
+}
+
+export function IconGrid(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <rect x="3.5" y="3.5" width="7" height="7" rx="1.5" />
+      <rect x="13.5" y="3.5" width="7" height="7" rx="1.5" />
+      <rect x="3.5" y="13.5" width="7" height="7" rx="1.5" />
+      <rect x="13.5" y="13.5" width="7" height="7" rx="1.5" />
+    </Stroke>
+  );
+}
+
+export function IconPalette(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <path d="M12 3a9 8 0 1 0 0 16c1 0 1.8-.8 1.8-1.8 0-.5-.2-.9-.5-1.3-.3-.3-.5-.8-.5-1.2 0-1 .8-1.7 1.7-1.7H16a5 4.5 0 0 0 5-4.5C21 5.5 17 3 12 3z" />
+      <circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none" />
+      <circle cx="9.5" cy="7" r="1" fill="currentColor" stroke="none" />
+      <circle cx="14" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      <circle cx="17" cy="9.5" r="1" fill="currentColor" stroke="none" />
+    </Stroke>
+  );
+}
+
+export function IconSearch(props: IconProps) {
+  return (
+    <Stroke {...props}>
+      <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </Stroke>
+  );
+}
