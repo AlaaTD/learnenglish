@@ -227,6 +227,23 @@ export async function recordViewed(
 }
 
 /**
+ * Thrown by `setDifficultWord` when the given vocabularyId does not exist in VocabularyItem
+ * (Prisma error P2003 on the create). This happens when the caller's page was rendered before a
+ * content/database reset and is still holding an id that no longer exists — retrying the exact same
+ * request can never succeed, only a fresh page load can. The message carries a stable "STALE_VOCAB:"
+ * marker so the UI layer can safely show it verbatim instead of a generic "try again", without ever
+ * forwarding arbitrary server error text to the client for any other kind of failure.
+ */
+export class StaleVocabularyReferenceError extends Error {
+  constructor(vocabularyId: string) {
+    super(
+      `STALE_VOCAB: الكلمة لم تعد موجودة في بيانات التطبيق الحالية (المعرف: ${vocabularyId}). حدّث الصفحة تحديثًا كاملاً ثم حاول الحفظ مرة أخرى.`,
+    );
+    this.name = "StaleVocabularyReferenceError";
+  }
+}
+
+/**
  * Sets (does not flip) the "difficult word" flag of one word for one user.
  *
  * - Idempotent: the caller says which state it wants, so a double tap, a retry or a screen showing
@@ -262,7 +279,11 @@ export async function setDifficultWord(
       row = await db.userVocabulary.create({ data: { userId, vocabularyId, ...flag } });
       changed = true;
     } catch (error) {
-      if ((error as { code?: string } | null)?.code !== "P2002") throw error;
+      const code = (error as { code?: string } | null)?.code;
+      // The vocabularyId itself does not exist (e.g. a page rendered before a content/db reset,
+      // still holding an old id): no amount of retrying the same request will ever fix this.
+      if (code === "P2003") throw new StaleVocabularyReferenceError(vocabularyId);
+      if (code !== "P2002") throw error;
       // Another request created the row a moment ago: make sure the flag is set on it.
       const late = await db.userVocabulary.updateMany({
         where: { userId, vocabularyId, isDifficult: false },

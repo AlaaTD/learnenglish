@@ -61,9 +61,16 @@ export function DifficultToggleButton({
       try {
         const saved = await setDifficultWordAction(vocabularyId, dayNumber ?? null, wanted);
         setIsDifficult(saved.isDifficult);
-      } catch {
+      } catch (err) {
         setIsDifficult(!wanted);
-        setError(SAVE_FAILED);
+        // Only ever show a specific, developer-authored message (marked "STALE_VOCAB:"); any other
+        // error — including raw server/network failures — still falls back to the generic message.
+        const marker = "STALE_VOCAB:";
+        const specific =
+          err instanceof Error && err.message.startsWith(marker)
+            ? err.message.slice(marker.length).trim()
+            : null;
+        setError(specific ?? SAVE_FAILED);
       }
     });
   }
