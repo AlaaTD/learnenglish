@@ -1,13 +1,10 @@
-=== DAY 1 — My Daily Routine ===
+
 wake up,get up,alarm,brush,shower,get dressed,breakfast,coffee,cereal,pack,leave,walk,work,arrive,start,busy,check,email,lunch,afternoon,finish,tired,hungry,evening,dinner,cook,wash,dishes,laundry,watch,television,relax,go shopping,night,bedtime,go to bed,sleep,usually,always,sometimes,never,early,late,every day,o'clock,half past,daily,routine,habit,free
 
-=== DAY 2 — People and Family ===
 family,mother,father,parent,brother,sister,son,daughter,child,baby,husband,wife,grandfather,grandmother,grandparent,grandchild,uncle,aunt,cousin,relative,person,friend,neighbor,colleague,partner,guest,name,age,man,woman,boy,girl,married,single,tall,short,young,old,kind,friendly,funny,smart,quiet,close,live,meet,introduce,call,visit,help
 
-=== DAY 3 — My Home ===
 house,apartment,room,bedroom,living room,kitchen,bathroom,dining room,hallway,balcony,garden,door,window,wall,floor,ceiling,bed,sofa,couch,chair,table,desk,closet,wardrobe,shelf,drawer,mirror,lamp,carpet,rug,curtain,sink,stove,fridge,cupboard,in,on,under,behind,in front of,next to,between,above,near,clean,tidy,messy,bright,dark,comfortable
 
-=== DAY 4 — The Things I Have ===
 bag,backpack,wallet,purse,key,phone,laptop,tablet,charger,camera,headphones,notebook,pen,pencil,book,glasses,sunglasses,umbrella,bottle,cup,mug,money,card,passport,ticket,jacket,coat,shoes,hat,shirt,pants,dress,sweater,ring,necklace,box,suitcase,have,own,carry,bring,take,lose,find,buy,sell,borrow,lend,keep,expensive
 
 === DAY 5 — Food I Eat ===

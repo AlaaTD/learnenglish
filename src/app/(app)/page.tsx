@@ -77,47 +77,60 @@ export default async function HomePage() {
     <div>
       <div className="grid items-start gap-5 xl:grid-cols-[minmax(0,1fr)_476px]">
         {/* ----------------------------------------------------------- Hero */}
-        <section className="relative isolate overflow-hidden rounded-[20px] border border-zinc-200 bg-white dark:border-night-700 dark:bg-night-850">
+        {/* HeroArt renders its own light/dark pair internally (a lighter "day" hill
+         * palette and the original "night" palette), but both stay dark enough for
+         * the fixed light text/icons below to read clearly — so every element drawn
+         * on top of it intentionally uses ONE constant light-toned colour set
+         * instead of a light/dark pair. A light/dark pair here previously put
+         * light-mode's dark text straight onto this art, which is why the whole
+         * card read as blank/invisible in light mode.
+         *
+         * The frame around the art used to be a fixed dark border/bg (border-night-700
+         * bg-night-850) in both themes, which made the card read as a stray dark
+         * rectangle dropped onto an otherwise light page. border-black/10 is a soft
+         * edge that sits naturally on art of any lightness, so light mode no longer
+         * needs its own hard-coded dark ring. */}
+        <section className="relative isolate overflow-hidden rounded-[20px] border border-black/10 bg-zinc-700 dark:border-night-700 dark:bg-night-850">
           <HeroArt />
 
           <div className="relative z-10 p-7 sm:p-8 lg:p-[34px]">
             <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-              <span className="inline-flex items-center gap-2.5 rounded-full bg-brand-50 py-[9px] pe-5 ps-4 dark:bg-brand-950">
-                <IconTargetArrow className="h-[17px] w-[17px] text-brand-600 dark:text-brand-300" />
+              <span className="inline-flex items-center gap-2.5 rounded-full bg-brand-950 py-[9px] pe-5 ps-4">
+                <IconTargetArrow className="h-[17px] w-[17px] text-brand-300" />
                 <span className="sr-only">Day {dayNumber} of 90.</span>
-                <span className="text-[12px] font-bold uppercase tracking-[0.16em] text-brand-800 dark:text-mist-100">
+                <span className="text-[12px] font-bold uppercase tracking-[0.16em] text-mist-100">
                   {completed ? "Journey complete" : "Today's lesson"}
                 </span>
               </span>
               {today?.stage ? (
-                <span className="text-[12.5px] font-semibold uppercase tracking-[0.17em] text-zinc-600 dark:text-zinc-400">
+                <span className="text-[12.5px] font-semibold uppercase tracking-[0.17em] text-zinc-400">
                   {today.stage}
                 </span>
               ) : null}
             </div>
 
-            <h1 className="mt-7 text-[42px] font-bold leading-[1.05] tracking-[-0.015em] text-zinc-900 dark:text-zinc-50 sm:text-[54px]">
+            <h1 className="mt-7 text-[42px] font-bold leading-[1.05] tracking-[-0.015em] text-zinc-50 sm:text-[54px]">
               {today?.title ?? `Day ${dayNumber}`}
             </h1>
 
             {today?.description ? (
-              <p className="mt-7 text-[19px] leading-snug text-zinc-800 dark:text-zinc-200">{today.description}</p>
+              <p className="mt-7 text-[19px] leading-snug text-zinc-200">{today.description}</p>
             ) : null}
             {today?.focus ? (
-              <p className="mt-5 max-w-[680px] text-[15px] leading-[1.65] text-zinc-600 dark:text-zinc-400">{today.focus}</p>
+              <p className="mt-5 max-w-[680px] text-[15px] leading-[1.65] text-zinc-400">{today.focus}</p>
             ) : null}
 
             <div className="mt-8">
               <div className="flex items-center justify-between gap-4">
                 <span className="flex items-center gap-3">
-                  <span className="flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-sky-50 dark:bg-sky-950">
-                    <IconBookOpen className="h-4 w-4 text-sky-600 dark:text-sky-300" />
+                  <span className="flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-sky-950">
+                    <IconBookOpen className="h-4 w-4 text-sky-300" />
                   </span>
-                  <span className="text-[15px] font-semibold text-zinc-800 dark:text-zinc-100">Words learned today</span>
+                  <span className="text-[15px] font-semibold text-zinc-100">Words learned today</span>
                 </span>
-                <span className="text-[15px] font-bold tabular-nums text-zinc-900 dark:text-white">
+                <span className="text-[15px] font-bold tabular-nums text-white">
                   {learnedValue}
-                  <span className="font-medium text-zinc-600 dark:text-zinc-500"> / 50</span>
+                  <span className="font-medium text-zinc-500"> / 50</span>
                 </span>
               </div>
               <div
@@ -126,15 +139,15 @@ export default async function HomePage() {
                 aria-valuemin={0}
                 aria-valuemax={50}
                 aria-label={`Day ${dayNumber} vocabulary learned`}
-                className="mt-4 h-2 w-full overflow-hidden rounded-full bg-zinc-200 dark:bg-night-600"
+                className="mt-4 h-2 w-full overflow-hidden rounded-full bg-night-600"
               >
                 <div
-                  className="h-full rounded-full bg-sky-600 transition-[width] duration-700 ease-out dark:bg-sky-400"
+                  className="h-full rounded-full bg-sky-400 transition-[width] duration-700 ease-out"
                   style={{ width: `${(learnedValue / 50) * 100}%` }}
                 />
               </div>
-              <p className="mt-4 flex items-center gap-2.5 text-[13px] text-zinc-600 dark:text-zinc-400">
-                <span aria-hidden="true" className="h-[7px] w-[7px] rounded-full bg-sky-600 dark:bg-sky-300" />
+              <p className="mt-4 flex items-center gap-2.5 text-[13px] text-zinc-400">
+                <span aria-hidden="true" className="h-[7px] w-[7px] rounded-full bg-sky-300" />
                 {usedToday} used in conversation
               </p>
             </div>
@@ -157,17 +170,17 @@ export default async function HomePage() {
               {dayNumber > 1 ? (
                 <Link
                   href={`/day/${dayNumber - 1}`}
-                  className="inline-flex h-[52px] items-center gap-3 rounded-full border-[1.5px] border-zinc-300 px-9 text-[17px] font-semibold text-zinc-800 transition hover:border-zinc-400 hover:bg-zinc-100 active:translate-y-px dark:border-zinc-600 dark:text-zinc-100 dark:hover:border-zinc-500 dark:hover:bg-white/[0.04]"
+                  className="inline-flex h-[52px] items-center gap-3 rounded-full border-[1.5px] border-zinc-600 px-9 text-[17px] font-semibold text-zinc-100 transition hover:border-zinc-500 hover:bg-white/[0.04] active:translate-y-px"
                 >
-                  <IconRotateCcw className="h-[19px] w-[19px] text-zinc-700 dark:text-zinc-200" />
+                  <IconRotateCcw className="h-[19px] w-[19px] text-zinc-200" />
                   Revisit Day {dayNumber - 1}
                 </Link>
               ) : null}
               <Link
                 href="/vocabulary"
-                className="inline-flex h-[52px] items-center gap-3 rounded-full border-[1.5px] border-zinc-300 px-9 text-[17px] font-semibold text-zinc-800 transition hover:border-zinc-400 hover:bg-zinc-100 active:translate-y-px dark:border-zinc-600 dark:text-zinc-100 dark:hover:border-zinc-500 dark:hover:bg-white/[0.04]"
+                className="inline-flex h-[52px] items-center gap-3 rounded-full border-[1.5px] border-zinc-600 px-9 text-[17px] font-semibold text-zinc-100 transition hover:border-zinc-500 hover:bg-white/[0.04] active:translate-y-px"
               >
-                <IconBookOpen className="h-[19px] w-[19px] text-zinc-700 dark:text-zinc-200" />
+                <IconBookOpen className="h-[19px] w-[19px] text-zinc-200" />
                 Vocabulary
               </Link>
             </div>
@@ -177,11 +190,11 @@ export default async function HomePage() {
           <div aria-hidden="true" className="absolute end-[25px] top-5 hidden h-40 w-40 sm:block">
             <DayRing value={63} />
             <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-zinc-600 dark:text-zinc-400">Day</span>
-              <span className="mt-1 text-[42px] font-bold leading-none tracking-tight text-zinc-900 dark:text-zinc-50">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.26em] text-zinc-400">Day</span>
+              <span className="mt-1 text-[42px] font-bold leading-none tracking-tight text-zinc-50">
                 {String(dayNumber).padStart(2, "0")}
               </span>
-              <span className="mt-1.5 text-[13px] text-zinc-600 dark:text-zinc-400">of 90</span>
+              <span className="mt-1.5 text-[13px] text-zinc-400">of 90</span>
             </div>
           </div>
         </section>

@@ -264,10 +264,7 @@ export default async function DayPage({
           {/* ─── Exercise ─── */}
           {tab === "exercise" && (
             <section aria-label="Today's exercise" className="space-y-4">
-              <TabIntro>
-                Type the English word that matches the Arabic meaning shown for each of today&apos;s words —
-                اكتب الكلمة الإنجليزية الصحيحة أمام معناها بالعربي، وتحقق من إجابتك فورًا.
-              </TabIntro>
+
               <DayExercise
                 storageKey={`e90:exercise:${user.id}:${dayNumber}`}
                 words={vocabulary.map((word) => ({

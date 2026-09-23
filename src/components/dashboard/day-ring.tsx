@@ -5,7 +5,9 @@
 export function DayRing({ value = 63 }: { value?: number }) {
   return (
     <svg viewBox="0 0 160 160" className="h-full w-full" fill="none" aria-hidden="true">
-      <circle cx="80" cy="80" r="69" className="stroke-zinc-200 dark:stroke-night-600" strokeWidth="12" />
+      {/* Track colour is intentionally constant (not a light/dark pair): the
+          ring always sits on the Hero's fixed dark art, in both site themes. */}
+      <circle cx="80" cy="80" r="69" className="stroke-night-600" strokeWidth="12" />
       <circle
         cx="80"
         cy="80"
