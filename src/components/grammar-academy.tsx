@@ -275,7 +275,7 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
             <div
               role="listbox"
               aria-label="قائمة الدروس"
-              className="absolute start-0 top-full z-20 mt-2 w-full overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lift dark:border-night-700 dark:bg-night-900 sm:w-[26rem] sm:max-w-[calc(100vw-2rem)]"
+              className="absolute start-0 top-full z-20 mt-1.5 w-full overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-lg dark:border-night-700 dark:bg-night-900 sm:w-[26rem] sm:max-w-[calc(100vw-2rem)]"
             >
               <div className="space-y-2 border-b border-zinc-200 p-2.5 dark:border-night-800">
                 <div className="flex items-center justify-between px-0.5">
@@ -307,7 +307,7 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
                 </div>
               </div>
 
-              <div className="max-h-72 overflow-y-auto p-2 scrollbar-thin">
+              <div className="max-h-[40vh] overflow-y-auto p-2 scrollbar-thin sm:max-h-72">
                 {groupedLessons.map(({ dayNumber, dayLessons }) => {
                   const isCurrentDay = dayNumber === currentDay;
                   const isGroupSelected = dayLessons.some((l) => l.id === selectedLessonId);
