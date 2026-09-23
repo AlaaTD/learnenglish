@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { Inter, Lexend, Readex_Pro } from "next/font/google";
 import { db } from "@/lib/db";
 import { getCurrentUser } from "@/lib/auth";
@@ -79,10 +80,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       className={`${lexend.variable} ${readex.variable} ${inter.variable} h-full`}
       suppressHydrationWarning
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Script
+          id="theme-script"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: themeScript }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
