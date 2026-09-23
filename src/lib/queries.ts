@@ -477,12 +477,17 @@ export type ConfusableGroupData = {
 };
 
 export async function getAllConfusableGroups(): Promise<ConfusableGroupData[]> {
-  const rows = await db.confusableGroup.findMany({
-    orderBy: [
-      { category: "asc" },
-      { order: "asc" },
-    ],
-  });
+  const model = (db as any).confusableGroup;
+  const rows: any[] = model
+    ? await model.findMany({
+        orderBy: [
+          { category: "asc" },
+          { order: "asc" },
+        ],
+      })
+    : await db.$queryRawUnsafe<any[]>(
+        'SELECT * FROM "ConfusableGroup" ORDER BY "category" ASC, "order" ASC'
+      );
 
   return rows.map((r) => ({
     id: r.id,
