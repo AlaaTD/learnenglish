@@ -24,7 +24,7 @@ const buttonVariants: Record<ButtonVariant, string> = {
   // Light: deep clay with white text. Dark: a lighter clay with ink text (keeps AA contrast
   // and reads as the brightest thing on a dark surface). The soft inset highlight makes it feel pressable.
   primary:
-    "bg-brand-600 text-white shadow-press hover:bg-brand-700 dark:bg-brand-400 dark:text-zinc-950 dark:shadow-none dark:hover:bg-brand-300",
+    "bg-brand-600 text-white shadow-press hover:bg-brand-700 dark:bg-brand-600 dark:text-white dark:shadow-none dark:hover:bg-brand-700",
   secondary:
     "border border-zinc-300 bg-white text-zinc-800 shadow-card hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-600 dark:bg-zinc-900 dark:text-zinc-100 dark:shadow-none dark:hover:border-zinc-500 dark:hover:bg-zinc-800",
   ghost:

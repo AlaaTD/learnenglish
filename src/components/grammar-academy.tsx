@@ -890,9 +890,9 @@ export function GrammarAcademy({ lessons, initialDay = 1, currentDay = 1 }: Gram
                         <span
                           className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg font-mono text-xs font-bold ${
                             isAnswered && isCorrect
-                              ? "bg-emerald-500 text-night-950"
+                              ? "bg-emerald-600 text-white"
                               : isAnswered && isChosen && !isCorrect
-                                ? "bg-rose-500 text-white"
+                                ? "bg-rose-600 text-white"
                                 : "border border-zinc-300 bg-zinc-100 text-zinc-500 dark:border-night-700 dark:bg-night-800 dark:text-mist-400"
                           }`}
                         >

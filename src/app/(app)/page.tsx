@@ -110,7 +110,7 @@ export default async function HomePage() {
             <div className="mt-8">
               <div className="flex items-center justify-between gap-4">
                 <span className="flex items-center gap-3">
-                  <span className="flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-sky-50 dark:bg-sky-900">
+                  <span className="flex h-[30px] w-[30px] items-center justify-center rounded-[9px] bg-sky-50 dark:bg-sky-950">
                     <IconBookOpen className="h-4 w-4 text-sky-600 dark:text-sky-300" />
                   </span>
                   <span className="text-[15px] font-semibold text-zinc-800 dark:text-zinc-100">Words learned today</span>
@@ -193,7 +193,7 @@ export default async function HomePage() {
         >
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-3.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-[12px] bg-brand-50 dark:bg-brand-900">
+              <span className="flex h-10 w-10 items-center justify-center rounded-[12px] bg-brand-50 dark:bg-brand-950">
                 <IconBookMarked className="h-[18px] w-[18px] text-brand-600 dark:text-brand-200" />
               </span>
               <h2 className="text-[18px] font-bold tracking-tight text-zinc-900 dark:text-zinc-50">90-day path</h2>
@@ -210,7 +210,7 @@ export default async function HomePage() {
           {/* Overall vocabulary */}
           <div className="mt-5 border-t border-zinc-200 pt-6 dark:border-night-700">
             <div className="flex items-center gap-4">
-              <span className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-sky-50 dark:bg-sky-900">
+              <span className="flex h-[52px] w-[52px] shrink-0 items-center justify-center rounded-full bg-sky-50 dark:bg-sky-950">
                 <IconBookOpen className="h-[22px] w-[22px] text-sky-600 dark:text-sky-300" />
               </span>
               <div className="flex min-w-0 flex-1 items-end justify-between gap-3">
@@ -266,7 +266,7 @@ export default async function HomePage() {
                       <div className="flex items-start justify-between gap-3">
                         <p className="text-[16px] font-semibold text-zinc-900 dark:text-zinc-50">{stage.label}</p>
                         {isCurrent ? (
-                          <span className="shrink-0 rounded-full bg-brand-50 px-3.5 py-1.5 text-[13px] font-semibold text-brand-700 dark:bg-brand-900 dark:text-brand-200">
+                          <span className="shrink-0 rounded-full bg-brand-50 px-3.5 py-1.5 text-[13px] font-semibold text-brand-700 dark:bg-brand-950 dark:text-brand-200">
                             Current stage
                           </span>
                         ) : (
@@ -370,10 +370,10 @@ export default async function HomePage() {
  * icon; the bar is the progress fill. Class names are spelled out in full so
  * Tailwind can see them. */
 const statTones = {
-  brand: { chip: "bg-brand-50 text-brand-700 dark:bg-brand-900 dark:text-brand-300", bar: "bg-brand-600 dark:bg-brand-400" },
-  sky: { chip: "bg-sky-50 text-sky-700 dark:bg-sky-900 dark:text-sky-300", bar: "bg-sky-600 dark:bg-sky-400" },
-  amber: { chip: "bg-amber-50 text-amber-700 dark:bg-amber-900 dark:text-amber-300", bar: "bg-amber-600 dark:bg-amber-500" },
-  clay: { chip: "bg-clay-50 text-clay-700 dark:bg-clay-900 dark:text-clay-300", bar: "bg-clay-600 dark:bg-clay-400" },
+  brand: { chip: "bg-brand-50 text-brand-700 dark:bg-brand-950 dark:text-brand-300", bar: "bg-brand-600 dark:bg-brand-400" },
+  sky: { chip: "bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300", bar: "bg-sky-600 dark:bg-sky-400" },
+  amber: { chip: "bg-amber-50 text-amber-700 dark:bg-amber-950 dark:text-amber-300", bar: "bg-amber-600 dark:bg-amber-500" },
+  clay: { chip: "bg-clay-50 text-clay-700 dark:bg-clay-950 dark:text-clay-300", bar: "bg-clay-600 dark:bg-clay-400" },
 } as const;
 
 function StatCard({

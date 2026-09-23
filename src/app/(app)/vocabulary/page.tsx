@@ -72,7 +72,7 @@ export default async function VocabularyPage({
       <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-mist-500">
-            <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-brand-700 dark:bg-brand-900/80 dark:text-brand-300">
+            <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-brand-700 dark:bg-brand-950 dark:text-brand-300">
               Vocabulary Library
             </span>
             <span className="text-zinc-600 dark:text-mist-400">· 4,500 Words</span>

@@ -114,7 +114,7 @@ export const CONFUSABLE_CATEGORIES: CategoryInfo[] = [
 // the old per-word rotating palette (brand/clay/emerald/rose/amber/sky).
 const WORD_CARD_STYLE = "border-zinc-200 bg-zinc-50 dark:border-night-800 dark:bg-night-900/60";
 const WORD_COLLOCATION_PILL_STYLE =
-  "bg-brand-100/70 text-brand-900 dark:bg-brand-900/40 dark:text-brand-200 hover:bg-brand-200 dark:hover:bg-brand-800/60";
+  "bg-brand-50 text-brand-900 dark:bg-brand-950 dark:text-brand-200 hover:bg-brand-100 dark:hover:bg-brand-900/60";
 
 // ─────────────────────────────────────────────────────────────
 // Confusable Quiz Types & Generator
@@ -782,7 +782,7 @@ export function ConfusablesAcademy({ groups, initialSlug, initialCategory = "all
                               &ldquo;{ex.sentence}&rdquo;
                             </p>
                             {ex.focus && (
-                              <span className="rounded-full bg-brand-100 px-2.5 py-0.5 text-[11px] font-bold text-brand-800 dark:bg-brand-900/60 dark:text-brand-200">
+                              <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-[11px] font-bold text-brand-800 dark:bg-brand-950 dark:text-brand-200">
                                 {ex.focus}
                               </span>
                             )}
@@ -938,8 +938,8 @@ export function ConfusablesAcademy({ groups, initialSlug, initialCategory = "all
                         <span
                           className={`rounded-full px-3 py-1 text-sm font-black ${
                             (currentScore?.percentage ?? 0) >= 80
-                              ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300"
-                              : "bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-300"
+                              ? "bg-emerald-50 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300"
+                              : "bg-amber-50 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
                           }`}
                         >
                           {currentScore?.percentage ?? 0}% ({currentScore?.score ?? 0}/{currentScore?.total ?? 0})
@@ -976,7 +976,7 @@ export function ConfusablesAcademy({ groups, initialSlug, initialCategory = "all
                           {/* Question Prompt */}
                           <div className="space-y-1">
                             <div className="flex items-center gap-2">
-                              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-100 text-xs font-bold text-brand-800 dark:bg-brand-900/80 dark:text-brand-300">
+                              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-50 text-xs font-bold text-brand-800 dark:bg-brand-950 dark:text-brand-300">
                                 {qIndex + 1}
                               </span>
                               <p className="text-base font-bold text-zinc-900 dark:text-white">{q.prompt}</p>
@@ -998,10 +998,10 @@ export function ConfusablesAcademy({ groups, initialSlug, initialCategory = "all
                               if (isQuizSubmitted) {
                                 if (optIdx === q.correctIndex) {
                                   optionClass =
-                                    "border-emerald-500 bg-emerald-100/70 text-emerald-950 font-bold dark:bg-emerald-950 dark:text-emerald-200 dark:border-emerald-500";
+                                    "border-emerald-500 bg-emerald-50 text-emerald-700 font-bold dark:bg-emerald-950/60 dark:text-emerald-200 dark:border-emerald-500";
                                 } else if (isThisSelected && optIdx !== q.correctIndex) {
                                   optionClass =
-                                    "border-rose-500 bg-rose-100/70 text-rose-950 font-semibold dark:bg-rose-950 dark:text-rose-200 dark:border-rose-500";
+                                    "border-rose-500 bg-rose-50 text-rose-700 font-semibold dark:bg-rose-950/60 dark:text-rose-200 dark:border-rose-500";
                                 } else {
                                   optionClass = "opacity-50 border-zinc-200 bg-zinc-50 dark:bg-night-900";
                                 }

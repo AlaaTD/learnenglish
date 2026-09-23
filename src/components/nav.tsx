@@ -133,7 +133,7 @@ export function Nav({
                   <span className="text-[19px] font-bold leading-none tracking-tight text-zinc-900 dark:text-white">
                     English<span className="text-clay-600 dark:text-clay-300">90</span>
                   </span>
-                  <span className="hidden xl:inline-flex items-center rounded-full bg-brand-100 px-2 py-0.5 text-[9.5px] font-semibold tracking-wide text-brand-700 dark:bg-brand-900/80 dark:text-brand-300">
+                  <span className="hidden xl:inline-flex items-center rounded-full bg-brand-50 px-2 py-0.5 text-[9.5px] font-semibold tracking-wide text-brand-700 dark:bg-brand-950 dark:text-brand-300">
                     ACADEMY
                   </span>
                 </div>
@@ -203,7 +203,7 @@ export function Nav({
               aria-current={settingsActive ? "page" : undefined}
               className={`hidden sm:flex items-center gap-2.5 rounded-full border p-1 pe-3.5 transition-all duration-200 ${
                 settingsActive
-                  ? "border-brand-500 bg-brand-50 dark:bg-brand-900/50"
+                  ? "border-brand-500 bg-brand-50 dark:bg-brand-950/60"
                   : "border-zinc-200 bg-zinc-100/60 hover:border-brand-500/60 hover:bg-zinc-200/80 dark:border-night-700/80 dark:bg-night-900/60 dark:hover:border-brand-600/60 dark:hover:bg-night-800/80"
               }`}
             >
