@@ -1132,7 +1132,12 @@
       "tags": [
         "celebrations",
         "ceremony"
-      ]
+      ],
+      "verbForms": {
+        "v1": "unveil",
+        "v2": "unveiled",
+        "v3": "unveiled"
+      }
     },
     {
       "headword": "salute",
@@ -1160,7 +1165,12 @@
       "tags": [
         "celebrations",
         "honor"
-      ]
+      ],
+      "verbForms": {
+        "v1": "salute",
+        "v2": "saluted",
+        "v3": "saluted"
+      }
     },
     {
       "headword": "festoon",
@@ -1187,7 +1197,12 @@
       "tags": [
         "decorations",
         "events"
-      ]
+      ],
+      "verbForms": {
+        "v1": "festoon",
+        "v2": "festooned",
+        "v3": "festooned"
+      }
     },
     {
       "headword": "bunting",
@@ -1308,7 +1323,12 @@
       "tags": [
         "celebrations",
         "traditions"
-      ]
+      ],
+      "verbForms": {
+        "v1": "commemorate",
+        "v2": "commemorated",
+        "v3": "commemorated"
+      }
     },
     {
       "headword": "rejoice",
@@ -1337,7 +1357,12 @@
       "tags": [
         "celebrations",
         "joy"
-      ]
+      ],
+      "verbForms": {
+        "v1": "rejoice",
+        "v2": "rejoiced",
+        "v3": "rejoiced"
+      }
     },
     {
       "headword": "reveler",

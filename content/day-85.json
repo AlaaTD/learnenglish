@@ -1,0 +1,1402 @@
+{
+  "day": 85,
+  "title": "Technology in My Life",
+  "topic": "Personal technology integration",
+  "description": "Discuss technology across work, home and society.",
+  "stage": "Integration — Real English",
+  "focus": "By the end of today, you can communicate clearly about personal technology integration using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Passive Voice + Technology Vocabulary Review",
+      "explanation": "Describing technology in daily life relies heavily on passive voice structures across all tenses to focus on how devices, files, and systems are processed, configured, or updated without centering the user:\n\n1. Present Passive (is / are + V3):\n   - 'All confidential files are encrypted before cloud storage sync is initiated.'\n   - 'Smart home devices are managed through a central smart home hub.'\n\n2. Past Passive (was / were + V3):\n   - 'An automated backup routine was executed at midnight by the personal cloud server.'\n   - 'The software update alert was delivered to all registered devices.'\n\n3. Modal Passives (can / must / should + be + V3):\n   - 'Device battery lifespan can be extended by avoiding overnight charging.'\n   - 'A reputable password manager tool must be installed to prevent identity theft.'\n   - 'Screen glare filters should be attached to office monitors to reduce eye fatigue.'\n\n4. Perfect Passives (has / have been + V3):\n   - 'The home office setup has been upgraded with a dual-monitor workstation.'\n   - 'App notification clutter has been eliminated across all smartphone home screens.'",
+      "structures": [
+        {
+          "pattern": "Present Passive: Subject + is / are + V3: 'Files are synchronized automatically through cloud storage sync.'"
+        },
+        {
+          "pattern": "Modal Passive: Subject + modal + be + V3: 'App notification clutter must be silenced to preserve mental focus.'"
+        },
+        {
+          "pattern": "Perfect Passive: Subject + have / has been + V3: 'A high-speed broadband plan has been configured in the home office.'"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Every smart home device in the building is connected to an encrypted personal cloud server.",
+          "arabic": "كل جهاز من أجهزة المنزل الذكي في المبنى متصل بخادم سحابي شخصي مشفر.",
+          "usesVocabulary": [
+            "smart home device",
+            "personal cloud server"
+          ]
+        },
+        {
+          "sentence": "An automated backup routine was configured to run whenever device sync status is confirmed.",
+          "arabic": "تم تكوين روتين نسخ احتياطي آلي ليعمل كلما تم تأكيد حالة مزامنة الجهاز.",
+          "usesVocabulary": [
+            "automated backup routine",
+            "device sync status"
+          ]
+        },
+        {
+          "sentence": "Device battery lifespan can be maximized when background app refresh is disabled.",
+          "arabic": "يمكن زيادة العمر الافتراضي لبطارية الجهاز إلى أقصى حد عندما يتم تعطيل تحديث التطبيقات في الخلفية.",
+          "usesVocabulary": [
+            "device battery lifespan"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The files are sync automatically every midnight.",
+          "right": "The files are synced automatically every midnight.",
+          "explanation": "Passive voice always requires the Past Participle (V3), e.g., 'synced', not the base form."
+        },
+        {
+          "wrong": "The password manager tool must to be updated immediately.",
+          "right": "The password manager tool must be updated immediately.",
+          "explanation": "Modal passive structures use modal + 'be' (without 'to') + past participle."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "smart home device",
+      "pronunciation": "/smɑːt həʊm dɪˈvaɪs/",
+      "partOfSpeech": "noun",
+      "definition": "An internet-connected electronic gadget that automates household appliances via voice or mobile apps.",
+      "example": "Every smart home device in our apartment can be controlled through a unified voice command hub.",
+      "translation": "جهاز المنزل الذكي المتصل بالإنترنت",
+      "collocations": [
+        "install a smart home device",
+        "configure smart home devices"
+      ],
+      "synonyms": [
+        "connected home appliance"
+      ],
+      "antonyms": [
+        "analog appliance"
+      ],
+      "tags": [
+        "tech",
+        "home"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cloud backup service",
+      "pronunciation": "/klaʊd ˈbækʌp ˈsɜːvɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A remote online data storage utility that automatically preserves files and prevents catastrophic data loss.",
+      "example": "Subscribing to a secure cloud backup service ensures your photographs and documents are safeguاردed.",
+      "translation": "خدمة النسخ الاحتياطي السحابي لحفظ البيانات",
+      "collocations": [
+        "subscribe to a cloud backup service",
+        "automated cloud backup service"
+      ],
+      "synonyms": [
+        "online backup solution"
+      ],
+      "antonyms": [
+        "local storage only"
+      ],
+      "tags": [
+        "cloud",
+        "data"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wearable fitness tracker",
+      "pronunciation": "/ˈweərəbl ˈfɪtnəs ˈtrækə/",
+      "partOfSpeech": "noun",
+      "definition": "An electronic wristband or smartwatch that monitors physical activity, heart rate, and sleep metrics.",
+      "example": "Her wearable fitness tracker buzzed gently to remind her that she had reached ten thousand steps.",
+      "translation": "سوار تتبع اللياقة والنشاط البدني القابل للارتداء",
+      "collocations": [
+        "wear a fitness tracker",
+        "sync the wearable fitness tracker"
+      ],
+      "synonyms": [
+        "activity monitor",
+        "smart wristband"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "gadgets"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "virtual meeting tool",
+      "pronunciation": "/ˈvɜːtʃuəl ˈmiːtɪŋ tuːl/",
+      "partOfSpeech": "noun",
+      "definition": "Video conferencing software that facilitates real-time remote communication between dispersed teams.",
+      "example": "Adopting an intuitive virtual meeting tool allowed the multinational team to collaborate across twelve time zones.",
+      "translation": "أداة وبرنامج الاجتماعات الافتراضية المرئية",
+      "collocations": [
+        "launch a virtual meeting tool",
+        "rely on virtual meeting tools"
+      ],
+      "synonyms": [
+        "video conferencing platform"
+      ],
+      "antonyms": [
+        "in-person meeting"
+      ],
+      "tags": [
+        "work",
+        "software"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital note-taking app",
+      "pronunciation": "/ˈdɪdʒɪtl ˈnəʊt teɪkɪŋ æp/",
+      "partOfSpeech": "noun",
+      "definition": "A software application designed for recording, organizing, and synchronizing handwritten or typed notes.",
+      "example": "Using a digital note-taking app on his tablet enabled the law student to search thousands of lecture pages instantly.",
+      "translation": "تطبيق تدوين وتنظيم الملاحظات الرقمية",
+      "collocations": [
+        "use a digital note-taking app",
+        "sync via digital note-taking app"
+      ],
+      "synonyms": [
+        "electronic notebook"
+      ],
+      "antonyms": [
+        "paper notebook"
+      ],
+      "tags": [
+        "productivity",
+        "apps"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wireless earbud convenience",
+      "pronunciation": "/ˈwaɪələs ˈɪəbʌd kənˈviːniəns/",
+      "partOfSpeech": "noun",
+      "definition": "The practical freedom and mobility offered by cord-free Bluetooth headphones during exercise and calls.",
+      "example": "The wireless earbud convenience allows commuters to listen to lectures without tangled cords.",
+      "translation": "راحة وسهولة استخدام سماعات الأذن اللاسلكية",
+      "collocations": [
+        "enjoy wireless earbud convenience",
+        "benefit from wireless earbud convenience"
+      ],
+      "synonyms": [
+        "cordless earbud utility"
+      ],
+      "antonyms": [],
+      "tags": [
+        "gadgets",
+        "convenience"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smartphone addiction check",
+      "pronunciation": "/ˈsmɑːtfəʊn əˈdɪkʃn tʃek/",
+      "partOfSpeech": "noun",
+      "definition": "A conscious self-assessment or software metric monitoring compulsive screen unlocking and app usage.",
+      "example": "Doing a weekly smartphone addiction check prompted him to delete several distracting social media apps.",
+      "translation": "فحص وتقييم إدمان الهاتف الذكي ومعدل الاستخدام",
+      "collocations": [
+        "run a smartphone addiction check",
+        "conduct a smartphone addiction check"
+      ],
+      "synonyms": [
+        "digital dependency audit"
+      ],
+      "antonyms": [],
+      "tags": [
+        "habits",
+        "wellbeing"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "automated backup routine",
+      "pronunciation": "/ˈɔːtəmeɪtɪd ˈbækʌp ruːˈtiːn/",
+      "partOfSpeech": "noun",
+      "definition": "A scheduled background computer process that duplicates critical system files without human intervention.",
+      "example": "An automated backup routine runs every midnight to archive customer transactions safely.",
+      "translation": "روتين النسخ الاحتياطي الآلي المجدول",
+      "collocations": [
+        "set up an automated backup routine",
+        "schedule an automated backup routine"
+      ],
+      "synonyms": [
+        "scheduled backup process"
+      ],
+      "antonyms": [
+        "manual file copying"
+      ],
+      "tags": [
+        "security",
+        "tech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smart home thermostat",
+      "pronunciation": "/smɑːt həʊm ˈθɜːməstæt/",
+      "partOfSpeech": "noun",
+      "definition": "A programmable climate control device that learns household patterns to optimize heating and cooling.",
+      "example": "Installing a smart home thermostat reduced the household's winter electricity bill by twenty-five percent.",
+      "translation": "منظم الحرارة الذكي المبرمج للمنزل",
+      "collocations": [
+        "adjust the smart home thermostat",
+        "install a smart home thermostat"
+      ],
+      "synonyms": [
+        "intelligent thermostat"
+      ],
+      "antonyms": [
+        "manual thermostat"
+      ],
+      "tags": [
+        "home",
+        "energy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "app notification clutter",
+      "pronunciation": "/æp ˌnəʊtɪfɪˈkeɪʃn ˈklʌtə/",
+      "partOfSpeech": "noun",
+      "definition": "The overwhelming barrage of pop-up banners, badges, and alerts that disrupt mental focus.",
+      "example": "Disabling marketing alerts cleared out persistent app notification clutter from his phone screen.",
+      "translation": "فوضى وتراكم إشعارات التطبيقات المشتتة",
+      "collocations": [
+        "reduce app notification clutter",
+        "silence app notification clutter"
+      ],
+      "synonyms": [
+        "notification overload"
+      ],
+      "antonyms": [
+        "peaceful screen"
+      ],
+      "tags": [
+        "tech",
+        "productivity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "home office setup",
+      "pronunciation": "/həʊm ˈɒfɪs ˈsetʌp/",
+      "partOfSpeech": "noun",
+      "definition": "The ergonomic arrangement of desk, chair, monitors, and peripherals designed for remote work.",
+      "example": "Investing in an adjustable standing desk transformed her home office setup into an ergonomic sanctuary.",
+      "translation": "تجهيز وترتيب المكتب المنزلي للعمل عن بُعد",
+      "collocations": [
+        "upgrade home office setup",
+        "ergonomic home office setup"
+      ],
+      "synonyms": [
+        "remote workspace"
+      ],
+      "antonyms": [],
+      "tags": [
+        "work",
+        "home"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital cleanup session",
+      "pronunciation": "/ˈdɪdʒɪtl ˈkliːnʌp ˈseʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A dedicated period spent purging unused apps, duplicate photos, and archived emails from devices.",
+      "example": "A monthly digital cleanup session freed up sixty gigabytes of solid-state drive storage on his laptop.",
+      "translation": "جلسة تنظيف وترتيب الملفات والبيانات الرقمية",
+      "collocations": [
+        "do a digital cleanup session",
+        "schedule a digital cleanup session"
+      ],
+      "synonyms": [
+        "digital declutter"
+      ],
+      "antonyms": [],
+      "tags": [
+        "productivity",
+        "data"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "paperless office shift",
+      "pronunciation": "/ˈpeɪpələs ˈɒfɪs ʃɪft/",
+      "partOfSpeech": "noun",
+      "definition": "The organizational transition from physical paper documentation to cloud-based digital records.",
+      "example": "Embracing a paperless office shift eliminated ten bulky filing cabinets from the accounting firm.",
+      "translation": "التحول نحو بيئة عمل رقمية لا ورقية",
+      "collocations": [
+        "accelerate the paperless office shift",
+        "achieve a paperless office shift"
+      ],
+      "synonyms": [
+        "digital documentation transition"
+      ],
+      "antonyms": [
+        "paper-heavy office"
+      ],
+      "tags": [
+        "business",
+        "environment"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smart assistant prompt",
+      "pronunciation": "/smɑːt əˈsɪstənt prɒmpt/",
+      "partOfSpeech": "noun",
+      "definition": "A vocal command or question given to an AI assistant like Alexa or Siri to trigger an action.",
+      "example": "A simple smart assistant prompt turns on the porch lights and locks the front door each evening.",
+      "translation": "الأمر الصوتي الموجه للمساعد الذكي",
+      "collocations": [
+        "issue a smart assistant prompt",
+        "voice smart assistant prompt"
+      ],
+      "synonyms": [
+        "voice command"
+      ],
+      "antonyms": [],
+      "tags": [
+        "ai",
+        "gadgets"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "high-speed broadband plan",
+      "pronunciation": "/haɪ spiːd ˈbrɔːdbænd plæn/",
+      "partOfSpeech": "noun",
+      "definition": "A fiber-optic or gigabit internet subscription providing ultra-fast download and upload bandwidth.",
+      "example": "Upgrading to a high-speed broadband plan eliminated video buffering during concurrent family calls.",
+      "translation": "باقة اشتراك الإنترنت فائق السرعة",
+      "collocations": [
+        "upgrade to a high-speed broadband plan",
+        "reliable high-speed broadband plan"
+      ],
+      "synonyms": [
+        "fiber internet package"
+      ],
+      "antonyms": [
+        "dial-up connection"
+      ],
+      "tags": [
+        "internet",
+        "telecom"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "online banking app",
+      "pronunciation": "/ˌɒnˈlaɪn ˈbæŋkɪŋ æp/",
+      "partOfSpeech": "noun",
+      "definition": "A secure mobile application enabling users to transfer funds, pay utilities, and track balances.",
+      "example": "Our online banking app sends real-time fraud alerts whenever an anomalous foreign purchase occurs.",
+      "translation": "تطبيق الخدمات المصرفية والبنكية عبر الهاتف",
+      "collocations": [
+        "check the online banking app",
+        "features of an online banking app"
+      ],
+      "synonyms": [
+        "mobile banking portal"
+      ],
+      "antonyms": [
+        "physical bank teller"
+      ],
+      "tags": [
+        "finance",
+        "apps"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "streaming subscription",
+      "pronunciation": "/ˈstriːmɪŋ səbˈskrɪpʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A recurring paid service granting on-demand access to libraries of movies, television shows, or music.",
+      "example": "Auditing each monthly streaming subscription saved our household fifty dollars in unused services.",
+      "translation": "اشتراك منصات البث الرقمي للمحتوى",
+      "collocations": [
+        "cancel a streaming subscription",
+        "monthly streaming subscription"
+      ],
+      "synonyms": [
+        "on-demand media membership"
+      ],
+      "antonyms": [],
+      "tags": [
+        "entertainment",
+        "media"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "password manager tool",
+      "pronunciation": "/ˈpɑːswɜːd ˈmænɪdʒə tuːl/",
+      "partOfSpeech": "noun",
+      "definition": "An encrypted software application that generates, stores, and autofills complex unique passwords.",
+      "example": "Using a reputable password manager tool ensures you never reuse identical credentials across accounts.",
+      "translation": "أداة وتطبيق إدارة وحفظ كلمات المرور المشفرة",
+      "collocations": [
+        "install a password manager tool",
+        "rely on a password manager tool"
+      ],
+      "synonyms": [
+        "credential vault"
+      ],
+      "antonyms": [
+        "plaintext password list"
+      ],
+      "tags": [
+        "security",
+        "software"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "software update alert",
+      "pronunciation": "/ˈsɒftweər ˈʌpdeɪt əˈlɜːt/",
+      "partOfSpeech": "noun",
+      "definition": "An operating system notification informing the user that new security patches or features are available.",
+      "example": "Never ignore a software update alert, as patches protect against newly discovered security vulnerabilities.",
+      "translation": "تنبيه توفر تحديثات البرامج الأمنية",
+      "collocations": [
+        "receive a software update alert",
+        "install a software update alert"
+      ],
+      "synonyms": [
+        "system patch prompt"
+      ],
+      "antonyms": [],
+      "tags": [
+        "it",
+        "security"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ergonomic workspace gadget",
+      "pronunciation": "/ˌɜːɡəˈnɒmɪk ˈwɜːkspeɪs ˈɡædʒɪt/",
+      "partOfSpeech": "noun",
+      "definition": "A peripheral designed to prevent repetitive strain, such as a vertical mouse or wrist rest.",
+      "example": "Purchasing an ergonomic workspace gadget like a split keyboard relieved his chronic wrist pain.",
+      "translation": "أداة مكتبية مريحة مصممة لصحة الجسم وبيئة العمل",
+      "collocations": [
+        "use an ergonomic workspace gadget",
+        "beneficial ergonomic workspace gadget"
+      ],
+      "synonyms": [
+        "orthopedic workstation tool"
+      ],
+      "antonyms": [],
+      "tags": [
+        "ergonomics",
+        "health"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "remote desktop tool",
+      "pronunciation": "/rɪˈməʊt ˈdesktɒp tuːl/",
+      "partOfSpeech": "noun",
+      "definition": "Software allowing a user to access, view, and operate a computer terminal from a distant device.",
+      "example": "Using a secure remote desktop tool allowed the engineer to run simulation scripts on the office server from home.",
+      "translation": "أداة التحكم بالكمبيوتر وسطح المكتب عن بُعد",
+      "collocations": [
+        "connect via remote desktop tool",
+        "secure remote desktop tool"
+      ],
+      "synonyms": [
+        "remote access software"
+      ],
+      "antonyms": [],
+      "tags": [
+        "it",
+        "work"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital clutter removal",
+      "pronunciation": "/ˈdɪdʒɪtl ˈklʌtə rɪˈmuːvl/",
+      "partOfSpeech": "noun",
+      "definition": "The intentional elimination of obsolete files, old screenshots, and disorganized folders.",
+      "example": "Regular digital clutter removal accelerates computer operating speeds and improves mental focus.",
+      "translation": "حذف وإزالة الفوضى الرقمية والملفات المتراكمة",
+      "collocations": [
+        "perform digital clutter removal",
+        "routine digital clutter removal"
+      ],
+      "synonyms": [
+        "file system decluttering"
+      ],
+      "antonyms": [
+        "digital hoarding"
+      ],
+      "tags": [
+        "productivity",
+        "data"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "dual-monitor workstation",
+      "pronunciation": "/ˌdjuːəl ˈmɒnɪtə ˈwɜːksteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A desktop computer setup utilizing two display screens side-by-side to boost multitasking efficiency.",
+      "example": "Software developers favor a dual-monitor workstation so code can be written on one screen and tested on the other.",
+      "translation": "محطة عمل مزودة بشاشتي عرض لزيادة الإنتاجية",
+      "collocations": [
+        "build a dual-monitor workstation",
+        "efficiency of a dual-monitor workstation"
+      ],
+      "synonyms": [
+        "twin-display setup"
+      ],
+      "antonyms": [
+        "single-monitor setup"
+      ],
+      "tags": [
+        "hardware",
+        "work"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tech troubleshooting step",
+      "pronunciation": "/tek ˈtrʌblʃuːtɪŋ step/",
+      "partOfSpeech": "noun",
+      "definition": "A diagnostic action taken to isolate and resolve computer hardware or software glitches.",
+      "example": "Powering down the router for thirty seconds is the foundational tech troubleshooting step for internet drops.",
+      "translation": "خطوة تشخيص وحل الأعطال والمشاكل التقنية",
+      "collocations": [
+        "follow a tech troubleshooting step",
+        "basic tech troubleshooting steps"
+      ],
+      "synonyms": [
+        "diagnostic action"
+      ],
+      "antonyms": [],
+      "tags": [
+        "it",
+        "troubleshooting"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "portable power bank",
+      "pronunciation": "/ˈpɔːtəbl ˈpaʊə bæŋk/",
+      "partOfSpeech": "noun",
+      "definition": "A rechargeable external battery used to charge smartphones and electronics on the go.",
+      "example": "Carrying a high-capacity portable power bank saved my battery during a twelve-hour train delay.",
+      "translation": "شاحن متنقل / بنك طاقة محمول للأجهزة",
+      "collocations": [
+        "charge with a portable power bank",
+        "high-capacity portable power bank"
+      ],
+      "synonyms": [
+        "external battery pack"
+      ],
+      "antonyms": [
+        "wall outlet"
+      ],
+      "tags": [
+        "hardware",
+        "travel"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smart lighting preset",
+      "pronunciation": "/smɑːt ˈlaɪtɪŋ ˈpriːset/",
+      "partOfSpeech": "noun",
+      "definition": "A programmed configuration of home LED bulbs matching brightness and color warmth to specific moods.",
+      "example": "Selecting the 'Reading' smart lighting preset dims overhead fixtures and bathes the room in warm amber light.",
+      "translation": "الإعداد المبرمج مسبقاً للإضاءة المنزلية الذكية",
+      "collocations": [
+        "activate a smart lighting preset",
+        "custom smart lighting preset"
+      ],
+      "synonyms": [
+        "automated lighting scene"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "tech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "e-reader screen",
+      "pronunciation": "/ˈiː riːdə skriːn/",
+      "partOfSpeech": "noun",
+      "definition": "An electronic paper display that mimics physical ink on paper without harmful backlight glare.",
+      "example": "The matte e-reader screen prevents eye strain during long hours of outdoor reading in direct sunlight.",
+      "translation": "شاشة القارئ الإلكتروني ذات الحبر الإلكتروني",
+      "collocations": [
+        "read on an e-reader screen",
+        "glare-free e-reader screen"
+      ],
+      "synonyms": [
+        "electronic ink display"
+      ],
+      "antonyms": [
+        "backlit LCD screen"
+      ],
+      "tags": [
+        "books",
+        "gadgets"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "noise-canceling headset",
+      "pronunciation": "/nɔɪz ˈkænsəlɪŋ ˈhedset/",
+      "partOfSpeech": "noun",
+      "definition": "Headphones that produce inverse sound waves to neutralize ambient background office or transit noise.",
+      "example": "Wearing a noise-canceling headset allowed him to concentrate in an overcrowded open-plan office.",
+      "translation": "سماعة رأس عازلة للضوضاء والتشويش المحيط",
+      "collocations": [
+        "wear a noise-canceling headset",
+        "active noise-canceling headset"
+      ],
+      "synonyms": [
+        "ANC headphones"
+      ],
+      "antonyms": [
+        "open-back headphones"
+      ],
+      "tags": [
+        "audio",
+        "gadgets"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "voice dictation feature",
+      "pronunciation": "/vɔɪs dɪkˈteɪʃn ˈfiːtʃə/",
+      "partOfSpeech": "noun",
+      "definition": "Speech-to-text software functionality transcribing spoken words into typed text in real time.",
+      "example": "Enabling the voice dictation feature allowed the journalist to draft articles while pacing around her study.",
+      "translation": "خاصية الإملاء الصوتي وتحويل الصوت إلى نص مكتوب",
+      "collocations": [
+        "use the voice dictation feature",
+        "accuracy of the voice dictation feature"
+      ],
+      "synonyms": [
+        "speech-to-text functionality"
+      ],
+      "antonyms": [
+        "manual keyboard typing"
+      ],
+      "tags": [
+        "software",
+        "ai"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cloud storage sync",
+      "pronunciation": "/klaʊd ˈstɔːrɪdʒ sɪŋk/",
+      "partOfSpeech": "noun",
+      "definition": "The continuous automatic alignment of files across personal devices and remote cloud servers.",
+      "example": "Instant cloud storage sync ensures that edits made on your office laptop appear on your home desktop immediately.",
+      "translation": "المزامنة الفورية مع مساحات التخزين السحابي",
+      "collocations": [
+        "enable cloud storage sync",
+        "pause cloud storage sync"
+      ],
+      "synonyms": [
+        "cloud synchronization"
+      ],
+      "antonyms": [
+        "local isolation"
+      ],
+      "tags": [
+        "cloud",
+        "data"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mobile payment convenience",
+      "pronunciation": "/ˈməʊbaɪl ˈpeɪmənt kənˈviːniəns/",
+      "partOfSpeech": "noun",
+      "definition": "The ease of purchasing goods at terminals using smartphone near-field communication instead of cash or cards.",
+      "example": "The mobile payment convenience allows commuters to tap through subway turnstiles with a wristwatch.",
+      "translation": "سهولة الدفع الإلكتروني عبر الهاتف المحمول",
+      "collocations": [
+        "enjoy mobile payment convenience",
+        "rely on mobile payment convenience"
+      ],
+      "synonyms": [
+        "contactless payment utility"
+      ],
+      "antonyms": [
+        "cash transaction"
+      ],
+      "tags": [
+        "finance",
+        "convenience"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smart calendar reminder",
+      "pronunciation": "/smɑːt ˈkælɪndə rɪˈmaɪndə/",
+      "partOfSpeech": "noun",
+      "definition": "An automated notification that alerts users to upcoming appointments and factors in travel transit times.",
+      "example": "A smart calendar reminder notified him to leave twenty minutes early due to unexpected freeway congestion.",
+      "translation": "تنبيه التقويم الذكي المجدول للمواعيد",
+      "collocations": [
+        "receive a smart calendar reminder",
+        "set a smart calendar reminder"
+      ],
+      "synonyms": [
+        "automated calendar alert"
+      ],
+      "antonyms": [],
+      "tags": [
+        "productivity",
+        "planning"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "device battery lifespan",
+      "pronunciation": "/dɪˈvaɪs ˈbætəri ˈlaɪfspæn/",
+      "partOfSpeech": "noun",
+      "definition": "The total operational duration or degradation longevity of a rechargeable battery over months of charge cycles.",
+      "example": "Capping charge levels at eighty percent preserves device battery lifespan across several years.",
+      "translation": "العمر الافتراضي والتشغيلي لبطارية الجهاز",
+      "collocations": [
+        "extend device battery lifespan",
+        "degrade device battery lifespan"
+      ],
+      "synonyms": [
+        "battery longevity"
+      ],
+      "antonyms": [
+        "battery death"
+      ],
+      "tags": [
+        "hardware",
+        "maintenance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "screen glare filter",
+      "pronunciation": "/skriːn ɡleə ˈfɪltə/",
+      "partOfSpeech": "noun",
+      "definition": "A physical anti-reflective overlay or software mode that reduces harsh specular reflections from displays.",
+      "example": "Attaching a screen glare filter to his office monitor eliminated late-afternoon tension headaches.",
+      "translation": "مرشح وفلتر تقليل توهج وانعكاسات الشاشة",
+      "collocations": [
+        "install a screen glare filter",
+        "matte screen glare filter"
+      ],
+      "synonyms": [
+        "anti-glare protector"
+      ],
+      "antonyms": [
+        "glossy screen"
+      ],
+      "tags": [
+        "health",
+        "hardware"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tech-free evening",
+      "pronunciation": "/tek friː ˈiːvnɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "An evening deliberately spent without checking computers, smartphones, televisions, or electronic gaming devices.",
+      "example": "Every Sunday, the household observes a tech-free evening dedicated to board games and home cooking.",
+      "translation": "أمسية خالية تماماً من الأجهزة والشاشات",
+      "collocations": [
+        "enjoy a tech-free evening",
+        "commit to a tech-free evening"
+      ],
+      "synonyms": [
+        "unplugged evening"
+      ],
+      "antonyms": [
+        "screen binge evening"
+      ],
+      "tags": [
+        "wellness",
+        "lifestyle"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smart home hub",
+      "pronunciation": "/smɑːt həʊm hʌb/",
+      "partOfSpeech": "noun",
+      "definition": "A central hardware or software controller connecting diverse smart home protocols into a single network.",
+      "example": "The wireless smart home hub bridges communication between smart lights, door sensors, and thermostats.",
+      "translation": "وحدة التحكم المركزية لأجهزة المنزل الذكي",
+      "collocations": [
+        "connect to the smart home hub",
+        "configure the smart home hub"
+      ],
+      "synonyms": [
+        "central automation controller"
+      ],
+      "antonyms": [],
+      "tags": [
+        "home",
+        "iot"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital declutter routine",
+      "pronunciation": "/ˈdɪdʒɪtl diːˈklʌtə ruːˈtiːn/",
+      "partOfSpeech": "noun",
+      "definition": "A regular habit of organizing digital files, deleting unused software, and archiving project data.",
+      "example": "Establishing a Friday digital declutter routine keeps desktops clean and folders impeccably indexed.",
+      "translation": "روتين التخلص من الفوضى وتنظيم الملفات الرقمية",
+      "collocations": [
+        "follow a digital declutter routine",
+        "weekly digital declutter routine"
+      ],
+      "synonyms": [
+        "data organization habit"
+      ],
+      "antonyms": [
+        "digital hoarding"
+      ],
+      "tags": [
+        "productivity",
+        "habits"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "backup hard drive",
+      "pronunciation": "/ˈbækʌp hɑːd draɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A physical external storage disk used to maintain redundant offline copies of vital files.",
+      "example": "In addition to cloud backups, she stores an encrypted copy of her manuscript on a backup hard drive.",
+      "translation": "قرص التخزين الصلب الخارجي للنسخ الاحتياطي",
+      "collocations": [
+        "plug in a backup hard drive",
+        "encrypted backup hard drive"
+      ],
+      "synonyms": [
+        "external hard disk"
+      ],
+      "antonyms": [],
+      "tags": [
+        "hardware",
+        "storage"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "touchscreen responsiveness",
+      "pronunciation": "/ˈtʌtʃskriːn rɪˈspɒnsɪvnəs/",
+      "partOfSpeech": "noun",
+      "definition": "The speed and accuracy with which a touch-sensitive electronic display registers finger gestures.",
+      "example": "The new tablet was praised for its instantaneous touchscreen responsiveness and stylus tracking.",
+      "translation": "سرعة ودقة استجابة الشاشة التي تعمل باللمس",
+      "collocations": [
+        "flawless touchscreen responsiveness",
+        "test touchscreen responsiveness"
+      ],
+      "synonyms": [
+        "touch sensitivity"
+      ],
+      "antonyms": [
+        "touchscreen lag"
+      ],
+      "tags": [
+        "hardware",
+        "performance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "app ecosystem integration",
+      "pronunciation": "/æp ˈiːkəʊsɪstəm ˌɪntɪˈɡreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The seamless interoperability between various mobile applications, desktop software, and cloud tools.",
+      "example": "Smooth app ecosystem integration allows users to open calendar events directly from email text.",
+      "translation": "التكامل والترابط السلس بين منظومة التطبيقات",
+      "collocations": [
+        "seamless app ecosystem integration",
+        "benefit from app ecosystem integration"
+      ],
+      "synonyms": [
+        "software interoperability"
+      ],
+      "antonyms": [
+        "siloed apps"
+      ],
+      "tags": [
+        "software",
+        "tech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "video conferencing background",
+      "pronunciation": "/ˈvɪdiəʊ ˈkɒnfərənsɪŋ ˈbækɡraʊnd/",
+      "partOfSpeech": "noun",
+      "definition": "A virtual or blurred digital image chosen to hide a messy room during online video calls.",
+      "example": "Applying a professional video conferencing background concealed the laundry drying in her home office.",
+      "translation": "الخلفية الرقمية المخصصة لمكالمات الفيديو",
+      "collocations": [
+        "set a video conferencing background",
+        "blur the video conferencing background"
+      ],
+      "synonyms": [
+        "virtual background"
+      ],
+      "antonyms": [
+        "live physical background"
+      ],
+      "tags": [
+        "work",
+        "video"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smart door lock",
+      "pronunciation": "/smɑːt dɔː lɒk/",
+      "partOfSpeech": "noun",
+      "definition": "An electromechanical lock designed to lock and unlock a portal upon receiving authorized digital signals.",
+      "example": "Installing a biometric smart door lock allows family members to enter using fingerprint scans.",
+      "translation": "قفل الباب الذكي الذي يعمل بالبصمة أو الهاتف",
+      "collocations": [
+        "install a smart door lock",
+        "features of a smart door lock"
+      ],
+      "synonyms": [
+        "electronic door lock"
+      ],
+      "antonyms": [
+        "traditional keyed lock"
+      ],
+      "tags": [
+        "security",
+        "home"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wearable health metric",
+      "pronunciation": "/ˈweərəbl helθ ˈmetrɪk/",
+      "partOfSpeech": "noun",
+      "definition": "Biological data tracked continuously by smart garments or watches, such as heart rate variability or oxygen saturation.",
+      "example": "Her doctor evaluated six months of wearable health metrics to assess recovery from cardiac surgery.",
+      "translation": "المؤشر الحيوي والصحي المقاس بالأجهزة القابلة للارتداء",
+      "collocations": [
+        "monitor wearable health metrics",
+        "track wearable health metrics"
+      ],
+      "synonyms": [
+        "biometric reading"
+      ],
+      "antonyms": [],
+      "tags": [
+        "health",
+        "wearables"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cable management solution",
+      "pronunciation": "/ˈkeɪbl ˈmænɪdʒmənt səˈluːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Clips, sleeves, and under-desk trays used to organize and conceal unsightly computer cords.",
+      "example": "Implementing an under-desk cable management solution transformed the tangled mess into an orderly workspace.",
+      "translation": "حلول تنظيم وترتيب كابلات وأسلاك الأجهزة",
+      "collocations": [
+        "install a cable management solution",
+        "effective cable management solution"
+      ],
+      "synonyms": [
+        "wire organizer"
+      ],
+      "antonyms": [
+        "tangled wires"
+      ],
+      "tags": [
+        "ergonomics",
+        "hardware"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital workspace setup",
+      "pronunciation": "/ˈdɪdʒɪtl ˈwɜːkspeɪs ˈsetʌp/",
+      "partOfSpeech": "noun",
+      "definition": "The customized configuration of computer software, browser bookmarks, and cloud directories for efficiency.",
+      "example": "A minimalist digital workspace setup with pinned task dashboards eliminates daily administrative clutter.",
+      "translation": "تهيئة وتخصيص بيئة العمل الرقمية على الكمبيوتر",
+      "collocations": [
+        "optimize digital workspace setup",
+        "streamlined digital workspace setup"
+      ],
+      "synonyms": [
+        "virtual desktop environment"
+      ],
+      "antonyms": [],
+      "tags": [
+        "productivity",
+        "software"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "personal cloud server",
+      "pronunciation": "/ˈpɜːsənl klaʊd ˈsɜːvə/",
+      "partOfSpeech": "noun",
+      "definition": "A private network-attached storage device hosted in one's home offering cloud convenience with total privacy.",
+      "example": "Hosting a personal cloud server allows the photographer to access RAW archives without third-party fees.",
+      "translation": "خادم السحابة الشخصي المنزلي المستقل",
+      "collocations": [
+        "host a personal cloud server",
+        "build a personal cloud server"
+      ],
+      "synonyms": [
+        "home NAS server"
+      ],
+      "antonyms": [
+        "public cloud server"
+      ],
+      "tags": [
+        "hardware",
+        "cloud"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "automated workflow trigger",
+      "pronunciation": "/ˈɔːtəmeɪtɪd ˈwɜːkfləʊ ˈtrɪɡə/",
+      "partOfSpeech": "noun",
+      "definition": "A condition in software that automatically initiates a subsequent task, such as archiving emailed attachments.",
+      "example": "Setting an automated workflow trigger automatically saves incoming PDF invoices directly to Dropbox.",
+      "translation": "محفز ومنطلق تدفق المهام الآلي",
+      "collocations": [
+        "configure an automated workflow trigger",
+        "create an automated workflow trigger"
+      ],
+      "synonyms": [
+        "automation rule"
+      ],
+      "antonyms": [
+        "manual trigger"
+      ],
+      "tags": [
+        "automation",
+        "productivity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wi-fi signal booster",
+      "pronunciation": "/ˈwaɪ faɪ ˈsɪɡnl ˈbuːstə/",
+      "partOfSpeech": "noun",
+      "definition": "A hardware repeater or mesh node designed to extend wireless internet coverage to distant dead zones.",
+      "example": "Installing a wi-fi signal booster in the upstairs hallway eliminated buffering during evening video streaming.",
+      "translation": "جهاز تقوية وتوسيع نطاق إشارة الواي فاي",
+      "collocations": [
+        "plug in a wi-fi signal booster",
+        "dual-band wi-fi signal booster"
+      ],
+      "synonyms": [
+        "wireless range extender",
+        "mesh node"
+      ],
+      "antonyms": [
+        "dead zone"
+      ],
+      "tags": [
+        "networking",
+        "hardware"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital productivity suite",
+      "pronunciation": "/ˈdɪdʒɪtl ˌprɒdʌkˈtɪvəti swiːt/",
+      "partOfSpeech": "noun",
+      "definition": "A bundled collection of business applications including word processors, spreadsheets, and cloud storage.",
+      "example": "Google Workspace and Microsoft 365 are ubiquitous examples of a comprehensive digital productivity suite.",
+      "translation": "حزمة برامج وتطبيقات الإنتاجية المكتبية الرقمية",
+      "collocations": [
+        "adopt a digital productivity suite",
+        "enterprise digital productivity suite"
+      ],
+      "synonyms": [
+        "office suite"
+      ],
+      "antonyms": [],
+      "tags": [
+        "software",
+        "productivity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "device sync status",
+      "pronunciation": "/dɪˈvaɪs sɪŋk ˈsteɪtəs/",
+      "partOfSpeech": "noun",
+      "definition": "The system confirmation indicating whether files on a device are fully harmonized with the cloud repository.",
+      "example": "A green checkmark in the taskbar confirms that your device sync status is completely up to date.",
+      "translation": "حالة اكتمال مزامنة وتطابق بيانات الجهاز مع السحابة",
+      "collocations": [
+        "check device sync status",
+        "verify device sync status"
+      ],
+      "synonyms": [
+        "synchronization state"
+      ],
+      "antonyms": [
+        "sync conflict"
+      ],
+      "tags": [
+        "cloud",
+        "data"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Home Tech Upgrade: Smart Living and Ergonomics",
+      "titleArabic": "ترقية تقنيات المنزل: المعيشة الذكية وبيئة العمل",
+      "setting": "Two remote professionals discuss upgrading their home workspace and devices.",
+      "lines": [
+        {
+          "speaker": "Oliver",
+          "text": "I finally overhauled my home office setup with a dual-monitor workstation and an ergonomic workspace gadget."
+        },
+        {
+          "speaker": "Nora",
+          "text": "That sounds magnificent! Is your workstation equipped with an effective cable management solution?"
+        },
+        {
+          "speaker": "Oliver",
+          "text": "Yes, everything is neatly routed. I also attached a screen glare filter and use a virtual meeting tool with a custom video conferencing background."
+        },
+        {
+          "speaker": "Nora",
+          "text": "Did you connect your smart home devices to a central smart home hub?"
+        },
+        {
+          "speaker": "Oliver",
+          "text": "Indeed. A single smart assistant prompt adjusts our smart home thermostat and activates the smart lighting preset."
+        },
+        {
+          "speaker": "Nora",
+          "text": "Our new wi-fi signal booster eliminated dead zones, and our high-speed broadband plan handles concurrent video calls effortlessly."
+        },
+        {
+          "speaker": "Oliver",
+          "text": "I also installed a biometric smart door lock for seamless keyless entry."
+        },
+        {
+          "speaker": "Nora",
+          "text": "Technology is wonderful when it is seamlessly integrated into domestic routines."
+        }
+      ],
+      "vocabularyUsed": [
+        "home office setup",
+        "dual-monitor workstation",
+        "ergonomic workspace gadget",
+        "cable management solution",
+        "screen glare filter",
+        "virtual meeting tool",
+        "video conferencing background",
+        "smart home device",
+        "smart home hub",
+        "smart assistant prompt",
+        "smart home thermostat",
+        "smart lighting preset",
+        "wi-fi signal booster",
+        "high-speed broadband plan",
+        "smart door lock"
+      ]
+    },
+    {
+      "title": "Digital Wellbeing Dialogue: Curing Screen Fatigue",
+      "titleArabic": "حوار الرفاه الرقمي: علاج إجهاد الشاشات",
+      "setting": "A wellness consultant advises a client on digital minimalism and tech habits.",
+      "lines": [
+        {
+          "speaker": "Consultant",
+          "text": "When did you last run a smartphone addiction check on your screen time dashboard?"
+        },
+        {
+          "speaker": "Client",
+          "text": "Last Sunday, and the statistics were alarming. App notification clutter was interrupting my concentration every ten minutes."
+        },
+        {
+          "speaker": "Consultant",
+          "text": "A thorough digital cleanup session and a regular digital declutter routine should be established immediately."
+        },
+        {
+          "speaker": "Client",
+          "text": "I disabled push alerts and instituted a mandatory tech-free evening every Wednesday."
+        },
+        {
+          "speaker": "Consultant",
+          "text": "Excellent. To rest your eyes before bed, read on a glare-free e-reader screen rather than an illuminated tablet."
+        },
+        {
+          "speaker": "Client",
+          "text": "During work, wearing a noise-canceling headset helps me ignore ambient chatter."
+        },
+        {
+          "speaker": "Consultant",
+          "text": "Monitoring your wearable health metrics and checking your wearable fitness tracker will confirm that your physical stress declines."
+        },
+        {
+          "speaker": "Client",
+          "text": "Embracing digital minimalism has already restored my mental composure."
+        }
+      ],
+      "vocabularyUsed": [
+        "smartphone addiction check",
+        "app notification clutter",
+        "digital cleanup session",
+        "digital declutter routine",
+        "tech-free evening",
+        "e-reader screen",
+        "noise-canceling headset",
+        "wearable health metric",
+        "wearable fitness tracker"
+      ]
+    },
+    {
+      "title": "IT Security and Data Protection Consultation",
+      "titleArabic": "استشارة أمن المعلومات وحماية البيانات الرقمية",
+      "setting": "A freelance designer consults an IT security specialist about data backups and tools.",
+      "lines": [
+        {
+          "speaker": "Designer",
+          "text": "I lost three days of illustration files last year. What automated backup routine do you recommend?"
+        },
+        {
+          "speaker": "IT Specialist",
+          "text": "Pair a reliable cloud backup service with a secondary encrypted backup hard drive and a personal cloud server."
+        },
+        {
+          "speaker": "Designer",
+          "text": "How do I ensure that device sync status is maintained across my laptop and tablet?"
+        },
+        {
+          "speaker": "IT Specialist",
+          "text": "Enable cloud storage sync, and verify your automated workflow triggers whenever a software update alert appears."
+        },
+        {
+          "speaker": "Designer",
+          "text": "I started using a password manager tool and an online banking app featuring biometric verification."
+        },
+        {
+          "speaker": "IT Specialist",
+          "text": "Splendid! When traveling, keep a high-capacity portable power bank to safeguard device battery lifespan."
+        },
+        {
+          "speaker": "Designer",
+          "text": "Our studio is also accelerating our paperless office shift with a unified digital productivity suite."
+        },
+        {
+          "speaker": "IT Specialist",
+          "text": "That guarantees total workflow security and client confidentiality."
+        }
+      ],
+      "vocabularyUsed": [
+        "automated backup routine",
+        "cloud backup service",
+        "backup hard drive",
+        "personal cloud server",
+        "device sync status",
+        "cloud storage sync",
+        "automated workflow trigger",
+        "software update alert",
+        "password manager tool",
+        "online banking app",
+        "portable power bank",
+        "device battery lifespan",
+        "paperless office shift",
+        "digital productivity suite"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Smart Living, Home Automation, and Domestic Integration",
+      "titleArabic": "المعيشة الذكية، أتمتة المنازل، والتكامل التقني المنزلي",
+      "text": "Modern domestic life has been fundamentally revolutionized by connected technology. Within an integrated smart home, every smart home device communicates seamlessly through a central smart home hub. With a single smart assistant prompt, the smart home thermostat adjusts room temperatures, while the smart lighting preset transitions overhead bulbs to warm evening hues. Security is reinforced because biometric smart door locks are operated remotely via encrypted apps. Supported by a dependable high-speed broadband plan and strategic wi-fi signal boosters, households enjoy uninterrupted streaming subscriptions and wireless earbud convenience without network dropouts. Residents also benefit from daily mobile payment convenience and reliable smart calendar reminders that coordinate busy family schedules.",
+      "vocabularyUsed": [
+        "smart home device",
+        "smart home hub",
+        "smart assistant prompt",
+        "smart home thermostat",
+        "smart lighting preset",
+        "smart door lock",
+        "high-speed broadband plan",
+        "wi-fi signal booster",
+        "streaming subscription",
+        "wireless earbud convenience",
+        "mobile payment convenience",
+        "smart calendar reminder"
+      ]
+    },
+    {
+      "title": "Digital Workspace Ergonomics, Productivity, and Workflow Security",
+      "titleArabic": "بيئة العمل الرقمية، الإنتاجية، وأمن تدفق العمليات",
+      "text": "Transitioning to remote employment requires an intentional home office setup and an optimized digital workspace setup that protects physical health and data security. Setting up a dual-monitor workstation alongside beneficial ergonomic workspace gadgets relieves muscular fatigue, while under-desk cable management solutions keep floors clear. Knowledge workers rely on a secure remote desktop tool and a versatile digital note-taking app to collaborate across distances. On the software side, companies accelerate their paperless office shift by deploying a cloud-based digital productivity suite. To safeguard valuable commercial assets, an automated backup routine is maintained through a secure cloud backup service and physical backup hard drive. Furthermore, by configuring automated workflow triggers, teams streamline administrative tasks and verify device sync status effortlessly.",
+      "vocabularyUsed": [
+        "home office setup",
+        "digital workspace setup",
+        "dual-monitor workstation",
+        "ergonomic workspace gadget",
+        "cable management solution",
+        "remote desktop tool",
+        "digital note-taking app",
+        "paperless office shift",
+        "digital productivity suite",
+        "automated backup routine",
+        "cloud backup service",
+        "backup hard drive",
+        "automated workflow trigger",
+        "device sync status"
+      ]
+    },
+    {
+      "title": "Digital Hygiene, Data Sovereignty, and Cognitive Wellbeing",
+      "titleArabic": "النظافة الرقمية، سيادة البيانات، والرفاه الإدراكي",
+      "text": "Maintaining a healthy relationship with personal technology requires consistent digital hygiene. Conducting a weekly smartphone addiction check helps users recognize addictive scrolling, prompting deliberate digital cleanup sessions to silence app notification clutter and perform thorough digital clutter removal. During intensive knowledge work, wearing a noise-canceling headset creates deep concentration, while screen glare filters prevent visual fatigue. In private computing, hosting a personal cloud server and utilizing a reputable password manager tool guarantees privacy. Meanwhile, monitoring steps with a wearable fitness tracker encourages outdoor movement away from displays. Finally, disconnecting completely during a weekly tech-free evening restores mental tranquility, ensuring technology remains a tool for human flourishing rather than cognitive entrapment.",
+      "vocabularyUsed": [
+        "smartphone addiction check",
+        "digital cleanup session",
+        "app notification clutter",
+        "digital clutter removal",
+        "noise-canceling headset",
+        "screen glare filter",
+        "personal cloud server",
+        "password manager tool",
+        "wearable fitness tracker",
+        "tech-free evening"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1545 @@
+{
+  "day": 65,
+  "title": "Causes and Effects",
+  "topic": "Reasons and results",
+  "description": "Explain why things happen and what they cause.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about reasons and results using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Cause and Effect: because of / due to / so...that",
+      "titleArabic": "السبب والنتيجة (Cause and Effect: Because of / Due to / So...that / Such...that)",
+      "explanation": "We use cause and effect structures to show the connection between reasons and their results: 1) 'Because of' and 'Due to' are followed by a noun phrase or gerund to state the cause ('The game was postponed because of heavy snow'; 'His success was due to diligent research'). Formal tip: 'Due to' traditionally follows the verb be ('The delay was due to fog'), while 'because of' modifies action verbs ('Flights were canceled because of fog'). 2) 'So + adjective / adverb + that' shows result ('The storm was so fierce that rooftops were ripped off'). 3) 'Such + (a/an) + adjective + noun + that' also shows result ('It was such a severe drought that rivers dried up completely').",
+      "explanationArabic": "نستخدم تراكيب السبب والنتيجة لتوضيح العلاقة الحتمية بين الأسباب والنتائج المترتبة عليها: 1) Because of و Due to (بسبب / نظراً لـ): يتبعهما اسم أو مصدر (Noun / Gerund) للتعبير عن السبب. ملاحظة دقيقة: تقليدياً تأتي due to بعد فعل be (مثل: 'The delay was due to...'), بينما تأتي because of مع الأفعال الحركية (مثل: 'We canceled because of...'). 2) So + صفة أو ظرف + that (لدرجة أن): للتعبير عن أن شدة الصفة أنتجت نتيجة معينة ('The drought was so severe that crops failed'). 3) Such + صفة + اسم + that (لدرجة أن): تؤدي نفس وظيفة النتيجة ولكن مع وجود اسم موصوف ('It was such a complex problem that auditors took weeks').",
+      "structures": [
+        {
+          "label": "Prepositional Cause · السبب بحرف الجر (Because of / Due to)",
+          "pattern": "Clause + because of / due to + Noun Phrase (or Gerund)",
+          "explanation": "States the causal reason using a noun or noun phrase.",
+          "explanationArabic": "يذكر سبب الحدث باستخدام اسم أو شبه جملة اسمية."
+        },
+        {
+          "label": "Intensive Result with Adjective · النتيجة بالصفة (So...that)",
+          "pattern": "Subject + Verb + so + Adjective / Adverb + that + Result Clause",
+          "explanation": "Shows how an intense quality directly produces an extreme outcome.",
+          "explanationArabic": "يوضح كيف أدت شدة الصفة أو الحال مباشرة لحدوث نتيجة معينة."
+        },
+        {
+          "label": "Intensive Result with Noun · النتيجة بالاسم (Such...that)",
+          "pattern": "Subject + Verb + such + (a/an) + Adjective + Noun + that + Result Clause",
+          "explanation": "Shows result using an intensified descriptive noun phrase.",
+          "explanationArabic": "يعبر عن النتيجة باستخدام تركيب وصفي يتضمن اسماً مسبوقاً بـ such."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The river water levels dropped so low that electricity generators ceased operating.",
+          "translation": "انخفضت مستويات مياه النهر لدرجة منخفضة جداً جعلت مولدات الكهرباء تتوقف عن العمل.",
+          "usesVocabulary": []
+        },
+        {
+          "sentence": "Because of automated sorting robotics, the factory warehouse experienced a remarkable surge in productivity.",
+          "translation": "بسبب روبوتات الفرز المؤتمتة، شهد مستودع المصنع طفرة ملحوظة في الإنتاجية.",
+          "usesVocabulary": []
+        },
+        {
+          "sentence": "It was such an intense catalytic event that it unleashed consequences across the global supply chain.",
+          "translation": "لقد كان حدثاً محفزاً بالغ الشدة لدرجة أنه أطلق العنان لعواقب عبر سلسلة التوريد العالمية.",
+          "usesVocabulary": [
+            "catalytic event",
+            "unleash consequences"
+          ]
+        },
+        {
+          "sentence": "The port container backlog was due to a severe ripple effect stemming from winter blizzards.",
+          "translation": "كان تراكم حاويات الميناء ناجماً عن أثر تموجي حاد نابع من العواصف الثلجية الشتوية.",
+          "usesVocabulary": [
+            "ripple effect",
+            "stem from"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The flight was delayed because of the pilot was sick.",
+          "right": "The flight was delayed because the pilot was sick. (OR: because of the pilot's illness)",
+          "note": "'Because of' requires a noun phrase; use 'because' before a full clause (subject + verb).",
+          "noteArabic": "تتطلب 'because of' اسماً بعدها؛ بينما يتبع 'because' جملة كاملة بها فاعل وفعل."
+        },
+        {
+          "wrong": "It was so difficult problem that nobody could solve it.",
+          "right": "It was such a difficult problem that nobody could solve it. (OR: The problem was so difficult that...)",
+          "note": "Use 'such a + adjective + noun' before a countable noun, not 'so'.",
+          "noteArabic": "استخدم 'such a + صفة + اسم' مع الأسماء المعدودة بدلاً من so."
+        }
+      ],
+      "commonUsage": [
+        "Scientific and environmental reporting: 'The coastal erosion was due to rising tides.' (تُستخدم لشرح الظواهر المناخية والبيئية.)",
+        "Economic trend analysis: 'Inflation accelerated so rapidly that central banks hiked interest rates.' (تُستخدم لتحليل التداعيات الاقتصادية والمالية.)",
+        "Root-cause investigations: 'The train derailment was directly attributable to metal fatigue in the rails.' (تُستخدم لتحديد أسباب الحوادث والأعطال.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "chain reaction",
+      "pronunciation": "/ˈtʃeɪn riˈækʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A chemical or psychological process where a single event sets off an uncontrollable series of similar events.",
+      "example": "The bank bankruptcy set off a disastrous chain reaction across European stock markets.",
+      "translation": "تفاعل متسلسل / ردود فعل متعاقبة",
+      "exampleArabic": "أطلق إفلاس البنك تفاعلاً متسلسلاً كارثياً عبر أسواق الأسهم الأوروبية.",
+      "collocations": [
+        "trigger a chain reaction",
+        "unstoppable chain reaction"
+      ],
+      "synonyms": [
+        "domino effect",
+        "cascade"
+      ],
+      "antonyms": [],
+      "tags": [
+        "causality",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ripple effect",
+      "pronunciation": "/ˈrɪpl ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "The continuing and spreading results of an event or action spreading outwards gradually.",
+      "example": "Rising fuel prices produced a painful ripple effect on food haulage costs.",
+      "translation": "أثر تموجي متتابع / تداعيات متسعة",
+      "exampleArabic": "أنتج ارتفاع أسعار الوقود أثراً تموجياً متتابعاً مؤلماً على تكاليف نقل المواد الغذائية.",
+      "collocations": [
+        "cause a ripple effect",
+        "widespread ripple effect"
+      ],
+      "synonyms": [
+        "knock-on effect"
+      ],
+      "antonyms": [
+        "isolated event"
+      ],
+      "tags": [
+        "consequences",
+        "economics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "domino effect",
+      "pronunciation": "/ˈdɒmɪnəʊ ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "A cumulative effect produced when one event sets off a series of similar cascading events.",
+      "example": "The closure of the main steel plant triggered a devastating domino effect in regional employment.",
+      "translation": "تأثير أحجار الدومينو المتساقطة",
+      "exampleArabic": "أدى إغلاق مصنع الصلب الرئيسي إلى إطلاق تأثير أحجار الدومينو المدمر في العمالة الإقليمية.",
+      "collocations": [
+        "set off a domino effect",
+        "fear a domino effect"
+      ],
+      "synonyms": [
+        "cascade"
+      ],
+      "antonyms": [],
+      "tags": [
+        "causality",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "root origin",
+      "pronunciation": "/ruːt ˈɒrɪdʒɪn/",
+      "partOfSpeech": "noun",
+      "definition": "The primary, fundamental source or starting point of a complex phenomenon.",
+      "example": "Investigative historians traced the root origin of the dispute back to colonial border treaties.",
+      "translation": "الأصل الجذري / المنبع الأساسي",
+      "exampleArabic": "تتبع المؤرخون المحققون الأصل الجذري للنزاع وصولاً إلى معاهدات الحدود الاستعمارية.",
+      "collocations": [
+        "discover the root origin",
+        "trace root origins"
+      ],
+      "synonyms": [
+        "fundamental genesis"
+      ],
+      "antonyms": [
+        "superficial symptom"
+      ],
+      "tags": [
+        "origins",
+        "history"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "catalytic event",
+      "pronunciation": "/ˌkætəˈlɪtɪk ɪˈvent/",
+      "partOfSpeech": "noun",
+      "definition": "An occurrence that decisively accelerates a process or precipitates dramatic change.",
+      "example": "The unexpected viral lecture served as a catalytic event for universal open-access learning.",
+      "translation": "حدث محفّز ومسرّع للتحول",
+      "exampleArabic": "كانت المحاضرة واسعة الانتشار بمثابة حدث محفّز ومسرّع لتعليم مجاني ومفتوح للجميع.",
+      "collocations": [
+        "act as a catalytic event",
+        "crucial catalytic event"
+      ],
+      "synonyms": [
+        "transformative spark"
+      ],
+      "antonyms": [
+        "dampening factor"
+      ],
+      "tags": [
+        "catalyst",
+        "transformation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "primary trigger",
+      "pronunciation": "/ˈpraɪməri ˈtrɪɡə/",
+      "partOfSpeech": "noun",
+      "definition": "The main event, statement, or circumstance that initiates a broader reaction.",
+      "example": "The abrupt cancellation of agricultural subsidies was the primary trigger for the farm strikes.",
+      "translation": "الشرارة والمحفز الأولي الرئيسي",
+      "exampleArabic": "كان الإلغاء المفاجئ للدعم الزراعي هو المحفز الأولي الرئيسي لإضرابات المزارعين.",
+      "collocations": [
+        "identify the primary trigger",
+        "serve as the primary trigger"
+      ],
+      "synonyms": [
+        "initial spark"
+      ],
+      "antonyms": [
+        "calming factor"
+      ],
+      "tags": [
+        "causality",
+        "crisis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "antecedent",
+      "pronunciation": "/ˌæntɪˈsiːdnt/",
+      "partOfSpeech": "noun",
+      "definition": "A thing or event that existed before or logically preceded another.",
+      "example": "The political upheavals of the nineteenth century were direct antecedents to modern democracy.",
+      "translation": "سابقة تاريخية / ظرف ممهد لما بعده",
+      "exampleArabic": "كانت الاضطرابات السياسية في القرن التاسع عشر سوابق مباشرة مهدت للديمقراطية الحديثة.",
+      "collocations": [
+        "historical antecedent",
+        "trace antecedents"
+      ],
+      "synonyms": [
+        "precursor",
+        "forerunner"
+      ],
+      "antonyms": [
+        "sequel"
+      ],
+      "tags": [
+        "history",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "underlying cause",
+      "pronunciation": "/ˌʌndəˈlaɪɪŋ kɔːz/",
+      "partOfSpeech": "noun",
+      "definition": "The basic, foundational reason for something, usually hidden beneath surface symptoms.",
+      "example": "Chronic sleep deprivation was the underlying cause of the pilot's delayed reaction time.",
+      "translation": "السبب الدفين الكامن وراء الأمر",
+      "exampleArabic": "كان الحرمان المزمن من النوم هو السبب الدفين الكامن وراء تأخر سرعة استجابة الطيار.",
+      "collocations": [
+        "address the underlying cause",
+        "root underlying cause"
+      ],
+      "synonyms": [
+        "fundamental factor"
+      ],
+      "antonyms": [
+        "incidental factor"
+      ],
+      "tags": [
+        "analysis",
+        "medicine"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "direct consequence",
+      "pronunciation": "/dəˈrekt ˈkɒnsɪkwəns/",
+      "partOfSpeech": "noun",
+      "definition": "A result that proceeds immediately and straight from a specific cause or action.",
+      "example": "Severe traffic congestion was the direct consequence of the sudden highway lane closures.",
+      "translation": "نتيجة مباشرة وفورية",
+      "exampleArabic": "كان الازدحام المروري الخانق نتيجة مباشرة وفورية لإغلاق مسارات الطريق السريع المفاجئ.",
+      "collocations": [
+        "as a direct consequence of",
+        "inevitable direct consequence"
+      ],
+      "synonyms": [
+        "immediate result"
+      ],
+      "antonyms": [
+        "indirect byproduct"
+      ],
+      "tags": [
+        "outcomes",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "inevitable aftermath",
+      "pronunciation": "/ɪnˈevɪtəbl ˈɑːftəmæθ/",
+      "partOfSpeech": "noun",
+      "definition": "The unavoidable period or condition following a traumatic, momentous, or disastrous event.",
+      "example": "Economic stagnation was the inevitable aftermath of the protracted civil conflict.",
+      "translation": "التبعات الحتمية اللاحقة",
+      "exampleArabic": "كان الركود الاقتصادي من التبعات الحتمية اللاحقة للنزاع الداخلي الذي طال أمده.",
+      "collocations": [
+        "deal with the inevitable aftermath",
+        "during the inevitable aftermath"
+      ],
+      "synonyms": [
+        "unavoidable fallout"
+      ],
+      "antonyms": [],
+      "tags": [
+        "outcomes",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "long-term fallout",
+      "pronunciation": "/ˌlɒŋ ˈtɜːm ˈfɔːlaʊt/",
+      "partOfSpeech": "noun",
+      "definition": "The extended, lingering negative consequences of an action, scandal, or catastrophe.",
+      "example": "The financial sector spent an entire decade recovering from the long-term fallout of the credit crash.",
+      "translation": "التداعيات والآثار السلبية طويلة الأجل",
+      "exampleArabic": "أمضى القطاع المالي عقداً كاملاً في التعافي من التداعيات السلبية طويلة الأجل لانهيار الائتمان.",
+      "collocations": [
+        "mitigate long-term fallout",
+        "suffer long-term fallout"
+      ],
+      "synonyms": [
+        "extended repercussions"
+      ],
+      "antonyms": [
+        "fleeting impact"
+      ],
+      "tags": [
+        "outcomes",
+        "economics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "secondary repercussion",
+      "pronunciation": "/ˈsekəndri ˌriːpəˈkʌʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An unintended or indirect consequence occurring after the main impact of an event.",
+      "example": "Higher insurance premiums were an unexpected secondary repercussion of the coastal storm.",
+      "translation": "تداعيات وتبعات ثانوية غير مباشرة",
+      "exampleArabic": "كان ارتفاع أقساط التأمين من التداعيات الثانوية غير المباشرة للعاصفة الساحلية.",
+      "collocations": [
+        "face secondary repercussions",
+        "serious secondary repercussions"
+      ],
+      "synonyms": [
+        "indirect reverberation"
+      ],
+      "antonyms": [
+        "primary impact"
+      ],
+      "tags": [
+        "effects",
+        "complexity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "knock-on effect",
+      "pronunciation": "/ˈnɒk ɒn ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "A secondary, indirect, or cumulative result caused by an earlier action.",
+      "example": "Flight delays in Frankfurt had a knock-on effect across five international transit hubs.",
+      "translation": "أثر ارتدادي متتابع / صدى غير مباشر",
+      "exampleArabic": "أحدث تأخر الرحلات في فرانكفورت أثراً ارتدادياً متتابعاً عبر خمس محطات ترانزيت دولية.",
+      "collocations": [
+        "have a knock-on effect",
+        "severe knock-on effects"
+      ],
+      "synonyms": [
+        "chain reaction",
+        "ripple effect"
+      ],
+      "antonyms": [],
+      "tags": [
+        "logistics",
+        "consequences"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "snowball effect",
+      "pronunciation": "/ˈsnəʊbɔːl ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "A situation in which something increases in size or importance at an accelerating rate.",
+      "example": "A small accounting discrepancy generated a snowball effect that brought down the firm.",
+      "translation": "تأثير كرة الثلج المتدحرجة المتضخمة",
+      "exampleArabic": "أحدث فارق حسابي صغير تأثيراً ككرة الثلج المتضخمة أدى في النهاية لإسقاط الشركة.",
+      "collocations": [
+        "create a snowball effect",
+        "snowball effect gained momentum"
+      ],
+      "synonyms": [
+        "exponential growth"
+      ],
+      "antonyms": [
+        "stabilizing deceleration"
+      ],
+      "tags": [
+        "growth",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "butterfly effect",
+      "pronunciation": "/ˈbʌtəflaɪ ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "The chaotic scientific principle that a minute localized change can cause large effects elsewhere.",
+      "example": "Meteorologists study the butterfly effect to explain how slight temperature shifts spark hurricanes.",
+      "translation": "أثر الفراشة (في نظرية الفوضى)",
+      "exampleArabic": "يدرس خبراء الأرصاد الجوية أثر الفراشة لتفسير كيف تُطلق تغيرات طفيفة في الحرارة أعاصير عاتية.",
+      "collocations": [
+        "demonstrate the butterfly effect",
+        "classic butterfly effect"
+      ],
+      "synonyms": [
+        "sensitive dependence"
+      ],
+      "antonyms": [],
+      "tags": [
+        "science",
+        "chaos"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "causality",
+      "pronunciation": "/kɔːˈzæləti/",
+      "partOfSpeech": "noun",
+      "definition": "The relationship between cause and effect; the principle that everything has a cause.",
+      "example": "Epidemiologists established clear causality between smoking and pulmonary diseases.",
+      "translation": "السببية / علاقة العلة والمعلول",
+      "exampleArabic": "أثبت علماء الأوبئة سببية قاطعة بين التدخين والأمراض الرئوية.",
+      "collocations": [
+        "establish causality",
+        "prove direct causality"
+      ],
+      "synonyms": [
+        "causal relationship"
+      ],
+      "antonyms": [
+        "random correlation"
+      ],
+      "tags": [
+        "science",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "causation",
+      "pronunciation": "/kɔːˈzeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The action of causing something; the relation between cause and effect in law or logic.",
+      "example": "Correlation does not necessarily imply causation in statistical social sciences.",
+      "translation": "التسبيب / إحداث الأثر",
+      "exampleArabic": "لا يعني الارتباط الإحصائي بالضرورة وجود تسبيب وعلة في العلوم الاجتماعية.",
+      "collocations": [
+        "correlation vs causation",
+        "prove causation"
+      ],
+      "synonyms": [
+        "agency",
+        "causality"
+      ],
+      "antonyms": [
+        "coincidence"
+      ],
+      "tags": [
+        "statistics",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "spillover effect",
+      "pronunciation": "/ˈspɪləʊvər ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "An impact that seemingly unrelated events have on greater systems or outside parties.",
+      "example": "Research funding in aerospace generated a lucrative spillover effect in consumer electronics.",
+      "translation": "أثر الامتداد والفيضان الخارجي",
+      "exampleArabic": "ولّد تمويل الأبحاث في علوم الفضاء أثراً امتدادياً مربحاً في الإلكترونيات الاستهلاكية.",
+      "collocations": [
+        "positive spillover effect",
+        "cross-border spillover effect"
+      ],
+      "synonyms": [
+        "external effect"
+      ],
+      "antonyms": [
+        "contained impact"
+      ],
+      "tags": [
+        "economics",
+        "innovation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "collateral damage",
+      "pronunciation": "/kəˈlætərəl ˈdæmɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "Inadvertent, incidental damage, injury, or loss suffered by bystanders or innocent parties.",
+      "example": "The currency devaluation caused terrible collateral damage to modest middle-class savings.",
+      "translation": "أضرار جانبية / خسائر تبعية غير مقصودة",
+      "exampleArabic": "تسبب خفض قيمة العملة في أضرار جانبية فادحة لمدخرات الطبقة المتوسطة البسيطة.",
+      "collocations": [
+        "suffer collateral damage",
+        "inflict collateral damage"
+      ],
+      "synonyms": [
+        "incidental harm"
+      ],
+      "antonyms": [
+        "targeted outcome"
+      ],
+      "tags": [
+        "consequences",
+        "harm"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "byproduct",
+      "pronunciation": "/ˈbaɪprɒdʌkt/",
+      "partOfSpeech": "noun",
+      "definition": "An incidental or secondary product made in the manufacture or synthesis of something else.",
+      "example": "Renewable methane gas was an unexpected byproduct of industrial water filtration.",
+      "translation": "منتج ثانوي / ناتج عرضي",
+      "exampleArabic": "كان غاز الميثان المتجدد منتجاً ثانوياً غير متوقع لتنقية مياه المصانع.",
+      "collocations": [
+        "useful byproduct",
+        "natural byproduct"
+      ],
+      "synonyms": [
+        "side effect",
+        "spin-off"
+      ],
+      "antonyms": [
+        "primary product"
+      ],
+      "tags": [
+        "industry",
+        "science"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "culmination",
+      "pronunciation": "/ˌkʌlmɪˈneɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The highest or climatic point of something, especially attained after a long struggle.",
+      "example": "Winning the Nobel Prize was the glorious culmination of her thirty-year biochemical career.",
+      "translation": "ذروة التتويج / مسك الختام بعد جهد",
+      "exampleArabic": "كان الفوز بجائزة نوبل ذروة التتويج المجيد لمسيرتها الكيموحيوية الممتدة لثلاثين عاماً.",
+      "collocations": [
+        "mark the culmination of",
+        "reach its culmination"
+      ],
+      "synonyms": [
+        "climax",
+        "pinnacle"
+      ],
+      "antonyms": [
+        "initial inception"
+      ],
+      "tags": [
+        "achievement",
+        "outcomes"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "precipitating factor",
+      "pronunciation": "/prɪˈsɪpɪteɪtɪŋ ˈfæktə/",
+      "partOfSpeech": "noun",
+      "definition": "An element that causes an undesirable event or clinical crisis to happen suddenly.",
+      "example": "Dehydration was the precipitating factor that caused the marathon runner's collapse.",
+      "translation": "العامل المعجل بحدوث الأزمة",
+      "exampleArabic": "كان الجفاف هو العامل المعجل الذي تسبب في انهيار عداء الماراثون فجأة.",
+      "collocations": [
+        "major precipitating factor",
+        "act as a precipitating factor"
+      ],
+      "synonyms": [
+        "trigger factor"
+      ],
+      "antonyms": [
+        "mitigating element"
+      ],
+      "tags": [
+        "medicine",
+        "crisis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "prime mover",
+      "pronunciation": "/ˌpraɪm ˈmuːvə/",
+      "partOfSpeech": "noun",
+      "definition": "A person or thing that initiates a major development or action.",
+      "example": "The governor was the prime mover behind the statewide high-speed rail initiative.",
+      "translation": "المحرك والمبادر الرئيسي",
+      "exampleArabic": "كان المحافظ هو المحرك الرئيسي والمبادر وراء مشروع قطار السرعة الفائقة بالولاية.",
+      "collocations": [
+        "act as the prime mover",
+        "acknowledged prime mover"
+      ],
+      "synonyms": [
+        "instigator",
+        "driving force"
+      ],
+      "antonyms": [
+        "passive observer"
+      ],
+      "tags": [
+        "leadership",
+        "causality"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "contributory cause",
+      "pronunciation": "/kənˈtrɪbjətəri kɔːz/",
+      "partOfSpeech": "noun",
+      "definition": "A condition that helps bring about a result, though not solely sufficient on its own.",
+      "example": "Slippery wet asphalt was a contributory cause in the multicar highway collision.",
+      "translation": "سبب مساهم ومشارك في الحدث",
+      "exampleArabic": "كان الأسفلت الزلق المبلل سبباً مساهماً في تصادم السيارات المتعددة على الطريق السريع.",
+      "collocations": [
+        "recognized contributory cause",
+        "play a contributory cause"
+      ],
+      "synonyms": [
+        "partial factor"
+      ],
+      "antonyms": [
+        "sole cause"
+      ],
+      "tags": [
+        "legal",
+        "causality"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stem from",
+      "pronunciation": "/stem frəm/",
+      "partOfSpeech": "verb",
+      "definition": "To originate from, be caused by, or develop out of something specific.",
+      "example": "Many modern social frictions stem from technological alienation and hyper-polarization.",
+      "translation": "ينبع من / يتفرع عن أصل",
+      "exampleArabic": "تنبع العديد من الاحتكاكات الاجتماعية المعاصرة من الاغتراب التكنولوجي والاستقطاب الحاد.",
+      "verbForms": {
+        "v1": "stem from",
+        "v2": "stemmed from",
+        "v3": "stemmed from"
+      },
+      "collocations": [
+        "stem from childhood",
+        "directly stem from"
+      ],
+      "synonyms": [
+        "originate in",
+        "emanate from"
+      ],
+      "antonyms": [
+        "culminate in"
+      ],
+      "tags": [
+        "origins",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "originate from",
+      "pronunciation": "/əˈrɪdʒɪneɪt frəm/",
+      "partOfSpeech": "verb",
+      "definition": "To have a specified beginning, genesis, or original source.",
+      "example": "The mysterious viral outbreak was shown to originate from wildlife trading markets.",
+      "translation": "ينشأ عن / يعود أصله إلى",
+      "exampleArabic": "ثبت أن التفشي الفيروسي الغامض نشأ عن أسواق تجارة الحيوانات البرية.",
+      "verbForms": {
+        "v1": "originate from",
+        "v2": "originated from",
+        "v3": "originated from"
+      },
+      "collocations": [
+        "originate from ancient rituals",
+        "originate from laboratory"
+      ],
+      "synonyms": [
+        "spring from"
+      ],
+      "antonyms": [
+        "terminate in"
+      ],
+      "tags": [
+        "origins",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "give rise to",
+      "pronunciation": "/ɡɪv raɪz tuː/",
+      "partOfSpeech": "verb",
+      "definition": "To cause or induce something to happen, exist, or develop.",
+      "example": "The novel algorithm gave rise to an entire generation of generative visual tools.",
+      "translation": "يؤدي إلى ظهور / يفسح المجال لـ",
+      "exampleArabic": "أدت الخوارزمية المبتكرة إلى ظهور جيل كامل من أدوات التوليد البصري والذكاء الاصطناعي.",
+      "verbForms": {
+        "v1": "give rise to",
+        "v2": "gave rise to",
+        "v3": "given rise to"
+      },
+      "collocations": [
+        "give rise to speculation",
+        "give rise to new industries"
+      ],
+      "synonyms": [
+        "engender",
+        "provoke"
+      ],
+      "antonyms": [
+        "suppress"
+      ],
+      "tags": [
+        "creation",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bring about",
+      "pronunciation": "/brɪŋ əˈbaʊt/",
+      "partOfSpeech": "verb",
+      "definition": "To cause something momentous to occur; to produce change.",
+      "example": "Dedicated grassroots campaigners brought about landmark civil rights legislation.",
+      "translation": "يحدث / يولد ويسبب تغييراً جذرياً",
+      "exampleArabic": "أحدث النشطاء الشعبيون المتفانون تغييراً وأقروا تشريعات تاريخية للحقوق المدنية.",
+      "verbForms": {
+        "v1": "bring about",
+        "v2": "brought about",
+        "v3": "brought about"
+      },
+      "collocations": [
+        "bring about change",
+        "bring about revolution"
+      ],
+      "synonyms": [
+        "cause",
+        "effectuate"
+      ],
+      "antonyms": [
+        "prevent"
+      ],
+      "tags": [
+        "change",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "spark off",
+      "pronunciation": "/spɑːk ɒf/",
+      "partOfSpeech": "verb",
+      "definition": "To suddenly provoke, stimulate, or unleash an energetic event or conflict.",
+      "example": "The referee's biased penalty call sparked off widespread riots in the grandstands.",
+      "translation": "يشعل فتيل / يطلق شرارة أزمة",
+      "exampleArabic": "أشعل قرار ركلة الجزاء المنحاز من الحكم فتيل أعمال شغب واسعة في المدرجات.",
+      "verbForms": {
+        "v1": "spark off",
+        "v2": "sparked off",
+        "v3": "sparked off"
+      },
+      "collocations": [
+        "spark off protests",
+        "spark off debate"
+      ],
+      "synonyms": [
+        "ignite",
+        "trigger"
+      ],
+      "antonyms": [
+        "extinguish"
+      ],
+      "tags": [
+        "conflict",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "trigger off",
+      "pronunciation": "/ˈtrɪɡər ɒf/",
+      "partOfSpeech": "verb",
+      "definition": "To set in motion a sequence of explosive actions or emotional responses.",
+      "example": "A sudden supply chain rumor triggered off aggressive consumer hoarding in supermarkets.",
+      "translation": "يستحث / يُطلق العنان لموجة تصرفات",
+      "exampleArabic": "استحثت شائعة مفاجئة عن سلاسل الإمداد موجة اكتناز وتخزين شرس من المستهلكين.",
+      "verbForms": {
+        "v1": "trigger off",
+        "v2": "triggered off",
+        "v3": "triggered off"
+      },
+      "collocations": [
+        "trigger off panic",
+        "trigger off inflation"
+      ],
+      "synonyms": [
+        "set off",
+        "precipitate"
+      ],
+      "antonyms": [
+        "quench"
+      ],
+      "tags": [
+        "behavior",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "culminate in",
+      "pronunciation": "/ˈkʌlmɪneɪt ɪn/",
+      "partOfSpeech": "verb",
+      "definition": "To reach a final climatic stage or decisive result after sustained development.",
+      "example": "Decades of escalating diplomatic friction culminated in an all-out trade embargo.",
+      "translation": "ينتهي إلى ذروته في / يبلغ أوجه في",
+      "exampleArabic": "بلغت عقود من الاحتكاك الدبلوماسي المتصاعد ذروتها في فرض حظر تجاري شامل.",
+      "verbForms": {
+        "v1": "culminate in",
+        "v2": "culminated in",
+        "v3": "culminated in"
+      },
+      "collocations": [
+        "culminate in victory",
+        "culminate in disaster"
+      ],
+      "synonyms": [
+        "climax with"
+      ],
+      "antonyms": [
+        "start with"
+      ],
+      "tags": [
+        "outcomes",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "precipitate crisis",
+      "pronunciation": "/prɪˈsɪpɪteɪt ˈkraɪsɪs/",
+      "partOfSpeech": "verb",
+      "definition": "To cause a dangerous, turbulent crisis to happen suddenly and prematurely.",
+      "example": "The unexpected resignation of the central bank governor precipitated a currency crisis.",
+      "translation": "يُعجل بوقوع أزمة عاصفة",
+      "exampleArabic": "عجلت الاستقالة غير المتوقعة لمحافظ البنك المركزي بوقوع أزمة عملة خانقة.",
+      "verbForms": {
+        "v1": "precipitate crisis",
+        "v2": "precipitated crisis",
+        "v3": "precipitated crisis"
+      },
+      "collocations": [
+        "precipitate a constitutional crisis",
+        "threaten to precipitate crisis"
+      ],
+      "synonyms": [
+        "hasten breakdown"
+      ],
+      "antonyms": [
+        "delay crisis"
+      ],
+      "tags": [
+        "crisis",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unleash consequences",
+      "pronunciation": "/ʌnˈliːʃ ˈkɒnsɪkwənsɪz/",
+      "partOfSpeech": "verb",
+      "definition": "To release or trigger a torrent of powerful, uncontrollable outcomes.",
+      "example": "Careless deforestation unleashed devastating ecological consequences upon the river delta.",
+      "translation": "يطلق العنان لعواقب مدمرة",
+      "exampleArabic": "أطلقت إزالة الغابات المتهورة العنان لعواقب بيئية مدمرة على دلتا النهر.",
+      "verbForms": {
+        "v1": "unleash consequences",
+        "v2": "unleashed consequences",
+        "v3": "unleashed consequences"
+      },
+      "collocations": [
+        "unleash unforeseen consequences",
+        "unleash destructive consequences"
+      ],
+      "synonyms": [
+        "let loose repercussions"
+      ],
+      "antonyms": [
+        "contain damage"
+      ],
+      "tags": [
+        "destruction",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ensue from",
+      "pronunciation": "/ɪnˈsjuː frəm/",
+      "partOfSpeech": "verb",
+      "definition": "To happen or occur afterwards as a direct logical consequence of something.",
+      "example": "Tremendous civic pride ensued from the national soccer team's continental triumph.",
+      "translation": "ينتج عن / يترتب تالياً على",
+      "exampleArabic": "ترتب فخر مدني وشعبي هائل تالياً على الفوز القاري لمنتخب كرة القدم الوطني.",
+      "verbForms": {
+        "v1": "ensue from",
+        "v2": "ensued from",
+        "v3": "ensued from"
+      },
+      "collocations": [
+        "chaos ensued from",
+        "difficulties ensue from"
+      ],
+      "synonyms": [
+        "follow from",
+        "result from"
+      ],
+      "antonyms": [
+        "precede"
+      ],
+      "tags": [
+        "outcomes",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "correlate with",
+      "pronunciation": "/ˈkɒrəleɪt wɪð/",
+      "partOfSpeech": "verb",
+      "definition": "To have a mutual relationship or connection, where one thing affects or depends on another.",
+      "example": "High levels of childhood literacy correlate directly with lifetime socioeconomic security.",
+      "translation": "يرتبط ارتباطاً طردياً مع",
+      "exampleArabic": "ترتبط المستويات المرتفعة من محو أمية الأطفال ارتباطاً طردياً بالأمان الاجتماعي طوال الحياة.",
+      "verbForms": {
+        "v1": "correlate with",
+        "v2": "correlated with",
+        "v3": "correlated with"
+      },
+      "collocations": [
+        "strongly correlate with",
+        "positively correlate with"
+      ],
+      "synonyms": [
+        "link with"
+      ],
+      "antonyms": [
+        "diverge from"
+      ],
+      "tags": [
+        "statistics",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "attributable to",
+      "pronunciation": "/əˈtrɪbjətəbl tuː/",
+      "partOfSpeech": "adjective",
+      "definition": "Capable of being considered as caused by something specific.",
+      "example": "The factory's record quarterly output was largely attributable to automated robotic welding.",
+      "translation": "يُعزى إلى / ناجم عن",
+      "exampleArabic": "كان الإنتاج الفصلي القياسي للمصنع يُعزى إلى حد كبير للحام الآلي المؤتمت.",
+      "collocations": [
+        "largely attributable to",
+        "directly attributable to"
+      ],
+      "synonyms": [
+        "ascribable to",
+        "due to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "causality",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ascribe to",
+      "pronunciation": "/əˈskraɪb tuː/",
+      "partOfSpeech": "verb",
+      "definition": "To attribute something to a cause, person, or origin.",
+      "example": "Philosophers ascribe the emergence of written morality to early agricultural settlements.",
+      "translation": "يعزو الشيء إلى / ينسب الفضل أو السبب لـ",
+      "exampleArabic": "يعزو الفلاسفة ظهور الأخلاق المكتوبة للمستوطنات الزراعية البشرية الأولى.",
+      "verbForms": {
+        "v1": "ascribe to",
+        "v2": "ascribed to",
+        "v3": "ascribed to"
+      },
+      "collocations": [
+        "ascribe success to",
+        "ascribe failure to"
+      ],
+      "synonyms": [
+        "attribute to"
+      ],
+      "antonyms": [],
+      "tags": [
+        "attribution",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "trace back to",
+      "pronunciation": "/treɪs bæk tuː/",
+      "partOfSpeech": "verb",
+      "definition": "To discover the primary origin or beginning of something by backtracking its history.",
+      "example": "Linguists can trace modern Romance vocabularies back to colloquial Latin dialects.",
+      "translation": "يتتبع الشيء وصولاً إلى أصله وجذوره",
+      "exampleArabic": "يستطيع علماء اللسانيات تتبع مفردات اللغات الرومانسية وصولاً للهجات اللاتينية العامية.",
+      "verbForms": {
+        "v1": "trace back to",
+        "v2": "traced back to",
+        "v3": "traced back to"
+      },
+      "collocations": [
+        "trace ancestry back to",
+        "trace roots back to"
+      ],
+      "synonyms": [
+        "derive from"
+      ],
+      "antonyms": [],
+      "tags": [
+        "history",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "resultant impact",
+      "pronunciation": "/rɪˈzʌltənt ˈɪmpækt/",
+      "partOfSpeech": "noun",
+      "definition": "The forceful effect produced as an immediate outcome of an event or shock.",
+      "example": "The drought was so severe that the resultant impact on crop yields devastated farmers.",
+      "translation": "الأثر والوطأة المترتبة على الحدث",
+      "exampleArabic": "كان الجفاف شديداً جداً لدرجة أن الأثر المترتب على محاصيل الحبوب دمر المزارعين.",
+      "collocations": [
+        "measure resultant impact",
+        "severe resultant impact"
+      ],
+      "synonyms": [
+        "consequential effect"
+      ],
+      "antonyms": [],
+      "tags": [
+        "outcomes",
+        "analysis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "downstream effect",
+      "pronunciation": "/ˌdaʊnstriːm ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "A consequence that happens later in time or further along a process.",
+      "example": "Microplastic contamination in mountain streams has alarming downstream effects on sea life.",
+      "translation": "الأثر المتدفق لاحقاً في المراحل التالية",
+      "exampleArabic": "يخلف تلوث الجسيمات البلاستيكية في الجداول الجبلية آثاراً مقلقة تتدفق لاحقاً على الحياة البحرية.",
+      "collocations": [
+        "negative downstream effects",
+        "monitor downstream effects"
+      ],
+      "synonyms": [
+        "subsequent outcome"
+      ],
+      "antonyms": [
+        "upstream cause"
+      ],
+      "tags": [
+        "environment",
+        "systems"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "far-reaching impact",
+      "pronunciation": "/ˌfɑː ˈriːtʃɪŋ ˈɪmpækt/",
+      "partOfSpeech": "noun",
+      "definition": "An extensive influence that extends over a wide area, duration, or population.",
+      "example": "The invention of movable type printing had a far-reaching impact on literacy worldwide.",
+      "translation": "أثر بعيد المدى وبالغ الامتداد",
+      "exampleArabic": "كان لاختراع الطباعة بالحروف المتحركة أثر بعيد المدى وبالغ الامتداد على محو الأمية عالمياً.",
+      "collocations": [
+        "have a far-reaching impact",
+        "profound far-reaching impact"
+      ],
+      "synonyms": [
+        "wide-ranging influence"
+      ],
+      "antonyms": [
+        "limited effect"
+      ],
+      "tags": [
+        "history",
+        "transformation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "profound effect",
+      "pronunciation": "/prəˈfaʊnd ɪˈfekt/",
+      "partOfSpeech": "noun",
+      "definition": "A deeply rooted, powerful, and fundamental influence on thoughts or events.",
+      "example": "Mentorship during her teenage years had a profound effect on her scientific career.",
+      "translation": "أثر عميق وجوهري",
+      "exampleArabic": "كان للإرشاد في سنوات مراهقتها أثر عميق وجوهري على مسيرتها العلمية.",
+      "collocations": [
+        "exert a profound effect",
+        "profound effect on personality"
+      ],
+      "synonyms": [
+        "deep impression"
+      ],
+      "antonyms": [
+        "superficial touch"
+      ],
+      "tags": [
+        "transformation",
+        "emotions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "causal link",
+      "pronunciation": "/ˈkɔːzl lɪŋk/",
+      "partOfSpeech": "noun",
+      "definition": "A verified relationship demonstrating that one event directly causes another.",
+      "example": "Medical researchers discovered an undeniable causal link between asbestos and lung cancer.",
+      "translation": "رابط سببي موثق",
+      "exampleArabic": "اكتشف باحثو الطب رابطاً سببياً لا يمكن إنكاره بين ألياف الأسبستوس وسرطان الرئة.",
+      "collocations": [
+        "prove a causal link",
+        "missing causal link"
+      ],
+      "synonyms": [
+        "causal connection"
+      ],
+      "antonyms": [
+        "unrelated correlation"
+      ],
+      "tags": [
+        "science",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cause and effect relationship",
+      "pronunciation": "/ˌkɔːz ənd ɪˈfekt rɪˈleɪʃnʃɪp/",
+      "partOfSpeech": "noun",
+      "definition": "A connection between events where the first brings about the occurrence of the second.",
+      "example": "Science teaches children to examine the cause and effect relationship in nature.",
+      "translation": "علاقة السبب بالنتيجة",
+      "exampleArabic": "يعلم العلم الأطفال فحص واستكشاف علاقة السبب بالنتيجة في الطبيعة.",
+      "collocations": [
+        "analyze cause and effect relationship",
+        "direct cause and effect relationship"
+      ],
+      "synonyms": [
+        "causal interaction"
+      ],
+      "antonyms": [],
+      "tags": [
+        "logic",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "correlative link",
+      "pronunciation": "/kəˈrelətɪv lɪŋk/",
+      "partOfSpeech": "noun",
+      "definition": "A statistical connection showing two variables changing together without proving causation.",
+      "example": "Statisticians observed a strong correlative link between ice cream sales and drowning rates.",
+      "translation": "رابط ترابطي تلازمي",
+      "exampleArabic": "لاحظ الإحصائيون رابطاً ترابطياً تلازمياً وثيقاً بين مبيعات المثلجات ومعدلات الغرق.",
+      "collocations": [
+        "identify a correlative link",
+        "mere correlative link"
+      ],
+      "synonyms": [
+        "statistical association"
+      ],
+      "antonyms": [
+        "causal link"
+      ],
+      "tags": [
+        "statistics",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "direct catalyst",
+      "pronunciation": "/dəˈrekt ˈkætəlɪst/",
+      "partOfSpeech": "noun",
+      "definition": "A substance, person, or event that immediately provokes or quickens change.",
+      "example": "The viral documentary acted as a direct catalyst for nationwide animal welfare laws.",
+      "translation": "محفز مباشر مسرع للحدث",
+      "exampleArabic": "عمل الفيلم الوثائقي واسع الانتشار كمحفز مباشر لتشريعات حماية الحيوان على مستوى البلاد.",
+      "collocations": [
+        "serve as a direct catalyst",
+        "direct catalyst for reform"
+      ],
+      "synonyms": [
+        "primary accelerator"
+      ],
+      "antonyms": [
+        "inhibitor"
+      ],
+      "tags": [
+        "change",
+        "catalyst"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "contributing element",
+      "pronunciation": "/kənˈtrɪbjuːtɪŋ ˈelɪmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A component or factor that plays a role in generating a complex result.",
+      "example": "Lack of adequate street lighting was a major contributing element to nighttime pedestrian collisions.",
+      "translation": "عنصر مساهم ومشارك في النتيجة",
+      "exampleArabic": "كان غياب إنارة الشوارع الكافية عنصراً مساهماً رئيسياً في حوادث المشاة الليلية.",
+      "collocations": [
+        "significant contributing element",
+        "key contributing element"
+      ],
+      "synonyms": [
+        "partial component"
+      ],
+      "antonyms": [],
+      "tags": [
+        "analysis",
+        "causality"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "subsequent result",
+      "pronunciation": "/ˈsʌbsɪkwənt rɪˈzʌlt/",
+      "partOfSpeech": "noun",
+      "definition": "An outcome or event that takes place after and as a result of an initial event.",
+      "example": "The subsequent result of opening international trade was a surge in port container traffic.",
+      "translation": "النتيجة اللاحقة المترتبة",
+      "exampleArabic": "كانت النتيجة اللاحقة المترتبة على فتح التجارة الدولية هي طفرة في حركة الحاويات بالموانئ.",
+      "collocations": [
+        "expect subsequent results",
+        "subsequent result of action"
+      ],
+      "synonyms": [
+        "ensuing consequence"
+      ],
+      "antonyms": [
+        "antecedent"
+      ],
+      "tags": [
+        "outcomes",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "inevitable culmination",
+      "pronunciation": "/ɪnˈevɪtəbl ˌkʌlmɪˈneɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An ultimate conclusion or climax that was bound to happen given historical trends.",
+      "example": "The treaty signing was the inevitable culmination of twenty rounds of secret diplomacy.",
+      "translation": "الذروة الحتمية المقدرة سلفاً",
+      "exampleArabic": "كان توقيع المعاهدة هو الذروة الحتمية المقدرة لعشرين جولة من الدبلوماسية السرية.",
+      "collocations": [
+        "represent the inevitable culmination",
+        "inevitable culmination of events"
+      ],
+      "synonyms": [
+        "predestined climax"
+      ],
+      "antonyms": [],
+      "tags": [
+        "climax",
+        "history"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unintended fallout",
+      "pronunciation": "/ˌʌnɪnˈtendɪd ˈfɔːlaʊt/",
+      "partOfSpeech": "noun",
+      "definition": "The unexpected, adverse secondary consequences resulting from a plan.",
+      "example": "The unintended fallout of strict urban rental caps was an acute shortage of rental units.",
+      "translation": "التبعات والتداعيات السلبية غير المقصودة",
+      "exampleArabic": "كانت التداعيات السلبية غير المقصودة للحدود الصارمة لإيجارات المدن نقصاً حاداً في الوحدات المعروضة.",
+      "collocations": [
+        "suffer unintended fallout",
+        "manage unintended fallout"
+      ],
+      "synonyms": [
+        "unforeseen backlash"
+      ],
+      "antonyms": [
+        "planned benefit"
+      ],
+      "tags": [
+        "economics",
+        "consequences"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Investigating a Regional Power Outage",
+      "titleArabic": "التحقيق في انقطاع التيار الكهربائي الإقليمي",
+      "setting": "A utility grid director interrogates a chief electrical systems engineer following a blackout across three provinces.",
+      "lines": [
+        {
+          "speaker": "Director",
+          "text": "What was the primary trigger that initiated this blackout across three provinces?"
+        },
+        {
+          "speaker": "Engineer",
+          "text": "Because of a lightning strike on substation four, a transformer tripped off automatically."
+        },
+        {
+          "speaker": "Director",
+          "text": "How did a localized substation trip spark off such a massive domino effect?"
+        },
+        {
+          "speaker": "Engineer",
+          "text": "Transmission lines were so heavily loaded that a rapid chain reaction cascaded along the grid."
+        },
+        {
+          "speaker": "Director",
+          "text": "Was inadequate grid maintenance a contributory cause in this operational debacle?"
+        },
+        {
+          "speaker": "Engineer",
+          "text": "Yes, thermal sensor degradation was an underlying cause attributable to deferred maintenance."
+        },
+        {
+          "speaker": "Director",
+          "text": "We must manage the inevitable aftermath and prevent long-term fallout on industrial contracts."
+        },
+        {
+          "speaker": "Engineer",
+          "text": "Our engineers will trace the fault back to its root origin and install automated circuit disconnects."
+        }
+      ],
+      "vocabularyUsed": [
+        "primary trigger",
+        "spark off",
+        "domino effect",
+        "chain reaction",
+        "contributory cause",
+        "underlying cause",
+        "attributable to",
+        "inevitable aftermath",
+        "long-term fallout",
+        "trace back to",
+        "root origin"
+      ]
+    },
+    {
+      "title": "Analyzing an Economic Shock Wave",
+      "titleArabic": "تحليل موجة صدمة اقتصادية في الأسواق",
+      "setting": "Two macroeconomic analysts discuss the fallout of a foreign central bank's currency devaluation on domestic commerce.",
+      "lines": [
+        {
+          "speaker": "Analyst A",
+          "text": "The currency devaluation was such an abrupt policy shift that it produced an immediate ripple effect."
+        },
+        {
+          "speaker": "Analyst B",
+          "text": "Indeed; import tariffs were directly responsible for unleashing destructive consequences on domestic manufacturers."
+        },
+        {
+          "speaker": "Analyst A",
+          "text": "Did the central bank anticipate the negative downstream effect on consumer inflation?"
+        },
+        {
+          "speaker": "Analyst B",
+          "text": "They dismissed it as mere collateral damage, but the resultant impact on grocery prices is staggering."
+        },
+        {
+          "speaker": "Analyst A",
+          "text": "Rising raw material costs are a natural byproduct of such reckless monetary experiments."
+        },
+        {
+          "speaker": "Analyst B",
+          "text": "Economists can clearly identify a causal link connecting monetary expansion with commodity spikes."
+        },
+        {
+          "speaker": "Analyst A",
+          "text": "If inflation continues, it will precipitate a severe crisis across retail supply chains."
+        },
+        {
+          "speaker": "Analyst B",
+          "text": "Let us hope fiscal stimulus will bring about stability before unemployment accelerates."
+        }
+      ],
+      "vocabularyUsed": [
+        "ripple effect",
+        "unleash consequences",
+        "downstream effect",
+        "collateral damage",
+        "resultant impact",
+        "byproduct",
+        "causal link",
+        "precipitate crisis",
+        "bring about"
+      ]
+    },
+    {
+      "title": "Tracing Technological Evolution",
+      "titleArabic": "تتبع مسار التطور التكنولوجي وجذوره",
+      "setting": "A science historian interviews a pioneering computer scientist regarding the genesis of machine learning.",
+      "lines": [
+        {
+          "speaker": "Historian",
+          "text": "Can we trace the emergence of artificial neural networks back to early biological research?"
+        },
+        {
+          "speaker": "Scientist",
+          "text": "Absolutely; modern algorithms stem directly from mathematical models of cerebral cortex neurons."
+        },
+        {
+          "speaker": "Historian",
+          "text": "What was the direct catalyst that accelerated deep learning in the early two thousands?"
+        },
+        {
+          "speaker": "Scientist",
+          "text": "The availability of graphical processing chips was a catalytic event that gave rise to rapid training models."
+        },
+        {
+          "speaker": "Historian",
+          "text": "Has generative intelligence exerted a profound effect upon modern scientific research?"
+        },
+        {
+          "speaker": "Scientist",
+          "text": "It has had such a far-reaching impact that every discipline from oncology to astrophysics is transformed."
+        },
+        {
+          "speaker": "Historian",
+          "text": "Many breakthroughs correlate with open-source software libraries, do they not?"
+        },
+        {
+          "speaker": "Scientist",
+          "text": "Yes, open collaboration was the prime mover that enabled this historic technological culmination."
+        }
+      ],
+      "vocabularyUsed": [
+        "trace back to",
+        "stem from",
+        "direct catalyst",
+        "catalytic event",
+        "give rise to",
+        "profound effect",
+        "far-reaching impact",
+        "correlate with",
+        "prime mover",
+        "culmination"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Interconnected Complexity of Causality",
+      "titleArabic": "التعقيد المترابط لشبكات السببية والنتائج",
+      "text": "In complex ecological and economic systems, identifying the single root origin of a catastrophe is often misleading. While an unexpected accident may act as a primary trigger, the underlying cause usually stems from systemic fragility accumulated over decades. Due to the delicate sensitivity of natural equilibria, even a minor localized perturbation can generate a dramatic butterfly effect. When a critical threshold collapses, a rapid chain reaction ensues, producing a devastating domino effect and spreading an uncontrollable ripple effect across dependent industries. Understanding the deep cause and effect relationship in nature teaches humanity to manage unintended fallout with humility.",
+      "vocabularyUsed": [
+        "root origin",
+        "primary trigger",
+        "underlying cause",
+        "stem from",
+        "butterfly effect",
+        "chain reaction",
+        "domino effect",
+        "ripple effect",
+        "cause and effect relationship",
+        "unintended fallout"
+      ]
+    },
+    {
+      "title": "Cascading Failures and Economic Spillover",
+      "titleArabic": "الانهيارات المتتالية وآثار العدوى الاقتصادية",
+      "text": "When a major sovereign financial institution becomes insolvent, the resultant impact on international markets is never confined to domestic borders. Because of interconnected banking networks, financial panic produces an acute spillover effect that triggers off credit rationing worldwide. Small regional enterprises that had no direct exposure to the troubled assets suddenly suffer devastating collateral damage. A small regulatory oversight can create a dangerous snowball effect that culminates in an all-out global liquidity squeeze. Economists who study market causation warn that secondary repercussions often inflict far greater harm than the initial localized catalytic event.",
+      "vocabularyUsed": [
+        "resultant impact",
+        "spillover effect",
+        "trigger off",
+        "collateral damage",
+        "snowball effect",
+        "culminate in",
+        "causation",
+        "secondary repercussion",
+        "catalytic event"
+      ]
+    },
+    {
+      "title": "Technological Catalysts and Historical Culminations",
+      "titleArabic": "المحفزات التكنولوجية وذروة التحولات التاريخية",
+      "text": "Throughout human history, monumental civilizational leaps are rarely attributable to isolated occurrences. When visionary inventors synthesize decades of antecedent discoveries, their innovative synthesis acts as a direct catalyst for profound societal transformation. The Industrial Revolution was such a powerful historic epoch that it gave rise to modern urban civilization and brought about unprecedented scientific advances. Decades of labor reforms and technological innovations reached an inevitable culmination in modern workplace protections, exerting a far-reaching impact and profound effect on the quality of human life.",
+      "vocabularyUsed": [
+        "attributable to",
+        "antecedent",
+        "direct catalyst",
+        "give rise to",
+        "bring about",
+        "inevitable culmination",
+        "far-reaching impact",
+        "profound effect"
+      ]
+    }
+  ]
+}

@@ -812,7 +812,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "resign",
+        "v2": "resigned",
+        "v3": "resigned"
+      }
     },
     {
       "headword": "retire",
@@ -839,7 +844,12 @@
       "tags": [
         "work",
         "life"
-      ]
+      ],
+      "verbForms": {
+        "v1": "retire",
+        "v2": "retired",
+        "v3": "retired"
+      }
     },
     {
       "headword": "hire",
@@ -870,7 +880,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "hire",
+        "v2": "hired",
+        "v3": "hired"
+      }
     },
     {
       "headword": "fire",
@@ -900,7 +915,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "fire",
+        "v2": "fired",
+        "v3": "fired"
+      }
     },
     {
       "headword": "recruit",
@@ -928,7 +948,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "recruit",
+        "v2": "recruited",
+        "v3": "recruited"
+      }
     },
     {
       "headword": "apply for",
@@ -954,7 +979,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "apply for",
+        "v2": "apply fored",
+        "v3": "apply fored"
+      }
     },
     {
       "headword": "qualified",
@@ -1371,7 +1401,12 @@
       "tags": [
         "work",
         "transport"
-      ]
+      ],
+      "verbForms": {
+        "v1": "commute",
+        "v2": "commuted",
+        "v3": "commuted"
+      }
     }
   ],
   "conversations": [

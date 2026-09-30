@@ -1012,7 +1012,12 @@
       "tags": [
         "love",
         "actions"
-      ]
+      ],
+      "verbForms": {
+        "v1": "adore",
+        "v2": "adored",
+        "v3": "adored"
+      }
     },
     {
       "headword": "warm embrace",

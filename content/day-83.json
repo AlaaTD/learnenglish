@@ -1,0 +1,1377 @@
+{
+  "day": 83,
+  "title": "People Who Shaped Me",
+  "topic": "Influential people and memories",
+  "description": "Describe people who changed your life and how.",
+  "stage": "Integration — Real English",
+  "focus": "By the end of today, you can communicate clearly about influential people and memories using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Relative Clauses + Narrative Tenses",
+      "explanation": "Describing influential people who shaped our lives requires weaving relative clauses (defining and non-defining) together with narrative tenses (Past Simple, Past Continuous, Past Perfect):\n\n1. Defining Relative Clauses with Narrative Tenses:\n   Specifies exactly which person or influence is meant:\n   - 'She was the inspiring teacher who had recognized my talent when I was struggling.'\n   - 'I called the trusted confidant whom I had known since early childhood.'\n\n2. Non-defining Relative Clauses for Rich Contextual Tributes:\n   Enclosed in commas, these add respectful background information:\n   - 'My grandfather, who had worked in the coal mines for forty years, instilled in us an ethical lodestar.'\n   - 'Dr. Miller, whose fatherly wisdom had guided me during medical residency, retired last autumn.'\n\n3. Past Perfect inside Relative Clauses:\n   Establishes actions completed before a past milestone:\n   - 'When I received the award, I thanked the formative mentor who had supported my research from day one.'\n\n4. Past Continuous for Past Background Actions of Mentors:\n   - 'While my coach was encouraging us from the sideline, we broke the national relay record.'",
+      "structures": [
+        {
+          "pattern": "Non-defining clause + Past Simple: Subject, who / whose + background, + Main Verb: 'My mentor, who had guided me for years, celebrated my graduation.'"
+        },
+        {
+          "pattern": "Defining clause + Past Perfect: Person + who / that + had + V3: 'She was the unsung hero who had sacrificed everything for our education.'"
+        },
+        {
+          "pattern": "Past Continuous background + Relative clause: 'While she was serving as a pillar of strength, her wisdom inspired our entire family.'"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "My grandfather, whose fatherly wisdom had anchored our family, was an unforgettable teacher to all his grandchildren.",
+          "arabic": "جدي، الذي كانت حكمته الأبوية قد أرست عائلتنا، كان معلماً لا يُنسى لجميع أحفاده.",
+          "usesVocabulary": [
+            "fatherly wisdom",
+            "unforgettable teacher"
+          ]
+        },
+        {
+          "sentence": "She was the formative mentor who had provided unwavering support when my confidence was faltering.",
+          "arabic": "لقد كانت المرشدة التكوينية التي قدمت دعماً راسخاً لا يتزعزع عندما كانت ثقتي بنفسي تتلاشى.",
+          "usesVocabulary": [
+            "formative mentor",
+            "unwavering support"
+          ]
+        },
+        {
+          "sentence": "We gathered to honor the selfless volunteer who had spent twenty years running the local food pantry.",
+          "arabic": "اجتمعنا لتكريم المتطوع المتفاني الذي قضى عشرين عاماً في إدارة بنك الطعام المحلي.",
+          "usesVocabulary": [
+            "selfless volunteer"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "My uncle that had been a pillar of strength passed away last year.",
+          "right": "My uncle, who had been a pillar of strength, passed away last year.",
+          "explanation": "Use 'who' (not 'that') with commas for a non-defining relative clause referring to a specific person."
+        },
+        {
+          "wrong": "She was the mentor which helped me through medical school.",
+          "right": "She was the mentor who helped me through medical school.",
+          "explanation": "Always use 'who' or 'whom' (never 'which') when referring to human beings."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "formative mentor",
+      "pronunciation": "/ˈfɔːmətɪv ˈmentɔː/",
+      "partOfSpeech": "noun",
+      "definition": "An experienced advisor whose guidance profoundly shapes a person's early development and character.",
+      "example": "Her high school biology teacher was a formative mentor who sparked her passion for genetic research.",
+      "translation": "مرشد وموجّه تكويني شكّل الشخصية في الصغر",
+      "collocations": [
+        "act as a formative mentor",
+        "role of a formative mentor"
+      ],
+      "synonyms": [
+        "foundational guide"
+      ],
+      "antonyms": [],
+      "tags": [
+        "mentorship",
+        "relationships"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "guiding light",
+      "pronunciation": "/ˈɡaɪdɪŋ laɪt/",
+      "partOfSpeech": "noun",
+      "definition": "A person whose moral principles, wisdom, and example illuminate the right path for others.",
+      "example": "Throughout difficult corporate transitions, our grandmother remained the spiritual guiding light of our family.",
+      "translation": "النبراس والمنارة الهادية في الحياة",
+      "collocations": [
+        "serve as a guiding light",
+        "family guiding light"
+      ],
+      "synonyms": [
+        "beacon",
+        "moral guide"
+      ],
+      "antonyms": [],
+      "tags": [
+        "inspiration",
+        "family"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "role model figure",
+      "pronunciation": "/rəʊl ˈmɒdl ˈfɪɡə/",
+      "partOfSpeech": "noun",
+      "definition": "A respected person whose behavior, achievements, and ethics serve as an example for others to emulate.",
+      "example": "Dr. Sarah Gilbert became an inspiring role model figure for young female scientists globally.",
+      "translation": "شخصية القدوة والنموذج المحتذى به",
+      "collocations": [
+        "positive role model figure",
+        "admire as a role model figure"
+      ],
+      "synonyms": [
+        "exemplar"
+      ],
+      "antonyms": [
+        "bad influence"
+      ],
+      "tags": [
+        "leadership",
+        "inspiration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "inspiring teacher",
+      "pronunciation": "/ɪnˈspaɪərɪŋ ˈtiːtʃə/",
+      "partOfSpeech": "noun",
+      "definition": "An educator whose enthusiasm, dedication, and pedagogical excellence awaken latent talents in students.",
+      "example": "Every writer remembers at least one inspiring teacher who praised their early creative voice.",
+      "translation": "المعلم الملهم الذي يوقظ شغف المعرفة",
+      "collocations": [
+        "blessed with an inspiring teacher",
+        "unforgettable inspiring teacher"
+      ],
+      "synonyms": [
+        "dedicated educator"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "inspiration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "childhood companion",
+      "pronunciation": "/ˈtʃaɪldhʊd kəmˈpænjən/",
+      "partOfSpeech": "noun",
+      "definition": "A peer with whom one shared deep play, school memories, and emotional bonding during early youth.",
+      "example": "Reuniting with my childhood companion thirty years later felt as though no time had passed.",
+      "translation": "رفيق الطفولة والصبا المقرب",
+      "collocations": [
+        "lifelong childhood companion",
+        "cherished childhood companion"
+      ],
+      "synonyms": [
+        "early friend"
+      ],
+      "antonyms": [],
+      "tags": [
+        "friendship",
+        "memories"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fatherly wisdom",
+      "pronunciation": "/ˈfɑːðəli ˈwɪzdəm/",
+      "partOfSpeech": "noun",
+      "definition": "Wise, compassionate, and practical advice given by a father or paternal figure.",
+      "example": "His fatherly wisdom regarding financial discipline saved me from reckless debt during my university years.",
+      "translation": "الحكمة الأبوية والتوجيه الرشيد من الأب",
+      "collocations": [
+        "dispense fatherly wisdom",
+        "benefit from fatherly wisdom"
+      ],
+      "synonyms": [
+        "paternal counsel"
+      ],
+      "antonyms": [],
+      "tags": [
+        "family",
+        "wisdom"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "motherly warmth",
+      "pronunciation": "/ˈmʌðəli wɔːmθ/",
+      "partOfSpeech": "noun",
+      "definition": "The tender, unconditionally nurturing affection and comfort characteristically provided by a mother.",
+      "example": "Her kitchen was always filled with motherly warmth, fragrant stews, and heartfelt listening.",
+      "translation": "دفء وحنان الأمومة الفياض",
+      "collocations": [
+        "radiate motherly warmth",
+        "embrace of motherly warmth"
+      ],
+      "synonyms": [
+        "maternal affection"
+      ],
+      "antonyms": [
+        "cold indifference"
+      ],
+      "tags": [
+        "family",
+        "love"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "grandparent legacy",
+      "pronunciation": "/ˈɡrænpeərənt ˈleɡəsi/",
+      "partOfSpeech": "noun",
+      "definition": "The enduring traditions, moral values, and cultural wisdom passed down by grandparents.",
+      "example": "Our family honors our grandparent legacy by gathering for traditional Sunday dinners every week.",
+      "translation": "إرث الأجداد وتقاليدهم المتوارثة",
+      "collocations": [
+        "preserve the grandparent legacy",
+        "cherished grandparent legacy"
+      ],
+      "synonyms": [
+        "ancestral heritage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "heritage",
+        "family"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "trusted confidant",
+      "pronunciation": "/ˈtrʌstɪd ˌkɒnfɪˈdænt/",
+      "partOfSpeech": "noun",
+      "definition": "A deeply loyal friend to whom one entrusts private secrets, vulnerabilities, and intimate thoughts.",
+      "example": "Throughout the grueling political campaign, her campaign manager served as her most trusted confidant.",
+      "translation": "المستودع الأمين للأسرار والكاتم الموثوق",
+      "collocations": [
+        "act as a trusted confidant",
+        "turn to a trusted confidant"
+      ],
+      "synonyms": [
+        "intimate friend",
+        "bosom friend"
+      ],
+      "antonyms": [
+        "rival",
+        "betrayer"
+      ],
+      "tags": [
+        "friendship",
+        "trust"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pillar of strength",
+      "pronunciation": "/ˈpɪlər əv streŋθ/",
+      "partOfSpeech": "noun",
+      "definition": "A steadfast and emotionally resilient person who supports others during difficult crises.",
+      "example": "When the family business burned down, my elder sister was an unshakable pillar of strength.",
+      "translation": "سند وركيزة القوة والثبات في المحن",
+      "collocations": [
+        "act as a pillar of strength",
+        "remain a pillar of strength"
+      ],
+      "synonyms": [
+        "rock of support"
+      ],
+      "antonyms": [],
+      "tags": [
+        "support",
+        "strength"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ethical lodestar",
+      "pronunciation": "/ˈeθɪkl ˈləʊdstɑː/",
+      "partOfSpeech": "noun",
+      "definition": "A foundational moral standard or ethical person that guides one's conscientious choices.",
+      "example": "His grandfather's strict honesty served as an unswerving ethical lodestar throughout his corporate career.",
+      "translation": "النجم الهادي والمحدد الأخلاقي للسلوك",
+      "collocations": [
+        "serve as an ethical lodestar",
+        "true ethical lodestar"
+      ],
+      "synonyms": [
+        "moral compass",
+        "guiding principle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "ethics",
+        "values"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unwavering support",
+      "pronunciation": "/ʌnˈweɪvərɪŋ səˈpɔːt/",
+      "partOfSpeech": "noun",
+      "definition": "Constant, steadfast encouragement and assistance that never diminishes regardless of circumstance.",
+      "example": "My parents offered unwavering support throughout my seven arduous years of medical school.",
+      "translation": "الدعم والمساندة الراسخة التي لا تتزعزع",
+      "collocations": [
+        "provide unwavering support",
+        "grateful for unwavering support"
+      ],
+      "synonyms": [
+        "steadfast backing"
+      ],
+      "antonyms": [
+        "fickle support"
+      ],
+      "tags": [
+        "support",
+        "loyalty"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lifelong ally",
+      "pronunciation": "/ˈlaɪflɒŋ ˈælaɪ/",
+      "partOfSpeech": "noun",
+      "definition": "A devoted companion who stands by your side across decades of triumphs and setbacks.",
+      "example": "Having met in kindergarten, the two women remained lifelong allies through every chapter of adulthood.",
+      "translation": "الحليف والصديق الدائم مدى الحياة",
+      "collocations": [
+        "remain a lifelong ally",
+        "cherish a lifelong ally"
+      ],
+      "synonyms": [
+        "enduring friend"
+      ],
+      "antonyms": [
+        "lifelong adversary"
+      ],
+      "tags": [
+        "loyalty",
+        "friendship"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "inspirational figure",
+      "pronunciation": "/ˌɪnspəˈreɪʃənl ˈfɪɡə/",
+      "partOfSpeech": "noun",
+      "definition": "A person whose remarkable achievements and courage stimulate creative ideas and moral resolve.",
+      "example": "Nelson Mandela stands as an inspirational figure whose forgiveness transformed a divided nation.",
+      "translation": "شخصية ملهمة تبعث على الإعجاب والاقتداء",
+      "collocations": [
+        "become an inspirational figure",
+        "widely admired inspirational figure"
+      ],
+      "synonyms": [
+        "source of inspiration"
+      ],
+      "antonyms": [],
+      "tags": [
+        "inspiration",
+        "heroes"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "generous benefactor",
+      "pronunciation": "/ˈdʒenərəs ˌbenɪˈfæktə/",
+      "partOfSpeech": "noun",
+      "definition": "A benevolent person who provides substantial financial or material resources to help someone flourish.",
+      "example": "An anonymous generous benefactor funded the construction of the village community library.",
+      "translation": "المحسن والكريم صاحب الفضل والعطاء",
+      "collocations": [
+        "thanks to a generous benefactor",
+        "supported by a generous benefactor"
+      ],
+      "synonyms": [
+        "patron",
+        "philanthropist"
+      ],
+      "antonyms": [],
+      "tags": [
+        "charity",
+        "gratitude"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "firm disciplinarian",
+      "pronunciation": "/fɜːm ˌdɪsəplɪˈneəriən/",
+      "partOfSpeech": "noun",
+      "definition": "A teacher or parent who enforces strict behavioral standards while genuinely caring for development.",
+      "example": "Our track coach was a firm disciplinarian who taught us that punctuality is the foundation of excellence.",
+      "translation": "الشخص الحازم والمنضبط الذي يربي على الصرامة",
+      "collocations": [
+        "known as a firm disciplinarian",
+        "strict but fair firm disciplinarian"
+      ],
+      "synonyms": [
+        "strict mentor"
+      ],
+      "antonyms": [
+        "permissive guardian"
+      ],
+      "tags": [
+        "discipline",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "empathetic listener",
+      "pronunciation": "/ˌempəˈθetɪk ˈlɪsnə/",
+      "partOfSpeech": "noun",
+      "definition": "A person who listens with profound understanding, validating emotions without premature judgment.",
+      "example": "Being an empathetic listener made the school counselor a sanctuary for troubled teenagers.",
+      "translation": "المستمع المتعاطف الذي ينصت بوعي وتفهم",
+      "collocations": [
+        "skilled empathetic listener",
+        "act as an empathetic listener"
+      ],
+      "synonyms": [
+        "compassionate listener"
+      ],
+      "antonyms": [
+        "dismissive listener"
+      ],
+      "tags": [
+        "empathy",
+        "communication"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sympathetic soul",
+      "pronunciation": "/ˌsɪmpəˈθetɪk səʊl/",
+      "partOfSpeech": "noun",
+      "definition": "A warm, caring individual possessing deep emotional gentleness and capacity for compassion.",
+      "example": "In times of grief, Aunt Clara was the sympathetic soul who sat beside you in comforting silence.",
+      "translation": "الروح المتعاطفة الودودة الرقيقة",
+      "collocations": [
+        "gentle sympathetic soul",
+        "kind sympathetic soul"
+      ],
+      "synonyms": [
+        "caring spirit"
+      ],
+      "antonyms": [
+        "callous person"
+      ],
+      "tags": [
+        "kindness",
+        "people"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wise elder",
+      "pronunciation": "/waɪz ˈeldə/",
+      "partOfSpeech": "noun",
+      "definition": "A senior member of a family or community respected for accumulated life experience and prudent counsel.",
+      "example": "The villagers consulted the wise elder before undertaking any major agricultural negotiations.",
+      "translation": "كبير العائلة الحكيم صاحب الرأي السديد",
+      "collocations": [
+        "counsel of a wise elder",
+        "revered as a wise elder"
+      ],
+      "synonyms": [
+        "venerated elder",
+        "sage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "wisdom",
+        "elders"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "family anchor",
+      "pronunciation": "/ˈfæməli ˈæŋkə/",
+      "partOfSpeech": "noun",
+      "definition": "The central family member whose presence and leadership provide stability, cohesion, and peace.",
+      "example": "Our grandmother was the family anchor who kept all branches of our extended family united.",
+      "translation": "مرساة العائلة وصمام أمان تماسكها",
+      "collocations": [
+        "serve as the family anchor",
+        "loss of the family anchor"
+      ],
+      "synonyms": [
+        "keystone of the family"
+      ],
+      "antonyms": [],
+      "tags": [
+        "family",
+        "stability"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mentor figure",
+      "pronunciation": "/ˈmentɔː ˈfɪɡə/",
+      "partOfSpeech": "noun",
+      "definition": "A senior individual who takes personal interest in nurturing a junior person's career and character.",
+      "example": "Having an experienced mentor figure early in residency helped the young physician withstand hospital stress.",
+      "translation": "الشخصية الموجهة والراعية مهنياً وشخصياً",
+      "collocations": [
+        "find a mentor figure",
+        "depend on a mentor figure"
+      ],
+      "synonyms": [
+        "adviser",
+        "sponsor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "mentorship",
+        "career"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unsung hero",
+      "pronunciation": "/ʌnˈsʌŋ ˈhɪərəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "A person who performs extraordinary, selfless acts of service without seeking public praise or fanfare.",
+      "example": "Hospital sanitation workers were the unsung heroes who kept operating theaters sterile during the epidemic.",
+      "translation": "البطل المجهول الذي يبذل التضحيات دون صخب",
+      "collocations": [
+        "praise the unsung hero",
+        "community unsung hero"
+      ],
+      "synonyms": [
+        "unrecognized hero"
+      ],
+      "antonyms": [
+        "public celebrity"
+      ],
+      "tags": [
+        "heroes",
+        "gratitude"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "positive influence",
+      "pronunciation": "/ˈpɒzətɪv ˈɪnfluəns/",
+      "partOfSpeech": "noun",
+      "definition": "A person whose presence, advice, and habits encourage wholesome development in others.",
+      "example": "Joining the debate team surrounded him with peers who exerted a powerfully positive influence on his study habits.",
+      "translation": "التأثير الإيجابي المحفز على الخير والنمو",
+      "collocations": [
+        "exert a positive influence",
+        "act as a positive influence"
+      ],
+      "synonyms": [
+        "wholesome guide"
+      ],
+      "antonyms": [
+        "negative influence"
+      ],
+      "tags": [
+        "influence",
+        "growth"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "nurturing guide",
+      "pronunciation": "/ˈnɜːtʃərɪŋ ɡaɪd/",
+      "partOfSpeech": "noun",
+      "definition": "A supportive person who gently encourages, protects, and fosters another's talents and self-worth.",
+      "example": "Her piano tutor was a patient, nurturing guide who turned every technical stumble into a learning moment.",
+      "translation": "المرشد الحنون والمربي الراعي للمواهب",
+      "collocations": [
+        "act as a nurturing guide",
+        "grateful for a nurturing guide"
+      ],
+      "synonyms": [
+        "caring mentor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "care"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "source of comfort",
+      "pronunciation": "/sɔːs əv ˈkʌmfət/",
+      "partOfSpeech": "noun",
+      "definition": "A person, memory, or presence that brings consolation, solace, and relief during periods of distress.",
+      "example": "Her grandfather's calm voice on the telephone was an immediate source of comfort during finals week.",
+      "translation": "مصدر السكينة والعزاء وبلسم الأحزان",
+      "collocations": [
+        "provide a source of comfort",
+        "constant source of comfort"
+      ],
+      "synonyms": [
+        "solace",
+        "refuge"
+      ],
+      "antonyms": [
+        "source of anxiety"
+      ],
+      "tags": [
+        "comfort",
+        "empathy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "formative influence",
+      "pronunciation": "/ˈfɔːmətɪv ˈɪnfluəns/",
+      "partOfSpeech": "noun",
+      "definition": "A decisive person, experience, or environment that shapes someone's worldview during youth.",
+      "example": "Growing up in a multilingual port city was a formative influence that inspired her passion for translation.",
+      "translation": "التأثير التكويني الجوهري في نشأة الإنسان",
+      "collocations": [
+        "major formative influence",
+        "enduring formative influence"
+      ],
+      "synonyms": [
+        "foundational impact"
+      ],
+      "antonyms": [],
+      "tags": [
+        "development",
+        "influence"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "treasured memory",
+      "pronunciation": "/ˈtreʒəd ˈmeməri/",
+      "partOfSpeech": "noun",
+      "definition": "A deeply cherished, emotionally precious recollection of a person, event, or shared experience.",
+      "example": "Walking along the misty beach with my father at sunrise remains an indelible, treasured memory.",
+      "translation": "الذكرى الغالية والعزيزة المحفورة في القلب",
+      "collocations": [
+        "hold a treasured memory",
+        "cherish as a treasured memory"
+      ],
+      "synonyms": [
+        "precious recollection"
+      ],
+      "antonyms": [
+        "painful memory"
+      ],
+      "tags": [
+        "memories",
+        "nostalgia"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unforgettable teacher",
+      "pronunciation": "/ˌʌnfəˈɡetəbl ˈtiːtʃə/",
+      "partOfSpeech": "noun",
+      "definition": "An exceptional educator whose wisdom, passion, and personal kindness leave an everlasting mark on students.",
+      "example": "Mr. Davies was an unforgettable teacher whose literature readings brought Shakespeare vividly to life.",
+      "translation": "المعلم الذي لا يُنسى صاحب الأثر الخالد",
+      "collocations": [
+        "tribute to an unforgettable teacher",
+        "remember an unforgettable teacher"
+      ],
+      "synonyms": [
+        "memorable educator"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "memories"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "guardian angel",
+      "pronunciation": "/ˈɡɑːdiən ˈeɪndʒl/",
+      "partOfSpeech": "noun",
+      "definition": "A benevolent person who watches over, protects, and rescues someone in times of extreme vulnerability.",
+      "example": "When I was stranded with a broken vehicle in the blizzard, that stranger acted like a true guardian angel.",
+      "translation": "الملاك الحارس والمنقذ في الشدائد",
+      "collocations": [
+        "act as a guardian angel",
+        "my personal guardian angel"
+      ],
+      "synonyms": [
+        "protector",
+        "savior"
+      ],
+      "antonyms": [],
+      "tags": [
+        "gratitude",
+        "protection"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "guiding hand",
+      "pronunciation": "/ˈɡaɪdɪŋ hænd/",
+      "partOfSpeech": "noun",
+      "definition": "Gentle, experienced leadership and supervision that steers someone safely toward success.",
+      "example": "Without the guiding hand of our senior research director, our laboratory team would have lost funding.",
+      "translation": "اليد المرشدة والموجهة بحكمة وعناية",
+      "collocations": [
+        "rely on a guiding hand",
+        "steady guiding hand"
+      ],
+      "synonyms": [
+        "wise direction"
+      ],
+      "antonyms": [],
+      "tags": [
+        "guidance",
+        "leadership"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "patient instructor",
+      "pronunciation": "/ˈpeɪʃnt ɪnˈstrʌktə/",
+      "partOfSpeech": "noun",
+      "definition": "A teacher who explains challenging concepts calmly and repeatedly without exhibiting frustration.",
+      "example": "Learning to play the violin requires a patient instructor who understands that mastery takes years.",
+      "translation": "المعلم والمدرب الصبور والمتأني",
+      "collocations": [
+        "blessed with a patient instructor",
+        "role of a patient instructor"
+      ],
+      "synonyms": [
+        "forbearing teacher"
+      ],
+      "antonyms": [
+        "impatient tutor"
+      ],
+      "tags": [
+        "education",
+        "patience"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "supportive peer",
+      "pronunciation": "/səˈpɔːtɪv pɪə/",
+      "partOfSpeech": "noun",
+      "definition": "An equal, classmate, or colleague who encourages, assists, and celebrates your achievements.",
+      "example": "Having a supportive peer during the grueling bar exam study sessions made all the difference.",
+      "translation": "الزميل والقرين الداعم والمشجع",
+      "collocations": [
+        "work alongside a supportive peer",
+        "surround yourself with supportive peers"
+      ],
+      "synonyms": [
+        "encouraging colleague"
+      ],
+      "antonyms": [
+        "toxic rival"
+      ],
+      "tags": [
+        "peers",
+        "support"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "loyal companion",
+      "pronunciation": "/ˈlɔɪəl kəmˈpænjən/",
+      "partOfSpeech": "noun",
+      "definition": "A faithful friend whose steadfast devotion and companionship never falter through hardships.",
+      "example": "Through every cross-country relocation, his golden retriever was an affectionate and loyal companion.",
+      "translation": "الرفيق المخلص والوفي في كل الظروف",
+      "collocations": [
+        "cherished loyal companion",
+        "remain a loyal companion"
+      ],
+      "synonyms": [
+        "devoted friend"
+      ],
+      "antonyms": [
+        "fair-weather friend"
+      ],
+      "tags": [
+        "loyalty",
+        "friendship"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "humble role model",
+      "pronunciation": "/ˈhʌmbl rəʊl ˈmɒdl/",
+      "partOfSpeech": "noun",
+      "definition": "An accomplished person who leads by virtuous example while remaining completely devoid of arrogance.",
+      "example": "Despite winning the Nobel Prize, the professor remained a humble role model who ate lunch with undergraduates.",
+      "translation": "القدوة المتواضعة المجردة من الكبرياء والغرور",
+      "collocations": [
+        "admire as a humble role model",
+        "serve as a humble role model"
+      ],
+      "synonyms": [
+        "modest exemplar"
+      ],
+      "antonyms": [
+        "arrogant idol"
+      ],
+      "tags": [
+        "humility",
+        "leadership"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sympathetic mentor",
+      "pronunciation": "/ˌsɪmpəˈθetɪk ˈmentɔː/",
+      "partOfSpeech": "noun",
+      "definition": "An advisor who pairs professional guidance with deep emotional sensitivity toward their protégé's challenges.",
+      "example": "A sympathetic mentor helped the young resident doctor cope with the traumatic loss of her first patient.",
+      "translation": "المرشد المتعاطف الذي يراعي الجوانب الإنسانية",
+      "collocations": [
+        "guidance from a sympathetic mentor",
+        "appreciate a sympathetic mentor"
+      ],
+      "synonyms": [
+        "compassionate advisor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "mentorship",
+        "empathy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cherished elder",
+      "pronunciation": "/ˈtʃerɪʃt ˈeldə/",
+      "partOfSpeech": "noun",
+      "definition": "An elderly family or tribal member who is deeply loved, revered, and cared for by younger generations.",
+      "example": "The village gathered to celebrate the one-hundredth birthday of their most cherished elder.",
+      "translation": "كبير السن العزيز والمحبوب والموقر",
+      "collocations": [
+        "honor a cherished elder",
+        "wisdom of a cherished elder"
+      ],
+      "synonyms": [
+        "beloved senior"
+      ],
+      "antonyms": [],
+      "tags": [
+        "elders",
+        "respect"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "trusted advisor",
+      "pronunciation": "/ˈtrʌstɪd ədˈvaɪzə/",
+      "partOfSpeech": "noun",
+      "definition": "An expert whose integrity and judgment have proven dependable across critical life choices.",
+      "example": "The prime minister relied on his trusted advisor to navigate complex foreign policy disputes.",
+      "translation": "المستشار المؤتمن ذو الرأي الموثوق",
+      "collocations": [
+        "rely on a trusted advisor",
+        "act as a trusted advisor"
+      ],
+      "synonyms": [
+        "confidential counselor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "trust",
+        "advisory"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "motivational coach",
+      "pronunciation": "/ˌməʊtɪˈveɪʃənl kəʊtʃ/",
+      "partOfSpeech": "noun",
+      "definition": "A trainer who inspires individuals to transcend self-doubt and realize their maximum athletic or personal potential.",
+      "example": "Our motivational coach taught us that true mental toughness begins when physical energy runs out.",
+      "translation": "المدرب التحفيزي الذي يبث العزيمة والإصرار",
+      "collocations": [
+        "hire a motivational coach",
+        "listen to a motivational coach"
+      ],
+      "synonyms": [
+        "performance coach"
+      ],
+      "antonyms": [],
+      "tags": [
+        "motivation",
+        "sports"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "forgiving parent",
+      "pronunciation": "/fəˈɡɪvɪŋ ˈpeərənt/",
+      "partOfSpeech": "noun",
+      "definition": "A mother or father who responds to mistakes with understanding, redemption, and unconditional love.",
+      "example": "Having a forgiving parent taught him that honest mistakes are opportunities for maturity, not condemnation.",
+      "translation": "الأب أو الأم المتسامحة صاحبة القلب الرحيم",
+      "collocations": [
+        "blessed with a forgiving parent",
+        "warmth of a forgiving parent"
+      ],
+      "synonyms": [
+        "merciful guardian"
+      ],
+      "antonyms": [
+        "punitive parent"
+      ],
+      "tags": [
+        "family",
+        "forgiveness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "courageous pioneer",
+      "pronunciation": "/kəˈreɪdʒəs ˌpaɪəˈnɪə/",
+      "partOfSpeech": "noun",
+      "definition": "An early trailblazer who braves severe danger, prejudice, or hardship to open pathways for others.",
+      "example": "Rosa Parks was a courageous pioneer whose quiet defiance ignited the modern civil rights movement.",
+      "translation": "الرائد الشجاع الذي يمهد الطريق للأجيال",
+      "collocations": [
+        "honor a courageous pioneer",
+        "memory of a courageous pioneer"
+      ],
+      "synonyms": [
+        "brave trailblazer"
+      ],
+      "antonyms": [],
+      "tags": [
+        "courage",
+        "history"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "generous soul",
+      "pronunciation": "/ˈdʒenərəs səʊl/",
+      "partOfSpeech": "noun",
+      "definition": "A genuinely kind-hearted individual whose disposition is defined by benevolence, charity, and warmth.",
+      "example": "Uncle Robert was a generous soul who never allowed a hungry neighbor to leave his kitchen empty-handed.",
+      "translation": "الشخص السخي ذو النفس الكريمة المعطاءة",
+      "collocations": [
+        "known as a generous soul",
+        "rare generous soul"
+      ],
+      "synonyms": [
+        "magnanimous person"
+      ],
+      "antonyms": [
+        "miser"
+      ],
+      "tags": [
+        "kindness",
+        "generosity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "beloved relative",
+      "pronunciation": "/bɪˈlʌvɪd ˈrelətɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A family member held in high affection and deep fondness by their kin.",
+      "example": "Every summer holiday was spent at the coastal cottage of our beloved relative, Aunt Helen.",
+      "translation": "القريب المحبوب والعزيز على القلب",
+      "collocations": [
+        "visit a beloved relative",
+        "mourn a beloved relative"
+      ],
+      "synonyms": [
+        "cherished kinsman"
+      ],
+      "antonyms": [],
+      "tags": [
+        "family",
+        "love"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "compassionate friend",
+      "pronunciation": "/kəmˈpæʃənət frend/",
+      "partOfSpeech": "noun",
+      "definition": "A friend who deeply empathizes with your pain and offers heartfelt solace without judgment.",
+      "example": "When she suffered a sudden bereavement, having a compassionate friend beside her brought immense relief.",
+      "translation": "الصديق الرحيم والمواسي في الأحزان",
+      "collocations": [
+        "turn to a compassionate friend",
+        "blessed with a compassionate friend"
+      ],
+      "synonyms": [
+        "sympathetic friend"
+      ],
+      "antonyms": [],
+      "tags": [
+        "friendship",
+        "compassion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "encouraging mentor",
+      "pronunciation": "/ɪnˈkʌrɪdʒɪŋ ˈmentɔː/",
+      "partOfSpeech": "noun",
+      "definition": "An advisor whose primary pedagogical method is instilling confidence and praising effort.",
+      "example": "An encouraging mentor can dispel years of imposter syndrome in a talented young artist.",
+      "translation": "المرشد المشجع الذي يزرع الثقة في النفس",
+      "collocations": [
+        "guidance of an encouraging mentor",
+        "find an encouraging mentor"
+      ],
+      "synonyms": [
+        "supportive advisor"
+      ],
+      "antonyms": [
+        "hypercritical critic"
+      ],
+      "tags": [
+        "mentorship",
+        "confidence"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "faithful confidant",
+      "pronunciation": "/ˈfeɪθfl ˌkɒnfɪˈdænt/",
+      "partOfSpeech": "noun",
+      "definition": "A steadfast friend whose trustworthiness in keeping confidential disclosures is absolute.",
+      "example": "Throughout decades of public scrutiny, his spouse remained his most faithful confidant.",
+      "translation": "المؤتمن الوفي الذي يحفظ السر ولا يخون الأمانة",
+      "collocations": [
+        "confide in a faithful confidant",
+        "remain a faithful confidant"
+      ],
+      "synonyms": [
+        "loyal confidant"
+      ],
+      "antonyms": [],
+      "tags": [
+        "loyalty",
+        "trust"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "inspiring leader",
+      "pronunciation": "/ɪnˈspaɪərɪŋ ˈliːdə/",
+      "partOfSpeech": "noun",
+      "definition": "A leader whose vision, moral integrity, and charisma motivate teams to achieve extraordinary goals.",
+      "example": "An inspiring leader unites diverse teams by focusing on shared human purpose rather than petty divisions.",
+      "translation": "القائد الملهم الذي يشحذ الهمم ويوحد الصفوف",
+      "collocations": [
+        "revered as an inspiring leader",
+        "qualities of an inspiring leader"
+      ],
+      "synonyms": [
+        "visionary leader"
+      ],
+      "antonyms": [
+        "demoralizing boss"
+      ],
+      "tags": [
+        "leadership",
+        "inspiration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "selfless volunteer",
+      "pronunciation": "/ˈselfləs ˌvɒlənˈtɪə/",
+      "partOfSpeech": "noun",
+      "definition": "A person who generously donates time and labor to serve others without expecting material reward.",
+      "example": "The disaster relief camp was staffed by selfless volunteers who worked eighteen-hour shifts in monsoon mud.",
+      "translation": "المتطوع المتفاني الذي يؤثر غيره على نفسه",
+      "collocations": [
+        "effort of a selfless volunteer",
+        "corps of selfless volunteers"
+      ],
+      "synonyms": [
+        "altruistic worker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "service",
+        "charity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "steadfast friend",
+      "pronunciation": "/ˈstedfɑːst frend/",
+      "partOfSpeech": "noun",
+      "definition": "A loyal friend whose support remains firm, unwavering, and constant through all life changes.",
+      "example": "A steadfast friend is a rare treasure whose fidelity does not waver when financial fortunes change.",
+      "translation": "الصديق الصدوق الثابت والوفي على العهد",
+      "collocations": [
+        "remain a steadfast friend",
+        "rely on a steadfast friend"
+      ],
+      "synonyms": [
+        "constant friend",
+        "staunch ally"
+      ],
+      "antonyms": [
+        "unfaithful friend"
+      ],
+      "tags": [
+        "friendship",
+        "loyalty"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wise counselor",
+      "pronunciation": "/waɪz ˈkaʊnsələ/",
+      "partOfSpeech": "noun",
+      "definition": "A prudent advisor who helps people navigate complex moral, legal, or personal dilemmas.",
+      "example": "The retired judge served as a wise counselor to community mediators resolving ethnic tensions.",
+      "translation": "المستشار والموجه الحكيم الخبير بالحياة",
+      "collocations": [
+        "seek a wise counselor",
+        "advice of a wise counselor"
+      ],
+      "synonyms": [
+        "sagacious advisor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "wisdom",
+        "guidance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "formative bond",
+      "pronunciation": "/ˈfɔːmətɪv bɒnd/",
+      "partOfSpeech": "noun",
+      "definition": "A foundational emotional relationship during youth that permanently influences personality and character.",
+      "example": "The formative bond forged between the brothers during wartime hardship endured throughout their long lives.",
+      "translation": "الرابطة التكوينية الوثيقة التي تصقل الشخصية",
+      "collocations": [
+        "forge a formative bond",
+        "strength of a formative bond"
+      ],
+      "synonyms": [
+        "foundational attachment"
+      ],
+      "antonyms": [],
+      "tags": [
+        "relationships",
+        "family"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Tribute to a Life Mentor: Graduation Speech Prep",
+      "titleArabic": "تحية لمرشد الحياة: التحضير لخطاب التخرج",
+      "setting": "A university graduate discusses her valedictorian address with her elder brother.",
+      "lines": [
+        {
+          "speaker": "Aiden",
+          "text": "Who are you highlighting in your graduation speech tomorrow?"
+        },
+        {
+          "speaker": "Clara",
+          "text": "I am dedicating it to Professor Vance, the formative mentor who served as my intellectual guiding light."
+        },
+        {
+          "speaker": "Aiden",
+          "text": "He truly was a humble role model who offered unwavering support throughout your four years of research."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Indeed. Whenever I doubted my abilities, he acted as a patient instructor and an empathetic listener."
+        },
+        {
+          "speaker": "Aiden",
+          "text": "Our grandfather also instilled in you that same ethical lodestar and fatherly wisdom."
+        },
+        {
+          "speaker": "Clara",
+          "text": "Grandpa was our family anchor. His motherly warmth and quiet strength shaped my moral compass."
+        },
+        {
+          "speaker": "Aiden",
+          "text": "He was an unsung hero who worked double shifts so we could attend college."
+        },
+        {
+          "speaker": "Clara",
+          "text": "I will share that treasured memory. Honoring those who shaped us gives meaning to this milestone."
+        }
+      ],
+      "vocabularyUsed": [
+        "formative mentor",
+        "guiding light",
+        "humble role model",
+        "unwavering support",
+        "patient instructor",
+        "empathetic listener",
+        "ethical lodestar",
+        "fatherly wisdom",
+        "family anchor",
+        "motherly warmth",
+        "unsung hero",
+        "treasured memory"
+      ]
+    },
+    {
+      "title": "Childhood Reunion: Remembering Early Influences",
+      "titleArabic": "لقاء رفقاء الصبا: استرجاع الذكريات والمؤثرين الأوائل",
+      "setting": "Two lifelong friends meet in their hometown after years living in different countries.",
+      "lines": [
+        {
+          "speaker": "Samir",
+          "text": "Walking down our old street brings back every memory of growing up with you as my childhood companion."
+        },
+        {
+          "speaker": "Tarek",
+          "text": "You were my steadfast friend and trusted confidant through every schoolyard crisis."
+        },
+        {
+          "speaker": "Samir",
+          "text": "Do you remember Coach Miller? He was a firm disciplinarian, but he was an inspiring teacher at heart."
+        },
+        {
+          "speaker": "Tarek",
+          "text": "He was a motivational coach who pushed us to develop true resilience on the track."
+        },
+        {
+          "speaker": "Samir",
+          "text": "And Mrs. Higgins, our gentle neighborhood elder, was a generous benefactor who provided books for everyone."
+        },
+        {
+          "speaker": "Tarek",
+          "text": "She was a sympathetic soul and a true guardian angel to struggling families in the village."
+        },
+        {
+          "speaker": "Samir",
+          "text": "That formative bond we shared with our community taught us values that still guide us today."
+        },
+        {
+          "speaker": "Tarek",
+          "text": "Surrounding ourselves with positive influences gave us the courage to build meaningful lives."
+        }
+      ],
+      "vocabularyUsed": [
+        "childhood companion",
+        "steadfast friend",
+        "trusted confidant",
+        "firm disciplinarian",
+        "inspiring teacher",
+        "motivational coach",
+        "generous benefactor",
+        "sympathetic soul",
+        "guardian angel",
+        "formative bond",
+        "positive influence"
+      ]
+    },
+    {
+      "title": "Family Fireside: Honoring the Ancestral Legacy",
+      "titleArabic": "جلسة عائلية دافئة: تكريم إرث الأجداد والآباء",
+      "setting": "An uncle and niece look through vintage family photo albums on a winter evening.",
+      "lines": [
+        {
+          "speaker": "Niece",
+          "text": "Look at this photograph of Great-Aunt Sarah. She had such a dignified, serene presence."
+        },
+        {
+          "speaker": "Uncle",
+          "text": "She was a courageous pioneer who opened the first women's medical dispensary in this province."
+        },
+        {
+          "speaker": "Niece",
+          "text": "Everyone described her as a generous soul and a source of comfort for the entire town."
+        },
+        {
+          "speaker": "Uncle",
+          "text": "She was also a wise counselor to my father when he was starting his legal practice."
+        },
+        {
+          "speaker": "Niece",
+          "text": "Our grandparent legacy is filled with role model figures who lived with remarkable humility."
+        },
+        {
+          "speaker": "Uncle",
+          "text": "Your mother inherited that same nurturing guide quality; she has been a pillar of strength for decades."
+        },
+        {
+          "speaker": "Niece",
+          "text": "She is my lifelong ally. Having a forgiving parent and encouraging mentor made all the difference."
+        },
+        {
+          "speaker": "Uncle",
+          "text": "Passing down these values preserves our family's greatest treasure."
+        }
+      ],
+      "vocabularyUsed": [
+        "courageous pioneer",
+        "generous soul",
+        "source of comfort",
+        "wise counselor",
+        "grandparent legacy",
+        "role model figure",
+        "nurturing guide",
+        "pillar of strength",
+        "lifelong ally",
+        "forgiving parent",
+        "encouraging mentor"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Formative Guides Who Shape Human Character",
+      "titleArabic": "الموجهون التكوينيون الذين يصقلون الشخصية الإنسانية",
+      "text": "Every accomplished individual stands upon the shoulders of remarkable mentors who shaped their earliest aspirations. In early youth, blessed is the student who encounters an inspiring teacher or an unforgettable teacher whose pedagogical passion awakens intellectual curiosity. Such educators act as a nurturing guide and patient instructor, offering unwavering support through academic trials. Beyond the classroom, a formative mentor functions as an ethical lodestar, guiding young professionals away from moral compromises. When doubts cloud judgment, turning to a humble role model or wise counselor restores clarity. Ultimately, these formative influences instill lasting values that endure through every chapter of adult life.",
+      "vocabularyUsed": [
+        "inspiring teacher",
+        "unforgettable teacher",
+        "nurturing guide",
+        "patient instructor",
+        "unwavering support",
+        "formative mentor",
+        "ethical lodestar",
+        "humble role model",
+        "wise counselor",
+        "formative influence"
+      ]
+    },
+    {
+      "title": "Family Foundations: Pillars of Strength and Generational Love",
+      "titleArabic": "أركان العائلة: ركائز القوة والمحبة عبر الأجيال",
+      "text": "Within the sanctuary of family life, foundational virtues are absorbed through loving examples rather than formal instruction. A home enveloped in motherly warmth and anchored by fatherly wisdom provides children with an unshakable psychological bedrock. When adversity strikes, a steadfast elder acts as a pillar of strength and a dependable family anchor, weathering grief with quiet dignity. Treasuring our grandparent legacy connects current generations with ancestral sacrifices that made modern opportunities possible. Guided by a forgiving parent whose compassion transcends human missteps, children learn to navigate relationships with profound empathy. These enduring family bonds provide a lifelong source of comfort across every storm.",
+      "vocabularyUsed": [
+        "motherly warmth",
+        "fatherly wisdom",
+        "pillar of strength",
+        "family anchor",
+        "grandparent legacy",
+        "forgiving parent",
+        "source of comfort"
+      ]
+    },
+    {
+      "title": "Allies, Companions, and the Quiet Heroes of Community Life",
+      "titleArabic": "الحلفاء، الرفقاء، والأبطال المجهولون في المجتمع",
+      "text": "Human resilience is sustained by compassionate connections forged across communities. Growing up alongside a loyal childhood companion establishes an enduring formative bond that defies geographic distance. Throughout life, having a trusted confidant and steadfast friend provides a safe harbor where vulnerabilities can be voiced without judgment. In society, unsung heroes and selfless volunteers embody the spirit of a generous soul, extending a guiding hand and acting as a guardian angel to those in distress. Whether as a supportive peer in the workplace or a compassionate friend during bereavement, these individuals leave an indelible treasured memory in the hearts of those they touch.",
+      "vocabularyUsed": [
+        "childhood companion",
+        "formative bond",
+        "trusted confidant",
+        "steadfast friend",
+        "unsung hero",
+        "selfless volunteer",
+        "generous soul",
+        "guiding hand",
+        "guardian angel",
+        "supportive peer",
+        "compassionate friend",
+        "treasured memory"
+      ]
+    }
+  ]
+}

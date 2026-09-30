@@ -1,0 +1,1580 @@
+{
+  "day": 61,
+  "title": "Making Decisions",
+  "topic": "Choices and consequences",
+  "description": "Talk about imaginary choices and their results.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about choices and consequences using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Second Conditional",
+      "titleArabic": "الحالة الشرطية الثانية (Second Conditional)",
+      "explanation": "We use the Second Conditional to talk about hypothetical, imaginary, or improbable situations in the present or future, and their imagined consequences. The 'if' clause uses the Past Simple (expressing distance from reality, not past time), and the main clause uses 'would / wouldn't + base verb' (or 'could / might' for possibility). Note: In formal English, we use 'were' instead of 'was' for all persons in the if-clause ('If I were you...', 'If he were here...').",
+      "explanationArabic": "نستخدم الحالة الشرطية الثانية للحديث عن مواقف افتراضية أو خيالية أو غير محتملة الوقوع في الحاضر أو المستقبل، والنتائج المترتبة عليها: تتكون جملة الشرط (If-clause) من زمن الماضي البسيط Past Simple (وهو ماضٍ افتراضي يدل على البعد عن الواقع وليس زمناً ماضياً)، وتتكون جملة جواب الشرط من 'would + المصدر' (أو could / might للتعبير عن القدرة أو الاحتمال). ملاحظة أسلوبية: في اللغة الدقيقة والرسمية، يُفضل استخدام 'were' مع جميع الضمائر في جملة الشرط ('If I were you...', 'If she were here...').",
+      "structures": [
+        {
+          "label": "Standard Second Conditional · الصيغة القياسية",
+          "pattern": "If + Subject + Past Simple, Subject + would + Base Verb",
+          "explanation": "Used for imagined situations and their hypothetical outcomes.",
+          "explanationArabic": "تُستخدم للمواقف التخيلية ونتائجها الافتراضية."
+        },
+        {
+          "label": "Giving Advice with Were · تقديم النصيحة الافتراضية",
+          "pattern": "If I were you, I would + Base Verb",
+          "explanation": "The standard English idiom for putting oneself in someone else's place to advise.",
+          "explanationArabic": "الأسلوب القياسي لتقديم النصيحة بوضع المتحدث نفسه مكان الطرف الآخر."
+        },
+        {
+          "label": "Possibility / Ability in Outcome · الاحتمال والقدرة في الجواب",
+          "pattern": "If + Subject + Past Simple, Subject + could / might + Base Verb",
+          "explanation": "Expresses that the imaginary outcome is possible rather than guaranteed.",
+          "explanationArabic": "يدل على أن النتيجة التخيلية محتملة أو ممكنة وليست مؤكدة."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "If I stood at a major career crossroads, I would weigh the pros and cons meticulously.",
+          "translation": "لو وقفت عند مفترق طرق مهني حاسم، لوزنت الإيجابيات والسلبيات بكل دقة.",
+          "usesVocabulary": [
+            "crossroads",
+            "weigh pros and cons"
+          ]
+        },
+        {
+          "sentence": "If our leadership exercised sound judgment, they wouldn't rush into an arbitrary choice.",
+          "translation": "لو مارست قيادتنا حكماً سديداً، لما اندفعت نحو خيار عشوائي اعتباطي.",
+          "usesVocabulary": [
+            "sound judgment",
+            "arbitrary choice"
+          ]
+        },
+        {
+          "sentence": "If you took that calculated risk, an unintended consequence might complicate logistics.",
+          "translation": "لو أقدمت على تلك المخاطرة المحسوبة، فقد تُعقد نتيجة غير محسوبة العمليات اللوجستية.",
+          "usesVocabulary": [
+            "calculated risk",
+            "unintended consequence"
+          ]
+        },
+        {
+          "sentence": "If she were in charge, she would call the shots and establish a clear rule of thumb.",
+          "translation": "لو كانت هي المسؤولة، لأمسكت بزمام الأمور ووضعت قاعدة عملية واضحة.",
+          "usesVocabulary": [
+            "call the shots",
+            "rule of thumb"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "If I would have more money, I would invest in startups.",
+          "right": "If I had more money, I would invest in startups.",
+          "note": "Never use 'would' in the 'if' clause of a conditional sentence.",
+          "noteArabic": "لا تضع 'would' في جملة الشرط (if-clause) إطلاقاً."
+        },
+        {
+          "wrong": "If he was the president, he will change the tax law.",
+          "right": "If he were the president, he would change the tax law.",
+          "note": "Match past subjunctive in if-clause with 'would' in main clause, not 'will'. Use 'were' for formal hypothetical condition.",
+          "noteArabic": "طابق الماضي الافتراضي في جملة الشرط مع would في جواب الشرط، واستخدم were للأمر التخيلي الرسمي."
+        }
+      ],
+      "commonUsage": [
+        "Deliberating dilemmas: 'If I were in your shoes, I would sleep on it.' (تُستخدم للتأمل في الخيارات والنصائح اليومية.)",
+        "Business strategy planning: 'If we faced a sudden dealbreaker, we would activate our contingency option.' (تُستخدم لتخطيط سيناريوهات الأعمال.)",
+        "Evaluating risk: 'If we took the plunge, the trade-off would be reduced liquidity.' (تُستخدم لتقييم الموازنات والتبعات المالية.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "crossroads",
+      "pronunciation": "/ˈkrɒsrəʊdz/",
+      "partOfSpeech": "noun",
+      "definition": "A critical point in life or decision-making where an important choice must be made.",
+      "example": "If I stood at such a major career crossroads, I would consult trusted mentors before choosing.",
+      "translation": "مفترق طرق / نقطة تحول حاسمة",
+      "exampleArabic": "لو وقفت عند مفترق طرق مهني كهذا، لاستشرت مرشدين موثوقين قبل الاختيار.",
+      "collocations": [
+        "stand at a crossroads",
+        "reach a crossroads"
+      ],
+      "synonyms": [
+        "turning point"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "choice"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fork in the road",
+      "pronunciation": "/fɔːk ɪn ðə rəʊd/",
+      "partOfSpeech": "noun",
+      "definition": "A point where two very different alternative courses of action diverge.",
+      "example": "If our startup met a fork in the road, we would pivot toward enterprise software.",
+      "translation": "مفترق مسارين / مفترق في الطريق",
+      "exampleArabic": "لو واجهت شركتنا الناشئة مفترق مسارين، لتحولنا نحو برمجيات الشركات الكبرى.",
+      "collocations": [
+        "reach a fork in the road",
+        "navigate a fork in the road"
+      ],
+      "synonyms": [
+        "divergence"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "weigh pros and cons",
+      "pronunciation": "/weɪ prəʊz ənd kɒnz/",
+      "partOfSpeech": "verb",
+      "definition": "To carefully evaluate advantages and disadvantages before making a decision.",
+      "example": "If she weighed the pros and cons logically, she would realize the relocation offers higher savings.",
+      "translation": "يزن الإيجابيات والسلبيات",
+      "exampleArabic": "لو وزنت الإيجابيات والسلبيات بمنطقية، لأدركت أن الانتقال يوفر مدخرات أعلى.",
+      "verbForms": {
+        "v1": "weigh pros and cons",
+        "v2": "weighed pros and cons",
+        "v3": "weighed pros and cons"
+      },
+      "collocations": [
+        "carefully weigh pros and cons",
+        "stop and weigh pros and cons"
+      ],
+      "synonyms": [
+        "balance options"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "analysis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "trade-off",
+      "pronunciation": "/ˈtreɪd ɒf/",
+      "partOfSpeech": "noun",
+      "definition": "A balance achieved between two desirable but mutually incompatible features; a compromise.",
+      "example": "If we accepted that demanding position, the difficult trade-off would be less weekend family time.",
+      "translation": "مقايضة / تنازل متوازن",
+      "exampleArabic": "لو قبلنا ذلك المنصب الشاق، لكانت المقايضة الصعبة قضاء وقت عائلي أقل في العطلات.",
+      "collocations": [
+        "difficult trade-off",
+        "inevitable trade-off"
+      ],
+      "synonyms": [
+        "compromise"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "analysis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "dealbreaker",
+      "pronunciation": "/ˈdiːlbreɪkə/",
+      "partOfSpeech": "noun",
+      "definition": "A factor or issue that causes a negotiation, agreement, or relationship to fail.",
+      "example": "If the employer refused remote work flexibility, that condition would become an absolute dealbreaker.",
+      "translation": "عائق حاسم يلغي الاتفاق / شرط مفسخ",
+      "exampleArabic": "لو رفض صاحب العمل مرونة العمل عن بُعد، لأصبح ذلك الشرط عائقاً حاسماً يلغي الاتفاق.",
+      "collocations": [
+        "potential dealbreaker",
+        "ultimate dealbreaker"
+      ],
+      "synonyms": [
+        "non-negotiable"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "business"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tipping point",
+      "pronunciation": "/ˈtɪpɪŋ pɔɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "The crisis stage or turning point in a situation at which a significant change takes place.",
+      "example": "If product complaints crossed fifty a day, we would reach a catastrophic tipping point.",
+      "translation": "نقطة التحول الحرجة / نقطة الحسم",
+      "exampleArabic": "لو تجاوزت شكاوى المنتج خمسين شكوى يومياً، لوصلنا إلى نقطة تحول كارثية.",
+      "collocations": [
+        "reach a tipping point",
+        "approach the tipping point"
+      ],
+      "synonyms": [
+        "critical threshold"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "decisive factor",
+      "pronunciation": "/dɪˈsaɪsɪv ˈfæktə/",
+      "partOfSpeech": "noun",
+      "definition": "An element or circumstance that produces a definite result or determines an outcome.",
+      "example": "If tuition costs were identical, campus research prestige would be the decisive factor.",
+      "translation": "عامل حاسم / عنصر فاصل",
+      "exampleArabic": "لو كانت تكاليف الرسوم الدراسية متطابقة، لكانت المكانة البحثية للحرم الجامعي هي العامل الحاسم.",
+      "collocations": [
+        "the decisive factor",
+        "prove the decisive factor"
+      ],
+      "synonyms": [
+        "determining factor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "make up mind",
+      "pronunciation": "/meɪk ʌp maɪnd/",
+      "partOfSpeech": "verb",
+      "definition": "To come to a definitive decision after doubt or hesitation.",
+      "example": "If he made up his mind sooner, he would secure the discount airline seats.",
+      "translation": "يحسم أمره / يتخذ قراره نهائياً",
+      "exampleArabic": "لو حسم أمره مبكراً، لحجز مقاعد الطيران المخفضة.",
+      "verbForms": {
+        "v1": "make up mind",
+        "v2": "made up mind",
+        "v3": "made up mind"
+      },
+      "collocations": [
+        "finally make up mind",
+        "struggle to make up mind"
+      ],
+      "synonyms": [
+        "decide firmly"
+      ],
+      "antonyms": [
+        "dither"
+      ],
+      "tags": [
+        "decisions",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ponder",
+      "pronunciation": "/ˈpɒndə/",
+      "partOfSpeech": "verb",
+      "definition": "To think about something carefully and extensively, especially before reaching a conclusion.",
+      "example": "If the architect pondered the zoning bylaws longer, she would design a safer parking structure.",
+      "translation": "يتأمل بعمق / يتفكر بروية",
+      "exampleArabic": "لو تأملت المهندسة المعمارية قوانين البناء بروية أطول، لصممت مبنى مواقف أكثر أماناً.",
+      "verbForms": {
+        "v1": "ponder",
+        "v2": "pondered",
+        "v3": "pondered"
+      },
+      "collocations": [
+        "ponder deeply",
+        "ponder the question"
+      ],
+      "synonyms": [
+        "contemplate",
+        "reflect upon"
+      ],
+      "antonyms": [],
+      "tags": [
+        "thinking",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "deliberate carefully",
+      "pronunciation": "/dɪˈlɪbəreɪt ˈkeəfəli/",
+      "partOfSpeech": "verb",
+      "definition": "To engage in long and careful consideration of serious issues.",
+      "example": "If the hiring jury deliberated carefully, they would select the candidate with practical leadership skills.",
+      "translation": "يتداول بتأنٍّ / يتشاور بحرص",
+      "exampleArabic": "لو تداولت لجنة التوظيف بحرص، لاختارت المرشح ذا المهارات القيادية العملية.",
+      "verbForms": {
+        "v1": "deliberate carefully",
+        "v2": "deliberated carefully",
+        "v3": "deliberated carefully"
+      },
+      "collocations": [
+        "need to deliberate carefully",
+        "deliberate carefully before voting"
+      ],
+      "synonyms": [
+        "consult thoroughly"
+      ],
+      "antonyms": [],
+      "tags": [
+        "decisions",
+        "thinking"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "second-guess",
+      "pronunciation": "/ˈsekənd ɡes/",
+      "partOfSpeech": "verb",
+      "definition": "To anticipate, question, or criticize someone's actions or one's own decisions with hindsight.",
+      "example": "If you second-guessed every small initiative, you would never launch any innovative feature.",
+      "translation": "يشكك في قراره بأثر رجعي / يتردد بعد الحسم",
+      "exampleArabic": "لو شككت في كل مبادرة صغيرة بأثر رجعي، فلن تطلق أي ميزة مبتكرة على الإطلاق.",
+      "verbForms": {
+        "v1": "second-guess",
+        "v2": "second-guessed",
+        "v3": "second-guessed"
+      },
+      "collocations": [
+        "constantly second-guess",
+        "stop second-guessing yourself"
+      ],
+      "synonyms": [
+        "doubt post hoc"
+      ],
+      "antonyms": [
+        "trust intuition"
+      ],
+      "tags": [
+        "decisions",
+        "thinking"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "gut feeling",
+      "pronunciation": "/ɡʌt ˈfiːlɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "An instinctive feeling as opposed to an opinion based on logical thought.",
+      "example": "If my gut feeling warned me against the investment, I would heed it instantly.",
+      "translation": "شعور حدسي / إحساس داخلي",
+      "exampleArabic": "لو حذرني شعوري الحدسي من الاستثمار، لاستمعت إليه على الفور.",
+      "collocations": [
+        "trust one's gut feeling",
+        "strong gut feeling"
+      ],
+      "synonyms": [
+        "intuition",
+        "instinct"
+      ],
+      "antonyms": [
+        "rational deduction"
+      ],
+      "tags": [
+        "intuition",
+        "psychology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rational choice",
+      "pronunciation": "/ˈræʃnəl tʃɔɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A decision based on logical facts, cost balancing, and objective reasoning.",
+      "example": "If investors made a rational choice, they would diversify capital across uncorrelated asset classes.",
+      "translation": "خيار عقلاني / قرار رشيد",
+      "exampleArabic": "لو اتخذ المستثمرون خياراً عقلانياً، لوزعوا رؤوس أموالهم عبر فئات أصول غير مترابطة.",
+      "collocations": [
+        "make a rational choice",
+        "governed by rational choice"
+      ],
+      "synonyms": [
+        "sensible decision"
+      ],
+      "antonyms": [
+        "impulsive whim"
+      ],
+      "tags": [
+        "logic",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unintended consequence",
+      "pronunciation": "/ˌʌnɪnˈtendɪd ˈkɒnsɪkwəns/",
+      "partOfSpeech": "noun",
+      "definition": "An unforeseen result that emerges from a purposeful action.",
+      "example": "If the municipality raised parking fines too high, an unintended consequence would be empty downtown shops.",
+      "translation": "نتيجة غير مقصودة / عاقبة غير محسوبة",
+      "exampleArabic": "لو رفعت البلدية غرامات المواقف كثيراً، لكانت النتيجة غير المقصودة فراغ المتاجر بوسط المدينة.",
+      "collocations": [
+        "suffer unintended consequences",
+        "foresee unintended consequences"
+      ],
+      "synonyms": [
+        "unexpected fallout"
+      ],
+      "antonyms": [
+        "intended objective"
+      ],
+      "tags": [
+        "outcomes",
+        "analysis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "judgment call",
+      "pronunciation": "/ˈdʒʌdʒmənt kɔːl/",
+      "partOfSpeech": "noun",
+      "definition": "A subjective decision made on the basis of one's personal discretion rather than hard rules.",
+      "example": "If the referee made that difficult judgment call, both teams would respect his authority.",
+      "translation": "تقدير شخصي / قرار خاضع للاجتهاد",
+      "exampleArabic": "لو اتخذ الحكم ذلك التقدير الشخصي الصعب، لاحترم كلا الفريقين سلطته.",
+      "collocations": [
+        "make a judgment call",
+        "tough judgment call"
+      ],
+      "synonyms": [
+        "discretionary decision"
+      ],
+      "antonyms": [
+        "rule-bound mandate"
+      ],
+      "tags": [
+        "decisions",
+        "discretion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "split-second decision",
+      "pronunciation": "/ˌsplɪt ˈsekənd dɪˈsɪʒn/",
+      "partOfSpeech": "noun",
+      "definition": "A decision arrived at in a tiny fraction of time, often under emergency pressure.",
+      "example": "If the airline pilot faced sudden engine failure, a split-second decision would save all passengers.",
+      "translation": "قرار لحظي خاطف / قرار في جزء من الثانية",
+      "exampleArabic": "لو واجه قائد الطائرة عطلاً مفاجئاً في المحرك، لأنقذ قرار لحظي خاطف جميع الركاب.",
+      "collocations": [
+        "require a split-second decision",
+        "make a split-second decision"
+      ],
+      "synonyms": [
+        "instant decision"
+      ],
+      "antonyms": [
+        "protracted deliberation"
+      ],
+      "tags": [
+        "urgency",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hesitation",
+      "pronunciation": "/ˌhezɪˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The action of pausing before saying or doing something due to uncertainty.",
+      "example": "If you acted without hesitation during the interview, you would project powerful confidence.",
+      "translation": "تردد / إحجام مؤقت",
+      "exampleArabic": "لو تصرفت دون تردد أثناء المقابلة، لأظهرت ثقة قوية بنفسك.",
+      "collocations": [
+        "without hesitation",
+        "brief hesitation"
+      ],
+      "synonyms": [
+        "vacillation",
+        "pause"
+      ],
+      "antonyms": [
+        "promptness"
+      ],
+      "tags": [
+        "psychology",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "vacillate",
+      "pronunciation": "/ˈvæsəleɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To alternate or waver between different opinions or actions; to be indecisive.",
+      "example": "If the cabinet minister vacillated further, public confidence in economic reform would dwindle.",
+      "translation": "يتذبذب / يتردد بين أمرين",
+      "exampleArabic": "لو تذبذب الوزير أكثر، لتضاءلت ثقة الجمهور في الإصلاح الاقتصادي.",
+      "verbForms": {
+        "v1": "vacillate",
+        "v2": "vacillated",
+        "v3": "vacillated"
+      },
+      "collocations": [
+        "vacillate between two views",
+        "tend to vacillate"
+      ],
+      "synonyms": [
+        "fluctuate",
+        "waver"
+      ],
+      "antonyms": [
+        "resolve firmly"
+      ],
+      "tags": [
+        "indecision",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "waver",
+      "pronunciation": "/ˈweɪvə/",
+      "partOfSpeech": "verb",
+      "definition": "To become unsteady or falter in resolution, purpose, or conviction.",
+      "example": "If our resolve wavered under market volatility, we would miss the seasonal recovery.",
+      "translation": "يتزعزع / يترنح في عزمه",
+      "exampleArabic": "لو تزعزعت عزيمتنا تحت وطأة تقلبات السوق، لفاتنا التعافي الموسمي.",
+      "verbForms": {
+        "v1": "waver",
+        "v2": "wavered",
+        "v3": "wavered"
+      },
+      "collocations": [
+        "never waver",
+        "waver in determination"
+      ],
+      "synonyms": [
+        "falter",
+        "hesitate"
+      ],
+      "antonyms": [
+        "persevere"
+      ],
+      "tags": [
+        "resolution",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "snap judgment",
+      "pronunciation": "/snæp ˈdʒʌdʒmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A rushed conclusion made quickly without taking time to consider all relevant facts.",
+      "example": "If managers avoided snap judgments, they would evaluate candidate portfolios more fairly.",
+      "translation": "حكم متعجل متسرع",
+      "exampleArabic": "لو تجنب المديرون الأحكام المتعجلة، لقاموا بتقييم ملفات المرشحين بعدالة أكبر.",
+      "collocations": [
+        "avoid snap judgments",
+        "make a snap judgment"
+      ],
+      "synonyms": [
+        "hasty conclusion"
+      ],
+      "antonyms": [
+        "deliberate assessment"
+      ],
+      "tags": [
+        "biases",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "informed choice",
+      "pronunciation": "/ɪnˈfɔːmd tʃɔɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A decision made after acquiring full facts, risks, and pertinent insights.",
+      "example": "If citizens reviewed municipal balance sheets, they would make an informed choice at elections.",
+      "translation": "خيار مستنير / قرار عن معرفة وبينة",
+      "exampleArabic": "لو اطلع المواطنون على الميزانيات العمومية للبلدية، لاتخذوا خياراً مستنيراً في الانتخابات.",
+      "collocations": [
+        "make an informed choice",
+        "promote informed choice"
+      ],
+      "synonyms": [
+        "educated decision"
+      ],
+      "antonyms": [
+        "blind guess"
+      ],
+      "tags": [
+        "knowledge",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cost-benefit analysis",
+      "pronunciation": "/ˌkɒst ˈbenɪfɪt əˈnæləsɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A systematic approach to estimating the strengths and weaknesses of alternatives.",
+      "example": "If the council conducted a rigorous cost-benefit analysis, they would build a rapid tramline.",
+      "translation": "تحليل الجدوى والتكلفة مقابل العائد",
+      "exampleArabic": "لو أجرى المجلس تحليلاً دقيقاً للتكلفة مقابل العائد، لبنوا خط ترام سريعاً.",
+      "collocations": [
+        "conduct a cost-benefit analysis",
+        "favorable cost-benefit analysis"
+      ],
+      "synonyms": [
+        "economic evaluation"
+      ],
+      "antonyms": [],
+      "tags": [
+        "business",
+        "finance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "irrevocable decision",
+      "pronunciation": "/ɪˈrevəkəbl dɪˈsɪʒn/",
+      "partOfSpeech": "noun",
+      "definition": "A binding determination that cannot be undone, altered, or recalled.",
+      "example": "If you resigned your tenured university professorship, it would be an irrevocable decision.",
+      "translation": "قرار لا رجعة فيه / حسم نهائي بات",
+      "exampleArabic": "لو استقلت من منصب أستاذ الجامعة الدائم، لكان ذلك قراراً لا رجعة فيه.",
+      "collocations": [
+        "make an irrevocable decision",
+        "face an irrevocable decision"
+      ],
+      "synonyms": [
+        "permanent commitment"
+      ],
+      "antonyms": [
+        "tentative trial"
+      ],
+      "tags": [
+        "permanence",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "point of no return",
+      "pronunciation": "/ˌpɔɪnt əv nəʊ rɪˈtɜːn/",
+      "partOfSpeech": "noun",
+      "definition": "The stage in an action beyond which it is impossible to alter or stop the course.",
+      "example": "If the spacecraft passed the lunar gravitational threshold, it would cross the point of no return.",
+      "translation": "نقطة اللاعودة",
+      "exampleArabic": "لو تجاوزت المركبة الفضائية عتبة الجاذبية القمرية، لاجتازت نقطة اللاعودة.",
+      "collocations": [
+        "cross the point of no return",
+        "reach the point of no return"
+      ],
+      "synonyms": [
+        "watershed threshold"
+      ],
+      "antonyms": [],
+      "tags": [
+        "critical",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "calculated risk",
+      "pronunciation": "/ˈkælkjuleɪtɪd rɪsk/",
+      "partOfSpeech": "noun",
+      "definition": "A hazard undertaken after careful estimation of the probable odds of success.",
+      "example": "If our venture took that calculated risk, the market share payoff would be enormous.",
+      "translation": "مخاطرة مدروسة ومحسوبة",
+      "exampleArabic": "لو أقدم مشروعنا على تلك المخاطرة المحسوبة، لكان عائد الحصة السوقية هائلاً.",
+      "collocations": [
+        "take a calculated risk",
+        "worth a calculated risk"
+      ],
+      "synonyms": [
+        "measured venture"
+      ],
+      "antonyms": [
+        "reckless gamble"
+      ],
+      "tags": [
+        "risk",
+        "business"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hedging bets",
+      "pronunciation": "/ˈhedʒɪŋ bets/",
+      "partOfSpeech": "noun",
+      "definition": "Protecting oneself against loss by supporting more than one option or course.",
+      "example": "If treasury managers avoided hedging bets with gold futures, their portfolios would suffer inflation shocks.",
+      "translation": "التحوط لتقليل الخسائر / توزيع الرهانات",
+      "exampleArabic": "لو تجنب مديرو الخزينة التحوط بعقود الذهب الآجلة، لعانت محافظهم من صدمات التضخم.",
+      "collocations": [
+        "practice hedging bets",
+        "strategy of hedging bets"
+      ],
+      "synonyms": [
+        "risk mitigation"
+      ],
+      "antonyms": [
+        "going all-in"
+      ],
+      "tags": [
+        "finance",
+        "strategy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sound judgment",
+      "pronunciation": "/saʊnd ˈdʒʌdʒmənt/",
+      "partOfSpeech": "noun",
+      "definition": "The capacity to assess situations wisely, fairly, and draw practical conclusions.",
+      "example": "If the managing director demonstrated sound judgment, the boardroom feud would dissolve quickly.",
+      "translation": "رجاحة عقل / حكم صائب وسديد",
+      "exampleArabic": "لو أظهر المدير التنفيذي رجاحة عقل، لتبدد الخلاف في مجلس الإدارة سريعاً.",
+      "collocations": [
+        "exercise sound judgment",
+        "rely on sound judgment"
+      ],
+      "synonyms": [
+        "wisdom",
+        "discernment"
+      ],
+      "antonyms": [
+        "poor judgment"
+      ],
+      "tags": [
+        "wisdom",
+        "competence"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "indecisive",
+      "pronunciation": "/ˌɪndɪˈsaɪsɪv/",
+      "partOfSpeech": "adjective",
+      "definition": "Not having or showing the ability to make decisions quickly and effectively.",
+      "example": "If the incident commander were indecisive during emergencies, rescue operations would fail.",
+      "translation": "متردد / عاجز عن الحسم",
+      "exampleArabic": "لو كان قائد الحادث متردداً أثناء الطوارئ، لفشلت عمليات الإنقاذ.",
+      "collocations": [
+        "appear indecisive",
+        "hopelessly indecisive"
+      ],
+      "synonyms": [
+        "irresolute"
+      ],
+      "antonyms": [
+        "decisive"
+      ],
+      "tags": [
+        "character",
+        "behavior"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "dither",
+      "pronunciation": "/ˈdɪðə/",
+      "partOfSpeech": "verb",
+      "definition": "To be indecisive and hesitate repeatedly over trivial or major choices.",
+      "example": "If buyers dithered over property listings, competitive bidders would snatch the houses.",
+      "translation": "يتلكأ متردداً / يماطل في اتخاذ القرار",
+      "exampleArabic": "لو تلكأ المشترون مترددين بشأن العقارات المعروضة، لاقتنص المنافسون المنازل.",
+      "verbForms": {
+        "v1": "dither",
+        "v2": "dithered",
+        "v3": "dithered"
+      },
+      "collocations": [
+        "dither around",
+        "stop dithering"
+      ],
+      "synonyms": [
+        "faff around",
+        "shilly-shally"
+      ],
+      "antonyms": [
+        "act immediately"
+      ],
+      "tags": [
+        "actions",
+        "indecision"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "buyers remorse",
+      "pronunciation": "/ˌbaɪəz rɪˈmɔːs/",
+      "partOfSpeech": "noun",
+      "definition": "A sense of regret after having made a substantial or expensive purchase.",
+      "example": "If you spent half your savings on that sports car, you would endure acute buyers remorse.",
+      "translation": "ندم المشتري بعد الشراء",
+      "exampleArabic": "لو أنفقت نصف مدخراتك على تلك السيارة الرياضية، لعانيت من ندم المشتري الشديد.",
+      "collocations": [
+        "experience buyers remorse",
+        "suffer from buyers remorse"
+      ],
+      "synonyms": [
+        "post-purchase regret"
+      ],
+      "antonyms": [
+        "purchaser satisfaction"
+      ],
+      "tags": [
+        "psychology",
+        "consumerism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "opt out",
+      "pronunciation": "/ɒpt aʊt/",
+      "partOfSpeech": "verb",
+      "definition": "To choose not to participate in or belong to an established arrangement.",
+      "example": "If employees opted out of the pension scheme, they would lose generous matching contributions.",
+      "translation": "ينسحب باختياره / يفضل عدم المشاركة",
+      "exampleArabic": "لو انسحب الموظفون باختيارهم من برنامج التقاعد، لفقدوا مساهمات أصحاب العمل السخية.",
+      "verbForms": {
+        "v1": "opt out",
+        "v2": "opted out",
+        "v3": "opted out"
+      },
+      "collocations": [
+        "opt out of program",
+        "right to opt out"
+      ],
+      "synonyms": [
+        "withdraw",
+        "decline"
+      ],
+      "antonyms": [
+        "opt in"
+      ],
+      "tags": [
+        "actions",
+        "choice"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stand by decision",
+      "pronunciation": "/stænd baɪ dɪˈsɪʒn/",
+      "partOfSpeech": "verb",
+      "definition": "To remain faithful to and uphold a previous choice despite fierce pushback.",
+      "example": "If the committee stood by their decision, historical architectural landmarks would remain protected.",
+      "translation": "يتمسك بقراره / يثبت على موقفه",
+      "exampleArabic": "لو تمسكت اللجنة بقرارها، لظلت المعالم المعمارية التاريخية محمية.",
+      "verbForms": {
+        "v1": "stand by decision",
+        "v2": "stood by decision",
+        "v3": "stood by decision"
+      },
+      "collocations": [
+        "firmly stand by decision",
+        "courage to stand by decision"
+      ],
+      "synonyms": [
+        "uphold choice"
+      ],
+      "antonyms": [
+        "revoke choice"
+      ],
+      "tags": [
+        "commitment",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reap consequences",
+      "pronunciation": "/riːp ˈkɒnsɪkwənsɪz/",
+      "partOfSpeech": "verb",
+      "definition": "To experience the positive or negative outcomes of previous choices.",
+      "example": "If students studied rigorously every week, they would reap the consequences in top-tier test scores.",
+      "translation": "يجني العواقب / يحصد ثمار ما فعل",
+      "exampleArabic": "لو اجتهد الطلاب بدقة كل أسبوع، لحصدوا ثمار ذلك في درجات اختبار ممتازة.",
+      "verbForms": {
+        "v1": "reap consequences",
+        "v2": "reaped consequences",
+        "v3": "reaped consequences"
+      },
+      "collocations": [
+        "reap the consequences of actions",
+        "inevitably reap consequences"
+      ],
+      "synonyms": [
+        "bear the results"
+      ],
+      "antonyms": [],
+      "tags": [
+        "outcomes",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "face the music",
+      "pronunciation": "/feɪs ðə ˈmjuːzɪk/",
+      "partOfSpeech": "verb",
+      "definition": "To accept the unpleasant consequences of one's own past actions without evasion.",
+      "example": "If the treasurer admitted the accounting ledger discrepancy, he would have to face the music.",
+      "translation": "يواجه العواقب بشجاعة / يتحمل مسؤولية أخطائه",
+      "exampleArabic": "لو اعترف أمين الصندوق بالتفاوت في دفاتر المحاسبة، لتوجب عليه مواجهة العواقب بشجاعة.",
+      "verbForms": {
+        "v1": "face the music",
+        "v2": "faced the music",
+        "v3": "faced the music"
+      },
+      "collocations": [
+        "ready to face the music",
+        "compelled to face the music"
+      ],
+      "synonyms": [
+        "accept retribution"
+      ],
+      "antonyms": [
+        "shirk responsibility"
+      ],
+      "tags": [
+        "accountability",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rule of thumb",
+      "pronunciation": "/ˌruːl əv ˈθʌm/",
+      "partOfSpeech": "noun",
+      "definition": "A broadly accurate guideline or practical principle based on experience rather than theory.",
+      "example": "If junior coders applied this rule of thumb, their database queries would run twice as fast.",
+      "translation": "قاعدة عملية تجريبية / معيار استرشادي عام",
+      "exampleArabic": "لو طبق المبرمجون المبتدئون هذه القاعدة العملية، لعملت استعلامات قواعد بياناتهم بضعف السرعة.",
+      "collocations": [
+        "useful rule of thumb",
+        "general rule of thumb"
+      ],
+      "synonyms": [
+        "practical guideline"
+      ],
+      "antonyms": [
+        "strict formula"
+      ],
+      "tags": [
+        "practical",
+        "guidelines"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "flip a coin",
+      "pronunciation": "/flɪp ə kɔɪn/",
+      "partOfSpeech": "verb",
+      "definition": "To decide between two equally matched alternatives by tossing a metal coin.",
+      "example": "If we flipped a coin to settle the debate, neither participant would feel satisfied.",
+      "translation": "يُلقي قرعة بالعملة المعدنية",
+      "exampleArabic": "لو ألقينا قرعة بالعملة المعدنية لحسم النقاش، لما شعر أي من الطرفين بالرضا.",
+      "verbForms": {
+        "v1": "flip a coin",
+        "v2": "flipped a coin",
+        "v3": "flipped a coin"
+      },
+      "collocations": [
+        "flip a coin to decide",
+        "resolve by flipping a coin"
+      ],
+      "synonyms": [
+        "toss a coin"
+      ],
+      "antonyms": [],
+      "tags": [
+        "chance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "gamut of choices",
+      "pronunciation": "/ˈɡæmət əv ˈtʃɔɪsɪz/",
+      "partOfSpeech": "noun",
+      "definition": "The complete range or full spectrum of available options.",
+      "example": "If travelers surveyed the gamut of choices, they would discover hidden mountain eco-lodges.",
+      "translation": "طيف الخيارات الكامل / مجمل البدائل المتاحة",
+      "exampleArabic": "لو استطلع المسافرون طيف الخيارات الكامل، لاكتشفوا نزلاً جبلية بيئية خفية.",
+      "collocations": [
+        "run the gamut of choices",
+        "wide gamut of choices"
+      ],
+      "synonyms": [
+        "entire spectrum"
+      ],
+      "antonyms": [
+        "singular alternative"
+      ],
+      "tags": [
+        "options",
+        "variety"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "deliberation",
+      "pronunciation": "/dɪˌlɪbəˈreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Long and careful consideration or discussion of crucial points.",
+      "example": "If the jury concluded their deliberation today, the historic trial would reach closure.",
+      "translation": "مداولة / تشاور متأنٍّ",
+      "exampleArabic": "لو اختتمت هيئة المحلفين مداولاتها اليوم، لوصلت المحاكمة التاريخية إلى نهايتها.",
+      "collocations": [
+        "after mature deliberation",
+        "lengthy deliberation"
+      ],
+      "synonyms": [
+        "deep thought",
+        "consultation"
+      ],
+      "antonyms": [
+        "impulsiveness"
+      ],
+      "tags": [
+        "thinking",
+        "formal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "contingency option",
+      "pronunciation": "/kənˈtɪndʒənsi ˈɒpʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A backup plan designed to be implemented if an unforeseen event occurs.",
+      "example": "If sea shipments faced port blockages, our contingency option would route goods by rail.",
+      "translation": "خيار طوارئ بديل / خطة احترازية",
+      "exampleArabic": "لو واجهت الشحنات البحرية إغلاقات للموانئ، لوجه خيار الطوارئ البديل البضائع عبر السكك الحديدية.",
+      "collocations": [
+        "activate a contingency option",
+        "rely on contingency options"
+      ],
+      "synonyms": [
+        "plan B",
+        "fallback plan"
+      ],
+      "antonyms": [],
+      "tags": [
+        "planning",
+        "risk"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "arbitrary choice",
+      "pronunciation": "/ˈɑːbɪtrəri tʃɔɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A selection based on random whim or personal preference rather than reason or system.",
+      "example": "If managers made an arbitrary choice, team morale would plummet swiftly.",
+      "translation": "خيار عشوائي / قرار تعسفي أو اعتباطي",
+      "exampleArabic": "لو اتخذ المديرون خياراً عشوائياً اعتباطياً، لانهارت الروح المعنوية للفريق سريعاً.",
+      "collocations": [
+        "avoid arbitrary choices",
+        "seem an arbitrary choice"
+      ],
+      "synonyms": [
+        "whimsical decision"
+      ],
+      "antonyms": [
+        "principled choice"
+      ],
+      "tags": [
+        "bias",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "compelling reason",
+      "pronunciation": "/kəmˈpelɪŋ ˈriːzn/",
+      "partOfSpeech": "noun",
+      "definition": "A justification so convincing that it demands agreement or definitive action.",
+      "example": "If there were a compelling reason to upgrade hardware, the board would approve funds.",
+      "translation": "سبب وجيه ومقنع / مبرر قاطع",
+      "exampleArabic": "لو كان هناك سبب وجيه ومقنع لتحديث الأجهزة، لوافق مجلس الإدارة على التمويل.",
+      "collocations": [
+        "give a compelling reason",
+        "compelling reason to change"
+      ],
+      "synonyms": [
+        "persuasive justification"
+      ],
+      "antonyms": [
+        "flimsy excuse"
+      ],
+      "tags": [
+        "logic",
+        "persuasion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "overriding factor",
+      "pronunciation": "/ˌəʊvəˈraɪdɪŋ ˈfæktə/",
+      "partOfSpeech": "noun",
+      "definition": "A primary element that takes precedence over all other considerations.",
+      "example": "If passenger safety remained the overriding factor, the flight would stay grounded until storm winds calmed.",
+      "translation": "عامل مهيمن يفوق ما سواه / اعتبار أسمى",
+      "exampleArabic": "لو ظلت سلامة الركاب هي العامل الأسمى المهيمن، لبقيت الرحلة على الأرض حتى تهدأ رياح العاصفة.",
+      "collocations": [
+        "become the overriding factor",
+        "primary overriding factor"
+      ],
+      "synonyms": [
+        "dominant consideration"
+      ],
+      "antonyms": [
+        "negligible detail"
+      ],
+      "tags": [
+        "priority",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "decisiveness",
+      "pronunciation": "/dɪˈsaɪsɪvnəs/",
+      "partOfSpeech": "noun",
+      "definition": "The ability to make decisions quickly, confidently, and firmly.",
+      "example": "If the CEO demonstrated greater decisiveness, investor panics would cease.",
+      "translation": "حسم / حزم وقدرة على اتخاذ القرار",
+      "exampleArabic": "لو أظهر الرئيس التنفيذي قدراً أكبر من الحسم، لتوقفت مخاوف المستثمرين.",
+      "collocations": [
+        "act with decisiveness",
+        "admirable decisiveness"
+      ],
+      "synonyms": [
+        "firmness",
+        "resolution"
+      ],
+      "antonyms": [
+        "indecisiveness"
+      ],
+      "tags": [
+        "leadership",
+        "competence"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "agonize over",
+      "pronunciation": "/ˈæɡənaɪz ˈəʊvə/",
+      "partOfSpeech": "verb",
+      "definition": "To worry excessively and painfully about a complex decision.",
+      "example": "If he agonized over every career step, he would suffer chronic emotional exhaustion.",
+      "translation": "يتعذب قلقاً بسبب القرار / يتجرع الحيرة",
+      "exampleArabic": "لو تعذب قلقاً بشأن كل خطوة مهنية، لعانى من إرهاق عاطفي مزمن.",
+      "verbForms": {
+        "v1": "agonize over",
+        "v2": "agonized over",
+        "v3": "agonized over"
+      },
+      "collocations": [
+        "agonize over decision",
+        "no need to agonize over"
+      ],
+      "synonyms": [
+        "fret painfully"
+      ],
+      "antonyms": [
+        "decide calmly"
+      ],
+      "tags": [
+        "psychology",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pro and con",
+      "pronunciation": "/prəʊ ənd kɒn/",
+      "partOfSpeech": "noun",
+      "definition": "An argument or factor in favor of (pro) or against (con) a proposition.",
+      "example": "If we scrutinized every pro and con, we would identify the contract loopholes.",
+      "translation": "إيجابية وسلبية / حجة مؤيدة ومعارضة",
+      "exampleArabic": "لو فحصنا بدقة كل إيجابية وسلبية، لاكتشفنا الثغرات في العقد.",
+      "collocations": [
+        "assess each pro and con",
+        "balance pro and con"
+      ],
+      "synonyms": [
+        "advantage and disadvantage"
+      ],
+      "antonyms": [],
+      "tags": [
+        "analysis",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "steer clear of",
+      "pronunciation": "/stɪə klɪər əv/",
+      "partOfSpeech": "verb",
+      "definition": "To deliberately avoid a hazardous person, choice, or circumstance.",
+      "example": "If prudent consumers steered clear of predatory loans, household debt would shrink.",
+      "translation": "يبتعد عن / يتجنب بحذر",
+      "exampleArabic": "لو تجنب المستهلكون الحكماء القروض الجائرة، لانكمشت ديون الأسر.",
+      "verbForms": {
+        "v1": "steer clear of",
+        "v2": "steered clear of",
+        "v3": "steered clear of"
+      },
+      "collocations": [
+        "steer clear of trouble",
+        "wise to steer clear of"
+      ],
+      "synonyms": [
+        "avoid deliberately"
+      ],
+      "antonyms": [
+        "gravitate toward"
+      ],
+      "tags": [
+        "precaution",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "take the plunge",
+      "pronunciation": "/teɪk ðə plʌndʒ/",
+      "partOfSpeech": "verb",
+      "definition": "To commit oneself resolutely to a momentous or risky course of action.",
+      "example": "If she took the plunge and started her organic bakery, locals would flock to it.",
+      "translation": "يُقدم على الخطوة الجريئة / يخوض التجربة بشجاعة",
+      "exampleArabic": "لو أقدمت على تلك الخطوة الجريئة وأنشأت مخبزها العضوي، لتوافد عليها سكان الحي.",
+      "verbForms": {
+        "v1": "take the plunge",
+        "v2": "took the plunge",
+        "v3": "taken the plunge"
+      },
+      "collocations": [
+        "ready to take the plunge",
+        "finally take the plunge"
+      ],
+      "synonyms": [
+        "make bold leap"
+      ],
+      "antonyms": [
+        "hold back"
+      ],
+      "tags": [
+        "courage",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sleep on it",
+      "pronunciation": "/sliːp ɒn ɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To delay making a decision until the following day to allow for calmer reflection.",
+      "example": "If you slept on it before signing the mortgage, you would feel calmer tomorrow.",
+      "translation": "يتمهل لليوم التالي قبل حسم القرار",
+      "exampleArabic": "لو تمهلت ونمت ليلة قبل توقيع عقد الرهن العقاري، لشعرت بمزيد من الهدوء غداً.",
+      "verbForms": {
+        "v1": "sleep on it",
+        "v2": "slept on it",
+        "v3": "slept on it"
+      },
+      "collocations": [
+        "prefer to sleep on it",
+        "promise to sleep on it"
+      ],
+      "synonyms": [
+        "defer decision overnight"
+      ],
+      "antonyms": [
+        "rush headlong"
+      ],
+      "tags": [
+        "patience",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mull over",
+      "pronunciation": "/mʌl ˈəʊvə/",
+      "partOfSpeech": "verb",
+      "definition": "To think about a proposal, offer, or dilemma deeply over an extended period.",
+      "example": "If the committee mulled over the budget draft, they would find surplus capital.",
+      "translation": "يقلّب الأمر في ذهنه بروية",
+      "exampleArabic": "لو قلبت اللجنة مسودة الميزانية في ذهنها بروية، لوجدت فائضاً في رأس المال.",
+      "verbForms": {
+        "v1": "mull over",
+        "v2": "mulled over",
+        "v3": "mulled over"
+      },
+      "collocations": [
+        "mull over an offer",
+        "time to mull over"
+      ],
+      "synonyms": [
+        "chew over",
+        "ponder"
+      ],
+      "antonyms": [
+        "dismiss instantly"
+      ],
+      "tags": [
+        "thinking",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "call the shots",
+      "pronunciation": "/kɔːl ðə ʃɒts/",
+      "partOfSpeech": "verb",
+      "definition": "To be in the position of authority, determining policies, actions, and orders.",
+      "example": "If you called the shots in this division, what structural improvements would you execute?",
+      "translation": "يمسك بزمام الأمور / يقرر الأوامر والسياسات",
+      "exampleArabic": "لو كنت أنت من يمسك بزمام الأمور في هذا القسم، فما التحسينات الهيكلية التي ستنفذها؟",
+      "verbForms": {
+        "v1": "call the shots",
+        "v2": "called the shots",
+        "v3": "called the shots"
+      },
+      "collocations": [
+        "who calls the shots",
+        "earn right to call the shots"
+      ],
+      "synonyms": [
+        "be in charge"
+      ],
+      "antonyms": [
+        "obey orders"
+      ],
+      "tags": [
+        "authority",
+        "idioms"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Navigating a Career Crossroads",
+      "titleArabic": "التنقل عند مفترق طرق وظيفي حاسم",
+      "setting": "Two senior professionals discuss whether to accept a tempting but high-risk overseas corporate transfer.",
+      "lines": [
+        {
+          "speaker": "David",
+          "text": "I feel like I am standing right at a pivotal career crossroads, Maya."
+        },
+        {
+          "speaker": "Maya",
+          "text": "If I were in your position, I would weigh the pros and cons on paper before panicking."
+        },
+        {
+          "speaker": "David",
+          "text": "The salary is generous, but relocating overseas presents a painful trade-off with family roots."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Is the lack of international schooling a dealbreaker for your spouse?"
+        },
+        {
+          "speaker": "David",
+          "text": "Yes, if that tuition support were omitted, it would definitely prove a dealbreaker."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Do not let indecisive hesitation paralyze you. What does your inner gut feeling whisper?"
+        },
+        {
+          "speaker": "David",
+          "text": "My gut feeling says this offer could become the tipping point of my executive career."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Then take a calculated risk, sleep on it tonight, and make up your mind tomorrow!"
+        }
+      ],
+      "vocabularyUsed": [
+        "crossroads",
+        "weigh pros and cons",
+        "trade-off",
+        "dealbreaker",
+        "indecisive",
+        "hesitation",
+        "gut feeling",
+        "tipping point",
+        "calculated risk",
+        "sleep on it",
+        "make up mind"
+      ]
+    },
+    {
+      "title": "Corporate Strategy Deliberation",
+      "titleArabic": "مداولة استراتيجية في إدارة الشركات",
+      "setting": "A venture partner and a company founder deliberate over acquisition terms in a conference room.",
+      "lines": [
+        {
+          "speaker": "Founder",
+          "text": "If we accepted their buyout bid today, it would be an irrevocable decision for our brand."
+        },
+        {
+          "speaker": "Partner",
+          "text": "Indeed; once papers are signed, we cross the point of no return."
+        },
+        {
+          "speaker": "Founder",
+          "text": "Would our existing engineering team suffer buyers remorse after losing independence?"
+        },
+        {
+          "speaker": "Partner",
+          "text": "If we conducted a thorough cost-benefit analysis, everyone would see the clear capital advantage."
+        },
+        {
+          "speaker": "Founder",
+          "text": "I want to ensure we steer clear of predatory lock-in clauses in the contract."
+        },
+        {
+          "speaker": "Partner",
+          "text": "If we stood by our decision to protect developer autonomy, they would respect our boundary."
+        },
+        {
+          "speaker": "Founder",
+          "text": "Let us prepare a contingency option in case their legal board rejects our valuation."
+        },
+        {
+          "speaker": "Partner",
+          "text": "Sound judgment always triumphs when we refuse to rush into snap judgments."
+        }
+      ],
+      "vocabularyUsed": [
+        "irrevocable decision",
+        "point of no return",
+        "buyers remorse",
+        "cost-benefit analysis",
+        "steer clear of",
+        "stand by decision",
+        "contingency option",
+        "sound judgment",
+        "snap judgment"
+      ]
+    },
+    {
+      "title": "Resolving a Technical Dilemma",
+      "titleArabic": "حسم معضلة تقنية بين مهندسي برمجيات",
+      "setting": "Lead systems architect mentors a software team lead on infrastructure choices.",
+      "lines": [
+        {
+          "speaker": "Lead Architect",
+          "text": "If you called the shots on this cloud migration, which server provider would you select?"
+        },
+        {
+          "speaker": "Team Lead",
+          "text": "I would mull over the latency benchmarks rather than rely on arbitrary choices."
+        },
+        {
+          "speaker": "Lead Architect",
+          "text": "What is the decisive factor between the two competing vendors?"
+        },
+        {
+          "speaker": "Team Lead",
+          "text": "Global server uptime is the decisive factor; zero downtime is our overriding factor."
+        },
+        {
+          "speaker": "Lead Architect",
+          "text": "If junior engineers vacillated between microservices and monoliths, how would you guide them?"
+        },
+        {
+          "speaker": "Team Lead",
+          "text": "I would give them a practical rule of thumb: start simple and avoid premature optimization."
+        },
+        {
+          "speaker": "Lead Architect",
+          "text": "If we took the plunge right now, would we encounter any unintended consequence?"
+        },
+        {
+          "speaker": "Team Lead",
+          "text": "Database replication lag might emerge, so we should deliberate carefully."
+        }
+      ],
+      "vocabularyUsed": [
+        "call the shots",
+        "mull over",
+        "arbitrary choice",
+        "decisive factor",
+        "overriding factor",
+        "vacillate",
+        "rule of thumb",
+        "take the plunge",
+        "unintended consequence",
+        "deliberate carefully"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Anatomy of Rational Decision-Making",
+      "titleArabic": "تشريح صناعة القرار العقلاني والرشيد",
+      "text": "Every professional inevitably stands at a career crossroads where every single path carries a demanding trade-off. If individuals approached dilemmas logically, they would conduct a rigorous cost-benefit analysis rather than rely on snap judgment or arbitrary choice. Evaluating the full gamut of choices requires patience and deep deliberation. While listening to a strong gut feeling offers valuable intuitive guidance, an informed choice demands that leaders examine each pro and con objectively. If planners foresaw every unintended consequence, they would design robust contingency options before taking a calculated risk.",
+      "vocabularyUsed": [
+        "crossroads",
+        "trade-off",
+        "cost-benefit analysis",
+        "snap judgment",
+        "arbitrary choice",
+        "gamut of choices",
+        "deliberation",
+        "gut feeling",
+        "informed choice",
+        "pro and con",
+        "unintended consequence",
+        "contingency option",
+        "calculated risk"
+      ]
+    },
+    {
+      "title": "Overcoming Hesitation and Analysis Paralysis",
+      "titleArabic": "التغلب على التردد وشلل التحليل المفرط",
+      "text": "When facing complex dilemmas, many managers vacillate endlessly and dither until golden opportunities vanish. If aspiring leaders developed true decisiveness, they would not agonize over minor operational uncertainties or second-guess every judgment call. While it is sensible to sleep on it and mull over major contracts overnight, prolonged hesitation breeds self-doubt and institutional stagnation. A reliable rule of thumb suggests that when you reach a critical tipping point with seventy percent verified data, you must take the plunge, stand by your decision, and move forward boldly.",
+      "vocabularyUsed": [
+        "vacillate",
+        "dither",
+        "decisiveness",
+        "agonize over",
+        "second-guess",
+        "judgment call",
+        "sleep on it",
+        "mull over",
+        "hesitation",
+        "rule of thumb",
+        "tipping point",
+        "take the plunge",
+        "stand by decision"
+      ]
+    },
+    {
+      "title": "Facing Irrevocable Choices with Integrity",
+      "titleArabic": "مواجهة القرارات المصيرية بنزاهة واستقامة",
+      "text": "Some moments in institutional governance represent an irrevocable decision where an enterprise crosses the point of no return. If executives ignored their ethical compass during such trials, they would inevitably reap negative consequences and endure lasting buyers remorse. When unforeseen crises strike, true leaders refuse to steer clear of tough conversations or shirk accountability; instead, they face the music with fortitude. Exercising sound judgment ensures that when you call the shots, your choices reflect lasting principles rather than fleeting convenience.",
+      "vocabularyUsed": [
+        "irrevocable decision",
+        "point of no return",
+        "reap consequences",
+        "buyers remorse",
+        "steer clear of",
+        "face the music",
+        "sound judgment",
+        "call the shots"
+      ]
+    }
+  ]
+}

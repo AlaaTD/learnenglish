@@ -1278,7 +1278,12 @@
       "tags": [
         "trust",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "confide",
+        "v2": "confided",
+        "v3": "confided"
+      }
     },
     {
       "headword": "entrust",
@@ -1305,7 +1310,12 @@
       "tags": [
         "trust",
         "responsibility"
-      ]
+      ],
+      "verbForms": {
+        "v1": "entrust",
+        "v2": "entrusted",
+        "v3": "entrusted"
+      }
     },
     {
       "headword": "mislead",
@@ -1334,7 +1344,12 @@
       "tags": [
         "lies",
         "deception"
-      ]
+      ],
+      "verbForms": {
+        "v1": "mislead",
+        "v2": "misleaded",
+        "v3": "misleaded"
+      }
     },
     {
       "headword": "deceive",
@@ -1364,7 +1379,12 @@
       "tags": [
         "lies",
         "dishonesty"
-      ]
+      ],
+      "verbForms": {
+        "v1": "deceive",
+        "v2": "deceived",
+        "v3": "deceived"
+      }
     },
     {
       "headword": "falsify",
@@ -1393,7 +1413,12 @@
       "tags": [
         "crime",
         "lies"
-      ]
+      ],
+      "verbForms": {
+        "v1": "falsify",
+        "v2": "falsified",
+        "v3": "falsified"
+      }
     },
     {
       "headword": "distort",
@@ -1422,7 +1447,12 @@
       "tags": [
         "lies",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "distort",
+        "v2": "distorted",
+        "v3": "distorted"
+      }
     },
     {
       "headword": "exaggerate",
@@ -1451,7 +1481,12 @@
       "tags": [
         "communication",
         "lies"
-      ]
+      ],
+      "verbForms": {
+        "v1": "exaggerate",
+        "v2": "exaggerated",
+        "v3": "exaggerated"
+      }
     },
     {
       "headword": "unmask",
@@ -1478,7 +1513,12 @@
       "tags": [
         "truth",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "unmask",
+        "v2": "unmasked",
+        "v3": "unmasked"
+      }
     },
     {
       "headword": "credibility",

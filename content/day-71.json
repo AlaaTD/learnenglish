@@ -1,0 +1,1480 @@
+{
+  "day": 71,
+  "title": "Discussions and Debates",
+  "topic": "Structured discussion",
+  "description": "Take part in longer discussions with clear structure.",
+  "stage": "Advanced Everyday English",
+  "focus": "By the end of today, you can communicate clearly about structured discussion using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Advanced Connectors: however, moreover, on the other hand",
+      "explanation": "Advanced connectors give structured discourse its cohesion, helping writers and speakers signal contrast, addition, consequence, and concession with precision. Key categories: (1) Contrast: 'however', 'nevertheless', 'notwithstanding', 'conversely', 'on the contrary'; (2) Addition: 'moreover', 'furthermore', 'by the same token', 'by extension'; (3) Concession: 'with that said', 'that said', 'admittedly', 'granted'; (4) Consequence: 'to that end', 'as a result', 'consequently'. Unlike basic connectors, advanced connectors are formal, often precede a comma, and may begin a sentence. Avoid overusing any single connector: vary them to demonstrate discourse sophistication.",
+      "structures": [
+        {
+          "pattern": "Contrast: Statement A. However / Nevertheless / Conversely / On the contrary, Statement B."
+        },
+        {
+          "pattern": "Addition: Statement A. Moreover / Furthermore / By the same token, Statement B."
+        },
+        {
+          "pattern": "Concession: Statement A. With that said / Notwithstanding this, Statement B."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The empirical evidence is compelling; however, the opposition bench has raised a valid counter-argument about methodology.",
+          "arabic": "الدليل التجريبي مقنع؛ غير أن المعارضة أثارت حجة مضادة وجيهة بشأن المنهجية.",
+          "usesVocabulary": [
+            "empirical evidence",
+            "opposition bench",
+            "counter-argument"
+          ]
+        },
+        {
+          "sentence": "The policy would reduce emissions. Moreover, by extension it would create tens of thousands of green jobs.",
+          "arabic": "ستُخفض السياسة الانبعاثات. علاوةً على ذلك، وامتداداً لهذا المنطق، ستخلق عشرات الآلاف من الوظائف الخضراء.",
+          "usesVocabulary": [
+            "by extension"
+          ]
+        },
+        {
+          "sentence": "The defendant's closing statement was eloquent. With that said, it failed to rebut the most damaging claim.",
+          "arabic": "كان الخطاب الختامي للمدعى عليه بليغاً. ومع ذلك، فشل في دحض الادعاء الأشد ضرراً.",
+          "usesVocabulary": [
+            "closing statement",
+            "rebut claim"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The plan is sound. However we must address the false premise.",
+          "right": "The plan is sound. However, we must address the false premise.",
+          "explanation": "When 'however' begins a sentence as a connector, it must be followed by a comma."
+        },
+        {
+          "wrong": "The burden of proof lies with them, furthermore the motion was carried.",
+          "right": "The burden of proof lies with them. Furthermore, the motion was carried.",
+          "explanation": "Do not join two independent clauses with a comma and 'furthermore' — use a full stop or semicolon."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "present an argument",
+      "pronunciation": "/prɪˈzent ən ˈɑːɡjumənt/",
+      "partOfSpeech": "verb",
+      "definition": "To formally state and explain a reasoned case to persuade an audience.",
+      "example": "She was asked to present an argument supporting renewable energy subsidies.",
+      "translation": "يقدم حجة / يطرح موقفاً مستنداً للأدلة",
+      "verbForms": {
+        "v1": "present an argument",
+        "v2": "presented an argument",
+        "v3": "presented an argument"
+      },
+      "collocations": [
+        "present a compelling argument",
+        "present an argument for"
+      ],
+      "synonyms": [
+        "make a case"
+      ],
+      "antonyms": [
+        "concede"
+      ],
+      "tags": [
+        "debate",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "counter-argument",
+      "pronunciation": "/ˈkaʊntər ˌɑːɡjumənt/",
+      "partOfSpeech": "noun",
+      "definition": "A rebuttal that challenges and refutes an opposing position or claim.",
+      "example": "The professor developed a sophisticated counter-argument to the prevailing economic theory.",
+      "translation": "حجة مضادة / رد على الحجة المقابلة",
+      "collocations": [
+        "offer a counter-argument",
+        "anticipate counter-arguments"
+      ],
+      "synonyms": [
+        "rebuttal",
+        "refutation"
+      ],
+      "antonyms": [
+        "supporting argument"
+      ],
+      "tags": [
+        "debate",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rebut claim",
+      "pronunciation": "/rɪˈbʌt kleɪm/",
+      "partOfSpeech": "verb",
+      "definition": "To formally prove an assertion false using evidence or logical analysis.",
+      "example": "Defense attorneys successfully rebutted the prosecution's primary forensic claim.",
+      "translation": "يدحض الادعاء / يفند الحجة بالدليل",
+      "verbForms": {
+        "v1": "rebut claim",
+        "v2": "rebutted claim",
+        "v3": "rebutted claim"
+      },
+      "collocations": [
+        "strongly rebut claim",
+        "fail to rebut claim"
+      ],
+      "synonyms": [
+        "refute",
+        "disprove"
+      ],
+      "antonyms": [
+        "validate"
+      ],
+      "tags": [
+        "logic",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "logical fallacy",
+      "pronunciation": "/ˈlɒdʒɪkl ˈfæləsi/",
+      "partOfSpeech": "noun",
+      "definition": "An error in reasoning that invalidates an argument's logical structure.",
+      "example": "The climate skeptic's argument contained an obvious logical fallacy.",
+      "translation": "مغالطة منطقية / خطأ في الاستدلال",
+      "collocations": [
+        "commit a logical fallacy",
+        "identify a logical fallacy"
+      ],
+      "synonyms": [
+        "reasoning error"
+      ],
+      "antonyms": [
+        "sound argument"
+      ],
+      "tags": [
+        "logic",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fallacious reasoning",
+      "pronunciation": "/fəˈleɪʃəs ˈriːzənɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Thinking that is based on false or misleading assumptions producing flawed conclusions.",
+      "example": "His fallacious reasoning about vaccine safety alarmed the medical community.",
+      "translation": "استدلال مغلوط ومبني على مقدمات خاطئة",
+      "collocations": [
+        "expose fallacious reasoning",
+        "based on fallacious reasoning"
+      ],
+      "synonyms": [
+        "flawed logic"
+      ],
+      "antonyms": [
+        "sound reasoning"
+      ],
+      "tags": [
+        "logic",
+        "critique"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "argumentative flaw",
+      "pronunciation": "/ˌɑːɡjuˈmentətɪv flɔː/",
+      "partOfSpeech": "noun",
+      "definition": "A specific weakness or gap in the logical structure of a presented argument.",
+      "example": "The panel identified an argumentative flaw in the candidate's economic policy position.",
+      "translation": "ثغرة في بناء الحجة وتسلسلها المنطقي",
+      "collocations": [
+        "expose an argumentative flaw",
+        "major argumentative flaw"
+      ],
+      "synonyms": [
+        "reasoning gap"
+      ],
+      "antonyms": [
+        "tight argument"
+      ],
+      "tags": [
+        "debate",
+        "analysis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "burden of proof",
+      "pronunciation": "/ˈbɜːdn əv pruːf/",
+      "partOfSpeech": "noun",
+      "definition": "The obligation to provide sufficient evidence supporting a disputed claim.",
+      "example": "In criminal law, the burden of proof always rests with the prosecution.",
+      "translation": "عبء الإثبات / مسؤولية تقديم الدليل",
+      "collocations": [
+        "shift the burden of proof",
+        "meet the burden of proof"
+      ],
+      "synonyms": [
+        "evidential responsibility"
+      ],
+      "antonyms": [
+        "presumption of innocence"
+      ],
+      "tags": [
+        "legal",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "devil's advocate",
+      "pronunciation": "/ˈdevlz ˈædvəkət/",
+      "partOfSpeech": "noun",
+      "definition": "A person who argues an opposite position to test the strength of prevailing reasoning.",
+      "example": "To stress-test our plan, our consultant volunteered to play devil's advocate.",
+      "translation": "محامي الشيطان / من يتبنى الرأي المعاكس لاختبار الحجة",
+      "collocations": [
+        "play devil's advocate",
+        "act as devil's advocate"
+      ],
+      "synonyms": [
+        "dissenter"
+      ],
+      "antonyms": [
+        "true believer"
+      ],
+      "tags": [
+        "debate",
+        "strategy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "steel man",
+      "pronunciation": "/stiːl mæn/",
+      "partOfSpeech": "verb",
+      "definition": "To articulate the strongest possible version of an opponent's argument before critiquing it.",
+      "example": "The philosophy professor always steelmanned opposing positions before addressing them critically.",
+      "translation": "يصيغ أقوى نسخة من حجة الخصم ليرد عليها",
+      "verbForms": {
+        "v1": "steel man",
+        "v2": "steelmanned",
+        "v3": "steelmanned"
+      },
+      "collocations": [
+        "steel man the argument",
+        "try to steel man"
+      ],
+      "synonyms": [
+        "strengthen opponent's case"
+      ],
+      "antonyms": [
+        "straw man"
+      ],
+      "tags": [
+        "philosophy",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "crux of debate",
+      "pronunciation": "/krʌks əv dɪˈbeɪt/",
+      "partOfSpeech": "noun",
+      "definition": "The most critical and decisive issue at the heart of a controversy.",
+      "example": "The crux of debate centred on whether economic growth outweighs environmental costs.",
+      "translation": "جوهر النقاش / صميم النزاع الفكري",
+      "collocations": [
+        "identify the crux of debate",
+        "get to the crux of debate"
+      ],
+      "synonyms": [
+        "core issue",
+        "central question"
+      ],
+      "antonyms": [
+        "peripheral concern"
+      ],
+      "tags": [
+        "debate",
+        "discourse"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "open floor",
+      "pronunciation": "/ˌəʊpən ˈflɔː/",
+      "partOfSpeech": "noun",
+      "definition": "An invitation allowing any audience member to speak or ask questions freely.",
+      "example": "After the keynote, the moderator announced an open floor for questions.",
+      "translation": "فرصة مفتوحة للجمهور للمشاركة والتعليق",
+      "collocations": [
+        "open the floor",
+        "take the open floor"
+      ],
+      "synonyms": [
+        "open discussion"
+      ],
+      "antonyms": [
+        "closed session"
+      ],
+      "tags": [
+        "meetings",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "moderator role",
+      "pronunciation": "/ˈmɒdəreɪtə rəʊl/",
+      "partOfSpeech": "noun",
+      "definition": "The function of impartially chairing a debate to ensure balanced discussion.",
+      "example": "She expertly fulfilled the moderator role, ensuring all voices received equal time.",
+      "translation": "دور المحكّم أو المدير المحايد للنقاش",
+      "collocations": [
+        "assume the moderator role",
+        "take the moderator role"
+      ],
+      "synonyms": [
+        "chairperson function"
+      ],
+      "antonyms": [
+        "partisan role"
+      ],
+      "tags": [
+        "meetings",
+        "facilitation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "panelist",
+      "pronunciation": "/ˈpænəlɪst/",
+      "partOfSpeech": "noun",
+      "definition": "An expert or representative invited to participate in a structured public discussion.",
+      "example": "The conference panelist challenged the prevailing consensus on artificial intelligence regulation.",
+      "translation": "عضو لجنة نقاش / مشارك في حلقة نقاشية",
+      "collocations": [
+        "distinguished panelist",
+        "invite as panelist"
+      ],
+      "synonyms": [
+        "discussant",
+        "participant"
+      ],
+      "antonyms": [],
+      "tags": [
+        "events",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "proposition side",
+      "pronunciation": "/ˌprɒpəˈzɪʃn saɪd/",
+      "partOfSpeech": "noun",
+      "definition": "The team in a formal debate that argues in favour of a proposed motion.",
+      "example": "The proposition side must persuasively demonstrate why the motion deserves support.",
+      "translation": "الفريق المؤيد للاقتراح في النقاش الرسمي",
+      "collocations": [
+        "argue the proposition side",
+        "represent the proposition side"
+      ],
+      "synonyms": [
+        "affirmative team"
+      ],
+      "antonyms": [
+        "opposition bench"
+      ],
+      "tags": [
+        "debate",
+        "structure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "opposition bench",
+      "pronunciation": "/ˌɒpəˈzɪʃn bentʃ/",
+      "partOfSpeech": "noun",
+      "definition": "The team or group in a debate or parliament that argues against a proposed motion.",
+      "example": "The opposition bench launched a fierce rebuttal against the government's spending bill.",
+      "translation": "مقاعد المعارضة / الفريق الرافض للاقتراح",
+      "collocations": [
+        "sit on the opposition bench",
+        "lead the opposition bench"
+      ],
+      "synonyms": [
+        "opposing side"
+      ],
+      "antonyms": [
+        "proposition side"
+      ],
+      "tags": [
+        "politics",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "formal debate",
+      "pronunciation": "/ˈfɔːml dɪˈbeɪt/",
+      "partOfSpeech": "noun",
+      "definition": "A structured discussion governed by rules, time limits, and clear procedural frameworks.",
+      "example": "University students are trained to excel in formal debate competitions.",
+      "translation": "نقاش رسمي منظم وفق قواعد وإجراءات محددة",
+      "collocations": [
+        "participate in formal debate",
+        "organize a formal debate"
+      ],
+      "synonyms": [
+        "structured discussion"
+      ],
+      "antonyms": [
+        "informal chat"
+      ],
+      "tags": [
+        "debate",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "point of order",
+      "pronunciation": "/pɔɪnt əv ˈɔːdə/",
+      "partOfSpeech": "noun",
+      "definition": "A procedural challenge raised when meeting rules or debate protocols are violated.",
+      "example": "The committee chairperson raised a point of order when speakers exceeded allotted time.",
+      "translation": "نقطة نظام / اعتراض إجرائي على سير الجلسة",
+      "collocations": [
+        "raise a point of order",
+        "rule on a point of order"
+      ],
+      "synonyms": [
+        "procedural objection"
+      ],
+      "antonyms": [],
+      "tags": [
+        "procedure",
+        "meetings"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "raise an objection",
+      "pronunciation": "/reɪz ən əbˈdʒekʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To formally state disagreement or challenge a proceeding in a structured context.",
+      "example": "Opposition lawyers raised an objection to the admission of the disputed evidence.",
+      "translation": "يرفع اعتراضاً رسمياً / يثير مانعاً قانونياً أو إجرائياً",
+      "verbForms": {
+        "v1": "raise an objection",
+        "v2": "raised an objection",
+        "v3": "raised an objection"
+      },
+      "collocations": [
+        "formally raise an objection",
+        "sustain a raised objection"
+      ],
+      "synonyms": [
+        "lodge a protest"
+      ],
+      "antonyms": [
+        "withdraw objection"
+      ],
+      "tags": [
+        "legal",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "overrule objection",
+      "pronunciation": "/ˌəʊvəˈruːl əbˈdʒekʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To officially reject a raised objection and permit the proceeding to continue.",
+      "example": "The presiding judge overruled the objection, instructing the witness to answer.",
+      "translation": "يرفض الاعتراض ويُسقطه رسمياً",
+      "verbForms": {
+        "v1": "overrule objection",
+        "v2": "overruled objection",
+        "v3": "overruled objection"
+      },
+      "collocations": [
+        "promptly overrule objection",
+        "overrule the objection"
+      ],
+      "synonyms": [
+        "dismiss objection"
+      ],
+      "antonyms": [
+        "sustain objection"
+      ],
+      "tags": [
+        "legal",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "closing statement",
+      "pronunciation": "/ˈkləʊzɪŋ ˈsteɪtmənt/",
+      "partOfSpeech": "noun",
+      "definition": "Final summarizing remarks delivered at the conclusion of a debate or legal proceeding.",
+      "example": "The defense attorney's closing statement moved several jurors to reconsider their verdict.",
+      "translation": "الخطاب الختامي / بيان الإغلاق والخلاصة",
+      "collocations": [
+        "deliver closing statement",
+        "powerful closing statement"
+      ],
+      "synonyms": [
+        "final argument"
+      ],
+      "antonyms": [
+        "opening statement"
+      ],
+      "tags": [
+        "legal",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "opening statement",
+      "pronunciation": "/ˈəʊpənɪŋ ˈsteɪtmənt/",
+      "partOfSpeech": "noun",
+      "definition": "Introductory remarks outlining the argument and key evidence a side plans to present.",
+      "example": "The prosecution's opening statement outlined a clear chronology of alleged corporate fraud.",
+      "translation": "بيان الافتتاح / الطرح التمهيدي في النقاش",
+      "collocations": [
+        "deliver an opening statement",
+        "compelling opening statement"
+      ],
+      "synonyms": [
+        "introductory remarks"
+      ],
+      "antonyms": [
+        "closing statement"
+      ],
+      "tags": [
+        "legal",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "motion carried",
+      "pronunciation": "/ˈməʊʃn ˈkærid/",
+      "partOfSpeech": "phrase",
+      "definition": "A formal announcement that a proposed resolution has been approved by the majority.",
+      "example": "The chair declared that the motion was carried after a twenty-seven to twelve vote.",
+      "translation": "تمت الموافقة على المقترح بالأغلبية",
+      "collocations": [
+        "motion carried unanimously",
+        "motion carried by majority"
+      ],
+      "synonyms": [
+        "proposal approved"
+      ],
+      "antonyms": [
+        "motion defeated"
+      ],
+      "tags": [
+        "governance",
+        "procedure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "motion defeated",
+      "pronunciation": "/ˈməʊʃn dɪˈfiːtɪd/",
+      "partOfSpeech": "phrase",
+      "definition": "A formal announcement that a proposed resolution has been rejected by the majority.",
+      "example": "The motion was defeated narrowly, with only two votes separating both sides.",
+      "translation": "رُفض المقترح بالأغلبية / سقط الاقتراح",
+      "collocations": [
+        "motion defeated by a majority",
+        "declare the motion defeated"
+      ],
+      "synonyms": [
+        "proposal rejected"
+      ],
+      "antonyms": [
+        "motion carried"
+      ],
+      "tags": [
+        "governance",
+        "procedure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "casting vote",
+      "pronunciation": "/ˈkɑːstɪŋ vəʊt/",
+      "partOfSpeech": "noun",
+      "definition": "A chairperson's deciding vote used to break a tie in a legislative or committee vote.",
+      "example": "The chair exercised her casting vote in favour of the infrastructure amendment.",
+      "translation": "صوت الترجيح / الصوت الفاصل في التعادل",
+      "collocations": [
+        "use casting vote",
+        "exercise the casting vote"
+      ],
+      "synonyms": [
+        "deciding vote",
+        "tiebreaker vote"
+      ],
+      "antonyms": [],
+      "tags": [
+        "governance",
+        "procedure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "speaker's podium",
+      "pronunciation": "/ˈspiːkəz ˈpəʊdiəm/",
+      "partOfSpeech": "noun",
+      "definition": "The raised platform or lectern from which an orator formally addresses an audience.",
+      "example": "As the vice chancellor stepped up to the speaker's podium, the hall fell silent.",
+      "translation": "منصة المتحدث / المنبر الخطابي الرسمي",
+      "collocations": [
+        "step to the speaker's podium",
+        "address from the speaker's podium"
+      ],
+      "synonyms": [
+        "lectern",
+        "rostrum"
+      ],
+      "antonyms": [],
+      "tags": [
+        "events",
+        "public speaking"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "floor speaker",
+      "pronunciation": "/flɔː ˈspiːkə/",
+      "partOfSpeech": "noun",
+      "definition": "An attendee granted permission to address an assembly or legislative chamber.",
+      "example": "A floor speaker raised a practical concern about funding mechanisms for the proposal.",
+      "translation": "المتحدث من القاعة / الممثل المُعطى الكلمة في الجمعية",
+      "collocations": [
+        "recognize a floor speaker",
+        "call a floor speaker"
+      ],
+      "synonyms": [
+        "contributor from the floor"
+      ],
+      "antonyms": [
+        "panel moderator"
+      ],
+      "tags": [
+        "governance",
+        "public speaking"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "deliberative assembly",
+      "pronunciation": "/dɪˈlɪbərətɪv əˈsembli/",
+      "partOfSpeech": "noun",
+      "definition": "A formal body of people who meet to discuss and decide on matters by majority vote.",
+      "example": "A deliberative assembly must follow Roberts Rules to ensure procedural fairness.",
+      "translation": "هيئة تداولية / جمعية مداولة وتقرير رسمية",
+      "collocations": [
+        "chair a deliberative assembly",
+        "rules of a deliberative assembly"
+      ],
+      "synonyms": [
+        "legislative body"
+      ],
+      "antonyms": [
+        "executive authority"
+      ],
+      "tags": [
+        "governance",
+        "law"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "parliamentary procedure",
+      "pronunciation": "/ˌpɑːləˈmentri prəˈsiːdʒə/",
+      "partOfSpeech": "noun",
+      "definition": "The established formal rules governing how legislative and deliberative bodies conduct meetings.",
+      "example": "The student union followed strict parliamentary procedure during its annual general meeting.",
+      "translation": "اللوائح والنظام البرلماني الرسمي للجلسات",
+      "collocations": [
+        "observe parliamentary procedure",
+        "violate parliamentary procedure"
+      ],
+      "synonyms": [
+        "rules of order"
+      ],
+      "antonyms": [
+        "informal discussion"
+      ],
+      "tags": [
+        "law",
+        "governance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "on the contrary",
+      "pronunciation": "/ɒn ðə ˈkɒntrəri/",
+      "partOfSpeech": "phrase",
+      "definition": "A discourse connector expressing strong disagreement with what was just said.",
+      "example": "On the contrary, our quarterly data clearly shows rising consumer confidence.",
+      "translation": "على النقيض / بل على العكس تماماً",
+      "collocations": [
+        "on the contrary however",
+        "quite on the contrary"
+      ],
+      "synonyms": [
+        "conversely",
+        "in contrast"
+      ],
+      "antonyms": [
+        "likewise"
+      ],
+      "tags": [
+        "connectors",
+        "discourse"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "by the same token",
+      "pronunciation": "/baɪ ðə seɪm ˈtəʊkən/",
+      "partOfSpeech": "phrase",
+      "definition": "For the same reason or by the same logic, used to extend an argument coherently.",
+      "example": "If we cut corporate taxes, by the same token we should reduce regulatory burdens.",
+      "translation": "وبالمنطق نفسه / وعلى المنوال ذاته",
+      "collocations": [
+        "and by the same token",
+        "by the same token therefore"
+      ],
+      "synonyms": [
+        "similarly",
+        "by the same logic"
+      ],
+      "antonyms": [
+        "conversely"
+      ],
+      "tags": [
+        "connectors",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "conversely",
+      "pronunciation": "/ˈkɒnvɜːsli/",
+      "partOfSpeech": "adverb",
+      "definition": "Introducing a statement that reverses or contrasts with what was previously said.",
+      "example": "Higher interest rates slow spending; conversely, lower rates stimulate economic growth.",
+      "translation": "وعلى العكس / في المقابل",
+      "collocations": [
+        "conversely however",
+        "conversely speaking"
+      ],
+      "synonyms": [
+        "on the other hand",
+        "in contrast"
+      ],
+      "antonyms": [
+        "likewise",
+        "similarly"
+      ],
+      "tags": [
+        "connectors",
+        "discourse"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "notwithstanding",
+      "pronunciation": "/ˌnɒtwɪðˈstændɪŋ/",
+      "partOfSpeech": "preposition",
+      "definition": "In spite of; without being prevented by a constraint or circumstance.",
+      "example": "Notwithstanding significant budget cuts, the research team delivered remarkable clinical results.",
+      "translation": "على الرغم من / بصرف النظر عن",
+      "collocations": [
+        "notwithstanding the above",
+        "notwithstanding challenges"
+      ],
+      "synonyms": [
+        "despite",
+        "in spite of"
+      ],
+      "antonyms": [
+        "because of"
+      ],
+      "tags": [
+        "connectors",
+        "formal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "with that said",
+      "pronunciation": "/wɪð ðæt sed/",
+      "partOfSpeech": "phrase",
+      "definition": "An acknowledgment of a prior point before introducing a contrasting or qualifying idea.",
+      "example": "His research methods are questionable. With that said, his conclusions merit serious consideration.",
+      "translation": "وبالرغم مما قيل / مع أخذ ذلك بعين الاعتبار",
+      "collocations": [
+        "with that said however",
+        "with that said though"
+      ],
+      "synonyms": [
+        "that said",
+        "having said that"
+      ],
+      "antonyms": [],
+      "tags": [
+        "connectors",
+        "discourse"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "to that end",
+      "pronunciation": "/tuː ðæt end/",
+      "partOfSpeech": "phrase",
+      "definition": "For that purpose; in order to achieve or fulfil the goal previously mentioned.",
+      "example": "We aim to reduce carbon emissions by forty percent. To that end, we are investing in solar.",
+      "translation": "لذلك الغرض / وتحقيقاً لتلك الغاية",
+      "collocations": [
+        "and to that end",
+        "to that end specifically"
+      ],
+      "synonyms": [
+        "for this purpose"
+      ],
+      "antonyms": [
+        "contrary to that aim"
+      ],
+      "tags": [
+        "connectors",
+        "formal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "by extension",
+      "pronunciation": "/baɪ ɪkˈstenʃn/",
+      "partOfSpeech": "phrase",
+      "definition": "Applying the same logic or principle to a broader, related context or conclusion.",
+      "example": "If we accept this precedent, by extension we must apply it to all comparable cases.",
+      "translation": "وبالتوسع / وامتداداً لهذا المنطق",
+      "collocations": [
+        "by extension therefore",
+        "and by extension"
+      ],
+      "synonyms": [
+        "as a consequence"
+      ],
+      "antonyms": [
+        "in isolation"
+      ],
+      "tags": [
+        "connectors",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "draw a distinction",
+      "pronunciation": "/drɔː ə dɪˈstɪŋkʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To clearly identify and articulate the difference between two concepts or positions.",
+      "example": "It is important to draw a distinction between correlation and direct causal relationships.",
+      "translation": "يضع فاصلاً بين مفهومين / يميز بوضوح بين حالتين",
+      "verbForms": {
+        "v1": "draw a distinction",
+        "v2": "drew a distinction",
+        "v3": "drawn a distinction"
+      },
+      "collocations": [
+        "draw a clear distinction",
+        "fail to draw a distinction"
+      ],
+      "synonyms": [
+        "differentiate clearly"
+      ],
+      "antonyms": [
+        "conflate"
+      ],
+      "tags": [
+        "logic",
+        "analysis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "nuanced position",
+      "pronunciation": "/ˈnjuːɑːnst pəˈzɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A carefully qualified stance that acknowledges complexity and avoids oversimplification.",
+      "example": "The senator's nuanced position on immigration rejected both extreme ends of the debate.",
+      "translation": "موقف دقيق متعدد الأبعاد ورافض للتبسيط المخل",
+      "collocations": [
+        "adopt a nuanced position",
+        "defend a nuanced position"
+      ],
+      "synonyms": [
+        "balanced stance"
+      ],
+      "antonyms": [
+        "black-and-white position"
+      ],
+      "tags": [
+        "opinion",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "categorical claim",
+      "pronunciation": "/ˌkætəˈɡɒrɪkl kleɪm/",
+      "partOfSpeech": "noun",
+      "definition": "An absolute, unconditional assertion that applies universally without exceptions.",
+      "example": "Making the categorical claim that all economic migrants are criminal is clearly false.",
+      "translation": "ادعاء قطعي مطلق / تأكيد لا استثناء فيه",
+      "collocations": [
+        "make a categorical claim",
+        "challenge a categorical claim"
+      ],
+      "synonyms": [
+        "absolute assertion"
+      ],
+      "antonyms": [
+        "qualified statement"
+      ],
+      "tags": [
+        "debate",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "empirical evidence",
+      "pronunciation": "/ɪmˈpɪrɪkl ˈevɪdəns/",
+      "partOfSpeech": "noun",
+      "definition": "Data derived from direct observation or experiment rather than speculation or theory.",
+      "example": "Scientific policies must be grounded in robust empirical evidence from peer-reviewed studies.",
+      "translation": "دليل تجريبي مستند للملاحظة والتجربة المباشرة",
+      "collocations": [
+        "provide empirical evidence",
+        "rely on empirical evidence"
+      ],
+      "synonyms": [
+        "observational data"
+      ],
+      "antonyms": [
+        "speculation",
+        "conjecture"
+      ],
+      "tags": [
+        "science",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "anecdotal evidence",
+      "pronunciation": "/ˌænɪkˈdəʊtl ˈevɪdəns/",
+      "partOfSpeech": "noun",
+      "definition": "Informal evidence based on individual personal accounts rather than systematic data.",
+      "example": "Patient anecdotes are valuable, but anecdotal evidence cannot replace clinical trial results.",
+      "translation": "دليل استئناسي غير منهجي / شهادات فردية غير موثقة",
+      "collocations": [
+        "rely on anecdotal evidence",
+        "dismiss anecdotal evidence"
+      ],
+      "synonyms": [
+        "personal testimony"
+      ],
+      "antonyms": [
+        "empirical evidence"
+      ],
+      "tags": [
+        "research",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cherry-picking",
+      "pronunciation": "/ˈtʃeri ˌpɪkɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Selectively presenting only the data or facts that support one's position while ignoring contrary evidence.",
+      "example": "The think tank was accused of cherry-picking statistics to exaggerate economic inequality.",
+      "translation": "انتقاء الأدلة المناسبة وتجاهل المعاكس / الاختيار الانتقائي المتحيز",
+      "collocations": [
+        "accuse of cherry-picking",
+        "engage in cherry-picking"
+      ],
+      "synonyms": [
+        "selective presentation"
+      ],
+      "antonyms": [
+        "balanced analysis"
+      ],
+      "tags": [
+        "bias",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "confirmation bias",
+      "pronunciation": "/ˌkɒnfəˈmeɪʃn ˈbaɪəs/",
+      "partOfSpeech": "noun",
+      "definition": "The tendency to search for and interpret information that confirms pre-existing beliefs.",
+      "example": "Confirmation bias leads people to dismiss objective data that challenges their worldview.",
+      "translation": "تحيز التأكيد / الميل للبحث عما يؤكد المعتقدات المسبقة",
+      "collocations": [
+        "suffer from confirmation bias",
+        "overcome confirmation bias"
+      ],
+      "synonyms": [
+        "selective perception"
+      ],
+      "antonyms": [
+        "critical objectivity"
+      ],
+      "tags": [
+        "psychology",
+        "cognition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "false premise",
+      "pronunciation": "/fɔːls ˈpremɪs/",
+      "partOfSpeech": "noun",
+      "definition": "An incorrect or unproven foundational assumption on which an argument depends.",
+      "example": "The entire economic theory rests on a false premise about consumer rationality.",
+      "translation": "مقدمة خاطئة / افتراض أساسي مغلوط",
+      "collocations": [
+        "built on a false premise",
+        "challenge the false premise"
+      ],
+      "synonyms": [
+        "wrong assumption"
+      ],
+      "antonyms": [
+        "true premise"
+      ],
+      "tags": [
+        "logic",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "begging the question",
+      "pronunciation": "/ˈbeɡɪŋ ðə ˈkwestʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A circular argument where the conclusion is assumed within the premise itself.",
+      "example": "Saying the law is right because it is the law commits the fallacy of begging the question.",
+      "translation": "المصادرة على المطلوب / الحجة الدائرية",
+      "collocations": [
+        "guilty of begging the question",
+        "this begs the question"
+      ],
+      "synonyms": [
+        "circular argument"
+      ],
+      "antonyms": [
+        "valid syllogism"
+      ],
+      "tags": [
+        "logic",
+        "fallacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "false dichotomy",
+      "pronunciation": "/fɔːls daɪˈkɒtəmi/",
+      "partOfSpeech": "noun",
+      "definition": "Presenting only two options as if they are the sole possibilities when others exist.",
+      "example": "Framing the debate as growth versus environment commits a false dichotomy.",
+      "translation": "الثنائية الزائفة / حصر الخيارات في اثنين خطأً",
+      "collocations": [
+        "create a false dichotomy",
+        "fall into a false dichotomy"
+      ],
+      "synonyms": [
+        "either/or fallacy"
+      ],
+      "antonyms": [
+        "spectrum of options"
+      ],
+      "tags": [
+        "logic",
+        "fallacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "appeal to authority",
+      "pronunciation": "/əˈpiːl tuː ɔːˈθɒrɪti/",
+      "partOfSpeech": "noun",
+      "definition": "Using an expert or prominent figure to validate a claim regardless of the evidence quality.",
+      "example": "Citing a celebrity endorsement rather than research constitutes an appeal to authority.",
+      "translation": "الاحتجاج بالسلطة / التعويل على الشهرة دون دليل",
+      "collocations": [
+        "commit appeal to authority",
+        "improper appeal to authority"
+      ],
+      "synonyms": [
+        "argumentum ad verecundiam"
+      ],
+      "antonyms": [
+        "evidence-based argument"
+      ],
+      "tags": [
+        "fallacy",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "post hoc fallacy",
+      "pronunciation": "/pəʊst hɒk ˈfæləsi/",
+      "partOfSpeech": "noun",
+      "definition": "Assuming causation from mere temporal sequence: 'A happened before B, so A caused B'.",
+      "example": "Attributing economic recovery solely to the new tax cut commits a post hoc fallacy.",
+      "translation": "مغالطة ما بعد هذا إذاً بسببه / الخلط بين التسلسل والسببية",
+      "collocations": [
+        "commit the post hoc fallacy",
+        "classic post hoc fallacy"
+      ],
+      "synonyms": [
+        "false causation"
+      ],
+      "antonyms": [
+        "causal proof"
+      ],
+      "tags": [
+        "fallacy",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sweeping claim",
+      "pronunciation": "/ˈswiːpɪŋ kleɪm/",
+      "partOfSpeech": "noun",
+      "definition": "A broad, unqualified assertion that applies a generalization without adequate justification.",
+      "example": "Politicians frequently make sweeping claims about crime statistics without disaggregated data.",
+      "translation": "ادعاء شامل وعريض يفتقر للتدقيق والتخصيص",
+      "collocations": [
+        "make a sweeping claim",
+        "challenge a sweeping claim"
+      ],
+      "synonyms": [
+        "overgeneralization"
+      ],
+      "antonyms": [
+        "qualified claim"
+      ],
+      "tags": [
+        "debate",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "circular reasoning",
+      "pronunciation": "/ˈsɜːkjulə ˈriːzənɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "An argument where the conclusion is used as a premise to prove itself.",
+      "example": "His argument used circular reasoning: the product is popular because people love it.",
+      "translation": "الحجة الدائرية / استخدام النتيجة كدليل على نفسها",
+      "collocations": [
+        "guilty of circular reasoning",
+        "expose circular reasoning"
+      ],
+      "synonyms": [
+        "petitio principii"
+      ],
+      "antonyms": [
+        "linear reasoning"
+      ],
+      "tags": [
+        "logic",
+        "fallacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reductio ad absurdum",
+      "pronunciation": "/rɪˈdʌktɪəʊ æd əbˈsɜːdəm/",
+      "partOfSpeech": "noun",
+      "definition": "A technique that disproves a claim by showing it leads to an absurd or impossible conclusion.",
+      "example": "She used reductio ad absurdum to show the regulation would inevitably ban all outdoor activities.",
+      "translation": "الاختزال إلى السخافة / إثبات بطلان الحجة بإيصالها لنتيجة سخيفة",
+      "collocations": [
+        "employ reductio ad absurdum",
+        "illustrate via reductio ad absurdum"
+      ],
+      "synonyms": [
+        "proof by contradiction"
+      ],
+      "antonyms": [
+        "constructive argument"
+      ],
+      "tags": [
+        "logic",
+        "philosophy"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "University Debate: Artificial Intelligence Regulation",
+      "titleArabic": "نقاش جامعي: تنظيم الذكاء الاصطناعي",
+      "setting": "A university debate club holds a formal debate on AI governance.",
+      "lines": [
+        {
+          "speaker": "Chair",
+          "text": "The floor is now open. Proposition side, you may present an argument in favour of mandatory AI audits."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "Thank you. The burden of proof lies with those claiming AI audits impede innovation. On the contrary, empirical evidence from the EU demonstrates improved consumer trust."
+        },
+        {
+          "speaker": "Leon",
+          "text": "I must rebut that claim. The proposition side commits a false premise by assuming all AI systems carry equal risks, which is simply untrue."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "With that said, we acknowledge diverse risk profiles. By extension, however, this strengthens our case for tiered regulatory frameworks."
+        },
+        {
+          "speaker": "Leon",
+          "text": "The opposition bench raises a point of order. Our panelist has exceeded the two-minute speaking limit."
+        },
+        {
+          "speaker": "Chair",
+          "text": "Point of order noted. Notwithstanding the procedural concern, the argument is substantive. Please continue briefly."
+        },
+        {
+          "speaker": "Nadia",
+          "text": "To that end, we call upon this deliberative assembly to draw a distinction between regulative oversight and bureaucratic overreach."
+        },
+        {
+          "speaker": "Leon",
+          "text": "By the same token, sweeping claims about risk must be backed by anecdotal evidence at minimum, if not rigorous empirical data."
+        }
+      ],
+      "vocabularyUsed": [
+        "present an argument",
+        "burden of proof",
+        "on the contrary",
+        "empirical evidence",
+        "rebut claim",
+        "false premise",
+        "opposition bench",
+        "point of order",
+        "notwithstanding",
+        "by extension",
+        "with that said",
+        "deliberative assembly",
+        "draw a distinction",
+        "anecdotal evidence",
+        "sweeping claim",
+        "panelist",
+        "to that end",
+        "by the same token"
+      ]
+    },
+    {
+      "title": "Policy Forum: Steel-Manning the Climate Debate",
+      "titleArabic": "منتدى السياسات: تعزيز حجج الخصوم في نقاش المناخ",
+      "setting": "A think tank forum where analysts debate climate finance mechanisms.",
+      "lines": [
+        {
+          "speaker": "Host",
+          "text": "Before we address the formal debate, could you steel man the opposing view on carbon taxation?"
+        },
+        {
+          "speaker": "Dr. Park",
+          "text": "Certainly. Playing devil's advocate, one might argue that carbon taxes disproportionately burden lower-income households without achieving measurable emissions targets."
+        },
+        {
+          "speaker": "Ms. Stein",
+          "text": "That is a nuanced position, and it avoids the false dichotomy between economic growth and environmental protection."
+        },
+        {
+          "speaker": "Dr. Park",
+          "text": "Precisely. Cherry-picking individual economic data without systemic context is a textbook case of fallacious reasoning."
+        },
+        {
+          "speaker": "Ms. Stein",
+          "text": "Conversely, confirmation bias leads policymakers to dismiss contrary evidence from diverse national fiscal experiments."
+        },
+        {
+          "speaker": "Dr. Park",
+          "text": "Moreover, categorical claims about carbon tax efficacy must be grounded in long-term empirical evidence, not anecdotal success stories."
+        },
+        {
+          "speaker": "Host",
+          "text": "With that said, does the crux of debate not lie in revenue recycling mechanisms rather than the tax itself?"
+        },
+        {
+          "speaker": "Ms. Stein",
+          "text": "Precisely. To that end, the opening statement of any climate finance bill should draw a clear distinction between revenue allocation models."
+        }
+      ],
+      "vocabularyUsed": [
+        "steel man",
+        "devil's advocate",
+        "nuanced position",
+        "false dichotomy",
+        "cherry-picking",
+        "fallacious reasoning",
+        "conversely",
+        "confirmation bias",
+        "categorical claim",
+        "empirical evidence",
+        "anecdotal evidence",
+        "crux of debate",
+        "with that said",
+        "to that end",
+        "opening statement",
+        "draw a distinction"
+      ]
+    },
+    {
+      "title": "Legal Moot Court: Ruling on the Motion",
+      "titleArabic": "محكمة افتراضية: البت في الاقتراح",
+      "setting": "A law school moot court session addressing procedural and substantive debate.",
+      "lines": [
+        {
+          "speaker": "Judge",
+          "text": "The respondent may now deliver the opening statement and rebut the applicant's primary claim."
+        },
+        {
+          "speaker": "Counsel A",
+          "text": "My Lord, we draw a distinction between procedural irregularity and substantive denial of rights. Our counter-argument rests on three pillars of constitutional law."
+        },
+        {
+          "speaker": "Judge",
+          "text": "The applicant's counsel, you may raise an objection when ready."
+        },
+        {
+          "speaker": "Counsel B",
+          "text": "I raise an objection to the characterization of the evidence. The argument commits begging the question by assuming the contested interpretation."
+        },
+        {
+          "speaker": "Judge",
+          "text": "Objection overruled. The floor speaker may continue. However, circular reasoning will not advance your case."
+        },
+        {
+          "speaker": "Counsel A",
+          "text": "Furthermore, the post hoc fallacy embedded in their submission confuses temporal correlation with legal causation."
+        },
+        {
+          "speaker": "Counsel B",
+          "text": "On the contrary, by reductio ad absurdum, their interpretation would negate every precedent established since 1948."
+        },
+        {
+          "speaker": "Judge",
+          "text": "After weighing the closing statement from both sides, we are ready to rule. The motion carried by majority ruling."
+        }
+      ],
+      "vocabularyUsed": [
+        "opening statement",
+        "rebut claim",
+        "draw a distinction",
+        "counter-argument",
+        "raise an objection",
+        "overrule objection",
+        "begging the question",
+        "floor speaker",
+        "circular reasoning",
+        "post hoc fallacy",
+        "on the contrary",
+        "reductio ad absurdum",
+        "closing statement",
+        "motion carried"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Mastering Structured Debate: From Evidence to Conclusion",
+      "titleArabic": "إتقان النقاش المنظم: من الدليل إلى الخلاصة",
+      "text": "Effective participation in a formal debate requires more than passion; it demands the ability to present an argument built on empirical evidence while anticipating every counter-argument the opposition bench may raise. Skilled debaters always draw a distinction between sound analytical reasoning and fallacious reasoning, exposing any false premise buried within rival claims. When a panelist opens with an opening statement, careful moderators identify categorical claims requiring verification. By the same token, speakers representing the proposition side must refrain from cherry-picking statistics that commit confirmation bias, choosing instead to acknowledge nuanced positions that reflect reality.",
+      "vocabularyUsed": [
+        "formal debate",
+        "present an argument",
+        "empirical evidence",
+        "counter-argument",
+        "opposition bench",
+        "draw a distinction",
+        "fallacious reasoning",
+        "false premise",
+        "panelist",
+        "opening statement",
+        "categorical claim",
+        "by the same token",
+        "cherry-picking",
+        "confirmation bias",
+        "nuanced position",
+        "proposition side"
+      ]
+    },
+    {
+      "title": "Logical Fallacies and the Integrity of Public Discourse",
+      "titleArabic": "المغالطات المنطقية ونزاهة الخطاب العام",
+      "text": "Public discourse loses credibility when participants resort to rhetorical shortcuts rather than reasoned analysis. A false dichotomy constrains debate to two extreme positions when multiple policy options actually exist. Circular reasoning undermines credibility because the conclusion becomes part of the very premise being debated. The post hoc fallacy misleads audiences into believing sequential events prove causation. Similarly, sweeping claims based purely on anecdotal evidence, rather than systematic study, invite a reductio ad absurdum challenge. To that end, deliberative assemblies must champion the burden of proof as a shared civic standard.",
+      "vocabularyUsed": [
+        "false dichotomy",
+        "circular reasoning",
+        "post hoc fallacy",
+        "sweeping claim",
+        "anecdotal evidence",
+        "reductio ad absurdum",
+        "to that end",
+        "deliberative assembly",
+        "burden of proof"
+      ]
+    },
+    {
+      "title": "Advanced Connectors: The Architecture of Persuasive Argument",
+      "titleArabic": "روابط الخطاب المتقدمة: بنية الحجة الإقناعية",
+      "text": "Advanced discourse connectors transform isolated sentences into compelling chains of reasoning. 'Conversely' signals a reversal of the preceding idea, while 'notwithstanding' introduces a concession without abandoning the main argument. When a floor speaker says 'on the contrary', they signal direct rebuttal of the prior claim. 'By extension' widens the logical scope of an established principle, and 'with that said' acknowledges a valid point before pivoting. Parliamentary procedure demands that every point of order and casting vote be recorded transparently. Mastering these connectors enables participants to rebut claim and speak with crux of debate clarity.",
+      "vocabularyUsed": [
+        "conversely",
+        "notwithstanding",
+        "floor speaker",
+        "on the contrary",
+        "rebut claim",
+        "by extension",
+        "with that said",
+        "point of order",
+        "casting vote",
+        "parliamentary procedure",
+        "crux of debate"
+      ]
+    }
+  ]
+}

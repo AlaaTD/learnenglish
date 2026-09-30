@@ -1,0 +1,1428 @@
+{
+  "day": 75,
+  "title": "Society and Community",
+  "topic": "Community issues and citizenship",
+  "description": "Talk about community life and social issues.",
+  "stage": "Advanced Everyday English",
+  "focus": "By the end of today, you can communicate clearly about community issues and citizenship using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Non-defining Relative Clauses",
+      "explanation": "Non-defining relative clauses provide extra, non-essential information about a noun (person, thing, place, or concept) or comment on a whole previous clause. The sentence remains grammatically complete and makes sense if the clause is omitted.\n\n1. Key Rules:\n   - They MUST be separated from the rest of the sentence by commas (or a comma and full stop).\n   - You MUST NOT use 'that' — always use 'who', 'whom', 'whose', 'which', 'where', or 'when'.\n   - The relative pronoun can NEVER be omitted, even when it functions as the object.\n\n2. Comment Clauses with ', which...':\n   A non-defining clause starting with ', which...' can refer back to the ENTIRE preceding sentence or clause.\n   Example: 'Urban regeneration attracts wealthy developers, which often triggers severe gentrification.' (Here, 'which' refers to the whole process of attracting developers).\n\n3. Prepositions with Relative Pronouns:\n   In formal English, prepositions precede the relative pronoun: 'The charitable foundation, from which the hospital received funding, was founded in 1980.'",
+      "structures": [
+        {
+          "pattern": "Noun, who / which / whose + extra info, Main Verb: 'The grassroots movement, which began with ten neighbors, now boasts five thousand members.'"
+        },
+        {
+          "pattern": "Statement, which + comment verb: 'Municipal leaders approved participatory budgeting, which empowered hundreds of residents.'"
+        },
+        {
+          "pattern": "Preposition + whom / which: 'The civic leaders, with whom we collaborated, champion intergenerational equity.'"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The grassroots movement, which started as a neighborhood petition, has evolved into a nationwide advocacy group.",
+          "arabic": "الحركة الشعبية القاعدية، التي بدأت كعريضة في الحي، تطورت لتصبح مجموعة مناصرة وطنية.",
+          "usesVocabulary": [
+            "grassroots movement",
+            "advocacy group"
+          ]
+        },
+        {
+          "sentence": "The local council invested in green infrastructure, which significantly improved community resilience against severe flooding.",
+          "arabic": "استثمر المجلس المحلي في البنية التحتية الخضراء، وهو ما حسّن بشكل ملحوظ مرونة المجتمع في مواجهة الفيضانات الشديدة.",
+          "usesVocabulary": [
+            "green infrastructure",
+            "community resilience"
+          ]
+        },
+        {
+          "sentence": "Social prescribing, which connects vulnerable patients to community kitchens and art circles, enhances holistic wellbeing.",
+          "arabic": "الوصفات الاجتماعية، التي تربط المرضى الضعفاء بالمطابخ المجتمعية وحلقات الفنون، تعزز الرفاهية الشاملة.",
+          "usesVocabulary": [
+            "social prescribing",
+            "community kitchen"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The town hall meeting that took place yesterday was well attended.",
+          "right": "The town hall meeting, which took place yesterday, was well attended.",
+          "explanation": "If a relative clause adds extra descriptive information to a unique or specific event, use commas and 'which', not 'that'."
+        },
+        {
+          "wrong": "The food bank which volunteers run it feeds hundreds of families.",
+          "right": "The food bank, which volunteers run, feeds hundreds of families.",
+          "explanation": "Do not repeat the object pronoun ('it') inside a relative clause when the relative pronoun ('which') already acts as the object."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "civic engagement",
+      "pronunciation": "/ˈsɪvɪk ɪnˈɡeɪdʒmənt/",
+      "partOfSpeech": "noun",
+      "definition": "Active participation by citizens in political, social, and community activities to address public concerns.",
+      "example": "Voter registration drives and volunteer initiatives foster vibrant civic engagement across diverse neighborhoods.",
+      "translation": "المشاركة المدنية الفعالة في القضايا العامة",
+      "collocations": [
+        "promote civic engagement",
+        "high levels of civic engagement"
+      ],
+      "synonyms": [
+        "citizen participation"
+      ],
+      "antonyms": [
+        "civic apathy"
+      ],
+      "tags": [
+        "community",
+        "politics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "grassroots movement",
+      "pronunciation": "/ˈɡrɑːsruːts ˈmuːvmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A political or social movement organized from local community members at the bottom rather than top-down leaders.",
+      "example": "What began as a localized grassroots movement quickly grew into an international climate coalition.",
+      "translation": "حركة شعبية قاعدية نابعة من المجتمع المحلي",
+      "collocations": [
+        "lead a grassroots movement",
+        "grassroots movement organized"
+      ],
+      "synonyms": [
+        "popular campaign",
+        "bottom-up movement"
+      ],
+      "antonyms": [
+        "top-down initiative"
+      ],
+      "tags": [
+        "politics",
+        "activism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "community organizing",
+      "pronunciation": "/kəˈmjuːnəti ˈɔːɡənaɪzɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The process of bringing residents together to build collective power and resolve community challenges.",
+      "example": "Through community organizing, local families persuaded the municipality to build a pedestrian crosswalk.",
+      "translation": "تنظيم المجتمع وحشد طاقاته الأهلية",
+      "collocations": [
+        "skills in community organizing",
+        "practice community organizing"
+      ],
+      "synonyms": [
+        "grassroots mobilizing"
+      ],
+      "antonyms": [],
+      "tags": [
+        "community",
+        "activism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "social capital",
+      "pronunciation": "/ˈsəʊʃl ˈkæpɪtl/",
+      "partOfSpeech": "noun",
+      "definition": "The networks of relationships, mutual trust, and shared norms enabling a society to function effectively.",
+      "example": "High social capital within the neighborhood allowed residents to coordinate disaster relief rapidly.",
+      "translation": "رأس المال الاجتماعي / شبكات الثقة والتكافل المجتمعي",
+      "collocations": [
+        "build social capital",
+        "erode social capital"
+      ],
+      "synonyms": [
+        "social cohesion",
+        "civic trust"
+      ],
+      "antonyms": [
+        "social fragmentation"
+      ],
+      "tags": [
+        "sociology",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "collective action",
+      "pronunciation": "/kəˈlektɪv ˈækʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Collaborative action undertaken by a group of people to achieve a common goal or public good.",
+      "example": "Collective action by tenants succeeded in halting unfair rent increases across the housing estate.",
+      "translation": "العمل الجماعي المشترك لتحقيق مصلحة عامة",
+      "collocations": [
+        "engage in collective action",
+        "mobilize collective action"
+      ],
+      "synonyms": [
+        "joint action",
+        "coordinated effort"
+      ],
+      "antonyms": [
+        "individual inaction"
+      ],
+      "tags": [
+        "activism",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "civil society",
+      "pronunciation": "/ˈsɪvl səˈsaɪəti/",
+      "partOfSpeech": "noun",
+      "definition": "The realm of non-governmental organizations and institutions that manifest the interests of citizens.",
+      "example": "A thriving civil society is essential for holding government officials accountable to the rule of law.",
+      "translation": "المجتمع المدني ومؤسساته الأهلية غير الحكومية",
+      "collocations": [
+        "role of civil society",
+        "vibrant civil society"
+      ],
+      "synonyms": [
+        "civic sector"
+      ],
+      "antonyms": [
+        "state apparatus"
+      ],
+      "tags": [
+        "politics",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "advocacy group",
+      "pronunciation": "/ˈædvəkəsi ɡruːp/",
+      "partOfSpeech": "noun",
+      "definition": "An organization that uses various forms of advocacy to influence public opinion and policy decisions.",
+      "example": "The consumer advocacy group submitted petition signatures protesting deceptive banking fees.",
+      "translation": "مجموعة مناصرة وحشد للتأثير في السياسات",
+      "collocations": [
+        "join an advocacy group",
+        "leading advocacy group"
+      ],
+      "synonyms": [
+        "lobby group",
+        "interest group"
+      ],
+      "antonyms": [],
+      "tags": [
+        "politics",
+        "activism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lobbying effort",
+      "pronunciation": "/ˈlɒbiɪŋ ˈefət/",
+      "partOfSpeech": "noun",
+      "definition": "Coordinated activities aimed at directly persuading legislators to vote for specific legislation.",
+      "example": "Environmental groups mounted a vigorous lobbying effort to pass the clean energy subsidy bill.",
+      "translation": "مساعي وجهود الضغط على المشرعين وصناع القرار",
+      "collocations": [
+        "intense lobbying effort",
+        "fund a lobbying effort"
+      ],
+      "synonyms": [
+        "lobbying campaign"
+      ],
+      "antonyms": [],
+      "tags": [
+        "politics",
+        "government"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pressure group",
+      "pronunciation": "/ˈpreʃə ɡruːp/",
+      "partOfSpeech": "noun",
+      "definition": "An organized group of people seeking to influence government policy on a specific issue without running candidates.",
+      "example": "The cyclist pressure group campaigned successfully for protected bike lanes along major thoroughfares.",
+      "translation": "جماعة ضغط لتوجيه السياسات نحو قضية معينة",
+      "collocations": [
+        "form a pressure group",
+        "pressure group campaign"
+      ],
+      "synonyms": [
+        "action group",
+        "lobby"
+      ],
+      "antonyms": [],
+      "tags": [
+        "politics",
+        "activism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "think tank",
+      "pronunciation": "/θɪŋk tæŋk/",
+      "partOfSpeech": "noun",
+      "definition": "An institute or research organization providing advice and ideas on political, economic, and social issues.",
+      "example": "The economic think tank published independent forecasts on the impact of automation on employment.",
+      "translation": "معهد أبحاث ودراسات استراتيجية / مركز فكر",
+      "collocations": [
+        "independent think tank",
+        "research think tank"
+      ],
+      "synonyms": [
+        "policy institute"
+      ],
+      "antonyms": [],
+      "tags": [
+        "research",
+        "policy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "policy brief",
+      "pronunciation": "/ˈpɒləsi briːf/",
+      "partOfSpeech": "noun",
+      "definition": "A concise summary of an issue, policy options, and recommendations intended for government officials.",
+      "example": "The researchers delivered a four-page policy brief to parliamentarians urging child care subsidies.",
+      "translation": "ورقة إيجاز سياساتي وتقديم توصيات تنفيذية",
+      "collocations": [
+        "draft a policy brief",
+        "circulate a policy brief"
+      ],
+      "synonyms": [
+        "policy memo"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "government"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "public consultation",
+      "pronunciation": "/ˈpʌblɪk ˌkɒnslˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A regulatory process in which the public is invited to provide input on proposed laws or development plans.",
+      "example": "The municipal council opened a two-month public consultation on the zoning master plan.",
+      "translation": "استشارة مجتمعية واستطلاع رأي الجمهور",
+      "collocations": [
+        "launch a public consultation",
+        "feedback during public consultation"
+      ],
+      "synonyms": [
+        "civic inquiry"
+      ],
+      "antonyms": [
+        "closed deliberation"
+      ],
+      "tags": [
+        "governance",
+        "public"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "town hall meeting",
+      "pronunciation": "/taʊn hɔːl ˈmiːtɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "An informal public meeting where community members question elected politicians and voice concerns.",
+      "example": "Hundreds of residents packed the local school gymnasium for the representative's town hall meeting.",
+      "translation": "اجتماع بلدي مفتوح ومواجهة مباشرة مع المسؤولين",
+      "collocations": [
+        "host a town hall meeting",
+        "attend a town hall meeting"
+      ],
+      "synonyms": [
+        "community assembly"
+      ],
+      "antonyms": [],
+      "tags": [
+        "politics",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "neighborhood watch",
+      "pronunciation": "/ˈneɪbəhʊd wɒtʃ/",
+      "partOfSpeech": "noun",
+      "definition": "An organized group of citizens devoted to crime prevention and mutual safety in their local area.",
+      "example": "Burglaries dropped substantially after residents formed an active neighborhood watch committee.",
+      "translation": "لجان الحراسة والمراقبة الأهلية في الأحياء",
+      "collocations": [
+        "join the neighborhood watch",
+        "neighborhood watch scheme"
+      ],
+      "synonyms": [
+        "community watch"
+      ],
+      "antonyms": [],
+      "tags": [
+        "safety",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "community policing",
+      "pronunciation": "/kəˈmjuːnəti pəˈliːsɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A law enforcement strategy emphasizing partnership and proactive dialogue between officers and residents.",
+      "example": "By walking regular foot patrols, officers practicing community policing rebuilt trust with local youth.",
+      "translation": "الشرطة المجتمعية القائمة على الشراكة وبناء الثقة",
+      "collocations": [
+        "implement community policing",
+        "principles of community policing"
+      ],
+      "synonyms": [
+        "neighborhood policing"
+      ],
+      "antonyms": [
+        "militarized policing"
+      ],
+      "tags": [
+        "law",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "social cohesion",
+      "pronunciation": "/ˈsəʊʃl kəʊˈhiːʒn/",
+      "partOfSpeech": "noun",
+      "definition": "The strength of interpersonal bonds and shared values holding individuals together in a society.",
+      "example": "Investing in inclusive community centers and multicultural festivals bolsters social cohesion.",
+      "translation": "التماسك والترابط الاجتماعي بين فئات المجتمع",
+      "collocations": [
+        "strengthen social cohesion",
+        "foster social cohesion"
+      ],
+      "synonyms": [
+        "social solidarity"
+      ],
+      "antonyms": [
+        "social alienation"
+      ],
+      "tags": [
+        "sociology",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "community resilience",
+      "pronunciation": "/kəˈmjuːnəti rɪˈzɪliəns/",
+      "partOfSpeech": "noun",
+      "definition": "The sustained ability of a local population to withstand, recover from, and adapt to adversity or shocks.",
+      "example": "Building local food networks and flood defenses increased the town's community resilience.",
+      "translation": "مرونة المجتمع وقدرته على التعافي من الأزمات",
+      "collocations": [
+        "build community resilience",
+        "enhance community resilience"
+      ],
+      "synonyms": [
+        "local resilience"
+      ],
+      "antonyms": [
+        "community vulnerability"
+      ],
+      "tags": [
+        "community",
+        "disaster"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "voluntary sector",
+      "pronunciation": "/ˈvɒləntri ˈsektə/",
+      "partOfSpeech": "noun",
+      "definition": "The non-profit organizations, charities, and volunteer groups providing services outside state or private markets.",
+      "example": "During the pandemic, the voluntary sector filled critical welfare gaps by delivering emergency meals.",
+      "translation": "القطاع التطوعي والخيري غير الربحي",
+      "collocations": [
+        "work in the voluntary sector",
+        "support the voluntary sector"
+      ],
+      "synonyms": [
+        "third sector",
+        "charity sector"
+      ],
+      "antonyms": [
+        "public sector",
+        "private sector"
+      ],
+      "tags": [
+        "community",
+        "charity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "charitable foundation",
+      "pronunciation": "/ˈtʃærɪtəbl faʊnˈdeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A non-profit organization established to provide grants and financial aid to worthy causes.",
+      "example": "The charitable foundation awarded twenty educational grants to underprivileged medical students.",
+      "translation": "مؤسسة خيرية مانحة لتمويل المبادرات",
+      "collocations": [
+        "establish a charitable foundation",
+        "grant from a charitable foundation"
+      ],
+      "synonyms": [
+        "philanthropic trust"
+      ],
+      "antonyms": [],
+      "tags": [
+        "charity",
+        "finance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "philanthropic giving",
+      "pronunciation": "/ˌfɪlənˈθrɒpɪk ˈɡɪvɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The voluntary donation of wealth, assets, or time by individuals or corporations for the public good.",
+      "example": "The university's new science wing was financed entirely through generous philanthropic giving.",
+      "translation": "العطاء الإنساني والتبرعات الخيرية التنموية",
+      "collocations": [
+        "culture of philanthropic giving",
+        "increase philanthropic giving"
+      ],
+      "synonyms": [
+        "charitable donation"
+      ],
+      "antonyms": [],
+      "tags": [
+        "philanthropy",
+        "charity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "corporate citizenship",
+      "pronunciation": "/ˈkɔːpərət ˈsɪtɪzənʃɪp/",
+      "partOfSpeech": "noun",
+      "definition": "A corporation's recognized ethical responsibility toward society, the environment, and its stakeholders.",
+      "example": "Demonstrating corporate citizenship, the software firm donated computers to local public schools.",
+      "translation": "المواطنة المؤسسية والمسؤولية الأخلاقية للشركات",
+      "collocations": [
+        "practice corporate citizenship",
+        "commitment to corporate citizenship"
+      ],
+      "synonyms": [
+        "corporate social responsibility",
+        "CSR"
+      ],
+      "antonyms": [],
+      "tags": [
+        "business",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "environmental stewardship",
+      "pronunciation": "/ɪnˌvaɪrənˈmentl ˈstjuːədʃɪp/",
+      "partOfSpeech": "noun",
+      "definition": "The responsible use and protection of the natural environment through conservation and sustainable practices.",
+      "example": "Indigenous communities have practiced environmental stewardship across forest watersheds for millennia.",
+      "translation": "الإشراف والوصاية البيئية لحماية الموارد الطبيعية",
+      "collocations": [
+        "promote environmental stewardship",
+        "act of environmental stewardship"
+      ],
+      "synonyms": [
+        "conservation",
+        "eco-stewardship"
+      ],
+      "antonyms": [
+        "environmental exploitation"
+      ],
+      "tags": [
+        "environment",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "social enterprise",
+      "pronunciation": "/ˈsəʊʃl ˈentəpraɪz/",
+      "partOfSpeech": "noun",
+      "definition": "A commercial business whose primary objective is creating positive social impact rather than private profit.",
+      "example": "The social enterprise employs homeless youth and trains them as professional artisan bakers.",
+      "translation": "مؤسسة ريادة أعمال اجتماعية تهدف للنفع العام",
+      "collocations": [
+        "launch a social enterprise",
+        "model of a social enterprise"
+      ],
+      "synonyms": [
+        "mission-driven business"
+      ],
+      "antonyms": [
+        "for-profit corporation"
+      ],
+      "tags": [
+        "business",
+        "social"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "community benefit",
+      "pronunciation": "/kəˈmjuːnəti ˈbenɪfɪt/",
+      "partOfSpeech": "noun",
+      "definition": "Tangible positive outcomes or resources created by projects for the direct advantage of local residents.",
+      "example": "The wind farm agreement included a community benefit clause funding local sports facilities.",
+      "translation": "النفع العام والمكاسب العائدة على المجتمع المحلي",
+      "collocations": [
+        "generate community benefit",
+        "community benefit agreement"
+      ],
+      "synonyms": [
+        "public welfare"
+      ],
+      "antonyms": [
+        "private profit"
+      ],
+      "tags": [
+        "community",
+        "development"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "public goods",
+      "pronunciation": "/ˈpʌblɪk ɡʊdz/",
+      "partOfSpeech": "noun",
+      "definition": "Commodities or services provided to all members of society without exclusion, such as clean air or street lighting.",
+      "example": "Clean water and national defense are classic public goods that private markets fail to supply equitably.",
+      "translation": "المنافع والسلع العامة المتاحة لكافة المواطنين",
+      "collocations": [
+        "provision of public goods",
+        "protect public goods"
+      ],
+      "synonyms": [
+        "collective goods"
+      ],
+      "antonyms": [
+        "private goods"
+      ],
+      "tags": [
+        "economics",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "common good",
+      "pronunciation": "/ˈkɒmən ɡʊd/",
+      "partOfSpeech": "noun",
+      "definition": "The shared benefit, welfare, or advantage of all members of a given community.",
+      "example": "Sacrificing individual convenience during water shortages serves the overarching common good.",
+      "translation": "المصلحة العامة المشتركة لجميع أفراد المجتمع",
+      "collocations": [
+        "serve the common good",
+        "for the common good"
+      ],
+      "synonyms": [
+        "general welfare",
+        "public interest"
+      ],
+      "antonyms": [
+        "self-interest"
+      ],
+      "tags": [
+        "ethics",
+        "philosophy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "intergenerational equity",
+      "pronunciation": "/ˌɪntəˌdʒenəˈreɪʃənl ˈekwəti/",
+      "partOfSpeech": "noun",
+      "definition": "The principle of fairness between current generations and future generations regarding resource use.",
+      "example": "Preserving fiscal reserves and biological diversity is essential for intergenerational equity.",
+      "translation": "العدالة بين الأجيال في توزيع الموارد والفرص",
+      "collocations": [
+        "ensure intergenerational equity",
+        "principle of intergenerational equity"
+      ],
+      "synonyms": [
+        "intergenerational justice"
+      ],
+      "antonyms": [],
+      "tags": [
+        "ethics",
+        "sustainability"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "social mobility",
+      "pronunciation": "/ˈsəʊʃl məʊˈbɪləti/",
+      "partOfSpeech": "noun",
+      "definition": "The ability of individuals or families to move between different social strata and economic brackets.",
+      "example": "Tuition-free university education serves as the most potent engine of social mobility.",
+      "translation": "الحراك الاجتماعي والانتقال بين الطبقات الاقتصادية",
+      "collocations": [
+        "enhance social mobility",
+        "stifled social mobility"
+      ],
+      "synonyms": [
+        "socioeconomic progression"
+      ],
+      "antonyms": [
+        "social stagnation"
+      ],
+      "tags": [
+        "sociology",
+        "economics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "upward mobility",
+      "pronunciation": "/ˈʌpwəd məʊˈbɪləti/",
+      "partOfSpeech": "noun",
+      "definition": "An increase in social or economic status and prosperity over time or between generations.",
+      "example": "Access to affordable vocational training provides adult workers with genuine upward mobility.",
+      "translation": "الارتقاء الطبقي والتقدم المعيشي نحو الأفضل",
+      "collocations": [
+        "pathway to upward mobility",
+        "achieve upward mobility"
+      ],
+      "synonyms": [
+        "social advancement"
+      ],
+      "antonyms": [
+        "downward mobility"
+      ],
+      "tags": [
+        "economics",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "glass ceiling",
+      "pronunciation": "/ɡlɑːs ˈsiːlɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "An unacknowledged discriminatory barrier preventing women and minorities from reaching executive positions.",
+      "example": "When she was appointed managing partner, she shattered an eighty-year-old glass ceiling.",
+      "translation": "السقف الزجاجي / العائق الخفي أمام ترقي الفئات المهمشة",
+      "collocations": [
+        "break the glass ceiling",
+        "shatter the glass ceiling"
+      ],
+      "synonyms": [
+        "invisible barrier"
+      ],
+      "antonyms": [
+        "equal opportunity"
+      ],
+      "tags": [
+        "equality",
+        "career"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "systemic inequality",
+      "pronunciation": "/sɪˈstemɪk ˌɪnɪˈkwɒləti/",
+      "partOfSpeech": "noun",
+      "definition": "Deeply ingrained institutional policies and practices that systematically disadvantage certain groups.",
+      "example": "Reforming bail laws is critical to dismantling systemic inequality within the justice system.",
+      "translation": "عدم المساواة الهيكلي والمترسخ في المؤسسات",
+      "collocations": [
+        "combat systemic inequality",
+        "entrenched systemic inequality"
+      ],
+      "synonyms": [
+        "structural inequality"
+      ],
+      "antonyms": [
+        "systemic equity"
+      ],
+      "tags": [
+        "equality",
+        "justice"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital inclusion",
+      "pronunciation": "/ˈdɪdʒɪtl ɪnˈkluːʒn/",
+      "partOfSpeech": "noun",
+      "definition": "Activities ensuring that all individuals have access to and the skills to use modern information technologies.",
+      "example": "The community library provides free tablets and digital inclusion classes for senior citizens.",
+      "translation": "الشمول الرقمي وتمكين الجميع من استخدام التقنية",
+      "collocations": [
+        "promote digital inclusion",
+        "initiatives for digital inclusion"
+      ],
+      "synonyms": [
+        "digital equity"
+      ],
+      "antonyms": [
+        "digital exclusion"
+      ],
+      "tags": [
+        "tech",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rural connectivity",
+      "pronunciation": "/ˈrʊərəl kɒnekˈtɪvəti/",
+      "partOfSpeech": "noun",
+      "definition": "The provision of telecommunications, transportation, and internet infrastructure to isolated countryside areas.",
+      "example": "Expanding fiber-optic broadband has significantly improved rural connectivity for remote farmers.",
+      "translation": "ربط المناطق الريفية بالاتصالات والمواصلات",
+      "collocations": [
+        "improve rural connectivity",
+        "invest in rural connectivity"
+      ],
+      "synonyms": [
+        "rural infrastructure"
+      ],
+      "antonyms": [
+        "rural isolation"
+      ],
+      "tags": [
+        "infrastructure",
+        "rural"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "urban regeneration",
+      "pronunciation": "/ˈɜːbən rɪˌdʒenəˈreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The revitalization of decaying or neglected urban neighborhoods through public and private investment.",
+      "example": "The docks underwent extensive urban regeneration, transforming derelict warehouses into art studios.",
+      "translation": "التجديد والإنعاش الحضري للمناطق المتدهورة",
+      "collocations": [
+        "drive urban regeneration",
+        "urban regeneration project"
+      ],
+      "synonyms": [
+        "urban renewal"
+      ],
+      "antonyms": [
+        "urban blight"
+      ],
+      "tags": [
+        "urban",
+        "development"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "gentrification",
+      "pronunciation": "/ˌdʒentrɪfɪˈkeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The process of affluent people renovating deteriorating urban districts, often displacing poorer residents.",
+      "example": "Rapid gentrification caused real estate prices and property taxes to triple within five years.",
+      "translation": "الاستطباق / تهجير السكان الأصليين بسبب غلاء الأحياء المرممة",
+      "collocations": [
+        "rapid gentrification",
+        "consequences of gentrification"
+      ],
+      "synonyms": [
+        "neighborhood upscaling"
+      ],
+      "antonyms": [],
+      "tags": [
+        "urban",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "affordable housing",
+      "pronunciation": "/əˈfɔːdəbl ˈhaʊzɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Housing units deemed affordable to households with median household income or below.",
+      "example": "City planners passed ordinances requiring ten percent of new residential developments to be affordable housing.",
+      "translation": "الإسكان الميسر لذوي الدخل المحدود والمتوسط",
+      "collocations": [
+        "supply of affordable housing",
+        "lack of affordable housing"
+      ],
+      "synonyms": [
+        "low-cost housing"
+      ],
+      "antonyms": [
+        "luxury housing"
+      ],
+      "tags": [
+        "housing",
+        "welfare"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "social housing",
+      "pronunciation": "/ˈsəʊʃl ˈhaʊzɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Subsidized housing provided by the state or non-profit housing associations for lower-income people.",
+      "example": "The waitlist for municipal social housing has grown to over eight thousand families.",
+      "translation": "الإسكان الاجتماعي المدعوم من الدولة",
+      "collocations": [
+        "invest in social housing",
+        "tenants in social housing"
+      ],
+      "synonyms": [
+        "council housing",
+        "public housing"
+      ],
+      "antonyms": [
+        "private real estate"
+      ],
+      "tags": [
+        "housing",
+        "welfare"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "homelessness crisis",
+      "pronunciation": "/ˈhəʊmləsnəs ˈkraɪsɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A severe societal emergency characterized by escalating numbers of people lacking permanent shelter.",
+      "example": "Emergency winter shelters were opened across the metropolitan area to confront the worsening homelessness crisis.",
+      "translation": "أزمة التشرد وفقدان المأوى الحادة",
+      "collocations": [
+        "tackle the homelessness crisis",
+        "address the homelessness crisis"
+      ],
+      "synonyms": [
+        "housing emergency"
+      ],
+      "antonyms": [],
+      "tags": [
+        "housing",
+        "crisis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "food bank",
+      "pronunciation": "/fuːd bæŋk/",
+      "partOfSpeech": "noun",
+      "definition": "A non-profit organization that distributes donated groceries directly to individuals facing food insecurity.",
+      "example": "Volunteers packed emergency grocery parcels at the central food bank every Saturday morning.",
+      "translation": "بنك الطعام لتوزيع المؤن الغذائية على المحتاجين",
+      "collocations": [
+        "volunteer at a food bank",
+        "donate to the food bank"
+      ],
+      "synonyms": [
+        "food pantry"
+      ],
+      "antonyms": [],
+      "tags": [
+        "charity",
+        "food"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "community kitchen",
+      "pronunciation": "/kəˈmjuːnəti ˈkɪtʃɪn/",
+      "partOfSpeech": "noun",
+      "definition": "A shared cooking facility or soup kitchen preparing free or affordable hot meals for the public.",
+      "example": "The community kitchen serves two hundred hot lunches daily to pensioners and low-income neighbors.",
+      "translation": "المطبخ المجتمعي لإعداد وجبات ساخنة للمحتاجين",
+      "collocations": [
+        "operate a community kitchen",
+        "meals at the community kitchen"
+      ],
+      "synonyms": [
+        "soup kitchen"
+      ],
+      "antonyms": [],
+      "tags": [
+        "food",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mutual aid",
+      "pronunciation": "/ˈmjuːtʃuəl eɪd/",
+      "partOfSpeech": "noun",
+      "definition": "Voluntary reciprocal exchange of resources and services among community members for mutual benefit.",
+      "example": "Neighborhood mutual aid networks distributed medicine and groceries to vulnerable elderly residents.",
+      "translation": "التكافل والتضامن الشعبي التبادلي",
+      "collocations": [
+        "participate in mutual aid",
+        "mutual aid group"
+      ],
+      "synonyms": [
+        "cooperative aid",
+        "solidarity work"
+      ],
+      "antonyms": [],
+      "tags": [
+        "solidarity",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "peer support",
+      "pronunciation": "/pɪə səˈpɔːt/",
+      "partOfSpeech": "noun",
+      "definition": "Assistance and emotional solidarity provided by people who share similar lived experiences or conditions.",
+      "example": "Addiction recovery centers rely heavily on weekly peer support circles to maintain sobriety.",
+      "translation": "الدعم والمساندة بين الأقران ذوي التجارب المشتركة",
+      "collocations": [
+        "offer peer support",
+        "peer support group"
+      ],
+      "synonyms": [
+        "mutual support"
+      ],
+      "antonyms": [
+        "expert counseling"
+      ],
+      "tags": [
+        "health",
+        "community"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "social prescribing",
+      "pronunciation": "/ˈsəʊʃl prɪˈskraɪbɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A healthcare approach where doctors refer patients to non-clinical community activities to boost wellbeing.",
+      "example": "Through social prescribing, the physician connected the isolated senior to a local gardening club.",
+      "translation": "الوصفات الاجتماعية بإحالة المرضى لأنشطة مجتمعية داعمة",
+      "collocations": [
+        "refer for social prescribing",
+        "benefits of social prescribing"
+      ],
+      "synonyms": [
+        "community referral"
+      ],
+      "antonyms": [
+        "pharmacological treatment"
+      ],
+      "tags": [
+        "health",
+        "wellbeing"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wellbeing economy",
+      "pronunciation": "/ˌwelˈbiːɪŋ ɪˈkɒnəmi/",
+      "partOfSpeech": "noun",
+      "definition": "An economic model prioritizing human and ecological wellbeing over narrow GDP output growth.",
+      "example": "Governments adopting a wellbeing economy measure policy success by mental health, clean water, and civic trust.",
+      "translation": "اقتصاد الرفاه الإنساني والبيئي المتجاوز لمؤشر الناتج المحلي",
+      "collocations": [
+        "transition to a wellbeing economy",
+        "principles of a wellbeing economy"
+      ],
+      "synonyms": [
+        "economy of wellbeing"
+      ],
+      "antonyms": [
+        "growth-at-all-costs economy"
+      ],
+      "tags": [
+        "economics",
+        "sustainability"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "circular economy",
+      "pronunciation": "/ˈsɜːkjulər ɪˈkɒnəmi/",
+      "partOfSpeech": "noun",
+      "definition": "An economic model minimizing waste by regenerating natural systems and reusing products and materials.",
+      "example": "Transitioning to a circular economy requires designing electronics that can be repaired and recycled indefinitely.",
+      "translation": "الاقتصاد الدائري القائم على إعادة التدوير ومنع الهدر",
+      "collocations": [
+        "shift to a circular economy",
+        "circular economy model"
+      ],
+      "synonyms": [
+        "zero-waste economy"
+      ],
+      "antonyms": [
+        "linear economy"
+      ],
+      "tags": [
+        "sustainability",
+        "economics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sustainable development goal",
+      "pronunciation": "/səˈsteɪnəbl dɪˈveləpmənt ɡəʊl/",
+      "partOfSpeech": "noun",
+      "definition": "One of seventeen global objectives set by the United Nations to end poverty and protect the planet.",
+      "example": "Eradicating extreme poverty remains the foundational sustainable development goal adopted in 2015.",
+      "translation": "أحد أهداف التنمية المستدامة للأمم المتحدة",
+      "collocations": [
+        "achieve a sustainable development goal",
+        "UN sustainable development goal"
+      ],
+      "synonyms": [
+        "SDG"
+      ],
+      "antonyms": [],
+      "tags": [
+        "un",
+        "sustainability"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "green infrastructure",
+      "pronunciation": "/ɡriːn ˈɪnfrəstrʌktʃə/",
+      "partOfSpeech": "noun",
+      "definition": "A strategically planned network of natural and semi-natural areas designed to deliver ecological services.",
+      "example": "Permeable pavements, bioswales, and urban trees constitute resilient green infrastructure against flash floods.",
+      "translation": "البنية التحتية الخضراء المستدامة والصديقة للبيئة",
+      "collocations": [
+        "invest in green infrastructure",
+        "urban green infrastructure"
+      ],
+      "synonyms": [
+        "eco-infrastructure"
+      ],
+      "antonyms": [
+        "grey infrastructure"
+      ],
+      "tags": [
+        "urban",
+        "environment"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "blue-green space",
+      "pronunciation": "/bluː ɡriːn speɪs/",
+      "partOfSpeech": "noun",
+      "definition": "Urban areas combining water features (blue) and vegetation (green) that enhance health and cooling.",
+      "example": "Creating a new blue-green space along the river canal reduced summer heat island temperatures by three degrees.",
+      "translation": "المساحات الحضرية الزرقاء والخضراء (مسطحات مائية ونباتية)",
+      "collocations": [
+        "access to blue-green spaces",
+        "design a blue-green space"
+      ],
+      "synonyms": [
+        "waterfront parkland"
+      ],
+      "antonyms": [
+        "concrete jungle"
+      ],
+      "tags": [
+        "urban",
+        "environment"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "participatory budgeting",
+      "pronunciation": "/pɑːˈtɪsɪpətəri ˈbʌdʒɪtɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A democratic process where community residents directly vote on how to spend part of a public budget.",
+      "example": "Through participatory budgeting, citizens allocated half a million dollars to build a new playground.",
+      "translation": "الموازنة التشاركية بتصويت المواطنين على بنود الإنفاق",
+      "collocations": [
+        "conduct participatory budgeting",
+        "participatory budgeting vote"
+      ],
+      "synonyms": [
+        "community budgeting"
+      ],
+      "antonyms": [
+        "top-down municipal budgeting"
+      ],
+      "tags": [
+        "democracy",
+        "governance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "community empowerment",
+      "pronunciation": "/kəˈmjuːnəti ɪmˈpaʊəmənt/",
+      "partOfSpeech": "noun",
+      "definition": "The process of enabling local communities to increase control over the factors that affect their lives.",
+      "example": "Community empowerment initiatives enable marginalized neighborhoods to negotiate directly with utility companies.",
+      "translation": "التمكين المجتمعي وتعزيز استقلالية الأهالي",
+      "collocations": [
+        "foster community empowerment",
+        "tools for community empowerment"
+      ],
+      "synonyms": [
+        "local self-determination"
+      ],
+      "antonyms": [
+        "community disenfranchisement"
+      ],
+      "tags": [
+        "community",
+        "equality"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Town Hall: Urban Regeneration and Affordable Housing",
+      "titleArabic": "لقاء بلدي: التجديد الحضري والإسكان الميسر",
+      "setting": "Residents debate an urban redevelopment plan with their city councilor.",
+      "lines": [
+        {
+          "speaker": "Councilor",
+          "text": "Welcome to our public consultation. Our new urban regeneration initiative, which covers forty acres, will modernize the district."
+        },
+        {
+          "speaker": "Citizen A",
+          "text": "With respect, rapid gentrification is pricing long-term families out of the neighborhood, which creates a severe homelessness crisis."
+        },
+        {
+          "speaker": "Councilor",
+          "text": "Our plan mandates twenty percent affordable housing and five percent social housing across all developments."
+        },
+        {
+          "speaker": "Citizen B",
+          "text": "Through collective action and community organizing, our advocacy group is demanding fifty percent affordable units to protect social cohesion."
+        },
+        {
+          "speaker": "Councilor",
+          "text": "We are also incorporating participatory budgeting, which gives residents direct voting power over the district's park budget."
+        },
+        {
+          "speaker": "Citizen A",
+          "text": "Investing in blue-green spaces and green infrastructure serves the common good and promotes environmental stewardship."
+        },
+        {
+          "speaker": "Councilor",
+          "text": "Agreed. Furthermore, every developer must sign a legally binding community benefit agreement."
+        },
+        {
+          "speaker": "Citizen B",
+          "text": "True community empowerment means listening to our grassroots movement before construction permits are signed."
+        }
+      ],
+      "vocabularyUsed": [
+        "public consultation",
+        "urban regeneration",
+        "gentrification",
+        "homelessness crisis",
+        "affordable housing",
+        "social housing",
+        "collective action",
+        "community organizing",
+        "advocacy group",
+        "social cohesion",
+        "participatory budgeting",
+        "blue-green space",
+        "green infrastructure",
+        "common good",
+        "environmental stewardship",
+        "community benefit",
+        "community empowerment",
+        "grassroots movement"
+      ]
+    },
+    {
+      "title": "Civic Forum: Social Cohesion and Mutual Aid",
+      "titleArabic": "منتدى مدني: التماسك الاجتماعي والتكافل الشعبي",
+      "setting": "Community organizers and social workers discuss welfare safety nets.",
+      "lines": [
+        {
+          "speaker": "Organizer",
+          "text": "Our mutual aid network, which was founded during the lockdowns, continues to deliver groceries from the local food bank."
+        },
+        {
+          "speaker": "Social Worker",
+          "text": "In addition, our volunteer staff operates a bustling community kitchen, which provides hot meals and essential peer support."
+        },
+        {
+          "speaker": "Organizer",
+          "text": "Local physicians are embracing social prescribing, which directs isolated seniors to our weekly social capital gardening sessions."
+        },
+        {
+          "speaker": "Social Worker",
+          "text": "That is vital for mental health. Expanding digital inclusion and rural connectivity helps bridge isolation across the county."
+        },
+        {
+          "speaker": "Organizer",
+          "text": "The voluntary sector, which relies on modest philanthropic giving from a local charitable foundation, cannot shoulder all welfare burdens alone."
+        },
+        {
+          "speaker": "Social Worker",
+          "text": "Indeed. Dismantling systemic inequality requires systemic public goods provided by the state, not just charity."
+        },
+        {
+          "speaker": "Organizer",
+          "text": "Corporations must also show genuine corporate citizenship by supporting social enterprises that pay living wages."
+        },
+        {
+          "speaker": "Social Worker",
+          "text": "Building community resilience ensures our neighborhoods can weather any future economic downturn."
+        }
+      ],
+      "vocabularyUsed": [
+        "mutual aid",
+        "food bank",
+        "community kitchen",
+        "peer support",
+        "social prescribing",
+        "social capital",
+        "digital inclusion",
+        "rural connectivity",
+        "voluntary sector",
+        "philanthropic giving",
+        "charitable foundation",
+        "systemic inequality",
+        "public goods",
+        "corporate citizenship",
+        "social enterprise",
+        "community resilience"
+      ]
+    },
+    {
+      "title": "Youth Leadership Dialogue: Social Mobility and Future Generations",
+      "titleArabic": "حوار القيادات الشبابية: الحراك الاجتماعي وأجيال المستقبل",
+      "setting": "A university panel discusses sustainable development goals and civic engagement.",
+      "lines": [
+        {
+          "speaker": "Moderator",
+          "text": "How can our society foster upward mobility while upholding intergenerational equity?"
+        },
+        {
+          "speaker": "Youth Leader",
+          "text": "Quality education is the primary pathway to social mobility, yet disadvantaged youth still confront a formidable glass ceiling."
+        },
+        {
+          "speaker": "Policy Analyst",
+          "text": "A renowned economic think tank released a policy brief urging transition toward a wellbeing economy and a circular economy."
+        },
+        {
+          "speaker": "Youth Leader",
+          "text": "Aligning our domestic laws with every sustainable development goal requires consistent civic engagement and lobbying efforts."
+        },
+        {
+          "speaker": "Policy Analyst",
+          "text": "Furthermore, community policing initiatives, which build trust between neighborhood watch volunteers and officers, keep streets secure."
+        },
+        {
+          "speaker": "Youth Leader",
+          "text": "When citizens exercise collective action through civil society, they pressure governments into prioritizing the common good."
+        },
+        {
+          "speaker": "Policy Analyst",
+          "text": "Exactly. That dynamic represents the essence of a pressure group advocating for democratic accountability."
+        },
+        {
+          "speaker": "Moderator",
+          "text": "Empowering youth to engage in public discourse will safeguard democracy for generations to come."
+        }
+      ],
+      "vocabularyUsed": [
+        "upward mobility",
+        "intergenerational equity",
+        "social mobility",
+        "glass ceiling",
+        "think tank",
+        "policy brief",
+        "wellbeing economy",
+        "circular economy",
+        "sustainable development goal",
+        "civic engagement",
+        "lobbying effort",
+        "community policing",
+        "neighborhood watch",
+        "collective action",
+        "civil society",
+        "common good",
+        "pressure group"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Civic Mobilization, Grassroots Democracy, and Policy Change",
+      "titleArabic": "الحشد المدني، الديمقراطية القاعدية، وتغيير السياسات",
+      "text": "A thriving democracy depends upon energetic civic engagement and organized collective action across all sectors of society. When local residents organize a grassroots movement, they generate substantial social capital that empowers communities to demand accountability. Supported by a dedicated advocacy group or public interest pressure group, ordinary citizens commission insightful policy briefs from independent think tanks to persuade legislators through targeted lobbying efforts. Through structured public consultation and transparent town hall meetings, municipal leaders gain invaluable perspectives from civil society. Ultimately, embracing participatory budgeting bridges political divides and achieves genuine community empowerment.",
+      "vocabularyUsed": [
+        "civic engagement",
+        "collective action",
+        "grassroots movement",
+        "social capital",
+        "advocacy group",
+        "pressure group",
+        "policy brief",
+        "think tank",
+        "lobbying effort",
+        "public consultation",
+        "town hall meeting",
+        "civil society",
+        "participatory budgeting",
+        "community empowerment"
+      ]
+    },
+    {
+      "title": "Urban Equity, Housing Justice, and Environmental Regeneration",
+      "titleArabic": "العدالة الحضرية، الحق في السكن، والتجديد البيئي",
+      "text": "Balancing modernization with social equity is the foremost challenge confronting contemporary urban development. When municipal councils initiate large-scale urban regeneration, unmonitored market speculation frequently triggers aggressive gentrification, leaving low-income families vulnerable to a devastating homelessness crisis. To safeguard neighborhood stability, city planners must mandate substantial ratios of affordable housing and state-funded social housing. Simultaneously, incorporating resilient green infrastructure and accessible blue-green spaces enhances environmental stewardship and protects the health of residents. By ensuring that every major development delivers a binding community benefit, cities serve the common good and advance intergenerational equity.",
+      "vocabularyUsed": [
+        "urban regeneration",
+        "gentrification",
+        "homelessness crisis",
+        "affordable housing",
+        "social housing",
+        "green infrastructure",
+        "blue-green space",
+        "environmental stewardship",
+        "community benefit",
+        "common good",
+        "intergenerational equity"
+      ]
+    },
+    {
+      "title": "Community Resilience, Solidarity Networks, and Welfare Safety Nets",
+      "titleArabic": "مرونة المجتمع، شبكات التكافل، وشبكات الأمان الاجتماعي",
+      "text": "Fostering community resilience requires robust welfare safety nets and active mutual aid networks operating across neighborhoods. In times of hardship, the voluntary sector provides essential relief through dedicated food banks and welcoming community kitchens that serve vulnerable families. Innovative healthcare models increasingly incorporate social prescribing, connecting patients with peer support circles and artistic workshops that strengthen social cohesion. Furthermore, ethical social enterprises demonstrate how business can generate social returns while advancing the principles of a circular economy and a wellbeing economy. Together, these grassroots initiatives dismantle systemic inequality and advance global sustainable development goals.",
+      "vocabularyUsed": [
+        "community resilience",
+        "mutual aid",
+        "voluntary sector",
+        "food bank",
+        "community kitchen",
+        "social prescribing",
+        "peer support",
+        "social cohesion",
+        "social enterprise",
+        "circular economy",
+        "wellbeing economy",
+        "systemic inequality",
+        "sustainable development goal"
+      ]
+    }
+  ]
+}

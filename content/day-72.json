@@ -1,0 +1,1450 @@
+{
+  "day": 72,
+  "title": "News Around the World",
+  "topic": "World events and media",
+  "description": "Discuss world events and report what you heard.",
+  "stage": "Advanced Everyday English",
+  "focus": "By the end of today, you can communicate clearly about world events and media using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Noun Clauses (that, what, whether)",
+      "explanation": "Noun clauses function as subjects, objects, or complements within a sentence. They often replace simple nouns and add complexity to reporting and describing knowledge. (1) 'That' clauses: 'Journalists reported that the minister had resigned.' (2) 'What' clauses (free relatives): 'What the fact-checker discovered shocked the editorial board.' (3) 'Whether/if' clauses for indirect questions and uncertainty: 'We do not know whether the story is verified.' Key patterns with reporting verbs: report, confirm, reveal, announce, deny, discover, believe + that/what/whether. In news language, noun clauses are essential for citing sources, reporting speech, and expressing editorial stance.",
+      "structures": [
+        {
+          "pattern": "Subject + reporting verb + that + Subject + Verb (Indirect statement)"
+        },
+        {
+          "pattern": "What + Subject + Verb + is/was (What-clause as subject or object)"
+        },
+        {
+          "pattern": "Subject + Verb + whether/if + Subject + Verb (Indirect yes/no question)"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The fact-checker confirmed that the clickbait headline had misrepresented the research findings.",
+          "arabic": "أكد مدقق الحقائق أن العنوان الاستدراجي قد أساء تمثيل نتائج البحث.",
+          "usesVocabulary": [
+            "fact-checker",
+            "clickbait headline"
+          ]
+        },
+        {
+          "sentence": "What the investigative piece revealed was that the bureau chief had suppressed the exclusive scoop.",
+          "arabic": "ما كشفه التقرير الاستقصائي هو أن رئيس المكتب قد أخفى الانفراد الصحفي.",
+          "usesVocabulary": [
+            "investigative piece",
+            "bureau chief",
+            "exclusive scoop"
+          ]
+        },
+        {
+          "sentence": "Citizens questioned whether the public broadcaster had maintained its editorial independence.",
+          "arabic": "تساءل المواطنون عما إذا كان المذيع العام قد حافظ على استقلاليته التحريرية.",
+          "usesVocabulary": [
+            "public broadcaster",
+            "editorial independence"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The press corps reported what did the minister say about the media blackout.",
+          "right": "The press corps reported what the minister said about the media blackout.",
+          "explanation": "In a noun clause introduced by 'what', use statement word order (Subject + Verb), not question order."
+        },
+        {
+          "wrong": "We do not know that the story is verified or not.",
+          "right": "We do not know whether the story is verified or not.",
+          "explanation": "Use 'whether' (not 'that') when there is an implicit 'or not' or a yes/no uncertainty."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "breaking story",
+      "pronunciation": "/ˈbreɪkɪŋ ˈstɔːri/",
+      "partOfSpeech": "noun",
+      "definition": "An urgent, developing news event of significant public importance being reported as it happens.",
+      "example": "The newsroom scrambled to cover the breaking story of the earthquake in real time.",
+      "translation": "خبر عاجل / قصة إخبارية متطورة ومستجدة",
+      "collocations": [
+        "cover a breaking story",
+        "report on a breaking story"
+      ],
+      "synonyms": [
+        "developing story",
+        "flash news"
+      ],
+      "antonyms": [
+        "old news"
+      ],
+      "tags": [
+        "journalism",
+        "news"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "headline news",
+      "pronunciation": "/ˈhedlaɪn njuːz/",
+      "partOfSpeech": "noun",
+      "definition": "The most important news stories featured prominently at the top of broadcasts or publications.",
+      "example": "The prime minister's unexpected resignation dominated headline news globally for three days.",
+      "translation": "أبرز الأخبار / عناوين النشرات الإخبارية الرئيسية",
+      "collocations": [
+        "make headline news",
+        "dominate headline news"
+      ],
+      "synonyms": [
+        "top stories",
+        "leading news"
+      ],
+      "antonyms": [
+        "minor report"
+      ],
+      "tags": [
+        "journalism",
+        "broadcasting"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "on-the-ground reporting",
+      "pronunciation": "/ɒn ðə ɡraʊnd rɪˈpɔːtɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Journalism conducted directly from the physical location of an event rather than remotely.",
+      "example": "On-the-ground reporting from the conflict zone revealed facts contradicting official statements.",
+      "translation": "التغطية الميدانية المباشرة / الصحافة على أرض الواقع",
+      "collocations": [
+        "provide on-the-ground reporting",
+        "rely on on-the-ground reporting"
+      ],
+      "synonyms": [
+        "field journalism"
+      ],
+      "antonyms": [
+        "desk reporting"
+      ],
+      "tags": [
+        "journalism",
+        "field"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "embedded journalist",
+      "pronunciation": "/ɪmˈbedɪd ˈdʒɜːnəlɪst/",
+      "partOfSpeech": "noun",
+      "definition": "A reporter who travels and lives with a military unit or organization to provide first-hand coverage.",
+      "example": "The embedded journalist filed daily dispatches directly from the frontline positions.",
+      "translation": "صحفي مدمج مع الوحدات العسكرية",
+      "collocations": [
+        "serve as embedded journalist",
+        "allow an embedded journalist"
+      ],
+      "synonyms": [
+        "attached correspondent"
+      ],
+      "antonyms": [
+        "independent journalist"
+      ],
+      "tags": [
+        "journalism",
+        "military"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news conference",
+      "pronunciation": "/njuːz ˈkɒnfrəns/",
+      "partOfSpeech": "noun",
+      "definition": "A formal meeting where an official or spokesperson addresses journalists and takes questions.",
+      "example": "The health minister called an emergency news conference to address the outbreak.",
+      "translation": "مؤتمر صحفي / جلسة استجواب الصحافة",
+      "collocations": [
+        "hold a news conference",
+        "call a news conference"
+      ],
+      "synonyms": [
+        "press conference"
+      ],
+      "antonyms": [
+        "media silence"
+      ],
+      "tags": [
+        "journalism",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "media blackout",
+      "pronunciation": "/ˈmiːdiə ˈblækaʊt/",
+      "partOfSpeech": "noun",
+      "definition": "An intentional restriction or prohibition on publishing news about a specific event or topic.",
+      "example": "Military authorities imposed a media blackout during the sensitive hostage negotiation.",
+      "translation": "حظر إعلامي / تعتيم على الأخبار",
+      "collocations": [
+        "impose a media blackout",
+        "lift a media blackout"
+      ],
+      "synonyms": [
+        "news blackout",
+        "press ban"
+      ],
+      "antonyms": [
+        "full press access"
+      ],
+      "tags": [
+        "journalism",
+        "censorship"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "press agent",
+      "pronunciation": "/pres ˈeɪdʒənt/",
+      "partOfSpeech": "noun",
+      "definition": "A professional hired to manage and promote a public figure's media image.",
+      "example": "The celebrity's press agent carefully orchestrated every public statement to manage her image.",
+      "translation": "وكيل صحفي / مسؤول العلاقات الإعلامية لشخصية عامة",
+      "collocations": [
+        "hire a press agent",
+        "consult with press agent"
+      ],
+      "synonyms": [
+        "publicist",
+        "PR representative"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "PR"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "journalistic freedom",
+      "pronunciation": "/ˌdʒɜːnəˈlɪstɪk ˈfriːdəm/",
+      "partOfSpeech": "noun",
+      "definition": "The right of journalists and media to report news without censorship or government interference.",
+      "example": "Journalists worldwide marched to demand journalistic freedom and protection from prosecution.",
+      "translation": "حرية الصحافة / استقلالية الإعلام عن القيود الحكومية",
+      "collocations": [
+        "defend journalistic freedom",
+        "violate journalistic freedom"
+      ],
+      "synonyms": [
+        "press liberty"
+      ],
+      "antonyms": [
+        "media censorship"
+      ],
+      "tags": [
+        "rights",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "editorial slant",
+      "pronunciation": "/ˌedɪˈtɔːriəl slænt/",
+      "partOfSpeech": "noun",
+      "definition": "The ideological or political bias reflected in a news outlet's editorial choices.",
+      "example": "The newspaper's editorial slant favoured market-based healthcare solutions consistently.",
+      "translation": "التوجه التحريري / الانحياز السياسي في الخط التحريري",
+      "collocations": [
+        "identify editorial slant",
+        "editorial slant toward"
+      ],
+      "synonyms": [
+        "editorial bias",
+        "ideological leaning"
+      ],
+      "antonyms": [
+        "editorial neutrality"
+      ],
+      "tags": [
+        "journalism",
+        "media-bias"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sensationalism",
+      "pronunciation": "/senˈseɪʃənəlɪzəm/",
+      "partOfSpeech": "noun",
+      "definition": "The deliberate exaggeration or dramatization of news to provoke excitement or emotional reaction.",
+      "example": "Critics condemned the network for sensationalism in its coverage of the kidnapping case.",
+      "translation": "الإثارة والتهويل الإعلامي / الإفراط في الإبهار",
+      "collocations": [
+        "resort to sensationalism",
+        "accuse of sensationalism"
+      ],
+      "synonyms": [
+        "tabloid journalism",
+        "yellow journalism"
+      ],
+      "antonyms": [
+        "sober reporting"
+      ],
+      "tags": [
+        "journalism",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fact-checker",
+      "pronunciation": "/ˈfækt ˌtʃekə/",
+      "partOfSpeech": "noun",
+      "definition": "A professional who verifies the accuracy of statements, claims, and stories before publication.",
+      "example": "The editorial team employed a dedicated fact-checker to verify every statistic in the report.",
+      "translation": "مدقق الحقائق / المختص بالتحقق من صحة المعلومات",
+      "collocations": [
+        "employ a fact-checker",
+        "fact-checker confirms"
+      ],
+      "synonyms": [
+        "verifier",
+        "accuracy checker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "accuracy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "source verification",
+      "pronunciation": "/sɔːs ˌverɪfɪˈkeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The rigorous process of confirming the credibility and accuracy of an information source.",
+      "example": "Source verification is a fundamental ethical obligation for any responsible journalist.",
+      "translation": "التحقق من مصداقية المصادر الإخبارية",
+      "collocations": [
+        "require source verification",
+        "undergo source verification"
+      ],
+      "synonyms": [
+        "source authentication"
+      ],
+      "antonyms": [
+        "unverified publication"
+      ],
+      "tags": [
+        "journalism",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "background briefing",
+      "pronunciation": "/ˈbækɡraʊnd ˈbriːfɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Information provided to journalists to contextualize a story that cannot be directly attributed.",
+      "example": "Officials gave a background briefing to help reporters understand the diplomatic complexity.",
+      "translation": "إحاطة خلفية / معلومات تمهيدية غير منسوبة للمصدر",
+      "collocations": [
+        "receive a background briefing",
+        "conduct a background briefing"
+      ],
+      "synonyms": [
+        "background information session"
+      ],
+      "antonyms": [
+        "on-record statement"
+      ],
+      "tags": [
+        "journalism",
+        "sources"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "exclusive scoop",
+      "pronunciation": "/ɪkˈskluːsɪv skuːp/",
+      "partOfSpeech": "noun",
+      "definition": "A news story that a single journalist or outlet publishes before all other competitors.",
+      "example": "The investigative reporter secured an exclusive scoop on the government's secret surveillance program.",
+      "translation": "الانفراد الصحفي / قصة وحيدة تنشرها جهة إعلامية قبل غيرها",
+      "collocations": [
+        "land an exclusive scoop",
+        "publish an exclusive scoop"
+      ],
+      "synonyms": [
+        "exclusive story",
+        "news exclusive"
+      ],
+      "antonyms": [
+        "widely reported story"
+      ],
+      "tags": [
+        "journalism",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news feed",
+      "pronunciation": "/njuːz fiːd/",
+      "partOfSpeech": "noun",
+      "definition": "A continuously updated stream of news headlines or stories delivered digitally.",
+      "example": "She refreshed her news feed compulsively during the election results night.",
+      "translation": "تغذية إخبارية / تدفق مستمر للأخبار على الإنترنت",
+      "collocations": [
+        "scroll the news feed",
+        "curate a news feed"
+      ],
+      "synonyms": [
+        "news stream",
+        "headline feed"
+      ],
+      "antonyms": [],
+      "tags": [
+        "digital",
+        "media"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news syndicate",
+      "pronunciation": "/njuːz ˈsɪndɪkɪt/",
+      "partOfSpeech": "noun",
+      "definition": "An agency that distributes content, articles, or news to multiple subscribing media outlets.",
+      "example": "The article was distributed internationally through a major news syndicate.",
+      "translation": "وكالة توزيع إخبارية / تكتل إعلامي ناشر",
+      "collocations": [
+        "distribute through a news syndicate",
+        "major news syndicate"
+      ],
+      "synonyms": [
+        "wire agency",
+        "press association"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "distribution"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "press corps",
+      "pronunciation": "/pres kɔː/",
+      "partOfSpeech": "noun",
+      "definition": "The collective body of journalists assigned to cover a specific institution or geographic area.",
+      "example": "The White House press corps gathered daily for the afternoon briefing with senior officials.",
+      "translation": "هيئة الصحافة / مجموعة الصحفيين المعتمدين لتغطية مؤسسة بعينها",
+      "collocations": [
+        "briefing the press corps",
+        "accredited press corps"
+      ],
+      "synonyms": [
+        "press pool",
+        "media corps"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "institutions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "foreign correspondent",
+      "pronunciation": "/ˈfɒrən ˌkɒrɪˈspɒndənt/",
+      "partOfSpeech": "noun",
+      "definition": "A journalist stationed abroad to report on international events for a home-country outlet.",
+      "example": "The foreign correspondent filed dispatches from three conflict zones within a single month.",
+      "translation": "مراسل أجنبي / صحفي معتمد في الخارج",
+      "collocations": [
+        "veteran foreign correspondent",
+        "assign a foreign correspondent"
+      ],
+      "synonyms": [
+        "international reporter"
+      ],
+      "antonyms": [
+        "domestic reporter"
+      ],
+      "tags": [
+        "journalism",
+        "international"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bureau chief",
+      "pronunciation": "/ˈbjʊərəʊ tʃiːf/",
+      "partOfSpeech": "noun",
+      "definition": "The senior journalist who leads a news organization's regional or overseas bureau.",
+      "example": "The Cairo bureau chief coordinated coverage of the regional summit.",
+      "translation": "رئيس المكتب الإعلامي / مدير الفرع الصحفي الإقليمي",
+      "collocations": [
+        "appoint a bureau chief",
+        "work under the bureau chief"
+      ],
+      "synonyms": [
+        "regional news director"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "management"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "photo essay",
+      "pronunciation": "/ˈfəʊtəʊ ˈeseɪ/",
+      "partOfSpeech": "noun",
+      "definition": "A curated series of photographs that collectively tell a narrative or document an event.",
+      "example": "The photographer's haunting photo essay on refugee camps won international acclaim.",
+      "translation": "مقالة فوتوغرافية / تحقيق بالصور المتسلسلة",
+      "collocations": [
+        "publish a photo essay",
+        "compelling photo essay"
+      ],
+      "synonyms": [
+        "photographic reportage"
+      ],
+      "antonyms": [
+        "text-only report"
+      ],
+      "tags": [
+        "journalism",
+        "photography"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "citizen journalism",
+      "pronunciation": "/ˈsɪtɪzn ˈdʒɜːnəlɪzəm/",
+      "partOfSpeech": "noun",
+      "definition": "News gathering and reporting by ordinary members of the public using smartphones and social media.",
+      "example": "Citizen journalism during the street protests provided footage that mainstream media lacked.",
+      "translation": "الصحافة الشعبية / التغطية الإخبارية من المواطنين",
+      "collocations": [
+        "rise of citizen journalism",
+        "enabled by citizen journalism"
+      ],
+      "synonyms": [
+        "participatory journalism"
+      ],
+      "antonyms": [
+        "professional journalism"
+      ],
+      "tags": [
+        "digital",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "first-hand account",
+      "pronunciation": "/ˌfɜːst ˈhænd əˈkaʊnt/",
+      "partOfSpeech": "noun",
+      "definition": "A personal testimony from someone who directly experienced or witnessed an event.",
+      "example": "Survivors provided first-hand accounts that challenged the government's official narrative.",
+      "translation": "رواية مباشرة / شهادة من شاهد أو عايش الحدث مباشرة",
+      "collocations": [
+        "obtain a first-hand account",
+        "publish a first-hand account"
+      ],
+      "synonyms": [
+        "direct testimony"
+      ],
+      "antonyms": [
+        "secondhand report"
+      ],
+      "tags": [
+        "journalism",
+        "witnesses"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "official communique",
+      "pronunciation": "/əˈfɪʃl kəˈmjuːnɪkeɪ/",
+      "partOfSpeech": "noun",
+      "definition": "A formal, official communication or statement released by a government or organization.",
+      "example": "The joint official communique confirmed the ceasefire agreement signed by both nations.",
+      "translation": "البيان الرسمي / البلاغ الحكومي أو المؤسسي",
+      "collocations": [
+        "issue an official communique",
+        "read the official communique"
+      ],
+      "synonyms": [
+        "official statement",
+        "formal dispatch"
+      ],
+      "antonyms": [
+        "unofficial leak"
+      ],
+      "tags": [
+        "politics",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "press release",
+      "pronunciation": "/pres rɪˈliːs/",
+      "partOfSpeech": "noun",
+      "definition": "An official written statement distributed to journalists to announce news or policy.",
+      "example": "The corporation issued a press release denying the merger rumours circulating on social media.",
+      "translation": "بيان صحفي / إعلان رسمي موزع على وسائل الإعلام",
+      "collocations": [
+        "issue a press release",
+        "draft a press release"
+      ],
+      "synonyms": [
+        "media statement"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "PR"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news aggregator",
+      "pronunciation": "/njuːz ˈæɡrɪɡeɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "A digital platform that collects and displays news content from multiple sources in one place.",
+      "example": "Many users rely on a news aggregator rather than visiting individual news websites.",
+      "translation": "جامع الأخبار / منصة رقمية تجمع الأخبار من مصادر متعددة",
+      "collocations": [
+        "popular news aggregator",
+        "use a news aggregator"
+      ],
+      "synonyms": [
+        "news portal",
+        "feed reader"
+      ],
+      "antonyms": [
+        "single-source outlet"
+      ],
+      "tags": [
+        "digital",
+        "technology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "digital newsroom",
+      "pronunciation": "/ˈdɪdʒɪtl ˈnjuːzruːm/",
+      "partOfSpeech": "noun",
+      "definition": "A fully online editorial operation producing and distributing content across digital platforms.",
+      "example": "The digital newsroom operates twenty-four hours a day with reporters across five continents.",
+      "translation": "غرفة الأخبار الرقمية / التحرير الإخباري الإلكتروني المتكامل",
+      "collocations": [
+        "run a digital newsroom",
+        "launch a digital newsroom"
+      ],
+      "synonyms": [
+        "online newsroom"
+      ],
+      "antonyms": [
+        "print newsroom"
+      ],
+      "tags": [
+        "digital",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "paparazzi",
+      "pronunciation": "/ˌpæpəˈrætsi/",
+      "partOfSpeech": "noun",
+      "definition": "Freelance photographers who aggressively pursue celebrities to capture candid photographs.",
+      "example": "A swarm of paparazzi surrounded the actress as she exited the awards ceremony.",
+      "translation": "المصورون الصحفيون المتعقبون للمشاهير / المحترفون بتصوير النجوم",
+      "collocations": [
+        "mobbed by paparazzi",
+        "dodging paparazzi"
+      ],
+      "synonyms": [
+        "celebrity photographers"
+      ],
+      "antonyms": [],
+      "tags": [
+        "journalism",
+        "celebrity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tabloid journalism",
+      "pronunciation": "/ˈtæblɔɪd ˈdʒɜːnəlɪzəm/",
+      "partOfSpeech": "noun",
+      "definition": "A style of journalism emphasizing sensational, celebrity, and crime stories over serious news.",
+      "example": "Critics argued that tabloid journalism had undermined public trust in all media.",
+      "translation": "صحافة التابلويد / صحافة الإثارة والفضائح والجرائم",
+      "collocations": [
+        "resort to tabloid journalism",
+        "criticized as tabloid journalism"
+      ],
+      "synonyms": [
+        "yellow press",
+        "gossip journalism"
+      ],
+      "antonyms": [
+        "quality journalism"
+      ],
+      "tags": [
+        "journalism",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "quality newspaper",
+      "pronunciation": "/ˈkwɒlɪti ˈnjuːzˌpeɪpə/",
+      "partOfSpeech": "noun",
+      "definition": "A serious, broadsheet-format newspaper prioritizing in-depth reporting over sensationalism.",
+      "example": "The quality newspaper won three press awards for its investigative refugee coverage.",
+      "translation": "الصحيفة الجادة الرصينة / الصحيفة ذات المحتوى الرفيع",
+      "collocations": [
+        "read a quality newspaper",
+        "publish in a quality newspaper"
+      ],
+      "synonyms": [
+        "serious newspaper",
+        "broadsheet"
+      ],
+      "antonyms": [
+        "tabloid"
+      ],
+      "tags": [
+        "journalism",
+        "media"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "investigative piece",
+      "pronunciation": "/ɪnˈvestɪɡətɪv piːs/",
+      "partOfSpeech": "noun",
+      "definition": "An in-depth, original journalistic report uncovering hidden facts through research and interviews.",
+      "example": "The investigative piece exposed systemic corruption within the city's housing authority.",
+      "translation": "التقرير الاستقصائي المعمّق / قطعة صحفية تكشف حقائق مخفية",
+      "collocations": [
+        "publish an investigative piece",
+        "major investigative piece"
+      ],
+      "synonyms": [
+        "investigative report"
+      ],
+      "antonyms": [
+        "press release"
+      ],
+      "tags": [
+        "journalism",
+        "investigation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "whistleblower protection",
+      "pronunciation": "/ˈwɪslbləʊə prəˈtekʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Legal safeguards preventing retaliation against individuals who expose wrongdoing publicly.",
+      "example": "Stronger whistleblower protection laws encouraged insiders to report financial irregularities.",
+      "translation": "حماية المبلغين عن الفساد / الضمانات القانونية للمُبلِّغين",
+      "collocations": [
+        "enact whistleblower protection",
+        "lack whistleblower protection"
+      ],
+      "synonyms": [
+        "informant safeguards"
+      ],
+      "antonyms": [
+        "persecution of sources"
+      ],
+      "tags": [
+        "legal",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news embargo",
+      "pronunciation": "/njuːz ɪmˈbɑːɡəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "A formal instruction to journalists not to publish information until a specified release time.",
+      "example": "The scientific journal placed a strict news embargo until midnight on publication date.",
+      "translation": "الحظر الإخباري المؤقت / التعهد بعدم النشر قبل الموعد المحدد",
+      "collocations": [
+        "honour a news embargo",
+        "break a news embargo"
+      ],
+      "synonyms": [
+        "release restriction"
+      ],
+      "antonyms": [
+        "immediate publication"
+      ],
+      "tags": [
+        "journalism",
+        "procedure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "retraction notice",
+      "pronunciation": "/rɪˈtrækʃn ˈnəʊtɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A formal public withdrawal of a previously published article or claim found to be inaccurate.",
+      "example": "The magazine issued a prominent retraction notice after the story's key source was found unreliable.",
+      "translation": "إشعار التراجع والتكذيب / إعلان سحب مادة صحفية خاطئة",
+      "collocations": [
+        "publish a retraction notice",
+        "demand a retraction notice"
+      ],
+      "synonyms": [
+        "retraction statement"
+      ],
+      "antonyms": [
+        "confirmation"
+      ],
+      "tags": [
+        "journalism",
+        "accuracy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "correction published",
+      "pronunciation": "/kəˈrekʃn ˈpʌblɪʃt/",
+      "partOfSpeech": "noun",
+      "definition": "A publicly printed acknowledgment and amendment of an error in a previous report.",
+      "example": "Following the complaint, the outlet printed a correction published on the front page.",
+      "translation": "نشر تصحيح / إصلاح رسمي لخطأ صحفي منشور سابقاً",
+      "collocations": [
+        "issue a correction published",
+        "run correction published"
+      ],
+      "synonyms": [
+        "error correction"
+      ],
+      "antonyms": [
+        "unchanged publication"
+      ],
+      "tags": [
+        "journalism",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "journalistic integrity",
+      "pronunciation": "/ˌdʒɜːnəˈlɪstɪk ɪnˈteɡrɪti/",
+      "partOfSpeech": "noun",
+      "definition": "The adherence to ethical standards of accuracy, fairness, and independence in journalism.",
+      "example": "The editor insisted that journalistic integrity must never be compromised for commercial interests.",
+      "translation": "النزاهة الصحفية / الالتزام الأخلاقي في العمل الإعلامي",
+      "collocations": [
+        "uphold journalistic integrity",
+        "question journalistic integrity"
+      ],
+      "synonyms": [
+        "press ethics"
+      ],
+      "antonyms": [
+        "yellow journalism"
+      ],
+      "tags": [
+        "ethics",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "named source",
+      "pronunciation": "/neɪmd sɔːs/",
+      "partOfSpeech": "noun",
+      "definition": "An information provider who is identified by name in a published news report.",
+      "example": "The investigation carried significant weight because every claim came from a named source.",
+      "translation": "مصدر إخباري مُسمّى / مصدر مُعلن عن هويته في المقال",
+      "collocations": [
+        "quote a named source",
+        "rely on named source"
+      ],
+      "synonyms": [
+        "identified source"
+      ],
+      "antonyms": [
+        "anonymous source"
+      ],
+      "tags": [
+        "journalism",
+        "sources"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "attributed quote",
+      "pronunciation": "/əˈtrɪbjuːtɪd kwəʊt/",
+      "partOfSpeech": "noun",
+      "definition": "A statement clearly credited to a specific speaker in a published report.",
+      "example": "Every attributed quote in the profile was recorded verbatim and approved by the subject.",
+      "translation": "اقتباس منسوب لصاحبه / تصريح موثق ومنسوب رسمياً",
+      "collocations": [
+        "include an attributed quote",
+        "verify an attributed quote"
+      ],
+      "synonyms": [
+        "direct quotation"
+      ],
+      "antonyms": [
+        "paraphrase",
+        "anonymous tip"
+      ],
+      "tags": [
+        "journalism",
+        "writing"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unverified claim",
+      "pronunciation": "/ˌʌnˈverɪfaɪd kleɪm/",
+      "partOfSpeech": "noun",
+      "definition": "An assertion that has not been independently confirmed or cross-checked by reliable sources.",
+      "example": "Responsible journalists do not broadcast an unverified claim, regardless of competitive pressure.",
+      "translation": "ادعاء غير موثق / معلومة لم يُتحقق منها بعد",
+      "collocations": [
+        "spread an unverified claim",
+        "repeat an unverified claim"
+      ],
+      "synonyms": [
+        "unconfirmed report"
+      ],
+      "antonyms": [
+        "verified fact"
+      ],
+      "tags": [
+        "journalism",
+        "accuracy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "clickbait headline",
+      "pronunciation": "/ˈklɪkbeɪt ˈhedlaɪn/",
+      "partOfSpeech": "noun",
+      "definition": "A deliberately provocative or misleading title designed to attract clicks rather than inform.",
+      "example": "The clickbait headline generated enormous traffic but undermined the outlet's journalistic credibility.",
+      "translation": "عنوان استدراجي / عنوان صُمم لاستجلاب النقرات بدلاً من الإخبار الحقيقي",
+      "collocations": [
+        "publish a clickbait headline",
+        "avoid clickbait headlines"
+      ],
+      "synonyms": [
+        "bait headline"
+      ],
+      "antonyms": [
+        "accurate headline"
+      ],
+      "tags": [
+        "digital",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news cycle",
+      "pronunciation": "/njuːz ˈsaɪkl/",
+      "partOfSpeech": "noun",
+      "definition": "The recurring period during which a news story is prominently covered before attention moves elsewhere.",
+      "example": "Political strategists timed announcements carefully to dominate the news cycle for forty-eight hours.",
+      "translation": "الدورة الإخبارية / الفترة التي يبقى فيها الخبر في الواجهة",
+      "collocations": [
+        "dominate the news cycle",
+        "control the news cycle"
+      ],
+      "synonyms": [
+        "media cycle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "media",
+        "strategy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "round-the-clock news",
+      "pronunciation": "/raʊnd ðə klɒk njuːz/",
+      "partOfSpeech": "noun",
+      "definition": "Continuous twenty-four-hour news broadcasting without interruption.",
+      "example": "Round-the-clock news coverage intensified public anxiety during the pandemic's first wave.",
+      "translation": "الأخبار على مدار الساعة / التغطية الإخبارية المستمرة",
+      "collocations": [
+        "provide round-the-clock news",
+        "rely on round-the-clock news"
+      ],
+      "synonyms": [
+        "24/7 news",
+        "continuous news"
+      ],
+      "antonyms": [
+        "scheduled bulletin"
+      ],
+      "tags": [
+        "broadcasting",
+        "media"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "opinion columnist",
+      "pronunciation": "/əˈpɪnjən ˈkɒləmnɪst/",
+      "partOfSpeech": "noun",
+      "definition": "A journalist who writes regular opinion articles expressing personal views.",
+      "example": "The opinion columnist sparked controversy by advocating capital punishment for financial crimes.",
+      "translation": "كاتب العمود الرأي / الصحفي المعتمد على التعليق وإبداء الرأي",
+      "collocations": [
+        "veteran opinion columnist",
+        "syndicated opinion columnist"
+      ],
+      "synonyms": [
+        "commentator",
+        "op-ed writer"
+      ],
+      "antonyms": [
+        "news reporter"
+      ],
+      "tags": [
+        "journalism",
+        "opinion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "editorial independence",
+      "pronunciation": "/ˌedɪˈtɔːriəl ˌɪndɪˈpendəns/",
+      "partOfSpeech": "noun",
+      "definition": "The freedom of an editorial team to make publishing decisions without owner or advertiser pressure.",
+      "example": "The broadcasting charter legally guaranteed editorial independence from government interference.",
+      "translation": "الاستقلالية التحريرية / حرية التحرير من تدخل الملاك أو المعلنين",
+      "collocations": [
+        "protect editorial independence",
+        "undermine editorial independence"
+      ],
+      "synonyms": [
+        "journalistic autonomy"
+      ],
+      "antonyms": [
+        "editorial interference"
+      ],
+      "tags": [
+        "journalism",
+        "governance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "public broadcaster",
+      "pronunciation": "/ˈpʌblɪk ˈbrɔːdkɑːstə/",
+      "partOfSpeech": "noun",
+      "definition": "A media organization funded by the government or license fees to serve the public interest.",
+      "example": "The public broadcaster is required by law to offer balanced representation of political perspectives.",
+      "translation": "المُذيع العام / المؤسسة الإعلامية الممولة من الحكومة لخدمة الصالح العام",
+      "collocations": [
+        "national public broadcaster",
+        "fund the public broadcaster"
+      ],
+      "synonyms": [
+        "state broadcaster"
+      ],
+      "antonyms": [
+        "commercial broadcaster"
+      ],
+      "tags": [
+        "media",
+        "governance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "state-controlled media",
+      "pronunciation": "/steɪt kənˈtrəʊld ˈmiːdiə/",
+      "partOfSpeech": "noun",
+      "definition": "News organizations that are owned, managed, or directed by a national government.",
+      "example": "Reports from state-controlled media were viewed skeptically by international observers.",
+      "translation": "وسائل إعلام تحت السيطرة الحكومية / إعلام الدولة",
+      "collocations": [
+        "rely on state-controlled media",
+        "criticize state-controlled media"
+      ],
+      "synonyms": [
+        "government-owned media"
+      ],
+      "antonyms": [
+        "independent press"
+      ],
+      "tags": [
+        "media",
+        "politics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "independent press",
+      "pronunciation": "/ˌɪndɪˈpendənt pres/",
+      "partOfSpeech": "noun",
+      "definition": "Media outlets that operate free from government or corporate ownership control.",
+      "example": "Civil society organizations raised funds to sustain an independent press in the region.",
+      "translation": "الصحافة المستقلة / الإعلام غير المرتبط بالحكومة أو الشركات الكبرى",
+      "collocations": [
+        "support independent press",
+        "build independent press"
+      ],
+      "synonyms": [
+        "free press"
+      ],
+      "antonyms": [
+        "state-controlled media"
+      ],
+      "tags": [
+        "journalism",
+        "freedom"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "watchdog journalism",
+      "pronunciation": "/ˈwɒtʃdɒɡ ˈdʒɜːnəlɪzəm/",
+      "partOfSpeech": "noun",
+      "definition": "Reporting that monitors, investigates, and exposes abuse of power by public officials.",
+      "example": "Watchdog journalism is widely credited with exposing the corporate accounting scandal.",
+      "translation": "صحافة الرقابة على السلطة / صحافة حراسة المال العام والديمقراطية",
+      "collocations": [
+        "practice watchdog journalism",
+        "award for watchdog journalism"
+      ],
+      "synonyms": [
+        "accountability journalism"
+      ],
+      "antonyms": [
+        "propaganda"
+      ],
+      "tags": [
+        "journalism",
+        "accountability"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "press accreditation",
+      "pronunciation": "/pres əˌkredɪˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Official certification granting a journalist access to cover specific events or institutions.",
+      "example": "Without press accreditation, reporters could not enter the restricted summit conference hall.",
+      "translation": "الاعتماد الصحفي / الشهادة الرسمية لتغطية الفعاليات المحمية",
+      "collocations": [
+        "grant press accreditation",
+        "apply for press accreditation"
+      ],
+      "synonyms": [
+        "press credentials"
+      ],
+      "antonyms": [
+        "denied access"
+      ],
+      "tags": [
+        "journalism",
+        "access"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "news framing",
+      "pronunciation": "/njuːz ˈfreɪmɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The way news stories are presented, emphasizing certain aspects to influence audience perception.",
+      "example": "Researchers studied news framing of immigration to reveal systematic media stereotyping.",
+      "translation": "إطار تأطير الأخبار / كيفية تقديم الأحداث لتوجيه رأي الجمهور",
+      "collocations": [
+        "analyze news framing",
+        "study news framing"
+      ],
+      "synonyms": [
+        "media framing",
+        "story angle"
+      ],
+      "antonyms": [
+        "neutral reporting"
+      ],
+      "tags": [
+        "media",
+        "theory"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "misinformation campaign",
+      "pronunciation": "/ˌmɪsɪnfəˈmeɪʃn kæmˈpeɪn/",
+      "partOfSpeech": "noun",
+      "definition": "An organized effort to spread false or misleading information to manipulate public opinion.",
+      "example": "Social media platforms struggled to contain the coordinated misinformation campaign during elections.",
+      "translation": "حملة التضليل والأخبار الكاذبة / حملة منظمة لنشر المعلومات المزيفة",
+      "collocations": [
+        "launch a misinformation campaign",
+        "counter a misinformation campaign"
+      ],
+      "synonyms": [
+        "disinformation drive"
+      ],
+      "antonyms": [
+        "fact-based campaign"
+      ],
+      "tags": [
+        "media",
+        "manipulation"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Breaking Story: Covering the Crisis",
+      "titleArabic": "التغطية الميدانية: قصة خبرية عاجلة",
+      "setting": "A news director and an embedded journalist discuss coverage of a breaking story.",
+      "lines": [
+        {
+          "speaker": "Director",
+          "text": "I can confirm that we have a breaking story developing at the northern border. The embedded journalist reported that shots were fired near the checkpoint."
+        },
+        {
+          "speaker": "Correspondent",
+          "text": "I obtained a first-hand account from a named source confirming that the media blackout was imposed three hours ago."
+        },
+        {
+          "speaker": "Director",
+          "text": "Whether the official communique contradicts these reports is what our fact-checker is investigating right now."
+        },
+        {
+          "speaker": "Correspondent",
+          "text": "The foreign correspondent from the eastern bureau said that on-the-ground reporting is being obstructed by military authorities."
+        },
+        {
+          "speaker": "Director",
+          "text": "The press corps is demanding accreditation. We cannot broadcast any unverified claim under our journalistic integrity standards."
+        },
+        {
+          "speaker": "Correspondent",
+          "text": "What the witness told me directly was that state-controlled media is framing this as a training exercise."
+        },
+        {
+          "speaker": "Director",
+          "text": "Publish a correction notice if needed, but only after source verification. Citizens must know what happened."
+        },
+        {
+          "speaker": "Correspondent",
+          "text": "Understood. I will send the full report through the news syndicate by nineteen hundred hours."
+        }
+      ],
+      "vocabularyUsed": [
+        "breaking story",
+        "embedded journalist",
+        "first-hand account",
+        "named source",
+        "media blackout",
+        "official communique",
+        "fact-checker",
+        "foreign correspondent",
+        "on-the-ground reporting",
+        "press corps",
+        "press accreditation",
+        "unverified claim",
+        "journalistic integrity",
+        "state-controlled media",
+        "news framing",
+        "source verification",
+        "news syndicate"
+      ]
+    },
+    {
+      "title": "Editorial Meeting: Standards Under Pressure",
+      "titleArabic": "اجتماع تحريري: صمود الأخلاقيات تحت الضغط",
+      "setting": "An editor-in-chief chairs a digital newsroom editorial meeting about an investigative piece.",
+      "lines": [
+        {
+          "speaker": "Editor",
+          "text": "Our fact-checker confirmed that the attribution was wrong. We need a retraction notice published by midday."
+        },
+        {
+          "speaker": "Reporter A",
+          "text": "What bothers me is whether the clickbait headline alone destroyed the credibility of an otherwise accurate investigative piece."
+        },
+        {
+          "speaker": "Editor",
+          "text": "The opinion columnist argued that sensationalism in the headline framing undermined our editorial independence."
+        },
+        {
+          "speaker": "Reporter B",
+          "text": "I believe that watchdog journalism must never compromise on source verification, even under news cycle pressure."
+        },
+        {
+          "speaker": "Editor",
+          "text": "Agreed. Whether we publish tonight or tomorrow, I must know that every attributed quote is fully verified."
+        },
+        {
+          "speaker": "Reporter A",
+          "text": "The bureau chief asked whether the whistleblower protection clause covers our named source adequately."
+        },
+        {
+          "speaker": "Editor",
+          "text": "Confirm that it does before we publish. The independent press cannot afford legal exposure now."
+        },
+        {
+          "speaker": "Reporter B",
+          "text": "Noted. I will also check whether the news embargo on the parliamentary documents expired at midnight."
+        }
+      ],
+      "vocabularyUsed": [
+        "fact-checker",
+        "retraction notice",
+        "clickbait headline",
+        "investigative piece",
+        "editorial independence",
+        "journalistic integrity",
+        "sensationalism",
+        "watchdog journalism",
+        "source verification",
+        "news cycle",
+        "attributed quote",
+        "whistleblower protection",
+        "named source",
+        "independent press",
+        "news embargo",
+        "bureau chief"
+      ]
+    },
+    {
+      "title": "Media Literacy Seminar: Navigating Digital News",
+      "titleArabic": "ندوة محو الأمية الإعلامية: الإبحار في عالم الأخبار الرقمية",
+      "setting": "A journalism professor and a student discuss how audiences engage with digital news.",
+      "lines": [
+        {
+          "speaker": "Professor",
+          "text": "Research confirms that what most audiences see first is a clickbait headline, not the actual news content."
+        },
+        {
+          "speaker": "Student",
+          "text": "Does that mean that citizen journalism and news aggregators are fundamentally changing how people consume news?"
+        },
+        {
+          "speaker": "Professor",
+          "text": "Exactly. What the data shows is that misinformation campaigns spread six times faster through social media news feeds."
+        },
+        {
+          "speaker": "Student",
+          "text": "I wondered whether round-the-clock news coverage actually increases anxiety without improving understanding."
+        },
+        {
+          "speaker": "Professor",
+          "text": "That is a key question. Whether a public broadcaster or state-controlled media frames a story determines what citizens believe."
+        },
+        {
+          "speaker": "Student",
+          "text": "So the news framing and editorial slant of a quality newspaper differ significantly from tabloid journalism?"
+        },
+        {
+          "speaker": "Professor",
+          "text": "Precisely. A photo essay in a quality newspaper can reveal what a press release deliberately conceals."
+        },
+        {
+          "speaker": "Student",
+          "text": "This confirms that journalistic freedom and editorial independence remain essential for a functioning democracy."
+        }
+      ],
+      "vocabularyUsed": [
+        "clickbait headline",
+        "citizen journalism",
+        "news aggregator",
+        "misinformation campaign",
+        "news feed",
+        "round-the-clock news",
+        "public broadcaster",
+        "state-controlled media",
+        "news framing",
+        "editorial slant",
+        "quality newspaper",
+        "tabloid journalism",
+        "photo essay",
+        "press release",
+        "journalistic freedom",
+        "editorial independence"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Evolving Ecosystem of Global News Reporting",
+      "titleArabic": "النظام البيئي المتطور للتغطية الإخبارية العالمية",
+      "text": "The modern newsroom operates in a dramatically transformed landscape where breaking story coverage demands speed, and where embedded journalist dispatches compete with citizen journalism posts appearing seconds after events occur. A bureau chief must now decide whether first-hand accounts or official communiques should guide editorial strategy. Every investigative piece benefits from rigorous source verification, ensuring that no unverified claim reaches the public. The rise of the news aggregator means that a clickbait headline can mislead millions before the fact-checker even begins reviewing the published report.",
+      "vocabularyUsed": [
+        "breaking story",
+        "embedded journalist",
+        "citizen journalism",
+        "bureau chief",
+        "first-hand account",
+        "official communique",
+        "investigative piece",
+        "source verification",
+        "unverified claim",
+        "news aggregator",
+        "clickbait headline",
+        "fact-checker"
+      ]
+    },
+    {
+      "title": "Media Ethics: Upholding Journalistic Integrity in a Polarized World",
+      "titleArabic": "أخلاقيات الإعلام: الحفاظ على النزاهة الصحفية في عالم منقسم",
+      "text": "What distinguishes quality journalism from tabloid journalism is fundamentally the commitment to journalistic integrity. Responsible editorial boards insist that every attributed quote carries a named source, and that retraction notices are published promptly whenever errors occur. Watchdog journalism has uncovered evidence confirming that state-controlled media suppresses news framing that contradicts government narratives. Independent press organizations champion editorial independence and journalistic freedom, recognizing that whether a story is reported fairly often determines whether citizens trust their institutions.",
+      "vocabularyUsed": [
+        "quality newspaper",
+        "tabloid journalism",
+        "journalistic integrity",
+        "attributed quote",
+        "named source",
+        "retraction notice",
+        "watchdog journalism",
+        "state-controlled media",
+        "news framing",
+        "independent press",
+        "editorial independence",
+        "journalistic freedom"
+      ]
+    },
+    {
+      "title": "Digital Media and the Battle Against Misinformation",
+      "titleArabic": "الإعلام الرقمي ومعركة مكافحة التضليل الإعلامي",
+      "text": "Combating a coordinated misinformation campaign requires cooperation between fact-checkers, public broadcasters, and digital newsrooms. What researchers discovered is that round-the-clock news coverage accelerates the spread of unverified claims before corrections reach affected audiences. News embargoes protect sensitive diplomatic negotiations, while whistleblower protection laws ensure insiders can speak truthfully without fear. Foreign correspondents conducting on-the-ground reporting provide context that press releases and news conferences cannot, reinforcing the irreplaceable value of direct, independent reporting for an informed citizenry.",
+      "vocabularyUsed": [
+        "misinformation campaign",
+        "fact-checker",
+        "public broadcaster",
+        "digital newsroom",
+        "round-the-clock news",
+        "unverified claim",
+        "news embargo",
+        "whistleblower protection",
+        "foreign correspondent",
+        "on-the-ground reporting",
+        "press release",
+        "news conference"
+      ]
+    }
+  ]
+}

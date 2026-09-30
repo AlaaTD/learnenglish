@@ -1,0 +1,1605 @@
+{
+  "day": 62,
+  "title": "Big and Small Problems",
+  "topic": "Everyday problems and solutions",
+  "description": "Discuss problems and imagine different outcomes.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about everyday problems and solutions using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Second Conditional (Part 2)",
+      "titleArabic": "الحالة الشرطية الثانية — الجزء الثاني (Second Conditional: Variations & Inversions)",
+      "explanation": "Expanding on hypothetical conditionals: 1) Using modal variations in the result clause: While 'would' states an imaginary certainty, 'could' expresses imaginary ability or opportunity ('If we had more staff, we could resolve the backlog'), and 'might' expresses imaginary possibility ('If the train were delayed, we might miss the introductory keynote'). 2) Question forms: 'What would you do if...?' or 'Would you still apply if the salary were lower?'. 3) Inversion with Were (Advanced style): Replacing 'If' by inverting 'Were + subject + to + base verb' ('Were a technical snag to arise, our team would deploy an immediate countermeasure').",
+      "explanationArabic": "توسيع في استخدامات الحالة الشرطية الثانية: 1) تنويع الأفعال الناقصة في جواب الشرط: بينما تدل 'would' على نتيجة تخيلية شبه مؤكدة، تدل 'could' على قدرة أو إمكانية تخيلية ('لو كان لدينا موظفون أكثر، لاستطعنا حل تراكم الأعمال')، بينما تدل 'might' على احتمالية تخيلية ('لو تأخر القطار، لربما فاتتنا الكلمة الافتتاحية'). 2) صيغ الاستفهام: 'ماذا كنت ستفعل لو...؟' (What would you do if...?). 3) أسلوب التقديم المتقدم مع Were: حذف If وتقديم Were مثل: 'Were a snag to arise...' بمعنى 'لو حدثت أي عقبة...'.",
+      "structures": [
+        {
+          "label": "Imaginary Ability / Opportunity · القدرة التخيلية (Could)",
+          "pattern": "If + Subject + Past Simple, Subject + could + Base Verb",
+          "explanation": "Expresses that an imaginary outcome would be possible or achievable.",
+          "explanationArabic": "يعبر عن أن النتيجة التخيلية ستكون في مقدور الفاعل إنجازها."
+        },
+        {
+          "label": "Imaginary Probability · الاحتمالية التخيلية (Might)",
+          "pattern": "If + Subject + Past Simple, Subject + might + Base Verb",
+          "explanation": "Expresses a tentative or uncertain hypothetical result.",
+          "explanationArabic": "يعبر عن نتيجة تخيلية محتملة لكن دون جزم."
+        },
+        {
+          "label": "Question Form · صيغة السؤال الافتراضي",
+          "pattern": "What / How would you + Base Verb + if + Subject + Past Simple?",
+          "explanation": "Asks what someone would choose or do in an imaginary problem.",
+          "explanationArabic": "يستفهم عما سيفعله الشخص أو يختاره في مأزق تخيلي."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "If the team encountered an unforeseen complication, a certified troubleshooter could salvage the project.",
+          "translation": "لو واجه الفريق مضاعفة غير متوقعة، لاستطاع خبير حل الأعطال المعتمد استنقاذ المشروع.",
+          "usesVocabulary": [
+            "unforeseen complication",
+            "troubleshooter",
+            "salvage"
+          ]
+        },
+        {
+          "sentence": "What would you do if you found yourself in such an awkward predicament?",
+          "translation": "ماذا كنت ستفعل لو وجدت نفسك في مأزق محرج كهذا؟",
+          "usesVocabulary": [
+            "predicament"
+          ]
+        },
+        {
+          "sentence": "If we cleared this final regulatory hurdle, the company could bounce back from recent market losses.",
+          "translation": "لو اجتزنا هذا الحاجز التنظيمي الأخير، لاستطاعت الشركة التعافي سريعاً من خسائر السوق الأخيرة.",
+          "usesVocabulary": [
+            "clear a hurdle",
+            "bounce back from"
+          ]
+        },
+        {
+          "sentence": "If technicians deployed a quick fix instead of remedial action, minor annoyances might escalate.",
+          "translation": "لو طبق الفنيون حلاً ترقيعياً سريعاً بدلاً من الإجراء العلاجي، لربما تفاقمت المضايقات البسيطة.",
+          "usesVocabulary": [
+            "quick fix",
+            "remedial action",
+            "minor annoyance"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "If you could solved the problem, what you would do?",
+          "right": "If you could solve the problem, what would you do?",
+          "note": "After 'could', always use base verb 'solve', and invert 'would you' for the question.",
+          "noteArabic": "استخدم مصدر الفعل المجرد دائماً بعد could، وقدم would على الفاعل في صيغة السؤال."
+        },
+        {
+          "wrong": "If there was a glitch, we might to miss the deadline.",
+          "right": "If there were a glitch, we might miss the deadline.",
+          "note": "Never use 'to' after modal 'might'. Prefer 'were' over 'was' in conditional if-clauses.",
+          "noteArabic": "لا تضع 'to' إطلاقاً بعد might، واعتمد were في الجملة الشرطية الافتراضية."
+        }
+      ],
+      "commonUsage": [
+        "Troubleshooting hypothetical errors: 'If an error code surfaced, we could restart the database daemon.' (تُستخدم لمعالجة مشكلات الأنظمة برمجياً وتقنياً.)",
+        "Managing operational crises: 'If a supplier defaulted, a stopgap measure might keep the assembly line running.' (تُستخدم لحل أزمات الإمداد والتشغيل.)",
+        "Negotiating interpersonal friction: 'If both sides spoke calmly, they could smooth over the misunderstanding.' (تُستخدم لتجاوز الخلافات الإنسانية والمهنية.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "predicament",
+      "pronunciation": "/prɪˈdɪkəmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A difficult, perplexing, or unpleasantly embarrassing situation.",
+      "example": "If we found ourselves in such a sticky predicament, we would contact our emergency support team.",
+      "translation": "مأزق محرج / ورطة عويصة",
+      "exampleArabic": "لو وجدنا أنفسنا في مأزق محرج كهذا، لاتصلنا بفريق الدعم للطوارئ.",
+      "collocations": [
+        "awkward predicament",
+        "escape a predicament"
+      ],
+      "synonyms": [
+        "quandary",
+        "plight"
+      ],
+      "antonyms": [
+        "favorable situation"
+      ],
+      "tags": [
+        "problems",
+        "circumstances"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "snag",
+      "pronunciation": "/snæɡ/",
+      "partOfSpeech": "noun",
+      "definition": "An unexpected or hidden obstacle, drawback, or catch.",
+      "example": "If the software update hit a technical snag, the automated rollback script would trigger.",
+      "translation": "عقبة غير متوقعة / عائق مفاجئ",
+      "exampleArabic": "لو واجه التحديث البرمجي عقبة تقنية غير متوقعة، لانطلق برنامج التراجع التلقائي.",
+      "collocations": [
+        "hit a snag",
+        "minor snag"
+      ],
+      "synonyms": [
+        "hitch",
+        "glitch"
+      ],
+      "antonyms": [
+        "smooth progress"
+      ],
+      "tags": [
+        "obstacles",
+        "problems"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hiccup",
+      "pronunciation": "/ˈhɪkʌp/",
+      "partOfSpeech": "noun",
+      "definition": "A temporary minor problem, setback, or irregularity.",
+      "example": "If there were a brief logistical hiccup, our local warehouse buffer would absorb it.",
+      "translation": "تعثر عارض بسيط / إرباك مؤقت",
+      "exampleArabic": "لو حدث تعثر عارض بسيط في الخدمات اللوجستية، لامتصه المخزون الاحتياطي بمستودعنا.",
+      "collocations": [
+        "minor hiccup",
+        "temporary hiccup"
+      ],
+      "synonyms": [
+        "minor glitch"
+      ],
+      "antonyms": [
+        "flawless run"
+      ],
+      "tags": [
+        "delays",
+        "problems"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "quandary",
+      "pronunciation": "/ˈkwɒndəri/",
+      "partOfSpeech": "noun",
+      "definition": "A state of perplexity or uncertainty over what to do in a difficult situation.",
+      "example": "If she remained in that ethical quandary, she would request confidential ombudsman counseling.",
+      "translation": "حيرة بالغة / مأزق فكري أو أخلاقي",
+      "exampleArabic": "لو ظلت في تلك الحيرة الأخلاقية البالغة، لطلبت استشارة سرية من ديوان المظالم.",
+      "collocations": [
+        "in a quandary",
+        "ethical quandary"
+      ],
+      "synonyms": [
+        "dilemma",
+        "perplexity"
+      ],
+      "antonyms": [
+        "certainty"
+      ],
+      "tags": [
+        "psychology",
+        "problems"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "inconvenience",
+      "pronunciation": "/ˌɪnkənˈviːniəns/",
+      "partOfSpeech": "noun",
+      "definition": "Trouble or difficulty caused to one's personal comfort, ease, or routine.",
+      "example": "If the flight cancellation caused serious inconvenience, the airline would supply complimentary hotel suites.",
+      "translation": "إزعاج / مشقة وإرباك للراحة",
+      "exampleArabic": "لو تسبب إلغاء الرحلة في إزعاج ومشقة بالغة، لوفرت شركة الطيران أجنحة فندقية مجانية.",
+      "collocations": [
+        "cause inconvenience",
+        "slight inconvenience"
+      ],
+      "synonyms": [
+        "trouble",
+        "nuisance"
+      ],
+      "antonyms": [
+        "convenience"
+      ],
+      "tags": [
+        "discomfort",
+        "daily"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "nuisance",
+      "pronunciation": "/ˈnjuːsns/",
+      "partOfSpeech": "noun",
+      "definition": "A person, thing, or circumstance causing persistent annoyance or trouble.",
+      "example": "If the neighbor's loud renovation proved a constant nuisance, we would lodge a formal noise complaint.",
+      "translation": "مكروه مزعج / مصدر مضايقة مستمر",
+      "exampleArabic": "لو أثبتت أعمال تجديد الجار الصاخبة أنها مصدر إزعاج مستمر، لرفعنا شكوى ضوضاء رسمية.",
+      "collocations": [
+        "public nuisance",
+        "dreadful nuisance"
+      ],
+      "synonyms": [
+        "annoyance",
+        "irritant"
+      ],
+      "antonyms": [
+        "blessing"
+      ],
+      "tags": [
+        "annoyance",
+        "lifestyle"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hassle",
+      "pronunciation": "/ˈhæsl/",
+      "partOfSpeech": "noun",
+      "definition": "Irritating, tedious, or inconvenient inconvenience and trouble.",
+      "example": "If renewing the visa were too much hassle in person, I would hire a licensed immigration expeditor.",
+      "translation": "معاناة مرهقة / وجع دماغ ومشقة روتينية",
+      "exampleArabic": "لو كان تجديد التأشيرة ينطوي على مشقة روتينية مرهقة شخصياً، لاستعنت بمعقب هجرة مرخص.",
+      "collocations": [
+        "too much hassle",
+        "worth the hassle"
+      ],
+      "synonyms": [
+        "bother",
+        "headache"
+      ],
+      "antonyms": [
+        "breeze"
+      ],
+      "tags": [
+        "routine",
+        "frustration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fiasco",
+      "pronunciation": "/fiˈæskəʊ/",
+      "partOfSpeech": "noun",
+      "definition": "A complete, disastrous, and humiliating failure or breakdown.",
+      "example": "If the live product launch turned into an embarrassing fiasco, the PR director would resign.",
+      "translation": "فشل ذريع مهين / إخفاق تام وفضيحة",
+      "exampleArabic": "لو تحول إطلاق المنتج الحي إلى فشل ذريع مهين، لقدم مدير العلاقات العامة استقالته.",
+      "collocations": [
+        "total fiasco",
+        "financial fiasco"
+      ],
+      "synonyms": [
+        "catastrophe",
+        "debacle"
+      ],
+      "antonyms": [
+        "resounding triumph"
+      ],
+      "tags": [
+        "disaster",
+        "failure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "debacle",
+      "pronunciation": "/deɪˈbɑːkl/",
+      "partOfSpeech": "noun",
+      "definition": "A sudden, catastrophic, and ignominious failure or collapse.",
+      "example": "If the infrastructure funding collapsed, the entire construction debacle would become headline news.",
+      "translation": "انهيار مدوٍّ / كارثة وفشل ساحق",
+      "exampleArabic": "لو انهار تمويل البنية التحتية، لأصبح ذلك الانهيار والخراب الإنشائي حديث عناوين الأخبار.",
+      "collocations": [
+        "financial debacle",
+        "prevent a debacle"
+      ],
+      "synonyms": [
+        "collapse",
+        "ruin"
+      ],
+      "antonyms": [
+        "success"
+      ],
+      "tags": [
+        "collapse",
+        "crisis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "muddle",
+      "pronunciation": "/ˈmʌdl/",
+      "partOfSpeech": "noun",
+      "definition": "An untidy, disordered, and thoroughly confused state or situation.",
+      "example": "If our billing records were in such a chaotic muddle, audits would take months.",
+      "translation": "فوضى عارمة / خلط وتخبط وارتباك",
+      "exampleArabic": "لو كانت سجلات فواتيرنا في فوضى وتخبط كهذا، لاستغرقت عمليات التدقيق أشهراً.",
+      "collocations": [
+        "in a terrible muddle",
+        "bureaucratic muddle"
+      ],
+      "synonyms": [
+        "mess",
+        "shambles"
+      ],
+      "antonyms": [
+        "order"
+      ],
+      "tags": [
+        "disorder",
+        "confusion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "catch-22",
+      "pronunciation": "/ˌkætʃ twenti ˈtuː/",
+      "partOfSpeech": "noun",
+      "definition": "A dilemma or difficult circumstance from which there is no escape because of mutually conflicting conditions.",
+      "example": "If junior graduates faced this catch-22, they would volunteer to gain the required prerequisite experience.",
+      "translation": "معضلة دائرية مستحيلة الحل / حلقة مفرغة",
+      "exampleArabic": "لو واجه الخريجون الجدد هذه الحلقة المفرغة، لتطوعوا لاكتساب الخبرة المسبقة المطلوبة.",
+      "collocations": [
+        "classic catch-22",
+        "faced with a catch-22"
+      ],
+      "synonyms": [
+        "vicious circle",
+        "paradox"
+      ],
+      "antonyms": [],
+      "tags": [
+        "logic",
+        "dilemma"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "blind spot",
+      "pronunciation": "/ˈblaɪnd spɒt/",
+      "partOfSpeech": "noun",
+      "definition": "An area in which one fails to exercise judgment, perception, or understanding.",
+      "example": "If the leadership team recognized their marketing blind spot, they would appoint external brand consultants.",
+      "translation": "نقطة عمياء / جانب غائب عن الإدراك",
+      "exampleArabic": "لو أدرك فريق القيادة نقطتهم العمياء في التسويق، لعينوا مستشاري علامة تجارية خارجيين.",
+      "collocations": [
+        "critical blind spot",
+        "cognitive blind spot"
+      ],
+      "synonyms": [
+        "unnoticed flaw"
+      ],
+      "antonyms": [
+        "full awareness"
+      ],
+      "tags": [
+        "psychology",
+        "cognition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bottleneck",
+      "pronunciation": "/ˈbɒtlnek/",
+      "partOfSpeech": "noun",
+      "definition": "A point of congestion or blockage that impedes progress or production.",
+      "example": "If we eliminated the database server bottleneck, query latency would drop eighty percent.",
+      "translation": "عنق زجاجة / نقطة اختناق وتعطيل",
+      "exampleArabic": "لو قضينا على عنق الزجاجة في خادم قواعد البيانات، لانخفض وقت استجابة الاستعلامات بنسبة ثمانين بالمائة.",
+      "collocations": [
+        "production bottleneck",
+        "traffic bottleneck"
+      ],
+      "synonyms": [
+        "chokepoint",
+        "constriction"
+      ],
+      "antonyms": [
+        "smooth conduit"
+      ],
+      "tags": [
+        "operations",
+        "delays"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tight spot",
+      "pronunciation": "/taɪt spɒt/",
+      "partOfSpeech": "noun",
+      "definition": "A precarious, difficult, or demanding situation, especially a financial one.",
+      "example": "If the small enterprise were caught in a tight spot, they would renegotiate loan payments.",
+      "translation": "موقف حرج / ضائقة مالية أو موقف ضيق",
+      "exampleArabic": "لو وقعت المؤسسة الصغيرة في موقف حرج وضائقة، لأعادت التفاوض على دفعات القروض.",
+      "collocations": [
+        "in a tight spot",
+        "get out of a tight spot"
+      ],
+      "synonyms": [
+        "tight corner",
+        "pinch"
+      ],
+      "antonyms": [
+        "cushion"
+      ],
+      "tags": [
+        "difficulty",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "quagmire",
+      "pronunciation": "/ˈkwæɡmaɪə/",
+      "partOfSpeech": "noun",
+      "definition": "A complex, hazardous, and muddy situation from which it is difficult to free oneself.",
+      "example": "If overseas forces entered that geopolitical quagmire, extracting troops would take decades.",
+      "translation": "مستنقع معقد / ورطة موحلة يصعب الخروج منها",
+      "exampleArabic": "لو دخلت القوات ذلك المستنقع الجيوسياسي، لاستغرق سحب الجنود عقوداً من الزمن.",
+      "collocations": [
+        "legal quagmire",
+        "sink into a quagmire"
+      ],
+      "synonyms": [
+        "morass",
+        "swamp"
+      ],
+      "antonyms": [
+        "safe harbor"
+      ],
+      "tags": [
+        "crisis",
+        "complexity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "minor annoyance",
+      "pronunciation": "/ˈmaɪnər əˈnɔɪəns/",
+      "partOfSpeech": "noun",
+      "definition": "A petty, small problem that causes slight irritation without serious harm.",
+      "example": "If intermittent flickering lights were merely a minor annoyance, we would postpone calling the electrician.",
+      "translation": "مضايقة طفيفة / إزعاج بسيط",
+      "exampleArabic": "لو كانت أضواء الوميض المتقطع مجرد مضايقة طفيفة، لأجلنا استدعاء الفني الكهربائي.",
+      "collocations": [
+        "dismiss as a minor annoyance",
+        "suffer a minor annoyance"
+      ],
+      "synonyms": [
+        "petty irritant"
+      ],
+      "antonyms": [
+        "major catastrophe"
+      ],
+      "tags": [
+        "irritation",
+        "mild"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "major headache",
+      "pronunciation": "/ˈmeɪdʒə ˈhedeɪk/",
+      "partOfSpeech": "noun",
+      "definition": "A severely troublesome, stressful, and complicated problem.",
+      "example": "If international customs clearance were delayed, it would become a major headache for shippers.",
+      "translation": "صداع مزمن / ورطة تسبب إرهاقاً وتوتراً هائلاً",
+      "exampleArabic": "لو تأخر التخليص الجمركي الدولي، لأصبح صداعاً كبيراً ومصدر قلق هائل لشركات الشحن.",
+      "collocations": [
+        "cause a major headache",
+        "prove a major headache"
+      ],
+      "synonyms": [
+        "severe hassle"
+      ],
+      "antonyms": [
+        "walk in the park"
+      ],
+      "tags": [
+        "stress",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unforeseen complication",
+      "pronunciation": "/ˌʌnfɔːˈsiːn ˌkɒmplɪˈkeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An unanticipated difficulty that makes a task or situation harder to solve.",
+      "example": "If an unforeseen complication surfaced during surgery, the senior surgeon would step in.",
+      "translation": "مضاعفة غير متوقعة / تعقيد طارئ",
+      "exampleArabic": "لو ظهرت مضاعفة غير متوقعة أثناء الجراحة، لتدخل كبير الجراحين فوراً.",
+      "collocations": [
+        "encounter unforeseen complications",
+        "arise from unforeseen complications"
+      ],
+      "synonyms": [
+        "unexpected twist"
+      ],
+      "antonyms": [
+        "predictable step"
+      ],
+      "tags": [
+        "complications",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "logistical nightmare",
+      "pronunciation": "/ləˈdʒɪstɪkl ˈnaɪtmeə/",
+      "partOfSpeech": "noun",
+      "definition": "An exceptionally chaotic, complicated, and disorganized operational undertaking.",
+      "example": "If five hundred international guests arrived simultaneously without buses, it would be a logistical nightmare.",
+      "translation": "كابوس لوجستي وتنظيمي",
+      "exampleArabic": "لو وصل خمسمائة ضيف دولي في وقت واحد دون حافلات، لكان الأمر كابوساً لوجستياً.",
+      "collocations": [
+        "turn into a logistical nightmare",
+        "avoid a logistical nightmare"
+      ],
+      "synonyms": [
+        "operational chaos"
+      ],
+      "antonyms": [
+        "seamless coordination"
+      ],
+      "tags": [
+        "operations",
+        "hyperbole"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "spanner in the works",
+      "pronunciation": "/ˌspænər ɪn ðə ˈwɜːks/",
+      "partOfSpeech": "noun",
+      "definition": "An event or action that disrupts smooth progress or ruins careful plans.",
+      "example": "If unexpected transport strikes threw a spanner in the works, we would host the summit virtually.",
+      "translation": "عصا في العجلة / إفساد للمخططات",
+      "exampleArabic": "لو وضعت إضرابات النقل المفاجئة عصا في العجلة، لأقمنا القمة عبر تقنية الاتصال المرئي.",
+      "collocations": [
+        "throw a spanner in the works",
+        "put a spanner in the works"
+      ],
+      "synonyms": [
+        "wrench in the gears",
+        "disruption"
+      ],
+      "antonyms": [
+        "catalyst for success"
+      ],
+      "tags": [
+        "disruption",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "teething troubles",
+      "pronunciation": "/ˈtiːðɪŋ ˈtrʌblz/",
+      "partOfSpeech": "noun",
+      "definition": "Short-term problems that occur in the initial stages of a new project or system.",
+      "example": "If the new metro ticketing app experienced teething troubles, customer service desks would assist riders.",
+      "translation": "مشاكل وصعوبات البداية / عثرات التأسيس",
+      "exampleArabic": "لو عانى تطبيق تذاكر المترو الجديد من عثرات البداية، لساعدت مكاتب خدمة العملاء الركاب.",
+      "collocations": [
+        "suffer teething troubles",
+        "overcome teething troubles"
+      ],
+      "synonyms": [
+        "early glitches",
+        "startup difficulties"
+      ],
+      "antonyms": [
+        "mature stability"
+      ],
+      "tags": [
+        "startups",
+        "development"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "countermeasure",
+      "pronunciation": "/ˈkaʊntəmeʒə/",
+      "partOfSpeech": "noun",
+      "definition": "An action taken to counteract a danger, threat, or unwanted condition.",
+      "example": "If cyber attacks intensified, our security engineers would deploy an aggressive defensive countermeasure.",
+      "translation": "إجراء مضاد / تدبير وقائي لمواجهة الخطر",
+      "exampleArabic": "لو تكثفت الهجمات السيبرانية، لنشر مهندسو الأمن لدينا إجراءً دفاعياً مضاداً وحازماً.",
+      "collocations": [
+        "deploy a countermeasure",
+        "effective countermeasure"
+      ],
+      "synonyms": [
+        "counteraction",
+        "safeguard"
+      ],
+      "antonyms": [
+        "vulnerability"
+      ],
+      "tags": [
+        "security",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "remedial action",
+      "pronunciation": "/rɪˈmiːdiəl ˈækʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Steps taken to correct, alleviate, or improve a deficient situation.",
+      "example": "If environmental inspections revealed emissions leaks, the factory would take swift remedial action.",
+      "translation": "إجراء تصحيحي وعلاجي",
+      "exampleArabic": "لو كشفت عمليات التفتيش البيئي عن تسرب في الانبعاثات، لاتخذ المصنع إجراءً علاجياً سريعاً.",
+      "collocations": [
+        "take remedial action",
+        "urgent remedial action"
+      ],
+      "synonyms": [
+        "corrective step"
+      ],
+      "antonyms": [
+        "neglect"
+      ],
+      "tags": [
+        "corrections",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "quick fix",
+      "pronunciation": "/ˌkwɪk ˈfɪks/",
+      "partOfSpeech": "noun",
+      "definition": "An easy, fast, but often temporary or superficial remedy for a problem.",
+      "example": "If developers used a quick fix instead of refactoring, technical debt would compound.",
+      "translation": "حل سريع سطحي / ترقيع مؤقت",
+      "exampleArabic": "لو استخدم المطورون حلاً سريعاً مؤقتاً بدلاً من إعادة كتابة الشيفرة، لتراكمت الديون التقنية.",
+      "collocations": [
+        "rely on a quick fix",
+        "no quick fix available"
+      ],
+      "synonyms": [
+        "patch",
+        "expedient"
+      ],
+      "antonyms": [
+        "permanent cure"
+      ],
+      "tags": [
+        "solutions",
+        "flaws"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "band-aid solution",
+      "pronunciation": "/ˈbændeɪd səˈluːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A temporary or makeshift measure that does not address root underlying causes.",
+      "example": "If the city council applied another band-aid solution, the potholes would reopen next winter.",
+      "translation": "حل ترقيعي مؤقت / مسكن سطحي",
+      "exampleArabic": "لو طبقت بلدية المدينة حلاً ترقيعياً مؤقتاً آخر، لعاودت الحفر الظهور في الشتاء القادم.",
+      "collocations": [
+        "mere band-aid solution",
+        "criticize band-aid solutions"
+      ],
+      "synonyms": [
+        "stopgap measure",
+        "makeshift remedy"
+      ],
+      "antonyms": [
+        "lasting remedy"
+      ],
+      "tags": [
+        "temporary",
+        "solutions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stopgap measure",
+      "pronunciation": "/ˈstɒpɡæp ˈmeʒə/",
+      "partOfSpeech": "noun",
+      "definition": "A temporary expedient adopted until a permanent replacement can be secured.",
+      "example": "If the primary water pipe burst, the emergency generator pump would serve as a stopgap measure.",
+      "translation": "إجراء سد خانة / تدبير طوارئ مؤقت",
+      "exampleArabic": "لو انفجر أنبوب المياه الرئيسي، لعملت مضخة مولد الطوارئ كتدبير مؤقت لسد الخانة.",
+      "collocations": [
+        "serve as a stopgap measure",
+        "temporary stopgap measure"
+      ],
+      "synonyms": [
+        "makeshift",
+        "interim arrangement"
+      ],
+      "antonyms": [
+        "permanent installation"
+      ],
+      "tags": [
+        "temporary",
+        "emergency"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "iron out",
+      "pronunciation": "/ˈaɪən aʊt/",
+      "partOfSpeech": "verb",
+      "definition": "To resolve small difficulties, misunderstandings, or discrepancies through discussion.",
+      "example": "If both trade delegations sat together, they would iron out remaining tariff discrepancies.",
+      "translation": "يسوي الخلافات ويزيل العقبات / يذلل الصعاب",
+      "exampleArabic": "لو جلس كلا الوفدين التجاريين معاً، لسووا التفاوتات المتبقية في الرسوم الجمركية.",
+      "verbForms": {
+        "v1": "iron out",
+        "v2": "ironed out",
+        "v3": "ironed out"
+      },
+      "collocations": [
+        "iron out differences",
+        "iron out kinks"
+      ],
+      "synonyms": [
+        "resolve",
+        "smooth over"
+      ],
+      "antonyms": [
+        "exacerbate"
+      ],
+      "tags": [
+        "actions",
+        "solutions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "salvage",
+      "pronunciation": "/ˈsælvɪdʒ/",
+      "partOfSpeech": "verb",
+      "definition": "To rescue or save valuable parts of something from wreckage, ruin, or failure.",
+      "example": "If the project missed its launch date, we would still salvage the core machine-learning models.",
+      "translation": "ينقذ ما يمكن إنقاذه / يستنقذ",
+      "exampleArabic": "لو فات موعد إطلاق المشروع، لاستنقذنا النماذج الأساسية للتعلم الآلي على الأقل.",
+      "verbForms": {
+        "v1": "salvage",
+        "v2": "salvaged",
+        "v3": "salvaged"
+      },
+      "collocations": [
+        "salvage the situation",
+        "salvage key assets"
+      ],
+      "synonyms": [
+        "rescue",
+        "retrieve"
+      ],
+      "antonyms": [
+        "abandon to ruin"
+      ],
+      "tags": [
+        "recovery",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "damage control",
+      "pronunciation": "/ˈdæmɪdʒ kənˈtrəʊl/",
+      "partOfSpeech": "noun",
+      "definition": "Action taken to limit the detrimental effects of an accident or political scandal.",
+      "example": "If corporate executives leaked confidential earnings, the communications team would initiate damage control.",
+      "translation": "احتواء الأضرار والحد من الخسائر",
+      "exampleArabic": "لو سرب مسؤولو الشركة الأرباح السرية، لبدأ فريق الاتصالات إجراءات احتواء الأضرار.",
+      "collocations": [
+        "exercise damage control",
+        "damage control mode"
+      ],
+      "synonyms": [
+        "harm minimization"
+      ],
+      "antonyms": [],
+      "tags": [
+        "crisis",
+        "pr"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "extricate",
+      "pronunciation": "/ˈekstrɪkeɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To free someone or oneself from a constraint or difficult, hazardous situation.",
+      "example": "If the diplomat were trapped in a host-country crisis, embassy security would extricate him.",
+      "translation": "يخلّص من ورطة / ينتشل من مأزق",
+      "exampleArabic": "لو حوصر الدبلوماسي في أزمة بالدولة المضيفة، لانتشله أمن السفارة وخلصه.",
+      "verbForms": {
+        "v1": "extricate",
+        "v2": "extricated",
+        "v3": "extricated"
+      },
+      "collocations": [
+        "extricate oneself from",
+        "extricate safely"
+      ],
+      "synonyms": [
+        "disentangle",
+        "extract"
+      ],
+      "antonyms": [
+        "entangle"
+      ],
+      "tags": [
+        "rescue",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "alleviate difficulty",
+      "pronunciation": "/əˈliːvieɪt ˈdɪfɪkəlti/",
+      "partOfSpeech": "verb",
+      "definition": "To make problems, hardships, or pain less severe and more manageable.",
+      "example": "If local clinics received mobile testing vans, it would alleviate difficulty for rural villagers.",
+      "translation": "يخفف وطأة الصعوبات / ييسر المشاق",
+      "exampleArabic": "لو استلمت العيادات المحلية شاحنات فحص متنقلة، لخفف ذلك وطأة الصعوبات على سكان القرى.",
+      "verbForms": {
+        "v1": "alleviate difficulty",
+        "v2": "alleviated difficulty",
+        "v3": "alleviated difficulty"
+      },
+      "collocations": [
+        "help alleviate difficulty",
+        "aim to alleviate difficulty"
+      ],
+      "synonyms": [
+        "ease hardship"
+      ],
+      "antonyms": [
+        "aggravate difficulty"
+      ],
+      "tags": [
+        "relief",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "nip in the bud",
+      "pronunciation": "/nɪp ɪn ðə bʌd/",
+      "partOfSpeech": "verb",
+      "definition": "To suppress or destroy something bad at an early stage before it develops fully.",
+      "example": "If managers nipped interpersonal feuds in the bud, team cohesion would flourish.",
+      "translation": "يقضي على الأمر في مهده / يئد المشكلة في بدايتها",
+      "exampleArabic": "لو وأد المديرون الخلافات الشخصية في مهدها، لازدهر تماسك الفريق وتآلفه.",
+      "verbForms": {
+        "v1": "nip in the bud",
+        "v2": "nipped in the bud",
+        "v3": "nipped in the bud"
+      },
+      "collocations": [
+        "nip trouble in the bud",
+        "essential to nip in the bud"
+      ],
+      "synonyms": [
+        "halt early",
+        "quash immediately"
+      ],
+      "antonyms": [
+        "allow to fester"
+      ],
+      "tags": [
+        "prevention",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "weather the storm",
+      "pronunciation": "/ˈweðə ðə stɔːm/",
+      "partOfSpeech": "verb",
+      "definition": "To endure and survive a difficult period without suffering permanent ruin.",
+      "example": "If small businesses held six months of operating reserves, they would weather the storm easily.",
+      "translation": "يتجاوز العاصفة بسلام / يصمد أمام الأزمة",
+      "exampleArabic": "لو احتفظت الشركات الصغيرة باحتياطيات تشغيلية لستة أشهر، لتجاوزت العاصفة وصمدت بسهولة.",
+      "verbForms": {
+        "v1": "weather the storm",
+        "v2": "weathered the storm",
+        "v3": "weathered the storm"
+      },
+      "collocations": [
+        "weather the financial storm",
+        "manage to weather the storm"
+      ],
+      "synonyms": [
+        "endure hardship"
+      ],
+      "antonyms": [
+        "succumb",
+        "capitulate"
+      ],
+      "tags": [
+        "resilience",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tide over",
+      "pronunciation": "/taɪd ˈəʊvə/",
+      "partOfSpeech": "verb",
+      "definition": "To support someone temporarily through a difficult, impoverished period.",
+      "example": "If an emergency grant tided the researcher over, she would complete her clinical trials.",
+      "translation": "يسعف مؤقتاً / يعين على تجاوز الضائقة",
+      "exampleArabic": "لو أسعفت منحة الطوارئ الباحثة مؤقتاً، لأكملت تجاربها السريرية.",
+      "verbForms": {
+        "v1": "tide over",
+        "v2": "tided over",
+        "v3": "tided over"
+      },
+      "collocations": [
+        "tide someone over until",
+        "enough funds to tide over"
+      ],
+      "synonyms": [
+        "see through hardship"
+      ],
+      "antonyms": [],
+      "tags": [
+        "assistance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bail out",
+      "pronunciation": "/beɪl aʊt/",
+      "partOfSpeech": "verb",
+      "definition": "To rescue a person, organization, or company from financial collapse.",
+      "example": "If the government bailed out insolvent airlines again, taxpayers would express outrage.",
+      "translation": "ينقذ مالياً / يتدخل للإنقاذ من الإفلاس",
+      "exampleArabic": "لو تدخلت الحكومة لإنقاذ شركات الطيران المعسرة مالياً مرة أخرى، لأبدى دافعو الضرائب غضباً عارماً.",
+      "verbForms": {
+        "v1": "bail out",
+        "v2": "bailed out",
+        "v3": "bailed out"
+      },
+      "collocations": [
+        "bail out bank",
+        "refuse to bail out"
+      ],
+      "synonyms": [
+        "rescue financially"
+      ],
+      "antonyms": [
+        "let go bankrupt"
+      ],
+      "tags": [
+        "finance",
+        "rescue"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unravel problem",
+      "pronunciation": "/ʌnˈrævl ˈprɒbləm/",
+      "partOfSpeech": "verb",
+      "definition": "To investigate, disentangle, and explain a complex, tangled mystery or difficulty.",
+      "example": "If investigators unraveled the problem step by step, they would uncover fraudulent invoices.",
+      "translation": "يفكك خيوط المشكلة / يحل العقدة",
+      "exampleArabic": "لو فكك المحققون خيوط المشكلة خطوة بخطوة، لاكتشفوا الفواتير الاحتيالية.",
+      "verbForms": {
+        "v1": "unravel problem",
+        "v2": "unraveled problem",
+        "v3": "unraveled problem"
+      },
+      "collocations": [
+        "unravel the core problem",
+        "seek to unravel problems"
+      ],
+      "synonyms": [
+        "disentangle",
+        "solve"
+      ],
+      "antonyms": [
+        "complicate further"
+      ],
+      "tags": [
+        "investigation",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "smooth over",
+      "pronunciation": "/smuːð ˈəʊvə/",
+      "partOfSpeech": "verb",
+      "definition": "To make problems, disagreements, or embarrassments appear less serious by tact.",
+      "example": "If the mediator smoothed over ruffled feelings, the feuding departments would collaborate.",
+      "translation": "يلطف الأجواء / يسوي الخلافات بلباقة",
+      "exampleArabic": "لو لطّف الوسيط المشاعر الجريحة بلباقة، لتعاونت الأقسام المتناحرة مجدداً.",
+      "verbForms": {
+        "v1": "smooth over",
+        "v2": "smoothed over",
+        "v3": "smoothed over"
+      },
+      "collocations": [
+        "smooth over conflict",
+        "attempt to smooth over"
+      ],
+      "synonyms": [
+        "conciliate",
+        "gloss over"
+      ],
+      "antonyms": [
+        "stir up trouble"
+      ],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "coping mechanism",
+      "pronunciation": "/ˈkəʊpɪŋ ˈmekənɪzəm/",
+      "partOfSpeech": "noun",
+      "definition": "An adaptation or behavioral tool that helps someone manage stress or trauma.",
+      "example": "If workers developed a healthy coping mechanism, stressful quarterly audits would not induce burnout.",
+      "translation": "آلية تأقلم ومواجهة للضغوط",
+      "exampleArabic": "لو طور الموظفون آلية تأقلم صحية، لما أدت عمليات التدقيق الربع سنوية المرهقة إلى الاحتراق النفسي.",
+      "collocations": [
+        "healthy coping mechanism",
+        "rely on coping mechanisms"
+      ],
+      "synonyms": [
+        "stress buffer"
+      ],
+      "antonyms": [
+        "maladaptive behavior"
+      ],
+      "tags": [
+        "psychology",
+        "wellness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sticky situation",
+      "pronunciation": "/ˈstɪki ˌsɪtʃuˈeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An awkward, embarrassing, or complicated circumstance requiring great diplomacy.",
+      "example": "If you landed in such a sticky situation at the banquet, humor would help defuse tension.",
+      "translation": "موقف حرج وشائك",
+      "exampleArabic": "لو وقعت في موقف حرج وشائك كهذا في المأدبة، لساعدت الفكاهة على نزع فتيل التوتر.",
+      "collocations": [
+        "in a sticky situation",
+        "handle a sticky situation"
+      ],
+      "synonyms": [
+        "tight spot",
+        "awkward dilemma"
+      ],
+      "antonyms": [
+        "smooth sail"
+      ],
+      "tags": [
+        "social",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "thorny issue",
+      "pronunciation": "/ˈθɔːni ˈɪʃuː/",
+      "partOfSpeech": "noun",
+      "definition": "A topic or controversy that is full of difficulties and liable to cause contention.",
+      "example": "If the parliament debated that thorny issue today, heated arguments would erupt.",
+      "translation": "مسألة شائكة ومثيرة للجدل",
+      "exampleArabic": "لو ناقش البرلمان تلك المسألة الشائكة اليوم، لاندلعت سجالات حادة.",
+      "collocations": [
+        "tackle a thorny issue",
+        "address the thorny issue"
+      ],
+      "synonyms": [
+        "prickly topic"
+      ],
+      "antonyms": [
+        "straightforward matter"
+      ],
+      "tags": [
+        "politics",
+        "problems"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "vexing puzzle",
+      "pronunciation": "/ˈveksɪŋ ˈpʌzl/",
+      "partOfSpeech": "noun",
+      "definition": "A frustrating problem or enigma that defies an easy, obvious answer.",
+      "example": "If mathematicians cracked this vexing puzzle, quantum cryptography would surge ahead.",
+      "translation": "لغز محير ومستعصٍ",
+      "exampleArabic": "لو حل علماء الرياضيات هذا اللغز المحير المستعصي، لقفز التشفير الكمي قفزات هائلة.",
+      "collocations": [
+        "confront a vexing puzzle",
+        "solve a vexing puzzle"
+      ],
+      "synonyms": [
+        "knotty enigma"
+      ],
+      "antonyms": [
+        "simple riddle"
+      ],
+      "tags": [
+        "intellect",
+        "problems"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "make the best of",
+      "pronunciation": "/meɪk ðə ˈbest əv/",
+      "partOfSpeech": "verb",
+      "definition": "To cope as effectively as possible with an unfavorable or imperfect situation.",
+      "example": "If we were stranded by heavy snowfall, we would make the best of it with board games.",
+      "translation": "يتأقلم بإيجابية ويستغل الوضع بأفضل ما يمكن",
+      "exampleArabic": "لو حوصرنا بسبب تساقط الثلوج الكثيف، لتأقلمنا بإيجابية ولعبنا ألعاب الطاولة.",
+      "verbForms": {
+        "v1": "make the best of",
+        "v2": "made the best of",
+        "v3": "made the best of"
+      },
+      "collocations": [
+        "make the best of bad situation",
+        "try to make the best of"
+      ],
+      "synonyms": [
+        "look on bright side"
+      ],
+      "antonyms": [
+        "complain bitterly"
+      ],
+      "tags": [
+        "attitude",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "troubleshooter",
+      "pronunciation": "/ˈtrʌblʃuːtə/",
+      "partOfSpeech": "noun",
+      "definition": "A specialist employed to locate and eliminate systemic problems or faults.",
+      "example": "If an industrial plant malfunctioned repeatedly, a certified troubleshooter would overhaul the assembly line.",
+      "translation": "خبير حل المشكلات والأعطال",
+      "exampleArabic": "لو تعطل المصنع الصناعي مراراً، لقام خبير حل الأعطال المعتمد بفحص خط التجميع وصيانته جذرياً.",
+      "collocations": [
+        "skilled troubleshooter",
+        "hire a troubleshooter"
+      ],
+      "synonyms": [
+        "problem solver"
+      ],
+      "antonyms": [],
+      "tags": [
+        "profession",
+        "technical"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ad hoc solution",
+      "pronunciation": "/ˌæd ˈhɒk səˈluːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An improvised answer created specifically for a singular situation without wider application.",
+      "example": "If field technicians improvised an ad hoc solution, the generator would operate until dawn.",
+      "translation": "حل مؤقت لظرف خاص ومحدد",
+      "exampleArabic": "لو ابتكر الفنيون الميدانيون حلاً مؤقتاً لظرفهم الخاص، لعمل المولد حتى مطلع الفجر.",
+      "collocations": [
+        "devise an ad hoc solution",
+        "rely on ad hoc solutions"
+      ],
+      "synonyms": [
+        "improvised fix"
+      ],
+      "antonyms": [
+        "systematic method"
+      ],
+      "tags": [
+        "adaptation",
+        "technical"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "find a workaround",
+      "pronunciation": "/faɪnd ə ˈwɜːkəraʊnd/",
+      "partOfSpeech": "verb",
+      "definition": "To discover a method for overcoming a problem without eliminating the problem itself.",
+      "example": "If browser security updates broke payment plugins, webmasters would find a workaround.",
+      "translation": "يجد حيلة تقنية بديلة لتجاوز العطل",
+      "exampleArabic": "لو عطلت تحديثات أمان المتصفح ملحقات الدفع، لوجد مسؤولو المواقع حيلة تقنية بديلة لتجاوز العطل.",
+      "verbForms": {
+        "v1": "find a workaround",
+        "v2": "found a workaround",
+        "v3": "found a workaround"
+      },
+      "collocations": [
+        "clever workaround",
+        "find a quick workaround"
+      ],
+      "synonyms": [
+        "bypass obstacle"
+      ],
+      "antonyms": [
+        "hit wall"
+      ],
+      "tags": [
+        "technical",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "defuse crisis",
+      "pronunciation": "/diːˈfjuːz ˈkraɪsɪs/",
+      "partOfSpeech": "verb",
+      "definition": "To make a tense or dangerous predicament calmer and less hazardous.",
+      "example": "If experienced diplomats intervened early, they would defuse crisis negotiations gracefully.",
+      "translation": "ينزع فتيل الأزمة / يهدئ الوضع المتأزم",
+      "exampleArabic": "لو تدخل الدبلوماسيون ذوو الخبرة مبكراً، لنزعوا فتيل الأزمة في المفاوضات بلباقة.",
+      "verbForms": {
+        "v1": "defuse crisis",
+        "v2": "defused crisis",
+        "v3": "defused crisis"
+      },
+      "collocations": [
+        "defuse the crisis immediately",
+        "ability to defuse crisis"
+      ],
+      "synonyms": [
+        "de-escalate"
+      ],
+      "antonyms": [
+        "ignite conflict"
+      ],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "patch up",
+      "pronunciation": "/pætʃ ʌp/",
+      "partOfSpeech": "verb",
+      "definition": "To repair, settle, or improve something damaged or strained in a provisional way.",
+      "example": "If both siblings apologized sincerely, they would patch up their strained relationship.",
+      "translation": "يصلح الوضع مؤقتاً / يرأب الصدع",
+      "exampleArabic": "لو اعتذر الشقيقان بصدق، لرأبا الصدع في علاقتهما المتوترة.",
+      "verbForms": {
+        "v1": "patch up",
+        "v2": "patched up",
+        "v3": "patched up"
+      },
+      "collocations": [
+        "patch up differences",
+        "patch up leak"
+      ],
+      "synonyms": [
+        "mend temporarily"
+      ],
+      "antonyms": [
+        "break permanently"
+      ],
+      "tags": [
+        "relationships",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bide one time",
+      "pronunciation": "/baɪd wʌnz taɪm/",
+      "partOfSpeech": "verb",
+      "definition": "To wait patiently for a favorable opportunity before making a move.",
+      "example": "If clever investors bided their time during panics, they would acquire undervalued blue-chip stocks.",
+      "translation": "يتربص بالفرصة السانحة / يتحين الوقت المناسب بصبر",
+      "exampleArabic": "لو تحين المستثمرون الأذكياء الوقت المناسب بصبر أثناء الذعر، لاشتروا أسهماً ممتازة بأقل من قيمتها.",
+      "verbForms": {
+        "v1": "bide one time",
+        "v2": "bided one time",
+        "v3": "bided one time"
+      },
+      "collocations": [
+        "bide one's time patiently",
+        "wise to bide one's time"
+      ],
+      "synonyms": [
+        "wait in wings"
+      ],
+      "antonyms": [
+        "act precipitously"
+      ],
+      "tags": [
+        "patience",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "clear a hurdle",
+      "pronunciation": "/klɪər ə ˈhɜːdl/",
+      "partOfSpeech": "verb",
+      "definition": "To overcome an initial problem, challenge, or administrative barrier successfully.",
+      "example": "If the biotech firm cleared this regulatory hurdle, clinical drug distribution would proceed.",
+      "translation": "يتجاوز عقبة / يجتاز حاجزاً صعباً",
+      "exampleArabic": "لو اجتازت شركة التكنولوجيا الحيوية هذه العقبة التنظيمية، لمضى توزيع الدواء السريري قدماً.",
+      "verbForms": {
+        "v1": "clear a hurdle",
+        "v2": "cleared a hurdle",
+        "v3": "cleared a hurdle"
+      },
+      "collocations": [
+        "clear a major hurdle",
+        "clear the final hurdle"
+      ],
+      "synonyms": [
+        "surmount obstacle"
+      ],
+      "antonyms": [
+        "stumble"
+      ],
+      "tags": [
+        "achievement",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bounce back from",
+      "pronunciation": "/baʊns bæk frəm/",
+      "partOfSpeech": "verb",
+      "definition": "To recover quickly and fully from a setback, defeat, or severe misfortune.",
+      "example": "If the resilient athlete injured his knee, he would bounce back from surgery through disciplined therapy.",
+      "translation": "يتعافى سريعاً من / يسترد عافيته بعد كبوة",
+      "exampleArabic": "لو أُصيب الرياضي الصبور في ركبته، لتعافى سريعاً من الجراحة عبر العلاج المنضبط.",
+      "verbForms": {
+        "v1": "bounce back from",
+        "v2": "bounced back from",
+        "v3": "bounced back from"
+      },
+      "collocations": [
+        "bounce back from defeat",
+        "bounce back quickly"
+      ],
+      "synonyms": [
+        "recover rapidly",
+        "rebound"
+      ],
+      "antonyms": [
+        "succumb to defeat"
+      ],
+      "tags": [
+        "resilience",
+        "actions"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Solving an Office Operations Crisis",
+      "titleArabic": "حل أزمة عمليات مكتبية طارئة",
+      "setting": "An operations supervisor consults an executive assistant when multiple administrative breakdowns happen on the same morning.",
+      "lines": [
+        {
+          "speaker": "Supervisor",
+          "text": "The elevator is out of order and our internet router just failed. What an inconvenient muddle!"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "If it were only a minor annoyance, I would ignore it, but this is turning into a major headache."
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "If we called a skilled troubleshooter right now, could we salvage our morning meetings?"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Yes! If technicians established a mobile hotspot, that stopgap measure could tide us over."
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "What about the international shipment that got stuck at airport customs?"
+        },
+        {
+          "speaker": "Assistant",
+          "text": "That delivery bottleneck is a classic logistical nightmare, but our broker will iron out the paperwork."
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "Let us make sure we nip this trouble in the bud before the CEO arrives."
+        },
+        {
+          "speaker": "Assistant",
+          "text": "Agreed! Once we clear this hurdle, our morning routine will normalize."
+        }
+      ],
+      "vocabularyUsed": [
+        "muddle",
+        "minor annoyance",
+        "major headache",
+        "troubleshooter",
+        "salvage",
+        "stopgap measure",
+        "tide over",
+        "bottleneck",
+        "logistical nightmare",
+        "iron out",
+        "nip in the bud",
+        "clear a hurdle"
+      ]
+    },
+    {
+      "title": "Dealing with a Catch-22 in Business",
+      "titleArabic": "التعامل مع حلقة مفرغة في عالم الأعمال",
+      "setting": "Two young startup founders brainstorm how to secure venture funding without prior enterprise client contracts.",
+      "lines": [
+        {
+          "speaker": "Founder A",
+          "text": "Investors want paying corporate clients, but enterprise clients demand audited software history. It is a catch-22!"
+        },
+        {
+          "speaker": "Founder B",
+          "text": "If we stayed stuck in this quandary, our seed funding would dry up in three months."
+        },
+        {
+          "speaker": "Founder A",
+          "text": "How could we extricate ourselves from this sticky predicament?"
+        },
+        {
+          "speaker": "Founder B",
+          "text": "If we offered a free pilot to an educational non-profit, we could find a clever workaround."
+        },
+        {
+          "speaker": "Founder A",
+          "text": "That ad hoc solution could give us the verified case study we desperately need!"
+        },
+        {
+          "speaker": "Founder B",
+          "text": "Exactly; it would be far better than relying on a flimsy band-aid solution."
+        },
+        {
+          "speaker": "Founder A",
+          "text": "If we bided our time and perfected security protocols, investors would notice our diligence."
+        },
+        {
+          "speaker": "Founder B",
+          "text": "Then let us make the best of our small budget and build that pilot model today!"
+        }
+      ],
+      "vocabularyUsed": [
+        "catch-22",
+        "quandary",
+        "extricate",
+        "predicament",
+        "find a workaround",
+        "ad hoc solution",
+        "band-aid solution",
+        "bide one time",
+        "make the best of"
+      ]
+    },
+    {
+      "title": "Managing High-Stakes Public Relations",
+      "titleArabic": "إدارة العلاقات العامة في أزمة حساسة",
+      "setting": "A corporate PR director briefs a newly appointed communications associate.",
+      "lines": [
+        {
+          "speaker": "PR Director",
+          "text": "If a confidential memo leaked to press reporters, how would you initiate damage control?"
+        },
+        {
+          "speaker": "Associate",
+          "text": "I would verify facts immediately to ensure we did not throw a spanner in the works with conflicting statements."
+        },
+        {
+          "speaker": "PR Director",
+          "text": "Good! If unverified rumors spread wildly, an embarrassing PR fiasco could unfold."
+        },
+        {
+          "speaker": "Associate",
+          "text": "Could a sincere public briefing smooth over angry customer feedback?"
+        },
+        {
+          "speaker": "PR Director",
+          "text": "Yes, if an executive explained remedial action clearly, it would defuse the crisis promptly."
+        },
+        {
+          "speaker": "Associate",
+          "text": "What if consumer trust suffered a sudden, severe blow?"
+        },
+        {
+          "speaker": "PR Director",
+          "text": "If an organization stayed transparent and humble, it could bounce back from any temporary setback."
+        },
+        {
+          "speaker": "Associate",
+          "text": "That strategic clarity reassures me; I am ready to tackle any thorny issue that emerges."
+        }
+      ],
+      "vocabularyUsed": [
+        "damage control",
+        "spanner in the works",
+        "fiasco",
+        "smooth over",
+        "remedial action",
+        "defuse crisis",
+        "bounce back from",
+        "thorny issue"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Spectrum of Everyday Workplace Predicaments",
+      "titleArabic": "طيف المشكلات والمآزق اليومية في بيئة العمل",
+      "text": "In any dynamic workplace, challenges range from a trivial minor annoyance to an all-out logistical nightmare. If an unexpected administrative snag arose during quarterly reporting, a well-prepared department could rely on a proven coping mechanism rather than sink into panic. While an occasional temporary hiccup is easily absorbed by operational buffers, ignoring a persistent chokepoint produces a damaging bottleneck. If project managers recognized their blind spot early, they would execute targeted remedial action instead of applying a superficial band-aid solution that merely masks deeper structural flaws.",
+      "vocabularyUsed": [
+        "minor annoyance",
+        "logistical nightmare",
+        "snag",
+        "coping mechanism",
+        "hiccup",
+        "bottleneck",
+        "blind spot",
+        "remedial action",
+        "band-aid solution"
+      ]
+    },
+    {
+      "title": "Escaping the Quagmire of Flawed Solutions",
+      "titleArabic": "النجاة من مستنقع الحلول الترقيعية القاصرة",
+      "text": "When organizations confront a thorny issue or complex quandary, leaders often face intense pressure to deliver an immediate quick fix. However, if technical teams relied repeatedly on an ad hoc solution or makeshift stopgap measure, system fragility would deepen into a costly quagmire. If an experienced troubleshooter unraveled the problem at its structural roots, they could iron out hidden inconsistencies once and for all. Taking the time to nip systemic trouble in the bud saves companies from undergoing a humiliating operational fiasco.",
+      "vocabularyUsed": [
+        "thorny issue",
+        "quandary",
+        "quick fix",
+        "ad hoc solution",
+        "stopgap measure",
+        "quagmire",
+        "troubleshooter",
+        "unravel problem",
+        "iron out",
+        "nip in the bud",
+        "fiasco"
+      ]
+    },
+    {
+      "title": "Building Organizational Resilience Against Adversity",
+      "titleArabic": "بناء المناعة المؤسسية ضد المحن والأزمات",
+      "text": "Every enterprise eventually encounters an unforeseen complication that threatens to derail strategic progress. If founders were caught in an awkward tight spot or financial debacle, their primary duty would be to execute decisive damage control and salvage core relationships. Instead of bemoaning an unfair catch-22, resilient managers learn to make the best of limited capital, bide their time strategically, and clear every regulatory hurdle with unwavering focus. Those who cultivate operational endurance will consistently weather the storm and bounce back from adversity stronger than before.",
+      "vocabularyUsed": [
+        "unforeseen complication",
+        "tight spot",
+        "debacle",
+        "damage control",
+        "salvage",
+        "catch-22",
+        "make the best of",
+        "bide one time",
+        "clear a hurdle",
+        "weather the storm",
+        "bounce back from"
+      ]
+    }
+  ]
+}

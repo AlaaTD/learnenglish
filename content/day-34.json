@@ -1213,7 +1213,12 @@
       "tags": [
         "actions",
         "teamwork"
-      ]
+      ],
+      "verbForms": {
+        "v1": "collaborate",
+        "v2": "collaborated",
+        "v3": "collaborated"
+      }
     },
     {
       "headword": "comply with",
@@ -1338,7 +1343,12 @@
       "tags": [
         "actions",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "interact",
+        "v2": "interacted",
+        "v3": "interacted"
+      }
     },
     {
       "headword": "cooperate",
@@ -1370,7 +1380,12 @@
       "tags": [
         "actions",
         "teamwork"
-      ]
+      ],
+      "verbForms": {
+        "v1": "cooperate",
+        "v2": "cooperated",
+        "v3": "cooperated"
+      }
     },
     {
       "headword": "resolve conflict",

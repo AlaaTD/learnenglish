@@ -809,7 +809,12 @@
       "tags": [
         "emotion",
         "travel"
-      ]
+      ],
+      "verbForms": {
+        "v1": "marvel",
+        "v2": "marveled",
+        "v3": "marveled"
+      }
     },
     {
       "headword": "safari",
@@ -1028,7 +1033,12 @@
       "tags": [
         "travel",
         "water"
-      ]
+      ],
+      "verbForms": {
+        "v1": "sail",
+        "v2": "sailed",
+        "v3": "sailed"
+      }
     },
     {
       "headword": "navigate",
@@ -1056,7 +1066,12 @@
       "tags": [
         "travel",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "navigate",
+        "v2": "navigated",
+        "v3": "navigated"
+      }
     },
     {
       "headword": "witness firsthand",
@@ -1081,7 +1096,12 @@
       "tags": [
         "experience",
         "travel"
-      ]
+      ],
+      "verbForms": {
+        "v1": "witness firsthand",
+        "v2": "witnessed firsthand",
+        "v3": "witnessed firsthand"
+      }
     },
     {
       "headword": "conquer",
@@ -1113,7 +1133,12 @@
       "tags": [
         "adventure",
         "achievement"
-      ]
+      ],
+      "verbForms": {
+        "v1": "conquer",
+        "v2": "conquered",
+        "v3": "conquered"
+      }
     },
     {
       "headword": "climb",
@@ -1144,7 +1169,12 @@
       "tags": [
         "action",
         "sports"
-      ]
+      ],
+      "verbForms": {
+        "v1": "climb",
+        "v2": "climbed",
+        "v3": "climbed"
+      }
     },
     {
       "headword": "roam",
@@ -1172,7 +1202,12 @@
       "tags": [
         "action",
         "travel"
-      ]
+      ],
+      "verbForms": {
+        "v1": "roam",
+        "v2": "roamed",
+        "v3": "roamed"
+      }
     },
     {
       "headword": "ever",
@@ -1281,7 +1316,8 @@
       "exampleArabic": "حتى هذه اللحظة، أكملت مجموعتنا السياحية أربع مسارات مشي مليئة بالتحدي.",
       "relatedForms": [],
       "collocations": [
-        "up to now everything went well"
+        "up to now everything went well",
+        "daily up to now"
       ],
       "synonyms": [
         "so far",
@@ -1385,7 +1421,12 @@
       "tags": [
         "action",
         "travel"
-      ]
+      ],
+      "verbForms": {
+        "v1": "visited",
+        "v2": "visiteded",
+        "v3": "visiteded"
+      }
     },
     {
       "headword": "explored",
@@ -1412,7 +1453,12 @@
       "tags": [
         "action",
         "travel"
-      ]
+      ],
+      "verbForms": {
+        "v1": "explored",
+        "v2": "exploreded",
+        "v3": "exploreded"
+      }
     }
   ],
   "conversations": [

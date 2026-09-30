@@ -225,7 +225,12 @@
       "tags": [
         "problems",
         "performance"
-      ]
+      ],
+      "verbForms": {
+        "v1": "hang",
+        "v2": "hanged",
+        "v3": "hanged"
+      }
     },
     {
       "headword": "memory leak",
@@ -1023,7 +1028,12 @@
       "tags": [
         "actions",
         "debugging"
-      ]
+      ],
+      "verbForms": {
+        "v1": "debug",
+        "v2": "debuged",
+        "v3": "debuged"
+      }
     },
     {
       "headword": "debugger",
@@ -1232,7 +1242,12 @@
       "tags": [
         "actions",
         "maintenance"
-      ]
+      ],
+      "verbForms": {
+        "v1": "troubleshoot",
+        "v2": "troubleshooted",
+        "v3": "troubleshooted"
+      }
     },
     {
       "headword": "diagnose",
@@ -1259,7 +1274,12 @@
       "tags": [
         "actions",
         "diagnostics"
-      ]
+      ],
+      "verbForms": {
+        "v1": "diagnose",
+        "v2": "diagnosed",
+        "v3": "diagnosed"
+      }
     },
     {
       "headword": "resolve",
@@ -1290,7 +1310,12 @@
       "tags": [
         "actions",
         "solutions"
-      ]
+      ],
+      "verbForms": {
+        "v1": "resolve",
+        "v2": "resolved",
+        "v3": "resolved"
+      }
     },
     {
       "headword": "isolate issue",

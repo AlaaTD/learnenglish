@@ -381,7 +381,12 @@
       "tags": [
         "communication",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "recount",
+        "v2": "recounted",
+        "v3": "recounted"
+      }
     },
     {
       "headword": "narrate",
@@ -409,7 +414,12 @@
       "tags": [
         "action",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "narrate",
+        "v2": "narrated",
+        "v3": "narrated"
+      }
     },
     {
       "headword": "describe in detail",
@@ -434,7 +444,12 @@
       "tags": [
         "action",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "describe in detail",
+        "v2": "describe in detailed",
+        "v3": "describe in detailed"
+      }
     },
     {
       "headword": "reminisce",
@@ -462,7 +477,12 @@
       "tags": [
         "emotion",
         "memory"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reminisce",
+        "v2": "reminisced",
+        "v3": "reminisced"
+      }
     },
     {
       "headword": "relive",
@@ -489,7 +509,12 @@
       "tags": [
         "memory",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "relive",
+        "v2": "relived",
+        "v3": "relived"
+      }
     },
     {
       "headword": "vivid",

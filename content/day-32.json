@@ -427,7 +427,12 @@
       "tags": [
         "work",
         "creativity"
-      ]
+      ],
+      "verbForms": {
+        "v1": "brainstorm",
+        "v2": "brainstormed",
+        "v3": "brainstormed"
+      }
     },
     {
       "headword": "outbox",
@@ -626,7 +631,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "compose",
+        "v2": "composed",
+        "v3": "composed"
+      }
     },
     {
       "headword": "reply to",
@@ -650,7 +660,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reply to",
+        "v2": "reply toed",
+        "v3": "reply toed"
+      }
     },
     {
       "headword": "reply all",
@@ -670,7 +685,12 @@
       "tags": [
         "work",
         "technology"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reply all",
+        "v2": "reply alled",
+        "v3": "reply alled"
+      }
     },
     {
       "headword": "file attachment",
@@ -892,7 +912,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "correspond",
+        "v2": "corresponded",
+        "v3": "corresponded"
+      }
     },
     {
       "headword": "summarize",
@@ -920,7 +945,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "summarize",
+        "v2": "summarized",
+        "v3": "summarized"
+      }
     },
     {
       "headword": "highlight",
@@ -948,7 +978,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "highlight",
+        "v2": "highlighted",
+        "v3": "highlighted"
+      }
     },
     {
       "headword": "clarify",
@@ -977,7 +1012,12 @@
       "tags": [
         "work",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "clarify",
+        "v2": "clarified",
+        "v3": "clarified"
+      }
     },
     {
       "headword": "elaborate",
@@ -1005,7 +1045,12 @@
       "tags": [
         "work",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "elaborate",
+        "v2": "elaborated",
+        "v3": "elaborated"
+      }
     },
     {
       "headword": "formal tone",
@@ -1080,7 +1125,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "follow up",
+        "v2": "follow uped",
+        "v3": "follow uped"
+      }
     },
     {
       "headword": "reschedule",
@@ -1106,7 +1156,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reschedule",
+        "v2": "rescheduled",
+        "v3": "rescheduled"
+      }
     },
     {
       "headword": "agenda item",
@@ -1155,7 +1210,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "take notes",
+        "v2": "take notesed",
+        "v3": "take notesed"
+      }
     },
     {
       "headword": "wrap up",
@@ -1184,7 +1244,12 @@
       "tags": [
         "work",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "wrap up",
+        "v2": "wrap uped",
+        "v3": "wrap uped"
+      }
     },
     {
       "headword": "cc field",
@@ -1267,7 +1332,8 @@
         "carbon copies"
       ],
       "collocations": [
-        "carbon copy of a letter"
+        "carbon copy of a letter",
+        "daily carbon copy"
       ],
       "synonyms": [
         "duplicate",

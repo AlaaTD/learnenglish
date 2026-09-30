@@ -1121,7 +1121,12 @@
       "tags": [
         "family",
         "parenting"
-      ]
+      ],
+      "verbForms": {
+        "v1": "nurture",
+        "v2": "nurtured",
+        "v3": "nurtured"
+      }
     },
     {
       "headword": "upbringing",

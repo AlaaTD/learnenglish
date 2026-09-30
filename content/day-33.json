@@ -1143,7 +1143,12 @@
       "tags": [
         "actions",
         "management"
-      ]
+      ],
+      "verbForms": {
+        "v1": "assign",
+        "v2": "assigned",
+        "v3": "assigned"
+      }
     },
     {
       "headword": "delegate",
@@ -1175,7 +1180,12 @@
       "tags": [
         "actions",
         "leadership"
-      ]
+      ],
+      "verbForms": {
+        "v1": "delegate",
+        "v2": "delegated",
+        "v3": "delegated"
+      }
     },
     {
       "headword": "streamline",
@@ -1207,7 +1217,12 @@
       "tags": [
         "actions",
         "optimization"
-      ]
+      ],
+      "verbForms": {
+        "v1": "streamline",
+        "v2": "streamlined",
+        "v3": "streamlined"
+      }
     },
     {
       "headword": "accelerate",
@@ -1240,7 +1255,12 @@
       "tags": [
         "actions",
         "timing"
-      ]
+      ],
+      "verbForms": {
+        "v1": "accelerate",
+        "v2": "accelerated",
+        "v3": "accelerated"
+      }
     },
     {
       "headword": "defer",
@@ -1272,7 +1292,12 @@
       "tags": [
         "actions",
         "timing"
-      ]
+      ],
+      "verbForms": {
+        "v1": "defer",
+        "v2": "defered",
+        "v3": "defered"
+      }
     },
     {
       "headword": "push back",
@@ -1333,7 +1358,12 @@
       "tags": [
         "actions",
         "leadership"
-      ]
+      ],
+      "verbForms": {
+        "v1": "oversee",
+        "v2": "overseed",
+        "v3": "overseed"
+      }
     },
     {
       "headword": "execute",
@@ -1365,7 +1395,12 @@
       "tags": [
         "actions",
         "management"
-      ]
+      ],
+      "verbForms": {
+        "v1": "execute",
+        "v2": "executed",
+        "v3": "executed"
+      }
     },
     {
       "headword": "finalize",
@@ -1397,7 +1432,12 @@
       "tags": [
         "actions",
         "completion"
-      ]
+      ],
+      "verbForms": {
+        "v1": "finalize",
+        "v2": "finalized",
+        "v3": "finalized"
+      }
     },
     {
       "headword": "rollout",

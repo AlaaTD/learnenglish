@@ -509,7 +509,8 @@
         "unmuting audio"
       ],
       "collocations": [
-        "unmute audio to speak"
+        "unmute audio to speak",
+        "daily unmute audio"
       ],
       "synonyms": [
         "enable microphone"
@@ -1400,7 +1401,12 @@
       "tags": [
         "language",
         "clarity"
-      ]
+      ],
+      "verbForms": {
+        "v1": "paraphrase",
+        "v2": "paraphrased",
+        "v3": "paraphrased"
+      }
     }
   ],
   "conversations": [

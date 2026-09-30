@@ -1,0 +1,1588 @@
+{
+  "day": 64,
+  "title": "Opinions and Arguments",
+  "topic": "Agreeing, disagreeing and reasons",
+  "description": "Give opinions and contrast different views.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about agreeing, disagreeing and reasons using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Contrast: although / despite / in spite of",
+      "titleArabic": "أدوات التناقض والتعارض (Contrast: Although / Even though / Despite / In spite of)",
+      "explanation": "We use contrast linkers to connect two ideas when one makes the other surprising, unexpected, or contradictory: 1) 'Although', 'Even though', and 'Though' are followed by a full clause (Subject + Verb): 'Although he defended an unpopular viewpoint, his logic was sound'; 'Even though the thesis was complex, the jury praised it'. 2) 'Despite' and 'In spite of' are prepositions and must be followed by a noun phrase, a pronoun, or a gerund (Verb-ing): 'Despite intense public polarization, lawmakers passed the bill'; 'In spite of being exhausted, she presented a persuasive rebuttal'. 3) To follow 'despite / in spite of' with a full subject and verb clause, use the phrase 'the fact that': 'Despite the fact that he was inexperienced, he spoke with great authority.'",
+      "explanationArabic": "نستخدم أدوات التناقض لربط فكرتين عندما تكون إحداهما مفاجئة أو متناقضة مع الأخرى: 1) Although و Even though (على الرغم من / مع أن): يتبعهما جملة كاملة تحتوي على فاعل وفعل (Subject + Verb). 2) Despite و In spite of (بالرغم من): حروف جر ويجب أن يتبعهما اسم (Noun Phrase)، أو ضمير (Pronoun)، أو فعل ينتهي بـ -ing (Gerund). 3) إذا أردت استخدام جملة كاملة بعد despite أو in spite of، فيجب إضافة العبارة 'the fact that' (مثل: 'Despite the fact that the evidence was scarce...').",
+      "structures": [
+        {
+          "label": "Conjunction Clause · جملة الربط (Although / Even though)",
+          "pattern": "Although / Even though + Subject + Verb, Main Clause",
+          "explanation": "Connects two contrasting clauses where one outcome is surprising.",
+          "explanationArabic": "يربط بين جملتين متعارضتين تتضمن إحداهما نتيجة مفاجئة."
+        },
+        {
+          "label": "Prepositional Gerund / Noun · شبه جملة الاسم أو المصدر (Despite / In spite of)",
+          "pattern": "Despite / In spite of + Noun Phrase / Gerund (-ing), Main Clause",
+          "explanation": "Takes a noun or -ing verb to introduce the contrasting obstacle.",
+          "explanationArabic": "يأخذ اسماً أو مصدراً مضافاً له ing لتقديم العائق المعاكس."
+        },
+        {
+          "label": "Fact-that Construction · تركيبة حقيقة أن (Despite the fact that)",
+          "pattern": "Despite the fact that + Subject + Verb, Main Clause",
+          "explanation": "Allows a full clause to follow despite / in spite of formally.",
+          "explanationArabic": "تسمح بإتباع despite بجملة فعلية كاملة بأسلوب رسمي رصين."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Although the politician delivered an emotional speech, it was based on an unfounded assertion.",
+          "translation": "على الرغم من أن السياسي ألقى خطاباً عاطفياً، إلا أنه استند إلى ادعاء لا أساس له من الصحة.",
+          "usesVocabulary": [
+            "unfounded assertion"
+          ]
+        },
+        {
+          "sentence": "Despite clashing viewpoints on municipal spending, the committee found reasonable middle ground.",
+          "translation": "على الرغم من وجهات النظر المتصادمة حول الإنفاق البلدي، وجدت اللجنة أرضية وسطى معقولة.",
+          "usesVocabulary": [
+            "clashing viewpoints",
+            "middle ground"
+          ]
+        },
+        {
+          "sentence": "In spite of facing intense polarization, the mediator managed to bring both sides to an accord.",
+          "translation": "على الرغم من مواجهة استقطاب حاد، تمكن الوسيط من تقريب الجانبين للاتفاق.",
+          "usesVocabulary": [
+            "polarization"
+          ]
+        },
+        {
+          "sentence": "Although he spotted a logical fallacy in the premise, he offered a polite rebuttal.",
+          "translation": "على الرغم من أنه رصد مغالطة منطقية في الفرضية، إلا أنه قدم تفنيداً مهذباً.",
+          "usesVocabulary": [
+            "fallacy",
+            "premise",
+            "rebuttal"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "Despite of the heavy rain, we attended the academic debate.",
+          "right": "Despite the heavy rain, we attended the academic debate. (OR: In spite of the heavy rain)",
+          "note": "Never use 'of' with 'despite'; 'of' is only used with 'in spite of'.",
+          "noteArabic": "لا تضع 'of' إطلاقاً مع 'despite'؛ فـ of تأتي فقط مع 'in spite of'."
+        },
+        {
+          "wrong": "Although of his great intellect, he used specious reasoning.",
+          "right": "Although he possessed great intellect, he used specious reasoning. (OR: Despite his great intellect)",
+          "note": "Never put 'of' or a bare noun phrase after 'although'; use a full clause (subject + verb).",
+          "noteArabic": "لا تستخدم 'of' أو اسماً مجرداً بعد although؛ بل يلزم استخدام جملة كاملة بها فاعل وفعل."
+        }
+      ],
+      "commonUsage": [
+        "Formal debate argumentation: 'Although my opponent raised a valid counterpoint, empirical records contradict his premise.' (تُستخدم في المناظرات الفكرية والأكاديمية.)",
+        "Editorial commentary: 'In spite of widespread skepticism, the new environmental legislation offers significant progress.' (تُستخدم في المقالات التحليلية والافتتاحيات الصحفية.)",
+        "Negotiation and diplomacy: 'Despite lingering bones of contention, both delegations agreed on principle.' (تُستخدم في تقارير الدبلوماسية والتفاوض.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "viewpoint",
+      "pronunciation": "/ˈvjuːpɔɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "A particular attitude, perspective, or way of considering a matter.",
+      "example": "Although he defended a traditional viewpoint, he listened respectfully to progressive reforms.",
+      "translation": "وجهة نظر / زاوية رؤية",
+      "exampleArabic": "على الرغم من أنه دافع عن وجهة نظر تقليدية، إلا أنه استمع باحترام للإصلاحات التقدمية.",
+      "collocations": [
+        "from my viewpoint",
+        "divergent viewpoints"
+      ],
+      "synonyms": [
+        "perspective",
+        "standpoint"
+      ],
+      "antonyms": [],
+      "tags": [
+        "opinion",
+        "philosophy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stance",
+      "pronunciation": "/stɑːns/",
+      "partOfSpeech": "noun",
+      "definition": "The attitude of a person or organization toward something; a public posture.",
+      "example": "Despite intense public protests, the trade federation maintained an unyielding stance on tariffs.",
+      "translation": "موقف معلن / وقفة مبدئية",
+      "exampleArabic": "على الرغم من الاحتجاجات الشعبية العارمة، حافظ اتحاد التجارة على موقف صارم بشأن الرسوم.",
+      "collocations": [
+        "adopt a firm stance",
+        "uncompromising stance"
+      ],
+      "synonyms": [
+        "posture",
+        "position"
+      ],
+      "antonyms": [],
+      "tags": [
+        "debate",
+        "opinion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "standpoint",
+      "pronunciation": "/ˈstændpɔɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "An attitude to or way of considering something from a specific vantage point.",
+      "example": "From a purely biological standpoint, human sleep serves essential neural cleansing functions.",
+      "translation": "منظور / وجهة نظر تخصصية",
+      "exampleArabic": "من منظور بيولوجي بحت، يؤدي النوم البشري وظائف حيوية لتنقية الخلايا العصبية.",
+      "collocations": [
+        "from a legal standpoint",
+        "philosophical standpoint"
+      ],
+      "synonyms": [
+        "vantage point"
+      ],
+      "antonyms": [],
+      "tags": [
+        "analysis",
+        "opinion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "line of reasoning",
+      "pronunciation": "/laɪn əv ˈriːznɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A systematic, connected sequence of thoughts and arguments leading to a conclusion.",
+      "example": "Although her line of reasoning seemed unorthodox, her mathematical proofs stood up to review.",
+      "translation": "مسار استدلالي / تسلسل منطقي للأفكار",
+      "exampleArabic": "مع أن مسارها الاستدلالي بدا غير تقليدي، إلا أن براهينها الرياضية صمدت أمام المراجعة.",
+      "collocations": [
+        "flawed line of reasoning",
+        "follow this line of reasoning"
+      ],
+      "synonyms": [
+        "logical chain",
+        "rationale"
+      ],
+      "antonyms": [],
+      "tags": [
+        "logic",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "premise",
+      "pronunciation": "/ˈpremɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A previous statement or proposition from which another is inferred or follows as a conclusion.",
+      "example": "Despite the flawed premise of the economic study, its practical tax recommendations were sound.",
+      "translation": "مقدمة منطقية / فرضية أساسية",
+      "exampleArabic": "على الرغم من الفرضية والمقدمة المنطقية المعيبة للدراسة الاقتصادية، كانت توصياتها الضريبية سليمة.",
+      "collocations": [
+        "underlying premise",
+        "based on the premise"
+      ],
+      "synonyms": [
+        "presupposition",
+        "assumption"
+      ],
+      "antonyms": [
+        "conclusion"
+      ],
+      "tags": [
+        "logic",
+        "arguments"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "counterargument",
+      "pronunciation": "/ˈkaʊntərɑːɡjumənt/",
+      "partOfSpeech": "noun",
+      "definition": "An argument or set of reasons put forward to oppose an idea or theory.",
+      "example": "In spite of presenting a brilliant counterargument, the debater was disqualified for exceeding time.",
+      "translation": "حجة مضادة / حجة داحضة",
+      "exampleArabic": "على الرغم من تقديمه حجة مضادة بارعة، استُبعد المتناظر لتجاوزه الوقت المحدد.",
+      "collocations": [
+        "formulate a counterargument",
+        "anticipate counterarguments"
+      ],
+      "synonyms": [
+        "rebuttal argument"
+      ],
+      "antonyms": [
+        "supporting claim"
+      ],
+      "tags": [
+        "debate",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rebuttal",
+      "pronunciation": "/rɪˈbʌtl/",
+      "partOfSpeech": "noun",
+      "definition": "A refutation or contradiction offered against an opposing argument.",
+      "example": "Although the defense delivered a fiery rebuttal, the jury voted to convict the suspect.",
+      "translation": "رد مفحم / تفنيد ودحض",
+      "exampleArabic": "على الرغم من أن الدفاع قدم تفنيداً ورداً نارياً، إلا أن هيئة المحلفين أدانت المشتبه به.",
+      "collocations": [
+        "deliver a rebuttal",
+        "convincing rebuttal"
+      ],
+      "synonyms": [
+        "refutation",
+        "counter-statement"
+      ],
+      "antonyms": [
+        "concurrence"
+      ],
+      "tags": [
+        "legal",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "refutation",
+      "pronunciation": "/ˌrefjuˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The action of proving a statement or theory to be completely wrong or false.",
+      "example": "The scientist published a decisive refutation of the counterfeit energy hypothesis.",
+      "translation": "دحض وتفنيد قاطع بالدليل",
+      "exampleArabic": "نشر العالم دحضاً قاطعاً ومفحماً لفرضية الطاقة المزيفة.",
+      "collocations": [
+        "conclusive refutation",
+        "demand a refutation"
+      ],
+      "synonyms": [
+        "disproof",
+        "invalidation"
+      ],
+      "antonyms": [
+        "validation",
+        "proof"
+      ],
+      "tags": [
+        "logic",
+        "science"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fallacy",
+      "pronunciation": "/ˈfæləsi/",
+      "partOfSpeech": "noun",
+      "definition": "A mistaken belief or a failure in reasoning that renders an argument invalid.",
+      "example": "Despite spotting the obvious logical fallacy, the moderator allowed the senator to conclude.",
+      "translation": "مغالطة منطقية",
+      "exampleArabic": "على الرغم من رصد المغالطة المنطقية الواضحة، سمح مدير الجلسة للسيناتور بالاختتام.",
+      "collocations": [
+        "logical fallacy",
+        "common fallacy"
+      ],
+      "synonyms": [
+        "delusion",
+        "misconception"
+      ],
+      "antonyms": [
+        "sound logic"
+      ],
+      "tags": [
+        "logic",
+        "philosophy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reluctant admission",
+      "pronunciation": "/rɪˈlʌktənt ədˈmɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An unwilling acknowledgment of a truth, fault, or defeat.",
+      "example": "In spite of his reluctant admission that tariffs raised consumer prices, he voted for the bill.",
+      "translation": "اعتراف قسري على مضض",
+      "exampleArabic": "على الرغم من اعترافه على مضض بأن الرسوم رفعت أسعار المستهلك، إلا أنه صوت للمشروع.",
+      "collocations": [
+        "make a reluctant admission",
+        "wring a reluctant admission"
+      ],
+      "synonyms": [
+        "grudging concession"
+      ],
+      "antonyms": [
+        "proud claim"
+      ],
+      "tags": [
+        "debate",
+        "admission"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "argumentative thesis",
+      "pronunciation": "/ˌɑːɡjuˈmentətɪv ˈθiːsɪs/",
+      "partOfSpeech": "noun",
+      "definition": "The central claim or proposition that an essay, debate, or dissertation defends.",
+      "example": "Although his argumentative thesis challenged mainstream dogma, historians applauded his research.",
+      "translation": "أطروحة جدلية / الفكرة المحورية للحجة",
+      "exampleArabic": "مع أن أطروحته الجدلية تحدت المفاهيم السائدة، إلا أن المؤرخين أشادوا بأبحاثه.",
+      "collocations": [
+        "defend an argumentative thesis",
+        "clarify the argumentative thesis"
+      ],
+      "synonyms": [
+        "central proposition"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "writing"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "assertion",
+      "pronunciation": "/əˈsɜːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A confident and forceful statement of fact or belief.",
+      "example": "Despite her bold assertion that the vaccine was safe, clinical trials were paused for tests.",
+      "translation": "ادعاء جازم / توكيد قاطع",
+      "exampleArabic": "على الرغم من توكيدها القاطع بأن اللقاح كان آمناً، تم إيقاف التجارب السريرية للفحص.",
+      "collocations": [
+        "bold assertion",
+        "bare assertion"
+      ],
+      "synonyms": [
+        "affirmation",
+        "declaration"
+      ],
+      "antonyms": [
+        "denial"
+      ],
+      "tags": [
+        "rhetoric",
+        "opinion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bone of contention",
+      "pronunciation": "/ˌbəʊn əv kənˈtenʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A subject or issue over which there is continuing disagreement or dispute.",
+      "example": "In spite of signing the peace protocol, boundary demarcation remained a bitter bone of contention.",
+      "translation": "محل خلاف ونزاع دائم / تفاحة النزاع",
+      "exampleArabic": "على الرغم من توقيع بروتوكول السلام، ظل ترسيم الحدود محل خلاف ونزاع مستمر.",
+      "collocations": [
+        "remain a bone of contention",
+        "major bone of contention"
+      ],
+      "synonyms": [
+        "apple of discord",
+        "point of dispute"
+      ],
+      "antonyms": [
+        "point of agreement"
+      ],
+      "tags": [
+        "conflict",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "middle ground",
+      "pronunciation": "/ˌmɪdl ˈɡraʊnd/",
+      "partOfSpeech": "noun",
+      "definition": "An intermediate position or area of compromise between contrasting extremes.",
+      "example": "Although both political wings seemed polarized, skilled envoys sought reasonable middle ground.",
+      "translation": "أرضية وسطى / منطقة حل وسط",
+      "exampleArabic": "على الرغم من استقطاب الجناحين السياسيين، سعى مبعوثون مهرة إلى أرضية وسطى معقولة.",
+      "collocations": [
+        "find middle ground",
+        "occupy the middle ground"
+      ],
+      "synonyms": [
+        "compromise",
+        "median"
+      ],
+      "antonyms": [
+        "extreme fringe"
+      ],
+      "tags": [
+        "compromise",
+        "politics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "polarizing issue",
+      "pronunciation": "/ˈpəʊləraɪzɪŋ ˈɪʃuː/",
+      "partOfSpeech": "noun",
+      "definition": "A topic that divides society or groups into sharply contrasting, hostile factions.",
+      "example": "Despite being an intensely polarizing issue, public transit funding passed with bipartisan support.",
+      "translation": "قضية استقطابية تقسم الآراء بشدة",
+      "exampleArabic": "على الرغم من كونه قضية استقطابية تقسم الآراء بشدة، فقد تم تمرير تمويل النقل العام.",
+      "collocations": [
+        "debate a polarizing issue",
+        "avoid polarizing issues"
+      ],
+      "synonyms": [
+        "divisive topic"
+      ],
+      "antonyms": [
+        "unifying cause"
+      ],
+      "tags": [
+        "politics",
+        "society"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "polarization",
+      "pronunciation": "/ˌpəʊləraɪˈzeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Division into two sharply contrasting groups or sets of opinions or beliefs.",
+      "example": "In spite of deepening political polarization, local charitable communities cooperated seamlessly.",
+      "translation": "استقطاب حاد / انقسام فكري",
+      "exampleArabic": "على الرغم من تعمق الاستقطاب السياسي، تعاونت الجمعيات الخيرية المحلية بسلاسة.",
+      "collocations": [
+        "growing polarization",
+        "combat societal polarization"
+      ],
+      "synonyms": [
+        "division",
+        "bifurcation"
+      ],
+      "antonyms": [
+        "social cohesion"
+      ],
+      "tags": [
+        "politics",
+        "sociology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "play devils advocate",
+      "pronunciation": "/pleɪ ˈdevlz ˈædvəkət/",
+      "partOfSpeech": "verb",
+      "definition": "To express an opposing opinion solely to test the strength of an argument.",
+      "example": "Although she favored the proposal, she played devil's advocate to stress-test financial projections.",
+      "translation": "يتقمص دور محامي الشيطان لاختبار متانة الحجة",
+      "exampleArabic": "مع أنها أيدت المقترح، إلا أنها تقمصت دور محامي الشيطان لاختبار متانة التوقعات المالية.",
+      "verbForms": {
+        "v1": "play devils advocate",
+        "v2": "played devils advocate",
+        "v3": "played devils advocate"
+      },
+      "collocations": [
+        "willing to play devil's advocate",
+        "merely playing devil's advocate"
+      ],
+      "synonyms": [
+        "challenge for debate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "debate",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "food for thought",
+      "pronunciation": "/ˌfuːd fə ˈθɔːt/",
+      "partOfSpeech": "noun",
+      "definition": "Something that warrants serious, deep, and prolonged contemplation.",
+      "example": "Despite the harshness of the critique, the guest speaker provided rich food for thought.",
+      "translation": "مادة غنية للتأمل والتفكير العميق",
+      "exampleArabic": "على الرغم من قسوة النقد، قدم المتحدث الضيف مادة غنية للتأمل والتفكير العميق.",
+      "collocations": [
+        "provide food for thought",
+        "give food for thought"
+      ],
+      "synonyms": [
+        "intellectual stimulus"
+      ],
+      "antonyms": [
+        "shallow clichÃ©"
+      ],
+      "tags": [
+        "thinking",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "point of contention",
+      "pronunciation": "/ˌpɔɪnt əv kənˈtenʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A specific assertion, matter, or clause over which parties argue heatedly.",
+      "example": "In spite of mutual respect, the intellectual property royalty remained a point of contention.",
+      "translation": "نقطة خلاف وتنازع",
+      "exampleArabic": "على الرغم من الاحترام المتبادل، ظلت عائدات الملكية الفكرية نقطة خلاف وتنازع.",
+      "collocations": [
+        "settle a point of contention",
+        "crucial point of contention"
+      ],
+      "synonyms": [
+        "disputed issue"
+      ],
+      "antonyms": [
+        "settled term"
+      ],
+      "tags": [
+        "negotiation",
+        "dispute"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "valid counterpoint",
+      "pronunciation": "/ˈvælɪd ˈkaʊntəpɔɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "A legitimate, reasonable, and relevant argument raised against a statement.",
+      "example": "Although the professor dismissed student complaints, the teaching assistant raised a valid counterpoint.",
+      "translation": "رأي مقابل وجيه / حجة معاكسة صائبة",
+      "exampleArabic": "مع أن الأستاذ استخف بشكاوى الطلاب، إلا أن المعيد المعاون طرح رأياً مقابلاً وجيهاً.",
+      "collocations": [
+        "raise a valid counterpoint",
+        "offer a valid counterpoint"
+      ],
+      "synonyms": [
+        "legitimate objection"
+      ],
+      "antonyms": [
+        "irrelevant diversion"
+      ],
+      "tags": [
+        "debate",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unfounded assertion",
+      "pronunciation": "/ʌnˈfaʊndɪd əˈsɜːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A confident claim made without evidence, foundation, or factual corroboration.",
+      "example": "Despite the speaker's eloquent delivery, journalists debunked his speech as an unfounded assertion.",
+      "translation": "ادعاء لا أساس له من الصحة / زعم باطل",
+      "exampleArabic": "على الرغم من إلقاء المتحدث البليغ، فند الصحفيون خطابه كادعاء لا أساس له من الصحة.",
+      "collocations": [
+        "dismiss as an unfounded assertion",
+        "repeat unfounded assertions"
+      ],
+      "synonyms": [
+        "baseless claim"
+      ],
+      "antonyms": [
+        "verified fact"
+      ],
+      "tags": [
+        "fallacies",
+        "journalism"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "persuasive argument",
+      "pronunciation": "/pəˈsweɪsɪv ˈɑːɡjumənt/",
+      "partOfSpeech": "noun",
+      "definition": "A set of reasons that successfully convinces others to believe or do something.",
+      "example": "In spite of corporate resistance, environmentalists presented a persuasive argument for solar subsidies.",
+      "translation": "حجة مقنعة ومؤثرة",
+      "exampleArabic": "على الرغم من مقاومة الشركات، قدم المدافعون عن البيئة حجة مقنعة لدعم الطاقة الشمسية.",
+      "collocations": [
+        "make a persuasive argument",
+        "highly persuasive argument"
+      ],
+      "synonyms": [
+        "compelling case"
+      ],
+      "antonyms": [
+        "unconvincing plea"
+      ],
+      "tags": [
+        "persuasion",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "specious reasoning",
+      "pronunciation": "/ˈspiːʃəs ˈriːznɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Arguments that appear superficially plausible, plausible, or correct, but are actually fallacious.",
+      "example": "Although the defense attorney used specious reasoning, the seasoned judge saw through the trick.",
+      "translation": "استدلال مخادع ظاهره الصواب وباطنه الخطأ",
+      "exampleArabic": "مع أن محامي الدفاع استخدم استدلالاً مخادعاً، إلا أن القاضي المتمرس أدرك الخدعة.",
+      "collocations": [
+        "expose specious reasoning",
+        "rely on specious reasoning"
+      ],
+      "synonyms": [
+        "sophistry",
+        "deceptive logic"
+      ],
+      "antonyms": [
+        "cogent analysis"
+      ],
+      "tags": [
+        "fallacies",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "straw man argument",
+      "pronunciation": "/ˌstrɔː ˈmæn ˈɑːɡjumənt/",
+      "partOfSpeech": "noun",
+      "definition": "An intentionally misrepresented proposition that is set up because it is easier to defeat.",
+      "example": "Despite being warned against unfair debate tricks, the politician attacked a straw man argument.",
+      "translation": "حجة رجل القش / تحريف كلام الخصم لإسقاطه",
+      "exampleArabic": "على الرغم من تحذيره من حيل المناظرة غير النزيهة، هاجم السياسي حجة رجل القش المحرفة.",
+      "collocations": [
+        "resort to a straw man argument",
+        "classic straw man argument"
+      ],
+      "synonyms": [
+        "caricature argument"
+      ],
+      "antonyms": [
+        "steel man argument"
+      ],
+      "tags": [
+        "fallacies",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "circular logic",
+      "pronunciation": "/ˌsɜːkjələ ˈlɒdʒɪk/",
+      "partOfSpeech": "noun",
+      "definition": "A logical fallacy in which the reasoner begins with what they are trying to end with.",
+      "example": "Although the manuscript was printed by an academic press, reviewers exposed its circular logic.",
+      "translation": "منطق دائري / مصادرة على المطلوب",
+      "exampleArabic": "مع أن المخطوطة طُبعت لدى دار نشر أكاديمية، كشف المراجعون منطقها الدائري السقيم.",
+      "collocations": [
+        "trap of circular logic",
+        "guilty of circular logic"
+      ],
+      "synonyms": [
+        "begging the question"
+      ],
+      "antonyms": [
+        "linear proof"
+      ],
+      "tags": [
+        "fallacies",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hasty generalization",
+      "pronunciation": "/ˌheɪsti ˌdʒenrəlaɪˈzeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Drawing a broad, sweeping conclusion based on insufficient or unrepresentative evidence.",
+      "example": "In spite of interviewing only three tourists, the reporter made a hasty generalization about visitors.",
+      "translation": "تعميم متسرع ومبتسر",
+      "exampleArabic": "على الرغم من مقابلة ثلاثة سياح فقط، أطلق المراسل تعميماً متسرعاً عن جميع الزوار.",
+      "collocations": [
+        "commit a hasty generalization",
+        "avoid hasty generalizations"
+      ],
+      "synonyms": [
+        "premature deduction"
+      ],
+      "antonyms": [
+        "representative sampling"
+      ],
+      "tags": [
+        "fallacies",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "slippery slope",
+      "pronunciation": "/ˌslɪpəri ˈsləʊp/",
+      "partOfSpeech": "noun",
+      "definition": "An argument claiming that a relatively small initial step will inevitably lead to disastrous extremes.",
+      "example": "Although opponents invoked the slippery slope fallacy, municipal bike lanes caused zero chaos.",
+      "translation": "مغالطة المنحدر الزلق",
+      "exampleArabic": "على الرغم من أن المعارضين استدعوا مغالطة المنحدر الزلق، لم تسبب مسارات الدراجات أي فوضى.",
+      "collocations": [
+        "warn of a slippery slope",
+        "classic slippery slope"
+      ],
+      "synonyms": [
+        "domino fallacy"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fallacies",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "red herring",
+      "pronunciation": "/ˌred ˈherɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A clue or topic that is or is intended to be misleading or distracting from the central issue.",
+      "example": "Despite the prosecutor introducing a red herring about offshore accounts, the jury focused on the theft.",
+      "translation": "مغالطة الرنجة الحمراء / حيلة تشتيت الانتباه",
+      "exampleArabic": "على الرغم من أن المدعي العام ألقى بحيلة الرنجة الحمراء لتشتيت الانتباه، ركزت الهيئة على السرقة.",
+      "collocations": [
+        "merely a red herring",
+        "introduce a red herring"
+      ],
+      "synonyms": [
+        "diversion",
+        "smokescreen"
+      ],
+      "antonyms": [
+        "core matter"
+      ],
+      "tags": [
+        "fallacies",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "ad hominem",
+      "pronunciation": "/ˌæd ˈhɒmɪnem/",
+      "partOfSpeech": "adjective",
+      "definition": "Directed against a person rather than the position or argument they are maintaining.",
+      "example": "In spite of repeated warnings by the chair, the debater launched an ad hominem attack on his rival.",
+      "translation": "شخصنة الحوار / هجوم موجه ضد شخص القائل لا حجته",
+      "exampleArabic": "على الرغم من التحذيرات المتكررة للرئيس، شن المتناظر هجوماً شخصياً على منافسه.",
+      "collocations": [
+        "ad hominem attack",
+        "resort to ad hominem"
+      ],
+      "synonyms": [
+        "personal smear"
+      ],
+      "antonyms": [
+        "objective critique"
+      ],
+      "tags": [
+        "fallacies",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "take a stand",
+      "pronunciation": "/teɪk ə stænd/",
+      "partOfSpeech": "verb",
+      "definition": "To adopt a firm, unambiguous position on an issue and defend it publicly.",
+      "example": "Although it threatened his popularity, the councilor took a stand against corporate tax exemptions.",
+      "translation": "يتخذ موقفاً حازماً ومعلناً",
+      "exampleArabic": "على الرغم من أنه هدد شعبيته، اتخذ المستشار موقفاً حازماً ضد الإعفاءات الضريبية للشركات.",
+      "verbForms": {
+        "v1": "take a stand",
+        "v2": "took a stand",
+        "v3": "taken a stand"
+      },
+      "collocations": [
+        "take a firm stand",
+        "time to take a stand"
+      ],
+      "synonyms": [
+        "stand up for"
+      ],
+      "antonyms": [
+        "remain neutral"
+      ],
+      "tags": [
+        "courage",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "weigh both sides",
+      "pronunciation": "/weɪ bəʊθ saɪdz/",
+      "partOfSpeech": "verb",
+      "definition": "To carefully and impartially consider contrasting arguments before forming a conclusion.",
+      "example": "Despite public media frenzy, the appellate judges weighed both sides with exemplary neutrality.",
+      "translation": "يزن كلا الجانبين بحيادية وإنصاف",
+      "exampleArabic": "على الرغم من الهياج الإعلامي العام، وزن قضاة الاستئناف كلا الجانبين بحيادية نموذجية.",
+      "verbForms": {
+        "v1": "weigh both sides",
+        "v2": "weighed both sides",
+        "v3": "weighed both sides"
+      },
+      "collocations": [
+        "fail to weigh both sides",
+        "obligation to weigh both sides"
+      ],
+      "synonyms": [
+        "consider both perspectives"
+      ],
+      "antonyms": [
+        "show bias"
+      ],
+      "tags": [
+        "fairness",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "see both sides",
+      "pronunciation": "/siː bəʊθ saɪdz/",
+      "partOfSpeech": "verb",
+      "definition": "To comprehend and empathize with the opposing arguments in a dispute.",
+      "example": "Although he held strong personal views, the seasoned mediator could always see both sides.",
+      "translation": "يتفهم وجهتي النظر",
+      "exampleArabic": "مع أنه حمل آراء شخصية قوية، كان الوسيط المتمرس قادراً دوماً على تفهم وجهتي النظر.",
+      "verbForms": {
+        "v1": "see both sides",
+        "v2": "saw both sides",
+        "v3": "seen both sides"
+      },
+      "collocations": [
+        "ability to see both sides",
+        "refuse to see both sides"
+      ],
+      "synonyms": [
+        "appreciate opposing perspectives"
+      ],
+      "antonyms": [
+        "exhibit tunnel vision"
+      ],
+      "tags": [
+        "empathy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "beg to differ",
+      "pronunciation": "/beɡ tə ˈdɪfə/",
+      "partOfSpeech": "verb",
+      "definition": "A polite, diplomatic formula used to express respectful disagreement.",
+      "example": "In spite of the director's status, the senior engineer begged to differ regarding structural safety.",
+      "translation": "يسمح لنفسه بالاعتراض بكل احترام",
+      "exampleArabic": "على الرغم من مكانة المدير، سمح كبير المهندسين لنفسه بالاعتراض بكل احترام على السلامة الإنشائية.",
+      "verbForms": {
+        "v1": "beg to differ",
+        "v2": "begged to differ",
+        "v3": "begged to differ"
+      },
+      "collocations": [
+        "must beg to differ",
+        "respectfully beg to differ"
+      ],
+      "synonyms": [
+        "politely disagree"
+      ],
+      "antonyms": [
+        "wholeheartedly concur"
+      ],
+      "tags": [
+        "politeness",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "meet halfway",
+      "pronunciation": "/miːt ˌhɑːfˈweɪ/",
+      "partOfSpeech": "verb",
+      "definition": "To compromise with someone by making reciprocal concessions.",
+      "example": "Although negotiations stalled initially, both union reps and executives agreed to meet halfway.",
+      "translation": "يلتقي في منتصف الطريق / يقدم تنازلات متبادلة",
+      "exampleArabic": "على الرغم من تعثر المفاوضات في البداية، وافق كل من ممثلي النقابة والمديرين على اللقاء في منتصف الطريق.",
+      "verbForms": {
+        "v1": "meet halfway",
+        "v2": "met halfway",
+        "v3": "met halfway"
+      },
+      "collocations": [
+        "willing to meet halfway",
+        "refusal to meet halfway"
+      ],
+      "synonyms": [
+        "reach compromise"
+      ],
+      "antonyms": [
+        "demand total surrender"
+      ],
+      "tags": [
+        "negotiation",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "agree on principle",
+      "pronunciation": "/əˈɡriː ɒn ˈprɪnsəpl/",
+      "partOfSpeech": "verb",
+      "definition": "To reach broad philosophical consensus while leaving specific details for later.",
+      "example": "In spite of tactical disagreements on funding, all nations agreed on principle to limit deforestation.",
+      "translation": "يتفق من حيث المبدأ",
+      "exampleArabic": "على الرغم من الخلافات التكتيكية على التمويل، اتفقت جميع الدول من حيث المبدأ على وقف إزالة الغابات.",
+      "verbForms": {
+        "v1": "agree on principle",
+        "v2": "agreed on principle",
+        "v3": "agreed on principle"
+      },
+      "collocations": [
+        "readily agree on principle",
+        "agree on principle only"
+      ],
+      "synonyms": [
+        "concur in theory"
+      ],
+      "antonyms": [
+        "reject fundamentally"
+      ],
+      "tags": [
+        "consensus",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "strongly dispute",
+      "pronunciation": "/ˈstrɒŋli dɪˈspjuːt/",
+      "partOfSpeech": "verb",
+      "definition": "To challenge, contest, or argue against an assertion or finding with intense vigor.",
+      "example": "Although the agency released its report, independent analysts strongly disputed the job figures.",
+      "translation": "يحتج بشدة / يطعن بقوة في صحة الشيء",
+      "exampleArabic": "على الرغم من أن الوكالة أصدرت تقريرها، إلا أن المحللين المستقلين طعنوا بقوة في أرقام الوظائف.",
+      "verbForms": {
+        "v1": "strongly dispute",
+        "v2": "strongly disputed",
+        "v3": "strongly disputed"
+      },
+      "collocations": [
+        "strongly dispute claim",
+        "right to strongly dispute"
+      ],
+      "synonyms": [
+        "fiercely contest"
+      ],
+      "antonyms": [
+        "accept uncritically"
+      ],
+      "tags": [
+        "challenge",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "call into question",
+      "pronunciation": "/kɔːl ˈɪntə ˈkwestʃən/",
+      "partOfSpeech": "verb",
+      "definition": "To cause people to doubt, challenge, or critically examine something.",
+      "example": "Despite the executive's clean record, forensic accounting called into question his expense claims.",
+      "translation": "يضع موضع تساؤل وشك / يثير الشبهات حول",
+      "exampleArabic": "على الرغم من السجل النظيف للمسؤول، وضع التدقيق المحاسبي الجنائي مطالبات نفقاته موضع شك.",
+      "verbForms": {
+        "v1": "call into question",
+        "v2": "called into question",
+        "v3": "called into question"
+      },
+      "collocations": [
+        "call integrity into question",
+        "call findings into question"
+      ],
+      "synonyms": [
+        "cast doubt upon"
+      ],
+      "antonyms": [
+        "verify definitively"
+      ],
+      "tags": [
+        "skepticism",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cast doubt on",
+      "pronunciation": "/kɑːst daʊt ɒn/",
+      "partOfSpeech": "verb",
+      "definition": "To cause something to be regarded as uncertain, suspect, or untrustworthy.",
+      "example": "In spite of initial celebrations, fresh seismic readings cast doubt on the dam's stability.",
+      "translation": "يلقي بظلال من الشك على",
+      "exampleArabic": "على الرغم من الاحتفالات الأولية، ألقت القراءات الزلزالية الجديدة بظلال من الشك على استقرار السد.",
+      "verbForms": {
+        "v1": "cast doubt on",
+        "v2": "cast doubt on",
+        "v3": "cast doubt on"
+      },
+      "collocations": [
+        "cast serious doubt on",
+        "tend to cast doubt on"
+      ],
+      "synonyms": [
+        "question validity"
+      ],
+      "antonyms": [
+        "reassure"
+      ],
+      "tags": [
+        "doubt",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bring to light",
+      "pronunciation": "/brɪŋ tə laɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To make something hidden, forgotten, or secret widely known and visible.",
+      "example": "Although archives were classified for fifty years, declassified files brought to light covert treaties.",
+      "translation": "يسلط الضوء على / يُظهر للعلن ما كان خفياً",
+      "exampleArabic": "على الرغم من تصنيف الأرشيف كسري لخمسين عاماً، أظهرت الملفات المفرج عنها معاهدات سرية للعلن.",
+      "verbForms": {
+        "v1": "bring to light",
+        "v2": "brought to light",
+        "v3": "brought to light"
+      },
+      "collocations": [
+        "bring new facts to light",
+        "bring injustice to light"
+      ],
+      "synonyms": [
+        "reveal",
+        "uncover"
+      ],
+      "antonyms": [
+        "conceal"
+      ],
+      "tags": [
+        "discovery",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "substantiate claim",
+      "pronunciation": "/səbˈstænʃieɪt kleɪm/",
+      "partOfSpeech": "verb",
+      "definition": "To provide empirical evidence, documents, or data that support the truth of a claim.",
+      "example": "Despite testifying under oath, the witness could not substantiate his claim with bank slips.",
+      "translation": "يُثبت الادعاء بالأدلة / يدعم الزعم بالبراهين",
+      "exampleArabic": "على الرغم من الإدلاء بشهادته تحت القسم، لم يستطع الشاهد إثبات ادعائه بإيصالات مصرفية.",
+      "verbForms": {
+        "v1": "substantiate claim",
+        "v2": "substantiated claim",
+        "v3": "substantiated claim"
+      },
+      "collocations": [
+        "fail to substantiate claim",
+        "adequately substantiate claim"
+      ],
+      "synonyms": [
+        "corroborate",
+        "verify"
+      ],
+      "antonyms": [
+        "disprove"
+      ],
+      "tags": [
+        "evidence",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "refute claim",
+      "pronunciation": "/rɪˈfjuːt kleɪm/",
+      "partOfSpeech": "verb",
+      "definition": "To prove definitively that an accusation, charge, or theory is false and groundless.",
+      "example": "In spite of relentless online rumors, the scientist refuted the claim with public lab replications.",
+      "translation": "يدحض الادعاء ويفنده بالدليل القاطع",
+      "exampleArabic": "على الرغم من الشائعات المتواصلة على الإنترنت، دحض العالم الادعاء بإعادة التجارب علناً في المختبر.",
+      "verbForms": {
+        "v1": "refute claim",
+        "v2": "refuted claim",
+        "v3": "refuted claim"
+      },
+      "collocations": [
+        "conclusively refute claim",
+        "attempt to refute claim"
+      ],
+      "synonyms": [
+        "demolish assertion"
+      ],
+      "antonyms": [
+        "confirm"
+      ],
+      "tags": [
+        "debate",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "concede point",
+      "pronunciation": "/kənˈsiːd pɔɪnt/",
+      "partOfSpeech": "verb",
+      "definition": "To admit or acknowledge that the opponent has made a valid or true point.",
+      "example": "Although he won the overall debate, the senator conceded a fair point about fiscal deficits.",
+      "translation": "يقر بصحة النقطة للخصم / يعترف بوجاهة الحجة",
+      "exampleArabic": "على الرغم من فوزه بالمناظرة عموماً، أقر السيناتور بنقطة وجيهة للخصم حول العجز المالي.",
+      "verbForms": {
+        "v1": "concede point",
+        "v2": "conceded point",
+        "v3": "conceded point"
+      },
+      "collocations": [
+        "graciously concede point",
+        "forced to concede point"
+      ],
+      "synonyms": [
+        "grant validity"
+      ],
+      "antonyms": [
+        "contest blindly"
+      ],
+      "tags": [
+        "sportsmanship",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "acknowledge merit",
+      "pronunciation": "/əkˈnɒlɪdʒ ˈmerɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To recognize, respect, and validate the quality, value, or virtue of another's position.",
+      "example": "In spite of deep ideological differences, the rival scholars acknowledged the merit of each other's works.",
+      "translation": "يعترف بجدارة واستحقاق الآخر",
+      "exampleArabic": "على الرغم من الاختلافات الأيديولوجية العميقة، اعترف العالمان المتنافسان بجدارة أعمال بعضهما.",
+      "verbForms": {
+        "v1": "acknowledge merit",
+        "v2": "acknowledged merit",
+        "v3": "acknowledged merit"
+      },
+      "collocations": [
+        "readily acknowledge merit",
+        "fail to acknowledge merit"
+      ],
+      "synonyms": [
+        "give credit where due"
+      ],
+      "antonyms": [
+        "belittle"
+      ],
+      "tags": [
+        "respect",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "differing perspective",
+      "pronunciation": "/ˈdɪfərɪŋ pəˈspektɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A contrasting or alternative viewpoint held by another individual or group.",
+      "example": "Although they arrived with differing perspectives, the interfaith panel discovered universal shared ethics.",
+      "translation": "منظور متباين / وجهة نظر مغايرة",
+      "exampleArabic": "على الرغم من وصولهم بوجهات نظر متباينة، اكتشفت اللجنة المشتركة أخلاقيات إنسانية عالمية جامعة.",
+      "collocations": [
+        "bring differing perspectives",
+        "harmonize differing perspectives"
+      ],
+      "synonyms": [
+        "divergent view"
+      ],
+      "antonyms": [
+        "uniform viewpoint"
+      ],
+      "tags": [
+        "pluralism",
+        "diversity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "nuanced opinion",
+      "pronunciation": "/ˈnjuːɑːnst əˈpɪnjən/",
+      "partOfSpeech": "noun",
+      "definition": "A subtle, sophisticated, and balanced judgment that avoids simplistic binaries.",
+      "example": "Despite political demands for soundbites, the editorial offered a beautifully nuanced opinion.",
+      "translation": "رأي دقيق ومتوازن / وجهة نظر تتسم بالعمق والإنصاف",
+      "exampleArabic": "على الرغم من المطالب السياسية بالشعارات الرنانة السطحية، قدم المقال الافتتاحي رأياً دقيقاً ومتوازناً.",
+      "collocations": [
+        "express a nuanced opinion",
+        "need for nuanced opinions"
+      ],
+      "synonyms": [
+        "sophisticated judgment"
+      ],
+      "antonyms": [
+        "black-and-white view"
+      ],
+      "tags": [
+        "subtlety",
+        "opinion"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "one-sided view",
+      "pronunciation": "/ˌwʌn ˈsaɪdɪd vjuː/",
+      "partOfSpeech": "noun",
+      "definition": "An unfair, biased perspective that considers only one dimension of a controversy.",
+      "example": "In spite of promoting itself as objective, the documentary presented a glaringly one-sided view.",
+      "translation": "نظرة أحادية الجانب / وجهة نظر متحيزة",
+      "exampleArabic": "على الرغم من ترويج نفسه كفيلم موضوعي، قدم الوثائقي نظرة أحادية الجانب متحيزة بشكل صارخ.",
+      "collocations": [
+        "reject a one-sided view",
+        "guilty of a one-sided view"
+      ],
+      "synonyms": [
+        "partisan bias"
+      ],
+      "antonyms": [
+        "balanced appraisal"
+      ],
+      "tags": [
+        "bias",
+        "critique"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unbiased standpoint",
+      "pronunciation": "/ʌnˈbaɪəst ˈstændpɔɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "An impartial, neutral attitude free from prejudice or personal favoritism.",
+      "example": "Although funded by industry grants, the clinical observatory maintained an unbiased standpoint.",
+      "translation": "موقف محايد غير متحيز / منظور منصف",
+      "exampleArabic": "على الرغم من تمويله بمنح صناعية، حافظ المرصد السريري على موقف محايد غير متحيز.",
+      "collocations": [
+        "maintain an unbiased standpoint",
+        "judge from an unbiased standpoint"
+      ],
+      "synonyms": [
+        "impartial perspective"
+      ],
+      "antonyms": [
+        "prejudiced posture"
+      ],
+      "tags": [
+        "objectivity",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "clashing viewpoints",
+      "pronunciation": "/ˈklæʃɪŋ ˈvjuːpɔɪnts/",
+      "partOfSpeech": "noun",
+      "definition": "Opposing beliefs or convictions that conflict sharply and irreconcilably with one another.",
+      "example": "Despite clashing viewpoints on urban development, council members drafted an accord.",
+      "translation": "وجهات نظر متصادمة ومتناحرة",
+      "exampleArabic": "على الرغم من وجهات النظر المتصادمة بشأن التنمية الحضرية، صاغ أعضاء المجلس اتفاقاً.",
+      "collocations": [
+        "reconcile clashing viewpoints",
+        "spark clashing viewpoints"
+      ],
+      "synonyms": [
+        "conflicting stances"
+      ],
+      "antonyms": [
+        "harmonious views"
+      ],
+      "tags": [
+        "conflict",
+        "debate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rebut point",
+      "pronunciation": "/rɪˈbʌt pɔɪnt/",
+      "partOfSpeech": "verb",
+      "definition": "To contradict, challenge, and prove erroneous a specific claim made in debate.",
+      "example": "In spite of intense pressure, the young debater systematically rebutted every point.",
+      "translation": "يدحض النقطة / يرد على الحجة ويفندها",
+      "exampleArabic": "على الرغم من الضغط الهائل، دحض المتناظر الشاب كل نقطة وأبطلها منهجياً.",
+      "verbForms": {
+        "v1": "rebut point",
+        "v2": "rebutted point",
+        "v3": "rebutted point"
+      },
+      "collocations": [
+        "effectively rebut point",
+        "seek to rebut points"
+      ],
+      "synonyms": [
+        "counter point"
+      ],
+      "antonyms": [
+        "concur with point"
+      ],
+      "tags": [
+        "debate",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "common ground found",
+      "pronunciation": "/ˈkɒmən ɡraʊnd faʊnd/",
+      "partOfSpeech": "phrase",
+      "definition": "The realization or achievement of mutual agreement and shared interests amid disagreement.",
+      "example": "Although ideological differences persisted, common ground was found regarding ecological conservation.",
+      "translation": "أرضية مشتركة تم التوصل إليها",
+      "exampleArabic": "على الرغم من استمرار الخلافات الأيديولوجية، تم التوصل إلى أرضية مشتركة فيما يتعلق بالحفاظ البيئي.",
+      "collocations": [
+        "celebrate common ground found",
+        "hope common ground found"
+      ],
+      "synonyms": [
+        "shared basis established"
+      ],
+      "antonyms": [
+        "irreconcilable division"
+      ],
+      "tags": [
+        "consensus",
+        "idioms"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Debating Urban Transportation Policy",
+      "titleArabic": "مناظرة حول سياسة النقل الحضري",
+      "setting": "An urban planner debates a transportation lobbyist at an open municipal forum.",
+      "lines": [
+        {
+          "speaker": "Planner",
+          "text": "Although our city budget is strained, expanding electric light rail presents a persuasive argument for sustainability."
+        },
+        {
+          "speaker": "Lobbyist",
+          "text": "I beg to differ! Despite your noble intentions, adopting an unyielding stance on light rail is exorbitant."
+        },
+        {
+          "speaker": "Planner",
+          "text": "Your claim that rail harms local retail is an unfounded assertion; international data refutes that claim entirely."
+        },
+        {
+          "speaker": "Lobbyist",
+          "text": "In spite of those foreign studies, suburban shopkeepers fear foot-traffic disruption during construction."
+        },
+        {
+          "speaker": "Planner",
+          "text": "That is a valid counterpoint, but we can phase development to mitigate commercial losses."
+        },
+        {
+          "speaker": "Lobbyist",
+          "text": "If you concede that point, let us seek reasonable middle ground on downtown bus lanes instead."
+        },
+        {
+          "speaker": "Planner",
+          "text": "Although we hold differing perspectives on rail, I appreciate your willingness to meet halfway."
+        },
+        {
+          "speaker": "Lobbyist",
+          "text": "Excellent! When debaters acknowledge merit in opposing views, common ground is easily found."
+        }
+      ],
+      "vocabularyUsed": [
+        "viewpoint",
+        "persuasive argument",
+        "beg to differ",
+        "stance",
+        "unfounded assertion",
+        "refute claim",
+        "valid counterpoint",
+        "concede point",
+        "middle ground",
+        "differing perspective",
+        "meet halfway",
+        "acknowledge merit",
+        "common ground found"
+      ]
+    },
+    {
+      "title": "Uncovering Logical Fallacies in Seminar",
+      "titleArabic": "كشف المغالطات المنطقية في حلقة نقاش أكاديمية",
+      "setting": "A logic professor critiques an undergraduate debate team in a university seminar hall.",
+      "lines": [
+        {
+          "speaker": "Professor",
+          "text": "In spite of your energetic delivery today, when you tried to play devil's advocate, your rebuttal relied on specious reasoning."
+        },
+        {
+          "speaker": "Student A",
+          "text": "Which part of our argumentative thesis contained a logical fallacy, Professor?"
+        },
+        {
+          "speaker": "Professor",
+          "text": "When your opponent offered a thoughtful counterargument for solar energy, you attacked a straw man argument about banning all fuels."
+        },
+        {
+          "speaker": "Student B",
+          "text": "We also warned that allowing one small subsidy would trigger complete economic collapse."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Precisely; that line of reasoning is a classic slippery slope, accompanied by a distracting red herring."
+        },
+        {
+          "speaker": "Student A",
+          "text": "Although it was tempting in the heat of debate, I make a reluctant admission that we avoided the core premise."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Do not despair; learning to spot fallacies gives you invaluable food for thought for future tournaments."
+        },
+        {
+          "speaker": "Student B",
+          "text": "We will substantiate our claims with empirical data next time rather than rely on hasty generalizations."
+        }
+      ],
+      "vocabularyUsed": [
+        "play devils advocate",
+        "rebuttal",
+        "specious reasoning",
+        "argumentative thesis",
+        "fallacy",
+        "counterargument",
+        "straw man argument",
+        "line of reasoning",
+        "slippery slope",
+        "red herring",
+        "reluctant admission",
+        "premise",
+        "food for thought",
+        "substantiate claim",
+        "hasty generalization"
+      ]
+    },
+    {
+      "title": "Diplomatic Reconciliation Talks",
+      "titleArabic": "محادثات مصالحة دبلوماسية رفيعة المستوى",
+      "setting": "Two senior diplomats review contentious border territory treaties with an impartial observer.",
+      "lines": [
+        {
+          "speaker": "Diplomat A",
+          "text": "Despite deep national polarization, our delegation took a stand to attend these peace talks."
+        },
+        {
+          "speaker": "Diplomat B",
+          "text": "Although water rights remain a painful bone of contention, we agreed on principle to freeze troop deployments."
+        },
+        {
+          "speaker": "Observer",
+          "text": "From an unbiased standpoint, both of you deserve praise for refusing to indulge in ad hominem attacks."
+        },
+        {
+          "speaker": "Diplomat A",
+          "text": "In spite of historical grievances that brought past treaties into question, we are ready to see both sides."
+        },
+        {
+          "speaker": "Diplomat B",
+          "text": "We must not let a one-sided view derail this historic opportunity to draft lasting bilateral accords."
+        },
+        {
+          "speaker": "Observer",
+          "text": "If both nations weigh both sides with mutual respect, this polarizing issue will finally be settled."
+        },
+        {
+          "speaker": "Diplomat A",
+          "text": "We will bring to light all border water telemetry data to ensure total transparency."
+        },
+        {
+          "speaker": "Diplomat B",
+          "text": "A nuanced opinion rooted in scientific hydrology will serve both our populations well."
+        }
+      ],
+      "vocabularyUsed": [
+        "polarization",
+        "take a stand",
+        "bone of contention",
+        "agree on principle",
+        "unbiased standpoint",
+        "ad hominem",
+        "call into question",
+        "see both sides",
+        "one-sided view",
+        "weigh both sides",
+        "polarizing issue",
+        "bring to light",
+        "nuanced opinion"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Art of Principled Intellectual Debate",
+      "titleArabic": "فن المناظرة الفكرية المبدئية والبناءة",
+      "text": "In a democratic society, healthy discourse thrives when participants present a well-structured argumentative thesis supported by verified facts. Although impassioned speakers often hold clashing viewpoints, the hallmark of mature debate is the willingness to see both sides and acknowledge merit in opposing views. In spite of facing a polarizing issue that divides communities, ethical debaters refuse to distort the truth through a straw man argument or distract audiences with an irrelevant red herring. When scholars weigh both sides from an unbiased standpoint, they enrich collective understanding and build lasting consensus.",
+      "vocabularyUsed": [
+        "argumentative thesis",
+        "clashing viewpoints",
+        "see both sides",
+        "acknowledge merit",
+        "polarizing issue",
+        "straw man argument",
+        "red herring",
+        "weigh both sides",
+        "unbiased standpoint"
+      ]
+    },
+    {
+      "title": "Guarding Against Logical Fallacies and Specious Rhetoric",
+      "titleArabic": "الحذر من المغالطات المنطقية والبلاغة الزائفة",
+      "text": "Every rigorous thinker must develop the intellectual discernment required to dismantle deceptive sophistry. Despite an orator's charismatic delivery, critical listeners must examine whether a central premise rests upon an unfounded assertion or circular logic. In spite of aggressive attempts to silence critics with a hostile ad hominem attack, truth seekers remain calm and deliver a methodical, evidence-based rebuttal. When analysts expose specious reasoning and reject a hasty generalization, they bring to light verified truths and stimulate genuine food for thought.",
+      "vocabularyUsed": [
+        "premise",
+        "unfounded assertion",
+        "circular logic",
+        "ad hominem",
+        "rebuttal",
+        "specious reasoning",
+        "hasty generalization",
+        "bring to light",
+        "food for thought"
+      ]
+    },
+    {
+      "title": "Finding Common Ground Beyond Polarized Divides",
+      "titleArabic": "إيجاد أرضية مشتركة خارج حدود الانقسام والاستقطاب",
+      "text": "Deep political polarization often locks rival factions into rigid dogmatic postures where neither side is willing to budge. Although a controversial bone of contention may generate fiery rhetoric, responsible leaders recognize the danger of maintaining an obstinate, one-sided view. In spite of fierce partisan resistance, courageous statesmen take a stand, agree on principle to de-escalate tensions, and meet halfway. By offering a nuanced opinion that respects differing perspectives, civil society discovers that common ground can always be found when goodwill triumphs over hostility.",
+      "vocabularyUsed": [
+        "polarization",
+        "bone of contention",
+        "one-sided view",
+        "take a stand",
+        "agree on principle",
+        "meet halfway",
+        "nuanced opinion",
+        "differing perspective",
+        "common ground found"
+      ]
+    }
+  ]
+}

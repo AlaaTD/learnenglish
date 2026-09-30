@@ -180,7 +180,12 @@
       "tags": [
         "friendship",
         "change"
-      ]
+      ],
+      "verbForms": {
+        "v1": "drift",
+        "v2": "drifted",
+        "v3": "drifted"
+      }
     },
     {
       "headword": "detachment",
@@ -680,7 +685,12 @@
       "tags": [
         "friendship",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "estrange",
+        "v2": "estranged",
+        "v3": "estranged"
+      }
     },
     {
       "headword": "reconnection",
@@ -736,7 +746,12 @@
       "tags": [
         "friendship",
         "renewal"
-      ]
+      ],
+      "verbForms": {
+        "v1": "rekindle",
+        "v2": "rekindled",
+        "v3": "rekindled"
+      }
     },
     {
       "headword": "reunite",
@@ -765,7 +780,12 @@
       "tags": [
         "friendship",
         "renewal"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reunite",
+        "v2": "reunited",
+        "v3": "reunited"
+      }
     },
     {
       "headword": "reunion",
@@ -1143,7 +1163,12 @@
       "tags": [
         "friendship",
         "emotions"
-      ]
+      ],
+      "verbForms": {
+        "v1": "cherish",
+        "v2": "cherished",
+        "v3": "cherished"
+      }
     },
     {
       "headword": "confidante",

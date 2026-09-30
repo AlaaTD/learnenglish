@@ -409,7 +409,12 @@
       ],
       "tags": [
         "banking"
-      ]
+      ],
+      "verbForms": {
+        "v1": "deposit money",
+        "v2": "deposited money",
+        "v3": "deposited money"
+      }
     },
     {
       "headword": "withdraw",
@@ -437,7 +442,12 @@
       ],
       "tags": [
         "banking"
-      ]
+      ],
+      "verbForms": {
+        "v1": "withdraw",
+        "v2": "withdrew",
+        "v3": "withdrawn"
+      }
     },
     {
       "headword": "withdrawal",
@@ -490,7 +500,12 @@
       "antonyms": [],
       "tags": [
         "banking"
-      ]
+      ],
+      "verbForms": {
+        "v1": "transfer",
+        "v2": "transferred",
+        "v3": "transferred"
+      }
     },
     {
       "headword": "wire transfer",
@@ -845,7 +860,12 @@
       "tags": [
         "banking",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "insert card",
+        "v2": "inserted card",
+        "v3": "inserted card"
+      }
     },
     {
       "headword": "swipe card",
@@ -867,7 +887,12 @@
       "tags": [
         "banking",
         "action"
-      ]
+      ],
+      "verbForms": {
+        "v1": "swipe card",
+        "v2": "swiped card",
+        "v3": "swiped card"
+      }
     },
     {
       "headword": "teller",
@@ -1198,7 +1223,12 @@
       "tags": [
         "finance",
         "business"
-      ]
+      ],
+      "verbForms": {
+        "v1": "invest",
+        "v2": "invested",
+        "v3": "invested"
+      }
     },
     {
       "headword": "investment",

@@ -1,0 +1,1576 @@
+{
+  "day": 63,
+  "title": "Wishes and Regrets",
+  "topic": "Wanting things to be different",
+  "description": "Express wishes and regrets about life.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about wanting things to be different using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Wish + Past; Wish + would / could",
+      "titleArabic": "التعبير عن التمني والندم (Wish + Past; Wish + would / could)",
+      "explanation": "We use 'wish' (and 'If only') to express that we want situations to be different from reality: 1) 'Wish + Past Simple' expresses a wish about a present situation that we want to be different ('I wish I knew more about finance'; 'If only we were richer'). 2) 'Wish + Past Perfect' expresses regret about a past action or event ('I wish I had accepted that overseas transfer'; 'If only we had not signed the contract'). 3) 'Wish + would + base verb' expresses annoyance or a desire for someone or something to change their behavior ('I wish it would stop raining'; 'I wish you would listen'). Note: We do NOT use 'I wish I would' for ourselves; instead, we use 'I wish I could'. 4) 'Wish + could + base verb' expresses regret about personal lack of ability in the present or future ('I wish I could turn back the clock').",
+      "explanationArabic": "نستخدم الفعل 'wish' (وكذلك العبارة 'If only') للتعبير عن رغبتنا في أن تكون الأمور مختلفة عما هي عليه في الواقع: 1) Wish + Past Simple: للتعبير عن تمني تغيير واقع حاضر غير مرغوب ('أتمنى لو كنت أعرف المزيد عن التمويل'; 'يا ليتنا كنا أغنى'). 2) Wish + Past Perfect (had + V3): للتعبير عن الندم على حدث وقع في الماضي ('أتمنى لو كنت قد قبلت العرض'; 'يا ليتنا لم نوقع العقد'). 3) Wish + would + المصدر: للتعبير عن التبرم والانزعاج ورغبة في أن يُغير شخص آخر سلوكه ('أتمنى لو تتوقف عن المقاطعة'). تنبيه: لا تقل 'I wish I would' لنفسك؛ بل قل 'I wish I could'. 4) Wish + could + المصدر: للتعبير عن العجز عن فعل شيء في الحاضر أو المستقبل ('أتمنى لو أستطيع إعادة عقارب الساعة للوراء').",
+      "structures": [
+        {
+          "label": "Present Wish · تمني تغيير الحاضر",
+          "pattern": "Subject + wish(es) + Subject + Past Simple (or were)",
+          "explanation": "Expresses that we want our present reality to be different.",
+          "explanationArabic": "يعبر عن الرغبة في تغيير أمر قائم في الحاضر."
+        },
+        {
+          "label": "Past Regret · الندم على ماضٍ فات",
+          "pattern": "Subject + wish(es) + Subject + had + Past Participle (V3)",
+          "explanation": "Expresses sadness or remorse about something done or omitted in the past.",
+          "explanationArabic": "يعبر عن الحزن أو الأسف على تصرف تم أو فات في الماضي."
+        },
+        {
+          "label": "Desire for Change / Annoyance · التذمر من سلوك (Would)",
+          "pattern": "Subject + wish(es) + Subject + would + Base Verb",
+          "explanation": "Used when annoyed by someone's persistent habit, asking for change.",
+          "explanationArabic": "يُستخدم لإظهار الانزعاج من عادة شخص والمطالبة بتغييرها."
+        },
+        {
+          "label": "Ability / Opportunity Wish · تمني القدرة (Could)",
+          "pattern": "Subject + wish(es) + Subject + could + Base Verb",
+          "explanation": "Expresses regret about lacking the ability or permission to do something.",
+          "explanationArabic": "يعبر عن التمني لو كانت هناك قدرة أو ترخيص لفعل شيء."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I wish I could turn back the clock and redress that critical mistake.",
+          "translation": "أتمنى لو أستطيع إعادة عقارب الساعة للوراء وتصحيح ذلك الخطأ الحاسم.",
+          "usesVocabulary": [
+            "turn back clock",
+            "redress a mistake"
+          ]
+        },
+        {
+          "sentence": "If only we had recognized that golden opportunity missed, we would not endure bitter regret.",
+          "translation": "يا ليتنا أدركنا تلك الفرصة الذهبية المهدرة، لما عانينا من ندم مرير.",
+          "usesVocabulary": [
+            "golden opportunity missed",
+            "bitter regret"
+          ]
+        },
+        {
+          "sentence": "She wishes her supervisor would stop dwelling on spilt milk and look for the silver lining.",
+          "translation": "تتمنى لو يتوقف مشرفها عن البكاء على اللبن المسكوب ويبحث عن الجانب المشرق.",
+          "usesVocabulary": [
+            "spilt milk",
+            "silver lining"
+          ]
+        },
+        {
+          "sentence": "In hindsight, they wish they had not indulged in mere wishful thinking about the merger.",
+          "translation": "عند النظر للوراء بأثر رجعي، يتمنون لو لم ينغمسوا في مجرد تفكير بالتمني بشأن الاندماج.",
+          "usesVocabulary": [
+            "in hindsight",
+            "wishful thinking"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I wish I would have more free time to travel.",
+          "right": "I wish I had more free time to travel. (OR: I wish I could travel more)",
+          "note": "Do not use 'wish + would' for yourself; use Past Simple for present states, or 'could' for ability.",
+          "noteArabic": "لا تستخدم would مع الضمير I بعد wish؛ بل استخدم الماضي البسيط أو could."
+        },
+        {
+          "wrong": "I wish I didn't go to that party last night; I caught a cold.",
+          "right": "I wish I hadn't gone to that party last night; I caught a cold.",
+          "note": "Use 'hadn't + past participle' to express regret about past events, not didn't.",
+          "noteArabic": "استخدم hadn't + التصريف الثالث للندم على ما حدث في الماضي وليس didn't."
+        }
+      ],
+      "commonUsage": [
+        "Reflecting on missed chances: 'I wish I had accepted that scholarship.' (تُستخدم للتحسر والتأمل في الفرص الماضية.)",
+        "Expressing work frustration: 'I wish clients would respond to invoices on time.' (تُستخدم لإبداء الضيق من سلوكيات العمل.)",
+        "Longing for distant realities: 'She wishes she could pine less for home and thrive abroad.' (تُستخدم للتعبير عن الحنين والشوق.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "wishful thinking",
+      "pronunciation": "/ˈwɪʃfl ˈθɪŋkɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The illusion that what one wishes for is actually true or will happen.",
+      "example": "Hoping the market will double overnight is pure wishful thinking.",
+      "translation": "تفكير بالتمني / أوهام رغائبية",
+      "exampleArabic": "الرجاء بأن السوق سيتضاعف بين عشية وضحاها هو مجرد تفكير بالتمني.",
+      "collocations": [
+        "mere wishful thinking",
+        "indulge in wishful thinking"
+      ],
+      "synonyms": [
+        "pipe dream",
+        "fantasy"
+      ],
+      "antonyms": [
+        "hard reality"
+      ],
+      "tags": [
+        "wishes",
+        "psychology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "if only",
+      "pronunciation": "/ɪf ˈəʊnli/",
+      "partOfSpeech": "phrase",
+      "definition": "Used to express a strong wish, yearning, or deep regret.",
+      "example": "If only I had listened to my mentor's advice about diversified investing.",
+      "translation": "يا ليت / لو أن فقط",
+      "exampleArabic": "يا ليتني استمعت لنصيحة مرشدي بشأن التنويع في الاستثمار.",
+      "collocations": [
+        "if only I knew",
+        "if only we could"
+      ],
+      "synonyms": [
+        "I wish that"
+      ],
+      "antonyms": [],
+      "tags": [
+        "regrets",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "in hindsight",
+      "pronunciation": "/ɪn ˈhaɪndsaɪt/",
+      "partOfSpeech": "phrase",
+      "definition": "Understanding the nature of an event only after it has actually happened.",
+      "example": "In hindsight, selling the family house during the recession was a tactical error.",
+      "translation": "عند النظر للوراء / بأثر رجعي",
+      "exampleArabic": "عند النظر للوراء بأثر رجعي، كان بيع منزل العائلة أثناء الركود خطأً تكتيكياً.",
+      "collocations": [
+        "easy in hindsight",
+        "clear in hindsight"
+      ],
+      "synonyms": [
+        "retrospectively"
+      ],
+      "antonyms": [
+        "in foresight"
+      ],
+      "tags": [
+        "reflection",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "with hindsight",
+      "pronunciation": "/wɪð ˈhaɪndsaɪt/",
+      "partOfSpeech": "phrase",
+      "definition": "With the perception and clarity that comes from looking back at the past.",
+      "example": "With hindsight, we wish we had retained the patent rights instead of licensing them.",
+      "translation": "في ضوء ما تبين لاحقاً / بحكمة ما بعد التجربة",
+      "exampleArabic": "في ضوء ما تبين لاحقاً، نتمنى لو احتفظنا بحقوق براءة الاختراع بدلاً من ترخيصها.",
+      "collocations": [
+        "blessed with hindsight",
+        "view with hindsight"
+      ],
+      "synonyms": [
+        "with retrospective clarity"
+      ],
+      "antonyms": [],
+      "tags": [
+        "reflection",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rue the day",
+      "pronunciation": "/ruː ðə deɪ/",
+      "partOfSpeech": "verb",
+      "definition": "To bitterly regret a specific moment, decision, or past action.",
+      "example": "He will rue the day he signed that predatory non-disclosure agreement.",
+      "translation": "يلعن اليوم الذي فعل فيه ذلك / يندم أشد الندم",
+      "exampleArabic": "سيندم أشد الندم ويلعن اليوم الذي وقع فيه اتفاقية عدم الإفصاح الجائرة تلك.",
+      "verbForms": {
+        "v1": "rue the day",
+        "v2": "rued the day",
+        "v3": "rued the day"
+      },
+      "collocations": [
+        "live to rue the day",
+        "forever rue the day"
+      ],
+      "synonyms": [
+        "bitterly regret"
+      ],
+      "antonyms": [
+        "rejoice in the day"
+      ],
+      "tags": [
+        "regrets",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lament",
+      "pronunciation": "/ləˈment/",
+      "partOfSpeech": "verb",
+      "definition": "To express deep sorrow, grief, or passionate regret about something.",
+      "example": "Old scholars lament the loss of handwritten manuscript literacy in modern youth.",
+      "translation": "يتحسر على / يندب حظه",
+      "exampleArabic": "يتحسر العلماء القدامى على ضياع مهارة قراءة المخطوطات اليدوية بين شباب العصر.",
+      "verbForms": {
+        "v1": "lament",
+        "v2": "lamented",
+        "v3": "lamented"
+      },
+      "collocations": [
+        "lament the passing of",
+        "openly lament"
+      ],
+      "synonyms": [
+        "bemoan",
+        "mourn"
+      ],
+      "antonyms": [
+        "celebrate"
+      ],
+      "tags": [
+        "emotions",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "remorseful",
+      "pronunciation": "/rɪˈmɔːsfl/",
+      "partOfSpeech": "adjective",
+      "definition": "Filled with deep, painful regret and guilt for past wrongs committed.",
+      "example": "The remorseful witness apologized tearfully to the falsely accused defendant.",
+      "translation": "نادم بعمق / يعتصره تأنيب الضمير",
+      "exampleArabic": "اعتذر الشاهد النادم والباكي للمدعى عليه المتهم ظلماً.",
+      "collocations": [
+        "deeply remorseful",
+        "appear remorseful"
+      ],
+      "synonyms": [
+        "contrite",
+        "repentant"
+      ],
+      "antonyms": [
+        "unrepentant"
+      ],
+      "tags": [
+        "emotions",
+        "guilt"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pangs of conscience",
+      "pronunciation": "/pæŋz əv ˈkɒnʃəns/",
+      "partOfSpeech": "noun",
+      "definition": "Sudden, sharp twinges of guilt, regret, or moral shame.",
+      "example": "He felt sharp pangs of conscience after concealing the financial audit mistake.",
+      "translation": "وخزات الضمير / لدغات الندم الأخلاقي",
+      "exampleArabic": "شعر بوخزات ضمير حادة بعد إخفاء خطأ التدقيق المالي.",
+      "collocations": [
+        "suffer pangs of conscience",
+        "ignore pangs of conscience"
+      ],
+      "synonyms": [
+        "qualms",
+        "twinges of guilt"
+      ],
+      "antonyms": [
+        "clear conscience"
+      ],
+      "tags": [
+        "morals",
+        "psychology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "aching desire",
+      "pronunciation": "/ˈeɪkɪŋ dɪˈzaɪə/",
+      "partOfSpeech": "noun",
+      "definition": "An intense, painful longing or persistent craving for someone or something.",
+      "example": "She harbored an aching desire to return to her homeland and see the olive groves.",
+      "translation": "شوق مؤلم / رغبة ملحة تعتصر القلب",
+      "exampleArabic": "أضمرت في قلبها شوقاً مؤلماً للعودة إلى وطنها ورؤية بساتين الزيتون.",
+      "collocations": [
+        "feel an aching desire",
+        "suppress an aching desire"
+      ],
+      "synonyms": [
+        "deep yearning"
+      ],
+      "antonyms": [
+        "indifference"
+      ],
+      "tags": [
+        "emotions",
+        "desire"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "longing",
+      "pronunciation": "/ˈlɒŋɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A yearning desire, often accompanied by sadness or wistful distance.",
+      "example": "His eyes reflected a quiet longing for the simpler peaceful days of his youth.",
+      "translation": "حنين وشوق عميق",
+      "exampleArabic": "عكست عيناه حنيناً هادئاً للأيام الأبسط والأكثر سكينة في شبابه.",
+      "collocations": [
+        "intense longing",
+        "look of longing"
+      ],
+      "synonyms": [
+        "craving",
+        "yearning"
+      ],
+      "antonyms": [
+        "contentment"
+      ],
+      "tags": [
+        "feelings",
+        "nostalgia"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wistful",
+      "pronunciation": "/ˈwɪstfl/",
+      "partOfSpeech": "adjective",
+      "definition": "Having or showing a feeling of vague or regretful longing.",
+      "example": "She cast a wistful glance at the ocean horizon as the departing ship sailed away.",
+      "translation": "مليء بالحنين والأسى الهادئ / شارد بحسرة",
+      "exampleArabic": "ألقت نظرة تفيض بالحنين والأسى الهادئ على أفق المحيط مع إبحار السفينة المغادرة.",
+      "collocations": [
+        "wistful smile",
+        "wistful look"
+      ],
+      "synonyms": [
+        "nostalgic",
+        "pensive"
+      ],
+      "antonyms": [
+        "cheerful"
+      ],
+      "tags": [
+        "mood",
+        "feelings"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "nostalgic longing",
+      "pronunciation": "/nɒˈstældʒɪk ˈlɒŋɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A sentimental yearning for the happiness felt in a former place or time.",
+      "example": "The scent of wild lavender stirred nostalgic longing for her grandmother's garden.",
+      "translation": "شوق ونوستالجيا للماضي",
+      "exampleArabic": "أثارت رائحة اللافندر البري شوقاً نوستالجياً لحديقة جدتها.",
+      "collocations": [
+        "stir nostalgic longing",
+        "sense of nostalgic longing"
+      ],
+      "synonyms": [
+        "homesickness for the past"
+      ],
+      "antonyms": [],
+      "tags": [
+        "nostalgia",
+        "emotions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "daydream",
+      "pronunciation": "/ˈdeɪdriːm/",
+      "partOfSpeech": "verb",
+      "definition": "To indulge in a series of pleasant, visionary, but unrealizable thoughts.",
+      "example": "I wish I did not daydream during corporate accounting presentations.",
+      "translation": "يسرح بأحلام اليقظة",
+      "exampleArabic": "أتمنى لو لم أسرح بأحلام اليقظة أثناء العروض التقديمية للمحاسبة المؤسسية.",
+      "verbForms": {
+        "v1": "daydream",
+        "v2": "daydreamed",
+        "v3": "daydreamed"
+      },
+      "collocations": [
+        "daydream about the future",
+        "prone to daydream"
+      ],
+      "synonyms": [
+        "fantasize",
+        "woolgather"
+      ],
+      "antonyms": [
+        "focus sharply"
+      ],
+      "tags": [
+        "imagination",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pie in the sky",
+      "pronunciation": "/ˌpaɪ ɪn ðə ˈskaɪ/",
+      "partOfSpeech": "noun",
+      "definition": "Something pleasant that is promised or wished for but very unlikely to happen.",
+      "example": "Their proposal for automated zero-cost public healthcare proved to be pie in the sky.",
+      "translation": "أمانٍ خيالية مستحيلة / أضغاث أحلام",
+      "exampleArabic": "أثبت مقترحهم لرعاية صحية عامة مؤتمتة ومجانية تماماً أنه مجرد أمانٍ خيالية مستحيلة.",
+      "collocations": [
+        "dismiss as pie in the sky",
+        "sound like pie in the sky"
+      ],
+      "synonyms": [
+        "unrealistic dream"
+      ],
+      "antonyms": [
+        "concrete reality"
+      ],
+      "tags": [
+        "unrealistic",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pipe dream",
+      "pronunciation": "/ˈpaɪp driːm/",
+      "partOfSpeech": "noun",
+      "definition": "An unattainable, fantastic, or hopeless plan or hope.",
+      "example": "Building a lunar colony by next year is a pure engineering pipe dream.",
+      "translation": "حلم واهم مستحيل التحقيق",
+      "exampleArabic": "بناء مستعمرة قمرية بحلول العام القادم هو مجرد حلم هندسي واهم مستحيل.",
+      "collocations": [
+        "shatter a pipe dream",
+        "turn out to be a pipe dream"
+      ],
+      "synonyms": [
+        "chimera",
+        "fantasy"
+      ],
+      "antonyms": [
+        "achievable objective"
+      ],
+      "tags": [
+        "unrealistic",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "castle in the air",
+      "pronunciation": "/ˌkɑːsl ɪn ðə ˈeə/",
+      "partOfSpeech": "noun",
+      "definition": "A daydream, speculative vision, or visionary project that has no firm foundation.",
+      "example": "Stop building castles in the air and draft a realistic, verifiable business budget.",
+      "translation": "قصور في الرمال / أوهام لا أساس لها",
+      "exampleArabic": "توقف عن بناء قصور في الهواء وضع ميزانية عمل واقعية وقابلة للتحقق.",
+      "collocations": [
+        "build castles in the air",
+        "fanciful castles in the air"
+      ],
+      "synonyms": [
+        "daydream"
+      ],
+      "antonyms": [
+        "grounded plan"
+      ],
+      "tags": [
+        "fantasy",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lost chance",
+      "pronunciation": "/lɒst tʃɑːns/",
+      "partOfSpeech": "noun",
+      "definition": "An opportunity that was allowed to slip away unutilized.",
+      "example": "Failing to purchase shares before the technological revolution was a bitterly lost chance.",
+      "translation": "فرصة ضائعة",
+      "exampleArabic": "كان الإخفاق في شراء الأسهم قبل الثورة التكنولوجية فرصة ضائعة بمرارة.",
+      "collocations": [
+        "mourn a lost chance",
+        "another lost chance"
+      ],
+      "synonyms": [
+        "missed opportunity"
+      ],
+      "antonyms": [
+        "seized moment"
+      ],
+      "tags": [
+        "opportunity",
+        "loss"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "golden opportunity missed",
+      "pronunciation": "/ˈɡəʊldən ˌɒpəˈtjuːnəti mɪst/",
+      "partOfSpeech": "noun",
+      "definition": "A uniquely favorable, rare occasion that was neglected or overlooked.",
+      "example": "Rejecting that university scholarship was a golden opportunity missed.",
+      "translation": "فرصة ذهبية مهدرة",
+      "exampleArabic": "كان رفض تلك المنحة الجامعية فرصة ذهبية مهدرة لن تتكرر.",
+      "collocations": [
+        "regret a golden opportunity missed",
+        "classic golden opportunity missed"
+      ],
+      "synonyms": [
+        "squandered chance"
+      ],
+      "antonyms": [
+        "opportunity seized"
+      ],
+      "tags": [
+        "regrets",
+        "opportunities"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "second thoughts",
+      "pronunciation": "/ˈsekənd θɔːts/",
+      "partOfSpeech": "noun",
+      "definition": "A reconsideration of an earlier decision or opinion, accompanied by doubt.",
+      "example": "I wish I had listened to my second thoughts before signing the apartment lease.",
+      "translation": "شكوك وتفكير متأخر / تردد بعد الاتفاق",
+      "exampleArabic": "أتمنى لو استمعت لشكوكي وتفكيري المتأخر قبل توقيع عقد إيجار الشقة.",
+      "collocations": [
+        "have second thoughts",
+        "give cause for second thoughts"
+      ],
+      "synonyms": [
+        "reconsideration",
+        "qualms"
+      ],
+      "antonyms": [
+        "unwavering conviction"
+      ],
+      "tags": [
+        "doubt",
+        "decisions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "change of heart",
+      "pronunciation": "/ˈtʃeɪndʒ əv hɑːt/",
+      "partOfSpeech": "noun",
+      "definition": "A reversal of one's opinions, feelings, intentions, or loyalties.",
+      "example": "He had a sudden change of heart and decided to forgive his estranged brother.",
+      "translation": "تبدل في المشاعر والموقف / انقلاب في الرأي",
+      "exampleArabic": "حدث له تبدل مفاجئ في المشاعر والموقف وقرر أن يصفح عن شقيقه المبتعد.",
+      "collocations": [
+        "experience a change of heart",
+        "sudden change of heart"
+      ],
+      "synonyms": [
+        "turnabout"
+      ],
+      "antonyms": [
+        "stubborn stance"
+      ],
+      "tags": [
+        "transformation",
+        "emotions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bitter regret",
+      "pronunciation": "/ˈbɪtə rɪˈɡret/",
+      "partOfSpeech": "noun",
+      "definition": "A harsh, agonizing feeling of sorrow for what might have been done.",
+      "example": "She felt bitter regret that she had never reconciled with her grandfather before his death.",
+      "translation": "ندم مرير ومؤلم",
+      "exampleArabic": "شعرت بندم مرير ومؤلم لكونها لم تتصالح مع جدها قبل وفاته.",
+      "collocations": [
+        "filled with bitter regret",
+        "endure bitter regret"
+      ],
+      "synonyms": [
+        "deep remorse"
+      ],
+      "antonyms": [
+        "pure satisfaction"
+      ],
+      "tags": [
+        "emotions",
+        "sorrow"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "deep remorse",
+      "pronunciation": "/diːp rɪˈmɔːs/",
+      "partOfSpeech": "noun",
+      "definition": "An intense, gnawing psychological pain arising from moral fault.",
+      "example": "The convicted driver showed deep remorse throughout the emotional courtroom hearing.",
+      "translation": "ندم عميق يعتصر الفؤاد",
+      "exampleArabic": "أظهر السائق المدان ندماً عميقاً يعتصر الفؤاد طوال جلسة المحكمة المؤثرة.",
+      "collocations": [
+        "express deep remorse",
+        "burdened by deep remorse"
+      ],
+      "synonyms": [
+        "heartfelt contrition"
+      ],
+      "antonyms": [
+        "callous indifference"
+      ],
+      "tags": [
+        "guilt",
+        "morals"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unfulfilled desire",
+      "pronunciation": "/ˌʌnfʊlˈfɪld dɪˈzaɪə/",
+      "partOfSpeech": "noun",
+      "definition": "A profound yearning or longing that has never been satisfied.",
+      "example": "His unfulfilled desire to publish a historical novel lingered into his retirement years.",
+      "translation": "رغبة دفينة لم تتحقق",
+      "exampleArabic": "ظلت رغبته الدفينة في نشر رواية تاريخية تراوده حتى سنوات تقاعده.",
+      "collocations": [
+        "ache of unfulfilled desire",
+        "harbor unfulfilled desires"
+      ],
+      "synonyms": [
+        "unrealized craving"
+      ],
+      "antonyms": [
+        "fulfilled wish"
+      ],
+      "tags": [
+        "desire",
+        "disappointment"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unrequited wish",
+      "pronunciation": "/ˌʌnrɪˈkwaɪtɪd wɪʃ/",
+      "partOfSpeech": "noun",
+      "definition": "A wish or hope that remains completely unanswered, unreturned, or ignored.",
+      "example": "Her long letters seemed like an unrequited wish cast into an empty canyon.",
+      "translation": "أمنية بلا صدى ولا استجابة",
+      "exampleArabic": "بدت رسائلها الطويلة كأنها أمنية بلا صدى أُلقيت في وادٍ سحيق فارغ.",
+      "collocations": [
+        "mourn an unrequited wish",
+        "live with unrequited wishes"
+      ],
+      "synonyms": [
+        "unanswered hope"
+      ],
+      "antonyms": [
+        "answered prayer"
+      ],
+      "tags": [
+        "longing",
+        "unrequited"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "what might have been",
+      "pronunciation": "/wɒt maɪt həv biːn/",
+      "partOfSpeech": "phrase",
+      "definition": "Reflective contemplation about hypothetical alternate outcomes of one's past.",
+      "example": "It is agonizing to constantly brood over what might have been instead of moving forward.",
+      "translation": "ما كان يمكن أن يكون / لو جرت الأمور بشكل آخر",
+      "exampleArabic": "من المؤلم والمضني أن يظل المرء ينوح على ما كان يمكن أن يكون بدلاً من المضي قدماً.",
+      "collocations": [
+        "wonder what might have been",
+        "mourn what might have been"
+      ],
+      "synonyms": [
+        "unrealized paths"
+      ],
+      "antonyms": [
+        "present reality"
+      ],
+      "tags": [
+        "regrets",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "spilt milk",
+      "pronunciation": "/spɪlt mɪlk/",
+      "partOfSpeech": "noun",
+      "definition": "An error, misfortune, or damage that has occurred and cannot be altered.",
+      "example": "The lost grant money is spilt milk; we must look for fresh private benefactors.",
+      "translation": "لبن مسكوب / ضرر فات أوانه ولا سبيل لإصلاحه",
+      "exampleArabic": "أموال المنحة المفقودة هي لبن مسكوب؛ يجب علينا البحث عن ممولين خواص جدد.",
+      "collocations": [
+        "view as spilt milk",
+        "merely spilt milk"
+      ],
+      "synonyms": [
+        "irreversible loss"
+      ],
+      "antonyms": [],
+      "tags": [
+        "idioms",
+        "acceptance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cry over spilt milk",
+      "pronunciation": "/kraɪ ˈəʊvə spɪlt mɪlk/",
+      "partOfSpeech": "verb",
+      "definition": "To waste time and emotional energy mourning past mistakes that cannot be undone.",
+      "example": "Do not cry over spilt milk; focus your intelligence on the upcoming quarterly rollout.",
+      "translation": "يبكي على اللبن المسكوب",
+      "exampleArabic": "لا تبكِ على اللبن المسكوب؛ بل ركز ذكاءك على إطلاق الربع القادم.",
+      "verbForms": {
+        "v1": "cry over spilt milk",
+        "v2": "cried over spilt milk",
+        "v3": "cried over spilt milk"
+      },
+      "collocations": [
+        "no use crying over spilt milk",
+        "refuse to cry over spilt milk"
+      ],
+      "synonyms": [
+        "lament the irreversible"
+      ],
+      "antonyms": [
+        "look forward"
+      ],
+      "tags": [
+        "idioms",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "turn back clock",
+      "pronunciation": "/tɜːn bæk klɒk/",
+      "partOfSpeech": "verb",
+      "definition": "To return to the past or recreate bygone conditions.",
+      "example": "If only I could turn back the clock and redo that critical investor pitch.",
+      "translation": "يعيد عقارب الساعة للوراء",
+      "exampleArabic": "يا ليتني أستطيع إعادة عقارب الساعة للوراء وإعادة ذلك العرض الحاسم للمستثمرين.",
+      "verbForms": {
+        "v1": "turn back clock",
+        "v2": "turned back clock",
+        "v3": "turned back clock"
+      },
+      "collocations": [
+        "wish to turn back clock",
+        "impossible to turn back clock"
+      ],
+      "synonyms": [
+        "rewind time"
+      ],
+      "antonyms": [
+        "march forward"
+      ],
+      "tags": [
+        "time",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "consolation prize",
+      "pronunciation": "/ˌkɒnsəˈleɪʃn praɪz/",
+      "partOfSpeech": "noun",
+      "definition": "A minor reward given to someone who fails to win the primary contest.",
+      "example": "The runner-up certificate felt like an empty consolation prize after losing the championship.",
+      "translation": "جائزة ترضية",
+      "exampleArabic": "بدت شهادة الوصيف وكأنها مجرد جائزة ترضية فارغة بعد خسارة البطولة.",
+      "collocations": [
+        "mere consolation prize",
+        "offer a consolation prize"
+      ],
+      "synonyms": [
+        "token reward"
+      ],
+      "antonyms": [
+        "grand prize"
+      ],
+      "tags": [
+        "rewards",
+        "disappointment"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cold comfort",
+      "pronunciation": "/ˌkəʊld ˈkʌmfət/",
+      "partOfSpeech": "noun",
+      "definition": "Sympathy, consolation, or reassurance that offers little or no genuine comfort.",
+      "example": "Knowing that other competitors also failed was cold comfort to the bankrupted inventor.",
+      "translation": "عزاء بارد لا يسمن ولا يغني من جوع",
+      "exampleArabic": "كانت معرفة أن المنافسين الآخرين قد فشلوا أيضاً مجرد عزاء بارد للمخترع المفلس.",
+      "collocations": [
+        "provide cold comfort",
+        "derive cold comfort"
+      ],
+      "synonyms": [
+        "scant consolation"
+      ],
+      "antonyms": [
+        "heartfelt solace"
+      ],
+      "tags": [
+        "consolation",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "silver lining",
+      "pronunciation": "/ˌsɪlvə ˈlaɪnɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A comforting or hopeful aspect present within an otherwise bleak or miserable situation.",
+      "example": "The silver lining of the factory closure was that it prompted her to start her own firm.",
+      "translation": "الجانب الإيجابي المشرق في قلب المحنة",
+      "exampleArabic": "كان الجانب الإيجابي المشرق لإغلاق المصنع أنه دفعها لتأسيس شركتها الخاصة.",
+      "collocations": [
+        "find the silver lining",
+        "every cloud has a silver lining"
+      ],
+      "synonyms": [
+        "bright side"
+      ],
+      "antonyms": [
+        "dark cloud"
+      ],
+      "tags": [
+        "optimism",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "make amends",
+      "pronunciation": "/meɪk əˈmendz/",
+      "partOfSpeech": "verb",
+      "definition": "To compensate someone for a grievance or undo the harm caused by one's fault.",
+      "example": "I wish I could make amends to those I wronged during my arrogant early twenties.",
+      "translation": "يكفّر عن خطئه / يصلح ما أفسده",
+      "exampleArabic": "أتمنى لو أستطيع التكفير عن أخطائي لمن أسأت إليهم أثناء غرور أوائل عشرينياتي.",
+      "verbForms": {
+        "v1": "make amends",
+        "v2": "made amends",
+        "v3": "made amends"
+      },
+      "collocations": [
+        "sincerely make amends",
+        "try to make amends"
+      ],
+      "synonyms": [
+        "atone",
+        "compensate"
+      ],
+      "antonyms": [
+        "compound injury"
+      ],
+      "tags": [
+        "morals",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "redress a mistake",
+      "pronunciation": "/rɪˈdres ə mɪsˈteɪk/",
+      "partOfSpeech": "verb",
+      "definition": "To set right, remedy, or rectify an unfair or erroneous past deed.",
+      "example": "The municipal authority took immediate measures to redress a mistake in property tax rates.",
+      "translation": "يصحح خطأً / يعالج مظلمة سابقة",
+      "exampleArabic": "اتخذت سلطة البلدية تدابير فورية لتصحيح خطأ في أسعار ضريبة العقارات.",
+      "verbForms": {
+        "v1": "redress a mistake",
+        "v2": "redressed a mistake",
+        "v3": "redressed a mistake"
+      },
+      "collocations": [
+        "strive to redress a mistake",
+        "opportunity to redress a mistake"
+      ],
+      "synonyms": [
+        "rectify error"
+      ],
+      "antonyms": [
+        "perpetuate wrong"
+      ],
+      "tags": [
+        "justice",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pine for",
+      "pronunciation": "/paɪn fɔː/",
+      "partOfSpeech": "verb",
+      "definition": "To yearn intensely and persistently for someone or something, often while wasting away.",
+      "example": "She pined for the majestic mountains of her childhood throughout her stay in the desert city.",
+      "translation": "يحن ويتلهف بشوق يضني البدن",
+      "exampleArabic": "حنت وتلهفت بشوق يضني القلب لجبال طفولتها الشامخة طوال إقامتها بالمدينة الصحراوية.",
+      "verbForms": {
+        "v1": "pine for",
+        "v2": "pined for",
+        "v3": "pined for"
+      },
+      "collocations": [
+        "pine for home",
+        "pine for past love"
+      ],
+      "synonyms": [
+        "yearn deeply",
+        "languish for"
+      ],
+      "antonyms": [
+        "forget completely"
+      ],
+      "tags": [
+        "longing",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mourn the loss",
+      "pronunciation": "/mɔːn ðə lɒs/",
+      "partOfSpeech": "verb",
+      "definition": "To feel or express deep grief for the demise or passing of someone or something treasured.",
+      "example": "The artistic community continues to mourn the loss of the brilliant playwright.",
+      "translation": "ينعى الفقد / ينوح على خسارة عزيزة",
+      "exampleArabic": "يواصل المجتمع الفني نعي الفقد والحداد على رحيل الكاتب المسرحي العبقري.",
+      "verbForms": {
+        "v1": "mourn the loss",
+        "v2": "mourned the loss",
+        "v3": "mourned the loss"
+      },
+      "collocations": [
+        "deeply mourn the loss",
+        "nation mourns the loss"
+      ],
+      "synonyms": [
+        "grieve over"
+      ],
+      "antonyms": [
+        "celebrate recovery"
+      ],
+      "tags": [
+        "grief",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bemoan",
+      "pronunciation": "/bɪˈməʊn/",
+      "partOfSpeech": "verb",
+      "definition": "To express deep discontent, sorrow, or regret over an unfavorable condition.",
+      "example": "Critics bemoan the decline of classical literature in secondary school curricula.",
+      "translation": "يندب وينعى / يتشكى بمرارة",
+      "exampleArabic": "ينعى النقاد بمرارة تراجع الأدب الكلاسيكي في مناهج المدارس الثانوية.",
+      "verbForms": {
+        "v1": "bemoan",
+        "v2": "bemoaned",
+        "v3": "bemoaned"
+      },
+      "collocations": [
+        "bemoan the fate of",
+        "constantly bemoan"
+      ],
+      "synonyms": [
+        "lament",
+        "bewail"
+      ],
+      "antonyms": [
+        "applaud"
+      ],
+      "tags": [
+        "complaint",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "self-reproach",
+      "pronunciation": "/ˌself rɪˈprəʊtʃ/",
+      "partOfSpeech": "noun",
+      "definition": "Reproach or blame directed against oneself for personal failures.",
+      "example": "He spent years consumed by bitter self-reproach after causing the family business rupture.",
+      "translation": "لوم النفس / تأنيب الذات القاسي",
+      "exampleArabic": "أمضى سنوات ينهشه لوم النفس وتأنيب الذات بعد تسببه في انهيار أعمال العائلة.",
+      "collocations": [
+        "burden of self-reproach",
+        "voice self-reproach"
+      ],
+      "synonyms": [
+        "self-blame"
+      ],
+      "antonyms": [
+        "self-congratulation"
+      ],
+      "tags": [
+        "psychology",
+        "guilt"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "guilt trip",
+      "pronunciation": "/ˈɡɪlt trɪp/",
+      "partOfSpeech": "noun",
+      "definition": "A feeling of guilt, especially when intentionally induced by someone else.",
+      "example": "Do not let your relatives lay a guilt trip on you for prioritizing your career.",
+      "translation": "عقدة ذنب / ابتزاز عاطفي بتأنيب الضمير",
+      "exampleArabic": "لا تدع أقاربك يفرضون عليك عقدة ذنب لكونك تعطي الأولوية لمسارك المهني.",
+      "collocations": [
+        "lay a guilt trip on",
+        "fall for a guilt trip"
+      ],
+      "synonyms": [
+        "induced remorse"
+      ],
+      "antonyms": [],
+      "tags": [
+        "psychology",
+        "relationships"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "heavy heart",
+      "pronunciation": "/ˌhevi ˈhɑːt/",
+      "partOfSpeech": "noun",
+      "definition": "A profound feeling of deep sorrow, sadness, or reluctance.",
+      "example": "With a heavy heart, the headmaster announced the permanent closure of the rural school.",
+      "translation": "قلب مثقل بالأسى والحزن",
+      "exampleArabic": "بقلب مثقل بالأسى، أعلن مدير المدرسة الإغلاق النهائي للمدرسة الريفية.",
+      "collocations": [
+        "with a heavy heart",
+        "leave with a heavy heart"
+      ],
+      "synonyms": [
+        "deep sorrow"
+      ],
+      "antonyms": [
+        "light heart"
+      ],
+      "tags": [
+        "sorrow",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "haunted by past",
+      "pronunciation": "/ˈhɔːntɪd baɪ pɑːst/",
+      "partOfSpeech": "adjective",
+      "definition": "Continually troubled, disturbed, or plagued by painful memories of past deeds.",
+      "example": "The veteran explorer was haunted by past mistakes committed in the arctic expedition.",
+      "translation": "تطارده أشباح الماضي / أسير لذكرياته الأليمة",
+      "exampleArabic": "كان المستكشف المخضرم مطارداً بأشباح أخطاء الماضي التي وقعت في الحملة القطبية.",
+      "collocations": [
+        "remained haunted by past",
+        "haunted by past trauma"
+      ],
+      "synonyms": [
+        "plagued by memories"
+      ],
+      "antonyms": [
+        "peaceful with past"
+      ],
+      "tags": [
+        "psychology",
+        "trauma"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "look back with regret",
+      "pronunciation": "/lʊk bæk wɪð rɪˈɡret/",
+      "partOfSpeech": "verb",
+      "definition": "To reflect on previous choices with sorrow, wishing they had been different.",
+      "example": "I wish I did not look back with regret on my creative decisions during university.",
+      "translation": "ينظر للوراء بأسف وندم",
+      "exampleArabic": "أتمنى لو لم أنظر للوراء بأسف وندم على قراراتي الإبداعية أثناء دراستي الجامعية.",
+      "verbForms": {
+        "v1": "look back with regret",
+        "v2": "looked back with regret",
+        "v3": "looked back with regret"
+      },
+      "collocations": [
+        "look back with regret on",
+        "never look back with regret"
+      ],
+      "synonyms": [
+        "retrospect sorrowfully"
+      ],
+      "antonyms": [
+        "look back with pride"
+      ],
+      "tags": [
+        "reflection",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "letdown",
+      "pronunciation": "/ˈletdaʊn/",
+      "partOfSpeech": "noun",
+      "definition": "A disappointment or disillusionment following high hopes.",
+      "example": "The much-anticipated technological sequel was a colossal letdown to gamers.",
+      "translation": "خيبة أمل / إحباط شديد",
+      "exampleArabic": "كان الجزء الثاني المرتقب للعبة خيبة أمل كبرى للاعبين.",
+      "collocations": [
+        "bitter letdown",
+        "major letdown"
+      ],
+      "synonyms": [
+        "disappointment"
+      ],
+      "antonyms": [
+        "triumph"
+      ],
+      "tags": [
+        "feelings",
+        "disappointment"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unmet expectation",
+      "pronunciation": "/ʌnˈmet ˌekspekˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A standard, hope, or goal that was not achieved or satisfied.",
+      "example": "Unmet expectations in early marriage often lead to preventable friction.",
+      "translation": "توقعات لم تتحقق / آمال خائبة",
+      "exampleArabic": "غالباً ما تؤدي التوقعات غير المتحققة في بداية الزواج إلى خلافات كان يمكن تفاديها.",
+      "collocations": [
+        "cope with unmet expectations",
+        "burden of unmet expectations"
+      ],
+      "synonyms": [
+        "disappointed hopes"
+      ],
+      "antonyms": [
+        "fulfilled expectations"
+      ],
+      "tags": [
+        "disappointment",
+        "psychology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "harsh awakening",
+      "pronunciation": "/hɑːʃ əˈweɪknɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A painful, abrupt realization of the unpleasant truth of a situation.",
+      "example": "Graduating into an economic depression was a harsh awakening for young scholars.",
+      "translation": "يقظة قاسية على الواقع / صدمة الحقيقة المرة",
+      "exampleArabic": "كان التخرج في خضم ركود اقتصادي يقظة قاسية وصدمة مريرة للباحثين الشباب.",
+      "collocations": [
+        "suffer a harsh awakening",
+        "rude or harsh awakening"
+      ],
+      "synonyms": [
+        "rude awakening",
+        "cold reality check"
+      ],
+      "antonyms": [
+        "blissful ignorance"
+      ],
+      "tags": [
+        "realization",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "shattered dream",
+      "pronunciation": "/ˈʃætəd driːm/",
+      "partOfSpeech": "noun",
+      "definition": "A deeply cherished hope or ambition that has been completely destroyed.",
+      "example": "His shattered dream of becoming an Olympic gymnast left him directionless for months.",
+      "translation": "حلم محطم / أمل متبدد",
+      "exampleArabic": "تركه حلمه المحطم بأن يصبح بطلاً أولمبياً في الجمباز تائهاً لعدة أشهر.",
+      "collocations": [
+        "mourn a shattered dream",
+        "pieces of a shattered dream"
+      ],
+      "synonyms": [
+        "destroyed ambition"
+      ],
+      "antonyms": [
+        "realized ambition"
+      ],
+      "tags": [
+        "loss",
+        "tragedy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "faded hope",
+      "pronunciation": "/ˈfeɪdɪd həʊp/",
+      "partOfSpeech": "noun",
+      "definition": "An optimism or confidence that has gradually weakened and nearly vanished.",
+      "example": "Faded hopes for an early diplomatic breakthrough prompted families to flee.",
+      "translation": "أمل خافت متلاشٍ",
+      "exampleArabic": "دفعت الآمال المتلاشية في تحقيق اختراق دبلوماسي مبكر العائلات إلى الفرار.",
+      "collocations": [
+        "clinging to faded hope",
+        "revive faded hope"
+      ],
+      "synonyms": [
+        "dwindling optimism"
+      ],
+      "antonyms": [
+        "bright hope"
+      ],
+      "tags": [
+        "emotions",
+        "despair"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unreachable ideal",
+      "pronunciation": "/ʌnˈriːtʃəbl aɪˈdiːəl/",
+      "partOfSpeech": "noun",
+      "definition": "A perfect standard or model that cannot possibly be attained in real life.",
+      "example": "Striving for an unreachable ideal of physical flawlessness fuels chronic anxiety.",
+      "translation": "نموذج مثالي مستحيل المنال",
+      "exampleArabic": "يغذي السعي وراء نموذج مثالي مستحيل المنال للكمال الجسدي القلق المزمن.",
+      "collocations": [
+        "pursue an unreachable ideal",
+        "chasing an unreachable ideal"
+      ],
+      "synonyms": [
+        "unattainable perfection"
+      ],
+      "antonyms": [
+        "practical standard"
+      ],
+      "tags": [
+        "perfectionism",
+        "ideals"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "forlorn hope",
+      "pronunciation": "/fəˈlɔːn həʊp/",
+      "partOfSpeech": "noun",
+      "definition": "A persistent hope that has virtually no chance of being fulfilled.",
+      "example": "Searching the wreckage after three weeks was a forlorn hope for the rescue squad.",
+      "translation": "رجاء يائس / أمل شبه مستحيل",
+      "exampleArabic": "كان البحث في الحطام بعد ثلاثة أسابيع رجاءً يائساً وأملاً شبه مستحيل لفرقة الإنقاذ.",
+      "collocations": [
+        "clasp a forlorn hope",
+        "engage in a forlorn hope"
+      ],
+      "synonyms": [
+        "desperate chance"
+      ],
+      "antonyms": [
+        "certain prospect"
+      ],
+      "tags": [
+        "despair",
+        "hope"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "yearn for",
+      "pronunciation": "/jɜːn fɔː/",
+      "partOfSpeech": "verb",
+      "definition": "To feel an intense longing, craving, or deep affection for something absent.",
+      "example": "Prisoners yearning for freedom looked out at the birds beyond the watchtower wire.",
+      "translation": "يتوق إلى / يهفو قلبه لـ",
+      "exampleArabic": "نظر السجناء التائقون إلى الحرية للطيور المحلقة خلف أسلاك برج المراقبة.",
+      "verbForms": {
+        "v1": "yearn for",
+        "v2": "yearned for",
+        "v3": "yearned for"
+      },
+      "collocations": [
+        "yearn for peace",
+        "yearn for justice"
+      ],
+      "synonyms": [
+        "long for",
+        "ache for"
+      ],
+      "antonyms": [
+        "despise"
+      ],
+      "tags": [
+        "longing",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sigh with regret",
+      "pronunciation": "/saɪ wɪð rɪˈɡret/",
+      "partOfSpeech": "verb",
+      "definition": "To emit a deep, audible breath expressing sadness, sorrow, or past failure.",
+      "example": "The retired captain sighed with regret as he locked the vessel logbook forever.",
+      "translation": "يتنهد بحسرة وأسف",
+      "exampleArabic": "تنهد القبطان المتقاعد بحسرة وأسف وهو يغلق سجل السفينة إلى الأبد.",
+      "verbForms": {
+        "v1": "sigh with regret",
+        "v2": "sighed with regret",
+        "v3": "sighed with regret"
+      },
+      "collocations": [
+        "heavily sigh with regret",
+        "pause and sigh with regret"
+      ],
+      "synonyms": [
+        "heave a sorrowful sigh"
+      ],
+      "antonyms": [],
+      "tags": [
+        "emotions",
+        "actions"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Reflecting on a Lost Venture",
+      "titleArabic": "التأمل في مشروع تجاري ضائع",
+      "setting": "Two retired business partners drink coffee on a veranda, reminiscing about their early tech enterprise.",
+      "lines": [
+        {
+          "speaker": "Marcus",
+          "text": "Do you ever find yourself looking back with regret on that patent we sold in our twenties, Elena?"
+        },
+        {
+          "speaker": "Elena",
+          "text": "With hindsight, I realize it was a golden opportunity missed, but it is spilt milk now."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "I wish we had retained fifty percent equity! If only we had not been so easily intimidated."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Marcus, we cannot turn back the clock. Brooding over what might have been will only bring bitter regret."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "I know. When I see their global valuation today, I still sigh with regret."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Remember the silver lining: that seed payout allowed you to buy your vineyard debt-free."
+        },
+        {
+          "speaker": "Marcus",
+          "text": "That is true. Aching desire for past riches is mere wishful thinking anyway."
+        },
+        {
+          "speaker": "Elena",
+          "text": "Exactly. Let us toast to the lessons we learned and the rich memories we made!"
+        }
+      ],
+      "vocabularyUsed": [
+        "look back with regret",
+        "with hindsight",
+        "golden opportunity missed",
+        "spilt milk",
+        "if only",
+        "turn back clock",
+        "what might have been",
+        "bitter regret",
+        "sigh with regret",
+        "silver lining",
+        "aching desire",
+        "wishful thinking"
+      ]
+    },
+    {
+      "title": "Atoning for an Old Misunderstanding",
+      "titleArabic": "التكفير عن سوء تفاهم قديم بين صديقين",
+      "setting": "An older professional meets an estranged former colleague at a quiet library garden.",
+      "lines": [
+        {
+          "speaker": "Julian",
+          "text": "I invited you here because I felt sharp pangs of conscience about our boardroom dispute years ago."
+        },
+        {
+          "speaker": "Arthur",
+          "text": "That fallout was painful; I felt deep remorse over the harsh words I traded back then."
+        },
+        {
+          "speaker": "Julian",
+          "text": "I had second thoughts immediately, and I have felt truly remorseful ever since."
+        },
+        {
+          "speaker": "Arthur",
+          "text": "I carried a heavy heart too, and no professional consolation prize could replace our lost partnership."
+        },
+        {
+          "speaker": "Julian",
+          "text": "I wish I could make amends for taking that unfair credit on our joint publication."
+        },
+        {
+          "speaker": "Arthur",
+          "text": "I do not lament our shared history anymore; knowing that you wish to redress a mistake brings genuine peace of mind."
+        },
+        {
+          "speaker": "Julian",
+          "text": "I was haunted by the past and feared you would reject my invitation."
+        },
+        {
+          "speaker": "Arthur",
+          "text": "Better late than never, Julian; let us move forward as trusted friends."
+        }
+      ],
+      "vocabularyUsed": [
+        "pangs of conscience",
+        "deep remorse",
+        "second thoughts",
+        "remorseful",
+        "heavy heart",
+        "consolation prize",
+        "make amends",
+        "lament",
+        "redress a mistake",
+        "haunted by past"
+      ]
+    },
+    {
+      "title": "Chasing Illusions vs Facing Reality",
+      "titleArabic": "مطاردة الأوهام ومواجهة الواقع",
+      "setting": "A senior mentor counsels a frustrated apprentice who dreams of overnight musical fame.",
+      "lines": [
+        {
+          "speaker": "Apprentice",
+          "text": "I wish recording studios would answer my demo tapes; waiting is pure agony!"
+        },
+        {
+          "speaker": "Mentor",
+          "text": "Relying on sudden viral discovery is building castles in the air, my friend."
+        },
+        {
+          "speaker": "Apprentice",
+          "text": "Is pursuing international stardom really just a pipe dream?"
+        },
+        {
+          "speaker": "Mentor",
+          "text": "It becomes a pie in the sky when you ignore daily deliberate craft practice."
+        },
+        {
+          "speaker": "Apprentice",
+          "text": "I feel such an unfulfilled desire whenever I see packed amphitheaters."
+        },
+        {
+          "speaker": "Mentor",
+          "text": "Do not let unmet expectations poison your creative spirit or invite a harsh awakening."
+        },
+        {
+          "speaker": "Apprentice",
+          "text": "I understand. I should stop daydreaming and dedicate six hours daily to piano scales."
+        },
+        {
+          "speaker": "Mentor",
+          "text": "Grounded work will transform those wistful daydreams into durable reality."
+        }
+      ],
+      "vocabularyUsed": [
+        "castle in the air",
+        "pipe dream",
+        "pie in the sky",
+        "unfulfilled desire",
+        "unmet expectation",
+        "harsh awakening",
+        "daydream",
+        "wistful"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Emotional Weight of Unresolved Regrets",
+      "titleArabic": "العبء العاطفي للندم والذكريات العالقة",
+      "text": "Human memory is often shadowed by nostalgic longing and painful memories of what might have been. When individuals look back with regret upon a lost chance or golden opportunity missed, bitter regret can fester into crippling self-reproach. Many people rue the day they allowed fear to dictate their choices, living burdened with a heavy heart and haunted by the past. Yet philosophers wisely remind us that mourning over spilt milk will never turn back the clock. The true antidote to lingering sorrow is not to bemoan past errors, but to sincerely make amends and seek the silver lining in every trial.",
+      "vocabularyUsed": [
+        "nostalgic longing",
+        "what might have been",
+        "look back with regret",
+        "lost chance",
+        "golden opportunity missed",
+        "bitter regret",
+        "self-reproach",
+        "rue the day",
+        "heavy heart",
+        "haunted by past",
+        "spilt milk",
+        "turn back clock",
+        "bemoan",
+        "make amends",
+        "silver lining"
+      ]
+    },
+    {
+      "title": "From Wishful Daydreams to Grounded Reality",
+      "titleArabic": "من أحلام اليقظة الوردية إلى الواقع الصلب",
+      "text": "It is delightfully easy to build a castle in the air and daydream about instant triumphs, but unanchored fantasies often collapse into a pipe dream or pie in the sky. When young entrepreneurs fall prey to mere wishful thinking, encountering an inevitable market downturn feels like a brutal harsh awakening. Experiencing a bitter letdown or suffering from an unfulfilled desire is an unavoidable part of personal development. Rather than chasing an unreachable ideal or clinging to a forlorn hope, mature achievers channel their aching desire into rigorous discipline, refusing to wallow in scanted cold comfort.",
+      "vocabularyUsed": [
+        "castle in the air",
+        "daydream",
+        "pipe dream",
+        "pie in the sky",
+        "wishful thinking",
+        "harsh awakening",
+        "letdown",
+        "unfulfilled desire",
+        "unreachable ideal",
+        "forlorn hope",
+        "aching desire",
+        "cold comfort"
+      ]
+    },
+    {
+      "title": "Healing the Wounds of Conscience and Past Wrongs",
+      "titleArabic": "شفاء جراح الضمير والتكفير عن زلات الماضي",
+      "text": "When an ethical transgression damages a sacred relationship, genuine remorseful reflection is the only path toward restoration. Those who endure painful pangs of conscience understand that trying to bury a fault under defensive pride only deepens moral guilt. A sincere person will not allow an estranged friend to pine for recognition or mourn the loss of friendship alone. Instead of allowing sorrow to linger as an unrequited wish, taking prompt action to redress a mistake and vocalize deep remorse liberates both the offender and the wronged party, restoring enduring dignity to both souls.",
+      "vocabularyUsed": [
+        "remorseful",
+        "pangs of conscience",
+        "pine for",
+        "mourn the loss",
+        "unrequited wish",
+        "redress a mistake",
+        "deep remorse"
+      ]
+    }
+  ]
+}

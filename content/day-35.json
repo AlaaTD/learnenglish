@@ -1176,7 +1176,12 @@
       "tags": [
         "actions",
         "software"
-      ]
+      ],
+      "verbForms": {
+        "v1": "install",
+        "v2": "installed",
+        "v3": "installed"
+      }
     },
     {
       "headword": "uninstall",
@@ -1205,7 +1210,12 @@
       "tags": [
         "actions",
         "software"
-      ]
+      ],
+      "verbForms": {
+        "v1": "uninstall",
+        "v2": "uninstalled",
+        "v3": "uninstalled"
+      }
     },
     {
       "headword": "reinstall",
@@ -1231,7 +1241,12 @@
       "tags": [
         "actions",
         "troubleshooting"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reinstall",
+        "v2": "reinstalled",
+        "v3": "reinstalled"
+      }
     },
     {
       "headword": "reboot",
@@ -1260,7 +1275,12 @@
       "tags": [
         "actions",
         "systems"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reboot",
+        "v2": "rebooted",
+        "v3": "rebooted"
+      }
     },
     {
       "headword": "configure",
@@ -1289,7 +1309,12 @@
       "tags": [
         "actions",
         "setup"
-      ]
+      ],
+      "verbForms": {
+        "v1": "configure",
+        "v2": "configured",
+        "v3": "configured"
+      }
     },
     {
       "headword": "customize",
@@ -1320,7 +1345,12 @@
       "tags": [
         "actions",
         "settings"
-      ]
+      ],
+      "verbForms": {
+        "v1": "customize",
+        "v2": "customized",
+        "v3": "customized"
+      }
     },
     {
       "headword": "sync files",

@@ -1,0 +1,1422 @@
+{
+  "day": 79,
+  "title": "Natural Spoken English",
+  "topic": "Real conversation patterns",
+  "description": "Sound more natural in fast everyday conversation.",
+  "stage": "Advanced Everyday English",
+  "focus": "By the end of today, you can communicate clearly about real conversation patterns using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Spoken Grammar: Ellipsis, Response Words, Informal Structures",
+      "explanation": "Spoken English differs from written English because speech is created in real time under cognitive time constraints. Mastering natural spoken grammar requires familiarity with four primary mechanics:\n\n1. Situational Ellipsis:\n   In informal conversation, unstressed words at the start of a clause (pronouns, auxiliary verbs) are frequently omitted when clear from context.\n   - '(Have you) Seen my keys anywhere?'\n   - '(I am) Heading out now, catch you later.'\n   - '(It) Looks fantastic on you!'\n\n2. Response Words & Minimal Responses (Back-channeling):\n   Active listeners continually signal engagement without interrupting the speaker's turn. Common tokens include: 'Right', 'Totally', 'Fair enough', 'Indeed', 'I hear you', and 'Spot on'.\n\n3. Informal Tags & Invariant Tags:\n   Alongside standard tag questions ('It's hot, isn't it?'), spoken English relies heavily on invariant tags like 'right?', 'yeah?', or 'ok?':\n   - 'We are meeting at seven, right?'\n\n4. Fronting & Cleft Sentences for Focus:\n   Speakers shift key elements to the front to establish topics or create emphasis:\n   - 'That new documentary, I found it fascinating.' (Topic Fronting)\n   - 'It was Alex who solved the server problem.' (It-cleft)\n   - 'What I really need is a cup of hot tea.' (Wh-cleft)",
+      "structures": [
+        {
+          "pattern": "Situational Ellipsis: (Auxiliary + Subject omitted): 'Got a minute?' / 'Seen the news?' / 'Looks great!'"
+        },
+        {
+          "pattern": "Invariant tag: Statement + right? / yeah?: 'You finished the audit, right?'"
+        },
+        {
+          "pattern": "Cleft emphasis: It + be + Focus + that / who: 'It was the repair strategy that saved the meeting.'"
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Heading to the cafe for lunch; care to join?",
+          "arabic": "ذاهب إلى المقهى لتناول الغداء؛ هل تود الانضمام؟ (حذف شفاهي للفاعل والفعل المساعد).",
+          "usesVocabulary": [
+            "ellipsis"
+          ]
+        },
+        {
+          "sentence": "The presentation went smoothly, didn't it? Every response token from the client signaled strong interest.",
+          "arabic": "سار العرض بسلاسة، أليس كذلك؟ كل إشارة تجاوب من العميل دلت على اهتمام كبير.",
+          "usesVocabulary": [
+            "tag question",
+            "response token"
+          ]
+        },
+        {
+          "sentence": "It was her subtle repair strategy that restored conversational coherence after that awkward false start.",
+          "arabic": "كانت استراتيجيتها الدقيقة في تدارك الحديث هي التي أعادت الانسجام الحواري بعد تلك البداية المتعثرة.",
+          "usesVocabulary": [
+            "repair strategy",
+            "conversational coherence",
+            "false start"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "In formal academic writing, you can write: 'Seen the results yesterday.'",
+          "right": "In formal academic writing, you must write: 'We examined the results yesterday.'",
+          "explanation": "Situational ellipsis is an informal spoken feature; it must not be used in formal academic or technical writing."
+        },
+        {
+          "wrong": "You called him yesterday, didn't you right?",
+          "right": "You called him yesterday, didn't you? / You called him yesterday, right?",
+          "explanation": "Do not combine a grammatical tag question ('didn't you') and an invariant tag ('right') in the same clause."
+        }
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "ellipsis",
+      "pronunciation": "/ɪˈlɪpsɪs/",
+      "partOfSpeech": "noun",
+      "definition": "The omission of words from a clause that are understood from contextual clues or prior statements.",
+      "example": "In conversational ellipsis, speakers drop the subject pronoun, saying 'Sounds good' instead of 'That sounds good.'",
+      "translation": "الحذف البلاغي والتركيبي للكلمات المفهومة من السياق",
+      "collocations": [
+        "situational ellipsis",
+        "conversational ellipsis"
+      ],
+      "synonyms": [
+        "omission"
+      ],
+      "antonyms": [
+        "explicit phrasing"
+      ],
+      "tags": [
+        "linguistics",
+        "grammar"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tag question",
+      "pronunciation": "/tæɡ ˈkwestʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A mini-question added to the end of a statement to invite confirmation, agreement, or checking.",
+      "example": "Adding the tag question 'It is quite chilly, isn't it?' encourages conversational warmth.",
+      "translation": "السؤال المذيل التوكيدي في نهاية الجملة",
+      "collocations": [
+        "use a tag question",
+        "intonation in tag questions"
+      ],
+      "synonyms": [
+        "question tag"
+      ],
+      "antonyms": [],
+      "tags": [
+        "grammar",
+        "conversation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "discourse particle",
+      "pronunciation": "/ˈdɪskɔːs ˈpɑːtɪkl/",
+      "partOfSpeech": "noun",
+      "definition": "A word or expression that structures spoken interaction without altering core propositional truth.",
+      "example": "Words like 'well', 'now', and 'you know' function as discourse particles guiding listener attention.",
+      "translation": "أداة تنظيم الخطاب الشفاهي (مثل حسناً، أتعلم)",
+      "collocations": [
+        "function of a discourse particle",
+        "spoken discourse particles"
+      ],
+      "synonyms": [
+        "pragmatic marker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "linguistics",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "filler word",
+      "pronunciation": "/ˈfɪlə wɜːd/",
+      "partOfSpeech": "noun",
+      "definition": "A meaningless sound or word used by speakers to pause or signal thinking time without relinquishing the floor.",
+      "example": "Relying on the filler word 'um' or 'like' gives the brain split seconds to formulate complex thoughts.",
+      "translation": "كلمة حشو للتفكير وكسب الوقت في الحديث الشفاهي",
+      "collocations": [
+        "avoid filler words",
+        "use filler words"
+      ],
+      "synonyms": [
+        "hesitation marker"
+      ],
+      "antonyms": [
+        "precise terminology"
+      ],
+      "tags": [
+        "speech",
+        "conversation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hedging expression",
+      "pronunciation": "/ˈhedʒɪŋ ɪkˈspreʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A spoken phrase softening the directness or certainty of a statement to avoid dogmatism.",
+      "example": "Using a hedging expression like 'sort of' or 'more or less' prevents sounding confrontational.",
+      "translation": "عبارة تحوط وتلطيف لتقليل القطعية والحدة",
+      "collocations": [
+        "soften with a hedging expression",
+        "common hedging expressions"
+      ],
+      "synonyms": [
+        "qualifying phrase"
+      ],
+      "antonyms": [
+        "absolute statement"
+      ],
+      "tags": [
+        "pragmatics",
+        "politeness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "vague language",
+      "pronunciation": "/veɪɡ ˈlæŋɡwɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "Words that deliberately lack exact precision, used to signal informality, familiarity, and shared understanding.",
+      "example": "Phrases like 'and that sort of thing' or 'stuff like that' are classic examples of vague language.",
+      "translation": "اللغة التقريبية الفضفاضة في المحادثات العفوية",
+      "collocations": [
+        "rely on vague language",
+        "use vague language"
+      ],
+      "synonyms": [
+        "imprecise language"
+      ],
+      "antonyms": [
+        "exact language"
+      ],
+      "tags": [
+        "conversation",
+        "sociolinguistics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "approximator",
+      "pronunciation": "/əˈprɒksɪmeɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "A word indicating that an amount, time, or quantity is approximate rather than scientifically exact.",
+      "example": "In colloquial speech, 'roughly', 'about', and 'around' act as useful approximators.",
+      "translation": "مؤشر التقريب (تقريباً، زهاء، نحو)",
+      "collocations": [
+        "serve as an approximator",
+        "use an approximator"
+      ],
+      "synonyms": [
+        "rough indicator"
+      ],
+      "antonyms": [
+        "exact number"
+      ],
+      "tags": [
+        "linguistics",
+        "speech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "softening device",
+      "pronunciation": "/ˈsɒfnɪŋ dɪˈvaɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A polite grammatical or lexical technique used to make requests or criticisms less blunt.",
+      "example": "Adding 'I was wondering if' operates as an effective softening device when asking for favors.",
+      "translation": "أداة تلطيف وتخفيف حدة الطلب أو النقد",
+      "collocations": [
+        "employ a softening device",
+        "act as a softening device"
+      ],
+      "synonyms": [
+        "mitigator",
+        "politeness marker"
+      ],
+      "antonyms": [
+        "blunt demand"
+      ],
+      "tags": [
+        "politeness",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "face-saving strategy",
+      "pronunciation": "/feɪs ˈseɪvɪŋ ˈstrætədʒi/",
+      "partOfSpeech": "noun",
+      "definition": "A communicative technique designed to protect a speaker's or listener's dignity and social standing.",
+      "example": "Indirectly blaming the printer was a diplomatic face-saving strategy that protected the intern.",
+      "translation": "استراتيجية حفظ ماء الوجه والكرامة الاجتماعية",
+      "collocations": [
+        "adopt a face-saving strategy",
+        "use a face-saving strategy"
+      ],
+      "synonyms": [
+        "politeness strategy"
+      ],
+      "antonyms": [
+        "face-threatening act"
+      ],
+      "tags": [
+        "pragmatics",
+        "sociology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "indirect speech act",
+      "pronunciation": "/ˌɪndaɪˈrekt ˈspiːtʃ ækt/",
+      "partOfSpeech": "noun",
+      "definition": "An utterance whose underlying pragmatic intent differs from its surface grammatical form.",
+      "example": "Saying 'Can you pass the salt?' is an indirect speech act: a request phrased grammatically as a question.",
+      "translation": "الفعل الكلامي غير المباشر (مثل صياغة الطلب في صورة سؤال)",
+      "collocations": [
+        "perform an indirect speech act",
+        "interpret an indirect speech act"
+      ],
+      "synonyms": [
+        "implicit request"
+      ],
+      "antonyms": [
+        "direct command"
+      ],
+      "tags": [
+        "pragmatics",
+        "linguistics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "implicature",
+      "pronunciation": "/ˌɪmplɪˈkeɪtʃə/",
+      "partOfSpeech": "noun",
+      "definition": "What is suggested or understood in an utterance, even though neither expressed nor strictly entailed.",
+      "example": "Saying 'The room is rather warm' carries the conversational implicature that someone should open a window.",
+      "translation": "المعنى المستلزم تخاطبياً والمفهوم ضمناً",
+      "collocations": [
+        "conversational implicature",
+        "derive an implicature"
+      ],
+      "synonyms": [
+        "implied meaning",
+        "subtext"
+      ],
+      "antonyms": [
+        "literal meaning"
+      ],
+      "tags": [
+        "pragmatics",
+        "philosophy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "conversational maxim",
+      "pronunciation": "/ˌkɒnvəˈseɪʃənl ˈmæksɪm/",
+      "partOfSpeech": "noun",
+      "definition": "A foundational cooperative principle of communication formulated by philosopher Paul Grice.",
+      "example": "Violating the conversational maxim of quantity occurs when someone provides far too much irrelevant detail.",
+      "translation": "المبدأ الحواري التخاطبي لقواعد غرايس للتواصل",
+      "collocations": [
+        "flout a conversational maxim",
+        "Grice's conversational maxims"
+      ],
+      "synonyms": [
+        "cooperative principle"
+      ],
+      "antonyms": [],
+      "tags": [
+        "pragmatics",
+        "philosophy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "turn-taking signal",
+      "pronunciation": "/ˈtɜːn ˌteɪkɪŋ ˈsɪɡnl/",
+      "partOfSpeech": "noun",
+      "definition": "A vocal inflection, gesture, or pause indicating that a speaker is ready to yield the conversation floor.",
+      "example": "Falling vocal pitch and prolonged eye contact serve as an intuitive turn-taking signal in conversation.",
+      "translation": "إشارة تبادل وتناوب الأدوار في الحديث الشفاهي",
+      "collocations": [
+        "give a turn-taking signal",
+        "recognize turn-taking signals"
+      ],
+      "synonyms": [
+        "floor-yielding cue"
+      ],
+      "antonyms": [],
+      "tags": [
+        "conversation",
+        "interaction"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "back-channeling",
+      "pronunciation": "/ˈbæk ˌtʃænəlɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Listener feedback sounds and words that show attentiveness without attempting to seize the speaking turn.",
+      "example": "Nodding while murmuring 'uh-huh' and 'right' is natural back-channeling that shows active listening.",
+      "translation": "التغذية الراجعة التفاعلية للتأكيد على المتابعة والإنصات",
+      "collocations": [
+        "practice back-channeling",
+        "forms of back-channeling"
+      ],
+      "synonyms": [
+        "listener feedback",
+        "minimal feedback"
+      ],
+      "antonyms": [
+        "interruption"
+      ],
+      "tags": [
+        "conversation",
+        "linguistics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "repair strategy",
+      "pronunciation": "/rɪˈpeə ˈstrætədʒi/",
+      "partOfSpeech": "noun",
+      "definition": "A communicative technique used to correct a slip, misunderstanding, or speech error in real-time talk.",
+      "example": "Saying 'I mean' to rephrase an ambiguous phrase is an essential conversational repair strategy.",
+      "translation": "استراتيجية تصحيح وتدارك العثرات الكلامية",
+      "collocations": [
+        "initiate a repair strategy",
+        "effective repair strategy"
+      ],
+      "synonyms": [
+        "conversational repair"
+      ],
+      "antonyms": [],
+      "tags": [
+        "conversation",
+        "linguistics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reformulation",
+      "pronunciation": "/ˌriːfɔːmjuˈleɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Expressing something in a different way in conversation to clarify meaning or improve precision.",
+      "example": "Her sudden reformulation from 'He was angry' to 'He felt betrayed' captured the nuance accurately.",
+      "translation": "إعادة الصياغة الكلامية لتوضيح المعنى",
+      "collocations": [
+        "conversational reformulation",
+        "prompt a reformulation"
+      ],
+      "synonyms": [
+        "rephrasing",
+        "recasting"
+      ],
+      "antonyms": [],
+      "tags": [
+        "speech",
+        "clarity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "self-correction",
+      "pronunciation": "/self kəˈrekʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An immediate verbal fix made by a speaker right after committing a grammatical or factual slip.",
+      "example": "Spontaneous self-correction is a sign of high language proficiency and communicative monitoring.",
+      "translation": "التصحيح الذاتي التلقائي للأخطاء أثناء الكلام",
+      "collocations": [
+        "spontaneous self-correction",
+        "engage in self-correction"
+      ],
+      "synonyms": [
+        "self-repair"
+      ],
+      "antonyms": [
+        "unnoticed error"
+      ],
+      "tags": [
+        "fluency",
+        "speech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "false start",
+      "pronunciation": "/fɔːls stɑːt/",
+      "partOfSpeech": "noun",
+      "definition": "Beginning an utterance and then immediately abandoning it to rephrase the thought differently.",
+      "example": "In spontaneous speech, false starts like 'I was going—well, actually we decided to stay' are normal.",
+      "translation": "البداية الزائفة والتعثر العفوي قبل تصحيح الجملة",
+      "collocations": [
+        "contain a false start",
+        "make a false start"
+      ],
+      "synonyms": [
+        "restart",
+        "abandoned utterance"
+      ],
+      "antonyms": [
+        "fluent delivery"
+      ],
+      "tags": [
+        "speech",
+        "fluency"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "filled pause",
+      "pronunciation": "/fɪld pɔːz/",
+      "partOfSpeech": "noun",
+      "definition": "A vocal hesitation sound like 'er', 'erm', or 'uh' produced while formulating the next sentence segment.",
+      "example": "Public speaking coaches train executives to replace filled pauses with quiet, deliberate breathing.",
+      "translation": "الوقفة الصوتية الممتلئة بأصوات التردد (مثل آاه، إمم)",
+      "collocations": [
+        "eliminate filled pauses",
+        "rely on filled pauses"
+      ],
+      "synonyms": [
+        "voiced hesitation"
+      ],
+      "antonyms": [
+        "unfilled pause",
+        "silent pause"
+      ],
+      "tags": [
+        "speech",
+        "rhetoric"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unfilled pause",
+      "pronunciation": "/ʌnˈfɪld pɔːz/",
+      "partOfSpeech": "noun",
+      "definition": "A brief period of complete silence in spoken conversation used for breath, emphasis, or cognitive retrieval.",
+      "example": "A dramatic unfilled pause before announcing the winner heightened audience anticipation.",
+      "translation": "الوقفة الصامتة التامة للتأمل أو التشويق",
+      "collocations": [
+        "a deliberate unfilled pause",
+        "use of unfilled pauses"
+      ],
+      "synonyms": [
+        "silent pause"
+      ],
+      "antonyms": [
+        "filled pause"
+      ],
+      "tags": [
+        "speech",
+        "delivery"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "topic shift",
+      "pronunciation": "/ˈtɒpɪk ʃɪft/",
+      "partOfSpeech": "noun",
+      "definition": "A deliberate transition in conversation from one subject of discussion to a completely different one.",
+      "example": "The diplomat smoothly executed a topic shift away from defense spending toward cultural trade.",
+      "translation": "التحول والانتقال لموضوع حديث جديد",
+      "collocations": [
+        "execute a topic shift",
+        "subtle topic shift"
+      ],
+      "synonyms": [
+        "subject change"
+      ],
+      "antonyms": [
+        "topic continuation"
+      ],
+      "tags": [
+        "conversation",
+        "discourse"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "topic change marker",
+      "pronunciation": "/ˈtɒpɪk tʃeɪndʒ ˈmɑːkə/",
+      "partOfSpeech": "noun",
+      "definition": "A discourse phrase such as 'by the way' or 'incidentally' explicitly announcing a thematic pivot.",
+      "example": "Using 'Speaking of which' serves as an organic topic change marker connecting related thoughts.",
+      "translation": "مؤشر الانتقال الموضعي (بالمناسبة، على ذكر ذلك)",
+      "collocations": [
+        "use a topic change marker",
+        "common topic change markers"
+      ],
+      "synonyms": [
+        "conversational transition marker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "conversation",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "phatic communion",
+      "pronunciation": "/ˈfætɪk kəˈmjuːnjən/",
+      "partOfSpeech": "noun",
+      "definition": "Communication used for establishing a social atmosphere or bonding rather than conveying factual data.",
+      "example": "Saying 'Lovely weather today, isn't it?' is classic phatic communion designed to build rapport.",
+      "translation": "التواصل الأنسي والمجاملات الاجتماعية لبناء الألفة",
+      "collocations": [
+        "engage in phatic communion",
+        "function of phatic communion"
+      ],
+      "synonyms": [
+        "social grooming talk",
+        "rapport building"
+      ],
+      "antonyms": [
+        "transactional talk"
+      ],
+      "tags": [
+        "sociolinguistics",
+        "anthropology"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "small talk formula",
+      "pronunciation": "/smɔːl tɔːk ˈfɔːmjələ/",
+      "partOfSpeech": "noun",
+      "definition": "A predictable conventional phrase used to open or maintain polite casual conversation.",
+      "example": "In networking receptions, 'What brings you to the conference?' is an essential small talk formula.",
+      "translation": "صيغة وقالب الحديث العفوي الودي",
+      "collocations": [
+        "master small talk formulas",
+        "use a small talk formula"
+      ],
+      "synonyms": [
+        "icebreaker formula"
+      ],
+      "antonyms": [],
+      "tags": [
+        "conversation",
+        "social"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "formulaic expression",
+      "pronunciation": "/ˌfɔːmjuˈleɪɪk ɪkˈspreʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A fixed sequence of words retrieved from memory as a single prefabricated linguistic chunk.",
+      "example": "Phrases like 'Take care' and 'Safe travels' are formulaic expressions processed automatically in social life.",
+      "translation": "تعبير اصطلاحي نمطي مسبق التجهيز ومحفوظ كقالب",
+      "collocations": [
+        "rely on formulaic expressions",
+        "acquire formulaic expressions"
+      ],
+      "synonyms": [
+        "prefabricated chunk"
+      ],
+      "antonyms": [
+        "spontaneous construction"
+      ],
+      "tags": [
+        "linguistics",
+        "vocabulary"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "idiom in context",
+      "pronunciation": "/ˈɪdiəm ɪn ˈkɒntekst/",
+      "partOfSpeech": "noun",
+      "definition": "An idiomatic phrase understood and used appropriately within its natural cultural and pragmatic setting.",
+      "example": "Learning an idiom in context ensures you know when it is witty rather than bizarre or offensive.",
+      "translation": "التعبير الاصطلاحي في سياقه الطبيعي الملائم",
+      "collocations": [
+        "learn an idiom in context",
+        "interpret an idiom in context"
+      ],
+      "synonyms": [
+        "contextual idiom"
+      ],
+      "antonyms": [
+        "isolated idiom"
+      ],
+      "tags": [
+        "idioms",
+        "learning"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "colloquial register",
+      "pronunciation": "/kəˈləʊkwiəl ˈredʒɪstə/",
+      "partOfSpeech": "noun",
+      "definition": "The informal variety of language used in relaxed everyday conversation with family and peers.",
+      "example": "Switching to a colloquial register helped the politician connect with factory workers on the shop floor.",
+      "translation": "السجل اللغوي العامي واليومي غير الرسمي",
+      "collocations": [
+        "switch to a colloquial register",
+        "speak in a colloquial register"
+      ],
+      "synonyms": [
+        "informal register",
+        "vernacular"
+      ],
+      "antonyms": [
+        "formal register"
+      ],
+      "tags": [
+        "sociolinguistics",
+        "style"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "informal contraction",
+      "pronunciation": "/ɪnˈfɔːml kənˈtrækʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A shortened form of words common in fast speech, such as 'gonna', 'wanna', or 'dunno'.",
+      "example": "While appropriate in casual chat, an informal contraction should never appear in formal academic essays.",
+      "translation": "الدمج والاختصار غير الرسمي في الكلام السريع (مثل wanna)",
+      "collocations": [
+        "use an informal contraction",
+        "avoid informal contractions"
+      ],
+      "synonyms": [
+        "speech reduction"
+      ],
+      "antonyms": [
+        "uncontracted form"
+      ],
+      "tags": [
+        "phonetics",
+        "slang"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "elided form",
+      "pronunciation": "/ɪˈlaɪdɪd fɔːm/",
+      "partOfSpeech": "noun",
+      "definition": "A word or phrase produced with omission of unstressed sounds or syllables in rapid spoken delivery.",
+      "example": "Pronouncing 'camera' as two syllables instead of three demonstrates an elided form.",
+      "translation": "الصيغة المحذوفة والمخففة صوتياً في النطق السريع",
+      "collocations": [
+        "produce an elided form",
+        "common elided forms"
+      ],
+      "synonyms": [
+        "reduced form"
+      ],
+      "antonyms": [
+        "full citation form"
+      ],
+      "tags": [
+        "phonetics",
+        "speech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reduced clause",
+      "pronunciation": "/rɪˈdjuːst klɔːz/",
+      "partOfSpeech": "noun",
+      "definition": "A subordinate clause shortened by omitting the relative pronoun and auxiliary verb.",
+      "example": "Changing 'the people who are waiting outside' to 'the people waiting outside' creates a reduced clause.",
+      "translation": "الجملة التابعة المخففة والمختصرة نحوياً",
+      "collocations": [
+        "form a reduced clause",
+        "use of reduced clauses"
+      ],
+      "synonyms": [
+        "elliptical clause"
+      ],
+      "antonyms": [
+        "full relative clause"
+      ],
+      "tags": [
+        "grammar",
+        "syntax"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fronting structure",
+      "pronunciation": "/ˈfrʌntɪŋ ˈstrʌktʃə/",
+      "partOfSpeech": "noun",
+      "definition": "Moving an element from its normal position to the very front of the sentence to give it prominence.",
+      "example": "In the fronting structure 'Shocked, they stared at the wreckage', the emotion is highlighted first.",
+      "translation": "بنية التقديم والتأخير اللفظي لإبراز عنصر في الجملة",
+      "collocations": [
+        "employ a fronting structure",
+        "fronting structure for emphasis"
+      ],
+      "synonyms": [
+        "topicalization"
+      ],
+      "antonyms": [
+        "standard canonical syntax"
+      ],
+      "tags": [
+        "syntax",
+        "style"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cleft sentence",
+      "pronunciation": "/kleft ˈsentəns/",
+      "partOfSpeech": "noun",
+      "definition": "A complex sentence dividing a single clause into two parts to highlight a specific piece of information.",
+      "example": "The cleft sentence 'It was Susan who discovered the error' emphasizes Susan as the key agent.",
+      "translation": "الجملة المشطورة التوكيدية للتركيز على معلومة محددة",
+      "collocations": [
+        "use a cleft sentence",
+        "wh-cleft sentence"
+      ],
+      "synonyms": [
+        "split sentence",
+        "focus construction"
+      ],
+      "antonyms": [
+        "simple sentence"
+      ],
+      "tags": [
+        "grammar",
+        "emphasis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "existential there",
+      "pronunciation": "/ˌeɡzɪˈstenʃl ðeə/",
+      "partOfSpeech": "noun",
+      "definition": "The introductory unstressed 'there' used with the verb 'to be' to state that something exists.",
+      "example": "In spoken English, 'There is a bakery on the corner' uses existential there to introduce new topics.",
+      "translation": "تعبير الوجودية الإخباري (هناك / يوجد)",
+      "collocations": [
+        "use of existential there",
+        "existential there construction"
+      ],
+      "synonyms": [
+        "dummy there"
+      ],
+      "antonyms": [
+        "locative there"
+      ],
+      "tags": [
+        "grammar",
+        "syntax"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "dummy subject",
+      "pronunciation": "/ˈdʌmi ˈsʌbdʒɪkt/",
+      "partOfSpeech": "noun",
+      "definition": "A pronoun like 'it' or 'there' that occupies the subject slot without having concrete semantic reference.",
+      "example": "In 'It is raining outside', the word 'it' serves merely as a dummy subject fulfilling syntactic rules.",
+      "translation": "الفاعل الشكلي النحوي الفارغ من الدلالة المادية",
+      "collocations": [
+        "function as a dummy subject",
+        "dummy subject construction"
+      ],
+      "synonyms": [
+        "expletive subject",
+        "empty subject"
+      ],
+      "antonyms": [
+        "referential subject"
+      ],
+      "tags": [
+        "syntax",
+        "grammar"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "impersonal it",
+      "pronunciation": "/ɪmˈpɜːsənl ɪt/",
+      "partOfSpeech": "noun",
+      "definition": "The pronoun 'it' used to refer to time, weather, distance, or general ambient conditions.",
+      "example": "Sentences like 'It is past midnight' and 'It is five miles to town' rely on impersonal it.",
+      "translation": "ضمير الغائب غير الشخصي لوصف الطقس والوقت والمسافة",
+      "collocations": [
+        "use of impersonal it",
+        "impersonal it structure"
+      ],
+      "synonyms": [
+        "ambient it"
+      ],
+      "antonyms": [
+        "personal pronoun"
+      ],
+      "tags": [
+        "grammar",
+        "pronouns"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rhetorical question",
+      "pronunciation": "/rɪˈtɒrɪkl ˈkwestʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A question asked to produce an artistic effect or make a point rather than elicit an answer.",
+      "example": "Asking 'Who doesn't want to live in a safer community?' is a powerful rhetorical question.",
+      "translation": "السؤال البلاغي التقريري الذي لا ينتظر إجابة",
+      "collocations": [
+        "pose a rhetorical question",
+        "answer with a rhetorical question"
+      ],
+      "synonyms": [
+        "erotesis"
+      ],
+      "antonyms": [
+        "genuine inquiry"
+      ],
+      "tags": [
+        "rhetoric",
+        "speech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "indirect question",
+      "pronunciation": "/ˌɪndaɪˈrekt ˈkwestʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A question embedded inside a polite introductory phrase or another clause.",
+      "example": "'Could you tell me where the nearest station is?' is an indirect question featuring normal word order.",
+      "translation": "السؤال غير المباشر المهذب المضمن في جملة أخرى",
+      "collocations": [
+        "form an indirect question",
+        "polite indirect question"
+      ],
+      "synonyms": [
+        "embedded question"
+      ],
+      "antonyms": [
+        "direct question"
+      ],
+      "tags": [
+        "grammar",
+        "politeness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "exclamative structure",
+      "pronunciation": "/ɪkˈsklæmətɪv ˈstrʌktʃə/",
+      "partOfSpeech": "noun",
+      "definition": "A grammatical clause introduced by 'What' or 'How' expressing surprise, shock, or admiration.",
+      "example": "'What a breathtaking view!' and 'How generous of you!' are classic exclamative structures.",
+      "translation": "التركيب النحوي التعجبي والانفعالي",
+      "collocations": [
+        "utter an exclamative structure",
+        "use exclamative structures"
+      ],
+      "synonyms": [
+        "exclamatory sentence"
+      ],
+      "antonyms": [
+        "declarative statement"
+      ],
+      "tags": [
+        "grammar",
+        "speech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "emphatic do",
+      "pronunciation": "/ɪmˈfætɪk duː/",
+      "partOfSpeech": "noun",
+      "definition": "The auxiliary verb 'do/did' inserted into an affirmative sentence to stress conviction or contrast.",
+      "example": "In 'I do appreciate your assistance', emphatic do conveys genuine emotional warmth.",
+      "translation": "استخدام do للتوكيد اللفظي في الجمل المثبتة",
+      "collocations": [
+        "use emphatic do",
+        "stress with emphatic do"
+      ],
+      "synonyms": [
+        "affirmative do"
+      ],
+      "antonyms": [
+        "unemphatic form"
+      ],
+      "tags": [
+        "grammar",
+        "emphasis"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "broad negative",
+      "pronunciation": "/brɔːd ˈneɡətɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A semi-negative adverb like 'rarely', 'seldom', 'hardly', or 'barely' that creates negative polarity.",
+      "example": "Broad negatives like 'hardly ever' or 'seldom' qualify assertions without absolute negation.",
+      "translation": "النفي التبعيضي وشبه النفي (نادراً، قلما، بالكاد)",
+      "collocations": [
+        "sentence with a broad negative",
+        "use a broad negative"
+      ],
+      "synonyms": [
+        "semi-negative",
+        "near-negative"
+      ],
+      "antonyms": [
+        "affirmative assertion"
+      ],
+      "tags": [
+        "grammar",
+        "syntax"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "invariant tag",
+      "pronunciation": "/ɪnˈveəriənt tæɡ/",
+      "partOfSpeech": "noun",
+      "definition": "A conversational tag like 'right?', 'yeah?', or 'eh?' whose grammatical form never changes.",
+      "example": "Using the invariant tag 'right?' at the end of every sentence is ubiquitous among urban youth.",
+      "translation": "اللاحقة التوكيدية الثابتة التي لا تتغير صيغتها",
+      "collocations": [
+        "use an invariant tag",
+        "invariant tag right"
+      ],
+      "synonyms": [
+        "fixed question tag"
+      ],
+      "antonyms": [
+        "canonical tag question"
+      ],
+      "tags": [
+        "conversation",
+        "sociolinguistics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "response token",
+      "pronunciation": "/rɪˈspɒns ˈtəʊkən/",
+      "partOfSpeech": "noun",
+      "definition": "A brief vocalization or word like 'mm', 'yeah', 'sure', or 'great' affirming comprehension in talk.",
+      "example": "Dropping a timely response token shows that you are tracking the conversation attentively.",
+      "translation": "رمز وإشارة التجاوب السريع لتأكيد المتابعة الشفاهية",
+      "collocations": [
+        "utter a response token",
+        "frequent response tokens"
+      ],
+      "synonyms": [
+        "back-channel token"
+      ],
+      "antonyms": [
+        "silence"
+      ],
+      "tags": [
+        "conversation",
+        "interaction"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "minimal response",
+      "pronunciation": "/ˈmɪnɪml rɪˈspɒns/",
+      "partOfSpeech": "noun",
+      "definition": "A very short, concise verbal reply that fulfills the conversational turn without volunteering extra data.",
+      "example": "When questioned about his weekend, the teenager offered only a minimal response: 'Fine.'",
+      "translation": "الرد الشفاهي المقتضب والموجز للحد الأدنى",
+      "collocations": [
+        "provide a minimal response",
+        "reply with a minimal response"
+      ],
+      "synonyms": [
+        "brief answer"
+      ],
+      "antonyms": [
+        "elaborate explanation"
+      ],
+      "tags": [
+        "speech",
+        "conversation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "agreement signal",
+      "pronunciation": "/əˈɡriːmənt ˈsɪɡnl/",
+      "partOfSpeech": "noun",
+      "definition": "A verbal phrase or bodily nod indicating shared consensus with what a conversational partner just asserted.",
+      "example": "Phrases like 'Totally', 'I couldn't agree more', and 'Spot on' function as energetic agreement signals.",
+      "translation": "إشارة الموافقة والتأييد الشفاهية الفورية",
+      "collocations": [
+        "send an agreement signal",
+        "clear agreement signal"
+      ],
+      "synonyms": [
+        "concurrence marker"
+      ],
+      "antonyms": [
+        "disagreement marker"
+      ],
+      "tags": [
+        "conversation",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "repair initiator",
+      "pronunciation": "/rɪˈpeə ɪˈnɪʃieɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "An expression like 'Sorry?', 'Pardon?', or 'What did you say?' prompting a speaker to repeat or clarify.",
+      "example": "Saying 'Come again?' functions as an informal repair initiator during a noisy reception.",
+      "translation": "بادئ طلب التصحيح والاستيضاح في الحوار الشفاهي",
+      "collocations": [
+        "function as a repair initiator",
+        "use a repair initiator"
+      ],
+      "synonyms": [
+        "clarification request"
+      ],
+      "antonyms": [],
+      "tags": [
+        "conversation",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "comprehension check",
+      "pronunciation": "/ˌkɒmprɪˈhenʃn tʃek/",
+      "partOfSpeech": "noun",
+      "definition": "A question asked by the speaker like 'Does that make sense?' or 'Are you with me?' to confirm understanding.",
+      "example": "Great instructors insert a frequent comprehension check before introducing challenging technical concepts.",
+      "translation": "التحقق من الفهم والاستيعاب لدى المستمع",
+      "collocations": [
+        "perform a comprehension check",
+        "conduct a comprehension check"
+      ],
+      "synonyms": [
+        "understanding check"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "speech"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "spoken discourse",
+      "pronunciation": "/ˈspəʊkən ˈdɪskɔːs/",
+      "partOfSpeech": "noun",
+      "definition": "Language produced orally during real-time human interaction, featuring distinctive grammatical conventions.",
+      "example": "Linguists analyze spoken discourse to identify natural pauses, overlapping speech, and intonation shifts.",
+      "translation": "الخطاب الشفاهي المحكي وخصائصه التفاعلية",
+      "collocations": [
+        "patterns in spoken discourse",
+        "features of spoken discourse"
+      ],
+      "synonyms": [
+        "oral interaction",
+        "spoken language"
+      ],
+      "antonyms": [
+        "written prose"
+      ],
+      "tags": [
+        "linguistics",
+        "conversation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "conversational coherence",
+      "pronunciation": "/ˌkɒnvəˈseɪʃənl kəʊˈhɪərəns/",
+      "partOfSpeech": "noun",
+      "definition": "The logical, thematic, and social connectedness that makes a spoken interaction feel smooth and orderly.",
+      "example": "Even when topics drifted rapidly, the two lifelong friends maintained conversational coherence through shared jokes.",
+      "translation": "الترابط والانسجام الحواري بين أطراف الحديث",
+      "collocations": [
+        "preserve conversational coherence",
+        "maintain conversational coherence"
+      ],
+      "synonyms": [
+        "dialogue coherence"
+      ],
+      "antonyms": [
+        "conversational breakdown"
+      ],
+      "tags": [
+        "discourse",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "interactional routine",
+      "pronunciation": "/ˌɪntərˈækʃənl ruːˈtiːn/",
+      "partOfSpeech": "noun",
+      "definition": "A standardized sequence of communicative exchanges that recur in daily predictable social contexts.",
+      "example": "Ordering coffee at a cafe involves an interactional routine of greetings, choices, and payments.",
+      "translation": "الروتين التفاعلي النمطي المعتاد في المواقف اليومية",
+      "collocations": [
+        "participate in an interactional routine",
+        "social interactional routine"
+      ],
+      "synonyms": [
+        "conversational script"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sociolinguistics",
+        "pragmatics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "everyday idiom",
+      "pronunciation": "/ˈevrideɪ ˈɪdiəm/",
+      "partOfSpeech": "noun",
+      "definition": "A figurative idiomatic expression used regularly in spontaneous, casual day-to-day conversation.",
+      "example": "'Bite the bullet' and 'hit the nail on the head' are examples of an everyday idiom familiar to all.",
+      "translation": "التعبير الاصطلاحي الشائع والمستخدم يومياً",
+      "collocations": [
+        "use an everyday idiom",
+        "familiar everyday idiom"
+      ],
+      "synonyms": [
+        "common idiom"
+      ],
+      "antonyms": [
+        "obscure idiom"
+      ],
+      "tags": [
+        "idioms",
+        "vocabulary"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Coffee Break: Spontaneous Office Banter",
+      "titleArabic": "استراحة القهوة: محادثة عفوية بين زملاء العمل",
+      "setting": "Two colleagues chat by the office coffee machine after a demanding workshop.",
+      "lines": [
+        {
+          "speaker": "Dan",
+          "text": "Rough morning in there. Got any milk left?"
+        },
+        {
+          "speaker": "Claire",
+          "text": "Plenty in the fridge. That client presentation was intense, wasn't it?"
+        },
+        {
+          "speaker": "Dan",
+          "text": "Totally. At first, I had a false start and relied on every filler word imaginable."
+        },
+        {
+          "speaker": "Claire",
+          "text": "Noticed that, but your quick self-correction and smooth reformulation saved the moment."
+        },
+        {
+          "speaker": "Dan",
+          "text": "Thanks. I used a softening device and some vague language to avoid offending their senior director."
+        },
+        {
+          "speaker": "Claire",
+          "text": "Smart face-saving strategy. Their VP gave clear agreement signals and constant back-channeling."
+        },
+        {
+          "speaker": "Dan",
+          "text": "It was your timely comprehension check that cleared up their doubts about our pricing."
+        },
+        {
+          "speaker": "Claire",
+          "text": "Right? Good team effort. Ready to get back to our desks?"
+        }
+      ],
+      "vocabularyUsed": [
+        "ellipsis",
+        "tag question",
+        "false start",
+        "filler word",
+        "self-correction",
+        "reformulation",
+        "softening device",
+        "vague language",
+        "face-saving strategy",
+        "agreement signal",
+        "back-channeling",
+        "comprehension check",
+        "invariant tag"
+      ]
+    },
+    {
+      "title": "Sociolinguistics Lab: Analyzing Spoken Discourse",
+      "titleArabic": "مختبر علم اللغة الاجتماعي: تحليل الخطاب الشفاهي",
+      "setting": "A linguistics professor and student examine audio transcripts of casual spoken conversations.",
+      "lines": [
+        {
+          "speaker": "Professor",
+          "text": "Notice how spontaneous spoken discourse relies on discourse particles and informal contractions like 'wanna' and 'gonna'."
+        },
+        {
+          "speaker": "Student",
+          "text": "Indeed. This speaker used an elided form alongside a fronting structure for emotional emphasis."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Observe the turn-taking signal around minute three. A deliberate unfilled pause invited the interlocutor to respond."
+        },
+        {
+          "speaker": "Student",
+          "text": "And the listener supplied an immediate minimal response before asking an indirect question."
+        },
+        {
+          "speaker": "Professor",
+          "text": "When mutual understanding faltered, she deployed a polite repair initiator: 'Sorry, what did you mean?'"
+        },
+        {
+          "speaker": "Student",
+          "text": "That restored conversational coherence instantly. She also dropped an everyday idiom in context."
+        },
+        {
+          "speaker": "Professor",
+          "text": "Brilliant observation. Natural speech weaves pragmatic markers together into seamless interactional routines."
+        },
+        {
+          "speaker": "Student",
+          "text": "Analyzing genuine audio recordings reveals patterns that traditional grammar textbooks completely overlook."
+        }
+      ],
+      "vocabularyUsed": [
+        "spoken discourse",
+        "discourse particle",
+        "informal contraction",
+        "elided form",
+        "fronting structure",
+        "turn-taking signal",
+        "unfilled pause",
+        "minimal response",
+        "indirect question",
+        "repair initiator",
+        "conversational coherence",
+        "everyday idiom",
+        "idiom in context",
+        "interactional routine"
+      ]
+    },
+    {
+      "title": "Networking Event: Small Talk and Phatic Communion",
+      "titleArabic": "فعالية تعارف مهني: الأحاديث الودية وبناء الألفة",
+      "setting": "Two professionals meet at a tech mixer in downtown London.",
+      "lines": [
+        {
+          "speaker": "Alex",
+          "text": "Great turnout tonight, right? Mind if I grab the chair next to you?"
+        },
+        {
+          "speaker": "Maya",
+          "text": "Not at all, go right ahead! Classic London rain outside, to put it mildly."
+        },
+        {
+          "speaker": "Alex",
+          "text": "A bit of classic phatic communion never hurts! What brings you to this symposium?"
+        },
+        {
+          "speaker": "Maya",
+          "text": "That is an effective small talk formula. In a colloquial register, I do user research for fin-tech startups."
+        },
+        {
+          "speaker": "Alex",
+          "text": "Fascinating work. I noticed a subtle topic shift during the keynote when someone posed a rhetorical question about ethics."
+        },
+        {
+          "speaker": "Maya",
+          "text": "The speaker flouted Grice's conversational maxim to create an intriguing implicature."
+        },
+        {
+          "speaker": "Alex",
+          "text": "I do appreciate authentic debate. Let us connect on LinkedIn before we depart."
+        },
+        {
+          "speaker": "Maya",
+          "text": "Wonderful idea! It was an absolute pleasure sharing perspectives on communicative dynamics."
+        }
+      ],
+      "vocabularyUsed": [
+        "invariant tag",
+        "phatic communion",
+        "small talk formula",
+        "colloquial register",
+        "topic shift",
+        "rhetorical question",
+        "conversational maxim",
+        "implicature",
+        "emphatic do"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Mechanics and Fluidity of Spontaneous Spoken Discourse",
+      "titleArabic": "آليات وسيولة الخطاب الشفاهي العفوي في التواصل",
+      "text": "Spontaneous spoken discourse operates under radically different communicative principles than edited written text. During fluid daily conversation, speakers rely extensively on situational ellipsis, omitting obvious subject pronouns and auxiliaries without impeding comprehension. To manage real-time cognitive formulation, interlocutors naturally introduce the occasional filler word, filled pause, or momentary unfilled pause before executing an agile self-correction or verbal reformulation. Concurrently, engaged listeners supply rhythmic back-channeling and supportive response tokens to signal attentiveness. When a minor misunderstanding occurs, introducing an intuitive repair strategy or gentle repair initiator swiftly restores conversational coherence.",
+      "vocabularyUsed": [
+        "spoken discourse",
+        "ellipsis",
+        "filler word",
+        "filled pause",
+        "unfilled pause",
+        "self-correction",
+        "reformulation",
+        "back-channeling",
+        "response token",
+        "repair strategy",
+        "repair initiator",
+        "conversational coherence"
+      ]
+    },
+    {
+      "title": "Pragmatic Politeness, Vagueness, and Face-Saving Strategies",
+      "titleArabic": "الأدب التداولي، اللغة التقريبية، واستراتيجيات حفظ ماء الوجه",
+      "text": "Navigating delicate social interactions demands sophisticated pragmatic competence and subtle softening devices. In everyday communication, participants intentionally employ vague language and approximate quantifiers to avoid sounding overly blunt or dogmatic. Rather than issuing direct commands, culturally aware communicators execute an indirect speech act or frame requests as polite indirect questions. When delivering difficult news, adopting a thoughtful face-saving strategy protects the dignity of all parties involved. Furthermore, by observing each conversational maxim and interpreting subtle conversational implicatures, listeners grasp subtext effortlessly. Ultimately, balancing polite hedging expressions with warm everyday idioms maintains harmonious social relationships.",
+      "vocabularyUsed": [
+        "softening device",
+        "vague language",
+        "indirect speech act",
+        "indirect question",
+        "face-saving strategy",
+        "conversational maxim",
+        "implicature",
+        "hedging expression",
+        "everyday idiom"
+      ]
+    },
+    {
+      "title": "Social Bonding, Small Talk Formulas, and Expressive Syntax",
+      "titleArabic": "التقارب الاجتماعي، قوالب الحديث الودي، والتراكيب التعبيرية",
+      "text": "Forming authentic social connections often begins with seemingly modest phatic communion and conventional small talk formulas. When interacting within a colloquial register, speakers effortlessly sprinkle invariant tags and formulaic expressions into everyday dialogues. To emphasize key emotions or clarify narrative priorities, oral grammar frequently leverages fronting structures, cleft sentences, and emphatic do. Using an organic topic change marker facilitates seamless topic shifts without jarring listeners. From sharing an idiom in context to executing a familiar interactional routine at a neighborhood cafe, natural conversational patterns form the vibrant social glue binding human communities.",
+      "vocabularyUsed": [
+        "phatic communion",
+        "small talk formula",
+        "colloquial register",
+        "invariant tag",
+        "formulaic expression",
+        "fronting structure",
+        "cleft sentence",
+        "emphatic do",
+        "topic change marker",
+        "topic shift",
+        "idiom in context",
+        "interactional routine"
+      ]
+    }
+  ]
+}

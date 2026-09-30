@@ -687,7 +687,12 @@
       "tags": [
         "arguments",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "accuse",
+        "v2": "accused",
+        "v3": "accused"
+      }
     },
     {
       "headword": "provoke",
@@ -717,7 +722,12 @@
       "tags": [
         "arguments",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "provoke",
+        "v2": "provoked",
+        "v3": "provoked"
+      }
     },
     {
       "headword": "retaliate",
@@ -747,7 +757,12 @@
       "tags": [
         "arguments",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "retaliate",
+        "v2": "retaliated",
+        "v3": "retaliated"
+      }
     },
     {
       "headword": "insult",
@@ -777,7 +792,12 @@
       "tags": [
         "arguments",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "insult",
+        "v2": "insulted",
+        "v3": "insulted"
+      }
     },
     {
       "headword": "criticize",
@@ -807,7 +827,12 @@
       "tags": [
         "arguments",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "criticize",
+        "v2": "criticized",
+        "v3": "criticized"
+      }
     },
     {
       "headword": "contradict",
@@ -837,7 +862,12 @@
       "tags": [
         "arguments",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "contradict",
+        "v2": "contradicted",
+        "v3": "contradicted"
+      }
     },
     {
       "headword": "interrupt",
@@ -866,7 +896,12 @@
       "tags": [
         "arguments",
         "communication"
-      ]
+      ],
+      "verbForms": {
+        "v1": "interrupt",
+        "v2": "interrupted",
+        "v3": "interrupted"
+      }
     },
     {
       "headword": "belittle",
@@ -895,7 +930,12 @@
       "tags": [
         "arguments",
         "behavior"
-      ]
+      ],
+      "verbForms": {
+        "v1": "belittle",
+        "v2": "belittled",
+        "v3": "belittled"
+      }
     },
     {
       "headword": "escalate",
@@ -924,7 +964,12 @@
       "tags": [
         "arguments",
         "conflict"
-      ]
+      ],
+      "verbForms": {
+        "v1": "escalate",
+        "v2": "escalated",
+        "v3": "escalated"
+      }
     },
     {
       "headword": "de-escalate",
@@ -953,7 +998,12 @@
       "tags": [
         "arguments",
         "solutions"
-      ]
+      ],
+      "verbForms": {
+        "v1": "de-escalate",
+        "v2": "de-escalated",
+        "v3": "de-escalated"
+      }
     },
     {
       "headword": "mediate",
@@ -979,7 +1029,12 @@
       "tags": [
         "solutions",
         "mediation"
-      ]
+      ],
+      "verbForms": {
+        "v1": "mediate",
+        "v2": "mediated",
+        "v3": "mediated"
+      }
     },
     {
       "headword": "negotiate",
@@ -1006,7 +1061,12 @@
       "tags": [
         "solutions",
         "negotiation"
-      ]
+      ],
+      "verbForms": {
+        "v1": "negotiate",
+        "v2": "negotiated",
+        "v3": "negotiated"
+      }
     },
     {
       "headword": "arbitrate",
@@ -1033,7 +1093,12 @@
       "tags": [
         "solutions",
         "legal"
-      ]
+      ],
+      "verbForms": {
+        "v1": "arbitrate",
+        "v2": "arbitrated",
+        "v3": "arbitrated"
+      }
     },
     {
       "headword": "reconcile",
@@ -1063,7 +1128,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "reconcile",
+        "v2": "reconciled",
+        "v3": "reconciled"
+      }
     },
     {
       "headword": "concede",
@@ -1092,7 +1162,12 @@
       "tags": [
         "solutions",
         "negotiation"
-      ]
+      ],
+      "verbForms": {
+        "v1": "concede",
+        "v2": "conceded",
+        "v3": "conceded"
+      }
     },
     {
       "headword": "compromise",
@@ -1119,7 +1194,12 @@
       "tags": [
         "solutions",
         "negotiation"
-      ]
+      ],
+      "verbForms": {
+        "v1": "compromise",
+        "v2": "compromised",
+        "v3": "compromised"
+      }
     },
     {
       "headword": "settle",
@@ -1148,7 +1228,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "settle",
+        "v2": "settled",
+        "v3": "settled"
+      }
     },
     {
       "headword": "pacify",
@@ -1178,7 +1263,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "pacify",
+        "v2": "pacified",
+        "v3": "pacified"
+      }
     },
     {
       "headword": "appease",
@@ -1207,7 +1297,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "appease",
+        "v2": "appeased",
+        "v3": "appeased"
+      }
     },
     {
       "headword": "placate",
@@ -1236,7 +1331,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "placate",
+        "v2": "placated",
+        "v3": "placated"
+      }
     },
     {
       "headword": "mollify",
@@ -1265,7 +1365,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "mollify",
+        "v2": "mollified",
+        "v3": "mollified"
+      }
     },
     {
       "headword": "harmonize",
@@ -1295,7 +1400,12 @@
       "tags": [
         "solutions",
         "peace"
-      ]
+      ],
+      "verbForms": {
+        "v1": "harmonize",
+        "v2": "harmonized",
+        "v3": "harmonized"
+      }
     },
     {
       "headword": "intervene",
@@ -1324,7 +1434,12 @@
       "tags": [
         "solutions",
         "mediation"
-      ]
+      ],
+      "verbForms": {
+        "v1": "intervene",
+        "v2": "intervened",
+        "v3": "intervened"
+      }
     },
     {
       "headword": "peacemaker",
