@@ -1,0 +1,1582 @@
+{
+  "day": 67,
+  "title": "Solving Conflicts",
+  "topic": "Mediation and compromise",
+  "description": "Talk about conflicts and what people should have done.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about mediation and compromise using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Should have / Could have (Past Modals)",
+      "titleArabic": "الأفعال الناقصة للماضي: اللوم والندم والقدرات الضائعة (Should have / Could have / Would have)",
+      "explanation": "We use past modal verbs (Modal + have + Past Participle / V3) to evaluate past actions with the benefit of hindsight: 1) 'Should have + V3' expresses criticism, regret, or advice about what was the right or desirable thing to do in the past, but did not happen ('They should have signed the ceasefire accord'; 'I should have listened to the mediator'). Negative: 'Shouldn't have + V3' criticizes a past action that did happen ('He shouldn't have launched that aggressive lawsuit'). 2) 'Could have + V3' expresses an ability, opportunity, or alternative possibility in the past that was not utilized ('Diplomats could have broken the deadlock, but neither side made concessions'). 3) 'Would have + V3' expresses a hypothetical certainty that depended on an unfulfilled past condition ('We would have reached an accord if they had attended').",
+      "explanationArabic": "نستخدم الأفعال الناقصة في زمن الماضي (Modal + have + التصريف الثالث V3) لتقييم أفعال وقرارات الماضي في ضوء ما تبين لاحقاً: 1) Should have + V3 (كان ينبغي أن...): تعبر عن لوم أو ندم أو نقد لفعل كان من الصواب أو الأفضل فعله في الماضي ولكنه لم يحدث ('كان ينبغي أن يوقعوا اتفاق وقف إطلاق النار'). ومنفيها: Shouldn't have + V3 (ما كان ينبغي أن...): لنقد فعل حدث بالفعل في الماضي وكان خطأً. 2) Could have + V3 (كان بإمكانه أن...): تعبر عن قدرة أو فرصة أو إمكانية كانت متاحة في الماضي ولكن لم يتم استغلالها ('كان بإمكان الدبلوماسيين كسر الجمود'). 3) Would have + V3 (لكان قد حدث...): تعبر عن نتيجة ماضية افتراضية كانت ستتحقق لو توفر شرط معين.",
+      "structures": [
+        {
+          "label": "Past Regret / Criticism · اللوم والنصح بأثر رجعي (Should have)",
+          "pattern": "Subject + should have + Past Participle (V3)",
+          "explanation": "Used to say what was the sensible, moral, or correct past action.",
+          "explanationArabic": "يُستخدم لبيان ما كان ينبغي فعله منطقياً أو أخلاقياً في الماضي."
+        },
+        {
+          "label": "Past Missed Opportunity · الفرصة الضائعة في الماضي (Could have)",
+          "pattern": "Subject + could have + Past Participle (V3)",
+          "explanation": "Used to express an unfulfilled past ability or alternative path.",
+          "explanationArabic": "يُستخدم للتعبير عن فرصة أو بديل كان متاحاً في الماضي ولم يُستغل."
+        },
+        {
+          "label": "Past Mistake Critique · التنديد بخطأ ماضٍ (Shouldn't have)",
+          "pattern": "Subject + shouldn't have + Past Participle (V3)",
+          "explanation": "Expresses that a past action was wrong, harmful, or regrettable.",
+          "explanationArabic": "يُستخدم لبيان أن تصرفاً ما وقع في الماضي وكان خاطئاً وضاراً."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "Both corporate factions should have hired an impartial arbitrator before litigation.",
+          "translation": "كان ينبغي لكلا الطرفين المؤسسيين الاستعانة بمحكم محايد قبل اللجوء للقضاء.",
+          "usesVocabulary": [
+            "arbitrator"
+          ]
+        },
+        {
+          "sentence": "The diplomatic envoy could have defused tension by extending an olive branch.",
+          "translation": "كان بإمكان المبعوث الدبلوماسي نزع فتيل التوتر بمد غصن الزيتون.",
+          "usesVocabulary": [
+            "diplomatic envoy",
+            "defuse tension",
+            "olive branch"
+          ]
+        },
+        {
+          "sentence": "They shouldn't have allowed the border dispute to solidify into a stubborn standoff.",
+          "translation": "ما كان ينبغي لهم السماح للنزاع الحدودي بالتصلب إلى مواجهة متعنتة وطريق مسدود.",
+          "usesVocabulary": [
+            "stubborn standoff"
+          ]
+        },
+        {
+          "sentence": "A neutral arbiter could have helped both sides bridge the divide and reach an accord.",
+          "translation": "كان بإمكان حَكَم محايد مساعدة الجانبين على رأب الصدع والتوصل إلى اتفاق.",
+          "usesVocabulary": [
+            "neutral arbiter",
+            "bridge the divide",
+            "reach an accord"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "You should of called the mediator earlier.",
+          "right": "You should have called the mediator earlier.",
+          "note": "Never write 'should of'; it is a phonetic spelling error for 'should have' (or 'should've').",
+          "noteArabic": "لا تكتب 'should of' إطلاقاً؛ فهي خطأ إملائي ناشئ عن النطق الشفهي لـ 'should have'."
+        },
+        {
+          "wrong": "They could had reached a settlement yesterday.",
+          "right": "They could have reached a settlement yesterday.",
+          "note": "Modal verbs must always be followed by the base form 'have', never 'had'.",
+          "noteArabic": "يجب أن يتبع الأفعال الناقصة المصدر 'have' دائماً وليس had."
+        }
+      ],
+      "commonUsage": [
+        "Reviewing past business negotiations: 'We should have offered mutual concessions.' (تُستخدم لتقييم مسار المفاوضات التجارية السابقة.)",
+        "Diplomatic analysis: 'International monitors could have prevented the hostile standoff.' (تُستخدم في التحليلات السياسية والدبلوماسية للأزمات.)",
+        "Personal conflict resolution: 'I shouldn't have lost my temper; we should have cleared the air.' (تُستخدم في مراجعة الخلافات الشخصية والتصالح.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "arbitrator",
+      "pronunciation": "/ˈɑːbɪtreɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "An independent individual officially appointed to settle an industrial or legal dispute.",
+      "example": "The feuding corporations agreed that an impartial arbitrator should have been appointed sooner.",
+      "translation": "مُحكّم محايد / قاضي تحكيم",
+      "exampleArabic": "وافقت الشركات المتنازعة على أنه كان ينبغي تعيين محكّم محايد في وقت أبكر.",
+      "collocations": [
+        "independent arbitrator",
+        "appoint an arbitrator"
+      ],
+      "synonyms": [
+        "adjudicator",
+        "umpire"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dispute",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "arbitration",
+      "pronunciation": "/ˌɑːbɪˈtreɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The formal hearing and determination of a dispute by an impartial third party.",
+      "example": "Both management and labor unions should have submitted their wage grievances to binding arbitration.",
+      "translation": "تحكيم / قضاء تحكيمي",
+      "exampleArabic": "كان ينبغي على كل من الإدارة والنقابات إحالة نزاعات أجورهم إلى تحكيم ملزم.",
+      "collocations": [
+        "binding arbitration",
+        "submit to arbitration"
+      ],
+      "synonyms": [
+        "adjudication",
+        "mediation"
+      ],
+      "antonyms": [
+        "litigation"
+      ],
+      "tags": [
+        "dispute",
+        "resolution"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "peace negotiations",
+      "pronunciation": "/piːs nɪˌɡəʊʃiˈeɪʃnz/",
+      "partOfSpeech": "noun",
+      "definition": "Official diplomatic talks held between warring factions to conclude hostilities.",
+      "example": "The diplomatic envoys could have concluded peace negotiations if neither faction had violated the ceasefire.",
+      "translation": "مفاوضات ومحادثات السلام",
+      "exampleArabic": "كان بإمكان المبعوثين الدبلوماسيين إبرام مفاوضات السلام لو لم ينتهك أي طرف وقف إطلاق النار.",
+      "collocations": [
+        "conclude peace negotiations",
+        "delicate peace negotiations"
+      ],
+      "synonyms": [
+        "peace talks"
+      ],
+      "antonyms": [
+        "hostilities"
+      ],
+      "tags": [
+        "peace",
+        "diplomacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cessation of hostilities",
+      "pronunciation": "/seˈseɪʃn əv hɒˈstɪlətiz/",
+      "partOfSpeech": "noun",
+      "definition": "An official, formal agreement to halt armed fighting and aggressive military operations.",
+      "example": "The United Nations declared that an immediate cessation of hostilities should have been enforced earlier.",
+      "translation": "وقف الأعمال العدائية / وقف القتال",
+      "exampleArabic": "أعلنت الأمم المتحدة أنه كان ينبغي فرض وقف فوري للأعمال العدائية في وقت أبكر.",
+      "collocations": [
+        "declare a cessation of hostilities",
+        "temporary cessation of hostilities"
+      ],
+      "synonyms": [
+        "truce",
+        "armistice"
+      ],
+      "antonyms": [
+        "outbreak of war"
+      ],
+      "tags": [
+        "peace",
+        "military"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "olive branch",
+      "pronunciation": "/ˈɒlɪv brɑːntʃ/",
+      "partOfSpeech": "noun",
+      "definition": "An offer of peace, goodwill, reconciliation, or cessation of conflict.",
+      "example": "The CEO could have extended an olive branch by inviting union leaders to breakfast.",
+      "translation": "غصن الزيتون / بادرة سلام وتصالح",
+      "exampleArabic": "كان بإمكان الرئيس التنفيذي مد غصن الزيتون بدعوة قادة النقابة لتناول الإفطار.",
+      "collocations": [
+        "extend an olive branch",
+        "hold out an olive branch"
+      ],
+      "synonyms": [
+        "peace offering"
+      ],
+      "antonyms": [
+        "declaration of war"
+      ],
+      "tags": [
+        "peace",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bury the hatchet",
+      "pronunciation": "/ˈberi ðə ˈhætʃɪt/",
+      "partOfSpeech": "verb",
+      "definition": "To officially end a conflict and make peace with a former adversary.",
+      "example": "Both former political rivals should have buried the hatchet for the economic good of the city.",
+      "translation": "يدفن الأحقاد / ينهي الخصومة القديمة",
+      "exampleArabic": "كان ينبغي على الخصمين السياسيين السابقين دفن أحقادهما من أجل مصلحة المدينة الاقتصادية.",
+      "verbForms": {
+        "v1": "bury the hatchet",
+        "v2": "buried the hatchet",
+        "v3": "buried the hatchet"
+      },
+      "collocations": [
+        "agree to bury the hatchet",
+        "time to bury the hatchet"
+      ],
+      "synonyms": [
+        "make peace",
+        "reconcile"
+      ],
+      "antonyms": [
+        "take up arms"
+      ],
+      "tags": [
+        "reconciliation",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "defuse tension",
+      "pronunciation": "/diːˈfjuːz ˈtenʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To make a hostile, precarious situation calmer, friendlier, and less dangerous.",
+      "example": "The skilled mediator could have defused tension by acknowledging both parties' valid grievances.",
+      "translation": "ينزع فتيل التوتر / يهدئ المشاحنات",
+      "exampleArabic": "كان بإمكان الوسيط الماهر نزع فتيل التوتر بالاعتراف بمظالم كلا الطرفين الوجيهة.",
+      "verbForms": {
+        "v1": "defuse tension",
+        "v2": "defused tension",
+        "v3": "defused tension"
+      },
+      "collocations": [
+        "help defuse tension",
+        "act to defuse tension"
+      ],
+      "synonyms": [
+        "de-escalate",
+        "mollify"
+      ],
+      "antonyms": [
+        "inflame tension"
+      ],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bridge the divide",
+      "pronunciation": "/brɪdʒ ðə dɪˈvaɪd/",
+      "partOfSpeech": "verb",
+      "definition": "To reduce, reconcile, or overcome substantial differences separating conflicting groups.",
+      "example": "Civic leaders should have built youth community centers to bridge the divide between rival neighborhoods.",
+      "translation": "يرأب الصدع / يقرب بين الفرقاء",
+      "exampleArabic": "كان ينبغي على قادة المجتمع بناء مراكز شبابية لرأب الصدع والتقريب بين الأحياء المتنافسة.",
+      "verbForms": {
+        "v1": "bridge the divide",
+        "v2": "bridged the divide",
+        "v3": "bridged the divide"
+      },
+      "collocations": [
+        "effort to bridge the divide",
+        "bridge the cultural divide"
+      ],
+      "synonyms": [
+        "heal divisions"
+      ],
+      "antonyms": [
+        "deepen divisions"
+      ],
+      "tags": [
+        "unity",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reconcile differences",
+      "pronunciation": "/ˈrekənsaɪl ˈdɪfrənsɪz/",
+      "partOfSpeech": "verb",
+      "definition": "To resolve disputes, settle antagonisms, and restore amicable relations.",
+      "example": "The feuding founders could have reconciled differences if they had hired an impartial executive coach.",
+      "translation": "يوفق بين الخلافات / يسوي التباينات",
+      "exampleArabic": "كان بإمكان المؤسسين المتنازعين التوفيق بين خلافاتهما لو استعانا بمدرب تنفيذي محايد.",
+      "verbForms": {
+        "v1": "reconcile differences",
+        "v2": "reconciled differences",
+        "v3": "reconciled differences"
+      },
+      "collocations": [
+        "attempt to reconcile differences",
+        "fail to reconcile differences"
+      ],
+      "synonyms": [
+        "settle disagreements"
+      ],
+      "antonyms": [
+        "widen rift"
+      ],
+      "tags": [
+        "reconciliation",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "common denominator",
+      "pronunciation": "/ˈkɒmən dɪˈnɒmɪneɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "A shared feature, interest, or belief that unites disparate people or opposing parties.",
+      "example": "Economic self-interest was the vital common denominator that brought both nations to the conference.",
+      "translation": "القاسم المشترك / النقطة الجامعة",
+      "exampleArabic": "كانت المصلحة الاقتصادية الذاتية هي القاسم المشترك الحيوي الذي جمع كلا الأمتين في المؤتمر.",
+      "collocations": [
+        "find a common denominator",
+        "serve as a common denominator"
+      ],
+      "synonyms": [
+        "shared basis"
+      ],
+      "antonyms": [
+        "irreconcilable division"
+      ],
+      "tags": [
+        "compromise",
+        "logic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "deadlock breaker",
+      "pronunciation": "/ˈdedlɒk ˈbreɪkə/",
+      "partOfSpeech": "noun",
+      "definition": "A decisive concession, proposal, or mechanism that resolves a complete stalemate.",
+      "example": "The surprise agreement on cross-border transport tariffs served as the crucial deadlock breaker.",
+      "translation": "مفتاح حلحلة الجمود / مبادرة كسر الطريق المسدود",
+      "exampleArabic": "كان الاتفاق المفاجئ على رسوم النقل عبر الحدود بمثابة مفتاح حاسم لكسر الجمود.",
+      "collocations": [
+        "act as a deadlock breaker",
+        "introduce a deadlock breaker"
+      ],
+      "synonyms": [
+        "stalemate breaker"
+      ],
+      "antonyms": [],
+      "tags": [
+        "negotiation",
+        "solutions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stubborn standoff",
+      "pronunciation": "/ˈstʌbən ˈstændɒf/",
+      "partOfSpeech": "noun",
+      "definition": "A protracted, unyielding deadlock where neither side will yield an inch.",
+      "example": "The diplomatic mission should have intervened before the maritime dispute hardened into a stubborn standoff.",
+      "translation": "مواجهة متعنتة / طريق مسدود مستعصٍ",
+      "exampleArabic": "كان ينبغي للبعثة الدبلوماسية التدخل قبل أن يتحول النزاع البحري إلى مواجهة متعنتة وطريق مسدود.",
+      "collocations": [
+        "end a stubborn standoff",
+        "caught in a stubborn standoff"
+      ],
+      "synonyms": [
+        "protracted impasse"
+      ],
+      "antonyms": [
+        "fluid dialogue"
+      ],
+      "tags": [
+        "conflict",
+        "stalemate"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "non-negotiable term",
+      "pronunciation": "/ˌnɒn nɪˈɡəʊʃiəbl tɜːm/",
+      "partOfSpeech": "noun",
+      "definition": "A mandatory stipulation or demand that a party refuses to alter, soften, or discuss.",
+      "example": "Immediate troop withdrawals remained a non-negotiable term for signing the peace protocol.",
+      "translation": "شرط غير قابل للتفاوض أو المساومة",
+      "exampleArabic": "ظل الانسحاب الفوري للقوات شرطاً غير قابل للتفاوض لتوقيع بروتوكول السلام.",
+      "collocations": [
+        "insist on non-negotiable terms",
+        "lay down a non-negotiable term"
+      ],
+      "synonyms": [
+        "red line",
+        "absolute prerequisite"
+      ],
+      "antonyms": [
+        "flexible condition"
+      ],
+      "tags": [
+        "negotiations",
+        "demands"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "middle way",
+      "pronunciation": "/ˌmɪdl ˈweɪ/",
+      "partOfSpeech": "noun",
+      "definition": "A moderate, balanced course of action between two extreme, conflicting positions.",
+      "example": "The veteran chancellor could have chosen a sensible middle way between austerity and reckless spending.",
+      "translation": "المسلك الوسط / نهج الاعتدال المتوازن",
+      "exampleArabic": "كان بإمكان المستشار المخضرم اختيار مسلك وسط عقلاني بين التقشف والإنفاق المتهور.",
+      "collocations": [
+        "seek the middle way",
+        "steer a middle way"
+      ],
+      "synonyms": [
+        "golden mean",
+        "compromise course"
+      ],
+      "antonyms": [
+        "extreme path"
+      ],
+      "tags": [
+        "moderation",
+        "diplomacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "de-escalate crisis",
+      "pronunciation": "/diː ˈeskəleɪt ˈkraɪsɪs/",
+      "partOfSpeech": "verb",
+      "definition": "To reduce the intensity, danger, or hostility of a dangerous political or social confrontation.",
+      "example": "Both regional superpowers should have de-escalated the border crisis before artillery fire commenced.",
+      "translation": "يخفض حدة الأزمة / يهدئ التصعيد",
+      "exampleArabic": "كان ينبغي للقوتين الإقليميتين تخفيض حدة أزمة الحدود قبل بدء القصف المدفعي.",
+      "verbForms": {
+        "v1": "de-escalate crisis",
+        "v2": "de-escalated crisis",
+        "v3": "de-escalated crisis"
+      },
+      "collocations": [
+        "strive to de-escalate crisis",
+        "measures to de-escalate crisis"
+      ],
+      "synonyms": [
+        "diffuse confrontation"
+      ],
+      "antonyms": [
+        "escalate crisis"
+      ],
+      "tags": [
+        "peace",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "diplomatic envoy",
+      "pronunciation": "/ˌdɪpləˈmætɪk ˈenvɔɪ/",
+      "partOfSpeech": "noun",
+      "definition": "An official government representative dispatched on a special mission of foreign negotiation.",
+      "example": "The diplomatic envoy could have prevented retaliatory trade tariffs by delivering a timely compromise draft.",
+      "translation": "مبعوث دبلوماسي رسمي",
+      "exampleArabic": "كان بإمكان المبعوث الدبلوماسي منع الرسوم التجارية الانتقامية بتقديم مسودة تسوية في الوقت المناسب.",
+      "collocations": [
+        "special diplomatic envoy",
+        "dispatch a diplomatic envoy"
+      ],
+      "synonyms": [
+        "emissary",
+        "ambassador"
+      ],
+      "antonyms": [],
+      "tags": [
+        "diplomacy",
+        "profession"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "round table discussion",
+      "pronunciation": "/ˌraʊnd ˈteɪbl dɪˈskʌʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A conference where participants debate and deliberate on an equal footing without hierarchical status.",
+      "example": "Union leaders and executive directors should have sat in an open round table discussion months ago.",
+      "translation": "حلقة نقاش طاولة مستديرة",
+      "exampleArabic": "كان ينبغي لقادة النقابة والمديرين التنفيذيين الجلوس في حلقة نقاش طاولة مستديرة منذ أشهر.",
+      "collocations": [
+        "host a round table discussion",
+        "convene a round table discussion"
+      ],
+      "synonyms": [
+        "egalitarian conference"
+      ],
+      "antonyms": [],
+      "tags": [
+        "dialogue",
+        "meetings"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "consensus building",
+      "pronunciation": "/kənˈsensəs ˈbɪldɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A collaborative mediation process that seeks widespread agreement among all stakeholder groups.",
+      "example": "Patient consensus building could have averted the bitter municipal strike.",
+      "translation": "بناء التوافق والإجماع الوطني أو المؤسسي",
+      "exampleArabic": "كان من الممكن لبناء التوافق الصبور أن يجنب المدينة الإضراب البلدي المرير.",
+      "collocations": [
+        "engage in consensus building",
+        "skilled in consensus building"
+      ],
+      "synonyms": [
+        "collaborative agreement"
+      ],
+      "antonyms": [
+        "unilateral mandate"
+      ],
+      "tags": [
+        "governance",
+        "agreement"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "appease party",
+      "pronunciation": "/əˈpiːz ˈpɑːti/",
+      "partOfSpeech": "verb",
+      "definition": "To pacify or placate an aggrieved side by acceding to their demands or grievances.",
+      "example": "Management should not have attempted to appease the militant party with superficial bonuses.",
+      "translation": "يسترضي الطرف المتنازع / يهدئ روعه",
+      "exampleArabic": "لم يكن ينبغي للإدارة محاولة استرضاء الطرف المتشدد بمكافآت سطحية.",
+      "verbForms": {
+        "v1": "appease party",
+        "v2": "appeased party",
+        "v3": "appeased party"
+      },
+      "collocations": [
+        "seek to appease party",
+        "fail to appease party"
+      ],
+      "synonyms": [
+        "placate",
+        "propitiate"
+      ],
+      "antonyms": [
+        "provoke party"
+      ],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "de-escalation",
+      "pronunciation": "/diː ˌeskəˈleɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The reduction of the intensity or scale of a conflict, military confrontation, or crisis.",
+      "example": "Military advisors insisted that reciprocal de-escalation should have started along the northern frontier.",
+      "translation": "خفض التصعيد / نزع فتيل الاحتقان",
+      "exampleArabic": "أصر المستشارون العسكريون على أنه كان ينبغي أن يبدأ خفض التصعيد المتبادل على طول الحدود الشمالية.",
+      "collocations": [
+        "bilateral de-escalation",
+        "encourage de-escalation"
+      ],
+      "synonyms": [
+        "reduction of hostility"
+      ],
+      "antonyms": [
+        "escalation"
+      ],
+      "tags": [
+        "peace",
+        "military"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "grievance procedure",
+      "pronunciation": "/ˈɡriːvəns prəˈsiːdʒə/",
+      "partOfSpeech": "noun",
+      "definition": "An official, formal sequence established in workplaces to address and resolve employee complaints.",
+      "example": "The aggrieved worker should have followed the formal grievance procedure before lodging an external complaint.",
+      "translation": "إجراءات التظلم والشكاوى النظامية",
+      "exampleArabic": "كان ينبغي على العامل المتضرر اتباع إجراءات التظلم الرسمية قبل رفع شكوى خارجية.",
+      "collocations": [
+        "initiate a grievance procedure",
+        "formal grievance procedure"
+      ],
+      "synonyms": [
+        "complaint resolution process"
+      ],
+      "antonyms": [],
+      "tags": [
+        "workplace",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "dispute resolution",
+      "pronunciation": "/dɪˈspjuːt ˌrezəˈluːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Processes such as negotiation, conciliation, and mediation applied to resolve conflicts peacefully.",
+      "example": "Alternative dispute resolution could have saved both firms millions in protracted court fees.",
+      "translation": "فض النزاعات وتسوية الخلافات",
+      "exampleArabic": "كان بإمكان وسائل فض النزاعات البديلة أن توفر على كلا الشركتين الملايين في أتعاب المحاكم الطويلة.",
+      "collocations": [
+        "alternative dispute resolution",
+        "effective dispute resolution"
+      ],
+      "synonyms": [
+        "conflict resolution"
+      ],
+      "antonyms": [
+        "protracted litigation"
+      ],
+      "tags": [
+        "legal",
+        "dispute"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "neutral arbiter",
+      "pronunciation": "/ˈnjuːtrəl ˈɑːbɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "An unbiased mediator or judge who holds no stake in the dispute's final outcome.",
+      "example": "Both nations agreed that a neutral arbiter should have presided over the maritime demarcation talks.",
+      "translation": "حَكَم محايد منصف",
+      "exampleArabic": "اتفقت الدولتان على أنه كان ينبغي لحَكَم محايد أن يرأس محادثات ترسيم الحدود البحرية.",
+      "collocations": [
+        "serve as a neutral arbiter",
+        "appoint a neutral arbiter"
+      ],
+      "synonyms": [
+        "impartial judge"
+      ],
+      "antonyms": [
+        "partisan participant"
+      ],
+      "tags": [
+        "justice",
+        "diplomacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "goodwill gesture",
+      "pronunciation": "/ˌɡʊdˈwɪl ˈdʒestʃə/",
+      "partOfSpeech": "noun",
+      "definition": "An intentional, conciliatory action undertaken to demonstrate peaceful, cooperative intent.",
+      "example": "Releasing maritime detainees was an important goodwill gesture that restored diplomatic dialogue.",
+      "translation": "بادرة حسن نية / لفتة إيجابية للمصالحة",
+      "exampleArabic": "كان إطلاق سراح المحتجزين البحريين بادرة حسن نية مهمة أعادت الحوار الدبلوماسي.",
+      "collocations": [
+        "make a goodwill gesture",
+        "in a goodwill gesture"
+      ],
+      "synonyms": [
+        "conciliatory token"
+      ],
+      "antonyms": [
+        "provocative act"
+      ],
+      "tags": [
+        "diplomacy",
+        "trust"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "restore trust",
+      "pronunciation": "/rɪˈstɔː trʌst/",
+      "partOfSpeech": "verb",
+      "definition": "To rebuild mutual confidence, faith, and reliability after a bitter betrayal or feud.",
+      "example": "Both executive committees should have collaborated transparently to restore trust among public shareholders.",
+      "translation": "يستعيد الثقة / يبني جسور الثقة مجدداً",
+      "exampleArabic": "كان ينبغي على كلا اللجنتين التنفيذيتين التعاون بشفافية لاستعادة الثقة بين المساهمين.",
+      "verbForms": {
+        "v1": "restore trust",
+        "v2": "restored trust",
+        "v3": "restored trust"
+      },
+      "collocations": [
+        "work to restore trust",
+        "essential to restore trust"
+      ],
+      "synonyms": [
+        "rebuild confidence"
+      ],
+      "antonyms": [
+        "destroy trust"
+      ],
+      "tags": [
+        "relationships",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "patch differences",
+      "pronunciation": "/pætʃ ˈdɪfrənsɪz/",
+      "partOfSpeech": "verb",
+      "definition": "To resolve disputes, settle antagonisms, and reconcile amicably after a quarrel.",
+      "example": "The estranged brothers could have patched their differences before their father's milestone anniversary.",
+      "translation": "يرأب الصدع ويسوي الخلافات بين الطرفين",
+      "exampleArabic": "كان بإمكان الشقيقين المتباعدين تسوية خلافاتهما ورأب الصدع قبل الذكرى السنوية لوالدهما.",
+      "verbForms": {
+        "v1": "patch differences",
+        "v2": "patched differences",
+        "v3": "patched differences"
+      },
+      "collocations": [
+        "patch up differences",
+        "ready to patch differences"
+      ],
+      "synonyms": [
+        "reconcile",
+        "heal rift"
+      ],
+      "antonyms": [
+        "deepen animosity"
+      ],
+      "tags": [
+        "reconciliation",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reach an accord",
+      "pronunciation": "/riːtʃ ən əˈkɔːd/",
+      "partOfSpeech": "verb",
+      "definition": "To arrive at an official, formal agreement, compact, or treaty between factions.",
+      "example": "Diplomats could have reached an accord if international observers had monitored border traffic.",
+      "translation": "يتوصل إلى اتفاق رسمي / يبرم وفاقاً",
+      "exampleArabic": "كان بإمكان الدبلوماسيين التوصل إلى اتفاق رسمي لو قام مراقبون دوليون بمراقبة حركة الحدود.",
+      "verbForms": {
+        "v1": "reach an accord",
+        "v2": "reached an accord",
+        "v3": "reached an accord"
+      },
+      "collocations": [
+        "finally reach an accord",
+        "fail to reach an accord"
+      ],
+      "synonyms": [
+        "sign agreement"
+      ],
+      "antonyms": [
+        "break off talks"
+      ],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pact",
+      "pronunciation": "/pækt/",
+      "partOfSpeech": "noun",
+      "definition": "A formal, solemn agreement between individuals, political parties, or sovereign states.",
+      "example": "Both nations should have ratified the mutual non-aggression pact before border skirmishes began.",
+      "translation": "ميثاق / عهد واتفاقية رسمية",
+      "exampleArabic": "كان ينبغي لكلا الدولتين التصديق على ميثاق عدم الاعتداء المتبادل قبل بدء المناوشات الحدودية.",
+      "collocations": [
+        "sign a pact",
+        "non-aggression pact"
+      ],
+      "synonyms": [
+        "covenant",
+        "treaty"
+      ],
+      "antonyms": [],
+      "tags": [
+        "treaties",
+        "politics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "treaty negotiation",
+      "pronunciation": "/ˈtriːti nɪˌɡəʊʃiˈeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The formal diplomatic process of drafting, revising, and agreeing on an international pact.",
+      "example": "Senior legal scholars could have guided the treaty negotiation to avoid territorial ambiguity.",
+      "translation": "مفاوضات المعاهدات الدولية",
+      "exampleArabic": "كان بإمكان كبار علماء القانون توجيه مفاوضات المعاهدة لتفادي الغموض الإقليمي.",
+      "collocations": [
+        "conduct treaty negotiations",
+        "delicate treaty negotiation"
+      ],
+      "synonyms": [
+        "bilateral accord talks"
+      ],
+      "antonyms": [],
+      "tags": [
+        "international",
+        "diplomacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hostile standoff",
+      "pronunciation": "/ˈhɒstaɪl ˈstændɒf/",
+      "partOfSpeech": "noun",
+      "definition": "A tense confrontation where opposing armed or ideological forces face each other aggressively.",
+      "example": "The navy could have avoided a hostile standoff by communicating through international radio frequencies.",
+      "translation": "مواجهة عدائية متوترة",
+      "exampleArabic": "كان بإمكان القوات البحرية تجنب مواجهة عدائية متوترة بالتواصل عبر ترددات الراديو الدولية.",
+      "collocations": [
+        "dangerous hostile standoff",
+        "end the hostile standoff"
+      ],
+      "synonyms": [
+        "confrontational deadlock"
+      ],
+      "antonyms": [
+        "peaceful summit"
+      ],
+      "tags": [
+        "military",
+        "conflict"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bitter enmity",
+      "pronunciation": "/ˈbɪtər ˈenməti/",
+      "partOfSpeech": "noun",
+      "definition": "Deep-seated, active, and persistent mutual hatred, ill will, or hostility.",
+      "example": "Decades of bitter enmity should not have prevented the cultural youth exchange program.",
+      "translation": "عداء مستحكم ومرير / بغضاء دفينة",
+      "exampleArabic": "لم يكن ينبغي لعقود من العداء المستحكم والمرير أن تمنع برنامج التبادل الثقافي للشباب.",
+      "collocations": [
+        "harbor bitter enmity",
+        "overcome bitter enmity"
+      ],
+      "synonyms": [
+        "deep animosity",
+        "hostility"
+      ],
+      "antonyms": [
+        "warm camaraderie"
+      ],
+      "tags": [
+        "hatred",
+        "conflict"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mend fences",
+      "pronunciation": "/mend ˈfensɪz/",
+      "partOfSpeech": "verb",
+      "definition": "To repair damaged personal or political relationships through conciliatory efforts.",
+      "example": "The foreign minister could have mended fences by visiting the neighboring capital personally.",
+      "translation": "يرمم العلاقات / يصلح ما تصدع بين الأطراف",
+      "exampleArabic": "كان بإمكان وزير الخارجية ترميم العلاقات بزيارة عاصمة الجوار شخصياً.",
+      "verbForms": {
+        "v1": "mend fences",
+        "v2": "mended fences",
+        "v3": "mended fences"
+      },
+      "collocations": [
+        "time to mend fences",
+        "attempt to mend fences"
+      ],
+      "synonyms": [
+        "rebuild bridges"
+      ],
+      "antonyms": [
+        "burn bridges"
+      ],
+      "tags": [
+        "reconciliation",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "clear the air",
+      "pronunciation": "/klɪə ðə ˈeə/",
+      "partOfSpeech": "verb",
+      "definition": "To remove hidden tensions, suspicions, or bad feelings by talking about them openly.",
+      "example": "An open departmental meeting could have cleared the air before resentments solidified.",
+      "translation": "يصفي الأجواء / يزيل سوء التفاهم بمكاشفة صريحة",
+      "exampleArabic": "كان بإمكان اجتماع مفتوح للقسم تصفية الأجواء قبل أن تتصلب مشاعر الاستياء.",
+      "verbForms": {
+        "v1": "clear the air",
+        "v2": "cleared the air",
+        "v3": "cleared the air"
+      },
+      "collocations": [
+        "help clear the air",
+        "opportunity to clear the air"
+      ],
+      "synonyms": [
+        "dispel tension"
+      ],
+      "antonyms": [
+        "suppress resentment"
+      ],
+      "tags": [
+        "communication",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mutual concessions",
+      "pronunciation": "/ˈmjuːtʃuəl kənˈseʃnz/",
+      "partOfSpeech": "noun",
+      "definition": "Reciprocal compromises made by both sides to facilitate an overarching agreement.",
+      "example": "Both management and staff unions should have offered mutual concessions regarding shift lengths.",
+      "translation": "تنازلات متبادلة من كلا الجانبين",
+      "exampleArabic": "كان ينبغي على كل من الإدارة ونقابات العمال تقديم تنازلات متبادلة بشأن أطوال الورديات.",
+      "collocations": [
+        "agree on mutual concessions",
+        "require mutual concessions"
+      ],
+      "synonyms": [
+        "reciprocal compromises"
+      ],
+      "antonyms": [
+        "unilateral demands"
+      ],
+      "tags": [
+        "negotiations",
+        "compromise"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "arbitration panel",
+      "pronunciation": "/ˌɑːbɪˈtreɪʃn ˈpænl/",
+      "partOfSpeech": "noun",
+      "definition": "A designated group of independent experts convened to resolve a commercial dispute.",
+      "example": "The arbitration panel ruled that the multinational contractor should have compensated subcontractors.",
+      "translation": "لجنة وهيئة التحكيم",
+      "exampleArabic": "قضت هيئة التحكيم بأنه كان ينبغي على المقاول متعدد الجنسيات تعويض مقاولي الباطن.",
+      "collocations": [
+        "convene an arbitration panel",
+        "before an arbitration panel"
+      ],
+      "synonyms": [
+        "tribunal"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "business"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "peaceful settlement",
+      "pronunciation": "/ˈpiːsfl ˈsetlmənt/",
+      "partOfSpeech": "noun",
+      "definition": "The official resolution of a conflict, territorial dispute, or war without further violence.",
+      "example": "International diplomats could have negotiated a peaceful settlement if border treaties were clarified.",
+      "translation": "تسوية سلمية شاملة",
+      "exampleArabic": "كان بإمكان الدبلوماسيين الدوليين التفاوض على تسوية سلمية لو تم توضيح معاهدات الحدود.",
+      "collocations": [
+        "reach a peaceful settlement",
+        "commit to a peaceful settlement"
+      ],
+      "synonyms": [
+        "amicable accord"
+      ],
+      "antonyms": [
+        "armed confrontation"
+      ],
+      "tags": [
+        "peace",
+        "diplomacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "restoration of ties",
+      "pronunciation": "/ˌrestəˈreɪʃn əv taɪz/",
+      "partOfSpeech": "noun",
+      "definition": "The formal re-establishment of severed diplomatic, economic, or bilateral relations.",
+      "example": "The reopening of embassies marked the historic restoration of ties after thirty years of hostility.",
+      "translation": "استئناف وتطبيع العلاقات الدبلوماسية",
+      "exampleArabic": "مثل إعادة فتح السفارات الاستئناف التاريخي للعلاقات بعد ثلاثين عاماً من العداء.",
+      "collocations": [
+        "herald the restoration of ties",
+        "negotiate restoration of ties"
+      ],
+      "synonyms": [
+        "rapprochement",
+        "re-establishment of relations"
+      ],
+      "antonyms": [
+        "severing of ties"
+      ],
+      "tags": [
+        "diplomacy",
+        "peace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "win-win outcome",
+      "pronunciation": "/ˌwɪn ˈwɪn ˈaʊtkʌm/",
+      "partOfSpeech": "noun",
+      "definition": "A resolution in which all participating parties gain mutually beneficial advantages.",
+      "example": "Creative mediation could have engineered a win-win outcome that benefited both firms.",
+      "translation": "نتيجة مكسب للجميع (رابح-رابح)",
+      "exampleArabic": "كان بإمكان الوساطة المبتكرة هندسة نتيجة رابح-رابح يستفيد منها كلا الشركتين.",
+      "collocations": [
+        "seek a win-win outcome",
+        "engineer a win-win outcome"
+      ],
+      "synonyms": [
+        "mutually beneficial resolution"
+      ],
+      "antonyms": [
+        "zero-sum game"
+      ],
+      "tags": [
+        "compromise",
+        "negotiation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "give-and-take",
+      "pronunciation": "/ˌɡɪv ən ˈteɪk/",
+      "partOfSpeech": "noun",
+      "definition": "Willingness to compromise, accommodate, and make mutual concessions in discussions.",
+      "example": "A successful durable treaty requires honest, patient give-and-take from both delegations.",
+      "translation": "أخذ وعطاء / مرونة وتنازلات متبادلة",
+      "exampleArabic": "تتطلب المعاهدة الناجحة والدائمة أخذاً وعطاءً صبوراً ونزيهاً من كلا الوفدين.",
+      "collocations": [
+        "spirit of give-and-take",
+        "healthy give-and-take"
+      ],
+      "synonyms": [
+        "reciprocal accommodation"
+      ],
+      "antonyms": [
+        "inflexibility"
+      ],
+      "tags": [
+        "diplomacy",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "reach a settlement",
+      "pronunciation": "/riːtʃ ə ˈsetlmənt/",
+      "partOfSpeech": "verb",
+      "definition": "To arrive at an official agreement that resolves a legal dispute or financial claim.",
+      "example": "Both commercial litigators should have reached a settlement before jury deliberations began.",
+      "translation": "يتوصل إلى تسوية قانونية أو مالية",
+      "exampleArabic": "كان ينبغي على كلا المحاميين التجاريين التوصل إلى تسوية قبل بدء مداولات هيئة المحلفين.",
+      "verbForms": {
+        "v1": "reach a settlement",
+        "v2": "reached a settlement",
+        "v3": "reached a settlement"
+      },
+      "collocations": [
+        "reach a fair settlement",
+        "refuse to reach a settlement"
+      ],
+      "synonyms": [
+        "settle out of court"
+      ],
+      "antonyms": [
+        "fight to the end"
+      ],
+      "tags": [
+        "legal",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "heated confrontation",
+      "pronunciation": "/ˈhiːtɪd ˌkɒnfrʌnˈteɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An angry, turbulent, and hostile face-to-face clash between opposing factions.",
+      "example": "The municipal police could have prevented the heated confrontation by establishing safety barricades.",
+      "translation": "مواجهة ساخنة ومشحونة",
+      "exampleArabic": "كان بإمكان شرطة البلدية تفادي المواجهة الساخنة والمشحونة بإنشاء حواجز أمان.",
+      "collocations": [
+        "erupt into a heated confrontation",
+        "avoid a heated confrontation"
+      ],
+      "synonyms": [
+        "violent clash",
+        "angry altercation"
+      ],
+      "antonyms": [
+        "calm summit"
+      ],
+      "tags": [
+        "conflict",
+        "events"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "aggrieved party",
+      "pronunciation": "/əˈɡriːvd ˈpɑːti/",
+      "partOfSpeech": "noun",
+      "definition": "The individual, company, or state that has suffered an injury, wrong, or loss.",
+      "example": "The corporate council should have compensated the aggrieved party before lawsuits were drafted.",
+      "translation": "الطرف المتضرر وصاحب المظلمة",
+      "exampleArabic": "كان ينبغي على مجلس إدارة الشركة تعويض الطرف المتضرر قبل صياغة الدعاوى القضائية.",
+      "collocations": [
+        "compensate the aggrieved party",
+        "rights of the aggrieved party"
+      ],
+      "synonyms": [
+        "injured party"
+      ],
+      "antonyms": [
+        "wrongdoer"
+      ],
+      "tags": [
+        "legal",
+        "justice"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "break the deadlock",
+      "pronunciation": "/breɪk ðə ˈdedlɒk/",
+      "partOfSpeech": "verb",
+      "definition": "To find a solution that resolves an unyielding stalemate in negotiations.",
+      "example": "A bold compromise on tariff exemptions could have broken the deadlock at the trade summit.",
+      "translation": "يكسر الجمود ويحلحل المأزق التفاوضي",
+      "exampleArabic": "كان بإمكان تنازل جريء بشأن الإعفاءات الجمركية أن يكسر الجمود في القمة التجارية.",
+      "verbForms": {
+        "v1": "break the deadlock",
+        "v2": "broke the deadlock",
+        "v3": "broken the deadlock"
+      },
+      "collocations": [
+        "strive to break the deadlock",
+        "finally break the deadlock"
+      ],
+      "synonyms": [
+        "resolve stalemate"
+      ],
+      "antonyms": [
+        "prolong deadlock"
+      ],
+      "tags": [
+        "negotiations",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "armistice",
+      "pronunciation": "/ˈɑːmɪstɪs/",
+      "partOfSpeech": "noun",
+      "definition": "An official agreement between warring nations to cease combat operations permanently or provisionally.",
+      "example": "The sovereign states should have honored the armistice signed at the conclusion of border hostilities.",
+      "translation": "هدنة عسكرية رسمية",
+      "exampleArabic": "كان ينبغي على الدول ذات السيادة احترام الهدنة العسكرية الموقعة في ختام القتال الحدودي.",
+      "collocations": [
+        "sign an armistice",
+        "armistice treaty"
+      ],
+      "synonyms": [
+        "ceasefire pact"
+      ],
+      "antonyms": [
+        "resumption of war"
+      ],
+      "tags": [
+        "military",
+        "peace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bilateral talks",
+      "pronunciation": "/baɪˈlætrəl tɔːks/",
+      "partOfSpeech": "noun",
+      "definition": "Official diplomatic negotiations held between two sovereign governments or parties.",
+      "example": "Both foreign ministers could have initiated bilateral talks to resolve territorial fishing disputes.",
+      "translation": "محادثات ثنائية بين طرفين",
+      "exampleArabic": "كان بإمكان كلا وزيري الخارجية الشروع في محادثات ثنائية لحل نزاعات الصيد الإقليمية.",
+      "collocations": [
+        "conduct bilateral talks",
+        "resume bilateral talks"
+      ],
+      "synonyms": [
+        "two-party negotiations"
+      ],
+      "antonyms": [
+        "multilateral summit"
+      ],
+      "tags": [
+        "diplomacy",
+        "dialogue"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "conciliatory tone",
+      "pronunciation": "/kənˈsɪliətəri təʊn/",
+      "partOfSpeech": "noun",
+      "definition": "An attitude or manner of speaking intended to placate hostility and pacify anger.",
+      "example": "The CEO should have adopted a conciliatory tone when addressing the striking factory workers.",
+      "translation": "نبرة توفيقية تصالحية ومهدئة",
+      "exampleArabic": "كان ينبغي على الرئيس التنفيذي تبني نبرة تصالحية وتوفيقية عند مخاطبة عمال المصنع المضربين.",
+      "collocations": [
+        "adopt a conciliatory tone",
+        "speak in a conciliatory tone"
+      ],
+      "synonyms": [
+        "appeasing manner"
+      ],
+      "antonyms": [
+        "belligerent tone"
+      ],
+      "tags": [
+        "communication",
+        "diplomacy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "broker a peace",
+      "pronunciation": "/ˈbrəʊkər ə piːs/",
+      "partOfSpeech": "verb",
+      "definition": "To arrange, negotiate, and mediate a formal peace treaty between warring parties.",
+      "example": "Neutral diplomats could have brokered a peace before innocent civilian infrastructure was demolished.",
+      "translation": "يتوسط لإبرام السلام ورعاية الهدنة",
+      "exampleArabic": "كان بإمكان الدبلوماسيين المحايدين التوسط لإبرام السلام قبل تدمير البنية التحتية المدنية.",
+      "verbForms": {
+        "v1": "broker a peace",
+        "v2": "brokered a peace",
+        "v3": "brokered a peace"
+      },
+      "collocations": [
+        "help broker a peace",
+        "successfully broker a peace"
+      ],
+      "synonyms": [
+        "mediate a treaty"
+      ],
+      "antonyms": [
+        "incite conflict"
+      ],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unresolved friction",
+      "pronunciation": "/ˌʌnrɪˈzɒlvd ˈfrɪkʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Ongoing, simmering interpersonal or inter-organizational conflict and irritation.",
+      "example": "Unresolved friction between department heads should have been mediated by human resources.",
+      "translation": "احتكاك وتوتر مكتوم لم يُسوَّ بعد",
+      "exampleArabic": "كان ينبغي على الموارد البشرية تسوية الاحتكاك المكتوم المستمر بين رؤساء الأقسام.",
+      "collocations": [
+        "address unresolved friction",
+        "lingering unresolved friction"
+      ],
+      "synonyms": [
+        "simmering tension"
+      ],
+      "antonyms": [
+        "harmonious relations"
+      ],
+      "tags": [
+        "conflict",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bitter dispute",
+      "pronunciation": "/ˈbɪtə dɪˈspjuːt/",
+      "partOfSpeech": "noun",
+      "definition": "An intense, prolonged, and acrimonious disagreement between competing parties.",
+      "example": "The heirs could have settled their bitter dispute over family estates out of court.",
+      "translation": "نزاع مرير وخلاف حاد",
+      "exampleArabic": "كان بإمكان الورثة تسوية نزاعهم المرير والخادش على تركات العائلة خارج أروقة القضاء.",
+      "collocations": [
+        "end a bitter dispute",
+        "embroiled in a bitter dispute"
+      ],
+      "synonyms": [
+        "acrimonious conflict"
+      ],
+      "antonyms": [
+        "amicable accord"
+      ],
+      "tags": [
+        "dispute",
+        "conflict"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lasting peace",
+      "pronunciation": "/ˈlɑːstɪŋ piːs/",
+      "partOfSpeech": "noun",
+      "definition": "An enduring, stable state of security and tranquility that withstands trials.",
+      "example": "Generations of statesmen struggled to establish lasting peace across the European continent.",
+      "translation": "سلام دائم ومستقر",
+      "exampleArabic": "ناضل أجيال من رجال الدولة لإرساء سلام دائم ومستقر عبر القارة الأوروبية.",
+      "collocations": [
+        "build lasting peace",
+        "foundation for lasting peace"
+      ],
+      "synonyms": [
+        "enduring tranquility"
+      ],
+      "antonyms": [
+        "perpetual conflict"
+      ],
+      "tags": [
+        "peace",
+        "history"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Mediation Debriefing After a Labor Strike",
+      "titleArabic": "جلسة مراجعة وساطة بعد إضراب عمالي",
+      "setting": "A senior labor arbitrator consults with a human resources director after a painful warehouse workers strike.",
+      "lines": [
+        {
+          "speaker": "Arbitrator",
+          "text": "Looking back at the strike, both management and the union should have submitted to binding arbitration weeks ago."
+        },
+        {
+          "speaker": "HR Director",
+          "text": "I agree. We could have averted this strike if executive leadership had adopted a conciliatory tone early on."
+        },
+        {
+          "speaker": "Arbitrator",
+          "text": "Our arbitration panel noted that management should have extended an olive branch instead of refusing to budge."
+        },
+        {
+          "speaker": "HR Director",
+          "text": "Our CEO insisted that shift hours were a non-negotiable term, failing to appease the party that felt ignored."
+        },
+        {
+          "speaker": "Arbitrator",
+          "text": "A skilled mediator could have defused tension by engineering creative mutual concessions."
+        },
+        {
+          "speaker": "HR Director",
+          "text": "We should have recognized employee safety concerns as our vital common denominator."
+        },
+        {
+          "speaker": "Arbitrator",
+          "text": "Now, both sides must collaborate in a round table discussion to restore trust and rebuild worker morale."
+        },
+        {
+          "speaker": "HR Director",
+          "text": "We are ready to reconcile differences, bury the hatchet, and implement fair dispute resolution."
+        }
+      ],
+      "vocabularyUsed": [
+        "arbitrator",
+        "arbitration",
+        "conciliatory tone",
+        "arbitration panel",
+        "olive branch",
+        "non-negotiable term",
+        "appease party",
+        "defuse tension",
+        "mutual concessions",
+        "common denominator",
+        "round table discussion",
+        "restore trust",
+        "reconcile differences",
+        "bury the hatchet",
+        "dispute resolution"
+      ]
+    },
+    {
+      "title": "International Border De-escalation",
+      "titleArabic": "خفض التصعيد الحدودي الدولي بين دبلوماسيين",
+      "setting": "Two ambassadors meet at a neutral embassy to resolve a volatile naval border dispute.",
+      "lines": [
+        {
+          "speaker": "Ambassador A",
+          "text": "Our foreign ministries should have initiated peace negotiations and bilateral talks before naval patrol boats clashed."
+        },
+        {
+          "speaker": "Ambassador B",
+          "text": "A specialized diplomatic envoy could have signaled via international radio before crossing the demarcation channel."
+        },
+        {
+          "speaker": "Ambassador A",
+          "text": "We must prioritize de-escalation, de-escalate this crisis immediately, and declare an immediate cessation of hostilities."
+        },
+        {
+          "speaker": "Ambassador B",
+          "text": "I concur; our governments must not allow this friction to harden into a stubborn standoff."
+        },
+        {
+          "speaker": "Ambassador A",
+          "text": "If both fleets pull back ten nautical miles, that goodwill gesture will break the deadlock."
+        },
+        {
+          "speaker": "Ambassador B",
+          "text": "Let us request a neutral arbiter from the maritime court to oversee border coordinates."
+        },
+        {
+          "speaker": "Ambassador A",
+          "text": "That compromise will pave the way toward signing an armistice and a mutual non-aggression pact."
+        },
+        {
+          "speaker": "Ambassador B",
+          "text": "Our legal teams can proceed with treaty negotiations to reach an accord and ensure lasting peace."
+        }
+      ],
+      "vocabularyUsed": [
+        "peace negotiations",
+        "bilateral talks",
+        "diplomatic envoy",
+        "de-escalation",
+        "de-escalate crisis",
+        "cessation of hostilities",
+        "stubborn standoff",
+        "goodwill gesture",
+        "break the deadlock",
+        "neutral arbiter",
+        "armistice",
+        "pact",
+        "treaty negotiation",
+        "reach an accord",
+        "lasting peace"
+      ]
+    },
+    {
+      "title": "Healing Corporate Executive Feuds",
+      "titleArabic": "رأب الصدع في خلافات الإدارة العليا",
+      "setting": "An executive coach mediates a bitter dispute between co-founders of an enterprise software company.",
+      "lines": [
+        {
+          "speaker": "Coach",
+          "text": "Both of you could have reached a settlement and settled this bitter dispute months ago if you had agreed to clear the air."
+        },
+        {
+          "speaker": "Founder A",
+          "text": "I felt that I was the aggrieved party when client accounts were restructured without my assent."
+        },
+        {
+          "speaker": "Founder B",
+          "text": "We should have avoided that heated confrontation at the annual retreat; I made decisions alone."
+        },
+        {
+          "speaker": "Coach",
+          "text": "Instead of harboring bitter enmity, an early dialogue could have bridged the divide between founders."
+        },
+        {
+          "speaker": "Founder A",
+          "text": "I am ready to mend fences and seek a balanced middle way if we establish transparent governance."
+        },
+        {
+          "speaker": "Founder B",
+          "text": "I agree. We should have remembered that our enterprise software was born from healthy give-and-take."
+        },
+        {
+          "speaker": "Coach",
+          "text": "I am delighted to broker a peace; a win-win outcome is within reach if both of you commit to consensus building."
+        },
+        {
+          "speaker": "Founder A",
+          "text": "Let us patch our differences today and focus our energy on global expansion."
+        }
+      ],
+      "vocabularyUsed": [
+        "reach a settlement",
+        "bitter dispute",
+        "clear the air",
+        "aggrieved party",
+        "heated confrontation",
+        "bitter enmity",
+        "bridge the divide",
+        "mend fences",
+        "middle way",
+        "give-and-take",
+        "broker a peace",
+        "win-win outcome",
+        "consensus building",
+        "patch differences"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Strategic Architecture of Conflict Resolution",
+      "titleArabic": "الهندسة الاستراتيجية لفض النزاعات الدولية والمؤسسية",
+      "text": "When ideological disputes or commercial friction escalate into a hostile standoff, responsible leaders must act decisively before violence or bankruptcy occurs. Protracted confrontations should have been prevented through proactive consensus building and early bilateral talks. In many historical negotiations, an impartial arbitrator or neutral arbiter served as the indispensable deadlock breaker by identifying a hidden common denominator. By establishing structured round table discussions and demonstrating genuine give-and-take, adversarial factions learn that reciprocal mutual concessions are not a humiliating defeat, but the essential prerequisite for crafting an enduring peaceful settlement.",
+      "vocabularyUsed": [
+        "hostile standoff",
+        "consensus building",
+        "bilateral talks",
+        "arbitrator",
+        "neutral arbiter",
+        "deadlock breaker",
+        "common denominator",
+        "round table discussion",
+        "give-and-take",
+        "mutual concessions",
+        "peaceful settlement"
+      ]
+    },
+    {
+      "title": "De-escalation and the Rebuilding of Broken Trust",
+      "titleArabic": "خفض التصعيد واستعادة جسور الثقة المنهارة",
+      "text": "In the volatile arena of international statecraft, preventing an armed clash demands that superpowers de-escalate crises with utmost diplomatic maturity. When border skirmishes erupt, both military commands should have implemented an immediate cessation of hostilities and signed an armistice. Rather than allowing pride to feed bitter enmity, extending a courageous olive branch or offering an initial goodwill gesture breaks the psychological deadlock. When sovereign states bury the hatchet and achieve the full restoration of ties, historical rivals discover that long-term security depends on building lasting peace rather than maintaining aggressive militarization.",
+      "vocabularyUsed": [
+        "de-escalate crisis",
+        "cessation of hostilities",
+        "armistice",
+        "bitter enmity",
+        "olive branch",
+        "goodwill gesture",
+        "break the deadlock",
+        "bury the hatchet",
+        "restoration of ties",
+        "lasting peace"
+      ]
+    },
+    {
+      "title": "Healing Interpersonal and Organizational Rifts",
+      "titleArabic": "معالجة التصدعات الإنسانية والمهنية داخل المؤسسات",
+      "text": "Within corporate enterprises, unresolved friction between key partners often paralyzes organizational growth. Rather than allowing petty rivalries to devolve into a bitter dispute that alienates clients, mature colleagues understand that they could have cleared the air through honest dialogue. When an aggrieved party feels heard and respected, leaders can mend fences and adopt a conciliatory tone. By discovering a sensible middle way that engineers a win-win outcome, teams patch their differences, restore mutual trust, and build a resilient culture grounded in mutual respect.",
+      "vocabularyUsed": [
+        "unresolved friction",
+        "bitter dispute",
+        "clear the air",
+        "aggrieved party",
+        "mend fences",
+        "conciliatory tone",
+        "middle way",
+        "win-win outcome",
+        "patch differences",
+        "restore trust"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1618 @@
+{
+  "day": 68,
+  "title": "Giving Suggestions",
+  "topic": "Recommending and proposing",
+  "description": "Suggest plans and recommend solutions politely.",
+  "stage": "Problems, Decisions and Opinions",
+  "focus": "By the end of today, you can communicate clearly about recommending and proposing using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Suggestion Structures (suggest + -ing, Why don't we...?)",
+      "titleArabic": "صيغ الاقتراح والتوصية (Suggestion Structures: Suggest / Recommend / Why don't we / How about / What if)",
+      "explanation": "In English, there are multiple polite and natural ways to propose ideas and recommend actions: 1) 'Suggest / Recommend + Gerund (Verb-ing)': Used when the speaker includes themselves or speaks generally ('I suggest piloting a project first'; 'She recommended soliciting feedback'). Note: NEVER say 'suggest to do'! 2) 'Suggest / Recommend + that + Subject + Base Verb' (Subjunctive in formal English): 'I suggest that we refine the proposal'; 'He recommended that the board green-light the initiative'. 3) Conversational question forms: 'Why don't we + Base Verb...?' ('Why don't we test the waters with a pilot?'); 'How about / What about + Gerund (-ing)...?' ('How about pitching our idea on Friday?'); 'What if we + Past Simple / Present Simple...?' ('What if we thought outside the box and leased the equipment?'). 4) Indirect modal suggestions: 'We could always...', 'It might be worth + Gerund...'.",
+      "explanationArabic": "في اللغة الإنجليزية، تتعدد صيغ تقديم الاقتراحات والتوصيات بأسلوب لبق وطبيعي: 1) Suggest / Recommend + Verb-ing: يُستخدم عندما يشارك المتحدث في الفعل أو يقترحه بشكل عام ('أقترح البدء بمشروع تجريبي'; 'أوصي باستطلاع الآراء'). تنبيه هام: لا تقل أبداً 'suggest to do'! 2) Suggest / Recommend + that + الفاعل + المصدر المجرد (صيغة Subjunctive الرسمية): 'I suggest that we refine the proposal'. 3) صيغ الاستفهام التحاورية: 'Why don't we + المصدر...؟' (لمَ لا نفعل كذا؟)؛ 'How about / What about + Verb-ing...؟' (ما رأيك في فعل كذا؟)؛ 'What if we + فعل...؟' (ماذا لو فعلنا كذا؟). 4) الاقتراحات الاحتمالية غير المباشرة: 'We could always...' (يمكننا دائماً أن...)؛ 'It might be worth + -ing' (قد يجدر بنا أن...).",
+      "structures": [
+        {
+          "label": "Gerund Suggestion · الاقتراح بالمصدر (Suggest / Recommend + -ing)",
+          "pattern": "Subject + suggest / recommend + Verb-ing",
+          "explanation": "The standard natural formula for proposing a shared activity.",
+          "explanationArabic": "الصيغة الطبيعية الأكثر شيوعاً لاقتراح نشاط مشترك دون ذكر مفعول به."
+        },
+        {
+          "label": "Direct Question Suggestion · الاستفهام الاقتراحي (Why don't we...?)",
+          "pattern": "Why don't we + Base Verb...?",
+          "explanation": "A friendly, collaborative conversational invitation to act.",
+          "explanationArabic": "صيغة استفهامية ودية وتشاركية تدعو للبدء في الفعل بحماس."
+        },
+        {
+          "label": "Informal Inquiry · الاستفسار الحواري (How about + -ing...?)",
+          "pattern": "How about / What about + Verb-ing...?",
+          "explanation": "Casual and inviting formula for proposing a trial or new angle.",
+          "explanationArabic": "أسلوب حواري غير رسمي ومحبب لطرح فكرة أو تجربة جديدة."
+        },
+        {
+          "label": "Subjunctive That-Clause · الاقتراح الرسمي بجملة That",
+          "pattern": "Subject + suggest / recommend + that + Subject + Base Verb",
+          "explanation": "Formal business or legal format for official resolutions.",
+          "explanationArabic": "صيغة رسمية راقية مستخدمة في محاضر الاجتماعات وقرارات الأعمال."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "I suggest piloting a project in two regional hubs before rolling it out nationally.",
+          "translation": "أقترح إدارة مشروع تجريبي في مركزين إقليميين قبل تعميمه على المستوى الوطني.",
+          "usesVocabulary": [
+            "pilot a project"
+          ]
+        },
+        {
+          "sentence": "Why don't we solicit feedback from consumers to refine our proposal?",
+          "translation": "لمَ لا نطلب آراء المستهلكين وملاحظاتهم لتنقيح مقترحنا وصقله؟",
+          "usesVocabulary": [
+            "solicit feedback",
+            "refine proposal"
+          ]
+        },
+        {
+          "sentence": "How about championing that innovative tweak during tomorrow's brainstorming session?",
+          "translation": "ما رأيك في تبني ذلك التعديل الابتكاري والدفاع عنه في جلسة العصف الذهني غداً؟",
+          "usesVocabulary": [
+            "champion an idea",
+            "innovative tweak",
+            "brainstorming session"
+          ]
+        },
+        {
+          "sentence": "She recommended that the board endorse the safety task force's strategic recommendation.",
+          "translation": "أوصت بأن يعتمد مجلس الإدارة التوصية الاستراتيجية لفريق مهام السلامة.",
+          "usesVocabulary": [
+            "endorse recommendation",
+            "strategic recommendation"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "I suggest you to take a break and sleep on it.",
+          "right": "I suggest you take a break and sleep on it. (OR: I suggest that you take / I suggest taking)",
+          "note": "Never use 'suggest someone to do'; use 'suggest that someone do' or 'suggest doing'.",
+          "noteArabic": "لا تستخدم إطلاقاً 'suggest someone to do'؛ بل استخدم 'suggest that someone do' أو 'suggest doing'."
+        },
+        {
+          "wrong": "Why don't we to invite a guest speaker for advice?",
+          "right": "Why don't we invite a guest speaker for advice?",
+          "note": "After 'Why don't we', use the bare infinitive (Base Verb) without 'to'.",
+          "noteArabic": "استخدم مصدر الفعل المجرد دون to بعد التركيب 'Why don't we'."
+        }
+      ],
+      "commonUsage": [
+        "Team brainstorms: 'How about testing the waters with a social media poll?' (تُستخدم لتوليد الأفكار في ورش العمل.)",
+        "Executive board pitches: 'I suggest tabling a proposal for expanding cloud storage.' (تُستخدم لتقديم المبادرات في اجتماعات الإدارة.)",
+        "Mentoring advice: 'Why don't we break down the deliverable into weekly sprints?' (تُستخدم في توجيه الموظفين والطلاب بلباقة.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "trial balloon",
+      "pronunciation": "/ˈtraɪəl bəˌluːn/",
+      "partOfSpeech": "noun",
+      "definition": "A tentative proposal or measure floated experimentally to test public or stakeholder reaction.",
+      "example": "Why don't we float a trial balloon regarding flexible summer working hours?",
+      "translation": "بالون اختبار لمعرفة ردود الفعل",
+      "exampleArabic": "لمَ لا نطلق بالون اختبار لمعرفة ردود الفعل تجاه ساعات العمل الصيفية المرنة؟",
+      "collocations": [
+        "float a trial balloon",
+        "launch a trial balloon"
+      ],
+      "synonyms": [
+        "test proposal"
+      ],
+      "antonyms": [
+        "binding decree"
+      ],
+      "tags": [
+        "strategy",
+        "ideas"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "constructive input",
+      "pronunciation": "/kənˈstrʌktɪv ˈɪnpʊt/",
+      "partOfSpeech": "noun",
+      "definition": "Helpful, practical suggestions or feedback intended to improve a project or process.",
+      "example": "I suggest soliciting constructive input from senior factory floor operators.",
+      "translation": "مساهمة وملاحظات بناءة ومفيدة",
+      "exampleArabic": "أقترح استطلاع مساهمات وملاحظات بناءة من كبار مشغلي أرضية المصنع.",
+      "collocations": [
+        "provide constructive input",
+        "welcome constructive input"
+      ],
+      "synonyms": [
+        "valuable feedback"
+      ],
+      "antonyms": [
+        "destructive criticism"
+      ],
+      "tags": [
+        "feedback",
+        "improvement"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "solicit feedback",
+      "pronunciation": "/səˈlɪsɪt ˈfiːdbæk/",
+      "partOfSpeech": "verb",
+      "definition": "To formally ask for, request, or seek reactions, opinions, and evaluations.",
+      "example": "Why don't we solicit feedback from early beta testers before committing to the product rollout?",
+      "translation": "يطلب الآراء والملاحظات رسمياً",
+      "exampleArabic": "لمَ لا نطلب آراء وملاحظات مجربي النسخة التجريبية قبل الالتزام بإطلاق المنتج؟",
+      "verbForms": {
+        "v1": "solicit feedback",
+        "v2": "solicited feedback",
+        "v3": "solicited feedback"
+      },
+      "collocations": [
+        "actively solicit feedback",
+        "solicit customer feedback"
+      ],
+      "synonyms": [
+        "request evaluation"
+      ],
+      "antonyms": [
+        "ignore feedback"
+      ],
+      "tags": [
+        "research",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pilot a project",
+      "pronunciation": "/ˈpaɪlət ə ˈprɒdʒekt/",
+      "partOfSpeech": "verb",
+      "definition": "To test an initiative or program on a small exploratory scale before full introduction.",
+      "example": "I suggest piloting a project in two regional branch offices before national implementation.",
+      "translation": "يدير مشروعاً تجريبياً استطلاعياً",
+      "exampleArabic": "أقترح إدارة مشروع تجريبي في فرعين إقليميين قبل التطبيق على المستوى الوطني.",
+      "verbForms": {
+        "v1": "pilot a project",
+        "v2": "piloted a project",
+        "v3": "piloted a project"
+      },
+      "collocations": [
+        "decide to pilot a project",
+        "funds to pilot a project"
+      ],
+      "synonyms": [
+        "test-run an initiative"
+      ],
+      "antonyms": [
+        "roll out nationally immediately"
+      ],
+      "tags": [
+        "testing",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "moot an idea",
+      "pronunciation": "/muːt ən aɪˈdɪə/",
+      "partOfSpeech": "verb",
+      "definition": "To raise, introduce, or propose an idea for discussion and consideration.",
+      "example": "How about mooting the idea of a four-day workweek at the upcoming executive summit?",
+      "translation": "يطرح فكرة للنقاش والتباحث",
+      "exampleArabic": "ما رأيك في طرح فكرة أسبوع العمل المكون من أربعة أيام في القمة التنفيذية القادمة؟",
+      "verbForms": {
+        "v1": "moot an idea",
+        "v2": "mooted an idea",
+        "v3": "mooted an idea"
+      },
+      "collocations": [
+        "first mooted the idea",
+        "moot an idea tentatively"
+      ],
+      "synonyms": [
+        "put forward",
+        "broach an idea"
+      ],
+      "antonyms": [
+        "suppress idea"
+      ],
+      "tags": [
+        "proposals",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "table a proposal",
+      "pronunciation": "/ˈteɪbl ə prəˈpəʊzl/",
+      "partOfSpeech": "verb",
+      "definition": "In British English: to formally present a proposal for discussion; in US: to postpone consideration.",
+      "example": "The finance director suggested tabling a proposal to increase research endowments.",
+      "translation": "يطرح مقترحاً رسمياً للنقاش (بريطاني) / يرجئ بحثه (أمريكي)",
+      "exampleArabic": "اقترح المدير المالي طرح مقترح رسمي على الطاولة لزيادة أوقاف البحوث.",
+      "verbForms": {
+        "v1": "table a proposal",
+        "v2": "tabled a proposal",
+        "v3": "tabled a proposal"
+      },
+      "collocations": [
+        "formally table a proposal",
+        "table a counter-proposal"
+      ],
+      "synonyms": [
+        "submit proposal"
+      ],
+      "antonyms": [
+        "withdraw proposal"
+      ],
+      "tags": [
+        "meetings",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "counter-proposal",
+      "pronunciation": "/ˈkaʊntə prəˌpəʊzl/",
+      "partOfSpeech": "noun",
+      "definition": "An alternative proposal made in response to an initial offer during negotiations.",
+      "example": "Why don't we draft a counter-proposal that combines lower base rent with revenue sharing?",
+      "translation": "مقترح مضاد / عرض بديل",
+      "exampleArabic": "لمَ لا نصوغ مقترحاً بديلاً يجمع بين إيجار أساسي مخفض ومشاركة في الأرباح؟",
+      "verbForms": {},
+      "collocations": [
+        "submit a counter-proposal",
+        "consider counter-proposals"
+      ],
+      "synonyms": [
+        "alternative offer"
+      ],
+      "antonyms": [],
+      "tags": [
+        "negotiation",
+        "proposals"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "put forward",
+      "pronunciation": "/pʊt ˈfɔːwəd/",
+      "partOfSpeech": "verb",
+      "definition": "To submit, advance, or suggest an idea, plan, or person for consideration.",
+      "example": "I suggest putting forward Sarah's name for the technical director vacancy.",
+      "translation": "يقترح / يقدم فكرة أو مرشحاً للاعتبار",
+      "exampleArabic": "أقترح تقديم اسم سارة لشغل منصب المدير التقني الشاغر.",
+      "verbForms": {
+        "v1": "put forward",
+        "v2": "put forward",
+        "v3": "put forward"
+      },
+      "collocations": [
+        "put forward a hypothesis",
+        "put forward a candidate"
+      ],
+      "synonyms": [
+        "propose",
+        "advance"
+      ],
+      "antonyms": [
+        "withdraw"
+      ],
+      "tags": [
+        "proposals",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "advocate for",
+      "pronunciation": "/ˈædvəkeɪt fɔː/",
+      "partOfSpeech": "verb",
+      "definition": "To publicly recommend, champion, or support a particular cause or policy.",
+      "example": "Why don't we advocate for green building materials across all municipal construction projects?",
+      "translation": "يدافع عن / يدعو بقوة إلى تأييد قضية",
+      "exampleArabic": "لمَ لا ندعو بقوة لتأييد مواد البناء الخضراء في جميع مشاريع البناء البلدية؟",
+      "verbForms": {
+        "v1": "advocate for",
+        "v2": "advocated for",
+        "v3": "advocated for"
+      },
+      "collocations": [
+        "passionately advocate for",
+        "advocate for reform"
+      ],
+      "synonyms": [
+        "champion",
+        "champion the cause of"
+      ],
+      "antonyms": [
+        "oppose"
+      ],
+      "tags": [
+        "advocacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "champion an idea",
+      "pronunciation": "/ˈtʃæmpiən ən aɪˈdɪə/",
+      "partOfSpeech": "verb",
+      "definition": "To vigorously defend, support, and promote a novel idea through institutional skepticism.",
+      "example": "How about championing the idea of automated electric delivery vans to the executive committee?",
+      "translation": "يتبنى فكرة ويدافع عنها بحماس",
+      "exampleArabic": "ما رأيك في تبني فكرة شاحنات التوصيل الكهربائية المؤتمتة والدفاع عنها أمام اللجنة؟",
+      "verbForms": {
+        "v1": "champion an idea",
+        "v2": "championed an idea",
+        "v3": "championed an idea"
+      },
+      "collocations": [
+        "champion an idea vigorously",
+        "find someone to champion an idea"
+      ],
+      "synonyms": [
+        "sponsor",
+        "promote"
+      ],
+      "antonyms": [
+        "abandon idea"
+      ],
+      "tags": [
+        "leadership",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sound out",
+      "pronunciation": "/saʊnd aʊt/",
+      "partOfSpeech": "verb",
+      "definition": "To question someone discreetly or cautiously to discover their intentions or views.",
+      "example": "Why don't we sound out the board chairman over lunch before formally proposing the acquisition?",
+      "translation": "يستطلع رأي فلان بحذر / يجس النبض",
+      "exampleArabic": "لمَ لا نستطلع رأي رئيس مجلس الإدارة على الغداء لجس النبض قبل طرح الاستحواذ رسمياً؟",
+      "verbForms": {
+        "v1": "sound out",
+        "v2": "sounded out",
+        "v3": "sounded out"
+      },
+      "collocations": [
+        "sound out opinions",
+        "sound out the committee"
+      ],
+      "synonyms": [
+        "gauge interest",
+        "probe discreetly"
+      ],
+      "antonyms": [],
+      "tags": [
+        "diplomacy",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "float an idea",
+      "pronunciation": "/fləʊt ən aɪˈdɪə/",
+      "partOfSpeech": "verb",
+      "definition": "To suggest an idea casually or provisionally to see if it meets with approval.",
+      "example": "I suggest floating an idea about summer internship exchanges during tomorrow's faculty meeting.",
+      "translation": "يطرح فكرة بشكل غير رسمي لاستطلاع الرأي",
+      "exampleArabic": "أقترح طرح فكرة عن تبادل التدريب الصيفي بشكل غير رسمي في اجتماع الكلية غداً.",
+      "verbForms": {
+        "v1": "float an idea",
+        "v2": "floated an idea",
+        "v3": "floated an idea"
+      },
+      "collocations": [
+        "float an idea past colleagues",
+        "worth floating an idea"
+      ],
+      "synonyms": [
+        "test the waters",
+        "propose informally"
+      ],
+      "antonyms": [],
+      "tags": [
+        "creativity",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "think outside box",
+      "pronunciation": "/θɪŋk ˌaʊtˈsaɪd bɒks/",
+      "partOfSpeech": "verb",
+      "definition": "To think unconventionally, creatively, and from a fresh, non-traditional perspective.",
+      "example": "Why don't we think outside the box and turn empty warehouse roofs into urban honey farms?",
+      "translation": "يفكر خارج الصندوق / يبتكر بلا قيود تقليدية",
+      "exampleArabic": "لمَ لا نفكر خارج الصندوق ونحول أسطح المستودعات الفارغة إلى مزارع عسل حضرية؟",
+      "verbForms": {
+        "v1": "think outside box",
+        "v2": "thought outside box",
+        "v3": "thought outside box"
+      },
+      "collocations": [
+        "encourage thinking outside the box",
+        "time to think outside the box"
+      ],
+      "synonyms": [
+        "innovate creatively"
+      ],
+      "antonyms": [
+        "stick to dogma"
+      ],
+      "tags": [
+        "creativity",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "viable alternative",
+      "pronunciation": "/ˈvaɪəbl ɔːlˈtɜːnətɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A feasible, workable, and realistic substitute option.",
+      "example": "I suggest presenting offshore wind generation as a commercially viable alternative to coal.",
+      "translation": "بديل عملي وقابل للتطبيق",
+      "exampleArabic": "أقترح تقديم توليد الرياح البحرية كبديل عملي ومجدٍ تجارياً للفحم.",
+      "collocations": [
+        "offer a viable alternative",
+        "explore viable alternatives"
+      ],
+      "synonyms": [
+        "feasible option"
+      ],
+      "antonyms": [
+        "impractical fantasy"
+      ],
+      "tags": [
+        "options",
+        "strategy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "actionable advice",
+      "pronunciation": "/ˈækʃənəbl ədˈvaɪs/",
+      "partOfSpeech": "noun",
+      "definition": "Practical, clear recommendations that can be implemented and put into immediate effect.",
+      "example": "Why don't we provide actionable advice on data encryption in our weekly subscriber bulletin?",
+      "translation": "نصائح وإرشادات قابلة للتطبيق الفوري",
+      "exampleArabic": "لمَ لا نقدم نصائح وإرشادات قابلة للتطبيق الفوري حول تشفير البيانات في نشرتنا الأسبوعية؟",
+      "collocations": [
+        "deliver actionable advice",
+        "practical actionable advice"
+      ],
+      "synonyms": [
+        "concrete guidance"
+      ],
+      "antonyms": [
+        "vague generalities"
+      ],
+      "tags": [
+        "guidance",
+        "practical"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "friendly nudge",
+      "pronunciation": "/ˈfrendli nʌdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "A gentle, encouraging reminder or push to prompt someone toward a desirable decision.",
+      "example": "How about giving overdue invoice accounts a friendly nudge before initiating legal collection?",
+      "translation": "تنبيه ودي لطيف / دفعة تشجيعية رقيقة",
+      "exampleArabic": "ما رأيك في إعطاء الحسابات متأخرة الدفع تنبيهاً ودياً لطيفاً قبل الشروع في التحصيل القانوني؟",
+      "collocations": [
+        "give a friendly nudge",
+        "gentle friendly nudge"
+      ],
+      "synonyms": [
+        "polite prompt"
+      ],
+      "antonyms": [
+        "harsh ultimatum"
+      ],
+      "tags": [
+        "persuasion",
+        "manners"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "gentle steer",
+      "pronunciation": "/ˈdʒentl stɪə/",
+      "partOfSpeech": "noun",
+      "definition": "Subtle, non-coercive guidance directed to help someone reach the optimal choice.",
+      "example": "The mentor provided a gentle steer to help the student select an accredited postgraduate course.",
+      "translation": "توجيه ناعم وحكيم",
+      "exampleArabic": "قدم المرشد توجيهاً ناعماً وحكيماً لمساعدة الطالب في اختيار دورة دراسات عليا معتمدة.",
+      "collocations": [
+        "give a gentle steer",
+        "benefit from a gentle steer"
+      ],
+      "synonyms": [
+        "subtle guidance"
+      ],
+      "antonyms": [
+        "rigid dictation"
+      ],
+      "tags": [
+        "mentorship",
+        "guidance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "vote of confidence",
+      "pronunciation": "/vəʊt əv ˈkɒnfɪdəns/",
+      "partOfSpeech": "noun",
+      "definition": "A formal or informal show of support expressing confidence in a leader, plan, or team.",
+      "example": "Why don't we give the junior developer a vote of confidence by letting him lead the sprint?",
+      "translation": "تصويت بالثقة / منح الثقة والدعم",
+      "exampleArabic": "لمَ لا نمنح المطور المبتدئ تصويتاً بالثقة وندعمه عبر تركه يقود مرحلة التطوير السريعة؟",
+      "collocations": [
+        "pass a vote of confidence",
+        "major vote of confidence"
+      ],
+      "synonyms": [
+        "endorsement",
+        "backing"
+      ],
+      "antonyms": [
+        "vote of no confidence"
+      ],
+      "tags": [
+        "leadership",
+        "trust"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "endorse recommendation",
+      "pronunciation": "/ɪnˈdɔːs ˌrekəmenˈdeɪʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To officially approve, back, and declare agreement with an advisory proposal.",
+      "example": "I suggest endorsing the safety task force's recommendation for automated fire barriers.",
+      "translation": "يعتمد ويزكي التوصية رسمياً",
+      "exampleArabic": "أقترح اعتماد وتزكية توصية فريق مهام السلامة الخاصة بحواجز الحريق المؤتمتة.",
+      "verbForms": {
+        "v1": "endorse recommendation",
+        "v2": "endorsed recommendation",
+        "v3": "endorsed recommendation"
+      },
+      "collocations": [
+        "fully endorse recommendations",
+        "readily endorse recommendation"
+      ],
+      "synonyms": [
+        "officially approve"
+      ],
+      "antonyms": [
+        "reject recommendation"
+      ],
+      "tags": [
+        "governance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "green-light proposal",
+      "pronunciation": "/ɡriːn ˈlaɪt prəˈpəʊzl/",
+      "partOfSpeech": "verb",
+      "definition": "To officially authorize, give permission for, and permit a proposed venture to proceed.",
+      "example": "How about green-lighting the mobile application redesign proposal this afternoon?",
+      "translation": "يمنح الضوء الأخضر للمقترح",
+      "exampleArabic": "ما رأيك في منح الضوء الأخضر لمقترح إعادة تصميم تطبيق الهاتف بعد ظهر اليوم؟",
+      "verbForms": {
+        "v1": "green-light proposal",
+        "v2": "green-lighted proposal",
+        "v3": "green-lighted proposal"
+      },
+      "collocations": [
+        "ready to green-light proposal",
+        "board green-lighted proposal"
+      ],
+      "synonyms": [
+        "authorize venture",
+        "approve project"
+      ],
+      "antonyms": [
+        "veto proposal"
+      ],
+      "tags": [
+        "approval",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "test the waters",
+      "pronunciation": "/test ðə ˈwɔːtəz/",
+      "partOfSpeech": "verb",
+      "definition": "To judge the likely response or success of an action by trying it out discreetly first.",
+      "example": "Why don't we test the waters by launching a targeted social media poll before building the product?",
+      "translation": "يجس النبض ويستطلع الأجواء / يختبر المياه",
+      "exampleArabic": "لمَ لا نجس النبض ونستطلع الأجواء بإطلاق استطلاع رأي موجه قبل بناء المنتج؟",
+      "verbForms": {
+        "v1": "test the waters",
+        "v2": "tested the waters",
+        "v3": "tested the waters"
+      },
+      "collocations": [
+        "test the waters cautiously",
+        "safe to test the waters"
+      ],
+      "synonyms": [
+        "gauge sentiment"
+      ],
+      "antonyms": [
+        "plunge blindly"
+      ],
+      "tags": [
+        "prudence",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pilot phase",
+      "pronunciation": "/ˈpaɪlət feɪz/",
+      "partOfSpeech": "noun",
+      "definition": "The introductory trial stage of an innovation conducted with a limited target audience.",
+      "example": "I suggest launching a three-month pilot phase in two suburban library branches.",
+      "translation": "المرحلة التجريبية الاستطلاعية",
+      "exampleArabic": "أقترح إطلاق مرحلة تجريبية لمدة ثلاثة أشهر في فرعين من مكتبات الضواحي.",
+      "collocations": [
+        "during the pilot phase",
+        "successful pilot phase"
+      ],
+      "synonyms": [
+        "trial period"
+      ],
+      "antonyms": [
+        "full-scale deployment"
+      ],
+      "tags": [
+        "innovation",
+        "projects"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "proof of concept",
+      "pronunciation": "/ˌpruːf əv ˈkɒnsept/",
+      "partOfSpeech": "noun",
+      "definition": "Evidence, typically derived from an experiment or prototype, proving that a design is feasible.",
+      "example": "Why don't we build a basic software proof of concept to demonstrate blockchain latency?",
+      "translation": "إثبات المفهوم / نموذج تجريبي لإثبات الجدوى",
+      "exampleArabic": "لمَ لا نبني نموذجاً برمجياً أولياً لإثبات المفهوم وإظهار سرعة استجابة البلوكتشين؟",
+      "verbForms": {},
+      "collocations": [
+        "working proof of concept",
+        "develop a proof of concept"
+      ],
+      "synonyms": [
+        "feasibility prototype"
+      ],
+      "antonyms": [],
+      "tags": [
+        "technology",
+        "engineering"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "draft resolution",
+      "pronunciation": "/drɑːft ˌrezəˈluːʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A preliminary, written formal proposal put forward for voting in a legislative body.",
+      "example": "The diplomatic envoy suggested submitting a draft resolution regarding ocean plastic pollution.",
+      "translation": "مشروع قرار مكتوب للتصويت",
+      "exampleArabic": "اقترح المبعوث الدبلوماسي تقديم مشروع قرار مكتوب بشأن تلوث المحيطات بالبلاستيك.",
+      "collocations": [
+        "circulate a draft resolution",
+        "sponsor a draft resolution"
+      ],
+      "synonyms": [
+        "preliminary motion"
+      ],
+      "antonyms": [],
+      "tags": [
+        "policy",
+        "law"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "exploratory talk",
+      "pronunciation": "/ɪkˈsplɒrətri tɔːk/",
+      "partOfSpeech": "noun",
+      "definition": "Preliminary discussions undertaken to discover whether formal negotiations are possible.",
+      "example": "Why don't we initiate exploratory talks with regional logistics vendors next week?",
+      "translation": "محادثات استكشافية تمهيدية",
+      "exampleArabic": "لمَ لا نبدأ محادثات استكشافية تمهيدية مع موردي الخدمات اللوجستية الإقليميين الأسبوع القادم؟",
+      "collocations": [
+        "engage in exploratory talks",
+        "hold exploratory talks"
+      ],
+      "synonyms": [
+        "preliminary dialogue"
+      ],
+      "antonyms": [
+        "concluding treaty"
+      ],
+      "tags": [
+        "negotiations",
+        "meetings"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "consultative meeting",
+      "pronunciation": "/kənˈsʌltətɪv ˈmiːtɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "A gathering convened to provide expert advice, professional opinions, and mutual feedback.",
+      "example": "I suggest convening a consultative meeting with environmental biologists before breaking ground.",
+      "translation": "اجتماع تشاوري واستشاري",
+      "exampleArabic": "أقترح عقد اجتماع تشاوري مع علماء البيولوجيا البيئية قبل البدء في أعمال البناء.",
+      "collocations": [
+        "convene a consultative meeting",
+        "regular consultative meeting"
+      ],
+      "synonyms": [
+        "advisory session"
+      ],
+      "antonyms": [],
+      "tags": [
+        "meetings",
+        "collaboration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "feedback mechanism",
+      "pronunciation": "/ˈfiːdbæk ˈmekənɪzəm/",
+      "partOfSpeech": "noun",
+      "definition": "A structured loop or channel through which users and employees submit observations and complaints.",
+      "example": "Why don't we integrate an automated feedback mechanism inside our customer portal?",
+      "translation": "آلية وقناة جمع التغذية الراجعة والملاحظات",
+      "exampleArabic": "لمَ لا ندمج آلية مؤتمتة لجمع الملاحظات داخل بوابة عملائنا؟",
+      "collocations": [
+        "robust feedback mechanism",
+        "create a feedback mechanism"
+      ],
+      "synonyms": [
+        "response channel"
+      ],
+      "antonyms": [],
+      "tags": [
+        "systems",
+        "operations"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "brainstorming session",
+      "pronunciation": "/ˈbreɪnstɔːmɪŋ ˈseʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A collaborative meeting where participants generate creative ideas freely without immediate criticism.",
+      "example": "How about holding a two-hour brainstorming session to invent a brand name for our snack line?",
+      "translation": "جلسة عصف ذهني إبداعية",
+      "exampleArabic": "ما رأيك في عقد جلسة عصف ذهني لساعتين لابتكار اسم علامة تجارية لخط وجباتنا؟",
+      "collocations": [
+        "facilitate a brainstorming session",
+        "productive brainstorming session"
+      ],
+      "synonyms": [
+        "ideation workshop"
+      ],
+      "antonyms": [],
+      "tags": [
+        "creativity",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "actionable proposal",
+      "pronunciation": "/ˈækʃənəbl prəˈpəʊzl/",
+      "partOfSpeech": "noun",
+      "definition": "A clear, realistic, and detailed plan designed for prompt executive implementation.",
+      "example": "I suggest refining the draft into an actionable proposal with clear quarterly deliverables.",
+      "translation": "مقترح عملي قابل للتنفيذ الفوري",
+      "exampleArabic": "أقترح تنقيح المسودة وتحويلها إلى مقترح عملي قابل للتنفيذ بنتائج ربع سنوية واضحة.",
+      "collocations": [
+        "draft an actionable proposal",
+        "submit an actionable proposal"
+      ],
+      "synonyms": [
+        "executable plan"
+      ],
+      "antonyms": [
+        "vague concept"
+      ],
+      "tags": [
+        "planning",
+        "business"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "novel approach",
+      "pronunciation": "/ˈnɒvl əˈprəʊtʃ/",
+      "partOfSpeech": "noun",
+      "definition": "An original, inventive, and unprecedented way of addressing a challenge.",
+      "example": "Why don't we adopt a novel approach by utilizing artificial neural networks for seismic detection?",
+      "translation": "نهج مبتكر غير مسبوق / أسلوب جديد تماماً",
+      "exampleArabic": "لمَ لا نتبنى نهجاً مبتكراً غير مسبوق باستخدام الشبكات العصبية الاصطناعية للرصد الزلزالي؟",
+      "collocations": [
+        "pioneer a novel approach",
+        "novel approach to learning"
+      ],
+      "synonyms": [
+        "innovative method"
+      ],
+      "antonyms": [
+        "conventional formula"
+      ],
+      "tags": [
+        "innovation",
+        "creativity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pragmatic suggestion",
+      "pronunciation": "/præɡˈmætɪk səˈdʒestʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A sensible, realistic recommendation grounded in actual conditions rather than pure theory.",
+      "example": "The lead accountant made a pragmatic suggestion to lease office servers instead of buying them.",
+      "translation": "اقتراح عملي وواقعي",
+      "exampleArabic": "قدم كبير المحاسبين اقتراحاً عملياً واقعياً باستئجار خوادم المكاتب بدلاً من شرائها.",
+      "collocations": [
+        "offer a pragmatic suggestion",
+        "welcome pragmatic suggestions"
+      ],
+      "synonyms": [
+        "realistic proposal"
+      ],
+      "antonyms": [
+        "idealistic daydream"
+      ],
+      "tags": [
+        "practical",
+        "ideas"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "innovative tweak",
+      "pronunciation": "/ˈɪnəvətɪv twiːk/",
+      "partOfSpeech": "noun",
+      "definition": "A small, inventive adjustment that noticeably enhances efficiency or performance.",
+      "example": "How about making an innovative tweak to the turbine blade curvature to boost output?",
+      "translation": "تعديل ابتكاري ذكي ومتقن",
+      "exampleArabic": "ما رأيك في إجراء تعديل ابتكاري ذكي على انحناء شفرة التوربين لزيادة الإنتاج؟",
+      "verbForms": {},
+      "collocations": [
+        "clever innovative tweak",
+        "implement an innovative tweak"
+      ],
+      "synonyms": [
+        "clever fine-tuning"
+      ],
+      "antonyms": [
+        "clumsy blunder"
+      ],
+      "tags": [
+        "engineering",
+        "refinement"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "adopt suggestion",
+      "pronunciation": "/əˈdɒpt səˈdʒestʃən/",
+      "partOfSpeech": "verb",
+      "definition": "To formally choose, accept, and put an advisory recommendation into practice.",
+      "example": "The architectural committee unanimously agreed to adopt her suggestion for rooftop solar glass.",
+      "translation": "يتبنى الاقتراح ويعمل به",
+      "exampleArabic": "وافقت اللجنة المعمارية بالإجماع على تبني اقتراحها الخاص بزجاج الطاقة الشمسية للأسطح.",
+      "verbForms": {
+        "v1": "adopt suggestion",
+        "v2": "adopted suggestion",
+        "v3": "adopted suggestion"
+      },
+      "collocations": [
+        "readily adopt suggestion",
+        "vote to adopt suggestion"
+      ],
+      "synonyms": [
+        "embrace recommendation"
+      ],
+      "antonyms": [
+        "reject suggestion"
+      ],
+      "tags": [
+        "implementation",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "discard proposal",
+      "pronunciation": "/dɪˈskɑːd prəˈpəʊzl/",
+      "partOfSpeech": "verb",
+      "definition": "To reject, cast aside, and abandon a plan deemed unfeasible or unsuitable.",
+      "example": "I suggest discarding the proposal to relocate downtown offices until rail links are restored.",
+      "translation": "يستبعد المقترح ويرفضه",
+      "exampleArabic": "أقترح استبعاد مقترح نقل مكاتب وسط المدينة حتى يتم إصلاح خطوط السكك الحديدية.",
+      "verbForms": {
+        "v1": "discard proposal",
+        "v2": "discarded proposal",
+        "v3": "discarded proposal"
+      },
+      "collocations": [
+        "sensible to discard proposal",
+        "decide to discard proposal"
+      ],
+      "synonyms": [
+        "scrap plan",
+        "ditch proposal"
+      ],
+      "antonyms": [
+        "adopt proposal"
+      ],
+      "tags": [
+        "decisions",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "refine proposal",
+      "pronunciation": "/rɪˈfaɪn prəˈpəʊzl/",
+      "partOfSpeech": "verb",
+      "definition": "To make minor adjustments, polish, and improve a plan before formal submission.",
+      "example": "Why don't we refine the proposal by tightening the budget allocation before pitching investors?",
+      "translation": "ينقح المقترح ويهذبه / يصقل الفكرة",
+      "exampleArabic": "لمَ لا ننقح المقترح بضبط بنود الميزانية بدقة قبل عرضه على المستثمرين؟",
+      "verbForms": {
+        "v1": "refine proposal",
+        "v2": "refined proposal",
+        "v3": "refined proposal"
+      },
+      "collocations": [
+        "take time to refine proposal",
+        "further refine proposal"
+      ],
+      "synonyms": [
+        "polish plan",
+        "hone proposal"
+      ],
+      "antonyms": [
+        "ruin plan"
+      ],
+      "tags": [
+        "refinement",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tentative suggestion",
+      "pronunciation": "/ˈtentətɪv səˈdʒestʃən/",
+      "partOfSpeech": "noun",
+      "definition": "A provisional, cautious recommendation offered subject to further review or alteration.",
+      "example": "She made a tentative suggestion that we test our promotional marketing exclusively in college towns.",
+      "translation": "اقتراح مبدئي غير ملزم / طرح استرشادي",
+      "exampleArabic": "قدمت اقتراحاً مبدئياً باختبار تسويقنا الترويجي حصرياً في المدن الجامعية.",
+      "collocations": [
+        "offer a tentative suggestion",
+        "mere tentative suggestion"
+      ],
+      "synonyms": [
+        "provisional recommendation"
+      ],
+      "antonyms": [
+        "categorical demand"
+      ],
+      "tags": [
+        "ideas",
+        "polite"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "food for reflection",
+      "pronunciation": "/ˌfuːd fə rɪˈflekʃn/",
+      "partOfSpeech": "noun",
+      "definition": "Thoughts, observations, or wisdom that stimulate mature, contemplative evaluation.",
+      "example": "The guest speaker's presentation on workplace dignity gave everyone rich food for reflection.",
+      "translation": "مادة ثرية للتأمل والمراجعة الذاتية",
+      "exampleArabic": "منح عرض المتحدث الضيف حول الكرامة في بيئة العمل الجميع مادة ثرية للتأمل والمراجعة.",
+      "collocations": [
+        "provide food for reflection",
+        "valuable food for reflection"
+      ],
+      "synonyms": [
+        "contemplative insight"
+      ],
+      "antonyms": [],
+      "tags": [
+        "wisdom",
+        "reflection"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "put on the table",
+      "pronunciation": "/pʊt ɒn ðə ˈteɪbl/",
+      "partOfSpeech": "verb",
+      "definition": "To offer an option, concession, or proposal for open consideration and discussion.",
+      "example": "Why don't we put a generous profit-sharing model on the table during union negotiations?",
+      "translation": "يطرح على طاولة البحث والتفاوض",
+      "exampleArabic": "لمَ لا نطرح نموذجاً سخياً لمشاركة الأرباح على طاولة البحث أثناء المفاوضات النقابية؟",
+      "verbForms": {
+        "v1": "put on the table",
+        "v2": "put on the table",
+        "v3": "put on the table"
+      },
+      "collocations": [
+        "put an offer on the table",
+        "everything is on the table"
+      ],
+      "synonyms": [
+        "propose openly"
+      ],
+      "antonyms": [
+        "keep under wraps"
+      ],
+      "tags": [
+        "negotiations",
+        "idioms"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "brainchild",
+      "pronunciation": "/ˈbreɪntʃaɪld/",
+      "partOfSpeech": "noun",
+      "definition": "An idea, invention, or creation produced by a person's individual intellect or imagination.",
+      "example": "The celebrated global educational exchange platform was the brainchild of two college room-mates.",
+      "translation": "وليد الفكر / نتاج العقل والابتكار الخالص",
+      "exampleArabic": "كانت منصة التبادل التعليمي العالمية الشهيرة وليد فكر ونتاج ابتكار اثنين من زملاء السكن الجامعي.",
+      "collocations": [
+        "original brainchild of",
+        "personal brainchild"
+      ],
+      "synonyms": [
+        "creation",
+        "invention"
+      ],
+      "antonyms": [],
+      "tags": [
+        "innovation",
+        "creativity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pitch an idea",
+      "pronunciation": "/pɪtʃ ən aɪˈdɪə/",
+      "partOfSpeech": "verb",
+      "definition": "To present, explain, and promote a business idea or creative concept persuasively to buyers.",
+      "example": "How about pitching our machine-learning health app to medical venture capitalists on Friday?",
+      "translation": "يعرض فكرة ويسوقها بحماس للإقناع",
+      "exampleArabic": "ما رأيك في عرض فكرة تطبيقنا الصحي للتعلم الآلي على مستثمري رأس المال المغامر يوم الجمعة؟",
+      "verbForms": {
+        "v1": "pitch an idea",
+        "v2": "pitched an idea",
+        "v3": "pitched an idea"
+      },
+      "collocations": [
+        "pitch an idea to investors",
+        "successfully pitch an idea"
+      ],
+      "synonyms": [
+        "present pitch"
+      ],
+      "antonyms": [],
+      "tags": [
+        "business",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "take under advisement",
+      "pronunciation": "/teɪk ˈʌndər ədˈvaɪzmənt/",
+      "partOfSpeech": "verb",
+      "definition": "To accept a recommendation formally for careful, private deliberation before ruling.",
+      "example": "The judge announced that she would take the defense counsel's constitutional motion under advisement.",
+      "translation": "يأخذ الأمر بعين الاعتبار والتدبر قبل القرار",
+      "exampleArabic": "أعلنت القاضية أنها ستأخذ دفع محامي الدفاع الدستوري بعين الاعتبار والتدبر قبل الحكم.",
+      "verbForms": {
+        "v1": "take under advisement",
+        "v2": "took under advisement",
+        "v3": "taken under advisement"
+      },
+      "collocations": [
+        "promise to take under advisement",
+        "take proposal under advisement"
+      ],
+      "synonyms": [
+        "consider carefully"
+      ],
+      "antonyms": [
+        "dismiss out of hand"
+      ],
+      "tags": [
+        "formality",
+        "law"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "welcome suggestions",
+      "pronunciation": "/ˈwelkəm səˈdʒestʃənz/",
+      "partOfSpeech": "verb",
+      "definition": "To openly invite, embrace, and encourage input and recommendations from stakeholders.",
+      "example": "The newly elected municipal council announced that they welcome suggestions on green parks.",
+      "translation": "يرحب بالاقتراحات والآراء",
+      "exampleArabic": "أعلن المجلس البلدي المنتخب حديثاً أنه يرحب بالاقتراحات والآراء حول الحدائق الخضراء.",
+      "verbForms": {
+        "v1": "welcome suggestions",
+        "v2": "welcomed suggestions",
+        "v3": "welcomed suggestions"
+      },
+      "collocations": [
+        "always welcome suggestions",
+        "warmly welcome suggestions"
+      ],
+      "synonyms": [
+        "invite ideas"
+      ],
+      "antonyms": [
+        "shut out input"
+      ],
+      "tags": [
+        "collaboration",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fresh perspective",
+      "pronunciation": "/freʃ pəˈspektɪv/",
+      "partOfSpeech": "noun",
+      "definition": "A novel, unjaded way of looking at a traditional or stagnant problem.",
+      "example": "I suggest hiring an independent foreign consultant to bring a fresh perspective to our logistics.",
+      "translation": "رؤية جديدة ومنظور متجدد",
+      "exampleArabic": "أقترح تعيين مستشار أجنبي مستقل لتقديم رؤية جديدة ومنظور متجدد لخدماتنا اللوجستية.",
+      "collocations": [
+        "bring a fresh perspective",
+        "offer a fresh perspective"
+      ],
+      "synonyms": [
+        "novel viewpoint"
+      ],
+      "antonyms": [
+        "stale view"
+      ],
+      "tags": [
+        "insight",
+        "diversity"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "creative input",
+      "pronunciation": "/kriˈeɪtɪv ˈɪnpʊt/",
+      "partOfSpeech": "noun",
+      "definition": "Original, artistic, or unconventional contributions offered during collaborative development.",
+      "example": "Why don't we seek creative input from art students to design our annual sustainability report?",
+      "translation": "مساهمة إبداعية / لمسة فكرية مبتكرة",
+      "exampleArabic": "لمَ لا نسعى للحصول على مساهمة إبداعية من طلاب الفنون لتصميم تقرير الاستدامة السنوي؟",
+      "collocations": [
+        "value creative input",
+        "provide creative input"
+      ],
+      "synonyms": [
+        "artistic contribution"
+      ],
+      "antonyms": [],
+      "tags": [
+        "art",
+        "ideas"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "solicit opinions",
+      "pronunciation": "/səˈlɪsɪt əˈpɪnjənz/",
+      "partOfSpeech": "verb",
+      "definition": "To ask for and gather the views, attitudes, and evaluations of a target group.",
+      "example": "The board suggested soliciting opinions from neighborhood parents before revising bus schedules.",
+      "translation": "يستطلع الآراء ويسبر التوجهات",
+      "exampleArabic": "اقترح مجلس الإدارة استطلاع آراء أولياء الأمور في الحي قبل تعديل جداول الحافلات.",
+      "verbForms": {
+        "v1": "solicit opinions",
+        "v2": "solicited opinions",
+        "v3": "solicited opinions"
+      },
+      "collocations": [
+        "actively solicit opinions",
+        "solicit public opinions"
+      ],
+      "synonyms": [
+        "gather views"
+      ],
+      "antonyms": [],
+      "tags": [
+        "research",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "unsolicited advice",
+      "pronunciation": "/ˌʌnsəˈlɪsɪtɪd ədˈvaɪs/",
+      "partOfSpeech": "noun",
+      "definition": "Recommendations or guidance offered to someone without their asking for or seeking it.",
+      "example": "He irritated his colleagues by continuously dispensing unsolicited advice on code styling.",
+      "translation": "نصيحة غير مطلوبة وغير مدعوة",
+      "exampleArabic": "أثار استياء زملائه بتقديم نصائح غير مطلوبة باستمرار حول أسلوب كتابة الشيفرة البرمجية.",
+      "collocations": [
+        "dispense unsolicited advice",
+        "resist unsolicited advice"
+      ],
+      "synonyms": [
+        "unasked counsel"
+      ],
+      "antonyms": [
+        "requested guidance"
+      ],
+      "tags": [
+        "manners",
+        "communication"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "strategic recommendation",
+      "pronunciation": "/strəˈtiːdʒɪk ˌrekəmenˈdeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A formal, high-level proposal aimed at securing long-term institutional advantage.",
+      "example": "The advisory management consultants submitted five strategic recommendations on digital transformation.",
+      "translation": "توصية استراتيجية عليا",
+      "exampleArabic": "قدم المستشارون الإداريون خمس توصيات استراتيجية عليا بشأن التحول الرقمي.",
+      "collocations": [
+        "formulate strategic recommendations",
+        "core strategic recommendation"
+      ],
+      "synonyms": [
+        "high-level guidance"
+      ],
+      "antonyms": [
+        "tactical detail"
+      ],
+      "tags": [
+        "business",
+        "strategy"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "propose a motion",
+      "pronunciation": "/prəˈpəʊz ə ˈməʊʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To formally introduce a proposal for debate and voting in a parliamentary assembly.",
+      "example": "During the general meeting, the treasurer proposed a motion to audit corporate travel accounts.",
+      "translation": "يطرح اقتراحاً أو طلباً للتصويت في الجمعية",
+      "exampleArabic": "خلال الاجتماع العام، طرح أمين الصندوق اقتراحاً للتصويت للتدقيق في حسابات سفر الشركة.",
+      "verbForms": {
+        "v1": "propose a motion",
+        "v2": "proposed a motion",
+        "v3": "proposed a motion"
+      },
+      "collocations": [
+        "stand to propose a motion",
+        "right to propose a motion"
+      ],
+      "synonyms": [
+        "move a resolution"
+      ],
+      "antonyms": [],
+      "tags": [
+        "formal",
+        "governance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "second a motion",
+      "pronunciation": "/ˈsekənd ə ˈməʊʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To formally express support for a proposal introduced by another member so it can be voted on.",
+      "example": "The vice-chair immediately seconded the motion to allocate emergency funds for flood relief.",
+      "translation": "يثنّي على الاقتراح / يؤيد طرحه رسمياً للتصويت",
+      "exampleArabic": "ثنى نائب الرئيس على الفور على الاقتراح لتخصيص أموال طوارئ لإغاثة المتضررين من الفيضانات.",
+      "verbForms": {
+        "v1": "second a motion",
+        "v2": "seconded a motion",
+        "v3": "seconded a motion"
+      },
+      "collocations": [
+        "rise to second a motion",
+        "proud to second a motion"
+      ],
+      "synonyms": [
+        "support a proposal formally"
+      ],
+      "antonyms": [
+        "oppose motion"
+      ],
+      "tags": [
+        "formal",
+        "governance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "viable proposition",
+      "pronunciation": "/ˈvaɪəbl ˌprɒpəˈzɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A project, business offer, or proposal that has a realistic prospect of commercial success.",
+      "example": "Venture investors confirmed that building micro-warehouses near commuter hubs was a viable proposition.",
+      "translation": "مشروع أو عرض ذو جدوى حقيقية",
+      "exampleArabic": "أكد مستثمرو المشاريع أن بناء مستودعات صغرى بالقرب من مراكز النقل مشروع ذو جدوى حقيقية.",
+      "collocations": [
+        "prove a viable proposition",
+        "financially viable proposition"
+      ],
+      "synonyms": [
+        "workable venture"
+      ],
+      "antonyms": [
+        "unviable scheme"
+      ],
+      "tags": [
+        "business",
+        "finance"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Brainstorming a Product Innovation",
+      "titleArabic": "عصف ذهني لابتكار وتطوير منتج جديد",
+      "setting": "A product lead and an engineering architect discuss new features in a creative design studio.",
+      "lines": [
+        {
+          "speaker": "Lead",
+          "text": "Our user retention has plateaued. Why don't we think outside the box and try a novel approach?"
+        },
+        {
+          "speaker": "Architect",
+          "text": "I suggest building a small proof of concept that introduces gamified daily language challenges."
+        },
+        {
+          "speaker": "Lead",
+          "text": "That sounds promising! How about floating that idea past our user experience researchers this afternoon?"
+        },
+        {
+          "speaker": "Architect",
+          "text": "Why don't we test the waters by launching a prototype pilot phase with two hundred university students?"
+        },
+        {
+          "speaker": "Lead",
+          "text": "Excellent! I suggest integrating a seamless automated feedback mechanism to solicit user opinions."
+        },
+        {
+          "speaker": "Architect",
+          "text": "If users love it, we can champion the idea and pitch the proposal to executive investors."
+        },
+        {
+          "speaker": "Lead",
+          "text": "Let us schedule a formal consultative meeting tomorrow to refine the proposal with financial metrics."
+        },
+        {
+          "speaker": "Architect",
+          "text": "Agreed! That actionable proposal will give our creative roadmap a major vote of confidence."
+        }
+      ],
+      "vocabularyUsed": [
+        "think outside box",
+        "novel approach",
+        "proof of concept",
+        "float an idea",
+        "test the waters",
+        "pilot phase",
+        "feedback mechanism",
+        "solicit opinions",
+        "champion an idea",
+        "pitch an idea",
+        "consultative meeting",
+        "refine proposal",
+        "actionable proposal",
+        "vote of confidence"
+      ]
+    },
+    {
+      "title": "Strategy Session in the Boardroom",
+      "titleArabic": "جلسة استراتيجية في غرفة مجلس الإدارة",
+      "setting": "A managing director discusses organizational restructuring with senior strategy advisors.",
+      "lines": [
+        {
+          "speaker": "Director",
+          "text": "I welcome suggestions on how to streamline our European shipping distribution network."
+        },
+        {
+          "speaker": "Advisor A",
+          "text": "I suggest tabling a proposal to partner with local electric delivery cooperatives."
+        },
+        {
+          "speaker": "Advisor B",
+          "text": "Why don't we moot the idea of regional fulfillment hubs as a viable alternative to single megastores?"
+        },
+        {
+          "speaker": "Director",
+          "text": "That is a pragmatic suggestion. Did our operational research team provide constructive input?"
+        },
+        {
+          "speaker": "Advisor A",
+          "text": "Yes, they recommended adopting the suggestion and green-lighting the pilot phase immediately."
+        },
+        {
+          "speaker": "Advisor B",
+          "text": "How about putting forward Sarah's name to lead this strategic recommendation as project manager?"
+        },
+        {
+          "speaker": "Director",
+          "text": "I will take that under advisement, but she has definitely earned a vote of confidence."
+        },
+        {
+          "speaker": "Advisor A",
+          "text": "Let us prepare a draft resolution so the board can vote to green-light the proposal next Tuesday."
+        }
+      ],
+      "vocabularyUsed": [
+        "welcome suggestions",
+        "table a proposal",
+        "moot an idea",
+        "viable alternative",
+        "pragmatic suggestion",
+        "constructive input",
+        "adopt suggestion",
+        "green-light proposal",
+        "put forward",
+        "strategic recommendation",
+        "take under advisement",
+        "vote of confidence",
+        "draft resolution"
+      ]
+    },
+    {
+      "title": "Creative Pitch for a Community Campaign",
+      "titleArabic": "عرض إبداعي لمبادرة مجتمعية بيئية",
+      "setting": "A junior marketing specialist presents campaign concepts to the creative director.",
+      "lines": [
+        {
+          "speaker": "Specialist",
+          "text": "Why don't we float a trial balloon regarding our rooftop urban farming campaign?"
+        },
+        {
+          "speaker": "Director",
+          "text": "I love the concept! It brings a refreshing fresh perspective to municipal sustainability."
+        },
+        {
+          "speaker": "Specialist",
+          "text": "This whole initiative was actually the brainchild of our summer high-school design interns."
+        },
+        {
+          "speaker": "Director",
+          "text": "How about soliciting constructive feedback from local neighborhood council representatives?"
+        },
+        {
+          "speaker": "Specialist",
+          "text": "I suggest giving them a friendly nudge via our community newsletter this Thursday."
+        },
+        {
+          "speaker": "Director",
+          "text": "Instead of dispensing unsolicited advice, let us listen to what citizens put on the table."
+        },
+        {
+          "speaker": "Specialist",
+          "text": "If we make this innovative tweak to our solar glass mockups, it will prove a viable proposition."
+        },
+        {
+          "speaker": "Director",
+          "text": "Brilliant! Your actionable advice will turn this trial balloon into a triumph."
+        }
+      ],
+      "vocabularyUsed": [
+        "trial balloon",
+        "fresh perspective",
+        "brainchild",
+        "solicit feedback",
+        "constructive input",
+        "friendly nudge",
+        "unsolicited advice",
+        "put on the table",
+        "innovative tweak",
+        "viable proposition",
+        "actionable advice"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Dynamic Lifecycle of Collaborative Innovation",
+      "titleArabic": "دورة الحياة الديناميكية للابتكار التشاركي",
+      "text": "Every great business breakthrough begins when creative thinkers dare to think outside the box and moot an idea that challenges orthodox dogmas. Rather than rushing blindly into full commercial deployment, prudent leaders float a trial balloon to test the waters and solicit feedback from grassroots consumers. Hosting an energetic brainstorming session allows team members to provide constructive input and offer a fresh perspective on stubborn bottlenecks. When managers discover a viable alternative that solves user frustrations, they build a functional proof of concept to validate technical feasibility, ensuring that innovative tweaks are grounded in actionable advice.",
+      "vocabularyUsed": [
+        "think outside box",
+        "moot an idea",
+        "trial balloon",
+        "test the waters",
+        "solicit feedback",
+        "brainstorming session",
+        "constructive input",
+        "fresh perspective",
+        "viable alternative",
+        "proof of concept",
+        "innovative tweak",
+        "actionable advice"
+      ]
+    },
+    {
+      "title": "From Exploratory Concepts to Executable Strategy",
+      "titleArabic": "من المفاهيم الاستكشافية إلى استراتيجيات التنفيذ",
+      "text": "Translating an intellectual brainchild into an enterprise standard requires formal discipline and institutional consensus. A visionary employee must learn to pitch an idea persuasively, table a proposal with transparent financial projections, and advocate for sustainable reforms. In progressive organizations, executives warmly welcome suggestions, establish clear feedback mechanisms, and sponsor consultative meetings before finalizing budgets. When leaders review an actionable proposal, they evaluate whether to adopt the suggestion immediately or discard the proposal if capital constraints arise. By taking time to refine proposals and secure a firm vote of confidence, companies ensure that approved projects thrive.",
+      "vocabularyUsed": [
+        "brainchild",
+        "pitch an idea",
+        "table a proposal",
+        "advocate for",
+        "welcome suggestions",
+        "feedback mechanism",
+        "consultative meeting",
+        "actionable proposal",
+        "adopt suggestion",
+        "discard proposal",
+        "refine proposal",
+        "vote of confidence"
+      ]
+    },
+    {
+      "title": "Strategic Prototyping and Institutional Backing",
+      "titleArabic": "النماذج الأولية الاستراتيجية والدعم المؤسسي",
+      "text": "Before committing millions to complex automated infrastructure, forward-looking corporations pilot a project through a carefully controlled pilot phase. Rather than ignoring valuable consumer sentiment, smart directors actively solicit opinions and incorporate pragmatic suggestions into revised draft resolutions. Offering a gentle steer and giving overdue initiatives a friendly nudge ensures that teams stay aligned on core milestones without feeling micromanaged. When stakeholders see verified performance data confirming that an initiative is a viable proposition, executive boards eagerly endorse recommendations and green-light proposals for nationwide deployment.",
+      "vocabularyUsed": [
+        "pilot a project",
+        "pilot phase",
+        "solicit opinions",
+        "pragmatic suggestion",
+        "draft resolution",
+        "gentle steer",
+        "friendly nudge",
+        "viable proposition",
+        "endorse recommendation",
+        "green-light proposal"
+      ]
+    }
+  ]
+}
