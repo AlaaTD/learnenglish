@@ -1,0 +1,1447 @@
+{
+  "day": 54,
+  "title": "Sports and Exercise",
+  "topic": "Training, teams and competition",
+  "description": "Talk about sport, training and results so far.",
+  "stage": "Health, Education and Personal Development",
+  "focus": "By the end of today, you can communicate clearly about training, teams and competition using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Present Perfect Continuous vs Present Perfect",
+      "titleArabic": "المقارنة بين المضارع التام المستمر والمضارع التام البسيط",
+      "explanation": "We use the Present Perfect Continuous (have/has been + V-ing) when we want to emphasize the ongoing process, continuous exertion, duration, or repetition of an athletic activity ('I have been training for three hours'). In contrast, we use the Present Perfect Simple (have/has + V3) when we focus on the completed result, achievement, specific number of times, or finished milestone ('I have completed two marathons; I have won three medals'). In sports coaching and athletic reporting, choosing between these two tenses allows speakers to distinguish ongoing preparation from definitive victories.",
+      "explanationArabic": "نستخدم زمن المضارع التام المستمر (have/has been + الفعل مضافاً له ing) عندما نريد التركيز على استمرارية النشاط الرياضي، وبذل الجهد، ومدة التدريب أو تكراره ('أنا أتدرب منذ ثلاث ساعات'). وفي المقابل، نستخدم المضارع التام البسيط (have/has + التصريف الثالث V3) عندما يكون التركيز منصباً على النتيجة المنجزة، أو الإنجاز النهائي، أو عدد مرات الحدوث المكتملة ('لقد أكملت سباقي ماراثون؛ لقد فزت بثلاث ميداليات'). التمييز بينهما يبرز الفارق بين الإعداد المستمر والنتيجة المحققة.",
+      "structures": [
+        {
+          "label": "Continuous (Ongoing Process) · المستمر",
+          "pattern": "Subject + have / has + been + V-ing",
+          "explanation": "Emphasizes the duration and continuous flow of training.",
+          "explanationArabic": "يركز على مدة واستمرارية التمرين والنشاط البدني المتواصل."
+        },
+        {
+          "label": "Simple (Completed Result) · البسيط",
+          "pattern": "Subject + have / has + V3 (Past Participle)",
+          "explanation": "Emphasizes the finished achievement, record, or score.",
+          "explanationArabic": "يركز على الإنجاز المكتمل، أو الرقم القياسي، أو النتيجة النهائية المحققة."
+        },
+        {
+          "label": "Question Form · صيغة السؤال",
+          "pattern": "How long have you been V-ing? vs How many times have you V3?",
+          "explanation": "Questions contrast duration with numerical count.",
+          "explanationArabic": "أسئلة تقارن بين مدة الممارسة وعدد مرات الإنجاز."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The athlete has been training on the treadmill all morning, and she has broken her personal best.",
+          "translation": "تتدرب الرياضية على جهاز المشي طوال الصباح، وقد حطمت أفضل رقم شخصي لها.",
+          "usesVocabulary": [
+            "athlete",
+            "treadmill",
+            "personal best"
+          ]
+        },
+        {
+          "sentence": "Our team has been practicing interval training for months; we have qualified for the playoffs.",
+          "translation": "يتدرب فريقنا على تدريبات الفترات المتقطعة منذ أشهر؛ وقد تأهلنا للأدوار الإقصائية.",
+          "usesVocabulary": [
+            "interval training",
+            "playoffs"
+          ]
+        },
+        {
+          "sentence": "The coach has been analyzing game footage while the referee has reviewed the controversial foul.",
+          "translation": "يحلل المدرب تسجيلات المباراة بينما راجع الحكم المخالفة المثيرة للجدل.",
+          "usesVocabulary": [
+            "coach",
+            "referee",
+            "foul"
+          ]
+        },
+        {
+          "sentence": "He has been doing squats and bench press workouts, and he has gained tremendous stamina.",
+          "translation": "إنه يمارس تمارين القرفصاء والبنش برس، وقد اكتسب قوة تحمل هائلة.",
+          "usesVocabulary": [
+            "squat",
+            "bench press",
+            "stamina"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "She has been winning three gold medals this season.",
+          "right": "She has won three gold medals this season.",
+          "note": "When stating a specific number of finished achievements or items, use Present Perfect Simple, not Continuous.",
+          "noteArabic": "عند ذكر عدد مرات محدد لإنجازات أو ميداليات مكتملة، استخدم المضارع التام البسيط وليس المستمر."
+        },
+        {
+          "wrong": "I have trained on the rowing machine for two hours and I am still sweating.",
+          "right": "I have been training on the rowing machine for two hours and I am still sweating.",
+          "note": "Use the continuous form when the action is still actively occurring or has just ended with immediate visible evidence.",
+          "noteArabic": "استخدم صيغة المستمر حينما يكون الحدث لا يزال مستمراً أو انتهى لتوه مع وجود أثر بدني مباشر كالعرق والتعب."
+        }
+      ],
+      "commonUsage": [
+        "Duration vs quantity: 'I have been running for an hour (duration); I have run ten kilometers (quantity).' (المستمر للمدة، والبسيط للكمية المقطوعة.)",
+        "Temporary ongoing states: 'He has been cycling with the national team this month.' (المستمر للحالات التدريبية المؤقتة.)",
+        "Permanent accomplishments: 'She has earned a black belt in martial arts.' (البسيط للإنجاز الدائم والبطولات.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "athlete",
+      "pronunciation": "/ˈæθliːt/",
+      "partOfSpeech": "noun",
+      "definition": "A person who is proficient in sports and other forms of physical exercise.",
+      "example": "The dedicated athlete has won three national gold medals.",
+      "translation": "رياضي / متسابق",
+      "exampleArabic": "فاز الرياضي المتفاني بثلاث ميداليات ذهبية وطنية.",
+      "collocations": [
+        "professional athlete",
+        "elite athlete"
+      ],
+      "synonyms": [
+        "sportsperson"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "athletic",
+      "pronunciation": "/æθˈletɪk/",
+      "partOfSpeech": "adjective",
+      "definition": "Physically strong, fit, and active.",
+      "example": "She has maintained an athletic physique through rigorous daily conditioning.",
+      "translation": "رياضي (ذو بنية رياضية ورشاقة)",
+      "exampleArabic": "حافظت على بنية جسدية رياضية عبر الإعداد البدني اليومي الصارم.",
+      "collocations": [
+        "athletic build",
+        "athletic performance"
+      ],
+      "synonyms": [
+        "fit",
+        "muscular"
+      ],
+      "antonyms": [
+        "unathletic"
+      ],
+      "tags": [
+        "sports",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stamina",
+      "pronunciation": "/ˈstæmɪnə/",
+      "partOfSpeech": "noun",
+      "definition": "The ability to sustain prolonged physical or mental effort.",
+      "example": "Long-distance runners have built tremendous aerobic stamina.",
+      "translation": "قوة التحمل / جَلَد",
+      "exampleArabic": "بنى عداؤو المسافات الطويلة قوة تحمل هوائية هائلة.",
+      "collocations": [
+        "build stamina",
+        "physical stamina"
+      ],
+      "synonyms": [
+        "endurance",
+        "resilience"
+      ],
+      "antonyms": [
+        "weakness"
+      ],
+      "tags": [
+        "fitness",
+        "sports"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "endurance",
+      "pronunciation": "/ɪnˈdjʊərəns/",
+      "partOfSpeech": "noun",
+      "definition": "The capacity of something to last or to withstand wear and tear or hardship.",
+      "example": "He has been testing his muscular endurance during extreme workouts.",
+      "translation": "تحمل / صمود ومثابرة بدنية",
+      "exampleArabic": "إنه يختبر قدرته على التحمل العضلي أثناء التمارين القاسية.",
+      "collocations": [
+        "endurance training",
+        "muscular endurance"
+      ],
+      "synonyms": [
+        "fortitude"
+      ],
+      "antonyms": [
+        "fragility"
+      ],
+      "tags": [
+        "fitness",
+        "sports"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "workout",
+      "pronunciation": "/ˈwɜːkaʊt/",
+      "partOfSpeech": "noun",
+      "definition": "A session of vigorous physical exercise or training.",
+      "example": "She has just finished an intense full-body workout at the track.",
+      "translation": "حصة تدريبية / تمرين رياضي",
+      "exampleArabic": "لقد أنهت للتو حصة تدريبية مكثفة للجسم كاملاً على المضمار.",
+      "collocations": [
+        "daily workout",
+        "intense workout"
+      ],
+      "synonyms": [
+        "training session"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "exercise"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "warm up",
+      "pronunciation": "/ˈwɔːm ʌp/",
+      "partOfSpeech": "verb",
+      "definition": "To prepare for physical exertion or a performance by exercising gently beforehand.",
+      "example": "The swimmers have been warming up in the pool for twenty minutes.",
+      "translation": "يُحمي / يُسخن (قبل التمرين)",
+      "exampleArabic": "يقوم السباحون بالإحماء في المسبح منذ عشرين دقيقة.",
+      "verbForms": {
+        "v1": "warm up",
+        "v2": "warmed up",
+        "v3": "warmed up"
+      },
+      "collocations": [
+        "warm up properly",
+        "warm up before playing"
+      ],
+      "synonyms": [
+        "limber up"
+      ],
+      "antonyms": [
+        "cool down"
+      ],
+      "tags": [
+        "fitness",
+        "exercise"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cool down",
+      "pronunciation": "/ˈkuːl daʊn/",
+      "partOfSpeech": "verb",
+      "definition": "To engage in activity that gradually restores exertion to resting levels.",
+      "example": "They have cooled down with light stretches following the fast sprint.",
+      "translation": "يهدأ بعد التمرين / تبريد الجسم",
+      "exampleArabic": "لقد قاموا بتهدئة الجسم بتمارين إطالة خفيفة بعد العدو السريع.",
+      "verbForms": {
+        "v1": "cool down",
+        "v2": "cooled down",
+        "v3": "cooled down"
+      },
+      "collocations": [
+        "cool down slowly",
+        "cool down routine"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "warm up"
+      ],
+      "tags": [
+        "fitness",
+        "exercise"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "stretch",
+      "pronunciation": "/stretʃ/",
+      "partOfSpeech": "verb",
+      "definition": "To straighten or extend one's body or part of one's body to its full length.",
+      "example": "She has been stretching her hamstrings to enhance overall flexibility.",
+      "translation": "يمدد عضلاته / يمارس الإطالة",
+      "exampleArabic": "إنها تمارس إطالة أوتار الركبة لتعزيز المرونة العامة.",
+      "verbForms": {
+        "v1": "stretch",
+        "v2": "stretched",
+        "v3": "stretched"
+      },
+      "collocations": [
+        "stretch muscles",
+        "stretch gently"
+      ],
+      "synonyms": [
+        "extend"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "exercise"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cardiovascular",
+      "pronunciation": "/ˌkɑːdiəʊˈvæskjələ/",
+      "partOfSpeech": "adjective",
+      "definition": "Relating to the heart and blood vessels.",
+      "example": "Brisk rowing provides exceptional cardiovascular benefits.",
+      "translation": "خاص بالقلب والأوعية الدموية",
+      "exampleArabic": "يوفر التجديف السريع فوائد استثنائية لصحة القلب والأوعية الدموية.",
+      "collocations": [
+        "cardiovascular health",
+        "cardiovascular fitness"
+      ],
+      "synonyms": [
+        "cardiac"
+      ],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "health"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "agility",
+      "pronunciation": "/əˈdʒɪləti/",
+      "partOfSpeech": "noun",
+      "definition": "The ability to move quickly and easily.",
+      "example": "The soccer winger has displayed remarkable foot agility this season.",
+      "translation": "رشاقة وخفة حركة",
+      "exampleArabic": "أظهر جناح كرة القدم رشاقة ملحوظة وخفة حركة في قدميه هذا الموسم.",
+      "collocations": [
+        "foot agility",
+        "speed and agility"
+      ],
+      "synonyms": [
+        "nimbleness",
+        "quickness"
+      ],
+      "antonyms": [
+        "clumsiness"
+      ],
+      "tags": [
+        "fitness",
+        "sports"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "coordination",
+      "pronunciation": "/kəʊˌɔːdɪˈneɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The ability to use different parts of the body together smoothly and efficiently.",
+      "example": "Gymnastics demands flawless hand-eye coordination.",
+      "translation": "تناسق وتوافق عضلي عصبي",
+      "exampleArabic": "يتطلب الجمباز توافقاً عضلياً عصبياً وتناسقاً خالياً من العيوب بين اليد والعين.",
+      "collocations": [
+        "hand-eye coordination",
+        "motor coordination"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "sports"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "treadmill",
+      "pronunciation": "/ˈtredmɪl/",
+      "partOfSpeech": "noun",
+      "definition": "An exercise machine for running or walking while remaining in one place.",
+      "example": "He has been running on the inclined treadmill for forty minutes.",
+      "translation": "جهاز المشي الرياضي / السير الكهربائي",
+      "exampleArabic": "إنه يركض على جهاز المشي المائل منذ أربعين دقيقة.",
+      "collocations": [
+        "run on a treadmill",
+        "treadmill incline"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "equipment",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "dumbbell",
+      "pronunciation": "/ˈdʌmbel/",
+      "partOfSpeech": "noun",
+      "definition": "A short bar with a weight at each end, used typically in pairs for exercise.",
+      "example": "She has lifted the twenty-pound dumbbell fifteen times in each set.",
+      "translation": "دامبل / ثقل يدوي",
+      "exampleArabic": "لقد رفعت الدامبل بوزن عشرين رطلاً خمس عشرة مرة في كل مجموعة.",
+      "collocations": [
+        "dumbbell press",
+        "pair of dumbbells"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "equipment",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "barbell",
+      "pronunciation": "/ˈbɑːbel/",
+      "partOfSpeech": "noun",
+      "definition": "A long metal bar to which iron weight plates are attached for lifting.",
+      "example": "The lifter has added two heavy iron discs to the Olympic barbell.",
+      "translation": "باربل / قضيب رفع الأثقال الحديدي",
+      "exampleArabic": "أضاف الرباع قرصين حديديين ثقيلين إلى الباربل الأولمبي.",
+      "collocations": [
+        "Olympic barbell",
+        "load the barbell"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "equipment",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "bench press",
+      "pronunciation": "/ˈbentʃ pres/",
+      "partOfSpeech": "noun",
+      "definition": "A weight-training exercise in which one lies on a bench and pushes a weight upward.",
+      "example": "He has improved his maximum bench press by ten kilograms this month.",
+      "translation": "تمرين بنش برس (الضغط على المقعد بالثقل)",
+      "exampleArabic": "لقد حسّن أقصى وزن له في تمرين البنش برس بمقدار عشرة كيلوغرامات هذا الشهر.",
+      "collocations": [
+        "flat bench press",
+        "perform a bench press"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "exercise",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "push-up",
+      "pronunciation": "/ˈpʊʃ ʌp/",
+      "partOfSpeech": "noun",
+      "definition": "An exercise in which a person lies prone and pushes the body up by the arms.",
+      "example": "She has been doing fifty push-ups every single morning.",
+      "translation": "تمرين الضغط",
+      "exampleArabic": "إنها تمارس خمسين تمرين ضغط كل صباح.",
+      "collocations": [
+        "do push-ups",
+        "one-arm push-up"
+      ],
+      "synonyms": [
+        "press-up"
+      ],
+      "antonyms": [],
+      "tags": [
+        "exercise",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pull-up",
+      "pronunciation": "/ˈpʊl ʌp/",
+      "partOfSpeech": "noun",
+      "definition": "An exercise involving pulling oneself up by the hands from an overhead bar.",
+      "example": "He has mastered ten strict pull-ups without swinging his torso.",
+      "translation": "تمرين العقلة",
+      "exampleArabic": "لقد أتقن عشر تكرارات صارمة من تمرين العقلة دون أرجحة الجذع.",
+      "collocations": [
+        "pull-up bar",
+        "strict pull-up"
+      ],
+      "synonyms": [
+        "chin-up"
+      ],
+      "antonyms": [],
+      "tags": [
+        "exercise",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sit-up",
+      "pronunciation": "/ˈsɪt ʌp/",
+      "partOfSpeech": "noun",
+      "definition": "A physical exercise designed to strengthen the abdominal muscles.",
+      "example": "The recruit has completed one hundred sit-ups during the physical evaluation.",
+      "translation": "تمرين المعدة / الجلوس من الاستلقاء",
+      "exampleArabic": "أكمل المجند مئة تمرين معدة خلال التقييم البدني.",
+      "collocations": [
+        "do sit-ups",
+        "incline sit-up"
+      ],
+      "synonyms": [
+        "abdominal crunch"
+      ],
+      "antonyms": [],
+      "tags": [
+        "exercise",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "squat",
+      "pronunciation": "/skwɒt/",
+      "partOfSpeech": "noun",
+      "definition": "An exercise in which a person bends the knees and lowers the hips.",
+      "example": "Deep squats have strengthened her quadriceps and glutes immensely.",
+      "translation": "تمرين القرفصاء / سكوات",
+      "exampleArabic": "قوت تمارين القرفصاء العميقة عضلات الفخذ والمؤخرة لديها بشكل هائل.",
+      "collocations": [
+        "barbell squat",
+        "bodyweight squat"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "exercise",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lunge",
+      "pronunciation": "/lʌndʒ/",
+      "partOfSpeech": "noun",
+      "definition": "A sudden forward thrust of the body, typically with that foot bent and the other trailing.",
+      "example": "Walking lunges have challenged his balance and lower-leg power.",
+      "translation": "تمرين الاندفاع / الطعن بالساق",
+      "exampleArabic": "تحدت تمارين الاندفاع أثناء المشي توازنه وقوة عضلات ساقه السفلية.",
+      "collocations": [
+        "walking lunges",
+        "reverse lunge"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "exercise",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sprint",
+      "pronunciation": "/sprɪnt/",
+      "partOfSpeech": "noun",
+      "definition": "An act of running at full speed over a short distance.",
+      "example": "He has won the hundred-meter sprint in three consecutive meets.",
+      "translation": "عدو سريع / ركض بأقصى سرعة لمسافة قصيرة",
+      "exampleArabic": "فاز بسباق العدو لمئة متر في ثلاثة لقاءات متتالية.",
+      "collocations": [
+        "final sprint",
+        "all-out sprint"
+      ],
+      "synonyms": [
+        "dash"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "running"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "marathon",
+      "pronunciation": "/ˈmærəθən/",
+      "partOfSpeech": "noun",
+      "definition": "A long-distance running race with an official distance of 42.195 kilometers.",
+      "example": "She has been training for the international marathon since October.",
+      "translation": "ماراثون",
+      "exampleArabic": "إنها تتدرب من أجل الماراثون الدولي منذ شهر أكتوبر.",
+      "collocations": [
+        "run a marathon",
+        "marathon runner"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "running"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "triathlon",
+      "pronunciation": "/traɪˈæθlɒn/",
+      "partOfSpeech": "noun",
+      "definition": "An athletic contest consisting of three different events, typically swimming, cycling, and long-distance running.",
+      "example": "He has completed two full triathlons this past year.",
+      "translation": "سباق ثلاثي / ترياثلون",
+      "exampleArabic": "لقد أكمل سباقين ثلاثيين كاملين في العام الماضي.",
+      "collocations": [
+        "compete in a triathlon",
+        "triathlon finisher"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "multisport"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "interval training",
+      "pronunciation": "/ˈɪntəvl ˌtreɪnɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "Training in which an athlete alternates between periods of high and low intensity exercise.",
+      "example": "They have been doing high-intensity interval training twice every week.",
+      "translation": "تدريب فترات متقطعة عالي الشدة",
+      "exampleArabic": "إنهم يمارسون تدريب الفترات المتقطعة عالي الشدة مرتين كل أسبوع.",
+      "collocations": [
+        "high-intensity interval training",
+        "interval training protocol"
+      ],
+      "synonyms": [
+        "HIIT"
+      ],
+      "antonyms": [
+        "steady-state cardio"
+      ],
+      "tags": [
+        "fitness",
+        "training"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "gymnastics",
+      "pronunciation": "/dʒɪmˈnæstɪks/",
+      "partOfSpeech": "noun",
+      "definition": "Exercises developing or displaying physical agility and coordination.",
+      "example": "She has practiced artistic gymnastics since her early childhood.",
+      "translation": "رياضة الجمباز",
+      "exampleArabic": "لقد مارست الجمباز الفني منذ طفولتها المبكرة.",
+      "collocations": [
+        "artistic gymnastics",
+        "gymnastics routine"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "gymnastics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "martial arts",
+      "pronunciation": "/ˌmɑːʃl ˈɑːts/",
+      "partOfSpeech": "noun",
+      "definition": "Various sports or skills, mainly of Japanese or Chinese origin, that originated as forms of self-defense.",
+      "example": "He has been studying traditional martial arts to develop mental focus.",
+      "translation": "فنون قتالية / دفاع عن النفس",
+      "exampleArabic": "إنه يدرس الفنون القتالية التقليدية لتطوير التركيز الذهني.",
+      "collocations": [
+        "practice martial arts",
+        "martial arts discipline"
+      ],
+      "synonyms": [
+        "combat sports"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "combat"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "wrestling",
+      "pronunciation": "/ˈreslɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The sport or activity of grappling with an opponent and trying to throw them down.",
+      "example": "The Olympic wrestler has dominated his division for five years.",
+      "translation": "مصارعة",
+      "exampleArabic": "سيطر المصارع الأولمبي على فئته لمدة خمس سنوات.",
+      "collocations": [
+        "freestyle wrestling",
+        "wrestling championship"
+      ],
+      "synonyms": [
+        "grappling"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "combat"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "boxing",
+      "pronunciation": "/ˈbɒksɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The sport or practice of fighting with the fists, especially with padded gloves.",
+      "example": "He has been boxing professionally since turning twenty-one.",
+      "translation": "ملاكمة",
+      "exampleArabic": "إنه يمارس الملاكمة الاحترافية منذ أن بلغ الحادية والعشرين من عمره.",
+      "collocations": [
+        "professional boxing",
+        "boxing glove"
+      ],
+      "synonyms": [
+        "pugilism"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "combat"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cycling",
+      "pronunciation": "/ˈsaɪklɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The sport or activity of riding a bicycle.",
+      "example": "They have been cycling through mountain passes every weekend.",
+      "translation": "ركوب الدراجات الهوائية / سباق الدراجات",
+      "exampleArabic": "إنهم يقودون الدراجات الهوائية عبر الممرات الجبلية كل عطلة نهاية أسبوع.",
+      "collocations": [
+        "road cycling",
+        "competitive cycling"
+      ],
+      "synonyms": [
+        "biking"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "cycling"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "rowing",
+      "pronunciation": "/ˈrəʊɪŋ/",
+      "partOfSpeech": "noun",
+      "definition": "The sport of racing in light boats propelled by oars.",
+      "example": "The university crew has won the national rowing regatta twice.",
+      "translation": "رياضة التجديف",
+      "exampleArabic": "فاز فريق الجامعة بسباق التجديف الوطني مرتين.",
+      "collocations": [
+        "rowing boat",
+        "rowing machine"
+      ],
+      "synonyms": [
+        "sculling"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "water"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "aerobics",
+      "pronunciation": "/eəˈrəʊbɪks/",
+      "partOfSpeech": "noun",
+      "definition": "Vigorous exercises designed to increase cardiovascular efficiency.",
+      "example": "She has been leading community aerobics classes for eight years.",
+      "translation": "تمارين الأيروبيكس الرياضية",
+      "exampleArabic": "إنها تقود فصول الأيروبيكس المجتمعية منذ ثماني سنوات.",
+      "collocations": [
+        "step aerobics",
+        "water aerobics"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "aerobics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pilates",
+      "pronunciation": "/pɪˈlɑːtiːz/",
+      "partOfSpeech": "noun",
+      "definition": "A system of exercises using special apparatus, designed to improve physical strength and flexibility.",
+      "example": "He has taken up pilates to alleviate chronic lower back stiffness.",
+      "translation": "تمارين البيلاتس (لتقوية الجذع والمرونة)",
+      "exampleArabic": "بدأ ممارسة تمارين البيلاتس لتخفيف تيبس أسفل الظهر المزمن.",
+      "collocations": [
+        "pilates reformer",
+        "mat pilates"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "fitness",
+        "exercise"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "coach",
+      "pronunciation": "/kəʊtʃ/",
+      "partOfSpeech": "noun",
+      "definition": "An athletic trainer who instructs and manages athletes or a team.",
+      "example": "The head coach has inspired the squad with tactically brilliant halftime speeches.",
+      "translation": "مدرب فني / مدرب الفريق",
+      "exampleArabic": "ألهم المدرب الرئيسي الفريق بخطابات تكتيكية بارعة بين الشوطين.",
+      "collocations": [
+        "head coach",
+        "assistant coach"
+      ],
+      "synonyms": [
+        "manager",
+        "instructor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "professions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "trainer",
+      "pronunciation": "/ˈtreɪnə/",
+      "partOfSpeech": "noun",
+      "definition": "A person who teaches people or animals certain skills, especially fitness.",
+      "example": "Her certified personal trainer has designed a four-phase strength plan.",
+      "translation": "مدرب لياقة بدنية / معد بدني",
+      "exampleArabic": "صمم مدربها الشخصي المعتمد خطة قوة بدنية من أربع مراحل.",
+      "collocations": [
+        "personal trainer",
+        "athletic trainer"
+      ],
+      "synonyms": [
+        "fitness instructor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "fitness"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "referee",
+      "pronunciation": "/ˌrefəˈriː/",
+      "partOfSpeech": "noun",
+      "definition": "An official who watches a game closely to enforce the rules and arbitrate.",
+      "example": "The international referee has officiated over fifty crucial matches.",
+      "translation": "حكم المباراة (في كرة القدم والرياضات الميدانية)",
+      "exampleArabic": "أدار الحكم الدولي أكثر من خمسين مباراة حاسمة.",
+      "collocations": [
+        "match referee",
+        "referee's whistle"
+      ],
+      "synonyms": [
+        "official",
+        "arbitrator"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "officiating"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "umpire",
+      "pronunciation": "/ˈʌmpaɪə/",
+      "partOfSpeech": "noun",
+      "definition": "An official who watches a game like tennis or cricket to enforce the rules.",
+      "example": "The tennis umpire called the fast serve out by an inch.",
+      "translation": "حكم التنس / حكم الكريكيت والبيسبول",
+      "exampleArabic": "أعلن حكم التنس خروج الإرسال السريع ببوصة واحدة.",
+      "collocations": [
+        "chair umpire",
+        "line umpire"
+      ],
+      "synonyms": [
+        "judge"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "officiating"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tournament",
+      "pronunciation": "/ˈtʊənəmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A series of contests between a number of competitors, competing for an overall prize.",
+      "example": "Our club has advanced to the final round of the regional tournament.",
+      "translation": "بطولة / دورة رياضية",
+      "exampleArabic": "تأهل نادينا إلى الدور النهائي من البطولة الإقليمية.",
+      "collocations": [
+        "grand slam tournament",
+        "annual tournament"
+      ],
+      "synonyms": [
+        "competition",
+        "championship"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "championship",
+      "pronunciation": "/ˈtʃæmpiənʃɪp/",
+      "partOfSpeech": "noun",
+      "definition": "A contest for the position of champion in a sport or game.",
+      "example": "They have celebrated their first league championship in thirty years.",
+      "translation": "بطولة كبرى / لقب البطولة",
+      "exampleArabic": "احتفلوا بأول لقب لبطولة الدوري منذ ثلاثين عاماً.",
+      "collocations": [
+        "world championship",
+        "win a championship"
+      ],
+      "synonyms": [
+        "title"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "league",
+      "pronunciation": "/liːɡ/",
+      "partOfSpeech": "noun",
+      "definition": "A collection of sports clubs or teams that play each other over a period for a championship.",
+      "example": "The forward has scored twenty-five goals in the premier league this season.",
+      "translation": "دوري رياضي",
+      "exampleArabic": "سجل المهاجم خمسة وعشرين هدفاً في الدوري الممتاز هذا الموسم.",
+      "collocations": [
+        "premier league",
+        "league table"
+      ],
+      "synonyms": [
+        "association"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "playoffs",
+      "pronunciation": "/ˈpleɪɒfs/",
+      "partOfSpeech": "noun",
+      "definition": "A series of games played at the end of a sports season to determine the champion.",
+      "example": "The basketball franchise has qualified for the postseason playoffs six years in a row.",
+      "translation": "الأدوار الإقصائية / تصفيات ختام الموسم",
+      "exampleArabic": "تأهل فريق كرة السلة للأدوار الإقصائية لستة مواسم متتالية.",
+      "collocations": [
+        "qualify for the playoffs",
+        "playoff series"
+      ],
+      "synonyms": [
+        "postseason"
+      ],
+      "antonyms": [
+        "regular season"
+      ],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "scoreline",
+      "pronunciation": "/ˈskɔːlaɪn/",
+      "partOfSpeech": "noun",
+      "definition": "The score in a game, especially at the end.",
+      "example": "The final scoreline reflected our team's territorial dominance throughout.",
+      "translation": "نتيجة المباراة (لوحة الأهداف)",
+      "exampleArabic": "عكست نتيجة المباراة النهائية هيمنة فريقنا الميدانية طوال اللقاء.",
+      "collocations": [
+        "final scoreline",
+        "lopsided scoreline"
+      ],
+      "synonyms": [
+        "final score"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "penalty",
+      "pronunciation": "/ˈpenəlti/",
+      "partOfSpeech": "noun",
+      "definition": "A punishment imposed for breaking a rule in sports.",
+      "example": "The goalkeeper has saved three crucial penalties during this campaign.",
+      "translation": "ركلة جزاء / ضربة جزاء / عقوبة",
+      "exampleArabic": "تصدى حارس المرمى لثلاث ركلات جزاء حاسمة خلال هذه البطولة.",
+      "collocations": [
+        "penalty shootout",
+        "award a penalty"
+      ],
+      "synonyms": [
+        "spot kick"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "foul",
+      "pronunciation": "/faʊl/",
+      "partOfSpeech": "noun",
+      "definition": "An unfair or invalid stroke or piece of play, especially one involving physical contact.",
+      "example": "The defender has committed an accidental foul near the edge of the penalty box.",
+      "translation": "خطأ / مخالفة رياضية (فاول)",
+      "exampleArabic": "ارتكب المدافع مخالفة غير مقصودة بالقرب من حافة منطقة الجزاء.",
+      "collocations": [
+        "commit a foul",
+        "personal foul"
+      ],
+      "synonyms": [
+        "infraction"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "offside",
+      "pronunciation": "/ˌɒfˈsaɪd/",
+      "partOfSpeech": "adjective",
+      "definition": "In an illegal position on the field ahead of the ball.",
+      "example": "The assistant referee signaled that the attacking winger was clearly offside.",
+      "translation": "في موقف تسلل",
+      "exampleArabic": "أشار الحكم المساعد إلى أن الجناح المهاجم كان في موقف تسلل واضح.",
+      "collocations": [
+        "caught offside",
+        "offside flag"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "onside"
+      ],
+      "tags": [
+        "sports",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "overtime period",
+      "pronunciation": "/ˈəʊvətaɪm ˈpɪəriəd/",
+      "partOfSpeech": "noun",
+      "definition": "An extra period of play added to a tied game to determine a winner.",
+      "example": "The thrilling match was decided in a five-minute overtime period.",
+      "translation": "شوط إضافي / وقت إضافي لحسم التعادل",
+      "exampleArabic": "حُسمت المباراة المثيرة في شوط إضافي مدته خمس دقائق.",
+      "collocations": [
+        "head into an overtime period",
+        "dramatic overtime period"
+      ],
+      "synonyms": [
+        "extra time"
+      ],
+      "antonyms": [
+        "regulation time"
+      ],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "runner-up",
+      "pronunciation": "/ˌrʌnər ˈʌp/",
+      "partOfSpeech": "noun",
+      "definition": "A competitor or team taking second place in a contest.",
+      "example": "Our spirited squad finished as proud runner-up in the national finals.",
+      "translation": "الوصيف / صاحب المركز الثاني",
+      "exampleArabic": "أنهى فريقنا المتحمس البطولة في مركز الوصيف المشرف في النهائيات الوطنية.",
+      "collocations": [
+        "tournament runner-up",
+        "first runner-up"
+      ],
+      "synonyms": [
+        "second place"
+      ],
+      "antonyms": [
+        "champion"
+      ],
+      "tags": [
+        "sports",
+        "competition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "podium",
+      "pronunciation": "/ˈpəʊdiəm/",
+      "partOfSpeech": "noun",
+      "definition": "A small platform on which competitors stand to receive awards.",
+      "example": "All three medalists stepped onto the championship podium with pride.",
+      "translation": "منصة التتويج",
+      "exampleArabic": "صعد الفائزون الثلاثة بالميداليات إلى منصة التتويج بفخر واعتزاز.",
+      "collocations": [
+        "stand on the podium",
+        "podium finish"
+      ],
+      "synonyms": [
+        "dais"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "awards"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sportsmanship",
+      "pronunciation": "/ˈspɔːtsmənʃɪp/",
+      "partOfSpeech": "noun",
+      "definition": "Fair and generous behavior or treatment of others, especially in sports.",
+      "example": "Both captains demonstrated exemplary sportsmanship by shaking hands warmly.",
+      "translation": "روح رياضية / أخلاق الفرسان الرياضية",
+      "exampleArabic": "أظهر كلا القائدين روحاً رياضية مثالية بالمصافحة الدافئة بعد الصافرة.",
+      "collocations": [
+        "display sportsmanship",
+        "fair play and sportsmanship"
+      ],
+      "synonyms": [
+        "fair play"
+      ],
+      "antonyms": [
+        "unsportsmanlike conduct"
+      ],
+      "tags": [
+        "sports",
+        "ethics"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "record-breaker",
+      "pronunciation": "/ˈrekɔːd ˌbreɪkə/",
+      "partOfSpeech": "noun",
+      "definition": "A person who beats a previous best performance in a particular activity.",
+      "example": "The teenage swimmer has emerged as an authentic international record-breaker.",
+      "translation": "محطم الأرقام القياسية",
+      "exampleArabic": "برز السباح الشاب كمحطم حقيقي للأرقام القياسية الدولية.",
+      "collocations": [
+        "acclaimed record-breaker",
+        "celebrated record-breaker"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "achievement"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "personal best",
+      "pronunciation": "/ˌpɜːsənl ˈbest/",
+      "partOfSpeech": "noun",
+      "definition": "The fastest time or best result a competitor has ever personally achieved.",
+      "example": "She has set an extraordinary personal best in the five-kilometer trial.",
+      "translation": "أفضل رقم شخصي للمتسابق",
+      "exampleArabic": "حققت أفضل رقم شخصي استثنائي لها في تجارب سباق الخمسة كيلومترات.",
+      "collocations": [
+        "achieve a personal best",
+        "set a personal best"
+      ],
+      "synonyms": [
+        "PR",
+        "personal record"
+      ],
+      "antonyms": [],
+      "tags": [
+        "sports",
+        "achievement"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Post-Workout Debrief at the Gym",
+      "titleArabic": "جلسة نقاش بعد التدريب الرياضي في الصالة",
+      "setting": "A personal trainer reviews a client's performance beside the free weights area.",
+      "lines": [
+        {
+          "speaker": "Trainer",
+          "text": "You look completely exhausted! How long have you been pushing through this workout?"
+        },
+        {
+          "speaker": "Client",
+          "text": "I have been lifting dumbbells and doing heavy barbell squats for ninety minutes."
+        },
+        {
+          "speaker": "Trainer",
+          "text": "Your athletic endurance and muscular stamina have improved tremendously this quarter."
+        },
+        {
+          "speaker": "Client",
+          "text": "I have completed fifty strict push-ups and ten pull-ups without stopping for breath."
+        },
+        {
+          "speaker": "Trainer",
+          "text": "Have you warmed up and stretched thoroughly before attempting that heavy bench press?"
+        },
+        {
+          "speaker": "Client",
+          "text": "Yes, I warmed up on the rowing machine and stretched every tight hamstring."
+        },
+        {
+          "speaker": "Trainer",
+          "text": "Now cool down with light walking so your cardiovascular system returns to resting pace."
+        },
+        {
+          "speaker": "Client",
+          "text": "I will do that right away; consistent interval training has rewarded me with a new personal best!"
+        }
+      ],
+      "vocabularyUsed": [
+        "workout",
+        "dumbbell",
+        "barbell",
+        "squat",
+        "athletic",
+        "endurance",
+        "stamina",
+        "push-up",
+        "pull-up",
+        "warm up",
+        "stretch",
+        "bench press",
+        "rowing",
+        "cool down",
+        "cardiovascular",
+        "interval training",
+        "personal best"
+      ]
+    },
+    {
+      "title": "Tactical Halftime Review",
+      "titleArabic": "مراجعة تكتيكية بين شوطي المباراة",
+      "setting": "A soccer coach delivers tactical instructions to his team in the locker room.",
+      "lines": [
+        {
+          "speaker": "Coach",
+          "text": "Listen carefully! The referee has already awarded one harsh penalty against our defense."
+        },
+        {
+          "speaker": "Captain",
+          "text": "Their attacking winger was clearly caught offside before the foul occurred."
+        },
+        {
+          "speaker": "Coach",
+          "text": "We cannot dispute officiating decisions; we have demonstrated excellent sportsmanship so far."
+        },
+        {
+          "speaker": "Captain",
+          "text": "Our defenders have been displaying great agility and foot coordination across the pitch."
+        },
+        {
+          "speaker": "Coach",
+          "text": "The scoreline is tied at one-all; we must avoid heading into a grueling overtime period."
+        },
+        {
+          "speaker": "Captain",
+          "text": "If we maintain our fast sprint transitions, we will secure the victory in regulation."
+        },
+        {
+          "speaker": "Coach",
+          "text": "We have won ten consecutive league games; let us finish this match as true champions!"
+        },
+        {
+          "speaker": "Captain",
+          "text": "We are united; let us step back onto the field and seal our place in the playoffs!"
+        }
+      ],
+      "vocabularyUsed": [
+        "coach",
+        "referee",
+        "penalty",
+        "offside",
+        "foul",
+        "sportsmanship",
+        "agility",
+        "coordination",
+        "scoreline",
+        "overtime period",
+        "sprint",
+        "league",
+        "playoffs"
+      ]
+    },
+    {
+      "title": "Championship Podium Reflections",
+      "titleArabic": "مشاعر منصة التتويج في ختام البطولة",
+      "setting": "Two runners reflect on their races while standing beside the medal presentation area.",
+      "lines": [
+        {
+          "speaker": "Athlete",
+          "text": "Congratulations on finishing as the celebrated runner-up in today's tournament!"
+        },
+        {
+          "speaker": "Runner",
+          "text": "Thank you! I have been preparing for this grueling marathon for over eight months."
+        },
+        {
+          "speaker": "Athlete",
+          "text": "The champion who won gold has proven to be an extraordinary record-breaker."
+        },
+        {
+          "speaker": "Runner",
+          "text": "Yes, but standing on this prestigious podium is a lifelong dream fulfilled for me."
+        },
+        {
+          "speaker": "Athlete",
+          "text": "You have balanced cycling, swimming, and cross-country running like a true triathlon veteran."
+        },
+        {
+          "speaker": "Runner",
+          "text": "My background in competitive gymnastics and pilates helped me build resilient core strength."
+        },
+        {
+          "speaker": "Athlete",
+          "text": "The umpire and tournament committee praised your inspiring grace throughout the race."
+        },
+        {
+          "speaker": "Runner",
+          "text": "Respecting opponents and honoring the sport is what makes every championship truly meaningful."
+        }
+      ],
+      "vocabularyUsed": [
+        "runner-up",
+        "tournament",
+        "marathon",
+        "record-breaker",
+        "podium",
+        "cycling",
+        "triathlon",
+        "gymnastics",
+        "pilates",
+        "umpire",
+        "championship"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Architecture of Athletic Conditioning",
+      "titleArabic": "معمارية الإعداد واللياقة البدنية للرياضيين",
+      "kind": "informative",
+      "text": "Reaching peak athletic performance requires an unwavering dedication to structured physical conditioning. For months, an ambitious athlete has been training rigorously to expand both cardiovascular efficiency and muscular stamina. Each day begins on the track where the runner has been warming up with light jogging before launching into high-intensity interval training. In the gym, the lifter has performed dozens of explosive squats alongside strict bench press sets using a loaded Olympic barbell. Heavy dumbbell movements, pull-up repetitions, and disciplined push-ups have been fortifying upper-body power. By honoring dedicated cool down routines and taking time to stretch fatigued muscle groups, the competitor has successfully boosted foot agility and set an inspiring personal best.",
+      "translation": "يتطلب الوصول إلى ذروة الأداء الرياضي تفانياً لا يتزعزع في الإعداد البدني المنظم. فطوال أشهر، تدرب رياضي طموح بصرامة لتعزيز كفاءة القلب وقوة التحمل. ويبدأ كل يوم على المضمار بالإحماء قبل الانطلاق في تدريبات الفترات المتقطعة عالية الشدة. وفي الصالة الرياضية، نفذ تمارين القرفصاء الانفجارية وتمارين البنش برس بالباربل. وعززت الدامبلز وتمارين العقلة والضغط قوة الجزء العلوي. وبالالتزام بالتهدئة والإطالة، زادت الرشاقة وسجل رقماً شخصياً ملهماً.",
+      "vocabularyUsed": [
+        "athletic",
+        "athlete",
+        "cardiovascular",
+        "stamina",
+        "warm up",
+        "interval training",
+        "squat",
+        "bench press",
+        "barbell",
+        "dumbbell",
+        "pull-up",
+        "push-up",
+        "cool down",
+        "stretch",
+        "agility",
+        "personal best"
+      ]
+    },
+    {
+      "title": "Diverse Disciplines of Strength and Endurance",
+      "titleArabic": "التخصصات المتنوعة للقوة والتحمل والرياضات القتالية",
+      "kind": "expository",
+      "text": "Competitive sports encompass diverse disciplines that test human limits in unique ways. In the boxing ring and on the wrestling mat, fighters have been studying martial arts techniques to cultivate instantaneous coordination. Meanwhile, endurance specialists have been cycling through mountain passes and rowing across open lakes to prepare for an exhausting triathlon or grueling city marathon. In the studio, athletes have practiced pilates and artistic gymnastics to build profound core stability. Whether running on a high-speed motorized treadmill or sprinting across an outdoor field, dedicated participants understand that true athletic endurance is forged through thousands of hours of quiet, unglamorous sacrifice.",
+      "translation": "تشمل الرياضات التنافسية تخصصات متنوعة تختبر الحدود البشرية بطرق فريدة. ففي حلبة الملاكمة وبساط المصارعة، درس المقاتلون الفنون القتالية لبناء تناسق لحظي. وفي الوقت نفسه، قاد أخصائيو التحمل الدراجات ومارسوا التجديف استعداداً لسباق الترياثلون الشاق أو الماراثون الطويل. وفي الصالة، مارس الرياضيون البيلاتس والجمباز لبناء ثبات الجذع، مؤكدين أن التحمل الرياضي يُصنع عبر آلاف الساعات من التضحية على جهاز المشي وفي سباقات العدو.",
+      "vocabularyUsed": [
+        "boxing",
+        "wrestling",
+        "martial arts",
+        "coordination",
+        "cycling",
+        "rowing",
+        "triathlon",
+        "marathon",
+        "pilates",
+        "gymnastics",
+        "treadmill",
+        "sprint",
+        "endurance"
+      ]
+    },
+    {
+      "title": "Championship Climax and Virtuous Sportsmanship",
+      "titleArabic": "ذروة البطولة والروح الرياضية الرفيعة",
+      "kind": "narrative",
+      "text": "When tournament play begins, high-stakes competition tests character as profoundly as physical readiness. Throughout a tense league season, our squad has been competing fiercely to secure qualification for the championship playoffs. During the semi-final, the referee penalized a controversial foul while the observant umpire monitored sideline conduct. When the scoreline remained deadlocked, both teams battled courageously through a five-minute overtime period. Although our rivals triumphed as champions, our team stood proudly on the podium as honored runner-up, demonstrating impeccable sportsmanship while congratulating the new record-breaker on an unforgettable contest.",
+      "translation": "حين تبدأ منافسات البطولة، تختبر المنافسة الروح والشخصية بقدر ما تختبر الجاهزية البدنية. فطوال موسم الدوري المتوتر، نافس فريقنا بشراسة للتأهل للأدوار الإقصائية. وخلال نصف النهائي، عاقب الحكم مخالفة مثيرة للجدل بينما راقب حكم التنس السلوك الرياضي. وحين ظلت النتيجة متعادلة، خاض الفريقان شوطاً إضافياً مثيراً. ورغم ظفر منافسينا باللقب، وقف فريقنا بفخر على منصة التتويج كوصيف مشرف مظهرين روحاً رياضية مثالية ومباركين لمحطم الأرقام القياسية.",
+      "vocabularyUsed": [
+        "tournament",
+        "league",
+        "championship",
+        "playoffs",
+        "referee",
+        "foul",
+        "umpire",
+        "scoreline",
+        "overtime period",
+        "podium",
+        "runner-up",
+        "sportsmanship",
+        "record-breaker"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1502 @@
+{
+  "day": 57,
+  "title": "Rules and Routines",
+  "topic": "Obligation and permission",
+  "description": "Talk about rules, obligations and what is allowed.",
+  "stage": "Health, Education and Personal Development",
+  "focus": "By the end of today, you can communicate clearly about obligation and permission using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Must / Have to / Mustn't / Be allowed to",
+      "titleArabic": "التعبير عن الإلزام والضرورة والمنع والسماح (Must / Have to / Mustn't / Be allowed to)",
+      "explanation": "We use modal expressions to communicate varying degrees of obligation and permission: 1) 'Must' expresses strong internal obligation, personal conviction, or official formal written rules ('Workers must wear helmets'). 2) 'Have to' expresses external obligation imposed by outside rules, laws, or workplace policies ('I have to complete the check-in procedure'). In the past, we use 'had to'. 3) 'Must not' (Mustn't) expresses absolute prohibition; doing the action is strictly forbidden ('You mustn't deviate from protocol'). 4) 'Be allowed to' expresses permission given by an authority or rule ('Are we allowed to take a mandatory break now?'). The negative 'be not allowed to' confirms lack of permission.",
+      "explanationArabic": "نستخدم هذه الأفعال الناقصة والتعبيرات لبيان الإلزام والضرورة والمنع والسماح: 1) Must: تعبر عن التزام قوي وضرورة حتمية أو قواعد ولوائح مكتوبة رسمية ('يجب على العمال ارتداء الخوذ'). 2) Have to: تعبر عن التزام خارجي مفروض بالقانون أو اللوائح المؤسسية ('يتعين عليّ إكمال إجراءات الدخول'). في الماضي نستخدم had to. 3) Must not (Mustn't): تعبر عن الحظر والمنع القطعي، أي أن الفعل محظور تماماً ويترتب عليه عقاب ('يحظر عليك الحيد عن البروتوكول'). 4) Be allowed to: تعبر عن الإذن والسماح الرسمي ('هل يُسمح لنا بأخذ استراحة؟')، ونفيها يعني عدم السماح.",
+      "structures": [
+        {
+          "label": "Obligation · الإلزام الرسمي (Must / Have to)",
+          "pattern": "Subject + must / have to (has to) + V1 (Base)",
+          "explanation": "Expresses an inescapable obligation or regulatory command.",
+          "explanationArabic": "يعبر عن التزام إجباري واجب النفاذ أو أمر تنظيمي ملزم."
+        },
+        {
+          "label": "Prohibition · الحظر والمنع (Mustn't)",
+          "pattern": "Subject + must not (mustn't) + V1 (Base)",
+          "explanation": "Signals that an action is strictly forbidden and subject to sanction.",
+          "explanationArabic": "يوضح أن الفعل ممنوع ومحظور قطيعاً ويترتب عليه جزاء."
+        },
+        {
+          "label": "Permission · الإذن والسماح (Be allowed to)",
+          "pattern": "Subject + am / is / are (not) + allowed to + V1 (Base)",
+          "explanation": "Indicates whether permission is granted by rules or authority.",
+          "explanationArabic": "يبين ما إذا كان الإذن ممنوحاً أو محجوباً بموجب القواعد أو السلطة."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "All personnel must adhere strictly to the standard operating procedure inside the plant.",
+          "translation": "يجب على جميع الأفراد الالتزام الصارم بإجراءات التشغيل القياسية داخل المنشأة.",
+          "usesVocabulary": [
+            "adhere strictly",
+            "standard operating procedure"
+          ]
+        },
+        {
+          "sentence": "You have to understand that compulsory attendance is a mandatory rule in our department.",
+          "translation": "يتعين عليك أن تدرك أن الحضور الإجباري هو قاعدة إلزامية في قسمنا.",
+          "usesVocabulary": [
+            "compulsory attendance",
+            "mandatory rule"
+          ]
+        },
+        {
+          "sentence": "Employees mustn't deviate from protocol when operating high-voltage machinery.",
+          "translation": "يُحظر على الموظفين الحيد عن البروتوكول عند تشغيل الآلات ذات الجهد العالي.",
+          "usesVocabulary": [
+            "deviate from protocol"
+          ]
+        },
+        {
+          "sentence": "Only certified engineers are allowed to receive authorized access to the control room.",
+          "translation": "يُسمح فقط للمهندسين المعتمدين بتلقي تصريح دخول معتمد إلى غرفة التحكم.",
+          "usesVocabulary": [
+            "authorized access"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "You don't have to smoke here; it is strictly prohibited.",
+          "right": "You mustn't smoke here; it is strictly prohibited.",
+          "note": "'Don't have to' means there is no obligation (optional); 'mustn't' means it is forbidden.",
+          "noteArabic": "لا تخلط بين don't have to (لست مضطراً / الأمر اختياري) و mustn't (ممنوع ومحظور قطيعاً)."
+        },
+        {
+          "wrong": "Yesterday I must attend the disciplinary hearing.",
+          "right": "Yesterday I had to attend the disciplinary hearing.",
+          "note": "'Must' has no past tense form; use 'had to' for past obligation.",
+          "noteArabic": "لا يوجد صيغة ماضٍ لـ must؛ بل استخدم had to للتعبير عن الضرورة في الماضي."
+        }
+      ],
+      "commonUsage": [
+        "Legal and compliance policies: 'Drivers must take a mandatory break.' (تُستخدم للنصوص القانونية واللوائح الإلزامية.)",
+        "Expressing prohibition: 'Visitors mustn't enter without a special permit.' (تُستخدم لإبراز المحظورات الصريحة.)",
+        "Checking institutional rights: 'Are we allowed to leave during the lunch break?' (تُستخدم للاستفسار عن حدود المسموح به نظاماً.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "mandatory rule",
+      "pronunciation": "/ˈmændətəri ruːl/",
+      "partOfSpeech": "noun",
+      "definition": "An official regulation that must be followed by law or policy.",
+      "example": "Wearing safety goggles is a mandatory rule inside the chemical laboratory.",
+      "translation": "قاعدة إلزامية / حكم إجباري",
+      "exampleArabic": "يُعد ارتداء نظارات السلامة قاعدة إلزامية داخل المختبر الكيميائي.",
+      "collocations": [
+        "enforce a mandatory rule",
+        "comply with a mandatory rule"
+      ],
+      "synonyms": [
+        "compulsory rule"
+      ],
+      "antonyms": [
+        "optional guideline"
+      ],
+      "tags": [
+        "rules",
+        "compliance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "compulsory attendance",
+      "pronunciation": "/kəmˈpʌlsəri əˈtendəns/",
+      "partOfSpeech": "noun",
+      "definition": "The requirement that all enrolled members must be present.",
+      "example": "You have to understand that compulsory attendance applies to all morning seminars.",
+      "translation": "حضور إجباري / حضور إلزامي",
+      "exampleArabic": "عليك أن تدرك أن الحضور الإجباري ينطبق على جميع حلقات النقاش الصباحية.",
+      "collocations": [
+        "policy of compulsory attendance",
+        "require compulsory attendance"
+      ],
+      "synonyms": [
+        "mandatory attendance"
+      ],
+      "antonyms": [
+        "voluntary attendance"
+      ],
+      "tags": [
+        "rules",
+        "routine"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "strict regulation",
+      "pronunciation": "/strɪkt ˌreɡjuˈleɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A rule or directive made and maintained by an authority that is rigorously enforced.",
+      "example": "All staff members must adhere to this strict regulation regarding data privacy.",
+      "translation": "لائحة صارمة / تنظيم حازم",
+      "exampleArabic": "يجب على جميع الموظفين الالتزام بهذه اللائحة الصارمة المتعلقة بخصوصية البيانات.",
+      "collocations": [
+        "enact a strict regulation",
+        "comply with a strict regulation"
+      ],
+      "synonyms": [
+        "rigid rule"
+      ],
+      "antonyms": [
+        "flexible guideline"
+      ],
+      "tags": [
+        "rules",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "statutory requirement",
+      "pronunciation": "/ˈstætʃətri rɪˈkwaɪəmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A condition or demand required by a statute or enacted law.",
+      "example": "Filing annual financial declarations is a statutory requirement for licensed businesses.",
+      "translation": "مطلب قانوني منصوص عليه / شرط تشريعي",
+      "exampleArabic": "يُعد تقديم الإقرارات المالية السنوية مطلباً قانونياً للشركات المرخصة.",
+      "collocations": [
+        "meet a statutory requirement",
+        "fulfill statutory requirements"
+      ],
+      "synonyms": [
+        "legal obligation"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "compliance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "protocol requirement",
+      "pronunciation": "/ˈprəʊtəkɒl rɪˈkwaɪəmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A necessary procedure prescribed by the official code of conduct.",
+      "example": "You must not bypass any protocol requirement when handling hazardous substances.",
+      "translation": "شرط إجرائي وفق البروتوكول",
+      "exampleArabic": "يجب ألا تتجاوز أي شرط إجرائي وفق البروتوكول عند التعامل مع المواد الخطرة.",
+      "collocations": [
+        "follow protocol requirements",
+        "standard protocol requirement"
+      ],
+      "synonyms": [
+        "procedural rule"
+      ],
+      "antonyms": [],
+      "tags": [
+        "rules",
+        "safety"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "code of ethics",
+      "pronunciation": "/ˌkəʊd əv ˈeθɪks/",
+      "partOfSpeech": "noun",
+      "definition": "A written set of guidelines issued by an organization to guide member conduct.",
+      "example": "Every medical researcher has to sign the institutional code of ethics.",
+      "translation": "ميثاق الشرف الأخلاقي / ميثاق السلوك المهني",
+      "exampleArabic": "يجب على كل باحث طبي التوقيع على ميثاق الشرف الأخلاقي المؤسسي.",
+      "collocations": [
+        "professional code of ethics",
+        "abide by the code of ethics"
+      ],
+      "synonyms": [
+        "ethical code"
+      ],
+      "antonyms": [],
+      "tags": [
+        "ethics",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "standard operating procedure",
+      "pronunciation": "/ˌstændəd ˈɒpəreɪtɪŋ prəˈsiːdʒə/",
+      "partOfSpeech": "noun",
+      "definition": "Established procedures to be followed in designated situations.",
+      "example": "Operators must consult the standard operating procedure before rebooting the server.",
+      "translation": "إجراءات التشغيل القياسية (SOP)",
+      "exampleArabic": "يجب على المشغلين مراجعة إجراءات التشغيل القياسية قبل إعادة تشغيل الخادم.",
+      "collocations": [
+        "standard operating procedure manual",
+        "follow standard operating procedure"
+      ],
+      "synonyms": [
+        "SOP"
+      ],
+      "antonyms": [],
+      "tags": [
+        "procedure",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "safety guideline",
+      "pronunciation": "/ˈseɪfti ˌɡaɪdlaɪn/",
+      "partOfSpeech": "noun",
+      "definition": "A practical recommendation intended to protect individuals from harm.",
+      "example": "Workers are not allowed to operate machinery without reviewing each safety guideline.",
+      "translation": "إرشادات وتعليمات السلامة",
+      "exampleArabic": "لا يُسمح للعمال بتشغيل الآلات دون مراجعة كل إرشادات السلامة.",
+      "collocations": [
+        "rigorous safety guidelines",
+        "post safety guidelines"
+      ],
+      "synonyms": [
+        "safety rule"
+      ],
+      "antonyms": [],
+      "tags": [
+        "safety",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "curfew",
+      "pronunciation": "/ˈkɜːfjuː/",
+      "partOfSpeech": "noun",
+      "definition": "A regulation requiring people to remain indoors between specified hours, typically at night.",
+      "example": "Dormitory residents must return before the midnight curfew or face penalties.",
+      "translation": "حظر تجوال / موعد الإغلاق الإلزامي ليلاً",
+      "exampleArabic": "يجب على نزلاء السكن الجامعي العودة قبل حظر التجوال الليلي في منتصف الليل أو مواجهة عقوبات.",
+      "collocations": [
+        "strict curfew",
+        "violate the curfew"
+      ],
+      "synonyms": [
+        "lockout"
+      ],
+      "antonyms": [],
+      "tags": [
+        "rules",
+        "residence"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "restriction",
+      "pronunciation": "/rɪˈstrɪkʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A limiting condition or measure, especially a legal or institutional one.",
+      "example": "You are allowed to access public records, but a strict restriction governs private files.",
+      "translation": "قيد / تقييد قانوني أو إجرائي",
+      "exampleArabic": "يُسمح لك بالاطلاع على السجلات العامة، ولكن قيداً صارماً يحكم الملفات الخاصة.",
+      "collocations": [
+        "impose a restriction",
+        "lift a restriction"
+      ],
+      "synonyms": [
+        "limitation",
+        "constraint"
+      ],
+      "antonyms": [
+        "liberty"
+      ],
+      "tags": [
+        "rules",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "prohibition",
+      "pronunciation": "/ˌprəʊhɪˈbɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The action of forbidding something, especially by law.",
+      "example": "There is an absolute prohibition against mobile phones inside examination halls.",
+      "translation": "حظر قطعي / منع قانوني",
+      "exampleArabic": "هناك حظر قطعي لاستخدام الهواتف المحمولة داخل قاعات الامتحانات.",
+      "collocations": [
+        "strict prohibition",
+        "legal prohibition"
+      ],
+      "synonyms": [
+        "ban",
+        "veto"
+      ],
+      "antonyms": [
+        "permission"
+      ],
+      "tags": [
+        "rules",
+        "prohibition"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "zero tolerance",
+      "pronunciation": "/ˌzɪərəʊ ˈtɒlərəns/",
+      "partOfSpeech": "noun",
+      "definition": "Refusal to accept antisocial behavior, typically by strict application of laws.",
+      "example": "Our institution has to enforce zero tolerance for academic dishonesty.",
+      "translation": "سياسة عدم التهاون مطلقاً / عدم التسامح نهائياً",
+      "exampleArabic": "يجب على مؤسستنا تطبيق سياسة عدم التهاون مطلقاً مع الغش الأكاديمي.",
+      "collocations": [
+        "zero tolerance policy",
+        "practice zero tolerance"
+      ],
+      "synonyms": [
+        "strict enforcement"
+      ],
+      "antonyms": [
+        "leniency"
+      ],
+      "tags": [
+        "discipline",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "forbidden action",
+      "pronunciation": "/fəˈbɪdn ˈækʃn/",
+      "partOfSpeech": "noun",
+      "definition": "An activity that is explicitly prohibited by rules or authorities.",
+      "example": "Sharing administrative passwords is a strictly forbidden action in our bank.",
+      "translation": "فعل محظور وممنوع قطيعاً",
+      "exampleArabic": "تعتبر مشاركة كلمات المرور الإدارية فعلاً محظوراً تماماً في مصرفنا.",
+      "collocations": [
+        "deem a forbidden action",
+        "penalize a forbidden action"
+      ],
+      "synonyms": [
+        "prohibited deed"
+      ],
+      "antonyms": [
+        "permitted act"
+      ],
+      "tags": [
+        "prohibition",
+        "discipline"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "infraction",
+      "pronunciation": "/ɪnˈfrækʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A violation or infringement of a law, agreement, or set of rules.",
+      "example": "A minor parking infraction will result in a standard financial citation.",
+      "translation": "مخالفة بسيطة / تجاوز للقانون",
+      "exampleArabic": "ستؤدي المخالفة البسيطة لركن السيارة إلى غرامة مالية قياسية.",
+      "collocations": [
+        "minor infraction",
+        "commit an infraction"
+      ],
+      "synonyms": [
+        "breach",
+        "transgression"
+      ],
+      "antonyms": [
+        "compliance"
+      ],
+      "tags": [
+        "discipline",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "violation",
+      "pronunciation": "/ˌvaɪəˈleɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The act of violating someone or something, or of being violated.",
+      "example": "Entering the construction sector without hard hats is a serious safety violation.",
+      "translation": "انتهاك / خرق صريح للقواعد",
+      "exampleArabic": "يُعد دخول قطاع البناء دون خوذات أمان انتهاكاً خطيراً لتعليمات السلامة.",
+      "collocations": [
+        "flagrant violation",
+        "in direct violation of"
+      ],
+      "synonyms": [
+        "infringement",
+        "breach"
+      ],
+      "antonyms": [
+        "adherence"
+      ],
+      "tags": [
+        "discipline",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "penalty fee",
+      "pronunciation": "/ˈpenəlti fiː/",
+      "partOfSpeech": "noun",
+      "definition": "A sum of money paid as a punishment for a breach of contract or regulation.",
+      "example": "Borrowers have to pay an escalating penalty fee for overdue loan installments.",
+      "translation": "غرامة مالية / رسوم جزائية",
+      "exampleArabic": "يتعين على المقترضين دفع غرامة مالية تصاعدية لأقساط القروض المتأخرة.",
+      "collocations": [
+        "incur a penalty fee",
+        "waive the penalty fee"
+      ],
+      "synonyms": [
+        "fine"
+      ],
+      "antonyms": [],
+      "tags": [
+        "finance",
+        "discipline"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "sanction",
+      "pronunciation": "/ˈsæŋkʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A threatened penalty for disobeying a law or rule.",
+      "example": "Institutional sanctions were applied to departments failing the audit.",
+      "translation": "عقوبة تأديبية / جزاء نظامي",
+      "exampleArabic": "طُبقت عقوبات وجزاءات نظامية على الأقسام التي فشلت في التدقيق.",
+      "collocations": [
+        "impose sanctions",
+        "face severe sanctions"
+      ],
+      "synonyms": [
+        "punishment",
+        "penalty"
+      ],
+      "antonyms": [
+        "reward"
+      ],
+      "tags": [
+        "discipline",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "disciplinary measure",
+      "pronunciation": "/ˈdɪsəplɪnəri ˈmeʒə/",
+      "partOfSpeech": "noun",
+      "definition": "An action taken to correct behavioral infractions.",
+      "example": "A formal disciplinary measure was logged after the unauthorized absence.",
+      "translation": "إجراء تأديبي",
+      "exampleArabic": "تم تسجيل إجراء تأديبي رسمي بعد الغياب غير المصرح به.",
+      "collocations": [
+        "face a disciplinary measure",
+        "appropriate disciplinary measure"
+      ],
+      "synonyms": [
+        "corrective action"
+      ],
+      "antonyms": [],
+      "tags": [
+        "discipline",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "suspension",
+      "pronunciation": "/səˈspenʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The temporary prevention of someone from continuing their work or studies.",
+      "example": "The athlete received a two-month suspension following the rules breach.",
+      "translation": "إيقاف مؤقت عن العمل أو الدراسة / تجميد العضوية",
+      "exampleArabic": "تلقى الرياضي إيقافاً مؤقتاً لمدة شهرين في أعقاب خرق اللوائح.",
+      "collocations": [
+        "face temporary suspension",
+        "serve a suspension"
+      ],
+      "synonyms": [
+        "temporary exclusion"
+      ],
+      "antonyms": [
+        "reinstatement"
+      ],
+      "tags": [
+        "discipline",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "expulsion",
+      "pronunciation": "/ɪkˈspʌlʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The process of forcing someone to leave a place, especially a school.",
+      "example": "Selling contraband on school grounds leads to permanent expulsion.",
+      "translation": "فصل نهائي / طرد كلي من المؤسسة",
+      "exampleArabic": "يؤدي بيع الممنوعات في الحرم المدرسي إلى الفصل النهائي.",
+      "collocations": [
+        "permanent expulsion",
+        "threat of expulsion"
+      ],
+      "synonyms": [
+        "dismissal",
+        "banishment"
+      ],
+      "antonyms": [
+        "admission"
+      ],
+      "tags": [
+        "discipline",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "permissible",
+      "pronunciation": "/pəˈmɪsəbl/",
+      "partOfSpeech": "adjective",
+      "definition": "Permitted; allowed by rules or customs.",
+      "example": "Snacks are permissible in the common lounge, but you must not eat in the library.",
+      "translation": "مسموح به / جائز نظاماً",
+      "exampleArabic": "تناول الوجبات الخفيفة مسموح به في الردهة العامة، لكن يجب ألا تأكل في المكتبة.",
+      "collocations": [
+        "deem permissible",
+        "legally permissible"
+      ],
+      "synonyms": [
+        "allowable",
+        "acceptable"
+      ],
+      "antonyms": [
+        "impermissible"
+      ],
+      "tags": [
+        "permission",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "allowable",
+      "pronunciation": "/əˈlaʊəbl/",
+      "partOfSpeech": "adjective",
+      "definition": "Allowable or acceptable according to regulations.",
+      "example": "The tax advisor explained which business expenses were allowable deductions.",
+      "translation": "مقبول قانونياً / جائز احتسابه",
+      "exampleArabic": "أوضح المستشار الضريبي أي نفقات تجارية كانت خصومات جائزة قانوناً.",
+      "collocations": [
+        "allowable deduction",
+        "maximum allowable"
+      ],
+      "synonyms": [
+        "permissible"
+      ],
+      "antonyms": [
+        "disallowed"
+      ],
+      "tags": [
+        "permission",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "authorized access",
+      "pronunciation": "/ˈɔːθəraɪzd ˈækses/",
+      "partOfSpeech": "noun",
+      "definition": "Permission granted to enter a location or view confidential data.",
+      "example": "Only staff with verified authorized access are allowed beyond the security checkpoint.",
+      "translation": "دخول مصرح به رسمياً",
+      "exampleArabic": "يُسمح فقط للموظفين الذين لديهم دخول مصرح به بتجاوز نقطة التفتيش الأمنية.",
+      "collocations": [
+        "grant authorized access",
+        "require authorized access"
+      ],
+      "synonyms": [
+        "security clearance"
+      ],
+      "antonyms": [
+        "unauthorized entry"
+      ],
+      "tags": [
+        "permission",
+        "security"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "written authorization",
+      "pronunciation": "/ˈrɪtn ˌɔːθəraɪˈzeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A formal document granting permission to carry out an activity.",
+      "example": "You have to obtain written authorization before removing company archives.",
+      "translation": "إذن خطي / تفويض كتابي رسمي",
+      "exampleArabic": "يتعين عليك الحصول على تفويض كتابي رسمي قبل نقل أرشيف الشركة.",
+      "collocations": [
+        "prior written authorization",
+        "obtain written authorization"
+      ],
+      "synonyms": [
+        "written consent"
+      ],
+      "antonyms": [],
+      "tags": [
+        "permission",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "special permit",
+      "pronunciation": "/ˈspeʃl ˈpɜːmɪt/",
+      "partOfSpeech": "noun",
+      "definition": "An official document giving special permission to do something.",
+      "example": "Filmmakers must secure a special permit to shoot scenes in historical districts.",
+      "translation": "تصريح خاص / ترخيص استثنائي",
+      "exampleArabic": "يجب على صانعي الأفلام الحصول على تصريح خاص لتصوير المشاهد في المناطق التاريخية.",
+      "collocations": [
+        "apply for a special permit",
+        "issue a special permit"
+      ],
+      "synonyms": [
+        "special license"
+      ],
+      "antonyms": [],
+      "tags": [
+        "permission",
+        "legal"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "clearance level",
+      "pronunciation": "/ˈklɪərəns ˌlevl/",
+      "partOfSpeech": "noun",
+      "definition": "The designated tier of security access granted to an official.",
+      "example": "He has top-tier clearance level, so he is allowed to inspect confidential files.",
+      "translation": "مستوى التصريح الأمني",
+      "exampleArabic": "يمتلك مستوى تصريح أمني رفيعاً، ولذلك يُسمح له بفحص الملفات السرية.",
+      "collocations": [
+        "high clearance level",
+        "security clearance level"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "security",
+        "permission"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "exemption",
+      "pronunciation": "/ɪɡˈzempʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The process of freeing or state of being free from an obligation.",
+      "example": "Students with verified medical certificates are granted an exemption from physical exams.",
+      "translation": "إعفاء رسمي / استثناء من التزام",
+      "exampleArabic": "يُمنح الطلاب الذين لديهم شهادات طبية معتمدة إعفاءً من الاختبارات البدنية.",
+      "collocations": [
+        "claim an exemption",
+        "tax exemption"
+      ],
+      "synonyms": [
+        "waiver",
+        "immunity"
+      ],
+      "antonyms": [
+        "liability"
+      ],
+      "tags": [
+        "legal",
+        "permission"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "waiver",
+      "pronunciation": "/ˈweɪvə/",
+      "partOfSpeech": "noun",
+      "definition": "An act of voluntarily relinquishing an established right or claim.",
+      "example": "You must sign a liability waiver before embarking on the high-altitude skydive.",
+      "translation": "وثيقة إخلاء مسؤولية / تنازل رسمي",
+      "exampleArabic": "يجب عليك التوقيع على وثيقة إخلاء المسؤولية قبل الانطلاق في القفز المظلي.",
+      "collocations": [
+        "sign a liability waiver",
+        "grant a waiver"
+      ],
+      "synonyms": [
+        "disclaimer"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "documents"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "legal obligation",
+      "pronunciation": "/ˈliːɡl ˌɒblɪˈɡeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A duty enforced by courts or legal statutes.",
+      "example": "Employers have a strict legal obligation to maintain a hazard-free workplace.",
+      "translation": "التزام قانوني واجب النفاذ",
+      "exampleArabic": "يقع على عاتق أصحاب العمل التزام قانوني صارم بالحفاظ على مكان عمل خالٍ من المخاطر.",
+      "collocations": [
+        "under a legal obligation",
+        "binding legal obligation"
+      ],
+      "synonyms": [
+        "statutory duty"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "duty"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "binding contract",
+      "pronunciation": "/ˈbaɪndɪŋ ˈkɒntrækt/",
+      "partOfSpeech": "noun",
+      "definition": "An agreement between parties that is enforceable by law.",
+      "example": "Both corporations have to honor every provision inside this binding contract.",
+      "translation": "عقد ملزم قانوناً",
+      "exampleArabic": "يتعين على كلا الشركتين احترام كل بند داخل هذا العقد الملزم قانوناً.",
+      "collocations": [
+        "execute a binding contract",
+        "sign a binding contract"
+      ],
+      "synonyms": [
+        "enforceable agreement"
+      ],
+      "antonyms": [
+        "void agreement"
+      ],
+      "tags": [
+        "legal",
+        "documents"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "terms and conditions",
+      "pronunciation": "/ˌtɜːmz ənd kənˈdɪʃnz/",
+      "partOfSpeech": "noun",
+      "definition": "The general and special arrangements of a legal agreement or contract.",
+      "example": "Users must read and accept the terms and conditions before installing software.",
+      "translation": "الشروط والأحكام",
+      "exampleArabic": "يجب على المستخدمين قراءة الشروط والأحكام والموافقة عليها قبل تثبيت البرنامج.",
+      "collocations": [
+        "accept terms and conditions",
+        "agree to terms and conditions"
+      ],
+      "synonyms": [
+        "stipulations"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "prerequisite",
+      "pronunciation": "/priːˈrekwəzɪt/",
+      "partOfSpeech": "noun",
+      "definition": "A thing that is required as a prior condition for something else to happen.",
+      "example": "Passing chemistry 101 is a strict prerequisite for entering organic biochemistry.",
+      "translation": "متطلب أساسي سابق / شرط مسبق",
+      "exampleArabic": "يُعد اجتياز الكيمياء 101 متطلباً أساسياً سابقاً لدراسة الكيمياء الحيوية.",
+      "collocations": [
+        "essential prerequisite",
+        "academic prerequisite"
+      ],
+      "synonyms": [
+        "precondition"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "enforce rule",
+      "pronunciation": "/ɪnˈfɔːs ruːl/",
+      "partOfSpeech": "verb",
+      "definition": "To compel observance of or compliance with a law, rule, or obligation.",
+      "example": "Security officers must enforce rules consistently across all campus facilities.",
+      "translation": "يفرض القاعدة / يُلزم بتطبيق القانون",
+      "exampleArabic": "يجب على مسؤولي الأمن فرض القواعد باتساق في جميع مرافق الحرم الجامعي.",
+      "verbForms": {
+        "v1": "enforce rule",
+        "v2": "enforced rule",
+        "v3": "enforced rule"
+      },
+      "collocations": [
+        "strictly enforce rules",
+        "duty to enforce rules"
+      ],
+      "synonyms": [
+        "implement rule"
+      ],
+      "antonyms": [
+        "ignore rule"
+      ],
+      "tags": [
+        "compliance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "abide by rules",
+      "pronunciation": "/əˈbaɪd baɪ ruːlz/",
+      "partOfSpeech": "verb",
+      "definition": "To accept or act in accordance with an established rule or decision.",
+      "example": "Every tournament participant has to abide by rules set by the governing board.",
+      "translation": "يلتزم بالقواعد / يمتثل للوائح",
+      "exampleArabic": "يتعين على كل مشارك في البطولة الالتزام بالقواعد التي يحددها مجلس الإدارة.",
+      "verbForms": {
+        "v1": "abide by rules",
+        "v2": "abided by rules",
+        "v3": "abided by rules"
+      },
+      "collocations": [
+        "promise to abide by rules",
+        "abide by rules strictly"
+      ],
+      "synonyms": [
+        "comply with rules"
+      ],
+      "antonyms": [
+        "break rules"
+      ],
+      "tags": [
+        "compliance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "conform to standards",
+      "pronunciation": "/kənˈfɔːm tə ˈstændədz/",
+      "partOfSpeech": "verb",
+      "definition": "To comply with established rules, standards, or laws.",
+      "example": "All manufactured medical implants must conform to standards of clinical sterility.",
+      "translation": "يطابق المعايير / يمتثل للمواصفات القياسية",
+      "exampleArabic": "يجب أن تطابق جميع الغرسات الطبية المصنعة معايير التعقيم السريري.",
+      "verbForms": {
+        "v1": "conform to standards",
+        "v2": "conformed to standards",
+        "v3": "conformed to standards"
+      },
+      "collocations": [
+        "conform to standards rigorously",
+        "fail to conform to standards"
+      ],
+      "synonyms": [
+        "meet standards"
+      ],
+      "antonyms": [
+        "deviate from standards"
+      ],
+      "tags": [
+        "compliance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "adhere strictly",
+      "pronunciation": "/ədˈhɪə ˈstrɪktli/",
+      "partOfSpeech": "verb",
+      "definition": "To follow a rule or belief exactly without deviation.",
+      "example": "Pilots have to adhere strictly to pre-flight safety checklists.",
+      "translation": "يلتزم التزاماً صارماً / يتمسك بحزم",
+      "exampleArabic": "يجب على الطيارين الالتزام التزاماً صارماً بقوائم التحقق من السلامة قبل الإقلاع.",
+      "verbForms": {
+        "v1": "adhere strictly",
+        "v2": "adhered strictly",
+        "v3": "adhered strictly"
+      },
+      "collocations": [
+        "adhere strictly to guidelines",
+        "must adhere strictly"
+      ],
+      "synonyms": [
+        "stick to"
+      ],
+      "antonyms": [
+        "disregard"
+      ],
+      "tags": [
+        "compliance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "deviate from protocol",
+      "pronunciation": "/ˈdiːvieɪt frəm ˈprəʊtəkɒl/",
+      "partOfSpeech": "verb",
+      "definition": "To depart from established guidelines or operating procedures.",
+      "example": "Medical technicians must not deviate from protocol during calibration tests.",
+      "translation": "يحيد عن البروتوكول / يشذ عن القواعد المقررة",
+      "exampleArabic": "يجب ألا يحيد الفنيون الطبيون عن البروتوكول أثناء اختبارات المعايرة.",
+      "verbForms": {
+        "v1": "deviate from protocol",
+        "v2": "deviated from protocol",
+        "v3": "deviated from protocol"
+      },
+      "collocations": [
+        "never deviate from protocol",
+        "dangerous to deviate from protocol"
+      ],
+      "synonyms": [
+        "depart from procedure"
+      ],
+      "antonyms": [
+        "follow protocol"
+      ],
+      "tags": [
+        "compliance",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "override permission",
+      "pronunciation": "/ˌəʊvəˈraɪd pəˈmɪʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To use higher authority to cancel or replace existing authorization.",
+      "example": "Only the chief medical officer can override permission for patient transfers.",
+      "translation": "يتجاوز الإذن / يُبطل التصريح بسلطة أعلى",
+      "exampleArabic": "يمكن لرئيس الأطباء فقط تجاوز الإذن وإبطاله عند نقل المرضى.",
+      "verbForms": {
+        "v1": "override permission",
+        "v2": "overrode permission",
+        "v3": "overridden permission"
+      },
+      "collocations": [
+        "executive power to override permission",
+        "override permission safely"
+      ],
+      "synonyms": [
+        "countermand"
+      ],
+      "antonyms": [],
+      "tags": [
+        "authority",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "grant permission",
+      "pronunciation": "/ɡrɑːnt pəˈmɪʃn/",
+      "partOfSpeech": "verb",
+      "definition": "To officially allow someone to do something.",
+      "example": "The committee decided to grant permission for the international field trial.",
+      "translation": "يمنح الإذن / يرخص رسمياً",
+      "exampleArabic": "قررت اللجنة منح الإذن لإجراء التجربة الميدانية الدولية.",
+      "verbForms": {
+        "v1": "grant permission",
+        "v2": "granted permission",
+        "v3": "granted permission"
+      },
+      "collocations": [
+        "officially grant permission",
+        "grant permission immediately"
+      ],
+      "synonyms": [
+        "authorize"
+      ],
+      "antonyms": [
+        "deny permission"
+      ],
+      "tags": [
+        "permission",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "revoke privilege",
+      "pronunciation": "/rɪˈvəʊk ˈprɪvəlɪdʒ/",
+      "partOfSpeech": "verb",
+      "definition": "To officially take back an advantage or authorization previously given.",
+      "example": "The dean threatened to revoke privileges of parking if speeding continued.",
+      "translation": "يسحب الامتياز / يلغي الميزة الممنوحة",
+      "exampleArabic": "هدد العميد بسحب امتيازات مواقف السيارات إذا استمرت القيادة بسرعة.",
+      "verbForms": {
+        "v1": "revoke privilege",
+        "v2": "revoked privilege",
+        "v3": "revoked privilege"
+      },
+      "collocations": [
+        "threaten to revoke privilege",
+        "revoke privilege permanently"
+      ],
+      "synonyms": [
+        "withdraw benefit"
+      ],
+      "antonyms": [
+        "grant privilege"
+      ],
+      "tags": [
+        "discipline",
+        "actions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "daily regimen",
+      "pronunciation": "/ˈdeɪli ˈredʒɪmən/",
+      "partOfSpeech": "noun",
+      "definition": "A prescribed course of medical treatment, diet, or exercise followed daily.",
+      "example": "He follows a disciplined daily regimen that starts at five in the morning.",
+      "translation": "نظام يومي منتظم / روتين صارم",
+      "exampleArabic": "يتبع نظاماً يومياً منتظماً وصارماً يبدأ في الخامسة صباحاً.",
+      "collocations": [
+        "strict daily regimen",
+        "follow a daily regimen"
+      ],
+      "synonyms": [
+        "daily schedule"
+      ],
+      "antonyms": [],
+      "tags": [
+        "routine",
+        "lifestyle"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "fixed schedule",
+      "pronunciation": "/fɪkst ˈʃedjuːl/",
+      "partOfSpeech": "noun",
+      "definition": "A timetable or work agenda that cannot be altered or negotiated.",
+      "example": "Nurses on rotating shifts have to adapt to a demanding fixed schedule.",
+      "translation": "جدول مواعيد ثابت / توقيت غير مرن",
+      "exampleArabic": "يتعين على الممرضات في المناوبات المتغيرة التكيف مع جدول مواعيد ثابت وشاق.",
+      "collocations": [
+        "adhere to a fixed schedule",
+        "operate on a fixed schedule"
+      ],
+      "synonyms": [
+        "rigid timetable"
+      ],
+      "antonyms": [
+        "flexible schedule"
+      ],
+      "tags": [
+        "routine",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "punctuality standard",
+      "pronunciation": "/ˌpʌŋktʃuˈæləti ˈstændəd/",
+      "partOfSpeech": "noun",
+      "definition": "A formal benchmark requiring people to arrive precisely on time.",
+      "example": "The corporate office maintains a zero-tolerance punctuality standard.",
+      "translation": "معيار الانضباط بالمواعيد",
+      "exampleArabic": "يحافظ المكتب الرئيسي للشركة على معيار انضباط بالمواعيد لا تهاون فيه.",
+      "collocations": [
+        "meet the punctuality standard",
+        "enforce punctuality standards"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "routine",
+        "workplace"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "attendance record",
+      "pronunciation": "/əˈtendəns ˈrekɔːd/",
+      "partOfSpeech": "noun",
+      "definition": "A permanent register documenting presence and absences over time.",
+      "example": "You have to maintain an impeccable attendance record to qualify for promotion.",
+      "translation": "سجل الحضور والدوام",
+      "exampleArabic": "يتعين عليك الحفاظ على سجل حضور ناصع للتأهل للترقية.",
+      "collocations": [
+        "perfect attendance record",
+        "check the attendance record"
+      ],
+      "synonyms": [
+        "roll log"
+      ],
+      "antonyms": [],
+      "tags": [
+        "workplace",
+        "compliance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "check-in procedure",
+      "pronunciation": "/ˈtʃek ɪn prəˈsiːdʒə/",
+      "partOfSpeech": "noun",
+      "definition": "The formal sequence followed upon arriving at a workplace or facility.",
+      "example": "Visitors must complete a security check-in procedure before entering the premises.",
+      "translation": "إجراءات تسجيل الدخول والوصول",
+      "exampleArabic": "يجب على الزائرين إكمال إجراءات تسجيل الوصول الأمنية قبل دخول المنشأة.",
+      "collocations": [
+        "complete the check-in procedure",
+        "mandatory check-in procedure"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "routine",
+        "security"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "mandatory break",
+      "pronunciation": "/ˈmændətəri breɪk/",
+      "partOfSpeech": "noun",
+      "definition": "A compulsory rest pause required by labor regulations.",
+      "example": "Long-distance drivers are legally required to take a mandatory break every four hours.",
+      "translation": "فترة استراحة إجبارية بموجب القانون",
+      "exampleArabic": "يُطلب قانوناً من سائقي المسافات الطويلة أخذ استراحة إجبارية كل أربع ساعات.",
+      "collocations": [
+        "take a mandatory break",
+        "statutory mandatory break"
+      ],
+      "synonyms": [
+        "compulsory rest"
+      ],
+      "antonyms": [],
+      "tags": [
+        "workplace",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "compliance officer",
+      "pronunciation": "/kəmˈplaɪəns ˌɒfɪsə/",
+      "partOfSpeech": "noun",
+      "definition": "An official responsible for ensuring that a company complies with legal requirements.",
+      "example": "The compliance officer reminded staff that violating reporting protocols was impermissible.",
+      "translation": "مسؤول الامتثال ومطابقة المعايير",
+      "exampleArabic": "ذكّر مسؤول الامتثال الموظفين بأن انتهاك بروتوكولات الإبلاغ أمر غير مسموح به.",
+      "collocations": [
+        "corporate compliance officer",
+        "consult the compliance officer"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "workplace",
+        "professions"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "regulatory framework",
+      "pronunciation": "/ˌreɡjələˈtɔːri ˈfreɪmwɜːk/",
+      "partOfSpeech": "noun",
+      "definition": "A system of regulations and laws governing a particular profession or industry.",
+      "example": "All financial transactions must operate strictly within the legal regulatory framework.",
+      "translation": "الإطار التنظيمي والرقابي",
+      "exampleArabic": "يجب أن تعمل جميع المعاملات المالية بدقة داخل الإطار التنظيمي والرقابي القانوني.",
+      "collocations": [
+        "comprehensive regulatory framework",
+        "within the regulatory framework"
+      ],
+      "synonyms": [
+        "regulatory system"
+      ],
+      "antonyms": [],
+      "tags": [
+        "legal",
+        "compliance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "audit protocol",
+      "pronunciation": "/ˈɔːdɪt ˈprəʊtəkɒl/",
+      "partOfSpeech": "noun",
+      "definition": "A formal plan outlining the steps to be followed during an audit examination.",
+      "example": "The internal auditors must execute each step in the official audit protocol.",
+      "translation": "بروتوكول التدقيق والمراجعة التفتيشية",
+      "exampleArabic": "يجب على المدققين الداخليين تنفيذ كل خطوة في بروتوكول التدقيق الرسمي.",
+      "collocations": [
+        "follow the audit protocol",
+        "established audit protocol"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "finance",
+        "procedure"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "official directive",
+      "pronunciation": "/əˈfɪʃl daɪˈrektɪv/",
+      "partOfSpeech": "noun",
+      "definition": "An authoritative instruction or guideline issued by government or management.",
+      "example": "The executive board published an official directive banning single-use plastics.",
+      "translation": "توجيه رسمي / قرار إداري ملزم",
+      "exampleArabic": "أصدر مجلس الإدارة توجيهاً رسمياً يحظر البلاستيك أحادي الاستخدام.",
+      "collocations": [
+        "issue an official directive",
+        "binding official directive"
+      ],
+      "synonyms": [
+        "decree",
+        "mandate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "administration",
+        "rules"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Corporate Compliance Orientation",
+      "titleArabic": "جلسة التوجيه والامتثال للوائح المؤسسية",
+      "setting": "A compliance officer conducts an onboarding briefing for new corporate recruits.",
+      "lines": [
+        {
+          "speaker": "Officer",
+          "text": "Welcome to our firm. You must understand that abiding by our code of ethics is non-negotiable."
+        },
+        {
+          "speaker": "Recruit",
+          "text": "Understood. Are we allowed to access external drives on our workstations?"
+        },
+        {
+          "speaker": "Officer",
+          "text": "No! Connecting personal USB drives is a forbidden action under our strict regulation policy."
+        },
+        {
+          "speaker": "Recruit",
+          "text": "What happens if an accidental security violation or minor infraction takes place?"
+        },
+        {
+          "speaker": "Officer",
+          "text": "Our management has to enforce zero tolerance; any infraction triggers a formal disciplinary measure."
+        },
+        {
+          "speaker": "Recruit",
+          "text": "Do all associates have to maintain a flawless attendance record and fixed schedule?"
+        },
+        {
+          "speaker": "Officer",
+          "text": "Yes, our punctuality standard requires everyone to complete the security check-in procedure before nine."
+        },
+        {
+          "speaker": "Recruit",
+          "text": "Thank you for the guidance; we will adhere strictly to every statutory requirement."
+        }
+      ],
+      "vocabularyUsed": [
+        "code of ethics",
+        "forbidden action",
+        "strict regulation",
+        "violation",
+        "infraction",
+        "zero tolerance",
+        "disciplinary measure",
+        "attendance record",
+        "fixed schedule",
+        "punctuality standard",
+        "check-in procedure",
+        "adhere strictly",
+        "statutory requirement"
+      ]
+    },
+    {
+      "title": "Laboratory Access and Safety Permits",
+      "titleArabic": "تصاريح دخول المختبر وبروتوكولات السلامة",
+      "setting": "A research student requests access to the high-containment biosafety facility.",
+      "lines": [
+        {
+          "speaker": "Student",
+          "text": "Good morning. Am I allowed to enter the biosafety facility to inspect my cell cultures?"
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "You must not enter unless you have completed the prerequisite training course."
+        },
+        {
+          "speaker": "Student",
+          "text": "I completed the course yesterday and obtained formal written authorization from the dean."
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "Let me verify your security clearance level on our digital portal right now."
+        },
+        {
+          "speaker": "Student",
+          "text": "I also signed the liability waiver and safety guideline checklist as requested."
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "Your documents are valid; I will grant permission and issue your special permit badge."
+        },
+        {
+          "speaker": "Student",
+          "text": "Must I follow the decontamination protocol requirement before exiting?"
+        },
+        {
+          "speaker": "Supervisor",
+          "text": "Yes, you have to follow every standard operating procedure; you mustn't deviate from protocol!"
+        }
+      ],
+      "vocabularyUsed": [
+        "prerequisite",
+        "written authorization",
+        "clearance level",
+        "waiver",
+        "safety guideline",
+        "grant permission",
+        "special permit",
+        "protocol requirement",
+        "standard operating procedure",
+        "deviate from protocol"
+      ]
+    },
+    {
+      "title": "Facility Curfew and Rules Review",
+      "titleArabic": "مراجعة مواعيد الإغلاق وقواعد السكن الجامعي",
+      "setting": "A resident advisor speaks with students regarding dorm community policies.",
+      "lines": [
+        {
+          "speaker": "Advisor",
+          "text": "Please assemble in the common room. We have to review our residential mandatory rule policies."
+        },
+        {
+          "speaker": "Resident",
+          "text": "Are guests allowed to stay in our rooms past the midnight curfew?"
+        },
+        {
+          "speaker": "Advisor",
+          "text": "Absolutely not! Having unregistered visitors after curfew is an impermissible restriction breach."
+        },
+        {
+          "speaker": "Resident",
+          "text": "Does an unexcused breach result in an immediate penalty fee or official suspension?"
+        },
+        {
+          "speaker": "Advisor",
+          "text": "A severe breach incurs financial sanctions, and repeated defiance can lead to expulsion."
+        },
+        {
+          "speaker": "Resident",
+          "text": "Is there any formal exemption process for students working late hospital shifts?"
+        },
+        {
+          "speaker": "Advisor",
+          "text": "Yes, you have to submit an employment verification letter to the housing director."
+        },
+        {
+          "speaker": "Resident",
+          "text": "Understood; we will abide by rules and respect our community quiet hours."
+        }
+      ],
+      "vocabularyUsed": [
+        "mandatory rule",
+        "curfew",
+        "restriction",
+        "penalty fee",
+        "suspension",
+        "sanction",
+        "expulsion",
+        "exemption",
+        "abide by rules"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "Institutional Order, Safety, and Prohibitions",
+      "titleArabic": "النظام المؤسسي، وبروتوكولات السلامة، والمحظورات الصريحة",
+      "kind": "informative",
+      "text": "Maintaining institutional order requires clear frameworks that delineate obligation from prohibition. In any high-security facility, employees must conform to standards established in the organizational code of ethics. Adhering to each standard operating procedure is a mandatory rule, while bypassing safety guidelines is deemed a forbidden action. Workers must not deviate from protocol, as even an unintentional infraction can cause catastrophic harm. While common lounges are permissible areas for informal gathering, sensitive research suites require verified authorized access. Authorities possess statutory powers to enforce rules rigorously, ensuring that staff members understand that respecting safety restrictions is both a moral duty and an inescapable legal obligation.",
+      "translation": "يتطلب الحفاظ على النظام المؤسسي أطراً واضحة تميز بين الإلزام والمنع. ففي أي منشأة عالية الأمان، يجب على الموظفين مطابقة المعايير الواردة في ميثاق الشرف الأخلاقي. ويُعد اتباع إجراءات التشغيل القياسية قاعدة إلزامية، بينما يُعتبر تجاوز إرشادات السلامة فعلاً محظوراً. ويُحظر الحيد عن البروتوكول منعاً للأضرار الجسيمة. وبينما تُعد الردهات أماكن مسموحاً بها، تتطلب الأجنحة الحساسة دخولاً مصرحاً به رسمياً لضمان إنفاذ القواعد كالتزام قانوني.",
+      "vocabularyUsed": [
+        "conform to standards",
+        "code of ethics",
+        "standard operating procedure",
+        "mandatory rule",
+        "safety guideline",
+        "forbidden action",
+        "deviate from protocol",
+        "infraction",
+        "permissible",
+        "authorized access",
+        "enforce rule",
+        "restriction",
+        "legal obligation"
+      ]
+    },
+    {
+      "title": "Contractual Compliance and Disciplinary Sanctions",
+      "titleArabic": "الامتثال التعاقدي، والجزاءات التأديبية الصارمة",
+      "kind": "expository",
+      "text": "Professional institutions govern employee conduct through explicit contractual stipulations that safeguard organizational integrity. Before signing a binding contract, every candidate has to review its detailed terms and conditions, confirming that each academic prerequisite has been fulfilled. Organizations operate under a stringent regulatory framework, where a dedicated compliance officer oversees routine audit protocols. Under this governance, management enforces zero tolerance for financial malpractice. Those who commit a deliberate regulatory violation face an immediate penalty fee, severe institutional sanctions, or professional suspension. In extreme cases of repeated negligence, executive boards have to revoke privileges permanently, culminating in total professional expulsion.",
+      "translation": "تحكم المؤسسات المهنية سلوك موظفيها عبر شروط تعاقدية صريحة تحمي النزاهة. فقبل توقيع عقد ملزم، يتعين مراجعة الشروط والأحكام والتأكد من استيفاء المتطلبات الأساسية. وتعمل الهيئات داخل إطار تنظيمي يشرف فيه مسؤول الامتثال على بروتوكولات التدقيق. وتطبق الإدارة سياسة عدم التهاون مع المخالفات المالية، حيث يواجه من يرتكب انتهاكاً غرامة مالية أو عقوبات صارمة أو الإيقاف المؤقت، وصولاً لسحب الامتيازات والفصل النهائي.",
+      "vocabularyUsed": [
+        "binding contract",
+        "terms and conditions",
+        "prerequisite",
+        "regulatory framework",
+        "compliance officer",
+        "audit protocol",
+        "zero tolerance",
+        "violation",
+        "penalty fee",
+        "sanction",
+        "suspension",
+        "revoke privilege",
+        "expulsion"
+      ]
+    },
+    {
+      "title": "Workplace Regimens, Punctuality, and Permissions",
+      "titleArabic": "الروتين اليومي في العمل، والانضباط، والتصاريح الاستثنائية",
+      "kind": "reflective",
+      "text": "Establishing a disciplined daily regimen is indispensable for maintaining operational efficiency across commercial organizations. Associates must adhere strictly to a demanding fixed schedule, where compulsory attendance and a stringent punctuality standard are monitored through an automated attendance record. Upon arrival, every team member has to complete the mandatory check-in procedure before accessing internal networks. Labor laws stipulate that workers are legally allowed to take a mandatory break during long shifts to mitigate cognitive fatigue. When specialized projects require exceptions, supervisors can issue an official directive or grant permission under a special permit, provided that staff submit prior written authorization.",
+      "translation": "يُعد إرساء نظام يومي منضبط أمراً جوهرياً لرفع الكفاءة التشغيلية. ويجب على الزملاء الالتزام الصارم بجدول مواعيد ثابت، حيث يُتابع الحضور الإجباري ومعايير الانضباط عبر سجل الدوام. وعند الوصول، يتعين إكمال إجراءات تسجيل الدخول قبل بدء العمل. وتمنح قوانين العمل استراحة إجبارية لتخفيف الإجهاد المعرفي، بينما يمكن للإدارة عند الضرورة إصدار توجيه رسمي أو منح الإذن بتصريح خاص بموجب إذن خطي.",
+      "vocabularyUsed": [
+        "daily regimen",
+        "adhere strictly",
+        "fixed schedule",
+        "compulsory attendance",
+        "punctuality standard",
+        "attendance record",
+        "check-in procedure",
+        "mandatory break",
+        "official directive",
+        "grant permission",
+        "special permit",
+        "written authorization"
+      ]
+    }
+  ]
+}

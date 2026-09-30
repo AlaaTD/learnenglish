@@ -1,0 +1,1425 @@
+{
+  "day": 55,
+  "title": "School Days",
+  "topic": "Education and school memories",
+  "description": "Talk about school subjects, exams-free learning and memories.",
+  "stage": "Health, Education and Personal Development",
+  "focus": "By the end of today, you can communicate clearly about education and school memories using the day's 50 vocabulary items and grammar.",
+  "grammar": [
+    {
+      "title": "Reported Speech (Statements)",
+      "titleArabic": "الكلام المنقول (الجمل الخبرية)",
+      "explanation": "We use Reported Speech (Indirect Speech) to report what someone previously said without quoting their exact words verbatim. In statements, when the reporting verb is in the past (e.g. 'said', 'told me', 'explained', 'mentioned'), the tenses in the reported clause typically shift one step backward in time (Backshift): Present Simple becomes Past Simple ('is' -> 'was'), Present Continuous becomes Past Continuous ('is studying' -> 'was studying'), Present Perfect becomes Past Perfect ('has finished' -> 'had finished'), and 'will' becomes 'would'. Pronouns and time expressions also adjust to match the reporter's current perspective.",
+      "explanationArabic": "نستخدم صيغة الكلام المنقول (غير المباشر) لنقل ما قاله شخص آخر في وقت سابق دون استخدام كلماته الحرفية بين علامتي تنصيص. في الجمل الخبرية، حين يكون فعل القول في الماضي (مثل said أو told me أو explained)، تعود أزمنة الجملة المنقولة خطوة واحدة للوراء (Backshift): فالمضارع البسيط يصبح ماضياً بسيطاً، والمضارع التام يصبح ماضياً تاماً، و will تصبح would. كما تتغير الضمائر وتعبيرات الوقت لتلائم منظور الناقل.",
+      "structures": [
+        {
+          "label": "Direct Speech · الكلام المباشر",
+          "pattern": "Speaker + said, \"I study hard every day.\"",
+          "explanation": "Quotes the exact words within quotation marks.",
+          "explanationArabic": "يقتبس الكلمات الأصلية بدقة تامة بين علامتي تنصيص."
+        },
+        {
+          "label": "Reported Statement · الكلام المنقول",
+          "pattern": "Subject + said (that) / told me (that) + Backshifted Clause",
+          "explanation": "Reports the statement with tense shifting back into the past.",
+          "explanationArabic": "ينقل الجملة الخبرية مع إرجاع الزمن خطوة إلى الماضي وتعديل الضمائر."
+        },
+        {
+          "label": "Reporting with tell vs say · الفرق بين say و tell",
+          "pattern": "say (that) vs tell + Person (that)",
+          "explanation": "'Tell' requires an indirect object (told me, told us); 'say' does not.",
+          "explanationArabic": "الفعل tell يتطلب مفعولاً به مباشراً (أخبرني told me)، بينما say لا تتطلب ذلك (قال said that)."
+        }
+      ],
+      "examples": [
+        {
+          "sentence": "The principal announced that the weekly school assembly would honor our sports teams.",
+          "translation": "أعلن المدير أن طابور الصباح الأسبوعي سيكرم فرقنا الرياضية.",
+          "usesVocabulary": [
+            "principal",
+            "school assembly"
+          ]
+        },
+        {
+          "sentence": "The teacher told the class that our science fair project had won first place.",
+          "translation": "أخبر المعلم الفصل بأن مشروعنا في معرض العلوم قد فاز بالمركز الأول.",
+          "usesVocabulary": [
+            "science fair"
+          ]
+        },
+        {
+          "sentence": "She mentioned that her former classmate was on the academic honor roll.",
+          "translation": "ذكرت أن زميل دراستها السابق كان مدرجاً في لوحة الشرف الأكاديمية.",
+          "usesVocabulary": [
+            "classmate",
+            "honor roll"
+          ]
+        },
+        {
+          "sentence": "The counselor stated that a 3.8 grade point average was required to avoid academic probation.",
+          "translation": "صرح المرشد بأن معدلاً تراكمياً قدره 3.8 كان مطلوباً لتجنب الإنذار الأكاديمي.",
+          "usesVocabulary": [
+            "grade point average",
+            "academic probation"
+          ]
+        }
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "The principal said me that homeroom was starting.",
+          "right": "The principal told me that homeroom was starting. (OR: said that)",
+          "note": "Never place an object pronoun directly after 'said'; use 'told me' or 'said to me'.",
+          "noteArabic": "لا تضع ضمير مفعول به بعد said مباشرة؛ بل قل told me أو said to me."
+        },
+        {
+          "wrong": "She said she will study for the final exam tomorrow.",
+          "right": "She said she would study for the final exam the next day.",
+          "note": "Backshift 'will' to 'would' and update time references when the reporting verb is in the past.",
+          "noteArabic": "حول will إلى would وغير عبارات الزمن عندما يكون فعل القول ماضياً."
+        }
+      ],
+      "commonUsage": [
+        "Reporting past teacher remarks: 'Our instructor said the syllabus was online.' (تُستخدم لنقل توجيهات وملاحظات المعلمين السابقة.)",
+        "Reminiscing about school: 'Maya told me that kindergarten had been magical.' (تُستخدم لاسترجاع الذكريات المدرسية المروية.)",
+        "Official administrative announcements: 'The handbook stated that unexcused truancy was forbidden.' (تُستخدم لنقل اللوائح والقرارات المدرسية الرسمية.)"
+      ]
+    }
+  ],
+  "vocabulary": [
+    {
+      "headword": "kindergarten",
+      "pronunciation": "/ˈkɪndəɡɑːtn/",
+      "partOfSpeech": "noun",
+      "definition": "An educational establishment for young children before primary school.",
+      "example": "She said that kindergarten had fostered her early love for painting.",
+      "translation": "روضة أطفال / تمهيدي",
+      "exampleArabic": "قالت إن روضة الأطفال قد غرست حبها المبكر للرسم.",
+      "collocations": [
+        "kindergarten teacher",
+        "attend kindergarten"
+      ],
+      "synonyms": [
+        "nursery school"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "elementary school",
+      "pronunciation": "/ˌelɪˈmentri skuːl/",
+      "partOfSpeech": "noun",
+      "definition": "A school for the first four to six grades of primary education.",
+      "example": "He recalled that elementary school had been a joyful experience.",
+      "translation": "مدرسة ابتدائية",
+      "exampleArabic": "تذكر أن المدرسة الابتدائية كانت تجربة ممتعة للغاية.",
+      "collocations": [
+        "elementary school student",
+        "elementary school teacher"
+      ],
+      "synonyms": [
+        "primary school"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "middle school",
+      "pronunciation": "/ˈmɪdl skuːl/",
+      "partOfSpeech": "noun",
+      "definition": "A school intermediate between an elementary school and a high school.",
+      "example": "The teacher mentioned that middle school was a crucial transition phase.",
+      "translation": "مدرسة إعدادية / متوسطة",
+      "exampleArabic": "ذكر المعلم أن المدرسة الإعدادية كانت مرحلة انتقالية حاسمة.",
+      "collocations": [
+        "middle school curriculum",
+        "attend middle school"
+      ],
+      "synonyms": [
+        "junior high"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "high school",
+      "pronunciation": "/ˈhaɪ skuːl/",
+      "partOfSpeech": "noun",
+      "definition": "A secondary school typically comprising grades 9 through 12.",
+      "example": "She stated that high school had taught her independence and discipline.",
+      "translation": "مدرسة ثانوية",
+      "exampleArabic": "صرحت بأن المدرسة الثانوية قد علمتها الاستقلالية والانضباط.",
+      "collocations": [
+        "high school diploma",
+        "high school senior"
+      ],
+      "synonyms": [
+        "secondary school"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "education"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "cafeteria",
+      "pronunciation": "/ˌkæfəˈtɪəriə/",
+      "partOfSpeech": "noun",
+      "definition": "A restaurant or dining room in a school where students select food.",
+      "example": "The monitor reported that the cafeteria was crowded during lunch.",
+      "translation": "كافيتريا المدرسة / مطعم المدرسة",
+      "exampleArabic": "أفاد المراقب بأن الكافيتريا كانت مزدحمة خلال وقت الغداء.",
+      "collocations": [
+        "school cafeteria",
+        "cafeteria tray"
+      ],
+      "synonyms": [
+        "canteen"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "facilities"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "locker",
+      "pronunciation": "/ˈlɒkə/",
+      "partOfSpeech": "noun",
+      "definition": "A small lockable cupboard or compartment for personal belongings.",
+      "example": "He explained that his heavy books were stored in his hallway locker.",
+      "translation": "خزانة مدرسية مقفلة",
+      "exampleArabic": "أوضح أن كتبه الثقيلة كانت محفوظة في خزانته بالردهة.",
+      "collocations": [
+        "school locker",
+        "locker combination"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "facilities"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "homeroom",
+      "pronunciation": "/ˈhəʊmruːm/",
+      "partOfSpeech": "noun",
+      "definition": "A classroom where pupils in the same grade assemble at the start of the school day.",
+      "example": "The principal announced that morning homeroom would begin at eight sharp.",
+      "translation": "غرفة الصف الصباحية / الفصل الرئيسي لتسجيل الحضور",
+      "exampleArabic": "أعلن المدير أن التجمع الصباحي في الفصل الرئيسي سيبدأ في الثامنة تماماً.",
+      "collocations": [
+        "homeroom teacher",
+        "report to homeroom"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "facilities"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "schoolyard",
+      "pronunciation": "/ˈskuːljɑːd/",
+      "partOfSpeech": "noun",
+      "definition": "An enclosed open-air area surrounding a school, used for games.",
+      "example": "The children shouted that the schoolyard was covered in autumn leaves.",
+      "translation": "فناء المدرسة / ساحة المدرسة",
+      "exampleArabic": "صاح الأطفال بأن فناء المدرسة كان مغطى بأوراق الخريف.",
+      "collocations": [
+        "play in the schoolyard",
+        "schoolyard game"
+      ],
+      "synonyms": [
+        "playground"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "facilities"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hall pass",
+      "pronunciation": "/ˈhɔːl pɑːs/",
+      "partOfSpeech": "noun",
+      "definition": "A permit to leave a classroom during class hours.",
+      "example": "The teacher noted that every student in the corridor needed a hall pass.",
+      "translation": "تصريح المرور في الممرات / إذن الخروج من الفصل",
+      "exampleArabic": "نبه المعلم إلى أن كل طالب في الردهة بحاجة إلى تصريح مرور.",
+      "collocations": [
+        "carry a hall pass",
+        "request a hall pass"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "rules"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "school bell",
+      "pronunciation": "/ˈskuːl bel/",
+      "partOfSpeech": "noun",
+      "definition": "A bell rung to signal the start or end of school periods.",
+      "example": "The proctor warned that the school bell would ring in three minutes.",
+      "translation": "جرس المدرسة",
+      "exampleArabic": "حذر المراقب من أن جرس المدرسة سيدق خلال ثلاث دقائق.",
+      "collocations": [
+        "ring the school bell",
+        "hear the school bell"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "daily life"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "curriculum",
+      "pronunciation": "/kəˈrɪkjələm/",
+      "partOfSpeech": "noun",
+      "definition": "The subjects comprising a course of study in a school or college.",
+      "example": "The committee stated that the science curriculum was undergoing modernization.",
+      "translation": "المنهج الدراسي",
+      "exampleArabic": "صرحت اللجنة بأن منهج العلوم كان يخضع للتحديث والتطوير.",
+      "collocations": [
+        "school curriculum",
+        "core curriculum"
+      ],
+      "synonyms": [
+        "syllabus",
+        "course of study"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "academic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "syllabus",
+      "pronunciation": "/ˈsɪləbəs/",
+      "partOfSpeech": "noun",
+      "definition": "An outline of the subjects in a course of study or teaching.",
+      "example": "The instructor confirmed that the biology syllabus covered genetics thoroughly.",
+      "translation": "خطة المقرر الدراسي / المنهج التفصيلي",
+      "exampleArabic": "أكد المحاضر أن خطة مقرر علم الأحياء تغطي علم الوراثة بدقة.",
+      "collocations": [
+        "course syllabus",
+        "hand out the syllabus"
+      ],
+      "synonyms": [
+        "outline"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "academic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "textbook",
+      "pronunciation": "/ˈtekstbʊk/",
+      "partOfSpeech": "noun",
+      "definition": "A book used as a standard work for the study of a particular subject.",
+      "example": "He admitted that he had left his history textbook in the locker.",
+      "translation": "كتاب مدرسي / مقرر دراسي",
+      "exampleArabic": "اعترف بأنه قد ترك كتاب التاريخ المدرسي في الخزانة.",
+      "collocations": [
+        "history textbook",
+        "open the textbook"
+      ],
+      "synonyms": [
+        "coursebook"
+      ],
+      "antonyms": [],
+      "tags": [
+        "education",
+        "supplies"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "chalkboard",
+      "pronunciation": "/ˈtʃɔːkbɔːd/",
+      "partOfSpeech": "noun",
+      "definition": "A large dark smooth surface for writing on with chalk.",
+      "example": "The teacher explained that the algebra equations were written on the chalkboard.",
+      "translation": "سبورة الطباشير / لوح أسود",
+      "exampleArabic": "أوضح المعلم أن معادلات الجبر كانت مكتوبة على سبورة الطباشير.",
+      "collocations": [
+        "write on the chalkboard",
+        "erase the chalkboard"
+      ],
+      "synonyms": [
+        "blackboard"
+      ],
+      "antonyms": [
+        "whiteboard"
+      ],
+      "tags": [
+        "school",
+        "supplies"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "whiteboard marker",
+      "pronunciation": "/ˈwaɪtbɔːd ˌmɑːkə/",
+      "partOfSpeech": "noun",
+      "definition": "A dry-erase pen used for writing on whiteboards.",
+      "example": "She mentioned that the blue whiteboard marker was running dry.",
+      "translation": "قلم سبورة بيضاء",
+      "exampleArabic": "ذكرت أن قلم السبورة البيضاء الأزرق كان يجف.",
+      "collocations": [
+        "dry-erase whiteboard marker",
+        "cap the whiteboard marker"
+      ],
+      "synonyms": [
+        "dry-erase pen"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "supplies"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pencil case",
+      "pronunciation": "/ˈpensl keɪs/",
+      "partOfSpeech": "noun",
+      "definition": "A small container for pencils, pens, erasers, and geometry sets.",
+      "example": "The pupil said that her favorite compass was inside her zipper pencil case.",
+      "translation": "مقلمة / حافظة أقلام",
+      "exampleArabic": "قالت التلميذة إن فرجارها المفضل كان داخل مقلمتها ذات السحاب.",
+      "collocations": [
+        "leather pencil case",
+        "pack a pencil case"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "supplies"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "recess",
+      "pronunciation": "/rɪˈses/",
+      "partOfSpeech": "noun",
+      "definition": "A break between school classes, typically for recreation.",
+      "example": "The supervisor reported that midday recess had proceeded peacefully.",
+      "translation": "فترة استراحة مدرسية / فُسحة",
+      "exampleArabic": "أفاد المشرف بأن استراحة الظهيرة المدرسية سارت بهدوء.",
+      "collocations": [
+        "morning recess",
+        "enjoy recess"
+      ],
+      "synonyms": [
+        "break",
+        "interval"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "daily life"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "lunchtime break",
+      "pronunciation": "/ˈlʌntʃtaɪm breɪk/",
+      "partOfSpeech": "noun",
+      "definition": "An allocated time during the school day for eating lunch and relaxation.",
+      "example": "He recalled that students played basketball during the lunchtime break.",
+      "translation": "استراحة الغداء المدرسية",
+      "exampleArabic": "تذكر أن الطلاب كانوا يلعبون كرة السلة أثناء استراحة الغداء.",
+      "collocations": [
+        "during the lunchtime break",
+        "one-hour lunchtime break"
+      ],
+      "synonyms": [
+        "lunch hour"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "daily life"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "attendance register",
+      "pronunciation": "/əˈtendəns ˈredʒɪstə/",
+      "partOfSpeech": "noun",
+      "definition": "An official book or digital record of pupils present at school.",
+      "example": "The secretary stated that the attendance register was checked every morning.",
+      "translation": "سجل الحضور والغياب المدرسي",
+      "exampleArabic": "صرحت السكرتيرة بأن سجل الحضور كان يُفحص كل صباح.",
+      "collocations": [
+        "sign the attendance register",
+        "mark the attendance register"
+      ],
+      "synonyms": [
+        "roll call"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "administration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "school uniform",
+      "pronunciation": "/ˈskuːl ˈjuːnɪfɔːm/",
+      "partOfSpeech": "noun",
+      "definition": "A standard set of clothes worn by pupils when at school.",
+      "example": "The handbook noted that wearing the formal school uniform was obligatory.",
+      "translation": "الزي المدرسي الموحد",
+      "exampleArabic": "نبه الدليل الإرشادي إلى أن ارتداء الزي المدرسي الموحد كان إلزامياً.",
+      "collocations": [
+        "wear a school uniform",
+        "pressed school uniform"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "clothing"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "classmate",
+      "pronunciation": "/ˈklɑːsmeɪt/",
+      "partOfSpeech": "noun",
+      "definition": "A fellow member of a class at school, college, or university.",
+      "example": "She told me that her former classmate was now a pediatric physician.",
+      "translation": "زميل الصف / زميل الدراسة",
+      "exampleArabic": "أخبرتني بأن زميل دراستها السابق أصبح الآن طبيب أطفال.",
+      "collocations": [
+        "former classmate",
+        "helpful classmate"
+      ],
+      "synonyms": [
+        "schoolmate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "class president",
+      "pronunciation": "/ˈklɑːs ˈprezɪdənt/",
+      "partOfSpeech": "noun",
+      "definition": "The student elected as the leader and representative of a school class.",
+      "example": "The teacher announced that Maya had been elected class president.",
+      "translation": "رئيس الفصل / رائد الصف المنتخب",
+      "exampleArabic": "أعلن المعلم أن مايا قد انتُخبت رائدة للفصل.",
+      "collocations": [
+        "elect a class president",
+        "run for class president"
+      ],
+      "synonyms": [
+        "class representative"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "valedictorian",
+      "pronunciation": "/ˌvælɪdɪkˈtɔːriən/",
+      "partOfSpeech": "noun",
+      "definition": "The student having the highest academic achievements in a graduating class.",
+      "example": "The principal declared that the valedictorian would speak at commencement.",
+      "translation": "أول الدفعة المتخرج بإشادة / خطيب حفل التخرج",
+      "exampleArabic": "أعلن المدير أن الأول على الدفعة سيلقي كلمة في حفل التخرج.",
+      "collocations": [
+        "graduating valedictorian",
+        "named valedictorian"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "achievement"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "principal",
+      "pronunciation": "/ˈprɪnsəpl/",
+      "partOfSpeech": "noun",
+      "definition": "The head of a school or college.",
+      "example": "The principal reminded the assembly that integrity was our primary virtue.",
+      "translation": "مدير المدرسة",
+      "exampleArabic": "ذكّر مدير المدرسة طابور الصباح بأن النزاهة كانت فضيلتنا الأساسية.",
+      "collocations": [
+        "school principal",
+        "meet with the principal"
+      ],
+      "synonyms": [
+        "headmaster",
+        "headteacher"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "administration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "headmaster",
+      "pronunciation": "/ˌhedˈmɑːstə/",
+      "partOfSpeech": "noun",
+      "definition": "A man who is the head of a school, especially an independent school.",
+      "example": "The retired headmaster stated that academic discipline remained paramount.",
+      "translation": "ناظر المدرسة / مدير المدرسة",
+      "exampleArabic": "صرح ناظر المدرسة المتقاعد بأن الانضباط الأكاديمي ظل أمراً جوهرياً.",
+      "collocations": [
+        "strict headmaster",
+        "respected headmaster"
+      ],
+      "synonyms": [
+        "principal"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "administration"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "guidance counselor",
+      "pronunciation": "/ˈɡaɪdns ˈkaʊnsələ/",
+      "partOfSpeech": "noun",
+      "definition": "A person who provides academic and personal advice to students.",
+      "example": "The guidance counselor explained that college admissions deadlines were approaching.",
+      "translation": "المرشد الطلابي / الأخصائي الاجتماعي بالمدرسة",
+      "exampleArabic": "أوضح المرشد الطلابي أن المواعيد النهائية للقبول الجامعي كانت تقترب.",
+      "collocations": [
+        "visit the guidance counselor",
+        "school guidance counselor"
+      ],
+      "synonyms": [
+        "school counselor"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "guidance"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "substitute teacher",
+      "pronunciation": "/ˈsʌbstɪtjuːt ˈtiːtʃə/",
+      "partOfSpeech": "noun",
+      "definition": "A teacher who temporarily takes the place of an absent teacher.",
+      "example": "The students observed that the substitute teacher was patient and kind.",
+      "translation": "معلم بديل / مدرس حصة احتياط",
+      "exampleArabic": "لاحظ الطلاب أن المعلم البديل كان صبوراً ولطيفاً.",
+      "collocations": [
+        "call a substitute teacher",
+        "experienced substitute teacher"
+      ],
+      "synonyms": [
+        "supply teacher"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "teaching"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "hallway monitor",
+      "pronunciation": "/ˈhɔːlweɪ ˌmɒnɪtə/",
+      "partOfSpeech": "noun",
+      "definition": "A person, typically an older pupil, assigned to oversee order in corridors.",
+      "example": "The hallway monitor warned that running inside the building was strictly forbidden.",
+      "translation": "مراقب الممرات والردهات",
+      "exampleArabic": "حذر مراقب الممرات من أن الجري داخل المبنى كان ممنوعاً تماماً.",
+      "collocations": [
+        "senior hallway monitor",
+        "report to the hallway monitor"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "discipline"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "alumnus",
+      "pronunciation": "/əˈlʌmnəs/",
+      "partOfSpeech": "noun",
+      "definition": "A male graduate or former pupil of a particular school or university.",
+      "example": "The wealthy alumnus revealed that he had donated funds for the new laboratory.",
+      "translation": "خريج سابق (مذكر)",
+      "exampleArabic": "كشف الخريج السابق الثري عن أنه تبرع بأموال لإنشاء المختبر الجديد.",
+      "collocations": [
+        "distinguished alumnus",
+        "proud alumnus"
+      ],
+      "synonyms": [
+        "graduate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "graduation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "alumna",
+      "pronunciation": "/əˈlʌmnə/",
+      "partOfSpeech": "noun",
+      "definition": "A female graduate or former pupil of a particular school or university.",
+      "example": "She noted that as an active alumna she visited the campus every autumn.",
+      "translation": "خريجة سابقة (مؤنث)",
+      "exampleArabic": "أشارت إلى أنها بصفتها خريجة فاعلة كانت تزور الحرم المدرسي كل خريف.",
+      "collocations": [
+        "celebrated alumna",
+        "college alumna"
+      ],
+      "synonyms": [
+        "graduate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "people",
+        "graduation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "tardy",
+      "pronunciation": "/ˈtɑːdi/",
+      "partOfSpeech": "adjective",
+      "definition": "Delaying or delayed beyond the right or expected time; late.",
+      "example": "The teacher noted that being tardy three times resulted in formal detention.",
+      "translation": "متأخر عن الحصة / غير منضبط بالمواعيد",
+      "exampleArabic": "نبه المعلم إلى أن التأخر عن الحصة ثلاث مرات كان يؤدي للاحتجاز.",
+      "collocations": [
+        "tardy bell",
+        "marked as tardy"
+      ],
+      "synonyms": [
+        "late",
+        "unpunctual"
+      ],
+      "antonyms": [
+        "punctual"
+      ],
+      "tags": [
+        "discipline",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "truancy",
+      "pronunciation": "/ˈtruːənsi/",
+      "partOfSpeech": "noun",
+      "definition": "The action of staying away from school without good reason; absenteeism.",
+      "example": "The administrator affirmed that unexcused truancy would not be tolerated.",
+      "translation": "التزويغ من المدرسة / الغياب غير المصرح به",
+      "exampleArabic": "أكد المدير أن التزويغ والغياب غير المبرر لن يُتهاون معه.",
+      "collocations": [
+        "habitual truancy",
+        "tackle truancy"
+      ],
+      "synonyms": [
+        "absenteeism"
+      ],
+      "antonyms": [
+        "perfect attendance"
+      ],
+      "tags": [
+        "discipline",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "detention",
+      "pronunciation": "/dɪˈtenʃn/",
+      "partOfSpeech": "noun",
+      "definition": "The punishment of being kept in school after hours.",
+      "example": "He admitted that an hour of quiet detention had cured his habit of chatting.",
+      "translation": "حجز مدرسي عقابي (بعد الدوام)",
+      "exampleArabic": "اعترف بأن ساعة من الاحتجاز المدرسي الهادئ قد علاجت عادته في الثرثرة.",
+      "collocations": [
+        "serve detention",
+        "after-school detention"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "discipline",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "school assembly",
+      "pronunciation": "/ˈskuːl əˈsembli/",
+      "partOfSpeech": "noun",
+      "definition": "A gathering of all or part of a school for announcements and celebration.",
+      "example": "The principal stated that the weekly school assembly would honor sports teams.",
+      "translation": "طابور الصباح / التجمع المدرسي العام",
+      "exampleArabic": "صرح المدير بأن طابور الصباح الأسبوعي سيكرم الفرق الرياضية.",
+      "collocations": [
+        "attend school assembly",
+        "morning school assembly"
+      ],
+      "synonyms": [
+        "gathering"
+      ],
+      "antonyms": [],
+      "tags": [
+        "events",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "field trip",
+      "pronunciation": "/ˈfiːld trɪp/",
+      "partOfSpeech": "noun",
+      "definition": "A trip made by students or researchers to study something at first hand.",
+      "example": "The science teacher promised that our field trip to the planetarium was confirmed.",
+      "translation": "رحلة مدرسية ميدانية / نزهة تعليمية",
+      "exampleArabic": "وعد معلم العلوم بأن رحلتنا الميدانية إلى القبة السماوية كانت مؤكدة.",
+      "collocations": [
+        "annual field trip",
+        "educational field trip"
+      ],
+      "synonyms": [
+        "excursion"
+      ],
+      "antonyms": [],
+      "tags": [
+        "events",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "extracurricular",
+      "pronunciation": "/ˌekstrəkəˈrɪkjələ/",
+      "partOfSpeech": "adjective",
+      "definition": "Pursued in addition to the normal course of study.",
+      "example": "She claimed that extracurricular activities had sharpened her leadership abilities.",
+      "translation": "نشاط لاصفي / خارج المنهج الدراسي",
+      "exampleArabic": "زعمت أن الأنشطة اللاصفية قد صقلت قدراتها القيادية.",
+      "collocations": [
+        "extracurricular activities",
+        "extracurricular program"
+      ],
+      "synonyms": [
+        "after-school"
+      ],
+      "antonyms": [
+        "curricular"
+      ],
+      "tags": [
+        "activities",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "pop quiz",
+      "pronunciation": "/ˈpɒp kwɪz/",
+      "partOfSpeech": "noun",
+      "definition": "A short test given to students without prior warning.",
+      "example": "The teacher announced that an unexpected pop quiz was scheduled for tomorrow.",
+      "translation": "اختبار مفاجئ / كويز قصير بدون سابق إنذار",
+      "exampleArabic": "أعلن المعلم أن اختباراً قصيراً ومفاجئاً كان مقرراً للغد.",
+      "collocations": [
+        "surprise pop quiz",
+        "give a pop quiz"
+      ],
+      "synonyms": [
+        "short test"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "evaluation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "midterm exam",
+      "pronunciation": "/ˌmɪdtɜːm ɪɡˈzæm/",
+      "partOfSpeech": "noun",
+      "definition": "An examination given in the middle of an academic term.",
+      "example": "He told his parents that his midterm exam scores had improved across every subject.",
+      "translation": "امتحان منتصف الفصل الدراسي (الميدتيرم)",
+      "exampleArabic": "أخبر والديه بأن درجات امتحان منتصف الفصل قد تحسنت في كل مادة.",
+      "collocations": [
+        "pass the midterm exam",
+        "study for midterm exams"
+      ],
+      "synonyms": [
+        "midterm"
+      ],
+      "antonyms": [
+        "final exam"
+      ],
+      "tags": [
+        "academic",
+        "evaluation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "final exam",
+      "pronunciation": "/ˈfaɪnl ɪɡˈzæm/",
+      "partOfSpeech": "noun",
+      "definition": "A test given to students at the end of a course of study or training.",
+      "example": "The syllabus confirmed that the comprehensive final exam carried forty percent of the grade.",
+      "translation": "الامتحان النهائي",
+      "exampleArabic": "أكدت الخطة أن الامتحان النهائي الشامل كان يمثل أربعين بالمئة من الدرجة.",
+      "collocations": [
+        "comprehensive final exam",
+        "take the final exam"
+      ],
+      "synonyms": [
+        "finals"
+      ],
+      "antonyms": [
+        "midterm exam"
+      ],
+      "tags": [
+        "academic",
+        "evaluation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "report card",
+      "pronunciation": "/rɪˈpɔːt kɑːd/",
+      "partOfSpeech": "noun",
+      "definition": "A periodic written report issued by a school on a student's grades.",
+      "example": "She beamed when she showed her parents that her report card contained straight A's.",
+      "translation": "الشهادة المدرسية / بطاقة درجات الطالب",
+      "exampleArabic": "تهللت فرحاً حين أرت والديها أن شهادتها المدرسية تضمنت امتيازاً في كل المواد.",
+      "collocations": [
+        "school report card",
+        "semester report card"
+      ],
+      "synonyms": [
+        "grade report"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "evaluation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "grade point average",
+      "pronunciation": "/ˌɡreɪd pɔɪnt ˈævərɪdʒ/",
+      "partOfSpeech": "noun",
+      "definition": "An average of a student's grades the course of an academic term.",
+      "example": "The counselor stated that a 3.8 grade point average was required for honors.",
+      "translation": "المعدل التراكمي / المعدل الدراسي (GPA)",
+      "exampleArabic": "صرح المرشد بأن معدلاً تراكمياً قدره 3.8 كان مطلوباً لنيل مرتبة الشرف.",
+      "collocations": [
+        "cumulative grade point average",
+        "high grade point average"
+      ],
+      "synonyms": [
+        "GPA"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "evaluation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "honor roll",
+      "pronunciation": "/ˈɒnə rəʊl/",
+      "partOfSpeech": "noun",
+      "definition": "A list of students recognized for exceptional academic achievement.",
+      "example": "The headmaster announced that fifty students had earned a spot on the honor roll.",
+      "translation": "لوحة الشرف الأكاديمية للمتفوقين",
+      "exampleArabic": "أعلن الناظر أن خمسين طالباً قد نالوا مكاناً في لوحة الشرف.",
+      "collocations": [
+        "make the honor roll",
+        "high honor roll"
+      ],
+      "synonyms": [
+        "dean's list"
+      ],
+      "antonyms": [
+        "academic probation"
+      ],
+      "tags": [
+        "academic",
+        "achievement"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "academic probation",
+      "pronunciation": "/ˌækəˈdemɪk prəˈbeɪʃn/",
+      "partOfSpeech": "noun",
+      "definition": "A status assigned to a student whose grades fall below minimum standards.",
+      "example": "The registrar warned that failing two core courses placed him on academic probation.",
+      "translation": "الإنذار الأكاديمي / المراقبة الأكاديمية بسبب تدني الدرجات",
+      "exampleArabic": "حذر مسجل الدرجات من أن الرسوب في مادتين أساسيتين وضعه تحت الإنذار الأكاديمي.",
+      "collocations": [
+        "placed on academic probation",
+        "avoid academic probation"
+      ],
+      "synonyms": [],
+      "antonyms": [
+        "honor roll"
+      ],
+      "tags": [
+        "academic",
+        "discipline"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "diploma",
+      "pronunciation": "/dɪˈpləʊmə/",
+      "partOfSpeech": "noun",
+      "definition": "A certificate awarded by an educational establishment to show completion.",
+      "example": "He recalled that receiving his high school diploma had filled his grandparents with pride.",
+      "translation": "شهادة دبلوم / شهادة إتمام الدراسة",
+      "exampleArabic": "تذكر أن استلام شهادة الثانوية العامة قد ملأ أجداده فخراً.",
+      "collocations": [
+        "high school diploma",
+        "earn a diploma"
+      ],
+      "synonyms": [
+        "certificate"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "graduation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "commencement",
+      "pronunciation": "/kəˈmensmənt/",
+      "partOfSpeech": "noun",
+      "definition": "A ceremony in which degrees or diplomas are conferred upon graduates.",
+      "example": "The committee reported that graduation commencement would take place in the stadium.",
+      "translation": "حفل التخرج السنوي",
+      "exampleArabic": "أفادت اللجنة بأن حفل التخرج السنوي سيقام في الملعب الرياضي.",
+      "collocations": [
+        "commencement ceremony",
+        "commencement speaker"
+      ],
+      "synonyms": [
+        "graduation"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "graduation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "graduation ceremony",
+      "pronunciation": "/ˌɡrædʒuˈeɪʃn ˌserəməni/",
+      "partOfSpeech": "noun",
+      "definition": "An official formal ceremony celebrating the awarding of diplomas.",
+      "example": "She stated that the formal graduation ceremony was scheduled for the end of June.",
+      "translation": "مراسم حفل التخرج",
+      "exampleArabic": "صرحت بأن مراسم حفل التخرج الرسمية كانت مقررة في نهاية شهر يونيو.",
+      "collocations": [
+        "attend the graduation ceremony",
+        "annual graduation ceremony"
+      ],
+      "synonyms": [
+        "commencement"
+      ],
+      "antonyms": [],
+      "tags": [
+        "academic",
+        "graduation"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "class reunion",
+      "pronunciation": "/ˈklɑːs riːˈjuːniən/",
+      "partOfSpeech": "noun",
+      "definition": "A gathering of former schoolmates held years after graduation.",
+      "example": "He mentioned that their tenth class reunion had brought back cherished memories.",
+      "translation": "حفل لم شمل الدفعة / لقاء الخريجين السنوي",
+      "exampleArabic": "ذكر أن حفل لم شمل دفعتهم العاشر قد استرجع ذكريات عزيزة على قلوبهم.",
+      "collocations": [
+        "ten-year class reunion",
+        "attend a class reunion"
+      ],
+      "synonyms": [
+        "alumni reunion"
+      ],
+      "antonyms": [],
+      "tags": [
+        "social",
+        "school"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "yearbook",
+      "pronunciation": "/ˈjɪəbʊk/",
+      "partOfSpeech": "noun",
+      "definition": "An annual book published by a graduating class documenting the year's events.",
+      "example": "She said that all her close friends had signed heartfelt notes in her yearbook.",
+      "translation": "الكتاب السنوي التذكاري للمدرسة",
+      "exampleArabic": "قالت إن جميع أصدقائها المقربين قد وقعوا عبارات مخلصة في كتابها السنوي.",
+      "collocations": [
+        "sign the yearbook",
+        "high school yearbook"
+      ],
+      "synonyms": [
+        "annual"
+      ],
+      "antonyms": [],
+      "tags": [
+        "school",
+        "memories"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "spelling bee",
+      "pronunciation": "/ˈspelɪŋ biː/",
+      "partOfSpeech": "noun",
+      "definition": "A competition in which contestants are eliminated as they misspell words.",
+      "example": "The teacher told the class that our school champion had won the statewide spelling bee.",
+      "translation": "مسابقة التهجئة المدرسية",
+      "exampleArabic": "أخبر المعلم الفصل بأن بطل مدرستنا قد فاز بمسابقة التهجئة على مستوى الولاية.",
+      "collocations": [
+        "participate in a spelling bee",
+        "annual spelling bee"
+      ],
+      "synonyms": [
+        "spelling competition"
+      ],
+      "antonyms": [],
+      "tags": [
+        "competition",
+        "academic"
+      ],
+      "relatedForms": []
+    },
+    {
+      "headword": "science fair",
+      "pronunciation": "/ˈsaɪəns feə/",
+      "partOfSpeech": "noun",
+      "definition": "An exhibition where students demonstrate their science projects.",
+      "example": "The judges confirmed that their solar robotics project had won first prize at the science fair.",
+      "translation": "معرض العلوم المدرسي",
+      "exampleArabic": "أكد المحكمون أن مشروع الروبوتات الشمسية قد حصد الجائزة الأولى في معرض العلوم.",
+      "collocations": [
+        "annual science fair",
+        "science fair project"
+      ],
+      "synonyms": [],
+      "antonyms": [],
+      "tags": [
+        "competition",
+        "academic"
+      ],
+      "relatedForms": []
+    }
+  ],
+  "conversations": [
+    {
+      "title": "Meeting a Guidance Counselor",
+      "titleArabic": "لقاء مع المرشد الطلابي في مكتب التوجيه",
+      "setting": "A worried student sits with the guidance counselor to discuss grades and graduation.",
+      "lines": [
+        {
+          "speaker": "Student",
+          "text": "Good morning. My parents said that I needed to review my semester report card with you."
+        },
+        {
+          "speaker": "Counselor",
+          "text": "Come in. The registrar mentioned that your cumulative grade point average had dropped slightly."
+        },
+        {
+          "speaker": "Student",
+          "text": "I was terrified that missing two assignments placed me on academic probation."
+        },
+        {
+          "speaker": "Counselor",
+          "text": "Do not despair; you are not on probation. The principal said that strong midterm exam scores would restore your standing."
+        },
+        {
+          "speaker": "Student",
+          "text": "My homeroom teacher also promised that she would help me review the core curriculum."
+        },
+        {
+          "speaker": "Counselor",
+          "text": "That is excellent. If you prepare diligently for every final exam, you will earn your diploma proudly."
+        },
+        {
+          "speaker": "Student",
+          "text": "My goal is to walk across the stage at the commencement graduation ceremony with my classmate group."
+        },
+        {
+          "speaker": "Counselor",
+          "text": "Commit to focused study in the library, and you will achieve that ambition!"
+        }
+      ],
+      "vocabularyUsed": [
+        "report card",
+        "grade point average",
+        "academic probation",
+        "principal",
+        "midterm exam",
+        "homeroom",
+        "curriculum",
+        "final exam",
+        "diploma",
+        "commencement",
+        "graduation ceremony",
+        "classmate"
+      ]
+    },
+    {
+      "title": "Reminiscing with a Classmate",
+      "titleArabic": "استرجاع ذكريات المدرسة مع زميل قديم",
+      "setting": "Two adults look through an old high school yearbook during a coffee chat.",
+      "lines": [
+        {
+          "speaker": "Tariq",
+          "text": "Look at this photograph! Our classmate Maya said that she was so proud of being elected class president."
+        },
+        {
+          "speaker": "Layla",
+          "text": "I remember that day! The headmaster announced that our valedictorian had won the national spelling bee."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Do you recall when the hallway monitor caught us outside the cafeteria without a hall pass?"
+        },
+        {
+          "speaker": "Layla",
+          "text": "Yes! He warned that we were tardy and said that repeated truancy led to detention."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "We served one quiet hour after school, but we laughed about it in the schoolyard during recess."
+        },
+        {
+          "speaker": "Layla",
+          "text": "Our yearbook committee wrote that those youthful days were completely unforgettable."
+        },
+        {
+          "speaker": "Tariq",
+          "text": "Our upcoming ten-year class reunion will unite every alumnus and alumna from our class."
+        },
+        {
+          "speaker": "Layla",
+          "text": "I cannot wait to see everyone when the celebration begins!"
+        }
+      ],
+      "vocabularyUsed": [
+        "classmate",
+        "class president",
+        "headmaster",
+        "valedictorian",
+        "spelling bee",
+        "hallway monitor",
+        "cafeteria",
+        "hall pass",
+        "tardy",
+        "truancy",
+        "detention",
+        "schoolyard",
+        "recess",
+        "yearbook",
+        "class reunion",
+        "alumnus",
+        "alumna"
+      ]
+    },
+    {
+      "title": "Preparing for Science Fair Week",
+      "titleArabic": "الاستعداد لأسبوع معرض العلوم وطابور الصباح",
+      "setting": "Two students pack their backpacks in the locker hallway before the school bell rings.",
+      "lines": [
+        {
+          "speaker": "Zaid",
+          "text": "Did you hear what the science teacher said about the upcoming science fair?"
+        },
+        {
+          "speaker": "Huda",
+          "text": "Yes, she explained that our robotics exhibit was chosen for the statewide field trip."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "The principal stated that the announcement would be read during the morning school assembly."
+        },
+        {
+          "speaker": "Huda",
+          "text": "I stored our project poster inside my metal locker right next to my chemistry textbook."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "The substitute teacher reminded us that participating in extracurricular clubs strengthened college profiles."
+        },
+        {
+          "speaker": "Huda",
+          "text": "She also noted that the biology syllabus required a complete laboratory notebook."
+        },
+        {
+          "speaker": "Zaid",
+          "text": "There goes the loud school bell; let us head to our classroom right now!"
+        },
+        {
+          "speaker": "Huda",
+          "text": "I will grab my whiteboard marker and pencil case so we are ready!"
+        }
+      ],
+      "vocabularyUsed": [
+        "science fair",
+        "field trip",
+        "principal",
+        "school assembly",
+        "locker",
+        "textbook",
+        "substitute teacher",
+        "extracurricular",
+        "syllabus",
+        "school bell",
+        "whiteboard marker",
+        "pencil case"
+      ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "title": "The Formative Stages of School Life",
+      "titleArabic": "المراحل التكوينية للحياة المدرسية",
+      "kind": "narrative",
+      "text": "Reflecting upon early education reveals how childhood environments shape lifelong intellectual curiosity. A former pupil remarked that kindergarten and elementary school had provided a nurturing atmosphere where creative play flourished. As pupils progressed to middle school and eventually reached high school, administrative expectations heightened considerably. School rules dictated that wearing the official school uniform was compulsory, while hallway monitors reminded hurried teenagers that roaming corridors without an official hall pass was strictly forbidden. During the lively lunchtime break in the buzzing cafeteria or free play in the sunlit schoolyard during recess, close friendships took root. Students stored heavy textbooks inside each metal locker, listening eagerly for the distinct chime of the school bell signaling the end of the instructional day.",
+      "translation": "يكشف التأمل في التعليم المبكر كيف تشكل البيئات الأولى الفضول الفكري مدى الحياة. فقد لاحظ تلميذ سابق أن روضة الأطفال والمدرسة الابتدائية وفرتا بيئة حاضنة ازدهر فيها اللعب الإبداعي. ومع الانتقال للمدرسة الإعدادية ثم الثانوية، ارتفعت التوقعات الإدارية، حيث كان الزي المدرسي إلزامياً، ونبه مراقبو الممرات إلى منع التجول دون تصريح مرور. وخلال استراحة الغداء في الكافيتريا أو الفناء أثناء الفسحة، ترسخت الصداقات، وحفظت الكتب في الخزائن انتظاراً لجرس المدرسة.",
+      "vocabularyUsed": [
+        "kindergarten",
+        "elementary school",
+        "middle school",
+        "high school",
+        "school uniform",
+        "hall pass",
+        "lunchtime break",
+        "cafeteria",
+        "schoolyard",
+        "recess",
+        "textbook",
+        "locker",
+        "school bell"
+      ]
+    },
+    {
+      "title": "Academic Rigor, Routine, and Accountability",
+      "titleArabic": "الانضباط الأكاديمي، والروتين، والمسؤولية المدرسية",
+      "kind": "informative",
+      "text": "Academic evaluation and disciplined study routines defined the rhythm of each semester. The homeroom teacher explained that morning roll call was entered into the attendance register every morning, warning pupils that habitual truancy or becoming repeatedly tardy would incur strict after-school detention. Students followed a rigorous curriculum and detailed course syllabus, preparing diligently whenever the instructor wrote surprise pop quiz questions on the chalkboard with whiteboard marker supplies. Teachers emphasized that semester midterm exam scores and comprehensive final exam results determined whether a pupil earned a coveted place on the academic honor roll or faced the humbling prospect of academic probation.",
+      "translation": "حدد التقييم الأكاديمي والروتين المنظم إيقاع كل فصل دراسي. فقد أوضح معلم الفصل أن الحضور يسجل يومياً في سجل الحضور والغياب، محذراً من أن التزويغ أو التأخر المتكرر يوجب الاحتجاز بعد الدوام. واتبع الطلاب منهجاً وخطة دراسية دقيقة مستعدين لأي اختبار مفاجئ على السبورة. وأكد المعلمون أن درجات امتحانات منتصف الفصل والنهائية تحدد ما إذا كان التلميذ سيستحق مكاناً في لوحة الشرف الأكاديمية أو يواجه شبح الإنذار الأكاديمي.",
+      "vocabularyUsed": [
+        "homeroom",
+        "attendance register",
+        "truancy",
+        "tardy",
+        "detention",
+        "curriculum",
+        "syllabus",
+        "pop quiz",
+        "chalkboard",
+        "whiteboard marker",
+        "midterm exam",
+        "final exam",
+        "honor roll",
+        "academic probation"
+      ]
+    },
+    {
+      "title": "Celebration, Commencement, and Enduring Memories",
+      "titleArabic": "الاحتفال والتخرج والذكريات المدرسية الخالدة",
+      "kind": "reflective",
+      "text": "The culmination of secondary education represents a monumental transition celebrated by the entire community. At the weekly school assembly, the proud principal announced that our class president and esteemed valedictorian had led our campus to victory in the regional spelling bee and annual science fair. Guidance counselors assured ambitious graduates that maintaining a superior grade point average guaranteed admission to prestigious universities. When senior year concluded, students received their official diploma during a majestic commencement graduation ceremony. Years later, looking through a signed yearbook at a lively class reunion, every proud alumnus and alumna realized that those cherished school days had laid the bedrock for their future achievements.",
+      "translation": "يمثل ختام المرحلة الثانوية تحولاً بارزاً يحتفي به المجتمع المدرسي بأسره. ففي طابور الصباح، أعلن المدير بفخر فوز رائد الفصل والمتفوق الأول في مسابقة التهجئة ومعرض العلوم. وطمأن المرشدون الطلاب بأن المعدل التراكمي المرتفع يضمن القبول الجامعي. وحين انتهى العام، تسلم الطلاب شهادات الدبلوم في حفل تخرج بهيج. وسنوات بعد ذلك، ومن خلال تصفح الكتاب السنوي في حفل لم الشمل، أدرك كل خريج وخريجة أن تلك الأيام كانت حجر الأساس لنجاحهم.",
+      "vocabularyUsed": [
+        "school assembly",
+        "principal",
+        "class president",
+        "valedictorian",
+        "spelling bee",
+        "science fair",
+        "guidance counselor",
+        "grade point average",
+        "diploma",
+        "commencement",
+        "graduation ceremony",
+        "yearbook",
+        "class reunion",
+        "alumnus",
+        "alumna"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,894 @@
+# -*- coding: utf-8 -*-
+"""Generator for Day 51: Health and the Body (Body, illness and symptoms)."""
+
+import json, os, sys
+from scripts.curriculum_engine import write_day
+
+vocab_data = [
+    # Head & Facial anatomy (10)
+    {
+        "headword": "forehead",
+        "pronunciation": "/ˈfɔːhed/",
+        "partOfSpeech": "noun",
+        "definition": "The part of the face above the eyebrows and below the hairline.",
+        "example": "The mother gently placed her hand on the child's feverish forehead.",
+        "translation": "جبين / جبهة",
+        "exampleArabic": "وضعت الأم يدها برفق على جبين طفلها المحموم.",
+        "relatedForms": [],
+        "collocations": ["feverish forehead", "wrinkle one's forehead"],
+        "synonyms": ["brow"],
+        "antonyms": [],
+        "tags": ["anatomy", "head", "body"]
+    },
+    {
+        "headword": "eyebrow",
+        "pronunciation": "/ˈaɪbraʊ/",
+        "partOfSpeech": "noun",
+        "definition": "The line of hair growing above the eye socket.",
+        "example": "He raised his left eyebrow in surprise when he heard the diagnosis.",
+        "translation": "حاجب العين",
+        "exampleArabic": "رفع حاجبه الأيسر بدهشة عندما سمع التشخيص.",
+        "relatedForms": [],
+        "collocations": ["raise an eyebrow", "bushy eyebrows"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "face"]
+    },
+    {
+        "headword": "eyelash",
+        "pronunciation": "/ˈaɪlæʃ/",
+        "partOfSpeech": "noun",
+        "definition": "One of the short hairs that grow along the edge of the eyelid.",
+        "example": "A stray eyelash fell into his eye and caused temporary irritation.",
+        "translation": "رمش العين",
+        "exampleArabic": "سقط رمش شارد في عينه وتسبب في تهيج مؤقت.",
+        "relatedForms": [],
+        "collocations": ["long eyelashes", "false eyelashes"],
+        "synonyms": ["lash"],
+        "antonyms": [],
+        "tags": ["anatomy", "face"]
+    },
+    {
+        "headword": "eyelid",
+        "pronunciation": "/ˈaɪlɪd/",
+        "partOfSpeech": "noun",
+        "definition": "Each of the upper and lower folds of skin which cover the eye when closed.",
+        "example": "Her eyelids felt heavy after studying medical textbooks all night.",
+        "translation": "جفن العين",
+        "exampleArabic": "شعرت بثقل جفنيها بعد دراسة الكتب الطبية طوال الليل.",
+        "relatedForms": [],
+        "collocations": ["drooping eyelid", "swollen eyelid"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "face"]
+    },
+    {
+        "headword": "nostril",
+        "pronunciation": "/ˈnɒstrəl/",
+        "partOfSpeech": "noun",
+        "definition": "Either of two external openings of the nose.",
+        "example": "Severe allergies blocked his left nostril, making breathing uncomfortable.",
+        "translation": "فتحة الأنف / منخر",
+        "exampleArabic": "أدت الحساسية الشديدة إلى انسداد فتحة أنفه اليسرى مما جعل التنفس غير مريح.",
+        "relatedForms": [],
+        "collocations": ["flare one's nostrils", "blocked nostril"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "respiratory"]
+    },
+    {
+        "headword": "jaw",
+        "pronunciation": "/dʒɔː/",
+        "partOfSpeech": "noun",
+        "definition": "Each of the upper and lower bony structures in vertebrates forming the framework of the mouth.",
+        "example": "He clenched his jaw tightly to endure the throbbing toothache.",
+        "translation": "فك",
+        "exampleArabic": "أطبق فكه بإحكام ليتحمل ألم الأسنان النابض.",
+        "relatedForms": [],
+        "collocations": ["clench one's jaw", "lower jaw"],
+        "synonyms": ["mandible"],
+        "antonyms": [],
+        "tags": ["anatomy", "bone"]
+    },
+    {
+        "headword": "cheek",
+        "pronunciation": "/tʃiːk/",
+        "partOfSpeech": "noun",
+        "definition": "Either side of the face below the eye and to the side of the nose.",
+        "example": "A bright red flush appeared on her cheek when the fever spiked.",
+        "translation": "خد / وجنة",
+        "exampleArabic": "ظهر توهج أحمر ساطع على خدها عندما ارتفعت الحمى فجأة.",
+        "relatedForms": ["cheeky"],
+        "collocations": ["rosy cheeks", "flush on cheek"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "face"]
+    },
+    {
+        "headword": "chin",
+        "pronunciation": "/tʃɪn/",
+        "partOfSpeech": "noun",
+        "definition": "The protruding part of the face below the lower lip.",
+        "example": "The small cut on his chin required two tiny adhesive bandages.",
+        "translation": "ذقن",
+        "exampleArabic": "احتاج الجرح الصغير في ذقنه إلى ضمادتين لاصقتين صغيرتين.",
+        "relatedForms": [],
+        "collocations": ["double chin", "rest chin on hand"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "face"]
+    },
+    {
+        "headword": "throat",
+        "pronunciation": "/θrəʊt/",
+        "partOfSpeech": "noun",
+        "definition": "The passage which leads from the back of the mouth of a person through the pharynx and esophagus.",
+        "example": "Warm herbal tea with honey is often recommended to soothe a sore throat.",
+        "translation": "حلق / حنجرة",
+        "exampleArabic": "غالباً ما يُنصح بشرب شاي الأعشاب الدافئ بالعسل لتهدئة التهاب الحلق.",
+        "relatedForms": [],
+        "collocations": ["sore throat", "clear one's throat"],
+        "synonyms": ["pharynx"],
+        "antonyms": [],
+        "tags": ["anatomy", "symptom"]
+    },
+    {
+        "headword": "shoulder blade",
+        "pronunciation": "/ˈʃəʊldə bleɪd/",
+        "partOfSpeech": "noun",
+        "definition": "Either of the large flat triangular bones of the upper back; the scapula.",
+        "example": "He felt a sharp muscular spasm just beneath his right shoulder blade.",
+        "translation": "لوح الكتف",
+        "exampleArabic": "شعر بتقلص عضلي حاد تحت لوح كتفه الأيمن مباشرة.",
+        "relatedForms": [],
+        "collocations": ["beneath the shoulder blade", "tight shoulder blade"],
+        "synonyms": ["scapula"],
+        "antonyms": [],
+        "tags": ["anatomy", "bone"]
+    },
+
+    # Limbs & Joints (15)
+    {
+        "headword": "elbow",
+        "pronunciation": "/ˈelbəʊ/",
+        "partOfSpeech": "noun",
+        "definition": "The joint between the forearm and the upper arm.",
+        "example": "The tennis player iced his injured elbow after the intense match.",
+        "translation": "كوع / مرفق",
+        "exampleArabic": "وضع لاعب التنس الثلج على كوعه المصاب بعد المباراة الشديدة.",
+        "relatedForms": [],
+        "collocations": ["bend the elbow", "tennis elbow"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "joint"]
+    },
+    {
+        "headword": "wrist",
+        "pronunciation": "/rɪst/",
+        "partOfSpeech": "noun",
+        "definition": "The joint connecting the hand with the forearm.",
+        "example": "Typing without ergonomic support can cause persistent pain in the wrist.",
+        "translation": "معصم / رسغ",
+        "exampleArabic": "قد تتسبب الكتابة دون دعامة مريحة في ألم مستمر في المعصم.",
+        "relatedForms": [],
+        "collocations": ["sprained wrist", "wrist brace"],
+        "synonyms": ["carpus"],
+        "antonyms": [],
+        "tags": ["anatomy", "joint"]
+    },
+    {
+        "headword": "palm",
+        "pronunciation": "/pɑːm/",
+        "partOfSpeech": "noun",
+        "definition": "The inner surface of the hand between the wrist and the fingers.",
+        "example": "Nervous patients often notice cold sweat gathering in the palm of their hands.",
+        "translation": "راحة اليد / كف",
+        "exampleArabic": "غالباً ما يلاحظ المرضى المتوترون تجمع العرق البارد في راحة أيديهم.",
+        "relatedForms": [],
+        "collocations": ["sweaty palms", "palm of the hand"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "hand"]
+    },
+    {
+        "headword": "fingertip",
+        "pronunciation": "/ˈfɪŋɡətɪp/",
+        "partOfSpeech": "noun",
+        "definition": "The end or tip of a finger.",
+        "example": "The nurse took a small blood drop from his fingertip for testing.",
+        "translation": "طرف الإصبع / بنان / أنملة",
+        "exampleArabic": "أخذت الممرضة قطرة دم صغيرة من طرف إصبعه لإجراء الفحص.",
+        "relatedForms": [],
+        "collocations": ["prick a fingertip", "sensitive fingertips"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "hand"]
+    },
+    {
+        "headword": "knuckle",
+        "pronunciation": "/ˈnʌkl/",
+        "partOfSpeech": "noun",
+        "definition": "A part of a finger at a joint where the bone forms a bump, especially at the base of a finger.",
+        "example": "Arthritis caused visible swelling and morning stiffness in each knuckle.",
+        "translation": "مفصل الإصبع / عقدة الإصبع",
+        "exampleArabic": "تسبب التهاب المفاصل في تورم ملحوظ وتيبس صباحي في كل مفصل من مفاصل الأصابع.",
+        "relatedForms": [],
+        "collocations": ["crack one's knuckles", "swollen knuckles"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "joint"]
+    },
+    {
+        "headword": "chest",
+        "pronunciation": "/tʃest/",
+        "partOfSpeech": "noun",
+        "definition": "The front surface of a person's body between the neck and the stomach.",
+        "example": "Severe pressure across the chest should always receive immediate medical care.",
+        "translation": "صدر",
+        "exampleArabic": "يجب دائماً تلقي رعاية طبية فورية عند الشعور بضغط شديد على الصدر.",
+        "relatedForms": [],
+        "collocations": ["chest pain", "tightness in chest"],
+        "synonyms": ["thorax"],
+        "antonyms": [],
+        "tags": ["anatomy", "body"]
+    },
+    {
+        "headword": "rib",
+        "pronunciation": "/rɪb/",
+        "partOfSpeech": "noun",
+        "definition": "Each of a series of slender curved bones articulated in pairs to the spine.",
+        "example": "A cracked rib can make taking deep breaths extremely painful.",
+        "translation": "ضلع",
+        "exampleArabic": "قد يجعل الضلع المتشعر أخذ أنفاس عميقة أمراً مؤلماً للغاية.",
+        "relatedForms": ["ribcage"],
+        "collocations": ["fractured rib", "bruised rib"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "bone"]
+    },
+    {
+        "headword": "spine",
+        "pronunciation": "/spaɪn/",
+        "partOfSpeech": "noun",
+        "definition": "The series of vertebrae extending from the skull to the small of the back; backbone.",
+        "example": "Good sitting posture keeps the human spine properly aligned throughout the day.",
+        "translation": "عمود فقري",
+        "exampleArabic": "تحافظ وضعية الجلوس السليمة على استقامة العمود الفقري البشري طوال اليوم.",
+        "relatedForms": ["spinal"],
+        "collocations": ["spinal column", "curvature of spine"],
+        "synonyms": ["backbone", "vertebral column"],
+        "antonyms": [],
+        "tags": ["anatomy", "bone"]
+    },
+    {
+        "headword": "hip",
+        "pronunciation": "/hɪp/",
+        "partOfSpeech": "noun",
+        "definition": "A projection of the pelvis and upper thigh bone on each side of the body.",
+        "example": "Elderly individuals are often screened to prevent sudden hip injuries.",
+        "translation": "ورك / فخذ علوي",
+        "exampleArabic": "غالباً ما يتم فحص كبار السن للوقاية من إصابات الورك المفاجئة.",
+        "relatedForms": [],
+        "collocations": ["hip joint", "hip replacement"],
+        "synonyms": ["pelvis"],
+        "antonyms": [],
+        "tags": ["anatomy", "joint"]
+    },
+    {
+        "headword": "thigh",
+        "pronunciation": "/θaɪ/",
+        "partOfSpeech": "noun",
+        "definition": "The part of the human leg between the hip and the knee.",
+        "example": "The runner pulled a large muscle in his left thigh during the final dash.",
+        "translation": "فخذ",
+        "exampleArabic": "أصيب العداء بشد عضلي كبير في فخذه الأيسر خلال الانطلاقة الأخيرة.",
+        "relatedForms": [],
+        "collocations": ["thigh muscle", "pulled thigh"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "leg"]
+    },
+    {
+        "headword": "knee",
+        "pronunciation": "/niː/",
+        "partOfSpeech": "noun",
+        "definition": "The joint between the thigh and the lower leg in humans.",
+        "example": "Gentle cycling helps strengthen the muscles around the knee without excess strain.",
+        "translation": "ركبة",
+        "exampleArabic": "يساعد ركوب الدراجات الخفيف على تقوية العضلات المحيطة بالركبة دون إجهاد زائد.",
+        "relatedForms": [],
+        "collocations": ["bent knee", "knee brace"],
+        "synonyms": ["patella joint"],
+        "antonyms": [],
+        "tags": ["anatomy", "joint"]
+    },
+    {
+        "headword": "shin",
+        "pronunciation": "/ʃɪn/",
+        "partOfSpeech": "noun",
+        "definition": "The front of the leg below the knee.",
+        "example": "Soccer players wear protective guards over the shin to prevent painful impacts.",
+        "translation": "قصبة الساق / سُنْبُك",
+        "exampleArabic": "يرتدي لاعبو كرة القدم واقيات لحماية قصبة الساق للوقاية من الصدمات المؤلمة.",
+        "relatedForms": ["shin splints"],
+        "collocations": ["shin guard", "shin splints"],
+        "synonyms": ["tibia front"],
+        "antonyms": [],
+        "tags": ["anatomy", "leg"]
+    },
+    {
+        "headword": "calf",
+        "pronunciation": "/kɑːf/",
+        "partOfSpeech": "noun",
+        "definition": "The back fleshy part of the human leg below the knee.",
+        "example": "Inadequate hydration during summer workouts triggered a violent cramp in his calf.",
+        "translation": "ربلة الساق / بطة الساق",
+        "exampleArabic": "تسبب عدم كفاية شرب الماء أثناء تمارين الصيف في تشنج عنيف في ربلة ساقه.",
+        "relatedForms": ["calves"],
+        "collocations": ["calf muscle", "calf strain"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "leg"]
+    },
+    {
+        "headword": "ankle",
+        "pronunciation": "/ˈæŋkl/",
+        "partOfSpeech": "noun",
+        "definition": "The joint connecting the foot with the leg.",
+        "example": "She twisted her ankle on the uneven curb and needed an ice pack.",
+        "translation": "كاحل",
+        "exampleArabic": "التوى كاحلها على حافة الرصيف غير المستوية واحتاجت إلى كمادة ثلج.",
+        "relatedForms": [],
+        "collocations": ["twisted ankle", "swollen ankle"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "joint"]
+    },
+    {
+        "headword": "heel",
+        "pronunciation": "/hiːl/",
+        "partOfSpeech": "noun",
+        "definition": "The back part of the human foot below the ankle.",
+        "example": "Comfortable cushioned sneakers reduce chronic heel soreness during long shifts.",
+        "translation": "عقب / كعب القدم",
+        "exampleArabic": "تقلل الأحذية الرياضية المريحة ذات البطانة من آلام كعب القدم المزمنة أثناء نوبات العمل الطويلة.",
+        "relatedForms": [],
+        "collocations": ["heel pain", "Achilles heel"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "foot"]
+    },
+
+    # Internal Systems & Tissues (6)
+    {
+        "headword": "skull",
+        "pronunciation": "/skʌl/",
+        "partOfSpeech": "noun",
+        "definition": "A framework of bone or cartilage enclosing the brain of a vertebrate.",
+        "example": "A sturdy helmet shields the skull from traumatic injury during cycling accidents.",
+        "translation": "جمجمة",
+        "exampleArabic": "تحمي الخوذة المتينة الجمجمة من الإصابات الرضية أثناء حوادث الدراجات.",
+        "relatedForms": [],
+        "collocations": ["fractured skull", "thick skull"],
+        "synonyms": ["cranium"],
+        "antonyms": [],
+        "tags": ["anatomy", "bone"]
+    },
+    {
+        "headword": "skeleton",
+        "pronunciation": "/ˈskelɪtn/",
+        "partOfSpeech": "noun",
+        "definition": "An internal framework of bone or cartilage supporting the animal body.",
+        "example": "The human skeleton provides structural support and shields vital internal organs.",
+        "translation": "هيكل عظمي",
+        "exampleArabic": "يوفر الهيكل العظمي البشري دعماً هيكلياً ويحمي الأعضاء الداخلية الحيوية.",
+        "relatedForms": ["skeletal"],
+        "collocations": ["human skeleton", "skeletal structure"],
+        "synonyms": ["bones"],
+        "antonyms": [],
+        "tags": ["anatomy", "bone"]
+    },
+    {
+        "headword": "tendon",
+        "pronunciation": "/ˈtendən/",
+        "partOfSpeech": "noun",
+        "definition": "A flexible but inelastic cord of strong fibrous collagen tissue attaching a muscle to a bone.",
+        "example": "An inflamed tendon in the shoulder requires several weeks of targeted rest.",
+        "translation": "وتر عضلي",
+        "exampleArabic": "يتطلب الوتر الملتهب في الكتف عدة أسابيع من الراحة المستهدفة.",
+        "relatedForms": ["tendinitis"],
+        "collocations": ["Achilles tendon", "torn tendon"],
+        "synonyms": ["sinew"],
+        "antonyms": [],
+        "tags": ["anatomy", "tissue"]
+    },
+    {
+        "headword": "ligament",
+        "pronunciation": "/ˈlɪɡəmənt/",
+        "partOfSpeech": "noun",
+        "definition": "A short band of tough, flexible fibrous connective tissue connecting two bones or cartilages.",
+        "example": "The athlete tore a knee ligament and underwent reconstructive therapy.",
+        "translation": "رباط مفصلي",
+        "exampleArabic": "مزق الرياضي رباطاً في الركبة وخضع لعلاج ترميمي.",
+        "relatedForms": [],
+        "collocations": ["torn ligament", "cruciate ligament"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["anatomy", "tissue"]
+    },
+    {
+        "headword": "artery",
+        "pronunciation": "/ˈɑːtəri/",
+        "partOfSpeech": "noun",
+        "definition": "Any of the muscular-walled tubes forming part of the circulation system by which blood is conveyed from the heart to all parts of the body.",
+        "example": "Oxygen-rich blood is delivered throughout the body by every main artery.",
+        "translation": "شريان",
+        "exampleArabic": "يتم إيصال الدم الغني بالأكسجين إلى جميع أنحاء الجسم عبر كل شريان رئيسي.",
+        "relatedForms": ["arterial"],
+        "collocations": ["blocked artery", "coronary artery"],
+        "synonyms": [],
+        "antonyms": ["vein"],
+        "tags": ["anatomy", "circulatory"]
+    },
+    {
+        "headword": "vein",
+        "pronunciation": "/veɪn/",
+        "partOfSpeech": "noun",
+        "definition": "Any of the tubes forming part of the blood circulation system of the body, carrying in most cases oxygen-depleted blood toward the heart.",
+        "example": "Deoxygenated blood is carried back to the heart through each systemic vein.",
+        "translation": "وريد",
+        "exampleArabic": "يُعاد الدم غير المؤكسج إلى القلب عبر كل وريد في الجسم.",
+        "relatedForms": ["venous"],
+        "collocations": ["varicose veins", "jugular vein"],
+        "synonyms": [],
+        "antonyms": ["artery"],
+        "tags": ["anatomy", "circulatory"]
+    },
+
+    # Symptoms, Conditions & Illnesses (19)
+    {
+        "headword": "fever",
+        "pronunciation": "/ˈfiːvə/",
+        "partOfSpeech": "noun",
+        "definition": "An abnormally high body temperature, usually accompanied by shivering, headache, and delirium.",
+        "example": "A high fever is often treated with antipyretic medication and cool fluids.",
+        "translation": "حمى / حرارة مرتفعة",
+        "exampleArabic": "غالباً ما تُعالج الحمى الشديدة بأدوية خافضة للحرارة وسوائل باردة.",
+        "relatedForms": ["feverish"],
+        "collocations": ["high fever", "break a fever"],
+        "synonyms": ["pyrexia"],
+        "antonyms": [],
+        "tags": ["symptom", "illness"]
+    },
+    {
+        "headword": "nausea",
+        "pronunciation": "/ˈnɔːziə/",
+        "partOfSpeech": "noun",
+        "definition": "A feeling of sickness with an inclination to vomit.",
+        "example": "Sudden nausea is frequently experienced during intense motion sickness.",
+        "translation": "غثيان",
+        "exampleArabic": "كثيراً ما يُعاني المرء من غثيان مفاجئ أثناء دوار الحركة الشديد.",
+        "relatedForms": ["nauseous", "nauseating"],
+        "collocations": ["feeling of nausea", "combat nausea"],
+        "synonyms": ["queasiness", "sickness"],
+        "antonyms": [],
+        "tags": ["symptom"]
+    },
+    {
+        "headword": "dizziness",
+        "pronunciation": "/ˈdɪzinəs/",
+        "partOfSpeech": "noun",
+        "definition": "A sensation of spinning around and losing one's balance.",
+        "example": "Standing up too abruptly can trigger momentary dizziness in low blood pressure patients.",
+        "translation": "دوخة / دوار",
+        "exampleArabic": "قد يؤدي الوقوف المفاجئ إلى إحداث دوخة لحظية لدى مرضى انخفاض ضغط الدم.",
+        "relatedForms": ["dizzy"],
+        "collocations": ["spell of dizziness", "bouts of dizziness"],
+        "synonyms": ["vertigo", "lightheadedness"],
+        "antonyms": [],
+        "tags": ["symptom"]
+    },
+    {
+        "headword": "fatigue",
+        "pronunciation": "/fəˈtiːɡ/",
+        "partOfSpeech": "noun",
+        "definition": "Extreme tiredness resulting from mental or physical exertion or illness.",
+        "example": "Chronic fatigue is commonly reported after prolonged viral infections.",
+        "translation": "إعياء / إرهاق شديد",
+        "exampleArabic": "عادة ما يتم الإبلاغ عن الإعياء المزمن بعد العدوى الفيروسية الطويلة.",
+        "relatedForms": ["fatigued"],
+        "collocations": ["chronic fatigue", "overcome fatigue"],
+        "synonyms": ["exhaustion", "weariness"],
+        "antonyms": ["vigor", "energy"],
+        "tags": ["symptom"]
+    },
+    {
+        "headword": "congestion",
+        "pronunciation": "/kənˈdʒestʃən/",
+        "partOfSpeech": "noun",
+        "definition": "The state of being congested with mucus, fluid, or blood, especially in nasal passages.",
+        "example": "Nasal congestion is quickly relieved when saline sprays are administered.",
+        "translation": "احتقان (في الأنف أو الصدر)",
+        "exampleArabic": "يخف احتقان الأنف بسرعة عند استخدام بخاخات المحلول الملحي.",
+        "relatedForms": ["congested"],
+        "collocations": ["nasal congestion", "chest congestion"],
+        "synonyms": ["blockage"],
+        "antonyms": [],
+        "tags": ["symptom", "respiratory"]
+    },
+    {
+        "headword": "inflammation",
+        "pronunciation": "/ˌɪnfləˈmeɪʃn/",
+        "partOfSpeech": "noun",
+        "definition": "A localized physical condition in which part of the body becomes reddened, swollen, hot, and often painful.",
+        "example": "Joint inflammation is reduced when anti-inflammatory agents are prescribed.",
+        "translation": "التهاب",
+        "exampleArabic": "يقل التهاب المفاصل عندما تُوصف مضادات الالتهاب.",
+        "relatedForms": ["inflame", "inflammatory"],
+        "collocations": ["reduce inflammation", "chronic inflammation"],
+        "synonyms": ["swelling", "irritation"],
+        "antonyms": [],
+        "tags": ["condition", "pathology"]
+    },
+    {
+        "headword": "rash",
+        "pronunciation": "/ræʃ/",
+        "partOfSpeech": "noun",
+        "definition": "An area of redness and spots on a person's skin, appearing especially as a result of illness or allergy.",
+        "example": "An itchy red rash is observed across the skin when allergens contact sensitive tissue.",
+        "translation": "طفح جلدي",
+        "exampleArabic": "يُلاحظ طفح جلدي أحمر ومثير للحكة على الجلد عندما تلامس مسببات الحساسية الأنسجة الحساسة.",
+        "relatedForms": [],
+        "collocations": ["skin rash", "itchy rash"],
+        "synonyms": ["eruption"],
+        "antonyms": [],
+        "tags": ["symptom", "dermatology"]
+    },
+    {
+        "headword": "sprain",
+        "pronunciation": "/spreɪn/",
+        "partOfSpeech": "noun",
+        "definition": "A wrench or twist of the ligaments of an ankle, wrist, or other joint violently so as to cause pain and swelling.",
+        "example": "A severe ligament sprain is treated with compression bandages and elevation.",
+        "translation": "التواء مفصلي",
+        "exampleArabic": "يُعالج الالتواء الشديد في الأربطة بضمادات ضاغطة ورفع العضو المصاب.",
+        "relatedForms": ["sprain (v)"],
+        "collocations": ["ankle sprain", "severe sprain"],
+        "synonyms": ["twist", "wrench"],
+        "antonyms": [],
+        "tags": ["injury"]
+    },
+    {
+        "headword": "bruise",
+        "pronunciation": "/bruːz/",
+        "partOfSpeech": "noun",
+        "definition": "An injury appearing as an area of discolored skin on the body, caused by a blow or impact rupturing underlying blood vessels.",
+        "example": "A purplish bruise is formed whenever small capillaries under the skin rupture.",
+        "translation": "كدمة / رضّ",
+        "exampleArabic": "تتشكل كدمة أرجوانية كلما تمزقت الشعيرات الدموية الدقيقة تحت الجلد.",
+        "relatedForms": ["bruised"],
+        "collocations": ["nasty bruise", "cover a bruise"],
+        "synonyms": ["contusion"],
+        "antonyms": [],
+        "tags": ["injury"]
+    },
+    {
+        "headword": "fracture",
+        "pronunciation": "/ˈfræktʃə/",
+        "partOfSpeech": "noun",
+        "definition": "The cracking or breaking of a hard object or material, especially a bone.",
+        "example": "A hairline bone fracture is detected when radiographic imaging is conducted.",
+        "translation": "كسر عظمي",
+        "exampleArabic": "يُكتشف الكسر الشعري في العظم عندما يُجرى التصوير الشعاعي.",
+        "relatedForms": ["fracture (v)", "fractured"],
+        "collocations": ["bone fracture", "stress fracture"],
+        "synonyms": ["break", "crack"],
+        "antonyms": [],
+        "tags": ["injury", "bone"]
+    },
+    {
+        "headword": "cramp",
+        "pronunciation": "/kræmp/",
+        "partOfSpeech": "noun",
+        "definition": "A painful, involuntary contraction of a muscle or muscles, typically caused by fatigue or strain.",
+        "example": "A severe muscle cramp is triggered when electrolyte levels are depleted.",
+        "translation": "تشنج عضلي / تقلص",
+        "exampleArabic": "ينشأ تشنج عضلي حاد عندما تنضب مستويات الأملاح والمعادن في الجسم.",
+        "relatedForms": ["cramp (v)"],
+        "collocations": ["muscle cramp", "stomach cramp"],
+        "synonyms": ["spasm"],
+        "antonyms": [],
+        "tags": ["symptom"]
+    },
+    {
+        "headword": "insomnia",
+        "pronunciation": "/ɪnˈsɒmniə/",
+        "partOfSpeech": "noun",
+        "definition": "Habitual sleeplessness; inability to sleep.",
+        "example": "Persistent insomnia is alleviated when healthy sleep hygiene protocols are established.",
+        "translation": "أرق / صعوبة النوم",
+        "exampleArabic": "يخف الأرق المستمر عندما تُرسي قواعد عادات النوم الصحية السليمة.",
+        "relatedForms": ["insomniac"],
+        "collocations": ["chronic insomnia", "suffer from insomnia"],
+        "synonyms": ["sleeplessness"],
+        "antonyms": [],
+        "tags": ["condition", "sleep"]
+    },
+    {
+        "headword": "migraine",
+        "pronunciation": "/ˈmiːɡreɪn/",
+        "partOfSpeech": "noun",
+        "definition": "A recurrent throbbing headache that typically affects one side of the head and is often accompanied by nausea and disturbed vision.",
+        "example": "A debilitating migraine is triggered in sensitive patients by bright flashing lights.",
+        "translation": "صداع نصفي / شقيقة",
+        "exampleArabic": "ينجم الصداع النصفي المنهك لدى المرضى الحساسين عن الأضواء الساطعة الوامضة.",
+        "relatedForms": [],
+        "collocations": ["migraine attack", "suffer from migraines"],
+        "synonyms": ["severe headache"],
+        "antonyms": [],
+        "tags": ["illness", "neurology"]
+    },
+    {
+        "headword": "blister",
+        "pronunciation": "/ˈblɪstə/",
+        "partOfSpeech": "noun",
+        "definition": "A small bubble on the skin filled with serum and caused by friction, burning, or other damage.",
+        "example": "A painful fluid-filled blister is caused when stiff shoes rub against the heel.",
+        "translation": "بثرة / فقاعة ماء جلدية ناتجة عن الاحتكاك",
+        "exampleArabic": "تتكون بثرة مؤلمة ممتلئة بالسائل عندما تحتك الأحذية القاسية بالعقب.",
+        "relatedForms": ["blistered"],
+        "collocations": ["painful blister", "pop a blister"],
+        "synonyms": ["vesicle"],
+        "antonyms": [],
+        "tags": ["dermatology", "injury"]
+    },
+    {
+        "headword": "swelling",
+        "pronunciation": "/ˈswelɪŋ/",
+        "partOfSpeech": "noun",
+        "definition": "An abnormal enlargement of a part of the body, typically as a result of an accumulation of fluid.",
+        "example": "Localized tissue swelling is minimized when cold compresses are applied immediately.",
+        "translation": "تورم / انتفاخ",
+        "exampleArabic": "يقل تورم الأنسجة الموضعي إلى أدنى حد عندما توضع الكمادات الباردة فوراً.",
+        "relatedForms": ["swell (v)", "swollen"],
+        "collocations": ["reduce swelling", "noticeable swelling"],
+        "synonyms": ["edema", "puffiness"],
+        "antonyms": [],
+        "tags": ["symptom"]
+    },
+    {
+        "headword": "infection",
+        "pronunciation": "/ɪnˈfekʃn/",
+        "partOfSpeech": "noun",
+        "definition": "The process of infecting or the state of being infected with a disease-causing organism.",
+        "example": "A bacterial infection is combated effectively when prescribed antibiotics are taken.",
+        "translation": "عدوى / خمج",
+        "exampleArabic": "تُكافح العدوى البكتيرية بفعالية عند تناول المضادات الحيوية الموصوفة.",
+        "relatedForms": ["infect", "infectious"],
+        "collocations": ["bacterial infection", "viral infection"],
+        "synonyms": ["contamination"],
+        "antonyms": [],
+        "tags": ["condition", "pathology"]
+    },
+    {
+        "headword": "asthma",
+        "pronunciation": "/ˈæsmə/",
+        "partOfSpeech": "noun",
+        "definition": "A respiratory condition marked by spasms in the bronchi of the lungs, causing difficulty in breathing.",
+        "example": "Acute asthma is controlled when bronchodilator inhalers are utilized properly.",
+        "translation": "ربو",
+        "exampleArabic": "يتم التحكم في الربو الحاد عندما تُستخدم بخاخات موسعات الشعب الهوائية بالشكل الصحيح.",
+        "relatedForms": ["asthmatic"],
+        "collocations": ["asthma attack", "childhood asthma"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["illness", "respiratory"]
+    },
+    {
+        "headword": "indigestion",
+        "pronunciation": "/ˌɪndɪˈdʒestʃən/",
+        "partOfSpeech": "noun",
+        "definition": "Pain or discomfort in the stomach associated with difficulty in digesting food.",
+        "example": "Painful indigestion is provoked when rich, greasy meals are consumed late at night.",
+        "translation": "عسر هضم",
+        "exampleArabic": "يحدث عسر الهضم المؤلم عند تناول وجبات دسمة وغنية بالدهون في وقت متأخر من الليل.",
+        "relatedForms": ["digest"],
+        "collocations": ["suffer from indigestion", "acid indigestion"],
+        "synonyms": ["dyspepsia", "heartburn"],
+        "antonyms": [],
+        "tags": ["symptom", "digestive"]
+    },
+    {
+        "headword": "bronchitis",
+        "pronunciation": "/brɒŋˈkaɪtɪs/",
+        "partOfSpeech": "noun",
+        "definition": "Inflammation of the mucous membrane in the bronchial tubes, causing bronchospasm and coughing.",
+        "example": "Chronic bronchitis is worsened whenever air pollution levels are elevated.",
+        "translation": "التهاب الشعب الهوائية / التهاب قصبي",
+        "exampleArabic": "يتفاقم التهاب الشعب الهوائية المزمن كلما ارتفعت مستويات تلوث الهواء.",
+        "relatedForms": ["bronchial"],
+        "collocations": ["chronic bronchitis", "acute bronchitis"],
+        "synonyms": [],
+        "antonyms": [],
+        "tags": ["illness", "respiratory"]
+    }
+]
+
+grammar_data = [
+    {
+        "title": "Passive Voice (Present Simple Passive)",
+        "titleArabic": "المبني للمجهول في المضارع البسيط",
+        "explanation": "We use the Present Simple Passive when the action itself or the recipient of the action is more important than who performs it, or when the agent is unknown, obvious, or universal. In medical, physiological, and scientific contexts, passive sentences are standard because clinical procedures and bodily reactions occur systematically regardless of the observer. The formula is: Subject + am / is / are + Past Participle (V3). If mentioning the agent is relevant, we add 'by + agent'.",
+        "explanationArabic": "نستخدم المبني للمجهول في زمن المضارع البسيط عندما يكون التركيز منصباً على الفعل نفسه أو متلقي الفعل بدلاً من الفاعل، أو عندما يكون الفاعل مجهولاً أو بديهياً أو عاماً. في السياقات الطبية والعلمية ووصف وظائف الجسم، تُعتبر صيغة المبني للمجهول هي المعيار لأن الإجراءات والتفاعلات الجسدية تحدث بصورة منهجية. القاعدة: المفعول به (نائب الفاعل) + am / is / are + التصريف الثالث (V3). وإذا أردنا ذكر الفاعل نستخدم 'by + الفاعل'.",
+        "structures": [
+            {
+                "label": "Affirmative · الإثبات",
+                "pattern": "Subject (Receiver) + am / is / are + V3 (Past Participle)",
+                "explanation": "Describes a regular procedure, biological process, or clinical truth.",
+                "explanationArabic": "يصف إجراءً روتينياً أو عملية بيولوجية أو حقيقة طبية منتظمة."
+            },
+            {
+                "label": "Negative · النفي",
+                "pattern": "Subject + am / is / are + not + V3 (Past Participle)",
+                "explanation": "Indicates that an action is not routinely performed on the subject.",
+                "explanationArabic": "يوضح أن الفعل لا يُنفذ عادة على هذا الموضوع."
+            },
+            {
+                "label": "Question · السؤال",
+                "pattern": "Am / Is / Are + Subject + V3 (Past Participle)?",
+                "explanation": "Asks whether a medical step or physical condition is routinely carried out or observed.",
+                "explanationArabic": "يسأل عما إذا كان الإجراء الطبي أو الحالة الجسدية تُنفذ أو تُلاحظ بانتظام."
+            }
+        ],
+        "examples": [
+            {
+                "sentence": "Oxygen-rich blood is delivered throughout the body by every main artery.",
+                "translation": "يتم إيصال الدم المؤكسج إلى أنحاء الجسم كافة عبر كل شريان رئيسي.",
+                "usesVocabulary": ["artery"]
+            },
+            {
+                "sentence": "A bone fracture is detected when radiographic imaging is conducted.",
+                "translation": "يُكتشف كسر العظم عندما يُجرى التصوير الشعاعي.",
+                "usesVocabulary": ["fracture"]
+            },
+            {
+                "sentence": "Localized swelling is minimized when cold compresses are applied to the ankle.",
+                "translation": "يقل التورم الموضعي إلى أدنى حد حين توضع الكمادات الباردة على الكاحل.",
+                "usesVocabulary": ["swelling", "ankle"]
+            },
+            {
+                "sentence": "A persistent fever is monitored closely by clinic staff.",
+                "translation": "تتم مراقبة الحمى المستمرة عن كثب من قبل طاقم العيادة.",
+                "usesVocabulary": ["fever"]
+            }
+        ],
+        "commonMistakes": [
+            {
+                "wrong": "The injured knee is examine by the doctor every morning.",
+                "right": "The injured knee is examined by the doctor every morning.",
+                "note": "Always use the past participle (V3, e.g. examined), never the base verb, after the auxiliary verb 'is/are'.",
+                "noteArabic": "يجب دائماً استخدام التصريف الثالث للفعل (V3 مثل examined) بعد فعل be (is/are)، ولا يجوز استخدام المصدر أبداً."
+            },
+            {
+                "wrong": "Blood samples are collect by the nurse yesterday.",
+                "right": "Blood samples are collected by the nurse every morning.",
+                "note": "Present Simple Passive is used for routine or general facts; past events require the past passive (were collected).",
+                "noteArabic": "يُستخدم المبني للمجهول في المضارع للحقائق والروتين المتكرر؛ أما الأحداث الماضية فتتطلب الماضي البسيط."
+            }
+        ],
+        "commonUsage": [
+            "Clinical routines and scientific descriptions: 'Vital signs are monitored every four hours.' (تُستخدم لوصف الإجراءات الطبية والروتين العلمي المنتظم.)",
+            "General physiological facts: 'The brain is protected by the skull.' (تُستخدم لبيان الحقائق التشريحية والبيولوجية الثابتة.)",
+            "Focus on the patient or symptom: 'The rash is treated with hydrocortisone ointment.' (يتم التركيز على العَرَض أو المريض بدلاً من شخص المعالج.)"
+        ]
+    }
+]
+
+convs_data = [
+    {
+        "title": "Assessing a Sports Collision",
+        "titleArabic": "تقييم تصادم رياضي وإصابة مفصلية",
+        "setting": "A sports trainer examines a basketball player on the sideline after a hard fall.",
+        "lines": [
+            {"speaker": "Trainer", "text": "Sit down on the bench right here. Where is the most intense pain felt?"},
+            {"speaker": "Player", "text": "My ankle twisted when I landed, and there is sharp pain right near the heel."},
+            {"speaker": "Trainer", "text": "Let me inspect the joint. Visible swelling is already observed around the outer tendon."},
+            {"speaker": "Player", "text": "Do you think a bone fracture is caused, or is it just a severe sprain?"},
+            {"speaker": "Trainer", "text": "A severe ligament sprain is suspected, but an emergency x-ray is required to be sure."},
+            {"speaker": "Player", "text": "My right knee and calf also absorbed part of the impact against the court floor."},
+            {"speaker": "Trainer", "text": "Cold ice is applied immediately so further inflammation is prevented. How does your wrist feel?"},
+            {"speaker": "Player", "text": "My wrist and inner elbow took a hard blow, and I clenched my jaw when I struck the floor."}
+        ],
+        "vocabularyUsed": ["ankle", "heel", "swelling", "tendon", "fracture", "sprain", "ligament", "knee", "calf", "inflammation", "wrist", "elbow", "jaw"]
+    },
+    {
+        "title": "A Consultation for Chronic Pain",
+        "titleArabic": "استشارة طبية لآلام مزمنة في الظهر والرقبة",
+        "setting": "A patient describes physical discomfort during an outpatient consultation.",
+        "lines": [
+            {"speaker": "Clinician", "text": "Good morning. Which bodily area is troubled by persistent discomfort?"},
+            {"speaker": "Patient", "text": "A dull ache is felt along my spine, and it spreads upward toward my left shoulder blade."},
+            {"speaker": "Clinician", "text": "Is numbness or tingling noticed at your fingertip or across the palm?"},
+            {"speaker": "Patient", "text": "Yes, especially in the morning when each knuckle feels stiff, and a throbbing migraine develops."},
+            {"speaker": "Clinician", "text": "Our skeleton is protected by strong muscular bands, but poor posture strains the rib and back muscles."},
+            {"speaker": "Patient", "text": "I also suffer from recurring insomnia, severe indigestion, and overwhelming fatigue during workday afternoons."},
+            {"speaker": "Clinician", "text": "Gentle physiotherapy is scheduled twice a week, and ergonomic desk adjustments are recommended."},
+            {"speaker": "Patient", "text": "I will follow those guidelines diligently so normal mobility is restored."}
+        ],
+        "vocabularyUsed": ["spine", "shoulder blade", "fingertip", "palm", "knuckle", "migraine", "skeleton", "rib", "insomnia", "indigestion", "fatigue"]
+    },
+    {
+        "title": "Reviewing Seasonal Respiratory Symptoms",
+        "titleArabic": "مراجعة أعراض تنفسية وموسمية في عيادة الحي",
+        "setting": "A patient discusses flu-like symptoms with a community nurse.",
+        "lines": [
+            {"speaker": "Nurse", "text": "Let us check your vital readings. A mild fever is registered on the digital monitor."},
+            {"speaker": "Patient", "text": "My forehead feels burning hot, and my throat is extraordinarily scratchy."},
+            {"speaker": "Nurse", "text": "Noticeable congestion is detected in both your chest and your left nostril."},
+            {"speaker": "Patient", "text": "I also get sudden bouts of dizziness and nausea, and an itchy rash has appeared on my arm."},
+            {"speaker": "Nurse", "text": "Those sensations are frequently produced when an acute viral infection affects the respiratory tract."},
+            {"speaker": "Patient", "text": "Could my chronic asthma or bronchitis be triggered by this current seasonal cold?"},
+            {"speaker": "Nurse", "text": "Yes, so prescribed inhalation mist is provided to ensure your airways are protected."},
+            {"speaker": "Patient", "text": "My eyelid feels heavy as well; that is a huge relief that help is available."}
+        ],
+        "vocabularyUsed": ["fever", "forehead", "throat", "congestion", "chest", "nostril", "dizziness", "nausea", "rash", "infection", "asthma", "bronchitis", "eyelid"]
+    }
+]
+
+para1_text = (
+    "The human body is an extraordinary biological architecture supported by an intricate framework. Our vital central "
+    "organs are sheltered securely within the rib cage, while the fragile brain is protected from severe trauma by the sturdy "
+    "bone plates of the skull. Running down the center of the torso, the articulated spine provides structural stability, "
+    "linking the upper shoulder blade to the lower hip and thigh joints. Movement across the limbs is facilitated through "
+    "resilient cords: every dynamic muscle is fastened securely to bone by a fibrous tendon, while each joint is stabilized "
+    "by an elastic ligament. When this intricate skeleton is maintained through balanced activity, physical balance and "
+    "enduring vitality are sustained naturally across all stages of life."
+)
+
+para2_text = (
+    "When tissue damage occurs during physical exertion, immediate biological responses are initiated across the affected "
+    "area. A painful muscle cramp is triggered when essential minerals are depleted, while an awkward twist of the lower "
+    "extremity frequently results in a sprain of the ankle. If small blood vessels are crushed against bone beneath the shin "
+    "or calf, a purplish bruise is rapidly formed under the skin. Meanwhile, continuous friction against delicate foot skin "
+    "leads directly to a fluid-filled blister on the heel. Throughout this restorative phase, localized swelling and "
+    "protective inflammation are generated by the immune system to facilitate cellular repair and prevent extensive structural harm."
+)
+
+para3_text = (
+    "Systemic illness often announces its arrival through distinct physical warning signals that should never be ignored. "
+    "A spike in internal body heat creates a burning fever across the forehead and cheek, frequently accompanied by intense "
+    "nausea and debilitating dizziness. At the same time, respiratory inflammation causes painful soreness in the throat and "
+    "obstinate nasal congestion inside each nostril. In chronic sufferers, seasonal triggers can provoke an acute attack of "
+    "asthma or ignite painful bronchitis deep inside the chest. In all such cases, proper rest and medical guidance are "
+    "sought so that persistent fatigue is overcome and healthy physiological equilibrium is safely restored."
+)
+
+paras_data = [
+    {
+        "title": "The Biological Architecture of the Human Body",
+        "titleArabic": "البنية البيولوجية والمعمارية لجسم الإنسان",
+        "kind": "informative",
+        "text": para1_text,
+        "translation": "يُعد جسم الإنسان معماراً بيولوجياً مذهلاً مدعوماً بهيكل معقد. وتستقر أعضاؤنا المركزية الحيوية بأمان داخل القفص الصدري المحاط بالضلوع، بينما يُحمى الدماغ الحساس من الرضوض العنيفة بواسطة صفائح عظام الجمجمة المتينة. ويمتد العمود الفقري المفصلي في منتصف الجذع ليوفر ثباتاً هيكلياً رابطاً لوح الكتف العلوي بمفاصل الورك والفخذ. وتتيسر الحركة عبر الأطراف بفضل أحبال متينة: فكل عضلة مثبتة بإحكام في العظم عبر وتر عضلي، بينما يستقر كل مفصل برباط مرن. وحين يُصان هذا الهيكل العظمي بالحركة المتوازنة، تدوم الحيوية بصورة طبيعية.",
+        "vocabularyUsed": ["rib", "skull", "spine", "shoulder blade", "hip", "thigh", "tendon", "ligament", "skeleton"]
+    },
+    {
+        "title": "Physiological Reactions to Injury and Strain",
+        "titleArabic": "الاستجابات الفسيولوجية للإصابة والإجهاد العضلي",
+        "kind": "expository",
+        "text": para2_text,
+        "translation": "حين يحدث تلف في الأنسجة أثناء الجهد البدني، تنطلق استجابات بيولوجية فورية في المنطقة المصابة. فينجم تشنج عضلي مؤلم حين تنضب المعادن الأساسية، بينما يؤدي الالتواء العنيف في الأطراف السفلية غالباً إلى التواء في الكاحل. وإذا تمزقت الأوعية الدموية الصغيرة تحت قصبة الساق أو ربلة الساق، تتشكل كدمة أرجوانية بسرعة تحت الجلد. وفي الوقت ذاته، يؤدي الاحتكاك المستمر بجلد القدم الرقيق إلى نشوء بثرة ممتلئة بالسوائل على العقب. وخلال هذه المرحلة التعويضية، ينتج جهاز المناعة تورماً موضعياً والتهاباً واقياً لتسهيل الترميم.",
+        "vocabularyUsed": ["cramp", "sprain", "ankle", "shin", "calf", "bruise", "blister", "heel", "swelling", "inflammation"]
+    },
+    {
+        "title": "Recognizing Warning Signals of Acute Illness",
+        "titleArabic": "التعرف على مؤشرات الإنذار للأمراض الحادة",
+        "kind": "descriptive",
+        "text": para3_text,
+        "translation": "غالباً ما يعلن المرض العام عن قدومه بإشارات تحذيرية بدنية واضحة لا يجوز إهمالها. فارتفاع حرارة الجسم يولد حمى لافحة على الجبين والخد، مصحوبة بغثيان حاد ودوار ودوخة مضعفة. وفي الوقت نفسه، يُحدث الالتهاب التنفسي ألماً وحرقة في الحلق واحتقاناً أنفياً عنيداً داخل كل منخر. وعند أصحاب الأمراض المزمنة، قد تثير المحفزات الموسمية نوبة حادة من الربو أو تشعل التهاب الشعب الهوائية في عمق الصدر. وفي جميع هذه الحالات، يجب طلب الراحة والرعاية الطبية للتغلب على الإعياء واستعادة التوازن الفسيولوجي.",
+        "vocabularyUsed": ["fever", "forehead", "cheek", "nausea", "dizziness", "throat", "congestion", "nostril", "asthma", "bronchitis", "chest", "fatigue"]
+    }
+]
+
+if __name__ == "__main__":
+    write_day(51, vocab_data, grammar_data, convs_data, paras_data)
